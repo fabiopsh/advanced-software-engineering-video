@@ -1,0 +1,61 @@
+\documentclass[11pt,a4paper,oneside,openany]{book}
+\input{preambolo.tex}
+\IfFileExists{dati/valori.tex}{\input{dati/valori.tex}}{}
+\input{versione.tex}
+% include un capitolo solo se il file esiste (comodo durante la stesura)
+\newcommand{\capitolo}[1]{\IfFileExists{capitoli/#1.tex}{\input{capitoli/#1.tex}}{}}
+\hypersetup{pdftitle={Advanced Software Engineering}, pdfauthor={Fabio Piscitelli}}
+
+\begin{document}
+
+% ------------------------------------------------------------------ frontespizio
+\begin{titlepage}
+\sffamily
+\vspace*{3.5cm}
+{\color{grigio}\large Advanced Software Engineering — Laurea Magistrale in Informatica, Università di Pisa\par}
+\vspace{0.6cm}
+{\Huge\bfseries Advanced Software Engineering\par}
+\vspace{0.3cm}
+{\LARGE Appunti riorganizzati per lo studio\par}
+\vspace{0.6cm}
+{\color{inchiostro}\rule{\linewidth}{0.8pt}\par}
+\vspace{0.6cm}
+{\large Fabio Piscitelli\par}
+\vspace{0.2cm}
+{\normalsize Prof. Antonio Brogi, Prof. Alessandro Bocci — A.A. 2026/2027\par}
+\vfill
+{\normalsize\color{grigio}\nomeVersione\ \versione\ --- \today\par}
+\end{titlepage}
+
+\frontmatter
+\tableofcontents
+\capitolo{00-guida}
+
+\mainmatter
+
+% Una \part per ogni blocco del piano; un \capitolo per ogni file in capitoli/.
+% Per una singola lezione: niente \part, uno o pochi capitoli.
+\part{Prodotti software e sviluppo agile}
+\capitolo{01-prodotti}
+\capitolo{02-agile}
+\capitolo{03-feature}
+
+\part{Architettura del software}
+\capitolo{04-architettura}
+
+\part{Cloud e microservizi}
+\capitolo{05-container}
+\capitolo{06-cloud}
+\capitolo{07-microservizi}
+\capitolo{08-smell}
+
+\part{Dal monolite alla produzione: Kubernetes, testing, DevOps e sicurezza}
+\capitolo{09-monolite}
+\capitolo{10-kubernetes}
+\capitolo{11-testing}
+\capitolo{12-devops}
+\capitolo{13-sicurezza}
+\capitolo{14-sicurezza-microservizi}
+\capitolo{15-quantum}
+
+\end{document}

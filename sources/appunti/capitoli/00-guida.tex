@@ -1,0 +1,86 @@
+\chapter{Guida alla lettura}
+
+\section*{Organizzazione}
+
+Gli appunti seguono l'ordine di studio, non quello delle lezioni. Ogni concetto è definito una sola volta, nel
+punto in cui serve per la prima volta. Dopo viene solo richiamato con un rimando.
+
+\begin{itemize}
+  \item \textbf{Parte I --- Prodotti software e sviluppo agile.} Che cosa cambia quando si sviluppa un prodotto
+    invece di un progetto (capitolo~\ref{cap:prodotti}). Come lo si sviluppa con i metodi agili
+    (capitolo~\ref{cap:agile}). Come si decide che cosa fa (capitolo~\ref{cap:feature}).
+  \item \textbf{Parte II --- Architettura del software.} Come si organizza un prodotto in componenti, strati e
+    server, e quali scelte tecnologiche lo vincolano (capitolo~\ref{cap:architettura}).
+  \item \textbf{Parte III --- Cloud e microservizi.} I container e Docker (capitolo~\ref{cap:container}), il software
+    che gira sul cloud (capitolo~\ref{cap:cloud}) e l'architettura a microservizi (capitolo~\ref{cap:microservizi}).
+    Infine gli smell architetturali dei microservizi e i refactoring che li risolvono (capitolo~\ref{cap:smell}).
+  \item \textbf{Parte IV --- Dal monolite alla produzione.} Come si scompone un monolite in microservizi, database
+    compreso (capitolo~\ref{cap:monolite}). Kubernetes, la piattaforma che orchestra i container in produzione
+    (capitolo~\ref{cap:kubernetes}). Come si collauda un prodotto (capitolo~\ref{cap:testing}). Come un unico team lo
+    sviluppa, lo rilascia e lo gestisce con l'automazione (capitolo~\ref{cap:devops}). Come lo si protegge dagli attacchi
+    e come si rispetta la privacy (capitolo~\ref{cap:sicurezza}). Poi i problemi di sicurezza specifici dei
+    microservizi (capitolo~\ref{cap:sicurezza-micro}). Infine il quantum computing e le tecniche di Quantum Software
+    Engineering per eseguire meglio i programmi quantistici (capitolo~\ref{cap:quantum}).
+\end{itemize}
+
+Ogni capitolo si apre con un breve riquadro che ne descrive il contenuto e si chiude con i \emph{punti chiave}
+e alcune \emph{domande di verifica}.
+
+Accanto al titolo di alcune sezioni, esempi e tabelle compare la nota piccola \aggiunta. Indica un approfondimento
+che spiega meglio un concetto, con esempi e passaggi in più.
+
+\section*{Convenzioni grafiche}
+
+\begin{definizione}[nome]
+Definizioni dei concetti.
+\end{definizione}
+\begin{idea}
+Il concetto che bisogna aver capito di una sezione.
+\end{idea}
+\begin{attenzione}
+Errori frequenti e affermazioni da non fraintendere. È l'unico riquadro colorato.
+\end{attenzione}
+\begin{esempio}
+Esempi svolti e casi concreti.
+\end{esempio}
+
+Nel testo il \textbf{grassetto} segnala un termine definito per la prima volta. Il \ingl{corsivo} segnala i termini
+in un'altra lingua e le enfasi. Il \uline{sottolineato} segnala le poche affermazioni da ricordare alla lettera.
+I termini tecnici non sono tradotti: restano in inglese.
+
+\section*{Sigle e simboli}
+
+\begin{center}
+\small
+\begin{tabularx}{0.92\linewidth}{>{\raggedright\arraybackslash}p{3.2cm}X}
+\toprule
+Sigla & Significato \\
+\midrule
+PBI & \ingl{product backlog item}, voce del product backlog (\rif{sec:agile-backlog}) \\
+XP & \ingl{Extreme Programming} (\rif{sec:agile-xp}) \\
+SOA & \ingl{service-oriented architecture}, architettura orientata ai servizi (\rif{sec:arch-distribuzione}) \\
+MVC & pattern \ingl{Model-View-Controller} (\rif{sec:arch-distribuzione}) \\
+IaaS, PaaS, SaaS, FaaS & \ingl{Infrastructure, Platform, Software, Function as a Service} (\rif{sec:cloud-aas}) \\
+VM & \ingl{virtual machine}, macchina virtuale \\
+API & \ingl{application programming interface}, interfaccia con cui altri componenti usano i servizi \\
+$C$, $A$, $P$ & \ingl{Consistency}, \ingl{Availability}, \ingl{Partition-tolerance} (\rif{sec:micro-dati}) \\
+K8s & Kubernetes (capitolo~\ref{cap:kubernetes}) \\
+TDD & \ingl{test-driven development} (\rif{sec:test-tdd}) \\
+CI, CD & \ingl{continuous integration}, \ingl{continuous delivery/deployment} (\rif{sec:devops-ci}, \rif{sec:devops-cd}) \\
+IaC, CM & \ingl{infrastructure as code}, \ingl{configuration management} (\rif{sec:devops-iac}) \\
+APM & \ingl{application performance monitoring} (\rif{sec:devops-approccio}) \\
+DoS, DDoS & \ingl{denial of service}, \ingl{distributed denial of service} (\rif{sec:sic-dos}) \\
+XSS & \ingl{cross-site scripting} (\rif{sec:sic-xss}) \\
+ACL & \ingl{access control list} (\rif{sec:sic-autorizzazione}) \\
+TLS, CA & \ingl{Transport Layer Security}, \ingl{certificate authority} (\rif{sec:sic-tls}) \\
+KMS & \ingl{key management system} (\rif{sec:sic-chiavi}) \\
+JWT & \ingl{JSON Web Token} (\rif{sec:secm-sfide}) \\
+QPU, QSE & \ingl{Quantum Processing Unit}, \ingl{Quantum Software Engineering} (\rif{sec:qse-qse}) \\
+NISQ & \ingl{Noisy Intermediate-Scale Quantum} (\rif{sec:qse-nisq}) \\
+$\ket{\Psi}$, $\alpha$, $\beta$ & qubit e sue ampiezze complesse (\rif{sec:qse-qubit}) \\
+TVD & \ingl{total variation distance} (\rif{sec:qse-stop}) \\
+$b$, $l$, $\epsilon$, $k$ & batch size, look-back window, soglia, patience di StableShots (\rif{sec:qse-stop}) \\
+$\neg$, $\wedge$, $\vee$, $\rightarrow$ & negazione, \emph{e}, \emph{o}, implicazione logica \\
+\bottomrule
+\end{tabularx}
+\end{center}

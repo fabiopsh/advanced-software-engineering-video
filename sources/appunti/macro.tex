@@ -1,0 +1,22 @@
+% Macro specifiche del corso.
+% Notazione di Dirac (capitolo 15): \ket{0} -> |0>.
+\providecommand{\ket}[1]{\lvert #1\rangle}
+\newcommand{\tabrif}[1]{\nomeTabella~\ref{#1}}
+% Etichetta piccola accanto a un titolo: segnala un approfondimento aggiuntivo.
+\newcommand{\aggiunta}{\texorpdfstring{\,{\normalfont\sffamily\small\itshape\color{grigio}[contenuto aggiuntivo]}}{}}
+
+% Disegni del capitolo 9 (tabelle e schemi di database).
+% \tabdb{x}{y}{etichetta}{nome}: tabella 3x3 centrata in (x,y), larga 1,8 cm, con il nome sotto.
+% Il nodo <nome> ha il bordo della tabella: le frecce si fermano lì.
+\newcommand{\tabdb}[4]{%
+  \draw (#1-0.9,#2-0.36) rectangle (#1+0.9,#2+0.36);
+  \draw (#1-0.3,#2-0.36) -- (#1-0.3,#2+0.36) (#1+0.3,#2-0.36) -- (#1+0.3,#2+0.36);
+  \draw (#1-0.9,#2-0.12) -- (#1+0.9,#2-0.12) (#1-0.9,#2+0.12) -- (#1+0.9,#2+0.12);
+  \node[minimum width=1.8cm, minimum height=0.72cm, inner sep=0pt] (#4) at (#1,#2) {};
+  \node[font=\footnotesize, anchor=base] at (#1,#2-0.75) {#3};}
+\tikzset{
+  sv/.style={blocco, fill=grigiochiaro, minimum width=2.1cm, font=\footnotesize},
+  dbs/.style={draw, cylinder, shape border rotate=90, aspect=0.22, minimum width=1.6cm,
+    minimum height=1.15cm, align=center, font=\footnotesize, inner sep=2pt},
+  contenitore/.style={draw, inner sep=6pt},
+}

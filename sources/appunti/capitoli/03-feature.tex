@@ -1,0 +1,374 @@
+\chapter{Feature, scenari e storie}
+\label{cap:feature}
+
+\begin{inbreve}
+In un prodotto i requisiti non sono fissati da un cliente: bisogna scoprire che cosa serve agli utenti. Il capitolo
+presenta gli strumenti per farlo, in ordine: le \emph{personas}, gli \emph{scenari}, le \emph{user stories}. Da
+essi si ricava l'elenco delle \emph{feature} del prodotto. Il capitolo spiega anche come sceglierle bene ed evitare
+che il loro numero cresca senza controllo. Le user stories alimentano il product backlog del capitolo~\ref{cap:agile}.
+\end{inbreve}
+
+\section{Perché servono le feature}
+\label{sec:feature-intro}
+
+Il design di un prodotto software è guidato da quattro fattori:
+\begin{itemize}
+  \item l'ispirazione;
+  \item bisogni di aziende o consumatori non soddisfatti dai prodotti esistenti;
+  \item l'insoddisfazione per i prodotti esistenti;
+  \item cambiamenti tecnici che rendono possibili nuovi tipi di prodotto.
+\end{itemize}
+
+Il \ingl{product-based software engineering} richiede meno documentazione dei requisiti di quello su progetto
+(\rif{sec:prodotti-progetti}), perché i requisiti non li fissa un cliente e cambiano. Si identificano invece le
+\termine{feature} del prodotto, cioè frammenti di funzionalità.
+
+Per farlo bisogna capire gli utenti potenziali, con interviste, sondaggi e consultazioni informali. Attenzione:
+in un'azienda i manager comprano il prodotto, ma i dipendenti che lo usano possono non volerlo usare.
+
+Tre strumenti aiutano a individuare le feature (\figrif{fig:feature-relazioni}): le rappresentazioni degli utenti
+(\termine{personas}) e le descrizioni in linguaggio naturale (\termine{scenari} e \termine{storie}).
+
+\begin{figure}[ht]
+\centering
+\begin{tikzpicture}[blocco/.append style={minimum width=2.6cm}]
+\node[blocco] (p) at (0,3.2) {Personas};
+\node[blocco] (sc) at (0,1.6) {Scenarios};
+\node[blocco] (st) at (4.6,1.6) {Stories};
+\node[blocco] (f) at (2.3,0) {Features};
+\draw[freccia] (p) -- node[right, font=\footnotesize] {inspire} (sc);
+\draw[freccia] (sc) -- node[above, font=\footnotesize] {are-developed-into} (st);
+\draw[freccia] (sc) -- node[below left, font=\footnotesize] {inspire} (f);
+\draw[freccia] (st) -- node[below right, font=\footnotesize] {define} (f);
+\draw[freccia, dashed] (p) -- (st);
+\end{tikzpicture}
+\caption{Dagli utenti alle feature. Le personas ispirano gli scenari, gli scenari si sviluppano in storie e
+ispirano le feature, le storie definiscono le feature. La freccia tratteggiata indica che si può passare
+direttamente dalle personas alle storie (\rif{sec:feature-scenari-storie}).}
+\label{fig:feature-relazioni}
+\end{figure}
+
+\section{Personas}
+\label{sec:feature-personas}
+
+Per progettare feature utili bisogna capire chi sono gli utenti, perché contano il loro background, le loro competenze e la
+loro esperienza.
+
+\begin{definizione}[Persona]
+Una \termine{persona} è un tipo (immaginato) di utente del prodotto. Per esempio, per l'agenda di uno studio
+dentistico: il dentista, la segretaria, il paziente.
+\end{definizione}
+
+Di solito bastano poche personas (1--2, al massimo 5) per identificare le feature chiave.
+
+\subsection{Che cosa contiene la descrizione di una persona}
+
+\begin{description}[leftmargin=0pt, style=unboxed]
+  \item[Personalization.] Un nome e qualche informazione sulla situazione personale. A volte è utile una fotografia
+    adatta (\rif{sec:feature-foto}).
+  \item[Job-related.] Se il prodotto è destinato alle aziende, qualcosa sul lavoro della persona e, se serve, su ciò
+    che comporta.
+  \item[Education.] La formazione e il livello di competenze tecniche e di esperienza. È importante soprattutto per
+    il design dell'interfaccia.
+  \item[Relevance.] Se possibile, perché la persona potrebbe essere interessata al prodotto e che cosa potrebbe volerne
+    fare.
+\end{description}
+
+\begin{esempio}[Emma, a history teacher]
+Emma ha 41 anni e insegna storia in una scuola superiore di Edimburgo a studenti di 12--18 anni. È nata a Cardiff,
+dove i genitori erano insegnanti. Dopo la laurea in storia si è trasferita a Edimburgo e ha seguito la formazione
+da insegnante. Ha due figli di 6 e 8 anni. Torna a casa presto per vederli, quindi prepara le lezioni, svolge le pratiche amministrative e corregge i compiti da casa.
+
+Usa i social media e le applicazioni di produttività abituali per preparare le lezioni. Non è particolarmente
+interessata alle tecnologie digitali. Odia l'ambiente di apprendimento virtuale della scuola e lo evita quando può.
+Crede che l'insegnamento in presenza sia il più efficace. Potrebbe usare il sistema iLearn per l'amministrazione e
+per accedere a film e documenti storici, ma non è interessata a un approccio misto digitale/in presenza.
+
+Le conclusioni sono due: \emph{non ha un background tecnico} e \emph{vuole un prodotto che supporti
+l'amministrazione}.
+\end{esempio}
+
+\begin{idea}
+Le personas permettono agli sviluppatori di ``mettersi nei panni degli utenti''. Quando studiare gli utenti non è
+possibile (per esempio per alcuni prodotti nuovi) si usano le \termine{proto-personas}, costruite senza
+dati diretti sugli utenti.
+\end{idea}
+
+\subsection{Le fotografie nelle personas}
+\label{sec:feature-foto}
+
+L'uso di una fotografia è discusso. Le osservazioni sono quattro:
+\begin{itemize}
+  \item a favore: alcuni studi suggeriscono che una fotografia aiuta i team a usare le personas con più efficacia; i
+    profili con una foto sorridente aumentano la disponibilità a usarle (J.~Salminen e altri);
+  \item contro: le personas non dovrebbero riguardare l'aspetto delle persone, ma ciò che fanno (S.~Cable);
+  \item contro: personas molto dettagliate spingono il team a supporre che i dati demografici guidino le motivazioni
+    (S.~Wachter-Boettcher);
+  \item il genere ha un'influenza mediatrice sugli attributi percepiti di uomini e donne (F.~Deutsch).
+\end{itemize}
+
+\section{Scenari}
+\label{sec:feature-scenari}
+
+\begin{definizione}[Scenario]
+Uno \termine{scenario} è una narrazione che descrive una situazione in cui un utente usa le feature del prodotto per
+fare qualcosa che vuole fare. Serve a scoprire le feature.
+\end{definizione}
+
+La descrizione di uno scenario contiene sei elementi:
+\begin{itemize}
+  \item il nome dello scenario;
+  \item le personas (attori) coinvolte;
+  \item l'obiettivo generale;
+  \item il problema che il sistema esistente non può affrontare;
+  \item che cosa comporta raggiungere l'obiettivo;
+  \item i modi possibili per affrontare il problema.
+\end{itemize}
+
+\begin{esempio}[Scenario ``Fishing in Ullapool'']
+Jack è un insegnante di scuola primaria a Ullapool e ha deciso che un progetto di classe riguardi l'industria della
+pesca della zona. Gli studenti raccolgono ricordi dai parenti, usano archivi di giornali e fotografie e le condividono
+in un wiki del sistema iLearn. Jack ha bisogno di un sito per condividere foto, perché gli studenti devono commentare
+quelle degli altri. Deve poter moderare i post con foto prima che siano condivisi, per i problemi di copyright e
+privacy. Chiede consiglio al gruppo di insegnanti di scuola primaria. Due colleghi gli suggeriscono KidsTakePics.
+Poiché il sito non è integrato con l'autenticazione di iLearn, Jack crea un account da insegnante e uno di classe.
+Aggiunge KidsTakePics ai servizi visibili agli studenti, così che al login possano subito caricare foto da telefono e
+dai computer di classe.
+\end{esempio}
+
+Gli scenari narrativi, di alto livello, facilitano la comunicazione e stimolano la creatività nel design. Non sono però
+specifiche: mancano di dettaglio e possono essere incompleti.
+
+\subsection*{Come si scrivono}
+
+\begin{itemize}
+  \item Più scenari (per esempio 3--4) per ogni persona, che coprono le sue responsabilità principali.
+  \item Sono scritti dal punto di vista dell'utente.
+  \item Ogni membro del team ne crea alcuni individualmente. Poi li discute con il resto del team e, se possibile, con
+    gli utenti.
+\end{itemize}
+
+\section{User stories}
+\label{sec:feature-storie}
+
+\begin{definizione}[User story]
+Gli scenari sono storie di uso del prodotto \emph{di alto livello}. Le \termine{user stories} sono narrazioni più
+fini, che seguono il modello:
+
+\smallskip
+\begin{tabular}{@{}ll@{}}
+\textbf{As a} & $\langle$ruolo$\rangle$ \\
+\textbf{I want to} & $\langle$fare qualcosa$\rangle$ \\
+\textbf{So that} & $\langle$motivo / valore$\rangle$ \\
+\end{tabular}
+\end{definizione}
+
+Le storie realizzano tre principi del manifesto agile (\rif{sec:agile-manifesto}): consegnare presto software di
+valore (1), consegnare frequentemente (3), cercare la semplicità (10). Per questo:
+\begin{itemize}
+  \item il lavoro è organizzato in unità che rappresentano valore per il cliente, distinguendo ciò che vale di più;
+  \item le unità di lavoro sono visualizzate con storie semplici, scritte dal punto di vista dell'utente;
+  \item storie di buona qualità rendono più efficiente il resto dello sviluppo e creano valore di business per gli utenti;
+  \item il software si costruisce dalla prospettiva dell'utente.
+\end{itemize}
+
+\subsection*{Suddividere le storie}
+
+Gli sviluppatori tendono a vedere l'applicazione come uno \emph{stack}. L'utente la vede come \termine{fette di
+funzionalità} di valore. Quindi:
+\begin{itemize}
+  \item si costruisce il software in modo incrementale, a fette di funzionalità;
+  \item una buona storia richiede 1--2 giorni di lavoro;
+  \item le storie lunghe (\termine{epics}) si spezzano in storie più brevi, che si possono prioritizzare.
+\end{itemize}
+
+\begin{esempio}[Spezzare una epic\aggiunta]
+La storia del Tic Tac Toe \emph{``As a Player I want to play against the computer so that I can learn to play
+alone''} richiede molto più di 2 giorni: bisogna progettare il comportamento del computer. Si spezza in tre fette,
+ciascuna utilizzabile da sola:
+\begin{enumerate}
+  \item il computer gioca una mossa valida qualsiasi;
+  \item il computer blocca la mossa con cui l'avversario vincerebbe;
+  \item il computer vince quando può farlo.
+\end{enumerate}
+Dopo la prima fetta il giocatore può già giocare da solo, anche se male: c'è valore consegnabile. Le altre due si
+ordinano per priorità e si consegnano negli sprint successivi.
+\end{esempio}
+
+\subsection*{Storie e pianificazione}
+
+Il product backlog di Scrum (\rif{sec:agile-backlog}) è spesso un insieme di user stories. Le storie sono associate a
+priorità (e talvolta a una stima dello sforzo) e ordinate in base a esse. Questo ordinamento si chiama
+\ingl{requirements triage}.
+
+\section{Storie e scenari}
+\label{sec:feature-scenari-storie}
+
+Tutte le funzionalità descritte in uno scenario si possono esprimere come user stories. Gli scenari restano utili perché:
+\begin{itemize}
+  \item si leggono in modo più naturale;
+  \item rendono più facile capire le storie;
+  \item danno più contesto.
+\end{itemize}
+D'altra parte si può passare direttamente dalle personas alle storie, saltando gli scenari (\figrif{fig:feature-relazioni}).
+
+\begin{esempio}[Tic Tac Toe]
+\emph{Regole}: griglia 3$\times$3; due giocatori (X e O); a turno mettono il proprio segno in una casella vuota; vince
+chi per primo ottiene 3 segni in riga, colonna o diagonale; quando le 9 caselle sono piene la partita finisce.
+
+\emph{Persona (Player)}: Pierfrancesco, 9 anni, scolaro delle elementari a Pisa. Vive con i genitori e una sorella
+maggiore e gli piacciono la spiaggia, i videogiochi e il calcio. Sul treno per Firenze, dove abitano i nonni, gioca a
+giochi da tavolo con il padre. Sa usare computer e smartphone ma non vuole approfondire la tecnologia: per lui usarla
+serve a divertirsi. Gli piacerebbe giocare ai giochi da tavolo sul telefono o sul PC. (Persona generata dal corso
+dell'anno precedente.)
+
+\emph{User stories} (tutte con ruolo \emph{Player}):
+
+\smallskip
+\small
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}p{4.2cm}X}
+\toprule
+I want to & So that \\
+\midrule
+have a timer & the game is even shorter \\
+select my next valid move & I can play the game \\
+select my symbol & I can customise my games \\
+play against the computer & I can (learn how to) play alone \\
+know when I win/fail/tie & I can celebrate, be sad, or play again \\
+ask for a rematch & I can eventually win \\
+surrender & I can stop suffering from losing \\
+see an updated board & I can decide on my next move \\
+see whose turn it is & I know if I should play a move \\
+see the winning combo & I can better see it \\
+start a new game & I can play with others on same device \\
+\bottomrule
+\end{tabularx}
+\end{esempio}
+
+\section{Identificare le feature}
+\label{sec:feature-identificazione}
+
+L'obiettivo è ottenere l'elenco delle feature che definiscono il prodotto. Una buona feature ha tre proprietà.
+
+\begin{definizione}[Proprietà delle feature]
+\begin{itemize}
+  \item \textbf{Independence}: non dipende da come sono implementate le altre feature e non è influenzata dall'ordine
+    di attivazione delle altre.
+  \item \textbf{Coherence}: è legata a una sola funzionalità. Non fa più di una cosa e non ha mai effetti collaterali.
+  \item \textbf{Relevance}: riflette il modo in cui gli utenti svolgono normalmente un compito. Non offre
+    funzionalità oscure, richieste di rado.
+\end{itemize}
+\end{definizione}
+
+\subsection*{Fonti di conoscenza}
+
+Il design delle feature si basa su quattro fonti di conoscenza.
+
+\begin{description}[leftmargin=0pt, style=unboxed]
+  \item[User knowledge.] Scenari e storie informano il team su che cosa vogliono gli utenti e su come potrebbero usare le
+    feature.
+  \item[Product knowledge.] L'esperienza con prodotti esistenti, o una ricerca su ciò che fanno. A volte le feature
+    devono replicare quelle di questi prodotti, perché offrono funzionalità fondamentali sempre richieste.
+  \item[Domain knowledge.] La conoscenza dell'area di lavoro (per esempio la finanza o la prenotazione di eventi) che
+    il prodotto vuole supportare. Capire il dominio permette di pensare a modi nuovi di aiutare gli utenti.
+  \item[Technology knowledge.] I nuovi prodotti nascono spesso per sfruttare sviluppi tecnologici successivi
+    al lancio dei concorrenti. Conoscere la tecnologia più recente permette di progettare feature che la sfruttano.
+\end{description}
+
+\subsection*{Fattori nella progettazione dell'insieme di feature}
+
+Nella scelta dell'insieme di feature ci sono tre coppie di fattori in tensione (\figrif{fig:feature-fattori}).
+
+\begin{figure}[ht]
+\centering
+\begin{tikzpicture}
+\node[font=\small\bfseries\sffamily] at (0,2.2) {Feature set design factors};
+\node[font=\small] (s) at (-4,1.3) {Simplicity};
+\node[font=\small] (fu) at (4,1.3) {Functionality};
+\node[font=\small] (co) at (-4,0) {Control};
+\node[font=\small] (au) at (4,0) {Automation};
+\node[font=\small] (fa) at (-4,-1.3) {Familiarity};
+\node[font=\small] (no) at (4,-1.3) {Novelty};
+\draw[<->, thick, rosso] (s) -- (fu);
+\draw[<->, thick, rosso] (co) -- (au);
+\draw[<->, thick, rosso] (fa) -- (no);
+\end{tikzpicture}
+\caption{Fattori nel design dell'insieme di feature. Ogni freccia lega due fattori in tensione: aumentare l'uno
+tende a ridurre l'altro (simplicity contro functionality, control contro automation, familiarity contro novelty).}
+\label{fig:feature-fattori}
+\end{figure}
+
+\section{Feature creep e derivazione delle feature}
+\label{sec:feature-creep}
+
+Il numero di feature cresce quando si immaginano nuovi utenti potenziali. Questo fenomeno si chiama
+\termine{feature creep}. Le cause sono tre:
+\begin{itemize}
+  \item i dirigenti di marketing vogliono soddisfare tutte le richieste degli utenti;
+  \item la pressione del marketing a includere le feature dei concorrenti;
+  \item il desiderio di supportare sia utenti esperti sia inesperti.
+\end{itemize}
+
+Per evitarlo, per ogni feature proposta ci si pone quattro domande:
+\begin{itemize}
+  \item aggiunge davvero qualcosa di nuovo, o è solo un modo alternativo di fare ciò che è già supportato?
+  \item è probabile che sia importante e usata dalla maggior parte degli utenti?
+  \item si può implementare estendendo una feature esistente, invece di aggiungerne un'altra al sistema?
+  \item offre una funzionalità generale o è una feature molto specifica?
+\end{itemize}
+
+\subsection*{Derivazione e descrizione delle feature}
+
+Il team di sviluppo si riunisce per discutere scenari e storie ed estrarne l'elenco delle descrizioni delle feature.
+Ogni descrizione indica (\figrif{fig:feature-descrizione}):
+\begin{itemize}
+  \item il \emph{nome} della feature;
+  \item l'\emph{input}, cioè i dati dall'utente e da altre fonti;
+  \item l'\emph{activation}, cioè come l'utente attiva la feature;
+  \item l'\emph{action}, cioè come sono elaborati i dati di input;
+  \item l'\emph{output}, cioè ciò che è restituito all'utente e al sistema.
+\end{itemize}
+Si inizia poi a costruire prototipi (\rif{sec:prodotti-prototipo}) per dimostrare le feature, prima di tutto quelle
+\emph{nuove} e quelle \emph{critiche}.
+
+\begin{figure}[ht]
+\centering
+\begin{tikzpicture}[blocco/.append style={minimum width=3.4cm}]
+\node[blocco] (i) at (-3.2,2.2) {Input\\dall'utente e da\\altre fonti};
+\node[blocco] (a) at (3.2,2.2) {Activation\\come l'utente attiva\\la feature};
+\node[blocco] (az) at (0,0.6) {Action\\come sono elaborati\\i dati di input};
+\node[blocco] (o) at (0,-1.2) {Output\\all'utente e\\al sistema};
+\node[font=\small\bfseries\sffamily] at (0,2.8) {Feature name};
+\draw[freccia] (i) -- (az);
+\draw[freccia] (a) -- (az);
+\draw[freccia] (az) -- (o);
+\end{tikzpicture}
+\caption{Struttura della descrizione di una feature: nome, input, activation, action e output.}
+\label{fig:feature-descrizione}
+\end{figure}
+
+\begin{puntichiave}
+\begin{itemize}
+  \item Un prodotto ha meno documentazione dei requisiti: si identificano le \emph{feature}, frammenti di funzionalità.
+  \item Personas $\rightarrow$ scenari $\rightarrow$ storie $\rightarrow$ feature. Si può saltare gli scenari.
+  \item Persona: tipo di utente immaginato, 1--2 (al massimo 5) personas, con personalization, job-related, education,
+    relevance.
+  \item Scenario: narrazione di alto livello, non una specifica; 3--4 per persona, dal punto di vista dell'utente.
+  \item User story: As a $\langle$ruolo$\rangle$ I want to $\langle$azione$\rangle$ So that $\langle$motivo$\rangle$.
+    Una storia richiede 1--2 giorni; le epics si spezzano.
+  \item Una feature deve essere independent, coherent, relevant.
+  \item Il feature creep si evita con quattro domande su novità, importanza, estendibilità e generalità.
+\end{itemize}
+\end{puntichiave}
+
+\begin{domande}
+\begin{enumerate}
+  \item Perché un prodotto richiede meno documentazione dei requisiti di un progetto?
+  \item Che cos'è una persona e che cosa contiene la sua descrizione? Quante ne servono?
+  \item In che cosa differiscono scenari e user stories? Perché usare ancora gli scenari?
+  \item Qual è il modello di una user story? Quanto deve durare e che cos'è una epic?
+  \item Quali sono le tre proprietà di una buona feature?
+  \item Che cos'è il feature creep, che cause ha e come si evita?
+  \item Che cosa contiene la descrizione di una feature?
+\end{enumerate}
+\end{domande}

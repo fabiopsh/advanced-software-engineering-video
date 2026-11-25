@@ -1,0 +1,227 @@
+\chapter{Dal progetto al prodotto}
+\label{cap:prodotti}
+
+\begin{inbreve}
+Il capitolo spiega perché oggi si sviluppano prodotti software e non solo progetti su commessa. Confronta i due modi
+di lavorare e descrive i tre modelli di esecuzione di un prodotto. Poi presenta gli strumenti con cui un prodotto
+nasce e viene guidato: la product vision, il product management e il prototipo. Il resto del corso parte da qui:
+i metodi agili (capitolo~\ref{cap:agile}) servono a consegnare un prodotto in fretta.
+\end{inbreve}
+
+\section{Progetti e prodotti}
+\label{sec:prodotti-progetti}
+
+Nel Novecento ogni azienda ordinava il proprio software, per esempio un sistema di \ingl{customer relationship
+management} (CRM) fatto su misura. Oggi la maggior parte delle aziende non ha bisogno di software personalizzato.
+Usa invece un prodotto già pronto che molti clienti condividono.
+
+\begin{definizione}[Project-based software engineering]
+Il software è sviluppato per un cliente che ne decide le funzionalità. Il \termine{cliente} descrive il problema.
+Cliente e sviluppatore definiscono insieme i requisiti. Lo sviluppatore realizza il software, che risolve il
+problema (\figrif{fig:prodotti-progetto}).
+\end{definizione}
+
+\begin{figure}[ht]
+\centering
+\begin{tikzpicture}[node distance=2.2cm]
+\node[draw, ellipse, minimum width=2.6cm, minimum height=1cm, font=\small] (p) {Problem};
+\node[draw, ellipse, minimum width=2.6cm, minimum height=1cm, below left=1.5cm and 1.2cm of p, font=\small] (r) {Requirements};
+\node[draw, ellipse, minimum width=2.6cm, minimum height=1cm, below right=1.5cm and 1.2cm of p, font=\small] (s) {Software};
+\draw[freccia] (p) -- node[left=2pt, font=\footnotesize, align=right] {generates} (r);
+\draw[freccia] (r) -- node[below=2pt, font=\footnotesize] {implemented-by} (s);
+\draw[freccia] (s) -- node[right=2pt, font=\footnotesize, align=left] {helps-with} (p);
+\node[font=\footnotesize\sffamily, above=2pt of p] {\textbf{cliente}};
+\node[font=\footnotesize\sffamily, below=2pt of r, align=center] {\textbf{cliente e sviluppatore}};
+\node[font=\footnotesize\sffamily, below=2pt of s] {\textbf{sviluppatore}};
+\end{tikzpicture}
+\caption{Sviluppo su progetto. In grassetto è indicato chi interviene in ogni passaggio. Se l'attività del cliente
+cambia, cambiano i requisiti e quindi il software.}
+\label{fig:prodotti-progetto}
+\end{figure}
+
+\begin{definizione}[Product-based software engineering]
+Lo sviluppatore decide le \termine{feature} del prodotto e la sua evoluzione. I clienti scelgono se acquistarlo.
+\end{definizione}
+
+La differenza ha una conseguenza pratica. Un cliente che ha investito in un prodotto non vuole cambiarlo. Quindi
+arrivare presto sul mercato è critico. Servono tecniche di sviluppo rapide, cioè i metodi \emph{agili}
+(capitolo~\ref{cap:agile}).
+
+\begin{table}[ht]
+\centering
+\small
+\caption{Confronto tra sviluppo su progetto e su prodotto\aggiunta}
+\label{tab:prodotti-confronto}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}p{3.4cm}XX}
+\toprule
+& Project-based & Product-based \\
+\midrule
+Chi decide le funzionalità & il cliente & lo sviluppatore \\
+Perché il software cambia & l'attività del cliente cambia, quindi cambiano i requisiti & lo sviluppatore ne decide l'evoluzione \\
+Requisiti & più documentazione dei requisiti & meno documentazione: i requisiti non sono fissati da un cliente e cambiano (\rif{sec:feature-intro}) \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\section{Modelli di esecuzione}
+\label{sec:prodotti-esecuzione}
+
+Un prodotto può eseguirsi in tre modi, che differiscono per ciò che sta sul computer dell'utente e ciò che sta sui
+server del produttore (\figrif{fig:prodotti-esecuzione}).
+
+\begin{figure}[ht]
+\centering
+\begin{tikzpicture}[
+  col/.style={draw, rounded corners=3pt, minimum width=3.7cm, align=center, font=\small, inner sep=5pt},
+  tit/.style={font=\small\itshape\sffamily}]
+\node[tit] at (0,3.6) {Stand-alone};
+\node[tit] at (4.6,3.6) {Hybrid};
+\node[tit] at (9.2,3.6) {Software as a service};
+\node[col] (a1) at (0,2.5) {User interface\\Product functionality\\User data};
+\node[col] (a2) at (0,0.2) {Product updates};
+\draw[->, thick] (a2) -- (a1);
+\node[col] (b1) at (4.6,2.5) {User interface\\Partial functionality\\User data};
+\node[col] (b2) at (4.6,0.2) {Additional functionality\\User data backups\\Product updates};
+\draw[<->, thick] (b2) -- (b1);
+\node[col] (c1) at (9.2,2.5) {User interface\\(browser or app)};
+\node[col] (c2) at (9.2,0.2) {Product functionality\\User data};
+\draw[<->, thick] (c2) -- (c1);
+\node[font=\footnotesize\color{grigio}] at (-3.3,2.5) {\parbox{1.6cm}{\raggedleft computer dell'utente}};
+\node[font=\footnotesize\color{grigio}] at (-3.3,0.2) {\parbox{1.6cm}{\raggedleft server del produttore}};
+\end{tikzpicture}
+\caption{Modelli di esecuzione. In alto ciò che sta sul computer dell'utente, in basso ciò che sta sui server del
+produttore. La freccia unidirezionale indica che i server inviano solo aggiornamenti. Le frecce bidirezionali
+indicano scambio continuo di dati.}
+\label{fig:prodotti-esecuzione}
+\end{figure}
+
+\begin{itemize}
+  \item \termine{Stand-alone}: l'intero prodotto e i dati dell'utente stanno sul computer dell'utente. Il produttore
+    fornisce solo gli aggiornamenti.
+  \item \termine{Hybrid}: sul computer dell'utente stanno l'interfaccia, una parte delle funzionalità e i dati.
+    Sui server stanno funzionalità aggiuntive, i backup dei dati e gli aggiornamenti. Esempio: molte app per telefono.
+  \item \termine{Software as a service}: l'utente ha solo l'interfaccia (browser o app). Funzionalità e dati stanno sui server del
+    produttore. Esempio: Salesforce. Il modello è approfondito nel capitolo~\ref{cap:cloud}.
+\end{itemize}
+
+\section{La product vision}
+\label{sec:prodotti-vision}
+
+Lo sviluppo di un prodotto parte dalla \termine{product vision}. Essa risponde a tre domande fondamentali:
+\begin{itemize}
+  \item \emph{Who}: chi sono i clienti a cui il prodotto è destinato?
+  \item \emph{What}: che cosa si deve sviluppare?
+  \item \emph{Why}: perché i clienti dovrebbero acquistarlo?
+\end{itemize}
+
+La vision si scrive con un modello a frase fissa (G.~Moore, \emph{Crossing the Chasm}, 1998).
+
+\begin{definizione}[Modello della product vision]
+\begin{description}[leftmargin=2.8cm, style=nextline, font=\sffamily\bfseries\small]
+  \item[FOR] (cliente a cui è destinato)
+  \item[WHO] (bisogno o opportunità)
+  \item[THE] (nome del prodotto) is a (categoria di prodotto)
+  \item[THAT] (beneficio principale, motivo convincente per acquistarlo)
+  \item[UNLIKE] (principale alternativa concorrente)
+  \item[OUR PRODUCT] (che cosa lo differenzia in modo essenziale)
+\end{description}
+\end{definizione}
+
+\begin{esempio}[Product vision di LinkedIn]
+\begin{description}[leftmargin=2.8cm, style=nextline, font=\sffamily\bfseries\small]
+  \item[FOR] global professionals and job seekers.
+  \item[WHO] need to build a professional network, advance their careers, and find economic opportunities.
+  \item[THE] LinkedIn platform is a professional social networking and talent marketplace.
+  \item[THAT] connects individuals with peers, mentors, companies, and skills to make them more productive and
+    successful.
+  \item[UNLIKE] casual social networks (like Facebook or Instagram) or traditional, static job boards (like Indeed).
+  \item[OUR PRODUCT] integrates identity, continuous professional networking, and real-time labor market insights
+    into a single ecosystem where careers are built dynamically.
+\end{description}
+\end{esempio}
+
+\subsection*{Da dove nasce una vision}
+
+Le origini sono quattro.
+
+\begin{description}[leftmargin=0pt, style=unboxed]
+  \item[Domain experience.] Gli sviluppatori lavorano in un'area (per esempio marketing e vendite) e conoscono il
+    software di cui ha bisogno. Possono essere frustrati dai difetti del software che usano e vedere l'opportunità di
+    un sistema migliore.
+  \item[Product experience.] Gli utenti di un software esistente (per esempio un elaboratore di testi) vedono modi
+    più semplici o migliori per offrire le stesse funzioni e propongono un nuovo sistema. Un nuovo prodotto può anche
+    sfruttare tecnologie recenti, come le interfacce vocali.
+  \item[Customer experience.] Gli sviluppatori discutono a lungo con potenziali clienti. Vogliono capire i loro
+    problemi, i vincoli che limitano l'acquisto di nuovo software (per esempio l'interoperabilità) e gli attributi
+    critici del software di cui hanno bisogno.
+  \item[Prototyping and playing around.] Gli sviluppatori hanno un'idea ma devono capirla meglio. Costruiscono un
+    prototipo come esperimento e lo usano come piattaforma per provare idee e varianti (\rif{sec:prodotti-prototipo}).
+\end{description}
+
+\section{Software product management}
+\label{sec:prodotti-pm}
+
+Il \termine{product manager} (PM) deve far sì che il team implementi feature che portano valore reale ai clienti.
+Per farlo:
+\begin{itemize}
+  \item persegue insieme gli obiettivi dell'azienda \emph{e} quelli dei clienti;
+  \item comunica regolarmente con i clienti;
+  \item tiene sotto controllo i vincoli importanti per i clienti.
+\end{itemize}
+
+Il PM ha sei interazioni tecniche con il team (\tabrif{tab:prodotti-pm}).
+
+\begin{table}[ht]
+\centering
+\small
+\caption{Interazioni tecniche del product manager.}
+\label{tab:prodotti-pm}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}p{4.2cm}X}
+\toprule
+Interazione & A che cosa serve \\
+\midrule
+Product roadmap & fissare obiettivi, tappe e criteri di successo \\
+User stories e scenari & individuare le feature del prodotto (capitolo~\ref{cap:feature}) \\
+Product backlog & elenco delle attività da completare per sviluppare il prodotto (\rif{sec:agile-backlog}) \\
+Acceptance testing & verificare che una release raggiunga gli obiettivi fissati \\
+Customer testing & raccogliere dai clienti un riscontro su usabilità e adeguatezza delle feature \\
+UI design & controllare che l'interfaccia sia semplice e naturale \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\section{Prototipi}
+\label{sec:prodotti-prototipo}
+
+Un \termine{prototipo} è una versione ridotta del prodotto. Ha due usi:
+\begin{itemize}
+  \item è essenziale per dimostrare il software a potenziali clienti e a chi lo finanzia;
+  \item aiuta a rivedere il design.
+\end{itemize}
+Può anche far nascere la vision stessa (\rif{sec:prodotti-vision}).
+Conviene avere presto il primo prototipo, ridotto: l'obiettivo indicato è di circa 6 settimane.
+
+\begin{puntichiave}
+\begin{itemize}
+  \item \textbf{Progetto:} il cliente decide le funzionalità e i requisiti cambiano con la sua attività.
+    \textbf{Prodotto:} lo sviluppatore decide feature ed evoluzione.
+  \item Per un prodotto arrivare presto ai clienti è critico, quindi servono metodi di sviluppo rapidi (agili).
+  \item Tre modelli di esecuzione: stand-alone, hybrid, software as a service.
+  \item La product vision risponde a \emph{who}, \emph{what}, \emph{why} e si scrive con il modello
+    FOR/WHO/THE/THAT/UNLIKE/OUR PRODUCT.
+  \item Il PM allinea obiettivi dell'azienda e dei clienti e usa roadmap, stories, backlog, acceptance e customer
+    testing, UI design.
+  \item Il primo prototipo, ridotto, va realizzato in circa 6 settimane.
+\end{itemize}
+\end{puntichiave}
+
+\begin{domande}
+\begin{enumerate}
+  \item Qual è la differenza tra project-based e product-based software engineering?
+  \item Perché un prodotto richiede tecniche di sviluppo rapide?
+  \item Confrontare i tre modelli di esecuzione: che cosa sta sul computer dell'utente e che cosa sui server?
+  \item Quali sono le tre domande a cui risponde la product vision e come si scrive con il modello di Moore?
+  \item Quali sono le quattro origini di una product vision?
+  \item Che cosa fa un product manager?
+\end{enumerate}
+\end{domande}

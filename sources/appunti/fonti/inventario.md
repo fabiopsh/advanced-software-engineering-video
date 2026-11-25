@@ -1,0 +1,404 @@
+# Inventario delle fonti — Advanced Software Engineering
+
+Fonti: i PDF di "Slide Teoria" (lezioni 1–15, prof. Brogi). Ogni voce: pagina, tipo, contenuto, destinazione negli appunti.
+Le immagini decorative (foto, fumetti, cartoni) sono escluse e riportate in `revisione.md`.
+
+## Lezione 1 — Course introduction (1 Course introduction.pdf)
+- [x] p.1–5,8–15,20–23 ESCLUSO: motivazione, colloqui, AI, orari, docenti, date d'esame (organizzativo/aneddotico)
+- [x] p.6–7 ESCLUSO: mappa degli argomenti del corso (elenco di titoli, ripreso dalla struttura degli appunti)
+- [x] p.16–19 ESCLUSO: modalità d'esame, valutazione continua, FAQ (informazioni organizzative)
+
+## Lezione 2 — Software products (2 Software products.pdf)
+- [x] p.3–5 DEF dai progetti ai prodotti; molti clienti con esigenze non su misura → cap. 1 §1.1
+- [x] p.4 FIGURA triangolo Problem–Requirements–Software (project-based SE) → cap. 1 §1.1 fig.
+- [x] p.6–7 DEF product-based SE: lo sviluppatore decide feature ed evoluzione; time-to-market → Agile → cap. 1 §1.1
+- [x] p.8 FIGURA modelli di esecuzione (stand-alone, hybrid, software as a service) → cap. 1 §1.2 fig.
+- [x] p.10 DEF product vision: WHO/WHAT/WHY e modello FOR/WHO/THE/THAT/UNLIKE/OUR PRODUCT (Moore) → cap. 1 §1.3
+- [x] p.11 ESEMPIO product vision di LinkedIn → cap. 1 §1.3
+- [x] p.12 ELENCO quattro origini della vision: domain, product, customer experience, prototyping → cap. 1 §1.3
+- [x] p.14 DEF software product management: obiettivi azienda e clienti, comunicazione, vincoli → cap. 1 §1.4
+- [x] p.15 ELENCO interazioni tecniche dei PM (roadmap, stories, backlog, acceptance/customer testing, UI design) → cap. 1 §1.4
+- [x] p.17 ELENCO product prototyping: dimostrare a clienti e finanziatori, rivedere il design, ~6 settimane → cap. 1 §1.5
+
+## Lezione 3 — Agile Software Engineering (3 Agile Software Engineering.pdf)
+- [x] p.3–4 DEF plan-driven development, overhead per prodotti piccoli/medi → cap. 2 §2.1
+- [x] p.5 DEF Agile SE: consegnare in fretta, rispondere ai cambiamenti, minimizzare overhead → cap. 2 §2.1
+- [x] p.6 MANIFESTO agile (2001), quattro valori → cap. 2 §2.2
+- [x] p.10 ELENCO dodici principi agili → cap. 2 §2.2
+- [x] p.7,9 DEF sviluppo incrementale, prodotto come insieme di feature; FIGURA ciclo incrementale → cap. 2 §2.3
+- [x] p.12 TABELLA pratiche di Extreme Programming (5 descritte) e FIGURA con le 10 pratiche → cap. 2 §2.4
+- [x] p.14–16 DEF terminologia Scrum (team, Product Owner, ScrumMaster, backlog, sprint, increment, scrum) → cap. 2 §2.5
+- [x] p.17 FIGURA ciclo Scrum e punti del ciclo; Toyota Kata → cap. 2 §2.5 fig.
+- [x] p.18 ESEMPIO product backlog (sei PBI di quattro tipi) → cap. 2 §2.6
+- [x] p.19 DEF stati di un PBI (ready for consideration/refinement/implementation) → cap. 2 §2.6
+- [x] p.20 DEF attività sul backlog (refinement, estimation, creation, prioritization), person-day → cap. 2 §2.6
+- [x] p.21–22 DEF timeboxed sprint e benefici (progresso dimostrabile, problem discovery, work planning) → cap. 2 §2.7
+- [x] p.23 DEF sprint planning (goal, lista PBI, velocity, sprint backlog) → cap. 2 §2.7
+- [x] p.24 DEF sprint execution, scrum giornaliero → cap. 2 §2.7
+- [x] p.25 ELENCO code completeness checklist; sprint reviewing → cap. 2 §2.7
+- [x] p.26 DEF pratiche tecniche sempre usate: test automation, continuous integration → cap. 2 §2.7
+- [x] p.27–30 DEF self-organizing teams, coordinamento, interazioni esterne, project management → cap. 2 §2.8
+
+## Lezione 4 — Features, Scenarios, and Stories (4 Features, Scenarios, and Stories.pdf)
+- [x] p.2,4 DEF fattori che guidano il design; meno documentazione dei requisiti; feature = frammento di funzionalità → cap. 3 §3.1
+- [x] p.5 FIGURA relazioni personas–scenarios–stories–features → cap. 3 §3.1
+- [x] p.7–8 DEF persona e aspetti della descrizione; FIGURA → cap. 3 §3.2
+- [x] p.9 ELENCO pro e contro delle foto nelle personas (citazioni di studi) → cap. 3 §3.2
+- [x] p.10 ESEMPIO persona "Emma, a history teacher" → cap. 3 §3.2
+- [x] p.11 DEF proto-personas → cap. 3 §3.2
+- [x] p.13–16 DEF scenario, contenuti, esempio "Fishing in Ullapool", come scriverli → cap. 3 §3.3
+- [x] p.18–19 DEF user story e template "As a / I want to / So that" → cap. 3 §3.4
+- [x] p.20 ELENCO principi agili legati alle story → cap. 3 §3.4
+- [x] p.21–22 DEF splitting: slice of functionality, 1–2 giorni, epics → cap. 3 §3.4
+- [x] p.23 DEF story e planning: backlog, priorità, requirements triage → cap. 3 §3.4
+- [x] p.24–25 DEF storie e scenari, perché gli scenari, scorciatoia persona→story → cap. 3 §3.5
+- [x] p.26–28 ESEMPIO Tic Tac Toe: regole, persona Player, 11 user story → cap. 3 §3.5
+- [x] p.30 DEF proprietà delle feature (independence, coherence, relevance) → cap. 3 §3.6
+- [x] p.31 FIGURA fonti di conoscenza per il feature design → cap. 3 §3.6
+- [x] p.32 FIGURA fattori nel feature set design (tre coppie in tensione) → cap. 3 §3.6
+- [x] p.33–34 DEF feature creep, cause, quattro domande per evitarlo → cap. 3 §3.7
+- [x] p.35 DEF feature derivation e descrizione di una feature (input, activation, action, output); prototipo → cap. 3 §3.7
+
+## Lezione 5 — Software architecture (5 Software architecture.pdf)
+- [x] p.2 DEF software architecture (IEEE), attributi influenzati → cap. 4 §4.1
+- [x] p.3 DEF component e API; FIGURA → cap. 4 §4.1
+- [x] p.4 FIGURA fattori di influenza sull'architettura (quattro più non-functional) → cap. 4 §4.1
+- [x] p.5–6 TABELLA attributi non funzionali e domande chiave → cap. 4 §4.2
+- [x] p.7 DEF compromessi tra attributi (security/performance/usability, availability/time-to-market/simplicity) → cap. 4 §4.2
+- [x] p.9 DEF service, component, module; FIGURA relazioni tra componenti → cap. 4 §4.3
+- [x] p.10 DEF complessità: relazioni crescono più dei componenti → cap. 4 §4.3
+- [x] p.11 DEF tre linee guida contro la complessità → cap. 4 §4.3
+- [x] p.12 DEF layered architecture; FIGURA esempio a strati → cap. 4 §4.4
+- [x] p.13 DEF cross-cutting concerns; FIGURA; riquadro sulla security architecture → cap. 4 §4.4
+- [x] p.14 TABELLA strati generici per applicazioni web → cap. 4 §4.4
+- [x] p.15 DEF decomposizione e scelta delle tecnologie insieme → cap. 4 §4.4
+- [x] p.17–18 DEF distribution architecture; client-server con load balancer; FIGURA → cap. 4 §4.5
+- [x] p.19 DEF pattern Model-View-Controller; FIGURA → cap. 4 §4.5
+- [x] p.21 DEF HTTP e XML/JSON; multi-tier; service-oriented; FIGURE → cap. 4 §4.5
+- [x] p.22 ELENCO criteri di scelta (dati, frequenza di cambiamento, piattaforma) → cap. 4 §4.5
+- [x] p.24 DEF scelte tecnologiche vincolano l'architettura → cap. 4 §4.6
+- [x] p.25 DEF database relazionali e NoSQL → cap. 4 §4.6
+- [x] p.27 ELENCO delivery platform web/mobile, problemi del mobile → cap. 4 §4.6
+- [x] p.28 ELENCO server: clienti o cloud, SOA+cloud, vendor lock-in → cap. 4 §4.6
+- [x] p.29 DEF tecnologie di sviluppo che influenzano l'architettura → cap. 4 §4.6
+- [x] p.20,26 ESCLUSO: rimandi a video (MVC, NoSQL)
+
+## Lezione 6 — Cloud-based software (6 Cloud-based software.pdf)
+- [x] p.2 DEF cloud computing; scalability, elasticity, resilience, cost (CapEx, pay-per-use) → cap. 5 §5.1
+- [x] p.4 DEF VM vs container; FIGURA pile a confronto; vantaggi e svantaggi → cap. 5 §5.2
+- [x] p.5,7 DEF Docker; immagini, container, volumi → cap. 5 §5.3
+- [x] p.6 ELENCO storia dei container (chroot, jail, cgroups, LXC, Docker); Docker Engine e Docker Hub → cap. 5 §5.3 (solo Engine e Hub; la cronologia è esclusa)
+- [x] p.9 DEF immagini, registry, repository:tag, layer, base image → cap. 5 §5.4
+- [x] p.10 FIGURA comandi Docker (build, push, pull, run, commit) → cap. 5 §5.4
+- [x] p.12 ESEMPIO demo hello world PHP: Dockerfile, build, run, volume, un processo per container → cap. 5 §5.5
+- [x] p.13–15 ESEMPIO Docker Compose: product service (Flask) + website (PHP), docker-compose.yml → cap. 5 §5.6
+- [x] p.19 DEF IaaS, PaaS, SaaS (+FaaS): chi gestisce cosa, esempi → cap. 6 §6.1
+- [x] p.21–22 DEF SaaS, benefici per i provider → cap. 6 §6.2
+- [x] p.23 ELENCO pro e contro per i clienti → cap. 6 §6.2
+- [x] p.24 ELENCO problemi di design SaaS (local vs remote, authentication, leakage, multi-tenant vs multi-instance) → cap. 6 §6.3
+- [x] p.27 DEF multi-tenant; TABELLA esempio; TABELLA vantaggi/svantaggi → cap. 6 §6.4
+- [x] p.28 TABELLA personalizzazioni possibili per SaaS → cap. 6 §6.4
+- [x] p.29 DEF UI configurability con profili; FIGURA → cap. 6 §6.4
+- [x] p.30–31 DEF DB schema adaptation: soluzione I (colonne extra), soluzione II (extension table); ESEMPIO T516/T632 → cap. 6 §6.4
+- [x] p.32 DEF sicurezza multi-tenant: multilevel access control, encryption → cap. 6 §6.4
+- [x] p.34–36 DEF multi-instance (VM-based, container-based); TABELLA pro e contro → cap. 6 §6.5
+- [x] p.38 FIGURA decisioni architetturali (database, scalability/resilience, software structure, platform) → cap. 6 §6.6
+- [x] p.39–40 DEF tre modi per fornire il database; TABELLA fattori; casi d'uso → cap. 6 §6.6
+- [x] p.41 DEF scalability, scaling out/up, load balancing → cap. 6 §6.7
+- [x] p.42 DEF resilience, hot standby, cool standby; FIGURA → cap. 6 §6.7
+- [x] p.43 DEF software structure: monolith vs servizi stateless fine-grain → cap. 6 §6.8
+- [x] p.44–45 FIGURE scelta della cloud platform (tecnica e business), exit plan → cap. 6 §6.9
+- [x] p.3,8,11,16,17,18,20,25,26,33,37 ESCLUSO: titoli di sezione, slogan, video, analogia Pizza as a Service (metafora, il contenuto è in p.19)
+
+## Lezione 7 — Microservices architecture (7 Microservices architecture.pdf)
+- [x] p.3–4 DEF software service: stateless, interfaccia pubblicata, stato nel DB o nel richiedente → cap. 7 §7.1
+- [x] p.5 ELENCO SOA, Web Services, servizi moderni leggeri → cap. 7 §7.1
+- [x] p.6 DEF ripensamento di Amazon, microservices → cap. 7 §7.1
+- [x] p.7 ESEMPIO autenticazione: identificare i microservizi; FIGURA → cap. 7 §7.2
+- [x] p.9 DEF microservices e TABELLA delle caratteristiche → cap. 7 §7.2
+- [x] p.10 DEF coupling, cohesion, single responsibility, rule of twos → cap. 7 §7.2
+- [x] p.11 ELENCO perché un team numeroso per un microservizio → cap. 7 §7.2
+- [x] p.13 DEF motivazioni (lead time, scale) → cap. 7 §7.3
+- [x] p.14 ESEMPIO Uber, Spotify → cap. 7 §7.3
+- [x] p.15 ESEMPIO photo-printing con API gateway; FIGURA → cap. 7 §7.3
+- [x] p.17 ELENCO decisioni di design, consigli, common closure principle, punti di partenza → cap. 7 §7.4
+- [x] p.18–19 DEF comunicazione sincrona/asincrona, diretta/indiretta, message broker; FIGURE → cap. 7 §7.5
+- [x] p.20 ELENCO tre regole per la distribuzione dei dati → cap. 7 §7.6
+- [x] p.21 DEF ACID, dependent data inconsistency, replica inconsistency, eventual consistency → cap. 7 §7.6
+- [x] p.22–24 TEOREMA CAP e passaggi logici; FIGURA diagrammi di sequenza; implicazioni pratiche → cap. 7 §7.6
+- [x] p.25 DEF Saga pattern, choreography/orchestration, backward/forward → cap. 7 §7.6
+- [x] p.26 DEF approccio Netflix (quorum n/2+1) → cap. 7 §7.6
+- [x] p.27–28 DEF orchestration vs choreography; FIGURA; consiglio → cap. 7 §7.7
+- [x] p.29 DOMANDA disponibilità di due servizi al 99% → cap. 7 §7.8 (risposta calcolata)
+- [x] p.30 TABELLA tipi di failure → cap. 7 §7.8
+- [x] p.31 DEF circuit breaker → cap. 7 §7.8
+- [x] p.32–33 DEF applicazione tollerante ai guasti; Chaos Monkey → cap. 7 §7.8
+- [x] p.35 DEF approccio DevOps → cap. 7 §7.9
+- [x] p.36 FIGURA continuous deployment pipeline → cap. 7 §7.9
+- [x] p.37–38 DEF monitoring e rollback (esempio Cameras 001/002); FIGURA → cap. 7 §7.9
+- [x] p.40–42 DEF considerazioni finali: pro e contro, Fowler, curva produttività; FIGURA → cap. 7 §7.10
+- [x] p.43 ESEMPIO utenti di Uber, Netflix, Spotify → cap. 7 §7.3
+- [x] p.2,8,12,16,34,39 ESCLUSO: titoli di sezione, grafo decorativo
+
+## Lezione 8 — Architectural smells and refactorings for microservices (8 Architectural smells and refactorings for microservices.pdf)
+- [x] p.2 ELENCO caratteristiche dei microservizi (richiamo) → cap. 8 §8.1
+- [x] p.3,5 DOMANDA e problema: l'app rispetta i principi? come si rifattorizza? → cap. 8 §8.1
+- [x] p.6 DEF architectural smell → cap. 8 §8.1
+- [x] p.7 DEF multivocal review (41 riferimenti) → cap. 8 §8.1
+- [x] p.8 DEF quattro principi di design → cap. 8 §8.2
+- [x] p.9,17,20 FIGURA tassonomia principi-smell-refactoring, numeri nelle bolle → cap. 8 §8.3
+- [x] p.10 smell multiple services in one container → cap. 8 §8.3
+- [x] p.11 smell endpoint-based service interaction (55/31/14%) → cap. 8 §8.3
+- [x] p.12 smell no API gateway → cap. 8 §8.3
+- [x] p.13 DEF wobbly service interaction (16/42/22/20%) → cap. 8 §8.3
+- [x] p.14–15 smell shared persistence (50/41/9%), perché "evil", FIGURA tre refactoring → cap. 8 §8.3
+- [x] p.16 smell single-layer teams → cap. 8 §8.3
+- [x] p.19 DEF MicroFreshener → cap. 8 §8.4
+- [x] p.21–24 FIGURA notazione e schemi di smell/refactoring → cap. 8 §8.4
+- [x] p.25 valutazione: caso industriale, esperimento controllato → cap. 8 §8.4
+- [x] p.27 refactoring "let it be" → cap. 8 §8.4
+- [x] p.28–30 architettura ≠ implementazione; esempio timeout e circuit breaker → cap. 8 §8.4
+- [x] p.31–32 viste per team → cap. 8 §8.4
+- [x] p.33–34 orchestrazione dei container cambia il comportamento; esempi Kubernetes → cap. 8 §8.4
+- [x] p.35–36 FIGURA toolchain (MicroMiner, MicroTOM, MicroFreshener, TosKeriser, TosKose) → cap. 8 §8.5
+- [x] p.37 riferimenti bibliografici → cap. 8 §8.5 (solo due, i più rilevanti)
+- [x] p.1,4,18,26,35 ESCLUSO: titoli e slide di navigazione
+
+## Lezione 9 — Splitting the monolith (9 Splitting the monolith.pdf)
+- [x] p.2 ELENCO richiamo microservizi: motivazioni (lead time, scale), caratteristiche, DevOps → cap. 9 §9.1
+- [x] p.3 DEF il monolite cresce: funzionalità aggiunte, cohesion persa, loose coupling perso, ridistribuire tutto → cap. 9 §9.1
+- [x] p.4 DEF scomporre il monolite *quando* diventa un problema; FIGURA blocco diviso in pezzi → cap. 9 §9.1 (idea) e §9.8
+- [x] p.6 DEF seam (cucitura; porzione di codice trattabile in isolamento) → cap. 9 §9.2
+- [x] p.7 DEF seam come confini di servizio: bounded context (cosa resta dentro, cosa si condivide; analogia della membrana cellulare), namespace dei linguaggi (package Java) → cap. 9 §9.2
+- [x] p.8 ESEMPIO MusicCorp: quattro contesti Catalog, Finance, Warehouse, Recommendation → cap. 9 §9.2 (esempio)
+- [x] p.9 ALGORITMO organizzare il codice attorno ai seam: package per contesto, spostare codice, refactoring e test incrementali, codice rimasto = nuovo contesto, analisi dipendenze tra package (Warehouse non dipende da Finance), Structure 101; FIGURA grafo delle dipendenze → cap. 9 §9.2.1 (grafo Structure 101 descritto a parole)
+- [x] p.11 ELENCO da dove iniziare: massimo beneficio; driver pace of change, team structure, security, technology, tangled dependencies (seam meno dipeso, grafo delle dipendenze), con esempi MusicCorp → cap. 9 §9.3, figura 9.1
+- [x] p.12 DEF database = madre delle dipendenze aggrovigliate; DB usati per integrare servizi; trovare seam nei DB → cap. 9 §9.4
+- [x] p.13 ELENCO capire chi legge/scrive (Hibernate), vincoli a livello DB (foreign key; SchemaSpy), tabelle usate da più contesti → cap. 9 §9.4
+- [x] p.15–16 ESEMPIO breaking foreign key relationships (Line items, Ledger, report mensile 600 copie/2.000 USD); soluzione API del Catalog; overhead; vincoli gestiti nei servizi; controlli di coerenza; ordine con ID di catalogo rimosso; FIGURA prima/dopo → cap. 9 §9.5.1, figura 9.2
+- [x] p.17 ESEMPIO shared static data (Country codes); tre soluzioni (duplicare, dati come codice/config — evidenziata, servizio separato — overkill?); FIGURA → cap. 9 §9.5.2, figura 9.3
+- [x] p.18 ESEMPIO shared mutable data (Customer record; Finance e Warehouse); nuovo Customer service; FIGURA prima/dopo → cap. 9 §9.5.3, figura 9.4
+- [x] p.19 ESEMPIO shared tables (Item → Catalog item e Stock levels); FIGURA prima/dopo → cap. 9 §9.5.4, figura 9.5
+- [x] p.20 DEF prima gli schemi o i servizi: più chiamate al DB, integrità transazionale; schemi separati e codice insieme = più facile tornare indietro; FIGURA tre passi → cap. 9 §9.5.5, figura 9.6
+- [x] p.22 DEF transazioni tutto-o-niente; ESEMPIO nuovo ordine (Order table, Picking table); FIGURA un confine transazionale vs due; domanda "insert order ok, insert picking fallisce?" → cap. 9 §9.6, figura 9.7
+- [x] p.23 DEF soluzione 1: transazioni compensative; problemi (dove sta la logica, se la compensazione fallisce → retry, 5 operazioni) → cap. 9 §9.6.1
+- [x] p.24 DEF soluzione 2: transazioni distribuite, transaction manager, two-phase commit (voting phase, commit/rollback); vulnerabilità (manager giù, partecipante non risponde, commit fallisce dopo il voto) → cap. 9 §9.6.2, figura 9.8
+- [x] p.25 DEF soluzione 3: try again later, eventual consistency (evidenziata) → cap. 9 §9.6.3
+- [x] p.27 DEF reporting database: combinare dati di più parti (ledger + catalogo; storico acquisti + profili); read replica nel monolite; FIGURA; domanda "e se il DB è diviso?" → cap. 9 §9.7, figura 9.9
+- [x] p.28 DEF soluzione 1: data retrieval via service calls (pull via API; non scala; API non pensate per il reporting; carico) → cap. 9 §9.7.1
+- [x] p.29 DEF soluzione 2: data pump (push; mappa DB → schema di reporting; coupling accettato; costruito dal team del servizio, versionato con il servizio; backup data pump di Netflix); FIGURA → cap. 9 §9.7.2, figura 9.10
+- [x] p.30 DEF soluzione 3: event data pump (eventi di cambio di stato; subscriber; niente coupling col DB; più veloce; team diverso; svantaggio volumi); FIGURA → cap. 9 §9.7.3, figura 9.11
+- [x] p.32 ELENCO considerazioni finali: cambi piccoli e incrementali; far crescere un servizio va bene ma va diviso prima che costi troppo → cap. 9 §9.8
+- [x] p.33 riferimento Newman, Building microservices, cap. 5 → cap. 9 §9.8
+- [x] p.1,5,14,21,26,31 ESCLUSO: titolo e slide di navigazione (lavagna)
+- [x] p.10,34 ESCLUSO: immagini decorative (roccia spaccata, mani alzate, martello e bottiglia, annuncio dei laboratori)
+- [x] p.3,6,11,12,23,24,25 ESCLUSO: immagini decorative (blocco grigio, tessuto cucito, Jenga, shanghai, persone, schermata PayPal)
+
+## Lezione 10 — Testing (10 Testing.pdf)
+- [x] p.4 DEF testing: eseguire con dati che simulano input, osservare, atteso? → riuscito/fallito; FIGURA → cap. 11 §11.1, figura 11.1
+- [x] p.5 ELENCO tipi di testing: functional, user (alpha, beta), performance e load, security → cap. 11 §11.1
+- [x] p.6 CITAZIONE Dijkstra (presenza, non assenza di bug) → cap. 11 §11.1 (attenzione)
+- [x] p.7 FIGURA scala di test ≠ dimostrazione; testing ≠ verification → cap. 11 §11.1, figura 11.2
+- [x] p.9 ELENCO functional testing: tutto il codice almeno una volta, dal primo giorno, test automatici; FIGURA fasi unit-feature-system-release → cap. 11 §11.2, figura 11.3
+- [x] p.10 DEF unit testing, principio, esempio {1,5,17,45,99} → cap. 11 §11.2.1
+- [x] p.11 DEF equivalence partitions, confini → cap. 11 §11.2.1
+- [x] p.12 TABELLA linee guida dello unit testing (8) → cap. 11 tabella 11.1
+- [x] p.13 DEF feature testing; interaction test, usefulness test; product manager → cap. 11 §11.2.2
+- [x] p.14 TABELLA dalle user story ai feature test (3 storie, 4 test) → cap. 11 tabella 11.2
+- [x] p.15 DEF system testing (4 scopi), consiglio scenari/storie end-to-end → cap. 11 §11.2.3
+- [x] p.16 DEF release testing: ambiente reale, decidere se rilasciare; perché serve; rilascio continuo sul cloud → cap. 11 §11.2.4
+- [x] p.18 ELENCO test automation: diffusa, framework, test eseguibili → cap. 11 §11.3
+- [x] p.19 ALGORITMO arrange-action-assert; CODICE interest_calculator → cap. 11 §11.3
+- [x] p.20 ELENCO il codice dei test può avere bug: test semplici, review dei test → cap. 11 §11.3 (attenzione)
+- [x] p.21 ELENCO cosa si automatizza; FIGURA piramide 70/20/10 → cap. 11 §11.3, figura 11.4
+- [x] p.23 DEF TDD [XP]; FIGURA ciclo del TDD → cap. 11 §11.4, figura 11.5
+- [x] p.24 TABELLA pro e contro del TDD → cap. 11 tabella 11.3
+- [x] p.26 DEF security testing: obiettivi, perché è più difficile → cap. 11 §11.5
+- [x] p.27 ELENCO specialisti, penetration testing, approccio basato sul rischio, 8 rischi d'esempio → cap. 11 §11.5
+- [x] p.28 IDEA pensare come un attaccante → cap. 11 §11.5
+- [x] p.30 ELENCO tre limiti del testing → cap. 11 §11.6
+- [x] p.31 FIGURA processo di code review (4 fasi) → cap. 11 §11.6, figura 11.6
+- [x] p.32 ELENCO code review: un revisore, leggibilità, 200–400 righe, checklist (6 voci), commit, strumenti e Slack → cap. 11 §11.6
+- [x] p.33 ESEMPIO code review a Spotify: chapter, guild, due "+1" → cap. 11 §11.6 (esempio); FIGURA tribe in cap. 12 figura 12.9
+- [x] p.34 riferimento Sommerville cap. 9 → ESCLUSO (bibliografia)
+- [x] p.3 ESCLUSO: incidente di un lanciatore e link al video (aneddoto)
+- [x] p.1,2,8,17,22,25,29 ESCLUSO: titolo e slide di navigazione; foto di Dijkstra, foto di repertorio
+
+## Lezione 11 — Kubernetes (11 Kubernetes.pdf)
+- [x] p.3 ELENCO vantaggi dei container (isolamento, portabilità, più workload per macchina) → cap. 10 §10.1
+- [x] p.5 ELENCO quattro domande aperte → cap. 10 §10.1
+- [x] p.6 DEF container orchestration (architetto definisce i container, la piattaforma realizza) → cap. 10 §10.1 (metafora del direttore d'orchestra tolta)
+- [x] p.7 DEF Kubernetes: ciclo di vita, comunicazione, scheduling → cap. 10 §10.1
+- [x] p.10 ELENCO desired state management, YAML, Pod, repliche, worker, kubelet, perdita di un worker (lavagna del video) → cap. 10 §10.1.1 (esempio)
+- [x] p.12 DEF declarativeness: specification/status, polling, self-healing → cap. 10 §10.2.1
+- [x] p.13 DEF distribution; FIGURA workload → Kubernetes → nodi → cap. 10 §10.2.2, figura 10.1
+- [x] p.14 DEF decoupling → cap. 10 §10.2.3
+- [x] p.15 DEF immutable infrastructure → cap. 10 §10.2.4
+- [x] p.17 DEF manifest; FIGURA apiVersion/kind/metadata/spec → cap. 10 §10.3, tabella 10.1
+- [x] p.18 DEF Pod; FIGURA → cap. 10 §10.3.1, figura 10.2
+- [x] p.19 DEF Deployment, replica count, esempio 10 repliche e 3 guasti; FIGURA → cap. 10 §10.3.2, figura 10.3
+- [x] p.20 CODICE manifest Deployment ml-model-serving con annotazioni → cap. 10 §10.3.2 (esempio)
+- [x] p.21 DEF Service, label; FIGURA con Pod guasto → cap. 10 §10.3.3, figura 10.4
+- [x] p.22 CODICE manifest Service ClusterIP → cap. 10 §10.3.3 (esempio)
+- [x] p.23 DEF Ingress; FIGURA → cap. 10 §10.3.4, figura 10.5
+- [x] p.24 CODICE manifest Ingress → cap. 10 §10.3.4 (esempio)
+- [x] p.25 ELENCO altri oggetti → cap. 10 §10.3.5
+- [x] p.27 DEF master node, worker node → cap. 10 §10.4
+- [x] p.28 DEF API server, etcd; FIGURA → cap. 10 §10.4.1, figura 10.6
+- [x] p.29 DEF scheduler (3 passi); FIGURA interazione → cap. 10 §10.4.1, figura 10.7
+- [x] p.30 DEF controller-manager; FIGURA master node → cap. 10 §10.4.1, figura 10.6
+- [x] p.31 DEF kubelet; FIGURA → cap. 10 §10.4.2, figura 10.6
+- [x] p.32 DEF kube-proxy; FIGURA cluster completo → cap. 10 §10.4.2, figura 10.6
+- [x] p.34 ELENCO quando non usare K8s → cap. 10 §10.5
+- [x] p.35 TABELLA K8s contro Docker Swarm → cap. 10 tabella 10.2
+- [x] p.4,9 ESCLUSO: link a video e immagini (Tetris)
+- [x] p.1,2,8,11,16,26,33 ESCLUSO: titolo e slide di navigazione (foglietti)
+
+## Lezione 12 — DevOps (12 DevOps.pdf)
+- [x] p.4 ELENCO problemi (risposta lenta, settimane, codice da adattare, distribuzioni pianificate), obiettivi DevOps, strumenti → cap. 12 §12.1.1–12.1.2
+- [x] p.5 DEF team separati; FIGURA development/release/support → cap. 12 §12.1.1, figura 12.1
+- [x] p.6 ELENCO problemi dei team separati → cap. 12 §12.1.1
+- [x] p.7 FIGURA radici: manifesto agile, Lean Software Development (7 principi), Toyota Production System (kaizen, jidoka), microservizi → cap. 12 §12.1.2 (elenco)
+- [x] p.8 ELENCO tre fattori abilitanti; DEF DevOps → cap. 12 §12.1.2
+- [x] p.9 DEF tre principi → cap. 12 §12.1.3
+- [x] p.10 ELENCO quattro benefici → cap. 12 §12.1.3
+- [x] p.11 ELENCO competenze e cultura → cap. 12 §12.1.3
+- [x] p.13 DEF code management: obiettivi, funzionalità, perché conta; FIGURA → cap. 12 §12.2, figura 12.2
+- [x] p.15 DEF CI, continuous delivery, continuous deployment, IaC → cap. 12 §12.3
+- [x] p.17 ELENCO integrare è più che compilare (7 attività) → cap. 12 §12.3.1
+- [x] p.18 DEF CI, integration server; FIGURA → cap. 12 §12.3.1, figura 12.3
+- [x] p.19–20 DEF don't break the build, integrate twice; FIGURA → cap. 12 §12.3.1, figura 12.4
+- [x] p.21 ELENCO vantaggi della CI → cap. 12 §12.3.1
+- [x] p.22 DEF build incrementale, timestamp; FIGURA dipendenze → cap. 12 §12.3.1, figura 12.5
+- [x] p.23 ELENCO strumenti di build e CI → cap. 12 §12.3.1
+- [x] p.25 DEF continuous delivery, ambiente di produzione diverso, container → cap. 12 §12.3.2
+- [x] p.26 ELENCO deliver/deploy; FIGURA → cap. 12 §12.3.2, figura 12.6
+- [x] p.27 ELENCO benefici della continuous deployment, A/B testing, solo cloud → cap. 12 §12.3.2
+- [x] p.28 ELENCO perché non distribuire ogni modifica → cap. 12 §12.3.2
+- [x] p.29 ELENCO strumenti → cap. 12 §12.3.2
+- [x] p.32 ELENCO motivazione IaC → cap. 12 §12.3.3
+- [x] p.33 DEF IaC, CM tools; FIGURA → cap. 12 §12.3.3, figura 12.7
+- [x] p.34 ELENCO vantaggi IaC → cap. 12 §12.3.3
+- [x] p.36 ESEMPIO Puppet a NYSE/ICE (numeri) → cap. 12 §12.3.3 (esempio)
+- [x] p.38 ELENCO container → cap. 12 §12.3.3
+- [x] p.40 ELENCO quattro tipi di misure → cap. 12 §12.4
+- [x] p.41 ELENCO misurare è complesso; automatizzare; lead time → cap. 12 §12.4
+- [x] p.42 ESEMPIO metriche; FIGURA stella e trend settimanali → cap. 12 §12.4, figura 12.8 (grafico qualitativo)
+- [x] p.43 ELENCO fonti dei dati, log → cap. 12 §12.4
+- [x] p.47 ELENCO cultura di ingegneria di Spotify → cap. 12 §12.5
+- [x] p.48 DEF squad, tribe, chapter, guild; FIGURA → cap. 12 §12.5, figura 12.9
+- [x] p.49 code review a Spotify → cap. 12 §12.5 (rimando a cap. 11)
+- [x] p.51 riferimento Sommerville cap. 10 → ESCLUSO (bibliografia)
+- [x] p.3,30,35,37,44,46 ESCLUSO: link a video (DevOps, Jenkins, Puppet, Chef, New Relic, Spotify) e fermi immagine
+- [x] p.1,2,12,14,16,19,24,31,39,45,50 ESCLUSO: titolo, slide di navigazione, foto "moron of the day", logo git
+
+## Lezione 13 — Security and Privacy (13 Security and Privacy.pdf)
+- [x] p.3 DEF tre tipi di minacce; FIGURA; ransomware combina minacce → cap. 13 §13.1, figura 13.1
+- [x] p.4 DEF sicurezza di sistema; FIGURA stack → cap. 13 §13.1.1, figura 13.2
+- [x] p.5 ELENCO quattro attività di gestione → cap. 13 §13.1.1
+- [x] p.7 DEF injection, buffer overflow → cap. 13 §13.2.1
+- [x] p.8 ESEMPIO SQL poisoning (codice, due input); difesa → cap. 13 §13.2.1
+- [x] p.9 DEF sessione, cookie, session hijacking, come si ottiene il cookie → cap. 13 §13.2.2
+- [x] p.10 DEF attivo/passivo; tre difese → cap. 13 §13.2.2
+- [x] p.11 DEF cross-site scripting; FIGURA; difese → cap. 13 §13.2.3, figura 13.3
+- [x] p.12 DEF DoS, DDoS, TCP 3-way handshake, difese; DoS sugli utenti → cap. 13 §13.2.4
+- [x] p.13 DEF brute force; TABELLA tempi delle password; difese → cap. 13 §13.2.5, tabella 13.1
+- [x] p.15 DEF autenticazione, tre approcci, più fattori → cap. 13 §13.3
+- [x] p.16 ELENCO debolezze delle password, phishing, difese → cap. 13 §13.3.1
+- [x] p.17 ELENCO livello di autenticazione, costo, OAuth, federata → cap. 13 §13.3.1
+- [x] p.18 DEF identità federata, pro e contro, OAuth; FIGURA → cap. 13 §13.3.2, figura 13.4
+- [x] p.19 ELENCO dispositivi mobili → cap. 13 §13.3.3
+- [x] p.21 DEF autenticazione ≠ autorizzazione; permessi Events/Blog → cap. 13 §13.4
+- [x] p.22 ELENCO controllo degli accessi, ACL, gruppi → cap. 13 §13.4
+- [x] p.24 DEF cifratura; FIGURA; inviolabile oggi, computer quantistici → cap. 13 §13.5, figura 13.5
+- [x] p.25 DEF cifratura simmetrica; FIGURA → cap. 13 §13.5.1, figura 13.6
+- [x] p.26 DEF cifratura asimmetrica; FIGURA due usi → cap. 13 §13.5.1, figura 13.6
+- [x] p.27 DEF TLS, HTTPS, certificati, CA → cap. 13 §13.5.2
+- [x] p.28 FIGURA handshake TLS → cap. 13 §13.5.2, algoritmo e figura 13.7
+- [x] p.29 ELENCO dati in transito, a riposo, in uso → cap. 13 §13.5.3
+- [x] p.30 TABELLA quattro livelli di cifratura → cap. 13 tabella 13.2
+- [x] p.31 ELENCO gestione delle chiavi; FIGURA KMS → cap. 13 §13.5.4, figura 13.8
+- [x] p.33 DEF privacy; FIGURA leggi sulla protezione dei dati → cap. 13 §13.6, figura 13.9
+- [x] p.34 TABELLA principi di protezione dei dati → cap. 13 tabella 13.3
+- [x] p.35 ELENCO ragioni di business → cap. 13 §13.6
+- [x] p.36 ELENCO consigli → cap. 13 §13.6
+- [x] p.37 riferimento Sommerville cap. 7 → ESCLUSO (bibliografia)
+- [x] p.1,2,6,14,20,23,32 ESCLUSO: titolo e slide di navigazione
+- [x] p.7–13,19,21 ESCLUSO: immagini decorative (siringa, icone, foto del telefono, Gioconda, biglietto dei Beatles, schermata del sito di verifica delle password)
+
+## Lezione 14 — Security and microservices (14 Security and microservices.pdf)
+- [x] p.3 DEF superficie d'attacco, punto più debole → cap. 14 §14.1.1
+- [x] p.4 DEF controlli distribuiti; trust-the-network; zero-trust → cap. 14 §14.1.2
+- [x] p.5 ELENCO fiducia tra microservizi, certificati, automazione → cap. 14 §14.1.3
+- [x] p.6 DEF log, metriche, trace; strumenti → cap. 14 §14.1.4
+- [x] p.7 ELENCO container immutabili, liste e politiche dinamiche, credenziali → cap. 14 §14.1.5
+- [x] p.8 DEF contesto utente, JWT → cap. 14 §14.1.6
+- [x] p.9 ELENCO responsabilità divise tra team, approccio ibrido → cap. 14 §14.1.7
+- [x] p.10 ELENCO riepilogo delle sfide; riferimento Siriwardena e Dias → cap. 14 §14.1 (idea)
+- [x] p.12 DEF multivocal review (58 riferimenti, 2 domande, 10/10/3) → cap. 14 §14.2
+- [x] p.13 DEF confidentiality, integrity, authenticity (ISO/IEC 25010) → cap. 14 §14.2
+- [x] p.14 smell insufficient access control, confused deputy → OAuth 2.0 → cap. 14 §14.2.1
+- [x] p.15 smell publicly accessible microservices → API gateway → cap. 14 §14.2.2
+- [x] p.16 smell unnecessary privileges → least privilege principle → cap. 14 §14.2.3
+- [x] p.17 smell own crypto code → tecnologie consolidate → cap. 14 §14.2.4
+- [x] p.18 smell non-encrypted data exposure → cifrare a riposo → cap. 14 §14.2.5
+- [x] p.19 smell hardcoded secrets → cifrare i segreti → cap. 14 §14.2.6
+- [x] p.20 smell non-secured service-to-service communications → mutual TLS → cap. 14 §14.2.7
+- [x] p.21 smell unauthenticated traffic → mutual TLS, OpenID Connect → cap. 14 §14.2.8
+- [x] p.22 smell multiple user authentication → single sign-on (API gateway + OpenID Connect) → cap. 14 §14.2.9
+- [x] p.23 smell centralized authorization → autorizzazione decentralizzata → cap. 14 §14.2.10
+- [x] p.24 FIGURA tassonomia proprietà-smell-refactoring con percentuali; riferimento Ponce et al. 2022 → cap. 14 §14.2, figura 14.1, tabella 14.1
+- [x] p.26 ALGORITMO detect, triage (4 criteri), refactor; strumenti → cap. 14 §14.3
+- [x] p.1,2,11,25,27 ESCLUSO: titolo e slide di navigazione; immagini decorative (assi, ipercubo, loghi)
+
+## Lezione 15 — Quantum Software Engineering 101 (15 Quantum Software Engineering 101.pdf)
+- [x] p.6,11 DEF BQP; FIGURA classi PSPACE/NP/NP-complete/P/BQP → cap. 15 §15.1, figura 15.1
+- [x] p.7 TABELLA Shor e Grover, complessità quantistica e classica → cap. 15 tabella 15.1
+- [x] p.8,10,11 ELENCO applicazioni (tipi di problema, applicazioni, settori; 15 modi della lista Forbes riassunti) → cap. 15 §15.1
+- [x] p.13–16 DEF computer quantistico, sovrapposizione, entanglement, dai bit ai qubit → cap. 15 §15.2
+- [x] p.17–21 FIGURA parti del computer quantistico (refrigeratore, processore, involucro, interfaccia di misura, controller, Qiskit/Cirq) → cap. 15 §15.2.3, figura 15.3
+- [x] p.22 ELENCO progressi tecnologici (da 2 qubit a 1121 qubit IBM) → cap. 15 §15.2.3
+- [x] p.23 FORMULA qubit |Ψ⟩ = α|0⟩ + β|1⟩, ket, ampiezze → cap. 15 §15.2.1
+- [x] p.25–28 DEF qubit concettuale; FIGURA 60%/40%, stati e probabilità → cap. 15 §15.2.1, figura 15.2
+- [x] p.29–30 DEF entanglement, 50%/50% → cap. 15 §15.2.2
+- [x] p.31 TABELLA tecnologie dei qubit → cap. 15 tabella 15.2
+- [x] p.32 DEF topologie; FIGURA mappe dei processori IBM → cap. 15 §15.2.5, figura 15.4 (schematica)
+- [x] p.33–38 ELENCO accesso via cloud, fornitori, elenchi di macchine → cap. 15 §15.2.6
+- [x] p.40–42 CODICE OpenQASM, FIGURA circuito H+CNOT e istogramma 00/11 → cap. 15 §15.3, figura 15.5
+- [x] p.43–46 IDEA sovrapposizione finale, niente osservazione diretta, misura e collasso, shot → cap. 15 §15.3.1
+- [x] p.47 DEF NISQ → cap. 15 §15.3.2
+- [x] p.50 ELENCO limiti dei computer e dello sviluppo software quantistico → cap. 15 §15.4
+- [x] p.51 DEF QSE (Zhao), Talavera Manifesto (9 punti) → cap. 15 §15.4
+- [x] p.52–53 FIGURA strumenti del software classico che mancano al quantistico → cap. 15 §15.4 (a parole)
+- [x] p.54 ELENCO esempi di QSE (transpiler, riuso, verifica, coesistenza, QPU eterogenee) → cap. 15 §15.4
+- [x] p.56 ELENCO motivazioni shot-wise → cap. 15 §15.5.1
+- [x] p.57–58,60 DEF split e merge; FIGURA uniforme s/3 → cap. 15 §15.5.2, figura 15.6
+- [x] p.59 ELENCO politiche → cap. 15 §15.5.2
+- [x] p.62 ELENCO esperimenti (uniform, Hellinger, MISE, calibrazione, 7 QPU IBM e IonQ) → cap. 15 §15.5.3
+- [x] p.63 risultati quantitativi (boxplot descritto a parole) → cap. 15 §15.5.3
+- [x] p.64 risultati qualitativi → cap. 15 §15.5.3
+- [x] p.65 sfide, conclusione, estensioni → cap. 15 §15.5.3
+- [x] p.66 DEF Quantum Broker; FIGURA architettura; CODICE due specifiche QoS → cap. 15 §15.5.4, figura 15.7
+- [x] p.68–69 DEF circuit cutting, 4 qubit su 3 → cap. 15 §15.6.1
+- [x] p.70–71 FIGURA Cut&Shoot (cut, split, merge, sew) → cap. 15 §15.6.2, figura 15.8
+- [x] p.72–73 esperimenti (Pennylane, shot multiplier/divider), risultati (boxplot a parole) → cap. 15 §15.6.2
+- [x] p.74–75 sviluppi, multiprogramming + shot-wise (figura descritta a parole) → cap. 15 §15.6.2
+- [x] p.78–79 il budget fisso; quattro fattori; trappola costo-fedeltà → cap. 15 §15.7.1
+- [x] p.81 FIGURA curva di attivazione, Fixed-5k/18k → cap. 15 §15.7.1, figura 15.9 (qualitativa)
+- [x] p.82 TABELLA limiti teorici (20.000; 2,27 milioni; 179,8 miliardi) → cap. 15 tabella 15.3
+- [x] p.83 StableShots scatola nera, online → cap. 15 §15.7.3
+- [x] p.84 FORMULA TVD; domanda delle monete truccate → cap. 15 §15.7.2
+- [x] p.85 ESEMPIO tabella delle monete → cap. 15 tabella 15.4 (TVD ricalcolate, vedi revisione.md)
+- [x] p.86 ALGORITMO meccanismo di telemetria → cap. 15 §15.7.3
+- [x] p.87 FORMULA d_t e parametri b, l, ε, k → cap. 15 §15.7.3
+- [x] p.88 validazione backend-holdout → cap. 15 §15.7.4
+- [x] p.89–90 TABELLA scorecard → cap. 15 tabella 15.5
+- [x] p.91 budget che cresce con il circuito (4, 8, 12–14 qubit) → cap. 15 §15.7.4 (attenzione)
+- [x] p.92 deployment (IBM Runtime Sessions, Amazon Braket Reservations) → cap. 15 §15.7.5
+- [x] p.93 auditability, hash chain (4 eventi) → cap. 15 §15.7.5
+- [x] p.96 conclusioni, altri esempi → cap. 15 §15.8
+- [x] p.98 riferimenti → cap. 15 §15.8
+- [x] p.94 ESCLUSO: schermata della demo di StableShots
+- [x] p.97 ESCLUSO: "QSE: warning?" (vignetta senza testo)
+- [x] p.99–101 ESCLUSO: tesi disponibili, gruppo di ricerca, sito quantum.unipi.it (organizzativo)
+- [x] p.1–5,9,12,24,33–36,39,48–49,55,61,67,70,76–77,80,95,102 ESCLUSO: titoli, ritagli di giornale, risposta di ChatGPT, vignette e meme, indici di sezione, autori

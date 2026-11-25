@@ -1,0 +1,408 @@
+\chapter{Sviluppo agile}
+\label{cap:agile}
+
+\begin{inbreve}
+I prodotti devono arrivare presto sul mercato (capitolo~\ref{cap:prodotti}). Per questo si usano i metodi agili,
+che consegnano il software a incrementi e riducono il lavoro di pianificazione e documentazione. Il capitolo
+confronta lo sviluppo agile con quello guidato dal piano e riporta il manifesto e i dodici principi. Poi
+descrive lo sviluppo incrementale e due metodi agili: Extreme Programming e, più a fondo, Scrum.
+\end{inbreve}
+
+\section{Sviluppo guidato dal piano e sviluppo agile}
+\label{sec:agile-confronto}
+
+Nel Novecento lo sviluppo era \termine{plan-driven}. Si basava su:
+\begin{itemize}
+  \item pianificazione dettagliata del progetto;
+  \item specifica dei requisiti;
+  \item metodi di analisi e di design;
+  \item documentazione completa del sistema;
+  \item controllo formale della qualità.
+\end{itemize}
+
+Questo approccio comporta un \ingl{overhead} importante di pianificazione, progettazione e documentazione. Per i
+prodotti software di dimensioni piccole e medie l'overhead finisce per dominare il processo di sviluppo.
+
+\begin{definizione}[Agile software engineering]
+L'\termine{Agile SE} concentra l'attenzione sul software, per:
+\begin{itemize}
+  \item consegnare le funzionalità rapidamente;
+  \item rispondere rapidamente ai cambiamenti;
+  \item minimizzare l'overhead di sviluppo.
+\end{itemize}
+\end{definizione}
+
+\section{Il manifesto agile}
+\label{sec:agile-manifesto}
+
+Il \termine{Manifesto for Agile Software Development} (2001, \texttt{agilemanifesto.org}) dichiara quattro valori.
+Ogni valore ha due parti: c'è valore in entrambe, ma si preferisce quella a sinistra.
+
+\begin{center}
+\begin{tabular}{@{}rcl@{}}
+Individui e interazioni & \emph{più di} & processi e strumenti \\
+Software funzionante & \emph{più di} & documentazione completa \\
+Collaborazione con il cliente & \emph{più di} & negoziazione del contratto \\
+Risposta al cambiamento & \emph{più di} & aderenza a un piano \\
+\end{tabular}
+\end{center}
+
+Il manifesto è sviluppato in dodici principi.
+
+\begin{enumerate}
+  \item La priorità massima è soddisfare il cliente con consegne di software di valore, rapide e continue.
+  \item I cambiamenti dei requisiti sono benvenuti, anche a sviluppo avanzato. I processi agili li sfruttano a
+    vantaggio competitivo del cliente.
+  \item Si consegna software funzionante frequentemente, da un paio di settimane a un paio di mesi, preferendo
+    la scala di tempo più breve.
+  \item Persone di business e sviluppatori lavorano insieme ogni giorno per tutto il progetto.
+  \item I progetti si costruiscono attorno a persone motivate. Si dà loro l'ambiente e il supporto di cui hanno bisogno
+    e si ha fiducia che portino a termine il lavoro.
+  \item Il modo più efficiente ed efficace per comunicare con e dentro un team è la conversazione faccia a faccia.
+  \item Il software funzionante è la misura principale del progresso.
+  \item I processi agili promuovono uno sviluppo sostenibile: sponsor, sviluppatori e utenti devono poter mantenere
+    un ritmo costante indefinitamente.
+  \item L'attenzione continua all'eccellenza tecnica e a un buon design aumenta l'agilità.
+  \item La semplicità, cioè l'arte di massimizzare il lavoro \emph{non} fatto, è essenziale.
+  \item Le migliori architetture, requisiti e design emergono da team che si auto-organizzano.
+  \item A intervalli regolari il team riflette su come diventare più efficace e di conseguenza adatta il proprio
+    comportamento.
+\end{enumerate}
+
+\section{Sviluppo incrementale}
+\label{sec:agile-incrementale}
+
+Tutti i metodi agili si basano sullo \termine{sviluppo e consegna incrementali}. Il prodotto è visto come un
+insieme di \termine{feature} (\rif{sec:feature-intro}) e viene costruito aggiungendone alcune alla volta
+(\figrif{fig:agile-incrementale}).
+
+\begin{figure}[ht]
+\centering
+\begin{tikzpicture}[blocco/.append style={minimum width=3.1cm, minimum height=1cm}]
+\node[blocco] (a) at (0,0) {Choose features to be\\included in increment};
+\node[blocco] (b) at (5.2,0) {Refine feature\\descriptions};
+\node[blocco] (c) at (5.2,-2.1) {Implement and\\test feature};
+\node[blocco] (d) at (0,-2.1) {Integrate feature\\into system};
+\node[blocco] (e) at (-5.2,-2.1) {Deliver system\\increment};
+\node[font=\small, align=center] (l) at (0,1.6) {Product feature list};
+\node[font=\small, align=center] (r) at (-5.2,-3.9) {Se tutte le feature sono\\complete: system release};
+\draw[freccia] (l) -- (a);
+\draw[freccia] (a) -- (b);
+\draw[freccia] (b) -- (c);
+\draw[freccia] (c) -- (d);
+\draw[freccia] (d) -- (e);
+\draw[freccia] (e.north) |- (a.west);
+\draw[freccia] (e) -- (r);
+\end{tikzpicture}
+\caption{Ciclo dello sviluppo incrementale. Dall'elenco delle feature si scelgono quelle dell'incremento, se ne
+raffinano le descrizioni, si implementano e si collaudano, si integrano nel sistema e si consegna l'incremento. Si
+riparte finché tutte le feature sono complete: allora si consegna la release del sistema.}
+\label{fig:agile-incrementale}
+\end{figure}
+
+\section{Extreme Programming}
+\label{sec:agile-xp}
+
+\termine{Extreme Programming} (XP) è un metodo agile che riunisce dieci pratiche:
+\ingl{incremental planning}, \ingl{small releases}, \ingl{simple design}, \ingl{test-first development},
+\ingl{refactoring}, \ingl{pair programming}, \ingl{collective ownership}, \ingl{continuous integration},
+\ingl{sustainable pace}, \ingl{on-site customer}. Cinque di esse sono descritte nella \tabrif{tab:agile-xp}.
+Le altre cinque sono spiegate subito dopo la tabella.
+
+\begin{table}[ht]
+\centering
+\small
+\caption{Cinque pratiche di Extreme Programming.}
+\label{tab:agile-xp}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}p{3.4cm}X}
+\toprule
+Pratica & Descrizione \\
+\midrule
+Incremental planning / user stories & Non c'è un ``piano generale''. Ciò che va implementato (i requisiti) in
+  ogni incremento si stabilisce in discussioni con un rappresentante del cliente. I requisiti sono scritti come
+  user stories (\rif{sec:feature-storie}). Le storie incluse in una release dipendono dal tempo disponibile e
+  dalla loro priorità relativa. \\
+Small releases & Si sviluppa per primo il minimo insieme utile di funzionalità che dà valore di business. Le release
+  sono frequenti e aggiungono funzionalità alla release precedente. \\
+Test-driven development & Invece di scrivere il codice e poi i test, gli sviluppatori scrivono prima i test.
+  Questo chiarisce che cosa deve fare il codice e garantisce che esista sempre una versione ``testata''. Un
+  framework di unit test automatici esegue i test a ogni modifica. Il codice nuovo non deve ``rompere'' quello già
+  implementato. \\
+Continuous integration & Appena un task è completo, viene integrato nell'intero sistema e si crea una nuova versione.
+  Gli unit test di tutti gli sviluppatori sono eseguiti automaticamente e devono avere successo prima che la nuova
+  versione sia accettata. \\
+Refactoring & Significa migliorare struttura, leggibilità, efficienza e sicurezza di un programma. Tutti gli
+  sviluppatori devono fare refactoring del codice appena trovano possibili miglioramenti. Questo mantiene il
+  codice semplice e manutenibile. \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\subsection{Le altre cinque pratiche\aggiunta}
+
+\begin{description}[leftmargin=0pt, style=unboxed]
+  \item[Simple design.] Si progetta la soluzione più semplice che soddisfa i requisiti di \emph{adesso}, senza
+    prevedere esigenze future. Se i requisiti cambiano, il refactoring adatta il codice. È l'applicazione del principio
+    della semplicità (\rif{sec:agile-manifesto}, principio 10).
+  \item[Pair programming.] Due sviluppatori lavorano insieme alla stessa postazione. Uno scrive il codice, l'altro lo
+    legge e lo controlla subito. Il codice è rivisto mentre nasce e la conoscenza si diffonde nel team.
+  \item[Collective ownership.] Il codice non appartiene a una persona. Ogni sviluppatore può modificare qualsiasi
+    parte del sistema. Gli unit test proteggono da modifiche che rompono qualcosa.
+  \item[Sustainable pace.] Si evita il lavoro straordinario continuo: un ritmo che non si può sostenere abbassa la
+    qualità. Corrisponde al principio 8 del manifesto.
+  \item[On-site customer.] Un rappresentante del cliente è presente con il team per tutto lo sviluppo. Risponde subito
+    ai dubbi sui requisiti e decide le priorità. Corrisponde al principio 4 del manifesto.
+\end{description}
+
+\section{Scrum}
+\label{sec:agile-scrum}
+
+\begin{definizione}[Scrum]
+\termine{Scrum} è un \ingl{framework} per organizzare un progetto agile. Prevede persone designate che fanno da
+interfaccia tra il team di sviluppo e il resto dell'organizzazione.
+\end{definizione}
+
+\begin{table}[ht]
+\centering
+\small
+\caption{Terminologia di Scrum.}
+\label{tab:agile-scrum}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}p{4.2cm}X}
+\toprule
+Termine & Significato \\
+\midrule
+Development team & Piccolo team che si auto-organizza (4--8 persone), responsabile dello sviluppo del prodotto. \\
+Product Owner & Membro del team responsabile di identificare feature e attributi del prodotto, di rivedere il lavoro
+  svolto e di aiutare a collaudarlo. \\
+ScrumMaster & ``Coach'' del team: lo guida a usare Scrum in modo efficace. \\
+Product backlog & Elenco delle voci (bug, feature, miglioramenti) che il team non ha ancora completato. \\
+Sprint & Breve periodo (2--4 settimane) in cui si sviluppa un incremento del prodotto. \\
+Potentially shippable product increment & Risultato di uno sprint, di qualità sufficiente per essere messo in uso dai
+  clienti. \\
+Scrum & Riunione quotidiana del team in cui si rivede l'avanzamento e si concorda il lavoro della giornata. \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\subsection*{Il ciclo di Scrum}
+
+Il prodotto è sviluppato in una serie di sprint (\figrif{fig:agile-scrum}):
+\begin{itemize}
+  \item le voci a priorità più alta del product backlog sono scelte per lo sprint successivo;
+  \item la pianificazione dello sprint (\ingl{plan sprint}) crea lo \ingl{sprint backlog};
+  \item nello sprint il team implementa quante più voci dello sprint backlog può nel tempo dato. Le voci incomplete
+    tornano nel product backlog;
+  \item la riunione di revisione serve a imparare gli uni dagli altri come evitare i problemi e migliorare la
+    produttività negli sprint successivi.
+\end{itemize}
+L'ultimo punto richiama il \emph{Toyota Kata}: favorire il miglioramento continuo dando ai dipendenti il potere di
+individuare i problemi e di trovare insieme le soluzioni.
+
+\begin{figure}[ht]
+\centering
+\begin{tikzpicture}[blocco/.append style={minimum width=3cm, minimum height=0.9cm}]
+\node[blocco, fill=grigiochiaro] (pb) at (0,0) {Product backlog};
+\node[blocco] (sel) at (4.7,0) {Select items\\to implement};
+\node[blocco] (pl) at (9.4,0) {Plan sprint};
+\node[blocco, fill=grigiochiaro] (sb) at (9.4,-2.2) {Sprint backlog};
+\node[blocco] (sp) at (4.7,-2.2) {Sprint\\(develop software,\\test software, scrum)};
+\node[blocco] (inc) at (0,-2.2) {Shippable\\product increment};
+\node[blocco] (rev) at (0,-4.4) {Review sprint};
+\draw[freccia] (pb) -- (sel);
+\draw[freccia] (sel) -- (pl);
+\draw[freccia] (pl) -- (sb);
+\draw[freccia] (sb) -- (sp);
+\draw[freccia] (sp) -- (inc);
+\draw[freccia] (inc) -- (rev);
+\draw[freccia] (rev.west) -- (-2.6,-4.4) |- (pb.west);
+\node[font=\footnotesize, align=right, anchor=east] at (-2.75,-2.2) {review\\product\\backlog};
+\end{tikzpicture}
+\caption{Ciclo di Scrum. Le voci scelte dal product backlog diventano lo sprint backlog. Lo sprint produce un
+incremento potenzialmente consegnabile. La revisione dello sprint alimenta il product backlog per lo sprint
+successivo.}
+\label{fig:agile-scrum}
+\end{figure}
+
+\section{Il product backlog}
+\label{sec:agile-backlog}
+
+Il \termine{product backlog} è l'elenco di ciò che resta da fare per completare lo sviluppo del prodotto. Le sue
+voci si chiamano \termine{product backlog item} (PBI). Il backlog deve essere sempre \emph{ordinato per priorità}.
+
+\begin{esempio}[Un product backlog]
+\begin{enumerate}
+  \item As a teacher, I want to be able to configure the group of tools that are available to individual classes.
+    (\emph{feature})
+  \item As a parent, I want to be able to view my children's work and the assessments made by their teachers.
+    (\emph{feature})
+  \item As a teacher of young children, I want a pictorial interface for children with limited reading ability.
+    (\emph{user request})
+  \item Establish criteria for the assessment of open source software that might be used as a basis for parts of
+    this system. (\emph{development activity})
+  \item Refactor user interface code to improve understandability and performance. (\emph{engineering improvement})
+  \item Implement encryption for all personal user data. (\emph{engineering improvement})
+\end{enumerate}
+Le voci 1--3 sono \emph{user stories} (\rif{sec:feature-storie}), la 4 è un'attività del team, le 5 e 6 sono
+miglioramenti del software.
+\end{esempio}
+
+Ogni PBI si trova in uno di tre stati.
+
+\begin{description}[leftmargin=0pt, style=unboxed]
+  \item[Ready for consideration.] Idee e descrizioni di feature di alto livello, da considerare per l'inclusione nel
+    prodotto. Sono provvisorie: possono cambiare radicalmente o non essere incluse nel prodotto finale.
+  \item[Ready for refinement.] Il team ha concordato che la voce è importante e va implementata nello sviluppo
+    corrente. La definizione di ciò che serve è ragionevolmente chiara, ma serve lavoro per capirla e raffinarla.
+  \item[Ready for implementation.] La voce ha abbastanza dettaglio perché il team ne stimi lo sforzo e la
+    implementi. Le dipendenze da altre voci sono state identificate.
+\end{description}
+
+Il backlog è mantenuto con quattro attività.
+
+\begin{description}[leftmargin=0pt, style=unboxed]
+  \item[Refinement.] Le voci esistenti sono analizzate e raffinate in voci più dettagliate. Questo può far nascere
+    nuove voci.
+  \item[Estimation.] Il team stima il lavoro necessario a implementare un PBI e lo aggiunge a ogni voce analizzata.
+    Lo sforzo si esprime in \emph{person-hour} o \emph{person-day}, cioè le ore o i giorni che servirebbero a una
+    persona. Per esempio, 10 person-day con 2 persone richiedono 5 giorni.
+  \item[Creation.] Si aggiungono voci nuove: feature suggerite dal product manager, modifiche richieste alle feature,
+    miglioramenti tecnici o attività di processo (per esempio valutare strumenti di sviluppo).
+  \item[Prioritization.] Le voci sono riordinate per tenere conto di nuove informazioni e di circostanze cambiate.
+\end{description}
+
+\section{Sprint con tempo fisso}
+\label{sec:agile-sprint}
+
+Il prodotto è sviluppato in sprint, ciascuno dei quali consegna un incremento. Gli sprint durano poco (1--4
+settimane; la terminologia di Scrum, \tabrif{tab:agile-scrum}, indica 2--4) e hanno una data di inizio e una di fine definite. Sono \termine{timeboxed}: lo sviluppo si ferma alla
+fine dello sprint, che il lavoro sia completo o no. Durante lo sprint il team lavora sulle voci del product backlog.
+
+\subsection*{Benefici del timeboxing}
+
+\begin{itemize}
+  \item \emph{Progresso dimostrabile}: a ogni sprint c'è un risultato tangibile (di solito un dimostratore
+    software) che si può consegnare.
+  \item \emph{Problem discovery}: se si scoprono errori o omissioni, il lavoro da rifare è limitato alla durata di
+    uno sprint.
+  \item \emph{Work planning}: il team capisce quanto lavoro riesce a fare in un periodo fisso.
+\end{itemize}
+
+\subsection*{Le attività di uno sprint}
+
+\begin{description}[leftmargin=0pt, style=unboxed]
+  \item[Sprint planning.] Si scelgono le voci da completare nello sprint e, se serve, si raffinano per creare lo
+    sprint backlog. Non dovrebbe durare più di un giorno, all'inizio dello sprint. Comprende tre passi:
+    \begin{itemize}
+      \item fissare un \emph{sprint goal} concordato (può riguardare funzionalità, supporto, prestazioni o
+        affidabilità);
+      \item decidere l'elenco dei PBI da implementare. Gli input chiave sono le stime di sforzo associate ai PBI
+        e la \termine{velocity} del team, cioè la quantità di lavoro che il team riesce a completare in uno sprint;
+      \item creare lo \emph{sprint backlog}, una versione più dettagliata del product backlog che registra il lavoro
+        da fare nello sprint.
+    \end{itemize}
+  \item[Sprint execution.] Il team implementa le voci dello sprint backlog scelte. Se non riesce a completarle
+    tutte, lo sprint \emph{non} viene allungato: le voci non finite tornano nel product backlog e sono messe in coda per
+    uno sprint futuro.
+  \item[Scrum quotidiano.] Durante lo sprint il team ha riunioni giornaliere per coordinare il lavoro. È breve
+    (\ingl{stand-up}) e mirata, di solito all'inizio della giornata. Ognuno condivide informazioni, descrive i
+    progressi dal giorno prima, i problemi sorti e i piani per il giorno. Così tutti sanno cosa succede e, se nascono
+    problemi, possono ripianificare il lavoro a breve termine. Si rivede lo sprint backlog: le voci completate
+    sono tolte e, se emergono nuove informazioni, se ne aggiungono altre. Poi il team decide chi lavora su quali
+    voci quel giorno.
+  \item[Sprint reviewing.] Il lavoro svolto è rivisto dal team e, eventualmente, da stakeholder esterni. Il team
+    riflette anche su cosa è andato bene e cosa è andato male, per migliorare il proprio modo di lavorare.
+\end{description}
+
+Una voce si considera completa quando soddisfa una \emph{code completeness checklist}. Un esempio:
+
+\begin{itemize}
+  \item \emph{Reviewed}: il codice è stato rivisto da un altro membro del team, che ha controllato il rispetto degli
+    standard di codifica, la comprensibilità, i commenti adeguati e l'eventuale refactoring.
+  \item \emph{Unit tested}: tutti gli unit test sono stati eseguiti automaticamente e con successo.
+  \item \emph{Integrated}: il codice è integrato nel codebase del progetto e non sono stati segnalati errori di
+    integrazione.
+  \item \emph{Integration tested}: tutti gli integration test sono stati eseguiti automaticamente e con successo.
+  \item \emph{Accepted}: se opportuno, sono stati eseguiti gli acceptance test e il product owner o il team di
+    sviluppo hanno confermato che la voce è completa.
+\end{itemize}
+
+Scrum non prescrive le attività tecniche agili da usare. Due pratiche però vanno \emph{sempre} usate in uno sprint:
+la \termine{test automation} e la \termine{continuous integration}.
+
+\subsection{Test automation e continuous integration\aggiunta}
+
+La \emph{test automation} consiste nello scrivere test che il computer esegue da solo, senza intervento manuale,
+per esempio dopo ogni modifica del codice. Così un errore nuovo viene scoperto subito, mentre il lavoro è ancora
+fresco. La \emph{continuous integration} richiede di integrare spesso il lavoro di ciascuno nel codebase comune, anche
+più volte al giorno. A ogni integrazione partono i test automatici. Le due pratiche si completano: senza test
+automatici l'integrazione frequente sarebbe rischiosa, perché non si saprebbe se la modifica ha rotto qualcosa.
+
+\begin{esempio}[Pianificare uno sprint\aggiunta]
+Un team di 5 persone ha uno sprint di 2 settimane, cioè 10 giorni di lavoro ciascuno: la capacità è
+$5 \times 10 = 50$ person-day. Il backlog, già ordinato per priorità, contiene voci stimate 8, 15, 12, 10 e 9
+person-day. Si prendono le voci in ordine finché la somma sta nella capacità: $8+15 = 23$, $23+12 = 35$,
+$35+10 = 45$. La voce successiva porterebbe la somma a $45+9 = 54 > 50$: resta nel product backlog per lo
+sprint seguente. In pratica la capacità si stima dalla \emph{velocity}, cioè dal lavoro realmente completato negli
+sprint passati, non dal calendario.
+\end{esempio}
+
+\section{Team che si auto-organizzano}
+\label{sec:agile-team}
+
+\subsection*{Composizione}
+
+Un team Scrum affronta compiti diversi (per esempio rete, esperienza utente, progettazione di database) e quindi
+richiede persone con competenze ed esperienza diverse. Un team di 5--8 persone è abbastanza grande per essere vario
+e abbastanza piccolo per comunicare in modo informale ed efficace e per concordare le priorità. Poiché è il team, e
+non il singolo, a rispondere del lavoro, è più facile gestire chi esce o entra. Con una buona comunicazione ognuno
+impara qualcosa sulle aree degli altri.
+
+\subsection*{Coordinamento}
+
+Gli ideatori di Scrum supponevano team nella stessa sede. Lo scrum quotidiano si fonda però su due assunzioni che
+non sempre valgono:
+\begin{itemize}
+  \item il team è fatto di lavoratori a tempo pieno che condividono lo spazio di lavoro. In realtà i membri possono
+    essere part-time e lavorare in luoghi diversi;
+  \item tutti possono partecipare a una riunione mattutina. In realtà alcuni hanno orari flessibili o lavorano a
+    più progetti insieme.
+\end{itemize}
+
+\subsection*{Interazioni esterne}
+
+Le \termine{interazioni esterne} sono quelle dei membri del team con persone fuori dal team. Solo lo ScrumMaster e il
+Product Owner dovrebbero occuparsene: gli sviluppatori si concentrano sullo sviluppo.
+
+\subsection*{Project management}
+
+In ogni azienda i team devono riferire l'avanzamento alla direzione. Gli ideatori di Scrum non avevano previsto che lo
+ScrumMaster avesse anche responsabilità di project management. In molte aziende però succede, perché lo ScrumMaster
+conosce il lavoro in corso ed è nella posizione migliore per fornire informazioni accurate, piani di progetto e
+avanzamento.
+
+\begin{puntichiave}
+\begin{itemize}
+  \item Plan-driven: overhead dominante per prodotti piccoli e medi. Agile: consegnare presto, rispondere ai
+    cambiamenti, ridurre l'overhead.
+  \item Il manifesto dà quattro valori e dodici principi. Il software funzionante è la misura principale del progresso.
+  \item Sviluppo incrementale: si scelgono feature, si raffinano, si implementano, si integrano e si consegna un
+    incremento.
+  \item XP: pratiche come test-driven development, continuous integration e refactoring.
+  \item Scrum: team di 4--8 persone, Product Owner, ScrumMaster, product backlog, sprint di 2--4 settimane,
+    scrum quotidiano.
+  \item Lo sprint è timeboxed: non si allunga, le voci non finite tornano nel backlog. Test automation e continuous
+    integration sono sempre usate.
+\end{itemize}
+\end{puntichiave}
+
+\begin{domande}
+\begin{enumerate}
+  \item Perché l'overhead del plan-driven development pesa sui prodotti di dimensioni piccole e medie?
+  \item Quali sono i quattro valori del manifesto agile?
+  \item Che cosa significa che gli sprint sono timeboxed e quali sono i benefici?
+  \item Quali ruoli ha Scrum e quali sono le responsabilità di ciascuno?
+  \item In quali stati può trovarsi un PBI e quali attività mantengono il backlog?
+  \item Quali assunzioni sul team fa lo scrum quotidiano e quando non valgono?
+  \item Quali pratiche tecniche vanno sempre usate in uno sprint?
+\end{enumerate}
+\end{domande}

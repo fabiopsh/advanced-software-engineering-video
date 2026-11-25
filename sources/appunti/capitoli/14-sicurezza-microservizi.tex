@@ -1,0 +1,431 @@
+\chapter{Sicurezza dei microservizi}
+\label{cap:sicurezza-micro}
+
+\begin{inbreve}
+Dividere un'applicazione in microservizi cambia il modo di proteggerla: più punti d'ingresso, più comunicazioni in
+rete, più team con pratiche diverse. Il capitolo elenca prima le sette sfide della sicurezza nei microservizi. Poi
+presenta, con lo stesso schema del capitolo~\ref{cap:smell}, gli \emph{smell} che indicano possibili violazioni della
+sicurezza e i refactoring che li mitigano. Si chiude con il procedimento per eliminarli. Presuppone i
+capitoli~\ref{cap:microservizi}, \ref{cap:smell} e~\ref{cap:sicurezza}.
+\end{inbreve}
+
+\section{Le sfide}
+\label{sec:secm-sfide}
+
+\subsection{Più ampia è la superficie d'attacco, più alto è il rischio}
+
+La \termine{superficie d'attacco} è l'insieme dei punti da cui un attaccante può tentare di entrare nel sistema.
+\begin{itemize}
+  \item In un \textbf{monolite} i componenti comunicano all'interno di un unico processo.
+  \item Nei \textbf{microservizi} i servizi comunicano con chiamate remote e i punti d'ingresso possono essere molti.
+    La superficie d'attacco si allarga.
+\end{itemize}
+\uline{La sicurezza di un'applicazione è pari alla robustezza del suo punto più debole.}
+
+\subsection{I controlli distribuiti pesano sulle prestazioni}
+
+\begin{itemize}
+  \item In un \textbf{monolite} il controllo di sicurezza (\ingl{security screening}) si fa una volta sola; poi la
+    richiesta è inoltrata al componente giusto.
+  \item Nei \textbf{microservizi} ogni servizio deve fare un controllo di sicurezza indipendente. Può dover contattare
+    un \emph{security token service} remoto, il servizio che emette e verifica i token di sicurezza. Controlli ripetuti
+    e distribuiti pesano sulle prestazioni.
+\end{itemize}
+Le soluzioni sono due.
+\begin{itemize}
+  \item Un ripiego: \emph{trust-the-network}. Ci si fida della rete interna e si saltano i controlli in ogni
+    microservizio.
+  \item La tendenza dell'industria: i principi dello \termine{zero-trust networking}, in cui nessuna richiesta è
+    considerata fidata solo perché arriva dalla rete interna. In questo caso bisogna tenere conto delle prestazioni
+    complessive.
+\end{itemize}
+
+\subsection{Stabilire la fiducia tra microservizi richiede automazione}
+
+La comunicazione tra servizi deve avvenire su canali protetti. Se si usano i certificati (\rif{sec:sic-tls}):
+\begin{itemize}
+  \item ogni microservizio deve ricevere un certificato, con la relativa chiave privata, con cui autenticarsi presso
+    gli altri microservizi;
+  \item il microservizio che riceve una chiamata deve sapere come validare il certificato del chiamante;
+  \item serve un modo per stabilire all'inizio (\ingl{bootstrap}) la fiducia tra microservizi;
+  \item bisogna anche revocare i certificati e sostituirli periodicamente (\ingl{rotate}).
+\end{itemize}
+Per gestire distribuzioni su larga scala, con centinaia di microservizi, serve l'\textbf{automazione}, per esempio con
+Docker e Kubernetes (capitolo~\ref{cap:kubernetes}).
+
+\subsection{Tracciare richieste che attraversano più microservizi è difficile}
+
+\begin{itemize}
+  \item Un \termine{log} è la registrazione di un evento di un servizio.
+  \item I log si possono aggregare per produrre metriche che riflettono lo stato del sistema, per esempio il numero
+    medio di richieste di accesso non valide all'ora. Le metriche possono far scattare allarmi.
+  \item Le \termine{trace} seguono una richiesta dal punto in cui entra nel sistema al punto in cui ne esce.
+\end{itemize}
+A differenza di quanto accade nei monoliti, una richiesta può attraversare più microservizi. Mettere in relazione le
+richieste tra microservizi diversi è quindi difficile. Ci sono strumenti appositi: per esempio Prometheus e Grafana
+per monitorare le richieste in arrivo, Jaeger e Zipkin per il \emph{distributed tracing}.
+
+\subsection{I container complicano credenziali e politiche}
+
+I container sono \emph{server immutabili}: dopo l'avvio non cambiano stato (\rif{sec:k8s-immutabile}). Questo
+semplifica molto la distribuzione e la scalabilità orizzontale. Però:
+\begin{itemize}
+  \item per ogni servizio bisogna mantenere una lista \emph{dinamica} dei client ammessi e un insieme \emph{dinamico}
+    di politiche di controllo degli accessi. Per esempio si scaricano le politiche aggiornate da un endpoint di
+    amministrazione delle politiche, con un modello push o pull;
+  \item ogni servizio deve mantenere anche le proprie credenziali, da sostituire periodicamente. Per esempio si tengono
+    le credenziali nel filesystem del container e si iniettano all'avvio.
+\end{itemize}
+
+\subsection{La distribuzione rende difficile condividere il contesto utente}
+
+Il \emph{contesto utente} (chi è l'utente e quali attributi ha) va passato in modo esplicito da un microservizio
+all'altro. La sfida è costruire una fiducia tra microservizi tale che chi riceve accetti il contesto utente passato dal
+chiamante.
+
+Una soluzione diffusa è il \termine{JSON Web Token} (JWT): messaggi che trasportano gli attributi dell'utente in modo
+crittograficamente sicuro. I messaggi sono firmati, così chi li riceve può verificare che non sono stati alterati.
+
+\subsection{Le responsabilità di sicurezza sono divise tra team}
+
+\begin{itemize}
+  \item In un'architettura poliglotta squad diverse (\rif{sec:devops-spotify}) possono usare stack tecnologici diversi.
+  \item Team diversi possono seguire buone pratiche di sicurezza diverse e usare strumenti diversi per il security
+    testing statico e dinamico.
+  \item Le responsabilità di sicurezza sono quindi distribuite tra più team.
+\end{itemize}
+Le organizzazioni adottano spesso un approccio ibrido: un team centrale per la sicurezza ed esperti di sicurezza
+dentro i team.
+
+\begin{idea}[Le sette sfide]
+\begin{enumerate}
+  \item Più ampia è la superficie d'attacco, più alto è il rischio.
+  \item I controlli distribuiti pesano sulle prestazioni.
+  \item Stabilire la fiducia tra microservizi richiede automazione.
+  \item Tracciare richieste che attraversano più microservizi è difficile.
+  \item I container complicano la gestione di credenziali e politiche.
+  \item La distribuzione rende difficile condividere il contesto utente.
+  \item Le responsabilità di sicurezza sono divise tra team diversi.
+\end{enumerate}
+\end{idea}
+
+Riferimento: P. Siriwardena, N. Dias, \emph{Microservices Security in Action}, 2020.
+
+\section{Smell e refactoring per la sicurezza}
+\label{sec:secm-smell}
+
+Come per i principi di design (\rif{sec:smell-problema}), una \emph{multivocal review} di letteratura bianca e grigia,
+con 58 riferimenti, risponde a due domande.
+\begin{enumerate}
+  \item Quali sono gli smell più riconosciuti che indicano possibili violazioni della sicurezza nelle applicazioni a
+    microservizi?
+  \item Come si rifattorizza un'applicazione a microservizi per mitigare l'effetto di uno smell di sicurezza?
+\end{enumerate}
+Il risultato è una tassonomia con \textbf{10 refactoring} associati a \textbf{10 smell}, che possono colpire
+\textbf{3 proprietà di sicurezza}.
+
+\begin{definizione}[Proprietà di sicurezza]
+Le tre proprietà vengono dallo standard di qualità del software ISO/IEC 25010.
+\begin{description}[leftmargin=0pt, style=unboxed]
+  \item[Confidentiality.] Grado in cui un prodotto o sistema garantisce che i dati siano accessibili solo a chi è
+    autorizzato ad accedervi.
+  \item[Integrity.] Grado in cui un sistema, prodotto o componente impedisce modifiche non autorizzate di programmi o
+    dati.
+  \item[Authenticity.] Grado in cui si può dimostrare che l'identità di un soggetto o di una risorsa è quella
+    dichiarata.
+\end{description}
+\end{definizione}
+
+\figrif{fig:secm-tassonomia} riporta l'intera tassonomia e \tabrif{tab:secm-tassonomia} la riassume. Le percentuali
+accanto a cinque smell indicano quanto ciascuno è citato nella rassegna.
+
+\begin{figure}[ht]
+\centering
+\begin{tikzpicture}[
+  s/.style={draw=rosso, text=rosso, minimum width=5.0cm, minimum height=0.5cm, align=center, font=\scriptsize, inner sep=2pt},
+  r/.style={draw=verde, text=verde, minimum width=4.6cm, minimum height=0.5cm, align=center, font=\scriptsize, inner sep=2pt},
+  e/.style={-{Stealth[length=1.6mm]}, thin, grigio}]
+\node[font=\small\bfseries\sffamily, blu] at (-1.55,0.9) {Property};
+\node[font=\small\bfseries\sffamily, rosso] at (3.4,0.9) {Smell};
+\node[font=\small\bfseries\sffamily, verde] at (10.0,0.9) {Refactoring};
+\foreach \i/\t in {1/Insufficient access control, 2/Publicly accessible microservices,
+  3/Unnecessary privileges to microservices, 4/Own crypto code, 5/Non-encrypted data exposure,
+  6/Hardcoded secrets, 7/Non-secured service-to-service communications, 8/Unauthenticated traffic,
+  9/Multiple user authentication, 10/Centralized authorization}
+  \node[s] (s\i) at (3.4,-0.75*\i+0.75) {\t};
+\foreach \i/\t in {1/Use OAuth 2.0, 2/Add an API gateway, 3/Follow the least privilege principle,
+  4/Use established encryption technologies, 5/Encrypt all sensitive data at rest, 6/Encrypt secrets at rest,
+  7/Use mutual TLS, 8/Use OpenID Connect, 9/Use single sign-on, 10/Use decentralized authorization}
+  \node[r] (r\i) at (10.0,-0.75*\i+0.75) {\t};
+\foreach \i in {1,...,7,10} \draw[e] (s\i.east) -- (r\i.west);
+\draw[e] (s8.east) -- (r7.west);
+\draw[e] (s8.east) -- (r8.west);
+\draw[e] (s9.east) -- (r8.west);
+\draw[e] (s9.east) -- (r9.west);
+\draw[e] (s9.east) -- (r2.west);
+% proprieta
+\draw[blu, fill=blu!10] (-2.35,0.25) rectangle (-1.95,-4.75);
+\draw[blu, fill=blu!10] (-1.75,-1.25) rectangle (-1.35,-4.75);
+\draw[blu, fill=blu!10] (-1.15,-2.0) rectangle (-0.75,-7.0);
+\node[rotate=90, font=\scriptsize, text=blu] at (-2.15,-2.25) {Confidentiality};
+\node[rotate=90, font=\scriptsize, text=blu] at (-1.55,-3.0) {Integrity};
+\node[rotate=90, font=\scriptsize, text=blu] at (-0.95,-4.5) {Authenticity};
+% percentuali
+\foreach \i/\p in {1/43, 2/43, 7/55, 9/34, 10/33}
+  \node[font=\scriptsize\bfseries, text=rosso, anchor=east] at ([xshift=-2pt]s\i.west) {\p\%};
+\end{tikzpicture}
+\caption{Tassonomia degli smell di sicurezza. Le barre a sinistra mostrano quali smell colpiscono ciascuna proprietà:
+confidentiality i primi sette, integrity dal terzo al settimo, authenticity dal quarto al decimo. Ogni smell punta ai
+refactoring che lo mitigano. Use mutual TLS e Use OpenID Connect servono due smell ciascuno; Add an API gateway serve
+anche Multiple user authentication.}
+\label{fig:secm-tassonomia}
+\end{figure}
+
+\begin{table}[ht]
+\centering
+\small
+\caption{Smell di sicurezza, proprietà colpite e refactoring. C = confidentiality, I = integrity, A = authenticity.}
+\label{tab:secm-tassonomia}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}p{4.2cm}cc>{\raggedright\arraybackslash}X}
+\toprule
+Smell & Proprietà & \% & Refactoring \\
+\midrule
+Insufficient access control & C & 43 & use OAuth 2.0 \\
+Publicly accessible microservices & C & 43 & add an API gateway \\
+Unnecessary privileges to microservices & C, I & & follow the least privilege principle \\
+Own crypto code & C, I, A & & use established encryption technologies \\
+Non-encrypted data exposure & C, I, A & & encrypt all sensitive data at rest \\
+Hardcoded secrets & C, I, A & & encrypt secrets at rest \\
+Non-secured service-to-service communications & C, I, A & 55 & use mutual TLS \\
+Unauthenticated traffic & A & & use mutual TLS, use OpenID Connect \\
+Multiple user authentication & A & 34 & use single sign-on, add an API gateway, use OpenID Connect \\
+Centralized authorization & A & 33 & use decentralized authorization \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\subsection{Insufficient access control}
+\label{sec:secm-accesso}
+
+\textbf{Smell.} L'applicazione non applica il controllo degli accessi in alcuni microservizi.
+\begin{itemize}
+  \item Si apre la possibilità di un \termine{confused deputy problem}: un componente con privilegi legittimi viene
+    indotto a usarli per conto di chi non li ha. Un attaccante può così ottenere dati che non dovrebbe vedere.
+  \item Si rischia di violare la \textbf{confidentiality} dei dati e delle funzioni di business.
+\end{itemize}
+I permessi del client vanno verificati \emph{al momento della richiesta}. L'identità del client va verificata senza
+introdurre latenza in più e contesa dovuta a chiamate frequenti a un servizio centralizzato.
+
+\textbf{Refactoring}: \emph{use OAuth 2.0}, il più suggerito. OAuth 2.0 è un framework di sicurezza basato su token per
+il controllo degli accessi delegato.
+\begin{itemize}
+  \item Il proprietario di una risorsa può concedere a un client l'accesso alla risorsa per suo conto.
+  \item L'accesso è concesso per un tempo limitato e con un ambito (\ingl{scope}) limitato.
+\end{itemize}
+
+\subsection{Publicly accessible microservices}
+
+\textbf{Smell.} Alcuni microservizi sono accessibili direttamente dai client esterni.
+\begin{itemize}
+  \item Ognuno di questi microservizi deve controllare autenticazione e autorizzazione per ogni richiesta.
+  \item Le credenziali sono più esposte, e quindi aumenta la probabilità di violare la \textbf{confidentiality}.
+  \item La manutenzione dell'applicazione costa di più.
+\end{itemize}
+
+\textbf{Refactoring}: \emph{add an API gateway} (\rif{sec:micro-motivi}), il più citato.
+\begin{itemize}
+  \item I microservizi non sono più accessibili direttamente dai client esterni.
+  \item L'API gateway può imporre autenticazione, autorizzazione, \emph{throttling} e validazione del contenuto dei
+    messaggi.
+  \item I microservizi possono restare dietro un firewall.
+\end{itemize}
+Lo stesso refactoring risolve lo smell \emph{no API gateway} dei principi di design (capitolo~\ref{cap:smell}).
+
+\subsection{Unnecessary privileges to microservices}
+
+\textbf{Smell.} Ai microservizi sono concessi livelli di accesso, permessi o funzionalità che non servono a svolgere le
+loro funzioni di business. Per esempio un servizio può leggere e scrivere dati in un database, o messaggi in una coda,
+anche se non gli servono. Le risorse sono esposte senza necessità e la superficie d'attacco contro
+\textbf{confidentiality} e \textbf{integrity} si allarga.
+
+\textbf{Refactoring}: \emph{follow the least privilege principle}, il più citato.
+
+\begin{definizione}[Principio del privilegio minimo]
+Il \termine{least privilege principle} concede al codice in esecuzione solo i permessi necessari per completare i
+compiti richiesti, e nient'altro.
+\end{definizione}
+
+\subsection{Own crypto code}
+
+\textbf{Smell.} Codice crittografico ``fatto in casa''. Può causare problemi di \textbf{confidentiality},
+\textbf{integrity} e \textbf{authenticity}. Può essere perfino peggio di nessuna cifratura, perché dà un falso senso di
+sicurezza.
+
+\textbf{Refactoring}: \emph{use established encryption technologies}.
+\begin{itemize}
+  \item Usare librerie di cifratura collaudate a fondo dalla comunità, riviste e corrette regolarmente.
+  \item Evitare algoritmi di cifratura sperimentali, che possono avere vulnerabilità non ancora note.
+\end{itemize}
+
+\subsection{Non-encrypted data exposure}
+
+\textbf{Smell.} L'applicazione espone per sbaglio dati sensibili. Per esempio i dati sono memorizzati senza cifratura,
+oppure la protezione usata ha vulnerabilità o difetti. Gli intrusi possono leggere e modificare i dati, comprese le
+credenziali: \textbf{confidentiality}, \textbf{integrity} e \textbf{authenticity} possono essere violate.
+
+\textbf{Refactoring}: \emph{encrypt all sensitive data at rest}. Tutti i dati sensibili devono restare sempre cifrati
+ed essere decifrati solo quando servono (\rif{sec:sic-dati}).
+\begin{itemize}
+  \item La maggior parte dei DBMS supporta la cifratura automatica.
+  \item I sistemi operativi supportano la cifratura a livello di disco.
+  \item La cifratura a livello di applicazione è un'altra possibilità.
+  \item Vanno cifrati anche i dati nella cache.
+\end{itemize}
+La cifratura consuma risorse: si individuano i dati critici e si cifra solo ``quanto serve''.
+
+\subsection{Hardcoded secrets}
+
+\textbf{Smell.} Segreti (chiavi delle API, segreti dei client, credenziali) scritti direttamente:
+\begin{itemize}
+  \item nel codice sorgente del microservizio;
+  \item negli script di distribuzione dell'applicazione, per esempio variabili d'ambiente che passano segreti in una
+    specifica Docker Compose (\rif{sec:container-compose}).
+\end{itemize}
+I segreti non vanno mai memorizzati nelle variabili d'ambiente. Possono essere esposti per sbaglio: per esempio un
+gestore delle eccezioni può mandare queste informazioni a una piattaforma di logging. Così la \textbf{confidentiality} e
+l'\textbf{integrity} dei segreti possono essere violate.
+
+\textbf{Refactoring}: \emph{encrypt secrets at rest}, cioè cifrare i segreti. Le buone pratiche sono due.
+\begin{itemize}
+  \item Non conservare le credenziali insieme alle applicazioni o nei repository del codice sorgente.
+  \item Non usare variabili d'ambiente per passare i segreti.
+\end{itemize}
+
+\subsection{Non-secured service-to-service communications}
+
+\textbf{Smell.} I microservizi interagiscono senza usare un canale di comunicazione sicuro. I dati sono esposti ad
+attacchi \emph{man-in-the-middle} (un intruso si inserisce tra i due servizi), a intercettazioni (\ingl{eavesdropping})
+e a manomissioni (\ingl{tampering}). Gli intrusi possono leggere e alterare i dati in transito: \textbf{confidentiality},
+\textbf{integrity} e \textbf{authenticity} sono a rischio.
+
+\textbf{Refactoring}: \emph{use mutual TLS}. Nel \termine{mutual TLS} entrambe le parti, non solo il server, presentano
+un certificato (\rif{sec:sic-tls}).
+\begin{itemize}
+  \item È una soluzione largamente accettata: cifra i dati in transito e ne garantisce integrità e riservatezza.
+  \item Permette anche a un microservizio di identificare con certezza il microservizio con cui parla
+    (\emph{autenticazione reciproca}).
+\end{itemize}
+
+\subsection{Unauthenticated traffic}
+
+\textbf{Smell.} Richieste non autenticate, dall'esterno o tra microservizi. È essenziale che i microservizi possano
+autenticarsi a vicenda, soprattutto quando si passa il contesto utente. Se il traffico non è autenticato, i
+microservizi sono esposti ad attacchi. Esempi sono la manomissione dei dati, il denial of service (\rif{sec:sic-dos}) e
+l'\emph{elevation of privileges}, cioè l'acquisizione di privilegi non dovuti. La proprietà a rischio è
+l'\textbf{authenticity}.
+
+\textbf{Refactoring}: due.
+\begin{itemize}
+  \item \emph{Use mutual TLS}.
+  \item \emph{Use OpenID Connect}. \termine{OpenID Connect} usa JWT che contengono le informazioni dell'utente
+    autenticato. I microservizi verificano l'identità dell'utente presso un \emph{authorization server}.
+\end{itemize}
+
+\subsection{Multiple user authentication}
+
+\textbf{Smell.} L'applicazione offre più punti di accesso per l'autenticazione degli utenti.
+\begin{itemize}
+  \item Ogni punto di accesso è un possibile vettore d'attacco, con cui un intruso può autenticarsi come utente finale:
+    l'\textbf{authenticity} è a rischio.
+  \item La manutenzione dell'applicazione costa di più.
+\end{itemize}
+
+\textbf{Refactoring}: \emph{use single sign-on}. Con il \termine{single sign-on} c'è un unico punto d'ingresso che
+gestisce l'autenticazione degli utenti e impone la sicurezza a tutte le loro richieste. Rende anche più semplici la
+conservazione dei log e i controlli (\ingl{auditing}). Il single sign-on si ottiene:
+\begin{itemize}
+  \item aggiungendo un API gateway, se non c'è già;
+  \item usando OpenID Connect, per condividere il contesto utente.
+\end{itemize}
+
+\subsection{Centralized authorization}
+
+L'autorizzazione si può imporre ai margini dell'applicazione (nell'API gateway), in ogni microservizio, o in entrambi.
+
+\textbf{Smell.} L'applicazione gestisce l'autorizzazione solo ai margini.
+\begin{itemize}
+  \item Il punto ``centrale'' di autorizzazione diventa un collo di bottiglia: prestazioni ed efficienza peggiorano.
+  \item C'è la possibilità di un'altra forma di confused deputy problem (\rif{sec:secm-accesso}): i microservizi si
+    fidano del gateway solo in base alla sua identità. L'\textbf{authenticity} può essere violata.
+\end{itemize}
+
+\textbf{Refactoring}: \emph{use decentralized authorization}.
+\begin{itemize}
+  \item Si trasmette un token di accesso (per esempio un JWT) insieme a ogni richiesta a un microservizio.
+  \item Il microservizio concede l'accesso al chiamante solo se riceve un token noto e corretto.
+\end{itemize}
+
+Riferimento: F. Ponce, J. Soldani, H. Astudillo, A. Brogi, \emph{Smells and Refactorings for Microservices Security:
+A Multivocal Literature Review}, The Journal of Systems and Software, 2022.
+
+\section{Come eliminare gli smell di sicurezza}
+\label{sec:secm-eliminare}
+
+\begin{algoritmo}[Eliminare gli smell di sicurezza]
+\begin{enumerate}
+  \item \textbf{Detect}: individuare gli smell di sicurezza.
+  \item \textbf{Triage}: decidere quali smell affrontare e in che ordine, tenendo conto di:
+    \begin{itemize}
+      \item quanto è rilevante il servizio;
+      \item l'impatto dello smell sugli attributi di qualità;
+      \item lo sforzo necessario per il refactoring;
+      \item l'eventuale necessità di interagire con altri team.
+    \end{itemize}
+  \item \textbf{Refactor}: scegliere e applicare un refactoring.
+\end{enumerate}
+\end{algoritmo}
+
+Il triage ha più dimensioni da bilanciare insieme. Per questo servono \textbf{strumenti di supporto}, come quelli per
+gli smell architetturali (\rif{sec:smell-toolchain}).
+
+\begin{puntichiave}
+\begin{itemize}
+  \item Sette sfide:
+    \begin{itemize}
+      \item superficie d'attacco più ampia;
+      \item controlli distribuiti costosi (trust-the-network contro zero trust);
+      \item fiducia tra servizi da automatizzare (certificati);
+      \item tracing difficile;
+      \item container immutabili e credenziali da ruotare;
+      \item contesto utente da passare (JWT);
+      \item responsabilità divise tra team.
+    \end{itemize}
+  \item Una multivocal review di 58 riferimenti individua 10 smell, 10 refactoring e 3 proprietà (confidentiality,
+    integrity, authenticity, dallo standard ISO/IEC 25010).
+  \item Controllo degli accessi: insufficient access control $\to$ OAuth 2.0; publicly accessible microservices $\to$
+    API gateway; unnecessary privileges $\to$ least privilege principle.
+  \item Cifratura: own crypto code $\to$ tecnologie consolidate; dati e segreti non cifrati $\to$ cifrarli a riposo;
+    comunicazioni non protette $\to$ mutual TLS.
+  \item Autenticazione e autorizzazione: unauthenticated traffic $\to$ mutual TLS, OpenID Connect; multiple user
+    authentication $\to$ single sign-on (API gateway + OpenID Connect); centralized authorization $\to$ autorizzazione
+    decentralizzata con token.
+  \item Per eliminare gli smell: detect, triage, refactor, con strumenti di supporto.
+\end{itemize}
+\end{puntichiave}
+
+\begin{domande}
+\begin{enumerate}
+  \item Perché i microservizi allargano la superficie d'attacco rispetto a un monolite?
+  \item Che differenza c'è tra trust-the-network e zero-trust networking?
+  \item Perché stabilire la fiducia tra microservizi richiede automazione?
+  \item Perché tracciare le richieste è più difficile con i microservizi? Che differenza c'è tra log e trace?
+  \item Perché i container complicano la gestione di credenziali e politiche?
+  \item Come si condivide il contesto utente tra microservizi?
+  \item Definire confidentiality, integrity e authenticity secondo ISO/IEC 25010.
+  \item Che cos'è il confused deputy problem? In quali smell compare?
+  \item Perché i segreti non vanno passati con le variabili d'ambiente?
+  \item Che cosa aggiunge il mutual TLS al TLS? Quali smell risolve?
+  \item Come si realizza il single sign-on?
+  \item Quali passi servono per eliminare gli smell di sicurezza? Su che cosa si basa il triage?
+\end{enumerate}
+\end{domande}

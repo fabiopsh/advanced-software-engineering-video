@@ -1,0 +1,574 @@
+\chapter{Testing}
+\label{cap:testing}
+
+\begin{inbreve}
+Il testing esegue un programma su dati di prova e controlla che si comporti come previsto. Il capitolo definisce i
+tipi di testing e segue il \emph{functional testing} nelle sue fasi: unit, feature, system e release testing. Poi
+spiega come automatizzare i test, il test-driven development e il security testing. Si chiude con i limiti del testing
+e con le code review, che lo completano. Presuppone i capitoli~\ref{cap:agile} e~\ref{cap:feature}.
+\end{inbreve}
+
+\section{Che cos'è il testing}
+\label{sec:test-intro}
+
+\begin{definizione}[Testing]
+Il \termine{testing} consiste in due passi:
+\begin{enumerate}
+  \item eseguire il programma con dati che simulano gli input degli utenti;
+  \item osservare il comportamento del programma.
+\end{enumerate}
+Se il comportamento è quello atteso il test \emph{riesce}, altrimenti \emph{fallisce} (\figrif{fig:test-ciclo}).
+\end{definizione}
+
+\begin{figure}[ht]
+\centering
+\begin{tikzpicture}
+\node[blocco, text width=3.4cm] (e) at (0,0) {1. Eseguire il programma con dati che simulano gli input};
+\node[blocco, text width=2.6cm] (o) at (4.4,0) {2. Osservare il comportamento};
+\node[draw, diamond, aspect=2.2, inner sep=1pt, font=\small, align=center] (q) at (8.6,0) {comportamento\\atteso?};
+\node[blocco] (ok) at (8.6,1.8) {test riuscito};
+\node[blocco] (ko) at (8.6,-1.8) {test fallito};
+\draw[freccia] (e) -- (o);
+\draw[freccia] (o) -- (q);
+\draw[freccia] (q) -- node[right, font=\footnotesize] {sì} (ok);
+\draw[freccia] (q) -- node[right, font=\footnotesize] {no} (ko);
+\end{tikzpicture}
+\caption{Un test. Si esegue il programma su dati di prova, si osserva il comportamento e lo si confronta con quello
+atteso.}
+\label{fig:test-ciclo}
+\end{figure}
+
+I tipi di testing sono quattro.
+\begin{description}[leftmargin=0pt, style=unboxed]
+  \item[Functional testing.] Si collauda la funzionalità del sistema complessivo per scoprire i bug (\rif{sec:test-funzionale}).
+  \item[User testing.] Si verifica che il prodotto sia utile e usabile per gli utenti finali.
+    \begin{itemize}
+      \item \termine{Alpha testing}: si chiede agli utenti ``volete davvero queste feature?''.
+      \item \termine{Beta testing}: si distribuisce agli utenti una versione preliminare del prodotto, per controllarne
+        l'usabilità e la capacità di funzionare insieme ad altri sistemi (\ingl{interoperability}).
+    \end{itemize}
+  \item[Performance e load testing.] Si verifica che il sistema risponda in fretta alle richieste. Si verifica anche
+    che regga carichi diversi e che \emph{scali} senza problemi quando il carico cresce.
+  \item[Security testing.] Si cercano le vulnerabilità che un attaccante può sfruttare (\rif{sec:test-sicurezza}).
+\end{description}
+
+\begin{attenzione}[Il testing non è una verifica]
+\uline{Il testing può mostrare la presenza di bug, mai la loro assenza} (Edsger W. Dijkstra). \emph{Software
+testing} $\neq$ \emph{software verification}: lo mostra \figrif{fig:test-verifica}.
+\end{attenzione}
+
+\begin{figure}[ht]
+\centering
+\begin{tikzpicture}[scale=0.9]
+\foreach \i in {0,...,7} {
+  \pgfmathsetmacro{\x}{0.7*\i}
+  \pgfmathsetmacro{\y}{-0.55*\i}
+  \ifnum\i=1
+    \fill[rosso] (\x,\y) rectangle (\x+0.85,\y-0.2);
+  \else
+    \fill[inchiostro] (\x,\y) rectangle (\x+0.85,\y-0.2);
+  \fi
+}
+\foreach \i in {0,2,4,6} {
+  \pgfmathsetmacro{\x}{0.7*\i}
+  \pgfmathsetmacro{\y}{-0.55*\i-0.1}
+  \draw[->, verde] (\x-1.1,\y) -- (\x-0.05,\y);
+  \node[font=\footnotesize, text=verde, anchor=east] at (\x-1.1,\y) {test};
+}
+\node[font=\Large, text=rosso] at (7.2,-1.9) {$\neq$};
+\node[draw, text width=3.6cm, align=center, font=\small] at (10.0,-1.9) {dimostrazione:\\vale per \emph{tutti}\\gli input};
+\end{tikzpicture}
+\caption{Testing e verifica. A sinistra ogni gradino è un possibile input; i test (frecce verdi) ne controllano solo
+alcuni. Il gradino rosso, che contiene un bug, non è toccato da nessun test e il bug resta nascosto. A destra una
+dimostrazione, come quella di un teorema, vale per tutti i casi.}
+\label{fig:test-verifica}
+\end{figure}
+
+\subsubsection{Perché il testing non dimostra la correttezza\aggiunta}
+Un programma ha di solito un numero enorme di input possibili, e i test ne provano solo alcuni. Se tutti i test
+riescono, si sa che il programma funziona \emph{su quegli input}. Sugli altri non si sa nulla. La
+\termine{verifica} del software invece dimostra con un ragionamento formale che il programma è corretto per
+\emph{ogni} input, come si dimostra un teorema.
+
+\section{Functional testing}
+\label{sec:test-funzionale}
+
+Il functional testing segue alcune regole generali.
+\begin{itemize}
+  \item Si prepara un ampio insieme di test, in modo che \textbf{tutto il codice sia eseguito almeno una volta}.
+  \item Il testing comincia il giorno in cui si comincia a scrivere il codice.
+  \item I test automatici (\rif{sec:test-automazione}) rendono più semplice il ciclo sviluppo-test.
+\end{itemize}
+
+Il functional testing è un'attività \emph{a fasi} (\figrif{fig:test-fasi}): unit testing, feature testing, system
+testing, release testing. Il ciclo si ripete a ogni nuova versione.
+
+\begin{figure}[ht]
+\centering
+\begin{tikzpicture}
+\node[blocco] (u) at (0,1.5) {Unit testing};
+\node[blocco] (f) at (2.6,0) {Feature testing};
+\node[blocco] (s) at (0,-1.5) {System testing};
+\node[blocco] (r) at (-2.6,0) {Release testing};
+\node[font=\footnotesize] (st) at (0,2.7) {inizio};
+\draw[freccia] (st) -- (u);
+\draw[freccia] (u) to[bend left=20] (f);
+\draw[freccia] (f) to[bend left=20] (s);
+\draw[freccia] (s) to[bend left=20] (r);
+\draw[freccia] (r) to[bend left=20] (u);
+\end{tikzpicture}
+\caption{Le fasi del functional testing: unità, feature, sistema, rilascio. Dopo il rilascio il ciclo riparte con le
+modifiche successive.}
+\label{fig:test-fasi}
+\end{figure}
+
+\subsection{Unit testing}
+\label{sec:test-unit}
+
+Lo \termine{unit testing} collauda le unità del programma (per esempio una funzione o un metodo) \emph{in
+isolamento}. Si basa su un principio.
+
+\begin{idea}[Principio dello unit testing]
+Si prenda un insieme di input che hanno alcune caratteristiche in comune. Se un'unità di programma si comporta come
+previsto su quell'insieme, si comporterà allo stesso modo su un insieme più grande con le stesse caratteristiche.
+\end{idea}
+
+Per esempio, se il programma si comporta correttamente sull'insieme di input $\{1, 5, 17, 45, 99\}$, si può concludere
+che tratterà correttamente tutti gli altri interi tra 1 e 99.
+
+Da qui nasce il metodo delle \termine{equivalence partition}.
+\begin{itemize}
+  \item Si individuano le \emph{partizioni di equivalenza}: insiemi di input che il codice tratta allo stesso modo.
+  \item Si collauda il programma con più input presi da ogni partizione.
+  \item I programmatori sbagliano spesso ai confini: si individuano i \textbf{confini delle partizioni} e si scelgono
+    input proprio su quei confini.
+\end{itemize}
+
+\begin{esempio}[Partizioni e confini\aggiunta]
+Una funzione accetta gli interi da 1 a 99. Le partizioni sono tre: gli interi minori di 1 (da rifiutare), quelli da 1
+a 99 (da accettare) e quelli maggiori di 99 (da rifiutare). Si sceglie qualche valore dentro ogni partizione, per
+esempio $-5$, $45$ e $150$. Poi si aggiungono i valori ai confini: $0$ e $1$, $99$ e $100$. Un errore comune come
+scrivere \texttt{x < 99} invece di \texttt{x <= 99} viene scoperto solo dal test con 99.
+\end{esempio}
+
+\tabrif{tab:test-linee-guida} riporta le linee guida per scegliere i casi di test.
+
+\begin{table}[ht]
+\centering
+\small
+\caption{Linee guida per lo unit testing.}
+\label{tab:test-linee-guida}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}p{3.4cm}X}
+\toprule
+Linea guida & Spiegazione \\
+\midrule
+Test edge cases & Se la partizione ha limiti inferiore e superiore (lunghezza di stringhe, numeri, ecc.), scegliere
+  input ai bordi dell'intervallo. \\
+Force errors & Scegliere input che costringano il sistema a generare tutti i messaggi d'errore. Scegliere input che
+  dovrebbero produrre output non validi. \\
+Fill buffers & Scegliere input che facciano traboccare tutti i buffer di input. \\
+Repeat yourself & Ripetere più volte lo stesso input o la stessa sequenza di input. \\
+Overflow and underflow & Se il programma fa calcoli numerici, scegliere input che lo portino a calcolare numeri molto
+  grandi o molto piccoli. \\
+Don't forget null and zero & Con puntatori o stringhe, provare sempre puntatori nulli e stringhe nulle. Con le
+  sequenze, provare la sequenza vuota. Con input numerici, provare sempre lo zero. \\
+Keep count & Con liste e trasformazioni di liste, tenere il conto degli elementi di ogni lista e controllare che i
+  conteggi restino coerenti dopo ogni trasformazione. \\
+One is different & Con le sequenze, provare sempre sequenze di un solo elemento. \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\subsection{Feature testing}
+\label{sec:test-feature}
+
+Una feature del prodotto realizza una funzionalità utile all'utente (\rif{sec:feature-intro}). Va collaudata per
+mostrare che la funzionalità:
+\begin{enumerate}
+  \item è realizzata come previsto;
+  \item soddisfa i bisogni reali degli utenti.
+\end{enumerate}
+Una feature è di solito realizzata da più unità di programma che interagiscono. Per questo i test sono di due tipi.
+\begin{description}[leftmargin=0pt, style=unboxed]
+  \item[Interaction test.] Collaudano le interazioni tra unità, spesso sviluppate da sviluppatori diversi. Possono
+    rivelare anche bug nelle singole unità che lo unit testing non aveva fatto emergere.
+  \item[Usefulness test.] Verificano che la feature realizzi ciò che gli utenti probabilmente vogliono. Il product
+    manager dovrebbe partecipare alla loro progettazione.
+\end{description}
+
+I feature test si ricavano dalle user story (\rif{sec:feature-storie}). \tabrif{tab:test-storie} mostra un esempio.
+
+\begin{table}[ht]
+\centering
+\small
+\caption{Dalle user story ai feature test. In alto tre user story sulla registrazione; in basso i test che se ne
+ricavano.}
+\label{tab:test-storie}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}p{3.2cm}X}
+\toprule
+Storia & User story \\
+\midrule
+User registration & As a user, I want to be able to log in without creating a new account so that I don't have to
+  remember another login ID and password. \\
+Information sharing & As a user, I want to know what information you will share with other companies. I want to be
+  able to cancel my registration if I don't want to share this information. \\
+Email choice & As a user, I want to be able to choose the types of email that I'll get from you when I register for
+  an account. \\
+\midrule
+Test & Descrizione \\
+\midrule
+Initial login screen & Il clic sul link ``Sign-in with Google'' mostra correttamente la richiesta delle credenziali
+  Google. Il login si completa se l'utente ha già fatto l'accesso a Google. \\
+Incorrect credentials & Se l'utente inserisce credenziali Google sbagliate, compaiono il messaggio d'errore e la
+  schermata per riprovare. \\
+Shared information & Compaiono le informazioni condivise con Google, con le opzioni annulla e conferma. Se si sceglie
+  annulla, la registrazione è annullata. \\
+Email opt-in & All'utente si offre un menu di opzioni sulle email e può sceglierne più di una. Se non sceglie
+  nessuna opzione, non è iscritto a nessuna email. \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\subsection{System testing}
+\label{sec:test-sistema}
+
+Il \termine{system testing} collauda il sistema nel suo insieme, per quattro scopi:
+\begin{itemize}
+  \item scoprire interazioni inattese o indesiderate tra le feature;
+  \item scoprire se le feature lavorano bene insieme per sostenere ciò che gli utenti vogliono davvero fare;
+  \item assicurarsi che il sistema funzioni come previsto nei diversi ambienti in cui sarà usato;
+  \item collaudare reattività, throughput, sicurezza e gli altri attributi di qualità.
+\end{itemize}
+Un consiglio: usare scenari e user story (capitolo~\ref{cap:feature}) per individuare i percorsi completi
+(\ingl{end-to-end}) degli utenti nel sistema.
+
+\subsection{Release testing}
+\label{sec:test-release}
+
+Il \termine{release testing} collauda un sistema destinato al rilascio ai clienti.
+\begin{itemize}
+  \item Collauda il sistema nel suo \textbf{ambiente operativo reale}, invece che in un ambiente di test.
+  \item Lo scopo è decidere se il sistema è abbastanza buono da essere rilasciato, \emph{non} trovare bug.
+\end{itemize}
+Serve perché preparare il rilascio significa impacchettare il sistema per la distribuzione, installare il software e
+le librerie che usa e configurare i parametri. In ognuno di questi passi si possono commettere errori. Se si
+distribuisce sul cloud si può usare un processo di rilascio automatico e continuo (capitolo~\ref{cap:devops}).
+
+\section{Test automation}
+\label{sec:test-automazione}
+
+Nelle aziende che sviluppano prodotti si usa molto la test automation, già incontrata tra le pratiche di Scrum
+(\rif{sec:agile-sprint}).
+\begin{itemize}
+  \item Esistono framework di test per tutti i linguaggi di programmazione più usati.
+  \item Un test automatico è un programma eseguibile che controlla che il software restituisca il risultato atteso
+    per certi dati di input.
+\end{itemize}
+
+\begin{algoritmo}[Arrange, Action, Assert]
+Una buona pratica divide ogni test automatico in tre parti.
+\begin{enumerate}
+  \item \textbf{Arrange}: si prepara il sistema per eseguire il test. Si definiscono i parametri del test e, se
+    servono, i \emph{mock object}, oggetti finti che sostituiscono le parti del sistema non collaudate.
+  \item \textbf{Action}: si chiama l'unità da collaudare con i parametri del test.
+  \item \textbf{Assert}: si afferma ciò che deve valere se il test è eseguito con successo.
+\end{enumerate}
+\end{algoritmo}
+
+\begin{esempio}[Un test per il calcolo degli interessi]
+\begin{verbatim}
+#Arrange - set up the test parameters
+p = 0
+r = 3
+n = 31
+result_should_be = 0
+
+#Action - Call the method to be tested
+interest = interest_calculator (p, r, n)
+
+#Assert - test what should be true
+self.assertEqual (result_should_be, interest)
+\end{verbatim}
+Con un capitale \texttt{p} uguale a zero l'interesse deve essere zero, qualunque siano il tasso \texttt{r} e il numero
+di giorni \texttt{n}. È anche un caso della linea guida ``don't forget null and zero'' (\tabrif{tab:test-linee-guida}).
+\end{esempio}
+
+\begin{attenzione}[Anche il codice dei test può avere bug]
+Per ridurre il rischio di errori nei test:
+\begin{enumerate}
+  \item si scrivono test il più semplici possibile;
+  \item si rivedono tutti i test insieme al codice che collaudano.
+\end{enumerate}
+\end{attenzione}
+
+I tipi di test non si automatizzano con la stessa facilità (\figrif{fig:test-piramide}).
+\begin{itemize}
+  \item Gli \textbf{unit test} sono i più facili da automatizzare.
+  \item Buoni unit test riducono, ma non eliminano, il bisogno di feature test.
+  \item I \textbf{feature test} basati sull'interfaccia grafica (GUI) sono costosi da automatizzare: è preferibile
+    collaudare attraverso le API. Servono più asserzioni per controllare che la feature sia stata eseguita come
+    previsto.
+  \item Il \textbf{system testing} collauda il sistema facendo le veci di un utente: esegue sequenze di azioni utente.
+    Il system testing manuale è noioso e soggetto a errori. Esistono strumenti che registrano una serie di azioni e la
+    ripetono in automatico.
+\end{itemize}
+
+\begin{figure}[ht]
+\centering
+\begin{tikzpicture}
+% base larga 7, altezza 5,5: semilarghezza a quota y = 3,5 (1 - y/5,5)
+\draw (0,0) -- (7,0) -- (3.5,5.5) -- cycle;
+\draw (3.5-2.164,2.1) -- (3.5+2.164,2.1);
+\draw (3.5-1.145,3.7) -- (3.5+1.145,3.7);
+\node[font=\small] at (3.5,1.0) {Unit tests};
+\node[font=\small] at (3.5,2.9) {Feature tests};
+\node[font=\footnotesize, align=center] at (3.5,4.25) {System\\tests};
+\node[font=\small, anchor=west] at (6.5,1.0) {70\%};
+\node[font=\small, anchor=west] at (5.3,2.9) {20\%};
+\node[font=\small, anchor=west] at (4.5,4.25) {10\%};
+\draw[freccia, blu] (-0.6,5.2) -- (-0.6,0.2);
+\node[font=\footnotesize, text=blu, align=right, anchor=east] at (-0.8,2.7) {più automazione,\\costi minori};
+\end{tikzpicture}
+\caption{La piramide dei test. Alla base gli unit test, che sono il 70\% dei test; poi i feature test (20\%) e in cima
+i system test (10\%). Scendendo verso la base i test sono più facili da automatizzare e costano meno.}
+\label{fig:test-piramide}
+\end{figure}
+
+\section{Test-driven development}
+\label{sec:test-tdd}
+
+Il \termine{test-driven development} (TDD) è una pratica di Extreme Programming (\rif{sec:agile-xp}): \textbf{prima si
+scrive il test eseguibile, poi il codice}. Si scrivono piccoli unit test (\ingl{mini-unit test}) per una parte della
+funzionalità alla volta (\figrif{fig:test-tdd}).
+
+\begin{algoritmo}[Ciclo del TDD]
+\begin{enumerate}
+  \item Individuare una nuova funzionalità.
+  \item Individuare una sua realizzazione parziale, abbastanza piccola da scriverne i test.
+  \item Scrivere i mini-unit test per quella parte.
+  \item Scrivere uno \emph{stub} del codice, un abbozzo che farà fallire il test.
+  \item Eseguire tutti i test automatici: il nuovo test fallisce.
+  \item Scrivere il codice che dovrebbe far passare il test che fallisce.
+  \item Eseguire tutti i test automatici. Se qualcuno fallisce, tornare al passo 6.
+  \item Quando tutti i test passano, rifattorizzare il codice se serve.
+  \item Se la funzionalità è incompleta, tornare al passo 2; se è completa, tornare al passo 1.
+\end{enumerate}
+\end{algoritmo}
+
+\begin{figure}[ht]
+\centering
+\begin{tikzpicture}[b/.style={blocco, font=\footnotesize, text width=2.6cm}]
+\node[b] (a) at (0,4.2) {Individuare una nuova funzionalità};
+\node[b] (b) at (0,2.4) {Individuare una realizzazione parziale};
+\node[b] (c) at (4.6,2.4) {Scrivere i mini-unit test};
+\node[b] (d) at (9.2,2.4) {Scrivere uno stub che farà fallire il test};
+\node[b] (e) at (9.2,0.6) {Eseguire tutti i test automatici};
+\node[b] (f) at (9.2,-1.2) {Scrivere il codice che fa passare il test};
+\node[b] (g) at (4.6,-1.2) {Eseguire tutti i test automatici};
+\node[b] (h) at (0,-1.2) {Rifattorizzare il codice se serve};
+\node[font=\footnotesize] (s) at (0,5.5) {inizio};
+\draw[freccia] (s) -- (a);
+\draw[freccia] (a) -- (b);
+\draw[freccia] (b) -- (c);
+\draw[freccia] (c) -- (d);
+\draw[freccia] (d) -- (e);
+\draw[freccia] (e) -- (f);
+\draw[freccia] ([yshift=-4pt]f.west) -- ([yshift=-4pt]g.east);
+\draw[freccia] ([yshift=4pt]g.east) -- node[above, font=\scriptsize] {test fallito} ([yshift=4pt]f.west);
+\draw[freccia] (g) -- node[below, font=\scriptsize] {tutti passano} (h);
+\draw[freccia] (h) -- node[right, font=\scriptsize, align=left] {funzionalità\\incompleta} (b);
+\draw[freccia] (h.west) -- ++(-0.5,0) |- node[pos=0.25, left, font=\scriptsize, align=right] {funzionalità\\completa} (a.west);
+\end{tikzpicture}
+\caption{Il ciclo del test-driven development. Si scrivono prima i test per una piccola parte della funzionalità,
+poi il codice che li fa passare. Se un test fallisce si torna al codice; quando tutti passano si rifattorizza e si
+passa alla parte successiva, o alla funzionalità successiva.}
+\label{fig:test-tdd}
+\end{figure}
+
+\begin{table}[ht]
+\centering
+\small
+\caption{Vantaggi e svantaggi del test-driven development.}
+\label{tab:test-tdd}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X}
+\toprule
+Vantaggi & Svantaggi \\
+\midrule
+Approccio sistematico: i test sono legati chiaramente a sezioni di codice e non restano sezioni non collaudate. &
+  È difficile applicare il TDD al system testing. \\
+I test aiutano a capire il codice del programma. & Il TDD scoraggia i cambiamenti radicali del programma. \\
+Il debugging è più semplice e incrementale. & Il TDD porta a concentrarsi sui test invece che sul problema da
+  risolvere. \\
+Il codice è (forse) più semplice. & Il TDD porta a pensare troppo ai dettagli di implementazione invece che alla
+  struttura complessiva del programma. \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\section{Security testing}
+\label{sec:test-sicurezza}
+
+Il \termine{security testing} ha due obiettivi:
+\begin{itemize}
+  \item trovare le vulnerabilità che un attaccante può sfruttare;
+  \item fornire prove convincenti che il sistema è abbastanza sicuro.
+\end{itemize}
+
+Trovare vulnerabilità è più difficile che trovare bug, per tre motivi.
+\begin{itemize}
+  \item Bisogna collaudare qualcosa che il software \emph{non} deve fare: il numero di test possibili è potenzialmente
+    infinito.
+  \item I normali test funzionali possono non rivelare le vulnerabilità.
+  \item Lo stack software su cui si basa il prodotto (sistema operativo, librerie, database, ecc.) può contenere
+    vulnerabilità.
+\end{itemize}
+
+Un security testing completo richiede conoscenze specialistiche. Per esempio si coinvolgono specialisti esterni per il
+\termine{penetration testing}, cioè per tentare attacchi reali al sistema; è costoso. Si adotta quindi un
+\textbf{approccio basato sul rischio}:
+\begin{itemize}
+  \item si individuano i principali rischi di sicurezza del prodotto;
+  \item si sviluppano test che dimostrino che il prodotto si protegge da quei rischi.
+\end{itemize}
+Alcuni di questi test si possono automatizzare. Altri richiedono inevitabilmente di controllare a mano comportamenti o
+file.
+
+\begin{esempio}[Rischi di sicurezza]
+\begin{itemize}
+  \item Un attaccante non autorizzato accede al sistema usando credenziali autorizzate.
+  \item Una persona autorizzata accede a risorse che le sono vietate.
+  \item Il sistema di autenticazione non rileva un attaccante non autorizzato.
+  \item L'attaccante accede al database con un attacco di SQL poisoning (\rif{sec:sic-injection}).
+  \item Le sessioni HTTP sono gestite in modo scorretto.
+  \item I cookie di sessione HTTP sono rivelati a un attaccante (\rif{sec:sic-sessione}).
+  \item Dati riservati non sono cifrati.
+  \item Le chiavi di cifratura finiscono in mano a possibili attaccanti.
+\end{itemize}
+Gli attacchi citati sono descritti nel capitolo~\ref{cap:sicurezza}.
+\end{esempio}
+
+\begin{idea}[Pensare come un attaccante]
+Nel security testing bisogna pensare come un attaccante, non come un normale utente finale:
+\begin{itemize}
+  \item provare di proposito a fare la cosa sbagliata;
+  \item ripetere più volte le stesse azioni.
+\end{itemize}
+\end{idea}
+
+\section{Limiti del testing e code review}
+\label{sec:test-review}
+
+Il testing ha tre limiti.
+\begin{enumerate}
+  \item Si collauda il codice rispetto a ciò che \emph{si è capito} che il codice deve fare. Se se ne è frainteso lo
+    scopo, l'errore si ritrova sia nel codice sia nei test.
+  \item Il testing può non coprire tutto il codice scritto. Il TDD sposta il problema: invece di codice non collaudato,
+    si rischia codice incompleto.
+  \item Il testing non dice nulla sugli altri attributi di un programma, come leggibilità, struttura ed evolvibilità.
+\end{enumerate}
+
+Per questo le \termine{code review} \textbf{completano il testing}. Una code review procede in quattro fasi
+(\figrif{fig:test-review}).
+
+\begin{figure}[ht]
+\centering
+\begin{tikzpicture}[b/.style={blocco, font=\footnotesize, minimum width=2.1cm, text width=1.9cm},
+  g/.style={draw, fill=grigiochiaro, inner sep=5pt}]
+% fase 1
+\node[b] (a1) at (0,1.2) {Set up review};
+\node[b] (a2) at (0,0) {Prepare code};
+\node[b] (a3) at (0,-1.2) {Distribute code/tests};
+% fase 2
+\node[b] (b1) at (3.4,0.6) {Check code};
+\node[b] (b2) at (3.4,-0.6) {Write review report};
+% fase 3
+\node[draw, ellipse, font=\footnotesize, minimum width=2.3cm, minimum height=1.0cm] (c) at (6.9,0) {Discussion};
+% fase 4
+\node[b] (d1) at (10.3,0.6) {Prepare to-do list};
+\node[b] (d2) at (10.3,-0.6) {Make code changes};
+\begin{scope}[on background layer]
+\node[g, fit=(a1)(a3)] (fa) {};
+\node[g, fit=(b1)(b2)] (fb) {};
+\node[g, fit=(d1)(d2)] (fd) {};
+\end{scope}
+\draw[freccia] (fa) -- (fb);
+\draw[freccia] (fb) -- (c);
+\draw[freccia] (c) -- (fd);
+\node[font=\footnotesize] at (0,2.2) {Programmer};
+\node[font=\footnotesize] at (3.4,1.6) {Reviewer};
+\node[font=\footnotesize, align=center] at (6.9,1.0) {Reviewer e\\programmer};
+\node[font=\footnotesize] at (10.3,1.6) {Programmer};
+\node[font=\footnotesize] at (0,-2.2) {Review preparation};
+\node[font=\footnotesize] at (3.4,-1.6) {Code checking};
+\node[font=\footnotesize] at (6.9,-1.6) {Review};
+\node[font=\footnotesize] at (10.3,-1.6) {Follow-up};
+\end{tikzpicture}
+\caption{Le quattro fasi di una code review. Il programmatore prepara la review e distribuisce codice e test; il
+revisore controlla il codice e scrive un rapporto; i due ne discutono; infine il programmatore prepara la lista delle
+cose da fare e modifica il codice. In alto chi agisce, in basso il nome della fase.}
+\label{fig:test-review}
+\end{figure}
+
+\begin{itemize}
+  \item Spesso c'è un solo revisore, del team DevOps (capitolo~\ref{cap:devops}) oppure no.
+  \item Il revisore può commentare anche la leggibilità e la comprensibilità del codice.
+  \item Una sessione di review dovrebbe concentrarsi su 200--400 righe di codice.
+  \item Le review possono partire automaticamente dai commit su un repository condiviso.
+  \item Esistono molti strumenti per le code review, spesso usati insieme a sistemi di messaggistica come Slack.
+\end{itemize}
+
+Si usa spesso una \emph{checklist}. Per esempio:
+\begin{itemize}
+  \item si usano nomi significativi per variabili e funzioni? (generale)
+  \item sono stati considerati tutti gli errori sui dati, con i relativi test? (generale)
+  \item tutte le eccezioni sono gestite esplicitamente? (generale)
+  \item si usano parametri di default delle funzioni? (Python)
+  \item i tipi sono usati in modo coerente? (Python)
+  \item il livello di indentazione è corretto? (Python)
+\end{itemize}
+
+\begin{esempio}[Code review a Spotify]
+\label{es:test-spotify}
+A Spotify il lavoro è organizzato in \emph{squad}, piccoli team autonomi (\rif{sec:devops-spotify}).
+\begin{itemize}
+  \item Un \termine{chapter} riunisce i membri dei team che lavorano in un'area specifica: sviluppatori di front office,
+    sviluppatori di back office, amministratori di database, tester.
+  \item Una \termine{guild} è una comunità di persone di tutta l'organizzazione con interessi comuni (tecnologie web,
+    test automation), che vogliono condividere conoscenze, strumenti, codice e pratiche.
+\end{itemize}
+I chapter (a volte le guild) fanno le code review per le squad. Per fare il merge servono due ``+1'', cioè due
+approvazioni.
+\end{esempio}
+
+\begin{puntichiave}
+\begin{itemize}
+  \item Testing: eseguire il programma su dati che simulano gli input e confrontare il comportamento con quello atteso.
+    Mostra la presenza di bug, mai la loro assenza: testing $\neq$ verification.
+  \item Tipi: functional, user (alpha, beta), performance e load, security.
+  \item Functional testing a fasi:
+    \begin{itemize}
+      \item unit: in isolamento, con equivalence partition e confini;
+      \item feature: interaction e usefulness test, ricavati dalle user story;
+      \item system: il sistema intero, percorsi end-to-end;
+      \item release: nell'ambiente reale, per decidere se rilasciare, non per trovare bug.
+    \end{itemize}
+  \item Test automatici in tre parti: arrange, action, assert. Piramide: 70\% unit, 20\% feature, 10\% system.
+  \item TDD: prima il test, poi il codice, una piccola parte alla volta. Vantaggi e svantaggi in \tabrif{tab:test-tdd}.
+  \item Security testing: basato sul rischio; pensare come un attaccante.
+  \item Il testing non vede gli errori di comprensione né la qualità del codice: le code review lo completano.
+\end{itemize}
+\end{puntichiave}
+
+\begin{domande}
+\begin{enumerate}
+  \item Che cos'è il testing? Perché il testing non è una verifica?
+  \item Quali sono i tipi di testing? Che differenza c'è tra alpha e beta testing?
+  \item Enunciare il principio dello unit testing. Che cosa sono le equivalence partition e perché si testano i confini?
+  \item Che differenza c'è tra interaction test e usefulness test? Come si ricavano i feature test dalle user story?
+  \item Quali sono gli scopi del system testing? In che cosa il release testing è diverso?
+  \item Come si struttura un test automatico? Perché la piramide dei test ha quella forma?
+  \item Descrivere il ciclo del TDD. Quali sono i suoi vantaggi e svantaggi?
+  \item Perché trovare vulnerabilità è più difficile che trovare bug? Che cos'è l'approccio basato sul rischio?
+  \item Quali sono i limiti del testing? Come si svolge una code review?
+\end{enumerate}
+\end{domande}

@@ -1,0 +1,580 @@
+\chapter{Kubernetes}
+\label{cap:kubernetes}
+
+\begin{inbreve}
+I container rendono un'applicazione portabile, ma da soli non dicono che cosa fare quando un container muore, dove
+eseguirlo e come farlo comunicare con gli altri. Lo fa una piattaforma di \emph{container orchestration}, e Kubernetes
+è la più diffusa. Il capitolo ne spiega i principi di design, gli oggetti con cui si descrive un'applicazione (Pod,
+Deployment, Service, Ingress) e i componenti del cluster che li realizzano. Si chiude con i casi in cui Kubernetes non
+serve. Presuppone i capitoli~\ref{cap:container} e~\ref{cap:microservizi}.
+\end{inbreve}
+
+\section{Perché un orchestratore di container}
+\label{sec:k8s-perche}
+
+Si richiamano i vantaggi dei container (capitolo~\ref{cap:container}).
+\begin{itemize}
+  \item Isolano l'ambiente di un'applicazione con un meccanismo leggero.
+  \item Un'immagine si esegue in modo affidabile su qualunque macchina: la stessa immagine va dallo sviluppo alla
+    distribuzione (\emph{portabilità}).
+  \item Più carichi di lavoro (\ingl{workload}) possono stare sulla stessa macchina fisica, e la memoria e la CPU
+    sono usate di più.
+\end{itemize}
+
+Quando un'applicazione va in produzione restano però delle domande.
+\begin{itemize}
+  \item Che cosa succede se il container muore?
+  \item Che cosa succede se si guasta la macchina su cui gira il container?
+  \item Se più container devono comunicare tra loro, come si realizza la rete tra i container?
+  \item Se l'ambiente di produzione è fatto di più macchine, come si decide su quale eseguire un container?
+\end{itemize}
+
+A queste domande risponde la \termine{container orchestration}. L'architetto del sistema definisce quali container
+eseguire. Poi passa il controllo alla piattaforma di orchestrazione, che si occupa di realizzare e mantenere quella
+configurazione.
+
+\begin{definizione}[Kubernetes]
+\termine{Kubernetes} (abbreviato \termine{K8s}: la K, otto lettere, la s) è una piattaforma di container
+orchestration. Gestisce l'intero ciclo di vita dei singoli container, avviando e spegnendo risorse secondo necessità.
+\end{definizione}
+
+Kubernetes risponde alle domande una per una.
+\begin{itemize}
+  \item Se un container si spegne in modo inatteso, Kubernetes reagisce avviandone un altro al suo posto.
+  \item Offre un meccanismo con cui le applicazioni comunicano tra loro, anche mentre i singoli container sottostanti
+    vengono creati e distrutti (\rif{sec:k8s-service}).
+  \item Dato un insieme di workload da eseguire e un insieme di macchine in un \termine{cluster}, esamina ogni
+    container e decide la macchina migliore su cui pianificarlo (\ingl{schedule}).
+\end{itemize}
+Un cluster è un insieme di macchine collegate in rete che Kubernetes gestisce come un'unica risorsa.
+
+\subsection{Desired state management\aggiunta}
+\label{sec:k8s-stato}
+
+L'idea centrale si chiama \termine{desired state management}, gestione dello stato desiderato. Chi distribuisce
+un'applicazione non dà a Kubernetes una sequenza di comandi. Scrive in un file YAML lo stato che vuole: quali Pod
+eseguire (un Pod è un gruppo di container, \rif{sec:k8s-pod}), con quali immagini e in quante copie (\ingl{replicas}).
+I servizi del cluster ricevono il file attraverso un'API e distribuiscono i Pod sulle macchine \emph{worker}, i
+\emph{container host}. Su ogni worker un processo, il \emph{kubelet}, avvia e controlla i container
+(\rif{sec:k8s-worker}).
+
+\begin{esempio}[Che cosa succede se si perde un worker]
+Il file \texttt{App1.yaml} chiede 3 copie del Pod~1 (con due container) e 2 copie del Pod~2 (con un container). Il
+cluster ha tre worker e distribuisce le 5 copie tra di loro. Un worker si guasta e le copie che ospitava spariscono.
+Lo stato reale non coincide più con quello desiderato: per esempio restano 2 copie del Pod~1 invece di 3.
+Kubernetes se ne accorge e avvia le copie mancanti sui worker rimasti. Nessuno deve intervenire a mano.
+\end{esempio}
+
+\section{Principi di design}
+\label{sec:k8s-principi}
+
+\subsection{Declarativeness}
+
+Si definisce soltanto lo \textbf{stato desiderato} del sistema. Kubernetes:
+\begin{itemize}
+  \item rileva quando lo stato reale del sistema non corrisponde alle attese;
+  \item interviene per correggere il problema.
+\end{itemize}
+Il sistema diventa così \termine{self-healing}, capace di ripararsi da solo.
+
+Lo stato desiderato è definito da una collezione di \emph{oggetti} (\rif{sec:k8s-oggetti}).
+\begin{itemize}
+  \item Ogni oggetto ha una \termine{specification}, in cui si scrive lo stato desiderato, e uno \termine{status}, che
+    riflette lo stato corrente dell'oggetto.
+  \item Kubernetes interroga di continuo (\ingl{polling}) ogni oggetto per verificare che lo status sia uguale alla
+    specification.
+  \item Se un oggetto non risponde, Kubernetes ne avvia una nuova versione che lo sostituisce.
+  \item Se lo status di un oggetto si è allontanato dalla specification, Kubernetes dà i comandi necessari per
+    riportarlo allo stato desiderato.
+\end{itemize}
+
+\subsection{Distribution}
+
+Kubernetes offre un'interfaccia \emph{unificata} per interagire con un cluster di macchine
+(\figrif{fig:k8s-distribuzione}). Non bisogna preoccuparsi di comunicare con ogni macchina singolarmente.
+
+\begin{figure}[ht]
+\centering
+\begin{tikzpicture}
+\foreach \x/\c/\n in {3.2/blu/c1, 4.6/verde/c2, 6.0/rosso/c3}
+  \node[draw=\c, fill=\c!15, rounded corners=2pt, font=\footnotesize, minimum width=1.2cm] (\n) at (\x,2.0) {Container};
+\node[draw, fill=grigiochiaro, minimum width=8.0cm, minimum height=0.8cm] (k) at (4.6,0.6) {Kubernetes};
+\foreach \x/\n in {1.6/n1, 3.6/n2, 5.6/n3, 7.6/n4}
+  \node[draw, fill=grigiochiaro, minimum width=1.8cm, minimum height=0.8cm] (\n) at (\x,-0.9) {Node};
+\foreach \n in {c1,c2,c3} \draw[->] (\n) -- (\n |- k.north);
+\foreach \n in {n1,n2,n3,n4} \draw[<->] (\n |- k.south) -- (\n);
+\node[font=\footnotesize, align=right, anchor=east] at (0.3,2.0) {workload\\individuali};
+\node[font=\footnotesize, align=right, anchor=east] at (0.3,0.6) {interfaccia\\unificata};
+\node[font=\footnotesize, align=right, anchor=east] at (0.3,-0.9) {sistema\\distribuito};
+\end{tikzpicture}
+\caption{Distribution. I workload (i container in alto) si consegnano a Kubernetes, che offre un'unica interfaccia e
+comunica con i nodi del cluster. Chi distribuisce l'applicazione non parla con i singoli nodi.}
+\label{fig:k8s-distribuzione}
+\end{figure}
+
+\subsection{Decoupling}
+
+Ogni container va sviluppato pensando a un'unica responsabilità (\ingl{single concern}). È l'idea dell'architettura
+a microservizi (capitolo~\ref{cap:microservizi}). Kubernetes sostiene in modo naturale i \textbf{servizi
+disaccoppiati}, che si possono scalare e aggiornare in modo indipendente.
+
+\subsection{Immutable infrastructure}
+\label{sec:k8s-immutabile}
+
+Per ottenere il massimo da container e orchestrazione si distribuisce una \termine{immutable infrastructure},
+un'infrastruttura che non si modifica mai sul posto.
+\begin{itemize}
+  \item Non si entra in un container su una macchina per aggiornare una libreria. Si costruisce una nuova immagine con
+    la modifica, si distribuisce la nuova versione e si termina la vecchia.
+  \item Durante il ciclo di vita del progetto (sviluppo, test, produzione) si usa \textbf{la stessa immagine}. Si
+    cambiano solo configurazioni esterne all'immagine, per esempio montando un file di configurazione.
+  \item I container sono pensati come \emph{effimeri}: pronti a essere sostituiti in qualsiasi momento da un'altra
+    istanza.
+  \item Tornare a uno stato precedente (\ingl{roll back}), per esempio dopo un errore, è facile: basta aggiornare la
+    configurazione perché usi un'immagine più vecchia.
+\end{itemize}
+
+\section{Gli oggetti di Kubernetes}
+\label{sec:k8s-oggetti}
+
+Gli oggetti di Kubernetes si definiscono in file chiamati \termine{manifest}, scritti in YAML o in JSON. Un manifest
+ha quattro parti (\tabrif{tab:k8s-manifest}).
+
+\begin{table}[ht]
+\centering
+\small
+\caption{Le quattro parti di un manifest e la domanda a cui risponde ciascuna.}
+\label{tab:k8s-manifest}
+\begin{tabularx}{0.9\linewidth}{>{\ttfamily}lX}
+\toprule
+\normalfont Parte & Domanda \\
+\midrule
+apiVersion & Qual è il gruppo dell'API dell'oggetto e qual è la sua versione? \\
+kind & Che cosa si sta creando: un Pod, un Service o altro? \\
+metadata & Quali dati identificano in modo univoco l'oggetto (per esempio il nome)? \\
+spec & Quale deve essere lo stato dell'oggetto? Quale immagine usa? Quali altre configurazioni? \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\subsection{Pod}
+\label{sec:k8s-pod}
+
+\begin{definizione}[Pod]
+Un \termine{Pod} è l'unità che Kubernetes esegue. È formato da:
+\begin{itemize}
+  \item uno o più container strettamente collegati;
+  \item uno strato di rete condiviso;
+  \item volumi del filesystem condivisi.
+\end{itemize}
+\end{definizione}
+
+Ogni Pod riceve un indirizzo IP proprio (\figrif{fig:k8s-pod}). I container dello stesso Pod condividono quell'indirizzo
+e i volumi.
+
+\begin{figure}[ht]
+\centering
+\begin{tikzpicture}
+\draw[fill=grigiochiaro] (0,0) rectangle (4.6,2.6);
+\node[font=\footnotesize\bfseries, anchor=north west] at (0.1,2.55) {Pod};
+\node[font=\footnotesize, anchor=north east] at (4.5,2.55) {IP address};
+\node[draw=rosso, fill=rosso!20, rounded corners=3pt, minimum width=1.6cm, minimum height=0.75cm, font=\footnotesize] at (1.2,1.4) {Container};
+\node[draw=verde, fill=verde!20, rounded corners=3pt, minimum width=1.6cm, minimum height=0.75cm, font=\footnotesize] at (3.4,1.4) {Container};
+\node[draw=blu, fill=blu!20, minimum width=4.0cm, minimum height=0.45cm, font=\footnotesize] at (2.3,0.45) {Volume};
+\end{tikzpicture}
+\caption{Un Pod con due container. I due container condividono l'indirizzo IP del Pod (in alto a destra) e il volume
+(in basso).}
+\label{fig:k8s-pod}
+\end{figure}
+
+\subsection{Deployment}
+\label{sec:k8s-deployment}
+
+\begin{definizione}[Deployment]
+Un oggetto \termine{Deployment} comprende una collezione di Pod definiti da un \emph{template} e un \termine{replica
+count}: il numero $n$ di copie del template che si vogliono eseguire. Il cluster cerca sempre di avere $n$ Pod
+disponibili.
+\end{definizione}
+
+Per esempio, se un Deployment ha replica count 10 e 3 Pod si guastano, Kubernetes pianifica altri 3 Pod su un'altra
+macchina del cluster (\figrif{fig:k8s-deployment}).
+
+\begin{figure}[ht]
+\centering
+\begin{tikzpicture}
+\draw[dashed] (-0.4,-0.6) rectangle (9.0,2.4);
+\node[font=\footnotesize, anchor=north west] at (-0.35,2.35) {Deployment};
+\node[font=\footnotesize, rotate=90] at (-0.1,0.9) {Template};
+\foreach \x in {0.4, 5.6} {
+  \draw[fill=grigiochiaro] (\x,0) rectangle (\x+3.0,1.8);
+  \node[font=\scriptsize\bfseries, anchor=north west] at (\x+0.05,1.78) {Pod};
+  \node[font=\scriptsize, anchor=north east] at (\x+2.95,1.78) {IP address};
+  \node[draw=rosso, fill=rosso!20, rounded corners=2pt, minimum width=1.1cm, font=\scriptsize] at (\x+0.8,0.95) {Container};
+  \node[draw=verde, fill=verde!20, rounded corners=2pt, minimum width=1.1cm, font=\scriptsize] at (\x+2.2,0.95) {Container};
+  \node[draw=blu, fill=blu!20, minimum width=2.6cm, minimum height=0.3cm, font=\scriptsize] at (\x+1.5,0.3) {Volume};
+}
+\node at (4.5,0.9) {$\cdots$};
+\node[font=\footnotesize] at (4.5,-0.3) {$n$ repliche};
+\end{tikzpicture}
+\caption{Un Deployment. Il template descrive un Pod; il Deployment ne mantiene in esecuzione $n$ copie identiche
+(repliche), ciascuna con il proprio indirizzo IP.}
+\label{fig:k8s-deployment}
+\end{figure}
+
+\begin{esempio}[Deployment di un modello di machine learning]
+Il manifest seguente esegue 10 istanze di un container che serve un modello di machine learning attraverso
+un'interfaccia REST.
+\begin{verbatim}
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ml-model-serving
+  labels:
+    app: ml-model
+spec:
+  replicas: 10
+  selector:
+    matchLabels:
+      app: ml-model
+  template:
+    metadata:
+      labels:
+        app: ml-model
+    spec:
+      containers:
+      - name: ml-rest-server
+        image: ml-serving:1.0
+        ports:
+        - containerPort: 80
+\end{verbatim}
+Le parti della \texttt{spec} rispondono a quattro domande.
+\begin{description}[leftmargin=0pt, style=unboxed]
+  \item[\texttt{replicas}.] Quanti Pod devono essere in esecuzione? Dieci.
+  \item[\texttt{selector}.] Come si trovano i Pod che appartengono a questo Deployment? Sono quelli con l'etichetta
+    \texttt{app: ml-model}.
+  \item[\texttt{template}.] Come deve essere fatto un Pod? La sua \texttt{metadata} aggiunge ai Pod l'etichetta
+    \texttt{app: ml-model}, così il Deployment trova i Pod da gestire.
+  \item[\texttt{containers}.] Quali container girano nel Pod? Uno solo, \texttt{ml-rest-server}, dall'immagine
+    \texttt{ml-serving:1.0}, in ascolto sulla porta 80.
+\end{description}
+\end{esempio}
+
+\subsection{Service}
+\label{sec:k8s-service}
+
+Ogni Pod riceve un indirizzo IP unico, con cui si può comunicare con esso. L'insieme dei Pod di un Deployment però
+può cambiare in qualunque momento: un Pod si guasta, uno nuovo lo sostituisce con un altro indirizzo. \emph{Come si
+comunica con i Pod se il loro insieme cambia di continuo?}
+
+\begin{definizione}[Service]
+Un \termine{Service} offre un punto di accesso stabile (\ingl{endpoint}) che dirige il traffico verso i Pod
+desiderati. L'endpoint resta lo stesso anche quando i Pod sottostanti cambiano per aggiornamenti, scaling o guasti.
+\end{definizione}
+
+Un Service sa a quali Pod mandare il traffico grazie alle \termine{label}: coppie chiave-valore definite nei metadati
+dei Pod (\figrif{fig:k8s-service}).
+
+\begin{figure}[ht]
+\centering
+\begin{tikzpicture}
+\node[draw, fill=grigiochiaro, minimum width=3.2cm, minimum height=0.6cm, font=\footnotesize] (s) at (5.0,3.0) {Service};
+\draw[->] (5.0,4.0) -- node[right, font=\footnotesize] {traffico} (s.north);
+\draw[dashed] (-0.2,-0.9) rectangle (10.2,1.9);
+\node[font=\scriptsize, anchor=north west] at (-0.15,1.85) {Deployment};
+\foreach \x/\i in {0.2/1, 2.8/2, 5.4/3, 8.0/4} {
+  \ifnum\i=2
+    \draw[grigio!50, fill=grigiochiaro!40] (\x,-0.4) rectangle (\x+2.0,1.2);
+    \node[draw=rosso!40, fill=rosso!8, text=grigio!60, rounded corners=2pt, font=\tiny, minimum width=0.75cm] at (\x+0.5,0.55) {Cont.};
+    \node[draw=verde!40, fill=verde!8, text=grigio!60, rounded corners=2pt, font=\tiny, minimum width=0.75cm] at (\x+1.5,0.55) {Cont.};
+    \node[font=\scriptsize, text=grigio, anchor=north west] at (\x+0.02,1.18) {Pod};
+  \else
+    \draw[fill=grigiochiaro] (\x,-0.4) rectangle (\x+2.0,1.2);
+    \node[draw=rosso, fill=rosso!20, rounded corners=2pt, font=\tiny, minimum width=0.75cm] at (\x+0.5,0.55) {Cont.};
+    \node[draw=verde, fill=verde!20, rounded corners=2pt, font=\tiny, minimum width=0.75cm] at (\x+1.5,0.55) {Cont.};
+    \node[font=\scriptsize, anchor=north west] at (\x+0.02,1.18) {Pod};
+    \draw[->] (s.south) -- (\x+1.0,1.2);
+  \fi
+  \node[font=\scriptsize, anchor=north] at (\x+1.0,-0.05) {\texttt{app: ml-model}};
+}
+\node[font=\footnotesize, text=grigio, align=center, anchor=north] at (3.8,-0.95) {Pod guasto:\\non riceve più traffico};
+\node[font=\footnotesize, align=center, anchor=north] at (9.0,-0.95) {Pod nuovo, con la stessa label:\\riceve traffico};
+\end{tikzpicture}
+\caption{Un Service davanti a un Deployment. Il Service manda il traffico ai Pod con la label \texttt{app: ml-model}.
+Il secondo Pod si è guastato (in grigio) e non riceve più traffico. Il Deployment avvia un Pod nuovo (a destra) con la
+stessa label, e il Service comincia a mandargli traffico. Chi usa il Service non si accorge del cambio.}
+\label{fig:k8s-service}
+\end{figure}
+
+\begin{esempio}[Service per il Deployment precedente]
+\begin{verbatim}
+apiVersion: v1
+kind: Service
+metadata:
+  name: ml-model-svc
+  labels:
+    app: ml-model
+spec:
+  type: ClusterIP
+  selector:
+    app: ml-model
+  ports:
+  - protocol: TCP
+    port: 80
+\end{verbatim}
+\begin{description}[leftmargin=0pt, style=unboxed]
+  \item[\texttt{type}.] Come si vuole esporre l'endpoint? \texttt{ClusterIP} lo rende raggiungibile all'interno del
+    cluster.
+  \item[\texttt{selector}.] Come si trovano i Pod verso cui dirigere il traffico? Sono quelli con la label
+    \texttt{app: ml-model}, cioè i Pod del Deployment dell'esempio precedente.
+  \item[\texttt{ports}.] Come parlano i client con il Service? Con TCP sulla porta 80.
+\end{description}
+\end{esempio}
+
+\subsection{Ingress}
+\label{sec:k8s-ingress}
+
+Un Service espone un'applicazione dietro un endpoint stabile, ma \textbf{solo al traffico interno al cluster}. Per
+esporla al traffico esterno serve un oggetto \termine{Ingress}. Con un Ingress si sceglie quali Service rendere
+pubblicamente disponibili (\figrif{fig:k8s-ingress}). È il modo con cui in Kubernetes si aggiunge un API gateway a
+un'applicazione (\rif{sec:smell-microfreshener}).
+
+\begin{figure}[ht]
+\centering
+\begin{tikzpicture}
+\node[font=\footnotesize] (ext) at (5.0,4.4) {traffico esterno};
+\draw (-0.3,-1.6) rectangle (10.3,3.7);
+\node[font=\footnotesize\bfseries, anchor=north west] at (-0.25,3.65) {Kubernetes cluster};
+\node[draw, fill=grigiochiaro, minimum width=3.0cm, minimum height=0.55cm, font=\footnotesize] (in) at (5.0,2.9) {Ingress};
+\node[draw, fill=grigiochiaro, minimum width=2.8cm, minimum height=0.55cm, font=\footnotesize] (s1) at (2.4,1.7) {Service};
+\node[draw, fill=grigiochiaro, minimum width=2.8cm, minimum height=0.55cm, font=\footnotesize] (s2) at (7.6,1.7) {Service};
+\draw[->] (ext) -- (in);
+\draw[->] (in.south) |- (5.0,2.3) -| (s2.north);
+\draw[<->] (s1) -- (s2);
+\foreach \cx/\col in {2.4/rosso, 7.6/blu} {
+  \draw[dashed] (\cx-2.4,-0.95) rectangle (\cx+2.4,1.0);
+  \foreach \dx in {-1.2, 1.2} {
+    \draw[fill=grigiochiaro] (\cx+\dx-1.0,-0.8) rectangle (\cx+\dx+1.0,0.6);
+    \node[font=\tiny, anchor=north west] at (\cx+\dx-0.98,0.58) {Pod};
+    \node[draw=\col, fill=\col!20, rounded corners=2pt, font=\tiny, minimum width=0.9cm] at (\cx+\dx,-0.15) {Container};
+    \draw[->] (\cx,1.42) -- (\cx+\dx,0.6);
+  }
+}
+\node[font=\scriptsize, anchor=north] at (2.4,-0.98) {Deployment};
+\node[font=\scriptsize, anchor=north] at (7.6,-0.98) {Deployment};
+\end{tikzpicture}
+\caption{Ingress. Il traffico esterno entra nel cluster solo attraverso l'Ingress, che lo dirige al Service scelto (a
+destra). I due Service comunicano tra loro dentro il cluster; ciascuno distribuisce le richieste ai Pod del proprio
+Deployment. Il Service di sinistra non è esposto all'esterno.}
+\label{fig:k8s-ingress}
+\end{figure}
+
+\begin{esempio}[Ingress]
+\begin{verbatim}
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  name: ml-product-ingress
+  annotations:
+    kubernetes.io/ingress.class: "nginx"
+    nginx.ingress.kubernetes.io/rewrite-target: /
+spec:
+  rules:
+  - http:
+      paths:
+      - path: /app
+        backend:
+          serviceName: user-interface-svc
+          servicePort: 80
+\end{verbatim}
+\begin{description}[leftmargin=0pt, style=unboxed]
+  \item[\texttt{annotations}.] Opzioni di configurazione per l'\emph{Ingress controller}, il componente che realizza
+    l'Ingress (qui nginx).
+  \item[\texttt{http}, \texttt{paths}.] Come deve accedere al servizio il traffico esterno? Con richieste HTTP al
+    percorso \texttt{/app}.
+  \item[\texttt{backend}.] A quale Service va diretto il traffico? A \texttt{user-interface-svc}, porta 80.
+\end{description}
+\end{esempio}
+
+\subsection{Altri oggetti}
+
+Gli oggetti sono molti di più. Per esempio: Job, Volume, Secret, Namespace, ConfigMap, HorizontalPodAutoscaler,
+StatefulSet.
+
+\section{Il control plane}
+\label{sec:k8s-control-plane}
+
+Il \termine{control plane} è l'insieme dei componenti che controllano il cluster. Un cluster ha due tipi di macchine.
+\begin{itemize}
+  \item Il \termine{master node}: una macchina (spesso una sola) che contiene la maggior parte dei componenti del
+    control plane.
+  \item I \termine{worker node}: le macchine che eseguono i workload dell'applicazione.
+\end{itemize}
+\figrif{fig:k8s-architettura} mostra tutti i componenti, descritti di seguito.
+
+\begin{figure}[ht]
+\centering
+\begin{tikzpicture}[c/.style={draw, rounded corners=3pt, fill=white, font=\footnotesize, minimum width=2.4cm, minimum height=0.6cm}]
+% master
+\draw[fill=grigiochiaro] (0,2.4) rectangle (10.4,5.4);
+\node[font=\footnotesize\bfseries, anchor=north west] at (0.05,5.35) {Master node};
+\node[c] (cm) at (1.8,4.4) {controller-manager};
+\node[c] (sc) at (1.8,3.1) {scheduler};
+\node[c] (api) at (5.6,3.75) {API server};
+\node[draw, cylinder, shape border rotate=90, aspect=0.25, fill=white, minimum width=1.4cm, minimum height=1.0cm, font=\footnotesize] (etcd) at (8.9,3.75) {etcd};
+\draw[<->] (cm.east) -- (api.north west);
+\draw[<->] (sc.east) -- (api.south west);
+\draw[<->] (api) -- (etcd);
+% user
+\node[font=\footnotesize, align=center] (u) at (5.6,6.5) {utente\\(manifest)};
+\draw[->] (u) -- (api.north);
+% workers
+\foreach \x/\i in {0/1, 3.55/2, 7.1/3} {
+  \draw[fill=grigiochiaro] (\x,-0.6) rectangle (\x+3.3,1.35);
+  \node[font=\scriptsize\bfseries, anchor=north] at (\x+1.65,-0.65) {Worker node};
+  \node[draw, rounded corners=2pt, fill=white, font=\scriptsize] (k\i) at (\x+0.75,0.85) {kubelet};
+  \node[draw, rounded corners=2pt, fill=white, font=\scriptsize] (p\i) at (\x+2.4,0.85) {kube-proxy};
+  \draw[fill=white] (\x+0.25,-0.45) rectangle (\x+1.55,0.4);
+  \node[font=\tiny] at (\x+0.9,-0.02) {Pod};
+  \draw[fill=white] (\x+1.75,-0.45) rectangle (\x+3.05,0.4);
+  \node[font=\tiny] at (\x+2.4,-0.02) {Pod};
+}
+\foreach \i in {1,2,3} \draw[<->] (k\i.north) -- (api.south);
+\end{tikzpicture}
+\caption{Architettura di un cluster Kubernetes. L'utente consegna i manifest all'API server del master node. Nel master
+node controller-manager e scheduler lavorano solo attraverso l'API server, che salva lo stato del cluster in etcd. Su
+ogni worker node il kubelet chiede all'API server quali Pod eseguire; kube-proxy collega in rete i container dei diversi
+nodi.}
+\label{fig:k8s-architettura}
+\end{figure}
+
+\subsection{Il master node}
+
+\begin{description}[leftmargin=0pt, style=unboxed]
+  \item[API server.] L'utente gli consegna la specification di un oggetto nuovo o aggiornato. L'API server valida le
+    richieste di aggiornamento e fa da interfaccia unica per ogni domanda sullo stato corrente del cluster.
+  \item[etcd.] Lo stato del cluster è conservato in \termine{etcd}, un \ingl{key-value store} distribuito, cioè un
+    archivio di coppie chiave-valore replicato su più macchine. Lo stato comprende la configurazione del cluster, le
+    specification e gli status degli oggetti, i nodi del cluster, le assegnazioni degli oggetti ai nodi.
+  \item[Scheduler.] Lo \termine{scheduler} decide dove eseguire gli oggetti (\figrif{fig:k8s-scheduler}):
+    \begin{enumerate}
+      \item chiede all'API server quali oggetti non sono ancora stati assegnati a una macchina;
+      \item decide a quali macchine assegnarli;
+      \item risponde all'API server, che registra l'assegnazione.
+    \end{enumerate}
+  \item[Controller-manager.] Il \termine{controller-manager} osserva lo stato del cluster attraverso l'API server. Se
+    lo stato reale differisce da quello desiderato, apporta modifiche, sempre attraverso l'API server, per portare il
+    cluster verso lo stato desiderato. È il componente che realizza il principio di declarativeness.
+\end{description}
+
+\begin{figure}[ht]
+\centering
+\begin{tikzpicture}[c/.style={draw, rounded corners=3pt, fill=grigiochiaro, font=\footnotesize, minimum width=2.4cm, minimum height=0.7cm}]
+\node[c] (sc) at (0,0) {scheduler};
+\node[c] (api) at (5.0,0) {API server};
+\node[draw, cylinder, shape border rotate=90, aspect=0.25, fill=grigiochiaro, minimum width=1.4cm, minimum height=1.0cm, font=\footnotesize] (etcd) at (9.6,0) {etcd};
+\draw[->] ([yshift=8pt]sc.east) -- node[above, font=\scriptsize, align=center] {1. ci sono oggetti non\\assegnati a un nodo?} ([yshift=8pt]api.west);
+\draw[->] ([yshift=8pt]api.east) -- ([yshift=8pt]etcd.west);
+\draw[->] ([yshift=-8pt]etcd.west) -- node[below, font=\scriptsize, align=center] {2. ecco gli oggetti\\non assegnati} ([yshift=-8pt]api.east);
+\draw[->] ([yshift=-8pt]api.west) -- ([yshift=-8pt]sc.east);
+\draw[->] (sc.south) -- ++(0,-1.0) -| node[pos=0.25, below, font=\scriptsize, align=center] {3. assegna l'oggetto A al nodo X\\e l'oggetto B al nodo Y} (api.south);
+\draw[->] (api.north) -- ++(0,0.9) -| node[pos=0.25, above, font=\scriptsize] {4. registrato} (etcd.north);
+\end{tikzpicture}
+\caption{Lo scheduler al lavoro. (1--2) Chiede all'API server gli oggetti non assegnati, e l'API server li legge da
+etcd. (3) Decide i nodi e comunica le assegnazioni all'API server. (4) L'API server le salva in etcd.}
+\label{fig:k8s-scheduler}
+\end{figure}
+
+\subsection{I worker node}
+\label{sec:k8s-worker}
+
+\begin{description}[leftmargin=0pt, style=unboxed]
+  \item[kubelet.] Il \termine{kubelet} fa da ``agente'' del nodo.
+    \begin{itemize}
+      \item Comunica con l'API server per sapere quali workload sono stati assegnati al nodo (``quali Pod devo
+        eseguire?'').
+      \item Avvia i Pod che eseguono i workload assegnati.
+      \item Quando un nodo entra nel cluster, il kubelet ne annuncia l'esistenza all'API server, così lo scheduler può
+        assegnargli dei Pod.
+    \end{itemize}
+  \item[kube-proxy.] Il \termine{kube-proxy} permette ai container di comunicare tra loro attraverso i diversi nodi
+    del cluster.
+\end{description}
+
+\begin{idea}[Tutto passa dall'API server]
+Nessun componente parla direttamente con un altro. Utente, scheduler, controller-manager e kubelet leggono e scrivono
+lo stato del cluster solo attraverso l'API server, e solo l'API server accede a etcd.
+\end{idea}
+
+\section{Considerazioni finali}
+\label{sec:k8s-conclusioni}
+
+Kubernetes \emph{non} conviene:
+\begin{itemize}
+  \item se il workload può girare su una sola macchina;
+  \item se le esigenze di calcolo sono leggere;
+  \item se non serve alta disponibilità e si può tollerare che il sistema resti fermo per un po';
+  \item se non si prevede di fare molte modifiche ai servizi distribuiti;
+  \item se si ha un monolite e non si intende scomporlo in microservizi.
+\end{itemize}
+
+Un'alternativa è Docker Swarm, l'orchestratore di Docker (\tabrif{tab:k8s-swarm}).
+
+\begin{table}[ht]
+\centering
+\small
+\caption{Docker Swarm e Kubernetes a confronto.}
+\label{tab:k8s-swarm}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X}
+\toprule
+Docker Swarm & Kubernetes \\
+\midrule
+più semplice da installare & offre l'auto-scaling \\
+curva di apprendimento più dolce & più tollerante ai guasti \\
+ & comunità molto grande \\
+ & sostenuto dalla Cloud Native Computing Foundation (CNCF) \\
+\midrule
+preferito dove si privilegiano semplicità e sviluppo veloce & preferito per cluster medi o grandi che eseguono
+  applicazioni complesse \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\begin{puntichiave}
+\begin{itemize}
+  \item La container orchestration risponde a ciò che i container da soli non risolvono: container che muoiono,
+    macchine guaste, rete tra container, scelta della macchina. Kubernetes (K8s) è una piattaforma di orchestration.
+  \item Quattro principi:
+    \begin{itemize}
+      \item declarativeness: si dichiara lo stato desiderato, K8s confronta specification e status e corregge
+        (self-healing);
+      \item distribution: un'interfaccia unica per il cluster;
+      \item decoupling: un container, una responsabilità;
+      \item immutable infrastructure: nuova immagine invece di modifiche sul posto; stessa immagine in sviluppo, test e
+        produzione.
+    \end{itemize}
+  \item Gli oggetti si descrivono in manifest YAML o JSON: apiVersion, kind, metadata, spec.
+  \item Pod: container strettamente collegati con rete e volumi condivisi. Deployment: template di Pod più replica
+    count. Service: endpoint stabile verso i Pod scelti con le label, solo interno. Ingress: espone Service al
+    traffico esterno.
+  \item Master node: API server (unica interfaccia), etcd (stato del cluster), scheduler (assegna i Pod ai nodi),
+    controller-manager (riporta il cluster allo stato desiderato). Worker node: kubelet e kube-proxy.
+  \item Kubernetes non serve per workload piccoli, su una sola macchina, senza bisogno di alta disponibilità o per un
+    monolite che resta tale. Docker Swarm è più semplice; Kubernetes è più completo.
+\end{itemize}
+\end{puntichiave}
+
+\begin{domande}
+\begin{enumerate}
+  \item Quali domande lasciano aperte i container da soli? Come risponde Kubernetes a ciascuna?
+  \item Che cosa significa che Kubernetes è dichiarativo? Che differenza c'è tra specification e status?
+  \item Che cos'è un'immutable infrastructure? Perché rende facile il rollback?
+  \item Quali sono le quattro parti di un manifest?
+  \item Che cos'è un Pod? Che relazione c'è tra Pod e Deployment?
+  \item Un Deployment ha replica count 10 e 3 Pod si guastano: che cosa succede?
+  \item Perché serve un Service? Come sa a quali Pod mandare il traffico?
+  \item Che differenza c'è tra Service e Ingress?
+  \item Descrivere i componenti del master node e il ruolo dello scheduler.
+  \item Che cosa fanno kubelet e kube-proxy?
+  \item In quali casi non conviene usare Kubernetes? Confrontarlo con Docker Swarm.
+\end{enumerate}
+\end{domande}

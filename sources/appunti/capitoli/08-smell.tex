@@ -1,0 +1,535 @@
+\chapter{Smell architetturali e refactoring per microservizi}
+\label{cap:smell}
+
+\begin{inbreve}
+Un'applicazione a microservizi rispetta davvero i principi dei microservizi? Se no, come si corregge? Il capitolo
+parte dai quattro principi di design e definisce gli \emph{architectural smell}, cioè le scelte che li violano. Per
+ogni smell indica i \emph{refactoring} che lo risolvono. Poi presenta MicroFreshener, lo strumento che individua gli
+smell e applica i refactoring, e la toolchain a cui appartiene. Presuppone i capitoli~\ref{cap:container}
+e~\ref{cap:microservizi}.
+\end{inbreve}
+
+\section{Il problema}
+\label{sec:smell-problema}
+
+Si richiamano le caratteristiche dei microservizi (capitolo~\ref{cap:microservizi}). Un'applicazione a
+microservizi è fatta di servizi \emph{stateless} di piccole dimensioni:
+\begin{itemize}
+  \item ciascuno in esecuzione in un proprio container;
+  \item che comunicano con meccanismi leggeri;
+  \item costruiti attorno a capacità di business;
+  \item con gestione decentralizzata dei dati;
+  \item distribuibili in modo indipendente;
+  \item scalabili orizzontalmente;
+  \item resilienti ai guasti.
+\end{itemize}
+A questo si aggiunge l'uso di un approccio DevOps (\rif{sec:micro-distribuzione}).
+
+La domanda del capitolo è: \emph{come si individuano e poi si risolvono, con il refactoring, gli smell architetturali
+che riguardano i principi di design dei microservizi?}
+
+\begin{definizione}[Architectural smell]
+Un \termine{architectural smell} è una decisione architetturale di uso comune che ha un impatto negativo sulle
+qualità del sistema nel suo ciclo di vita.
+\end{definizione}
+
+Il quadro che segue deriva da una \emph{multivocal review} (rassegna di letteratura ``bianca'' e ``grigia'', cioè
+articoli scientifici e materiale non accademico, con 41 riferimenti) che identifica:
+\begin{itemize}
+  \item gli smell architetturali più riconosciuti per i microservizi;
+  \item i refactoring architetturali per risolverli.
+\end{itemize}
+La struttura è \emph{principio $\leftarrow$ smell $\rightarrow$ refactoring}: a ogni principio sono associati uno o
+più smell, e a ogni smell uno o più refactoring.
+
+\section{I principi di design}
+\label{sec:smell-principi}
+
+\begin{description}[leftmargin=0pt, style=unboxed]
+  \item[Independent deployability.] I microservizi che formano un'applicazione devono poter essere distribuiti in modo
+    indipendente.
+  \item[Horizontal scalability.] I microservizi che formano un'applicazione devono poter scalare orizzontalmente,
+    cioè deve essere possibile aggiungere o togliere repliche di un singolo microservizio.
+  \item[Isolation of failures.] I guasti devono essere isolati.
+  \item[Decentralization.] La decentralizzazione deve riguardare tutti gli aspetti delle applicazioni a microservizi,
+    dalla gestione dei dati alla governance.
+\end{description}
+
+\section{Smell e refactoring}
+\label{sec:smell-tassonomia}
+
+\figrif{fig:smell-tassonomia} riporta l'intera tassonomia. \tabrif{tab:smell-tassonomia} la riassume e aggiunge due
+numeri: quello nella ``bolla'' di ogni smell e la percentuale di ogni refactoring. Indicano quanto ciascuno è
+citato nella rassegna: le percentuali dei refactoring di uno stesso smell sommano 100\%.
+
+\begin{figure}[ht]
+\centering
+\begin{tikzpicture}[
+  p/.style={draw=blu, text=blu, minimum width=3.4cm, align=center, font=\footnotesize, inner sep=3pt},
+  s/.style={draw=rosso, text=rosso, minimum width=4.2cm, align=center, font=\footnotesize, inner sep=3pt},
+  r/.style={draw=verde, text=verde, minimum width=3.8cm, align=center, font=\footnotesize, inner sep=3pt},
+  e/.style={-{Stealth[length=1.6mm]}, thin, grigio}]
+\node[font=\small\bfseries\sffamily, blu] at (0,0.9) {Principle};
+\node[font=\small\bfseries\sffamily, rosso] at (5.2,0.9) {Smell};
+\node[font=\small\bfseries\sffamily, verde] at (10.6,0.9) {Refactoring};
+\node[p] (p1) at (0,0) {independent\\deployability};
+\node[p] (p2) at (0,-1.95) {horizontal\\scalability};
+\node[p] (p3) at (0,-5.0) {isolation of\\failures};
+\node[p] (p4) at (0,-8.5) {decentralisation};
+\node[s] (s1) at (5.2,0) {multiple services\\in one container};
+\node[s] (s2) at (5.2,-1.1) {no API gateway};
+\node[s] (s3) at (5.2,-2.8) {endpoint-based\\service interaction};
+\node[s] (s4) at (5.2,-5.0) {wobbly service interaction};
+\node[s] (s5) at (5.2,-6.8) {ESB misuse};
+\node[s] (s6) at (5.2,-8.5) {shared persistence};
+\node[s] (s7) at (5.2,-10.2) {single-layer teams};
+\node[r] (r1) at (10.6,0) {package each service in\\a separate container};
+\node[r] (r2) at (10.6,-1.1) {add API gateway};
+\node[r] (r3) at (10.6,-2.2) {add service discovery};
+\node[r] (r4) at (10.6,-2.8) {add message router};
+\node[r] (r5) at (10.6,-3.4) {add message broker};
+\node[r] (r6) at (10.6,-4.4) {add circuit breaker};
+\node[r] (r7) at (10.6,-5.0) {use timeouts};
+\node[r] (r8) at (10.6,-5.6) {add bulkhead};
+\node[r] (r9) at (10.6,-6.8) {rightsize ESB};
+\node[r] (r10) at (10.6,-7.9) {split database};
+\node[r] (r11) at (10.6,-8.5) {add data manager};
+\node[r] (r12) at (10.6,-9.1) {merge services};
+\node[r] (r13) at (10.6,-10.2) {split teams by service};
+\foreach \s/\p in {s1/p1,s2/p2,s3/p2,s4/p3,s5/p4,s6/p4,s7/p4} \draw[e] (\s.west) -- (\p.east);
+\draw[e] (s1.east) -- (r1.west);
+\draw[e] (s2.east) -- (r2.west);
+\foreach \r in {r3,r4,r5} \draw[e] (s3.east) -- (\r.west);
+\foreach \r in {r5,r6,r7,r8} \draw[e] (s4.east) -- (\r.west);
+\draw[e] (s5.east) -- (r9.west);
+\foreach \r in {r10,r11,r12} \draw[e] (s6.east) -- (\r.west);
+\draw[e] (s7.east) -- (r13.west);
+\end{tikzpicture}
+\caption{Tassonomia degli smell. Ogni smell (al centro) viola un principio di design (a sinistra) ed è risolto da uno o
+più refactoring (a destra). Il refactoring \emph{add message broker} risolve due smell diversi.}
+\label{fig:smell-tassonomia}
+\end{figure}
+
+\begin{table}[ht]
+\centering
+\small
+\caption{Principi, smell e refactoring. Tra parentesi la percentuale di ogni refactoring per quello smell.}
+\label{tab:smell-tassonomia}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}p{2.6cm}>{\raggedright\arraybackslash}p{3.4cm}cX}
+\toprule
+Principio & Smell & Numero & Refactoring \\
+\midrule
+Independent deployability & multiple services in one container & 16 & package each service in a separate
+  container \\
+Horizontal scalability & no API gateway & 16 & add API gateway \\
+ & endpoint-based service interaction & 18 & add service discovery (55\%), add message router (31\%), add message
+  broker (14\%) \\
+Isolation of failures & wobbly service interaction & 28 & add message broker (16\%), add circuit breaker (42\%), use
+  timeouts (22\%), add bulkhead (20\%) \\
+Decentralisation & shared persistence & 19 & split database (50\%), add data manager (41\%), merge services (9\%) \\
+ & single-layer teams & 9 & split teams by service \\
+ & ESB misuse & 6 & rightsize ESB \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\subsection{Multiple services in one container}
+
+\textbf{Principio}: independent deployability. Più servizi sono impacchettati nello stesso container, quindi non si
+possono distribuire separatamente.
+
+\textbf{Refactoring}: \emph{package each service in a separate container} (capitolo~\ref{cap:container}).
+
+\subsubsection{Perché è uno smell\aggiunta}
+Se $s_1$ e $s_2$ stanno nello stesso container, per distribuire una nuova versione di $s_1$ bisogna fermare e
+riavviare anche $s_2$. Non si può nemmeno replicare solo $s_1$ quando è sotto carico: si replicano entrambi. Con un
+container per servizio ogni servizio si ferma, si aggiorna e si replica da solo.
+
+\subsection{No API gateway}
+
+\textbf{Principio}: horizontal scalability. I client dell'applicazione invocano direttamente i servizi
+dell'applicazione. È simile allo smell \emph{endpoint-based service interaction}.
+
+\textbf{Refactoring}: \emph{add API gateway} (\rif{sec:micro-motivi}). Un API gateway può essere utile anche per
+l'autenticazione, il \emph{throttling} e altro.
+
+\subsubsection{Perché è uno smell\aggiunta}
+Se i client chiamano direttamente i servizi, devono conoscere l'indirizzo di ognuno. Ogni cambiamento (un servizio
+spostato, replicato o diviso in due) costringe a modificare i client. Il gateway è l'unico indirizzo noto ai client.
+Il \emph{throttling} è la limitazione del numero di richieste che un client può fare in un intervallo di tempo,
+per proteggere i servizi dal sovraccarico.
+
+\subsection{Endpoint-based service interaction}
+
+\textbf{Principio}: horizontal scalability. Un servizio invoca una \emph{istanza specifica} di un altro servizio. Questo
+ostacola l'aggiunta di repliche: il chiamante conosce un solo indirizzo e continua a usare quello.
+
+\textbf{Refactoring} (\figrif{fig:smell-endpoint}):
+\begin{itemize}
+  \item \emph{add service discovery} (55\%);
+  \item \emph{add message router} (31\%), per esempio un \ingl{load balancer};
+  \item \emph{add message broker} (14\%), per esempio una coda di messaggi (\rif{sec:micro-comunicazione}).
+\end{itemize}
+
+\subsubsection{Come agiscono i tre refactoring\aggiunta}
+\begin{itemize}
+  \item \emph{Service discovery}: le istanze di un servizio si registrano in un registro con il loro indirizzo. Il
+    chiamante chiede al registro l'indirizzo dell'istanza del servizio che gli serve, e lo ottiene aggiornato. Gli
+    archi dell'architettura portano l'etichetta $d$.
+  \item \emph{Message router}: il chiamante invia sempre allo stesso indirizzo, quello del router. Il router inoltra la
+    richiesta a una delle repliche disponibili.
+  \item \emph{Message broker}: il chiamante deposita il messaggio presso il broker. Una qualsiasi replica del servizio
+    destinatario lo preleva. Il chiamante non conosce né il numero né gli indirizzi delle repliche.
+\end{itemize}
+In tutti e tre i casi si possono aggiungere o togliere repliche senza modificare il chiamante.
+
+\subsection{Wobbly service interaction}
+
+\textbf{Principio}: isolation of failures.
+
+\begin{definizione}[Wobbly service interaction]
+L'interazione di $m_1$ con $m_2$ è \termine{wobbly} quando un guasto di $m_2$ può provocare un guasto di $m_1$.
+\end{definizione}
+
+\textbf{Refactoring} (\figrif{fig:smell-wobbly}):
+\begin{itemize}
+  \item \emph{add circuit breaker} (42\%) (\rif{sec:micro-guasti});
+  \item \emph{use timeouts} (22\%);
+  \item \emph{add bulkhead} (20\%): un ``compartimento stagno'' che separa le risorse usate per servizi diversi;
+  \item \emph{add message broker} (16\%).
+\end{itemize}
+
+\subsubsection{Perché è uno smell e come agiscono i refactoring\aggiunta}
+Se $m_1$ chiama $m_2$ e aspetta la risposta, un $m_2$ lento o guasto blocca $m_1$. Le richieste in attesa si
+accumulano, le risorse di $m_1$ (thread, connessioni) si esauriscono e $m_1$ smette a sua volta di rispondere: il
+guasto si propaga a catena a chi chiama $m_1$.
+\begin{itemize}
+  \item \emph{Timeout}: $m_1$ smette di aspettare dopo un tempo massimo e segnala un errore, invece di restare bloccato.
+  \item \emph{Circuit breaker}: dopo molti guasti consecutivi $m_1$ smette di chiamare $m_2$ per un po' e fallisce subito.
+  \item \emph{Bulkhead}: le risorse di $m_1$ sono divise in compartimenti separati, uno per ogni servizio chiamato. Se
+    $m_2$ esaurisce il suo compartimento, le chiamate verso gli altri servizi continuano a funzionare.
+  \item \emph{Message broker}: la comunicazione diventa asincrona. $m_1$ deposita il messaggio e prosegue, senza
+    attendere $m_2$.
+\end{itemize}
+
+\subsection{Shared persistence}
+
+\textbf{Principio}: decentralisation. Più servizi accedono allo stesso database.
+
+\begin{attenzione}[Perché è uno smell ``cattivo'']
+Servizi diversi sono gestiti da team diversi, e i team devono poter lavorare in modo indipendente. I servizi devono
+poter essere sviluppati, distribuiti e scalati in modo indipendente. Un database condiviso lo impedisce.
+\end{attenzione}
+
+\begin{esempio}[Due servizi sulla stessa tabella\aggiunta]
+Un servizio \emph{Ordini} e un servizio \emph{Fatturazione} leggono e scrivono la stessa tabella \texttt{clienti}. Il
+team di Ordini rinomina una colonna: il servizio Fatturazione smette di funzionare, anche se il suo codice non è
+cambiato. I due team devono coordinare ogni modifica dello schema e distribuire le nuove versioni insieme. Inoltre
+un carico elevato di uno dei due rallenta l'altro.
+\end{esempio}
+
+\textbf{Refactoring} (\figrif{fig:smell-persistence}):
+\begin{description}[leftmargin=0pt, style=unboxed]
+  \item[Split database] (50\%). Il database è diviso, con un database per servizio. Servono piccole modifiche ai
+    servizi. Non è sempre possibile o facile da realizzare. I dati replicati sono solo
+    \emph{eventualmente coerenti} (\rif{sec:micro-dati}).
+  \item[Add data manager] (41\%). Si aggiunge un servizio che gestisce i dati, il \emph{data manager}. Servono
+    modifiche molto piccole ai servizi. C'è un costo aggiuntivo di comunicazione.
+  \item[Merge services] (9\%). I servizi sono fusi in un solo servizio. Non è sempre facile o ragionevole.
+\end{description}
+
+\begin{figure}[ht]
+\centering
+\begin{tikzpicture}[sv/.style={draw, circle, minimum size=0.9cm, font=\small},
+  db/.style={draw, rounded corners=3pt, minimum width=0.9cm, minimum height=0.8cm, font=\small},
+  ar/.style={->, thick}]
+\node[font=\small\bfseries\sffamily, rosso] at (1.3,2.2) {Shared persistence};
+\node[sv] (a1) at (0,1) {s1}; \node[sv] (a2) at (0,-0.4) {s2}; \node[db] (ad) at (2.6,0.3) {db};
+\draw[ar, arancio] (a1) -- (ad); \draw[ar, arancio] (a2) -- (ad);
+\node[font=\small\bfseries\sffamily, verde] at (7.8,2.2) {Split database};
+\node[sv] (b1) at (5.2,1) {s1}; \node[db] (bd1) at (7.2,1) {db'};
+\node[sv] (b2) at (5.2,-0.4) {s2}; \node[db] (bd2) at (7.2,-0.4) {db''};
+\draw[ar, verde] (b1) -- (bd1); \draw[ar, verde] (b2) -- (bd2);
+\node[font=\small\bfseries\sffamily, verde] at (3.3,-1.8) {Add data manager};
+\node[sv] (c1) at (0,-3.0) {s1}; \node[sv] (c2) at (0,-4.4) {s2};
+\node[sv] (cm) at (2.3,-3.7) {dm}; \node[db] (cd) at (4.4,-3.7) {db};
+\draw[ar] (c1) -- (cm); \draw[ar] (c2) -- (cm); \draw[ar, verde] (cm) -- (cd);
+\node[font=\small\bfseries\sffamily, verde] at (8.2,-1.8) {Merge services};
+\node[sv, minimum size=1.1cm] (d1) at (7.4,-3.7) {s1+2}; \node[db] (dd) at (9.6,-3.7) {db};
+\draw[ar, verde] (d1) -- (dd);
+\end{tikzpicture}
+\caption{Shared persistence e i tre refactoring. In alto a sinistra s1 e s2 usano lo stesso database. Split database: un
+database per servizio. Add data manager: s1 e s2 passano da un servizio dm che accede al database. Merge services: i due
+servizi diventano uno solo.}
+\label{fig:smell-persistence}
+\end{figure}
+
+\subsection{Single-layer teams}
+
+\textbf{Principio}: decentralisation. I team sono organizzati per strato (\emph{single-layer}) invece che per servizio.
+Il refactoring è \emph{split teams by service}: si dividono i team \emph{per servizio}, ciascuno responsabile di un
+servizio.
+
+\subsubsection{Perché è uno smell\aggiunta}
+Con team per strato c'è, per esempio, un team dell'interfaccia, uno della logica e uno del database. Una nuova
+funzionalità attraversa tutti gli strati, quindi richiede il lavoro e il coordinamento di tutti i team. I team
+non sono indipendenti. Con team per servizio ogni team comprende le competenze necessarie a sviluppare, distribuire e
+gestire il proprio servizio dall'interfaccia ai dati: è l'approccio DevOps (\rif{sec:micro-distribuzione}).
+
+\subsection{ESB misuse}
+
+\textbf{Principio}: decentralisation. Il refactoring è \emph{rightsize ESB}.
+
+\subsubsection{Che cos'è l'ESB e quando si usa male\aggiunta}
+L'\termine{enterprise service bus} (ESB) è un componente centrale che instrada i messaggi tra i servizi. Si usa
+\emph{male} quando, oltre a instradare, contiene anche logica applicativa e regole di business. Il bus diventa un
+punto centrale da cui tutti i servizi dipendono e che richiede un team unico: è l'opposto della decentralizzazione.
+\emph{Rightsize} significa ridimensionarlo al suo compito: solo instradamento dei messaggi.
+
+\section{MicroFreshener}
+\label{sec:smell-microfreshener}
+
+\termine{MicroFreshener} è uno strumento per:
+\begin{itemize}
+  \item modificare le specifiche di un'applicazione;
+  \item individuare automaticamente gli smell architetturali;
+  \item applicare i refactoring architetturali che risolvono gli smell individuati.
+\end{itemize}
+
+La tassonomia che lo strumento gestisce è un estratto (\emph{excerpted taxonomy}) di quella completa. Comprende
+quattro smell, con i loro refactoring: \emph{no API gateway}, \emph{endpoint-based service interaction},
+\emph{wobbly service interaction} e \emph{shared persistence}.
+
+\subsection{Come si modella l'architettura}
+
+L'applicazione è un grafo (\figrif{fig:smell-notazione}). I nodi sono \emph{servizi}, \emph{data store},
+\emph{message broker} (mB) e \emph{message router} (mR). Gli archi sono invocazioni, e possono portare tre etichette:
+\emph{d} (\ingl{dynamic discovery}), \emph{c} (circuit breaker), \emph{t} (timeout). Una lettera barrata significa che
+il meccanismo \emph{manca} sull'arco.
+
+\begin{figure}[ht]
+\centering
+\begin{tikzpicture}[b/.style={draw, minimum size=0.6cm, font=\footnotesize, inner sep=1pt}]
+\node[draw, circle, minimum size=0.7cm] (sv) at (0,0) {};
+\node[font=\small, anchor=west] at (0.55,0) {service};
+\node[draw, shape=cylinder, shape border rotate=90, aspect=0.3, minimum height=0.8cm, minimum width=0.6cm] at (3.2,0) {};
+\node[font=\small, anchor=west] at (3.65,0) {data store};
+\node[b] at (6.4,0) {mB};
+\node[font=\small, anchor=west] at (6.85,0) {message broker};
+\node[b] at (10.2,0) {mR};
+\node[font=\small, anchor=west] at (10.65,0) {message router};
+\draw[->, thick] (0,-1.2) -- node[above, font=\footnotesize] {d} (1.3,-1.2);
+\node[font=\small, anchor=west] at (1.5,-1.2) {dynamic discovery};
+\draw[->, thick] (4.6,-1.2) -- node[above, font=\footnotesize] {c} (5.9,-1.2);
+\node[font=\small, anchor=west] at (6.1,-1.2) {circuit breaker};
+\draw[->, thick] (8.9,-1.2) -- node[above, font=\footnotesize] {t} (10.2,-1.2);
+\node[font=\small, anchor=west] at (10.4,-1.2) {timeout};
+\end{tikzpicture}
+\caption{Notazione grafica di MicroFreshener. Nodi: service, data store, message broker, message router. Archi: l'etichetta
+indica il meccanismo presente (d, c, t).}
+\label{fig:smell-notazione}
+\end{figure}
+
+\subsection{Individuare e risolvere gli smell}
+
+\figrif{fig:smell-endpoint} e \figrif{fig:smell-wobbly} mostrano lo schema dello smell e i refactoring come li
+disegna lo strumento. Nel primo caso la dipendenza $x \to y$ non usa un meccanismo di discovery. Nel secondo $x$ e
+$y$ sono evidenziati in rosso perché un guasto può propagarsi dall'uno all'altro.
+
+\begin{figure}[ht]
+\centering
+\begin{tikzpicture}[sv/.style={draw, circle, minimum size=0.6cm, font=\footnotesize, inner sep=0pt},
+  b/.style={draw, minimum size=0.55cm, font=\scriptsize, inner sep=1pt}]
+\node[font=\small\bfseries\sffamily, rosso] at (0.9,1.2) {Smell};
+\node[sv] (x) at (0,0) {x}; \node[sv] (y) at (1.8,0) {y};
+\draw[->] (x) -- (y);
+\node[font=\small\bfseries\sffamily, verde] at (5.0,1.2) {Add service discovery};
+\node[sv] (x1) at (3.7,0) {x}; \node[sv] (y1) at (6.3,0) {y};
+\draw[->, dashed] (x1) -- node[above, font=\footnotesize] {d} (y1);
+\node[font=\small\bfseries\sffamily, verde] at (9.3,1.2) {Add message router};
+\node[sv] (x2) at (8.2,0) {x}; \node[b] (mr) at (9.3,0) {mR}; \node[sv] (y2) at (10.4,0) {y};
+\draw[->] (x2) -- (mr); \draw[->] (mr) -- (y2);
+\node[font=\small\bfseries\sffamily, verde] at (13.7,1.2) {Add message broker};
+\node[sv] (x3) at (12.6,0) {x}; \node[b] (mb) at (13.7,0) {mB}; \node[sv] (y3) at (14.8,0) {y};
+\draw[->] (x3) -- (mb); \draw[->] (y3) -- (mb);
+\end{tikzpicture}
+\caption{Endpoint-based service interaction. A sinistra lo smell: $x$ invoca $y$ direttamente. A destra i tre
+refactoring: discovery dinamico (d), message router (mR), message broker (mB).}
+\label{fig:smell-endpoint}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\begin{tikzpicture}[sv/.style={draw, circle, minimum size=0.6cm, font=\footnotesize, inner sep=0pt},
+  b/.style={draw, minimum size=0.55cm, font=\scriptsize, inner sep=1pt}]
+\node[font=\small\bfseries\sffamily, rosso] at (0.9,1.2) {Smell};
+\node[sv, fill=rosso!70] (x) at (0,0) {x}; \node[sv, fill=rosso!70] (y) at (1.8,0) {y};
+\draw[->] (x) -- node[above, font=\small] {\sout{c}\ \sout{t}} (y);
+\node[font=\small\bfseries\sffamily, verde] at (5.0,1.2) {Add circuit breaker};
+\node[sv] (x1) at (3.7,0) {x}; \node[sv] (y1) at (6.3,0) {y};
+\draw[->, dashed] (x1) -- node[above, font=\footnotesize] {c} (y1);
+\node[font=\small\bfseries\sffamily, verde] at (9.2,1.2) {Use timeout};
+\node[sv] (x2) at (7.9,0) {x}; \node[sv] (y2) at (10.5,0) {y};
+\draw[->, dashed] (x2) -- node[above, font=\footnotesize] {t} (y2);
+\node[font=\small\bfseries\sffamily, verde] at (13.7,1.2) {Add message broker};
+\node[sv] (x3) at (12.6,0) {x}; \node[b] (mb) at (13.7,0) {mB}; \node[sv] (y3) at (14.8,0) {y};
+\draw[->] (x3) -- (mb); \draw[->] (y3) -- (mb);
+\end{tikzpicture}
+\caption{Wobbly service interaction. A sinistra lo smell: sull'arco $x \to y$ mancano circuit breaker e timeout (lettere
+barrate). A destra i refactoring: circuit breaker (c), timeout (t), message broker (mB).}
+\label{fig:smell-wobbly}
+\end{figure}
+
+Il terzo smell, \emph{shared persistence}, si modella con più servizi $x_1,\dots,x_n$ che invocano uno stesso data
+store $y$. I refactoring sono quelli di \figrif{fig:smell-persistence}: \emph{split data store} (un data store per
+ogni gruppo di servizi), \emph{add data manager}, \emph{merge services}.
+
+\subsection{Valutazione}
+
+Lo strumento è usabile \emph{liberamente} per analizzare e fare refactoring di applicazioni a microservizi. È stato
+valutato in due modi:
+\begin{itemize}
+  \item un \emph{caso di studio industriale}: furono individuati 4 smell \emph{no API gateway} e 1 smell \emph{shared
+    persistence}; furono aggiunti 2 API gateway e 1 data manager;
+  \item un \emph{esperimento controllato}, con due gruppi di partecipanti, con e senza lo strumento: 100\% contro 49\%
+    degli smell individuati; 83\% contro 1\% dei partecipanti che hanno risolto tutti gli smell.
+\end{itemize}
+
+\subsection{Che cosa fa e che cosa non fa}
+
+MicroFreshener supporta anche il refactoring ``\emph{let it be}'': lo smell può essere accettato e lasciato com'è.
+
+\begin{idea}[Livello architetturale $\neq$ livello implementativo]
+Applicare un refactoring in MicroFreshener \emph{non} cambia l'implementazione dell'applicazione. L'implementazione
+concreta del refactoring è lasciata all'application manager, come avviene con i design pattern.
+\end{idea}
+
+\begin{esempio}[Aggiungere un timeout o un circuit breaker]
+Nel modello l'arco $s_1 \to s_2$ ha solo l'etichetta $d$. Applicare il refactoring \emph{add timeouts} aggiunge la $t$
+all'arco: nel modello lo smell scompare. A livello di implementazione bisogna aggiungere i timeout in $s_1$.
+
+Per \emph{add circuit breaker} la stessa modifica nel modello (si aggiunge $c$) ha due possibili implementazioni:
+modificare $s_1$, oppure aggiungere un nuovo componente.
+\end{esempio}
+
+\begin{figure}[ht]
+\centering
+\begin{tikzpicture}[sv/.style={draw, circle, minimum size=0.6cm, font=\footnotesize, inner sep=0pt}]
+\node[sv, label=below:{$s_1$}] (a) at (0,0) {}; \node[sv] (b) at (3.4,0) {};
+\draw[->, rosso, thick] (a) -- node[above, text=black, font=\small] {d\ \sout{c}\ \sout{t}} (b);
+\draw[->, very thick] (4.4,0) -- (5.6,0);
+\node[sv, label=below:{$s_1$}] (c) at (6.6,0) {}; \node[sv] (d) at (10,0) {};
+\draw[->, verde, thick] (c) -- node[above, text=black, font=\small] {d\ \sout{c}\ \textbf{\textcolor{verde}{t}}} (d);
+\draw[grigio] (-0.8,-1.0) -- (10.8,-1.0);
+\node[font=\footnotesize\itshape, anchor=west] at (0,-1.5) {livello implementativo: aggiungere i timeout in $s_1$};
+\end{tikzpicture}
+\caption{Add timeout. Nel modello (sopra la riga) l'arco guadagna l'etichetta $t$. A livello di implementazione (sotto la
+riga) i timeout vanno aggiunti nel codice di $s_1$.}
+\label{fig:smell-modello}
+\end{figure}
+
+\subsection{Viste per team e orchestrazione}
+
+\textbf{Viste per team} (\emph{team-based views}). L'architettura può essere vista raggruppando i servizi per team
+(per esempio $t_1$ e $t_2$). Le viste per team servono per la scalabilità: con molti servizi e più team, ogni team vede e
+modifica solo la parte che gli appartiene. Aiutano a capire quale team deve realizzare una modifica. Per esempio, un
+circuit breaker aggiunto tra $s_1$ e $s_2$ può ricadere nel team di $s_1$ (che lo include nel proprio servizio) o in
+quello di $s_2$.
+
+\textbf{Orchestrazione dei container.} L'orchestrazione dei container \emph{cambia} il comportamento
+dell'applicazione. Quindi un refactoring può anche essere realizzato modificando il manifest dell'orchestratore, per
+esempio in Kubernetes:
+\begin{itemize}
+  \item impostare un \emph{ingress node} aggiunge un API gateway all'applicazione;
+  \item aggiungere un \emph{sidecar container} introduce un circuit breaker;
+  \item impostare \emph{networking policies} introduce dei bulkhead.
+\end{itemize}
+Il flusso è: l'applicazione (o il suo manifest Kubernetes) è importata in MicroFreshener, l'utente applica i refactoring
+e lo strumento produce il manifest aggiornato.
+
+\section{Una toolchain per i microservizi}
+\label{sec:smell-toolchain}
+
+MicroFreshener è un pezzo di una toolchain (\figrif{fig:smell-toolchain}):
+\begin{itemize}
+  \item \textbf{MicroMiner}: analisi statica del manifest Kubernetes più \emph{mining} dinamico dell'applicazione in
+    esecuzione;
+  \item \textbf{MicroTOM}: analisi statica del manifest Kubernetes e del grafo di Kiali;
+  \item \textbf{MicroFreshener}: individua gli smell e applica i refactoring;
+  \item \textbf{TosKeriser}: completamento automatico della specifica dell'applicazione, scoprendo e includendo gli
+    ambienti di esecuzione necessari basati su Docker;
+  \item \textbf{TosKose}: distribuzione automatica sopra orchestratori di container esistenti (Docker, Kubernetes).
+\end{itemize}
+
+\begin{figure}[ht]
+\centering
+\begin{tikzpicture}[t/.style={draw=blu, thick, rounded corners=4pt, minimum width=2.6cm, minimum height=0.9cm, font=\small\bfseries, text=blu, align=center},
+  d/.style={draw, minimum width=0.5cm, minimum height=0.65cm, font=\footnotesize}]
+\node[font=\small] (app) at (4.2,2.8) {app};
+\node[t] (mm) at (2.2,1.4) {MicroMiner};
+\node[t] (mt) at (6.2,1.4) {MicroTOM};
+\node[d] (s1) at (4.2,0.2) {};
+\node[t] (mf) at (0.2,-1.3) {MicroFreshener};
+\node[d] (s2) at (3.0,-1.3) {};
+\node[t] (tk) at (5.8,-1.3) {TosKeriser};
+\node[d] (s3) at (8.6,-1.3) {};
+\node[t] (tx) at (11.4,-1.3) {TosKose};
+\node[font=\small, align=center] (or) at (11.4,-3.0) {Docker, Kubernetes};
+\draw[->] (app) -- (mm); \draw[->] (app) -- (mt);
+\draw[->] (mm) -- (s1); \draw[->] (mt) -- (s1);
+\draw[->] (s1) -- (mf.north east);
+\draw[->] (mf) -- (s2); \draw[->] (s2) -- (tk);
+\draw[->] (tk) -- (s3); \draw[->] (s3) -- (tx);
+\draw[->] (tx) -- (or);
+\node[font=\footnotesize, align=center, text width=3.2cm] at (-1.2,1.4) {analisi statica del manifest K8s + mining dinamico};
+\node[font=\footnotesize, align=center, text width=3cm] at (9.6,1.4) {analisi statica del manifest K8s e del grafo Kiali};
+\node[font=\footnotesize, align=center, text width=3.4cm] at (5.8,-2.9) {completa la specifica con gli ambienti Docker necessari};
+\end{tikzpicture}
+\caption{Toolchain. L'applicazione è analizzata da MicroMiner e da MicroTOM, che producono una specifica. MicroFreshener la
+rifattorizza, TosKeriser la completa e TosKose distribuisce l'applicazione sull'orchestratore. I rettangoli piccoli
+sono le specifiche passate da uno strumento all'altro.}
+\label{fig:smell-toolchain}
+\end{figure}
+
+Riferimenti principali:
+\begin{itemize}
+  \item Soldani, Muntoni, Neri, Brogi, \emph{The $\mu$TOSCA toolchain: Mining, analyzing, and refactoring
+    microservice-based architectures}, Software: Practice and Experience 51(7), 2021;
+  \item Neri, Soldani, Zimmermann, Brogi, \emph{Design principles, architectural smells and refactorings for
+    microservices: A multivocal review}, SICS Software-Intensive Cyber-Physical Systems 35, 2020.
+\end{itemize}
+Il codice è su \texttt{github.com/di-unipi-socc}.
+
+\begin{puntichiave}
+\begin{itemize}
+  \item Un architectural smell è una decisione architetturale diffusa che peggiora le qualità del sistema.
+  \item Quattro principi: independent deployability, horizontal scalability, isolation of failures, decentralisation.
+  \item Smell $\to$ refactoring:
+    \begin{itemize}
+      \item multiple services in one container $\to$ un container per servizio;
+      \item no API gateway $\to$ add API gateway;
+      \item endpoint-based interaction $\to$ discovery, router o broker;
+      \item wobbly interaction $\to$ circuit breaker, timeout, bulkhead, broker;
+      \item shared persistence $\to$ split database, data manager, merge services.
+    \end{itemize}
+  \item Single-layer teams $\to$ team per servizio. ESB misuse $\to$ rightsize ESB.
+  \item MicroFreshener modella l'applicazione come grafo (servizi, data store, mB, mR; archi con d, c, t), individua gli
+    smell e applica i refactoring.
+  \item Il refactoring è architetturale: l'implementazione resta all'application manager. L'orchestratore (Kubernetes) può
+    realizzare API gateway, circuit breaker e bulkhead.
+  \item Toolchain: MicroMiner e MicroTOM, MicroFreshener, TosKeriser, TosKose.
+\end{itemize}
+\end{puntichiave}
+
+\begin{domande}
+\begin{enumerate}
+  \item Che cos'è un architectural smell? Che cosa dice la tassonomia presentata?
+  \item Quali sono i quattro principi di design dei microservizi?
+  \item Che cos'è lo smell \emph{endpoint-based service interaction} e quali refactoring ha?
+  \item Quando un'interazione è wobbly? Come si risolve?
+  \item Perché la shared persistence è uno smell? Confrontare split database, add data manager e merge services.
+  \item Quali elementi usa MicroFreshener per modellare un'applicazione e che cosa indicano le lettere d, c, t?
+  \item Perché ``livello architetturale $\neq$ livello implementativo''? Fare un esempio.
+  \item Quali strumenti compongono la toolchain e che cosa fa ciascuno?
+\end{enumerate}
+\end{domande}

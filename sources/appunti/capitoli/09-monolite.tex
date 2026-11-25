@@ -1,0 +1,703 @@
+\chapter{Scomporre il monolite}
+\label{cap:monolite}
+
+\begin{inbreve}
+Molte applicazioni a microservizi nascono da un monolite che, crescendo, è diventato difficile da modificare. Il
+capitolo spiega come scomporlo in servizi. Prima si cercano nel codice i \emph{seam}, le linee lungo cui il monolite
+si può tagliare, e si decide da dove iniziare. Poi si affronta la parte più difficile, il database: si spezzano le
+dipendenze tra tabelle, si gestiscono le transazioni che coinvolgono più servizi e si ricostruisce il reporting.
+Presuppone il capitolo~\ref{cap:microservizi}.
+\end{inbreve}
+
+\section{Il monolite cresce}
+\label{sec:split-monolite}
+
+Si richiamano i microservizi (capitolo~\ref{cap:microservizi}). Si sviluppano le applicazioni come insiemi di servizi
+stateless di piccole dimensioni per due motivi (\rif{sec:micro-motivi}):
+\begin{enumerate}
+  \item ridurre il \emph{lead time} di nuove feature e aggiornamenti, cioè il tempo tra la decisione di fare una
+    modifica e la sua distribuzione agli utenti;
+  \item scalare in modo efficace.
+\end{enumerate}
+I servizi girano ciascuno nel proprio container, comunicano con meccanismi leggeri e sono costruiti attorno a
+capacità di business. Decentralizzano la gestione dei dati, sono distribuibili in modo indipendente, scalabili
+orizzontalmente e resilienti ai guasti. Il tutto con un approccio DevOps (\rif{sec:micro-distribuzione}).
+
+Un monolite invece cresce nel tempo: vi si aggiungono di continuo nuove funzionalità e nuove righe di codice. Con la
+crescita perde due proprietà (\rif{sec:micro-microservizi}):
+\begin{itemize}
+  \item \textbf{la cohesion}: codice di ogni genere, senza relazione, finisce nello stesso blocco;
+  \item \textbf{il loose coupling}: un piccolo cambiamento può avere effetti sul resto del monolite, e per
+    distribuirlo bisogna ridistribuire l'intero blocco.
+\end{itemize}
+
+\begin{idea}[Quando scomporre]
+\uline{Il monolite si scompone \emph{quando} diventa un problema}, non prima. Far crescere un sistema finché va diviso
+è normale. Bisogna però accorgersi del momento giusto e dividerlo prima che la divisione costi troppo
+(\rif{sec:split-conclusioni}).
+\end{idea}
+
+\section{Trovare i seam}
+\label{sec:split-seam}
+
+Il monolite si scompone lungo i suoi \emph{seam}. In sartoria il \ingl{seam} è la cucitura, la linea lungo cui due pezzi
+di tessuto sono cuciti insieme in un abito.
+
+\begin{definizione}[Seam]
+Un \termine{seam} è una porzione di codice che si può trattare in isolamento e su cui si può lavorare senza effetti sul
+resto del codice.
+\end{definizione}
+
+L'obiettivo è trovare i seam che possono diventare \emph{confini di servizio}. Due strumenti aiutano.
+\begin{itemize}
+  \item La nozione di \termine{bounded context}. Alcune informazioni di un contesto non devono essere comunicate
+    all'esterno, altre si possono condividere con altri contesti. È come una cellula: la membrana stabilisce che cosa
+    sta dentro, che cosa sta fuori e che cosa può passare.
+  \item I concetti di \emph{namespace} dei linguaggi di programmazione, per esempio i \emph{package} di Java.
+\end{itemize}
+
+\subsubsection{Che cosa sta dentro e che cosa passa la membrana\aggiunta}
+Un bounded context è una parte dell'organizzazione con una responsabilità precisa, per esempio il magazzino. Al suo
+interno usa molte informazioni che interessano solo a lui: in quale scaffale sta un articolo, quali ordini sono in
+preparazione. Queste restano dentro. Altre informazioni servono anche fuori: la contabilità, per esempio, deve sapere
+quanti articoli sono stati spediti. Queste passano la membrana, attraverso un'interfaccia esplicita. Un contesto così
+delimitato è un buon candidato a diventare un servizio: l'interfaccia del contesto diventa l'API del servizio.
+
+\begin{esempio}[MusicCorp]
+MusicCorp è un rivenditore online di musica. Il suo monolite copre quattro contesti:
+\begin{description}[leftmargin=0pt, style=unboxed]
+  \item[Catalog.] Tutto ciò che riguarda i metadati degli articoli in vendita.
+  \item[Finance.] Contabilità e rendiconti, pagamenti, rimborsi, ecc.
+  \item[Warehouse.] Spedizione e reso degli ordini dei clienti, gestione dei livelli di magazzino, ecc.
+  \item[Recommendation.] Un sistema di raccomandazione rivoluzionario, in attesa di brevetto.
+\end{description}
+\end{esempio}
+
+\subsection{Organizzare il codice attorno ai seam}
+\label{sec:split-package}
+
+Individuati i contesti, si \textbf{creano dei package che li rappresentano e poi vi si sposta il codice esistente}.
+\begin{itemize}
+  \item Il refactoring e i test procedono in modo incrementale.
+  \item Il codice che resta fuori da tutti i package può rivelare un nuovo bounded context.
+  \item Il codice stesso serve ad analizzare le dipendenze tra i package. I package che rappresentano i bounded context
+    dovrebbero interagire come i gruppi reali dell'organizzazione. Per esempio, il package \emph{Warehouse} non
+    dovrebbe dipendere dal package \emph{Finance} se nell'organizzazione reale non c'è una dipendenza del genere.
+  \item Strumenti come \emph{Structure 101} mostrano graficamente le dipendenze tra package. Nel grafo ogni nodo è un
+    package e ogni arco una dipendenza, con il numero di riferimenti da un package all'altro.
+\end{itemize}
+\uline{Tutto questo si fa in modo incrementale, davvero}: un passo alla volta, verificando ogni passo con i test.
+
+\section{Da dove iniziare}
+\label{sec:split-inizio}
+
+Si inizia dal seam che porta il \textbf{massimo beneficio}. I criteri tipici (\ingl{drivers}) sono cinque; gli esempi
+sono quelli di MusicCorp.
+\begin{description}[leftmargin=0pt, style=unboxed]
+  \item[Pace of change.] Il ritmo dei cambiamenti. Se sta per arrivare una mole di modifiche alla gestione del
+    magazzino, conviene separare per primo il seam \emph{Warehouse}. Così le modifiche si faranno su un servizio
+    piccolo e distribuibile da solo.
+  \item[Team structure.] La struttura dei team. Se il team di sviluppo è diviso tra due regioni geografiche, conviene
+    separare le parti su cui lavora ciascuna delle due metà.
+  \item[Security.] Se tutte le informazioni sensibili sono gestite dal codice di \emph{Finance}, separarlo permette di
+    proteggere di più solo quel servizio.
+  \item[Technology.] Se il team del sistema di \emph{Recommendation} sperimenta nuovi algoritmi in Clojure, un servizio
+    separato può usare un linguaggio diverso dal resto.
+  \item[Tangled dependencies.] Le dipendenze aggrovigliate. Se possibile, si estrae per primo il seam da cui gli altri
+    dipendono meno, guardando per esempio il grafo delle dipendenze.
+\end{description}
+
+\begin{esempio}[Il seam meno dipeso\aggiunta]
+Si supponga che il grafo delle dipendenze tra i package di MusicCorp sia quello di \figrif{fig:split-dipendenze}. Le
+dipendenze sono ipotetiche. Da Catalog dipendono tre package: estrarlo per primo costringe a modificarli tutti e tre.
+Da Recommendation e da Finance non dipende nessuno. Recommendation però dipende da un solo package, Finance da due.
+Quindi Recommendation è il seam più facile da estrarre: basta trasformare in chiamate all'API di Catalog le sue
+chiamate a Catalog.
+\end{esempio}
+
+\begin{figure}[ht]
+\centering
+\begin{tikzpicture}
+\node[blocco, minimum width=2.6cm] (cat) at (0,0) {Catalog};
+\node[blocco, minimum width=2.6cm] (fin) at (-4.2,1.6) {Finance};
+\node[blocco, minimum width=2.6cm] (war) at (-4.2,-1.6) {Warehouse};
+\node[blocco, minimum width=2.6cm] (rec) at (4.2,0) {Recommendation};
+\draw[freccia] (fin) -- (cat);
+\draw[freccia] (war) -- (cat);
+\draw[freccia] (rec) -- (cat);
+\draw[freccia] (fin) -- (war);
+\node[font=\footnotesize, anchor=north] at (0,-0.5) {usato da 3 package};
+\node[font=\footnotesize, anchor=north] at (4.2,-0.5) {usato da nessuno};
+\node[font=\footnotesize, anchor=south] at (-4.2,2.05) {usato da nessuno};
+\node[font=\footnotesize, anchor=north] at (-4.2,-2.05) {usato da 1 package};
+\end{tikzpicture}
+\caption{Grafo ipotetico delle dipendenze tra i package di MusicCorp. Una freccia da A a B significa che A usa B.
+Recommendation non è usato da nessuno e usa un solo package: è il primo candidato a diventare un servizio.}
+\label{fig:split-dipendenze}
+\end{figure}
+
+\section{Il database}
+\label{sec:split-database}
+
+Il database è la madre di tutte le dipendenze aggrovigliate. Spesso è usato per \emph{integrare} più servizi: invece
+di chiamarsi a vicenda, le parti del sistema leggono e scrivono le stesse tabelle. Bisogna quindi trovare i seam
+anche nel database, per poterlo dividere in modo pulito. Tre attività aiutano.
+\begin{itemize}
+  \item \textbf{Capire quali parti del codice leggono e scrivono il database}, per esempio con strumenti come
+    Hibernate. Hibernate è una libreria Java di \emph{object-relational mapping}: associa ogni classe alla tabella in
+    cui sono salvati i suoi oggetti. Le sue associazioni mostrano quale codice usa quali tabelle.
+  \item \textbf{Individuare i vincoli a livello di database}, per esempio relazioni di foreign key tra tabelle usate
+    da parti diverse del codice. Strumenti come SchemaSpy disegnano lo schema con le tabelle e le relazioni.
+  \item \textbf{Notare le tabelle usate da più bounded context.}
+\end{itemize}
+
+Una \termine{foreign key} è una colonna di una tabella che contiene la chiave di una riga di un'altra tabella. Il
+database garantisce che il valore esista davvero nell'altra tabella: non si può inserire un riferimento a una riga
+inesistente, né cancellare una riga ancora riferita.
+
+\section{Refactoring del database}
+\label{sec:split-refactoring}
+
+Quattro situazioni tipiche, tutte nel monolite di MusicCorp.
+
+\subsection{Spezzare una relazione di foreign key}
+\label{sec:split-fk}
+
+Il codice di \emph{Catalog} usa la tabella \emph{Line items} per memorizzare le informazioni su un album. Il codice di
+\emph{Finance} usa la tabella \emph{Ledger}, il libro contabile, per tracciare le informazioni finanziarie. Ogni mese
+Finance genera report come ``abbiamo venduto 600 copie di \emph{Dance Monkey} di Tones and I e incassato 2\,000
+USD''. Per scriverli:
+\begin{itemize}
+  \item il codice di Finance legge la tabella Line items, che appartiene a Catalog;
+  \item esiste una relazione di foreign key dalla tabella Ledger alla tabella Line items.
+\end{itemize}
+Il problema è: \emph{come si impedisce al codice di Finance di accedere alla tabella Line items?}
+
+\textbf{Soluzione}: il package Catalog espone i dati tramite un'API (\figrif{fig:split-fk}). Finance chiede a Catalog i
+dati dell'album invece di leggere la sua tabella. Le conseguenze sono due.
+\begin{itemize}
+  \item Si introduce un \textbf{overhead}: una chiamata all'API costa più di una lettura dal database.
+  \item Si \textbf{perde la relazione di foreign key}. I vincoli vanno gestiti nei servizi invece che a livello di
+    database. Può servire un controllo di coerenza tra servizi, oppure azioni che ripuliscano i dati collegati.
+\end{itemize}
+
+\begin{attenzione}[Una scelta che non è tecnica]
+Se e come controllare la coerenza spesso non è una scelta tecnologica. Per esempio: come si gestisce un ordine che
+si riferisce all'ID di catalogo di un articolo rimosso dal catalogo? Lo decide il business, non il database.
+\end{attenzione}
+
+\begin{figure}[ht]
+\centering
+\begin{tikzpicture}
+% prima
+\node[font=\small\bfseries\sffamily] at (1.6,2.75) {MusicCorpMono};
+\draw (-0.8,1.0) rectangle (4.0,3.1);
+\node[sv, minimum width=1.8cm] (c) at (0.3,1.7) {Catalog};
+\node[sv, minimum width=1.8cm] (f) at (2.9,1.7) {Finance};
+\tabdb{0.3}{-0.3}{Line items}{li}
+\tabdb{2.9}{-0.3}{Ledger}{le}
+\draw[->] (c) -- (li);
+\draw[->] (f) -- (le);
+\draw[->, dashed] (f.south west) -- (li.north east);
+\draw[->, dashed] (le.west) -- (li.east);
+% freccia
+\draw[->, very thick, verde] (4.5,0.8) -- (5.6,0.8);
+% dopo
+\node[sv, minimum width=2.4cm] (c2) at (6.9,1.7) {Catalog service};
+\node[sv, minimum width=2.4cm] (f2) at (10.7,1.7) {Finance service};
+\tabdb{6.9}{-0.3}{Line items}{li2}
+\tabdb{10.7}{-0.3}{Ledger}{le2}
+\draw[->] (c2) -- (li2);
+\draw[->] (f2) -- (le2);
+\draw[->, dashed] (f2) -- node[above, font=\footnotesize] {API} (c2);
+\end{tikzpicture}
+\caption{Spezzare una foreign key. A sinistra, nel monolite, Finance legge la tabella Line items di Catalog (freccia
+tratteggiata in alto) e Ledger ha una foreign key verso Line items (freccia tratteggiata in basso). A destra Finance
+chiede i dati all'API del servizio Catalog: ogni servizio usa solo le proprie tabelle.}
+\label{fig:split-fk}
+\end{figure}
+
+\subsection{Dati statici condivisi}
+\label{sec:split-statici}
+
+Catalog, Warehouse e Finance leggono la stessa tabella \emph{Country codes}, che contiene i codici dei paesi. Sono
+dati \emph{statici}: cambiano raramente. Le soluzioni sono tre (\figrif{fig:split-statici}).
+\begin{enumerate}
+  \item \textbf{Duplicare la tabella per ogni package.} Si pone un possibile problema di coerenza: un aggiornamento va
+    fatto in tutte le copie.
+  \item \textbf{Trattare i dati statici condivisi come codice}, per esempio come un file di configurazione. I problemi
+    di coerenza restano, anche se forse è più facile aggiornare un file di configurazione che una tabella del
+    database. È la soluzione preferita.
+  \item \textbf{Spostare i dati statici in un servizio separato.} Per dati così semplici rischia di essere eccessivo
+    (\ingl{overkill}).
+\end{enumerate}
+
+\begin{figure}[ht]
+\centering
+\begin{tikzpicture}
+\node[font=\small\bfseries\sffamily] at (2.4,2.75) {MusicCorpMono};
+\draw (-0.6,1.0) rectangle (5.4,3.1);
+\node[sv, minimum width=1.6cm] (c) at (0.4,1.7) {Catalog};
+\node[sv, minimum width=1.6cm] (w) at (2.4,1.7) {Warehouse};
+\node[sv, minimum width=1.6cm] (f) at (4.4,1.7) {Finance};
+\tabdb{2.4}{-0.3}{Country codes}{cc}
+\draw[->] (c.south) -- (cc.north west);
+\draw[->] (w.south) -- (cc.north);
+\draw[->] (f.south) -- (cc.north east);
+% soluzioni
+\node[font=\small, anchor=west] at (6.6,2.7) {(1) una copia per package};
+\foreach \x/\n in {6.9/C, 8.1/W, 9.3/F} {
+  \node[sv, minimum width=1.0cm, minimum height=0.6cm] (s\n) at (\x,2.0) {\n};
+  \draw (\x-0.4,1.05) rectangle (\x+0.4,1.4);
+  \draw[->] (s\n) -- (\x,1.4);}
+\node[font=\small, anchor=west] at (6.6,0.6) {(2) dati come configurazione};
+\node[draw, font=\footnotesize, anchor=west] at (6.7,0.0) {countries.conf};
+\node[font=\footnotesize, anchor=west] at (9.0,0.0) {nel codice};
+\node[font=\small, anchor=west] at (6.6,-0.8) {(3) servizio separato};
+\node[sv, minimum width=2.6cm, anchor=west] at (6.7,-1.4) {Country service};
+\end{tikzpicture}
+\caption{Dati statici condivisi. A sinistra tre package leggono la stessa tabella dei codici dei paesi. A destra le tre
+soluzioni: una copia della tabella per ogni package (C, W, F), un file di configurazione distribuito con il codice, un
+servizio dedicato.}
+\label{fig:split-statici}
+\end{figure}
+
+\subsection{Dati modificabili condivisi}
+\label{sec:split-mutabili}
+
+Il codice di \emph{Finance} registra i pagamenti e i rimborsi dei clienti. Il codice di \emph{Warehouse} aggiorna gli
+ordini spediti e ricevuti. Entrambi leggono e \emph{scrivono} la tabella \emph{Customer record}. Il concetto di
+dominio \emph{Customer} è modellato solo in modo implicito, dentro il database.
+
+\textbf{Soluzione}: si crea un nuovo servizio \emph{Customer} e si fa in modo che Finance e Warehouse invochino la sua
+API (\figrif{fig:split-mutabili}). Il concetto implicito diventa un servizio esplicito, unico responsabile dei dati
+dei clienti.
+
+\begin{figure}[ht]
+\centering
+\begin{tikzpicture}
+\node[font=\small\bfseries\sffamily] at (1.3,2.75) {MusicCorp};
+\draw (-0.5,1.0) rectangle (3.1,3.1);
+\node[sv, minimum width=1.5cm] (w) at (0.3,1.7) {Warehouse};
+\node[sv, minimum width=1.5cm] (f) at (2.3,1.7) {Finance};
+\tabdb{1.3}{-0.3}{Customer record}{cr}
+\draw[->] (w.south) -- (cr.north west);
+\draw[->] (f.south) -- (cr.north east);
+\draw[->, very thick, verde] (3.8,0.8) -- (4.9,0.8);
+\node[font=\small\bfseries\sffamily] at (8.0,2.75) {MusicCorp system};
+\node[sv, minimum width=2.4cm] (f2) at (6.6,1.9) {Finance service};
+\node[sv, minimum width=2.4cm] (w2) at (9.4,1.9) {Warehouse service};
+\node[sv, minimum width=2.4cm] (cu) at (8.0,0.0) {Customer service};
+\draw[->] (f2) -- (cu);
+\draw[->] (w2) -- (cu);
+\end{tikzpicture}
+\caption{Dati modificabili condivisi. A sinistra Warehouse e Finance scrivono la stessa tabella dei clienti. A destra il
+nuovo servizio Customer gestisce i dati dei clienti e gli altri due servizi lo invocano.}
+\label{fig:split-mutabili}
+\end{figure}
+
+\subsection{Tabelle condivise}
+\label{sec:split-tabelle}
+
+\emph{Catalog} deve memorizzare il nome e il prezzo dei dischi in vendita. \emph{Warehouse} deve tenere la registrazione
+elettronica dell'inventario. I due concetti sono memorizzati nella stessa tabella \emph{Item}.
+
+\textbf{Soluzione}: si memorizzano i due concetti separatamente, dividendo la tabella in due: \emph{Catalog item} per
+Catalog e \emph{Stock levels} (livelli di magazzino) per Warehouse (\figrif{fig:split-tabelle}).
+
+\begin{attenzione}[Due casi da non confondere\aggiunta]
+Nei dati modificabili condivisi (\rif{sec:split-mutabili}) due package usano \emph{lo stesso concetto}, il cliente: si
+crea un servizio per quel concetto. Nelle tabelle condivise due package usano \emph{concetti diversi} finiti nella
+stessa tabella: si divide la tabella, un concetto per parte.
+\end{attenzione}
+
+\begin{figure}[ht]
+\centering
+\begin{tikzpicture}
+\node[font=\small\bfseries\sffamily] at (1.3,2.75) {MusicCorp};
+\draw (-0.5,1.0) rectangle (3.1,3.1);
+\node[sv, minimum width=1.5cm] (c) at (0.3,1.7) {Catalog};
+\node[sv, minimum width=1.5cm] (w) at (2.3,1.7) {Warehouse};
+\tabdb{1.3}{-0.3}{Item}{it}
+\draw[->] (c.south) -- (it.north west);
+\draw[->] (w.south) -- (it.north east);
+\draw[->, very thick, verde] (3.8,0.8) -- (4.9,0.8);
+\node[font=\small\bfseries\sffamily] at (7.7,2.75) {MusicCorp};
+\draw (5.6,1.0) rectangle (9.8,3.1);
+\node[sv, minimum width=1.5cm] (c2) at (6.6,1.7) {Catalog};
+\node[sv, minimum width=1.5cm] (w2) at (8.8,1.7) {Warehouse};
+\tabdb{6.6}{-0.3}{Catalog item}{ci}
+\tabdb{8.8}{-0.3}{Stock levels}{sl}
+\draw[->] (c2) -- (ci);
+\draw[->] (w2) -- (sl);
+\end{tikzpicture}
+\caption{Tabelle condivise. A sinistra nome e prezzo (Catalog) e inventario (Warehouse) stanno nella stessa tabella Item.
+A destra la tabella è divisa: ogni package usa la tabella del proprio concetto.}
+\label{fig:split-tabelle}
+\end{figure}
+
+\subsection{Prima gli schemi o prima i servizi?}
+\label{sec:split-ordine}
+
+Il passaggio dal monolite ai servizi si può fare in tre tappe (\figrif{fig:split-ordine}): uno schema unico; schemi
+separati con il codice ancora nel monolite; applicazione divisa in servizi.
+\begin{itemize}
+  \item Separare gli schemi può aumentare il numero di chiamate al database. Può anche rompere l'integrità
+    transazionale (\rif{sec:split-transazioni}).
+  \item \textbf{Separare gli schemi tenendo insieme il codice applicativo rende più facile tornare indietro.} Se la
+    separazione degli schemi crea problemi, si annulla senza aver toccato la struttura del codice.
+\end{itemize}
+
+\begin{figure}[ht]
+\centering
+\begin{tikzpicture}
+% 1
+\node[font=\footnotesize] at (1.9,3.15) {Monolithic service};
+\draw (0.1,1.55) rectangle (3.7,3.45);
+\node[sv, minimum width=1.7cm, align=center] (a1) at (0.95,2.3) {Finance\\code};
+\node[sv, minimum width=1.7cm, align=center] (a2) at (2.85,2.3) {Customer\\code};
+\node[dbs, minimum width=2.0cm] (ad) at (1.9,0.1) {Monolithic\\schema};
+\draw (a1.south) |- (1.9,1.2) -| (a2.south);
+\draw[->] (1.9,1.2) -- (ad.north);
+\node[font=\footnotesize] at (1.9,-1.05) {1. Single schema};
+\draw[grigio] (4.25,-1.4) -- (4.25,3.55);
+% 2
+\node[font=\footnotesize] at (6.6,3.15) {Monolithic service};
+\draw (4.8,1.55) rectangle (8.4,3.45);
+\node[sv, minimum width=1.7cm, align=center] (b1) at (5.65,2.3) {Finance\\code};
+\node[sv, minimum width=1.7cm, align=center] (b2) at (7.55,2.3) {Customer\\code};
+\node[dbs, minimum width=1.7cm] (bd1) at (5.65,0.1) {Finance\\schema};
+\node[dbs, minimum width=1.7cm] (bd2) at (7.55,0.1) {Customer\\schema};
+\draw[->] (b1) -- (bd1); \draw[->] (b2) -- (bd2);
+\node[font=\footnotesize] at (6.6,-1.05) {2. Split schemas};
+\draw[grigio] (8.95,-1.4) -- (8.95,3.55);
+% 3
+\node[sv, minimum width=1.7cm, align=center] (c1) at (10.35,2.3) {Finance\\service};
+\node[sv, minimum width=1.7cm, align=center] (c2) at (12.25,2.3) {Customer\\service};
+\node[dbs, minimum width=1.7cm] (cd1) at (10.35,0.1) {Finance\\schema};
+\node[dbs, minimum width=1.7cm] (cd2) at (12.25,0.1) {Customer\\schema};
+\draw[->] (c1) -- (cd1); \draw[->] (c2) -- (cd2);
+\node[font=\footnotesize, align=center] at (11.3,-1.15) {3. Split application\\into services};
+\end{tikzpicture}
+\caption{Le tre tappe della scomposizione. 1: il servizio monolitico usa uno schema unico. 2: gli schemi sono separati, il
+codice è ancora nel monolite. 3: anche il codice è diviso in servizi, ciascuno con il proprio schema.}
+\label{fig:split-ordine}
+\end{figure}
+
+\section{Transazioni}
+\label{sec:split-transazioni}
+
+Le transazioni \emph{tutto-o-niente} (le transazioni ACID, \rif{sec:micro-dati}) sono utili: aggiornano più tabelle
+``in un colpo solo'' e lasciano il database sempre in uno stato coerente.
+
+\begin{esempio}[Creare un nuovo ordine]
+Quando si crea un nuovo ordine si aggiornano due tabelle:
+\begin{itemize}
+  \item la tabella \emph{Order}, con l'ordine (codice di Customer);
+  \item la tabella \emph{Picking}, con l'articolo da prelevare per la spedizione (codice di Warehouse).
+\end{itemize}
+Con uno schema monolitico le due insert fanno parte di un'unica transazione. Con due schemi separati ogni insert ha il
+proprio confine transazionale, e la sicurezza transazionale si perde (\figrif{fig:split-transazioni}).
+\end{esempio}
+
+La domanda è: \emph{che cosa succede se l'inserimento dell'ordine riesce e quello del prelievo fallisce?} Il cliente ha
+un ordine registrato, ma nessuno spedirà l'articolo. Le soluzioni sono tre.
+
+\begin{figure}[ht]
+\centering
+\begin{tikzpicture}
+% monolitico: servizio in alto, schema unico in basso, un solo confine
+\node[font=\footnotesize] at (2.4,4.15) {Monolithic service};
+\draw (0.2,2.55) rectangle (4.6,4.45);
+\node[sv, minimum width=1.9cm, align=center] (a1) at (1.2,3.3) {Customer\\code};
+\node[sv, minimum width=1.9cm, align=center] (a2) at (3.6,3.3) {Warehouse\\code};
+\draw (0.2,-0.95) rectangle (4.6,1.0);
+\node[blocco, minimum width=1.5cm, align=center, font=\footnotesize] (t1) at (1.2,0.35) {Order\\table};
+\node[blocco, minimum width=1.5cm, align=center, font=\footnotesize] (t2) at (3.6,0.35) {Picking\\table};
+\node[font=\footnotesize] at (2.4,-0.5) {Monolithic schema};
+\draw[->] (a1) -- node[right, pos=0.3, font=\footnotesize, align=left] {insert\\order} (t1);
+\draw[->] (a2) -- node[left, pos=0.3, font=\footnotesize, align=right] {insert\\picking} (t2);
+\draw[rosso, dashed, thick] (0.0,-1.15) rectangle (4.8,1.55);
+\node[font=\footnotesize, text=rosso] at (2.4,-1.5) {un solo confine transazionale};
+% schemi separati: due confini
+\node[font=\footnotesize] at (8.8,4.15) {Monolithic service};
+\draw (6.4,2.55) rectangle (11.2,4.45);
+\node[sv, minimum width=1.9cm, align=center] (b1) at (7.5,3.3) {Customer\\code};
+\node[sv, minimum width=1.9cm, align=center] (b2) at (10.1,3.3) {Warehouse\\code};
+\draw (6.4,-0.95) rectangle (8.6,1.0);
+\draw (9.0,-0.95) rectangle (11.2,1.0);
+\node[blocco, minimum width=1.5cm, align=center, font=\footnotesize] (u1) at (7.5,0.35) {Order\\table};
+\node[blocco, minimum width=1.5cm, align=center, font=\footnotesize] (u2) at (10.1,0.35) {Picking\\table};
+\node[font=\footnotesize, align=center] at (7.5,-0.5) {Customer\\schema};
+\node[font=\footnotesize, align=center] at (10.1,-0.5) {Warehouse\\schema};
+\draw[->] (b1) -- node[right, pos=0.3, font=\footnotesize, align=left] {insert\\order} (u1);
+\draw[->] (b2) -- node[left, pos=0.3, font=\footnotesize, align=right] {insert\\picking} (u2);
+\draw[rosso, dashed, thick] (6.25,-1.15) rectangle (8.75,1.55);
+\draw[rosso, dashed, thick] (8.85,-1.15) rectangle (11.35,1.55);
+\node[font=\footnotesize, text=rosso] at (8.8,-1.5) {due confini transazionali separati};
+\end{tikzpicture}
+\caption{Transazioni e schemi. A sinistra le due insert stanno in un unico confine transazionale (tratteggio rosso):
+riescono entrambe o falliscono entrambe. A destra, con due schemi, ogni insert ha il proprio confine: una può
+riuscire mentre l'altra fallisce.}
+\label{fig:split-transazioni}
+\end{figure}
+
+\subsection{Soluzione 1: transazioni compensative}
+
+Si \textbf{annulla l'intera operazione con una o più transazioni compensative}, come nel pattern Saga
+(\rif{sec:micro-dati}). Per esempio, se l'inserimento dell'ordine riesce e quello del prelievo fallisce:
+\begin{itemize}
+  \item si avvia una transazione compensativa che annulla la transazione già confermata nella tabella Order;
+  \item si segnala il fallimento attraverso l'interfaccia utente.
+\end{itemize}
+Restano dei problemi.
+\begin{itemize}
+  \item Dove sta la logica che gestisce le transazioni compensative? Nel servizio Customer, nel servizio Warehouse o
+    altrove?
+  \item Che cosa succede se fallisce la transazione compensativa? Si riprova (\ingl{retry}).
+  \item Che cosa succede se bisogna garantire la coerenza di 5 operazioni invece di 2? Ogni operazione può fallire
+    dopo che le precedenti sono riuscite, e per ciascun caso serve la giusta sequenza di compensazioni.
+\end{itemize}
+
+\subsection{Soluzione 2: transazioni distribuite}
+
+Si usano le \termine{transazioni distribuite}. Un \termine{transaction manager} orchestra le varie transazioni locali.
+L'algoritmo più comune è il \emph{two-phase commit}.
+
+\begin{algoritmo}[Two-phase commit]
+\begin{enumerate}
+  \item \textbf{Fase di voto} (\ingl{voting phase}). Ogni partecipante dice al transaction manager se la propria
+    transazione locale può andare avanti.
+  \item \textbf{Fase di commit.} Se il transaction manager riceve un voto \emph{sì} da tutti i partecipanti, dice a
+    tutti di procedere e fare il commit. Altrimenti invia un \emph{rollback} a tutti.
+\end{enumerate}
+\end{algoritmo}
+
+Il two-phase commit ha delle vulnerabilità.
+\begin{itemize}
+  \item Se il transaction manager si guasta, le transazioni in sospeso non si completano mai.
+  \item Se un partecipante non risponde durante il voto, tutto si blocca.
+  \item Che cosa succede se un commit fallisce dopo il voto?
+\end{itemize}
+
+\begin{esempio}[Il nuovo ordine con il two-phase commit\aggiunta]
+I partecipanti sono lo schema Customer e lo schema Warehouse (\figrif{fig:split-2pc}). Il transaction manager chiede
+a entrambi se possono inserire la propria riga. Ciascuno prepara l'inserimento senza renderlo definitivo, blocca le
+risorse coinvolte e risponde \emph{sì}. Ricevuti due \emph{sì}, il manager invia a entrambi il \emph{commit}. Se lo
+schema Warehouse avesse risposto \emph{no}, il manager avrebbe inviato a entrambi il \emph{rollback}: l'ordine non
+sarebbe stato registrato. Tra il voto e il commit le risorse restano bloccate. Per questo un manager guasto o un
+partecipante che non risponde bloccano tutti.
+\end{esempio}
+
+\begin{figure}[ht]
+\centering
+\begin{tikzpicture}
+\node[blocco, minimum width=3.0cm] (m) at (0,0) {Transaction manager};
+\node[blocco, minimum width=3.0cm] (p1) at (5,0) {Customer schema};
+\node[blocco, minimum width=3.0cm] (p2) at (10,0) {Warehouse schema};
+\foreach \x in {0,5,10} \draw[grigio] (\x,-0.45) -- (\x,-6.3);
+\node[font=\footnotesize\bfseries, anchor=east] at (-0.2,-1.3) {Fase 1: voto};
+\draw[->] (0,-1.1) -- node[above, font=\footnotesize] {puoi fare il commit?} (5,-1.1);
+\draw[->] (0,-1.9) -- node[above, font=\footnotesize, pos=0.75] {puoi fare il commit?} (10,-1.9);
+\draw[->, dashed] (5,-2.5) -- node[above, font=\footnotesize] {sì} (0,-2.5);
+\draw[->, dashed] (10,-3.1) -- node[above, font=\footnotesize, pos=0.25] {sì} (0,-3.1);
+\draw[grigio, densely dotted] (-2.4,-3.55) -- (10.6,-3.55);
+\node[font=\footnotesize\bfseries, anchor=east] at (-0.2,-4.2) {Fase 2: commit};
+\draw[->] (0,-4.0) -- node[above, font=\footnotesize] {commit} (5,-4.0);
+\draw[->] (0,-4.6) -- node[above, font=\footnotesize, pos=0.75] {commit} (10,-4.6);
+\draw[->, dashed] (5,-5.3) -- node[above, font=\footnotesize] {fatto} (0,-5.3);
+\draw[->, dashed] (10,-5.9) -- node[above, font=\footnotesize, pos=0.25] {fatto} (0,-5.9);
+\end{tikzpicture}
+\caption{Two-phase commit per il nuovo ordine. Il tempo scorre verso il basso. Nella fase 1 il transaction manager raccoglie
+i voti dei due partecipanti; avendo ricevuto due \emph{sì}, nella fase 2 ordina a entrambi il commit. Con anche un solo
+\emph{no} avrebbe ordinato a entrambi il rollback.}
+\label{fig:split-2pc}
+\end{figure}
+
+\subsection{Soluzione 3: riprovare più tardi}
+
+Si \textbf{riprova più tardi} (\ingl{try again later}) e si accetta la \emph{eventual consistency}
+(\rif{sec:micro-dati}). È la soluzione preferita.
+
+\subsubsection{Come funziona\aggiunta}
+L'ordine viene registrato. L'inserimento nella tabella Picking che è fallito non annulla l'ordine: viene messo in una
+coda e ritentato più tardi, finché riesce. Per un intervallo di tempo il sistema è incoerente: l'ordine c'è, il
+prelievo non ancora. Quando il tentativo riesce, i dati tornano coerenti. La soluzione funziona se riprovare può
+davvero risolvere il problema, come nel caso di un servizio momentaneamente non disponibile.
+
+\section{Reporting}
+\label{sec:split-reporting}
+
+Il \termine{reporting} di solito deve mettere insieme dati di molte parti dell'organizzazione per produrre un risultato
+utile. Per esempio:
+\begin{itemize}
+  \item combinare i dati del libro contabile con le descrizioni degli articoli venduti, prese dal catalogo;
+  \item combinare gli storici degli acquisti con i profili dei clienti, per capire il comportamento dei clienti.
+\end{itemize}
+
+Nei monoliti i report girano spesso su una \emph{read replica} del database primario, per ragioni di prestazioni
+(\figrif{fig:split-replica}). La read replica è una copia del database usata solo in lettura e sincronizzata
+periodicamente con il database primario. Così le interrogazioni pesanti dei report non rallentano il servizio. Ma
+\emph{che cosa si fa se il database è stato diviso?} Le soluzioni sono tre.
+
+\begin{figure}[ht]
+\centering
+\begin{tikzpicture}
+\node[sv, align=center] (ms) at (0,2.2) {Monolithic\\service};
+\node[sv, align=center] (rs) at (5,2.2) {Reporting\\system};
+\node[dbs] (pd) at (0,0) {Primary\\database};
+\node[dbs] (rr) at (5,0) {Reporting\\replica};
+\draw[->] (ms) -- node[left, font=\footnotesize] {read/write} (pd);
+\draw[->] (rs) -- node[right, font=\footnotesize] {read} (rr);
+\draw[->] (pd) -- node[below, font=\footnotesize, align=center] {sincronizzazione\\periodica} (rr);
+\end{tikzpicture}
+\caption{Reporting in un monolite. Il servizio legge e scrive il database primario. Il sistema di reporting legge una
+replica, sincronizzata periodicamente con il primario.}
+\label{fig:split-replica}
+\end{figure}
+
+\subsection{Soluzione 1: recupero dei dati con chiamate ai servizi}
+
+Il sistema di reporting \emph{preleva} (\ingl{pull}) i dati dai sistemi di origine con chiamate alle loro API.
+\begin{itemize}
+  \item Non scala bene con grandi volumi di dati.
+  \item Le API esposte possono non essere pensate per il reporting: per esempio può non esserci modo di ottenere tutti
+    i clienti. Recuperarli uno per uno è inefficiente e può generare carico sul servizio interrogato.
+\end{itemize}
+
+\subsection{Soluzione 2: data pump}
+
+Un \termine{data pump} \emph{spinge} (\ingl{push}) i dati verso il sistema di reporting (\figrif{fig:split-pump}).
+\begin{itemize}
+  \item Il data pump trasforma i dati del database del servizio nello schema del database di reporting.
+  \item Il data pump conosce lo schema interno del database del servizio: è un \emph{coupling}. È un prezzo che vale
+    la pena pagare per rendere più facile il reporting. Per tenerlo sotto controllo:
+    \begin{itemize}
+      \item il data pump è costruito e gestito dal team che gestisce il servizio;
+      \item il data pump è sotto controllo di versione insieme al servizio.
+    \end{itemize}
+  \item Il data pump si può appoggiare alle operazioni di backup: è il caso dei \emph{backup data pumps} di Netflix.
+    Il backup che il servizio produce comunque diventa la sorgente dei dati per il reporting.
+\end{itemize}
+
+\begin{figure}[ht]
+\centering
+\begin{tikzpicture}
+\node[sv, align=center, minimum width=2.8cm] (cs) at (0,2.2) {Customer service\\customer-code v123};
+\node[dbs] (db) at (0,0) {Database};
+\node[sv, align=center, minimum width=2.8cm] (dp) at (4.0,0) {Customer data pump\\customer-code v123};
+\node[sv, align=center] (rt) at (8.0,2.2) {Reporting\\tools};
+\node[dbs] (rd) at (8.0,0) {Central\\reporting\\database};
+\draw[->] (cs) -- node[left, font=\footnotesize] {read/write} (db);
+\draw (db) -- (dp);
+\draw[->] (dp) -- (rd);
+\draw[->] (rt) -- node[right, font=\footnotesize] {SQL o simili} (rd);
+\draw[blu, dashed, thick, rounded corners=8pt] (-1.8,-1.0) rectangle (5.8,3.0);
+\node[font=\footnotesize, text=blu, anchor=north east] at (5.7,2.95) {gestiti dallo stesso team};
+\end{tikzpicture}
+\caption{Data pump. Il data pump legge il database del servizio Customer e scrive nel database centrale di reporting, su cui
+lavorano gli strumenti di reporting. Servizio e data pump sono versionati insieme (stessa versione, v123) e li
+gestisce lo stesso team (riquadro tratteggiato).}
+\label{fig:split-pump}
+\end{figure}
+
+\subsection{Soluzione 3: event data pump}
+
+I microservizi possono emettere \emph{eventi} quando cambia lo stato delle entità che gestiscono. Per esempio il servizio
+Customer può emettere un evento quando un cliente è creato, aggiornato o cancellato. Si scrive allora un
+\emph{subscriber} degli eventi che riversa i dati nel database di reporting: è l'\termine{event data pump}
+(\figrif{fig:split-event}).
+\begin{itemize}
+  \item Non c'è coupling con il database del microservizio di origine.
+  \item C'è solo un legame con gli eventi emessi dal servizio, che sono fatti apposta per essere esposti.
+  \item Il flusso di dati basato sugli eventi arriva al sistema di reporting più in fretta di un data pump eseguito a
+    intervalli fissi.
+  \item L'event data pump non deve per forza essere gestito dal team del servizio.
+  \item Svantaggio: tutte le informazioni necessarie devono essere diffuse come eventi. Con grandi volumi di dati la
+    soluzione può non scalare bene.
+\end{itemize}
+
+\begin{figure}[ht]
+\centering
+\begin{tikzpicture}
+\node[sv, align=center] (cs) at (0,0) {Customer\\service};
+\node[circle, draw, fill=arancio!60, minimum size=0.42cm] (ev) at (2.0,0) {};
+\node[font=\footnotesize, align=center, anchor=north] at (2.0,-0.3) {eventi di\\cambio di stato};
+\node[draw, minimum width=0.7cm, minimum height=1.9cm] (q) at (3.6,0) {};
+\foreach \y in {-0.6,0,0.6} \node[circle, draw, fill=arancio!60, minimum size=0.42cm] at (3.6,\y) {};
+\node[sv, align=center, minimum width=2.4cm] (mp) at (6.2,0) {Customer-reporting\\mapper};
+\node[dbs] (rd) at (9.4,0) {Central\\reporting\\database};
+\draw (cs) -- (ev);
+\draw[->] (ev) -- (q);
+\draw[->] (q) -- (mp);
+\draw[->] (mp) -- (rd);
+\end{tikzpicture}
+\caption{Event data pump. Il servizio Customer emette un evento a ogni cambio di stato di un cliente. Gli eventi passano da
+una coda; il mapper, che è il subscriber, li legge e aggiorna il database centrale di reporting.}
+\label{fig:split-event}
+\end{figure}
+
+\begin{table}[ht]
+\centering
+\small
+\caption{Confronto delle tre soluzioni per il reporting.\aggiunta}
+\label{tab:split-reporting}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}p{2.9cm}>{\raggedright\arraybackslash}p{2.6cm}>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}p{3.2cm}}
+\toprule
+Soluzione & Chi muove i dati & Legame con il servizio & Limite \\
+\midrule
+Chiamate ai servizi & il reporting (pull) & solo l'API pubblica & grandi volumi; API non adatte \\
+Data pump & il data pump (push) & schema interno del database; stesso team e versione & coupling con il database \\
+Event data pump & il subscriber degli eventi & solo gli eventi pubblici & tutto deve diventare evento; grandi volumi \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\section{Considerazioni finali}
+\label{sec:split-conclusioni}
+
+Scomporre un monolite può essere faticoso.
+\begin{itemize}
+  \item Pianificare cambiamenti \textbf{piccoli e incrementali} rende più facile capire l'impatto di ogni cambiamento.
+    Rende anche più facile contenere il costo degli errori, che sono inevitabili.
+  \item Far crescere un servizio finché va diviso va del tutto bene. Bisogna però capire \emph{quando} va diviso, e
+    dividerlo, prima che la divisione diventi troppo costosa.
+\end{itemize}
+
+Riferimento: Sam Newman, \emph{Building Microservices}, O'Reilly, 2021, capitolo 5.
+
+\begin{puntichiave}
+\begin{itemize}
+  \item Crescendo, il monolite perde cohesion e loose coupling. Si scompone quando diventa un problema.
+  \item Un seam è una porzione di codice trattabile in isolamento. I seam diventano confini di servizio: si trovano con i
+    bounded context e si materializzano come package, in modo incrementale.
+  \item Si inizia dal seam con più beneficio: pace of change, team structure, security, technology, tangled dependencies
+    (il seam meno dipeso).
+  \item Il database è la dipendenza più aggrovigliata. Refactoring tipici:
+    \begin{itemize}
+      \item foreign key tra contesti $\to$ API del servizio proprietario (vincoli gestiti nei servizi);
+      \item dati statici condivisi $\to$ copia, configurazione (preferita) o servizio;
+      \item dati modificabili condivisi $\to$ nuovo servizio per il concetto;
+      \item tabella con due concetti $\to$ due tabelle.
+    \end{itemize}
+  \item Separare prima gli schemi, con il codice ancora insieme, rende più facile tornare indietro.
+  \item Transazioni su più schemi: transazioni compensative, two-phase commit (con le sue vulnerabilità) o riprovare più
+    tardi con eventual consistency.
+  \item Reporting su più servizi: chiamate alle API, data pump (gestito dal team del servizio), event data pump.
+\end{itemize}
+\end{puntichiave}
+
+\begin{domande}
+\begin{enumerate}
+  \item Perché un monolite che cresce perde cohesion e loose coupling? Quando conviene scomporlo?
+  \item Che cos'è un seam? Come aiutano i bounded context e i package a trovarlo?
+  \item Quali sono i criteri per scegliere il primo seam da estrarre? Fare un esempio per ciascuno.
+  \item Perché il database è la dipendenza più difficile da spezzare? Quali strumenti aiutano ad analizzarlo?
+  \item Come si elimina una foreign key tra le tabelle di due contesti? Che cosa si perde?
+  \item Quali soluzioni ci sono per i dati statici condivisi? E per i dati modificabili condivisi?
+  \item Conviene separare prima gli schemi o prima i servizi? Perché?
+  \item Che cosa succede alle transazioni quando si separano gli schemi? Confrontare le tre soluzioni.
+  \item Descrivere il two-phase commit e le sue vulnerabilità.
+  \item Come si fa reporting quando il database è diviso? Confrontare data pump ed event data pump.
+\end{enumerate}
+\end{domande}

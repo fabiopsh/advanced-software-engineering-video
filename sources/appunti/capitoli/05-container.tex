@@ -1,0 +1,330 @@
+\chapter{Cloud computing, container e Docker}
+\label{cap:container}
+
+\begin{inbreve}
+Il cloud computing mette a disposizione risorse virtualizzate su richiesta. Per sfruttarlo il software deve poter
+girare in ambienti isolati e portabili. Il capitolo confronta le macchine virtuali con i container e presenta
+Docker (immagini, container, registry, comandi). Mostra poi due esempi completi: un'applicazione con un solo
+container e un'applicazione a più servizi gestita con Docker Compose. I modelli di servizio e l'architettura del
+software cloud sono nel capitolo~\ref{cap:cloud}.
+\end{inbreve}
+
+\section{Cloud computing}
+\label{sec:container-cloud}
+
+Hardware potente e reti veloci hanno portato allo sviluppo del \termine{cloud computing}: risorse virtualizzate
+(calcolo, memoria di massa, piattaforma) accessibili su richiesta. I vantaggi principali sono quattro.
+
+\begin{itemize}
+  \item \textbf{Scalability}: mantenere le prestazioni al crescere del carico.
+  \item \textbf{Elasticity}: adattare la configurazione dei server alle richieste che cambiano.
+  \item \textbf{Resilience}: mantenere il servizio in caso di guasto dei server.
+  \item \textbf{Cost}: riduzione delle spese di capitale (\ingl{CapEx}) e pagamento in base all'uso
+    (\ingl{pay-per-use}).
+\end{itemize}
+
+\section{Dalle macchine virtuali ai container}
+\label{sec:container-vm}
+
+Nella \termine{virtualizzazione dei server} molte macchine virtuali (VM), ciascuna con il proprio sistema operativo,
+girano sullo stesso server fisico. Un \termine{hypervisor} di ``tipo 1'' è caricato direttamente sull'hardware e
+gestisce le VM.
+
+I \termine{container} sfruttano invece la capacità del kernel del sistema operativo di permettere più istanze isolate
+dello spazio utente (\figrif{fig:container-vm}). Rispetto alle VM:
+\begin{itemize}
+  \item[$+$] sono più leggeri: richiedono meno risorse (da Gb a Mb);
+  \item[$+$] partono più in fretta (da minuti a secondi);
+  \item[$-$] condividono lo stesso sistema operativo.
+\end{itemize}
+
+\begin{figure}[ht]
+\centering
+\begin{tikzpicture}[r/.style={draw, minimum width=5.4cm, minimum height=0.7cm, font=\small, align=center},
+  a/.style={draw, minimum width=2.5cm, minimum height=1.3cm, font=\small, align=center, fill=grigiochiaro}]
+\node[font=\small\bfseries\sffamily] at (0,4.6) {Macchine virtuali};
+\node[r, fill=grigio!30] (h1) at (0,0) {Server hardware};
+\node[r] (hy) at (0,0.8) {Hypervisor};
+\node[a] at (-1.45,2.2) {App A\\Bins/Libs\\Guest OS};
+\node[a] at (1.45,2.2) {App B\\Bins/Libs\\Guest OS};
+\node[font=\small\bfseries\sffamily] at (8,4.6) {Container};
+\node[r, fill=grigio!30] (h2) at (8,0) {Server hardware};
+\node[r] (os) at (8,0.8) {Host OS};
+\node[r] (cm) at (8,1.6) {Container manager};
+\node[a, minimum height=1cm] at (6.55,2.55) {App A\\Bins/Libs};
+\node[a, minimum height=1cm] at (9.45,2.55) {App B\\Bins/Libs};
+\end{tikzpicture}
+\caption{Pile a confronto. A sinistra ogni VM contiene un sistema operativo ospite completo (\emph{Guest OS}) sopra
+l'hypervisor. A destra i container contengono solo l'applicazione e le sue librerie e condividono il sistema operativo
+(\emph{Host OS}) sotto il container manager.}
+\label{fig:container-vm}
+\end{figure}
+
+\section{Docker}
+\label{sec:container-docker}
+
+\begin{definizione}[Docker]
+\termine{Docker} è una piattaforma che permette di eseguire applicazioni in un ambiente isolato e di sviluppare ed
+eseguire applicazioni portabili sfruttando i container.
+\end{definizione}
+
+Docker usa la virtualizzazione basata sui container per eseguire più istanze ospiti isolate sullo stesso sistema
+operativo. La piattaforma è composta da:
+\begin{itemize}
+  \item \textbf{Docker Engine}, per creare ed eseguire i container;
+  \item \textbf{Docker Hub}, per distribuirli.
+\end{itemize}
+
+I concetti principali sono tre:
+\begin{itemize}
+  \item i componenti software sono impacchettati in \termine{immagini} (\ingl{image}), che sono modelli di sola
+    lettura usati per creare ed eseguire i \termine{container};
+  \item i container girano sopra il Docker Engine e il sistema operativo del server;
+  \item si possono montare \termine{volumi} esterni (\ingl{volume}) per rendere persistenti i dati.
+\end{itemize}
+
+\section{Immagini, registry e comandi}
+\label{sec:container-immagini}
+
+Le immagini sono modelli di sola lettura. Sono conservate in un \termine{registry} Docker, privato o pubblico
+(per esempio Docker Hub).
+\begin{itemize}
+  \item Il registry è strutturato in \emph{repository}.
+  \item Ogni repository contiene un insieme di immagini, per le diverse versioni di un software.
+  \item Un'immagine è identificata da una coppia \texttt{repository:tag}.
+\end{itemize}
+
+Le immagini sono strutturate in \emph{strati} (\ingl{layer}) di sola lettura (\figrif{fig:container-strati}). Ogni
+strato è a sua volta un'immagine. Lo strato più basso si chiama \termine{base image}. Un container in esecuzione scrive
+in un nuovo strato in cima, e le modifiche possono essere salvate (\ingl{commit}) in una nuova immagine.
+
+\begin{figure}[ht]
+\centering
+\begin{tikzpicture}[l/.style={draw, minimum width=4.2cm, minimum height=0.65cm, font=\small}]
+\node[l, fill=grigiochiaro] (a) at (0,0) {Debian (base image)};
+\node[l, fill=grigiochiaro] (b) at (0,0.65) {Java};
+\node[l, fill=grigiochiaro] (c) at (0,1.3) {Dropwizard};
+\node[l, fill=white, thick] (d) at (0,1.95) {Container (strato scrivibile)};
+\node[font=\footnotesize, anchor=west, align=left] at (2.4,0.65) {strati dell'immagine:\\sola lettura};
+\draw[grigio] (2.15,-0.3) -- (2.3,-0.3) -- (2.3,1.6) -- (2.15,1.6);
+\end{tikzpicture}
+\caption{Struttura a strati di una immagine e di un container. Gli strati dell'immagine (Debian, Java, Dropwizard)
+sono di sola lettura. Il container aggiunge in cima uno strato in cui può scrivere.}
+\label{fig:container-strati}
+\end{figure}
+
+I comandi principali (\figrif{fig:container-comandi}) sono:
+\begin{description}[leftmargin=0pt, style=unboxed]
+  \item[build] crea un'immagine a partire da un \emph{Dockerfile};
+  \item[run] crea ed esegue un container da un'immagine;
+  \item[commit] salva lo stato di un container in una nuova immagine;
+  \item[push] invia un'immagine a un registry;
+  \item[pull] scarica un'immagine da un registry.
+\end{description}
+
+\begin{figure}[ht]
+\centering
+\begin{tikzpicture}[b/.style={draw, minimum width=2.2cm, minimum height=0.8cm, font=\small}]
+\node[b] (d) at (0,0) {Dockerfile};
+\node[b, fill=grigiochiaro] (i) at (4.4,0) {image};
+\node[b] (r) at (8.8,0) {registry};
+\node[b] (c) at (4.4,-2.4) {container};
+\draw[freccia] (d) -- node[above, font=\footnotesize] {build} (i);
+\draw[freccia] ([yshift=3pt]i.east) -- node[above, font=\footnotesize] {push} ([yshift=3pt]r.west);
+\draw[freccia] ([yshift=-3pt]r.west) -- node[below, font=\footnotesize] {pull} ([yshift=-3pt]i.east);
+\draw[freccia] ([xshift=-4pt]i.south) -- node[left, font=\footnotesize] {commit} ([xshift=-4pt]c.north);
+\draw[freccia] ([xshift=4pt]c.north) -- node[right, font=\footnotesize] {run} ([xshift=4pt]i.south);
+\end{tikzpicture}
+\caption{Ciclo di vita delle immagini Docker. Il Dockerfile produce un'immagine (\texttt{build}); l'immagine si
+invia al registry e si scarica da esso (\texttt{push}, \texttt{pull}); da un'immagine si avvia un container
+(\texttt{run}) e lo stato di un container diventa una nuova immagine (\texttt{commit}).}
+\label{fig:container-comandi}
+\end{figure}
+
+\section{Esempio: un'applicazione con un container}
+\label{sec:container-hello}
+
+L'esempio è un'applicazione PHP che mostra ``Hello, World''. Ci vogliono due file. Il primo è \texttt{index.php}:
+
+{\small
+\begin{verbatim}
+<?php
+echo "Hello, World"
+\end{verbatim}
+}
+
+Il secondo è il \texttt{Dockerfile}, che descrive come costruire l'immagine. Si parte da un'immagine PHP trovata su
+Docker Hub:
+
+{\small
+\begin{verbatim}
+FROM php:7.0-apache
+COPY src/ /var/www/html
+EXPOSE 80
+\end{verbatim}
+}
+
+Poi si danno due comandi:
+
+{\small
+\begin{verbatim}
+docker build -t hello-world .
+docker run -p 80:80 hello-world
+\end{verbatim}
+}
+
+\subsubsection{Che cosa fanno istruzioni e comandi\aggiunta}
+\texttt{FROM} sceglie l'immagine di partenza, \texttt{COPY} copia la cartella \texttt{src/} nella cartella servita dal
+web server, \texttt{EXPOSE} dichiara la porta 80 del container. Il comando \texttt{docker build} costruisce
+l'immagine a partire dal Dockerfile della cartella corrente (\texttt{.}) e le dà il nome \texttt{hello-world}
+(\texttt{-t}). Il comando \texttt{docker run} avvia un container e collega la porta 80 del computer ospite alla porta
+80 del container (\texttt{-p}).
+
+Due regole pratiche:
+\begin{itemize}
+  \item si può usare un \emph{volume} per condividere una cartella tra il computer ospite e il container;
+  \item si usa \emph{un solo processo per container}.
+\end{itemize}
+
+\section{Applicazioni a più servizi: Docker Compose}
+\label{sec:container-compose}
+
+Come si gestisce con Docker un'applicazione fatta di più (micro)servizi? Docker Compose permette di descriverla in un
+solo file e di avviarla con un solo comando. L'esempio ha due servizi: un \emph{product service}, scritto in Python,
+che restituisce un elenco di prodotti, e un \emph{website}, scritto in PHP, che interroga il servizio e mostra
+l'elenco.
+
+\subsection{Il servizio dei prodotti}
+
+\texttt{product/api.py}:
+
+{\small
+\begin{verbatim}
+from flask import Flask
+from flask_restful import Resource, Api
+
+app = Flask(__name__)
+api = Api(app)
+
+class Product(Resource):
+    def get(self):
+        return {
+            'product': ['Ice cream',
+                        'Chocolate',
+                        'Fruit']
+        }
+
+api.add_resource(Product, '/')
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=80, debug=True)
+\end{verbatim}
+}
+
+\texttt{product/Dockerfile}:
+
+{\small
+\begin{verbatim}
+FROM python:3-onbuild
+COPY . /usr/src/app
+CMD ["python", "api.py"]
+\end{verbatim}
+}
+
+\subsection{Il file di composizione}
+
+Con Compose non servono i comandi \texttt{docker build} e \texttt{docker run} per ogni servizio. Basta il file
+\texttt{docker-compose.yml}:
+
+{\small
+\begin{verbatim}
+version: '3'
+
+services:
+  product-service:
+    build: ./product
+    volumes:
+      - ./product:/usr/src/app
+    ports:
+      - 5001:80
+
+  website:
+    image: php:apache
+    volumes:
+      - ./website:/var/www/html
+    ports:
+      - 5000:80
+    depends_on:
+      - product-service
+\end{verbatim}
+}
+
+\subsubsection{Che cosa dice il file\aggiunta}
+Il file dice, per ogni servizio, come ottenere l'immagine (\texttt{build} da una cartella, oppure \texttt{image} da
+Docker Hub), quali volumi montare, quali porte collegare (\texttt{ospite:container}) e, per il sito, da quale
+servizio dipende (\texttt{depends\_on}). Il comando che avvia tutto è:
+
+{\small
+\begin{verbatim}
+docker-compose up
+\end{verbatim}
+}
+
+\subsection{Il sito}
+
+\texttt{website/index.php} legge dal servizio la lista dei prodotti e la stampa. Compose crea una \emph{rete
+virtuale}: per questo il sito può usare direttamente il \emph{nome del servizio} (\texttt{product-service}) come
+indirizzo.
+
+{\small
+\begin{verbatim}
+<html>
+  <head>
+    <title>My Shop</title>
+  </head>
+
+  <body>
+    <h1>Welcome to my shop</h1>
+    <ul>
+      <?php
+        $json = file_get_contents('http://product-service');
+        $obj = json_decode($json);
+
+        $products = $obj->product;
+        foreach ($products as $product) {
+          echo "<li>$product</li>";
+        }
+      ?>
+    </ul>
+  </body>
+</html>
+\end{verbatim}
+}
+
+Aprendo \texttt{localhost:5001} si vede la risposta JSON del servizio. Aprendo \texttt{localhost:5000} si vede la pagina
+del sito, che elenca i prodotti.
+
+\begin{puntichiave}
+\begin{itemize}
+  \item Cloud computing: risorse virtualizzate su richiesta. Vantaggi: scalability, elasticity, resilience, cost.
+  \item Container rispetto alle VM: più leggeri (da Gb a Mb) e più veloci ad avviarsi (da minuti a secondi), ma
+    condividono il sistema operativo.
+  \item Docker: le immagini (sola lettura, a strati) sono i modelli da cui si creano i container. I volumi rendono
+    i dati persistenti.
+  \item Un'immagine ha un nome \texttt{repository:tag} ed è conservata in un registry (per esempio Docker Hub).
+  \item Comandi: \texttt{build}, \texttt{run}, \texttt{commit}, \texttt{push}, \texttt{pull}.
+  \item Docker Compose descrive in un file un'applicazione a più servizi e la avvia con \texttt{docker-compose up}.
+    I servizi si raggiungono per nome.
+\end{itemize}
+\end{puntichiave}
+
+\begin{domande}
+\begin{enumerate}
+  \item Quali sono i quattro vantaggi principali del cloud computing?
+  \item Che differenza c'è tra una VM e un container? Quali vantaggi e svantaggi hanno i container?
+  \item Che cosa sono un'immagine, un container, un volume, un registry?
+  \item Che cos'è un'immagine ``a strati'' e dove scrive un container in esecuzione?
+  \item A che cosa servono i comandi \texttt{build}, \texttt{run}, \texttt{commit}, \texttt{push}, \texttt{pull}?
+  \item A che cosa serve Docker Compose e come fa il sito a raggiungere il servizio dei prodotti?
+\end{enumerate}
+\end{domande}
