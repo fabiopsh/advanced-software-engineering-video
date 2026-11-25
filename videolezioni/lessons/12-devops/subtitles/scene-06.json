@@ -1,0 +1,984 @@
+{
+  "duration": 70.498,
+  "segments": [
+    {
+      "start": 0.163,
+      "end": 4.103,
+      "text": "Gestire a mano decine o centinaia di server è lento e rischioso:",
+      "words": [
+        {
+          "text": "Gestire",
+          "start": 0.163,
+          "end": 0.503
+        },
+        {
+          "text": "a",
+          "start": 0.563,
+          "end": 0.603
+        },
+        {
+          "text": "mano",
+          "start": 0.663,
+          "end": 0.903
+        },
+        {
+          "text": "decine",
+          "start": 1.003,
+          "end": 1.443
+        },
+        {
+          "text": "o",
+          "start": 1.523,
+          "end": 1.563
+        },
+        {
+          "text": "centinaia",
+          "start": 1.623,
+          "end": 2.103
+        },
+        {
+          "text": "di",
+          "start": 2.143,
+          "end": 2.183
+        },
+        {
+          "text": "server",
+          "start": 2.263,
+          "end": 2.663
+        },
+        {
+          "text": "è",
+          "start": 2.823,
+          "end": 2.863
+        },
+        {
+          "text": "lento",
+          "start": 2.983,
+          "end": 3.323
+        },
+        {
+          "text": "e",
+          "start": 3.503,
+          "end": 3.543
+        },
+        {
+          "text": "rischioso:",
+          "start": 3.603,
+          "end": 4.103
+        }
+      ]
+    },
+    {
+      "start": 4.603,
+      "end": 9.163,
+      "text": "cambiano configurazioni e dipendenze, e le modifiche d'emergenza spesso non vengono documentate.",
+      "words": [
+        {
+          "text": "cambiano",
+          "start": 4.603,
+          "end": 4.923
+        },
+        {
+          "text": "configurazioni",
+          "start": 4.963,
+          "end": 5.623
+        },
+        {
+          "text": "e",
+          "start": 5.683,
+          "end": 5.723
+        },
+        {
+          "text": "dipendenze,",
+          "start": 5.723,
+          "end": 6.283
+        },
+        {
+          "text": "e",
+          "start": 6.743,
+          "end": 6.783
+        },
+        {
+          "text": "le",
+          "start": 6.823,
+          "end": 6.863
+        },
+        {
+          "text": "modifiche",
+          "start": 6.903,
+          "end": 7.243
+        },
+        {
+          "text": "d'emergenza",
+          "start": 7.263,
+          "end": 7.803
+        },
+        {
+          "text": "spesso",
+          "start": 7.863,
+          "end": 8.123
+        },
+        {
+          "text": "non",
+          "start": 8.163,
+          "end": 8.263
+        },
+        {
+          "text": "vengono",
+          "start": 8.303,
+          "end": 8.563
+        },
+        {
+          "text": "documentate.",
+          "start": 8.603,
+          "end": 9.163
+        }
+      ]
+    },
+    {
+      "start": 9.943,
+      "end": 15.424,
+      "text": "L'Infrastructure as Code risolve il problema descrivendo rete, server e software da installare in un",
+      "words": [
+        {
+          "text": "L'Infrastructure",
+          "start": 9.943,
+          "end": 10.644
+        },
+        {
+          "text": "as",
+          "start": 10.684,
+          "end": 10.764
+        },
+        {
+          "text": "Code",
+          "start": 10.804,
+          "end": 11.124
+        },
+        {
+          "text": "risolve",
+          "start": 11.424,
+          "end": 11.724
+        },
+        {
+          "text": "il",
+          "start": 11.764,
+          "end": 11.824
+        },
+        {
+          "text": "problema",
+          "start": 11.844,
+          "end": 12.164
+        },
+        {
+          "text": "descrivendo",
+          "start": 12.204,
+          "end": 12.704
+        },
+        {
+          "text": "rete,",
+          "start": 12.764,
+          "end": 13.044
+        },
+        {
+          "text": "server",
+          "start": 13.384,
+          "end": 13.744
+        },
+        {
+          "text": "e",
+          "start": 13.924,
+          "end": 13.964
+        },
+        {
+          "text": "software",
+          "start": 14.064,
+          "end": 14.464
+        },
+        {
+          "text": "da",
+          "start": 14.484,
+          "end": 14.544
+        },
+        {
+          "text": "installare",
+          "start": 14.604,
+          "end": 15.124
+        },
+        {
+          "text": "in",
+          "start": 15.244,
+          "end": 15.324
+        },
+        {
+          "text": "un",
+          "start": 15.364,
+          "end": 15.424
+        }
+      ]
+    },
+    {
+      "start": 15.464,
+      "end": 16.904,
+      "text": "modello leggibile dalla macchina.",
+      "words": [
+        {
+          "text": "modello",
+          "start": 15.464,
+          "end": 15.784
+        },
+        {
+          "text": "leggibile",
+          "start": 15.844,
+          "end": 16.284
+        },
+        {
+          "text": "dalla",
+          "start": 16.324,
+          "end": 16.504
+        },
+        {
+          "text": "macchina.",
+          "start": 16.544,
+          "end": 16.904
+        }
+      ]
+    },
+    {
+      "start": 17.764,
+      "end": 21.444,
+      "text": "Uno strumento di configuration management, come Puppet, Chef o Ansible,",
+      "words": [
+        {
+          "text": "Uno",
+          "start": 17.764,
+          "end": 17.884
+        },
+        {
+          "text": "strumento",
+          "start": 17.904,
+          "end": 18.224
+        },
+        {
+          "text": "di",
+          "start": 18.244,
+          "end": 18.304
+        },
+        {
+          "text": "configuration",
+          "start": 18.344,
+          "end": 18.864
+        },
+        {
+          "text": "management,",
+          "start": 18.924,
+          "end": 19.364
+        },
+        {
+          "text": "come",
+          "start": 19.444,
+          "end": 19.584
+        },
+        {
+          "text": "Puppet,",
+          "start": 19.684,
+          "end": 20.144
+        },
+        {
+          "text": "Chef",
+          "start": 20.504,
+          "end": 20.784
+        },
+        {
+          "text": "o",
+          "start": 20.864,
+          "end": 20.904
+        },
+        {
+          "text": "Ansible,",
+          "start": 20.964,
+          "end": 21.444
+        }
+      ]
+    },
+    {
+      "start": 21.864,
+      "end": 25.605,
+      "text": "legge questa definizione e applica le modifiche in automatico a tutti i server.",
+      "words": [
+        {
+          "text": "legge",
+          "start": 21.864,
+          "end": 22.064
+        },
+        {
+          "text": "questa",
+          "start": 22.104,
+          "end": 22.284
+        },
+        {
+          "text": "definizione",
+          "start": 22.324,
+          "end": 22.944
+        },
+        {
+          "text": "e",
+          "start": 23.164,
+          "end": 23.204
+        },
+        {
+          "text": "applica",
+          "start": 23.264,
+          "end": 23.565
+        },
+        {
+          "text": "le",
+          "start": 23.605,
+          "end": 23.665
+        },
+        {
+          "text": "modifiche",
+          "start": 23.705,
+          "end": 24.105
+        },
+        {
+          "text": "in",
+          "start": 24.165,
+          "end": 24.225
+        },
+        {
+          "text": "automatico",
+          "start": 24.265,
+          "end": 24.725
+        },
+        {
+          "text": "a",
+          "start": 24.785,
+          "end": 24.825
+        },
+        {
+          "text": "tutti",
+          "start": 24.865,
+          "end": 25.125
+        },
+        {
+          "text": "i",
+          "start": 25.185,
+          "end": 25.225
+        },
+        {
+          "text": "server.",
+          "start": 25.245,
+          "end": 25.605
+        }
+      ]
+    },
+    {
+      "start": 26.205,
+      "end": 27.125,
+      "text": "I vantaggi sono quattro:",
+      "words": [
+        {
+          "text": "I",
+          "start": 26.205,
+          "end": 26.245
+        },
+        {
+          "text": "vantaggi",
+          "start": 26.265,
+          "end": 26.565
+        },
+        {
+          "text": "sono",
+          "start": 26.585,
+          "end": 26.745
+        },
+        {
+          "text": "quattro:",
+          "start": 26.765,
+          "end": 27.125
+        }
+      ]
+    },
+    {
+      "start": 27.765,
+      "end": 31.225,
+      "text": "visibility, perché l'intero team può leggere e rivedere il modello;",
+      "words": [
+        {
+          "text": "visibility,",
+          "start": 27.765,
+          "end": 28.285
+        },
+        {
+          "text": "perché",
+          "start": 28.725,
+          "end": 28.925
+        },
+        {
+          "text": "l'intero",
+          "start": 28.985,
+          "end": 29.345
+        },
+        {
+          "text": "team",
+          "start": 29.385,
+          "end": 29.565
+        },
+        {
+          "text": "può",
+          "start": 29.685,
+          "end": 29.765
+        },
+        {
+          "text": "leggere",
+          "start": 29.925,
+          "end": 30.285
+        },
+        {
+          "text": "e",
+          "start": 30.325,
+          "end": 30.365
+        },
+        {
+          "text": "rivedere",
+          "start": 30.405,
+          "end": 30.725
+        },
+        {
+          "text": "il",
+          "start": 30.765,
+          "end": 30.805
+        },
+        {
+          "text": "modello;",
+          "start": 30.845,
+          "end": 31.225
+        }
+      ]
+    },
+    {
+      "start": 31.925,
+      "end": 35.125,
+      "text": "reproducibility, perché l'ambiente ricreato è sempre identico;",
+      "words": [
+        {
+          "text": "reproducibility,",
+          "start": 31.925,
+          "end": 32.685
+        },
+        {
+          "text": "perché",
+          "start": 33.145,
+          "end": 33.345
+        },
+        {
+          "text": "l'ambiente",
+          "start": 33.385,
+          "end": 33.765
+        },
+        {
+          "text": "ricreato",
+          "start": 33.825,
+          "end": 34.245
+        },
+        {
+          "text": "è",
+          "start": 34.305,
+          "end": 34.345
+        },
+        {
+          "text": "sempre",
+          "start": 34.385,
+          "end": 34.625
+        },
+        {
+          "text": "identico;",
+          "start": 34.685,
+          "end": 35.125
+        }
+      ]
+    },
+    {
+      "start": 35.825,
+      "end": 41.906,
+      "text": "reliability, evitando gli errori manuali; e recovery, perché il modello è versionato nel code management",
+      "words": [
+        {
+          "text": "reliability,",
+          "start": 35.825,
+          "end": 36.545
+        },
+        {
+          "text": "evitando",
+          "start": 37.006,
+          "end": 37.386
+        },
+        {
+          "text": "gli",
+          "start": 37.386,
+          "end": 37.486
+        },
+        {
+          "text": "errori",
+          "start": 37.526,
+          "end": 37.746
+        },
+        {
+          "text": "manuali;",
+          "start": 37.786,
+          "end": 38.206
+        },
+        {
+          "text": "e",
+          "start": 38.646,
+          "end": 38.686
+        },
+        {
+          "text": "recovery,",
+          "start": 38.786,
+          "end": 39.226
+        },
+        {
+          "text": "perché",
+          "start": 39.646,
+          "end": 39.826
+        },
+        {
+          "text": "il",
+          "start": 39.866,
+          "end": 39.926
+        },
+        {
+          "text": "modello",
+          "start": 39.946,
+          "end": 40.246
+        },
+        {
+          "text": "è",
+          "start": 40.306,
+          "end": 40.346
+        },
+        {
+          "text": "versionato",
+          "start": 40.406,
+          "end": 41.006
+        },
+        {
+          "text": "nel",
+          "start": 41.046,
+          "end": 41.166
+        },
+        {
+          "text": "code",
+          "start": 41.226,
+          "end": 41.386
+        },
+        {
+          "text": "management",
+          "start": 41.386,
+          "end": 41.906
+        }
+      ]
+    },
+    {
+      "start": 42.286,
+      "end": 43.746,
+      "text": "e consente un rollback immediato.",
+      "words": [
+        {
+          "text": "e",
+          "start": 42.286,
+          "end": 42.326
+        },
+        {
+          "text": "consente",
+          "start": 42.366,
+          "end": 42.766
+        },
+        {
+          "text": "un",
+          "start": 42.806,
+          "end": 42.866
+        },
+        {
+          "text": "rollback",
+          "start": 42.906,
+          "end": 43.246
+        },
+        {
+          "text": "immediato.",
+          "start": 43.306,
+          "end": 43.746
+        }
+      ]
+    },
+    {
+      "start": 44.406,
+      "end": 46.246,
+      "text": "Un caso celebre è la Borsa di New York,",
+      "words": [
+        {
+          "text": "Un",
+          "start": 44.406,
+          "end": 44.486
+        },
+        {
+          "text": "caso",
+          "start": 44.526,
+          "end": 44.726
+        },
+        {
+          "text": "celebre",
+          "start": 44.786,
+          "end": 45.166
+        },
+        {
+          "text": "è",
+          "start": 45.326,
+          "end": 45.366
+        },
+        {
+          "text": "la",
+          "start": 45.406,
+          "end": 45.466
+        },
+        {
+          "text": "Borsa",
+          "start": 45.506,
+          "end": 45.746
+        },
+        {
+          "text": "di",
+          "start": 45.786,
+          "end": 45.846
+        },
+        {
+          "text": "New",
+          "start": 45.886,
+          "end": 45.986
+        },
+        {
+          "text": "York,",
+          "start": 46.006,
+          "end": 46.246
+        }
+      ]
+    },
+    {
+      "start": 46.506,
+      "end": 48.226,
+      "text": "parte di Intercontinental Exchange:",
+      "words": [
+        {
+          "text": "parte",
+          "start": 46.506,
+          "end": 46.786
+        },
+        {
+          "text": "di",
+          "start": 46.826,
+          "end": 46.906
+        },
+        {
+          "text": "Intercontinental",
+          "start": 46.986,
+          "end": 47.726
+        },
+        {
+          "text": "Exchange:",
+          "start": 47.766,
+          "end": 48.226
+        }
+      ]
+    },
+    {
+      "start": 48.846,
+      "end": 53.387,
+      "text": "adottando Puppet Enterprise, gestisce il settantacinque per cento dei suoi ventimila server,",
+      "words": [
+        {
+          "text": "adottando",
+          "start": 48.846,
+          "end": 49.306
+        },
+        {
+          "text": "Puppet",
+          "start": 49.366,
+          "end": 49.646
+        },
+        {
+          "text": "Enterprise,",
+          "start": 49.686,
+          "end": 50.226
+        },
+        {
+          "text": "gestisce",
+          "start": 50.406,
+          "end": 50.787
+        },
+        {
+          "text": "il",
+          "start": 50.827,
+          "end": 50.887
+        },
+        {
+          "text": "settantacinque",
+          "start": 50.947,
+          "end": 51.647
+        },
+        {
+          "text": "per",
+          "start": 51.667,
+          "end": 51.787
+        },
+        {
+          "text": "cento",
+          "start": 51.827,
+          "end": 52.107
+        },
+        {
+          "text": "dei",
+          "start": 52.147,
+          "end": 52.247
+        },
+        {
+          "text": "suoi",
+          "start": 52.267,
+          "end": 52.407
+        },
+        {
+          "text": "ventimila",
+          "start": 52.487,
+          "end": 52.947
+        },
+        {
+          "text": "server,",
+          "start": 52.987,
+          "end": 53.387
+        }
+      ]
+    },
+    {
+      "start": 53.607,
+      "end": 58.627,
+      "text": "cioè quindicimila macchine; ogni amministratore segue settecento server invece di trecento,",
+      "words": [
+        {
+          "text": "cioè",
+          "start": 53.607,
+          "end": 53.767
+        },
+        {
+          "text": "quindicimila",
+          "start": 53.847,
+          "end": 54.427
+        },
+        {
+          "text": "macchine;",
+          "start": 54.467,
+          "end": 54.847
+        },
+        {
+          "text": "ogni",
+          "start": 55.587,
+          "end": 55.747
+        },
+        {
+          "text": "amministratore",
+          "start": 55.787,
+          "end": 56.447
+        },
+        {
+          "text": "segue",
+          "start": 56.627,
+          "end": 56.867
+        },
+        {
+          "text": "settecento",
+          "start": 56.947,
+          "end": 57.387
+        },
+        {
+          "text": "server",
+          "start": 57.447,
+          "end": 57.747
+        },
+        {
+          "text": "invece",
+          "start": 57.807,
+          "end": 58.047
+        },
+        {
+          "text": "di",
+          "start": 58.087,
+          "end": 58.127
+        },
+        {
+          "text": "trecento,",
+          "start": 58.167,
+          "end": 58.627
+        }
+      ]
+    },
+    {
+      "start": 59.127,
+      "end": 63.647,
+      "text": "e preparare un ambiente di sviluppo richiede ventuno minuti anziché uno o due giorni.",
+      "words": [
+        {
+          "text": "e",
+          "start": 59.127,
+          "end": 59.167
+        },
+        {
+          "text": "preparare",
+          "start": 59.267,
+          "end": 59.687
+        },
+        {
+          "text": "un",
+          "start": 59.727,
+          "end": 59.787
+        },
+        {
+          "text": "ambiente",
+          "start": 59.807,
+          "end": 60.187
+        },
+        {
+          "text": "di",
+          "start": 60.227,
+          "end": 60.287
+        },
+        {
+          "text": "sviluppo",
+          "start": 60.347,
+          "end": 60.767
+        },
+        {
+          "text": "richiede",
+          "start": 60.907,
+          "end": 61.207
+        },
+        {
+          "text": "ventuno",
+          "start": 61.287,
+          "end": 61.707
+        },
+        {
+          "text": "minuti",
+          "start": 61.747,
+          "end": 62.087
+        },
+        {
+          "text": "anziché",
+          "start": 62.227,
+          "end": 62.567
+        },
+        {
+          "text": "uno",
+          "start": 62.687,
+          "end": 62.867
+        },
+        {
+          "text": "o",
+          "start": 62.987,
+          "end": 63.027
+        },
+        {
+          "text": "due",
+          "start": 63.107,
+          "end": 63.287
+        },
+        {
+          "text": "giorni.",
+          "start": 63.327,
+          "end": 63.647
+        }
+      ]
+    },
+    {
+      "start": 64.508,
+      "end": 70.248,
+      "text": "Nel cloud, questo approccio si sposa benissimo con immagini container immutabili e orchestratori come Kubernetes.",
+      "words": [
+        {
+          "text": "Nel",
+          "start": 64.508,
+          "end": 64.628
+        },
+        {
+          "text": "cloud,",
+          "start": 64.688,
+          "end": 65.008
+        },
+        {
+          "text": "questo",
+          "start": 65.248,
+          "end": 65.448
+        },
+        {
+          "text": "approccio",
+          "start": 65.468,
+          "end": 65.788
+        },
+        {
+          "text": "si",
+          "start": 65.828,
+          "end": 65.888
+        },
+        {
+          "text": "sposa",
+          "start": 65.948,
+          "end": 66.228
+        },
+        {
+          "text": "benissimo",
+          "start": 66.328,
+          "end": 66.888
+        },
+        {
+          "text": "con",
+          "start": 66.948,
+          "end": 67.068
+        },
+        {
+          "text": "immagini",
+          "start": 67.108,
+          "end": 67.468
+        },
+        {
+          "text": "container",
+          "start": 67.528,
+          "end": 67.968
+        },
+        {
+          "text": "immutabili",
+          "start": 67.988,
+          "end": 68.588
+        },
+        {
+          "text": "e",
+          "start": 68.708,
+          "end": 68.748
+        },
+        {
+          "text": "orchestratori",
+          "start": 68.828,
+          "end": 69.388
+        },
+        {
+          "text": "come",
+          "start": 69.448,
+          "end": 69.608
+        },
+        {
+          "text": "Kubernetes.",
+          "start": 69.648,
+          "end": 70.248
+        }
+      ]
+    }
+  ]
+}

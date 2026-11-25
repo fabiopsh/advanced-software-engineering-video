@@ -1,0 +1,994 @@
+{
+  "duration": 73.405,
+  "segments": [
+    {
+      "start": 0.08,
+      "end": 7.721,
+      "text": "Passiamo ora dalla decomposizione logica all'architettura di distribuzione, che definisce quali server esistono e come",
+      "words": [
+        {
+          "text": "Passiamo",
+          "start": 0.08,
+          "end": 0.48
+        },
+        {
+          "text": "ora",
+          "start": 0.56,
+          "end": 0.72
+        },
+        {
+          "text": "dalla",
+          "start": 0.84,
+          "end": 1.08
+        },
+        {
+          "text": "decomposizione",
+          "start": 1.16,
+          "end": 2.0
+        },
+        {
+          "text": "logica",
+          "start": 2.06,
+          "end": 2.5
+        },
+        {
+          "text": "all'architettura",
+          "start": 2.86,
+          "end": 3.64
+        },
+        {
+          "text": "di",
+          "start": 3.72,
+          "end": 3.78
+        },
+        {
+          "text": "distribuzione,",
+          "start": 3.84,
+          "end": 4.681
+        },
+        {
+          "text": "che",
+          "start": 5.081,
+          "end": 5.161
+        },
+        {
+          "text": "definisce",
+          "start": 5.201,
+          "end": 5.641
+        },
+        {
+          "text": "quali",
+          "start": 5.821,
+          "end": 6.101
+        },
+        {
+          "text": "server",
+          "start": 6.181,
+          "end": 6.521
+        },
+        {
+          "text": "esistono",
+          "start": 6.561,
+          "end": 7.061
+        },
+        {
+          "text": "e",
+          "start": 7.301,
+          "end": 7.341
+        },
+        {
+          "text": "come",
+          "start": 7.501,
+          "end": 7.721
+        }
+      ]
+    },
+    {
+      "start": 7.761,
+      "end": 9.321,
+      "text": "vi sono assegnati i componenti.",
+      "words": [
+        {
+          "text": "vi",
+          "start": 7.761,
+          "end": 7.841
+        },
+        {
+          "text": "sono",
+          "start": 7.881,
+          "end": 8.041
+        },
+        {
+          "text": "assegnati",
+          "start": 8.081,
+          "end": 8.601
+        },
+        {
+          "text": "i",
+          "start": 8.621,
+          "end": 8.661
+        },
+        {
+          "text": "componenti.",
+          "start": 8.681,
+          "end": 9.321
+        }
+      ]
+    },
+    {
+      "start": 10.601,
+      "end": 16.642,
+      "text": "Il modello base è l'architettura client-server, ideale quando più client accedono a un database condiviso",
+      "words": [
+        {
+          "text": "Il",
+          "start": 10.601,
+          "end": 10.701
+        },
+        {
+          "text": "modello",
+          "start": 10.741,
+          "end": 11.061
+        },
+        {
+          "text": "base",
+          "start": 11.121,
+          "end": 11.421
+        },
+        {
+          "text": "è",
+          "start": 11.581,
+          "end": 11.621
+        },
+        {
+          "text": "l'architettura",
+          "start": 11.681,
+          "end": 12.301
+        },
+        {
+          "text": "client-server,",
+          "start": 12.461,
+          "end": 13.342
+        },
+        {
+          "text": "ideale",
+          "start": 13.822,
+          "end": 14.182
+        },
+        {
+          "text": "quando",
+          "start": 14.222,
+          "end": 14.422
+        },
+        {
+          "text": "più",
+          "start": 14.482,
+          "end": 14.582
+        },
+        {
+          "text": "client",
+          "start": 14.642,
+          "end": 15.062
+        },
+        {
+          "text": "accedono",
+          "start": 15.102,
+          "end": 15.482
+        },
+        {
+          "text": "a",
+          "start": 15.542,
+          "end": 15.582
+        },
+        {
+          "text": "un",
+          "start": 15.602,
+          "end": 15.662
+        },
+        {
+          "text": "database",
+          "start": 15.682,
+          "end": 16.102
+        },
+        {
+          "text": "condiviso",
+          "start": 16.122,
+          "end": 16.642
+        }
+      ]
+    },
+    {
+      "start": 17.062,
+      "end": 19.402,
+      "text": "e alle operazioni di logica di business su quei dati.",
+      "words": [
+        {
+          "text": "e",
+          "start": 17.062,
+          "end": 17.102
+        },
+        {
+          "text": "alle",
+          "start": 17.122,
+          "end": 17.262
+        },
+        {
+          "text": "operazioni",
+          "start": 17.302,
+          "end": 17.742
+        },
+        {
+          "text": "di",
+          "start": 17.782,
+          "end": 17.842
+        },
+        {
+          "text": "logica",
+          "start": 17.882,
+          "end": 18.242
+        },
+        {
+          "text": "di",
+          "start": 18.282,
+          "end": 18.342
+        },
+        {
+          "text": "business",
+          "start": 18.402,
+          "end": 18.762
+        },
+        {
+          "text": "su",
+          "start": 18.842,
+          "end": 18.902
+        },
+        {
+          "text": "quei",
+          "start": 18.962,
+          "end": 19.082
+        },
+        {
+          "text": "dati.",
+          "start": 19.122,
+          "end": 19.402
+        }
+      ]
+    },
+    {
+      "start": 20.222,
+      "end": 25.283,
+      "text": "I client comunicano tipicamente via HTTP con dati in XML o JSON,",
+      "words": [
+        {
+          "text": "I",
+          "start": 20.222,
+          "end": 20.262
+        },
+        {
+          "text": "client",
+          "start": 20.302,
+          "end": 20.662
+        },
+        {
+          "text": "comunicano",
+          "start": 20.722,
+          "end": 21.202
+        },
+        {
+          "text": "tipicamente",
+          "start": 21.282,
+          "end": 21.903
+        },
+        {
+          "text": "via",
+          "start": 21.943,
+          "end": 22.083
+        },
+        {
+          "text": "HTTP",
+          "start": 22.403,
+          "end": 22.923
+        },
+        {
+          "text": "con",
+          "start": 23.423,
+          "end": 23.563
+        },
+        {
+          "text": "dati",
+          "start": 23.603,
+          "end": 23.823
+        },
+        {
+          "text": "in",
+          "start": 23.883,
+          "end": 23.983
+        },
+        {
+          "text": "XML",
+          "start": 24.083,
+          "end": 24.583
+        },
+        {
+          "text": "o",
+          "start": 24.763,
+          "end": 24.803
+        },
+        {
+          "text": "JSON,",
+          "start": 24.883,
+          "end": 25.283
+        }
+      ]
+    },
+    {
+      "start": 25.763,
+      "end": 30.884,
+      "text": "passando attraverso un load balancer che distribuisce il carico tra più server web e database.",
+      "words": [
+        {
+          "text": "passando",
+          "start": 25.763,
+          "end": 26.083
+        },
+        {
+          "text": "attraverso",
+          "start": 26.123,
+          "end": 26.583
+        },
+        {
+          "text": "un",
+          "start": 26.763,
+          "end": 26.843
+        },
+        {
+          "text": "load",
+          "start": 26.923,
+          "end": 27.103
+        },
+        {
+          "text": "balancer",
+          "start": 27.163,
+          "end": 27.703
+        },
+        {
+          "text": "che",
+          "start": 27.843,
+          "end": 27.923
+        },
+        {
+          "text": "distribuisce",
+          "start": 27.963,
+          "end": 28.543
+        },
+        {
+          "text": "il",
+          "start": 28.563,
+          "end": 28.623
+        },
+        {
+          "text": "carico",
+          "start": 28.663,
+          "end": 29.003
+        },
+        {
+          "text": "tra",
+          "start": 29.063,
+          "end": 29.143
+        },
+        {
+          "text": "più",
+          "start": 29.243,
+          "end": 29.343
+        },
+        {
+          "text": "server",
+          "start": 29.443,
+          "end": 29.743
+        },
+        {
+          "text": "web",
+          "start": 29.803,
+          "end": 30.024
+        },
+        {
+          "text": "e",
+          "start": 30.244,
+          "end": 30.284
+        },
+        {
+          "text": "database.",
+          "start": 30.324,
+          "end": 30.884
+        }
+      ]
+    },
+    {
+      "start": 31.944,
+      "end": 36.764,
+      "text": "Per organizzare l'interazione client-server si usa spesso il pattern Model-View-Controller,",
+      "words": [
+        {
+          "text": "Per",
+          "start": 31.944,
+          "end": 32.084
+        },
+        {
+          "text": "organizzare",
+          "start": 32.124,
+          "end": 32.624
+        },
+        {
+          "text": "l'interazione",
+          "start": 32.664,
+          "end": 33.224
+        },
+        {
+          "text": "client-server",
+          "start": 33.264,
+          "end": 34.004
+        },
+        {
+          "text": "si",
+          "start": 34.064,
+          "end": 34.124
+        },
+        {
+          "text": "usa",
+          "start": 34.164,
+          "end": 34.284
+        },
+        {
+          "text": "spesso",
+          "start": 34.344,
+          "end": 34.644
+        },
+        {
+          "text": "il",
+          "start": 34.684,
+          "end": 34.744
+        },
+        {
+          "text": "pattern",
+          "start": 34.784,
+          "end": 35.164
+        },
+        {
+          "text": "Model-View-Controller,",
+          "start": 35.544,
+          "end": 36.764
+        }
+      ]
+    },
+    {
+      "start": 37.084,
+      "end": 37.744,
+      "text": "o MVC.",
+      "words": [
+        {
+          "text": "o",
+          "start": 37.084,
+          "end": 37.124
+        },
+        {
+          "text": "MVC.",
+          "start": 37.424,
+          "end": 37.744
+        }
+      ]
+    },
+    {
+      "start": 38.805,
+      "end": 43.145,
+      "text": "Il Model risiede sul server ed è disaccoppiato dalla sua presentazione;",
+      "words": [
+        {
+          "text": "Il",
+          "start": 38.805,
+          "end": 38.905
+        },
+        {
+          "text": "Model",
+          "start": 39.005,
+          "end": 39.345
+        },
+        {
+          "text": "risiede",
+          "start": 39.585,
+          "end": 39.925
+        },
+        {
+          "text": "sul",
+          "start": 39.965,
+          "end": 40.105
+        },
+        {
+          "text": "server",
+          "start": 40.185,
+          "end": 40.565
+        },
+        {
+          "text": "ed",
+          "start": 41.045,
+          "end": 41.125
+        },
+        {
+          "text": "è",
+          "start": 41.165,
+          "end": 41.205
+        },
+        {
+          "text": "disaccoppiato",
+          "start": 41.265,
+          "end": 42.025
+        },
+        {
+          "text": "dalla",
+          "start": 42.065,
+          "end": 42.205
+        },
+        {
+          "text": "sua",
+          "start": 42.225,
+          "end": 42.345
+        },
+        {
+          "text": "presentazione;",
+          "start": 42.385,
+          "end": 43.145
+        }
+      ]
+    },
+    {
+      "start": 43.965,
+      "end": 47.406,
+      "text": "sul client il Browser invia l'input dell'utente al Controller,",
+      "words": [
+        {
+          "text": "sul",
+          "start": 43.965,
+          "end": 44.125
+        },
+        {
+          "text": "client",
+          "start": 44.165,
+          "end": 44.625
+        },
+        {
+          "text": "il",
+          "start": 44.905,
+          "end": 45.005
+        },
+        {
+          "text": "Browser",
+          "start": 45.045,
+          "end": 45.425
+        },
+        {
+          "text": "invia",
+          "start": 45.465,
+          "end": 45.665
+        },
+        {
+          "text": "l'input",
+          "start": 45.725,
+          "end": 46.085
+        },
+        {
+          "text": "dell'utente",
+          "start": 46.165,
+          "end": 46.685
+        },
+        {
+          "text": "al",
+          "start": 46.725,
+          "end": 46.805
+        },
+        {
+          "text": "Controller,",
+          "start": 46.845,
+          "end": 47.406
+        }
+      ]
+    },
+    {
+      "start": 47.786,
+      "end": 49.366,
+      "text": "che richiede un aggiornamento al Model.",
+      "words": [
+        {
+          "text": "che",
+          "start": 47.786,
+          "end": 47.886
+        },
+        {
+          "text": "richiede",
+          "start": 47.946,
+          "end": 48.266
+        },
+        {
+          "text": "un",
+          "start": 48.306,
+          "end": 48.366
+        },
+        {
+          "text": "aggiornamento",
+          "start": 48.386,
+          "end": 48.926
+        },
+        {
+          "text": "al",
+          "start": 48.946,
+          "end": 49.026
+        },
+        {
+          "text": "Model.",
+          "start": 49.066,
+          "end": 49.366
+        }
+      ]
+    },
+    {
+      "start": 50.066,
+      "end": 53.666,
+      "text": "Ogni View si registra presso il Model: appena lo stato cambia,",
+      "words": [
+        {
+          "text": "Ogni",
+          "start": 50.066,
+          "end": 50.286
+        },
+        {
+          "text": "View",
+          "start": 50.346,
+          "end": 50.486
+        },
+        {
+          "text": "si",
+          "start": 50.766,
+          "end": 50.826
+        },
+        {
+          "text": "registra",
+          "start": 50.886,
+          "end": 51.306
+        },
+        {
+          "text": "presso",
+          "start": 51.366,
+          "end": 51.626
+        },
+        {
+          "text": "il",
+          "start": 51.666,
+          "end": 51.746
+        },
+        {
+          "text": "Model:",
+          "start": 51.786,
+          "end": 52.106
+        },
+        {
+          "text": "appena",
+          "start": 52.626,
+          "end": 52.886
+        },
+        {
+          "text": "lo",
+          "start": 52.946,
+          "end": 53.006
+        },
+        {
+          "text": "stato",
+          "start": 53.046,
+          "end": 53.246
+        },
+        {
+          "text": "cambia,",
+          "start": 53.306,
+          "end": 53.666
+        }
+      ]
+    },
+    {
+      "start": 54.066,
+      "end": 57.607,
+      "text": "il Model invia una notifica di aggiornamento a tutte le viste registrate,",
+      "words": [
+        {
+          "text": "il",
+          "start": 54.066,
+          "end": 54.146
+        },
+        {
+          "text": "Model",
+          "start": 54.206,
+          "end": 54.466
+        },
+        {
+          "text": "invia",
+          "start": 54.526,
+          "end": 54.726
+        },
+        {
+          "text": "una",
+          "start": 54.786,
+          "end": 54.906
+        },
+        {
+          "text": "notifica",
+          "start": 54.966,
+          "end": 55.406
+        },
+        {
+          "text": "di",
+          "start": 55.446,
+          "end": 55.506
+        },
+        {
+          "text": "aggiornamento",
+          "start": 55.546,
+          "end": 56.087
+        },
+        {
+          "text": "a",
+          "start": 56.147,
+          "end": 56.187
+        },
+        {
+          "text": "tutte",
+          "start": 56.307,
+          "end": 56.627
+        },
+        {
+          "text": "le",
+          "start": 56.667,
+          "end": 56.727
+        },
+        {
+          "text": "viste",
+          "start": 56.747,
+          "end": 56.967
+        },
+        {
+          "text": "registrate,",
+          "start": 57.027,
+          "end": 57.607
+        }
+      ]
+    },
+    {
+      "start": 57.927,
+      "end": 59.867,
+      "text": "secondo un meccanismo guidato dagli eventi.",
+      "words": [
+        {
+          "text": "secondo",
+          "start": 57.927,
+          "end": 58.247
+        },
+        {
+          "text": "un",
+          "start": 58.287,
+          "end": 58.327
+        },
+        {
+          "text": "meccanismo",
+          "start": 58.347,
+          "end": 58.847
+        },
+        {
+          "text": "guidato",
+          "start": 58.927,
+          "end": 59.267
+        },
+        {
+          "text": "dagli",
+          "start": 59.307,
+          "end": 59.487
+        },
+        {
+          "text": "eventi.",
+          "start": 59.507,
+          "end": 59.867
+        }
+      ]
+    },
+    {
+      "start": 60.607,
+      "end": 63.667,
+      "text": "Pensate a un negozio online: il Model contiene il carrello,",
+      "words": [
+        {
+          "text": "Pensate",
+          "start": 60.607,
+          "end": 60.947
+        },
+        {
+          "text": "a",
+          "start": 60.987,
+          "end": 61.027
+        },
+        {
+          "text": "un",
+          "start": 61.027,
+          "end": 61.087
+        },
+        {
+          "text": "negozio",
+          "start": 61.107,
+          "end": 61.407
+        },
+        {
+          "text": "online:",
+          "start": 61.427,
+          "end": 61.807
+        },
+        {
+          "text": "il",
+          "start": 62.347,
+          "end": 62.427
+        },
+        {
+          "text": "Model",
+          "start": 62.467,
+          "end": 62.687
+        },
+        {
+          "text": "contiene",
+          "start": 62.727,
+          "end": 63.047
+        },
+        {
+          "text": "il",
+          "start": 63.087,
+          "end": 63.147
+        },
+        {
+          "text": "carrello,",
+          "start": 63.187,
+          "end": 63.667
+        }
+      ]
+    },
+    {
+      "start": 64.047,
+      "end": 66.548,
+      "text": "mentre la pagina e l'icona del carrello sono due View.",
+      "words": [
+        {
+          "text": "mentre",
+          "start": 64.047,
+          "end": 64.288
+        },
+        {
+          "text": "la",
+          "start": 64.348,
+          "end": 64.408
+        },
+        {
+          "text": "pagina",
+          "start": 64.448,
+          "end": 64.808
+        },
+        {
+          "text": "e",
+          "start": 64.868,
+          "end": 64.908
+        },
+        {
+          "text": "l'icona",
+          "start": 64.948,
+          "end": 65.288
+        },
+        {
+          "text": "del",
+          "start": 65.308,
+          "end": 65.428
+        },
+        {
+          "text": "carrello",
+          "start": 65.468,
+          "end": 65.868
+        },
+        {
+          "text": "sono",
+          "start": 65.928,
+          "end": 66.128
+        },
+        {
+          "text": "due",
+          "start": 66.208,
+          "end": 66.368
+        },
+        {
+          "text": "View.",
+          "start": 66.428,
+          "end": 66.548
+        }
+      ]
+    },
+    {
+      "start": 67.328,
+      "end": 72.929,
+      "text": "Aggiungendo un articolo si aggiornano entrambe, e potremo aggiungere un'app mobile senza modificare il Model.",
+      "words": [
+        {
+          "text": "Aggiungendo",
+          "start": 67.328,
+          "end": 67.828
+        },
+        {
+          "text": "un",
+          "start": 67.868,
+          "end": 67.928
+        },
+        {
+          "text": "articolo",
+          "start": 67.968,
+          "end": 68.428
+        },
+        {
+          "text": "si",
+          "start": 68.708,
+          "end": 68.768
+        },
+        {
+          "text": "aggiornano",
+          "start": 68.808,
+          "end": 69.188
+        },
+        {
+          "text": "entrambe,",
+          "start": 69.228,
+          "end": 69.628
+        },
+        {
+          "text": "e",
+          "start": 70.088,
+          "end": 70.128
+        },
+        {
+          "text": "potremo",
+          "start": 70.148,
+          "end": 70.428
+        },
+        {
+          "text": "aggiungere",
+          "start": 70.448,
+          "end": 70.868
+        },
+        {
+          "text": "un'app",
+          "start": 70.908,
+          "end": 71.148
+        },
+        {
+          "text": "mobile",
+          "start": 71.268,
+          "end": 71.648
+        },
+        {
+          "text": "senza",
+          "start": 71.768,
+          "end": 72.008
+        },
+        {
+          "text": "modificare",
+          "start": 72.068,
+          "end": 72.508
+        },
+        {
+          "text": "il",
+          "start": 72.548,
+          "end": 72.608
+        },
+        {
+          "text": "Model.",
+          "start": 72.628,
+          "end": 72.929
+        }
+      ]
+    }
+  ]
+}

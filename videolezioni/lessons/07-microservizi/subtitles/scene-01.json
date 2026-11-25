@@ -1,0 +1,1037 @@
+{
+  "duration": 82.084,
+  "segments": [
+    {
+      "start": 0.06,
+      "end": 4.701,
+      "text": "Benvenuti al settimo capitolo, dedicato all'architettura a microservizi.",
+      "words": [
+        {
+          "text": "Benvenuti",
+          "start": 0.06,
+          "end": 0.66
+        },
+        {
+          "text": "al",
+          "start": 0.84,
+          "end": 0.94
+        },
+        {
+          "text": "settimo",
+          "start": 1.02,
+          "end": 1.36
+        },
+        {
+          "text": "capitolo,",
+          "start": 1.4,
+          "end": 1.82
+        },
+        {
+          "text": "dedicato",
+          "start": 2.14,
+          "end": 2.6
+        },
+        {
+          "text": "all'architettura",
+          "start": 2.76,
+          "end": 3.58
+        },
+        {
+          "text": "a",
+          "start": 3.76,
+          "end": 3.8
+        },
+        {
+          "text": "microservizi.",
+          "start": 3.88,
+          "end": 4.701
+        }
+      ]
+    },
+    {
+      "start": 5.501,
+      "end": 7.041,
+      "text": "Partiamo da una domanda di base:",
+      "words": [
+        {
+          "text": "Partiamo",
+          "start": 5.501,
+          "end": 5.901
+        },
+        {
+          "text": "da",
+          "start": 6.081,
+          "end": 6.141
+        },
+        {
+          "text": "una",
+          "start": 6.201,
+          "end": 6.301
+        },
+        {
+          "text": "domanda",
+          "start": 6.341,
+          "end": 6.621
+        },
+        {
+          "text": "di",
+          "start": 6.661,
+          "end": 6.721
+        },
+        {
+          "text": "base:",
+          "start": 6.761,
+          "end": 7.041
+        }
+      ]
+    },
+    {
+      "start": 7.601,
+      "end": 10.921,
+      "text": "come si scompone un sistema software in componenti?",
+      "words": [
+        {
+          "text": "come",
+          "start": 7.601,
+          "end": 7.801
+        },
+        {
+          "text": "si",
+          "start": 7.861,
+          "end": 7.941
+        },
+        {
+          "text": "scompone",
+          "start": 8.001,
+          "end": 8.641
+        },
+        {
+          "text": "un",
+          "start": 8.921,
+          "end": 9.021
+        },
+        {
+          "text": "sistema",
+          "start": 9.101,
+          "end": 9.501
+        },
+        {
+          "text": "software",
+          "start": 9.581,
+          "end": 10.041
+        },
+        {
+          "text": "in",
+          "start": 10.141,
+          "end": 10.221
+        },
+        {
+          "text": "componenti?",
+          "start": 10.301,
+          "end": 10.921
+        }
+      ]
+    },
+    {
+      "start": 12.022,
+      "end": 13.642,
+      "text": "Tre esigenze guidano la scelta:",
+      "words": [
+        {
+          "text": "Tre",
+          "start": 12.022,
+          "end": 12.142
+        },
+        {
+          "text": "esigenze",
+          "start": 12.202,
+          "end": 12.702
+        },
+        {
+          "text": "guidano",
+          "start": 12.842,
+          "end": 13.142
+        },
+        {
+          "text": "la",
+          "start": 13.182,
+          "end": 13.242
+        },
+        {
+          "text": "scelta:",
+          "start": 13.282,
+          "end": 13.642
+        }
+      ]
+    },
+    {
+      "start": 14.302,
+      "end": 16.802,
+      "text": "team diversi devono poter sviluppare in parallelo;",
+      "words": [
+        {
+          "text": "team",
+          "start": 14.302,
+          "end": 14.442
+        },
+        {
+          "text": "diversi",
+          "start": 14.482,
+          "end": 14.922
+        },
+        {
+          "text": "devono",
+          "start": 15.102,
+          "end": 15.402
+        },
+        {
+          "text": "poter",
+          "start": 15.442,
+          "end": 15.682
+        },
+        {
+          "text": "sviluppare",
+          "start": 15.742,
+          "end": 16.202
+        },
+        {
+          "text": "in",
+          "start": 16.242,
+          "end": 16.302
+        },
+        {
+          "text": "parallelo;",
+          "start": 16.342,
+          "end": 16.802
+        }
+      ]
+    },
+    {
+      "start": 17.522,
+      "end": 21.823,
+      "text": "i componenti vanno riusati, sostituiti e distribuiti su più computer;",
+      "words": [
+        {
+          "text": "i",
+          "start": 17.522,
+          "end": 17.562
+        },
+        {
+          "text": "componenti",
+          "start": 17.602,
+          "end": 18.222
+        },
+        {
+          "text": "vanno",
+          "start": 18.382,
+          "end": 18.602
+        },
+        {
+          "text": "riusati,",
+          "start": 18.682,
+          "end": 19.242
+        },
+        {
+          "text": "sostituiti",
+          "start": 19.442,
+          "end": 20.083
+        },
+        {
+          "text": "e",
+          "start": 20.303,
+          "end": 20.343
+        },
+        {
+          "text": "distribuiti",
+          "start": 20.423,
+          "end": 21.023
+        },
+        {
+          "text": "su",
+          "start": 21.083,
+          "end": 21.143
+        },
+        {
+          "text": "più",
+          "start": 21.223,
+          "end": 21.303
+        },
+        {
+          "text": "computer;",
+          "start": 21.363,
+          "end": 21.823
+        }
+      ]
+    },
+    {
+      "start": 22.643,
+      "end": 27.283,
+      "text": "infine devono essere replicati e migrati facilmente per sfruttare scalabilità,",
+      "words": [
+        {
+          "text": "infine",
+          "start": 22.643,
+          "end": 23.023
+        },
+        {
+          "text": "devono",
+          "start": 23.163,
+          "end": 23.403
+        },
+        {
+          "text": "essere",
+          "start": 23.463,
+          "end": 23.763
+        },
+        {
+          "text": "replicati",
+          "start": 23.943,
+          "end": 24.523
+        },
+        {
+          "text": "e",
+          "start": 24.683,
+          "end": 24.723
+        },
+        {
+          "text": "migrati",
+          "start": 24.803,
+          "end": 25.183
+        },
+        {
+          "text": "facilmente",
+          "start": 25.243,
+          "end": 25.823
+        },
+        {
+          "text": "per",
+          "start": 25.983,
+          "end": 26.083
+        },
+        {
+          "text": "sfruttare",
+          "start": 26.123,
+          "end": 26.583
+        },
+        {
+          "text": "scalabilità,",
+          "start": 26.703,
+          "end": 27.283
+        }
+      ]
+    },
+    {
+      "start": 27.723,
+      "end": 29.924,
+      "text": "affidabilità ed elasticità del cloud.",
+      "words": [
+        {
+          "text": "affidabilità",
+          "start": 27.723,
+          "end": 28.384
+        },
+        {
+          "text": "ed",
+          "start": 28.704,
+          "end": 28.824
+        },
+        {
+          "text": "elasticità",
+          "start": 28.844,
+          "end": 29.364
+        },
+        {
+          "text": "del",
+          "start": 29.444,
+          "end": 29.564
+        },
+        {
+          "text": "cloud.",
+          "start": 29.624,
+          "end": 29.924
+        }
+      ]
+    },
+    {
+      "start": 30.824,
+      "end": 34.824,
+      "text": "Per questo usiamo servizi software stateless accessibili via Internet.",
+      "words": [
+        {
+          "text": "Per",
+          "start": 30.824,
+          "end": 30.944
+        },
+        {
+          "text": "questo",
+          "start": 31.004,
+          "end": 31.304
+        },
+        {
+          "text": "usiamo",
+          "start": 31.484,
+          "end": 31.764
+        },
+        {
+          "text": "servizi",
+          "start": 31.904,
+          "end": 32.344
+        },
+        {
+          "text": "software",
+          "start": 32.404,
+          "end": 32.824
+        },
+        {
+          "text": "stateless",
+          "start": 32.864,
+          "end": 33.344
+        },
+        {
+          "text": "accessibili",
+          "start": 33.484,
+          "end": 34.124
+        },
+        {
+          "text": "via",
+          "start": 34.164,
+          "end": 34.284
+        },
+        {
+          "text": "Internet.",
+          "start": 34.364,
+          "end": 34.824
+        }
+      ]
+    },
+    {
+      "start": 35.524,
+      "end": 39.425,
+      "text": "Dato un input, un servizio produce un output senza effetti collaterali,",
+      "words": [
+        {
+          "text": "Dato",
+          "start": 35.524,
+          "end": 35.724
+        },
+        {
+          "text": "un",
+          "start": 35.764,
+          "end": 35.824
+        },
+        {
+          "text": "input,",
+          "start": 35.864,
+          "end": 36.225
+        },
+        {
+          "text": "un",
+          "start": 36.465,
+          "end": 36.565
+        },
+        {
+          "text": "servizio",
+          "start": 36.645,
+          "end": 37.085
+        },
+        {
+          "text": "produce",
+          "start": 37.145,
+          "end": 37.485
+        },
+        {
+          "text": "un",
+          "start": 37.545,
+          "end": 37.625
+        },
+        {
+          "text": "output",
+          "start": 37.705,
+          "end": 38.045
+        },
+        {
+          "text": "senza",
+          "start": 38.185,
+          "end": 38.445
+        },
+        {
+          "text": "effetti",
+          "start": 38.485,
+          "end": 38.805
+        },
+        {
+          "text": "collaterali,",
+          "start": 38.845,
+          "end": 39.425
+        }
+      ]
+    },
+    {
+      "start": 40.005,
+      "end": 43.345,
+      "text": "espone un'interfaccia pubblicata nascondendo l'implementazione,",
+      "words": [
+        {
+          "text": "espone",
+          "start": 40.005,
+          "end": 40.405
+        },
+        {
+          "text": "un'interfaccia",
+          "start": 40.445,
+          "end": 41.025
+        },
+        {
+          "text": "pubblicata",
+          "start": 41.065,
+          "end": 41.625
+        },
+        {
+          "text": "nascondendo",
+          "start": 41.825,
+          "end": 42.405
+        },
+        {
+          "text": "l'implementazione,",
+          "start": 42.445,
+          "end": 43.345
+        }
+      ]
+    },
+    {
+      "start": 44.066,
+      "end": 48.346,
+      "text": "non conserva stato interno ma lo lascia in un database o nella richiesta del chiamante,",
+      "words": [
+        {
+          "text": "non",
+          "start": 44.066,
+          "end": 44.226
+        },
+        {
+          "text": "conserva",
+          "start": 44.286,
+          "end": 44.806
+        },
+        {
+          "text": "stato",
+          "start": 44.886,
+          "end": 45.086
+        },
+        {
+          "text": "interno",
+          "start": 45.126,
+          "end": 45.586
+        },
+        {
+          "text": "ma",
+          "start": 45.726,
+          "end": 45.786
+        },
+        {
+          "text": "lo",
+          "start": 45.846,
+          "end": 45.906
+        },
+        {
+          "text": "lascia",
+          "start": 45.946,
+          "end": 46.186
+        },
+        {
+          "text": "in",
+          "start": 46.246,
+          "end": 46.306
+        },
+        {
+          "text": "un",
+          "start": 46.346,
+          "end": 46.406
+        },
+        {
+          "text": "database",
+          "start": 46.426,
+          "end": 46.946
+        },
+        {
+          "text": "o",
+          "start": 47.086,
+          "end": 47.126
+        },
+        {
+          "text": "nella",
+          "start": 47.166,
+          "end": 47.346
+        },
+        {
+          "text": "richiesta",
+          "start": 47.386,
+          "end": 47.686
+        },
+        {
+          "text": "del",
+          "start": 47.726,
+          "end": 47.846
+        },
+        {
+          "text": "chiamante,",
+          "start": 47.886,
+          "end": 48.346
+        }
+      ]
+    },
+    {
+      "start": 48.966,
+      "end": 51.967,
+      "text": "e può essere riallocato dinamicamente tra server virtuali.",
+      "words": [
+        {
+          "text": "e",
+          "start": 48.966,
+          "end": 49.006
+        },
+        {
+          "text": "può",
+          "start": 49.066,
+          "end": 49.146
+        },
+        {
+          "text": "essere",
+          "start": 49.206,
+          "end": 49.486
+        },
+        {
+          "text": "riallocato",
+          "start": 49.606,
+          "end": 50.166
+        },
+        {
+          "text": "dinamicamente",
+          "start": 50.226,
+          "end": 50.926
+        },
+        {
+          "text": "tra",
+          "start": 50.966,
+          "end": 51.066
+        },
+        {
+          "text": "server",
+          "start": 51.166,
+          "end": 51.446
+        },
+        {
+          "text": "virtuali.",
+          "start": 51.486,
+          "end": 51.967
+        }
+      ]
+    },
+    {
+      "start": 53.567,
+      "end": 58.927,
+      "text": "Storicamente, l'architettura orientata ai servizi di fine anni Novanta ha portato ai Web Services con",
+      "words": [
+        {
+          "text": "Storicamente,",
+          "start": 53.567,
+          "end": 54.167
+        },
+        {
+          "text": "l'architettura",
+          "start": 54.307,
+          "end": 54.887
+        },
+        {
+          "text": "orientata",
+          "start": 54.947,
+          "end": 55.367
+        },
+        {
+          "text": "ai",
+          "start": 55.387,
+          "end": 55.447
+        },
+        {
+          "text": "servizi",
+          "start": 55.507,
+          "end": 55.947
+        },
+        {
+          "text": "di",
+          "start": 56.007,
+          "end": 56.067
+        },
+        {
+          "text": "fine",
+          "start": 56.107,
+          "end": 56.287
+        },
+        {
+          "text": "anni",
+          "start": 56.327,
+          "end": 56.467
+        },
+        {
+          "text": "Novanta",
+          "start": 56.527,
+          "end": 56.907
+        },
+        {
+          "text": "ha",
+          "start": 57.187,
+          "end": 57.227
+        },
+        {
+          "text": "portato",
+          "start": 57.287,
+          "end": 57.647
+        },
+        {
+          "text": "ai",
+          "start": 57.687,
+          "end": 57.747
+        },
+        {
+          "text": "Web",
+          "start": 57.807,
+          "end": 57.947
+        },
+        {
+          "text": "Services",
+          "start": 58.047,
+          "end": 58.527
+        },
+        {
+          "text": "con",
+          "start": 58.787,
+          "end": 58.927
+        }
+      ]
+    },
+    {
+      "start": 59.047,
+      "end": 62.988,
+      "text": "XML, SOAP e WSDL, gravati però da forte overhead.",
+      "words": [
+        {
+          "text": "XML,",
+          "start": 59.047,
+          "end": 59.547
+        },
+        {
+          "text": "SOAP",
+          "start": 59.807,
+          "end": 60.048
+        },
+        {
+          "text": "e",
+          "start": 60.288,
+          "end": 60.328
+        },
+        {
+          "text": "WSDL,",
+          "start": 60.448,
+          "end": 61.108
+        },
+        {
+          "text": "gravati",
+          "start": 61.508,
+          "end": 61.868
+        },
+        {
+          "text": "però",
+          "start": 61.908,
+          "end": 62.048
+        },
+        {
+          "text": "da",
+          "start": 62.268,
+          "end": 62.328
+        },
+        {
+          "text": "forte",
+          "start": 62.368,
+          "end": 62.628
+        },
+        {
+          "text": "overhead.",
+          "start": 62.648,
+          "end": 62.988
+        }
+      ]
+    },
+    {
+      "start": 63.728,
+      "end": 67.328,
+      "text": "I sistemi moderni adottano invece protocolli e messaggi molto più leggeri.",
+      "words": [
+        {
+          "text": "I",
+          "start": 63.728,
+          "end": 63.768
+        },
+        {
+          "text": "sistemi",
+          "start": 63.808,
+          "end": 64.148
+        },
+        {
+          "text": "moderni",
+          "start": 64.208,
+          "end": 64.588
+        },
+        {
+          "text": "adottano",
+          "start": 64.728,
+          "end": 65.088
+        },
+        {
+          "text": "invece",
+          "start": 65.108,
+          "end": 65.368
+        },
+        {
+          "text": "protocolli",
+          "start": 65.448,
+          "end": 65.948
+        },
+        {
+          "text": "e",
+          "start": 65.988,
+          "end": 66.028
+        },
+        {
+          "text": "messaggi",
+          "start": 66.088,
+          "end": 66.508
+        },
+        {
+          "text": "molto",
+          "start": 66.588,
+          "end": 66.788
+        },
+        {
+          "text": "più",
+          "start": 66.808,
+          "end": 66.888
+        },
+        {
+          "text": "leggeri.",
+          "start": 66.948,
+          "end": 67.328
+        }
+      ]
+    },
+    {
+      "start": 68.209,
+      "end": 70.249,
+      "text": "Amazon ha spinto oltre questa idea:",
+      "words": [
+        {
+          "text": "Amazon",
+          "start": 68.209,
+          "end": 68.509
+        },
+        {
+          "text": "ha",
+          "start": 68.609,
+          "end": 68.649
+        },
+        {
+          "text": "spinto",
+          "start": 68.709,
+          "end": 69.009
+        },
+        {
+          "text": "oltre",
+          "start": 69.229,
+          "end": 69.569
+        },
+        {
+          "text": "questa",
+          "start": 69.709,
+          "end": 69.949
+        },
+        {
+          "text": "idea:",
+          "start": 70.009,
+          "end": 70.249
+        }
+      ]
+    },
+    {
+      "start": 70.829,
+      "end": 73.789,
+      "text": "un servizio deve coprire una sola funzione di business,",
+      "words": [
+        {
+          "text": "un",
+          "start": 70.829,
+          "end": 70.889
+        },
+        {
+          "text": "servizio",
+          "start": 70.949,
+          "end": 71.429
+        },
+        {
+          "text": "deve",
+          "start": 71.569,
+          "end": 71.729
+        },
+        {
+          "text": "coprire",
+          "start": 71.789,
+          "end": 72.149
+        },
+        {
+          "text": "una",
+          "start": 72.349,
+          "end": 72.509
+        },
+        {
+          "text": "sola",
+          "start": 72.589,
+          "end": 72.809
+        },
+        {
+          "text": "funzione",
+          "start": 72.849,
+          "end": 73.229
+        },
+        {
+          "text": "di",
+          "start": 73.269,
+          "end": 73.329
+        },
+        {
+          "text": "business,",
+          "start": 73.389,
+          "end": 73.789
+        }
+      ]
+    },
+    {
+      "start": 74.169,
+      "end": 77.05,
+      "text": "avere il proprio database e la propria interfaccia utente,",
+      "words": [
+        {
+          "text": "avere",
+          "start": 74.169,
+          "end": 74.409
+        },
+        {
+          "text": "il",
+          "start": 74.469,
+          "end": 74.529
+        },
+        {
+          "text": "proprio",
+          "start": 74.589,
+          "end": 74.929
+        },
+        {
+          "text": "database",
+          "start": 74.949,
+          "end": 75.489
+        },
+        {
+          "text": "e",
+          "start": 75.629,
+          "end": 75.66900000000001
+        },
+        {
+          "text": "la",
+          "start": 75.689,
+          "end": 75.749
+        },
+        {
+          "text": "propria",
+          "start": 75.809,
+          "end": 76.11
+        },
+        {
+          "text": "interfaccia",
+          "start": 76.15,
+          "end": 76.65
+        },
+        {
+          "text": "utente,",
+          "start": 76.67,
+          "end": 77.05
+        }
+      ]
+    },
+    {
+      "start": 77.39,
+      "end": 79.77,
+      "text": "ed essere sostituibile senza toccare gli altri.",
+      "words": [
+        {
+          "text": "ed",
+          "start": 77.39,
+          "end": 77.47
+        },
+        {
+          "text": "essere",
+          "start": 77.53,
+          "end": 77.81
+        },
+        {
+          "text": "sostituibile",
+          "start": 77.89,
+          "end": 78.61
+        },
+        {
+          "text": "senza",
+          "start": 78.73,
+          "end": 78.99
+        },
+        {
+          "text": "toccare",
+          "start": 79.05,
+          "end": 79.35
+        },
+        {
+          "text": "gli",
+          "start": 79.37,
+          "end": 79.49
+        },
+        {
+          "text": "altri.",
+          "start": 79.53,
+          "end": 79.77
+        }
+      ]
+    },
+    {
+      "start": 80.27,
+      "end": 81.83,
+      "text": "Nascono così i microservizi.",
+      "words": [
+        {
+          "text": "Nascono",
+          "start": 80.27,
+          "end": 80.59
+        },
+        {
+          "text": "così",
+          "start": 80.63,
+          "end": 80.81
+        },
+        {
+          "text": "i",
+          "start": 81.01,
+          "end": 81.05000000000001
+        },
+        {
+          "text": "microservizi.",
+          "start": 81.11,
+          "end": 81.83
+        }
+      ]
+    }
+  ]
+}

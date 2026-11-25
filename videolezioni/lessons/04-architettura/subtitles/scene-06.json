@@ -1,0 +1,981 @@
+{
+  "duration": 76.2,
+  "segments": [
+    {
+      "start": 0.08,
+      "end": 4.821,
+      "text": "La comunicazione client-server si concretizza in due varianti principali.",
+      "words": [
+        {
+          "text": "La",
+          "start": 0.08,
+          "end": 0.16
+        },
+        {
+          "text": "comunicazione",
+          "start": 0.28,
+          "end": 1.04
+        },
+        {
+          "text": "client-server",
+          "start": 1.12,
+          "end": 2.061
+        },
+        {
+          "text": "si",
+          "start": 2.321,
+          "end": 2.401
+        },
+        {
+          "text": "concretizza",
+          "start": 2.461,
+          "end": 3.121
+        },
+        {
+          "text": "in",
+          "start": 3.321,
+          "end": 3.421
+        },
+        {
+          "text": "due",
+          "start": 3.541,
+          "end": 3.741
+        },
+        {
+          "text": "varianti",
+          "start": 3.801,
+          "end": 4.241
+        },
+        {
+          "text": "principali.",
+          "start": 4.281,
+          "end": 4.821
+        }
+      ]
+    },
+    {
+      "start": 5.522,
+      "end": 10.423,
+      "text": "La prima è l'architettura multi-tier: i client dialogano con un web server,",
+      "words": [
+        {
+          "text": "La",
+          "start": 5.522,
+          "end": 5.582
+        },
+        {
+          "text": "prima",
+          "start": 5.622,
+          "end": 5.862
+        },
+        {
+          "text": "è",
+          "start": 6.102,
+          "end": 6.142
+        },
+        {
+          "text": "l'architettura",
+          "start": 6.222,
+          "end": 6.882
+        },
+        {
+          "text": "multi-tier:",
+          "start": 7.042,
+          "end": 7.702
+        },
+        {
+          "text": "i",
+          "start": 8.222,
+          "end": 8.262
+        },
+        {
+          "text": "client",
+          "start": 8.322,
+          "end": 8.822
+        },
+        {
+          "text": "dialogano",
+          "start": 8.942,
+          "end": 9.423
+        },
+        {
+          "text": "con",
+          "start": 9.463,
+          "end": 9.583
+        },
+        {
+          "text": "un",
+          "start": 9.623,
+          "end": 9.703
+        },
+        {
+          "text": "web",
+          "start": 9.763,
+          "end": 9.943
+        },
+        {
+          "text": "server,",
+          "start": 10.043,
+          "end": 10.423
+        }
+      ]
+    },
+    {
+      "start": 10.683,
+      "end": 15.084,
+      "text": "che interroga un application server, il quale a sua volta accede al database server.",
+      "words": [
+        {
+          "text": "che",
+          "start": 10.683,
+          "end": 10.783
+        },
+        {
+          "text": "interroga",
+          "start": 10.843,
+          "end": 11.323
+        },
+        {
+          "text": "un",
+          "start": 11.463,
+          "end": 11.523
+        },
+        {
+          "text": "application",
+          "start": 11.563,
+          "end": 12.103
+        },
+        {
+          "text": "server,",
+          "start": 12.183,
+          "end": 12.523
+        },
+        {
+          "text": "il",
+          "start": 12.863,
+          "end": 12.943
+        },
+        {
+          "text": "quale",
+          "start": 12.983,
+          "end": 13.204
+        },
+        {
+          "text": "a",
+          "start": 13.244,
+          "end": 13.284
+        },
+        {
+          "text": "sua",
+          "start": 13.304,
+          "end": 13.424
+        },
+        {
+          "text": "volta",
+          "start": 13.464,
+          "end": 13.664
+        },
+        {
+          "text": "accede",
+          "start": 13.724,
+          "end": 14.044
+        },
+        {
+          "text": "al",
+          "start": 14.204,
+          "end": 14.304
+        },
+        {
+          "text": "database",
+          "start": 14.344,
+          "end": 14.744
+        },
+        {
+          "text": "server.",
+          "start": 14.784,
+          "end": 15.084
+        }
+      ]
+    },
+    {
+      "start": 15.884,
+      "end": 20.145,
+      "text": "La seconda variante è la Service-Oriented Architecture, o SOA:",
+      "words": [
+        {
+          "text": "La",
+          "start": 15.884,
+          "end": 15.944
+        },
+        {
+          "text": "seconda",
+          "start": 16.044,
+          "end": 16.464
+        },
+        {
+          "text": "variante",
+          "start": 16.484,
+          "end": 17.025
+        },
+        {
+          "text": "è",
+          "start": 17.245,
+          "end": 17.285
+        },
+        {
+          "text": "la",
+          "start": 17.345,
+          "end": 17.425
+        },
+        {
+          "text": "Service-Oriented",
+          "start": 17.565,
+          "end": 18.625
+        },
+        {
+          "text": "Architecture,",
+          "start": 18.705,
+          "end": 19.365
+        },
+        {
+          "text": "o",
+          "start": 19.585,
+          "end": 19.625
+        },
+        {
+          "text": "SOA:",
+          "start": 19.885,
+          "end": 20.145
+        }
+      ]
+    },
+    {
+      "start": 20.786,
+      "end": 24.787,
+      "text": "qui il web server comunica con un service gateway che dà accesso a un insieme",
+      "words": [
+        {
+          "text": "qui",
+          "start": 20.786,
+          "end": 20.906
+        },
+        {
+          "text": "il",
+          "start": 21.166,
+          "end": 21.266
+        },
+        {
+          "text": "web",
+          "start": 21.326,
+          "end": 21.466
+        },
+        {
+          "text": "server",
+          "start": 21.546,
+          "end": 21.866
+        },
+        {
+          "text": "comunica",
+          "start": 21.926,
+          "end": 22.306
+        },
+        {
+          "text": "con",
+          "start": 22.346,
+          "end": 22.466
+        },
+        {
+          "text": "un",
+          "start": 22.486,
+          "end": 22.586
+        },
+        {
+          "text": "service",
+          "start": 22.626,
+          "end": 22.966
+        },
+        {
+          "text": "gateway",
+          "start": 23.006,
+          "end": 23.406
+        },
+        {
+          "text": "che",
+          "start": 23.586,
+          "end": 23.686
+        },
+        {
+          "text": "dà",
+          "start": 23.726,
+          "end": 23.806
+        },
+        {
+          "text": "accesso",
+          "start": 23.866,
+          "end": 24.226
+        },
+        {
+          "text": "a",
+          "start": 24.266,
+          "end": 24.306
+        },
+        {
+          "text": "un",
+          "start": 24.346,
+          "end": 24.406
+        },
+        {
+          "text": "insieme",
+          "start": 24.446,
+          "end": 24.787
+        }
+      ]
+    },
+    {
+      "start": 24.827,
+      "end": 28.828,
+      "text": "di servizi indipendenti e disaccoppiati, da s1 a s6,",
+      "words": [
+        {
+          "text": "di",
+          "start": 24.827,
+          "end": 24.887
+        },
+        {
+          "text": "servizi",
+          "start": 24.927,
+          "end": 25.327
+        },
+        {
+          "text": "indipendenti",
+          "start": 25.407,
+          "end": 26.147
+        },
+        {
+          "text": "e",
+          "start": 26.307,
+          "end": 26.347
+        },
+        {
+          "text": "disaccoppiati,",
+          "start": 26.427,
+          "end": 27.207
+        },
+        {
+          "text": "da",
+          "start": 27.547,
+          "end": 27.627
+        },
+        {
+          "text": "s1",
+          "start": 27.887,
+          "end": 27.927
+        },
+        {
+          "text": "a",
+          "start": 28.448,
+          "end": 28.488
+        },
+        {
+          "text": "s6,",
+          "start": 28.788,
+          "end": 28.828
+        }
+      ]
+    },
+    {
+      "start": 29.388,
+      "end": 32.389,
+      "text": "coordinabili anche in modo asincrono o guidato dagli eventi.",
+      "words": [
+        {
+          "text": "coordinabili",
+          "start": 29.388,
+          "end": 30.008
+        },
+        {
+          "text": "anche",
+          "start": 30.108,
+          "end": 30.268
+        },
+        {
+          "text": "in",
+          "start": 30.308,
+          "end": 30.348
+        },
+        {
+          "text": "modo",
+          "start": 30.388,
+          "end": 30.568
+        },
+        {
+          "text": "asincrono",
+          "start": 30.648,
+          "end": 31.208
+        },
+        {
+          "text": "o",
+          "start": 31.368,
+          "end": 31.408
+        },
+        {
+          "text": "guidato",
+          "start": 31.488,
+          "end": 31.828
+        },
+        {
+          "text": "dagli",
+          "start": 31.868,
+          "end": 32.028
+        },
+        {
+          "text": "eventi.",
+          "start": 32.048,
+          "end": 32.389
+        }
+      ]
+    },
+    {
+      "start": 33.369,
+      "end": 35.929,
+      "text": "Come scegliere tra multi-tier e SOA?",
+      "words": [
+        {
+          "text": "Come",
+          "start": 33.369,
+          "end": 33.569
+        },
+        {
+          "text": "scegliere",
+          "start": 33.629,
+          "end": 34.109
+        },
+        {
+          "text": "tra",
+          "start": 34.329,
+          "end": 34.449
+        },
+        {
+          "text": "multi-tier",
+          "start": 34.549,
+          "end": 35.229
+        },
+        {
+          "text": "e",
+          "start": 35.549,
+          "end": 35.589
+        },
+        {
+          "text": "SOA?",
+          "start": 35.689,
+          "end": 35.929
+        }
+      ]
+    },
+    {
+      "start": 36.81,
+      "end": 38.09,
+      "text": "Valutiamo tre criteri chiave.",
+      "words": [
+        {
+          "text": "Valutiamo",
+          "start": 36.81,
+          "end": 37.17
+        },
+        {
+          "text": "tre",
+          "start": 37.25,
+          "end": 37.37
+        },
+        {
+          "text": "criteri",
+          "start": 37.41,
+          "end": 37.77
+        },
+        {
+          "text": "chiave.",
+          "start": 37.81,
+          "end": 38.09
+        }
+      ]
+    },
+    {
+      "start": 38.87,
+      "end": 41.271,
+      "text": "Primo, tipo di dati e aggiornamenti:",
+      "words": [
+        {
+          "text": "Primo,",
+          "start": 38.87,
+          "end": 39.11
+        },
+        {
+          "text": "tipo",
+          "start": 39.57,
+          "end": 39.83
+        },
+        {
+          "text": "di",
+          "start": 39.891,
+          "end": 39.951
+        },
+        {
+          "text": "dati",
+          "start": 40.011,
+          "end": 40.291
+        },
+        {
+          "text": "e",
+          "start": 40.511,
+          "end": 40.551
+        },
+        {
+          "text": "aggiornamenti:",
+          "start": 40.611,
+          "end": 41.271
+        }
+      ]
+    },
+    {
+      "start": 41.991,
+      "end": 45.172,
+      "text": "se i dati sono strutturati e aggiornati da feature diverse,",
+      "words": [
+        {
+          "text": "se",
+          "start": 41.991,
+          "end": 42.071
+        },
+        {
+          "text": "i",
+          "start": 42.131,
+          "end": 42.171
+        },
+        {
+          "text": "dati",
+          "start": 42.191,
+          "end": 42.391
+        },
+        {
+          "text": "sono",
+          "start": 42.451,
+          "end": 42.631
+        },
+        {
+          "text": "strutturati",
+          "start": 42.691,
+          "end": 43.451
+        },
+        {
+          "text": "e",
+          "start": 43.571,
+          "end": 43.611
+        },
+        {
+          "text": "aggiornati",
+          "start": 43.651,
+          "end": 44.132
+        },
+        {
+          "text": "da",
+          "start": 44.172,
+          "end": 44.252
+        },
+        {
+          "text": "feature",
+          "start": 44.312,
+          "end": 44.652
+        },
+        {
+          "text": "diverse,",
+          "start": 44.672,
+          "end": 45.172
+        }
+      ]
+    },
+    {
+      "start": 45.572,
+      "end": 51.694,
+      "text": "un unico database condiviso semplifica locking e transazioni; distribuire i dati tra più servizi introduce",
+      "words": [
+        {
+          "text": "un",
+          "start": 45.572,
+          "end": 45.672
+        },
+        {
+          "text": "unico",
+          "start": 45.712,
+          "end": 45.952
+        },
+        {
+          "text": "database",
+          "start": 45.992,
+          "end": 46.432
+        },
+        {
+          "text": "condiviso",
+          "start": 46.452,
+          "end": 46.952
+        },
+        {
+          "text": "semplifica",
+          "start": 47.092,
+          "end": 47.593
+        },
+        {
+          "text": "locking",
+          "start": 47.673,
+          "end": 48.093
+        },
+        {
+          "text": "e",
+          "start": 48.153,
+          "end": 48.193
+        },
+        {
+          "text": "transazioni;",
+          "start": 48.213,
+          "end": 48.853
+        },
+        {
+          "text": "distribuire",
+          "start": 49.333,
+          "end": 49.953
+        },
+        {
+          "text": "i",
+          "start": 49.993,
+          "end": 50.033
+        },
+        {
+          "text": "dati",
+          "start": 50.073,
+          "end": 50.313
+        },
+        {
+          "text": "tra",
+          "start": 50.373,
+          "end": 50.473
+        },
+        {
+          "text": "più",
+          "start": 50.553,
+          "end": 50.633
+        },
+        {
+          "text": "servizi",
+          "start": 50.713,
+          "end": 51.173
+        },
+        {
+          "text": "introduce",
+          "start": 51.253,
+          "end": 51.694
+        }
+      ]
+    },
+    {
+      "start": 51.734,
+      "end": 53.354,
+      "text": "invece overhead di coerenza.",
+      "words": [
+        {
+          "text": "invece",
+          "start": 51.734,
+          "end": 52.034
+        },
+        {
+          "text": "overhead",
+          "start": 52.214,
+          "end": 52.634
+        },
+        {
+          "text": "di",
+          "start": 52.734,
+          "end": 52.794
+        },
+        {
+          "text": "coerenza.",
+          "start": 52.834,
+          "end": 53.354
+        }
+      ]
+    },
+    {
+      "start": 54.314,
+      "end": 56.255,
+      "text": "Secondo, frequenza di cambiamento:",
+      "words": [
+        {
+          "text": "Secondo,",
+          "start": 54.314,
+          "end": 54.734
+        },
+        {
+          "text": "frequenza",
+          "start": 55.014,
+          "end": 55.535
+        },
+        {
+          "text": "di",
+          "start": 55.595,
+          "end": 55.655
+        },
+        {
+          "text": "cambiamento:",
+          "start": 55.695,
+          "end": 56.255
+        }
+      ]
+    },
+    {
+      "start": 56.935,
+      "end": 60.396,
+      "text": "se prevediamo di cambiare o sostituire spesso certi componenti,",
+      "words": [
+        {
+          "text": "se",
+          "start": 56.935,
+          "end": 57.015
+        },
+        {
+          "text": "prevediamo",
+          "start": 57.075,
+          "end": 57.515
+        },
+        {
+          "text": "di",
+          "start": 57.575,
+          "end": 57.635
+        },
+        {
+          "text": "cambiare",
+          "start": 57.695,
+          "end": 58.155
+        },
+        {
+          "text": "o",
+          "start": 58.195,
+          "end": 58.235
+        },
+        {
+          "text": "sostituire",
+          "start": 58.275,
+          "end": 58.835
+        },
+        {
+          "text": "spesso",
+          "start": 58.915,
+          "end": 59.416
+        },
+        {
+          "text": "certi",
+          "start": 59.496,
+          "end": 59.756
+        },
+        {
+          "text": "componenti,",
+          "start": 59.796,
+          "end": 60.396
+        }
+      ]
+    },
+    {
+      "start": 60.796,
+      "end": 63.917,
+      "text": "isolarli in servizi separati riduce l'impatto delle modifiche.",
+      "words": [
+        {
+          "text": "isolarli",
+          "start": 60.796,
+          "end": 61.216
+        },
+        {
+          "text": "in",
+          "start": 61.256,
+          "end": 61.316
+        },
+        {
+          "text": "servizi",
+          "start": 61.356,
+          "end": 61.716
+        },
+        {
+          "text": "separati",
+          "start": 61.776,
+          "end": 62.236
+        },
+        {
+          "text": "riduce",
+          "start": 62.436,
+          "end": 62.756
+        },
+        {
+          "text": "l'impatto",
+          "start": 62.796,
+          "end": 63.257
+        },
+        {
+          "text": "delle",
+          "start": 63.297,
+          "end": 63.477
+        },
+        {
+          "text": "modifiche.",
+          "start": 63.497,
+          "end": 63.917
+        }
+      ]
+    },
+    {
+      "start": 64.897,
+      "end": 70.659,
+      "text": "Terzo, piattaforma di esecuzione: per sistemi cloud esposti su Internet conviene la SOA per scalare",
+      "words": [
+        {
+          "text": "Terzo,",
+          "start": 64.897,
+          "end": 65.277
+        },
+        {
+          "text": "piattaforma",
+          "start": 65.497,
+          "end": 66.097
+        },
+        {
+          "text": "di",
+          "start": 66.137,
+          "end": 66.197
+        },
+        {
+          "text": "esecuzione:",
+          "start": 66.237,
+          "end": 66.878
+        },
+        {
+          "text": "per",
+          "start": 67.398,
+          "end": 67.498
+        },
+        {
+          "text": "sistemi",
+          "start": 67.538,
+          "end": 67.838
+        },
+        {
+          "text": "cloud",
+          "start": 67.878,
+          "end": 68.198
+        },
+        {
+          "text": "esposti",
+          "start": 68.258,
+          "end": 68.618
+        },
+        {
+          "text": "su",
+          "start": 68.678,
+          "end": 68.738
+        },
+        {
+          "text": "Internet",
+          "start": 68.858,
+          "end": 69.238
+        },
+        {
+          "text": "conviene",
+          "start": 69.298,
+          "end": 69.658
+        },
+        {
+          "text": "la",
+          "start": 69.718,
+          "end": 69.75800000000001
+        },
+        {
+          "text": "SOA",
+          "start": 69.818,
+          "end": 70.058
+        },
+        {
+          "text": "per",
+          "start": 70.218,
+          "end": 70.338
+        },
+        {
+          "text": "scalare",
+          "start": 70.358,
+          "end": 70.659
+        }
+      ]
+    },
+    {
+      "start": 70.699,
+      "end": 76.0,
+      "text": "facilmente; per sistemi aziendali su server locali è spesso preferibile un'architettura multi-tier.",
+      "words": [
+        {
+          "text": "facilmente;",
+          "start": 70.699,
+          "end": 71.239
+        },
+        {
+          "text": "per",
+          "start": 71.639,
+          "end": 71.739
+        },
+        {
+          "text": "sistemi",
+          "start": 71.799,
+          "end": 72.119
+        },
+        {
+          "text": "aziendali",
+          "start": 72.179,
+          "end": 72.719
+        },
+        {
+          "text": "su",
+          "start": 72.779,
+          "end": 72.839
+        },
+        {
+          "text": "server",
+          "start": 72.959,
+          "end": 73.239
+        },
+        {
+          "text": "locali",
+          "start": 73.279,
+          "end": 73.619
+        },
+        {
+          "text": "è",
+          "start": 73.819,
+          "end": 73.85900000000001
+        },
+        {
+          "text": "spesso",
+          "start": 73.899,
+          "end": 74.179
+        },
+        {
+          "text": "preferibile",
+          "start": 74.219,
+          "end": 74.72
+        },
+        {
+          "text": "un'architettura",
+          "start": 74.78,
+          "end": 75.42
+        },
+        {
+          "text": "multi-tier.",
+          "start": 75.5,
+          "end": 76.0
+        }
+      ]
+    }
+  ]
+}

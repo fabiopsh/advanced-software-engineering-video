@@ -1,0 +1,984 @@
+{
+  "duration": 75.863,
+  "segments": [
+    {
+      "start": 0.108,
+      "end": 5.188,
+      "text": "Per trasformare il calcolo quantistico in ingegneria affidabile nasce la Quantum Software Engineering.",
+      "words": [
+        {
+          "text": "Per",
+          "start": 0.108,
+          "end": 0.228
+        },
+        {
+          "text": "trasformare",
+          "start": 0.268,
+          "end": 0.668
+        },
+        {
+          "text": "il",
+          "start": 0.708,
+          "end": 0.768
+        },
+        {
+          "text": "calcolo",
+          "start": 0.788,
+          "end": 1.108
+        },
+        {
+          "text": "quantistico",
+          "start": 1.128,
+          "end": 1.648
+        },
+        {
+          "text": "in",
+          "start": 1.708,
+          "end": 1.768
+        },
+        {
+          "text": "ingegneria",
+          "start": 1.828,
+          "end": 2.308
+        },
+        {
+          "text": "affidabile",
+          "start": 2.368,
+          "end": 2.988
+        },
+        {
+          "text": "nasce",
+          "start": 3.288,
+          "end": 3.568
+        },
+        {
+          "text": "la",
+          "start": 3.588,
+          "end": 3.668
+        },
+        {
+          "text": "Quantum",
+          "start": 3.768,
+          "end": 4.188
+        },
+        {
+          "text": "Software",
+          "start": 4.268,
+          "end": 4.648
+        },
+        {
+          "text": "Engineering.",
+          "start": 4.688,
+          "end": 5.188
+        }
+      ]
+    },
+    {
+      "start": 6.008,
+      "end": 9.189,
+      "text": "Oggi l'hardware soffre di errori elevati, pochi qubit e costi alti,",
+      "words": [
+        {
+          "text": "Oggi",
+          "start": 6.008,
+          "end": 6.208
+        },
+        {
+          "text": "l'hardware",
+          "start": 6.248,
+          "end": 6.608
+        },
+        {
+          "text": "soffre",
+          "start": 6.668,
+          "end": 6.928
+        },
+        {
+          "text": "di",
+          "start": 6.988,
+          "end": 7.048
+        },
+        {
+          "text": "errori",
+          "start": 7.088,
+          "end": 7.308
+        },
+        {
+          "text": "elevati,",
+          "start": 7.368,
+          "end": 7.769
+        },
+        {
+          "text": "pochi",
+          "start": 7.829,
+          "end": 8.029
+        },
+        {
+          "text": "qubit",
+          "start": 8.089,
+          "end": 8.469
+        },
+        {
+          "text": "e",
+          "start": 8.509,
+          "end": 8.549
+        },
+        {
+          "text": "costi",
+          "start": 8.589,
+          "end": 8.829
+        },
+        {
+          "text": "alti,",
+          "start": 8.929,
+          "end": 9.189
+        }
+      ]
+    },
+    {
+      "start": 9.669,
+      "end": 12.529,
+      "text": "mentre lo sviluppo software è ancora legato a porte di basso livello,",
+      "words": [
+        {
+          "text": "mentre",
+          "start": 9.669,
+          "end": 9.869
+        },
+        {
+          "text": "lo",
+          "start": 9.909,
+          "end": 9.969
+        },
+        {
+          "text": "sviluppo",
+          "start": 10.009,
+          "end": 10.309
+        },
+        {
+          "text": "software",
+          "start": 10.369,
+          "end": 10.709
+        },
+        {
+          "text": "è",
+          "start": 10.729,
+          "end": 10.769
+        },
+        {
+          "text": "ancora",
+          "start": 10.789,
+          "end": 11.009
+        },
+        {
+          "text": "legato",
+          "start": 11.069,
+          "end": 11.309
+        },
+        {
+          "text": "a",
+          "start": 11.349,
+          "end": 11.389
+        },
+        {
+          "text": "porte",
+          "start": 11.449,
+          "end": 11.689
+        },
+        {
+          "text": "di",
+          "start": 11.729,
+          "end": 11.789
+        },
+        {
+          "text": "basso",
+          "start": 11.849,
+          "end": 12.069
+        },
+        {
+          "text": "livello,",
+          "start": 12.109,
+          "end": 12.529
+        }
+      ]
+    },
+    {
+      "start": 12.749,
+      "end": 16.869,
+      "text": "scarsa interoperabilità e mancanza di strumenti per il ciclo di vita come container,",
+      "words": [
+        {
+          "text": "scarsa",
+          "start": 12.749,
+          "end": 13.049
+        },
+        {
+          "text": "interoperabilità",
+          "start": 13.109,
+          "end": 13.869
+        },
+        {
+          "text": "e",
+          "start": 14.009,
+          "end": 14.049
+        },
+        {
+          "text": "mancanza",
+          "start": 14.129,
+          "end": 14.569
+        },
+        {
+          "text": "di",
+          "start": 14.609,
+          "end": 14.669
+        },
+        {
+          "text": "strumenti",
+          "start": 14.729,
+          "end": 15.169
+        },
+        {
+          "text": "per",
+          "start": 15.209,
+          "end": 15.329
+        },
+        {
+          "text": "il",
+          "start": 15.349,
+          "end": 15.429
+        },
+        {
+          "text": "ciclo",
+          "start": 15.449,
+          "end": 15.729
+        },
+        {
+          "text": "di",
+          "start": 15.749,
+          "end": 15.809
+        },
+        {
+          "text": "vita",
+          "start": 15.849,
+          "end": 16.049
+        },
+        {
+          "text": "come",
+          "start": 16.109,
+          "end": 16.249
+        },
+        {
+          "text": "container,",
+          "start": 16.349,
+          "end": 16.869
+        }
+      ]
+    },
+    {
+      "start": 17.269,
+      "end": 20.089,
+      "text": "orchestratori, integrazione continua e monitoraggio.",
+      "words": [
+        {
+          "text": "orchestratori,",
+          "start": 17.269,
+          "end": 17.909
+        },
+        {
+          "text": "integrazione",
+          "start": 18.249,
+          "end": 18.769
+        },
+        {
+          "text": "continua",
+          "start": 18.809,
+          "end": 19.309
+        },
+        {
+          "text": "e",
+          "start": 19.409,
+          "end": 19.449
+        },
+        {
+          "text": "monitoraggio.",
+          "start": 19.509,
+          "end": 20.089
+        }
+      ]
+    },
+    {
+      "start": 21.129,
+      "end": 25.75,
+      "text": "Zhao nel duemilaventi definisce la Q S E come l'uso di solidi principi di ingegneria",
+      "words": [
+        {
+          "text": "Zhao",
+          "start": 21.129,
+          "end": 21.349
+        },
+        {
+          "text": "nel",
+          "start": 21.409,
+          "end": 21.529
+        },
+        {
+          "text": "duemilaventi",
+          "start": 21.549,
+          "end": 22.089
+        },
+        {
+          "text": "definisce",
+          "start": 22.189,
+          "end": 22.609
+        },
+        {
+          "text": "la",
+          "start": 22.649,
+          "end": 22.71
+        },
+        {
+          "text": "Q",
+          "start": 22.79,
+          "end": 22.83
+        },
+        {
+          "text": "S",
+          "start": 23.09,
+          "end": 23.13
+        },
+        {
+          "text": "E",
+          "start": 23.17,
+          "end": 23.21
+        },
+        {
+          "text": "come",
+          "start": 23.51,
+          "end": 23.69
+        },
+        {
+          "text": "l'uso",
+          "start": 23.81,
+          "end": 24.09
+        },
+        {
+          "text": "di",
+          "start": 24.13,
+          "end": 24.21
+        },
+        {
+          "text": "solidi",
+          "start": 24.31,
+          "end": 24.65
+        },
+        {
+          "text": "principi",
+          "start": 24.69,
+          "end": 25.11
+        },
+        {
+          "text": "di",
+          "start": 25.15,
+          "end": 25.19
+        },
+        {
+          "text": "ingegneria",
+          "start": 25.23,
+          "end": 25.75
+        }
+      ]
+    },
+    {
+      "start": 25.83,
+      "end": 31.43,
+      "text": "per sviluppare, esercire e manutenere software quantistico affidabile, efficiente ed economico.",
+      "words": [
+        {
+          "text": "per",
+          "start": 25.83,
+          "end": 25.93
+        },
+        {
+          "text": "sviluppare,",
+          "start": 25.99,
+          "end": 26.61
+        },
+        {
+          "text": "esercire",
+          "start": 26.77,
+          "end": 27.41
+        },
+        {
+          "text": "e",
+          "start": 27.55,
+          "end": 27.59
+        },
+        {
+          "text": "manutenere",
+          "start": 27.73,
+          "end": 28.29
+        },
+        {
+          "text": "software",
+          "start": 28.39,
+          "end": 28.77
+        },
+        {
+          "text": "quantistico",
+          "start": 28.79,
+          "end": 29.27
+        },
+        {
+          "text": "affidabile,",
+          "start": 29.31,
+          "end": 29.85
+        },
+        {
+          "text": "efficiente",
+          "start": 30.11,
+          "end": 30.71
+        },
+        {
+          "text": "ed",
+          "start": 30.87,
+          "end": 30.95
+        },
+        {
+          "text": "economico.",
+          "start": 30.99,
+          "end": 31.43
+        }
+      ]
+    },
+    {
+      "start": 32.13,
+      "end": 37.47,
+      "text": "Il Talavera Manifesto di Piattini e colleghi fissa nove principi fondamentali:",
+      "words": [
+        {
+          "text": "Il",
+          "start": 32.13,
+          "end": 32.23
+        },
+        {
+          "text": "Talavera",
+          "start": 32.35,
+          "end": 32.79
+        },
+        {
+          "text": "Manifesto",
+          "start": 32.85,
+          "end": 33.45
+        },
+        {
+          "text": "di",
+          "start": 33.77,
+          "end": 33.85
+        },
+        {
+          "text": "Piattini",
+          "start": 33.99,
+          "end": 34.45
+        },
+        {
+          "text": "e",
+          "start": 34.49,
+          "end": 34.53
+        },
+        {
+          "text": "colleghi",
+          "start": 34.55,
+          "end": 35.01
+        },
+        {
+          "text": "fissa",
+          "start": 35.43,
+          "end": 35.73
+        },
+        {
+          "text": "nove",
+          "start": 35.89,
+          "end": 36.17
+        },
+        {
+          "text": "principi",
+          "start": 36.23,
+          "end": 36.69
+        },
+        {
+          "text": "fondamentali:",
+          "start": 36.75,
+          "end": 37.47
+        }
+      ]
+    },
+    {
+      "start": 38.131,
+      "end": 43.051,
+      "text": "indipendenza da linguaggi e tecnologie, coesistenza tra calcolo classico e quantistico,",
+      "words": [
+        {
+          "text": "indipendenza",
+          "start": 38.131,
+          "end": 38.811
+        },
+        {
+          "text": "da",
+          "start": 38.851,
+          "end": 38.911
+        },
+        {
+          "text": "linguaggi",
+          "start": 38.971,
+          "end": 39.391
+        },
+        {
+          "text": "e",
+          "start": 39.411,
+          "end": 39.451
+        },
+        {
+          "text": "tecnologie,",
+          "start": 39.471,
+          "end": 40.051
+        },
+        {
+          "text": "coesistenza",
+          "start": 40.571,
+          "end": 41.331
+        },
+        {
+          "text": "tra",
+          "start": 41.391,
+          "end": 41.491
+        },
+        {
+          "text": "calcolo",
+          "start": 41.551,
+          "end": 41.911
+        },
+        {
+          "text": "classico",
+          "start": 41.951,
+          "end": 42.371
+        },
+        {
+          "text": "e",
+          "start": 42.411,
+          "end": 42.451
+        },
+        {
+          "text": "quantistico,",
+          "start": 42.471,
+          "end": 43.051
+        }
+      ]
+    },
+    {
+      "start": 43.671,
+      "end": 46.631,
+      "text": "gestione dei progetti, evoluzione del software,",
+      "words": [
+        {
+          "text": "gestione",
+          "start": 43.671,
+          "end": 44.151
+        },
+        {
+          "text": "dei",
+          "start": 44.191,
+          "end": 44.291
+        },
+        {
+          "text": "progetti,",
+          "start": 44.291,
+          "end": 44.771
+        },
+        {
+          "text": "evoluzione",
+          "start": 45.431,
+          "end": 46.031
+        },
+        {
+          "text": "del",
+          "start": 46.051,
+          "end": 46.171
+        },
+        {
+          "text": "software,",
+          "start": 46.231,
+          "end": 46.631
+        }
+      ]
+    },
+    {
+      "start": 47.191,
+      "end": 50.111,
+      "text": "obiettivo zero difetti, garanzia di qualità,",
+      "words": [
+        {
+          "text": "obiettivo",
+          "start": 47.191,
+          "end": 47.671
+        },
+        {
+          "text": "zero",
+          "start": 47.811,
+          "end": 48.051
+        },
+        {
+          "text": "difetti,",
+          "start": 48.091,
+          "end": 48.531
+        },
+        {
+          "text": "garanzia",
+          "start": 49.131,
+          "end": 49.631
+        },
+        {
+          "text": "di",
+          "start": 49.671,
+          "end": 49.731
+        },
+        {
+          "text": "qualità,",
+          "start": 49.771,
+          "end": 50.111
+        }
+      ]
+    },
+    {
+      "start": 50.871,
+      "end": 54.952,
+      "text": "riuso, sicurezza e privacy by design, e infine governance.",
+      "words": [
+        {
+          "text": "riuso,",
+          "start": 50.871,
+          "end": 51.271
+        },
+        {
+          "text": "sicurezza",
+          "start": 51.871,
+          "end": 52.331
+        },
+        {
+          "text": "e",
+          "start": 52.391,
+          "end": 52.431
+        },
+        {
+          "text": "privacy",
+          "start": 52.451,
+          "end": 52.891
+        },
+        {
+          "text": "by",
+          "start": 52.951,
+          "end": 53.071
+        },
+        {
+          "text": "design,",
+          "start": 53.112,
+          "end": 53.512
+        },
+        {
+          "text": "e",
+          "start": 53.892,
+          "end": 53.932
+        },
+        {
+          "text": "infine",
+          "start": 53.952,
+          "end": 54.292
+        },
+        {
+          "text": "governance.",
+          "start": 54.432,
+          "end": 54.952
+        }
+      ]
+    },
+    {
+      "start": 55.732,
+      "end": 60.492,
+      "text": "In concreto, la Q S E punta a transpiler migliori per la topologia della macchina,",
+      "words": [
+        {
+          "text": "In",
+          "start": 55.732,
+          "end": 55.792
+        },
+        {
+          "text": "concreto,",
+          "start": 55.832,
+          "end": 56.192
+        },
+        {
+          "text": "la",
+          "start": 56.412,
+          "end": 56.472
+        },
+        {
+          "text": "Q",
+          "start": 56.532,
+          "end": 56.572
+        },
+        {
+          "text": "S",
+          "start": 56.892,
+          "end": 56.932
+        },
+        {
+          "text": "E",
+          "start": 56.972,
+          "end": 57.012
+        },
+        {
+          "text": "punta",
+          "start": 57.252,
+          "end": 57.532
+        },
+        {
+          "text": "a",
+          "start": 57.572,
+          "end": 57.612
+        },
+        {
+          "text": "transpiler",
+          "start": 57.652,
+          "end": 58.392
+        },
+        {
+          "text": "migliori",
+          "start": 58.472,
+          "end": 58.952
+        },
+        {
+          "text": "per",
+          "start": 59.012,
+          "end": 59.112
+        },
+        {
+          "text": "la",
+          "start": 59.152,
+          "end": 59.212
+        },
+        {
+          "text": "topologia",
+          "start": 59.292,
+          "end": 59.872
+        },
+        {
+          "text": "della",
+          "start": 59.912,
+          "end": 60.092
+        },
+        {
+          "text": "macchina,",
+          "start": 60.112,
+          "end": 60.492
+        }
+      ]
+    },
+    {
+      "start": 60.992,
+      "end": 63.812,
+      "text": "modelli riusabili detti Q module template,",
+      "words": [
+        {
+          "text": "modelli",
+          "start": 60.992,
+          "end": 61.352
+        },
+        {
+          "text": "riusabili",
+          "start": 61.452,
+          "end": 62.032
+        },
+        {
+          "text": "detti",
+          "start": 62.212,
+          "end": 62.452
+        },
+        {
+          "text": "Q",
+          "start": 62.692,
+          "end": 62.732
+        },
+        {
+          "text": "module",
+          "start": 62.972,
+          "end": 63.312
+        },
+        {
+          "text": "template,",
+          "start": 63.332,
+          "end": 63.812
+        }
+      ]
+    },
+    {
+      "start": 64.432,
+      "end": 66.912,
+      "text": "verifica di equivalenza tra programmi P e Q,",
+      "words": [
+        {
+          "text": "verifica",
+          "start": 64.432,
+          "end": 64.852
+        },
+        {
+          "text": "di",
+          "start": 64.892,
+          "end": 64.952
+        },
+        {
+          "text": "equivalenza",
+          "start": 65.012,
+          "end": 65.592
+        },
+        {
+          "text": "tra",
+          "start": 65.652,
+          "end": 65.752
+        },
+        {
+          "text": "programmi",
+          "start": 65.832,
+          "end": 66.252
+        },
+        {
+          "text": "P",
+          "start": 66.412,
+          "end": 66.45200000000001
+        },
+        {
+          "text": "e",
+          "start": 66.752,
+          "end": 66.792
+        },
+        {
+          "text": "Q,",
+          "start": 66.872,
+          "end": 66.912
+        }
+      ]
+    },
+    {
+      "start": 67.652,
+      "end": 71.813,
+      "text": "codice ibrido x uguale f di y combinato con q di z,",
+      "words": [
+        {
+          "text": "codice",
+          "start": 67.652,
+          "end": 68.052
+        },
+        {
+          "text": "ibrido",
+          "start": 68.172,
+          "end": 68.473
+        },
+        {
+          "text": "x",
+          "start": 69.013,
+          "end": 69.05300000000001
+        },
+        {
+          "text": "uguale",
+          "start": 69.313,
+          "end": 69.613
+        },
+        {
+          "text": "f",
+          "start": 69.973,
+          "end": 70.013
+        },
+        {
+          "text": "di",
+          "start": 70.133,
+          "end": 70.213
+        },
+        {
+          "text": "y",
+          "start": 70.473,
+          "end": 70.513
+        },
+        {
+          "text": "combinato",
+          "start": 70.733,
+          "end": 71.173
+        },
+        {
+          "text": "con",
+          "start": 71.233,
+          "end": 71.373
+        },
+        {
+          "text": "q",
+          "start": 71.433,
+          "end": 71.47300000000001
+        },
+        {
+          "text": "di",
+          "start": 71.613,
+          "end": 71.693
+        },
+        {
+          "text": "z,",
+          "start": 71.773,
+          "end": 71.813
+        }
+      ]
+    },
+    {
+      "start": 72.653,
+      "end": 75.613,
+      "text": "e sfruttamento efficace di macchine eterogenee e rumorose.",
+      "words": [
+        {
+          "text": "e",
+          "start": 72.653,
+          "end": 72.69300000000001
+        },
+        {
+          "text": "sfruttamento",
+          "start": 72.753,
+          "end": 73.313
+        },
+        {
+          "text": "efficace",
+          "start": 73.353,
+          "end": 73.793
+        },
+        {
+          "text": "di",
+          "start": 73.833,
+          "end": 73.893
+        },
+        {
+          "text": "macchine",
+          "start": 73.933,
+          "end": 74.253
+        },
+        {
+          "text": "eterogenee",
+          "start": 74.393,
+          "end": 74.933
+        },
+        {
+          "text": "e",
+          "start": 75.093,
+          "end": 75.13300000000001
+        },
+        {
+          "text": "rumorose.",
+          "start": 75.173,
+          "end": 75.613
+        }
+      ]
+    }
+  ]
+}

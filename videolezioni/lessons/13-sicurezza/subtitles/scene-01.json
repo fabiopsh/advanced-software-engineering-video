@@ -1,0 +1,977 @@
+{
+  "duration": 75.856,
+  "segments": [
+    {
+      "start": 0.04,
+      "end": 4.961,
+      "text": "Benvenuti al capitolo tredici, dedicato a sicurezza e privacy nei prodotti software.",
+      "words": [
+        {
+          "text": "Benvenuti",
+          "start": 0.04,
+          "end": 0.52
+        },
+        {
+          "text": "al",
+          "start": 0.72,
+          "end": 0.82
+        },
+        {
+          "text": "capitolo",
+          "start": 0.86,
+          "end": 1.24
+        },
+        {
+          "text": "tredici,",
+          "start": 1.28,
+          "end": 1.68
+        },
+        {
+          "text": "dedicato",
+          "start": 2.1,
+          "end": 2.52
+        },
+        {
+          "text": "a",
+          "start": 2.56,
+          "end": 2.6
+        },
+        {
+          "text": "sicurezza",
+          "start": 2.7,
+          "end": 3.2
+        },
+        {
+          "text": "e",
+          "start": 3.24,
+          "end": 3.2800000000000002
+        },
+        {
+          "text": "privacy",
+          "start": 3.32,
+          "end": 3.781
+        },
+        {
+          "text": "nei",
+          "start": 3.961,
+          "end": 4.061
+        },
+        {
+          "text": "prodotti",
+          "start": 4.081,
+          "end": 4.421
+        },
+        {
+          "text": "software.",
+          "start": 4.481,
+          "end": 4.961
+        }
+      ]
+    },
+    {
+      "start": 5.921,
+      "end": 9.281,
+      "text": "Un attacco informatico può causare perdite gravi di dati,",
+      "words": [
+        {
+          "text": "Un",
+          "start": 5.921,
+          "end": 6.001
+        },
+        {
+          "text": "attacco",
+          "start": 6.041,
+          "end": 6.281
+        },
+        {
+          "text": "informatico",
+          "start": 6.321,
+          "end": 6.981
+        },
+        {
+          "text": "può",
+          "start": 7.161,
+          "end": 7.241
+        },
+        {
+          "text": "causare",
+          "start": 7.321,
+          "end": 7.701
+        },
+        {
+          "text": "perdite",
+          "start": 7.761,
+          "end": 8.141
+        },
+        {
+          "text": "gravi",
+          "start": 8.241,
+          "end": 8.601
+        },
+        {
+          "text": "di",
+          "start": 8.721,
+          "end": 8.801
+        },
+        {
+          "text": "dati,",
+          "start": 8.921,
+          "end": 9.281
+        }
+      ]
+    },
+    {
+      "start": 9.601,
+      "end": 14.022,
+      "text": "denaro e reputazione sia a chi sviluppa il prodotto sia a chi lo utilizza.",
+      "words": [
+        {
+          "text": "denaro",
+          "start": 9.601,
+          "end": 10.061
+        },
+        {
+          "text": "e",
+          "start": 10.301,
+          "end": 10.341
+        },
+        {
+          "text": "reputazione",
+          "start": 10.441,
+          "end": 11.141
+        },
+        {
+          "text": "sia",
+          "start": 11.522,
+          "end": 11.702
+        },
+        {
+          "text": "a",
+          "start": 11.742,
+          "end": 11.782
+        },
+        {
+          "text": "chi",
+          "start": 11.822,
+          "end": 11.902
+        },
+        {
+          "text": "sviluppa",
+          "start": 11.942,
+          "end": 12.282
+        },
+        {
+          "text": "il",
+          "start": 12.322,
+          "end": 12.382
+        },
+        {
+          "text": "prodotto",
+          "start": 12.382,
+          "end": 12.822
+        },
+        {
+          "text": "sia",
+          "start": 13.102,
+          "end": 13.262
+        },
+        {
+          "text": "a",
+          "start": 13.302,
+          "end": 13.342
+        },
+        {
+          "text": "chi",
+          "start": 13.362,
+          "end": 13.462
+        },
+        {
+          "text": "lo",
+          "start": 13.502,
+          "end": 13.562
+        },
+        {
+          "text": "utilizza.",
+          "start": 13.622,
+          "end": 14.022
+        }
+      ]
+    },
+    {
+      "start": 14.942,
+      "end": 17.862,
+      "text": "Le minacce si classificano in tre categorie fondamentali.",
+      "words": [
+        {
+          "text": "Le",
+          "start": 14.942,
+          "end": 15.022
+        },
+        {
+          "text": "minacce",
+          "start": 15.042,
+          "end": 15.382
+        },
+        {
+          "text": "si",
+          "start": 15.442,
+          "end": 15.502
+        },
+        {
+          "text": "classificano",
+          "start": 15.562,
+          "end": 16.142
+        },
+        {
+          "text": "in",
+          "start": 16.322,
+          "end": 16.402
+        },
+        {
+          "text": "tre",
+          "start": 16.482,
+          "end": 16.602
+        },
+        {
+          "text": "categorie",
+          "start": 16.662,
+          "end": 17.142
+        },
+        {
+          "text": "fondamentali.",
+          "start": 17.182,
+          "end": 17.862
+        }
+      ]
+    },
+    {
+      "start": 18.362,
+      "end": 25.103,
+      "text": "Prima: le minacce alla disponibilità, o availability threats, in cui l'attaccante nega l'accesso agli utenti",
+      "words": [
+        {
+          "text": "Prima:",
+          "start": 18.362,
+          "end": 18.622
+        },
+        {
+          "text": "le",
+          "start": 19.183,
+          "end": 19.263
+        },
+        {
+          "text": "minacce",
+          "start": 19.303,
+          "end": 19.663
+        },
+        {
+          "text": "alla",
+          "start": 19.723,
+          "end": 19.863
+        },
+        {
+          "text": "disponibilità,",
+          "start": 19.943,
+          "end": 20.683
+        },
+        {
+          "text": "o",
+          "start": 21.063,
+          "end": 21.103
+        },
+        {
+          "text": "availability",
+          "start": 21.283,
+          "end": 21.883
+        },
+        {
+          "text": "threats,",
+          "start": 21.943,
+          "end": 22.263
+        },
+        {
+          "text": "in",
+          "start": 22.763,
+          "end": 22.843
+        },
+        {
+          "text": "cui",
+          "start": 22.883,
+          "end": 23.003
+        },
+        {
+          "text": "l'attaccante",
+          "start": 23.023,
+          "end": 23.603
+        },
+        {
+          "text": "nega",
+          "start": 23.903,
+          "end": 24.163
+        },
+        {
+          "text": "l'accesso",
+          "start": 24.203,
+          "end": 24.643
+        },
+        {
+          "text": "agli",
+          "start": 24.683,
+          "end": 24.803
+        },
+        {
+          "text": "utenti",
+          "start": 24.823,
+          "end": 25.103
+        }
+      ]
+    },
+    {
+      "start": 25.163,
+      "end": 28.804,
+      "text": "legittimi, per esempio con un attacco distributed denial of service.",
+      "words": [
+        {
+          "text": "legittimi,",
+          "start": 25.163,
+          "end": 25.663
+        },
+        {
+          "text": "per",
+          "start": 25.963,
+          "end": 26.043
+        },
+        {
+          "text": "esempio",
+          "start": 26.083,
+          "end": 26.384
+        },
+        {
+          "text": "con",
+          "start": 26.424,
+          "end": 26.524
+        },
+        {
+          "text": "un",
+          "start": 26.544,
+          "end": 26.624
+        },
+        {
+          "text": "attacco",
+          "start": 26.664,
+          "end": 27.004
+        },
+        {
+          "text": "distributed",
+          "start": 27.204,
+          "end": 27.784
+        },
+        {
+          "text": "denial",
+          "start": 27.804,
+          "end": 28.184
+        },
+        {
+          "text": "of",
+          "start": 28.224,
+          "end": 28.284
+        },
+        {
+          "text": "service.",
+          "start": 28.364,
+          "end": 28.804
+        }
+      ]
+    },
+    {
+      "start": 29.364,
+      "end": 35.085,
+      "text": "Seconda: le minacce all'integrità, o integrity threats, mirate a danneggiare il programma,",
+      "words": [
+        {
+          "text": "Seconda:",
+          "start": 29.364,
+          "end": 29.724
+        },
+        {
+          "text": "le",
+          "start": 30.204,
+          "end": 30.264
+        },
+        {
+          "text": "minacce",
+          "start": 30.304,
+          "end": 30.644
+        },
+        {
+          "text": "all'integrità,",
+          "start": 30.704,
+          "end": 31.384
+        },
+        {
+          "text": "o",
+          "start": 31.784,
+          "end": 31.824
+        },
+        {
+          "text": "integrity",
+          "start": 32.004,
+          "end": 32.544
+        },
+        {
+          "text": "threats,",
+          "start": 32.584,
+          "end": 32.904
+        },
+        {
+          "text": "mirate",
+          "start": 33.404,
+          "end": 33.725
+        },
+        {
+          "text": "a",
+          "start": 33.785,
+          "end": 33.825
+        },
+        {
+          "text": "danneggiare",
+          "start": 33.905,
+          "end": 34.485
+        },
+        {
+          "text": "il",
+          "start": 34.525,
+          "end": 34.585
+        },
+        {
+          "text": "programma,",
+          "start": 34.605,
+          "end": 35.085
+        }
+      ]
+    },
+    {
+      "start": 35.345,
+      "end": 38.965,
+      "text": "come fa un virus, oppure i dati, come accade con un ransomware.",
+      "words": [
+        {
+          "text": "come",
+          "start": 35.345,
+          "end": 35.505
+        },
+        {
+          "text": "fa",
+          "start": 35.545,
+          "end": 35.625
+        },
+        {
+          "text": "un",
+          "start": 35.705,
+          "end": 35.765
+        },
+        {
+          "text": "virus,",
+          "start": 35.805,
+          "end": 36.185
+        },
+        {
+          "text": "oppure",
+          "start": 36.625,
+          "end": 36.905
+        },
+        {
+          "text": "i",
+          "start": 36.965,
+          "end": 37.005
+        },
+        {
+          "text": "dati,",
+          "start": 37.045,
+          "end": 37.345
+        },
+        {
+          "text": "come",
+          "start": 37.645,
+          "end": 37.785
+        },
+        {
+          "text": "accade",
+          "start": 37.805,
+          "end": 38.085
+        },
+        {
+          "text": "con",
+          "start": 38.125,
+          "end": 38.245
+        },
+        {
+          "text": "un",
+          "start": 38.285,
+          "end": 38.365
+        },
+        {
+          "text": "ransomware.",
+          "start": 38.405,
+          "end": 38.965
+        }
+      ]
+    },
+    {
+      "start": 39.525,
+      "end": 45.766,
+      "text": "Terza: le minacce alla riservatezza, o confidentiality threats, con cui si sottraggono informazioni private.",
+      "words": [
+        {
+          "text": "Terza:",
+          "start": 39.525,
+          "end": 39.845
+        },
+        {
+          "text": "le",
+          "start": 40.385,
+          "end": 40.465
+        },
+        {
+          "text": "minacce",
+          "start": 40.485,
+          "end": 40.785
+        },
+        {
+          "text": "alla",
+          "start": 40.805,
+          "end": 40.945
+        },
+        {
+          "text": "riservatezza,",
+          "start": 40.965,
+          "end": 41.646
+        },
+        {
+          "text": "o",
+          "start": 42.026,
+          "end": 42.066
+        },
+        {
+          "text": "confidentiality",
+          "start": 42.186,
+          "end": 43.026
+        },
+        {
+          "text": "threats,",
+          "start": 43.066,
+          "end": 43.386
+        },
+        {
+          "text": "con",
+          "start": 43.806,
+          "end": 43.906
+        },
+        {
+          "text": "cui",
+          "start": 43.926,
+          "end": 44.046
+        },
+        {
+          "text": "si",
+          "start": 44.086,
+          "end": 44.166
+        },
+        {
+          "text": "sottraggono",
+          "start": 44.206,
+          "end": 44.686
+        },
+        {
+          "text": "informazioni",
+          "start": 44.726,
+          "end": 45.326
+        },
+        {
+          "text": "private.",
+          "start": 45.366,
+          "end": 45.766
+        }
+      ]
+    },
+    {
+      "start": 46.746,
+      "end": 52.047,
+      "text": "Spesso un attacco ne combina più di una: un ransomware cifra i dati violando l'integrità",
+      "words": [
+        {
+          "text": "Spesso",
+          "start": 46.746,
+          "end": 47.086
+        },
+        {
+          "text": "un",
+          "start": 47.226,
+          "end": 47.306
+        },
+        {
+          "text": "attacco",
+          "start": 47.346,
+          "end": 47.686
+        },
+        {
+          "text": "ne",
+          "start": 47.746,
+          "end": 47.806
+        },
+        {
+          "text": "combina",
+          "start": 47.866,
+          "end": 48.266
+        },
+        {
+          "text": "più",
+          "start": 48.326,
+          "end": 48.446
+        },
+        {
+          "text": "di",
+          "start": 48.526,
+          "end": 48.606
+        },
+        {
+          "text": "una:",
+          "start": 48.707,
+          "end": 48.907
+        },
+        {
+          "text": "un",
+          "start": 49.407,
+          "end": 49.507
+        },
+        {
+          "text": "ransomware",
+          "start": 49.587,
+          "end": 50.247
+        },
+        {
+          "text": "cifra",
+          "start": 50.407,
+          "end": 50.727
+        },
+        {
+          "text": "i",
+          "start": 50.767,
+          "end": 50.807
+        },
+        {
+          "text": "dati",
+          "start": 50.827,
+          "end": 51.107
+        },
+        {
+          "text": "violando",
+          "start": 51.167,
+          "end": 51.507
+        },
+        {
+          "text": "l'integrità",
+          "start": 51.527,
+          "end": 52.047
+        }
+      ]
+    },
+    {
+      "start": 52.527,
+      "end": 54.007,
+      "text": "e rende il sistema indisponibile.",
+      "words": [
+        {
+          "text": "e",
+          "start": 52.527,
+          "end": 52.567
+        },
+        {
+          "text": "rende",
+          "start": 52.667,
+          "end": 52.867
+        },
+        {
+          "text": "il",
+          "start": 52.887,
+          "end": 52.947
+        },
+        {
+          "text": "sistema",
+          "start": 52.987,
+          "end": 53.307
+        },
+        {
+          "text": "indisponibile.",
+          "start": 53.347,
+          "end": 54.007
+        }
+      ]
+    },
+    {
+      "start": 54.567,
+      "end": 60.708,
+      "text": "Inoltre la sicurezza riguarda l'intero stack del sistema, dalla rete fino all'ambiente operativo passando per",
+      "words": [
+        {
+          "text": "Inoltre",
+          "start": 54.567,
+          "end": 54.927
+        },
+        {
+          "text": "la",
+          "start": 55.067,
+          "end": 55.127
+        },
+        {
+          "text": "sicurezza",
+          "start": 55.187,
+          "end": 55.627
+        },
+        {
+          "text": "riguarda",
+          "start": 55.687,
+          "end": 56.067
+        },
+        {
+          "text": "l'intero",
+          "start": 56.208,
+          "end": 56.748
+        },
+        {
+          "text": "stack",
+          "start": 56.808,
+          "end": 57.048
+        },
+        {
+          "text": "del",
+          "start": 57.108,
+          "end": 57.228
+        },
+        {
+          "text": "sistema,",
+          "start": 57.288,
+          "end": 57.688
+        },
+        {
+          "text": "dalla",
+          "start": 58.068,
+          "end": 58.268
+        },
+        {
+          "text": "rete",
+          "start": 58.308,
+          "end": 58.568
+        },
+        {
+          "text": "fino",
+          "start": 58.788,
+          "end": 58.968
+        },
+        {
+          "text": "all'ambiente",
+          "start": 59.008,
+          "end": 59.448
+        },
+        {
+          "text": "operativo",
+          "start": 59.488,
+          "end": 59.928
+        },
+        {
+          "text": "passando",
+          "start": 60.188,
+          "end": 60.568
+        },
+        {
+          "text": "per",
+          "start": 60.588,
+          "end": 60.708
+        }
+      ]
+    },
+    {
+      "start": 60.768,
+      "end": 63.108,
+      "text": "sistema operativo, database e librerie.",
+      "words": [
+        {
+          "text": "sistema",
+          "start": 60.768,
+          "end": 61.048
+        },
+        {
+          "text": "operativo,",
+          "start": 61.088,
+          "end": 61.588
+        },
+        {
+          "text": "database",
+          "start": 61.868,
+          "end": 62.408
+        },
+        {
+          "text": "e",
+          "start": 62.568,
+          "end": 62.608
+        },
+        {
+          "text": "librerie.",
+          "start": 62.688,
+          "end": 63.108
+        }
+      ]
+    },
+    {
+      "start": 63.729,
+      "end": 66.029,
+      "text": "Per mantenerla servono quattro attività di gestione:",
+      "words": [
+        {
+          "text": "Per",
+          "start": 63.729,
+          "end": 63.829
+        },
+        {
+          "text": "mantenerla",
+          "start": 63.869,
+          "end": 64.329
+        },
+        {
+          "text": "servono",
+          "start": 64.469,
+          "end": 64.789
+        },
+        {
+          "text": "quattro",
+          "start": 64.829,
+          "end": 65.089
+        },
+        {
+          "text": "attività",
+          "start": 65.129,
+          "end": 65.449
+        },
+        {
+          "text": "di",
+          "start": 65.509,
+          "end": 65.549
+        },
+        {
+          "text": "gestione:",
+          "start": 65.589,
+          "end": 66.029
+        }
+      ]
+    },
+    {
+      "start": 66.609,
+      "end": 71.53,
+      "text": "standard di autenticazione e autorizzazione, manutenzione dell'infrastruttura con patch rapide,",
+      "words": [
+        {
+          "text": "standard",
+          "start": 66.609,
+          "end": 67.029
+        },
+        {
+          "text": "di",
+          "start": 67.109,
+          "end": 67.149
+        },
+        {
+          "text": "autenticazione",
+          "start": 67.189,
+          "end": 67.929
+        },
+        {
+          "text": "e",
+          "start": 67.949,
+          "end": 67.989
+        },
+        {
+          "text": "autorizzazione,",
+          "start": 67.989,
+          "end": 68.749
+        },
+        {
+          "text": "manutenzione",
+          "start": 69.149,
+          "end": 69.789
+        },
+        {
+          "text": "dell'infrastruttura",
+          "start": 69.809,
+          "end": 70.629
+        },
+        {
+          "text": "con",
+          "start": 70.669,
+          "end": 70.789
+        },
+        {
+          "text": "patch",
+          "start": 70.849,
+          "end": 71.089
+        },
+        {
+          "text": "rapide,",
+          "start": 71.17,
+          "end": 71.53
+        }
+      ]
+    },
+    {
+      "start": 71.93,
+      "end": 75.63,
+      "text": "monitoraggio regolare degli attacchi e politiche di backup affidabili.",
+      "words": [
+        {
+          "text": "monitoraggio",
+          "start": 71.93,
+          "end": 72.51
+        },
+        {
+          "text": "regolare",
+          "start": 72.57,
+          "end": 73.05
+        },
+        {
+          "text": "degli",
+          "start": 73.09,
+          "end": 73.27
+        },
+        {
+          "text": "attacchi",
+          "start": 73.29,
+          "end": 73.71
+        },
+        {
+          "text": "e",
+          "start": 74.09,
+          "end": 74.13000000000001
+        },
+        {
+          "text": "politiche",
+          "start": 74.19,
+          "end": 74.61
+        },
+        {
+          "text": "di",
+          "start": 74.65,
+          "end": 74.73
+        },
+        {
+          "text": "backup",
+          "start": 74.77,
+          "end": 75.05
+        },
+        {
+          "text": "affidabili.",
+          "start": 75.11,
+          "end": 75.63
+        }
+      ]
+    }
+  ]
+}

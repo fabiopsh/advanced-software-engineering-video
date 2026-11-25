@@ -1,0 +1,979 @@
+{
+  "duration": 69.706,
+  "segments": [
+    {
+      "start": 1.031,
+      "end": 4.391,
+      "text": "Nonostante la sua importanza, il testing ha tre limiti strutturali.",
+      "words": [
+        {
+          "text": "Nonostante",
+          "start": 1.031,
+          "end": 1.451
+        },
+        {
+          "text": "la",
+          "start": 1.511,
+          "end": 1.551
+        },
+        {
+          "text": "sua",
+          "start": 1.591,
+          "end": 1.671
+        },
+        {
+          "text": "importanza,",
+          "start": 1.711,
+          "end": 2.271
+        },
+        {
+          "text": "il",
+          "start": 2.571,
+          "end": 2.671
+        },
+        {
+          "text": "testing",
+          "start": 2.731,
+          "end": 3.171
+        },
+        {
+          "text": "ha",
+          "start": 3.231,
+          "end": 3.271
+        },
+        {
+          "text": "tre",
+          "start": 3.371,
+          "end": 3.491
+        },
+        {
+          "text": "limiti",
+          "start": 3.551,
+          "end": 3.811
+        },
+        {
+          "text": "strutturali.",
+          "start": 3.851,
+          "end": 4.391
+        }
+      ]
+    },
+    {
+      "start": 5.272,
+      "end": 8.292,
+      "text": "Primo: verifica il codice rispetto a ciò che abbiamo capito,",
+      "words": [
+        {
+          "text": "Primo:",
+          "start": 5.272,
+          "end": 5.512
+        },
+        {
+          "text": "verifica",
+          "start": 6.012,
+          "end": 6.372
+        },
+        {
+          "text": "il",
+          "start": 6.392,
+          "end": 6.452
+        },
+        {
+          "text": "codice",
+          "start": 6.472,
+          "end": 6.792
+        },
+        {
+          "text": "rispetto",
+          "start": 6.832,
+          "end": 7.192
+        },
+        {
+          "text": "a",
+          "start": 7.232,
+          "end": 7.272
+        },
+        {
+          "text": "ciò",
+          "start": 7.332,
+          "end": 7.432
+        },
+        {
+          "text": "che",
+          "start": 7.492,
+          "end": 7.572
+        },
+        {
+          "text": "abbiamo",
+          "start": 7.612,
+          "end": 7.892
+        },
+        {
+          "text": "capito,",
+          "start": 7.952,
+          "end": 8.292
+        }
+      ]
+    },
+    {
+      "start": 8.672,
+      "end": 11.972,
+      "text": "quindi un requisito frainteso finisce sia nel codice sia nei test.",
+      "words": [
+        {
+          "text": "quindi",
+          "start": 8.672,
+          "end": 8.872
+        },
+        {
+          "text": "un",
+          "start": 8.952,
+          "end": 9.012
+        },
+        {
+          "text": "requisito",
+          "start": 9.052,
+          "end": 9.452
+        },
+        {
+          "text": "frainteso",
+          "start": 9.492,
+          "end": 10.072
+        },
+        {
+          "text": "finisce",
+          "start": 10.132,
+          "end": 10.472
+        },
+        {
+          "text": "sia",
+          "start": 10.612,
+          "end": 10.772
+        },
+        {
+          "text": "nel",
+          "start": 10.812,
+          "end": 10.932
+        },
+        {
+          "text": "codice",
+          "start": 10.972,
+          "end": 11.352
+        },
+        {
+          "text": "sia",
+          "start": 11.412,
+          "end": 11.532
+        },
+        {
+          "text": "nei",
+          "start": 11.572,
+          "end": 11.672
+        },
+        {
+          "text": "test.",
+          "start": 11.692,
+          "end": 11.972
+        }
+      ]
+    },
+    {
+      "start": 12.612,
+      "end": 17.392,
+      "text": "Secondo: può lasciare codice non coperto, o nel TDD produrre codice incompleto.",
+      "words": [
+        {
+          "text": "Secondo:",
+          "start": 12.612,
+          "end": 13.012
+        },
+        {
+          "text": "può",
+          "start": 13.432,
+          "end": 13.532
+        },
+        {
+          "text": "lasciare",
+          "start": 13.552,
+          "end": 13.812
+        },
+        {
+          "text": "codice",
+          "start": 13.832,
+          "end": 14.112
+        },
+        {
+          "text": "non",
+          "start": 14.212,
+          "end": 14.332
+        },
+        {
+          "text": "coperto,",
+          "start": 14.372,
+          "end": 14.852
+        },
+        {
+          "text": "o",
+          "start": 15.092,
+          "end": 15.132
+        },
+        {
+          "text": "nel",
+          "start": 15.192,
+          "end": 15.352
+        },
+        {
+          "text": "TDD",
+          "start": 15.452,
+          "end": 15.772
+        },
+        {
+          "text": "produrre",
+          "start": 16.032,
+          "end": 16.392
+        },
+        {
+          "text": "codice",
+          "start": 16.432,
+          "end": 16.712
+        },
+        {
+          "text": "incompleto.",
+          "start": 16.772,
+          "end": 17.392
+        }
+      ]
+    },
+    {
+      "start": 18.172,
+      "end": 21.953,
+      "text": "Terzo: non misura leggibilità, struttura ed evolvibilità.",
+      "words": [
+        {
+          "text": "Terzo:",
+          "start": 18.172,
+          "end": 18.532
+        },
+        {
+          "text": "non",
+          "start": 19.032,
+          "end": 19.193
+        },
+        {
+          "text": "misura",
+          "start": 19.233,
+          "end": 19.553
+        },
+        {
+          "text": "leggibilità,",
+          "start": 19.653,
+          "end": 20.193
+        },
+        {
+          "text": "struttura",
+          "start": 20.473,
+          "end": 20.993
+        },
+        {
+          "text": "ed",
+          "start": 21.213,
+          "end": 21.313
+        },
+        {
+          "text": "evolvibilità.",
+          "start": 21.353,
+          "end": 21.953
+        }
+      ]
+    },
+    {
+      "start": 22.853,
+      "end": 24.973,
+      "text": "Per questo le code review completano il testing.",
+      "words": [
+        {
+          "text": "Per",
+          "start": 22.853,
+          "end": 22.953
+        },
+        {
+          "text": "questo",
+          "start": 22.993,
+          "end": 23.233
+        },
+        {
+          "text": "le",
+          "start": 23.293,
+          "end": 23.373
+        },
+        {
+          "text": "code",
+          "start": 23.413,
+          "end": 23.573
+        },
+        {
+          "text": "review",
+          "start": 23.573,
+          "end": 23.793
+        },
+        {
+          "text": "completano",
+          "start": 23.933,
+          "end": 24.453
+        },
+        {
+          "text": "il",
+          "start": 24.473,
+          "end": 24.533
+        },
+        {
+          "text": "testing.",
+          "start": 24.573,
+          "end": 24.973
+        }
+      ]
+    },
+    {
+      "start": 25.833,
+      "end": 27.553,
+      "text": "Il processo si articola in quattro fasi.",
+      "words": [
+        {
+          "text": "Il",
+          "start": 25.833,
+          "end": 25.893
+        },
+        {
+          "text": "processo",
+          "start": 25.933,
+          "end": 26.293
+        },
+        {
+          "text": "si",
+          "start": 26.353,
+          "end": 26.413
+        },
+        {
+          "text": "articola",
+          "start": 26.473,
+          "end": 26.813
+        },
+        {
+          "text": "in",
+          "start": 26.873,
+          "end": 26.913
+        },
+        {
+          "text": "quattro",
+          "start": 26.973,
+          "end": 27.233
+        },
+        {
+          "text": "fasi.",
+          "start": 27.273,
+          "end": 27.553
+        }
+      ]
+    },
+    {
+      "start": 28.133,
+      "end": 32.193,
+      "text": "Nella preparazione il programmatore imposta la review e distribuisce codice e test.",
+      "words": [
+        {
+          "text": "Nella",
+          "start": 28.133,
+          "end": 28.333
+        },
+        {
+          "text": "preparazione",
+          "start": 28.353,
+          "end": 28.953
+        },
+        {
+          "text": "il",
+          "start": 29.113,
+          "end": 29.173
+        },
+        {
+          "text": "programmatore",
+          "start": 29.213,
+          "end": 29.713
+        },
+        {
+          "text": "imposta",
+          "start": 29.773,
+          "end": 30.173
+        },
+        {
+          "text": "la",
+          "start": 30.233,
+          "end": 30.273
+        },
+        {
+          "text": "review",
+          "start": 30.313,
+          "end": 30.513
+        },
+        {
+          "text": "e",
+          "start": 30.693,
+          "end": 30.733
+        },
+        {
+          "text": "distribuisce",
+          "start": 30.773,
+          "end": 31.353
+        },
+        {
+          "text": "codice",
+          "start": 31.413,
+          "end": 31.753
+        },
+        {
+          "text": "e",
+          "start": 31.813,
+          "end": 31.853
+        },
+        {
+          "text": "test.",
+          "start": 31.913,
+          "end": 32.193
+        }
+      ]
+    },
+    {
+      "start": 32.793,
+      "end": 36.334,
+      "text": "Nel code checking il revisore esamina il codice e redige un rapporto.",
+      "words": [
+        {
+          "text": "Nel",
+          "start": 32.793,
+          "end": 32.913
+        },
+        {
+          "text": "code",
+          "start": 32.973,
+          "end": 33.153
+        },
+        {
+          "text": "checking",
+          "start": 33.193,
+          "end": 33.613
+        },
+        {
+          "text": "il",
+          "start": 33.894,
+          "end": 33.974
+        },
+        {
+          "text": "revisore",
+          "start": 34.014,
+          "end": 34.354
+        },
+        {
+          "text": "esamina",
+          "start": 34.414,
+          "end": 34.714
+        },
+        {
+          "text": "il",
+          "start": 34.754,
+          "end": 34.814
+        },
+        {
+          "text": "codice",
+          "start": 34.854,
+          "end": 35.214
+        },
+        {
+          "text": "e",
+          "start": 35.354,
+          "end": 35.394
+        },
+        {
+          "text": "redige",
+          "start": 35.434,
+          "end": 35.714
+        },
+        {
+          "text": "un",
+          "start": 35.754,
+          "end": 35.834
+        },
+        {
+          "text": "rapporto.",
+          "start": 35.874,
+          "end": 36.334
+        }
+      ]
+    },
+    {
+      "start": 36.974,
+      "end": 42.294,
+      "text": "Seguono la discussione tra revisore e programmatore e il follow-up in cui il programmatore corregge",
+      "words": [
+        {
+          "text": "Seguono",
+          "start": 36.974,
+          "end": 37.294
+        },
+        {
+          "text": "la",
+          "start": 37.354,
+          "end": 37.414
+        },
+        {
+          "text": "discussione",
+          "start": 37.454,
+          "end": 37.974
+        },
+        {
+          "text": "tra",
+          "start": 37.994,
+          "end": 38.094
+        },
+        {
+          "text": "revisore",
+          "start": 38.194,
+          "end": 38.634
+        },
+        {
+          "text": "e",
+          "start": 38.654,
+          "end": 38.694
+        },
+        {
+          "text": "programmatore",
+          "start": 38.714,
+          "end": 39.354
+        },
+        {
+          "text": "e",
+          "start": 39.774,
+          "end": 39.814
+        },
+        {
+          "text": "il",
+          "start": 39.854,
+          "end": 39.914
+        },
+        {
+          "text": "follow-up",
+          "start": 39.954,
+          "end": 40.434
+        },
+        {
+          "text": "in",
+          "start": 40.874,
+          "end": 40.934
+        },
+        {
+          "text": "cui",
+          "start": 40.974,
+          "end": 41.094
+        },
+        {
+          "text": "il",
+          "start": 41.114,
+          "end": 41.154
+        },
+        {
+          "text": "programmatore",
+          "start": 41.194,
+          "end": 41.754
+        },
+        {
+          "text": "corregge",
+          "start": 41.874,
+          "end": 42.294
+        }
+      ]
+    },
+    {
+      "start": 42.314,
+      "end": 42.774,
+      "text": "il codice.",
+      "words": [
+        {
+          "text": "il",
+          "start": 42.314,
+          "end": 42.374
+        },
+        {
+          "text": "codice.",
+          "start": 42.414,
+          "end": 42.774
+        }
+      ]
+    },
+    {
+      "start": 43.414,
+      "end": 46.514,
+      "text": "Ogni sessione dovrebbe coprire da duecento a quattrocento righe,",
+      "words": [
+        {
+          "text": "Ogni",
+          "start": 43.414,
+          "end": 43.554
+        },
+        {
+          "text": "sessione",
+          "start": 43.614,
+          "end": 44.054
+        },
+        {
+          "text": "dovrebbe",
+          "start": 44.114,
+          "end": 44.394
+        },
+        {
+          "text": "coprire",
+          "start": 44.434,
+          "end": 44.794
+        },
+        {
+          "text": "da",
+          "start": 44.854,
+          "end": 44.914
+        },
+        {
+          "text": "duecento",
+          "start": 45.014,
+          "end": 45.574
+        },
+        {
+          "text": "a",
+          "start": 45.594,
+          "end": 45.634
+        },
+        {
+          "text": "quattrocento",
+          "start": 45.674,
+          "end": 46.234
+        },
+        {
+          "text": "righe,",
+          "start": 46.274,
+          "end": 46.514
+        }
+      ]
+    },
+    {
+      "start": 46.894,
+      "end": 51.855,
+      "text": "spesso attivate dai commit con supporto di chat come Slack e guidate da checklist su",
+      "words": [
+        {
+          "text": "spesso",
+          "start": 46.894,
+          "end": 47.174
+        },
+        {
+          "text": "attivate",
+          "start": 47.194,
+          "end": 47.594
+        },
+        {
+          "text": "dai",
+          "start": 47.634,
+          "end": 47.774
+        },
+        {
+          "text": "commit",
+          "start": 47.814,
+          "end": 48.235
+        },
+        {
+          "text": "con",
+          "start": 48.375,
+          "end": 48.535
+        },
+        {
+          "text": "supporto",
+          "start": 48.595,
+          "end": 49.035
+        },
+        {
+          "text": "di",
+          "start": 49.075,
+          "end": 49.155
+        },
+        {
+          "text": "chat",
+          "start": 49.195,
+          "end": 49.435
+        },
+        {
+          "text": "come",
+          "start": 49.535,
+          "end": 49.695
+        },
+        {
+          "text": "Slack",
+          "start": 49.795,
+          "end": 50.075
+        },
+        {
+          "text": "e",
+          "start": 50.555,
+          "end": 50.595
+        },
+        {
+          "text": "guidate",
+          "start": 50.635,
+          "end": 50.995
+        },
+        {
+          "text": "da",
+          "start": 51.055,
+          "end": 51.115
+        },
+        {
+          "text": "checklist",
+          "start": 51.195,
+          "end": 51.655
+        },
+        {
+          "text": "su",
+          "start": 51.775,
+          "end": 51.855
+        }
+      ]
+    },
+    {
+      "start": 51.995,
+      "end": 57.455,
+      "text": "nomi, gestione errori, eccezioni, parametri di default, tipi e indentazione.",
+      "words": [
+        {
+          "text": "nomi,",
+          "start": 51.995,
+          "end": 52.275
+        },
+        {
+          "text": "gestione",
+          "start": 52.595,
+          "end": 52.955
+        },
+        {
+          "text": "errori,",
+          "start": 53.015,
+          "end": 53.355
+        },
+        {
+          "text": "eccezioni,",
+          "start": 53.735,
+          "end": 54.415
+        },
+        {
+          "text": "parametri",
+          "start": 54.655,
+          "end": 55.115
+        },
+        {
+          "text": "di",
+          "start": 55.155,
+          "end": 55.235
+        },
+        {
+          "text": "default,",
+          "start": 55.275,
+          "end": 55.675
+        },
+        {
+          "text": "tipi",
+          "start": 56.135,
+          "end": 56.415
+        },
+        {
+          "text": "e",
+          "start": 56.575,
+          "end": 56.615
+        },
+        {
+          "text": "indentazione.",
+          "start": 56.675,
+          "end": 57.455
+        }
+      ]
+    },
+    {
+      "start": 58.115,
+      "end": 63.276,
+      "text": "Un esempio reale è Spotify: le squad autonome sottopongono il codice ai chapter specialistici o",
+      "words": [
+        {
+          "text": "Un",
+          "start": 58.115,
+          "end": 58.195
+        },
+        {
+          "text": "esempio",
+          "start": 58.215,
+          "end": 58.455
+        },
+        {
+          "text": "reale",
+          "start": 58.495,
+          "end": 58.715
+        },
+        {
+          "text": "è",
+          "start": 58.735,
+          "end": 58.775
+        },
+        {
+          "text": "Spotify:",
+          "start": 58.795,
+          "end": 59.315
+        },
+        {
+          "text": "le",
+          "start": 59.735,
+          "end": 59.795
+        },
+        {
+          "text": "squad",
+          "start": 59.855,
+          "end": 60.115
+        },
+        {
+          "text": "autonome",
+          "start": 60.175,
+          "end": 60.635
+        },
+        {
+          "text": "sottopongono",
+          "start": 60.755,
+          "end": 61.375
+        },
+        {
+          "text": "il",
+          "start": 61.435,
+          "end": 61.495
+        },
+        {
+          "text": "codice",
+          "start": 61.555,
+          "end": 61.875
+        },
+        {
+          "text": "ai",
+          "start": 61.935,
+          "end": 62.015
+        },
+        {
+          "text": "chapter",
+          "start": 62.055,
+          "end": 62.375
+        },
+        {
+          "text": "specialistici",
+          "start": 62.415,
+          "end": 63.076
+        },
+        {
+          "text": "o",
+          "start": 63.236,
+          "end": 63.276
+        }
+      ]
+    },
+    {
+      "start": 63.316,
+      "end": 67.936,
+      "text": "alle guild trasversali, e per eseguire il merge servono almeno due più uno,",
+      "words": [
+        {
+          "text": "alle",
+          "start": 63.316,
+          "end": 63.476
+        },
+        {
+          "text": "guild",
+          "start": 63.556,
+          "end": 63.796
+        },
+        {
+          "text": "trasversali,",
+          "start": 63.876,
+          "end": 64.556
+        },
+        {
+          "text": "e",
+          "start": 65.056,
+          "end": 65.096
+        },
+        {
+          "text": "per",
+          "start": 65.176,
+          "end": 65.296
+        },
+        {
+          "text": "eseguire",
+          "start": 65.316,
+          "end": 65.676
+        },
+        {
+          "text": "il",
+          "start": 65.716,
+          "end": 65.776
+        },
+        {
+          "text": "merge",
+          "start": 65.816,
+          "end": 66.156
+        },
+        {
+          "text": "servono",
+          "start": 66.276,
+          "end": 66.576
+        },
+        {
+          "text": "almeno",
+          "start": 66.596,
+          "end": 66.876
+        },
+        {
+          "text": "due",
+          "start": 67.136,
+          "end": 67.396
+        },
+        {
+          "text": "più",
+          "start": 67.516,
+          "end": 67.636
+        },
+        {
+          "text": "uno,",
+          "start": 67.756,
+          "end": 67.936
+        }
+      ]
+    },
+    {
+      "start": 68.176,
+      "end": 69.456,
+      "text": "cioè due approvazioni.",
+      "words": [
+        {
+          "text": "cioè",
+          "start": 68.176,
+          "end": 68.356
+        },
+        {
+          "text": "due",
+          "start": 68.656,
+          "end": 68.816
+        },
+        {
+          "text": "approvazioni.",
+          "start": 68.836,
+          "end": 69.456
+        }
+      ]
+    }
+  ]
+}

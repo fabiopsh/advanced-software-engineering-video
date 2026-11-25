@@ -1,0 +1,962 @@
+{
+  "duration": 75.94,
+  "segments": [
+    {
+      "start": 0.04,
+      "end": 5.941,
+      "text": "L'architettura influisce direttamente sugli attributi di qualità non funzionali del sistema.",
+      "words": [
+        {
+          "text": "L'architettura",
+          "start": 0.04,
+          "end": 0.88
+        },
+        {
+          "text": "influisce",
+          "start": 1.2,
+          "end": 1.78
+        },
+        {
+          "text": "direttamente",
+          "start": 1.88,
+          "end": 2.72
+        },
+        {
+          "text": "sugli",
+          "start": 2.88,
+          "end": 3.06
+        },
+        {
+          "text": "attributi",
+          "start": 3.1,
+          "end": 3.58
+        },
+        {
+          "text": "di",
+          "start": 3.62,
+          "end": 3.66
+        },
+        {
+          "text": "qualità",
+          "start": 3.72,
+          "end": 4.061
+        },
+        {
+          "text": "non",
+          "start": 4.361,
+          "end": 4.561
+        },
+        {
+          "text": "funzionali",
+          "start": 4.661,
+          "end": 5.241
+        },
+        {
+          "text": "del",
+          "start": 5.281,
+          "end": 5.401
+        },
+        {
+          "text": "sistema.",
+          "start": 5.461,
+          "end": 5.941
+        }
+      ]
+    },
+    {
+      "start": 6.581,
+      "end": 12.162,
+      "text": "Questi attributi sono essenziali per il prodotto finale, mentre non rappresentano una priorità per il",
+      "words": [
+        {
+          "text": "Questi",
+          "start": 6.581,
+          "end": 6.781
+        },
+        {
+          "text": "attributi",
+          "start": 6.801,
+          "end": 7.301
+        },
+        {
+          "text": "sono",
+          "start": 7.521,
+          "end": 7.681
+        },
+        {
+          "text": "essenziali",
+          "start": 7.741,
+          "end": 8.441
+        },
+        {
+          "text": "per",
+          "start": 8.481,
+          "end": 8.601
+        },
+        {
+          "text": "il",
+          "start": 8.621,
+          "end": 8.681
+        },
+        {
+          "text": "prodotto",
+          "start": 8.721,
+          "end": 9.101
+        },
+        {
+          "text": "finale,",
+          "start": 9.141,
+          "end": 9.501
+        },
+        {
+          "text": "mentre",
+          "start": 9.921,
+          "end": 10.221
+        },
+        {
+          "text": "non",
+          "start": 10.381,
+          "end": 10.521
+        },
+        {
+          "text": "rappresentano",
+          "start": 10.581,
+          "end": 11.221
+        },
+        {
+          "text": "una",
+          "start": 11.281,
+          "end": 11.381
+        },
+        {
+          "text": "priorità",
+          "start": 11.442,
+          "end": 11.862
+        },
+        {
+          "text": "per",
+          "start": 11.942,
+          "end": 12.062
+        },
+        {
+          "text": "il",
+          "start": 12.102,
+          "end": 12.162
+        }
+      ]
+    },
+    {
+      "start": 12.202,
+      "end": 13.222,
+      "text": "prototipo iniziale.",
+      "words": [
+        {
+          "text": "prototipo",
+          "start": 12.202,
+          "end": 12.642
+        },
+        {
+          "text": "iniziale.",
+          "start": 12.702,
+          "end": 13.222
+        }
+      ]
+    },
+    {
+      "start": 14.102,
+      "end": 16.902,
+      "text": "Vediamoli tutti e sette attraverso la loro domanda chiave.",
+      "words": [
+        {
+          "text": "Vediamoli",
+          "start": 14.102,
+          "end": 14.462
+        },
+        {
+          "text": "tutti",
+          "start": 14.522,
+          "end": 14.762
+        },
+        {
+          "text": "e",
+          "start": 14.802,
+          "end": 14.842
+        },
+        {
+          "text": "sette",
+          "start": 14.922,
+          "end": 15.242
+        },
+        {
+          "text": "attraverso",
+          "start": 15.362,
+          "end": 15.862
+        },
+        {
+          "text": "la",
+          "start": 15.902,
+          "end": 15.962
+        },
+        {
+          "text": "loro",
+          "start": 16.002,
+          "end": 16.182
+        },
+        {
+          "text": "domanda",
+          "start": 16.222,
+          "end": 16.542
+        },
+        {
+          "text": "chiave.",
+          "start": 16.602,
+          "end": 16.902
+        }
+      ]
+    },
+    {
+      "start": 17.922,
+      "end": 22.863,
+      "text": "La responsiveness verifica se il sistema restituisce i risultati in un tempo ragionevole.",
+      "words": [
+        {
+          "text": "La",
+          "start": 17.922,
+          "end": 17.982
+        },
+        {
+          "text": "responsiveness",
+          "start": 18.022,
+          "end": 18.882
+        },
+        {
+          "text": "verifica",
+          "start": 19.103,
+          "end": 19.483
+        },
+        {
+          "text": "se",
+          "start": 19.563,
+          "end": 19.643
+        },
+        {
+          "text": "il",
+          "start": 19.703,
+          "end": 19.763
+        },
+        {
+          "text": "sistema",
+          "start": 19.823,
+          "end": 20.223
+        },
+        {
+          "text": "restituisce",
+          "start": 20.343,
+          "end": 21.023
+        },
+        {
+          "text": "i",
+          "start": 21.063,
+          "end": 21.103
+        },
+        {
+          "text": "risultati",
+          "start": 21.143,
+          "end": 21.683
+        },
+        {
+          "text": "in",
+          "start": 21.823,
+          "end": 21.903
+        },
+        {
+          "text": "un",
+          "start": 21.943,
+          "end": 22.003
+        },
+        {
+          "text": "tempo",
+          "start": 22.063,
+          "end": 22.283
+        },
+        {
+          "text": "ragionevole.",
+          "start": 22.343,
+          "end": 22.863
+        }
+      ]
+    },
+    {
+      "start": 23.663,
+      "end": 28.664,
+      "text": "La reliability controlla che le feature si comportino come si aspettano sviluppatori e utenti.",
+      "words": [
+        {
+          "text": "La",
+          "start": 23.663,
+          "end": 23.743
+        },
+        {
+          "text": "reliability",
+          "start": 23.803,
+          "end": 24.543
+        },
+        {
+          "text": "controlla",
+          "start": 24.923,
+          "end": 25.363
+        },
+        {
+          "text": "che",
+          "start": 25.403,
+          "end": 25.463
+        },
+        {
+          "text": "le",
+          "start": 25.483,
+          "end": 25.543
+        },
+        {
+          "text": "feature",
+          "start": 25.583,
+          "end": 25.903
+        },
+        {
+          "text": "si",
+          "start": 25.943,
+          "end": 26.023
+        },
+        {
+          "text": "comportino",
+          "start": 26.063,
+          "end": 26.664
+        },
+        {
+          "text": "come",
+          "start": 26.724,
+          "end": 26.884
+        },
+        {
+          "text": "si",
+          "start": 26.964,
+          "end": 27.004
+        },
+        {
+          "text": "aspettano",
+          "start": 27.064,
+          "end": 27.464
+        },
+        {
+          "text": "sviluppatori",
+          "start": 27.524,
+          "end": 28.104
+        },
+        {
+          "text": "e",
+          "start": 28.164,
+          "end": 28.204
+        },
+        {
+          "text": "utenti.",
+          "start": 28.244,
+          "end": 28.664
+        }
+      ]
+    },
+    {
+      "start": 29.544,
+      "end": 33.324,
+      "text": "L'availability misura se i servizi sono disponibili quando richiesti.",
+      "words": [
+        {
+          "text": "L'availability",
+          "start": 29.544,
+          "end": 30.224
+        },
+        {
+          "text": "misura",
+          "start": 30.524,
+          "end": 30.804
+        },
+        {
+          "text": "se",
+          "start": 30.884,
+          "end": 30.964
+        },
+        {
+          "text": "i",
+          "start": 31.024,
+          "end": 31.064
+        },
+        {
+          "text": "servizi",
+          "start": 31.084,
+          "end": 31.524
+        },
+        {
+          "text": "sono",
+          "start": 31.644,
+          "end": 31.844
+        },
+        {
+          "text": "disponibili",
+          "start": 31.924,
+          "end": 32.464
+        },
+        {
+          "text": "quando",
+          "start": 32.544,
+          "end": 32.804
+        },
+        {
+          "text": "richiesti.",
+          "start": 32.844,
+          "end": 33.324
+        }
+      ]
+    },
+    {
+      "start": 34.164,
+      "end": 39.405,
+      "text": "La security verifica la protezione del sistema e dei dati da attacchi e intrusioni non",
+      "words": [
+        {
+          "text": "La",
+          "start": 34.164,
+          "end": 34.225
+        },
+        {
+          "text": "security",
+          "start": 34.285,
+          "end": 34.805
+        },
+        {
+          "text": "verifica",
+          "start": 35.225,
+          "end": 35.605
+        },
+        {
+          "text": "la",
+          "start": 35.705,
+          "end": 35.745
+        },
+        {
+          "text": "protezione",
+          "start": 35.785,
+          "end": 36.345
+        },
+        {
+          "text": "del",
+          "start": 36.385,
+          "end": 36.505
+        },
+        {
+          "text": "sistema",
+          "start": 36.545,
+          "end": 37.005
+        },
+        {
+          "text": "e",
+          "start": 37.125,
+          "end": 37.165
+        },
+        {
+          "text": "dei",
+          "start": 37.205,
+          "end": 37.345
+        },
+        {
+          "text": "dati",
+          "start": 37.385,
+          "end": 37.685
+        },
+        {
+          "text": "da",
+          "start": 37.905,
+          "end": 37.985
+        },
+        {
+          "text": "attacchi",
+          "start": 38.045,
+          "end": 38.445
+        },
+        {
+          "text": "e",
+          "start": 38.485,
+          "end": 38.525
+        },
+        {
+          "text": "intrusioni",
+          "start": 38.545,
+          "end": 39.085
+        },
+        {
+          "text": "non",
+          "start": 39.225,
+          "end": 39.405
+        }
+      ]
+    },
+    {
+      "start": 39.445,
+      "end": 40.125,
+      "text": "autorizzati.",
+      "words": [
+        {
+          "text": "autorizzati.",
+          "start": 39.445,
+          "end": 40.125
+        }
+      ]
+    },
+    {
+      "start": 41.125,
+      "end": 45.786,
+      "text": "L'usability assicura che gli utenti accedano alle feature rapidamente e senza errori.",
+      "words": [
+        {
+          "text": "L'usability",
+          "start": 41.125,
+          "end": 41.866
+        },
+        {
+          "text": "assicura",
+          "start": 42.126,
+          "end": 42.566
+        },
+        {
+          "text": "che",
+          "start": 42.606,
+          "end": 42.686
+        },
+        {
+          "text": "gli",
+          "start": 42.706,
+          "end": 42.786
+        },
+        {
+          "text": "utenti",
+          "start": 42.806,
+          "end": 43.146
+        },
+        {
+          "text": "accedano",
+          "start": 43.206,
+          "end": 43.626
+        },
+        {
+          "text": "alle",
+          "start": 43.666,
+          "end": 43.806
+        },
+        {
+          "text": "feature",
+          "start": 43.846,
+          "end": 44.206
+        },
+        {
+          "text": "rapidamente",
+          "start": 44.366,
+          "end": 44.986
+        },
+        {
+          "text": "e",
+          "start": 45.006,
+          "end": 45.046
+        },
+        {
+          "text": "senza",
+          "start": 45.106,
+          "end": 45.366
+        },
+        {
+          "text": "errori.",
+          "start": 45.426,
+          "end": 45.786
+        }
+      ]
+    },
+    {
+      "start": 46.666,
+      "end": 52.427,
+      "text": "La maintainability indica quanto sia facile aggiornare il software e aggiungere funzionalità a costi contenuti.",
+      "words": [
+        {
+          "text": "La",
+          "start": 46.666,
+          "end": 46.746
+        },
+        {
+          "text": "maintainability",
+          "start": 46.786,
+          "end": 47.606
+        },
+        {
+          "text": "indica",
+          "start": 47.886,
+          "end": 48.186
+        },
+        {
+          "text": "quanto",
+          "start": 48.286,
+          "end": 48.546
+        },
+        {
+          "text": "sia",
+          "start": 48.586,
+          "end": 48.686
+        },
+        {
+          "text": "facile",
+          "start": 48.726,
+          "end": 49.066
+        },
+        {
+          "text": "aggiornare",
+          "start": 49.106,
+          "end": 49.547
+        },
+        {
+          "text": "il",
+          "start": 49.587,
+          "end": 49.647
+        },
+        {
+          "text": "software",
+          "start": 49.687,
+          "end": 50.127
+        },
+        {
+          "text": "e",
+          "start": 50.227,
+          "end": 50.267
+        },
+        {
+          "text": "aggiungere",
+          "start": 50.287,
+          "end": 50.727
+        },
+        {
+          "text": "funzionalità",
+          "start": 50.767,
+          "end": 51.367
+        },
+        {
+          "text": "a",
+          "start": 51.527,
+          "end": 51.567
+        },
+        {
+          "text": "costi",
+          "start": 51.627,
+          "end": 51.867
+        },
+        {
+          "text": "contenuti.",
+          "start": 51.907,
+          "end": 52.427
+        }
+      ]
+    },
+    {
+      "start": 53.347,
+      "end": 58.748,
+      "text": "Infine, la resilience è la capacità di continuare a erogare servizi anche durante un guasto",
+      "words": [
+        {
+          "text": "Infine,",
+          "start": 53.347,
+          "end": 53.727
+        },
+        {
+          "text": "la",
+          "start": 53.987,
+          "end": 54.067
+        },
+        {
+          "text": "resilience",
+          "start": 54.107,
+          "end": 54.807
+        },
+        {
+          "text": "è",
+          "start": 55.187,
+          "end": 55.227
+        },
+        {
+          "text": "la",
+          "start": 55.267,
+          "end": 55.327
+        },
+        {
+          "text": "capacità",
+          "start": 55.347,
+          "end": 55.727
+        },
+        {
+          "text": "di",
+          "start": 55.787,
+          "end": 55.867
+        },
+        {
+          "text": "continuare",
+          "start": 55.927,
+          "end": 56.507
+        },
+        {
+          "text": "a",
+          "start": 56.527,
+          "end": 56.567
+        },
+        {
+          "text": "erogare",
+          "start": 56.587,
+          "end": 56.927
+        },
+        {
+          "text": "servizi",
+          "start": 57.007,
+          "end": 57.468
+        },
+        {
+          "text": "anche",
+          "start": 57.688,
+          "end": 57.928
+        },
+        {
+          "text": "durante",
+          "start": 57.968,
+          "end": 58.328
+        },
+        {
+          "text": "un",
+          "start": 58.368,
+          "end": 58.428
+        },
+        {
+          "text": "guasto",
+          "start": 58.468,
+          "end": 58.748
+        }
+      ]
+    },
+    {
+      "start": 58.788,
+      "end": 60.428,
+      "text": "parziale o un attacco esterno.",
+      "words": [
+        {
+          "text": "parziale",
+          "start": 58.788,
+          "end": 59.308
+        },
+        {
+          "text": "o",
+          "start": 59.448,
+          "end": 59.488
+        },
+        {
+          "text": "un",
+          "start": 59.548,
+          "end": 59.608
+        },
+        {
+          "text": "attacco",
+          "start": 59.648,
+          "end": 59.948
+        },
+        {
+          "text": "esterno.",
+          "start": 60.008,
+          "end": 60.428
+        }
+      ]
+    },
+    {
+      "start": 61.268,
+      "end": 66.189,
+      "text": "Attenzione però ai compromessi: ottimizzare un attributo non funzionale incide sugli altri.",
+      "words": [
+        {
+          "text": "Attenzione",
+          "start": 61.268,
+          "end": 61.708
+        },
+        {
+          "text": "però",
+          "start": 61.748,
+          "end": 61.868
+        },
+        {
+          "text": "ai",
+          "start": 61.908,
+          "end": 61.968
+        },
+        {
+          "text": "compromessi:",
+          "start": 62.008,
+          "end": 62.548
+        },
+        {
+          "text": "ottimizzare",
+          "start": 62.908,
+          "end": 63.528
+        },
+        {
+          "text": "un",
+          "start": 63.568,
+          "end": 63.648
+        },
+        {
+          "text": "attributo",
+          "start": 63.668,
+          "end": 64.108
+        },
+        {
+          "text": "non",
+          "start": 64.208,
+          "end": 64.348
+        },
+        {
+          "text": "funzionale",
+          "start": 64.408,
+          "end": 64.969
+        },
+        {
+          "text": "incide",
+          "start": 65.129,
+          "end": 65.589
+        },
+        {
+          "text": "sugli",
+          "start": 65.649,
+          "end": 65.849
+        },
+        {
+          "text": "altri.",
+          "start": 65.909,
+          "end": 66.189
+        }
+      ]
+    },
+    {
+      "start": 66.529,
+      "end": 70.489,
+      "text": "Per esempio, rafforzare la sicurezza può penalizzare prestazioni e usabilità,",
+      "words": [
+        {
+          "text": "Per",
+          "start": 66.529,
+          "end": 66.609
+        },
+        {
+          "text": "esempio,",
+          "start": 66.629,
+          "end": 66.969
+        },
+        {
+          "text": "rafforzare",
+          "start": 67.069,
+          "end": 67.589
+        },
+        {
+          "text": "la",
+          "start": 67.629,
+          "end": 67.66900000000001
+        },
+        {
+          "text": "sicurezza",
+          "start": 67.729,
+          "end": 68.209
+        },
+        {
+          "text": "può",
+          "start": 68.329,
+          "end": 68.449
+        },
+        {
+          "text": "penalizzare",
+          "start": 68.549,
+          "end": 69.169
+        },
+        {
+          "text": "prestazioni",
+          "start": 69.209,
+          "end": 69.889
+        },
+        {
+          "text": "e",
+          "start": 69.929,
+          "end": 69.96900000000001
+        },
+        {
+          "text": "usabilità,",
+          "start": 70.029,
+          "end": 70.489
+        }
+      ]
+    },
+    {
+      "start": 71.049,
+      "end": 75.69,
+      "text": "mentre massimizzare la disponibilità entra in conflitto con time-to-market e semplicità.",
+      "words": [
+        {
+          "text": "mentre",
+          "start": 71.049,
+          "end": 71.289
+        },
+        {
+          "text": "massimizzare",
+          "start": 71.389,
+          "end": 72.069
+        },
+        {
+          "text": "la",
+          "start": 72.129,
+          "end": 72.189
+        },
+        {
+          "text": "disponibilità",
+          "start": 72.25,
+          "end": 72.93
+        },
+        {
+          "text": "entra",
+          "start": 73.19,
+          "end": 73.39
+        },
+        {
+          "text": "in",
+          "start": 73.43,
+          "end": 73.49
+        },
+        {
+          "text": "conflitto",
+          "start": 73.53,
+          "end": 74.01
+        },
+        {
+          "text": "con",
+          "start": 74.05,
+          "end": 74.19
+        },
+        {
+          "text": "time-to-market",
+          "start": 74.25,
+          "end": 74.93
+        },
+        {
+          "text": "e",
+          "start": 75.09,
+          "end": 75.13000000000001
+        },
+        {
+          "text": "semplicità.",
+          "start": 75.21,
+          "end": 75.69
+        }
+      ]
+    }
+  ]
+}

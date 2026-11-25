@@ -1,0 +1,1403 @@
+{
+  "duration": 99.06,
+  "segments": [
+    {
+      "start": 0.04,
+      "end": 2.781,
+      "text": "La terza tecnica risponde a una domanda cruciale:",
+      "words": [
+        {
+          "text": "La",
+          "start": 0.04,
+          "end": 0.1
+        },
+        {
+          "text": "terza",
+          "start": 0.16,
+          "end": 0.46
+        },
+        {
+          "text": "tecnica",
+          "start": 0.5,
+          "end": 0.96
+        },
+        {
+          "text": "risponde",
+          "start": 1.18,
+          "end": 1.62
+        },
+        {
+          "text": "a",
+          "start": 1.66,
+          "end": 1.7
+        },
+        {
+          "text": "una",
+          "start": 1.7,
+          "end": 1.8
+        },
+        {
+          "text": "domanda",
+          "start": 1.84,
+          "end": 2.18
+        },
+        {
+          "text": "cruciale:",
+          "start": 2.26,
+          "end": 2.781
+        }
+      ]
+    },
+    {
+      "start": 3.461,
+      "end": 4.621,
+      "text": "quanti shot servono?",
+      "words": [
+        {
+          "text": "quanti",
+          "start": 3.461,
+          "end": 3.801
+        },
+        {
+          "text": "shot",
+          "start": 3.881,
+          "end": 4.101
+        },
+        {
+          "text": "servono?",
+          "start": 4.181,
+          "end": 4.621
+        }
+      ]
+    },
+    {
+      "start": 5.521,
+      "end": 8.022,
+      "text": "Un budget fisso crea una trappola costo-fedeltà:",
+      "words": [
+        {
+          "text": "Un",
+          "start": 5.521,
+          "end": 5.601
+        },
+        {
+          "text": "budget",
+          "start": 5.641,
+          "end": 5.921
+        },
+        {
+          "text": "fisso",
+          "start": 5.961,
+          "end": 6.281
+        },
+        {
+          "text": "crea",
+          "start": 6.361,
+          "end": 6.561
+        },
+        {
+          "text": "una",
+          "start": 6.621,
+          "end": 6.721
+        },
+        {
+          "text": "trappola",
+          "start": 6.781,
+          "end": 7.241
+        },
+        {
+          "text": "costo-fedeltà:",
+          "start": 7.301,
+          "end": 8.022
+        }
+      ]
+    },
+    {
+      "start": 8.762,
+      "end": 13.263,
+      "text": "pochi shot causano sottocampionamento, troppi sprecano denaro e coda,",
+      "words": [
+        {
+          "text": "pochi",
+          "start": 8.762,
+          "end": 8.962
+        },
+        {
+          "text": "shot",
+          "start": 9.022,
+          "end": 9.302
+        },
+        {
+          "text": "causano",
+          "start": 9.442,
+          "end": 9.842
+        },
+        {
+          "text": "sottocampionamento,",
+          "start": 9.942,
+          "end": 10.922
+        },
+        {
+          "text": "troppi",
+          "start": 11.282,
+          "end": 11.642
+        },
+        {
+          "text": "sprecano",
+          "start": 11.802,
+          "end": 12.202
+        },
+        {
+          "text": "denaro",
+          "start": 12.262,
+          "end": 12.663
+        },
+        {
+          "text": "e",
+          "start": 12.803,
+          "end": 12.843
+        },
+        {
+          "text": "coda,",
+          "start": 12.963,
+          "end": 13.263
+        }
+      ]
+    },
+    {
+      "start": 13.603,
+      "end": 16.823,
+      "text": "perché il fabbisogno varia con famiglia del circuito, rumore,",
+      "words": [
+        {
+          "text": "perché",
+          "start": 13.603,
+          "end": 13.803
+        },
+        {
+          "text": "il",
+          "start": 13.843,
+          "end": 13.883
+        },
+        {
+          "text": "fabbisogno",
+          "start": 13.923,
+          "end": 14.463
+        },
+        {
+          "text": "varia",
+          "start": 14.523,
+          "end": 14.763
+        },
+        {
+          "text": "con",
+          "start": 14.843,
+          "end": 14.983
+        },
+        {
+          "text": "famiglia",
+          "start": 15.063,
+          "end": 15.423
+        },
+        {
+          "text": "del",
+          "start": 15.463,
+          "end": 15.563
+        },
+        {
+          "text": "circuito,",
+          "start": 15.603,
+          "end": 16.143
+        },
+        {
+          "text": "rumore,",
+          "start": 16.383,
+          "end": 16.823
+        }
+      ]
+    },
+    {
+      "start": 17.163,
+      "end": 19.544,
+      "text": "numero di qubit e sparsità dell'uscita.",
+      "words": [
+        {
+          "text": "numero",
+          "start": 17.163,
+          "end": 17.464
+        },
+        {
+          "text": "di",
+          "start": 17.524,
+          "end": 17.584
+        },
+        {
+          "text": "qubit",
+          "start": 17.664,
+          "end": 18.084
+        },
+        {
+          "text": "e",
+          "start": 18.304,
+          "end": 18.344
+        },
+        {
+          "text": "sparsità",
+          "start": 18.424,
+          "end": 18.904
+        },
+        {
+          "text": "dell'uscita.",
+          "start": 18.984,
+          "end": 19.544
+        }
+      ]
+    },
+    {
+      "start": 20.304,
+      "end": 24.245,
+      "text": "Anche i limiti teorici di concentrazione esplodono: per quattordici qubit,",
+      "words": [
+        {
+          "text": "Anche",
+          "start": 20.304,
+          "end": 20.484
+        },
+        {
+          "text": "i",
+          "start": 20.544,
+          "end": 20.584
+        },
+        {
+          "text": "limiti",
+          "start": 20.604,
+          "end": 20.884
+        },
+        {
+          "text": "teorici",
+          "start": 20.924,
+          "end": 21.324
+        },
+        {
+          "text": "di",
+          "start": 21.364,
+          "end": 21.424
+        },
+        {
+          "text": "concentrazione",
+          "start": 21.464,
+          "end": 22.144
+        },
+        {
+          "text": "esplodono:",
+          "start": 22.204,
+          "end": 22.705
+        },
+        {
+          "text": "per",
+          "start": 23.065,
+          "end": 23.185
+        },
+        {
+          "text": "quattordici",
+          "start": 23.245,
+          "end": 23.805
+        },
+        {
+          "text": "qubit,",
+          "start": 23.885,
+          "end": 24.245
+        }
+      ]
+    },
+    {
+      "start": 24.545,
+      "end": 29.706,
+      "text": "Weissman chiede oltre due milioni di shot e Hoeffding quasi centottanta miliardi,",
+      "words": [
+        {
+          "text": "Weissman",
+          "start": 24.545,
+          "end": 25.045
+        },
+        {
+          "text": "chiede",
+          "start": 25.205,
+          "end": 25.445
+        },
+        {
+          "text": "oltre",
+          "start": 25.585,
+          "end": 25.865
+        },
+        {
+          "text": "due",
+          "start": 25.965,
+          "end": 26.145
+        },
+        {
+          "text": "milioni",
+          "start": 26.185,
+          "end": 26.585
+        },
+        {
+          "text": "di",
+          "start": 26.625,
+          "end": 26.685
+        },
+        {
+          "text": "shot",
+          "start": 26.745,
+          "end": 27.045
+        },
+        {
+          "text": "e",
+          "start": 27.426,
+          "end": 27.466
+        },
+        {
+          "text": "Hoeffding",
+          "start": 27.546,
+          "end": 27.966
+        },
+        {
+          "text": "quasi",
+          "start": 28.066,
+          "end": 28.306
+        },
+        {
+          "text": "centottanta",
+          "start": 28.406,
+          "end": 29.146
+        },
+        {
+          "text": "miliardi,",
+          "start": 29.186,
+          "end": 29.706
+        }
+      ]
+    },
+    {
+      "start": 30.006,
+      "end": 31.426,
+      "text": "contro ventimila empirici.",
+      "words": [
+        {
+          "text": "contro",
+          "start": 30.006,
+          "end": 30.306
+        },
+        {
+          "text": "ventimila",
+          "start": 30.386,
+          "end": 30.906
+        },
+        {
+          "text": "empirici.",
+          "start": 30.946,
+          "end": 31.426
+        }
+      ]
+    },
+    {
+      "start": 32.026,
+      "end": 35.987,
+      "text": "Serve quindi un criterio online basato sulla Total Variation Distance,",
+      "words": [
+        {
+          "text": "Serve",
+          "start": 32.026,
+          "end": 32.267
+        },
+        {
+          "text": "quindi",
+          "start": 32.287,
+          "end": 32.527
+        },
+        {
+          "text": "un",
+          "start": 32.587,
+          "end": 32.647
+        },
+        {
+          "text": "criterio",
+          "start": 32.687,
+          "end": 33.107
+        },
+        {
+          "text": "online",
+          "start": 33.247,
+          "end": 33.787
+        },
+        {
+          "text": "basato",
+          "start": 33.927,
+          "end": 34.207
+        },
+        {
+          "text": "sulla",
+          "start": 34.267,
+          "end": 34.487
+        },
+        {
+          "text": "Total",
+          "start": 34.567,
+          "end": 34.907
+        },
+        {
+          "text": "Variation",
+          "start": 34.947,
+          "end": 35.447
+        },
+        {
+          "text": "Distance,",
+          "start": 35.507,
+          "end": 35.987
+        }
+      ]
+    },
+    {
+      "start": 36.107,
+      "end": 40.128,
+      "text": "T V D: la T V D tra P e Q è un mezzo della",
+      "words": [
+        {
+          "text": "T",
+          "start": 36.107,
+          "end": 36.147
+        },
+        {
+          "text": "V",
+          "start": 36.227,
+          "end": 36.267
+        },
+        {
+          "text": "D:",
+          "start": 36.347,
+          "end": 36.387
+        },
+        {
+          "text": "la",
+          "start": 37.228,
+          "end": 37.308
+        },
+        {
+          "text": "T",
+          "start": 37.368,
+          "end": 37.408
+        },
+        {
+          "text": "V",
+          "start": 37.468,
+          "end": 37.508
+        },
+        {
+          "text": "D",
+          "start": 37.588,
+          "end": 37.628
+        },
+        {
+          "text": "tra",
+          "start": 37.828,
+          "end": 37.948
+        },
+        {
+          "text": "P",
+          "start": 38.068,
+          "end": 38.108
+        },
+        {
+          "text": "e",
+          "start": 38.468,
+          "end": 38.508
+        },
+        {
+          "text": "Q",
+          "start": 38.628,
+          "end": 38.668
+        },
+        {
+          "text": "è",
+          "start": 39.148,
+          "end": 39.188
+        },
+        {
+          "text": "un",
+          "start": 39.248,
+          "end": 39.328
+        },
+        {
+          "text": "mezzo",
+          "start": 39.388,
+          "end": 39.748
+        },
+        {
+          "text": "della",
+          "start": 39.948,
+          "end": 40.128
+        }
+      ]
+    },
+    {
+      "start": 40.188,
+      "end": 44.029,
+      "text": "somma su x del valore assoluto di P di x meno Q di x,",
+      "words": [
+        {
+          "text": "somma",
+          "start": 40.188,
+          "end": 40.428
+        },
+        {
+          "text": "su",
+          "start": 40.528,
+          "end": 40.608
+        },
+        {
+          "text": "x",
+          "start": 40.828,
+          "end": 40.868
+        },
+        {
+          "text": "del",
+          "start": 41.388,
+          "end": 41.528
+        },
+        {
+          "text": "valore",
+          "start": 41.548,
+          "end": 41.808
+        },
+        {
+          "text": "assoluto",
+          "start": 41.848,
+          "end": 42.289
+        },
+        {
+          "text": "di",
+          "start": 42.349,
+          "end": 42.409
+        },
+        {
+          "text": "P",
+          "start": 42.549,
+          "end": 42.589
+        },
+        {
+          "text": "di",
+          "start": 42.709,
+          "end": 42.909
+        },
+        {
+          "text": "x",
+          "start": 42.969,
+          "end": 43.009
+        },
+        {
+          "text": "meno",
+          "start": 43.329,
+          "end": 43.509
+        },
+        {
+          "text": "Q",
+          "start": 43.569,
+          "end": 43.609
+        },
+        {
+          "text": "di",
+          "start": 43.729,
+          "end": 43.909
+        },
+        {
+          "text": "x,",
+          "start": 43.989,
+          "end": 44.029
+        }
+      ]
+    },
+    {
+      "start": 44.529,
+      "end": 45.569,
+      "text": "compresa tra zero e uno.",
+      "words": [
+        {
+          "text": "compresa",
+          "start": 44.529,
+          "end": 44.869
+        },
+        {
+          "text": "tra",
+          "start": 44.929,
+          "end": 45.029
+        },
+        {
+          "text": "zero",
+          "start": 45.109,
+          "end": 45.289
+        },
+        {
+          "text": "e",
+          "start": 45.329,
+          "end": 45.369
+        },
+        {
+          "text": "uno.",
+          "start": 45.429,
+          "end": 45.569
+        }
+      ]
+    },
+    {
+      "start": 46.209,
+      "end": 50.43,
+      "text": "Nell'esempio delle due monete truccate, ci fermiamo al nono lancio quando la T V D",
+      "words": [
+        {
+          "text": "Nell'esempio",
+          "start": 46.209,
+          "end": 46.729
+        },
+        {
+          "text": "delle",
+          "start": 46.769,
+          "end": 46.949
+        },
+        {
+          "text": "due",
+          "start": 46.969,
+          "end": 47.09
+        },
+        {
+          "text": "monete",
+          "start": 47.13,
+          "end": 47.39
+        },
+        {
+          "text": "truccate,",
+          "start": 47.43,
+          "end": 47.87
+        },
+        {
+          "text": "ci",
+          "start": 48.19,
+          "end": 48.29
+        },
+        {
+          "text": "fermiamo",
+          "start": 48.33,
+          "end": 48.69
+        },
+        {
+          "text": "al",
+          "start": 48.75,
+          "end": 48.83
+        },
+        {
+          "text": "nono",
+          "start": 48.87,
+          "end": 49.07
+        },
+        {
+          "text": "lancio",
+          "start": 49.11,
+          "end": 49.47
+        },
+        {
+          "text": "quando",
+          "start": 49.69,
+          "end": 49.93
+        },
+        {
+          "text": "la",
+          "start": 49.97,
+          "end": 50.05
+        },
+        {
+          "text": "T",
+          "start": 50.13,
+          "end": 50.17
+        },
+        {
+          "text": "V",
+          "start": 50.25,
+          "end": 50.29
+        },
+        {
+          "text": "D",
+          "start": 50.39,
+          "end": 50.43
+        }
+      ]
+    },
+    {
+      "start": 50.65,
+      "end": 53.491,
+      "text": "scende sotto zero virgola uno per due volte consecutive.",
+      "words": [
+        {
+          "text": "scende",
+          "start": 50.65,
+          "end": 50.93
+        },
+        {
+          "text": "sotto",
+          "start": 50.99,
+          "end": 51.25
+        },
+        {
+          "text": "zero",
+          "start": 51.37,
+          "end": 51.55
+        },
+        {
+          "text": "virgola",
+          "start": 51.61,
+          "end": 51.89
+        },
+        {
+          "text": "uno",
+          "start": 52.011,
+          "end": 52.171
+        },
+        {
+          "text": "per",
+          "start": 52.271,
+          "end": 52.411
+        },
+        {
+          "text": "due",
+          "start": 52.471,
+          "end": 52.611
+        },
+        {
+          "text": "volte",
+          "start": 52.631,
+          "end": 52.851
+        },
+        {
+          "text": "consecutive.",
+          "start": 52.891,
+          "end": 53.491
+        }
+      ]
+    },
+    {
+      "start": 54.171,
+      "end": 59.452,
+      "text": "Su questa idea nasce StableShots, politica online a scatola nera e indipendente dall'S D K:",
+      "words": [
+        {
+          "text": "Su",
+          "start": 54.171,
+          "end": 54.251
+        },
+        {
+          "text": "questa",
+          "start": 54.271,
+          "end": 54.471
+        },
+        {
+          "text": "idea",
+          "start": 54.511,
+          "end": 54.691
+        },
+        {
+          "text": "nasce",
+          "start": 54.771,
+          "end": 55.031
+        },
+        {
+          "text": "StableShots,",
+          "start": 55.091,
+          "end": 55.771
+        },
+        {
+          "text": "politica",
+          "start": 56.171,
+          "end": 56.551
+        },
+        {
+          "text": "online",
+          "start": 56.631,
+          "end": 57.092
+        },
+        {
+          "text": "a",
+          "start": 57.232,
+          "end": 57.272
+        },
+        {
+          "text": "scatola",
+          "start": 57.332,
+          "end": 57.672
+        },
+        {
+          "text": "nera",
+          "start": 57.732,
+          "end": 58.012
+        },
+        {
+          "text": "e",
+          "start": 58.132,
+          "end": 58.172
+        },
+        {
+          "text": "indipendente",
+          "start": 58.232,
+          "end": 58.892
+        },
+        {
+          "text": "dall'S",
+          "start": 58.932,
+          "end": 59.192
+        },
+        {
+          "text": "D",
+          "start": 59.312,
+          "end": 59.352
+        },
+        {
+          "text": "K:",
+          "start": 59.412,
+          "end": 59.452
+        }
+      ]
+    },
+    {
+      "start": 60.292,
+      "end": 65.313,
+      "text": "esegue batch di dimensione b, aggiorna la distribuzione cumulativa e controlla che la T V",
+      "words": [
+        {
+          "text": "esegue",
+          "start": 60.292,
+          "end": 60.592
+        },
+        {
+          "text": "batch",
+          "start": 60.672,
+          "end": 60.952
+        },
+        {
+          "text": "di",
+          "start": 61.052,
+          "end": 61.112
+        },
+        {
+          "text": "dimensione",
+          "start": 61.172,
+          "end": 61.592
+        },
+        {
+          "text": "b,",
+          "start": 61.672,
+          "end": 61.712
+        },
+        {
+          "text": "aggiorna",
+          "start": 62.193,
+          "end": 62.593
+        },
+        {
+          "text": "la",
+          "start": 62.673,
+          "end": 62.713
+        },
+        {
+          "text": "distribuzione",
+          "start": 62.773,
+          "end": 63.353
+        },
+        {
+          "text": "cumulativa",
+          "start": 63.393,
+          "end": 63.933
+        },
+        {
+          "text": "e",
+          "start": 64.273,
+          "end": 64.313
+        },
+        {
+          "text": "controlla",
+          "start": 64.353,
+          "end": 64.813
+        },
+        {
+          "text": "che",
+          "start": 64.853,
+          "end": 64.933
+        },
+        {
+          "text": "la",
+          "start": 64.993,
+          "end": 65.053
+        },
+        {
+          "text": "T",
+          "start": 65.133,
+          "end": 65.173
+        },
+        {
+          "text": "V",
+          "start": 65.273,
+          "end": 65.313
+        }
+      ]
+    },
+    {
+      "start": 65.433,
+      "end": 70.894,
+      "text": "D rispetto a l batch precedenti resti al più epsilon per k controlli consecutivi,",
+      "words": [
+        {
+          "text": "D",
+          "start": 65.433,
+          "end": 65.47300000000001
+        },
+        {
+          "text": "rispetto",
+          "start": 65.753,
+          "end": 66.153
+        },
+        {
+          "text": "a",
+          "start": 66.193,
+          "end": 66.233
+        },
+        {
+          "text": "l",
+          "start": 66.593,
+          "end": 66.63300000000001
+        },
+        {
+          "text": "batch",
+          "start": 66.753,
+          "end": 66.954
+        },
+        {
+          "text": "precedenti",
+          "start": 67.034,
+          "end": 67.614
+        },
+        {
+          "text": "resti",
+          "start": 67.934,
+          "end": 68.174
+        },
+        {
+          "text": "al",
+          "start": 68.214,
+          "end": 68.294
+        },
+        {
+          "text": "più",
+          "start": 68.354,
+          "end": 68.474
+        },
+        {
+          "text": "epsilon",
+          "start": 68.754,
+          "end": 69.234
+        },
+        {
+          "text": "per",
+          "start": 69.294,
+          "end": 69.434
+        },
+        {
+          "text": "k",
+          "start": 69.514,
+          "end": 69.554
+        },
+        {
+          "text": "controlli",
+          "start": 69.854,
+          "end": 70.254
+        },
+        {
+          "text": "consecutivi,",
+          "start": 70.294,
+          "end": 70.894
+        }
+      ]
+    },
+    {
+      "start": 71.234,
+      "end": 73.19500000000001,
+      "text": "oppure al raggiungimento del massimo B.",
+      "words": [
+        {
+          "text": "oppure",
+          "start": 71.234,
+          "end": 71.654
+        },
+        {
+          "text": "al",
+          "start": 71.835,
+          "end": 71.915
+        },
+        {
+          "text": "raggiungimento",
+          "start": 71.955,
+          "end": 72.515
+        },
+        {
+          "text": "del",
+          "start": 72.555,
+          "end": 72.655
+        },
+        {
+          "text": "massimo",
+          "start": 72.695,
+          "end": 73.075
+        },
+        {
+          "text": "B.",
+          "start": 73.155,
+          "end": 73.19500000000001
+        }
+      ]
+    },
+    {
+      "start": 73.975,
+      "end": 79.256,
+      "text": "Validato in holdout su centottanta tracce QSimBench da quattro a quattordici qubit,",
+      "words": [
+        {
+          "text": "Validato",
+          "start": 73.975,
+          "end": 74.355
+        },
+        {
+          "text": "in",
+          "start": 74.415,
+          "end": 74.475
+        },
+        {
+          "text": "holdout",
+          "start": 74.495,
+          "end": 74.915
+        },
+        {
+          "text": "su",
+          "start": 75.035,
+          "end": 75.115
+        },
+        {
+          "text": "centottanta",
+          "start": 75.235,
+          "end": 75.895
+        },
+        {
+          "text": "tracce",
+          "start": 75.955,
+          "end": 76.295
+        },
+        {
+          "text": "QSimBench",
+          "start": 76.375,
+          "end": 77.096
+        },
+        {
+          "text": "da",
+          "start": 77.456,
+          "end": 77.516
+        },
+        {
+          "text": "quattro",
+          "start": 77.656,
+          "end": 78.036
+        },
+        {
+          "text": "a",
+          "start": 78.156,
+          "end": 78.19600000000001
+        },
+        {
+          "text": "quattordici",
+          "start": 78.276,
+          "end": 78.856
+        },
+        {
+          "text": "qubit,",
+          "start": 78.896,
+          "end": 79.256
+        }
+      ]
+    },
+    {
+      "start": 79.756,
+      "end": 85.157,
+      "text": "StableShots raggiunge il cento per cento di successi con settemilaseicentocinquanta shot in mediana,",
+      "words": [
+        {
+          "text": "StableShots",
+          "start": 79.756,
+          "end": 80.296
+        },
+        {
+          "text": "raggiunge",
+          "start": 80.476,
+          "end": 80.836
+        },
+        {
+          "text": "il",
+          "start": 80.896,
+          "end": 80.956
+        },
+        {
+          "text": "cento",
+          "start": 81.016,
+          "end": 81.276
+        },
+        {
+          "text": "per",
+          "start": 81.316,
+          "end": 81.416
+        },
+        {
+          "text": "cento",
+          "start": 81.456,
+          "end": 81.696
+        },
+        {
+          "text": "di",
+          "start": 81.757,
+          "end": 81.79700000000001
+        },
+        {
+          "text": "successi",
+          "start": 81.857,
+          "end": 82.357
+        },
+        {
+          "text": "con",
+          "start": 82.677,
+          "end": 82.817
+        },
+        {
+          "text": "settemilaseicentocinquanta",
+          "start": 82.937,
+          "end": 84.377
+        },
+        {
+          "text": "shot",
+          "start": 84.397,
+          "end": 84.657
+        },
+        {
+          "text": "in",
+          "start": 84.717,
+          "end": 84.757
+        },
+        {
+          "text": "mediana,",
+          "start": 84.797,
+          "end": 85.157
+        }
+      ]
+    },
+    {
+      "start": 85.497,
+      "end": 89.038,
+      "text": "risparmiando oltre diecimila shot rispetto al budget fisso da diciottomila,",
+      "words": [
+        {
+          "text": "risparmiando",
+          "start": 85.497,
+          "end": 85.997
+        },
+        {
+          "text": "oltre",
+          "start": 86.057,
+          "end": 86.257
+        },
+        {
+          "text": "diecimila",
+          "start": 86.357,
+          "end": 86.858
+        },
+        {
+          "text": "shot",
+          "start": 86.918,
+          "end": 87.178
+        },
+        {
+          "text": "rispetto",
+          "start": 87.258,
+          "end": 87.578
+        },
+        {
+          "text": "al",
+          "start": 87.598,
+          "end": 87.678
+        },
+        {
+          "text": "budget",
+          "start": 87.698,
+          "end": 87.978
+        },
+        {
+          "text": "fisso",
+          "start": 88.038,
+          "end": 88.278
+        },
+        {
+          "text": "da",
+          "start": 88.338,
+          "end": 88.398
+        },
+        {
+          "text": "diciottomila,",
+          "start": 88.438,
+          "end": 89.038
+        }
+      ]
+    },
+    {
+      "start": 89.618,
+      "end": 94.359,
+      "text": "riduce l'overhead di coda con I B M Runtime Sessions e Amazon Braket Reservations,",
+      "words": [
+        {
+          "text": "riduce",
+          "start": 89.618,
+          "end": 89.918
+        },
+        {
+          "text": "l'overhead",
+          "start": 89.998,
+          "end": 90.378
+        },
+        {
+          "text": "di",
+          "start": 90.478,
+          "end": 90.538
+        },
+        {
+          "text": "coda",
+          "start": 90.578,
+          "end": 90.858
+        },
+        {
+          "text": "con",
+          "start": 91.018,
+          "end": 91.178
+        },
+        {
+          "text": "I",
+          "start": 91.478,
+          "end": 91.518
+        },
+        {
+          "text": "B",
+          "start": 91.538,
+          "end": 91.578
+        },
+        {
+          "text": "M",
+          "start": 91.759,
+          "end": 91.799
+        },
+        {
+          "text": "Runtime",
+          "start": 91.859,
+          "end": 92.259
+        },
+        {
+          "text": "Sessions",
+          "start": 92.319,
+          "end": 92.719
+        },
+        {
+          "text": "e",
+          "start": 92.899,
+          "end": 92.93900000000001
+        },
+        {
+          "text": "Amazon",
+          "start": 92.999,
+          "end": 93.339
+        },
+        {
+          "text": "Braket",
+          "start": 93.379,
+          "end": 93.659
+        },
+        {
+          "text": "Reservations,",
+          "start": 93.719,
+          "end": 94.359
+        }
+      ]
+    },
+    {
+      "start": 94.759,
+      "end": 98.82,
+      "text": "e registra ogni arresto in una hash chain verificabile a quattro eventi.",
+      "words": [
+        {
+          "text": "e",
+          "start": 94.759,
+          "end": 94.799
+        },
+        {
+          "text": "registra",
+          "start": 94.839,
+          "end": 95.239
+        },
+        {
+          "text": "ogni",
+          "start": 95.459,
+          "end": 95.639
+        },
+        {
+          "text": "arresto",
+          "start": 95.719,
+          "end": 96.139
+        },
+        {
+          "text": "in",
+          "start": 96.319,
+          "end": 96.399
+        },
+        {
+          "text": "una",
+          "start": 96.439,
+          "end": 96.559
+        },
+        {
+          "text": "hash",
+          "start": 96.66,
+          "end": 96.9
+        },
+        {
+          "text": "chain",
+          "start": 96.94,
+          "end": 97.16
+        },
+        {
+          "text": "verificabile",
+          "start": 97.22,
+          "end": 97.86
+        },
+        {
+          "text": "a",
+          "start": 98.04,
+          "end": 98.08000000000001
+        },
+        {
+          "text": "quattro",
+          "start": 98.16,
+          "end": 98.44
+        },
+        {
+          "text": "eventi.",
+          "start": 98.48,
+          "end": 98.82
+        }
+      ]
+    }
+  ]
+}

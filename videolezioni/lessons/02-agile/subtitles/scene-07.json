@@ -1,0 +1,1080 @@
+{
+  "duration": 76.29,
+  "segments": [
+    {
+      "start": 0.06,
+      "end": 2.92,
+      "text": "Quando una voce dello sprint può dirsi davvero completa?",
+      "words": [
+        {
+          "text": "Quando",
+          "start": 0.06,
+          "end": 0.28
+        },
+        {
+          "text": "una",
+          "start": 0.34,
+          "end": 0.46
+        },
+        {
+          "text": "voce",
+          "start": 0.48,
+          "end": 0.72
+        },
+        {
+          "text": "dello",
+          "start": 0.76,
+          "end": 0.94
+        },
+        {
+          "text": "sprint",
+          "start": 1.0,
+          "end": 1.38
+        },
+        {
+          "text": "può",
+          "start": 1.5,
+          "end": 1.6
+        },
+        {
+          "text": "dirsi",
+          "start": 1.68,
+          "end": 2.02
+        },
+        {
+          "text": "davvero",
+          "start": 2.1,
+          "end": 2.46
+        },
+        {
+          "text": "completa?",
+          "start": 2.5,
+          "end": 2.92
+        }
+      ]
+    },
+    {
+      "start": 3.821,
+      "end": 6.761,
+      "text": "Serve una code completeness checklist in cinque punti:",
+      "words": [
+        {
+          "text": "Serve",
+          "start": 3.821,
+          "end": 4.061
+        },
+        {
+          "text": "una",
+          "start": 4.121,
+          "end": 4.241
+        },
+        {
+          "text": "code",
+          "start": 4.321,
+          "end": 4.561
+        },
+        {
+          "text": "completeness",
+          "start": 4.621,
+          "end": 5.281
+        },
+        {
+          "text": "checklist",
+          "start": 5.361,
+          "end": 5.821
+        },
+        {
+          "text": "in",
+          "start": 6.001,
+          "end": 6.061
+        },
+        {
+          "text": "cinque",
+          "start": 6.121,
+          "end": 6.401
+        },
+        {
+          "text": "punti:",
+          "start": 6.441,
+          "end": 6.761
+        }
+      ]
+    },
+    {
+      "start": 7.501,
+      "end": 11.362,
+      "text": "il codice deve essere reviewed da un collega, unit tested automaticamente,",
+      "words": [
+        {
+          "text": "il",
+          "start": 7.501,
+          "end": 7.561
+        },
+        {
+          "text": "codice",
+          "start": 7.621,
+          "end": 7.941
+        },
+        {
+          "text": "deve",
+          "start": 7.981,
+          "end": 8.101
+        },
+        {
+          "text": "essere",
+          "start": 8.141,
+          "end": 8.381
+        },
+        {
+          "text": "reviewed",
+          "start": 8.501,
+          "end": 8.881
+        },
+        {
+          "text": "da",
+          "start": 8.981,
+          "end": 9.041
+        },
+        {
+          "text": "un",
+          "start": 9.081,
+          "end": 9.141
+        },
+        {
+          "text": "collega,",
+          "start": 9.161,
+          "end": 9.561
+        },
+        {
+          "text": "unit",
+          "start": 10.021,
+          "end": 10.221
+        },
+        {
+          "text": "tested",
+          "start": 10.261,
+          "end": 10.601
+        },
+        {
+          "text": "automaticamente,",
+          "start": 10.681,
+          "end": 11.362
+        }
+      ]
+    },
+    {
+      "start": 11.802,
+      "end": 18.542,
+      "text": "integrated nel codebase, integration tested senza errori, e infine accepted tramite eventuali test di accettazione.",
+      "words": [
+        {
+          "text": "integrated",
+          "start": 11.802,
+          "end": 12.382
+        },
+        {
+          "text": "nel",
+          "start": 12.422,
+          "end": 12.562
+        },
+        {
+          "text": "codebase,",
+          "start": 12.602,
+          "end": 13.062
+        },
+        {
+          "text": "integration",
+          "start": 13.542,
+          "end": 14.042
+        },
+        {
+          "text": "tested",
+          "start": 14.102,
+          "end": 14.462
+        },
+        {
+          "text": "senza",
+          "start": 14.582,
+          "end": 14.842
+        },
+        {
+          "text": "errori,",
+          "start": 14.902,
+          "end": 15.182
+        },
+        {
+          "text": "e",
+          "start": 15.642,
+          "end": 15.682
+        },
+        {
+          "text": "infine",
+          "start": 15.702,
+          "end": 15.982
+        },
+        {
+          "text": "accepted",
+          "start": 16.122,
+          "end": 16.622
+        },
+        {
+          "text": "tramite",
+          "start": 16.742,
+          "end": 17.022
+        },
+        {
+          "text": "eventuali",
+          "start": 17.082,
+          "end": 17.462
+        },
+        {
+          "text": "test",
+          "start": 17.502,
+          "end": 17.742
+        },
+        {
+          "text": "di",
+          "start": 17.822,
+          "end": 17.882
+        },
+        {
+          "text": "accettazione.",
+          "start": 17.922,
+          "end": 18.542
+        }
+      ]
+    },
+    {
+      "start": 19.783,
+      "end": 22.463,
+      "text": "Anche se Scrum non prescrive le tecniche di programmazione,",
+      "words": [
+        {
+          "text": "Anche",
+          "start": 19.783,
+          "end": 19.943
+        },
+        {
+          "text": "se",
+          "start": 19.983,
+          "end": 20.043
+        },
+        {
+          "text": "Scrum",
+          "start": 20.123,
+          "end": 20.443
+        },
+        {
+          "text": "non",
+          "start": 20.583,
+          "end": 20.703
+        },
+        {
+          "text": "prescrive",
+          "start": 20.723,
+          "end": 21.183
+        },
+        {
+          "text": "le",
+          "start": 21.243,
+          "end": 21.303
+        },
+        {
+          "text": "tecniche",
+          "start": 21.343,
+          "end": 21.703
+        },
+        {
+          "text": "di",
+          "start": 21.743,
+          "end": 21.783
+        },
+        {
+          "text": "programmazione,",
+          "start": 21.823,
+          "end": 22.463
+        }
+      ]
+    },
+    {
+      "start": 22.743,
+      "end": 26.624,
+      "text": "due pratiche vanno usate sempre: test automation e continuous integration.",
+      "words": [
+        {
+          "text": "due",
+          "start": 22.743,
+          "end": 22.903
+        },
+        {
+          "text": "pratiche",
+          "start": 22.943,
+          "end": 23.323
+        },
+        {
+          "text": "vanno",
+          "start": 23.363,
+          "end": 23.523
+        },
+        {
+          "text": "usate",
+          "start": 23.583,
+          "end": 23.843
+        },
+        {
+          "text": "sempre:",
+          "start": 23.923,
+          "end": 24.263
+        },
+        {
+          "text": "test",
+          "start": 24.603,
+          "end": 24.803
+        },
+        {
+          "text": "automation",
+          "start": 24.863,
+          "end": 25.323
+        },
+        {
+          "text": "e",
+          "start": 25.503,
+          "end": 25.543
+        },
+        {
+          "text": "continuous",
+          "start": 25.583,
+          "end": 26.063
+        },
+        {
+          "text": "integration.",
+          "start": 26.103,
+          "end": 26.624
+        }
+      ]
+    },
+    {
+      "start": 27.204,
+      "end": 28.144,
+      "text": "Si completano a vicenda:",
+      "words": [
+        {
+          "text": "Si",
+          "start": 27.204,
+          "end": 27.264
+        },
+        {
+          "text": "completano",
+          "start": 27.304,
+          "end": 27.684
+        },
+        {
+          "text": "a",
+          "start": 27.704,
+          "end": 27.744
+        },
+        {
+          "text": "vicenda:",
+          "start": 27.784,
+          "end": 28.144
+        }
+      ]
+    },
+    {
+      "start": 28.784,
+      "end": 32.644,
+      "text": "integrare il codice più volte al giorno senza test automatici sarebbe rischioso,",
+      "words": [
+        {
+          "text": "integrare",
+          "start": 28.784,
+          "end": 29.184
+        },
+        {
+          "text": "il",
+          "start": 29.224,
+          "end": 29.284
+        },
+        {
+          "text": "codice",
+          "start": 29.304,
+          "end": 29.644
+        },
+        {
+          "text": "più",
+          "start": 29.744,
+          "end": 29.904
+        },
+        {
+          "text": "volte",
+          "start": 29.964,
+          "end": 30.204
+        },
+        {
+          "text": "al",
+          "start": 30.244,
+          "end": 30.304
+        },
+        {
+          "text": "giorno",
+          "start": 30.344,
+          "end": 30.644
+        },
+        {
+          "text": "senza",
+          "start": 30.724,
+          "end": 30.984
+        },
+        {
+          "text": "test",
+          "start": 31.024,
+          "end": 31.204
+        },
+        {
+          "text": "automatici",
+          "start": 31.244,
+          "end": 31.804
+        },
+        {
+          "text": "sarebbe",
+          "start": 31.884,
+          "end": 32.164
+        },
+        {
+          "text": "rischioso,",
+          "start": 32.204,
+          "end": 32.644
+        }
+      ]
+    },
+    {
+      "start": 33.004,
+      "end": 35.805,
+      "text": "e i test automatici scoprono subito eventuali regressioni.",
+      "words": [
+        {
+          "text": "e",
+          "start": 33.004,
+          "end": 33.044
+        },
+        {
+          "text": "i",
+          "start": 33.084,
+          "end": 33.124
+        },
+        {
+          "text": "test",
+          "start": 33.124,
+          "end": 33.304
+        },
+        {
+          "text": "automatici",
+          "start": 33.344,
+          "end": 33.845
+        },
+        {
+          "text": "scoprono",
+          "start": 33.925,
+          "end": 34.325
+        },
+        {
+          "text": "subito",
+          "start": 34.425,
+          "end": 34.745
+        },
+        {
+          "text": "eventuali",
+          "start": 34.805,
+          "end": 35.225
+        },
+        {
+          "text": "regressioni.",
+          "start": 35.265,
+          "end": 35.805
+        }
+      ]
+    },
+    {
+      "start": 37.045,
+      "end": 39.905,
+      "text": "Vediamo infine come funzionano i team che si auto-organizzano.",
+      "words": [
+        {
+          "text": "Vediamo",
+          "start": 37.045,
+          "end": 37.265
+        },
+        {
+          "text": "infine",
+          "start": 37.305,
+          "end": 37.565
+        },
+        {
+          "text": "come",
+          "start": 37.645,
+          "end": 37.805
+        },
+        {
+          "text": "funzionano",
+          "start": 37.865,
+          "end": 38.405
+        },
+        {
+          "text": "i",
+          "start": 38.465,
+          "end": 38.505
+        },
+        {
+          "text": "team",
+          "start": 38.545,
+          "end": 38.765
+        },
+        {
+          "text": "che",
+          "start": 38.865,
+          "end": 38.945
+        },
+        {
+          "text": "si",
+          "start": 39.025,
+          "end": 39.085
+        },
+        {
+          "text": "auto-organizzano.",
+          "start": 39.165,
+          "end": 39.905
+        }
+      ]
+    },
+    {
+      "start": 40.885,
+      "end": 44.106,
+      "text": "Un team ideale conta cinque otto persone con competenze diverse,",
+      "words": [
+        {
+          "text": "Un",
+          "start": 40.885,
+          "end": 40.965
+        },
+        {
+          "text": "team",
+          "start": 41.025,
+          "end": 41.165
+        },
+        {
+          "text": "ideale",
+          "start": 41.225,
+          "end": 41.546
+        },
+        {
+          "text": "conta",
+          "start": 41.586,
+          "end": 41.846
+        },
+        {
+          "text": "cinque",
+          "start": 41.966,
+          "end": 42.306
+        },
+        {
+          "text": "otto",
+          "start": 42.386,
+          "end": 42.526
+        },
+        {
+          "text": "persone",
+          "start": 42.546,
+          "end": 42.966
+        },
+        {
+          "text": "con",
+          "start": 43.046,
+          "end": 43.146
+        },
+        {
+          "text": "competenze",
+          "start": 43.186,
+          "end": 43.666
+        },
+        {
+          "text": "diverse,",
+          "start": 43.706,
+          "end": 44.106
+        }
+      ]
+    },
+    {
+      "start": 44.426,
+      "end": 46.846,
+      "text": "come rete, user experience e database:",
+      "words": [
+        {
+          "text": "come",
+          "start": 44.426,
+          "end": 44.626
+        },
+        {
+          "text": "rete,",
+          "start": 44.866,
+          "end": 45.166
+        },
+        {
+          "text": "user",
+          "start": 45.486,
+          "end": 45.666
+        },
+        {
+          "text": "experience",
+          "start": 45.706,
+          "end": 46.306
+        },
+        {
+          "text": "e",
+          "start": 46.346,
+          "end": 46.386
+        },
+        {
+          "text": "database:",
+          "start": 46.406,
+          "end": 46.846
+        }
+      ]
+    },
+    {
+      "start": 47.566,
+      "end": 50.627,
+      "text": "è abbastanza vario, ma piccolo per comunicare in modo informale,",
+      "words": [
+        {
+          "text": "è",
+          "start": 47.566,
+          "end": 47.606
+        },
+        {
+          "text": "abbastanza",
+          "start": 47.626,
+          "end": 48.046
+        },
+        {
+          "text": "vario,",
+          "start": 48.086,
+          "end": 48.366
+        },
+        {
+          "text": "ma",
+          "start": 48.566,
+          "end": 48.626
+        },
+        {
+          "text": "piccolo",
+          "start": 48.726,
+          "end": 49.087
+        },
+        {
+          "text": "per",
+          "start": 49.107,
+          "end": 49.207
+        },
+        {
+          "text": "comunicare",
+          "start": 49.247,
+          "end": 49.727
+        },
+        {
+          "text": "in",
+          "start": 49.767,
+          "end": 49.807
+        },
+        {
+          "text": "modo",
+          "start": 49.847,
+          "end": 50.007
+        },
+        {
+          "text": "informale,",
+          "start": 50.047,
+          "end": 50.627
+        }
+      ]
+    },
+    {
+      "start": 50.847,
+      "end": 52.287,
+      "text": "con responsabilità condivisa.",
+      "words": [
+        {
+          "text": "con",
+          "start": 50.847,
+          "end": 50.947
+        },
+        {
+          "text": "responsabilità",
+          "start": 51.007,
+          "end": 51.707
+        },
+        {
+          "text": "condivisa.",
+          "start": 51.787,
+          "end": 52.287
+        }
+      ]
+    },
+    {
+      "start": 53.127,
+      "end": 58.408,
+      "text": "Attenzione però al coordinamento: lo scrum quotidiano assume lavoratori a tempo pieno nella stessa sede",
+      "words": [
+        {
+          "text": "Attenzione",
+          "start": 53.127,
+          "end": 53.527
+        },
+        {
+          "text": "però",
+          "start": 53.547,
+          "end": 53.687
+        },
+        {
+          "text": "al",
+          "start": 53.827,
+          "end": 53.927
+        },
+        {
+          "text": "coordinamento:",
+          "start": 53.967,
+          "end": 54.647
+        },
+        {
+          "text": "lo",
+          "start": 55.147,
+          "end": 55.227
+        },
+        {
+          "text": "scrum",
+          "start": 55.247,
+          "end": 55.467
+        },
+        {
+          "text": "quotidiano",
+          "start": 55.507,
+          "end": 55.967
+        },
+        {
+          "text": "assume",
+          "start": 56.087,
+          "end": 56.388
+        },
+        {
+          "text": "lavoratori",
+          "start": 56.428,
+          "end": 56.828
+        },
+        {
+          "text": "a",
+          "start": 56.888,
+          "end": 56.928
+        },
+        {
+          "text": "tempo",
+          "start": 56.968,
+          "end": 57.188
+        },
+        {
+          "text": "pieno",
+          "start": 57.228,
+          "end": 57.508
+        },
+        {
+          "text": "nella",
+          "start": 57.668,
+          "end": 57.848
+        },
+        {
+          "text": "stessa",
+          "start": 57.868,
+          "end": 58.128
+        },
+        {
+          "text": "sede",
+          "start": 58.188,
+          "end": 58.408
+        }
+      ]
+    },
+    {
+      "start": 58.588,
+      "end": 62.208,
+      "text": "e disponibili al mattino, due ipotesi che spesso cadono con lavoro remoto,",
+      "words": [
+        {
+          "text": "e",
+          "start": 58.588,
+          "end": 58.628
+        },
+        {
+          "text": "disponibili",
+          "start": 58.668,
+          "end": 59.168
+        },
+        {
+          "text": "al",
+          "start": 59.208,
+          "end": 59.268
+        },
+        {
+          "text": "mattino,",
+          "start": 59.308,
+          "end": 59.648
+        },
+        {
+          "text": "due",
+          "start": 60.048,
+          "end": 60.168
+        },
+        {
+          "text": "ipotesi",
+          "start": 60.208,
+          "end": 60.568
+        },
+        {
+          "text": "che",
+          "start": 60.668,
+          "end": 60.748
+        },
+        {
+          "text": "spesso",
+          "start": 60.768,
+          "end": 61.028
+        },
+        {
+          "text": "cadono",
+          "start": 61.068,
+          "end": 61.368
+        },
+        {
+          "text": "con",
+          "start": 61.408,
+          "end": 61.528
+        },
+        {
+          "text": "lavoro",
+          "start": 61.568,
+          "end": 61.788
+        },
+        {
+          "text": "remoto,",
+          "start": 61.848,
+          "end": 62.208
+        }
+      ]
+    },
+    {
+      "start": 62.388,
+      "end": 63.909,
+      "text": "part-time o multi-progetto.",
+      "words": [
+        {
+          "text": "part-time",
+          "start": 62.388,
+          "end": 62.908
+        },
+        {
+          "text": "o",
+          "start": 63.088,
+          "end": 63.128
+        },
+        {
+          "text": "multi-progetto.",
+          "start": 63.188,
+          "end": 63.909
+        }
+      ]
+    },
+    {
+      "start": 64.829,
+      "end": 70.209,
+      "text": "Infine, le interazioni esterne spettano solo a Product Owner e ScrumMaster per proteggere gli sviluppatori,",
+      "words": [
+        {
+          "text": "Infine,",
+          "start": 64.829,
+          "end": 65.109
+        },
+        {
+          "text": "le",
+          "start": 65.229,
+          "end": 65.289
+        },
+        {
+          "text": "interazioni",
+          "start": 65.349,
+          "end": 65.789
+        },
+        {
+          "text": "esterne",
+          "start": 65.829,
+          "end": 66.169
+        },
+        {
+          "text": "spettano",
+          "start": 66.249,
+          "end": 66.629
+        },
+        {
+          "text": "solo",
+          "start": 66.709,
+          "end": 66.949
+        },
+        {
+          "text": "a",
+          "start": 67.009,
+          "end": 67.049
+        },
+        {
+          "text": "Product",
+          "start": 67.089,
+          "end": 67.449
+        },
+        {
+          "text": "Owner",
+          "start": 67.509,
+          "end": 67.749
+        },
+        {
+          "text": "e",
+          "start": 67.869,
+          "end": 67.909
+        },
+        {
+          "text": "ScrumMaster",
+          "start": 67.969,
+          "end": 68.569
+        },
+        {
+          "text": "per",
+          "start": 68.709,
+          "end": 68.829
+        },
+        {
+          "text": "proteggere",
+          "start": 68.889,
+          "end": 69.449
+        },
+        {
+          "text": "gli",
+          "start": 69.469,
+          "end": 69.609
+        },
+        {
+          "text": "sviluppatori,",
+          "start": 69.629,
+          "end": 70.209
+        }
+      ]
+    },
+    {
+      "start": 70.689,
+      "end": 75.09,
+      "text": "e nelle aziende lo ScrumMaster assume spesso anche un ruolo di project management nel reporting",
+      "words": [
+        {
+          "text": "e",
+          "start": 70.689,
+          "end": 70.729
+        },
+        {
+          "text": "nelle",
+          "start": 70.769,
+          "end": 70.929
+        },
+        {
+          "text": "aziende",
+          "start": 70.949,
+          "end": 71.31
+        },
+        {
+          "text": "lo",
+          "start": 71.43,
+          "end": 71.49
+        },
+        {
+          "text": "ScrumMaster",
+          "start": 71.53,
+          "end": 72.01
+        },
+        {
+          "text": "assume",
+          "start": 72.05,
+          "end": 72.31
+        },
+        {
+          "text": "spesso",
+          "start": 72.35,
+          "end": 72.65
+        },
+        {
+          "text": "anche",
+          "start": 72.73,
+          "end": 72.89
+        },
+        {
+          "text": "un",
+          "start": 72.93,
+          "end": 72.99
+        },
+        {
+          "text": "ruolo",
+          "start": 73.03,
+          "end": 73.25
+        },
+        {
+          "text": "di",
+          "start": 73.31,
+          "end": 73.37
+        },
+        {
+          "text": "project",
+          "start": 73.39,
+          "end": 73.71
+        },
+        {
+          "text": "management",
+          "start": 73.75,
+          "end": 74.25
+        },
+        {
+          "text": "nel",
+          "start": 74.49,
+          "end": 74.61
+        },
+        {
+          "text": "reporting",
+          "start": 74.63,
+          "end": 75.09
+        }
+      ]
+    },
+    {
+      "start": 75.13,
+      "end": 75.93,
+      "text": "verso la direzione.",
+      "words": [
+        {
+          "text": "verso",
+          "start": 75.13,
+          "end": 75.35
+        },
+        {
+          "text": "la",
+          "start": 75.39,
+          "end": 75.45
+        },
+        {
+          "text": "direzione.",
+          "start": 75.47,
+          "end": 75.93
+        }
+      ]
+    }
+  ]
+}

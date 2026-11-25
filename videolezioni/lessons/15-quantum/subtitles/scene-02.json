@@ -1,0 +1,1096 @@
+{
+  "duration": 74.174,
+  "segments": [
+    {
+      "start": 0.874,
+      "end": 4.354,
+      "text": "Un computer quantistico sfrutta due proprietà della meccanica quantistica:",
+      "words": [
+        {
+          "text": "Un",
+          "start": 0.874,
+          "end": 0.954
+        },
+        {
+          "text": "computer",
+          "start": 0.994,
+          "end": 1.354
+        },
+        {
+          "text": "quantistico",
+          "start": 1.394,
+          "end": 1.934
+        },
+        {
+          "text": "sfrutta",
+          "start": 2.094,
+          "end": 2.414
+        },
+        {
+          "text": "due",
+          "start": 2.554,
+          "end": 2.734
+        },
+        {
+          "text": "proprietà",
+          "start": 2.754,
+          "end": 3.154
+        },
+        {
+          "text": "della",
+          "start": 3.214,
+          "end": 3.354
+        },
+        {
+          "text": "meccanica",
+          "start": 3.374,
+          "end": 3.734
+        },
+        {
+          "text": "quantistica:",
+          "start": 3.774,
+          "end": 4.354
+        }
+      ]
+    },
+    {
+      "start": 4.755,
+      "end": 6.735,
+      "text": "la sovrapposizione e l'entanglement.",
+      "words": [
+        {
+          "text": "la",
+          "start": 4.755,
+          "end": 4.815
+        },
+        {
+          "text": "sovrapposizione",
+          "start": 4.875,
+          "end": 5.695
+        },
+        {
+          "text": "e",
+          "start": 5.915,
+          "end": 5.955
+        },
+        {
+          "text": "l'entanglement.",
+          "start": 6.015,
+          "end": 6.735
+        }
+      ]
+    },
+    {
+      "start": 7.635,
+      "end": 13.016,
+      "text": "Concettualmente, un qubit può trovarsi nello stato zero, nello stato uno oppure in una sovrapposizione",
+      "words": [
+        {
+          "text": "Concettualmente,",
+          "start": 7.635,
+          "end": 8.375
+        },
+        {
+          "text": "un",
+          "start": 8.535,
+          "end": 8.615
+        },
+        {
+          "text": "qubit",
+          "start": 8.675,
+          "end": 8.975
+        },
+        {
+          "text": "può",
+          "start": 9.135,
+          "end": 9.215
+        },
+        {
+          "text": "trovarsi",
+          "start": 9.275,
+          "end": 9.655
+        },
+        {
+          "text": "nello",
+          "start": 9.695,
+          "end": 9.855
+        },
+        {
+          "text": "stato",
+          "start": 9.875,
+          "end": 10.075
+        },
+        {
+          "text": "zero,",
+          "start": 10.175,
+          "end": 10.455
+        },
+        {
+          "text": "nello",
+          "start": 10.675,
+          "end": 10.855
+        },
+        {
+          "text": "stato",
+          "start": 10.895,
+          "end": 11.115
+        },
+        {
+          "text": "uno",
+          "start": 11.215,
+          "end": 11.375
+        },
+        {
+          "text": "oppure",
+          "start": 11.715,
+          "end": 12.016
+        },
+        {
+          "text": "in",
+          "start": 12.036,
+          "end": 12.096
+        },
+        {
+          "text": "una",
+          "start": 12.136,
+          "end": 12.236
+        },
+        {
+          "text": "sovrapposizione",
+          "start": 12.296,
+          "end": 13.016
+        }
+      ]
+    },
+    {
+      "start": 13.076,
+      "end": 18.216,
+      "text": "lineare di entrambi, rappresentabile geometricamente sulla sfera di Bloch tra il polo nord zero e",
+      "words": [
+        {
+          "text": "lineare",
+          "start": 13.076,
+          "end": 13.456
+        },
+        {
+          "text": "di",
+          "start": 13.496,
+          "end": 13.556
+        },
+        {
+          "text": "entrambi,",
+          "start": 13.596,
+          "end": 14.016
+        },
+        {
+          "text": "rappresentabile",
+          "start": 14.356,
+          "end": 14.956
+        },
+        {
+          "text": "geometricamente",
+          "start": 15.016,
+          "end": 15.736
+        },
+        {
+          "text": "sulla",
+          "start": 15.776,
+          "end": 15.956
+        },
+        {
+          "text": "sfera",
+          "start": 15.976,
+          "end": 16.176
+        },
+        {
+          "text": "di",
+          "start": 16.216,
+          "end": 16.276
+        },
+        {
+          "text": "Bloch",
+          "start": 16.296,
+          "end": 16.556
+        },
+        {
+          "text": "tra",
+          "start": 16.896,
+          "end": 16.996
+        },
+        {
+          "text": "il",
+          "start": 17.056,
+          "end": 17.116
+        },
+        {
+          "text": "polo",
+          "start": 17.156,
+          "end": 17.356
+        },
+        {
+          "text": "nord",
+          "start": 17.396,
+          "end": 17.636
+        },
+        {
+          "text": "zero",
+          "start": 17.756,
+          "end": 18.016
+        },
+        {
+          "text": "e",
+          "start": 18.176,
+          "end": 18.216
+        }
+      ]
+    },
+    {
+      "start": 18.236,
+      "end": 19.056,
+      "text": "il polo sud uno.",
+      "words": [
+        {
+          "text": "il",
+          "start": 18.236,
+          "end": 18.296
+        },
+        {
+          "text": "polo",
+          "start": 18.316,
+          "end": 18.496
+        },
+        {
+          "text": "sud",
+          "start": 18.536,
+          "end": 18.696
+        },
+        {
+          "text": "uno.",
+          "start": 18.876,
+          "end": 19.056
+        }
+      ]
+    },
+    {
+      "start": 19.937,
+      "end": 24.917,
+      "text": "Matematicamente scriviamo ket psi uguale alfa per stato zero più beta per stato uno,",
+      "words": [
+        {
+          "text": "Matematicamente",
+          "start": 19.937,
+          "end": 20.677
+        },
+        {
+          "text": "scriviamo",
+          "start": 20.817,
+          "end": 21.217
+        },
+        {
+          "text": "ket",
+          "start": 21.377,
+          "end": 21.577
+        },
+        {
+          "text": "psi",
+          "start": 21.657,
+          "end": 21.877
+        },
+        {
+          "text": "uguale",
+          "start": 22.157,
+          "end": 22.477
+        },
+        {
+          "text": "alfa",
+          "start": 22.637,
+          "end": 22.917
+        },
+        {
+          "text": "per",
+          "start": 22.997,
+          "end": 23.137
+        },
+        {
+          "text": "stato",
+          "start": 23.177,
+          "end": 23.377
+        },
+        {
+          "text": "zero",
+          "start": 23.477,
+          "end": 23.737
+        },
+        {
+          "text": "più",
+          "start": 23.857,
+          "end": 23.957
+        },
+        {
+          "text": "beta",
+          "start": 24.057,
+          "end": 24.277
+        },
+        {
+          "text": "per",
+          "start": 24.317,
+          "end": 24.417
+        },
+        {
+          "text": "stato",
+          "start": 24.477,
+          "end": 24.677
+        },
+        {
+          "text": "uno,",
+          "start": 24.757,
+          "end": 24.917
+        }
+      ]
+    },
+    {
+      "start": 25.537,
+      "end": 27.358,
+      "text": "dove zero e uno sono i ket di base,",
+      "words": [
+        {
+          "text": "dove",
+          "start": 25.537,
+          "end": 25.697
+        },
+        {
+          "text": "zero",
+          "start": 25.857,
+          "end": 26.077
+        },
+        {
+          "text": "e",
+          "start": 26.137,
+          "end": 26.177
+        },
+        {
+          "text": "uno",
+          "start": 26.217,
+          "end": 26.357
+        },
+        {
+          "text": "sono",
+          "start": 26.417,
+          "end": 26.578
+        },
+        {
+          "text": "i",
+          "start": 26.598,
+          "end": 26.638
+        },
+        {
+          "text": "ket",
+          "start": 26.678,
+          "end": 26.838
+        },
+        {
+          "text": "di",
+          "start": 26.918,
+          "end": 26.978
+        },
+        {
+          "text": "base,",
+          "start": 27.038,
+          "end": 27.358
+        }
+      ]
+    },
+    {
+      "start": 27.498,
+      "end": 31.818,
+      "text": "cioè i vettori uno-zero e zero-uno, e alfa e beta sono ampiezze complesse.",
+      "words": [
+        {
+          "text": "cioè",
+          "start": 27.498,
+          "end": 27.598
+        },
+        {
+          "text": "i",
+          "start": 27.658,
+          "end": 27.698
+        },
+        {
+          "text": "vettori",
+          "start": 27.698,
+          "end": 28.018
+        },
+        {
+          "text": "uno-zero",
+          "start": 28.158,
+          "end": 28.638
+        },
+        {
+          "text": "e",
+          "start": 28.758,
+          "end": 28.798
+        },
+        {
+          "text": "zero-uno,",
+          "start": 28.878,
+          "end": 29.298
+        },
+        {
+          "text": "e",
+          "start": 29.798,
+          "end": 29.838
+        },
+        {
+          "text": "alfa",
+          "start": 29.918,
+          "end": 30.158
+        },
+        {
+          "text": "e",
+          "start": 30.198,
+          "end": 30.238
+        },
+        {
+          "text": "beta",
+          "start": 30.278,
+          "end": 30.518
+        },
+        {
+          "text": "sono",
+          "start": 30.638,
+          "end": 30.818
+        },
+        {
+          "text": "ampiezze",
+          "start": 30.878,
+          "end": 31.258
+        },
+        {
+          "text": "complesse.",
+          "start": 31.298,
+          "end": 31.818
+        }
+      ]
+    },
+    {
+      "start": 32.578,
+      "end": 35.039,
+      "text": "Le probabilità di osservare i due esiti sommano a uno:",
+      "words": [
+        {
+          "text": "Le",
+          "start": 32.578,
+          "end": 32.658
+        },
+        {
+          "text": "probabilità",
+          "start": 32.698,
+          "end": 33.178
+        },
+        {
+          "text": "di",
+          "start": 33.238,
+          "end": 33.278
+        },
+        {
+          "text": "osservare",
+          "start": 33.338,
+          "end": 33.758
+        },
+        {
+          "text": "i",
+          "start": 33.798,
+          "end": 33.838
+        },
+        {
+          "text": "due",
+          "start": 33.838,
+          "end": 33.939
+        },
+        {
+          "text": "esiti",
+          "start": 33.999,
+          "end": 34.259
+        },
+        {
+          "text": "sommano",
+          "start": 34.379,
+          "end": 34.679
+        },
+        {
+          "text": "a",
+          "start": 34.739,
+          "end": 34.779
+        },
+        {
+          "text": "uno:",
+          "start": 34.879,
+          "end": 35.039
+        }
+      ]
+    },
+    {
+      "start": 35.519,
+      "end": 38.799,
+      "text": "modulo di alfa al quadrato più modulo di beta al quadrato uguale uno.",
+      "words": [
+        {
+          "text": "modulo",
+          "start": 35.519,
+          "end": 35.859
+        },
+        {
+          "text": "di",
+          "start": 35.879,
+          "end": 35.939
+        },
+        {
+          "text": "alfa",
+          "start": 35.999,
+          "end": 36.179
+        },
+        {
+          "text": "al",
+          "start": 36.219,
+          "end": 36.279
+        },
+        {
+          "text": "quadrato",
+          "start": 36.299,
+          "end": 36.699
+        },
+        {
+          "text": "più",
+          "start": 36.819,
+          "end": 36.939
+        },
+        {
+          "text": "modulo",
+          "start": 37.019,
+          "end": 37.299
+        },
+        {
+          "text": "di",
+          "start": 37.319,
+          "end": 37.379
+        },
+        {
+          "text": "beta",
+          "start": 37.439,
+          "end": 37.599
+        },
+        {
+          "text": "al",
+          "start": 37.639,
+          "end": 37.699
+        },
+        {
+          "text": "quadrato",
+          "start": 37.719,
+          "end": 38.119
+        },
+        {
+          "text": "uguale",
+          "start": 38.319,
+          "end": 38.579
+        },
+        {
+          "text": "uno.",
+          "start": 38.659,
+          "end": 38.799
+        }
+      ]
+    },
+    {
+      "start": 39.439,
+      "end": 43.88,
+      "text": "Per esempio, sessanta per cento su zero e quaranta per cento su uno corrisponde ad",
+      "words": [
+        {
+          "text": "Per",
+          "start": 39.439,
+          "end": 39.539
+        },
+        {
+          "text": "esempio,",
+          "start": 39.579,
+          "end": 39.899
+        },
+        {
+          "text": "sessanta",
+          "start": 40.159,
+          "end": 40.519
+        },
+        {
+          "text": "per",
+          "start": 40.559,
+          "end": 40.659
+        },
+        {
+          "text": "cento",
+          "start": 40.719,
+          "end": 40.959
+        },
+        {
+          "text": "su",
+          "start": 41.019,
+          "end": 41.099
+        },
+        {
+          "text": "zero",
+          "start": 41.22,
+          "end": 41.5
+        },
+        {
+          "text": "e",
+          "start": 41.66,
+          "end": 41.7
+        },
+        {
+          "text": "quaranta",
+          "start": 41.78,
+          "end": 42.1
+        },
+        {
+          "text": "per",
+          "start": 42.14,
+          "end": 42.24
+        },
+        {
+          "text": "cento",
+          "start": 42.3,
+          "end": 42.56
+        },
+        {
+          "text": "su",
+          "start": 42.62,
+          "end": 42.7
+        },
+        {
+          "text": "uno",
+          "start": 42.82,
+          "end": 42.98
+        },
+        {
+          "text": "corrisponde",
+          "start": 43.3,
+          "end": 43.76
+        },
+        {
+          "text": "ad",
+          "start": 43.8,
+          "end": 43.88
+        }
+      ]
+    },
+    {
+      "start": 43.94,
+      "end": 49.081,
+      "text": "alfa circa zero virgola settecentosettantacinque e beta circa zero virgola seicentotrentadue.",
+      "words": [
+        {
+          "text": "alfa",
+          "start": 43.94,
+          "end": 44.18
+        },
+        {
+          "text": "circa",
+          "start": 44.3,
+          "end": 44.58
+        },
+        {
+          "text": "zero",
+          "start": 44.72,
+          "end": 44.94
+        },
+        {
+          "text": "virgola",
+          "start": 45.0,
+          "end": 45.32
+        },
+        {
+          "text": "settecentosettantacinque",
+          "start": 45.36,
+          "end": 46.5
+        },
+        {
+          "text": "e",
+          "start": 46.9,
+          "end": 46.94
+        },
+        {
+          "text": "beta",
+          "start": 47.0,
+          "end": 47.24
+        },
+        {
+          "text": "circa",
+          "start": 47.3,
+          "end": 47.62
+        },
+        {
+          "text": "zero",
+          "start": 47.72,
+          "end": 47.94
+        },
+        {
+          "text": "virgola",
+          "start": 47.98,
+          "end": 48.26
+        },
+        {
+          "text": "seicentotrentadue.",
+          "start": 48.32,
+          "end": 49.081
+        }
+      ]
+    },
+    {
+      "start": 49.921,
+      "end": 54.321,
+      "text": "Quando però misuriamo il qubit, lo stato collassa istantaneamente su un unico valore,",
+      "words": [
+        {
+          "text": "Quando",
+          "start": 49.921,
+          "end": 50.121
+        },
+        {
+          "text": "però",
+          "start": 50.161,
+          "end": 50.301
+        },
+        {
+          "text": "misuriamo",
+          "start": 50.381,
+          "end": 50.841
+        },
+        {
+          "text": "il",
+          "start": 50.881,
+          "end": 50.941
+        },
+        {
+          "text": "qubit,",
+          "start": 50.981,
+          "end": 51.341
+        },
+        {
+          "text": "lo",
+          "start": 51.541,
+          "end": 51.621
+        },
+        {
+          "text": "stato",
+          "start": 51.661,
+          "end": 51.901
+        },
+        {
+          "text": "collassa",
+          "start": 52.021,
+          "end": 52.541
+        },
+        {
+          "text": "istantaneamente",
+          "start": 52.601,
+          "end": 53.441
+        },
+        {
+          "text": "su",
+          "start": 53.501,
+          "end": 53.581
+        },
+        {
+          "text": "un",
+          "start": 53.641,
+          "end": 53.701
+        },
+        {
+          "text": "unico",
+          "start": 53.761,
+          "end": 54.001
+        },
+        {
+          "text": "valore,",
+          "start": 54.041,
+          "end": 54.321
+        }
+      ]
+    },
+    {
+      "start": 54.721,
+      "end": 55.781,
+      "text": "zero oppure uno.",
+      "words": [
+        {
+          "text": "zero",
+          "start": 54.721,
+          "end": 54.981
+        },
+        {
+          "text": "oppure",
+          "start": 55.241,
+          "end": 55.561
+        },
+        {
+          "text": "uno.",
+          "start": 55.641,
+          "end": 55.781
+        }
+      ]
+    },
+    {
+      "start": 56.542,
+      "end": 61.802,
+      "text": "Con più qubit entra in gioco l'entanglement: gli stati diventano correlati a qualsiasi distanza.",
+      "words": [
+        {
+          "text": "Con",
+          "start": 56.542,
+          "end": 56.682
+        },
+        {
+          "text": "più",
+          "start": 56.722,
+          "end": 56.842
+        },
+        {
+          "text": "qubit",
+          "start": 56.922,
+          "end": 57.242
+        },
+        {
+          "text": "entra",
+          "start": 57.442,
+          "end": 57.642
+        },
+        {
+          "text": "in",
+          "start": 57.682,
+          "end": 57.742
+        },
+        {
+          "text": "gioco",
+          "start": 57.782,
+          "end": 58.002
+        },
+        {
+          "text": "l'entanglement:",
+          "start": 58.082,
+          "end": 58.842
+        },
+        {
+          "text": "gli",
+          "start": 59.282,
+          "end": 59.422
+        },
+        {
+          "text": "stati",
+          "start": 59.462,
+          "end": 59.702
+        },
+        {
+          "text": "diventano",
+          "start": 59.742,
+          "end": 60.142
+        },
+        {
+          "text": "correlati",
+          "start": 60.202,
+          "end": 60.702
+        },
+        {
+          "text": "a",
+          "start": 60.802,
+          "end": 60.842
+        },
+        {
+          "text": "qualsiasi",
+          "start": 60.882,
+          "end": 61.282
+        },
+        {
+          "text": "distanza.",
+          "start": 61.322,
+          "end": 61.802
+        }
+      ]
+    },
+    {
+      "start": 62.342,
+      "end": 66.943,
+      "text": "Se due qubit sono al cinquanta per cento blu-rosso e cinquanta per cento rosso-blu,",
+      "words": [
+        {
+          "text": "Se",
+          "start": 62.342,
+          "end": 62.422
+        },
+        {
+          "text": "due",
+          "start": 62.522,
+          "end": 62.682
+        },
+        {
+          "text": "qubit",
+          "start": 62.742,
+          "end": 63.062
+        },
+        {
+          "text": "sono",
+          "start": 63.183,
+          "end": 63.323
+        },
+        {
+          "text": "al",
+          "start": 63.343,
+          "end": 63.403
+        },
+        {
+          "text": "cinquanta",
+          "start": 63.443,
+          "end": 63.843
+        },
+        {
+          "text": "per",
+          "start": 63.883,
+          "end": 63.983
+        },
+        {
+          "text": "cento",
+          "start": 64.043,
+          "end": 64.323
+        },
+        {
+          "text": "blu-rosso",
+          "start": 64.463,
+          "end": 65.183
+        },
+        {
+          "text": "e",
+          "start": 65.363,
+          "end": 65.403
+        },
+        {
+          "text": "cinquanta",
+          "start": 65.483,
+          "end": 65.903
+        },
+        {
+          "text": "per",
+          "start": 65.943,
+          "end": 66.023
+        },
+        {
+          "text": "cento",
+          "start": 66.083,
+          "end": 66.363
+        },
+        {
+          "text": "rosso-blu,",
+          "start": 66.463,
+          "end": 66.943
+        }
+      ]
+    },
+    {
+      "start": 67.463,
+      "end": 73.404,
+      "text": "presi da soli sono imprevedibili, ma misurando blu sul primo il secondo è immediatamente determinato",
+      "words": [
+        {
+          "text": "presi",
+          "start": 67.463,
+          "end": 67.723
+        },
+        {
+          "text": "da",
+          "start": 67.783,
+          "end": 67.843
+        },
+        {
+          "text": "soli",
+          "start": 67.923,
+          "end": 68.163
+        },
+        {
+          "text": "sono",
+          "start": 68.283,
+          "end": 68.443
+        },
+        {
+          "text": "imprevedibili,",
+          "start": 68.463,
+          "end": 69.063
+        },
+        {
+          "text": "ma",
+          "start": 69.443,
+          "end": 69.483
+        },
+        {
+          "text": "misurando",
+          "start": 69.663,
+          "end": 70.143
+        },
+        {
+          "text": "blu",
+          "start": 70.243,
+          "end": 70.423
+        },
+        {
+          "text": "sul",
+          "start": 70.524,
+          "end": 70.684
+        },
+        {
+          "text": "primo",
+          "start": 70.764,
+          "end": 71.044
+        },
+        {
+          "text": "il",
+          "start": 71.304,
+          "end": 71.404
+        },
+        {
+          "text": "secondo",
+          "start": 71.484,
+          "end": 71.864
+        },
+        {
+          "text": "è",
+          "start": 71.944,
+          "end": 71.98400000000001
+        },
+        {
+          "text": "immediatamente",
+          "start": 72.044,
+          "end": 72.784
+        },
+        {
+          "text": "determinato",
+          "start": 72.824,
+          "end": 73.404
+        }
+      ]
+    },
+    {
+      "start": 73.444,
+      "end": 73.924,
+      "text": "come rosso.",
+      "words": [
+        {
+          "text": "come",
+          "start": 73.444,
+          "end": 73.584
+        },
+        {
+          "text": "rosso.",
+          "start": 73.624,
+          "end": 73.924
+        }
+      ]
+    }
+  ]
+}

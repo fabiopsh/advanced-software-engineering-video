@@ -1,0 +1,994 @@
+{
+  "duration": 72.733,
+  "segments": [
+    {
+      "start": 0.02,
+      "end": 4.04,
+      "text": "Analizziamo ora i tre smell che violano il principio di decentralisation.",
+      "words": [
+        {
+          "text": "Analizziamo",
+          "start": 0.02,
+          "end": 0.62
+        },
+        {
+          "text": "ora",
+          "start": 0.68,
+          "end": 0.8
+        },
+        {
+          "text": "i",
+          "start": 0.86,
+          "end": 0.9
+        },
+        {
+          "text": "tre",
+          "start": 0.98,
+          "end": 1.12
+        },
+        {
+          "text": "smell",
+          "start": 1.24,
+          "end": 1.58
+        },
+        {
+          "text": "che",
+          "start": 1.7,
+          "end": 1.8
+        },
+        {
+          "text": "violano",
+          "start": 1.92,
+          "end": 2.34
+        },
+        {
+          "text": "il",
+          "start": 2.4,
+          "end": 2.44
+        },
+        {
+          "text": "principio",
+          "start": 2.48,
+          "end": 2.94
+        },
+        {
+          "text": "di",
+          "start": 2.98,
+          "end": 3.06
+        },
+        {
+          "text": "decentralisation.",
+          "start": 3.18,
+          "end": 4.04
+        }
+      ]
+    },
+    {
+      "start": 4.82,
+      "end": 7.781,
+      "text": "Il primo è shared persistence, diciannove citazioni:",
+      "words": [
+        {
+          "text": "Il",
+          "start": 4.82,
+          "end": 4.9
+        },
+        {
+          "text": "primo",
+          "start": 4.94,
+          "end": 5.18
+        },
+        {
+          "text": "è",
+          "start": 5.34,
+          "end": 5.38
+        },
+        {
+          "text": "shared",
+          "start": 5.6,
+          "end": 5.9
+        },
+        {
+          "text": "persistence,",
+          "start": 5.96,
+          "end": 6.6
+        },
+        {
+          "text": "diciannove",
+          "start": 6.82,
+          "end": 7.22
+        },
+        {
+          "text": "citazioni:",
+          "start": 7.281,
+          "end": 7.781
+        }
+      ]
+    },
+    {
+      "start": 8.401,
+      "end": 10.621,
+      "text": "più servizi accedono allo stesso database.",
+      "words": [
+        {
+          "text": "più",
+          "start": 8.401,
+          "end": 8.501
+        },
+        {
+          "text": "servizi",
+          "start": 8.581,
+          "end": 9.001
+        },
+        {
+          "text": "accedono",
+          "start": 9.141,
+          "end": 9.601
+        },
+        {
+          "text": "allo",
+          "start": 9.641,
+          "end": 9.781
+        },
+        {
+          "text": "stesso",
+          "start": 9.821,
+          "end": 10.081
+        },
+        {
+          "text": "database.",
+          "start": 10.121,
+          "end": 10.621
+        }
+      ]
+    },
+    {
+      "start": 11.181,
+      "end": 15.321,
+      "text": "Pensiamo ai servizi Ordini e Fatturazione che condividono la tabella clienti:",
+      "words": [
+        {
+          "text": "Pensiamo",
+          "start": 11.181,
+          "end": 11.481
+        },
+        {
+          "text": "ai",
+          "start": 11.521,
+          "end": 11.581
+        },
+        {
+          "text": "servizi",
+          "start": 11.601,
+          "end": 12.001
+        },
+        {
+          "text": "Ordini",
+          "start": 12.181,
+          "end": 12.541
+        },
+        {
+          "text": "e",
+          "start": 12.661,
+          "end": 12.701
+        },
+        {
+          "text": "Fatturazione",
+          "start": 12.781,
+          "end": 13.521
+        },
+        {
+          "text": "che",
+          "start": 13.801,
+          "end": 13.881
+        },
+        {
+          "text": "condividono",
+          "start": 13.921,
+          "end": 14.401
+        },
+        {
+          "text": "la",
+          "start": 14.461,
+          "end": 14.521
+        },
+        {
+          "text": "tabella",
+          "start": 14.541,
+          "end": 14.841
+        },
+        {
+          "text": "clienti:",
+          "start": 14.881,
+          "end": 15.321
+        }
+      ]
+    },
+    {
+      "start": 15.861,
+      "end": 19.161,
+      "text": "se Ordini rinomina una colonna, Fatturazione smette di funzionare,",
+      "words": [
+        {
+          "text": "se",
+          "start": 15.861,
+          "end": 15.941
+        },
+        {
+          "text": "Ordini",
+          "start": 16.101,
+          "end": 16.441
+        },
+        {
+          "text": "rinomina",
+          "start": 16.501,
+          "end": 16.861
+        },
+        {
+          "text": "una",
+          "start": 16.901,
+          "end": 17.001
+        },
+        {
+          "text": "colonna,",
+          "start": 17.041,
+          "end": 17.401
+        },
+        {
+          "text": "Fatturazione",
+          "start": 17.741,
+          "end": 18.261
+        },
+        {
+          "text": "smette",
+          "start": 18.301,
+          "end": 18.541
+        },
+        {
+          "text": "di",
+          "start": 18.581,
+          "end": 18.621
+        },
+        {
+          "text": "funzionare,",
+          "start": 18.661,
+          "end": 19.161
+        }
+      ]
+    },
+    {
+      "start": 19.661,
+      "end": 23.342,
+      "text": "i deploy devono essere coordinati e i picchi di carico si propagano.",
+      "words": [
+        {
+          "text": "i",
+          "start": 19.661,
+          "end": 19.701
+        },
+        {
+          "text": "deploy",
+          "start": 19.721,
+          "end": 20.121
+        },
+        {
+          "text": "devono",
+          "start": 20.221,
+          "end": 20.441
+        },
+        {
+          "text": "essere",
+          "start": 20.501,
+          "end": 20.721
+        },
+        {
+          "text": "coordinati",
+          "start": 20.781,
+          "end": 21.361
+        },
+        {
+          "text": "e",
+          "start": 21.762,
+          "end": 21.802
+        },
+        {
+          "text": "i",
+          "start": 21.882,
+          "end": 21.922
+        },
+        {
+          "text": "picchi",
+          "start": 21.982,
+          "end": 22.222
+        },
+        {
+          "text": "di",
+          "start": 22.262,
+          "end": 22.322
+        },
+        {
+          "text": "carico",
+          "start": 22.362,
+          "end": 22.682
+        },
+        {
+          "text": "si",
+          "start": 22.762,
+          "end": 22.842
+        },
+        {
+          "text": "propagano.",
+          "start": 22.882,
+          "end": 23.342
+        }
+      ]
+    },
+    {
+      "start": 24.102,
+      "end": 26.262,
+      "text": "Come mostra il diagramma, si risolve in tre modi:",
+      "words": [
+        {
+          "text": "Come",
+          "start": 24.102,
+          "end": 24.242
+        },
+        {
+          "text": "mostra",
+          "start": 24.282,
+          "end": 24.502
+        },
+        {
+          "text": "il",
+          "start": 24.522,
+          "end": 24.602
+        },
+        {
+          "text": "diagramma,",
+          "start": 24.602,
+          "end": 25.002
+        },
+        {
+          "text": "si",
+          "start": 25.322,
+          "end": 25.402
+        },
+        {
+          "text": "risolve",
+          "start": 25.442,
+          "end": 25.722
+        },
+        {
+          "text": "in",
+          "start": 25.782,
+          "end": 25.822
+        },
+        {
+          "text": "tre",
+          "start": 25.862,
+          "end": 25.962
+        },
+        {
+          "text": "modi:",
+          "start": 26.042,
+          "end": 26.262
+        }
+      ]
+    },
+    {
+      "start": 26.802,
+      "end": 32.062,
+      "text": "split database al cinquanta per cento, con un database per servizio e dati eventualmente coerenti;",
+      "words": [
+        {
+          "text": "split",
+          "start": 26.802,
+          "end": 27.082
+        },
+        {
+          "text": "database",
+          "start": 27.122,
+          "end": 27.622
+        },
+        {
+          "text": "al",
+          "start": 27.742,
+          "end": 27.842
+        },
+        {
+          "text": "cinquanta",
+          "start": 27.882,
+          "end": 28.242
+        },
+        {
+          "text": "per",
+          "start": 28.262,
+          "end": 28.362
+        },
+        {
+          "text": "cento,",
+          "start": 28.422,
+          "end": 28.742
+        },
+        {
+          "text": "con",
+          "start": 29.022,
+          "end": 29.142
+        },
+        {
+          "text": "un",
+          "start": 29.182,
+          "end": 29.242
+        },
+        {
+          "text": "database",
+          "start": 29.262,
+          "end": 29.702
+        },
+        {
+          "text": "per",
+          "start": 29.722,
+          "end": 29.822
+        },
+        {
+          "text": "servizio",
+          "start": 29.882,
+          "end": 30.322
+        },
+        {
+          "text": "e",
+          "start": 30.482,
+          "end": 30.522
+        },
+        {
+          "text": "dati",
+          "start": 30.562,
+          "end": 30.782
+        },
+        {
+          "text": "eventualmente",
+          "start": 30.882,
+          "end": 31.522
+        },
+        {
+          "text": "coerenti;",
+          "start": 31.562,
+          "end": 32.062
+        }
+      ]
+    },
+    {
+      "start": 32.822,
+      "end": 37.643,
+      "text": "add data manager al quarantuno per cento, introducendo un servizio dedicato ai dati con poche",
+      "words": [
+        {
+          "text": "add",
+          "start": 32.822,
+          "end": 32.942
+        },
+        {
+          "text": "data",
+          "start": 33.042,
+          "end": 33.222
+        },
+        {
+          "text": "manager",
+          "start": 33.262,
+          "end": 33.662
+        },
+        {
+          "text": "al",
+          "start": 33.802,
+          "end": 33.882
+        },
+        {
+          "text": "quarantuno",
+          "start": 33.942,
+          "end": 34.362
+        },
+        {
+          "text": "per",
+          "start": 34.402,
+          "end": 34.502
+        },
+        {
+          "text": "cento,",
+          "start": 34.562,
+          "end": 34.882
+        },
+        {
+          "text": "introducendo",
+          "start": 35.162,
+          "end": 35.682
+        },
+        {
+          "text": "un",
+          "start": 35.742,
+          "end": 35.802
+        },
+        {
+          "text": "servizio",
+          "start": 35.822,
+          "end": 36.202
+        },
+        {
+          "text": "dedicato",
+          "start": 36.263,
+          "end": 36.643
+        },
+        {
+          "text": "ai",
+          "start": 36.663,
+          "end": 36.723
+        },
+        {
+          "text": "dati",
+          "start": 36.763,
+          "end": 37.063
+        },
+        {
+          "text": "con",
+          "start": 37.183,
+          "end": 37.323
+        },
+        {
+          "text": "poche",
+          "start": 37.423,
+          "end": 37.643
+        }
+      ]
+    },
+    {
+      "start": 37.663,
+      "end": 39.303,
+      "text": "modifiche ma più comunicazione;",
+      "words": [
+        {
+          "text": "modifiche",
+          "start": 37.663,
+          "end": 38.123
+        },
+        {
+          "text": "ma",
+          "start": 38.223,
+          "end": 38.283
+        },
+        {
+          "text": "più",
+          "start": 38.383,
+          "end": 38.503
+        },
+        {
+          "text": "comunicazione;",
+          "start": 38.563,
+          "end": 39.303
+        }
+      ]
+    },
+    {
+      "start": 39.883,
+      "end": 43.483,
+      "text": "oppure merge services al nove per cento, fondendo i due servizi.",
+      "words": [
+        {
+          "text": "oppure",
+          "start": 39.883,
+          "end": 40.183
+        },
+        {
+          "text": "merge",
+          "start": 40.323,
+          "end": 40.603
+        },
+        {
+          "text": "services",
+          "start": 40.643,
+          "end": 41.103
+        },
+        {
+          "text": "al",
+          "start": 41.323,
+          "end": 41.383
+        },
+        {
+          "text": "nove",
+          "start": 41.423,
+          "end": 41.603
+        },
+        {
+          "text": "per",
+          "start": 41.643,
+          "end": 41.743
+        },
+        {
+          "text": "cento,",
+          "start": 41.783,
+          "end": 42.083
+        },
+        {
+          "text": "fondendo",
+          "start": 42.383,
+          "end": 42.823
+        },
+        {
+          "text": "i",
+          "start": 42.883,
+          "end": 42.923
+        },
+        {
+          "text": "due",
+          "start": 42.923,
+          "end": 43.023
+        },
+        {
+          "text": "servizi.",
+          "start": 43.063,
+          "end": 43.483
+        }
+      ]
+    },
+    {
+      "start": 44.323,
+      "end": 47.383,
+      "text": "Il secondo smell è single-layer teams, nove citazioni:",
+      "words": [
+        {
+          "text": "Il",
+          "start": 44.323,
+          "end": 44.383
+        },
+        {
+          "text": "secondo",
+          "start": 44.443,
+          "end": 44.723
+        },
+        {
+          "text": "smell",
+          "start": 44.763,
+          "end": 45.003
+        },
+        {
+          "text": "è",
+          "start": 45.143,
+          "end": 45.183
+        },
+        {
+          "text": "single-layer",
+          "start": 45.323,
+          "end": 45.883
+        },
+        {
+          "text": "teams,",
+          "start": 45.943,
+          "end": 46.283
+        },
+        {
+          "text": "nove",
+          "start": 46.623,
+          "end": 46.803
+        },
+        {
+          "text": "citazioni:",
+          "start": 46.843,
+          "end": 47.383
+        }
+      ]
+    },
+    {
+      "start": 48.043,
+      "end": 53.304,
+      "text": "team separati per interfaccia, logica e database impediscono lo sviluppo autonomo delle feature;",
+      "words": [
+        {
+          "text": "team",
+          "start": 48.043,
+          "end": 48.183
+        },
+        {
+          "text": "separati",
+          "start": 48.243,
+          "end": 48.603
+        },
+        {
+          "text": "per",
+          "start": 48.643,
+          "end": 48.763
+        },
+        {
+          "text": "interfaccia,",
+          "start": 48.883,
+          "end": 49.523
+        },
+        {
+          "text": "logica",
+          "start": 49.763,
+          "end": 50.163
+        },
+        {
+          "text": "e",
+          "start": 50.323,
+          "end": 50.363
+        },
+        {
+          "text": "database",
+          "start": 50.403,
+          "end": 50.884
+        },
+        {
+          "text": "impediscono",
+          "start": 51.284,
+          "end": 51.864
+        },
+        {
+          "text": "lo",
+          "start": 51.924,
+          "end": 51.984
+        },
+        {
+          "text": "sviluppo",
+          "start": 52.024,
+          "end": 52.324
+        },
+        {
+          "text": "autonomo",
+          "start": 52.384,
+          "end": 52.764
+        },
+        {
+          "text": "delle",
+          "start": 52.804,
+          "end": 52.964
+        },
+        {
+          "text": "feature;",
+          "start": 53.004,
+          "end": 53.304
+        }
+      ]
+    },
+    {
+      "start": 53.824,
+      "end": 58.664,
+      "text": "il refactoring è split teams by service, creando team DevOps completi per servizio.",
+      "words": [
+        {
+          "text": "il",
+          "start": 53.824,
+          "end": 53.904
+        },
+        {
+          "text": "refactoring",
+          "start": 53.944,
+          "end": 54.484
+        },
+        {
+          "text": "è",
+          "start": 54.564,
+          "end": 54.604
+        },
+        {
+          "text": "split",
+          "start": 54.944,
+          "end": 55.244
+        },
+        {
+          "text": "teams",
+          "start": 55.304,
+          "end": 55.584
+        },
+        {
+          "text": "by",
+          "start": 55.644,
+          "end": 55.744
+        },
+        {
+          "text": "service,",
+          "start": 55.804,
+          "end": 56.224
+        },
+        {
+          "text": "creando",
+          "start": 56.524,
+          "end": 56.824
+        },
+        {
+          "text": "team",
+          "start": 56.924,
+          "end": 57.084
+        },
+        {
+          "text": "DevOps",
+          "start": 57.164,
+          "end": 57.484
+        },
+        {
+          "text": "completi",
+          "start": 57.544,
+          "end": 58.024
+        },
+        {
+          "text": "per",
+          "start": 58.084,
+          "end": 58.184
+        },
+        {
+          "text": "servizio.",
+          "start": 58.224,
+          "end": 58.664
+        }
+      ]
+    },
+    {
+      "start": 59.344,
+      "end": 62.064,
+      "text": "Infine, ESB misuse, sei citazioni:",
+      "words": [
+        {
+          "text": "Infine,",
+          "start": 59.344,
+          "end": 59.664
+        },
+        {
+          "text": "ESB",
+          "start": 60.124,
+          "end": 60.444
+        },
+        {
+          "text": "misuse,",
+          "start": 60.584,
+          "end": 61.084
+        },
+        {
+          "text": "sei",
+          "start": 61.324,
+          "end": 61.464
+        },
+        {
+          "text": "citazioni:",
+          "start": 61.524,
+          "end": 62.064
+        }
+      ]
+    },
+    {
+      "start": 62.664,
+      "end": 67.545,
+      "text": "quando l'enterprise service bus contiene logica di business diventa un collo di bottiglia centrale;",
+      "words": [
+        {
+          "text": "quando",
+          "start": 62.664,
+          "end": 62.864
+        },
+        {
+          "text": "l'enterprise",
+          "start": 62.944,
+          "end": 63.444
+        },
+        {
+          "text": "service",
+          "start": 63.464,
+          "end": 63.764
+        },
+        {
+          "text": "bus",
+          "start": 63.784,
+          "end": 64.024
+        },
+        {
+          "text": "contiene",
+          "start": 64.124,
+          "end": 64.484
+        },
+        {
+          "text": "logica",
+          "start": 64.584,
+          "end": 64.884
+        },
+        {
+          "text": "di",
+          "start": 64.924,
+          "end": 64.984
+        },
+        {
+          "text": "business",
+          "start": 65.044,
+          "end": 65.445
+        },
+        {
+          "text": "diventa",
+          "start": 65.765,
+          "end": 66.105
+        },
+        {
+          "text": "un",
+          "start": 66.145,
+          "end": 66.205
+        },
+        {
+          "text": "collo",
+          "start": 66.285,
+          "end": 66.545
+        },
+        {
+          "text": "di",
+          "start": 66.585,
+          "end": 66.645
+        },
+        {
+          "text": "bottiglia",
+          "start": 66.685,
+          "end": 67.065
+        },
+        {
+          "text": "centrale;",
+          "start": 67.105,
+          "end": 67.545
+        }
+      ]
+    },
+    {
+      "start": 68.205,
+      "end": 72.305,
+      "text": "il refactoring rightsize ESB lo riporta al solo instradamento dei messaggi.",
+      "words": [
+        {
+          "text": "il",
+          "start": 68.205,
+          "end": 68.285
+        },
+        {
+          "text": "refactoring",
+          "start": 68.325,
+          "end": 68.865
+        },
+        {
+          "text": "rightsize",
+          "start": 69.065,
+          "end": 69.585
+        },
+        {
+          "text": "ESB",
+          "start": 69.625,
+          "end": 69.865
+        },
+        {
+          "text": "lo",
+          "start": 70.165,
+          "end": 70.245
+        },
+        {
+          "text": "riporta",
+          "start": 70.285,
+          "end": 70.605
+        },
+        {
+          "text": "al",
+          "start": 70.645,
+          "end": 70.705
+        },
+        {
+          "text": "solo",
+          "start": 70.845,
+          "end": 71.085
+        },
+        {
+          "text": "instradamento",
+          "start": 71.145,
+          "end": 71.725
+        },
+        {
+          "text": "dei",
+          "start": 71.745,
+          "end": 71.845
+        },
+        {
+          "text": "messaggi.",
+          "start": 71.865,
+          "end": 72.305
+        }
+      ]
+    }
+  ]
+}

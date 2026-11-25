@@ -1,0 +1,1134 @@
+{
+  "duration": 85.11,
+  "segments": [
+    {
+      "start": 0.08,
+      "end": 4.281,
+      "text": "Approfondiamo quattro casi chiave d'esame su unit testing, feature test,",
+      "words": [
+        {
+          "text": "Approfondiamo",
+          "start": 0.08,
+          "end": 0.62
+        },
+        {
+          "text": "quattro",
+          "start": 0.8,
+          "end": 1.14
+        },
+        {
+          "text": "casi",
+          "start": 1.18,
+          "end": 1.42
+        },
+        {
+          "text": "chiave",
+          "start": 1.5,
+          "end": 1.78
+        },
+        {
+          "text": "d'esame",
+          "start": 1.82,
+          "end": 2.221
+        },
+        {
+          "text": "su",
+          "start": 2.321,
+          "end": 2.401
+        },
+        {
+          "text": "unit",
+          "start": 2.541,
+          "end": 2.741
+        },
+        {
+          "text": "testing,",
+          "start": 2.781,
+          "end": 3.241
+        },
+        {
+          "text": "feature",
+          "start": 3.561,
+          "end": 3.901
+        },
+        {
+          "text": "test,",
+          "start": 3.941,
+          "end": 4.281
+        }
+      ]
+    },
+    {
+      "start": 4.641,
+      "end": 5.941,
+      "text": "TDD e code review.",
+      "words": [
+        {
+          "text": "TDD",
+          "start": 4.641,
+          "end": 4.981
+        },
+        {
+          "text": "e",
+          "start": 5.321,
+          "end": 5.361
+        },
+        {
+          "text": "code",
+          "start": 5.461,
+          "end": 5.721
+        },
+        {
+          "text": "review.",
+          "start": 5.721,
+          "end": 5.941
+        }
+      ]
+    },
+    {
+      "start": 6.922,
+      "end": 8.922,
+      "text": "Partiamo dal principio dello unit testing:",
+      "words": [
+        {
+          "text": "Partiamo",
+          "start": 6.922,
+          "end": 7.262
+        },
+        {
+          "text": "dal",
+          "start": 7.302,
+          "end": 7.422
+        },
+        {
+          "text": "principio",
+          "start": 7.482,
+          "end": 7.962
+        },
+        {
+          "text": "dello",
+          "start": 7.982,
+          "end": 8.142
+        },
+        {
+          "text": "unit",
+          "start": 8.262,
+          "end": 8.462
+        },
+        {
+          "text": "testing:",
+          "start": 8.502,
+          "end": 8.922
+        }
+      ]
+    },
+    {
+      "start": 9.482,
+      "end": 14.683,
+      "text": "se un'unità funziona sugli input uno, cinque, diciassette, quarantacinque e novantanove,",
+      "words": [
+        {
+          "text": "se",
+          "start": 9.482,
+          "end": 9.562
+        },
+        {
+          "text": "un'unità",
+          "start": 9.622,
+          "end": 10.002
+        },
+        {
+          "text": "funziona",
+          "start": 10.122,
+          "end": 10.542
+        },
+        {
+          "text": "sugli",
+          "start": 10.602,
+          "end": 10.803
+        },
+        {
+          "text": "input",
+          "start": 10.843,
+          "end": 11.163
+        },
+        {
+          "text": "uno,",
+          "start": 11.503,
+          "end": 11.703
+        },
+        {
+          "text": "cinque,",
+          "start": 11.963,
+          "end": 12.383
+        },
+        {
+          "text": "diciassette,",
+          "start": 12.523,
+          "end": 13.143
+        },
+        {
+          "text": "quarantacinque",
+          "start": 13.263,
+          "end": 13.963
+        },
+        {
+          "text": "e",
+          "start": 14.003,
+          "end": 14.043
+        },
+        {
+          "text": "novantanove,",
+          "start": 14.083,
+          "end": 14.683
+        }
+      ]
+    },
+    {
+      "start": 15.104,
+      "end": 18.064,
+      "text": "otteniamo fiducia su tutti gli interi da uno a novantanove.",
+      "words": [
+        {
+          "text": "otteniamo",
+          "start": 15.104,
+          "end": 15.524
+        },
+        {
+          "text": "fiducia",
+          "start": 15.584,
+          "end": 15.964
+        },
+        {
+          "text": "su",
+          "start": 16.024,
+          "end": 16.104
+        },
+        {
+          "text": "tutti",
+          "start": 16.204,
+          "end": 16.444
+        },
+        {
+          "text": "gli",
+          "start": 16.464,
+          "end": 16.584
+        },
+        {
+          "text": "interi",
+          "start": 16.624,
+          "end": 17.004
+        },
+        {
+          "text": "da",
+          "start": 17.064,
+          "end": 17.144
+        },
+        {
+          "text": "uno",
+          "start": 17.244,
+          "end": 17.384
+        },
+        {
+          "text": "a",
+          "start": 17.444,
+          "end": 17.484
+        },
+        {
+          "text": "novantanove.",
+          "start": 17.524,
+          "end": 18.064
+        }
+      ]
+    },
+    {
+      "start": 18.964,
+      "end": 23.566,
+      "text": "Nelle linee guida, Force errors chiede input che generino output non validi;",
+      "words": [
+        {
+          "text": "Nelle",
+          "start": 18.964,
+          "end": 19.185
+        },
+        {
+          "text": "linee",
+          "start": 19.265,
+          "end": 19.505
+        },
+        {
+          "text": "guida,",
+          "start": 19.565,
+          "end": 19.865
+        },
+        {
+          "text": "Force",
+          "start": 20.105,
+          "end": 20.405
+        },
+        {
+          "text": "errors",
+          "start": 20.505,
+          "end": 20.905
+        },
+        {
+          "text": "chiede",
+          "start": 21.025,
+          "end": 21.265
+        },
+        {
+          "text": "input",
+          "start": 21.445,
+          "end": 21.805
+        },
+        {
+          "text": "che",
+          "start": 21.885,
+          "end": 21.965
+        },
+        {
+          "text": "generino",
+          "start": 22.025,
+          "end": 22.485
+        },
+        {
+          "text": "output",
+          "start": 22.645,
+          "end": 22.965
+        },
+        {
+          "text": "non",
+          "start": 23.065,
+          "end": 23.185
+        },
+        {
+          "text": "validi;",
+          "start": 23.225,
+          "end": 23.566
+        }
+      ]
+    },
+    {
+      "start": 24.126,
+      "end": 27.386,
+      "text": "Repeat yourself ripete sia singoli input sia sequenze;",
+      "words": [
+        {
+          "text": "Repeat",
+          "start": 24.126,
+          "end": 24.386
+        },
+        {
+          "text": "yourself",
+          "start": 24.406,
+          "end": 24.886
+        },
+        {
+          "text": "ripete",
+          "start": 25.086,
+          "end": 25.386
+        },
+        {
+          "text": "sia",
+          "start": 25.506,
+          "end": 25.686
+        },
+        {
+          "text": "singoli",
+          "start": 25.786,
+          "end": 26.106
+        },
+        {
+          "text": "input",
+          "start": 26.166,
+          "end": 26.506
+        },
+        {
+          "text": "sia",
+          "start": 26.706,
+          "end": 26.866
+        },
+        {
+          "text": "sequenze;",
+          "start": 26.926,
+          "end": 27.386
+        }
+      ]
+    },
+    {
+      "start": 27.967,
+      "end": 31.507,
+      "text": "Don't forget null and zero prova puntatori nulli, stringhe nulle,",
+      "words": [
+        {
+          "text": "Don't",
+          "start": 27.967,
+          "end": 28.107
+        },
+        {
+          "text": "forget",
+          "start": 28.127,
+          "end": 28.467
+        },
+        {
+          "text": "null",
+          "start": 28.587,
+          "end": 28.847
+        },
+        {
+          "text": "and",
+          "start": 29.007,
+          "end": 29.127
+        },
+        {
+          "text": "zero",
+          "start": 29.167,
+          "end": 29.407
+        },
+        {
+          "text": "prova",
+          "start": 29.587,
+          "end": 29.787
+        },
+        {
+          "text": "puntatori",
+          "start": 29.907,
+          "end": 30.347
+        },
+        {
+          "text": "nulli,",
+          "start": 30.387,
+          "end": 30.687
+        },
+        {
+          "text": "stringhe",
+          "start": 30.847,
+          "end": 31.167
+        },
+        {
+          "text": "nulle,",
+          "start": 31.207,
+          "end": 31.507
+        }
+      ]
+    },
+    {
+      "start": 31.687,
+      "end": 33.128,
+      "text": "sequenze vuote e zero.",
+      "words": [
+        {
+          "text": "sequenze",
+          "start": 31.687,
+          "end": 32.108
+        },
+        {
+          "text": "vuote",
+          "start": 32.148,
+          "end": 32.468
+        },
+        {
+          "text": "e",
+          "start": 32.728,
+          "end": 32.768
+        },
+        {
+          "text": "zero.",
+          "start": 32.888,
+          "end": 33.128
+        }
+      ]
+    },
+    {
+      "start": 33.948,
+      "end": 39.189,
+      "text": "Questo spiega l'esempio sugli interessi: con capitale p uguale a zero il risultato atteso è",
+      "words": [
+        {
+          "text": "Questo",
+          "start": 33.948,
+          "end": 34.168
+        },
+        {
+          "text": "spiega",
+          "start": 34.208,
+          "end": 34.508
+        },
+        {
+          "text": "l'esempio",
+          "start": 34.548,
+          "end": 34.948
+        },
+        {
+          "text": "sugli",
+          "start": 35.008,
+          "end": 35.188
+        },
+        {
+          "text": "interessi:",
+          "start": 35.228,
+          "end": 35.688
+        },
+        {
+          "text": "con",
+          "start": 36.108,
+          "end": 36.249
+        },
+        {
+          "text": "capitale",
+          "start": 36.289,
+          "end": 36.729
+        },
+        {
+          "text": "p",
+          "start": 36.849,
+          "end": 36.889
+        },
+        {
+          "text": "uguale",
+          "start": 37.249,
+          "end": 37.549
+        },
+        {
+          "text": "a",
+          "start": 37.589,
+          "end": 37.629
+        },
+        {
+          "text": "zero",
+          "start": 37.689,
+          "end": 37.989
+        },
+        {
+          "text": "il",
+          "start": 38.189,
+          "end": 38.249
+        },
+        {
+          "text": "risultato",
+          "start": 38.309,
+          "end": 38.709
+        },
+        {
+          "text": "atteso",
+          "start": 38.729,
+          "end": 39.089
+        },
+        {
+          "text": "è",
+          "start": 39.149,
+          "end": 39.189
+        }
+      ]
+    },
+    {
+      "start": 39.269,
+      "end": 41.85,
+      "text": "zero qualunque siano il tasso r e i giorni n,",
+      "words": [
+        {
+          "text": "zero",
+          "start": 39.269,
+          "end": 39.549
+        },
+        {
+          "text": "qualunque",
+          "start": 39.609,
+          "end": 39.969
+        },
+        {
+          "text": "siano",
+          "start": 40.049,
+          "end": 40.289
+        },
+        {
+          "text": "il",
+          "start": 40.329,
+          "end": 40.409
+        },
+        {
+          "text": "tasso",
+          "start": 40.449,
+          "end": 40.69
+        },
+        {
+          "text": "r",
+          "start": 40.99,
+          "end": 41.03
+        },
+        {
+          "text": "e",
+          "start": 41.21,
+          "end": 41.25
+        },
+        {
+          "text": "i",
+          "start": 41.27,
+          "end": 41.31
+        },
+        {
+          "text": "giorni",
+          "start": 41.31,
+          "end": 41.59
+        },
+        {
+          "text": "n,",
+          "start": 41.81,
+          "end": 41.85
+        }
+      ]
+    },
+    {
+      "start": 42.31,
+      "end": 45.011,
+      "text": "applicando proprio la linea guida su null e zero.",
+      "words": [
+        {
+          "text": "applicando",
+          "start": 42.31,
+          "end": 42.77
+        },
+        {
+          "text": "proprio",
+          "start": 42.87,
+          "end": 43.25
+        },
+        {
+          "text": "la",
+          "start": 43.37,
+          "end": 43.45
+        },
+        {
+          "text": "linea",
+          "start": 43.51,
+          "end": 43.73
+        },
+        {
+          "text": "guida",
+          "start": 43.79,
+          "end": 44.03
+        },
+        {
+          "text": "su",
+          "start": 44.11,
+          "end": 44.17
+        },
+        {
+          "text": "null",
+          "start": 44.27,
+          "end": 44.49
+        },
+        {
+          "text": "e",
+          "start": 44.65,
+          "end": 44.69
+        },
+        {
+          "text": "zero.",
+          "start": 44.771,
+          "end": 45.011
+        }
+      ]
+    },
+    {
+      "start": 46.431,
+      "end": 51.312,
+      "text": "Nei quattro feature test dalle user story, il login iniziale si completa se l'utente è",
+      "words": [
+        {
+          "text": "Nei",
+          "start": 46.431,
+          "end": 46.571
+        },
+        {
+          "text": "quattro",
+          "start": 46.611,
+          "end": 46.871
+        },
+        {
+          "text": "feature",
+          "start": 46.931,
+          "end": 47.231
+        },
+        {
+          "text": "test",
+          "start": 47.291,
+          "end": 47.551
+        },
+        {
+          "text": "dalle",
+          "start": 47.691,
+          "end": 47.871
+        },
+        {
+          "text": "user",
+          "start": 47.971,
+          "end": 48.171
+        },
+        {
+          "text": "story,",
+          "start": 48.231,
+          "end": 48.511
+        },
+        {
+          "text": "il",
+          "start": 49.032,
+          "end": 49.112
+        },
+        {
+          "text": "login",
+          "start": 49.132,
+          "end": 49.352
+        },
+        {
+          "text": "iniziale",
+          "start": 49.412,
+          "end": 49.912
+        },
+        {
+          "text": "si",
+          "start": 50.052,
+          "end": 50.132
+        },
+        {
+          "text": "completa",
+          "start": 50.192,
+          "end": 50.652
+        },
+        {
+          "text": "se",
+          "start": 50.732,
+          "end": 50.792
+        },
+        {
+          "text": "l'utente",
+          "start": 50.832,
+          "end": 51.252
+        },
+        {
+          "text": "è",
+          "start": 51.272,
+          "end": 51.312
+        }
+      ]
+    },
+    {
+      "start": 51.372,
+      "end": 52.612,
+      "text": "già autenticato su Google;",
+      "words": [
+        {
+          "text": "già",
+          "start": 51.372,
+          "end": 51.452
+        },
+        {
+          "text": "autenticato",
+          "start": 51.512,
+          "end": 52.052
+        },
+        {
+          "text": "su",
+          "start": 52.112,
+          "end": 52.192
+        },
+        {
+          "text": "Google;",
+          "start": 52.252,
+          "end": 52.612
+        }
+      ]
+    },
+    {
+      "start": 53.212,
+      "end": 55.173,
+      "text": "credenziali errate mostrano l'errore;",
+      "words": [
+        {
+          "text": "credenziali",
+          "start": 53.212,
+          "end": 53.753
+        },
+        {
+          "text": "errate",
+          "start": 53.793,
+          "end": 54.153
+        },
+        {
+          "text": "mostrano",
+          "start": 54.333,
+          "end": 54.753
+        },
+        {
+          "text": "l'errore;",
+          "start": 54.793,
+          "end": 55.173
+        }
+      ]
+    },
+    {
+      "start": 55.773,
+      "end": 64.035,
+      "text": "sulle informazioni condivise premere annulla annulla la registrazione; sulle email nessuna scelta significa nessuna iscrizione.",
+      "words": [
+        {
+          "text": "sulle",
+          "start": 55.773,
+          "end": 55.953
+        },
+        {
+          "text": "informazioni",
+          "start": 55.993,
+          "end": 56.513
+        },
+        {
+          "text": "condivise",
+          "start": 56.553,
+          "end": 57.133
+        },
+        {
+          "text": "premere",
+          "start": 57.433,
+          "end": 57.834
+        },
+        {
+          "text": "annulla",
+          "start": 57.994,
+          "end": 58.534
+        },
+        {
+          "text": "annulla",
+          "start": 58.814,
+          "end": 59.234
+        },
+        {
+          "text": "la",
+          "start": 59.314,
+          "end": 59.354
+        },
+        {
+          "text": "registrazione;",
+          "start": 59.414,
+          "end": 60.134
+        },
+        {
+          "text": "sulle",
+          "start": 60.614,
+          "end": 60.874
+        },
+        {
+          "text": "email",
+          "start": 60.894,
+          "end": 61.214
+        },
+        {
+          "text": "nessuna",
+          "start": 61.434,
+          "end": 61.855
+        },
+        {
+          "text": "scelta",
+          "start": 61.895,
+          "end": 62.295
+        },
+        {
+          "text": "significa",
+          "start": 62.375,
+          "end": 62.835
+        },
+        {
+          "text": "nessuna",
+          "start": 63.035,
+          "end": 63.415
+        },
+        {
+          "text": "iscrizione.",
+          "start": 63.455,
+          "end": 64.035
+        }
+      ]
+    },
+    {
+      "start": 64.955,
+      "end": 66.616,
+      "text": "Infine, su TDD e review:",
+      "words": [
+        {
+          "text": "Infine,",
+          "start": 64.955,
+          "end": 65.315
+        },
+        {
+          "text": "su",
+          "start": 65.495,
+          "end": 65.575
+        },
+        {
+          "text": "TDD",
+          "start": 65.715,
+          "end": 66.016
+        },
+        {
+          "text": "e",
+          "start": 66.296,
+          "end": 66.33600000000001
+        },
+        {
+          "text": "review:",
+          "start": 66.416,
+          "end": 66.616
+        }
+      ]
+    },
+    {
+      "start": 67.176,
+      "end": 70.116,
+      "text": "tra i pro del TDD c'è codice forse più semplice;",
+      "words": [
+        {
+          "text": "tra",
+          "start": 67.176,
+          "end": 67.276
+        },
+        {
+          "text": "i",
+          "start": 67.356,
+          "end": 67.396
+        },
+        {
+          "text": "pro",
+          "start": 67.436,
+          "end": 67.556
+        },
+        {
+          "text": "del",
+          "start": 67.736,
+          "end": 67.876
+        },
+        {
+          "text": "TDD",
+          "start": 67.936,
+          "end": 68.216
+        },
+        {
+          "text": "c'è",
+          "start": 68.476,
+          "end": 68.596
+        },
+        {
+          "text": "codice",
+          "start": 68.696,
+          "end": 69.076
+        },
+        {
+          "text": "forse",
+          "start": 69.176,
+          "end": 69.476
+        },
+        {
+          "text": "più",
+          "start": 69.516,
+          "end": 69.596
+        },
+        {
+          "text": "semplice;",
+          "start": 69.696,
+          "end": 70.116
+        }
+      ]
+    },
+    {
+      "start": 70.977,
+      "end": 75.118,
+      "text": "nella code review opera spesso un singolo revisore, anche esterno al team DevOps,",
+      "words": [
+        {
+          "text": "nella",
+          "start": 70.977,
+          "end": 71.177
+        },
+        {
+          "text": "code",
+          "start": 71.237,
+          "end": 71.417
+        },
+        {
+          "text": "review",
+          "start": 71.417,
+          "end": 71.637
+        },
+        {
+          "text": "opera",
+          "start": 71.857,
+          "end": 72.097
+        },
+        {
+          "text": "spesso",
+          "start": 72.157,
+          "end": 72.497
+        },
+        {
+          "text": "un",
+          "start": 72.537,
+          "end": 72.617
+        },
+        {
+          "text": "singolo",
+          "start": 72.697,
+          "end": 73.057
+        },
+        {
+          "text": "revisore,",
+          "start": 73.097,
+          "end": 73.557
+        },
+        {
+          "text": "anche",
+          "start": 73.797,
+          "end": 73.997
+        },
+        {
+          "text": "esterno",
+          "start": 74.037,
+          "end": 74.377
+        },
+        {
+          "text": "al",
+          "start": 74.397,
+          "end": 74.477
+        },
+        {
+          "text": "team",
+          "start": 74.538,
+          "end": 74.698
+        },
+        {
+          "text": "DevOps,",
+          "start": 74.758,
+          "end": 75.118
+        }
+      ]
+    },
+    {
+      "start": 75.518,
+      "end": 77.738,
+      "text": "che valuta leggibilità e comprensibilità;",
+      "words": [
+        {
+          "text": "che",
+          "start": 75.518,
+          "end": 75.598
+        },
+        {
+          "text": "valuta",
+          "start": 75.638,
+          "end": 75.958
+        },
+        {
+          "text": "leggibilità",
+          "start": 76.058,
+          "end": 76.638
+        },
+        {
+          "text": "e",
+          "start": 76.858,
+          "end": 76.89800000000001
+        },
+        {
+          "text": "comprensibilità;",
+          "start": 76.978,
+          "end": 77.738
+        }
+      ]
+    },
+    {
+      "start": 78.578,
+      "end": 82.459,
+      "text": "a Spotify i chapter riuniscono sviluppatori front office, back office,",
+      "words": [
+        {
+          "text": "a",
+          "start": 78.578,
+          "end": 78.61800000000001
+        },
+        {
+          "text": "Spotify",
+          "start": 78.638,
+          "end": 79.119
+        },
+        {
+          "text": "i",
+          "start": 79.279,
+          "end": 79.319
+        },
+        {
+          "text": "chapter",
+          "start": 79.359,
+          "end": 79.719
+        },
+        {
+          "text": "riuniscono",
+          "start": 79.839,
+          "end": 80.319
+        },
+        {
+          "text": "sviluppatori",
+          "start": 80.359,
+          "end": 80.919
+        },
+        {
+          "text": "front",
+          "start": 80.979,
+          "end": 81.219
+        },
+        {
+          "text": "office,",
+          "start": 81.279,
+          "end": 81.659
+        },
+        {
+          "text": "back",
+          "start": 81.879,
+          "end": 82.039
+        },
+        {
+          "text": "office,",
+          "start": 82.099,
+          "end": 82.459
+        }
+      ]
+    },
+    {
+      "start": 82.759,
+      "end": 84.86,
+      "text": "amministratori di database e tester.",
+      "words": [
+        {
+          "text": "amministratori",
+          "start": 82.759,
+          "end": 83.46
+        },
+        {
+          "text": "di",
+          "start": 83.54,
+          "end": 83.62
+        },
+        {
+          "text": "database",
+          "start": 83.66,
+          "end": 84.16
+        },
+        {
+          "text": "e",
+          "start": 84.44,
+          "end": 84.48
+        },
+        {
+          "text": "tester.",
+          "start": 84.56,
+          "end": 84.86
+        }
+      ]
+    }
+  ]
+}

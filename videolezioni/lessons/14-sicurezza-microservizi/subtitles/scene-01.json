@@ -1,0 +1,1009 @@
+{
+  "duration": 80.838,
+  "segments": [
+    {
+      "start": 0.06,
+      "end": 5.181,
+      "text": "Benvenuti al quattordicesimo capitolo, dedicato alla sicurezza dei microservizi.",
+      "words": [
+        {
+          "text": "Benvenuti",
+          "start": 0.06,
+          "end": 0.64
+        },
+        {
+          "text": "al",
+          "start": 0.8,
+          "end": 0.94
+        },
+        {
+          "text": "quattordicesimo",
+          "start": 1.06,
+          "end": 2.02
+        },
+        {
+          "text": "capitolo,",
+          "start": 2.1,
+          "end": 2.64
+        },
+        {
+          "text": "dedicato",
+          "start": 2.92,
+          "end": 3.4
+        },
+        {
+          "text": "alla",
+          "start": 3.44,
+          "end": 3.6
+        },
+        {
+          "text": "sicurezza",
+          "start": 3.66,
+          "end": 4.201
+        },
+        {
+          "text": "dei",
+          "start": 4.261,
+          "end": 4.381
+        },
+        {
+          "text": "microservizi.",
+          "start": 4.421,
+          "end": 5.181
+        }
+      ]
+    },
+    {
+      "start": 6.181,
+      "end": 11.281,
+      "text": "La prima sfida riguarda la superficie d'attacco, cioè l'insieme dei punti da cui un attaccante",
+      "words": [
+        {
+          "text": "La",
+          "start": 6.181,
+          "end": 6.241
+        },
+        {
+          "text": "prima",
+          "start": 6.281,
+          "end": 6.461
+        },
+        {
+          "text": "sfida",
+          "start": 6.501,
+          "end": 6.801
+        },
+        {
+          "text": "riguarda",
+          "start": 6.961,
+          "end": 7.321
+        },
+        {
+          "text": "la",
+          "start": 7.441,
+          "end": 7.501
+        },
+        {
+          "text": "superficie",
+          "start": 7.581,
+          "end": 8.061
+        },
+        {
+          "text": "d'attacco,",
+          "start": 8.081,
+          "end": 8.581
+        },
+        {
+          "text": "cioè",
+          "start": 8.901,
+          "end": 9.061
+        },
+        {
+          "text": "l'insieme",
+          "start": 9.201,
+          "end": 9.741
+        },
+        {
+          "text": "dei",
+          "start": 9.801,
+          "end": 9.901
+        },
+        {
+          "text": "punti",
+          "start": 9.941,
+          "end": 10.221
+        },
+        {
+          "text": "da",
+          "start": 10.261,
+          "end": 10.321
+        },
+        {
+          "text": "cui",
+          "start": 10.361,
+          "end": 10.521
+        },
+        {
+          "text": "un",
+          "start": 10.561,
+          "end": 10.641
+        },
+        {
+          "text": "attaccante",
+          "start": 10.661,
+          "end": 11.281
+        }
+      ]
+    },
+    {
+      "start": 11.341,
+      "end": 12.522,
+      "text": "può entrare nel sistema.",
+      "words": [
+        {
+          "text": "può",
+          "start": 11.341,
+          "end": 11.421
+        },
+        {
+          "text": "entrare",
+          "start": 11.501,
+          "end": 11.861
+        },
+        {
+          "text": "nel",
+          "start": 11.901,
+          "end": 12.021
+        },
+        {
+          "text": "sistema.",
+          "start": 12.081,
+          "end": 12.522
+        }
+      ]
+    },
+    {
+      "start": 13.142,
+      "end": 17.162,
+      "text": "Mentre in un monolite i componenti comunicano dentro un unico processo,",
+      "words": [
+        {
+          "text": "Mentre",
+          "start": 13.142,
+          "end": 13.402
+        },
+        {
+          "text": "in",
+          "start": 13.562,
+          "end": 13.642
+        },
+        {
+          "text": "un",
+          "start": 13.682,
+          "end": 13.762
+        },
+        {
+          "text": "monolite",
+          "start": 13.802,
+          "end": 14.402
+        },
+        {
+          "text": "i",
+          "start": 14.722,
+          "end": 14.762
+        },
+        {
+          "text": "componenti",
+          "start": 14.802,
+          "end": 15.322
+        },
+        {
+          "text": "comunicano",
+          "start": 15.362,
+          "end": 15.902
+        },
+        {
+          "text": "dentro",
+          "start": 15.962,
+          "end": 16.302
+        },
+        {
+          "text": "un",
+          "start": 16.342,
+          "end": 16.402
+        },
+        {
+          "text": "unico",
+          "start": 16.442,
+          "end": 16.662
+        },
+        {
+          "text": "processo,",
+          "start": 16.702,
+          "end": 17.162
+        }
+      ]
+    },
+    {
+      "start": 17.542,
+      "end": 21.583,
+      "text": "nei microservizi dialogano tramite chiamate remote con molti punti d'ingresso:",
+      "words": [
+        {
+          "text": "nei",
+          "start": 17.542,
+          "end": 17.662
+        },
+        {
+          "text": "microservizi",
+          "start": 17.682,
+          "end": 18.322
+        },
+        {
+          "text": "dialogano",
+          "start": 18.382,
+          "end": 18.822
+        },
+        {
+          "text": "tramite",
+          "start": 18.862,
+          "end": 19.162
+        },
+        {
+          "text": "chiamate",
+          "start": 19.222,
+          "end": 19.522
+        },
+        {
+          "text": "remote",
+          "start": 19.562,
+          "end": 19.942
+        },
+        {
+          "text": "con",
+          "start": 20.222,
+          "end": 20.343
+        },
+        {
+          "text": "molti",
+          "start": 20.443,
+          "end": 20.743
+        },
+        {
+          "text": "punti",
+          "start": 20.803,
+          "end": 21.023
+        },
+        {
+          "text": "d'ingresso:",
+          "start": 21.063,
+          "end": 21.583
+        }
+      ]
+    },
+    {
+      "start": 22.343,
+      "end": 26.083,
+      "text": "la sicurezza dell'applicazione è pari alla robustezza del suo punto più debole.",
+      "words": [
+        {
+          "text": "la",
+          "start": 22.343,
+          "end": 22.383
+        },
+        {
+          "text": "sicurezza",
+          "start": 22.423,
+          "end": 22.823
+        },
+        {
+          "text": "dell'applicazione",
+          "start": 22.863,
+          "end": 23.543
+        },
+        {
+          "text": "è",
+          "start": 23.583,
+          "end": 23.623
+        },
+        {
+          "text": "pari",
+          "start": 23.683,
+          "end": 23.923
+        },
+        {
+          "text": "alla",
+          "start": 23.983,
+          "end": 24.123
+        },
+        {
+          "text": "robustezza",
+          "start": 24.203,
+          "end": 24.903
+        },
+        {
+          "text": "del",
+          "start": 24.963,
+          "end": 25.083
+        },
+        {
+          "text": "suo",
+          "start": 25.123,
+          "end": 25.243
+        },
+        {
+          "text": "punto",
+          "start": 25.303,
+          "end": 25.523
+        },
+        {
+          "text": "più",
+          "start": 25.563,
+          "end": 25.663
+        },
+        {
+          "text": "debole.",
+          "start": 25.743,
+          "end": 26.083
+        }
+      ]
+    },
+    {
+      "start": 27.063,
+      "end": 30.644,
+      "text": "Seconda sfida: i controlli distribuiti pesano sulle prestazioni.",
+      "words": [
+        {
+          "text": "Seconda",
+          "start": 27.063,
+          "end": 27.403
+        },
+        {
+          "text": "sfida:",
+          "start": 27.443,
+          "end": 27.743
+        },
+        {
+          "text": "i",
+          "start": 28.063,
+          "end": 28.103
+        },
+        {
+          "text": "controlli",
+          "start": 28.143,
+          "end": 28.664
+        },
+        {
+          "text": "distribuiti",
+          "start": 28.704,
+          "end": 29.344
+        },
+        {
+          "text": "pesano",
+          "start": 29.444,
+          "end": 29.784
+        },
+        {
+          "text": "sulle",
+          "start": 29.844,
+          "end": 30.024
+        },
+        {
+          "text": "prestazioni.",
+          "start": 30.044,
+          "end": 30.644
+        }
+      ]
+    },
+    {
+      "start": 31.644,
+      "end": 34.924,
+      "text": "Nel monolite il security screening avviene una volta sola;",
+      "words": [
+        {
+          "text": "Nel",
+          "start": 31.644,
+          "end": 31.764
+        },
+        {
+          "text": "monolite",
+          "start": 31.804,
+          "end": 32.264
+        },
+        {
+          "text": "il",
+          "start": 32.804,
+          "end": 32.904
+        },
+        {
+          "text": "security",
+          "start": 32.964,
+          "end": 33.364
+        },
+        {
+          "text": "screening",
+          "start": 33.424,
+          "end": 33.864
+        },
+        {
+          "text": "avviene",
+          "start": 33.944,
+          "end": 34.224
+        },
+        {
+          "text": "una",
+          "start": 34.284,
+          "end": 34.384
+        },
+        {
+          "text": "volta",
+          "start": 34.404,
+          "end": 34.624
+        },
+        {
+          "text": "sola;",
+          "start": 34.684,
+          "end": 34.924
+        }
+      ]
+    },
+    {
+      "start": 35.424,
+      "end": 42.425,
+      "text": "nei microservizi ogni servizio esegue un controllo indipendente, contattando spesso un security token service remoto.",
+      "words": [
+        {
+          "text": "nei",
+          "start": 35.424,
+          "end": 35.564
+        },
+        {
+          "text": "microservizi",
+          "start": 35.584,
+          "end": 36.324
+        },
+        {
+          "text": "ogni",
+          "start": 36.525,
+          "end": 36.765
+        },
+        {
+          "text": "servizio",
+          "start": 36.845,
+          "end": 37.325
+        },
+        {
+          "text": "esegue",
+          "start": 37.365,
+          "end": 37.645
+        },
+        {
+          "text": "un",
+          "start": 37.705,
+          "end": 37.785
+        },
+        {
+          "text": "controllo",
+          "start": 37.845,
+          "end": 38.365
+        },
+        {
+          "text": "indipendente,",
+          "start": 38.425,
+          "end": 39.145
+        },
+        {
+          "text": "contattando",
+          "start": 39.545,
+          "end": 40.025
+        },
+        {
+          "text": "spesso",
+          "start": 40.065,
+          "end": 40.425
+        },
+        {
+          "text": "un",
+          "start": 40.505,
+          "end": 40.605
+        },
+        {
+          "text": "security",
+          "start": 40.665,
+          "end": 41.165
+        },
+        {
+          "text": "token",
+          "start": 41.225,
+          "end": 41.505
+        },
+        {
+          "text": "service",
+          "start": 41.585,
+          "end": 41.985
+        },
+        {
+          "text": "remoto.",
+          "start": 42.025,
+          "end": 42.425
+        }
+      ]
+    },
+    {
+      "start": 43.365,
+      "end": 44.966,
+      "text": "Le strategie possibili sono due:",
+      "words": [
+        {
+          "text": "Le",
+          "start": 43.365,
+          "end": 43.445
+        },
+        {
+          "text": "strategie",
+          "start": 43.625,
+          "end": 44.065
+        },
+        {
+          "text": "possibili",
+          "start": 44.085,
+          "end": 44.505
+        },
+        {
+          "text": "sono",
+          "start": 44.565,
+          "end": 44.726
+        },
+        {
+          "text": "due:",
+          "start": 44.786,
+          "end": 44.966
+        }
+      ]
+    },
+    {
+      "start": 46.026,
+      "end": 50.726,
+      "text": "il ripiego trust-the-network, che salta i controlli fidandosi della rete interna,",
+      "words": [
+        {
+          "text": "il",
+          "start": 46.026,
+          "end": 46.126
+        },
+        {
+          "text": "ripiego",
+          "start": 46.226,
+          "end": 46.746
+        },
+        {
+          "text": "trust-the-network,",
+          "start": 46.966,
+          "end": 47.946
+        },
+        {
+          "text": "che",
+          "start": 48.306,
+          "end": 48.386
+        },
+        {
+          "text": "salta",
+          "start": 48.426,
+          "end": 48.666
+        },
+        {
+          "text": "i",
+          "start": 48.706,
+          "end": 48.746
+        },
+        {
+          "text": "controlli",
+          "start": 48.766,
+          "end": 49.306
+        },
+        {
+          "text": "fidandosi",
+          "start": 49.386,
+          "end": 49.886
+        },
+        {
+          "text": "della",
+          "start": 49.926,
+          "end": 50.106
+        },
+        {
+          "text": "rete",
+          "start": 50.146,
+          "end": 50.286
+        },
+        {
+          "text": "interna,",
+          "start": 50.346,
+          "end": 50.726
+        }
+      ]
+    },
+    {
+      "start": 51.206,
+      "end": 57.127,
+      "text": "oppure i principi dello zero-trust networking, dove nessuna richiesta è fidata solo perché arriva dalla",
+      "words": [
+        {
+          "text": "oppure",
+          "start": 51.206,
+          "end": 51.486
+        },
+        {
+          "text": "i",
+          "start": 51.546,
+          "end": 51.586
+        },
+        {
+          "text": "principi",
+          "start": 51.606,
+          "end": 52.046
+        },
+        {
+          "text": "dello",
+          "start": 52.106,
+          "end": 52.346
+        },
+        {
+          "text": "zero-trust",
+          "start": 52.466,
+          "end": 53.067
+        },
+        {
+          "text": "networking,",
+          "start": 53.167,
+          "end": 53.787
+        },
+        {
+          "text": "dove",
+          "start": 54.267,
+          "end": 54.427
+        },
+        {
+          "text": "nessuna",
+          "start": 54.587,
+          "end": 55.027
+        },
+        {
+          "text": "richiesta",
+          "start": 55.067,
+          "end": 55.507
+        },
+        {
+          "text": "è",
+          "start": 55.547,
+          "end": 55.587
+        },
+        {
+          "text": "fidata",
+          "start": 55.627,
+          "end": 55.987
+        },
+        {
+          "text": "solo",
+          "start": 56.127,
+          "end": 56.387
+        },
+        {
+          "text": "perché",
+          "start": 56.427,
+          "end": 56.627
+        },
+        {
+          "text": "arriva",
+          "start": 56.667,
+          "end": 56.907
+        },
+        {
+          "text": "dalla",
+          "start": 56.967,
+          "end": 57.127
+        }
+      ]
+    },
+    {
+      "start": 57.167,
+      "end": 61.748,
+      "text": "rete interna, attuando una difesa in profondità attenta alle prestazioni complessive.",
+      "words": [
+        {
+          "text": "rete",
+          "start": 57.167,
+          "end": 57.327
+        },
+        {
+          "text": "interna,",
+          "start": 57.367,
+          "end": 57.747
+        },
+        {
+          "text": "attuando",
+          "start": 58.147,
+          "end": 58.487
+        },
+        {
+          "text": "una",
+          "start": 58.547,
+          "end": 58.647
+        },
+        {
+          "text": "difesa",
+          "start": 58.687,
+          "end": 59.027
+        },
+        {
+          "text": "in",
+          "start": 59.087,
+          "end": 59.167
+        },
+        {
+          "text": "profondità",
+          "start": 59.207,
+          "end": 59.767
+        },
+        {
+          "text": "attenta",
+          "start": 60.047,
+          "end": 60.447
+        },
+        {
+          "text": "alle",
+          "start": 60.507,
+          "end": 60.667
+        },
+        {
+          "text": "prestazioni",
+          "start": 60.687,
+          "end": 61.188
+        },
+        {
+          "text": "complessive.",
+          "start": 61.228,
+          "end": 61.748
+        }
+      ]
+    },
+    {
+      "start": 62.768,
+      "end": 68.308,
+      "text": "Terza sfida: stabilire la fiducia tra servizi su canali protetti con certificati e chiave privata.",
+      "words": [
+        {
+          "text": "Terza",
+          "start": 62.768,
+          "end": 63.008
+        },
+        {
+          "text": "sfida:",
+          "start": 63.048,
+          "end": 63.348
+        },
+        {
+          "text": "stabilire",
+          "start": 63.528,
+          "end": 63.968
+        },
+        {
+          "text": "la",
+          "start": 64.048,
+          "end": 64.108
+        },
+        {
+          "text": "fiducia",
+          "start": 64.148,
+          "end": 64.528
+        },
+        {
+          "text": "tra",
+          "start": 64.568,
+          "end": 64.668
+        },
+        {
+          "text": "servizi",
+          "start": 64.768,
+          "end": 65.148
+        },
+        {
+          "text": "su",
+          "start": 65.228,
+          "end": 65.288
+        },
+        {
+          "text": "canali",
+          "start": 65.368,
+          "end": 65.628
+        },
+        {
+          "text": "protetti",
+          "start": 65.668,
+          "end": 66.148
+        },
+        {
+          "text": "con",
+          "start": 66.468,
+          "end": 66.588
+        },
+        {
+          "text": "certificati",
+          "start": 66.628,
+          "end": 67.328
+        },
+        {
+          "text": "e",
+          "start": 67.548,
+          "end": 67.58800000000001
+        },
+        {
+          "text": "chiave",
+          "start": 67.628,
+          "end": 67.868
+        },
+        {
+          "text": "privata.",
+          "start": 67.908,
+          "end": 68.308
+        }
+      ]
+    },
+    {
+      "start": 69.209,
+      "end": 71.989,
+      "text": "Ogni servizio autentica sé stesso e valida il chiamante,",
+      "words": [
+        {
+          "text": "Ogni",
+          "start": 69.209,
+          "end": 69.349
+        },
+        {
+          "text": "servizio",
+          "start": 69.389,
+          "end": 69.809
+        },
+        {
+          "text": "autentica",
+          "start": 69.929,
+          "end": 70.369
+        },
+        {
+          "text": "sé",
+          "start": 70.449,
+          "end": 70.529
+        },
+        {
+          "text": "stesso",
+          "start": 70.589,
+          "end": 70.949
+        },
+        {
+          "text": "e",
+          "start": 71.009,
+          "end": 71.049
+        },
+        {
+          "text": "valida",
+          "start": 71.109,
+          "end": 71.369
+        },
+        {
+          "text": "il",
+          "start": 71.409,
+          "end": 71.469
+        },
+        {
+          "text": "chiamante,",
+          "start": 71.529,
+          "end": 71.989
+        }
+      ]
+    },
+    {
+      "start": 72.449,
+      "end": 75.969,
+      "text": "gestendo bootstrap iniziale, revoca e rotazione periodica.",
+      "words": [
+        {
+          "text": "gestendo",
+          "start": 72.449,
+          "end": 72.809
+        },
+        {
+          "text": "bootstrap",
+          "start": 72.889,
+          "end": 73.329
+        },
+        {
+          "text": "iniziale,",
+          "start": 73.389,
+          "end": 73.889
+        },
+        {
+          "text": "revoca",
+          "start": 74.249,
+          "end": 74.629
+        },
+        {
+          "text": "e",
+          "start": 74.809,
+          "end": 74.849
+        },
+        {
+          "text": "rotazione",
+          "start": 74.949,
+          "end": 75.429
+        },
+        {
+          "text": "periodica.",
+          "start": 75.469,
+          "end": 75.969
+        }
+      ]
+    },
+    {
+      "start": 76.809,
+      "end": 80.49,
+      "text": "Su larga scala servono strumenti di automazione come Docker e Kubernetes.",
+      "words": [
+        {
+          "text": "Su",
+          "start": 76.809,
+          "end": 76.889
+        },
+        {
+          "text": "larga",
+          "start": 76.949,
+          "end": 77.17
+        },
+        {
+          "text": "scala",
+          "start": 77.23,
+          "end": 77.47
+        },
+        {
+          "text": "servono",
+          "start": 77.53,
+          "end": 77.81
+        },
+        {
+          "text": "strumenti",
+          "start": 77.87,
+          "end": 78.25
+        },
+        {
+          "text": "di",
+          "start": 78.27,
+          "end": 78.33
+        },
+        {
+          "text": "automazione",
+          "start": 78.37,
+          "end": 78.97
+        },
+        {
+          "text": "come",
+          "start": 79.03,
+          "end": 79.19
+        },
+        {
+          "text": "Docker",
+          "start": 79.25,
+          "end": 79.63
+        },
+        {
+          "text": "e",
+          "start": 79.77,
+          "end": 79.81
+        },
+        {
+          "text": "Kubernetes.",
+          "start": 79.87,
+          "end": 80.49
+        }
+      ]
+    }
+  ]
+}

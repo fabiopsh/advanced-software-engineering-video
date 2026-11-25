@@ -1,0 +1,972 @@
+{
+  "duration": 67.996,
+  "segments": [
+    {
+      "start": 0.04,
+      "end": 4.321,
+      "text": "Benvenuti al dodicesimo capitolo, dedicato a DevOps e code management.",
+      "words": [
+        {
+          "text": "Benvenuti",
+          "start": 0.04,
+          "end": 0.54
+        },
+        {
+          "text": "al",
+          "start": 0.64,
+          "end": 0.74
+        },
+        {
+          "text": "dodicesimo",
+          "start": 0.82,
+          "end": 1.38
+        },
+        {
+          "text": "capitolo,",
+          "start": 1.42,
+          "end": 1.84
+        },
+        {
+          "text": "dedicato",
+          "start": 2.08,
+          "end": 2.48
+        },
+        {
+          "text": "a",
+          "start": 2.58,
+          "end": 2.62
+        },
+        {
+          "text": "DevOps",
+          "start": 2.76,
+          "end": 3.18
+        },
+        {
+          "text": "e",
+          "start": 3.34,
+          "end": 3.38
+        },
+        {
+          "text": "code",
+          "start": 3.501,
+          "end": 3.781
+        },
+        {
+          "text": "management.",
+          "start": 3.821,
+          "end": 4.321
+        }
+      ]
+    },
+    {
+      "start": 5.341,
+      "end": 9.941,
+      "text": "Tradizionalmente sviluppo, rilascio e supporto sono affidati a tre team separati.",
+      "words": [
+        {
+          "text": "Tradizionalmente",
+          "start": 5.341,
+          "end": 6.261
+        },
+        {
+          "text": "sviluppo,",
+          "start": 6.421,
+          "end": 6.941
+        },
+        {
+          "text": "rilascio",
+          "start": 7.041,
+          "end": 7.501
+        },
+        {
+          "text": "e",
+          "start": 7.541,
+          "end": 7.581
+        },
+        {
+          "text": "supporto",
+          "start": 7.641,
+          "end": 8.141
+        },
+        {
+          "text": "sono",
+          "start": 8.201,
+          "end": 8.341
+        },
+        {
+          "text": "affidati",
+          "start": 8.381,
+          "end": 8.801
+        },
+        {
+          "text": "a",
+          "start": 8.861,
+          "end": 8.901
+        },
+        {
+          "text": "tre",
+          "start": 8.981,
+          "end": 9.121
+        },
+        {
+          "text": "team",
+          "start": 9.201,
+          "end": 9.361
+        },
+        {
+          "text": "separati.",
+          "start": 9.461,
+          "end": 9.941
+        }
+      ]
+    },
+    {
+      "start": 10.402,
+      "end": 12.782,
+      "text": "Lo sviluppo consegna il codice al team di rilascio,",
+      "words": [
+        {
+          "text": "Lo",
+          "start": 10.402,
+          "end": 10.462
+        },
+        {
+          "text": "sviluppo",
+          "start": 10.502,
+          "end": 10.842
+        },
+        {
+          "text": "consegna",
+          "start": 10.962,
+          "end": 11.302
+        },
+        {
+          "text": "il",
+          "start": 11.342,
+          "end": 11.402
+        },
+        {
+          "text": "codice",
+          "start": 11.462,
+          "end": 11.822
+        },
+        {
+          "text": "al",
+          "start": 11.922,
+          "end": 12.022
+        },
+        {
+          "text": "team",
+          "start": 12.062,
+          "end": 12.202
+        },
+        {
+          "text": "di",
+          "start": 12.242,
+          "end": 12.302
+        },
+        {
+          "text": "rilascio,",
+          "start": 12.342,
+          "end": 12.782
+        }
+      ]
+    },
+    {
+      "start": 13.082,
+      "end": 17.823,
+      "text": "che lo collauda e lo distribuisce ai clienti, mentre il supporto gestisce l'assistenza e rimanda",
+      "words": [
+        {
+          "text": "che",
+          "start": 13.082,
+          "end": 13.162
+        },
+        {
+          "text": "lo",
+          "start": 13.202,
+          "end": 13.262
+        },
+        {
+          "text": "collauda",
+          "start": 13.342,
+          "end": 13.782
+        },
+        {
+          "text": "e",
+          "start": 13.942,
+          "end": 13.982
+        },
+        {
+          "text": "lo",
+          "start": 14.022,
+          "end": 14.082
+        },
+        {
+          "text": "distribuisce",
+          "start": 14.122,
+          "end": 14.642
+        },
+        {
+          "text": "ai",
+          "start": 14.642,
+          "end": 14.722
+        },
+        {
+          "text": "clienti,",
+          "start": 14.742,
+          "end": 15.202
+        },
+        {
+          "text": "mentre",
+          "start": 15.522,
+          "end": 15.742
+        },
+        {
+          "text": "il",
+          "start": 15.762,
+          "end": 15.822
+        },
+        {
+          "text": "supporto",
+          "start": 15.842,
+          "end": 16.242
+        },
+        {
+          "text": "gestisce",
+          "start": 16.302,
+          "end": 16.682
+        },
+        {
+          "text": "l'assistenza",
+          "start": 16.742,
+          "end": 17.323
+        },
+        {
+          "text": "e",
+          "start": 17.423,
+          "end": 17.463
+        },
+        {
+          "text": "rimanda",
+          "start": 17.523,
+          "end": 17.823
+        }
+      ]
+    },
+    {
+      "start": 17.863,
+      "end": 18.443,
+      "text": "indietro i bug.",
+      "words": [
+        {
+          "text": "indietro",
+          "start": 17.863,
+          "end": 18.163
+        },
+        {
+          "text": "i",
+          "start": 18.183,
+          "end": 18.223
+        },
+        {
+          "text": "bug.",
+          "start": 18.243,
+          "end": 18.443
+        }
+      ]
+    },
+    {
+      "start": 19.183,
+      "end": 24.564,
+      "text": "Questo modello genera ritardi di comunicazione, strumenti incompatibili e giorni di attesa per correggere bug",
+      "words": [
+        {
+          "text": "Questo",
+          "start": 19.183,
+          "end": 19.363
+        },
+        {
+          "text": "modello",
+          "start": 19.403,
+          "end": 19.663
+        },
+        {
+          "text": "genera",
+          "start": 19.703,
+          "end": 19.943
+        },
+        {
+          "text": "ritardi",
+          "start": 20.003,
+          "end": 20.323
+        },
+        {
+          "text": "di",
+          "start": 20.363,
+          "end": 20.403
+        },
+        {
+          "text": "comunicazione,",
+          "start": 20.443,
+          "end": 21.183
+        },
+        {
+          "text": "strumenti",
+          "start": 21.443,
+          "end": 21.823
+        },
+        {
+          "text": "incompatibili",
+          "start": 21.863,
+          "end": 22.603
+        },
+        {
+          "text": "e",
+          "start": 22.743,
+          "end": 22.783
+        },
+        {
+          "text": "giorni",
+          "start": 22.923,
+          "end": 23.223
+        },
+        {
+          "text": "di",
+          "start": 23.283,
+          "end": 23.323
+        },
+        {
+          "text": "attesa",
+          "start": 23.363,
+          "end": 23.743
+        },
+        {
+          "text": "per",
+          "start": 23.784,
+          "end": 23.904
+        },
+        {
+          "text": "correggere",
+          "start": 23.944,
+          "end": 24.364
+        },
+        {
+          "text": "bug",
+          "start": 24.404,
+          "end": 24.564
+        }
+      ]
+    },
+    {
+      "start": 24.624,
+      "end": 28.324,
+      "text": "urgenti o vulnerabilità, richiedendo settimane per andare in produzione.",
+      "words": [
+        {
+          "text": "urgenti",
+          "start": 24.624,
+          "end": 25.004
+        },
+        {
+          "text": "o",
+          "start": 25.044,
+          "end": 25.084
+        },
+        {
+          "text": "vulnerabilità,",
+          "start": 25.124,
+          "end": 25.724
+        },
+        {
+          "text": "richiedendo",
+          "start": 26.204,
+          "end": 26.584
+        },
+        {
+          "text": "settimane",
+          "start": 26.704,
+          "end": 27.244
+        },
+        {
+          "text": "per",
+          "start": 27.344,
+          "end": 27.444
+        },
+        {
+          "text": "andare",
+          "start": 27.464,
+          "end": 27.684
+        },
+        {
+          "text": "in",
+          "start": 27.724,
+          "end": 27.764
+        },
+        {
+          "text": "produzione.",
+          "start": 27.784,
+          "end": 28.324
+        }
+      ]
+    },
+    {
+      "start": 29.464,
+      "end": 33.765,
+      "text": "Tre fattori hanno sbloccato il cambiamento: i metodi agili hanno reso il rilascio il vero",
+      "words": [
+        {
+          "text": "Tre",
+          "start": 29.464,
+          "end": 29.564
+        },
+        {
+          "text": "fattori",
+          "start": 29.624,
+          "end": 29.924
+        },
+        {
+          "text": "hanno",
+          "start": 29.984,
+          "end": 30.164
+        },
+        {
+          "text": "sbloccato",
+          "start": 30.184,
+          "end": 30.565
+        },
+        {
+          "text": "il",
+          "start": 30.585,
+          "end": 30.645
+        },
+        {
+          "text": "cambiamento:",
+          "start": 30.645,
+          "end": 31.185
+        },
+        {
+          "text": "i",
+          "start": 31.685,
+          "end": 31.725
+        },
+        {
+          "text": "metodi",
+          "start": 31.745,
+          "end": 32.045
+        },
+        {
+          "text": "agili",
+          "start": 32.165,
+          "end": 32.465
+        },
+        {
+          "text": "hanno",
+          "start": 32.565,
+          "end": 32.745
+        },
+        {
+          "text": "reso",
+          "start": 32.785,
+          "end": 32.945
+        },
+        {
+          "text": "il",
+          "start": 32.985,
+          "end": 33.025
+        },
+        {
+          "text": "rilascio",
+          "start": 33.065,
+          "end": 33.405
+        },
+        {
+          "text": "il",
+          "start": 33.465,
+          "end": 33.525
+        },
+        {
+          "text": "vero",
+          "start": 33.565,
+          "end": 33.765
+        }
+      ]
+    },
+    {
+      "start": 33.825,
+      "end": 39.446,
+      "text": "collo di bottiglia; Amazon ha riorganizzato i microservizi affidando sviluppo e supporto allo stesso team;",
+      "words": [
+        {
+          "text": "collo",
+          "start": 33.825,
+          "end": 34.045
+        },
+        {
+          "text": "di",
+          "start": 34.065,
+          "end": 34.125
+        },
+        {
+          "text": "bottiglia;",
+          "start": 34.165,
+          "end": 34.625
+        },
+        {
+          "text": "Amazon",
+          "start": 35.225,
+          "end": 35.565
+        },
+        {
+          "text": "ha",
+          "start": 35.685,
+          "end": 35.745
+        },
+        {
+          "text": "riorganizzato",
+          "start": 35.805,
+          "end": 36.405
+        },
+        {
+          "text": "i",
+          "start": 36.445,
+          "end": 36.485
+        },
+        {
+          "text": "microservizi",
+          "start": 36.505,
+          "end": 37.265
+        },
+        {
+          "text": "affidando",
+          "start": 37.346,
+          "end": 37.746
+        },
+        {
+          "text": "sviluppo",
+          "start": 37.826,
+          "end": 38.166
+        },
+        {
+          "text": "e",
+          "start": 38.206,
+          "end": 38.246
+        },
+        {
+          "text": "supporto",
+          "start": 38.266,
+          "end": 38.646
+        },
+        {
+          "text": "allo",
+          "start": 38.666,
+          "end": 38.826
+        },
+        {
+          "text": "stesso",
+          "start": 38.886,
+          "end": 39.206
+        },
+        {
+          "text": "team;",
+          "start": 39.246,
+          "end": 39.446
+        }
+      ]
+    },
+    {
+      "start": 39.946,
+      "end": 42.566,
+      "text": "e il cloud ha reso naturale il Software as a Service.",
+      "words": [
+        {
+          "text": "e",
+          "start": 39.946,
+          "end": 39.986
+        },
+        {
+          "text": "il",
+          "start": 40.026,
+          "end": 40.086
+        },
+        {
+          "text": "cloud",
+          "start": 40.146,
+          "end": 40.486
+        },
+        {
+          "text": "ha",
+          "start": 40.606,
+          "end": 40.666
+        },
+        {
+          "text": "reso",
+          "start": 40.746,
+          "end": 40.926
+        },
+        {
+          "text": "naturale",
+          "start": 40.966,
+          "end": 41.346
+        },
+        {
+          "text": "il",
+          "start": 41.426,
+          "end": 41.506
+        },
+        {
+          "text": "Software",
+          "start": 41.566,
+          "end": 41.946
+        },
+        {
+          "text": "as",
+          "start": 41.966,
+          "end": 42.066
+        },
+        {
+          "text": "a",
+          "start": 42.086,
+          "end": 42.126
+        },
+        {
+          "text": "Service.",
+          "start": 42.166,
+          "end": 42.566
+        }
+      ]
+    },
+    {
+      "start": 43.186,
+      "end": 46.207,
+      "text": "Nasce così DevOps, cioè Development più Operations:",
+      "words": [
+        {
+          "text": "Nasce",
+          "start": 43.186,
+          "end": 43.426
+        },
+        {
+          "text": "così",
+          "start": 43.466,
+          "end": 43.646
+        },
+        {
+          "text": "DevOps,",
+          "start": 43.906,
+          "end": 44.287
+        },
+        {
+          "text": "cioè",
+          "start": 44.507,
+          "end": 44.627
+        },
+        {
+          "text": "Development",
+          "start": 44.747,
+          "end": 45.247
+        },
+        {
+          "text": "più",
+          "start": 45.307,
+          "end": 45.427
+        },
+        {
+          "text": "Operations:",
+          "start": 45.667,
+          "end": 46.207
+        }
+      ]
+    },
+    {
+      "start": 46.787,
+      "end": 52.948,
+      "text": "un unico team integra sviluppo, distribuzione e supporto, con ambienti identici tra sviluppo e produzione",
+      "words": [
+        {
+          "text": "un",
+          "start": 46.787,
+          "end": 46.867
+        },
+        {
+          "text": "unico",
+          "start": 46.927,
+          "end": 47.147
+        },
+        {
+          "text": "team",
+          "start": 47.187,
+          "end": 47.347
+        },
+        {
+          "text": "integra",
+          "start": 47.627,
+          "end": 47.987
+        },
+        {
+          "text": "sviluppo,",
+          "start": 48.067,
+          "end": 48.547
+        },
+        {
+          "text": "distribuzione",
+          "start": 48.787,
+          "end": 49.547
+        },
+        {
+          "text": "e",
+          "start": 49.687,
+          "end": 49.727
+        },
+        {
+          "text": "supporto,",
+          "start": 49.827,
+          "end": 50.367
+        },
+        {
+          "text": "con",
+          "start": 50.787,
+          "end": 50.887
+        },
+        {
+          "text": "ambienti",
+          "start": 50.908,
+          "end": 51.228
+        },
+        {
+          "text": "identici",
+          "start": 51.268,
+          "end": 51.748
+        },
+        {
+          "text": "tra",
+          "start": 51.788,
+          "end": 51.888
+        },
+        {
+          "text": "sviluppo",
+          "start": 51.948,
+          "end": 52.288
+        },
+        {
+          "text": "e",
+          "start": 52.308,
+          "end": 52.348
+        },
+        {
+          "text": "produzione",
+          "start": 52.368,
+          "end": 52.948
+        }
+      ]
+    },
+    {
+      "start": 53.068,
+      "end": 54.628,
+      "text": "e rilasci molto più frequenti.",
+      "words": [
+        {
+          "text": "e",
+          "start": 53.068,
+          "end": 53.108
+        },
+        {
+          "text": "rilasci",
+          "start": 53.188,
+          "end": 53.588
+        },
+        {
+          "text": "molto",
+          "start": 53.728,
+          "end": 54.008
+        },
+        {
+          "text": "più",
+          "start": 54.048,
+          "end": 54.128
+        },
+        {
+          "text": "frequenti.",
+          "start": 54.168,
+          "end": 54.628
+        }
+      ]
+    },
+    {
+      "start": 55.408,
+      "end": 61.109,
+      "text": "Le sue radici uniscono Agile, microservizi, i sette principi del Lean Software Development e due",
+      "words": [
+        {
+          "text": "Le",
+          "start": 55.408,
+          "end": 55.468
+        },
+        {
+          "text": "sue",
+          "start": 55.508,
+          "end": 55.648
+        },
+        {
+          "text": "radici",
+          "start": 55.648,
+          "end": 55.968
+        },
+        {
+          "text": "uniscono",
+          "start": 56.048,
+          "end": 56.428
+        },
+        {
+          "text": "Agile,",
+          "start": 56.548,
+          "end": 57.008
+        },
+        {
+          "text": "microservizi,",
+          "start": 57.188,
+          "end": 57.969
+        },
+        {
+          "text": "i",
+          "start": 58.209,
+          "end": 58.249
+        },
+        {
+          "text": "sette",
+          "start": 58.349,
+          "end": 58.629
+        },
+        {
+          "text": "principi",
+          "start": 58.649,
+          "end": 59.069
+        },
+        {
+          "text": "del",
+          "start": 59.109,
+          "end": 59.229
+        },
+        {
+          "text": "Lean",
+          "start": 59.269,
+          "end": 59.429
+        },
+        {
+          "text": "Software",
+          "start": 59.529,
+          "end": 59.869
+        },
+        {
+          "text": "Development",
+          "start": 59.889,
+          "end": 60.349
+        },
+        {
+          "text": "e",
+          "start": 60.729,
+          "end": 60.769
+        },
+        {
+          "text": "due",
+          "start": 60.909,
+          "end": 61.109
+        }
+      ]
+    },
+    {
+      "start": 61.129,
+      "end": 67.65,
+      "text": "idee Toyota: kaizen, il miglioramento continuo, e jidoka, fermare la produzione perché non debba fermarsi",
+      "words": [
+        {
+          "text": "idee",
+          "start": 61.129,
+          "end": 61.349
+        },
+        {
+          "text": "Toyota:",
+          "start": 61.369,
+          "end": 61.769
+        },
+        {
+          "text": "kaizen,",
+          "start": 62.149,
+          "end": 62.549
+        },
+        {
+          "text": "il",
+          "start": 62.769,
+          "end": 62.829
+        },
+        {
+          "text": "miglioramento",
+          "start": 62.849,
+          "end": 63.329
+        },
+        {
+          "text": "continuo,",
+          "start": 63.369,
+          "end": 63.789
+        },
+        {
+          "text": "e",
+          "start": 64.089,
+          "end": 64.129
+        },
+        {
+          "text": "jidoka,",
+          "start": 64.309,
+          "end": 64.77
+        },
+        {
+          "text": "fermare",
+          "start": 65.13,
+          "end": 65.57
+        },
+        {
+          "text": "la",
+          "start": 65.61,
+          "end": 65.65
+        },
+        {
+          "text": "produzione",
+          "start": 65.69,
+          "end": 66.25
+        },
+        {
+          "text": "perché",
+          "start": 66.43,
+          "end": 66.69
+        },
+        {
+          "text": "non",
+          "start": 66.75,
+          "end": 66.87
+        },
+        {
+          "text": "debba",
+          "start": 66.93,
+          "end": 67.19
+        },
+        {
+          "text": "fermarsi",
+          "start": 67.25,
+          "end": 67.65
+        }
+      ]
+    },
+    {
+      "start": 67.69,
+      "end": 67.87,
+      "text": "mai.",
+      "words": [
+        {
+          "text": "mai.",
+          "start": 67.69,
+          "end": 67.87
+        }
+      ]
+    }
+  ]
+}

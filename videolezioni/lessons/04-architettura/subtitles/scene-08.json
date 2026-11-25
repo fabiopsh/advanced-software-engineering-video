@@ -1,0 +1,1154 @@
+{
+  "duration": 83.79,
+  "segments": [
+    {
+      "start": 0.06,
+      "end": 3.761,
+      "text": "Fissiamo ora quattro dettagli operativi fondamentali di questo capitolo.",
+      "words": [
+        {
+          "text": "Fissiamo",
+          "start": 0.06,
+          "end": 0.46
+        },
+        {
+          "text": "ora",
+          "start": 0.54,
+          "end": 0.66
+        },
+        {
+          "text": "quattro",
+          "start": 0.78,
+          "end": 1.12
+        },
+        {
+          "text": "dettagli",
+          "start": 1.16,
+          "end": 1.62
+        },
+        {
+          "text": "operativi",
+          "start": 1.66,
+          "end": 2.141
+        },
+        {
+          "text": "fondamentali",
+          "start": 2.201,
+          "end": 2.941
+        },
+        {
+          "text": "di",
+          "start": 2.981,
+          "end": 3.041
+        },
+        {
+          "text": "questo",
+          "start": 3.061,
+          "end": 3.301
+        },
+        {
+          "text": "capitolo.",
+          "start": 3.341,
+          "end": 3.761
+        }
+      ]
+    },
+    {
+      "start": 4.661,
+      "end": 6.402,
+      "text": "Primo, i cinque strati web.",
+      "words": [
+        {
+          "text": "Primo,",
+          "start": 4.661,
+          "end": 4.901
+        },
+        {
+          "text": "i",
+          "start": 5.321,
+          "end": 5.361
+        },
+        {
+          "text": "cinque",
+          "start": 5.421,
+          "end": 5.741
+        },
+        {
+          "text": "strati",
+          "start": 5.801,
+          "end": 6.081
+        },
+        {
+          "text": "web.",
+          "start": 6.161,
+          "end": 6.402
+        }
+      ]
+    },
+    {
+      "start": 7.382,
+      "end": 12.803,
+      "text": "L'interfaccia browser o mobile usa form HTML e JavaScript per la validazione locale dell'input.",
+      "words": [
+        {
+          "text": "L'interfaccia",
+          "start": 7.382,
+          "end": 7.882
+        },
+        {
+          "text": "browser",
+          "start": 7.942,
+          "end": 8.342
+        },
+        {
+          "text": "o",
+          "start": 8.362,
+          "end": 8.402
+        },
+        {
+          "text": "mobile",
+          "start": 8.442,
+          "end": 8.902
+        },
+        {
+          "text": "usa",
+          "start": 9.062,
+          "end": 9.222
+        },
+        {
+          "text": "form",
+          "start": 9.302,
+          "end": 9.542
+        },
+        {
+          "text": "HTML",
+          "start": 9.642,
+          "end": 10.222
+        },
+        {
+          "text": "e",
+          "start": 10.322,
+          "end": 10.362
+        },
+        {
+          "text": "JavaScript",
+          "start": 10.402,
+          "end": 10.963
+        },
+        {
+          "text": "per",
+          "start": 11.123,
+          "end": 11.223
+        },
+        {
+          "text": "la",
+          "start": 11.263,
+          "end": 11.323
+        },
+        {
+          "text": "validazione",
+          "start": 11.363,
+          "end": 11.883
+        },
+        {
+          "text": "locale",
+          "start": 11.923,
+          "end": 12.223
+        },
+        {
+          "text": "dell'input.",
+          "start": 12.263,
+          "end": 12.803
+        }
+      ]
+    },
+    {
+      "start": 13.463,
+      "end": 18.945,
+      "text": "Seguono autenticazione e gestione dell'interfaccia, lo strato applicativo, divisibile in più strati,",
+      "words": [
+        {
+          "text": "Seguono",
+          "start": 13.463,
+          "end": 13.743
+        },
+        {
+          "text": "autenticazione",
+          "start": 13.963,
+          "end": 14.804
+        },
+        {
+          "text": "e",
+          "start": 14.984,
+          "end": 15.024
+        },
+        {
+          "text": "gestione",
+          "start": 15.064,
+          "end": 15.384
+        },
+        {
+          "text": "dell'interfaccia,",
+          "start": 15.424,
+          "end": 16.164
+        },
+        {
+          "text": "lo",
+          "start": 16.584,
+          "end": 16.664
+        },
+        {
+          "text": "strato",
+          "start": 16.724,
+          "end": 17.004
+        },
+        {
+          "text": "applicativo,",
+          "start": 17.044,
+          "end": 17.564
+        },
+        {
+          "text": "divisibile",
+          "start": 17.824,
+          "end": 18.264
+        },
+        {
+          "text": "in",
+          "start": 18.324,
+          "end": 18.364
+        },
+        {
+          "text": "più",
+          "start": 18.424,
+          "end": 18.524
+        },
+        {
+          "text": "strati,",
+          "start": 18.604,
+          "end": 18.945
+        }
+      ]
+    },
+    {
+      "start": 19.325,
+      "end": 20.325,
+      "text": "e i servizi condivisi.",
+      "words": [
+        {
+          "text": "e",
+          "start": 19.325,
+          "end": 19.365
+        },
+        {
+          "text": "i",
+          "start": 19.405,
+          "end": 19.445
+        },
+        {
+          "text": "servizi",
+          "start": 19.465,
+          "end": 19.825
+        },
+        {
+          "text": "condivisi.",
+          "start": 19.865,
+          "end": 20.325
+        }
+      ]
+    },
+    {
+      "start": 20.985,
+      "end": 24.366,
+      "text": "In fondo, lo strato database gestisce transazioni e recovery,",
+      "words": [
+        {
+          "text": "In",
+          "start": 20.985,
+          "end": 21.065
+        },
+        {
+          "text": "fondo,",
+          "start": 21.125,
+          "end": 21.445
+        },
+        {
+          "text": "lo",
+          "start": 21.565,
+          "end": 21.645
+        },
+        {
+          "text": "strato",
+          "start": 21.685,
+          "end": 21.965
+        },
+        {
+          "text": "database",
+          "start": 22.025,
+          "end": 22.525
+        },
+        {
+          "text": "gestisce",
+          "start": 22.625,
+          "end": 23.046
+        },
+        {
+          "text": "transazioni",
+          "start": 23.126,
+          "end": 23.746
+        },
+        {
+          "text": "e",
+          "start": 23.806,
+          "end": 23.846
+        },
+        {
+          "text": "recovery,",
+          "start": 23.906,
+          "end": 24.366
+        }
+      ]
+    },
+    {
+      "start": 24.666,
+      "end": 26.146,
+      "text": "ma si omette senza database:",
+      "words": [
+        {
+          "text": "ma",
+          "start": 24.666,
+          "end": 24.746
+        },
+        {
+          "text": "si",
+          "start": 24.866,
+          "end": 24.926
+        },
+        {
+          "text": "omette",
+          "start": 24.986,
+          "end": 25.306
+        },
+        {
+          "text": "senza",
+          "start": 25.366,
+          "end": 25.586
+        },
+        {
+          "text": "database:",
+          "start": 25.626,
+          "end": 26.146
+        }
+      ]
+    },
+    {
+      "start": 27.006,
+      "end": 30.087,
+      "text": "l'architetto personalizza lo schema aggiungendo o togliendo strati.",
+      "words": [
+        {
+          "text": "l'architetto",
+          "start": 27.006,
+          "end": 27.507
+        },
+        {
+          "text": "personalizza",
+          "start": 27.567,
+          "end": 28.107
+        },
+        {
+          "text": "lo",
+          "start": 28.147,
+          "end": 28.187
+        },
+        {
+          "text": "schema",
+          "start": 28.227,
+          "end": 28.507
+        },
+        {
+          "text": "aggiungendo",
+          "start": 28.627,
+          "end": 29.247
+        },
+        {
+          "text": "o",
+          "start": 29.267,
+          "end": 29.307
+        },
+        {
+          "text": "togliendo",
+          "start": 29.347,
+          "end": 29.687
+        },
+        {
+          "text": "strati.",
+          "start": 29.747,
+          "end": 30.087
+        }
+      ]
+    },
+    {
+      "start": 31.147,
+      "end": 33.528,
+      "text": "Secondo, la security architecture a strati.",
+      "words": [
+        {
+          "text": "Secondo,",
+          "start": 31.147,
+          "end": 31.528
+        },
+        {
+          "text": "la",
+          "start": 31.888,
+          "end": 31.948
+        },
+        {
+          "text": "security",
+          "start": 32.008,
+          "end": 32.448
+        },
+        {
+          "text": "architecture",
+          "start": 32.488,
+          "end": 33.048
+        },
+        {
+          "text": "a",
+          "start": 33.068,
+          "end": 33.108
+        },
+        {
+          "text": "strati.",
+          "start": 33.148,
+          "end": 33.528
+        }
+      ]
+    },
+    {
+      "start": 34.608,
+      "end": 40.31,
+      "text": "Tecnologie diverse hanno vulnerabilità distinte, per esempio un database SQL e il browser Firefox,",
+      "words": [
+        {
+          "text": "Tecnologie",
+          "start": 34.608,
+          "end": 35.128
+        },
+        {
+          "text": "diverse",
+          "start": 35.168,
+          "end": 35.649
+        },
+        {
+          "text": "hanno",
+          "start": 35.789,
+          "end": 36.029
+        },
+        {
+          "text": "vulnerabilità",
+          "start": 36.109,
+          "end": 36.689
+        },
+        {
+          "text": "distinte,",
+          "start": 36.749,
+          "end": 37.349
+        },
+        {
+          "text": "per",
+          "start": 37.589,
+          "end": 37.689
+        },
+        {
+          "text": "esempio",
+          "start": 37.689,
+          "end": 37.969
+        },
+        {
+          "text": "un",
+          "start": 38.009,
+          "end": 38.069
+        },
+        {
+          "text": "database",
+          "start": 38.069,
+          "end": 38.529
+        },
+        {
+          "text": "SQL",
+          "start": 38.609,
+          "end": 39.129
+        },
+        {
+          "text": "e",
+          "start": 39.189,
+          "end": 39.229
+        },
+        {
+          "text": "il",
+          "start": 39.429,
+          "end": 39.509
+        },
+        {
+          "text": "browser",
+          "start": 39.529,
+          "end": 39.85
+        },
+        {
+          "text": "Firefox,",
+          "start": 39.89,
+          "end": 40.31
+        }
+      ]
+    },
+    {
+      "start": 40.83,
+      "end": 43.31,
+      "text": "quindi ogni strato va protetto separatamente.",
+      "words": [
+        {
+          "text": "quindi",
+          "start": 40.83,
+          "end": 41.03
+        },
+        {
+          "text": "ogni",
+          "start": 41.25,
+          "end": 41.45
+        },
+        {
+          "text": "strato",
+          "start": 41.55,
+          "end": 41.91
+        },
+        {
+          "text": "va",
+          "start": 41.97,
+          "end": 42.03
+        },
+        {
+          "text": "protetto",
+          "start": 42.09,
+          "end": 42.47
+        },
+        {
+          "text": "separatamente.",
+          "start": 42.57,
+          "end": 43.31
+        }
+      ]
+    },
+    {
+      "start": 44.231,
+      "end": 47.431,
+      "text": "Così ci si difende sia da attacchi già riusciti agli strati superiori,",
+      "words": [
+        {
+          "text": "Così",
+          "start": 44.231,
+          "end": 44.411
+        },
+        {
+          "text": "ci",
+          "start": 44.571,
+          "end": 44.651
+        },
+        {
+          "text": "si",
+          "start": 44.711,
+          "end": 44.771
+        },
+        {
+          "text": "difende",
+          "start": 44.811,
+          "end": 45.111
+        },
+        {
+          "text": "sia",
+          "start": 45.211,
+          "end": 45.351
+        },
+        {
+          "text": "da",
+          "start": 45.391,
+          "end": 45.431
+        },
+        {
+          "text": "attacchi",
+          "start": 45.451,
+          "end": 45.851
+        },
+        {
+          "text": "già",
+          "start": 45.931,
+          "end": 46.011
+        },
+        {
+          "text": "riusciti",
+          "start": 46.091,
+          "end": 46.491
+        },
+        {
+          "text": "agli",
+          "start": 46.511,
+          "end": 46.651
+        },
+        {
+          "text": "strati",
+          "start": 46.691,
+          "end": 46.931
+        },
+        {
+          "text": "superiori,",
+          "start": 46.971,
+          "end": 47.431
+        }
+      ]
+    },
+    {
+      "start": 47.811,
+      "end": 50.512,
+      "text": "sia da guasti software di un singolo componente di sicurezza.",
+      "words": [
+        {
+          "text": "sia",
+          "start": 47.811,
+          "end": 47.931
+        },
+        {
+          "text": "da",
+          "start": 47.991,
+          "end": 48.031
+        },
+        {
+          "text": "guasti",
+          "start": 48.091,
+          "end": 48.352
+        },
+        {
+          "text": "software",
+          "start": 48.412,
+          "end": 48.832
+        },
+        {
+          "text": "di",
+          "start": 48.852,
+          "end": 48.912
+        },
+        {
+          "text": "un",
+          "start": 48.952,
+          "end": 49.032
+        },
+        {
+          "text": "singolo",
+          "start": 49.092,
+          "end": 49.392
+        },
+        {
+          "text": "componente",
+          "start": 49.432,
+          "end": 49.912
+        },
+        {
+          "text": "di",
+          "start": 49.952,
+          "end": 49.992
+        },
+        {
+          "text": "sicurezza.",
+          "start": 50.032,
+          "end": 50.512
+        }
+      ]
+    },
+    {
+      "start": 51.612,
+      "end": 53.793,
+      "text": "Terzo, i flussi completi MVC.",
+      "words": [
+        {
+          "text": "Terzo,",
+          "start": 51.612,
+          "end": 51.932
+        },
+        {
+          "text": "i",
+          "start": 52.453,
+          "end": 52.493
+        },
+        {
+          "text": "flussi",
+          "start": 52.553,
+          "end": 52.833
+        },
+        {
+          "text": "completi",
+          "start": 52.893,
+          "end": 53.273
+        },
+        {
+          "text": "MVC.",
+          "start": 53.433,
+          "end": 53.793
+        }
+      ]
+    },
+    {
+      "start": 54.673,
+      "end": 59.314,
+      "text": "Oltre agli input dal Browser al Controller, la View invia al Browser page to display",
+      "words": [
+        {
+          "text": "Oltre",
+          "start": 54.673,
+          "end": 54.913
+        },
+        {
+          "text": "agli",
+          "start": 54.953,
+          "end": 55.093
+        },
+        {
+          "text": "input",
+          "start": 55.133,
+          "end": 55.433
+        },
+        {
+          "text": "dal",
+          "start": 55.553,
+          "end": 55.693
+        },
+        {
+          "text": "Browser",
+          "start": 55.733,
+          "end": 56.113
+        },
+        {
+          "text": "al",
+          "start": 56.173,
+          "end": 56.253
+        },
+        {
+          "text": "Controller,",
+          "start": 56.293,
+          "end": 56.914
+        },
+        {
+          "text": "la",
+          "start": 57.234,
+          "end": 57.314
+        },
+        {
+          "text": "View",
+          "start": 57.354,
+          "end": 57.454
+        },
+        {
+          "text": "invia",
+          "start": 57.614,
+          "end": 57.854
+        },
+        {
+          "text": "al",
+          "start": 57.914,
+          "end": 57.974
+        },
+        {
+          "text": "Browser",
+          "start": 57.994,
+          "end": 58.354
+        },
+        {
+          "text": "page",
+          "start": 58.474,
+          "end": 58.754
+        },
+        {
+          "text": "to",
+          "start": 58.794,
+          "end": 58.854
+        },
+        {
+          "text": "display",
+          "start": 58.894,
+          "end": 59.314
+        }
+      ]
+    },
+    {
+      "start": 59.494,
+      "end": 63.515,
+      "text": "e al Controller user changes; il Controller invia updates al Model,",
+      "words": [
+        {
+          "text": "e",
+          "start": 59.494,
+          "end": 59.534
+        },
+        {
+          "text": "al",
+          "start": 59.574,
+          "end": 59.654
+        },
+        {
+          "text": "Controller",
+          "start": 59.694,
+          "end": 60.194
+        },
+        {
+          "text": "user",
+          "start": 60.354,
+          "end": 60.574
+        },
+        {
+          "text": "changes;",
+          "start": 60.634,
+          "end": 61.075
+        },
+        {
+          "text": "il",
+          "start": 61.575,
+          "end": 61.655
+        },
+        {
+          "text": "Controller",
+          "start": 61.695,
+          "end": 62.155
+        },
+        {
+          "text": "invia",
+          "start": 62.215,
+          "end": 62.435
+        },
+        {
+          "text": "updates",
+          "start": 62.555,
+          "end": 63.015
+        },
+        {
+          "text": "al",
+          "start": 63.075,
+          "end": 63.175
+        },
+        {
+          "text": "Model,",
+          "start": 63.215,
+          "end": 63.515
+        }
+      ]
+    },
+    {
+      "start": 63.835,
+      "end": 65.116,
+      "text": "che restituisce i data alle View.",
+      "words": [
+        {
+          "text": "che",
+          "start": 63.835,
+          "end": 63.915
+        },
+        {
+          "text": "restituisce",
+          "start": 63.995,
+          "end": 64.495
+        },
+        {
+          "text": "i",
+          "start": 64.535,
+          "end": 64.575
+        },
+        {
+          "text": "data",
+          "start": 64.595,
+          "end": 64.795
+        },
+        {
+          "text": "alle",
+          "start": 64.835,
+          "end": 64.956
+        },
+        {
+          "text": "View.",
+          "start": 64.996,
+          "end": 65.116
+        }
+      ]
+    },
+    {
+      "start": 65.796,
+      "end": 68.376,
+      "text": "Aggiungiamo così una view mobile senza toccare il Model,",
+      "words": [
+        {
+          "text": "Aggiungiamo",
+          "start": 65.796,
+          "end": 66.196
+        },
+        {
+          "text": "così",
+          "start": 66.256,
+          "end": 66.436
+        },
+        {
+          "text": "una",
+          "start": 66.496,
+          "end": 66.616
+        },
+        {
+          "text": "view",
+          "start": 66.656,
+          "end": 66.756
+        },
+        {
+          "text": "mobile",
+          "start": 66.836,
+          "end": 67.276
+        },
+        {
+          "text": "senza",
+          "start": 67.376,
+          "end": 67.636
+        },
+        {
+          "text": "toccare",
+          "start": 67.676,
+          "end": 67.976
+        },
+        {
+          "text": "il",
+          "start": 68.016,
+          "end": 68.05600000000001
+        },
+        {
+          "text": "Model,",
+          "start": 68.096,
+          "end": 68.376
+        }
+      ]
+    },
+    {
+      "start": 68.636,
+      "end": 70.697,
+      "text": "perché il Model non sa come sono disegnate le view.",
+      "words": [
+        {
+          "text": "perché",
+          "start": 68.636,
+          "end": 68.836
+        },
+        {
+          "text": "il",
+          "start": 68.856,
+          "end": 68.916
+        },
+        {
+          "text": "Model",
+          "start": 68.936,
+          "end": 69.177
+        },
+        {
+          "text": "non",
+          "start": 69.277,
+          "end": 69.417
+        },
+        {
+          "text": "sa",
+          "start": 69.497,
+          "end": 69.597
+        },
+        {
+          "text": "come",
+          "start": 69.697,
+          "end": 69.837
+        },
+        {
+          "text": "sono",
+          "start": 69.877,
+          "end": 70.037
+        },
+        {
+          "text": "disegnate",
+          "start": 70.057,
+          "end": 70.477
+        },
+        {
+          "text": "le",
+          "start": 70.497,
+          "end": 70.557
+        },
+        {
+          "text": "view.",
+          "start": 70.577,
+          "end": 70.697
+        }
+      ]
+    },
+    {
+      "start": 71.997,
+      "end": 73.738,
+      "text": "Quarto, i bias tecnologici:",
+      "words": [
+        {
+          "text": "Quarto,",
+          "start": 71.997,
+          "end": 72.337
+        },
+        {
+          "text": "i",
+          "start": 72.597,
+          "end": 72.637
+        },
+        {
+          "text": "bias",
+          "start": 72.677,
+          "end": 73.017
+        },
+        {
+          "text": "tecnologici:",
+          "start": 73.057,
+          "end": 73.738
+        }
+      ]
+    },
+    {
+      "start": 74.518,
+      "end": 79.519,
+      "text": "un mobile dev toolkit condiziona direttamente il progetto, ma c'è anche un'influenza indiretta,",
+      "words": [
+        {
+          "text": "un",
+          "start": 74.518,
+          "end": 74.618
+        },
+        {
+          "text": "mobile",
+          "start": 74.698,
+          "end": 75.098
+        },
+        {
+          "text": "dev",
+          "start": 75.158,
+          "end": 75.318
+        },
+        {
+          "text": "toolkit",
+          "start": 75.418,
+          "end": 75.898
+        },
+        {
+          "text": "condiziona",
+          "start": 76.098,
+          "end": 76.558
+        },
+        {
+          "text": "direttamente",
+          "start": 76.618,
+          "end": 77.178
+        },
+        {
+          "text": "il",
+          "start": 77.218,
+          "end": 77.278
+        },
+        {
+          "text": "progetto,",
+          "start": 77.298,
+          "end": 77.799
+        },
+        {
+          "text": "ma",
+          "start": 78.159,
+          "end": 78.219
+        },
+        {
+          "text": "c'è",
+          "start": 78.259,
+          "end": 78.339
+        },
+        {
+          "text": "anche",
+          "start": 78.379,
+          "end": 78.499
+        },
+        {
+          "text": "un'influenza",
+          "start": 78.539,
+          "end": 78.999
+        },
+        {
+          "text": "indiretta,",
+          "start": 79.039,
+          "end": 79.519
+        }
+      ]
+    },
+    {
+      "start": 79.979,
+      "end": 83.54,
+      "text": "per esempio un team abituato ai database relazionali tenderà a sceglierne uno.",
+      "words": [
+        {
+          "text": "per",
+          "start": 79.979,
+          "end": 80.079
+        },
+        {
+          "text": "esempio",
+          "start": 80.099,
+          "end": 80.339
+        },
+        {
+          "text": "un",
+          "start": 80.419,
+          "end": 80.499
+        },
+        {
+          "text": "team",
+          "start": 80.539,
+          "end": 80.719
+        },
+        {
+          "text": "abituato",
+          "start": 80.779,
+          "end": 81.179
+        },
+        {
+          "text": "ai",
+          "start": 81.199,
+          "end": 81.279
+        },
+        {
+          "text": "database",
+          "start": 81.299,
+          "end": 81.72
+        },
+        {
+          "text": "relazionali",
+          "start": 81.78,
+          "end": 82.38
+        },
+        {
+          "text": "tenderà",
+          "start": 82.52,
+          "end": 82.8
+        },
+        {
+          "text": "a",
+          "start": 82.86,
+          "end": 82.9
+        },
+        {
+          "text": "sceglierne",
+          "start": 82.88,
+          "end": 83.32
+        },
+        {
+          "text": "uno.",
+          "start": 83.4,
+          "end": 83.54
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1026 @@
+{
+  "duration": 74.794,
+  "segments": [
+    {
+      "start": 0.08,
+      "end": 2.94,
+      "text": "Il security testing persegue due obiettivi:",
+      "words": [
+        {
+          "text": "Il",
+          "start": 0.08,
+          "end": 0.2
+        },
+        {
+          "text": "security",
+          "start": 0.36,
+          "end": 0.82
+        },
+        {
+          "text": "testing",
+          "start": 0.88,
+          "end": 1.38
+        },
+        {
+          "text": "persegue",
+          "start": 1.54,
+          "end": 2.02
+        },
+        {
+          "text": "due",
+          "start": 2.14,
+          "end": 2.32
+        },
+        {
+          "text": "obiettivi:",
+          "start": 2.38,
+          "end": 2.94
+        }
+      ]
+    },
+    {
+      "start": 3.52,
+      "end": 9.921,
+      "text": "scovare vulnerabilità sfruttabili e fornire prove convincenti che il sistema sia abbastanza sicuro.",
+      "words": [
+        {
+          "text": "scovare",
+          "start": 3.52,
+          "end": 3.92
+        },
+        {
+          "text": "vulnerabilità",
+          "start": 3.98,
+          "end": 4.66
+        },
+        {
+          "text": "sfruttabili",
+          "start": 4.74,
+          "end": 5.42
+        },
+        {
+          "text": "e",
+          "start": 5.86,
+          "end": 5.9
+        },
+        {
+          "text": "fornire",
+          "start": 5.96,
+          "end": 6.36
+        },
+        {
+          "text": "prove",
+          "start": 6.44,
+          "end": 6.7
+        },
+        {
+          "text": "convincenti",
+          "start": 6.8,
+          "end": 7.621
+        },
+        {
+          "text": "che",
+          "start": 7.701,
+          "end": 7.781
+        },
+        {
+          "text": "il",
+          "start": 7.841,
+          "end": 7.901
+        },
+        {
+          "text": "sistema",
+          "start": 7.941,
+          "end": 8.321
+        },
+        {
+          "text": "sia",
+          "start": 8.381,
+          "end": 8.581
+        },
+        {
+          "text": "abbastanza",
+          "start": 8.781,
+          "end": 9.501
+        },
+        {
+          "text": "sicuro.",
+          "start": 9.561,
+          "end": 9.921
+        }
+      ]
+    },
+    {
+      "start": 10.861,
+      "end": 14.621,
+      "text": "Trovare vulnerabilità è molto più arduo che trovare bug funzionali,",
+      "words": [
+        {
+          "text": "Trovare",
+          "start": 10.861,
+          "end": 11.141
+        },
+        {
+          "text": "vulnerabilità",
+          "start": 11.201,
+          "end": 11.841
+        },
+        {
+          "text": "è",
+          "start": 12.101,
+          "end": 12.141
+        },
+        {
+          "text": "molto",
+          "start": 12.281,
+          "end": 12.641
+        },
+        {
+          "text": "più",
+          "start": 12.681,
+          "end": 12.781
+        },
+        {
+          "text": "arduo",
+          "start": 12.881,
+          "end": 13.161
+        },
+        {
+          "text": "che",
+          "start": 13.241,
+          "end": 13.321
+        },
+        {
+          "text": "trovare",
+          "start": 13.361,
+          "end": 13.661
+        },
+        {
+          "text": "bug",
+          "start": 13.761,
+          "end": 13.961
+        },
+        {
+          "text": "funzionali,",
+          "start": 14.041,
+          "end": 14.621
+        }
+      ]
+    },
+    {
+      "start": 14.941,
+      "end": 15.661,
+      "text": "per tre ragioni.",
+      "words": [
+        {
+          "text": "per",
+          "start": 14.941,
+          "end": 15.061
+        },
+        {
+          "text": "tre",
+          "start": 15.121,
+          "end": 15.221
+        },
+        {
+          "text": "ragioni.",
+          "start": 15.301,
+          "end": 15.661
+        }
+      ]
+    },
+    {
+      "start": 16.201,
+      "end": 19.541,
+      "text": "Prima di tutto bisogna verificare ciò che il software non deve fare,",
+      "words": [
+        {
+          "text": "Prima",
+          "start": 16.201,
+          "end": 16.401
+        },
+        {
+          "text": "di",
+          "start": 16.441,
+          "end": 16.501
+        },
+        {
+          "text": "tutto",
+          "start": 16.561,
+          "end": 16.821
+        },
+        {
+          "text": "bisogna",
+          "start": 16.941,
+          "end": 17.221
+        },
+        {
+          "text": "verificare",
+          "start": 17.281,
+          "end": 17.741
+        },
+        {
+          "text": "ciò",
+          "start": 17.801,
+          "end": 17.901
+        },
+        {
+          "text": "che",
+          "start": 17.941,
+          "end": 18.021
+        },
+        {
+          "text": "il",
+          "start": 18.041,
+          "end": 18.101
+        },
+        {
+          "text": "software",
+          "start": 18.161,
+          "end": 18.541
+        },
+        {
+          "text": "non",
+          "start": 18.721,
+          "end": 18.901
+        },
+        {
+          "text": "deve",
+          "start": 18.981,
+          "end": 19.181
+        },
+        {
+          "text": "fare,",
+          "start": 19.241,
+          "end": 19.541
+        }
+      ]
+    },
+    {
+      "start": 19.921,
+      "end": 22.082,
+      "text": "e i casi negativi sono potenzialmente infiniti.",
+      "words": [
+        {
+          "text": "e",
+          "start": 19.921,
+          "end": 19.961
+        },
+        {
+          "text": "i",
+          "start": 20.001,
+          "end": 20.041
+        },
+        {
+          "text": "casi",
+          "start": 20.061,
+          "end": 20.241
+        },
+        {
+          "text": "negativi",
+          "start": 20.301,
+          "end": 20.661
+        },
+        {
+          "text": "sono",
+          "start": 20.721,
+          "end": 20.921
+        },
+        {
+          "text": "potenzialmente",
+          "start": 20.981,
+          "end": 21.581
+        },
+        {
+          "text": "infiniti.",
+          "start": 21.641,
+          "end": 22.082
+        }
+      ]
+    },
+    {
+      "start": 22.722,
+      "end": 27.042,
+      "text": "Inoltre i test funzionali ordinari spesso non rilevano le falle di sicurezza,",
+      "words": [
+        {
+          "text": "Inoltre",
+          "start": 22.722,
+          "end": 23.122
+        },
+        {
+          "text": "i",
+          "start": 23.302,
+          "end": 23.342
+        },
+        {
+          "text": "test",
+          "start": 23.382,
+          "end": 23.562
+        },
+        {
+          "text": "funzionali",
+          "start": 23.622,
+          "end": 24.102
+        },
+        {
+          "text": "ordinari",
+          "start": 24.162,
+          "end": 24.662
+        },
+        {
+          "text": "spesso",
+          "start": 24.802,
+          "end": 25.182
+        },
+        {
+          "text": "non",
+          "start": 25.282,
+          "end": 25.422
+        },
+        {
+          "text": "rilevano",
+          "start": 25.482,
+          "end": 25.962
+        },
+        {
+          "text": "le",
+          "start": 26.102,
+          "end": 26.162
+        },
+        {
+          "text": "falle",
+          "start": 26.202,
+          "end": 26.422
+        },
+        {
+          "text": "di",
+          "start": 26.462,
+          "end": 26.522
+        },
+        {
+          "text": "sicurezza,",
+          "start": 26.562,
+          "end": 27.042
+        }
+      ]
+    },
+    {
+      "start": 27.602,
+      "end": 32.742,
+      "text": "e lo stesso stack sottostante — sistema operativo, librerie e database — può contenere vulnerabilità.",
+      "words": [
+        {
+          "text": "e",
+          "start": 27.602,
+          "end": 27.642
+        },
+        {
+          "text": "lo",
+          "start": 27.682,
+          "end": 27.742
+        },
+        {
+          "text": "stesso",
+          "start": 27.762,
+          "end": 28.002
+        },
+        {
+          "text": "stack",
+          "start": 28.062,
+          "end": 28.262
+        },
+        {
+          "text": "sottostante",
+          "start": 28.322,
+          "end": 29.002
+        },
+        {
+          "text": "—",
+          "start": 29.002,
+          "end": 29.152
+        },
+        {
+          "text": "sistema",
+          "start": 29.302,
+          "end": 29.562
+        },
+        {
+          "text": "operativo,",
+          "start": 29.602,
+          "end": 30.042
+        },
+        {
+          "text": "librerie",
+          "start": 30.102,
+          "end": 30.542
+        },
+        {
+          "text": "e",
+          "start": 30.582,
+          "end": 30.622
+        },
+        {
+          "text": "database",
+          "start": 30.642,
+          "end": 31.162
+        },
+        {
+          "text": "—",
+          "start": 31.162,
+          "end": 31.312
+        },
+        {
+          "text": "può",
+          "start": 31.482,
+          "end": 31.562
+        },
+        {
+          "text": "contenere",
+          "start": 31.622,
+          "end": 32.062
+        },
+        {
+          "text": "vulnerabilità.",
+          "start": 32.102,
+          "end": 32.742
+        }
+      ]
+    },
+    {
+      "start": 34.802,
+      "end": 40.803,
+      "text": "Un penetration testing condotto da specialisti esterni mediante attacchi reali è efficace ma costoso.",
+      "words": [
+        {
+          "text": "Un",
+          "start": 34.802,
+          "end": 34.902
+        },
+        {
+          "text": "penetration",
+          "start": 34.962,
+          "end": 35.482
+        },
+        {
+          "text": "testing",
+          "start": 35.542,
+          "end": 35.982
+        },
+        {
+          "text": "condotto",
+          "start": 36.082,
+          "end": 36.423
+        },
+        {
+          "text": "da",
+          "start": 36.483,
+          "end": 36.543
+        },
+        {
+          "text": "specialisti",
+          "start": 36.603,
+          "end": 37.103
+        },
+        {
+          "text": "esterni",
+          "start": 37.143,
+          "end": 37.583
+        },
+        {
+          "text": "mediante",
+          "start": 37.623,
+          "end": 37.983
+        },
+        {
+          "text": "attacchi",
+          "start": 38.023,
+          "end": 38.363
+        },
+        {
+          "text": "reali",
+          "start": 38.403,
+          "end": 38.743
+        },
+        {
+          "text": "è",
+          "start": 39.163,
+          "end": 39.203
+        },
+        {
+          "text": "efficace",
+          "start": 39.283,
+          "end": 39.963
+        },
+        {
+          "text": "ma",
+          "start": 40.143,
+          "end": 40.223
+        },
+        {
+          "text": "costoso.",
+          "start": 40.303,
+          "end": 40.803
+        }
+      ]
+    },
+    {
+      "start": 41.363,
+      "end": 43.563,
+      "text": "Per questo si adotta un approccio basato sul rischio:",
+      "words": [
+        {
+          "text": "Per",
+          "start": 41.363,
+          "end": 41.463
+        },
+        {
+          "text": "questo",
+          "start": 41.503,
+          "end": 41.743
+        },
+        {
+          "text": "si",
+          "start": 41.803,
+          "end": 41.843
+        },
+        {
+          "text": "adotta",
+          "start": 41.883,
+          "end": 42.143
+        },
+        {
+          "text": "un",
+          "start": 42.163,
+          "end": 42.223
+        },
+        {
+          "text": "approccio",
+          "start": 42.243,
+          "end": 42.583
+        },
+        {
+          "text": "basato",
+          "start": 42.623,
+          "end": 42.923
+        },
+        {
+          "text": "sul",
+          "start": 43.003,
+          "end": 43.163
+        },
+        {
+          "text": "rischio:",
+          "start": 43.223,
+          "end": 43.563
+        }
+      ]
+    },
+    {
+      "start": 44.123,
+      "end": 48.203,
+      "text": "si individuano i rischi di sicurezza prioritari del prodotto e si sviluppano test,",
+      "words": [
+        {
+          "text": "si",
+          "start": 44.123,
+          "end": 44.183
+        },
+        {
+          "text": "individuano",
+          "start": 44.223,
+          "end": 44.683
+        },
+        {
+          "text": "i",
+          "start": 44.743,
+          "end": 44.783
+        },
+        {
+          "text": "rischi",
+          "start": 44.823,
+          "end": 45.063
+        },
+        {
+          "text": "di",
+          "start": 45.083,
+          "end": 45.143
+        },
+        {
+          "text": "sicurezza",
+          "start": 45.183,
+          "end": 45.623
+        },
+        {
+          "text": "prioritari",
+          "start": 45.703,
+          "end": 46.243
+        },
+        {
+          "text": "del",
+          "start": 46.283,
+          "end": 46.383
+        },
+        {
+          "text": "prodotto",
+          "start": 46.423,
+          "end": 46.863
+        },
+        {
+          "text": "e",
+          "start": 47.183,
+          "end": 47.223
+        },
+        {
+          "text": "si",
+          "start": 47.283,
+          "end": 47.363
+        },
+        {
+          "text": "sviluppano",
+          "start": 47.423,
+          "end": 47.843
+        },
+        {
+          "text": "test,",
+          "start": 47.903,
+          "end": 48.203
+        }
+      ]
+    },
+    {
+      "start": 48.623,
+      "end": 52.384,
+      "text": "in parte automatici e in parte manuali, che ne dimostrino la protezione.",
+      "words": [
+        {
+          "text": "in",
+          "start": 48.623,
+          "end": 48.703
+        },
+        {
+          "text": "parte",
+          "start": 48.723,
+          "end": 48.963
+        },
+        {
+          "text": "automatici",
+          "start": 49.023,
+          "end": 49.603
+        },
+        {
+          "text": "e",
+          "start": 49.643,
+          "end": 49.683
+        },
+        {
+          "text": "in",
+          "start": 49.703,
+          "end": 49.743
+        },
+        {
+          "text": "parte",
+          "start": 49.783,
+          "end": 50.023
+        },
+        {
+          "text": "manuali,",
+          "start": 50.063,
+          "end": 50.503
+        },
+        {
+          "text": "che",
+          "start": 50.824,
+          "end": 50.904
+        },
+        {
+          "text": "ne",
+          "start": 50.964,
+          "end": 51.024
+        },
+        {
+          "text": "dimostrino",
+          "start": 51.084,
+          "end": 51.604
+        },
+        {
+          "text": "la",
+          "start": 51.684,
+          "end": 51.744
+        },
+        {
+          "text": "protezione.",
+          "start": 51.784,
+          "end": 52.384
+        }
+      ]
+    },
+    {
+      "start": 52.964,
+      "end": 56.224,
+      "text": "Tra i rischi tipici rientrano l'abuso di credenziali autorizzate,",
+      "words": [
+        {
+          "text": "Tra",
+          "start": 52.964,
+          "end": 53.084
+        },
+        {
+          "text": "i",
+          "start": 53.164,
+          "end": 53.204
+        },
+        {
+          "text": "rischi",
+          "start": 53.264,
+          "end": 53.484
+        },
+        {
+          "text": "tipici",
+          "start": 53.544,
+          "end": 53.924
+        },
+        {
+          "text": "rientrano",
+          "start": 54.044,
+          "end": 54.464
+        },
+        {
+          "text": "l'abuso",
+          "start": 54.524,
+          "end": 54.904
+        },
+        {
+          "text": "di",
+          "start": 54.944,
+          "end": 55.004
+        },
+        {
+          "text": "credenziali",
+          "start": 55.044,
+          "end": 55.564
+        },
+        {
+          "text": "autorizzate,",
+          "start": 55.624,
+          "end": 56.224
+        }
+      ]
+    },
+    {
+      "start": 56.544,
+      "end": 60.744,
+      "text": "l'accesso a risorse vietate, attacchi di SQL poisoning sul database,",
+      "words": [
+        {
+          "text": "l'accesso",
+          "start": 56.544,
+          "end": 56.984
+        },
+        {
+          "text": "a",
+          "start": 57.024,
+          "end": 57.064
+        },
+        {
+          "text": "risorse",
+          "start": 57.084,
+          "end": 57.444
+        },
+        {
+          "text": "vietate,",
+          "start": 57.484,
+          "end": 57.904
+        },
+        {
+          "text": "attacchi",
+          "start": 58.344,
+          "end": 58.724
+        },
+        {
+          "text": "di",
+          "start": 58.764,
+          "end": 58.844
+        },
+        {
+          "text": "SQL",
+          "start": 59.084,
+          "end": 59.424
+        },
+        {
+          "text": "poisoning",
+          "start": 59.524,
+          "end": 60.024
+        },
+        {
+          "text": "sul",
+          "start": 60.084,
+          "end": 60.224
+        },
+        {
+          "text": "database,",
+          "start": 60.244,
+          "end": 60.744
+        }
+      ]
+    },
+    {
+      "start": 61.284,
+      "end": 63.944,
+      "text": "gestione errata di sessioni e cookie HTTP,",
+      "words": [
+        {
+          "text": "gestione",
+          "start": 61.284,
+          "end": 61.624
+        },
+        {
+          "text": "errata",
+          "start": 61.644,
+          "end": 61.944
+        },
+        {
+          "text": "di",
+          "start": 61.984,
+          "end": 62.064
+        },
+        {
+          "text": "sessioni",
+          "start": 62.144,
+          "end": 62.644
+        },
+        {
+          "text": "e",
+          "start": 62.824,
+          "end": 62.864
+        },
+        {
+          "text": "cookie",
+          "start": 62.964,
+          "end": 63.384
+        },
+        {
+          "text": "HTTP,",
+          "start": 63.524,
+          "end": 63.944
+        }
+      ]
+    },
+    {
+      "start": 64.604,
+      "end": 66.625,
+      "text": "dati non cifrati e chiavi esposte.",
+      "words": [
+        {
+          "text": "dati",
+          "start": 64.604,
+          "end": 64.844
+        },
+        {
+          "text": "non",
+          "start": 64.964,
+          "end": 65.105
+        },
+        {
+          "text": "cifrati",
+          "start": 65.145,
+          "end": 65.605
+        },
+        {
+          "text": "e",
+          "start": 65.805,
+          "end": 65.84500000000001
+        },
+        {
+          "text": "chiavi",
+          "start": 65.885,
+          "end": 66.125
+        },
+        {
+          "text": "esposte.",
+          "start": 66.185,
+          "end": 66.625
+        }
+      ]
+    },
+    {
+      "start": 67.645,
+      "end": 72.765,
+      "text": "La regola d'oro è pensare come un attaccante: provare di proposito la cosa sbagliata e",
+      "words": [
+        {
+          "text": "La",
+          "start": 67.645,
+          "end": 67.705
+        },
+        {
+          "text": "regola",
+          "start": 67.745,
+          "end": 67.985
+        },
+        {
+          "text": "d'oro",
+          "start": 68.025,
+          "end": 68.245
+        },
+        {
+          "text": "è",
+          "start": 68.385,
+          "end": 68.42500000000001
+        },
+        {
+          "text": "pensare",
+          "start": 68.505,
+          "end": 68.945
+        },
+        {
+          "text": "come",
+          "start": 68.985,
+          "end": 69.165
+        },
+        {
+          "text": "un",
+          "start": 69.205,
+          "end": 69.285
+        },
+        {
+          "text": "attaccante:",
+          "start": 69.305,
+          "end": 69.945
+        },
+        {
+          "text": "provare",
+          "start": 70.365,
+          "end": 70.705
+        },
+        {
+          "text": "di",
+          "start": 70.785,
+          "end": 70.865
+        },
+        {
+          "text": "proposito",
+          "start": 70.905,
+          "end": 71.425
+        },
+        {
+          "text": "la",
+          "start": 71.485,
+          "end": 71.525
+        },
+        {
+          "text": "cosa",
+          "start": 71.565,
+          "end": 71.745
+        },
+        {
+          "text": "sbagliata",
+          "start": 71.805,
+          "end": 72.345
+        },
+        {
+          "text": "e",
+          "start": 72.725,
+          "end": 72.765
+        }
+      ]
+    },
+    {
+      "start": 72.825,
+      "end": 74.585,
+      "text": "ripetere più volte le stesse azioni.",
+      "words": [
+        {
+          "text": "ripetere",
+          "start": 72.825,
+          "end": 73.185
+        },
+        {
+          "text": "più",
+          "start": 73.285,
+          "end": 73.425
+        },
+        {
+          "text": "volte",
+          "start": 73.525,
+          "end": 73.825
+        },
+        {
+          "text": "le",
+          "start": 73.865,
+          "end": 73.925
+        },
+        {
+          "text": "stesse",
+          "start": 73.965,
+          "end": 74.185
+        },
+        {
+          "text": "azioni.",
+          "start": 74.225,
+          "end": 74.585
+        }
+      ]
+    }
+  ]
+}

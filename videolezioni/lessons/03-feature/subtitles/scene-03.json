@@ -1,0 +1,1068 @@
+{
+  "duration": 74.992,
+  "segments": [
+    {
+      "start": 0.08,
+      "end": 2.24,
+      "text": "Dalle personas passiamo agli scenari.",
+      "words": [
+        {
+          "text": "Dalle",
+          "start": 0.08,
+          "end": 0.3
+        },
+        {
+          "text": "personas",
+          "start": 0.34,
+          "end": 0.96
+        },
+        {
+          "text": "passiamo",
+          "start": 1.04,
+          "end": 1.54
+        },
+        {
+          "text": "agli",
+          "start": 1.58,
+          "end": 1.78
+        },
+        {
+          "text": "scenari.",
+          "start": 1.82,
+          "end": 2.24
+        }
+      ]
+    },
+    {
+      "start": 2.92,
+      "end": 8.161,
+      "text": "Uno scenario è una narrazione che descrive una situazione in cui un utente usa le",
+      "words": [
+        {
+          "text": "Uno",
+          "start": 2.92,
+          "end": 3.04
+        },
+        {
+          "text": "scenario",
+          "start": 3.06,
+          "end": 3.58
+        },
+        {
+          "text": "è",
+          "start": 3.72,
+          "end": 3.7600000000000002
+        },
+        {
+          "text": "una",
+          "start": 3.82,
+          "end": 3.94
+        },
+        {
+          "text": "narrazione",
+          "start": 4.02,
+          "end": 4.58
+        },
+        {
+          "text": "che",
+          "start": 4.62,
+          "end": 4.7
+        },
+        {
+          "text": "descrive",
+          "start": 4.74,
+          "end": 5.18
+        },
+        {
+          "text": "una",
+          "start": 5.28,
+          "end": 5.42
+        },
+        {
+          "text": "situazione",
+          "start": 5.5,
+          "end": 6.2
+        },
+        {
+          "text": "in",
+          "start": 6.66,
+          "end": 6.74
+        },
+        {
+          "text": "cui",
+          "start": 6.8,
+          "end": 6.94
+        },
+        {
+          "text": "un",
+          "start": 7.0,
+          "end": 7.08
+        },
+        {
+          "text": "utente",
+          "start": 7.14,
+          "end": 7.641
+        },
+        {
+          "text": "usa",
+          "start": 7.841,
+          "end": 8.021
+        },
+        {
+          "text": "le",
+          "start": 8.081,
+          "end": 8.161
+        }
+      ]
+    },
+    {
+      "start": 8.281,
+      "end": 11.261,
+      "text": "feature del prodotto per raggiungere qualcosa che vuole fare,",
+      "words": [
+        {
+          "text": "feature",
+          "start": 8.281,
+          "end": 8.681
+        },
+        {
+          "text": "del",
+          "start": 8.721,
+          "end": 8.841
+        },
+        {
+          "text": "prodotto",
+          "start": 8.881,
+          "end": 9.301
+        },
+        {
+          "text": "per",
+          "start": 9.361,
+          "end": 9.481
+        },
+        {
+          "text": "raggiungere",
+          "start": 9.541,
+          "end": 10.101
+        },
+        {
+          "text": "qualcosa",
+          "start": 10.141,
+          "end": 10.581
+        },
+        {
+          "text": "che",
+          "start": 10.621,
+          "end": 10.701
+        },
+        {
+          "text": "vuole",
+          "start": 10.761,
+          "end": 10.961
+        },
+        {
+          "text": "fare,",
+          "start": 11.001,
+          "end": 11.261
+        }
+      ]
+    },
+    {
+      "start": 11.521,
+      "end": 13.941,
+      "text": "con l'obiettivo di scoprire nuove funzionalità.",
+      "words": [
+        {
+          "text": "con",
+          "start": 11.521,
+          "end": 11.621
+        },
+        {
+          "text": "l'obiettivo",
+          "start": 11.641,
+          "end": 12.081
+        },
+        {
+          "text": "di",
+          "start": 12.141,
+          "end": 12.221
+        },
+        {
+          "text": "scoprire",
+          "start": 12.301,
+          "end": 12.841
+        },
+        {
+          "text": "nuove",
+          "start": 12.981,
+          "end": 13.261
+        },
+        {
+          "text": "funzionalità.",
+          "start": 13.361,
+          "end": 13.941
+        }
+      ]
+    },
+    {
+      "start": 14.781,
+      "end": 19.421,
+      "text": "Uno scenario completo include sei elementi: il nome, le personas coinvolte,",
+      "words": [
+        {
+          "text": "Uno",
+          "start": 14.781,
+          "end": 14.921
+        },
+        {
+          "text": "scenario",
+          "start": 14.941,
+          "end": 15.261
+        },
+        {
+          "text": "completo",
+          "start": 15.281,
+          "end": 15.721
+        },
+        {
+          "text": "include",
+          "start": 15.801,
+          "end": 16.141
+        },
+        {
+          "text": "sei",
+          "start": 16.321,
+          "end": 16.541
+        },
+        {
+          "text": "elementi:",
+          "start": 16.601,
+          "end": 17.121
+        },
+        {
+          "text": "il",
+          "start": 17.441,
+          "end": 17.521
+        },
+        {
+          "text": "nome,",
+          "start": 17.601,
+          "end": 17.881
+        },
+        {
+          "text": "le",
+          "start": 18.241,
+          "end": 18.321
+        },
+        {
+          "text": "personas",
+          "start": 18.381,
+          "end": 18.801
+        },
+        {
+          "text": "coinvolte,",
+          "start": 18.821,
+          "end": 19.421
+        }
+      ]
+    },
+    {
+      "start": 19.821,
+      "end": 23.822,
+      "text": "l'obiettivo generale, il problema che il sistema esistente non risolve,",
+      "words": [
+        {
+          "text": "l'obiettivo",
+          "start": 19.821,
+          "end": 20.341
+        },
+        {
+          "text": "generale,",
+          "start": 20.401,
+          "end": 20.901
+        },
+        {
+          "text": "il",
+          "start": 21.361,
+          "end": 21.461
+        },
+        {
+          "text": "problema",
+          "start": 21.541,
+          "end": 21.981
+        },
+        {
+          "text": "che",
+          "start": 22.042,
+          "end": 22.122
+        },
+        {
+          "text": "il",
+          "start": 22.162,
+          "end": 22.222
+        },
+        {
+          "text": "sistema",
+          "start": 22.262,
+          "end": 22.562
+        },
+        {
+          "text": "esistente",
+          "start": 22.602,
+          "end": 23.062
+        },
+        {
+          "text": "non",
+          "start": 23.142,
+          "end": 23.262
+        },
+        {
+          "text": "risolve,",
+          "start": 23.322,
+          "end": 23.822
+        }
+      ]
+    },
+    {
+      "start": 24.262,
+      "end": 27.902,
+      "text": "ciò che serve per raggiungerlo e i modi possibili per affrontarlo.",
+      "words": [
+        {
+          "text": "ciò",
+          "start": 24.262,
+          "end": 24.402
+        },
+        {
+          "text": "che",
+          "start": 24.502,
+          "end": 24.582
+        },
+        {
+          "text": "serve",
+          "start": 24.722,
+          "end": 25.022
+        },
+        {
+          "text": "per",
+          "start": 25.082,
+          "end": 25.182
+        },
+        {
+          "text": "raggiungerlo",
+          "start": 25.242,
+          "end": 25.902
+        },
+        {
+          "text": "e",
+          "start": 26.102,
+          "end": 26.142
+        },
+        {
+          "text": "i",
+          "start": 26.162,
+          "end": 26.202
+        },
+        {
+          "text": "modi",
+          "start": 26.242,
+          "end": 26.442
+        },
+        {
+          "text": "possibili",
+          "start": 26.482,
+          "end": 27.062
+        },
+        {
+          "text": "per",
+          "start": 27.102,
+          "end": 27.202
+        },
+        {
+          "text": "affrontarlo.",
+          "start": 27.242,
+          "end": 27.902
+        }
+      ]
+    },
+    {
+      "start": 28.582,
+      "end": 30.742,
+      "text": "Vediamo lo scenario Fishing in Ullapool.",
+      "words": [
+        {
+          "text": "Vediamo",
+          "start": 28.582,
+          "end": 28.842
+        },
+        {
+          "text": "lo",
+          "start": 28.862,
+          "end": 28.922
+        },
+        {
+          "text": "scenario",
+          "start": 28.942,
+          "end": 29.382
+        },
+        {
+          "text": "Fishing",
+          "start": 29.562,
+          "end": 30.002
+        },
+        {
+          "text": "in",
+          "start": 30.142,
+          "end": 30.242
+        },
+        {
+          "text": "Ullapool.",
+          "start": 30.282,
+          "end": 30.742
+        }
+      ]
+    },
+    {
+      "start": 31.482,
+      "end": 36.322,
+      "text": "Jack insegna alle elementari e avvia un progetto sulla pesca locale usando il wiki di",
+      "words": [
+        {
+          "text": "Jack",
+          "start": 31.482,
+          "end": 31.722
+        },
+        {
+          "text": "insegna",
+          "start": 31.982,
+          "end": 32.522
+        },
+        {
+          "text": "alle",
+          "start": 32.562,
+          "end": 32.722
+        },
+        {
+          "text": "elementari",
+          "start": 32.782,
+          "end": 33.382
+        },
+        {
+          "text": "e",
+          "start": 33.762,
+          "end": 33.802
+        },
+        {
+          "text": "avvia",
+          "start": 33.822,
+          "end": 34.002
+        },
+        {
+          "text": "un",
+          "start": 34.042,
+          "end": 34.102
+        },
+        {
+          "text": "progetto",
+          "start": 34.122,
+          "end": 34.482
+        },
+        {
+          "text": "sulla",
+          "start": 34.522,
+          "end": 34.682
+        },
+        {
+          "text": "pesca",
+          "start": 34.702,
+          "end": 34.922
+        },
+        {
+          "text": "locale",
+          "start": 34.962,
+          "end": 35.302
+        },
+        {
+          "text": "usando",
+          "start": 35.422,
+          "end": 35.722
+        },
+        {
+          "text": "il",
+          "start": 35.782,
+          "end": 35.822
+        },
+        {
+          "text": "wiki",
+          "start": 35.902,
+          "end": 36.182
+        },
+        {
+          "text": "di",
+          "start": 36.242,
+          "end": 36.322
+        }
+      ]
+    },
+    {
+      "start": 36.582,
+      "end": 36.923,
+      "text": "iLearn.",
+      "words": [
+        {
+          "text": "iLearn.",
+          "start": 36.582,
+          "end": 36.923
+        }
+      ]
+    },
+    {
+      "start": 37.663,
+      "end": 43.723,
+      "text": "Gli studenti devono condividere e commentare fotografie, ma serve moderazione preventiva per copyright e privacy.",
+      "words": [
+        {
+          "text": "Gli",
+          "start": 37.663,
+          "end": 37.803
+        },
+        {
+          "text": "studenti",
+          "start": 37.823,
+          "end": 38.223
+        },
+        {
+          "text": "devono",
+          "start": 38.283,
+          "end": 38.623
+        },
+        {
+          "text": "condividere",
+          "start": 38.663,
+          "end": 39.303
+        },
+        {
+          "text": "e",
+          "start": 39.343,
+          "end": 39.383
+        },
+        {
+          "text": "commentare",
+          "start": 39.423,
+          "end": 39.803
+        },
+        {
+          "text": "fotografie,",
+          "start": 39.823,
+          "end": 40.343
+        },
+        {
+          "text": "ma",
+          "start": 40.703,
+          "end": 40.763
+        },
+        {
+          "text": "serve",
+          "start": 40.883,
+          "end": 41.123
+        },
+        {
+          "text": "moderazione",
+          "start": 41.203,
+          "end": 41.683
+        },
+        {
+          "text": "preventiva",
+          "start": 41.723,
+          "end": 42.243
+        },
+        {
+          "text": "per",
+          "start": 42.303,
+          "end": 42.423
+        },
+        {
+          "text": "copyright",
+          "start": 42.503,
+          "end": 43.003
+        },
+        {
+          "text": "e",
+          "start": 43.163,
+          "end": 43.203
+        },
+        {
+          "text": "privacy.",
+          "start": 43.263,
+          "end": 43.723
+        }
+      ]
+    },
+    {
+      "start": 44.323,
+      "end": 49.563,
+      "text": "Su consiglio di due colleghi, Jack adotta KidsTakePics, crea un account docente e uno di",
+      "words": [
+        {
+          "text": "Su",
+          "start": 44.323,
+          "end": 44.383
+        },
+        {
+          "text": "consiglio",
+          "start": 44.463,
+          "end": 44.903
+        },
+        {
+          "text": "di",
+          "start": 44.963,
+          "end": 45.043
+        },
+        {
+          "text": "due",
+          "start": 45.103,
+          "end": 45.243
+        },
+        {
+          "text": "colleghi,",
+          "start": 45.283,
+          "end": 45.703
+        },
+        {
+          "text": "Jack",
+          "start": 45.843,
+          "end": 46.043
+        },
+        {
+          "text": "adotta",
+          "start": 46.123,
+          "end": 46.463
+        },
+        {
+          "text": "KidsTakePics,",
+          "start": 46.563,
+          "end": 47.463
+        },
+        {
+          "text": "crea",
+          "start": 47.943,
+          "end": 48.183
+        },
+        {
+          "text": "un",
+          "start": 48.223,
+          "end": 48.303
+        },
+        {
+          "text": "account",
+          "start": 48.323,
+          "end": 48.663
+        },
+        {
+          "text": "docente",
+          "start": 48.743,
+          "end": 49.243
+        },
+        {
+          "text": "e",
+          "start": 49.283,
+          "end": 49.323
+        },
+        {
+          "text": "uno",
+          "start": 49.343,
+          "end": 49.463
+        },
+        {
+          "text": "di",
+          "start": 49.503,
+          "end": 49.563
+        }
+      ]
+    },
+    {
+      "start": 49.603,
+      "end": 54.544,
+      "text": "classe non integrati con iLearn, e aggiunge il servizio così che gli alunni carichino foto",
+      "words": [
+        {
+          "text": "classe",
+          "start": 49.603,
+          "end": 50.003
+        },
+        {
+          "text": "non",
+          "start": 50.123,
+          "end": 50.303
+        },
+        {
+          "text": "integrati",
+          "start": 50.343,
+          "end": 50.863
+        },
+        {
+          "text": "con",
+          "start": 50.903,
+          "end": 51.043
+        },
+        {
+          "text": "iLearn,",
+          "start": 51.143,
+          "end": 51.464
+        },
+        {
+          "text": "e",
+          "start": 51.924,
+          "end": 51.964
+        },
+        {
+          "text": "aggiunge",
+          "start": 52.024,
+          "end": 52.324
+        },
+        {
+          "text": "il",
+          "start": 52.364,
+          "end": 52.424
+        },
+        {
+          "text": "servizio",
+          "start": 52.484,
+          "end": 53.004
+        },
+        {
+          "text": "così",
+          "start": 53.044,
+          "end": 53.224
+        },
+        {
+          "text": "che",
+          "start": 53.264,
+          "end": 53.364
+        },
+        {
+          "text": "gli",
+          "start": 53.384,
+          "end": 53.484
+        },
+        {
+          "text": "alunni",
+          "start": 53.504,
+          "end": 53.804
+        },
+        {
+          "text": "carichino",
+          "start": 53.884,
+          "end": 54.304
+        },
+        {
+          "text": "foto",
+          "start": 54.344,
+          "end": 54.544
+        }
+      ]
+    },
+    {
+      "start": 54.584,
+      "end": 55.844,
+      "text": "da telefono o computer.",
+      "words": [
+        {
+          "text": "da",
+          "start": 54.584,
+          "end": 54.644
+        },
+        {
+          "text": "telefono",
+          "start": 54.684,
+          "end": 55.084
+        },
+        {
+          "text": "o",
+          "start": 55.244,
+          "end": 55.284
+        },
+        {
+          "text": "computer.",
+          "start": 55.364,
+          "end": 55.844
+        }
+      ]
+    },
+    {
+      "start": 56.664,
+      "end": 60.044,
+      "text": "Ricordiamo infine come si scrivono e quali sono i loro limiti:",
+      "words": [
+        {
+          "text": "Ricordiamo",
+          "start": 56.664,
+          "end": 57.064
+        },
+        {
+          "text": "infine",
+          "start": 57.104,
+          "end": 57.484
+        },
+        {
+          "text": "come",
+          "start": 57.584,
+          "end": 57.764
+        },
+        {
+          "text": "si",
+          "start": 57.804,
+          "end": 57.884
+        },
+        {
+          "text": "scrivono",
+          "start": 57.944,
+          "end": 58.384
+        },
+        {
+          "text": "e",
+          "start": 58.524,
+          "end": 58.564
+        },
+        {
+          "text": "quali",
+          "start": 58.684,
+          "end": 58.964
+        },
+        {
+          "text": "sono",
+          "start": 59.044,
+          "end": 59.324
+        },
+        {
+          "text": "i",
+          "start": 59.424,
+          "end": 59.464
+        },
+        {
+          "text": "loro",
+          "start": 59.524,
+          "end": 59.684
+        },
+        {
+          "text": "limiti:",
+          "start": 59.724,
+          "end": 60.044
+        }
+      ]
+    },
+    {
+      "start": 60.624,
+      "end": 64.184,
+      "text": "servono tre o quattro scenari per persona sulle responsabilità principali,",
+      "words": [
+        {
+          "text": "servono",
+          "start": 60.624,
+          "end": 60.964
+        },
+        {
+          "text": "tre",
+          "start": 61.044,
+          "end": 61.204
+        },
+        {
+          "text": "o",
+          "start": 61.304,
+          "end": 61.344
+        },
+        {
+          "text": "quattro",
+          "start": 61.384,
+          "end": 61.684
+        },
+        {
+          "text": "scenari",
+          "start": 61.704,
+          "end": 62.064
+        },
+        {
+          "text": "per",
+          "start": 62.104,
+          "end": 62.224
+        },
+        {
+          "text": "persona",
+          "start": 62.264,
+          "end": 62.684
+        },
+        {
+          "text": "sulle",
+          "start": 62.744,
+          "end": 62.924
+        },
+        {
+          "text": "responsabilità",
+          "start": 62.964,
+          "end": 63.604
+        },
+        {
+          "text": "principali,",
+          "start": 63.664,
+          "end": 64.184
+        }
+      ]
+    },
+    {
+      "start": 64.604,
+      "end": 68.625,
+      "text": "scritti dal punto di vista dell'utente, prima da soli e poi discussi in team.",
+      "words": [
+        {
+          "text": "scritti",
+          "start": 64.604,
+          "end": 64.924
+        },
+        {
+          "text": "dal",
+          "start": 64.964,
+          "end": 65.084
+        },
+        {
+          "text": "punto",
+          "start": 65.124,
+          "end": 65.344
+        },
+        {
+          "text": "di",
+          "start": 65.384,
+          "end": 65.444
+        },
+        {
+          "text": "vista",
+          "start": 65.464,
+          "end": 65.664
+        },
+        {
+          "text": "dell'utente,",
+          "start": 65.704,
+          "end": 66.285
+        },
+        {
+          "text": "prima",
+          "start": 66.665,
+          "end": 66.945
+        },
+        {
+          "text": "da",
+          "start": 67.005,
+          "end": 67.065
+        },
+        {
+          "text": "soli",
+          "start": 67.125,
+          "end": 67.425
+        },
+        {
+          "text": "e",
+          "start": 67.585,
+          "end": 67.625
+        },
+        {
+          "text": "poi",
+          "start": 67.725,
+          "end": 67.845
+        },
+        {
+          "text": "discussi",
+          "start": 67.865,
+          "end": 68.245
+        },
+        {
+          "text": "in",
+          "start": 68.305,
+          "end": 68.365
+        },
+        {
+          "text": "team.",
+          "start": 68.405,
+          "end": 68.625
+        }
+      ]
+    },
+    {
+      "start": 69.185,
+      "end": 72.725,
+      "text": "Stimolano creatività e comunicazione, ma restano di alto livello:",
+      "words": [
+        {
+          "text": "Stimolano",
+          "start": 69.185,
+          "end": 69.605
+        },
+        {
+          "text": "creatività",
+          "start": 69.665,
+          "end": 70.165
+        },
+        {
+          "text": "e",
+          "start": 70.265,
+          "end": 70.305
+        },
+        {
+          "text": "comunicazione,",
+          "start": 70.345,
+          "end": 71.105
+        },
+        {
+          "text": "ma",
+          "start": 71.465,
+          "end": 71.545
+        },
+        {
+          "text": "restano",
+          "start": 71.665,
+          "end": 71.965
+        },
+        {
+          "text": "di",
+          "start": 72.005,
+          "end": 72.085
+        },
+        {
+          "text": "alto",
+          "start": 72.145,
+          "end": 72.345
+        },
+        {
+          "text": "livello:",
+          "start": 72.385,
+          "end": 72.725
+        }
+      ]
+    },
+    {
+      "start": 72.985,
+      "end": 74.545,
+      "text": "non sono specifiche complete.",
+      "words": [
+        {
+          "text": "non",
+          "start": 72.985,
+          "end": 73.105
+        },
+        {
+          "text": "sono",
+          "start": 73.145,
+          "end": 73.325
+        },
+        {
+          "text": "specifiche",
+          "start": 73.485,
+          "end": 74.045
+        },
+        {
+          "text": "complete.",
+          "start": 74.085,
+          "end": 74.545
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1085 @@
+{
+  "duration": 76.995,
+  "segments": [
+    {
+      "start": 0.04,
+      "end": 3.46,
+      "text": "Benvenuti al quarto capitolo, dedicato all'architettura del software.",
+      "words": [
+        {
+          "text": "Benvenuti",
+          "start": 0.04,
+          "end": 0.46
+        },
+        {
+          "text": "al",
+          "start": 0.52,
+          "end": 0.6
+        },
+        {
+          "text": "quarto",
+          "start": 0.66,
+          "end": 0.9
+        },
+        {
+          "text": "capitolo,",
+          "start": 0.94,
+          "end": 1.38
+        },
+        {
+          "text": "dedicato",
+          "start": 1.62,
+          "end": 2.04
+        },
+        {
+          "text": "all'architettura",
+          "start": 2.08,
+          "end": 2.8
+        },
+        {
+          "text": "del",
+          "start": 2.84,
+          "end": 2.98
+        },
+        {
+          "text": "software.",
+          "start": 3.04,
+          "end": 3.46
+        }
+      ]
+    },
+    {
+      "start": 4.26,
+      "end": 7.501,
+      "text": "Per costruire un buon prodotto non basta curare le singole feature:",
+      "words": [
+        {
+          "text": "Per",
+          "start": 4.26,
+          "end": 4.38
+        },
+        {
+          "text": "costruire",
+          "start": 4.4,
+          "end": 4.821
+        },
+        {
+          "text": "un",
+          "start": 4.861,
+          "end": 4.921
+        },
+        {
+          "text": "buon",
+          "start": 4.961,
+          "end": 5.121
+        },
+        {
+          "text": "prodotto",
+          "start": 5.161,
+          "end": 5.621
+        },
+        {
+          "text": "non",
+          "start": 5.761,
+          "end": 5.901
+        },
+        {
+          "text": "basta",
+          "start": 5.941,
+          "end": 6.221
+        },
+        {
+          "text": "curare",
+          "start": 6.321,
+          "end": 6.641
+        },
+        {
+          "text": "le",
+          "start": 6.681,
+          "end": 6.761
+        },
+        {
+          "text": "singole",
+          "start": 6.801,
+          "end": 7.081
+        },
+        {
+          "text": "feature:",
+          "start": 7.121,
+          "end": 7.501
+        }
+      ]
+    },
+    {
+      "start": 7.981,
+      "end": 10.981,
+      "text": "occorre progettare l'organizzazione complessiva del sistema.",
+      "words": [
+        {
+          "text": "occorre",
+          "start": 7.981,
+          "end": 8.301
+        },
+        {
+          "text": "progettare",
+          "start": 8.341,
+          "end": 8.861
+        },
+        {
+          "text": "l'organizzazione",
+          "start": 8.941,
+          "end": 9.721
+        },
+        {
+          "text": "complessiva",
+          "start": 9.781,
+          "end": 10.381
+        },
+        {
+          "text": "del",
+          "start": 10.421,
+          "end": 10.541
+        },
+        {
+          "text": "sistema.",
+          "start": 10.581,
+          "end": 10.981
+        }
+      ]
+    },
+    {
+      "start": 11.921,
+      "end": 18.202,
+      "text": "Secondo la definizione I E E E, l'architettura software è l'organizzazione fondamentale di un sistema,",
+      "words": [
+        {
+          "text": "Secondo",
+          "start": 11.921,
+          "end": 12.221
+        },
+        {
+          "text": "la",
+          "start": 12.241,
+          "end": 12.301
+        },
+        {
+          "text": "definizione",
+          "start": 12.341,
+          "end": 12.921
+        },
+        {
+          "text": "I",
+          "start": 13.181,
+          "end": 13.221
+        },
+        {
+          "text": "E",
+          "start": 13.422,
+          "end": 13.462
+        },
+        {
+          "text": "E",
+          "start": 13.642,
+          "end": 13.682
+        },
+        {
+          "text": "E,",
+          "start": 13.902,
+          "end": 13.942
+        },
+        {
+          "text": "l'architettura",
+          "start": 14.422,
+          "end": 14.982
+        },
+        {
+          "text": "software",
+          "start": 15.062,
+          "end": 15.482
+        },
+        {
+          "text": "è",
+          "start": 15.602,
+          "end": 15.642
+        },
+        {
+          "text": "l'organizzazione",
+          "start": 15.702,
+          "end": 16.562
+        },
+        {
+          "text": "fondamentale",
+          "start": 16.662,
+          "end": 17.442
+        },
+        {
+          "text": "di",
+          "start": 17.482,
+          "end": 17.542
+        },
+        {
+          "text": "un",
+          "start": 17.582,
+          "end": 17.662
+        },
+        {
+          "text": "sistema,",
+          "start": 17.742,
+          "end": 18.202
+        }
+      ]
+    },
+    {
+      "start": 18.522,
+      "end": 22.783,
+      "text": "incorporata nei suoi componenti, nelle loro relazioni reciproche e con l'ambiente,",
+      "words": [
+        {
+          "text": "incorporata",
+          "start": 18.522,
+          "end": 19.142
+        },
+        {
+          "text": "nei",
+          "start": 19.182,
+          "end": 19.282
+        },
+        {
+          "text": "suoi",
+          "start": 19.322,
+          "end": 19.482
+        },
+        {
+          "text": "componenti,",
+          "start": 19.522,
+          "end": 20.142
+        },
+        {
+          "text": "nelle",
+          "start": 20.482,
+          "end": 20.682
+        },
+        {
+          "text": "loro",
+          "start": 20.742,
+          "end": 20.942
+        },
+        {
+          "text": "relazioni",
+          "start": 20.982,
+          "end": 21.402
+        },
+        {
+          "text": "reciproche",
+          "start": 21.462,
+          "end": 22.002
+        },
+        {
+          "text": "e",
+          "start": 22.042,
+          "end": 22.082
+        },
+        {
+          "text": "con",
+          "start": 22.102,
+          "end": 22.222
+        },
+        {
+          "text": "l'ambiente,",
+          "start": 22.242,
+          "end": 22.783
+        }
+      ]
+    },
+    {
+      "start": 23.163,
+      "end": 25.963,
+      "text": "e nei principi che guidano il suo design e la sua evoluzione.",
+      "words": [
+        {
+          "text": "e",
+          "start": 23.163,
+          "end": 23.203
+        },
+        {
+          "text": "nei",
+          "start": 23.243,
+          "end": 23.363
+        },
+        {
+          "text": "principi",
+          "start": 23.403,
+          "end": 23.803
+        },
+        {
+          "text": "che",
+          "start": 23.843,
+          "end": 23.923
+        },
+        {
+          "text": "guidano",
+          "start": 23.983,
+          "end": 24.283
+        },
+        {
+          "text": "il",
+          "start": 24.323,
+          "end": 24.383
+        },
+        {
+          "text": "suo",
+          "start": 24.403,
+          "end": 24.523
+        },
+        {
+          "text": "design",
+          "start": 24.563,
+          "end": 24.943
+        },
+        {
+          "text": "e",
+          "start": 25.083,
+          "end": 25.123
+        },
+        {
+          "text": "la",
+          "start": 25.163,
+          "end": 25.223
+        },
+        {
+          "text": "sua",
+          "start": 25.263,
+          "end": 25.383
+        },
+        {
+          "text": "evoluzione.",
+          "start": 25.423,
+          "end": 25.963
+        }
+      ]
+    },
+    {
+      "start": 26.703,
+      "end": 27.843,
+      "text": "Ma che cos'è un componente?",
+      "words": [
+        {
+          "text": "Ma",
+          "start": 26.703,
+          "end": 26.763
+        },
+        {
+          "text": "che",
+          "start": 26.903,
+          "end": 26.983
+        },
+        {
+          "text": "cos'è",
+          "start": 27.023,
+          "end": 27.223
+        },
+        {
+          "text": "un",
+          "start": 27.243,
+          "end": 27.303
+        },
+        {
+          "text": "componente?",
+          "start": 27.323,
+          "end": 27.843
+        }
+      ]
+    },
+    {
+      "start": 28.283,
+      "end": 32.424,
+      "text": "È un elemento che implementa un insieme coerente di feature e offre una raccolta di",
+      "words": [
+        {
+          "text": "È",
+          "start": 28.283,
+          "end": 28.323
+        },
+        {
+          "text": "un",
+          "start": 28.343,
+          "end": 28.403
+        },
+        {
+          "text": "elemento",
+          "start": 28.423,
+          "end": 28.803
+        },
+        {
+          "text": "che",
+          "start": 28.843,
+          "end": 28.923
+        },
+        {
+          "text": "implementa",
+          "start": 28.983,
+          "end": 29.503
+        },
+        {
+          "text": "un",
+          "start": 29.543,
+          "end": 29.623
+        },
+        {
+          "text": "insieme",
+          "start": 29.683,
+          "end": 30.063
+        },
+        {
+          "text": "coerente",
+          "start": 30.123,
+          "end": 30.563
+        },
+        {
+          "text": "di",
+          "start": 30.603,
+          "end": 30.663
+        },
+        {
+          "text": "feature",
+          "start": 30.703,
+          "end": 31.083
+        },
+        {
+          "text": "e",
+          "start": 31.424,
+          "end": 31.464
+        },
+        {
+          "text": "offre",
+          "start": 31.524,
+          "end": 31.744
+        },
+        {
+          "text": "una",
+          "start": 31.804,
+          "end": 31.904
+        },
+        {
+          "text": "raccolta",
+          "start": 31.944,
+          "end": 32.344
+        },
+        {
+          "text": "di",
+          "start": 32.364,
+          "end": 32.424
+        }
+      ]
+    },
+    {
+      "start": 32.484,
+      "end": 34.364,
+      "text": "servizi usabili da altri componenti.",
+      "words": [
+        {
+          "text": "servizi",
+          "start": 32.484,
+          "end": 32.904
+        },
+        {
+          "text": "usabili",
+          "start": 32.984,
+          "end": 33.424
+        },
+        {
+          "text": "da",
+          "start": 33.464,
+          "end": 33.504
+        },
+        {
+          "text": "altri",
+          "start": 33.564,
+          "end": 33.784
+        },
+        {
+          "text": "componenti.",
+          "start": 33.824,
+          "end": 34.364
+        }
+      ]
+    },
+    {
+      "start": 35.044,
+      "end": 38.624,
+      "text": "Come vedete nel diagramma, questi servizi possono essere invocati direttamente,",
+      "words": [
+        {
+          "text": "Come",
+          "start": 35.044,
+          "end": 35.204
+        },
+        {
+          "text": "vedete",
+          "start": 35.244,
+          "end": 35.504
+        },
+        {
+          "text": "nel",
+          "start": 35.544,
+          "end": 35.644
+        },
+        {
+          "text": "diagramma,",
+          "start": 35.664,
+          "end": 36.084
+        },
+        {
+          "text": "questi",
+          "start": 36.344,
+          "end": 36.564
+        },
+        {
+          "text": "servizi",
+          "start": 36.584,
+          "end": 36.924
+        },
+        {
+          "text": "possono",
+          "start": 36.984,
+          "end": 37.264
+        },
+        {
+          "text": "essere",
+          "start": 37.284,
+          "end": 37.484
+        },
+        {
+          "text": "invocati",
+          "start": 37.524,
+          "end": 37.904
+        },
+        {
+          "text": "direttamente,",
+          "start": 37.964,
+          "end": 38.624
+        }
+      ]
+    },
+    {
+      "start": 38.984,
+      "end": 43.985,
+      "text": "oppure esposti esclusivamente attraverso l'API del componente, che ne incapsula i dettagli interni.",
+      "words": [
+        {
+          "text": "oppure",
+          "start": 38.984,
+          "end": 39.244
+        },
+        {
+          "text": "esposti",
+          "start": 39.304,
+          "end": 39.684
+        },
+        {
+          "text": "esclusivamente",
+          "start": 39.744,
+          "end": 40.445
+        },
+        {
+          "text": "attraverso",
+          "start": 40.485,
+          "end": 40.925
+        },
+        {
+          "text": "l'API",
+          "start": 40.985,
+          "end": 41.445
+        },
+        {
+          "text": "del",
+          "start": 41.485,
+          "end": 41.585
+        },
+        {
+          "text": "componente,",
+          "start": 41.645,
+          "end": 42.225
+        },
+        {
+          "text": "che",
+          "start": 42.465,
+          "end": 42.545
+        },
+        {
+          "text": "ne",
+          "start": 42.565,
+          "end": 42.605
+        },
+        {
+          "text": "incapsula",
+          "start": 42.645,
+          "end": 43.085
+        },
+        {
+          "text": "i",
+          "start": 43.125,
+          "end": 43.165
+        },
+        {
+          "text": "dettagli",
+          "start": 43.185,
+          "end": 43.525
+        },
+        {
+          "text": "interni.",
+          "start": 43.565,
+          "end": 43.985
+        }
+      ]
+    },
+    {
+      "start": 44.965,
+      "end": 48.105,
+      "text": "Cinque fattori principali influenzano le scelte architetturali.",
+      "words": [
+        {
+          "text": "Cinque",
+          "start": 44.965,
+          "end": 45.265
+        },
+        {
+          "text": "fattori",
+          "start": 45.305,
+          "end": 45.625
+        },
+        {
+          "text": "principali",
+          "start": 45.645,
+          "end": 46.225
+        },
+        {
+          "text": "influenzano",
+          "start": 46.365,
+          "end": 46.985
+        },
+        {
+          "text": "le",
+          "start": 47.025,
+          "end": 47.085
+        },
+        {
+          "text": "scelte",
+          "start": 47.125,
+          "end": 47.405
+        },
+        {
+          "text": "architetturali.",
+          "start": 47.445,
+          "end": 48.105
+        }
+      ]
+    },
+    {
+      "start": 48.705,
+      "end": 52.746,
+      "text": "Primo: le caratteristiche non funzionali, come sicurezza e prestazioni,",
+      "words": [
+        {
+          "text": "Primo:",
+          "start": 48.705,
+          "end": 48.985
+        },
+        {
+          "text": "le",
+          "start": 49.406,
+          "end": 49.486
+        },
+        {
+          "text": "caratteristiche",
+          "start": 49.506,
+          "end": 50.146
+        },
+        {
+          "text": "non",
+          "start": 50.246,
+          "end": 50.386
+        },
+        {
+          "text": "funzionali,",
+          "start": 50.446,
+          "end": 51.046
+        },
+        {
+          "text": "come",
+          "start": 51.306,
+          "end": 51.466
+        },
+        {
+          "text": "sicurezza",
+          "start": 51.546,
+          "end": 52.006
+        },
+        {
+          "text": "e",
+          "start": 52.066,
+          "end": 52.106
+        },
+        {
+          "text": "prestazioni,",
+          "start": 52.126,
+          "end": 52.746
+        }
+      ]
+    },
+    {
+      "start": 53.106,
+      "end": 54.346,
+      "text": "spesso in contrasto tra loro.",
+      "words": [
+        {
+          "text": "spesso",
+          "start": 53.106,
+          "end": 53.366
+        },
+        {
+          "text": "in",
+          "start": 53.446,
+          "end": 53.506
+        },
+        {
+          "text": "contrasto",
+          "start": 53.526,
+          "end": 53.926
+        },
+        {
+          "text": "tra",
+          "start": 53.966,
+          "end": 54.066
+        },
+        {
+          "text": "loro.",
+          "start": 54.146,
+          "end": 54.346
+        }
+      ]
+    },
+    {
+      "start": 55.026,
+      "end": 59.947,
+      "text": "Secondo: la durata di vita prevista del prodotto, che richiede un'architettura pronta a evolvere.",
+      "words": [
+        {
+          "text": "Secondo:",
+          "start": 55.026,
+          "end": 55.426
+        },
+        {
+          "text": "la",
+          "start": 55.846,
+          "end": 55.906
+        },
+        {
+          "text": "durata",
+          "start": 55.946,
+          "end": 56.226
+        },
+        {
+          "text": "di",
+          "start": 56.266,
+          "end": 56.326
+        },
+        {
+          "text": "vita",
+          "start": 56.346,
+          "end": 56.546
+        },
+        {
+          "text": "prevista",
+          "start": 56.586,
+          "end": 56.986
+        },
+        {
+          "text": "del",
+          "start": 57.026,
+          "end": 57.126
+        },
+        {
+          "text": "prodotto,",
+          "start": 57.166,
+          "end": 57.586
+        },
+        {
+          "text": "che",
+          "start": 57.906,
+          "end": 57.966
+        },
+        {
+          "text": "richiede",
+          "start": 58.006,
+          "end": 58.287
+        },
+        {
+          "text": "un'architettura",
+          "start": 58.347,
+          "end": 59.047
+        },
+        {
+          "text": "pronta",
+          "start": 59.127,
+          "end": 59.427
+        },
+        {
+          "text": "a",
+          "start": 59.467,
+          "end": 59.507
+        },
+        {
+          "text": "evolvere.",
+          "start": 59.527,
+          "end": 59.947
+        }
+      ]
+    },
+    {
+      "start": 60.527,
+      "end": 63.747,
+      "text": "Terzo: la compatibilità con altro software e dati esistenti.",
+      "words": [
+        {
+          "text": "Terzo:",
+          "start": 60.527,
+          "end": 60.887
+        },
+        {
+          "text": "la",
+          "start": 61.267,
+          "end": 61.347
+        },
+        {
+          "text": "compatibilità",
+          "start": 61.387,
+          "end": 62.027
+        },
+        {
+          "text": "con",
+          "start": 62.107,
+          "end": 62.227
+        },
+        {
+          "text": "altro",
+          "start": 62.267,
+          "end": 62.447
+        },
+        {
+          "text": "software",
+          "start": 62.507,
+          "end": 62.907
+        },
+        {
+          "text": "e",
+          "start": 62.927,
+          "end": 62.967
+        },
+        {
+          "text": "dati",
+          "start": 62.967,
+          "end": 63.147
+        },
+        {
+          "text": "esistenti.",
+          "start": 63.187,
+          "end": 63.747
+        }
+      ]
+    },
+    {
+      "start": 64.347,
+      "end": 69.968,
+      "text": "Quarto: il numero di utenti, che su Internet può crescere o calare rapidamente imponendo scalabilità",
+      "words": [
+        {
+          "text": "Quarto:",
+          "start": 64.347,
+          "end": 64.747
+        },
+        {
+          "text": "il",
+          "start": 65.047,
+          "end": 65.127
+        },
+        {
+          "text": "numero",
+          "start": 65.167,
+          "end": 65.427
+        },
+        {
+          "text": "di",
+          "start": 65.447,
+          "end": 65.507
+        },
+        {
+          "text": "utenti,",
+          "start": 65.567,
+          "end": 65.947
+        },
+        {
+          "text": "che",
+          "start": 66.227,
+          "end": 66.307
+        },
+        {
+          "text": "su",
+          "start": 66.347,
+          "end": 66.427
+        },
+        {
+          "text": "Internet",
+          "start": 66.507,
+          "end": 66.867
+        },
+        {
+          "text": "può",
+          "start": 66.947,
+          "end": 67.048
+        },
+        {
+          "text": "crescere",
+          "start": 67.148,
+          "end": 67.568
+        },
+        {
+          "text": "o",
+          "start": 67.628,
+          "end": 67.668
+        },
+        {
+          "text": "calare",
+          "start": 67.688,
+          "end": 68.008
+        },
+        {
+          "text": "rapidamente",
+          "start": 68.128,
+          "end": 68.748
+        },
+        {
+          "text": "imponendo",
+          "start": 68.888,
+          "end": 69.328
+        },
+        {
+          "text": "scalabilità",
+          "start": 69.408,
+          "end": 69.968
+        }
+      ]
+    },
+    {
+      "start": 70.048,
+      "end": 70.508,
+      "text": "elastica.",
+      "words": [
+        {
+          "text": "elastica.",
+          "start": 70.048,
+          "end": 70.508
+        }
+      ]
+    },
+    {
+      "start": 71.128,
+      "end": 74.068,
+      "text": "Quinto: il riuso di componenti esistenti o open source,",
+      "words": [
+        {
+          "text": "Quinto:",
+          "start": 71.128,
+          "end": 71.488
+        },
+        {
+          "text": "il",
+          "start": 71.788,
+          "end": 71.868
+        },
+        {
+          "text": "riuso",
+          "start": 71.908,
+          "end": 72.188
+        },
+        {
+          "text": "di",
+          "start": 72.208,
+          "end": 72.268
+        },
+        {
+          "text": "componenti",
+          "start": 72.308,
+          "end": 72.788
+        },
+        {
+          "text": "esistenti",
+          "start": 72.848,
+          "end": 73.348
+        },
+        {
+          "text": "o",
+          "start": 73.408,
+          "end": 73.44800000000001
+        },
+        {
+          "text": "open",
+          "start": 73.448,
+          "end": 73.668
+        },
+        {
+          "text": "source,",
+          "start": 73.708,
+          "end": 74.068
+        }
+      ]
+    },
+    {
+      "start": 74.408,
+      "end": 76.609,
+      "text": "che fa risparmiare tempo ma vincola il design.",
+      "words": [
+        {
+          "text": "che",
+          "start": 74.408,
+          "end": 74.468
+        },
+        {
+          "text": "fa",
+          "start": 74.528,
+          "end": 74.588
+        },
+        {
+          "text": "risparmiare",
+          "start": 74.648,
+          "end": 75.088
+        },
+        {
+          "text": "tempo",
+          "start": 75.128,
+          "end": 75.428
+        },
+        {
+          "text": "ma",
+          "start": 75.648,
+          "end": 75.728
+        },
+        {
+          "text": "vincola",
+          "start": 75.808,
+          "end": 76.129
+        },
+        {
+          "text": "il",
+          "start": 76.169,
+          "end": 76.209
+        },
+        {
+          "text": "design.",
+          "start": 76.229,
+          "end": 76.609
+        }
+      ]
+    }
+  ]
+}

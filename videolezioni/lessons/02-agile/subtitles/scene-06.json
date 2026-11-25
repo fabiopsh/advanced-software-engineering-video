@@ -1,0 +1,1206 @@
+{
+  "duration": 81.157,
+  "segments": [
+    {
+      "start": 0.737,
+      "end": 5.077,
+      "text": "Ogni sprint dura da una a quattro settimane, tipicamente da due a quattro in Scrum,",
+      "words": [
+        {
+          "text": "Ogni",
+          "start": 0.737,
+          "end": 0.937
+        },
+        {
+          "text": "sprint",
+          "start": 0.977,
+          "end": 1.297
+        },
+        {
+          "text": "dura",
+          "start": 1.477,
+          "end": 1.637
+        },
+        {
+          "text": "da",
+          "start": 1.677,
+          "end": 1.737
+        },
+        {
+          "text": "una",
+          "start": 1.837,
+          "end": 1.997
+        },
+        {
+          "text": "a",
+          "start": 2.037,
+          "end": 2.077
+        },
+        {
+          "text": "quattro",
+          "start": 2.137,
+          "end": 2.397
+        },
+        {
+          "text": "settimane,",
+          "start": 2.457,
+          "end": 2.917
+        },
+        {
+          "text": "tipicamente",
+          "start": 3.237,
+          "end": 3.717
+        },
+        {
+          "text": "da",
+          "start": 3.757,
+          "end": 3.817
+        },
+        {
+          "text": "due",
+          "start": 3.897,
+          "end": 4.077
+        },
+        {
+          "text": "a",
+          "start": 4.157,
+          "end": 4.197
+        },
+        {
+          "text": "quattro",
+          "start": 4.257,
+          "end": 4.617
+        },
+        {
+          "text": "in",
+          "start": 4.677,
+          "end": 4.737
+        },
+        {
+          "text": "Scrum,",
+          "start": 4.777,
+          "end": 5.077
+        }
+      ]
+    },
+    {
+      "start": 5.577,
+      "end": 10.478,
+      "text": "ed è rigorosamente timeboxed: ha inizio e fine fissi e lo sviluppo si ferma alla",
+      "words": [
+        {
+          "text": "ed",
+          "start": 5.577,
+          "end": 5.657
+        },
+        {
+          "text": "è",
+          "start": 5.677,
+          "end": 5.717
+        },
+        {
+          "text": "rigorosamente",
+          "start": 5.817,
+          "end": 6.457
+        },
+        {
+          "text": "timeboxed:",
+          "start": 6.517,
+          "end": 7.077
+        },
+        {
+          "text": "ha",
+          "start": 7.517,
+          "end": 7.577
+        },
+        {
+          "text": "inizio",
+          "start": 7.737,
+          "end": 8.158
+        },
+        {
+          "text": "e",
+          "start": 8.318,
+          "end": 8.358
+        },
+        {
+          "text": "fine",
+          "start": 8.418,
+          "end": 8.598
+        },
+        {
+          "text": "fissi",
+          "start": 8.638,
+          "end": 8.978
+        },
+        {
+          "text": "e",
+          "start": 9.398,
+          "end": 9.438
+        },
+        {
+          "text": "lo",
+          "start": 9.478,
+          "end": 9.518
+        },
+        {
+          "text": "sviluppo",
+          "start": 9.558,
+          "end": 9.898
+        },
+        {
+          "text": "si",
+          "start": 9.978,
+          "end": 10.038
+        },
+        {
+          "text": "ferma",
+          "start": 10.098,
+          "end": 10.298
+        },
+        {
+          "text": "alla",
+          "start": 10.338,
+          "end": 10.478
+        }
+      ]
+    },
+    {
+      "start": 10.498,
+      "end": 12.438,
+      "text": "scadenza, che il lavoro sia finito o meno.",
+      "words": [
+        {
+          "text": "scadenza,",
+          "start": 10.498,
+          "end": 10.938
+        },
+        {
+          "text": "che",
+          "start": 11.218,
+          "end": 11.298
+        },
+        {
+          "text": "il",
+          "start": 11.318,
+          "end": 11.378
+        },
+        {
+          "text": "lavoro",
+          "start": 11.398,
+          "end": 11.618
+        },
+        {
+          "text": "sia",
+          "start": 11.658,
+          "end": 11.798
+        },
+        {
+          "text": "finito",
+          "start": 11.838,
+          "end": 12.118
+        },
+        {
+          "text": "o",
+          "start": 12.158,
+          "end": 12.198
+        },
+        {
+          "text": "meno.",
+          "start": 12.258,
+          "end": 12.438
+        }
+      ]
+    },
+    {
+      "start": 13.218,
+      "end": 14.398,
+      "text": "Questo porta tre benefici:",
+      "words": [
+        {
+          "text": "Questo",
+          "start": 13.218,
+          "end": 13.438
+        },
+        {
+          "text": "porta",
+          "start": 13.498,
+          "end": 13.718
+        },
+        {
+          "text": "tre",
+          "start": 13.818,
+          "end": 13.918
+        },
+        {
+          "text": "benefici:",
+          "start": 13.978,
+          "end": 14.398
+        }
+      ]
+    },
+    {
+      "start": 15.338,
+      "end": 18.339,
+      "text": "progresso dimostrabile con un dimostratore a ogni sprint;",
+      "words": [
+        {
+          "text": "progresso",
+          "start": 15.338,
+          "end": 15.779
+        },
+        {
+          "text": "dimostrabile",
+          "start": 15.819,
+          "end": 16.419
+        },
+        {
+          "text": "con",
+          "start": 16.939,
+          "end": 17.059
+        },
+        {
+          "text": "un",
+          "start": 17.079,
+          "end": 17.159
+        },
+        {
+          "text": "dimostratore",
+          "start": 17.179,
+          "end": 17.719
+        },
+        {
+          "text": "a",
+          "start": 17.759,
+          "end": 17.799
+        },
+        {
+          "text": "ogni",
+          "start": 17.819,
+          "end": 17.959
+        },
+        {
+          "text": "sprint;",
+          "start": 18.019,
+          "end": 18.339
+        }
+      ]
+    },
+    {
+      "start": 19.159,
+      "end": 22.919,
+      "text": "problem discovery rapido, perché il lavoro da rifare è limitato a uno sprint;",
+      "words": [
+        {
+          "text": "problem",
+          "start": 19.159,
+          "end": 19.499
+        },
+        {
+          "text": "discovery",
+          "start": 19.559,
+          "end": 19.999
+        },
+        {
+          "text": "rapido,",
+          "start": 20.059,
+          "end": 20.419
+        },
+        {
+          "text": "perché",
+          "start": 20.839,
+          "end": 21.039
+        },
+        {
+          "text": "il",
+          "start": 21.079,
+          "end": 21.119
+        },
+        {
+          "text": "lavoro",
+          "start": 21.139,
+          "end": 21.359
+        },
+        {
+          "text": "da",
+          "start": 21.379,
+          "end": 21.439
+        },
+        {
+          "text": "rifare",
+          "start": 21.479,
+          "end": 21.759
+        },
+        {
+          "text": "è",
+          "start": 21.799,
+          "end": 21.839
+        },
+        {
+          "text": "limitato",
+          "start": 21.879,
+          "end": 22.259
+        },
+        {
+          "text": "a",
+          "start": 22.299,
+          "end": 22.339
+        },
+        {
+          "text": "uno",
+          "start": 22.419,
+          "end": 22.539
+        },
+        {
+          "text": "sprint;",
+          "start": 22.579,
+          "end": 22.919
+        }
+      ]
+    },
+    {
+      "start": 23.58,
+      "end": 25.96,
+      "text": "e work planning affidabile su un periodo fisso.",
+      "words": [
+        {
+          "text": "e",
+          "start": 23.58,
+          "end": 23.62
+        },
+        {
+          "text": "work",
+          "start": 23.82,
+          "end": 24.02
+        },
+        {
+          "text": "planning",
+          "start": 24.08,
+          "end": 24.42
+        },
+        {
+          "text": "affidabile",
+          "start": 24.5,
+          "end": 25.06
+        },
+        {
+          "text": "su",
+          "start": 25.12,
+          "end": 25.2
+        },
+        {
+          "text": "un",
+          "start": 25.26,
+          "end": 25.32
+        },
+        {
+          "text": "periodo",
+          "start": 25.34,
+          "end": 25.62
+        },
+        {
+          "text": "fisso.",
+          "start": 25.68,
+          "end": 25.96
+        }
+      ]
+    },
+    {
+      "start": 27.1,
+      "end": 28.7,
+      "text": "Uno sprint segue quattro attività.",
+      "words": [
+        {
+          "text": "Uno",
+          "start": 27.1,
+          "end": 27.2
+        },
+        {
+          "text": "sprint",
+          "start": 27.24,
+          "end": 27.52
+        },
+        {
+          "text": "segue",
+          "start": 27.66,
+          "end": 27.88
+        },
+        {
+          "text": "quattro",
+          "start": 27.98,
+          "end": 28.28
+        },
+        {
+          "text": "attività.",
+          "start": 28.34,
+          "end": 28.7
+        }
+      ]
+    },
+    {
+      "start": 29.72,
+      "end": 33.021,
+      "text": "Sprint planning, massimo un giorno: si fissa lo sprint goal,",
+      "words": [
+        {
+          "text": "Sprint",
+          "start": 29.72,
+          "end": 30.02
+        },
+        {
+          "text": "planning,",
+          "start": 30.08,
+          "end": 30.42
+        },
+        {
+          "text": "massimo",
+          "start": 30.84,
+          "end": 31.161
+        },
+        {
+          "text": "un",
+          "start": 31.201,
+          "end": 31.241
+        },
+        {
+          "text": "giorno:",
+          "start": 31.281,
+          "end": 31.601
+        },
+        {
+          "text": "si",
+          "start": 32.001,
+          "end": 32.061
+        },
+        {
+          "text": "fissa",
+          "start": 32.101,
+          "end": 32.341
+        },
+        {
+          "text": "lo",
+          "start": 32.381,
+          "end": 32.441
+        },
+        {
+          "text": "sprint",
+          "start": 32.481,
+          "end": 32.741
+        },
+        {
+          "text": "goal,",
+          "start": 32.801,
+          "end": 33.021
+        }
+      ]
+    },
+    {
+      "start": 33.261,
+      "end": 36.221,
+      "text": "si scelgono i P B I in base alle stime e alla velocity del team,",
+      "words": [
+        {
+          "text": "si",
+          "start": 33.261,
+          "end": 33.341
+        },
+        {
+          "text": "scelgono",
+          "start": 33.401,
+          "end": 33.781
+        },
+        {
+          "text": "i",
+          "start": 33.861,
+          "end": 33.901
+        },
+        {
+          "text": "P",
+          "start": 33.961,
+          "end": 34.001
+        },
+        {
+          "text": "B",
+          "start": 34.061,
+          "end": 34.101
+        },
+        {
+          "text": "I",
+          "start": 34.341,
+          "end": 34.381
+        },
+        {
+          "text": "in",
+          "start": 34.421,
+          "end": 34.481
+        },
+        {
+          "text": "base",
+          "start": 34.501,
+          "end": 34.681
+        },
+        {
+          "text": "alle",
+          "start": 34.721,
+          "end": 34.861
+        },
+        {
+          "text": "stime",
+          "start": 34.921,
+          "end": 35.201
+        },
+        {
+          "text": "e",
+          "start": 35.221,
+          "end": 35.261
+        },
+        {
+          "text": "alla",
+          "start": 35.281,
+          "end": 35.401
+        },
+        {
+          "text": "velocity",
+          "start": 35.441,
+          "end": 35.801
+        },
+        {
+          "text": "del",
+          "start": 35.841,
+          "end": 35.981
+        },
+        {
+          "text": "team,",
+          "start": 36.021,
+          "end": 36.221
+        }
+      ]
+    },
+    {
+      "start": 36.741,
+      "end": 37.981,
+      "text": "e si crea lo sprint backlog.",
+      "words": [
+        {
+          "text": "e",
+          "start": 36.741,
+          "end": 36.781
+        },
+        {
+          "text": "si",
+          "start": 36.841,
+          "end": 36.921
+        },
+        {
+          "text": "crea",
+          "start": 36.961,
+          "end": 37.201
+        },
+        {
+          "text": "lo",
+          "start": 37.241,
+          "end": 37.301
+        },
+        {
+          "text": "sprint",
+          "start": 37.321,
+          "end": 37.581
+        },
+        {
+          "text": "backlog.",
+          "start": 37.621,
+          "end": 37.981
+        }
+      ]
+    },
+    {
+      "start": 38.962,
+      "end": 43.542,
+      "text": "Sprint execution: si implementano le voci; quelle non finite non allungano lo sprint,",
+      "words": [
+        {
+          "text": "Sprint",
+          "start": 38.962,
+          "end": 39.282
+        },
+        {
+          "text": "execution:",
+          "start": 39.342,
+          "end": 39.902
+        },
+        {
+          "text": "si",
+          "start": 40.402,
+          "end": 40.442
+        },
+        {
+          "text": "implementano",
+          "start": 40.502,
+          "end": 40.942
+        },
+        {
+          "text": "le",
+          "start": 41.002,
+          "end": 41.062
+        },
+        {
+          "text": "voci;",
+          "start": 41.102,
+          "end": 41.362
+        },
+        {
+          "text": "quelle",
+          "start": 41.682,
+          "end": 41.862
+        },
+        {
+          "text": "non",
+          "start": 41.922,
+          "end": 42.022
+        },
+        {
+          "text": "finite",
+          "start": 42.082,
+          "end": 42.382
+        },
+        {
+          "text": "non",
+          "start": 42.482,
+          "end": 42.622
+        },
+        {
+          "text": "allungano",
+          "start": 42.662,
+          "end": 43.062
+        },
+        {
+          "text": "lo",
+          "start": 43.102,
+          "end": 43.162
+        },
+        {
+          "text": "sprint,",
+          "start": 43.202,
+          "end": 43.542
+        }
+      ]
+    },
+    {
+      "start": 43.662,
+      "end": 45.242,
+      "text": "ma tornano nel product backlog.",
+      "words": [
+        {
+          "text": "ma",
+          "start": 43.662,
+          "end": 43.722
+        },
+        {
+          "text": "tornano",
+          "start": 43.822,
+          "end": 44.242
+        },
+        {
+          "text": "nel",
+          "start": 44.282,
+          "end": 44.422
+        },
+        {
+          "text": "product",
+          "start": 44.482,
+          "end": 44.822
+        },
+        {
+          "text": "backlog.",
+          "start": 44.882,
+          "end": 45.242
+        }
+      ]
+    },
+    {
+      "start": 45.962,
+      "end": 50.003,
+      "text": "Scrum quotidiano: breve stand-up di inizio giornata su progressi,",
+      "words": [
+        {
+          "text": "Scrum",
+          "start": 45.962,
+          "end": 46.282
+        },
+        {
+          "text": "quotidiano:",
+          "start": 46.402,
+          "end": 46.963
+        },
+        {
+          "text": "breve",
+          "start": 47.403,
+          "end": 47.683
+        },
+        {
+          "text": "stand-up",
+          "start": 47.763,
+          "end": 48.203
+        },
+        {
+          "text": "di",
+          "start": 48.283,
+          "end": 48.343
+        },
+        {
+          "text": "inizio",
+          "start": 48.383,
+          "end": 48.683
+        },
+        {
+          "text": "giornata",
+          "start": 48.743,
+          "end": 49.183
+        },
+        {
+          "text": "su",
+          "start": 49.263,
+          "end": 49.343
+        },
+        {
+          "text": "progressi,",
+          "start": 49.423,
+          "end": 50.003
+        }
+      ]
+    },
+    {
+      "start": 50.183,
+      "end": 51.863,
+      "text": "ostacoli e piano giornaliero.",
+      "words": [
+        {
+          "text": "ostacoli",
+          "start": 50.183,
+          "end": 50.783
+        },
+        {
+          "text": "e",
+          "start": 50.923,
+          "end": 50.963
+        },
+        {
+          "text": "piano",
+          "start": 51.023,
+          "end": 51.243
+        },
+        {
+          "text": "giornaliero.",
+          "start": 51.303,
+          "end": 51.863
+        }
+      ]
+    },
+    {
+      "start": 52.543,
+      "end": 57.504,
+      "text": "Infine sprint reviewing, per verificare il lavoro con gli stakeholder e riflettere sul metodo.",
+      "words": [
+        {
+          "text": "Infine",
+          "start": 52.543,
+          "end": 52.903
+        },
+        {
+          "text": "sprint",
+          "start": 53.063,
+          "end": 53.403
+        },
+        {
+          "text": "reviewing,",
+          "start": 53.463,
+          "end": 53.963
+        },
+        {
+          "text": "per",
+          "start": 54.324,
+          "end": 54.444
+        },
+        {
+          "text": "verificare",
+          "start": 54.484,
+          "end": 54.944
+        },
+        {
+          "text": "il",
+          "start": 54.984,
+          "end": 55.044
+        },
+        {
+          "text": "lavoro",
+          "start": 55.084,
+          "end": 55.384
+        },
+        {
+          "text": "con",
+          "start": 55.444,
+          "end": 55.544
+        },
+        {
+          "text": "gli",
+          "start": 55.544,
+          "end": 55.664
+        },
+        {
+          "text": "stakeholder",
+          "start": 55.724,
+          "end": 56.284
+        },
+        {
+          "text": "e",
+          "start": 56.404,
+          "end": 56.444
+        },
+        {
+          "text": "riflettere",
+          "start": 56.504,
+          "end": 56.964
+        },
+        {
+          "text": "sul",
+          "start": 57.004,
+          "end": 57.124
+        },
+        {
+          "text": "metodo.",
+          "start": 57.164,
+          "end": 57.504
+        }
+      ]
+    },
+    {
+      "start": 58.184,
+      "end": 59.704,
+      "text": "Guardate l'esempio numerico in basso:",
+      "words": [
+        {
+          "text": "Guardate",
+          "start": 58.184,
+          "end": 58.504
+        },
+        {
+          "text": "l'esempio",
+          "start": 58.544,
+          "end": 58.864
+        },
+        {
+          "text": "numerico",
+          "start": 58.904,
+          "end": 59.224
+        },
+        {
+          "text": "in",
+          "start": 59.264,
+          "end": 59.324
+        },
+        {
+          "text": "basso:",
+          "start": 59.364,
+          "end": 59.704
+        }
+      ]
+    },
+    {
+      "start": 60.264,
+      "end": 63.865,
+      "text": "cinque persone per dieci giorni danno cinquanta person-day.",
+      "words": [
+        {
+          "text": "cinque",
+          "start": 60.264,
+          "end": 60.584
+        },
+        {
+          "text": "persone",
+          "start": 60.604,
+          "end": 61.084
+        },
+        {
+          "text": "per",
+          "start": 61.164,
+          "end": 61.304
+        },
+        {
+          "text": "dieci",
+          "start": 61.384,
+          "end": 61.644
+        },
+        {
+          "text": "giorni",
+          "start": 61.704,
+          "end": 62.065
+        },
+        {
+          "text": "danno",
+          "start": 62.265,
+          "end": 62.505
+        },
+        {
+          "text": "cinquanta",
+          "start": 62.605,
+          "end": 63.185
+        },
+        {
+          "text": "person-day.",
+          "start": 63.245,
+          "end": 63.865
+        }
+      ]
+    },
+    {
+      "start": 64.465,
+      "end": 67.325,
+      "text": "Scegliamo le voci ordinate finché restiamo nella capacità:",
+      "words": [
+        {
+          "text": "Scegliamo",
+          "start": 64.465,
+          "end": 64.885
+        },
+        {
+          "text": "le",
+          "start": 64.945,
+          "end": 65.005
+        },
+        {
+          "text": "voci",
+          "start": 65.045,
+          "end": 65.265
+        },
+        {
+          "text": "ordinate",
+          "start": 65.365,
+          "end": 65.905
+        },
+        {
+          "text": "finché",
+          "start": 65.945,
+          "end": 66.205
+        },
+        {
+          "text": "restiamo",
+          "start": 66.285,
+          "end": 66.645
+        },
+        {
+          "text": "nella",
+          "start": 66.705,
+          "end": 66.885
+        },
+        {
+          "text": "capacità:",
+          "start": 66.905,
+          "end": 67.325
+        }
+      ]
+    },
+    {
+      "start": 67.905,
+      "end": 71.266,
+      "text": "otto più quindici più dodici più dieci fa quarantacinque,",
+      "words": [
+        {
+          "text": "otto",
+          "start": 67.905,
+          "end": 68.205
+        },
+        {
+          "text": "più",
+          "start": 68.305,
+          "end": 68.405
+        },
+        {
+          "text": "quindici",
+          "start": 68.485,
+          "end": 68.925
+        },
+        {
+          "text": "più",
+          "start": 69.005,
+          "end": 69.105
+        },
+        {
+          "text": "dodici",
+          "start": 69.225,
+          "end": 69.646
+        },
+        {
+          "text": "più",
+          "start": 69.706,
+          "end": 69.806
+        },
+        {
+          "text": "dieci",
+          "start": 69.886,
+          "end": 70.226
+        },
+        {
+          "text": "fa",
+          "start": 70.446,
+          "end": 70.526
+        },
+        {
+          "text": "quarantacinque,",
+          "start": 70.586,
+          "end": 71.266
+        }
+      ]
+    },
+    {
+      "start": 71.606,
+      "end": 72.846,
+      "text": "minore o uguale a cinquanta;",
+      "words": [
+        {
+          "text": "minore",
+          "start": 71.606,
+          "end": 71.966
+        },
+        {
+          "text": "o",
+          "start": 72.006,
+          "end": 72.046
+        },
+        {
+          "text": "uguale",
+          "start": 72.026,
+          "end": 72.246
+        },
+        {
+          "text": "a",
+          "start": 72.286,
+          "end": 72.32600000000001
+        },
+        {
+          "text": "cinquanta;",
+          "start": 72.346,
+          "end": 72.846
+        }
+      ]
+    },
+    {
+      "start": 73.426,
+      "end": 76.506,
+      "text": "aggiungendo nove si va a cinquantaquattro, quindi resta fuori.",
+      "words": [
+        {
+          "text": "aggiungendo",
+          "start": 73.426,
+          "end": 73.906
+        },
+        {
+          "text": "nove",
+          "start": 73.986,
+          "end": 74.246
+        },
+        {
+          "text": "si",
+          "start": 74.466,
+          "end": 74.546
+        },
+        {
+          "text": "va",
+          "start": 74.586,
+          "end": 74.666
+        },
+        {
+          "text": "a",
+          "start": 74.706,
+          "end": 74.74600000000001
+        },
+        {
+          "text": "cinquantaquattro,",
+          "start": 74.746,
+          "end": 75.506
+        },
+        {
+          "text": "quindi",
+          "start": 75.746,
+          "end": 75.946
+        },
+        {
+          "text": "resta",
+          "start": 76.006,
+          "end": 76.206
+        },
+        {
+          "text": "fuori.",
+          "start": 76.246,
+          "end": 76.506
+        }
+      ]
+    },
+    {
+      "start": 77.106,
+      "end": 80.907,
+      "text": "Nella pratica la capacità si stima dalla velocity reale degli sprint passati.",
+      "words": [
+        {
+          "text": "Nella",
+          "start": 77.106,
+          "end": 77.286
+        },
+        {
+          "text": "pratica",
+          "start": 77.306,
+          "end": 77.627
+        },
+        {
+          "text": "la",
+          "start": 77.787,
+          "end": 77.847
+        },
+        {
+          "text": "capacità",
+          "start": 77.887,
+          "end": 78.287
+        },
+        {
+          "text": "si",
+          "start": 78.367,
+          "end": 78.447
+        },
+        {
+          "text": "stima",
+          "start": 78.507,
+          "end": 78.727
+        },
+        {
+          "text": "dalla",
+          "start": 78.787,
+          "end": 78.987
+        },
+        {
+          "text": "velocity",
+          "start": 79.047,
+          "end": 79.487
+        },
+        {
+          "text": "reale",
+          "start": 79.547,
+          "end": 79.887
+        },
+        {
+          "text": "degli",
+          "start": 79.927,
+          "end": 80.127
+        },
+        {
+          "text": "sprint",
+          "start": 80.147,
+          "end": 80.407
+        },
+        {
+          "text": "passati.",
+          "start": 80.467,
+          "end": 80.907
+        }
+      ]
+    }
+  ]
+}

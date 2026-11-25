@@ -1,0 +1,865 @@
+{
+  "duration": 63.093,
+  "segments": [
+    {
+      "start": 0.08,
+      "end": 6.861,
+      "text": "Vediamo ora quali componenti realizzano concretamente il cluster, diviso tra master node e worker node.",
+      "words": [
+        {
+          "text": "Vediamo",
+          "start": 0.08,
+          "end": 0.4
+        },
+        {
+          "text": "ora",
+          "start": 0.46,
+          "end": 0.6
+        },
+        {
+          "text": "quali",
+          "start": 0.82,
+          "end": 1.1
+        },
+        {
+          "text": "componenti",
+          "start": 1.14,
+          "end": 1.7
+        },
+        {
+          "text": "realizzano",
+          "start": 1.8,
+          "end": 2.38
+        },
+        {
+          "text": "concretamente",
+          "start": 2.52,
+          "end": 3.28
+        },
+        {
+          "text": "il",
+          "start": 3.32,
+          "end": 3.4
+        },
+        {
+          "text": "cluster,",
+          "start": 3.46,
+          "end": 3.94
+        },
+        {
+          "text": "diviso",
+          "start": 4.22,
+          "end": 4.58
+        },
+        {
+          "text": "tra",
+          "start": 4.68,
+          "end": 4.78
+        },
+        {
+          "text": "master",
+          "start": 4.94,
+          "end": 5.32
+        },
+        {
+          "text": "node",
+          "start": 5.42,
+          "end": 5.74
+        },
+        {
+          "text": "e",
+          "start": 6.081,
+          "end": 6.121
+        },
+        {
+          "text": "worker",
+          "start": 6.201,
+          "end": 6.521
+        },
+        {
+          "text": "node.",
+          "start": 6.601,
+          "end": 6.861
+        }
+      ]
+    },
+    {
+      "start": 7.881,
+      "end": 9.921,
+      "text": "Nel master node vive il control plane.",
+      "words": [
+        {
+          "text": "Nel",
+          "start": 7.881,
+          "end": 8.021
+        },
+        {
+          "text": "master",
+          "start": 8.061,
+          "end": 8.321
+        },
+        {
+          "text": "node",
+          "start": 8.381,
+          "end": 8.641
+        },
+        {
+          "text": "vive",
+          "start": 8.841,
+          "end": 9.041
+        },
+        {
+          "text": "il",
+          "start": 9.081,
+          "end": 9.161
+        },
+        {
+          "text": "control",
+          "start": 9.201,
+          "end": 9.521
+        },
+        {
+          "text": "plane.",
+          "start": 9.561,
+          "end": 9.921
+        }
+      ]
+    },
+    {
+      "start": 10.621,
+      "end": 15.021,
+      "text": "L'API server è l'unica interfaccia del cluster: riceve i manifest dall'utente,",
+      "words": [
+        {
+          "text": "L'API",
+          "start": 10.621,
+          "end": 11.001
+        },
+        {
+          "text": "server",
+          "start": 11.061,
+          "end": 11.401
+        },
+        {
+          "text": "è",
+          "start": 11.581,
+          "end": 11.621
+        },
+        {
+          "text": "l'unica",
+          "start": 11.701,
+          "end": 12.001
+        },
+        {
+          "text": "interfaccia",
+          "start": 12.021,
+          "end": 12.481
+        },
+        {
+          "text": "del",
+          "start": 12.521,
+          "end": 12.621
+        },
+        {
+          "text": "cluster:",
+          "start": 12.661,
+          "end": 13.081
+        },
+        {
+          "text": "riceve",
+          "start": 13.421,
+          "end": 13.761
+        },
+        {
+          "text": "i",
+          "start": 13.821,
+          "end": 13.861
+        },
+        {
+          "text": "manifest",
+          "start": 13.901,
+          "end": 14.361
+        },
+        {
+          "text": "dall'utente,",
+          "start": 14.441,
+          "end": 15.021
+        }
+      ]
+    },
+    {
+      "start": 15.421,
+      "end": 19.042,
+      "text": "li valida e gestisce ogni lettura o scrittura verso etcd,",
+      "words": [
+        {
+          "text": "li",
+          "start": 15.421,
+          "end": 15.501
+        },
+        {
+          "text": "valida",
+          "start": 15.541,
+          "end": 15.961
+        },
+        {
+          "text": "e",
+          "start": 16.181,
+          "end": 16.221
+        },
+        {
+          "text": "gestisce",
+          "start": 16.261,
+          "end": 16.701
+        },
+        {
+          "text": "ogni",
+          "start": 16.921,
+          "end": 17.141
+        },
+        {
+          "text": "lettura",
+          "start": 17.221,
+          "end": 17.641
+        },
+        {
+          "text": "o",
+          "start": 17.721,
+          "end": 17.761
+        },
+        {
+          "text": "scrittura",
+          "start": 17.801,
+          "end": 18.282
+        },
+        {
+          "text": "verso",
+          "start": 18.342,
+          "end": 18.622
+        },
+        {
+          "text": "etcd,",
+          "start": 18.702,
+          "end": 19.042
+        }
+      ]
+    },
+    {
+      "start": 19.622,
+      "end": 23.362,
+      "text": "il key-value store distribuito che custodisce tutta la configurazione,",
+      "words": [
+        {
+          "text": "il",
+          "start": 19.622,
+          "end": 19.722
+        },
+        {
+          "text": "key-value",
+          "start": 19.842,
+          "end": 20.362
+        },
+        {
+          "text": "store",
+          "start": 20.422,
+          "end": 20.722
+        },
+        {
+          "text": "distribuito",
+          "start": 20.782,
+          "end": 21.362
+        },
+        {
+          "text": "che",
+          "start": 21.422,
+          "end": 21.502
+        },
+        {
+          "text": "custodisce",
+          "start": 21.542,
+          "end": 22.082
+        },
+        {
+          "text": "tutta",
+          "start": 22.202,
+          "end": 22.462
+        },
+        {
+          "text": "la",
+          "start": 22.522,
+          "end": 22.582
+        },
+        {
+          "text": "configurazione,",
+          "start": 22.602,
+          "end": 23.362
+        }
+      ]
+    },
+    {
+      "start": 23.662,
+      "end": 25.382,
+      "text": "gli status e le assegnazioni.",
+      "words": [
+        {
+          "text": "gli",
+          "start": 23.662,
+          "end": 23.802
+        },
+        {
+          "text": "status",
+          "start": 23.862,
+          "end": 24.322
+        },
+        {
+          "text": "e",
+          "start": 24.562,
+          "end": 24.602
+        },
+        {
+          "text": "le",
+          "start": 24.642,
+          "end": 24.702
+        },
+        {
+          "text": "assegnazioni.",
+          "start": 24.742,
+          "end": 25.382
+        }
+      ]
+    },
+    {
+      "start": 26.402,
+      "end": 30.883,
+      "text": "Lo scheduler chiede all'API server quali Pod non sono ancora assegnati a un nodo,",
+      "words": [
+        {
+          "text": "Lo",
+          "start": 26.402,
+          "end": 26.462
+        },
+        {
+          "text": "scheduler",
+          "start": 26.522,
+          "end": 27.002
+        },
+        {
+          "text": "chiede",
+          "start": 27.342,
+          "end": 27.662
+        },
+        {
+          "text": "all'API",
+          "start": 27.702,
+          "end": 28.122
+        },
+        {
+          "text": "server",
+          "start": 28.182,
+          "end": 28.522
+        },
+        {
+          "text": "quali",
+          "start": 28.642,
+          "end": 28.902
+        },
+        {
+          "text": "Pod",
+          "start": 28.962,
+          "end": 29.182
+        },
+        {
+          "text": "non",
+          "start": 29.302,
+          "end": 29.442
+        },
+        {
+          "text": "sono",
+          "start": 29.482,
+          "end": 29.642
+        },
+        {
+          "text": "ancora",
+          "start": 29.662,
+          "end": 29.902
+        },
+        {
+          "text": "assegnati",
+          "start": 29.942,
+          "end": 30.403
+        },
+        {
+          "text": "a",
+          "start": 30.423,
+          "end": 30.463
+        },
+        {
+          "text": "un",
+          "start": 30.503,
+          "end": 30.563
+        },
+        {
+          "text": "nodo,",
+          "start": 30.623,
+          "end": 30.883
+        }
+      ]
+    },
+    {
+      "start": 31.343,
+      "end": 34.743,
+      "text": "sceglie la macchina migliore e comunica la decisione all'API server,",
+      "words": [
+        {
+          "text": "sceglie",
+          "start": 31.343,
+          "end": 31.603
+        },
+        {
+          "text": "la",
+          "start": 31.643,
+          "end": 31.703
+        },
+        {
+          "text": "macchina",
+          "start": 31.723,
+          "end": 32.023
+        },
+        {
+          "text": "migliore",
+          "start": 32.083,
+          "end": 32.523
+        },
+        {
+          "text": "e",
+          "start": 32.703,
+          "end": 32.743
+        },
+        {
+          "text": "comunica",
+          "start": 32.803,
+          "end": 33.283
+        },
+        {
+          "text": "la",
+          "start": 33.343,
+          "end": 33.403
+        },
+        {
+          "text": "decisione",
+          "start": 33.443,
+          "end": 33.883
+        },
+        {
+          "text": "all'API",
+          "start": 33.943,
+          "end": 34.323
+        },
+        {
+          "text": "server,",
+          "start": 34.383,
+          "end": 34.743
+        }
+      ]
+    },
+    {
+      "start": 35.043,
+      "end": 36.183,
+      "text": "che la salva in etcd.",
+      "words": [
+        {
+          "text": "che",
+          "start": 35.043,
+          "end": 35.123
+        },
+        {
+          "text": "la",
+          "start": 35.163,
+          "end": 35.223
+        },
+        {
+          "text": "salva",
+          "start": 35.283,
+          "end": 35.563
+        },
+        {
+          "text": "in",
+          "start": 35.743,
+          "end": 35.823
+        },
+        {
+          "text": "etcd.",
+          "start": 35.863,
+          "end": 36.183
+        }
+      ]
+    },
+    {
+      "start": 37.243,
+      "end": 43.064,
+      "text": "Il controller-manager osserva continuamente lo stato reale e invia comandi correttivi per mantenere la declarativeness.",
+      "words": [
+        {
+          "text": "Il",
+          "start": 37.243,
+          "end": 37.323
+        },
+        {
+          "text": "controller-manager",
+          "start": 37.343,
+          "end": 38.183
+        },
+        {
+          "text": "osserva",
+          "start": 38.303,
+          "end": 38.643
+        },
+        {
+          "text": "continuamente",
+          "start": 38.723,
+          "end": 39.343
+        },
+        {
+          "text": "lo",
+          "start": 39.383,
+          "end": 39.443
+        },
+        {
+          "text": "stato",
+          "start": 39.483,
+          "end": 39.703
+        },
+        {
+          "text": "reale",
+          "start": 39.743,
+          "end": 40.103
+        },
+        {
+          "text": "e",
+          "start": 40.263,
+          "end": 40.303
+        },
+        {
+          "text": "invia",
+          "start": 40.363,
+          "end": 40.623
+        },
+        {
+          "text": "comandi",
+          "start": 40.683,
+          "end": 41.043
+        },
+        {
+          "text": "correttivi",
+          "start": 41.083,
+          "end": 41.583
+        },
+        {
+          "text": "per",
+          "start": 41.623,
+          "end": 41.743
+        },
+        {
+          "text": "mantenere",
+          "start": 41.783,
+          "end": 42.183
+        },
+        {
+          "text": "la",
+          "start": 42.243,
+          "end": 42.303
+        },
+        {
+          "text": "declarativeness.",
+          "start": 42.343,
+          "end": 43.064
+        }
+      ]
+    },
+    {
+      "start": 44.004,
+      "end": 46.004,
+      "text": "Sui worker node girano i workload:",
+      "words": [
+        {
+          "text": "Sui",
+          "start": 44.004,
+          "end": 44.164
+        },
+        {
+          "text": "worker",
+          "start": 44.224,
+          "end": 44.544
+        },
+        {
+          "text": "node",
+          "start": 44.604,
+          "end": 44.864
+        },
+        {
+          "text": "girano",
+          "start": 45.044,
+          "end": 45.364
+        },
+        {
+          "text": "i",
+          "start": 45.404,
+          "end": 45.444
+        },
+        {
+          "text": "workload:",
+          "start": 45.524,
+          "end": 46.004
+        }
+      ]
+    },
+    {
+      "start": 46.664,
+      "end": 51.504,
+      "text": "il kubelet si registra al cluster, chiede all'API server quali Pod eseguire e li avvia,",
+      "words": [
+        {
+          "text": "il",
+          "start": 46.664,
+          "end": 46.744
+        },
+        {
+          "text": "kubelet",
+          "start": 46.804,
+          "end": 47.204
+        },
+        {
+          "text": "si",
+          "start": 47.304,
+          "end": 47.364
+        },
+        {
+          "text": "registra",
+          "start": 47.404,
+          "end": 47.764
+        },
+        {
+          "text": "al",
+          "start": 47.804,
+          "end": 47.844
+        },
+        {
+          "text": "cluster,",
+          "start": 47.884,
+          "end": 48.344
+        },
+        {
+          "text": "chiede",
+          "start": 48.584,
+          "end": 48.844
+        },
+        {
+          "text": "all'API",
+          "start": 48.904,
+          "end": 49.364
+        },
+        {
+          "text": "server",
+          "start": 49.404,
+          "end": 49.724
+        },
+        {
+          "text": "quali",
+          "start": 49.824,
+          "end": 50.064
+        },
+        {
+          "text": "Pod",
+          "start": 50.104,
+          "end": 50.284
+        },
+        {
+          "text": "eseguire",
+          "start": 50.344,
+          "end": 50.784
+        },
+        {
+          "text": "e",
+          "start": 50.984,
+          "end": 51.024
+        },
+        {
+          "text": "li",
+          "start": 51.064,
+          "end": 51.144
+        },
+        {
+          "text": "avvia,",
+          "start": 51.184,
+          "end": 51.504
+        }
+      ]
+    },
+    {
+      "start": 51.964,
+      "end": 55.585,
+      "text": "mentre kube-proxy gestisce la rete tra container su nodi diversi.",
+      "words": [
+        {
+          "text": "mentre",
+          "start": 51.964,
+          "end": 52.204
+        },
+        {
+          "text": "kube-proxy",
+          "start": 52.304,
+          "end": 52.964
+        },
+        {
+          "text": "gestisce",
+          "start": 53.144,
+          "end": 53.584
+        },
+        {
+          "text": "la",
+          "start": 53.624,
+          "end": 53.684
+        },
+        {
+          "text": "rete",
+          "start": 53.724,
+          "end": 53.924
+        },
+        {
+          "text": "tra",
+          "start": 53.984,
+          "end": 54.084
+        },
+        {
+          "text": "container",
+          "start": 54.164,
+          "end": 54.645
+        },
+        {
+          "text": "su",
+          "start": 54.705,
+          "end": 54.805
+        },
+        {
+          "text": "nodi",
+          "start": 54.885,
+          "end": 55.105
+        },
+        {
+          "text": "diversi.",
+          "start": 55.145,
+          "end": 55.585
+        }
+      ]
+    },
+    {
+      "start": 56.365,
+      "end": 59.045,
+      "text": "La regola d'oro è che tutto passa dall'API server:",
+      "words": [
+        {
+          "text": "La",
+          "start": 56.365,
+          "end": 56.425
+        },
+        {
+          "text": "regola",
+          "start": 56.465,
+          "end": 56.705
+        },
+        {
+          "text": "d'oro",
+          "start": 56.745,
+          "end": 57.005
+        },
+        {
+          "text": "è",
+          "start": 57.125,
+          "end": 57.165
+        },
+        {
+          "text": "che",
+          "start": 57.205,
+          "end": 57.305
+        },
+        {
+          "text": "tutto",
+          "start": 57.445,
+          "end": 57.765
+        },
+        {
+          "text": "passa",
+          "start": 57.825,
+          "end": 58.125
+        },
+        {
+          "text": "dall'API",
+          "start": 58.185,
+          "end": 58.645
+        },
+        {
+          "text": "server:",
+          "start": 58.685,
+          "end": 59.045
+        }
+      ]
+    },
+    {
+      "start": 59.445,
+      "end": 62.645,
+      "text": "nessun componente parla direttamente con un altro o con etcd.",
+      "words": [
+        {
+          "text": "nessun",
+          "start": 59.445,
+          "end": 59.785
+        },
+        {
+          "text": "componente",
+          "start": 59.845,
+          "end": 60.425
+        },
+        {
+          "text": "parla",
+          "start": 60.545,
+          "end": 60.785
+        },
+        {
+          "text": "direttamente",
+          "start": 60.825,
+          "end": 61.285
+        },
+        {
+          "text": "con",
+          "start": 61.325,
+          "end": 61.425
+        },
+        {
+          "text": "un",
+          "start": 61.465,
+          "end": 61.525
+        },
+        {
+          "text": "altro",
+          "start": 61.605,
+          "end": 61.885
+        },
+        {
+          "text": "o",
+          "start": 62.085,
+          "end": 62.125
+        },
+        {
+          "text": "con",
+          "start": 62.185,
+          "end": 62.325
+        },
+        {
+          "text": "etcd.",
+          "start": 62.365,
+          "end": 62.645
+        }
+      ]
+    }
+  ]
+}

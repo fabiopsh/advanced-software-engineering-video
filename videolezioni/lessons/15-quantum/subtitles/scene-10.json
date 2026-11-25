@@ -1,0 +1,1151 @@
+{
+  "duration": 78.632,
+  "segments": [
+    {
+      "start": 1.137,
+      "end": 4.177,
+      "text": "Vediamo ora nel dettaglio Cut and Shoot e il multiprogramming.",
+      "words": [
+        {
+          "text": "Vediamo",
+          "start": 1.137,
+          "end": 1.417
+        },
+        {
+          "text": "ora",
+          "start": 1.457,
+          "end": 1.557
+        },
+        {
+          "text": "nel",
+          "start": 1.617,
+          "end": 1.737
+        },
+        {
+          "text": "dettaglio",
+          "start": 1.777,
+          "end": 2.217
+        },
+        {
+          "text": "Cut",
+          "start": 2.337,
+          "end": 2.517
+        },
+        {
+          "text": "and",
+          "start": 2.557,
+          "end": 2.677
+        },
+        {
+          "text": "Shoot",
+          "start": 2.737,
+          "end": 2.977
+        },
+        {
+          "text": "e",
+          "start": 3.237,
+          "end": 3.277
+        },
+        {
+          "text": "il",
+          "start": 3.317,
+          "end": 3.377
+        },
+        {
+          "text": "multiprogramming.",
+          "start": 3.417,
+          "end": 4.177
+        }
+      ]
+    },
+    {
+      "start": 5.057,
+      "end": 7.058,
+      "text": "Partiamo dalla premessa del circuit cutting:",
+      "words": [
+        {
+          "text": "Partiamo",
+          "start": 5.057,
+          "end": 5.397
+        },
+        {
+          "text": "dalla",
+          "start": 5.457,
+          "end": 5.618
+        },
+        {
+          "text": "premessa",
+          "start": 5.638,
+          "end": 5.998
+        },
+        {
+          "text": "del",
+          "start": 6.038,
+          "end": 6.158
+        },
+        {
+          "text": "circuit",
+          "start": 6.238,
+          "end": 6.558
+        },
+        {
+          "text": "cutting:",
+          "start": 6.618,
+          "end": 7.058
+        }
+      ]
+    },
+    {
+      "start": 7.718,
+      "end": 12.918,
+      "text": "tagliare un circuito grande in frammenti e ricucirli con Pennylane non solo ha un costo",
+      "words": [
+        {
+          "text": "tagliare",
+          "start": 7.718,
+          "end": 8.098
+        },
+        {
+          "text": "un",
+          "start": 8.178,
+          "end": 8.238
+        },
+        {
+          "text": "circuito",
+          "start": 8.278,
+          "end": 8.718
+        },
+        {
+          "text": "grande",
+          "start": 8.758,
+          "end": 9.058
+        },
+        {
+          "text": "in",
+          "start": 9.098,
+          "end": 9.158
+        },
+        {
+          "text": "frammenti",
+          "start": 9.198,
+          "end": 9.818
+        },
+        {
+          "text": "e",
+          "start": 9.938,
+          "end": 9.978
+        },
+        {
+          "text": "ricucirli",
+          "start": 10.058,
+          "end": 10.658
+        },
+        {
+          "text": "con",
+          "start": 10.698,
+          "end": 10.818
+        },
+        {
+          "text": "Pennylane",
+          "start": 10.878,
+          "end": 11.478
+        },
+        {
+          "text": "non",
+          "start": 11.998,
+          "end": 12.158
+        },
+        {
+          "text": "solo",
+          "start": 12.238,
+          "end": 12.458
+        },
+        {
+          "text": "ha",
+          "start": 12.478,
+          "end": 12.538
+        },
+        {
+          "text": "un",
+          "start": 12.578,
+          "end": 12.638
+        },
+        {
+          "text": "costo",
+          "start": 12.678,
+          "end": 12.918
+        }
+      ]
+    },
+    {
+      "start": 12.958,
+      "end": 18.018,
+      "text": "esponenziale nel numero di tagli, ma richiede anche più shot per stimare correttamente il risultato.",
+      "words": [
+        {
+          "text": "esponenziale",
+          "start": 12.958,
+          "end": 13.678
+        },
+        {
+          "text": "nel",
+          "start": 13.718,
+          "end": 13.818
+        },
+        {
+          "text": "numero",
+          "start": 13.858,
+          "end": 14.078
+        },
+        {
+          "text": "di",
+          "start": 14.118,
+          "end": 14.178
+        },
+        {
+          "text": "tagli,",
+          "start": 14.218,
+          "end": 14.538
+        },
+        {
+          "text": "ma",
+          "start": 14.898,
+          "end": 14.958
+        },
+        {
+          "text": "richiede",
+          "start": 15.038,
+          "end": 15.298
+        },
+        {
+          "text": "anche",
+          "start": 15.358,
+          "end": 15.518
+        },
+        {
+          "text": "più",
+          "start": 15.618,
+          "end": 15.738
+        },
+        {
+          "text": "shot",
+          "start": 15.858,
+          "end": 16.158
+        },
+        {
+          "text": "per",
+          "start": 16.298,
+          "end": 16.398
+        },
+        {
+          "text": "stimare",
+          "start": 16.438,
+          "end": 16.778
+        },
+        {
+          "text": "correttamente",
+          "start": 16.838,
+          "end": 17.438
+        },
+        {
+          "text": "il",
+          "start": 17.458,
+          "end": 17.518
+        },
+        {
+          "text": "risultato.",
+          "start": 17.538,
+          "end": 18.018
+        }
+      ]
+    },
+    {
+      "start": 18.838,
+      "end": 23.379,
+      "text": "Quando combiniamo taglio e distribuzione, lo split uniforme offre due varianti precise:",
+      "words": [
+        {
+          "text": "Quando",
+          "start": 18.838,
+          "end": 19.058
+        },
+        {
+          "text": "combiniamo",
+          "start": 19.098,
+          "end": 19.538
+        },
+        {
+          "text": "taglio",
+          "start": 19.638,
+          "end": 19.938
+        },
+        {
+          "text": "e",
+          "start": 19.978,
+          "end": 20.018
+        },
+        {
+          "text": "distribuzione,",
+          "start": 20.038,
+          "end": 20.738
+        },
+        {
+          "text": "lo",
+          "start": 21.138,
+          "end": 21.218
+        },
+        {
+          "text": "split",
+          "start": 21.278,
+          "end": 21.538
+        },
+        {
+          "text": "uniforme",
+          "start": 21.598,
+          "end": 22.019
+        },
+        {
+          "text": "offre",
+          "start": 22.079,
+          "end": 22.319
+        },
+        {
+          "text": "due",
+          "start": 22.399,
+          "end": 22.539
+        },
+        {
+          "text": "varianti",
+          "start": 22.559,
+          "end": 22.919
+        },
+        {
+          "text": "precise:",
+          "start": 22.959,
+          "end": 23.379
+        }
+      ]
+    },
+    {
+      "start": 23.979,
+      "end": 28.259,
+      "text": "lo shot multiplier replica tutti gli shot del frammento su ciascuna Q P U,",
+      "words": [
+        {
+          "text": "lo",
+          "start": 23.979,
+          "end": 24.039
+        },
+        {
+          "text": "shot",
+          "start": 24.119,
+          "end": 24.359
+        },
+        {
+          "text": "multiplier",
+          "start": 24.419,
+          "end": 25.059
+        },
+        {
+          "text": "replica",
+          "start": 25.459,
+          "end": 25.799
+        },
+        {
+          "text": "tutti",
+          "start": 25.939,
+          "end": 26.239
+        },
+        {
+          "text": "gli",
+          "start": 26.259,
+          "end": 26.379
+        },
+        {
+          "text": "shot",
+          "start": 26.419,
+          "end": 26.679
+        },
+        {
+          "text": "del",
+          "start": 26.759,
+          "end": 26.859
+        },
+        {
+          "text": "frammento",
+          "start": 26.899,
+          "end": 27.319
+        },
+        {
+          "text": "su",
+          "start": 27.379,
+          "end": 27.459
+        },
+        {
+          "text": "ciascuna",
+          "start": 27.539,
+          "end": 27.919
+        },
+        {
+          "text": "Q",
+          "start": 27.959,
+          "end": 27.999
+        },
+        {
+          "text": "P",
+          "start": 28.079,
+          "end": 28.119
+        },
+        {
+          "text": "U,",
+          "start": 28.219,
+          "end": 28.259
+        }
+      ]
+    },
+    {
+      "start": 28.699,
+      "end": 31.079,
+      "text": "moltiplicando quindi il totale per il numero di macchine;",
+      "words": [
+        {
+          "text": "moltiplicando",
+          "start": 28.699,
+          "end": 29.259
+        },
+        {
+          "text": "quindi",
+          "start": 29.299,
+          "end": 29.519
+        },
+        {
+          "text": "il",
+          "start": 29.559,
+          "end": 29.639
+        },
+        {
+          "text": "totale",
+          "start": 29.679,
+          "end": 30.059
+        },
+        {
+          "text": "per",
+          "start": 30.119,
+          "end": 30.239
+        },
+        {
+          "text": "il",
+          "start": 30.259,
+          "end": 30.319
+        },
+        {
+          "text": "numero",
+          "start": 30.359,
+          "end": 30.579
+        },
+        {
+          "text": "di",
+          "start": 30.619,
+          "end": 30.679
+        },
+        {
+          "text": "macchine;",
+          "start": 30.719,
+          "end": 31.079
+        }
+      ]
+    },
+    {
+      "start": 31.699,
+      "end": 35.419,
+      "text": "lo shot divider invece divide gli shot del frammento tra le Q P U,",
+      "words": [
+        {
+          "text": "lo",
+          "start": 31.699,
+          "end": 31.779
+        },
+        {
+          "text": "shot",
+          "start": 31.819,
+          "end": 32.019
+        },
+        {
+          "text": "divider",
+          "start": 32.099,
+          "end": 32.499
+        },
+        {
+          "text": "invece",
+          "start": 32.539,
+          "end": 32.879
+        },
+        {
+          "text": "divide",
+          "start": 33.079,
+          "end": 33.539
+        },
+        {
+          "text": "gli",
+          "start": 33.559,
+          "end": 33.699
+        },
+        {
+          "text": "shot",
+          "start": 33.759,
+          "end": 34.039
+        },
+        {
+          "text": "del",
+          "start": 34.119,
+          "end": 34.219
+        },
+        {
+          "text": "frammento",
+          "start": 34.259,
+          "end": 34.779
+        },
+        {
+          "text": "tra",
+          "start": 34.839,
+          "end": 34.939
+        },
+        {
+          "text": "le",
+          "start": 34.999,
+          "end": 35.059
+        },
+        {
+          "text": "Q",
+          "start": 35.079,
+          "end": 35.119
+        },
+        {
+          "text": "P",
+          "start": 35.219,
+          "end": 35.259
+        },
+        {
+          "text": "U,",
+          "start": 35.379,
+          "end": 35.419
+        }
+      ]
+    },
+    {
+      "start": 35.779,
+      "end": 37.259,
+      "text": "lasciando invariato il totale.",
+      "words": [
+        {
+          "text": "lasciando",
+          "start": 35.779,
+          "end": 36.199
+        },
+        {
+          "text": "invariato",
+          "start": 36.259,
+          "end": 36.759
+        },
+        {
+          "text": "il",
+          "start": 36.819,
+          "end": 36.859
+        },
+        {
+          "text": "totale.",
+          "start": 36.899,
+          "end": 37.259
+        }
+      ]
+    },
+    {
+      "start": 37.819,
+      "end": 42.72,
+      "text": "L'efficacia è stata valutata da una a otto Q P U confrontando quattro configurazioni:",
+      "words": [
+        {
+          "text": "L'efficacia",
+          "start": 37.819,
+          "end": 38.38
+        },
+        {
+          "text": "è",
+          "start": 38.42,
+          "end": 38.46
+        },
+        {
+          "text": "stata",
+          "start": 38.48,
+          "end": 38.7
+        },
+        {
+          "text": "valutata",
+          "start": 38.74,
+          "end": 39.24
+        },
+        {
+          "text": "da",
+          "start": 39.34,
+          "end": 39.42
+        },
+        {
+          "text": "una",
+          "start": 39.54,
+          "end": 39.72
+        },
+        {
+          "text": "a",
+          "start": 39.92,
+          "end": 39.96
+        },
+        {
+          "text": "otto",
+          "start": 40.04,
+          "end": 40.26
+        },
+        {
+          "text": "Q",
+          "start": 40.3,
+          "end": 40.34
+        },
+        {
+          "text": "P",
+          "start": 40.46,
+          "end": 40.5
+        },
+        {
+          "text": "U",
+          "start": 40.62,
+          "end": 40.66
+        },
+        {
+          "text": "confrontando",
+          "start": 40.96,
+          "end": 41.5
+        },
+        {
+          "text": "quattro",
+          "start": 41.6,
+          "end": 41.88
+        },
+        {
+          "text": "configurazioni:",
+          "start": 41.92,
+          "end": 42.72
+        }
+      ]
+    },
+    {
+      "start": 43.24,
+      "end": 47.44,
+      "text": "nessuna tecnica, solo circuit cutting, solo shot-wise e Cut and Shoot.",
+      "words": [
+        {
+          "text": "nessuna",
+          "start": 43.24,
+          "end": 43.58
+        },
+        {
+          "text": "tecnica,",
+          "start": 43.64,
+          "end": 44.02
+        },
+        {
+          "text": "solo",
+          "start": 44.38,
+          "end": 44.58
+        },
+        {
+          "text": "circuit",
+          "start": 44.66,
+          "end": 44.96
+        },
+        {
+          "text": "cutting,",
+          "start": 45.02,
+          "end": 45.34
+        },
+        {
+          "text": "solo",
+          "start": 45.74,
+          "end": 45.94
+        },
+        {
+          "text": "shot-wise",
+          "start": 46.02,
+          "end": 46.58
+        },
+        {
+          "text": "e",
+          "start": 46.82,
+          "end": 46.86
+        },
+        {
+          "text": "Cut",
+          "start": 46.92,
+          "end": 47.08
+        },
+        {
+          "text": "and",
+          "start": 47.1,
+          "end": 47.22
+        },
+        {
+          "text": "Shoot.",
+          "start": 47.24,
+          "end": 47.44
+        }
+      ]
+    },
+    {
+      "start": 48.28,
+      "end": 52.86,
+      "text": "Cut and Shoot ottiene i tassi d'errore più bassi con un overhead shot-wise trascurabile,",
+      "words": [
+        {
+          "text": "Cut",
+          "start": 48.28,
+          "end": 48.42
+        },
+        {
+          "text": "and",
+          "start": 48.46,
+          "end": 48.56
+        },
+        {
+          "text": "Shoot",
+          "start": 48.6,
+          "end": 48.8
+        },
+        {
+          "text": "ottiene",
+          "start": 48.84,
+          "end": 49.12
+        },
+        {
+          "text": "i",
+          "start": 49.18,
+          "end": 49.22
+        },
+        {
+          "text": "tassi",
+          "start": 49.26,
+          "end": 49.54
+        },
+        {
+          "text": "d'errore",
+          "start": 49.58,
+          "end": 49.98
+        },
+        {
+          "text": "più",
+          "start": 50.08,
+          "end": 50.2
+        },
+        {
+          "text": "bassi",
+          "start": 50.32,
+          "end": 50.74
+        },
+        {
+          "text": "con",
+          "start": 50.9,
+          "end": 51.02
+        },
+        {
+          "text": "un",
+          "start": 51.04,
+          "end": 51.12
+        },
+        {
+          "text": "overhead",
+          "start": 51.22,
+          "end": 51.56
+        },
+        {
+          "text": "shot-wise",
+          "start": 51.62,
+          "end": 52.06
+        },
+        {
+          "text": "trascurabile,",
+          "start": 52.16,
+          "end": 52.86
+        }
+      ]
+    },
+    {
+      "start": 53.32,
+      "end": 59.081,
+      "text": "permette di eseguire circuiti più grandi dell'hardware disponibile, aumenta la resilienza ai guasti e riduce",
+      "words": [
+        {
+          "text": "permette",
+          "start": 53.32,
+          "end": 53.68
+        },
+        {
+          "text": "di",
+          "start": 53.72,
+          "end": 53.76
+        },
+        {
+          "text": "eseguire",
+          "start": 53.8,
+          "end": 54.18
+        },
+        {
+          "text": "circuiti",
+          "start": 54.24,
+          "end": 54.681
+        },
+        {
+          "text": "più",
+          "start": 54.741,
+          "end": 54.861
+        },
+        {
+          "text": "grandi",
+          "start": 54.921,
+          "end": 55.281
+        },
+        {
+          "text": "dell'hardware",
+          "start": 55.321,
+          "end": 55.821
+        },
+        {
+          "text": "disponibile,",
+          "start": 55.861,
+          "end": 56.441
+        },
+        {
+          "text": "aumenta",
+          "start": 56.741,
+          "end": 57.181
+        },
+        {
+          "text": "la",
+          "start": 57.221,
+          "end": 57.301
+        },
+        {
+          "text": "resilienza",
+          "start": 57.341,
+          "end": 57.941
+        },
+        {
+          "text": "ai",
+          "start": 58.001,
+          "end": 58.061
+        },
+        {
+          "text": "guasti",
+          "start": 58.101,
+          "end": 58.481
+        },
+        {
+          "text": "e",
+          "start": 58.641,
+          "end": 58.681
+        },
+        {
+          "text": "riduce",
+          "start": 58.761,
+          "end": 59.081
+        }
+      ]
+    },
+    {
+      "start": 59.121,
+      "end": 59.841,
+      "text": "i tempi di attesa.",
+      "words": [
+        {
+          "text": "i",
+          "start": 59.121,
+          "end": 59.161
+        },
+        {
+          "text": "tempi",
+          "start": 59.181,
+          "end": 59.401
+        },
+        {
+          "text": "di",
+          "start": 59.441,
+          "end": 59.481
+        },
+        {
+          "text": "attesa.",
+          "start": 59.521,
+          "end": 59.841
+        }
+      ]
+    },
+    {
+      "start": 60.701,
+      "end": 64.601,
+      "text": "Guardiamo infine il multiprogramming combinato con la shot-wise distribution.",
+      "words": [
+        {
+          "text": "Guardiamo",
+          "start": 60.701,
+          "end": 61.001
+        },
+        {
+          "text": "infine",
+          "start": 61.041,
+          "end": 61.341
+        },
+        {
+          "text": "il",
+          "start": 61.521,
+          "end": 61.621
+        },
+        {
+          "text": "multiprogramming",
+          "start": 61.721,
+          "end": 62.641
+        },
+        {
+          "text": "combinato",
+          "start": 62.681,
+          "end": 63.221
+        },
+        {
+          "text": "con",
+          "start": 63.281,
+          "end": 63.381
+        },
+        {
+          "text": "la",
+          "start": 63.401,
+          "end": 63.461
+        },
+        {
+          "text": "shot-wise",
+          "start": 63.541,
+          "end": 63.981
+        },
+        {
+          "text": "distribution.",
+          "start": 64.001,
+          "end": 64.601
+        }
+      ]
+    },
+    {
+      "start": 65.361,
+      "end": 69.921,
+      "text": "Per non sprecare qubit inutilizzati, uno scheduler raccoglie circuiti di più sviluppatori,",
+      "words": [
+        {
+          "text": "Per",
+          "start": 65.361,
+          "end": 65.461
+        },
+        {
+          "text": "non",
+          "start": 65.521,
+          "end": 65.641
+        },
+        {
+          "text": "sprecare",
+          "start": 65.661,
+          "end": 66.041
+        },
+        {
+          "text": "qubit",
+          "start": 66.101,
+          "end": 66.381
+        },
+        {
+          "text": "inutilizzati,",
+          "start": 66.401,
+          "end": 67.141
+        },
+        {
+          "text": "uno",
+          "start": 67.421,
+          "end": 67.541
+        },
+        {
+          "text": "scheduler",
+          "start": 67.561,
+          "end": 68.001
+        },
+        {
+          "text": "raccoglie",
+          "start": 68.141,
+          "end": 68.481
+        },
+        {
+          "text": "circuiti",
+          "start": 68.541,
+          "end": 68.981
+        },
+        {
+          "text": "di",
+          "start": 69.021,
+          "end": 69.081
+        },
+        {
+          "text": "più",
+          "start": 69.141,
+          "end": 69.241
+        },
+        {
+          "text": "sviluppatori,",
+          "start": 69.301,
+          "end": 69.921
+        }
+      ]
+    },
+    {
+      "start": 70.161,
+      "end": 74.72200000000001,
+      "text": "li divide shot-wise, li accoda e li compone insieme sui rispettivi qubit delle Q P",
+      "words": [
+        {
+          "text": "li",
+          "start": 70.161,
+          "end": 70.221
+        },
+        {
+          "text": "divide",
+          "start": 70.281,
+          "end": 70.541
+        },
+        {
+          "text": "shot-wise,",
+          "start": 70.622,
+          "end": 71.142
+        },
+        {
+          "text": "li",
+          "start": 71.402,
+          "end": 71.462
+        },
+        {
+          "text": "accoda",
+          "start": 71.522,
+          "end": 71.922
+        },
+        {
+          "text": "e",
+          "start": 72.142,
+          "end": 72.182
+        },
+        {
+          "text": "li",
+          "start": 72.222,
+          "end": 72.282
+        },
+        {
+          "text": "compone",
+          "start": 72.342,
+          "end": 72.742
+        },
+        {
+          "text": "insieme",
+          "start": 72.782,
+          "end": 73.202
+        },
+        {
+          "text": "sui",
+          "start": 73.262,
+          "end": 73.362
+        },
+        {
+          "text": "rispettivi",
+          "start": 73.402,
+          "end": 73.822
+        },
+        {
+          "text": "qubit",
+          "start": 73.882,
+          "end": 74.182
+        },
+        {
+          "text": "delle",
+          "start": 74.282,
+          "end": 74.462
+        },
+        {
+          "text": "Q",
+          "start": 74.502,
+          "end": 74.542
+        },
+        {
+          "text": "P",
+          "start": 74.682,
+          "end": 74.72200000000001
+        }
+      ]
+    },
+    {
+      "start": 74.822,
+      "end": 78.382,
+      "text": "U, per poi separare e riaggregare i risultati per ogni sviluppatore.",
+      "words": [
+        {
+          "text": "U,",
+          "start": 74.822,
+          "end": 74.86200000000001
+        },
+        {
+          "text": "per",
+          "start": 75.202,
+          "end": 75.302
+        },
+        {
+          "text": "poi",
+          "start": 75.342,
+          "end": 75.482
+        },
+        {
+          "text": "separare",
+          "start": 75.562,
+          "end": 76.042
+        },
+        {
+          "text": "e",
+          "start": 76.182,
+          "end": 76.22200000000001
+        },
+        {
+          "text": "riaggregare",
+          "start": 76.302,
+          "end": 76.822
+        },
+        {
+          "text": "i",
+          "start": 76.862,
+          "end": 76.902
+        },
+        {
+          "text": "risultati",
+          "start": 76.902,
+          "end": 77.402
+        },
+        {
+          "text": "per",
+          "start": 77.502,
+          "end": 77.602
+        },
+        {
+          "text": "ogni",
+          "start": 77.642,
+          "end": 77.802
+        },
+        {
+          "text": "sviluppatore.",
+          "start": 77.842,
+          "end": 78.382
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,962 @@
+{
+  "duration": 72.587,
+  "segments": [
+    {
+      "start": 0.08,
+      "end": 6.14,
+      "text": "Un aspetto concettuale fondamentale è che MicroFreshener supporta anche l'opzione let it be,",
+      "words": [
+        {
+          "text": "Un",
+          "start": 0.08,
+          "end": 0.18
+        },
+        {
+          "text": "aspetto",
+          "start": 0.22,
+          "end": 0.58
+        },
+        {
+          "text": "concettuale",
+          "start": 0.64,
+          "end": 1.28
+        },
+        {
+          "text": "fondamentale",
+          "start": 1.34,
+          "end": 2.14
+        },
+        {
+          "text": "è",
+          "start": 2.64,
+          "end": 2.68
+        },
+        {
+          "text": "che",
+          "start": 2.72,
+          "end": 2.82
+        },
+        {
+          "text": "MicroFreshener",
+          "start": 2.94,
+          "end": 3.76
+        },
+        {
+          "text": "supporta",
+          "start": 3.86,
+          "end": 4.34
+        },
+        {
+          "text": "anche",
+          "start": 4.52,
+          "end": 4.78
+        },
+        {
+          "text": "l'opzione",
+          "start": 4.82,
+          "end": 5.34
+        },
+        {
+          "text": "let",
+          "start": 5.74,
+          "end": 5.9
+        },
+        {
+          "text": "it",
+          "start": 5.94,
+          "end": 6.0
+        },
+        {
+          "text": "be,",
+          "start": 6.04,
+          "end": 6.14
+        }
+      ]
+    },
+    {
+      "start": 6.721,
+      "end": 9.001,
+      "text": "cioè accettare consapevolmente uno smell,",
+      "words": [
+        {
+          "text": "cioè",
+          "start": 6.721,
+          "end": 6.861
+        },
+        {
+          "text": "accettare",
+          "start": 6.981,
+          "end": 7.541
+        },
+        {
+          "text": "consapevolmente",
+          "start": 7.621,
+          "end": 8.461
+        },
+        {
+          "text": "uno",
+          "start": 8.521,
+          "end": 8.661
+        },
+        {
+          "text": "smell,",
+          "start": 8.721,
+          "end": 9.001
+        }
+      ]
+    },
+    {
+      "start": 9.561,
+      "end": 12.941,
+      "text": "e soprattutto opera a livello architetturale, non implementativo.",
+      "words": [
+        {
+          "text": "e",
+          "start": 9.561,
+          "end": 9.601
+        },
+        {
+          "text": "soprattutto",
+          "start": 9.681,
+          "end": 10.221
+        },
+        {
+          "text": "opera",
+          "start": 10.421,
+          "end": 10.661
+        },
+        {
+          "text": "a",
+          "start": 10.701,
+          "end": 10.741
+        },
+        {
+          "text": "livello",
+          "start": 10.761,
+          "end": 11.041
+        },
+        {
+          "text": "architetturale,",
+          "start": 11.081,
+          "end": 11.801
+        },
+        {
+          "text": "non",
+          "start": 12.041,
+          "end": 12.201
+        },
+        {
+          "text": "implementativo.",
+          "start": 12.241,
+          "end": 12.941
+        }
+      ]
+    },
+    {
+      "start": 13.581,
+      "end": 18.081,
+      "text": "Applicare un refactoring nel grafo non modifica il codice sorgente dell'applicazione:",
+      "words": [
+        {
+          "text": "Applicare",
+          "start": 13.581,
+          "end": 14.001
+        },
+        {
+          "text": "un",
+          "start": 14.141,
+          "end": 14.221
+        },
+        {
+          "text": "refactoring",
+          "start": 14.281,
+          "end": 14.861
+        },
+        {
+          "text": "nel",
+          "start": 14.901,
+          "end": 15.021
+        },
+        {
+          "text": "grafo",
+          "start": 15.061,
+          "end": 15.421
+        },
+        {
+          "text": "non",
+          "start": 15.601,
+          "end": 15.741
+        },
+        {
+          "text": "modifica",
+          "start": 15.801,
+          "end": 16.321
+        },
+        {
+          "text": "il",
+          "start": 16.381,
+          "end": 16.441
+        },
+        {
+          "text": "codice",
+          "start": 16.481,
+          "end": 16.801
+        },
+        {
+          "text": "sorgente",
+          "start": 16.841,
+          "end": 17.261
+        },
+        {
+          "text": "dell'applicazione:",
+          "start": 17.301,
+          "end": 18.081
+        }
+      ]
+    },
+    {
+      "start": 18.641,
+      "end": 23.722,
+      "text": "proprio come nei design pattern, spetta all'application manager realizzare la modifica concreta.",
+      "words": [
+        {
+          "text": "proprio",
+          "start": 18.641,
+          "end": 18.901
+        },
+        {
+          "text": "come",
+          "start": 18.921,
+          "end": 19.081
+        },
+        {
+          "text": "nei",
+          "start": 19.141,
+          "end": 19.261
+        },
+        {
+          "text": "design",
+          "start": 19.281,
+          "end": 19.601
+        },
+        {
+          "text": "pattern,",
+          "start": 19.641,
+          "end": 20.082
+        },
+        {
+          "text": "spetta",
+          "start": 20.282,
+          "end": 20.602
+        },
+        {
+          "text": "all'application",
+          "start": 20.882,
+          "end": 21.602
+        },
+        {
+          "text": "manager",
+          "start": 21.662,
+          "end": 22.082
+        },
+        {
+          "text": "realizzare",
+          "start": 22.282,
+          "end": 22.722
+        },
+        {
+          "text": "la",
+          "start": 22.762,
+          "end": 22.822
+        },
+        {
+          "text": "modifica",
+          "start": 22.842,
+          "end": 23.222
+        },
+        {
+          "text": "concreta.",
+          "start": 23.262,
+          "end": 23.722
+        }
+      ]
+    },
+    {
+      "start": 24.282,
+      "end": 27.822,
+      "text": "Guardiamo l'esempio del timeout: aggiungendo il refactoring sul grafo,",
+      "words": [
+        {
+          "text": "Guardiamo",
+          "start": 24.282,
+          "end": 24.562
+        },
+        {
+          "text": "l'esempio",
+          "start": 24.582,
+          "end": 24.922
+        },
+        {
+          "text": "del",
+          "start": 24.962,
+          "end": 25.062
+        },
+        {
+          "text": "timeout:",
+          "start": 25.102,
+          "end": 25.522
+        },
+        {
+          "text": "aggiungendo",
+          "start": 26.062,
+          "end": 26.542
+        },
+        {
+          "text": "il",
+          "start": 26.582,
+          "end": 26.622
+        },
+        {
+          "text": "refactoring",
+          "start": 26.662,
+          "end": 27.242
+        },
+        {
+          "text": "sul",
+          "start": 27.282,
+          "end": 27.422
+        },
+        {
+          "text": "grafo,",
+          "start": 27.482,
+          "end": 27.822
+        }
+      ]
+    },
+    {
+      "start": 28.202,
+      "end": 31.462,
+      "text": "l'arco da esse uno a esse due guadagna l'etichetta t,",
+      "words": [
+        {
+          "text": "l'arco",
+          "start": 28.202,
+          "end": 28.522
+        },
+        {
+          "text": "da",
+          "start": 28.562,
+          "end": 28.622
+        },
+        {
+          "text": "esse",
+          "start": 28.702,
+          "end": 28.942
+        },
+        {
+          "text": "uno",
+          "start": 29.062,
+          "end": 29.262
+        },
+        {
+          "text": "a",
+          "start": 29.462,
+          "end": 29.502
+        },
+        {
+          "text": "esse",
+          "start": 29.562,
+          "end": 29.802
+        },
+        {
+          "text": "due",
+          "start": 29.862,
+          "end": 30.022
+        },
+        {
+          "text": "guadagna",
+          "start": 30.322,
+          "end": 30.662
+        },
+        {
+          "text": "l'etichetta",
+          "start": 30.662,
+          "end": 31.162
+        },
+        {
+          "text": "t,",
+          "start": 31.422,
+          "end": 31.462
+        }
+      ]
+    },
+    {
+      "start": 31.942,
+      "end": 35.443,
+      "text": "ma nel codice occorre aggiungere la gestione del timeout dentro esse uno;",
+      "words": [
+        {
+          "text": "ma",
+          "start": 31.942,
+          "end": 32.002
+        },
+        {
+          "text": "nel",
+          "start": 32.062,
+          "end": 32.202
+        },
+        {
+          "text": "codice",
+          "start": 32.242,
+          "end": 32.622
+        },
+        {
+          "text": "occorre",
+          "start": 32.742,
+          "end": 33.042
+        },
+        {
+          "text": "aggiungere",
+          "start": 33.062,
+          "end": 33.463
+        },
+        {
+          "text": "la",
+          "start": 33.543,
+          "end": 33.583
+        },
+        {
+          "text": "gestione",
+          "start": 33.643,
+          "end": 34.003
+        },
+        {
+          "text": "del",
+          "start": 34.043,
+          "end": 34.143
+        },
+        {
+          "text": "timeout",
+          "start": 34.183,
+          "end": 34.523
+        },
+        {
+          "text": "dentro",
+          "start": 34.683,
+          "end": 34.963
+        },
+        {
+          "text": "esse",
+          "start": 35.023,
+          "end": 35.203
+        },
+        {
+          "text": "uno;",
+          "start": 35.303,
+          "end": 35.443
+        }
+      ]
+    },
+    {
+      "start": 36.063,
+      "end": 41.083,
+      "text": "per il circuit breaker, invece, si può modificare esse uno oppure introdurre un componente dedicato.",
+      "words": [
+        {
+          "text": "per",
+          "start": 36.063,
+          "end": 36.183
+        },
+        {
+          "text": "il",
+          "start": 36.223,
+          "end": 36.303
+        },
+        {
+          "text": "circuit",
+          "start": 36.363,
+          "end": 36.703
+        },
+        {
+          "text": "breaker,",
+          "start": 36.783,
+          "end": 37.163
+        },
+        {
+          "text": "invece,",
+          "start": 37.223,
+          "end": 37.563
+        },
+        {
+          "text": "si",
+          "start": 37.703,
+          "end": 37.783
+        },
+        {
+          "text": "può",
+          "start": 37.823,
+          "end": 37.903
+        },
+        {
+          "text": "modificare",
+          "start": 37.963,
+          "end": 38.503
+        },
+        {
+          "text": "esse",
+          "start": 38.543,
+          "end": 38.763
+        },
+        {
+          "text": "uno",
+          "start": 38.863,
+          "end": 39.023
+        },
+        {
+          "text": "oppure",
+          "start": 39.143,
+          "end": 39.463
+        },
+        {
+          "text": "introdurre",
+          "start": 39.503,
+          "end": 39.963
+        },
+        {
+          "text": "un",
+          "start": 40.023,
+          "end": 40.083
+        },
+        {
+          "text": "componente",
+          "start": 40.123,
+          "end": 40.603
+        },
+        {
+          "text": "dedicato.",
+          "start": 40.623,
+          "end": 41.083
+        }
+      ]
+    },
+    {
+      "start": 41.683,
+      "end": 46.683,
+      "text": "Per gestire sistemi grandi con molti team, MicroFreshener offre le viste per team:",
+      "words": [
+        {
+          "text": "Per",
+          "start": 41.683,
+          "end": 41.803
+        },
+        {
+          "text": "gestire",
+          "start": 41.843,
+          "end": 42.183
+        },
+        {
+          "text": "sistemi",
+          "start": 42.263,
+          "end": 42.563
+        },
+        {
+          "text": "grandi",
+          "start": 42.623,
+          "end": 43.023
+        },
+        {
+          "text": "con",
+          "start": 43.103,
+          "end": 43.243
+        },
+        {
+          "text": "molti",
+          "start": 43.343,
+          "end": 43.663
+        },
+        {
+          "text": "team,",
+          "start": 43.723,
+          "end": 43.963
+        },
+        {
+          "text": "MicroFreshener",
+          "start": 44.443,
+          "end": 45.243
+        },
+        {
+          "text": "offre",
+          "start": 45.363,
+          "end": 45.643
+        },
+        {
+          "text": "le",
+          "start": 45.703,
+          "end": 45.783
+        },
+        {
+          "text": "viste",
+          "start": 45.863,
+          "end": 46.203
+        },
+        {
+          "text": "per",
+          "start": 46.243,
+          "end": 46.383
+        },
+        {
+          "text": "team:",
+          "start": 46.463,
+          "end": 46.683
+        }
+      ]
+    },
+    {
+      "start": 47.104,
+      "end": 49.904,
+      "text": "ogni gruppo vede e modifica solo i propri servizi,",
+      "words": [
+        {
+          "text": "ogni",
+          "start": 47.104,
+          "end": 47.284
+        },
+        {
+          "text": "gruppo",
+          "start": 47.344,
+          "end": 47.644
+        },
+        {
+          "text": "vede",
+          "start": 47.884,
+          "end": 48.104
+        },
+        {
+          "text": "e",
+          "start": 48.124,
+          "end": 48.164
+        },
+        {
+          "text": "modifica",
+          "start": 48.204,
+          "end": 48.644
+        },
+        {
+          "text": "solo",
+          "start": 48.804,
+          "end": 49.044
+        },
+        {
+          "text": "i",
+          "start": 49.084,
+          "end": 49.124
+        },
+        {
+          "text": "propri",
+          "start": 49.144,
+          "end": 49.384
+        },
+        {
+          "text": "servizi,",
+          "start": 49.444,
+          "end": 49.904
+        }
+      ]
+    },
+    {
+      "start": 50.304,
+      "end": 53.644,
+      "text": "chiarendo chi debba implementare una modifica tra esse uno ed esse due.",
+      "words": [
+        {
+          "text": "chiarendo",
+          "start": 50.304,
+          "end": 50.664
+        },
+        {
+          "text": "chi",
+          "start": 50.764,
+          "end": 50.864
+        },
+        {
+          "text": "debba",
+          "start": 50.964,
+          "end": 51.204
+        },
+        {
+          "text": "implementare",
+          "start": 51.244,
+          "end": 51.764
+        },
+        {
+          "text": "una",
+          "start": 51.784,
+          "end": 51.884
+        },
+        {
+          "text": "modifica",
+          "start": 51.904,
+          "end": 52.324
+        },
+        {
+          "text": "tra",
+          "start": 52.384,
+          "end": 52.464
+        },
+        {
+          "text": "esse",
+          "start": 52.524,
+          "end": 52.724
+        },
+        {
+          "text": "uno",
+          "start": 52.824,
+          "end": 52.984
+        },
+        {
+          "text": "ed",
+          "start": 53.124,
+          "end": 53.204
+        },
+        {
+          "text": "esse",
+          "start": 53.244,
+          "end": 53.424
+        },
+        {
+          "text": "due.",
+          "start": 53.464,
+          "end": 53.644
+        }
+      ]
+    },
+    {
+      "start": 54.404,
+      "end": 58.104,
+      "text": "Inoltre, l'orchestratore dei container cambia davvero il comportamento dell'app.",
+      "words": [
+        {
+          "text": "Inoltre,",
+          "start": 54.404,
+          "end": 54.804
+        },
+        {
+          "text": "l'orchestratore",
+          "start": 54.924,
+          "end": 55.544
+        },
+        {
+          "text": "dei",
+          "start": 55.584,
+          "end": 55.664
+        },
+        {
+          "text": "container",
+          "start": 55.704,
+          "end": 56.184
+        },
+        {
+          "text": "cambia",
+          "start": 56.244,
+          "end": 56.564
+        },
+        {
+          "text": "davvero",
+          "start": 56.644,
+          "end": 57.044
+        },
+        {
+          "text": "il",
+          "start": 57.084,
+          "end": 57.124
+        },
+        {
+          "text": "comportamento",
+          "start": 57.164,
+          "end": 57.724
+        },
+        {
+          "text": "dell'app.",
+          "start": 57.764,
+          "end": 58.104
+        }
+      ]
+    },
+    {
+      "start": 58.644,
+      "end": 63.305,
+      "text": "Importando un manifest Kubernetes, MicroFreshener può produrre il manifest aggiornato:",
+      "words": [
+        {
+          "text": "Importando",
+          "start": 58.644,
+          "end": 59.124
+        },
+        {
+          "text": "un",
+          "start": 59.144,
+          "end": 59.204
+        },
+        {
+          "text": "manifest",
+          "start": 59.244,
+          "end": 59.744
+        },
+        {
+          "text": "Kubernetes,",
+          "start": 59.844,
+          "end": 60.445
+        },
+        {
+          "text": "MicroFreshener",
+          "start": 60.845,
+          "end": 61.585
+        },
+        {
+          "text": "può",
+          "start": 61.645,
+          "end": 61.725
+        },
+        {
+          "text": "produrre",
+          "start": 61.805,
+          "end": 62.145
+        },
+        {
+          "text": "il",
+          "start": 62.185,
+          "end": 62.245
+        },
+        {
+          "text": "manifest",
+          "start": 62.285,
+          "end": 62.725
+        },
+        {
+          "text": "aggiornato:",
+          "start": 62.785,
+          "end": 63.305
+        }
+      ]
+    },
+    {
+      "start": 63.705,
+      "end": 69.34500000000001,
+      "text": "un ingress node realizza un API gateway, un sidecar container introduce un circuit breaker e",
+      "words": [
+        {
+          "text": "un",
+          "start": 63.705,
+          "end": 63.785
+        },
+        {
+          "text": "ingress",
+          "start": 63.825,
+          "end": 64.145
+        },
+        {
+          "text": "node",
+          "start": 64.205,
+          "end": 64.485
+        },
+        {
+          "text": "realizza",
+          "start": 64.865,
+          "end": 65.265
+        },
+        {
+          "text": "un",
+          "start": 65.325,
+          "end": 65.405
+        },
+        {
+          "text": "API",
+          "start": 65.425,
+          "end": 65.685
+        },
+        {
+          "text": "gateway,",
+          "start": 65.725,
+          "end": 66.105
+        },
+        {
+          "text": "un",
+          "start": 66.425,
+          "end": 66.525
+        },
+        {
+          "text": "sidecar",
+          "start": 66.605,
+          "end": 67.005
+        },
+        {
+          "text": "container",
+          "start": 67.065,
+          "end": 67.585
+        },
+        {
+          "text": "introduce",
+          "start": 67.645,
+          "end": 68.085
+        },
+        {
+          "text": "un",
+          "start": 68.145,
+          "end": 68.225
+        },
+        {
+          "text": "circuit",
+          "start": 68.265,
+          "end": 68.605
+        },
+        {
+          "text": "breaker",
+          "start": 68.645,
+          "end": 69.005
+        },
+        {
+          "text": "e",
+          "start": 69.305,
+          "end": 69.34500000000001
+        }
+      ]
+    },
+    {
+      "start": 69.385,
+      "end": 71.605,
+      "text": "le networking policies attuano i bulkhead.",
+      "words": [
+        {
+          "text": "le",
+          "start": 69.385,
+          "end": 69.445
+        },
+        {
+          "text": "networking",
+          "start": 69.505,
+          "end": 70.045
+        },
+        {
+          "text": "policies",
+          "start": 70.065,
+          "end": 70.525
+        },
+        {
+          "text": "attuano",
+          "start": 70.705,
+          "end": 71.025
+        },
+        {
+          "text": "i",
+          "start": 71.085,
+          "end": 71.125
+        },
+        {
+          "text": "bulkhead.",
+          "start": 71.185,
+          "end": 71.605
+        }
+      ]
+    }
+  ]
+}

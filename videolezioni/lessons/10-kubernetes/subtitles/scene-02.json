@@ -1,0 +1,927 @@
+{
+  "duration": 68.77,
+  "segments": [
+    {
+      "start": 0.08,
+      "end": 2.941,
+      "text": "Kubernetes si fonda su quattro principi di design.",
+      "words": [
+        {
+          "text": "Kubernetes",
+          "start": 0.08,
+          "end": 0.74
+        },
+        {
+          "text": "si",
+          "start": 0.9,
+          "end": 0.98
+        },
+        {
+          "text": "fonda",
+          "start": 1.04,
+          "end": 1.28
+        },
+        {
+          "text": "su",
+          "start": 1.36,
+          "end": 1.44
+        },
+        {
+          "text": "quattro",
+          "start": 1.56,
+          "end": 1.881
+        },
+        {
+          "text": "principi",
+          "start": 1.921,
+          "end": 2.361
+        },
+        {
+          "text": "di",
+          "start": 2.421,
+          "end": 2.481
+        },
+        {
+          "text": "design.",
+          "start": 2.521,
+          "end": 2.941
+        }
+      ]
+    },
+    {
+      "start": 3.561,
+      "end": 5.262,
+      "text": "Il primo è la declarativeness.",
+      "words": [
+        {
+          "text": "Il",
+          "start": 3.561,
+          "end": 3.621
+        },
+        {
+          "text": "primo",
+          "start": 3.661,
+          "end": 3.901
+        },
+        {
+          "text": "è",
+          "start": 4.081,
+          "end": 4.121
+        },
+        {
+          "text": "la",
+          "start": 4.201,
+          "end": 4.281
+        },
+        {
+          "text": "declarativeness.",
+          "start": 4.401,
+          "end": 5.262
+        }
+      ]
+    },
+    {
+      "start": 5.742,
+      "end": 9.303,
+      "text": "Si descrive lo stato desiderato nella specification di ciascun oggetto.",
+      "words": [
+        {
+          "text": "Si",
+          "start": 5.742,
+          "end": 5.822
+        },
+        {
+          "text": "descrive",
+          "start": 5.862,
+          "end": 6.202
+        },
+        {
+          "text": "lo",
+          "start": 6.262,
+          "end": 6.322
+        },
+        {
+          "text": "stato",
+          "start": 6.382,
+          "end": 6.622
+        },
+        {
+          "text": "desiderato",
+          "start": 6.682,
+          "end": 7.302
+        },
+        {
+          "text": "nella",
+          "start": 7.342,
+          "end": 7.542
+        },
+        {
+          "text": "specification",
+          "start": 7.582,
+          "end": 8.342
+        },
+        {
+          "text": "di",
+          "start": 8.402,
+          "end": 8.463
+        },
+        {
+          "text": "ciascun",
+          "start": 8.523,
+          "end": 8.823
+        },
+        {
+          "text": "oggetto.",
+          "start": 8.883,
+          "end": 9.303
+        }
+      ]
+    },
+    {
+      "start": 9.963,
+      "end": 15.505,
+      "text": "Kubernetes interroga di continuo gli oggetti tramite polling per confrontarne lo status corrente con la",
+      "words": [
+        {
+          "text": "Kubernetes",
+          "start": 9.963,
+          "end": 10.603
+        },
+        {
+          "text": "interroga",
+          "start": 10.763,
+          "end": 11.203
+        },
+        {
+          "text": "di",
+          "start": 11.283,
+          "end": 11.363
+        },
+        {
+          "text": "continuo",
+          "start": 11.403,
+          "end": 11.944
+        },
+        {
+          "text": "gli",
+          "start": 11.984,
+          "end": 12.084
+        },
+        {
+          "text": "oggetti",
+          "start": 12.124,
+          "end": 12.544
+        },
+        {
+          "text": "tramite",
+          "start": 12.584,
+          "end": 12.904
+        },
+        {
+          "text": "polling",
+          "start": 12.944,
+          "end": 13.344
+        },
+        {
+          "text": "per",
+          "start": 13.444,
+          "end": 13.544
+        },
+        {
+          "text": "confrontarne",
+          "start": 13.604,
+          "end": 14.264
+        },
+        {
+          "text": "lo",
+          "start": 14.344,
+          "end": 14.404
+        },
+        {
+          "text": "status",
+          "start": 14.444,
+          "end": 14.744
+        },
+        {
+          "text": "corrente",
+          "start": 14.804,
+          "end": 15.244
+        },
+        {
+          "text": "con",
+          "start": 15.304,
+          "end": 15.405
+        },
+        {
+          "text": "la",
+          "start": 15.445,
+          "end": 15.505
+        }
+      ]
+    },
+    {
+      "start": 15.545,
+      "end": 19.846,
+      "text": "specification: se qualcosa diverge o non risponde, interviene da solo,",
+      "words": [
+        {
+          "text": "specification:",
+          "start": 15.545,
+          "end": 16.305
+        },
+        {
+          "text": "se",
+          "start": 16.925,
+          "end": 17.005
+        },
+        {
+          "text": "qualcosa",
+          "start": 17.065,
+          "end": 17.445
+        },
+        {
+          "text": "diverge",
+          "start": 17.505,
+          "end": 17.925
+        },
+        {
+          "text": "o",
+          "start": 17.965,
+          "end": 18.005
+        },
+        {
+          "text": "non",
+          "start": 18.065,
+          "end": 18.185
+        },
+        {
+          "text": "risponde,",
+          "start": 18.225,
+          "end": 18.645
+        },
+        {
+          "text": "interviene",
+          "start": 18.966,
+          "end": 19.406
+        },
+        {
+          "text": "da",
+          "start": 19.466,
+          "end": 19.526
+        },
+        {
+          "text": "solo,",
+          "start": 19.586,
+          "end": 19.846
+        }
+      ]
+    },
+    {
+      "start": 20.186,
+      "end": 21.806,
+      "text": "rendendo il sistema self-healing.",
+      "words": [
+        {
+          "text": "rendendo",
+          "start": 20.186,
+          "end": 20.526
+        },
+        {
+          "text": "il",
+          "start": 20.546,
+          "end": 20.606
+        },
+        {
+          "text": "sistema",
+          "start": 20.646,
+          "end": 21.006
+        },
+        {
+          "text": "self-healing.",
+          "start": 21.166,
+          "end": 21.806
+        }
+      ]
+    },
+    {
+      "start": 22.927,
+      "end": 24.967,
+      "text": "Il secondo principio è la distribution.",
+      "words": [
+        {
+          "text": "Il",
+          "start": 22.927,
+          "end": 23.007
+        },
+        {
+          "text": "secondo",
+          "start": 23.067,
+          "end": 23.387
+        },
+        {
+          "text": "principio",
+          "start": 23.407,
+          "end": 23.867
+        },
+        {
+          "text": "è",
+          "start": 24.027,
+          "end": 24.067
+        },
+        {
+          "text": "la",
+          "start": 24.147,
+          "end": 24.207
+        },
+        {
+          "text": "distribution.",
+          "start": 24.307,
+          "end": 24.967
+        }
+      ]
+    },
+    {
+      "start": 25.908,
+      "end": 30.489,
+      "text": "Chi distribuisce l'applicazione consegna i workload a un'unica interfaccia unificata,",
+      "words": [
+        {
+          "text": "Chi",
+          "start": 25.908,
+          "end": 25.988
+        },
+        {
+          "text": "distribuisce",
+          "start": 26.028,
+          "end": 26.568
+        },
+        {
+          "text": "l'applicazione",
+          "start": 26.608,
+          "end": 27.328
+        },
+        {
+          "text": "consegna",
+          "start": 27.588,
+          "end": 28.028
+        },
+        {
+          "text": "i",
+          "start": 28.088,
+          "end": 28.128
+        },
+        {
+          "text": "workload",
+          "start": 28.208,
+          "end": 28.668
+        },
+        {
+          "text": "a",
+          "start": 28.828,
+          "end": 28.868
+        },
+        {
+          "text": "un'unica",
+          "start": 28.988,
+          "end": 29.389
+        },
+        {
+          "text": "interfaccia",
+          "start": 29.429,
+          "end": 29.929
+        },
+        {
+          "text": "unificata,",
+          "start": 29.969,
+          "end": 30.489
+        }
+      ]
+    },
+    {
+      "start": 30.829,
+      "end": 34.27,
+      "text": "senza mai dover dialogare direttamente con i singoli nodi del cluster.",
+      "words": [
+        {
+          "text": "senza",
+          "start": 30.829,
+          "end": 31.109
+        },
+        {
+          "text": "mai",
+          "start": 31.189,
+          "end": 31.389
+        },
+        {
+          "text": "dover",
+          "start": 31.429,
+          "end": 31.649
+        },
+        {
+          "text": "dialogare",
+          "start": 31.709,
+          "end": 32.129
+        },
+        {
+          "text": "direttamente",
+          "start": 32.169,
+          "end": 32.79
+        },
+        {
+          "text": "con",
+          "start": 32.85,
+          "end": 32.97
+        },
+        {
+          "text": "i",
+          "start": 32.99,
+          "end": 33.03
+        },
+        {
+          "text": "singoli",
+          "start": 33.13,
+          "end": 33.47
+        },
+        {
+          "text": "nodi",
+          "start": 33.51,
+          "end": 33.73
+        },
+        {
+          "text": "del",
+          "start": 33.75,
+          "end": 33.87
+        },
+        {
+          "text": "cluster.",
+          "start": 33.91,
+          "end": 34.27
+        }
+      ]
+    },
+    {
+      "start": 35.15,
+      "end": 37.051,
+      "text": "Il terzo principio è il decoupling:",
+      "words": [
+        {
+          "text": "Il",
+          "start": 35.15,
+          "end": 35.21
+        },
+        {
+          "text": "terzo",
+          "start": 35.27,
+          "end": 35.53
+        },
+        {
+          "text": "principio",
+          "start": 35.57,
+          "end": 36.03
+        },
+        {
+          "text": "è",
+          "start": 36.291,
+          "end": 36.331
+        },
+        {
+          "text": "il",
+          "start": 36.431,
+          "end": 36.511
+        },
+        {
+          "text": "decoupling:",
+          "start": 36.551,
+          "end": 37.051
+        }
+      ]
+    },
+    {
+      "start": 37.851,
+      "end": 42.552,
+      "text": "ogni container segue il criterio del single concern, cioè una sola responsabilità,",
+      "words": [
+        {
+          "text": "ogni",
+          "start": 37.851,
+          "end": 38.011
+        },
+        {
+          "text": "container",
+          "start": 38.071,
+          "end": 38.531
+        },
+        {
+          "text": "segue",
+          "start": 38.671,
+          "end": 38.871
+        },
+        {
+          "text": "il",
+          "start": 38.911,
+          "end": 38.971
+        },
+        {
+          "text": "criterio",
+          "start": 38.991,
+          "end": 39.431
+        },
+        {
+          "text": "del",
+          "start": 39.491,
+          "end": 39.632
+        },
+        {
+          "text": "single",
+          "start": 39.792,
+          "end": 40.152
+        },
+        {
+          "text": "concern,",
+          "start": 40.192,
+          "end": 40.732
+        },
+        {
+          "text": "cioè",
+          "start": 41.132,
+          "end": 41.292
+        },
+        {
+          "text": "una",
+          "start": 41.432,
+          "end": 41.572
+        },
+        {
+          "text": "sola",
+          "start": 41.632,
+          "end": 41.832
+        },
+        {
+          "text": "responsabilità,",
+          "start": 41.872,
+          "end": 42.552
+        }
+      ]
+    },
+    {
+      "start": 43.193,
+      "end": 47.074,
+      "text": "favorendo microservizi che si scalano e si aggiornano in modo indipendente.",
+      "words": [
+        {
+          "text": "favorendo",
+          "start": 43.193,
+          "end": 43.573
+        },
+        {
+          "text": "microservizi",
+          "start": 43.673,
+          "end": 44.413
+        },
+        {
+          "text": "che",
+          "start": 44.473,
+          "end": 44.553
+        },
+        {
+          "text": "si",
+          "start": 44.593,
+          "end": 44.673
+        },
+        {
+          "text": "scalano",
+          "start": 44.733,
+          "end": 45.193
+        },
+        {
+          "text": "e",
+          "start": 45.273,
+          "end": 45.313
+        },
+        {
+          "text": "si",
+          "start": 45.373,
+          "end": 45.453
+        },
+        {
+          "text": "aggiornano",
+          "start": 45.493,
+          "end": 46.013
+        },
+        {
+          "text": "in",
+          "start": 46.073,
+          "end": 46.153
+        },
+        {
+          "text": "modo",
+          "start": 46.193,
+          "end": 46.373
+        },
+        {
+          "text": "indipendente.",
+          "start": 46.414,
+          "end": 47.074
+        }
+      ]
+    },
+    {
+      "start": 47.854,
+      "end": 53.135,
+      "text": "Infine, l'immutable infrastructure: non si entra mai in un container per aggiornarlo sul posto.",
+      "words": [
+        {
+          "text": "Infine,",
+          "start": 47.854,
+          "end": 48.194
+        },
+        {
+          "text": "l'immutable",
+          "start": 48.354,
+          "end": 48.974
+        },
+        {
+          "text": "infrastructure:",
+          "start": 48.994,
+          "end": 49.714
+        },
+        {
+          "text": "non",
+          "start": 50.275,
+          "end": 50.395
+        },
+        {
+          "text": "si",
+          "start": 50.435,
+          "end": 50.495
+        },
+        {
+          "text": "entra",
+          "start": 50.535,
+          "end": 50.715
+        },
+        {
+          "text": "mai",
+          "start": 50.795,
+          "end": 51.015
+        },
+        {
+          "text": "in",
+          "start": 51.055,
+          "end": 51.135
+        },
+        {
+          "text": "un",
+          "start": 51.175,
+          "end": 51.235
+        },
+        {
+          "text": "container",
+          "start": 51.275,
+          "end": 51.755
+        },
+        {
+          "text": "per",
+          "start": 51.815,
+          "end": 51.915
+        },
+        {
+          "text": "aggiornarlo",
+          "start": 51.955,
+          "end": 52.535
+        },
+        {
+          "text": "sul",
+          "start": 52.615,
+          "end": 52.755
+        },
+        {
+          "text": "posto.",
+          "start": 52.815,
+          "end": 53.135
+        }
+      ]
+    },
+    {
+      "start": 53.656,
+      "end": 57.637,
+      "text": "Si costruisce una nuova immagine, la si distribuisce e si termina la vecchia.",
+      "words": [
+        {
+          "text": "Si",
+          "start": 53.656,
+          "end": 53.736
+        },
+        {
+          "text": "costruisce",
+          "start": 53.776,
+          "end": 54.256
+        },
+        {
+          "text": "una",
+          "start": 54.316,
+          "end": 54.436
+        },
+        {
+          "text": "nuova",
+          "start": 54.496,
+          "end": 54.716
+        },
+        {
+          "text": "immagine,",
+          "start": 54.776,
+          "end": 55.196
+        },
+        {
+          "text": "la",
+          "start": 55.496,
+          "end": 55.576
+        },
+        {
+          "text": "si",
+          "start": 55.636,
+          "end": 55.696
+        },
+        {
+          "text": "distribuisce",
+          "start": 55.756,
+          "end": 56.436
+        },
+        {
+          "text": "e",
+          "start": 56.676,
+          "end": 56.716
+        },
+        {
+          "text": "si",
+          "start": 56.757,
+          "end": 56.837
+        },
+        {
+          "text": "termina",
+          "start": 56.877,
+          "end": 57.197
+        },
+        {
+          "text": "la",
+          "start": 57.257,
+          "end": 57.317
+        },
+        {
+          "text": "vecchia.",
+          "start": 57.337,
+          "end": 57.637
+        }
+      ]
+    },
+    {
+      "start": 58.517,
+      "end": 63.638,
+      "text": "Tra sviluppo, test e produzione si usa la stessa immagine variando solo configurazioni esterne,",
+      "words": [
+        {
+          "text": "Tra",
+          "start": 58.517,
+          "end": 58.637
+        },
+        {
+          "text": "sviluppo,",
+          "start": 58.717,
+          "end": 59.237
+        },
+        {
+          "text": "test",
+          "start": 59.337,
+          "end": 59.577
+        },
+        {
+          "text": "e",
+          "start": 59.637,
+          "end": 59.677
+        },
+        {
+          "text": "produzione",
+          "start": 59.697,
+          "end": 60.198
+        },
+        {
+          "text": "si",
+          "start": 60.258,
+          "end": 60.318
+        },
+        {
+          "text": "usa",
+          "start": 60.378,
+          "end": 60.518
+        },
+        {
+          "text": "la",
+          "start": 60.578,
+          "end": 60.638
+        },
+        {
+          "text": "stessa",
+          "start": 60.678,
+          "end": 60.978
+        },
+        {
+          "text": "immagine",
+          "start": 61.038,
+          "end": 61.478
+        },
+        {
+          "text": "variando",
+          "start": 61.778,
+          "end": 62.098
+        },
+        {
+          "text": "solo",
+          "start": 62.178,
+          "end": 62.378
+        },
+        {
+          "text": "configurazioni",
+          "start": 62.458,
+          "end": 63.138
+        },
+        {
+          "text": "esterne,",
+          "start": 63.198,
+          "end": 63.638
+        }
+      ]
+    },
+    {
+      "start": 64.159,
+      "end": 68.52,
+      "text": "e i container restano effimeri, rendendo immediato il rollback a una versione precedente.",
+      "words": [
+        {
+          "text": "e",
+          "start": 64.159,
+          "end": 64.19900000000001
+        },
+        {
+          "text": "i",
+          "start": 64.239,
+          "end": 64.27900000000001
+        },
+        {
+          "text": "container",
+          "start": 64.299,
+          "end": 64.759
+        },
+        {
+          "text": "restano",
+          "start": 64.899,
+          "end": 65.199
+        },
+        {
+          "text": "effimeri,",
+          "start": 65.259,
+          "end": 65.679
+        },
+        {
+          "text": "rendendo",
+          "start": 65.979,
+          "end": 66.299
+        },
+        {
+          "text": "immediato",
+          "start": 66.359,
+          "end": 66.819
+        },
+        {
+          "text": "il",
+          "start": 66.859,
+          "end": 66.939
+        },
+        {
+          "text": "rollback",
+          "start": 66.979,
+          "end": 67.36
+        },
+        {
+          "text": "a",
+          "start": 67.44,
+          "end": 67.48
+        },
+        {
+          "text": "una",
+          "start": 67.5,
+          "end": 67.6
+        },
+        {
+          "text": "versione",
+          "start": 67.62,
+          "end": 67.96
+        },
+        {
+          "text": "precedente.",
+          "start": 67.98,
+          "end": 68.52
+        }
+      ]
+    }
+  ]
+}

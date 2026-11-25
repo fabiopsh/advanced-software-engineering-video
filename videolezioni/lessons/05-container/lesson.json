@@ -1,0 +1,546 @@
+{
+  "lesson_id": "05-container",
+  "chapter": 5,
+  "part": "Parte III · Cloud e microservizi",
+  "title": "Cloud computing, container e Docker",
+  "voice_config": {
+    "provider": "gemini",
+    "model": "gemini-3.8-flash-tts",
+    "voice_name": "Ludo",
+    "style": "chiaro, didattico, calmo e preciso, stile lezione universitaria di ingegneria del software"
+  },
+  "scenes": [
+    {
+      "id": "scene-01",
+      "section": "5.1 · Cloud computing",
+      "title": "Risorse virtualizzate su richiesta e quattro vantaggi chiave",
+      "tts_text": "Benvenuti al quinto capitolo di Advanced Software Engineering, dedicato a cloud computing, container e Docker. [pause:0.5] Hardware potente e reti veloci hanno reso possibile il cloud computing: risorse virtualizzate, come calcolo, memoria di massa e piattaforma applicativa, accessibili su richiesta. Ma per sfruttare davvero il cloud, il software deve girare in ambienti isolati e portabili. [pause:0.6] I vantaggi principali del cloud computing sono quattro. [pause:0.4] Primo, scalability: la capacità di mantenere stabili le prestazioni del sistema al crescere del carico di lavoro. [pause:0.5] Secondo, elasticity: la possibilità di adattare dinamicamente la configurazione dei server alle richieste che cambiano nel tempo. [pause:0.5] Terzo, resilience: la capacità di mantenere attivo il servizio anche in caso di guasto di uno o più server. [pause:0.5] Quarto, cost: la riduzione delle spese di capitale iniziali, cioè il CapEx, grazie al pagamento in base all'uso effettivo, noto come pay per use. [pause:0.6] Nei prossimi minuti vedremo come i container e Docker rendano possibile tutto questo, mentre i modelli di servizio e l'architettura del software cloud saranno approfonditi nel capitolo sei.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">5.1 · Cloud computing</div>\n  <h2 class=\"slide-title\">Risorse virtualizzate su richiesta e vantaggi principali</h2>\n  <div id=\"s1\" class=\"box box-def cue-hidden\">\n    <div class=\"box-label\">Definizione · Cloud computing</div>\n    <p>Risorse virtualizzate (<strong>calcolo</strong>, <strong>memoria di massa</strong>, <strong>piattaforma</strong>) accessibili su richiesta grazie a hardware potente e reti veloci. Richiede software capace di girare in ambienti <strong>isolati e portabili</strong>.</p>\n  </div>\n  <div id=\"s2\" class=\"grid-2 cue-hidden\">\n    <div id=\"v-scal\" class=\"box box-primary\">\n      <div class=\"box-label\">1 · Scalability</div>\n      <p>Mantenere le <strong>prestazioni</strong> del sistema al crescere del carico di lavoro.</p>\n    </div>\n    <div id=\"v-elas\" class=\"box box-primary\">\n      <div class=\"box-label\">2 · Elasticity</div>\n      <p>Adattare dinamicamente la <strong>configurazione dei server</strong> alle richieste che cambiano.</p>\n    </div>\n    <div id=\"v-res\" class=\"box box-idea\">\n      <div class=\"box-label\">3 · Resilience</div>\n      <p>Mantenere continuo il <strong>servizio</strong> anche in caso di guasto dei server.</p>\n    </div>\n    <div id=\"v-cost\" class=\"box box-idea\">\n      <div class=\"box-label\">4 · Cost (Pay-per-use)</div>\n      <p>Riduzione delle spese di capitale (<em>CapEx</em>) e pagamento <strong>in base all'uso</strong>.</p>\n    </div>\n  </div>\n  <div id=\"s3\" class=\"box box-muted cue-hidden\">\n    <p><strong>Nota di percorso:</strong> i modelli di servizio (IaaS, PaaS, SaaS) e le architetture software per il cloud sono trattati nel <strong>Capitolo 6</strong>.</p>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 4.1,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "Hardware potente e reti veloci"
+        },
+        {
+          "at": 7.72,
+          "action": "highlight",
+          "target": "#s1",
+          "duration": 15,
+          "anchor": "Hardware potente e reti veloci"
+        },
+        {
+          "at": 24.5,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "I vantaggi principali del cloud"
+        },
+        {
+          "at": 27.44,
+          "action": "highlight",
+          "target": "#v-scal",
+          "duration": 6.56,
+          "anchor": "Primo, scalability: la capacità"
+        },
+        {
+          "at": 34.12,
+          "action": "highlight",
+          "target": "#v-elas",
+          "duration": 7.19,
+          "anchor": "Secondo, elasticity: la possibilità"
+        },
+        {
+          "at": 41.43,
+          "action": "highlight",
+          "target": "#v-res",
+          "duration": 6.48,
+          "anchor": "Terzo, resilience: la capacità"
+        },
+        {
+          "at": 48.03,
+          "action": "highlight",
+          "target": "#v-cost",
+          "duration": 11.5,
+          "anchor": "Quarto, cost: la riduzione"
+        },
+        {
+          "at": 62.31,
+          "action": "show",
+          "target": "#s3",
+          "anchor": "i modelli di servizio"
+        },
+        {
+          "at": 62.31,
+          "action": "highlight",
+          "target": "#s3",
+          "duration": 8,
+          "anchor": "i modelli di servizio"
+        }
+      ],
+      "audio_file": "audio/scene-01.wav",
+      "subtitle_file": "subtitles/scene-01.json",
+      "duration_sec": 67.37
+    },
+    {
+      "id": "scene-02",
+      "section": "5.2 · Dalle macchine virtuali ai container",
+      "title": "Hypervisor, stack a confronto, vantaggi e limiti",
+      "tts_text": "Per eseguire software in ambienti isolati si parte dalla virtualizzazione dei server. [pause:0.5] Nel modello tradizionale a macchine virtuali, sopra il server hardware gira un hypervisor di tipo uno, caricato direttamente sull'hardware. Sopra l'hypervisor girano più macchine virtuali, e ciascuna include un proprio sistema operativo completo, il Guest OS, oltre alle librerie e all'applicazione. [pause:0.6] I container cambiano radicalmente la pila. Sfruttano la capacità del kernel del sistema operativo ospite, l'Host OS, di mantenere più istanze isolate dello spazio utente sotto un container manager. Ogni container contiene quindi soltanto l'applicazione e le sue librerie necessarie, senza replicare un intero sistema operativo. [pause:0.6] Il confronto mostra due vantaggi netti e un compromesso. I container sono molto più leggeri, passando dall'ordine dei gigabyte a quello dei megabyte, e si avviano molto più in fretta, passando dai minuti ai secondi. [pause:0.5] Lo svantaggio principale è che tutti i container sullo stesso host condividono lo stesso sistema operativo sottostante.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">5.2 · Dalle macchine virtuali ai container</div>\n  <h2 class=\"slide-title\">Pile a confronto: Hypervisor vs Container Manager</h2>\n  <div id=\"s1\" class=\"split-visual cue-hidden\">\n    <div id=\"svg-stacks\" class=\"svg-panel\">\n      <svg viewBox=\"0 0 380 212\" class=\"diagram-svg\" aria-label=\"Confronto tra stack di macchine virtuali e container\">\n        <g id=\"svg-vm\">\n          <text x=\"96\" y=\"16\" text-anchor=\"middle\" class=\"svg-math\">Macchine virtuali</text>\n          <rect x=\"14\" y=\"26\" width=\"78\" height=\"76\" rx=\"6\" fill=\"var(--orange-soft, rgba(217,119,6,0.12))\" stroke=\"var(--orange)\" stroke-width=\"1.6\"/>\n          <text x=\"53\" y=\"46\" text-anchor=\"middle\" class=\"svg-tick\">App A</text>\n          <text x=\"53\" y=\"64\" text-anchor=\"middle\" class=\"svg-caption\">Bins / Libs</text>\n          <text x=\"53\" y=\"84\" text-anchor=\"middle\" class=\"svg-tick\" fill=\"var(--orange)\">Guest OS</text>\n          <rect x=\"100\" y=\"26\" width=\"78\" height=\"76\" rx=\"6\" fill=\"var(--orange-soft, rgba(217,119,6,0.12))\" stroke=\"var(--orange)\" stroke-width=\"1.6\"/>\n          <text x=\"139\" y=\"46\" text-anchor=\"middle\" class=\"svg-tick\">App B</text>\n          <text x=\"139\" y=\"64\" text-anchor=\"middle\" class=\"svg-caption\">Bins / Libs</text>\n          <text x=\"139\" y=\"84\" text-anchor=\"middle\" class=\"svg-tick\" fill=\"var(--orange)\">Guest OS</text>\n          <rect x=\"14\" y=\"110\" width=\"164\" height=\"34\" rx=\"6\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.6\"/>\n          <text x=\"96\" y=\"131\" text-anchor=\"middle\" class=\"svg-tick\">Hypervisor (Tipo 1)</text>\n          <rect x=\"14\" y=\"152\" width=\"164\" height=\"32\" rx=\"6\" fill=\"none\" stroke=\"var(--ink-soft)\" stroke-width=\"1.5\"/>\n          <text x=\"96\" y=\"172\" text-anchor=\"middle\" class=\"svg-caption\">Server hardware</text>\n        </g>\n        <line x1=\"190\" y1=\"14\" x2=\"190\" y2=\"194\" stroke=\"var(--muted)\" stroke-width=\"1\" stroke-dasharray=\"4 4\" opacity=\"0.55\"/>\n        <g id=\"svg-cont\">\n          <text x=\"284\" y=\"16\" text-anchor=\"middle\" class=\"svg-math\">Container</text>\n          <rect x=\"202\" y=\"36\" width=\"78\" height=\"48\" rx=\"6\" fill=\"var(--green-soft, rgba(21,128,61,0.12))\" stroke=\"var(--green)\" stroke-width=\"1.6\"/>\n          <text x=\"241\" y=\"56\" text-anchor=\"middle\" class=\"svg-tick\">App A</text>\n          <text x=\"241\" y=\"73\" text-anchor=\"middle\" class=\"svg-caption\">Bins / Libs</text>\n          <rect x=\"288\" y=\"36\" width=\"78\" height=\"48\" rx=\"6\" fill=\"var(--green-soft, rgba(21,128,61,0.12))\" stroke=\"var(--green)\" stroke-width=\"1.6\"/>\n          <text x=\"327\" y=\"56\" text-anchor=\"middle\" class=\"svg-tick\">App B</text>\n          <text x=\"327\" y=\"73\" text-anchor=\"middle\" class=\"svg-caption\">Bins / Libs</text>\n          <rect x=\"202\" y=\"92\" width=\"164\" height=\"26\" rx=\"6\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.6\"/>\n          <text x=\"284\" y=\"109\" text-anchor=\"middle\" class=\"svg-tick\">Container manager</text>\n          <rect x=\"202\" y=\"124\" width=\"164\" height=\"24\" rx=\"6\" fill=\"none\" stroke=\"var(--green)\" stroke-width=\"1.5\"/>\n          <text x=\"284\" y=\"140\" text-anchor=\"middle\" class=\"svg-tick\">Host OS (kernel condiviso)</text>\n          <rect x=\"202\" y=\"154\" width=\"164\" height=\"30\" rx=\"6\" fill=\"none\" stroke=\"var(--ink-soft)\" stroke-width=\"1.5\"/>\n          <text x=\"284\" y=\"173\" text-anchor=\"middle\" class=\"svg-caption\">Server hardware</text>\n        </g>\n      </svg>\n    </div>\n    <div class=\"formula-col\">\n      <div id=\"b-vm\" class=\"box box-def\">\n        <div class=\"box-label\">Macchine virtuali (VM)</div>\n        <p>Un <strong>hypervisor di tipo 1</strong> gira direttamente sull'hardware; ogni VM include un proprio <strong>Guest OS</strong> completo.</p>\n      </div>\n      <div id=\"b-cont\" class=\"box box-primary\">\n        <div class=\"box-label\">Container (spazio utente isolato)</div>\n        <p>Sfruttano il kernel dell'<strong>Host OS</strong> tramite il container manager: contengono solo app e librerie.</p>\n      </div>\n    </div>\n  </div>\n  <div id=\"s2\" class=\"metrics-row cue-hidden\">\n    <div id=\"m-light\" class=\"metric metric-accent\">\n      <div class=\"metric-val\">+ Leggeri</div>\n      <div class=\"metric-label\">Meno risorse: da <strong>GB</strong> a <strong>MB</strong></div>\n    </div>\n    <div id=\"m-fast\" class=\"metric metric-accent\">\n      <div class=\"metric-val\">+ Veloci</div>\n      <div class=\"metric-label\">Avvio rapido: da <strong>minuti</strong> a <strong>secondi</strong></div>\n    </div>\n    <div id=\"m-os\" class=\"metric\">\n      <div class=\"metric-val\">− Vincolo OS</div>\n      <div class=\"metric-label\">Condividono lo stesso <strong>Host OS</strong></div>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 2.98,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "dalla virtualizzazione dei server"
+        },
+        {
+          "at": 5.18,
+          "action": "highlight",
+          "target": "#svg-vm",
+          "duration": 10,
+          "anchor": "Nel modello tradizionale a macchine"
+        },
+        {
+          "at": 15.72,
+          "action": "highlight",
+          "target": "#b-vm",
+          "duration": 6.36,
+          "anchor": "ciascuna include un proprio sistema"
+        },
+        {
+          "at": 22.2,
+          "action": "highlight",
+          "target": "#svg-cont",
+          "duration": 10.5,
+          "anchor": "I container cambiano radicalmente"
+        },
+        {
+          "at": 33.65,
+          "action": "highlight",
+          "target": "#b-cont",
+          "duration": 8,
+          "anchor": "Ogni container contiene quindi soltanto"
+        },
+        {
+          "at": 40.93,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Il confronto mostra due vantaggi"
+        },
+        {
+          "at": 44.53,
+          "action": "highlight",
+          "target": "#m-light",
+          "duration": 6,
+          "anchor": "I container sono molto più"
+        },
+        {
+          "at": 50.71,
+          "action": "highlight",
+          "target": "#m-fast",
+          "duration": 4.1,
+          "anchor": "si avviano molto più in"
+        },
+        {
+          "at": 54.93,
+          "action": "highlight",
+          "target": "#m-os",
+          "duration": 9,
+          "anchor": "Lo svantaggio principale è che"
+        }
+      ],
+      "audio_file": "audio/scene-02.wav",
+      "subtitle_file": "subtitles/scene-02.json",
+      "duration_sec": 61.7
+    },
+    {
+      "id": "scene-03",
+      "section": "5.3 · La piattaforma Docker",
+      "title": "Architettura, immagini, container, volumi e registry",
+      "tts_text": "Lo strumento di riferimento per la containerizzazione è Docker: una piattaforma che permette di eseguire applicazioni in un ambiente isolato e di sviluppare ed eseguire applicazioni portabili sfruttando i container. [pause:0.6] La piattaforma si compone di due elementi principali: il Docker Engine, installato sul server per creare ed eseguire i container, e Docker Hub, il servizio cloud usato per distribuire e condividere le immagini. [pause:0.6] I concetti fondamentali da padroneggiare sono tre. [pause:0.4] Primo, le immagini: sono modelli di sola lettura che impacchettano i componenti software e servono a creare i container. [pause:0.5] Secondo, i container: sono le istanze attive che girano sopra il Docker Engine e il sistema operativo del server. [pause:0.5] Terzo, i volumi: poiché un container è effimero, si possono montare volumi esterni per rendere persistenti i dati. [pause:0.6] Dove vengono conservate le immagini? In un registry Docker, che può essere pubblico come Docker Hub oppure privato. Ogni registry è organizzato in repository, ciascuno dedicato alle diverse versioni di un software, e ogni immagine è identificata dalla coppia repository e tag.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">5.3 · La piattaforma Docker</div>\n  <h2 class=\"slide-title\">Componenti, concetti chiave e struttura del Registry</h2>\n  <div id=\"s1\" class=\"box box-def cue-hidden\">\n    <div class=\"box-label\">Definizione · Docker</div>\n    <p>Piattaforma per eseguire applicazioni in un <strong>ambiente isolato</strong> e sviluppare ed eseguire applicazioni <strong>portabili</strong> tramite virtualizzazione basata su container sullo stesso sistema operativo.</p>\n  </div>\n  <div id=\"s2\" class=\"grid-2 cue-hidden\">\n    <div id=\"d-eng\" class=\"box box-primary\">\n      <div class=\"box-label\">Docker Engine &amp; Docker Hub</div>\n      <p><strong>Docker Engine</strong> crea ed esegue i container sull'host; <strong>Docker Hub</strong> è il registry pubblico per distribuirli.</p>\n    </div>\n    <div id=\"d-reg\" class=\"box box-primary\">\n      <div class=\"box-label\">Registry &amp; Repository</div>\n      <p>Un registry (pubblico o privato) è diviso in <strong>repository</strong> per le versioni di un software: ogni immagine si identifica con <code>repository:tag</code>.</p>\n    </div>\n  </div>\n  <div id=\"s3\" class=\"grid-3 cue-hidden\">\n    <div id=\"c-img\" class=\"box box-algo\">\n      <div class=\"box-label\">1 · Immagini (Image)</div>\n      <p>Modelli di <strong>sola lettura</strong> che impacchettano il software e generano i container.</p>\n    </div>\n    <div id=\"c-cnt\" class=\"box box-algo\">\n      <div class=\"box-label\">2 · Container</div>\n      <p>Istanze in esecuzione sopra <strong>Docker Engine</strong> e sistema operativo del server.</p>\n    </div>\n    <div id=\"c-vol\" class=\"box box-idea\">\n      <div class=\"box-label\">3 · Volumi (Volume)</div>\n      <p>Spazi esterni montabili per rendere <strong>persistenti i dati</strong> oltre la vita del container.</p>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 0.64,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "riferimento per la containerizzazione"
+        },
+        {
+          "at": 0.64,
+          "action": "highlight",
+          "target": "#s1",
+          "duration": 10.5,
+          "anchor": "riferimento per la containerizzazione"
+        },
+        {
+          "at": 12.18,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "La piattaforma si compone"
+        },
+        {
+          "at": 13.26,
+          "action": "highlight",
+          "target": "#d-eng",
+          "duration": 11.5,
+          "anchor": "di due elementi principali"
+        },
+        {
+          "at": 23.78,
+          "action": "show",
+          "target": "#s3",
+          "anchor": "I concetti fondamentali da padroneggiare"
+        },
+        {
+          "at": 26.52,
+          "action": "highlight",
+          "target": "#c-img",
+          "duration": 6.62,
+          "anchor": "Primo, le immagini: sono modelli"
+        },
+        {
+          "at": 33.26,
+          "action": "highlight",
+          "target": "#c-cnt",
+          "duration": 6.1,
+          "anchor": "Secondo, i container: sono le"
+        },
+        {
+          "at": 39.48,
+          "action": "highlight",
+          "target": "#c-vol",
+          "duration": 6.86,
+          "anchor": "Terzo, i volumi: poiché un"
+        },
+        {
+          "at": 46.46,
+          "action": "highlight",
+          "target": "#d-reg",
+          "duration": 16,
+          "anchor": "Dove vengono conservate le immagini"
+        }
+      ],
+      "audio_file": "audio/scene-03.wav",
+      "subtitle_file": "subtitles/scene-03.json",
+      "duration_sec": 61.65
+    },
+    {
+      "id": "scene-04",
+      "section": "5.4 · Strati delle immagini e ciclo di vita",
+      "title": "Layer in sola lettura, strato scrivibile e i cinque comandi",
+      "tts_text": "Vediamo come è fatta internamente un'immagine Docker. Le immagini sono organizzate in strati, detti layer, tutti di sola lettura, dove ogni strato è a sua volta un'immagine. [pause:0.5] Lo strato più in basso si chiama base image, per esempio Debian; sopra di esso si impilano altri strati, come Java e poi Dropwizard. Quando avviamo un container, Docker aggiunge in cima un nuovo strato scrivibile in cui l'applicazione può salvare file. [pause:0.6] Le modifiche dello strato scrivibile possono essere trasformate in una nuova immagine. Tutto questo è governato da cinque comandi essenziali. [pause:0.4] Con build costruiamo un'immagine partendo dalle istruzioni di un Dockerfile. [pause:0.4] Con push inviamo l'immagine a un registry, mentre con pull la scarichiamo dal registry sul nostro server. [pause:0.5] Con run creiamo e avviamo un container a partire da un'immagine. Infine, con commit salviamo lo stato corrente di un container in una nuova immagine.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">5.4 · Strati e ciclo di vita delle immagini</div>\n  <h2 class=\"slide-title\">Architettura a layer e comandi fondamentali</h2>\n  <div id=\"s1\" class=\"grid-2 cue-hidden\">\n    <div id=\"svg-layers\" class=\"svg-panel\">\n      <svg viewBox=\"0 0 320 176\" class=\"diagram-svg\" aria-label=\"Struttura a strati immagine e container\">\n        <g id=\"g-base\">\n          <rect x=\"16\" y=\"132\" width=\"176\" height=\"30\" rx=\"5\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.5\"/>\n          <text x=\"104\" y=\"151\" text-anchor=\"middle\" class=\"svg-tick\">Debian (base image)</text>\n        </g>\n        <g id=\"g-mid\">\n          <rect x=\"16\" y=\"98\" width=\"176\" height=\"30\" rx=\"5\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.5\"/>\n          <text x=\"104\" y=\"117\" text-anchor=\"middle\" class=\"svg-tick\">Java</text>\n          <rect x=\"16\" y=\"64\" width=\"176\" height=\"30\" rx=\"5\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.5\"/>\n          <text x=\"104\" y=\"83\" text-anchor=\"middle\" class=\"svg-tick\">Dropwizard</text>\n        </g>\n        <path d=\"M 198 66 L 206 66 L 206 160 L 198 160\" fill=\"none\" stroke=\"var(--muted)\" stroke-width=\"1.4\"/>\n        <text x=\"214\" y=\"109\" class=\"svg-caption\">strati immagine:</text>\n        <text x=\"214\" y=\"124\" class=\"svg-caption\">sola lettura</text>\n        <g id=\"g-rw\">\n          <rect x=\"16\" y=\"16\" width=\"176\" height=\"36\" rx=\"5\" fill=\"var(--green-soft, rgba(21,128,61,0.12))\" stroke=\"var(--green)\" stroke-width=\"2\"/>\n          <text x=\"104\" y=\"38\" text-anchor=\"middle\" class=\"svg-math\">Container (scrivibile)</text>\n        </g>\n      </svg>\n    </div>\n    <div id=\"svg-life\" class=\"svg-panel\">\n      <svg viewBox=\"0 0 340 176\" class=\"diagram-svg\" aria-label=\"Ciclo di vita delle immagini Docker\">\n        <defs>\n          <marker id=\"arr-dk\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\">\n            <path d=\"M0 1 L9 5 L0 9 z\" fill=\"var(--ink-soft)\"/>\n          </marker>\n        </defs>\n        <g id=\"g-df\">\n          <rect x=\"12\" y=\"26\" width=\"76\" height=\"34\" rx=\"6\" fill=\"none\" stroke=\"var(--ink-soft)\" stroke-width=\"1.5\"/>\n          <text x=\"50\" y=\"47\" text-anchor=\"middle\" class=\"svg-tick\">Dockerfile</text>\n        </g>\n        <g id=\"g-im\">\n          <rect x=\"132\" y=\"26\" width=\"76\" height=\"34\" rx=\"6\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.8\"/>\n          <text x=\"170\" y=\"47\" text-anchor=\"middle\" class=\"svg-math\">image</text>\n        </g>\n        <g id=\"g-rg\">\n          <rect x=\"252\" y=\"26\" width=\"76\" height=\"34\" rx=\"6\" fill=\"none\" stroke=\"var(--ink-soft)\" stroke-width=\"1.5\"/>\n          <text x=\"290\" y=\"47\" text-anchor=\"middle\" class=\"svg-tick\">registry</text>\n        </g>\n        <g id=\"g-cn\">\n          <rect x=\"132\" y=\"124\" width=\"76\" height=\"34\" rx=\"6\" fill=\"var(--green-soft, rgba(21,128,61,0.12))\" stroke=\"var(--green)\" stroke-width=\"1.8\"/>\n          <text x=\"170\" y=\"145\" text-anchor=\"middle\" class=\"svg-math\">container</text>\n        </g>\n        <line x1=\"90\" y1=\"43\" x2=\"128\" y2=\"43\" stroke=\"var(--ink-soft)\" stroke-width=\"1.6\" marker-end=\"url(#arr-dk)\"/>\n        <text x=\"109\" y=\"36\" text-anchor=\"middle\" class=\"svg-caption\">build</text>\n        <line x1=\"210\" y1=\"36\" x2=\"248\" y2=\"36\" stroke=\"var(--ink-soft)\" stroke-width=\"1.6\" marker-end=\"url(#arr-dk)\"/>\n        <text x=\"229\" y=\"29\" text-anchor=\"middle\" class=\"svg-caption\">push</text>\n        <line x1=\"250\" y1=\"50\" x2=\"212\" y2=\"50\" stroke=\"var(--ink-soft)\" stroke-width=\"1.6\" marker-end=\"url(#arr-dk)\"/>\n        <text x=\"229\" y=\"65\" text-anchor=\"middle\" class=\"svg-caption\">pull</text>\n        <line x1=\"160\" y1=\"122\" x2=\"160\" y2=\"64\" stroke=\"var(--ink-soft)\" stroke-width=\"1.6\" marker-end=\"url(#arr-dk)\"/>\n        <text x=\"153\" y=\"96\" text-anchor=\"end\" class=\"svg-caption\">commit</text>\n        <line x1=\"180\" y1=\"62\" x2=\"180\" y2=\"120\" stroke=\"var(--ink-soft)\" stroke-width=\"1.6\" marker-end=\"url(#arr-dk)\"/>\n        <text x=\"187\" y=\"96\" text-anchor=\"start\" class=\"svg-caption\">run</text>\n      </svg>\n    </div>\n  </div>\n  <div id=\"s2\" class=\"props-grid cue-hidden\">\n    <div id=\"cmd-build\" class=\"prop-item\"><span class=\"prop-dot\"></span><span><strong>build</strong>: crea un'immagine da un <em>Dockerfile</em></span></div>\n    <div id=\"cmd-push\" class=\"prop-item\"><span class=\"prop-dot\"></span><span><strong>push</strong>: invia un'immagine a un <em>registry</em></span></div>\n    <div id=\"cmd-run\" class=\"prop-item\"><span class=\"prop-dot\"></span><span><strong>run</strong>: crea ed esegue un <em>container</em> dall'immagine</span></div>\n    <div id=\"cmd-pull\" class=\"prop-item\"><span class=\"prop-dot\"></span><span><strong>pull</strong>: scarica un'immagine da un <em>registry</em></span></div>\n    <div id=\"cmd-commit\" class=\"prop-item\"><span class=\"prop-dot\"></span><span><strong>commit</strong>: salva lo stato di un container in una nuova immagine</span></div>\n    <div id=\"cmd-layer\" class=\"prop-item\"><span class=\"prop-dot\"></span><span><strong>layer</strong>: strati read-only + 1 strato scrivibile in cima</span></div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 0.78,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "come è fatta internamente"
+        },
+        {
+          "at": 3.07,
+          "action": "highlight",
+          "target": "#g-base",
+          "duration": 10,
+          "anchor": "Le immagini sono organizzate"
+        },
+        {
+          "at": 13.76,
+          "action": "highlight",
+          "target": "#g-mid",
+          "duration": 3.83,
+          "anchor": "sopra di esso si impilano"
+        },
+        {
+          "at": 17.71,
+          "action": "highlight",
+          "target": "#g-rw",
+          "duration": 9.5,
+          "anchor": "Quando avviamo un container"
+        },
+        {
+          "at": 24.12,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Le modifiche dello strato scrivibile"
+        },
+        {
+          "at": 31.44,
+          "action": "highlight",
+          "target": "#cmd-build",
+          "duration": 3.98,
+          "anchor": "Con build costruiamo un'immagine"
+        },
+        {
+          "at": 35.54,
+          "action": "highlight",
+          "target": "#cmd-push",
+          "duration": 2.3,
+          "anchor": "Con push inviamo l'immagine"
+        },
+        {
+          "at": 37.96,
+          "action": "highlight",
+          "target": "#cmd-pull",
+          "duration": 3.12,
+          "anchor": "mentre con pull la scarichiamo"
+        },
+        {
+          "at": 41.2,
+          "action": "highlight",
+          "target": "#cmd-run",
+          "duration": 4.46,
+          "anchor": "Con run creiamo e avviamo"
+        },
+        {
+          "at": 45.78,
+          "action": "highlight",
+          "target": "#cmd-commit",
+          "duration": 7.5,
+          "anchor": "Infine, con commit salviamo"
+        }
+      ],
+      "audio_file": "audio/scene-04.wav",
+      "subtitle_file": "subtitles/scene-04.json",
+      "duration_sec": 50.71
+    },
+    {
+      "id": "scene-05",
+      "section": "5.5 · Esempio: applicazione con un solo container",
+      "title": "Dockerfile, build, run e buone pratiche",
+      "tts_text": "Passiamo ora alla pratica con un primo esempio completo: una semplice applicazione PHP che stampa Hello World. Ci bastano due file. [pause:0.5] Il primo è index punto php con la stampa del messaggio. Il secondo è il Dockerfile, che descrive come costruire l'immagine. [pause:0.5] L'istruzione FROM sceglie l'immagine di partenza su Docker Hub, cioè php sette punto zero apache. COPY copia la cartella locale dei sorgenti nella cartella servita dal web server dentro il container. EXPOSE dichiara che il container ascolta sulla porta ottanta. [pause:0.6] A questo punto eseguiamo due comandi nel terminale. Con docker build, l'opzione meno t assegna il nome hello world all'immagine costruita dal Dockerfile nella cartella corrente, indicata dal punto. [pause:0.5] Poi docker run avvia il container e con l'opzione meno p collega la porta ottanta del computer ospite alla porta ottanta del container. [pause:0.6] Ricordate due regole pratiche fondamentali: usare un volume per condividere una cartella tra ospite e container, ed eseguire un solo processo per container.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">5.5 · Esempio pratico: un solo container</div>\n  <h2 class=\"slide-title\">App PHP &ldquo;Hello, World&rdquo;: Dockerfile e comandi</h2>\n  <div id=\"s1\" class=\"grid-2 cue-hidden\">\n    <div class=\"formula-col\">\n      <div id=\"ex-files\" class=\"box box-algo\">\n        <div class=\"box-label\">1 · File dell'applicazione (src/index.php &amp; Dockerfile)</div>\n        <pre style=\"margin:4px 0 8px;font-size:0.82rem;line-height:1.4;\">&lt;?php\necho \"Hello, World\"</pre>\n        <pre style=\"margin:0;font-size:0.82rem;line-height:1.4;\">FROM php:7.0-apache\nCOPY src/ /var/www/html\nEXPOSE 80</pre>\n      </div>\n      <div id=\"ex-cmds\" class=\"box box-primary\">\n        <div class=\"box-label\">2 · Build &amp; Run</div>\n        <pre style=\"margin:0;font-size:0.82rem;line-height:1.45;\">docker build -t hello-world .\ndocker run -p 80:80 hello-world</pre>\n      </div>\n    </div>\n    <div class=\"formula-col\">\n      <div id=\"ex-instr\" class=\"box box-def\">\n        <div class=\"box-label\">Che cosa fanno istruzioni e flag</div>\n        <ul class=\"clean-list\">\n          <li id=\"li-from\"><strong>FROM</strong>: sceglie l'immagine base da Docker Hub.</li>\n          <li id=\"li-copy\"><strong>COPY</strong>: copia <code>src/</code> nella directory del web server.</li>\n          <li id=\"li-exp\"><strong>EXPOSE</strong>: dichiara la porta <code>80</code> del container.</li>\n          <li id=\"li-bld\"><strong>-t &amp; .</strong>: assegna il tag <code>hello-world</code> usando il Dockerfile in <code>.</code></li>\n          <li id=\"li-run\"><strong>-p 80:80</strong>: mappa porta <code>80</code> dell'host &rarr; porta <code>80</code> container.</li>\n        </ul>\n      </div>\n      <div id=\"s2\" class=\"box box-warn cue-hidden\">\n        <div class=\"box-label\">Due regole pratiche</div>\n        <ul class=\"clean-list\">\n          <li id=\"r-vol\">Usa un <strong>volume</strong> per condividere cartelle tra ospite e container.</li>\n          <li id=\"r-proc\">Mantieni <strong>un solo processo per container</strong>.</li>\n        </ul>\n      </div>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 1.48,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "un primo esempio completo"
+        },
+        {
+          "at": 8.56,
+          "action": "highlight",
+          "target": "#ex-files",
+          "duration": 7.5,
+          "anchor": "Il primo è index"
+        },
+        {
+          "at": 16.8,
+          "action": "highlight",
+          "target": "#li-from",
+          "duration": 6.16,
+          "anchor": "L'istruzione FROM sceglie"
+        },
+        {
+          "at": 23.08,
+          "action": "highlight",
+          "target": "#li-copy",
+          "duration": 5.42,
+          "anchor": "COPY copia la cartella"
+        },
+        {
+          "at": 28.62,
+          "action": "highlight",
+          "target": "#li-exp",
+          "duration": 4.24,
+          "anchor": "EXPOSE dichiara che il"
+        },
+        {
+          "at": 32.98,
+          "action": "highlight",
+          "target": "#ex-cmds",
+          "duration": 3.51,
+          "anchor": "A questo punto eseguiamo"
+        },
+        {
+          "at": 36.61,
+          "action": "highlight",
+          "target": "#li-bld",
+          "duration": 7.34,
+          "anchor": "l'opzione meno t assegna"
+        },
+        {
+          "at": 44.07,
+          "action": "highlight",
+          "target": "#li-run",
+          "duration": 8,
+          "anchor": "Poi docker run avvia"
+        },
+        {
+          "at": 51.97,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Ricordate due regole pratiche"
+        },
+        {
+          "at": 54.51,
+          "action": "highlight",
+          "target": "#r-vol",
+          "duration": 3.78,
+          "anchor": "usare un volume per"
+        },
+        {
+          "at": 58.41,
+          "action": "highlight",
+          "target": "#r-proc",
+          "duration": 5,
+          "anchor": "ed eseguire un solo"
+        }
+      ],
+      "audio_file": "audio/scene-05.wav",
+      "subtitle_file": "subtitles/scene-05.json",
+      "duration_sec": 61.09
+    },
+    {
+      "id": "scene-06",
+      "section": "5.6 · Applicazioni a più servizi: Docker Compose",
+      "title": "Orchestrazione locale, docker-compose.yml e rete virtuale",
+      "tts_text": "Quando un'applicazione è composta da più microservizi, lanciare a mano build e run per ciascuno diventa scomodo. Qui interviene Docker Compose, che permette di descrivere tutti i servizi in un unico file e avviarli insieme con un solo comando. [pause:0.6] Vediamo l'esempio di un negozio con due servizi. Il primo è product service, scritto in Python con Flask, che espone sulla porta ottanta un elenco di prodotti in formato JSON; il suo Dockerfile parte da python tre onbuild, copia i file e avvia il server. [pause:0.5] Il secondo è website, una pagina PHP che interroga il servizio e mostra la lista dei prodotti. [pause:0.6] Nel file docker compose punto yml definiamo i due servizi: per ciascuno indichiamo se costruire l'immagine da una cartella locale con build oppure scaricarla con image, i volumi montati, le porte nel formato ospite container e le dipendenze con depends on. [pause:0.6] Basta eseguire docker compose up. Compose crea automaticamente una rete virtuale condivisa: così il sito PHP può contattare il servizio usando direttamente il nome product service come indirizzo. Visitando localhost cinquemilauno vedremo il JSON, mentre su localhost cinquemila apparirà la pagina del sito.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">5.6 · Multi-servizi: Docker Compose</div>\n  <h2 class=\"slide-title\">File di composizione, rete virtuale e <code>docker-compose up</code></h2>\n  <div id=\"s1\" class=\"grid-2 cue-hidden\">\n    <div id=\"dc-yml\" class=\"box box-algo\">\n      <div class=\"box-label\">docker-compose.yml (version: '3')</div>\n      <pre style=\"margin:0;font-size:0.78rem;line-height:1.38;\">services:\n  product-service:\n    build: ./product\n    volumes:\n      - ./product:/usr/src/app\n    ports:\n      - 5001:80\n  website:\n    image: php:apache\n    volumes:\n      - ./website:/var/www/html\n    ports:\n      - 5000:80\n    depends_on:\n      - product-service</pre>\n    </div>\n    <div class=\"formula-col\">\n      <div id=\"dc-srv\" class=\"box box-def\">\n        <div class=\"box-label\">I due servizi dell'applicazione</div>\n        <ul class=\"clean-list\">\n          <li id=\"srv-py\"><strong>product-service</strong> (Python Flask, <code>product/Dockerfile</code> con <code>FROM python:3-onbuild</code>, <code>CMD</code>): restituisce JSON (<code>localhost:5001</code>).</li>\n          <li id=\"srv-php\"><strong>website</strong> (PHP, <code>website/index.php</code>): legge il JSON e genera l'HTML del negozio (<code>localhost:5000</code>).</li>\n        </ul>\n      </div>\n      <div id=\"s2\" class=\"box box-primary cue-hidden\">\n        <div class=\"box-label\">Avvio unico &amp; Rete virtuale</div>\n        <p>Con <code>docker-compose up</code> tutti i servizi partono insieme in una <strong>rete virtuale</strong>: il sito chiama direttamente <code>http://product-service</code> usando il <strong>nome del servizio</strong> come indirizzo.</p>\n      </div>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 1.16,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "composta da più microservizi"
+        },
+        {
+          "at": 16.27,
+          "action": "highlight",
+          "target": "#srv-py",
+          "duration": 12.06,
+          "anchor": "Il primo è product service"
+        },
+        {
+          "at": 28.45,
+          "action": "highlight",
+          "target": "#srv-php",
+          "duration": 5.52,
+          "anchor": "Il secondo è website"
+        },
+        {
+          "at": 34.09,
+          "action": "highlight",
+          "target": "#dc-yml",
+          "duration": 14.52,
+          "anchor": "Nel file docker compose"
+        },
+        {
+          "at": 48.73,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Basta eseguire docker compose"
+        },
+        {
+          "at": 48.73,
+          "action": "highlight",
+          "target": "#s2",
+          "duration": 17.5,
+          "anchor": "Basta eseguire docker compose"
+        }
+      ],
+      "audio_file": "audio/scene-06.wav",
+      "subtitle_file": "subtitles/scene-06.json",
+      "duration_sec": 67.44
+    },
+    {
+      "id": "scene-07",
+      "section": "5.7 · Riepilogo e autoverifica",
+      "title": "Punti chiave del capitolo e domande d'esame",
+      "tts_text": "Chiudiamo il quinto capitolo ricapitolando i sei punti chiave da ricordare per l'esame. [pause:0.5] Primo: il cloud computing offre risorse virtualizzate su richiesta con quattro vantaggi: scalability, elasticity, resilience e cost. [pause:0.5] Secondo: rispetto alle macchine virtuali, i container sono molto più leggeri, da gigabyte a megabyte, e più rapidi ad avviarsi, da minuti a secondi, ma condividono lo stesso sistema operativo. [pause:0.5] Terzo: in Docker le immagini sono modelli a strati di sola lettura da cui si creano i container, mentre i volumi rendono i dati persistenti. [pause:0.5] Quarto: ogni immagine è identificata dalla coppia repository e tag ed è conservata in un registry come Docker Hub. [pause:0.5] Quinto: i cinque comandi essenziali del ciclo di vita sono build, run, commit, push e pull. [pause:0.5] Sesto: Docker Compose descrive in un solo file un'applicazione multi-servizio e la avvia con docker compose up, permettendo ai servizi di raggiungersi per nome. [pause:0.6] Prima di passare al prossimo capitolo sulle architetture cloud, mettetevi alla prova rispondendo alle sei domande di verifica sulla destra.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">5.7 · Riepilogo &amp; Autoverifica</div>\n  <h2 class=\"slide-title\">Punti chiave e domande di verifica</h2>\n  <div class=\"grid-2\">\n    <div class=\"box box-algo\">\n      <div class=\"box-label\">Punti chiave da fissare</div>\n      <ul class=\"clean-list\">\n        <li id=\"s1\" class=\"cue-hidden\"><strong>Cloud computing</strong>: risorse virtualizzate su richiesta; vantaggi: <em>scalability</em>, <em>elasticity</em>, <em>resilience</em>, <em>cost</em>.</li>\n        <li id=\"s2\" class=\"cue-hidden\"><strong>Container vs VM</strong>: più leggeri (da GB a MB) e avvio più rapido (da minuti a secondi), ma condividono l'<em>Host OS</em>.</li>\n        <li id=\"s3\" class=\"cue-hidden\"><strong>Docker</strong>: immagini (sola lettura, a strati) generano i container; i <strong>volumi</strong> rendono i dati persistenti.</li>\n        <li id=\"s4\" class=\"cue-hidden\"><strong>Registry</strong>: immagini identificate da <code>repository:tag</code> e conservate su registry (es. Docker Hub).</li>\n        <li id=\"s5\" class=\"cue-hidden\"><strong>Comandi</strong>: <code>build</code>, <code>run</code>, <code>commit</code>, <code>push</code>, <code>pull</code>.</li>\n        <li id=\"s6\" class=\"cue-hidden\"><strong>Docker Compose</strong>: file unico multi-servizio avviato con <code>docker-compose up</code>; i servizi si raggiungono per nome.</li>\n      </ul>\n    </div>\n    <div id=\"s7\" class=\"box box-theorem cue-hidden\">\n      <div class=\"box-label\">Domande di verifica</div>\n      <ol class=\"verify-list\">\n        <li>Quali sono i quattro vantaggi principali del cloud computing?</li>\n        <li>Che differenza c'è tra una VM e un container? Quali vantaggi e svantaggi hanno i container?</li>\n        <li>Che cosa sono un'immagine, un container, un volume, un registry?</li>\n        <li>Che cos'è un'immagine &ldquo;a strati&rdquo; e dove scrive un container in esecuzione?</li>\n        <li>A che cosa servono i comandi <code>build</code>, <code>run</code>, <code>commit</code>, <code>push</code>, <code>pull</code>?</li>\n        <li>A che cosa serve Docker Compose e come fa il sito a raggiungere il servizio dei prodotti?</li>\n      </ol>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 5.42,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "Primo: il cloud computing"
+        },
+        {
+          "at": 5.42,
+          "action": "highlight",
+          "target": "#s1",
+          "duration": 9.5,
+          "anchor": "Primo: il cloud computing"
+        },
+        {
+          "at": 15.74,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Secondo: rispetto alle macchine"
+        },
+        {
+          "at": 15.74,
+          "action": "highlight",
+          "target": "#s2",
+          "duration": 12.78,
+          "anchor": "Secondo: rispetto alle macchine"
+        },
+        {
+          "at": 28.64,
+          "action": "show",
+          "target": "#s3",
+          "anchor": "Terzo: in Docker le"
+        },
+        {
+          "at": 28.64,
+          "action": "highlight",
+          "target": "#s3",
+          "duration": 8.9,
+          "anchor": "Terzo: in Docker le"
+        },
+        {
+          "at": 37.66,
+          "action": "show",
+          "target": "#s4",
+          "anchor": "Quarto: ogni immagine è"
+        },
+        {
+          "at": 37.66,
+          "action": "highlight",
+          "target": "#s4",
+          "duration": 7.89,
+          "anchor": "Quarto: ogni immagine è"
+        },
+        {
+          "at": 45.67,
+          "action": "show",
+          "target": "#s5",
+          "anchor": "Quinto: i cinque comandi"
+        },
+        {
+          "at": 45.67,
+          "action": "highlight",
+          "target": "#s5",
+          "duration": 7,
+          "anchor": "Quinto: i cinque comandi"
+        },
+        {
+          "at": 53.37,
+          "action": "show",
+          "target": "#s6",
+          "anchor": "Sesto: Docker Compose descrive"
+        },
+        {
+          "at": 53.37,
+          "action": "highlight",
+          "target": "#s6",
+          "duration": 12,
+          "anchor": "Sesto: Docker Compose descrive"
+        },
+        {
+          "at": 64.03,
+          "action": "show",
+          "target": "#s7",
+          "anchor": "Prima di passare al prossimo"
+        }
+      ],
+      "audio_file": "audio/scene-07.wav",
+      "subtitle_file": "subtitles/scene-07.json",
+      "duration_sec": 71.3
+    }
+  ]
+}

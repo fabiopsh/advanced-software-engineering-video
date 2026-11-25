@@ -1,0 +1,1070 @@
+{
+  "duration": 75.592,
+  "segments": [
+    {
+      "start": 0.732,
+      "end": 4.332,
+      "text": "Il Manifesto Agile traduce i suoi quattro valori in dodici principi operativi,",
+      "words": [
+        {
+          "text": "Il",
+          "start": 0.732,
+          "end": 0.812
+        },
+        {
+          "text": "Manifesto",
+          "start": 0.832,
+          "end": 1.232
+        },
+        {
+          "text": "Agile",
+          "start": 1.312,
+          "end": 1.612
+        },
+        {
+          "text": "traduce",
+          "start": 1.672,
+          "end": 2.032
+        },
+        {
+          "text": "i",
+          "start": 2.072,
+          "end": 2.112
+        },
+        {
+          "text": "suoi",
+          "start": 2.132,
+          "end": 2.272
+        },
+        {
+          "text": "quattro",
+          "start": 2.312,
+          "end": 2.592
+        },
+        {
+          "text": "valori",
+          "start": 2.612,
+          "end": 2.892
+        },
+        {
+          "text": "in",
+          "start": 2.932,
+          "end": 2.992
+        },
+        {
+          "text": "dodici",
+          "start": 3.072,
+          "end": 3.432
+        },
+        {
+          "text": "principi",
+          "start": 3.472,
+          "end": 3.832
+        },
+        {
+          "text": "operativi,",
+          "start": 3.872,
+          "end": 4.332
+        }
+      ]
+    },
+    {
+      "start": 4.692,
+      "end": 7.973,
+      "text": "e tutti i metodi agili li realizzano tramite lo sviluppo incrementale.",
+      "words": [
+        {
+          "text": "e",
+          "start": 4.692,
+          "end": 4.732
+        },
+        {
+          "text": "tutti",
+          "start": 4.792,
+          "end": 4.992
+        },
+        {
+          "text": "i",
+          "start": 5.012,
+          "end": 5.052
+        },
+        {
+          "text": "metodi",
+          "start": 5.072,
+          "end": 5.353
+        },
+        {
+          "text": "agili",
+          "start": 5.433,
+          "end": 5.713
+        },
+        {
+          "text": "li",
+          "start": 5.913,
+          "end": 5.993
+        },
+        {
+          "text": "realizzano",
+          "start": 6.033,
+          "end": 6.493
+        },
+        {
+          "text": "tramite",
+          "start": 6.533,
+          "end": 6.833
+        },
+        {
+          "text": "lo",
+          "start": 6.873,
+          "end": 6.953
+        },
+        {
+          "text": "sviluppo",
+          "start": 6.973,
+          "end": 7.333
+        },
+        {
+          "text": "incrementale.",
+          "start": 7.373,
+          "end": 7.973
+        }
+      ]
+    },
+    {
+      "start": 8.913,
+      "end": 11.893,
+      "text": "Guardiamo prima i dodici principi, raggruppati in quattro aree.",
+      "words": [
+        {
+          "text": "Guardiamo",
+          "start": 8.913,
+          "end": 9.233
+        },
+        {
+          "text": "prima",
+          "start": 9.273,
+          "end": 9.453
+        },
+        {
+          "text": "i",
+          "start": 9.533,
+          "end": 9.573
+        },
+        {
+          "text": "dodici",
+          "start": 9.593,
+          "end": 9.893
+        },
+        {
+          "text": "principi,",
+          "start": 9.933,
+          "end": 10.373
+        },
+        {
+          "text": "raggruppati",
+          "start": 10.653,
+          "end": 11.093
+        },
+        {
+          "text": "in",
+          "start": 11.153,
+          "end": 11.233
+        },
+        {
+          "text": "quattro",
+          "start": 11.293,
+          "end": 11.593
+        },
+        {
+          "text": "aree.",
+          "start": 11.673,
+          "end": 11.893
+        }
+      ]
+    },
+    {
+      "start": 12.794,
+      "end": 13.914,
+      "text": "Sul valore per il cliente:",
+      "words": [
+        {
+          "text": "Sul",
+          "start": 12.794,
+          "end": 12.934
+        },
+        {
+          "text": "valore",
+          "start": 12.974,
+          "end": 13.254
+        },
+        {
+          "text": "per",
+          "start": 13.274,
+          "end": 13.374
+        },
+        {
+          "text": "il",
+          "start": 13.394,
+          "end": 13.454
+        },
+        {
+          "text": "cliente:",
+          "start": 13.494,
+          "end": 13.914
+        }
+      ]
+    },
+    {
+      "start": 14.514,
+      "end": 19.634,
+      "text": "priorità massima alla soddisfazione tramite consegne rapide e continue di software funzionante,",
+      "words": [
+        {
+          "text": "priorità",
+          "start": 14.514,
+          "end": 14.914
+        },
+        {
+          "text": "massima",
+          "start": 15.014,
+          "end": 15.454
+        },
+        {
+          "text": "alla",
+          "start": 15.614,
+          "end": 15.754
+        },
+        {
+          "text": "soddisfazione",
+          "start": 15.814,
+          "end": 16.514
+        },
+        {
+          "text": "tramite",
+          "start": 16.594,
+          "end": 16.914
+        },
+        {
+          "text": "consegne",
+          "start": 16.974,
+          "end": 17.474
+        },
+        {
+          "text": "rapide",
+          "start": 17.554,
+          "end": 17.914
+        },
+        {
+          "text": "e",
+          "start": 17.954,
+          "end": 17.994
+        },
+        {
+          "text": "continue",
+          "start": 18.034,
+          "end": 18.514
+        },
+        {
+          "text": "di",
+          "start": 18.554,
+          "end": 18.614
+        },
+        {
+          "text": "software",
+          "start": 18.674,
+          "end": 19.014
+        },
+        {
+          "text": "funzionante,",
+          "start": 19.034,
+          "end": 19.634
+        }
+      ]
+    },
+    {
+      "start": 20.035,
+      "end": 24.355,
+      "text": "da poche settimane a un paio di mesi, accogliendo i cambiamenti anche a sviluppo avanzato.",
+      "words": [
+        {
+          "text": "da",
+          "start": 20.035,
+          "end": 20.095
+        },
+        {
+          "text": "poche",
+          "start": 20.135,
+          "end": 20.355
+        },
+        {
+          "text": "settimane",
+          "start": 20.395,
+          "end": 20.835
+        },
+        {
+          "text": "a",
+          "start": 20.875,
+          "end": 20.915
+        },
+        {
+          "text": "un",
+          "start": 20.935,
+          "end": 20.995
+        },
+        {
+          "text": "paio",
+          "start": 21.015,
+          "end": 21.195
+        },
+        {
+          "text": "di",
+          "start": 21.235,
+          "end": 21.275
+        },
+        {
+          "text": "mesi,",
+          "start": 21.315,
+          "end": 21.555
+        },
+        {
+          "text": "accogliendo",
+          "start": 22.015,
+          "end": 22.515
+        },
+        {
+          "text": "i",
+          "start": 22.555,
+          "end": 22.595
+        },
+        {
+          "text": "cambiamenti",
+          "start": 22.595,
+          "end": 23.115
+        },
+        {
+          "text": "anche",
+          "start": 23.215,
+          "end": 23.435
+        },
+        {
+          "text": "a",
+          "start": 23.475,
+          "end": 23.515
+        },
+        {
+          "text": "sviluppo",
+          "start": 23.515,
+          "end": 23.835
+        },
+        {
+          "text": "avanzato.",
+          "start": 23.875,
+          "end": 24.355
+        }
+      ]
+    },
+    {
+      "start": 25.255,
+      "end": 25.995,
+      "text": "Sul lavoro di team:",
+      "words": [
+        {
+          "text": "Sul",
+          "start": 25.255,
+          "end": 25.375
+        },
+        {
+          "text": "lavoro",
+          "start": 25.415,
+          "end": 25.655
+        },
+        {
+          "text": "di",
+          "start": 25.695,
+          "end": 25.755
+        },
+        {
+          "text": "team:",
+          "start": 25.795,
+          "end": 25.995
+        }
+      ]
+    },
+    {
+      "start": 26.655,
+      "end": 31.916,
+      "text": "business e sviluppatori collaborano ogni giorno; si costruiscono progetti attorno a persone motivate,",
+      "words": [
+        {
+          "text": "business",
+          "start": 26.655,
+          "end": 27.055
+        },
+        {
+          "text": "e",
+          "start": 27.115,
+          "end": 27.155
+        },
+        {
+          "text": "sviluppatori",
+          "start": 27.195,
+          "end": 27.796
+        },
+        {
+          "text": "collaborano",
+          "start": 27.856,
+          "end": 28.396
+        },
+        {
+          "text": "ogni",
+          "start": 28.576,
+          "end": 28.756
+        },
+        {
+          "text": "giorno;",
+          "start": 28.796,
+          "end": 29.116
+        },
+        {
+          "text": "si",
+          "start": 29.556,
+          "end": 29.616
+        },
+        {
+          "text": "costruiscono",
+          "start": 29.656,
+          "end": 30.156
+        },
+        {
+          "text": "progetti",
+          "start": 30.196,
+          "end": 30.576
+        },
+        {
+          "text": "attorno",
+          "start": 30.636,
+          "end": 30.976
+        },
+        {
+          "text": "a",
+          "start": 31.016,
+          "end": 31.056
+        },
+        {
+          "text": "persone",
+          "start": 31.076,
+          "end": 31.416
+        },
+        {
+          "text": "motivate,",
+          "start": 31.456,
+          "end": 31.916
+        }
+      ]
+    },
+    {
+      "start": 32.136,
+      "end": 36.077,
+      "text": "privilegiando la conversazione faccia a faccia e team che si auto-organizzano.",
+      "words": [
+        {
+          "text": "privilegiando",
+          "start": 32.136,
+          "end": 32.716
+        },
+        {
+          "text": "la",
+          "start": 32.776,
+          "end": 32.836
+        },
+        {
+          "text": "conversazione",
+          "start": 32.876,
+          "end": 33.496
+        },
+        {
+          "text": "faccia",
+          "start": 33.596,
+          "end": 33.836
+        },
+        {
+          "text": "a",
+          "start": 33.856,
+          "end": 33.896
+        },
+        {
+          "text": "faccia",
+          "start": 33.936,
+          "end": 34.276
+        },
+        {
+          "text": "e",
+          "start": 34.656,
+          "end": 34.696
+        },
+        {
+          "text": "team",
+          "start": 34.816,
+          "end": 34.997
+        },
+        {
+          "text": "che",
+          "start": 35.097,
+          "end": 35.177
+        },
+        {
+          "text": "si",
+          "start": 35.237,
+          "end": 35.297
+        },
+        {
+          "text": "auto-organizzano.",
+          "start": 35.377,
+          "end": 36.077
+        }
+      ]
+    },
+    {
+      "start": 36.937,
+      "end": 38.037,
+      "text": "Su qualità e ritmo:",
+      "words": [
+        {
+          "text": "Su",
+          "start": 36.937,
+          "end": 37.017
+        },
+        {
+          "text": "qualità",
+          "start": 37.077,
+          "end": 37.417
+        },
+        {
+          "text": "e",
+          "start": 37.597,
+          "end": 37.637
+        },
+        {
+          "text": "ritmo:",
+          "start": 37.717,
+          "end": 38.037
+        }
+      ]
+    },
+    {
+      "start": 38.597,
+      "end": 40.497,
+      "text": "il software funzionante misura il progresso;",
+      "words": [
+        {
+          "text": "il",
+          "start": 38.597,
+          "end": 38.677
+        },
+        {
+          "text": "software",
+          "start": 38.737,
+          "end": 39.097
+        },
+        {
+          "text": "funzionante",
+          "start": 39.117,
+          "end": 39.637
+        },
+        {
+          "text": "misura",
+          "start": 39.697,
+          "end": 39.937
+        },
+        {
+          "text": "il",
+          "start": 39.977,
+          "end": 40.037
+        },
+        {
+          "text": "progresso;",
+          "start": 40.057,
+          "end": 40.497
+        }
+      ]
+    },
+    {
+      "start": 41.477,
+      "end": 45.838,
+      "text": "serve un ritmo sostenibile indefinitamente, eccellenza tecnica e semplicità,",
+      "words": [
+        {
+          "text": "serve",
+          "start": 41.477,
+          "end": 41.697
+        },
+        {
+          "text": "un",
+          "start": 41.737,
+          "end": 41.817
+        },
+        {
+          "text": "ritmo",
+          "start": 41.877,
+          "end": 42.117
+        },
+        {
+          "text": "sostenibile",
+          "start": 42.197,
+          "end": 42.798
+        },
+        {
+          "text": "indefinitamente,",
+          "start": 42.878,
+          "end": 43.718
+        },
+        {
+          "text": "eccellenza",
+          "start": 44.078,
+          "end": 44.518
+        },
+        {
+          "text": "tecnica",
+          "start": 44.558,
+          "end": 44.958
+        },
+        {
+          "text": "e",
+          "start": 45.158,
+          "end": 45.198
+        },
+        {
+          "text": "semplicità,",
+          "start": 45.298,
+          "end": 45.838
+        }
+      ]
+    },
+    {
+      "start": 46.238,
+      "end": 48.318,
+      "text": "cioè massimizzare il lavoro non fatto.",
+      "words": [
+        {
+          "text": "cioè",
+          "start": 46.238,
+          "end": 46.398
+        },
+        {
+          "text": "massimizzare",
+          "start": 46.658,
+          "end": 47.438
+        },
+        {
+          "text": "il",
+          "start": 47.478,
+          "end": 47.518
+        },
+        {
+          "text": "lavoro",
+          "start": 47.558,
+          "end": 47.818
+        },
+        {
+          "text": "non",
+          "start": 47.858,
+          "end": 47.978
+        },
+        {
+          "text": "fatto.",
+          "start": 48.018,
+          "end": 48.318
+        }
+      ]
+    },
+    {
+      "start": 49.118,
+      "end": 52.639,
+      "text": "Infine, il team riflette regolarmente per adattarsi e migliorare.",
+      "words": [
+        {
+          "text": "Infine,",
+          "start": 49.118,
+          "end": 49.458
+        },
+        {
+          "text": "il",
+          "start": 49.658,
+          "end": 49.739
+        },
+        {
+          "text": "team",
+          "start": 49.819,
+          "end": 49.979
+        },
+        {
+          "text": "riflette",
+          "start": 50.139,
+          "end": 50.599
+        },
+        {
+          "text": "regolarmente",
+          "start": 50.679,
+          "end": 51.379
+        },
+        {
+          "text": "per",
+          "start": 51.459,
+          "end": 51.579
+        },
+        {
+          "text": "adattarsi",
+          "start": 51.599,
+          "end": 52.079
+        },
+        {
+          "text": "e",
+          "start": 52.119,
+          "end": 52.159
+        },
+        {
+          "text": "migliorare.",
+          "start": 52.179,
+          "end": 52.639
+        }
+      ]
+    },
+    {
+      "start": 53.479,
+      "end": 57.34,
+      "text": "Sul lato sinistro vedete come tutto questo prenda forma nel ciclo incrementale.",
+      "words": [
+        {
+          "text": "Sul",
+          "start": 53.479,
+          "end": 53.579
+        },
+        {
+          "text": "lato",
+          "start": 53.599,
+          "end": 53.779
+        },
+        {
+          "text": "sinistro",
+          "start": 53.819,
+          "end": 54.219
+        },
+        {
+          "text": "vedete",
+          "start": 54.359,
+          "end": 54.659
+        },
+        {
+          "text": "come",
+          "start": 54.719,
+          "end": 54.899
+        },
+        {
+          "text": "tutto",
+          "start": 55.039,
+          "end": 55.359
+        },
+        {
+          "text": "questo",
+          "start": 55.399,
+          "end": 55.679
+        },
+        {
+          "text": "prenda",
+          "start": 55.719,
+          "end": 55.959
+        },
+        {
+          "text": "forma",
+          "start": 55.999,
+          "end": 56.259
+        },
+        {
+          "text": "nel",
+          "start": 56.299,
+          "end": 56.399
+        },
+        {
+          "text": "ciclo",
+          "start": 56.459,
+          "end": 56.699
+        },
+        {
+          "text": "incrementale.",
+          "start": 56.739,
+          "end": 57.34
+        }
+      ]
+    },
+    {
+      "start": 58.1,
+      "end": 62.18,
+      "text": "Partendo dalla lista delle feature del prodotto, si scelgono quelle dell'incremento,",
+      "words": [
+        {
+          "text": "Partendo",
+          "start": 58.1,
+          "end": 58.52
+        },
+        {
+          "text": "dalla",
+          "start": 58.58,
+          "end": 58.78
+        },
+        {
+          "text": "lista",
+          "start": 58.82,
+          "end": 59.1
+        },
+        {
+          "text": "delle",
+          "start": 59.14,
+          "end": 59.3
+        },
+        {
+          "text": "feature",
+          "start": 59.34,
+          "end": 59.68
+        },
+        {
+          "text": "del",
+          "start": 59.72,
+          "end": 59.82
+        },
+        {
+          "text": "prodotto,",
+          "start": 59.86,
+          "end": 60.3
+        },
+        {
+          "text": "si",
+          "start": 60.48,
+          "end": 60.58
+        },
+        {
+          "text": "scelgono",
+          "start": 60.64,
+          "end": 61.06
+        },
+        {
+          "text": "quelle",
+          "start": 61.14,
+          "end": 61.46
+        },
+        {
+          "text": "dell'incremento,",
+          "start": 61.5,
+          "end": 62.18
+        }
+      ]
+    },
+    {
+      "start": 62.7,
+      "end": 65.721,
+      "text": "se ne raffinano le descrizioni, le si implementa e collauda,",
+      "words": [
+        {
+          "text": "se",
+          "start": 62.7,
+          "end": 62.76
+        },
+        {
+          "text": "ne",
+          "start": 62.8,
+          "end": 62.86
+        },
+        {
+          "text": "raffinano",
+          "start": 62.94,
+          "end": 63.34
+        },
+        {
+          "text": "le",
+          "start": 63.4,
+          "end": 63.46
+        },
+        {
+          "text": "descrizioni,",
+          "start": 63.5,
+          "end": 64.14
+        },
+        {
+          "text": "le",
+          "start": 64.38,
+          "end": 64.44
+        },
+        {
+          "text": "si",
+          "start": 64.5,
+          "end": 64.561
+        },
+        {
+          "text": "implementa",
+          "start": 64.581,
+          "end": 65.141
+        },
+        {
+          "text": "e",
+          "start": 65.141,
+          "end": 65.18100000000001
+        },
+        {
+          "text": "collauda,",
+          "start": 65.221,
+          "end": 65.721
+        }
+      ]
+    },
+    {
+      "start": 66.161,
+      "end": 69.041,
+      "text": "le si integra nel sistema e si consegna l'incremento.",
+      "words": [
+        {
+          "text": "le",
+          "start": 66.161,
+          "end": 66.241
+        },
+        {
+          "text": "si",
+          "start": 66.301,
+          "end": 66.361
+        },
+        {
+          "text": "integra",
+          "start": 66.561,
+          "end": 66.981
+        },
+        {
+          "text": "nel",
+          "start": 67.041,
+          "end": 67.181
+        },
+        {
+          "text": "sistema",
+          "start": 67.221,
+          "end": 67.641
+        },
+        {
+          "text": "e",
+          "start": 67.821,
+          "end": 67.861
+        },
+        {
+          "text": "si",
+          "start": 67.901,
+          "end": 67.981
+        },
+        {
+          "text": "consegna",
+          "start": 68.041,
+          "end": 68.461
+        },
+        {
+          "text": "l'incremento.",
+          "start": 68.501,
+          "end": 69.041
+        }
+      ]
+    },
+    {
+      "start": 69.841,
+      "end": 72.542,
+      "text": "Il ciclo riparte finché tutte le feature sono complete:",
+      "words": [
+        {
+          "text": "Il",
+          "start": 69.841,
+          "end": 69.921
+        },
+        {
+          "text": "ciclo",
+          "start": 69.961,
+          "end": 70.241
+        },
+        {
+          "text": "riparte",
+          "start": 70.281,
+          "end": 70.721
+        },
+        {
+          "text": "finché",
+          "start": 70.841,
+          "end": 71.081
+        },
+        {
+          "text": "tutte",
+          "start": 71.221,
+          "end": 71.481
+        },
+        {
+          "text": "le",
+          "start": 71.501,
+          "end": 71.561
+        },
+        {
+          "text": "feature",
+          "start": 71.601,
+          "end": 71.901
+        },
+        {
+          "text": "sono",
+          "start": 71.921,
+          "end": 72.082
+        },
+        {
+          "text": "complete:",
+          "start": 72.122,
+          "end": 72.542
+        }
+      ]
+    },
+    {
+      "start": 73.082,
+      "end": 75.342,
+      "text": "solo allora avviene la release finale del sistema.",
+      "words": [
+        {
+          "text": "solo",
+          "start": 73.082,
+          "end": 73.262
+        },
+        {
+          "text": "allora",
+          "start": 73.282,
+          "end": 73.562
+        },
+        {
+          "text": "avviene",
+          "start": 73.702,
+          "end": 73.982
+        },
+        {
+          "text": "la",
+          "start": 74.062,
+          "end": 74.122
+        },
+        {
+          "text": "release",
+          "start": 74.162,
+          "end": 74.442
+        },
+        {
+          "text": "finale",
+          "start": 74.462,
+          "end": 74.802
+        },
+        {
+          "text": "del",
+          "start": 74.822,
+          "end": 74.942
+        },
+        {
+          "text": "sistema.",
+          "start": 74.982,
+          "end": 75.342
+        }
+      ]
+    }
+  ]
+}

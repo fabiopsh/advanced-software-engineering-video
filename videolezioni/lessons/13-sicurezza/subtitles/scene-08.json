@@ -1,0 +1,964 @@
+{
+  "duration": 70.821,
+  "segments": [
+    {
+      "start": 0.02,
+      "end": 4.901,
+      "text": "Chiudiamo il capitolo con la privacy, cioè la gestione sociale e legale appropriata delle informazioni",
+      "words": [
+        {
+          "text": "Chiudiamo",
+          "start": 0.02,
+          "end": 0.36
+        },
+        {
+          "text": "il",
+          "start": 0.4,
+          "end": 0.46
+        },
+        {
+          "text": "capitolo",
+          "start": 0.48,
+          "end": 0.9
+        },
+        {
+          "text": "con",
+          "start": 0.94,
+          "end": 1.04
+        },
+        {
+          "text": "la",
+          "start": 1.08,
+          "end": 1.14
+        },
+        {
+          "text": "privacy,",
+          "start": 1.18,
+          "end": 1.62
+        },
+        {
+          "text": "cioè",
+          "start": 1.9,
+          "end": 2.02
+        },
+        {
+          "text": "la",
+          "start": 2.06,
+          "end": 2.12
+        },
+        {
+          "text": "gestione",
+          "start": 2.16,
+          "end": 2.5
+        },
+        {
+          "text": "sociale",
+          "start": 2.6,
+          "end": 3.04
+        },
+        {
+          "text": "e",
+          "start": 3.12,
+          "end": 3.16
+        },
+        {
+          "text": "legale",
+          "start": 3.22,
+          "end": 3.581
+        },
+        {
+          "text": "appropriata",
+          "start": 3.621,
+          "end": 4.201
+        },
+        {
+          "text": "delle",
+          "start": 4.241,
+          "end": 4.381
+        },
+        {
+          "text": "informazioni",
+          "start": 4.401,
+          "end": 4.901
+        }
+      ]
+    },
+    {
+      "start": 4.941,
+      "end": 6.741,
+      "text": "personali conservate da terze parti.",
+      "words": [
+        {
+          "text": "personali",
+          "start": 4.941,
+          "end": 5.421
+        },
+        {
+          "text": "conservate",
+          "start": 5.481,
+          "end": 5.961
+        },
+        {
+          "text": "da",
+          "start": 6.001,
+          "end": 6.061
+        },
+        {
+          "text": "terze",
+          "start": 6.101,
+          "end": 6.381
+        },
+        {
+          "text": "parti.",
+          "start": 6.421,
+          "end": 6.741
+        }
+      ]
+    },
+    {
+      "start": 7.581,
+      "end": 10.822,
+      "text": "Le normative sulla protezione dei dati distinguono due ruoli chiave.",
+      "words": [
+        {
+          "text": "Le",
+          "start": 7.581,
+          "end": 7.641
+        },
+        {
+          "text": "normative",
+          "start": 7.701,
+          "end": 8.241
+        },
+        {
+          "text": "sulla",
+          "start": 8.321,
+          "end": 8.481
+        },
+        {
+          "text": "protezione",
+          "start": 8.501,
+          "end": 8.961
+        },
+        {
+          "text": "dei",
+          "start": 9.001,
+          "end": 9.101
+        },
+        {
+          "text": "dati",
+          "start": 9.141,
+          "end": 9.381
+        },
+        {
+          "text": "distinguono",
+          "start": 9.521,
+          "end": 9.981
+        },
+        {
+          "text": "due",
+          "start": 10.061,
+          "end": 10.221
+        },
+        {
+          "text": "ruoli",
+          "start": 10.281,
+          "end": 10.501
+        },
+        {
+          "text": "chiave.",
+          "start": 10.541,
+          "end": 10.822
+        }
+      ]
+    },
+    {
+      "start": 11.482,
+      "end": 16.782,
+      "text": "Il data controller decide come e perché trattare i dati ed è responsabile di memorizzazione,",
+      "words": [
+        {
+          "text": "Il",
+          "start": 11.482,
+          "end": 11.582
+        },
+        {
+          "text": "data",
+          "start": 11.642,
+          "end": 11.842
+        },
+        {
+          "text": "controller",
+          "start": 11.882,
+          "end": 12.462
+        },
+        {
+          "text": "decide",
+          "start": 12.642,
+          "end": 12.982
+        },
+        {
+          "text": "come",
+          "start": 13.102,
+          "end": 13.382
+        },
+        {
+          "text": "e",
+          "start": 13.422,
+          "end": 13.462
+        },
+        {
+          "text": "perché",
+          "start": 13.502,
+          "end": 13.782
+        },
+        {
+          "text": "trattare",
+          "start": 13.842,
+          "end": 14.222
+        },
+        {
+          "text": "i",
+          "start": 14.262,
+          "end": 14.302
+        },
+        {
+          "text": "dati",
+          "start": 14.322,
+          "end": 14.602
+        },
+        {
+          "text": "ed",
+          "start": 14.882,
+          "end": 14.962
+        },
+        {
+          "text": "è",
+          "start": 14.982,
+          "end": 15.022
+        },
+        {
+          "text": "responsabile",
+          "start": 15.102,
+          "end": 15.782
+        },
+        {
+          "text": "di",
+          "start": 15.822,
+          "end": 15.882
+        },
+        {
+          "text": "memorizzazione,",
+          "start": 15.942,
+          "end": 16.782
+        }
+      ]
+    },
+    {
+      "start": 17.002,
+      "end": 18.863,
+      "text": "uso sicuro e accesso agli interessati.",
+      "words": [
+        {
+          "text": "uso",
+          "start": 17.002,
+          "end": 17.162
+        },
+        {
+          "text": "sicuro",
+          "start": 17.202,
+          "end": 17.582
+        },
+        {
+          "text": "e",
+          "start": 17.742,
+          "end": 17.782
+        },
+        {
+          "text": "accesso",
+          "start": 17.822,
+          "end": 18.163
+        },
+        {
+          "text": "agli",
+          "start": 18.163,
+          "end": 18.283
+        },
+        {
+          "text": "interessati.",
+          "start": 18.303,
+          "end": 18.863
+        }
+      ]
+    },
+    {
+      "start": 19.643,
+      "end": 22.783,
+      "text": "Il data subject è invece la persona a cui i dati appartengono,",
+      "words": [
+        {
+          "text": "Il",
+          "start": 19.643,
+          "end": 19.743
+        },
+        {
+          "text": "data",
+          "start": 19.803,
+          "end": 20.003
+        },
+        {
+          "text": "subject",
+          "start": 20.063,
+          "end": 20.503
+        },
+        {
+          "text": "è",
+          "start": 20.683,
+          "end": 20.723
+        },
+        {
+          "text": "invece",
+          "start": 20.783,
+          "end": 21.063
+        },
+        {
+          "text": "la",
+          "start": 21.103,
+          "end": 21.143
+        },
+        {
+          "text": "persona",
+          "start": 21.183,
+          "end": 21.583
+        },
+        {
+          "text": "a",
+          "start": 21.643,
+          "end": 21.683
+        },
+        {
+          "text": "cui",
+          "start": 21.703,
+          "end": 21.843
+        },
+        {
+          "text": "i",
+          "start": 21.883,
+          "end": 21.923
+        },
+        {
+          "text": "dati",
+          "start": 21.943,
+          "end": 22.143
+        },
+        {
+          "text": "appartengono,",
+          "start": 22.183,
+          "end": 22.783
+        }
+      ]
+    },
+    {
+      "start": 23.023,
+      "end": 27.464,
+      "text": "titolare dei diritti di accesso, correzione degli errori, cancellazione e consenso.",
+      "words": [
+        {
+          "text": "titolare",
+          "start": 23.023,
+          "end": 23.443
+        },
+        {
+          "text": "dei",
+          "start": 23.483,
+          "end": 23.583
+        },
+        {
+          "text": "diritti",
+          "start": 23.603,
+          "end": 23.903
+        },
+        {
+          "text": "di",
+          "start": 23.923,
+          "end": 23.983
+        },
+        {
+          "text": "accesso,",
+          "start": 24.023,
+          "end": 24.483
+        },
+        {
+          "text": "correzione",
+          "start": 24.663,
+          "end": 25.164
+        },
+        {
+          "text": "degli",
+          "start": 25.204,
+          "end": 25.364
+        },
+        {
+          "text": "errori,",
+          "start": 25.404,
+          "end": 25.744
+        },
+        {
+          "text": "cancellazione",
+          "start": 25.944,
+          "end": 26.644
+        },
+        {
+          "text": "e",
+          "start": 26.804,
+          "end": 26.844
+        },
+        {
+          "text": "consenso.",
+          "start": 26.924,
+          "end": 27.464
+        }
+      ]
+    },
+    {
+      "start": 28.484,
+      "end": 30.724,
+      "text": "Sette principi guidano la progettazione conforme:",
+      "words": [
+        {
+          "text": "Sette",
+          "start": 28.484,
+          "end": 28.724
+        },
+        {
+          "text": "principi",
+          "start": 28.744,
+          "end": 29.204
+        },
+        {
+          "text": "guidano",
+          "start": 29.264,
+          "end": 29.524
+        },
+        {
+          "text": "la",
+          "start": 29.584,
+          "end": 29.624
+        },
+        {
+          "text": "progettazione",
+          "start": 29.664,
+          "end": 30.224
+        },
+        {
+          "text": "conforme:",
+          "start": 30.264,
+          "end": 30.724
+        }
+      ]
+    },
+    {
+      "start": 31.464,
+      "end": 33.845,
+      "text": "consapevolezza e controllo da parte dell'utente;",
+      "words": [
+        {
+          "text": "consapevolezza",
+          "start": 31.464,
+          "end": 32.265
+        },
+        {
+          "text": "e",
+          "start": 32.305,
+          "end": 32.345
+        },
+        {
+          "text": "controllo",
+          "start": 32.385,
+          "end": 32.905
+        },
+        {
+          "text": "da",
+          "start": 32.945,
+          "end": 33.005
+        },
+        {
+          "text": "parte",
+          "start": 33.045,
+          "end": 33.265
+        },
+        {
+          "text": "dell'utente;",
+          "start": 33.305,
+          "end": 33.845
+        }
+      ]
+    },
+    {
+      "start": 34.485,
+      "end": 38.505,
+      "text": "finalità dichiarata; consenso esplicito prima di condividere con terzi;",
+      "words": [
+        {
+          "text": "finalità",
+          "start": 34.485,
+          "end": 34.885
+        },
+        {
+          "text": "dichiarata;",
+          "start": 35.005,
+          "end": 35.505
+        },
+        {
+          "text": "consenso",
+          "start": 36.105,
+          "end": 36.525
+        },
+        {
+          "text": "esplicito",
+          "start": 36.585,
+          "end": 37.085
+        },
+        {
+          "text": "prima",
+          "start": 37.205,
+          "end": 37.405
+        },
+        {
+          "text": "di",
+          "start": 37.425,
+          "end": 37.485
+        },
+        {
+          "text": "condividere",
+          "start": 37.525,
+          "end": 37.965
+        },
+        {
+          "text": "con",
+          "start": 37.985,
+          "end": 38.105
+        },
+        {
+          "text": "terzi;",
+          "start": 38.145,
+          "end": 38.505
+        }
+      ]
+    },
+    {
+      "start": 39.265,
+      "end": 42.286,
+      "text": "durata limitata, cancellando i dati alla chiusura dell'account;",
+      "words": [
+        {
+          "text": "durata",
+          "start": 39.265,
+          "end": 39.546
+        },
+        {
+          "text": "limitata,",
+          "start": 39.606,
+          "end": 40.026
+        },
+        {
+          "text": "cancellando",
+          "start": 40.446,
+          "end": 40.966
+        },
+        {
+          "text": "i",
+          "start": 41.006,
+          "end": 41.046
+        },
+        {
+          "text": "dati",
+          "start": 41.066,
+          "end": 41.286
+        },
+        {
+          "text": "alla",
+          "start": 41.326,
+          "end": 41.426
+        },
+        {
+          "text": "chiusura",
+          "start": 41.466,
+          "end": 41.746
+        },
+        {
+          "text": "dell'account;",
+          "start": 41.766,
+          "end": 42.286
+        }
+      ]
+    },
+    {
+      "start": 43.046,
+      "end": 46.967,
+      "text": "conservazione sicura; possibilità di scoprire e correggere errori;",
+      "words": [
+        {
+          "text": "conservazione",
+          "start": 43.046,
+          "end": 43.686
+        },
+        {
+          "text": "sicura;",
+          "start": 43.726,
+          "end": 44.066
+        },
+        {
+          "text": "possibilità",
+          "start": 44.726,
+          "end": 45.246
+        },
+        {
+          "text": "di",
+          "start": 45.306,
+          "end": 45.366
+        },
+        {
+          "text": "scoprire",
+          "start": 45.446,
+          "end": 45.906
+        },
+        {
+          "text": "e",
+          "start": 46.026,
+          "end": 46.066
+        },
+        {
+          "text": "correggere",
+          "start": 46.126,
+          "end": 46.587
+        },
+        {
+          "text": "errori;",
+          "start": 46.647,
+          "end": 46.967
+        }
+      ]
+    },
+    {
+      "start": 47.707,
+      "end": 51.987,
+      "text": "e divieto di trasferire dati in paesi con leggi più deboli senza garanzie equivalenti.",
+      "words": [
+        {
+          "text": "e",
+          "start": 47.707,
+          "end": 47.747
+        },
+        {
+          "text": "divieto",
+          "start": 47.887,
+          "end": 48.287
+        },
+        {
+          "text": "di",
+          "start": 48.327,
+          "end": 48.387
+        },
+        {
+          "text": "trasferire",
+          "start": 48.427,
+          "end": 48.867
+        },
+        {
+          "text": "dati",
+          "start": 48.907,
+          "end": 49.147
+        },
+        {
+          "text": "in",
+          "start": 49.207,
+          "end": 49.267
+        },
+        {
+          "text": "paesi",
+          "start": 49.327,
+          "end": 49.627
+        },
+        {
+          "text": "con",
+          "start": 49.687,
+          "end": 49.787
+        },
+        {
+          "text": "leggi",
+          "start": 49.827,
+          "end": 50.047
+        },
+        {
+          "text": "più",
+          "start": 50.087,
+          "end": 50.187
+        },
+        {
+          "text": "deboli",
+          "start": 50.247,
+          "end": 50.587
+        },
+        {
+          "text": "senza",
+          "start": 50.747,
+          "end": 51.007
+        },
+        {
+          "text": "garanzie",
+          "start": 51.067,
+          "end": 51.407
+        },
+        {
+          "text": "equivalenti.",
+          "start": 51.447,
+          "end": 51.987
+        }
+      ]
+    },
+    {
+      "start": 53.087,
+      "end": 57.208,
+      "text": "Curare la privacy conviene anche al business: evita sanzioni e blocchi commerciali,",
+      "words": [
+        {
+          "text": "Curare",
+          "start": 53.087,
+          "end": 53.407
+        },
+        {
+          "text": "la",
+          "start": 53.447,
+          "end": 53.487
+        },
+        {
+          "text": "privacy",
+          "start": 53.527,
+          "end": 53.908
+        },
+        {
+          "text": "conviene",
+          "start": 54.008,
+          "end": 54.328
+        },
+        {
+          "text": "anche",
+          "start": 54.388,
+          "end": 54.548
+        },
+        {
+          "text": "al",
+          "start": 54.568,
+          "end": 54.648
+        },
+        {
+          "text": "business:",
+          "start": 54.668,
+          "end": 55.088
+        },
+        {
+          "text": "evita",
+          "start": 55.488,
+          "end": 55.728
+        },
+        {
+          "text": "sanzioni",
+          "start": 55.808,
+          "end": 56.308
+        },
+        {
+          "text": "e",
+          "start": 56.368,
+          "end": 56.408
+        },
+        {
+          "text": "blocchi",
+          "start": 56.428,
+          "end": 56.648
+        },
+        {
+          "text": "commerciali,",
+          "start": 56.688,
+          "end": 57.208
+        }
+      ]
+    },
+    {
+      "start": 57.608,
+      "end": 60.348,
+      "text": "soddisfa i clienti aziendali e protegge la reputazione.",
+      "words": [
+        {
+          "text": "soddisfa",
+          "start": 57.608,
+          "end": 57.988
+        },
+        {
+          "text": "i",
+          "start": 58.048,
+          "end": 58.088
+        },
+        {
+          "text": "clienti",
+          "start": 58.068,
+          "end": 58.368
+        },
+        {
+          "text": "aziendali",
+          "start": 58.408,
+          "end": 58.948
+        },
+        {
+          "text": "e",
+          "start": 59.208,
+          "end": 59.248
+        },
+        {
+          "text": "protegge",
+          "start": 59.288,
+          "end": 59.628
+        },
+        {
+          "text": "la",
+          "start": 59.688,
+          "end": 59.728
+        },
+        {
+          "text": "reputazione.",
+          "start": 59.768,
+          "end": 60.348
+        }
+      ]
+    },
+    {
+      "start": 61.129,
+      "end": 65.449,
+      "text": "In pratica: non raccogliete dati superflui, pubblicate una privacy policy chiara,",
+      "words": [
+        {
+          "text": "In",
+          "start": 61.129,
+          "end": 61.189
+        },
+        {
+          "text": "pratica:",
+          "start": 61.209,
+          "end": 61.569
+        },
+        {
+          "text": "non",
+          "start": 61.809,
+          "end": 61.949
+        },
+        {
+          "text": "raccogliete",
+          "start": 61.989,
+          "end": 62.469
+        },
+        {
+          "text": "dati",
+          "start": 62.529,
+          "end": 62.689
+        },
+        {
+          "text": "superflui,",
+          "start": 62.749,
+          "end": 63.249
+        },
+        {
+          "text": "pubblicate",
+          "start": 63.709,
+          "end": 64.129
+        },
+        {
+          "text": "una",
+          "start": 64.209,
+          "end": 64.309
+        },
+        {
+          "text": "privacy",
+          "start": 64.369,
+          "end": 64.729
+        },
+        {
+          "text": "policy",
+          "start": 64.789,
+          "end": 65.069
+        },
+        {
+          "text": "chiara,",
+          "start": 65.129,
+          "end": 65.449
+        }
+      ]
+    },
+    {
+      "start": 65.929,
+      "end": 70.65,
+      "text": "dichiarate usi pubblicitari mirati e rendete trasparente la condivisione nelle funzioni social.",
+      "words": [
+        {
+          "text": "dichiarate",
+          "start": 65.929,
+          "end": 66.349
+        },
+        {
+          "text": "usi",
+          "start": 66.429,
+          "end": 66.609
+        },
+        {
+          "text": "pubblicitari",
+          "start": 66.649,
+          "end": 67.169
+        },
+        {
+          "text": "mirati",
+          "start": 67.209,
+          "end": 67.569
+        },
+        {
+          "text": "e",
+          "start": 68.03,
+          "end": 68.07000000000001
+        },
+        {
+          "text": "rendete",
+          "start": 68.19,
+          "end": 68.49
+        },
+        {
+          "text": "trasparente",
+          "start": 68.53,
+          "end": 69.05
+        },
+        {
+          "text": "la",
+          "start": 69.11,
+          "end": 69.15
+        },
+        {
+          "text": "condivisione",
+          "start": 69.19,
+          "end": 69.75
+        },
+        {
+          "text": "nelle",
+          "start": 69.79,
+          "end": 69.95
+        },
+        {
+          "text": "funzioni",
+          "start": 69.97,
+          "end": 70.29
+        },
+        {
+          "text": "social.",
+          "start": 70.33,
+          "end": 70.65
+        }
+      ]
+    }
+  ]
+}

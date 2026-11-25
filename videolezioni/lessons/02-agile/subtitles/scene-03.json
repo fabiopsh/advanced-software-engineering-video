@@ -1,0 +1,1114 @@
+{
+  "duration": 84.637,
+  "segments": [
+    {
+      "start": 0.02,
+      "end": 4.501,
+      "text": "Tra i metodi agili storici spicca Extreme Programming, abbreviato in X P,",
+      "words": [
+        {
+          "text": "Tra",
+          "start": 0.02,
+          "end": 0.12
+        },
+        {
+          "text": "i",
+          "start": 0.18,
+          "end": 0.22
+        },
+        {
+          "text": "metodi",
+          "start": 0.26,
+          "end": 0.58
+        },
+        {
+          "text": "agili",
+          "start": 0.68,
+          "end": 0.98
+        },
+        {
+          "text": "storici",
+          "start": 1.04,
+          "end": 1.48
+        },
+        {
+          "text": "spicca",
+          "start": 1.58,
+          "end": 1.94
+        },
+        {
+          "text": "Extreme",
+          "start": 2.08,
+          "end": 2.64
+        },
+        {
+          "text": "Programming,",
+          "start": 2.68,
+          "end": 3.22
+        },
+        {
+          "text": "abbreviato",
+          "start": 3.52,
+          "end": 3.941
+        },
+        {
+          "text": "in",
+          "start": 4.001,
+          "end": 4.081
+        },
+        {
+          "text": "X",
+          "start": 4.321,
+          "end": 4.361
+        },
+        {
+          "text": "P,",
+          "start": 4.461,
+          "end": 4.501
+        }
+      ]
+    },
+    {
+      "start": 4.981,
+      "end": 8.681,
+      "text": "che porta all'estremo le buone pratiche ingegneristiche riunendone dieci.",
+      "words": [
+        {
+          "text": "che",
+          "start": 4.981,
+          "end": 5.061
+        },
+        {
+          "text": "porta",
+          "start": 5.121,
+          "end": 5.361
+        },
+        {
+          "text": "all'estremo",
+          "start": 5.421,
+          "end": 6.101
+        },
+        {
+          "text": "le",
+          "start": 6.181,
+          "end": 6.241
+        },
+        {
+          "text": "buone",
+          "start": 6.281,
+          "end": 6.481
+        },
+        {
+          "text": "pratiche",
+          "start": 6.521,
+          "end": 6.861
+        },
+        {
+          "text": "ingegneristiche",
+          "start": 6.901,
+          "end": 7.641
+        },
+        {
+          "text": "riunendone",
+          "start": 7.781,
+          "end": 8.281
+        },
+        {
+          "text": "dieci.",
+          "start": 8.341,
+          "end": 8.681
+        }
+      ]
+    },
+    {
+      "start": 9.481,
+      "end": 11.422,
+      "text": "Vediamo le prime cinque nella tabella in alto.",
+      "words": [
+        {
+          "text": "Vediamo",
+          "start": 9.481,
+          "end": 9.701
+        },
+        {
+          "text": "le",
+          "start": 9.741,
+          "end": 9.801
+        },
+        {
+          "text": "prime",
+          "start": 9.841,
+          "end": 10.021
+        },
+        {
+          "text": "cinque",
+          "start": 10.081,
+          "end": 10.401
+        },
+        {
+          "text": "nella",
+          "start": 10.521,
+          "end": 10.701
+        },
+        {
+          "text": "tabella",
+          "start": 10.721,
+          "end": 11.001
+        },
+        {
+          "text": "in",
+          "start": 11.041,
+          "end": 11.101
+        },
+        {
+          "text": "alto.",
+          "start": 11.161,
+          "end": 11.422
+        }
+      ]
+    },
+    {
+      "start": 12.722,
+      "end": 14.762,
+      "text": "Incremental planning con user stories:",
+      "words": [
+        {
+          "text": "Incremental",
+          "start": 12.722,
+          "end": 13.242
+        },
+        {
+          "text": "planning",
+          "start": 13.302,
+          "end": 13.722
+        },
+        {
+          "text": "con",
+          "start": 13.762,
+          "end": 13.922
+        },
+        {
+          "text": "user",
+          "start": 14.102,
+          "end": 14.302
+        },
+        {
+          "text": "stories:",
+          "start": 14.362,
+          "end": 14.762
+        }
+      ]
+    },
+    {
+      "start": 15.422,
+      "end": 20.943,
+      "text": "nessun piano generale rigido, i requisiti nascono col rappresentante del cliente e si scelgono per",
+      "words": [
+        {
+          "text": "nessun",
+          "start": 15.422,
+          "end": 15.802
+        },
+        {
+          "text": "piano",
+          "start": 15.862,
+          "end": 16.062
+        },
+        {
+          "text": "generale",
+          "start": 16.122,
+          "end": 16.522
+        },
+        {
+          "text": "rigido,",
+          "start": 16.562,
+          "end": 16.902
+        },
+        {
+          "text": "i",
+          "start": 17.202,
+          "end": 17.242
+        },
+        {
+          "text": "requisiti",
+          "start": 17.302,
+          "end": 17.742
+        },
+        {
+          "text": "nascono",
+          "start": 17.822,
+          "end": 18.202
+        },
+        {
+          "text": "col",
+          "start": 18.342,
+          "end": 18.462
+        },
+        {
+          "text": "rappresentante",
+          "start": 18.502,
+          "end": 19.143
+        },
+        {
+          "text": "del",
+          "start": 19.183,
+          "end": 19.303
+        },
+        {
+          "text": "cliente",
+          "start": 19.343,
+          "end": 19.823
+        },
+        {
+          "text": "e",
+          "start": 20.203,
+          "end": 20.243
+        },
+        {
+          "text": "si",
+          "start": 20.303,
+          "end": 20.363
+        },
+        {
+          "text": "scelgono",
+          "start": 20.423,
+          "end": 20.783
+        },
+        {
+          "text": "per",
+          "start": 20.823,
+          "end": 20.943
+        }
+      ]
+    },
+    {
+      "start": 21.043,
+      "end": 22.003,
+      "text": "tempo e priorità.",
+      "words": [
+        {
+          "text": "tempo",
+          "start": 21.043,
+          "end": 21.383
+        },
+        {
+          "text": "e",
+          "start": 21.503,
+          "end": 21.543
+        },
+        {
+          "text": "priorità.",
+          "start": 21.583,
+          "end": 22.003
+        }
+      ]
+    },
+    {
+      "start": 23.383,
+      "end": 28.704,
+      "text": "Small releases: si rilascia subito il minimo insieme utile di valore e si aggiungono funzioni",
+      "words": [
+        {
+          "text": "Small",
+          "start": 23.383,
+          "end": 23.663
+        },
+        {
+          "text": "releases:",
+          "start": 23.723,
+          "end": 24.223
+        },
+        {
+          "text": "si",
+          "start": 24.683,
+          "end": 24.763
+        },
+        {
+          "text": "rilascia",
+          "start": 24.803,
+          "end": 25.143
+        },
+        {
+          "text": "subito",
+          "start": 25.283,
+          "end": 25.643
+        },
+        {
+          "text": "il",
+          "start": 25.703,
+          "end": 25.763
+        },
+        {
+          "text": "minimo",
+          "start": 25.803,
+          "end": 26.063
+        },
+        {
+          "text": "insieme",
+          "start": 26.123,
+          "end": 26.484
+        },
+        {
+          "text": "utile",
+          "start": 26.624,
+          "end": 26.944
+        },
+        {
+          "text": "di",
+          "start": 26.984,
+          "end": 27.044
+        },
+        {
+          "text": "valore",
+          "start": 27.084,
+          "end": 27.404
+        },
+        {
+          "text": "e",
+          "start": 27.724,
+          "end": 27.764
+        },
+        {
+          "text": "si",
+          "start": 27.824,
+          "end": 27.864
+        },
+        {
+          "text": "aggiungono",
+          "start": 27.904,
+          "end": 28.284
+        },
+        {
+          "text": "funzioni",
+          "start": 28.324,
+          "end": 28.704
+        }
+      ]
+    },
+    {
+      "start": 28.764,
+      "end": 29.344,
+      "text": "con frequenza.",
+      "words": [
+        {
+          "text": "con",
+          "start": 28.764,
+          "end": 28.864
+        },
+        {
+          "text": "frequenza.",
+          "start": 28.904,
+          "end": 29.344
+        }
+      ]
+    },
+    {
+      "start": 30.444,
+      "end": 34.685,
+      "text": "Test-driven development: si scrivono prima i test automatici e poi il codice,",
+      "words": [
+        {
+          "text": "Test-driven",
+          "start": 30.444,
+          "end": 31.004
+        },
+        {
+          "text": "development:",
+          "start": 31.044,
+          "end": 31.544
+        },
+        {
+          "text": "si",
+          "start": 32.004,
+          "end": 32.064
+        },
+        {
+          "text": "scrivono",
+          "start": 32.104,
+          "end": 32.444
+        },
+        {
+          "text": "prima",
+          "start": 32.524,
+          "end": 32.804
+        },
+        {
+          "text": "i",
+          "start": 32.864,
+          "end": 32.904
+        },
+        {
+          "text": "test",
+          "start": 32.924,
+          "end": 33.104
+        },
+        {
+          "text": "automatici",
+          "start": 33.164,
+          "end": 33.744
+        },
+        {
+          "text": "e",
+          "start": 33.865,
+          "end": 33.905
+        },
+        {
+          "text": "poi",
+          "start": 33.985,
+          "end": 34.145
+        },
+        {
+          "text": "il",
+          "start": 34.185,
+          "end": 34.245
+        },
+        {
+          "text": "codice,",
+          "start": 34.305,
+          "end": 34.685
+        }
+      ]
+    },
+    {
+      "start": 35.045,
+      "end": 37.065,
+      "text": "così ogni modifica è subito verificata.",
+      "words": [
+        {
+          "text": "così",
+          "start": 35.045,
+          "end": 35.205
+        },
+        {
+          "text": "ogni",
+          "start": 35.345,
+          "end": 35.505
+        },
+        {
+          "text": "modifica",
+          "start": 35.545,
+          "end": 35.965
+        },
+        {
+          "text": "è",
+          "start": 36.085,
+          "end": 36.125
+        },
+        {
+          "text": "subito",
+          "start": 36.225,
+          "end": 36.505
+        },
+        {
+          "text": "verificata.",
+          "start": 36.545,
+          "end": 37.065
+        }
+      ]
+    },
+    {
+      "start": 38.045,
+      "end": 43.526,
+      "text": "Continuous integration: appena un task è pronto si integra nel sistema ed eseguono automaticamente tutti",
+      "words": [
+        {
+          "text": "Continuous",
+          "start": 38.045,
+          "end": 38.505
+        },
+        {
+          "text": "integration:",
+          "start": 38.605,
+          "end": 39.145
+        },
+        {
+          "text": "appena",
+          "start": 39.625,
+          "end": 39.845
+        },
+        {
+          "text": "un",
+          "start": 39.905,
+          "end": 39.965
+        },
+        {
+          "text": "task",
+          "start": 39.985,
+          "end": 40.205
+        },
+        {
+          "text": "è",
+          "start": 40.225,
+          "end": 40.265
+        },
+        {
+          "text": "pronto",
+          "start": 40.305,
+          "end": 40.625
+        },
+        {
+          "text": "si",
+          "start": 40.745,
+          "end": 40.805
+        },
+        {
+          "text": "integra",
+          "start": 40.885,
+          "end": 41.225
+        },
+        {
+          "text": "nel",
+          "start": 41.285,
+          "end": 41.406
+        },
+        {
+          "text": "sistema",
+          "start": 41.466,
+          "end": 41.866
+        },
+        {
+          "text": "ed",
+          "start": 41.906,
+          "end": 41.986
+        },
+        {
+          "text": "eseguono",
+          "start": 42.006,
+          "end": 42.366
+        },
+        {
+          "text": "automaticamente",
+          "start": 42.486,
+          "end": 43.206
+        },
+        {
+          "text": "tutti",
+          "start": 43.286,
+          "end": 43.526
+        }
+      ]
+    },
+    {
+      "start": 43.546,
+      "end": 44.246,
+      "text": "gli unit test.",
+      "words": [
+        {
+          "text": "gli",
+          "start": 43.546,
+          "end": 43.686
+        },
+        {
+          "text": "unit",
+          "start": 43.786,
+          "end": 43.966
+        },
+        {
+          "text": "test.",
+          "start": 43.986,
+          "end": 44.246
+        }
+      ]
+    },
+    {
+      "start": 45.126,
+      "end": 51.287,
+      "text": "E refactoring: migliorare continuamente struttura, leggibilità, efficienza e sicurezza del codice.",
+      "words": [
+        {
+          "text": "E",
+          "start": 45.126,
+          "end": 45.166
+        },
+        {
+          "text": "refactoring:",
+          "start": 45.406,
+          "end": 46.126
+        },
+        {
+          "text": "migliorare",
+          "start": 46.426,
+          "end": 46.886
+        },
+        {
+          "text": "continuamente",
+          "start": 46.946,
+          "end": 47.606
+        },
+        {
+          "text": "struttura,",
+          "start": 47.686,
+          "end": 48.246
+        },
+        {
+          "text": "leggibilità,",
+          "start": 48.386,
+          "end": 48.967
+        },
+        {
+          "text": "efficienza",
+          "start": 49.367,
+          "end": 50.027
+        },
+        {
+          "text": "e",
+          "start": 50.147,
+          "end": 50.187
+        },
+        {
+          "text": "sicurezza",
+          "start": 50.267,
+          "end": 50.727
+        },
+        {
+          "text": "del",
+          "start": 50.767,
+          "end": 50.867
+        },
+        {
+          "text": "codice.",
+          "start": 50.927,
+          "end": 51.287
+        }
+      ]
+    },
+    {
+      "start": 52.307,
+      "end": 54.247,
+      "text": "In basso trovate le altre cinque pratiche.",
+      "words": [
+        {
+          "text": "In",
+          "start": 52.307,
+          "end": 52.387
+        },
+        {
+          "text": "basso",
+          "start": 52.427,
+          "end": 52.687
+        },
+        {
+          "text": "trovate",
+          "start": 52.827,
+          "end": 53.147
+        },
+        {
+          "text": "le",
+          "start": 53.187,
+          "end": 53.267
+        },
+        {
+          "text": "altre",
+          "start": 53.307,
+          "end": 53.527
+        },
+        {
+          "text": "cinque",
+          "start": 53.587,
+          "end": 53.827
+        },
+        {
+          "text": "pratiche.",
+          "start": 53.867,
+          "end": 54.247
+        }
+      ]
+    },
+    {
+      "start": 54.907,
+      "end": 59.628,
+      "text": "Simple design: progettare solo ciò che serve ora, lasciando al refactoring i cambi futuri,",
+      "words": [
+        {
+          "text": "Simple",
+          "start": 54.907,
+          "end": 55.207
+        },
+        {
+          "text": "design:",
+          "start": 55.207,
+          "end": 55.627
+        },
+        {
+          "text": "progettare",
+          "start": 55.907,
+          "end": 56.367
+        },
+        {
+          "text": "solo",
+          "start": 56.508,
+          "end": 56.788
+        },
+        {
+          "text": "ciò",
+          "start": 56.828,
+          "end": 56.928
+        },
+        {
+          "text": "che",
+          "start": 56.968,
+          "end": 57.048
+        },
+        {
+          "text": "serve",
+          "start": 57.108,
+          "end": 57.368
+        },
+        {
+          "text": "ora,",
+          "start": 57.488,
+          "end": 57.648
+        },
+        {
+          "text": "lasciando",
+          "start": 57.908,
+          "end": 58.248
+        },
+        {
+          "text": "al",
+          "start": 58.288,
+          "end": 58.348
+        },
+        {
+          "text": "refactoring",
+          "start": 58.368,
+          "end": 58.908
+        },
+        {
+          "text": "i",
+          "start": 58.948,
+          "end": 58.988
+        },
+        {
+          "text": "cambi",
+          "start": 59.008,
+          "end": 59.228
+        },
+        {
+          "text": "futuri,",
+          "start": 59.268,
+          "end": 59.628
+        }
+      ]
+    },
+    {
+      "start": 59.768,
+      "end": 61.048,
+      "text": "applicando il principio dieci.",
+      "words": [
+        {
+          "text": "applicando",
+          "start": 59.768,
+          "end": 60.188
+        },
+        {
+          "text": "il",
+          "start": 60.208,
+          "end": 60.268
+        },
+        {
+          "text": "principio",
+          "start": 60.308,
+          "end": 60.688
+        },
+        {
+          "text": "dieci.",
+          "start": 60.748,
+          "end": 61.048
+        }
+      ]
+    },
+    {
+      "start": 61.968,
+      "end": 66.649,
+      "text": "Pair programming: due sviluppatori alla stessa postazione, uno scrive e l'altro controlla.",
+      "words": [
+        {
+          "text": "Pair",
+          "start": 61.968,
+          "end": 62.168
+        },
+        {
+          "text": "programming:",
+          "start": 62.228,
+          "end": 62.748
+        },
+        {
+          "text": "due",
+          "start": 63.168,
+          "end": 63.308
+        },
+        {
+          "text": "sviluppatori",
+          "start": 63.348,
+          "end": 63.848
+        },
+        {
+          "text": "alla",
+          "start": 63.888,
+          "end": 64.009
+        },
+        {
+          "text": "stessa",
+          "start": 64.049,
+          "end": 64.309
+        },
+        {
+          "text": "postazione,",
+          "start": 64.369,
+          "end": 64.909
+        },
+        {
+          "text": "uno",
+          "start": 65.209,
+          "end": 65.329
+        },
+        {
+          "text": "scrive",
+          "start": 65.369,
+          "end": 65.669
+        },
+        {
+          "text": "e",
+          "start": 65.829,
+          "end": 65.869
+        },
+        {
+          "text": "l'altro",
+          "start": 65.909,
+          "end": 66.169
+        },
+        {
+          "text": "controlla.",
+          "start": 66.209,
+          "end": 66.649
+        }
+      ]
+    },
+    {
+      "start": 67.429,
+      "end": 71.209,
+      "text": "Collective ownership: chiunque può modificare qualsiasi parte del codice,",
+      "words": [
+        {
+          "text": "Collective",
+          "start": 67.429,
+          "end": 67.929
+        },
+        {
+          "text": "ownership:",
+          "start": 68.009,
+          "end": 68.429
+        },
+        {
+          "text": "chiunque",
+          "start": 68.829,
+          "end": 69.249
+        },
+        {
+          "text": "può",
+          "start": 69.289,
+          "end": 69.369
+        },
+        {
+          "text": "modificare",
+          "start": 69.429,
+          "end": 69.849
+        },
+        {
+          "text": "qualsiasi",
+          "start": 69.909,
+          "end": 70.369
+        },
+        {
+          "text": "parte",
+          "start": 70.409,
+          "end": 70.609
+        },
+        {
+          "text": "del",
+          "start": 70.649,
+          "end": 70.769
+        },
+        {
+          "text": "codice,",
+          "start": 70.829,
+          "end": 71.209
+        }
+      ]
+    },
+    {
+      "start": 71.349,
+      "end": 72.51,
+      "text": "protetto dagli unit test.",
+      "words": [
+        {
+          "text": "protetto",
+          "start": 71.349,
+          "end": 71.71
+        },
+        {
+          "text": "dagli",
+          "start": 71.75,
+          "end": 71.97
+        },
+        {
+          "text": "unit",
+          "start": 72.03,
+          "end": 72.21
+        },
+        {
+          "text": "test.",
+          "start": 72.25,
+          "end": 72.51
+        }
+      ]
+    },
+    {
+      "start": 73.51,
+      "end": 77.53,
+      "text": "Sustainable pace: niente straordinari continui, secondo il principio otto.",
+      "words": [
+        {
+          "text": "Sustainable",
+          "start": 73.51,
+          "end": 73.99
+        },
+        {
+          "text": "pace:",
+          "start": 74.03,
+          "end": 74.33
+        },
+        {
+          "text": "niente",
+          "start": 74.81,
+          "end": 75.15
+        },
+        {
+          "text": "straordinari",
+          "start": 75.19,
+          "end": 75.73
+        },
+        {
+          "text": "continui,",
+          "start": 75.77,
+          "end": 76.25
+        },
+        {
+          "text": "secondo",
+          "start": 76.39,
+          "end": 76.65
+        },
+        {
+          "text": "il",
+          "start": 76.69,
+          "end": 76.73
+        },
+        {
+          "text": "principio",
+          "start": 76.77,
+          "end": 77.19
+        },
+        {
+          "text": "otto.",
+          "start": 77.27,
+          "end": 77.53
+        }
+      ]
+    },
+    {
+      "start": 78.19,
+      "end": 81.771,
+      "text": "Infine on-site customer: un cliente sempre presente con il team,",
+      "words": [
+        {
+          "text": "Infine",
+          "start": 78.19,
+          "end": 78.49
+        },
+        {
+          "text": "on-site",
+          "start": 78.73,
+          "end": 79.171
+        },
+        {
+          "text": "customer:",
+          "start": 79.191,
+          "end": 79.591
+        },
+        {
+          "text": "un",
+          "start": 80.011,
+          "end": 80.091
+        },
+        {
+          "text": "cliente",
+          "start": 80.131,
+          "end": 80.511
+        },
+        {
+          "text": "sempre",
+          "start": 80.631,
+          "end": 80.931
+        },
+        {
+          "text": "presente",
+          "start": 80.971,
+          "end": 81.311
+        },
+        {
+          "text": "con",
+          "start": 81.351,
+          "end": 81.471
+        },
+        {
+          "text": "il",
+          "start": 81.491,
+          "end": 81.571
+        },
+        {
+          "text": "team,",
+          "start": 81.611,
+          "end": 81.771
+        }
+      ]
+    },
+    {
+      "start": 82.171,
+      "end": 83.491,
+      "text": "in linea con il principio quattro.",
+      "words": [
+        {
+          "text": "in",
+          "start": 82.171,
+          "end": 82.251
+        },
+        {
+          "text": "linea",
+          "start": 82.291,
+          "end": 82.491
+        },
+        {
+          "text": "con",
+          "start": 82.531,
+          "end": 82.631
+        },
+        {
+          "text": "il",
+          "start": 82.651,
+          "end": 82.711
+        },
+        {
+          "text": "principio",
+          "start": 82.751,
+          "end": 83.131
+        },
+        {
+          "text": "quattro.",
+          "start": 83.171,
+          "end": 83.491
+        }
+      ]
+    }
+  ]
+}

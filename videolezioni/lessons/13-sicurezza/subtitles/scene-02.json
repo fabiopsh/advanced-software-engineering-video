@@ -1,0 +1,1175 @@
+{
+  "duration": 73.814,
+  "segments": [
+    {
+      "start": 0.713,
+      "end": 3.395,
+      "text": "Passiamo ora agli attacchi più comuni e alle relative difese.",
+      "words": [
+        {
+          "text": "Passiamo",
+          "start": 0.713,
+          "end": 1.014
+        },
+        {
+          "text": "ora",
+          "start": 1.053,
+          "end": 1.174
+        },
+        {
+          "text": "agli",
+          "start": 1.273,
+          "end": 1.394
+        },
+        {
+          "text": "attacchi",
+          "start": 1.434,
+          "end": 1.713
+        },
+        {
+          "text": "più",
+          "start": 1.773,
+          "end": 1.853
+        },
+        {
+          "text": "comuni",
+          "start": 1.934,
+          "end": 2.254
+        },
+        {
+          "text": "e",
+          "start": 2.413,
+          "end": 2.454
+        },
+        {
+          "text": "alle",
+          "start": 2.493,
+          "end": 2.614
+        },
+        {
+          "text": "relative",
+          "start": 2.654,
+          "end": 2.995
+        },
+        {
+          "text": "difese.",
+          "start": 3.035,
+          "end": 3.395
+        }
+      ]
+    },
+    {
+      "start": 4.555,
+      "end": 10.516,
+      "text": "In un injection attack l'attaccante sfrutta un campo di input valido per introdurre codice eseguibile",
+      "words": [
+        {
+          "text": "In",
+          "start": 4.555,
+          "end": 4.635
+        },
+        {
+          "text": "un",
+          "start": 4.695,
+          "end": 4.775
+        },
+        {
+          "text": "injection",
+          "start": 5.035,
+          "end": 5.555
+        },
+        {
+          "text": "attack",
+          "start": 5.594,
+          "end": 5.995
+        },
+        {
+          "text": "l'attaccante",
+          "start": 6.455,
+          "end": 7.014
+        },
+        {
+          "text": "sfrutta",
+          "start": 7.075,
+          "end": 7.395
+        },
+        {
+          "text": "un",
+          "start": 7.455,
+          "end": 7.514
+        },
+        {
+          "text": "campo",
+          "start": 7.555,
+          "end": 7.815
+        },
+        {
+          "text": "di",
+          "start": 7.855,
+          "end": 7.8950000000000005
+        },
+        {
+          "text": "input",
+          "start": 7.955,
+          "end": 8.215
+        },
+        {
+          "text": "valido",
+          "start": 8.294,
+          "end": 8.675
+        },
+        {
+          "text": "per",
+          "start": 8.955,
+          "end": 9.055
+        },
+        {
+          "text": "introdurre",
+          "start": 9.094,
+          "end": 9.555
+        },
+        {
+          "text": "codice",
+          "start": 9.654,
+          "end": 9.975
+        },
+        {
+          "text": "eseguibile",
+          "start": 10.014,
+          "end": 10.516
+        }
+      ]
+    },
+    {
+      "start": 10.696,
+      "end": 12.076,
+      "text": "o comandi per il database.",
+      "words": [
+        {
+          "text": "o",
+          "start": 10.696,
+          "end": 10.736
+        },
+        {
+          "text": "comandi",
+          "start": 10.796,
+          "end": 11.216
+        },
+        {
+          "text": "per",
+          "start": 11.276,
+          "end": 11.376
+        },
+        {
+          "text": "il",
+          "start": 11.416,
+          "end": 11.475
+        },
+        {
+          "text": "database.",
+          "start": 11.516,
+          "end": 12.076
+        }
+      ]
+    },
+    {
+      "start": 12.736,
+      "end": 16.335,
+      "text": "Un esempio classico è il buffer overflow in linguaggi come C e C plus plus,",
+      "words": [
+        {
+          "text": "Un",
+          "start": 12.736,
+          "end": 12.816
+        },
+        {
+          "text": "esempio",
+          "start": 12.835,
+          "end": 13.096
+        },
+        {
+          "text": "classico",
+          "start": 13.115,
+          "end": 13.535
+        },
+        {
+          "text": "è",
+          "start": 13.696,
+          "end": 13.736
+        },
+        {
+          "text": "il",
+          "start": 13.776,
+          "end": 13.856
+        },
+        {
+          "text": "buffer",
+          "start": 13.895,
+          "end": 14.196
+        },
+        {
+          "text": "overflow",
+          "start": 14.216,
+          "end": 14.636
+        },
+        {
+          "text": "in",
+          "start": 14.716,
+          "end": 14.776
+        },
+        {
+          "text": "linguaggi",
+          "start": 14.796,
+          "end": 15.196
+        },
+        {
+          "text": "come",
+          "start": 15.236,
+          "end": 15.395
+        },
+        {
+          "text": "C",
+          "start": 15.475,
+          "end": 15.516
+        },
+        {
+          "text": "e",
+          "start": 15.675,
+          "end": 15.716
+        },
+        {
+          "text": "C",
+          "start": 15.736,
+          "end": 15.776
+        },
+        {
+          "text": "plus",
+          "start": 15.856,
+          "end": 16.035
+        },
+        {
+          "text": "plus,",
+          "start": 16.076,
+          "end": 16.335
+        }
+      ]
+    },
+    {
+      "start": 16.696,
+      "end": 21.477,
+      "text": "che non controllano i limiti degli array: una stringa di input sovrascrive la memoria adiacente",
+      "words": [
+        {
+          "text": "che",
+          "start": 16.696,
+          "end": 16.776
+        },
+        {
+          "text": "non",
+          "start": 16.816,
+          "end": 16.936
+        },
+        {
+          "text": "controllano",
+          "start": 16.956,
+          "end": 17.475
+        },
+        {
+          "text": "i",
+          "start": 17.516,
+          "end": 17.556
+        },
+        {
+          "text": "limiti",
+          "start": 17.576,
+          "end": 17.877
+        },
+        {
+          "text": "degli",
+          "start": 17.916,
+          "end": 18.077
+        },
+        {
+          "text": "array:",
+          "start": 18.117,
+          "end": 18.416
+        },
+        {
+          "text": "una",
+          "start": 18.937,
+          "end": 19.056
+        },
+        {
+          "text": "stringa",
+          "start": 19.097,
+          "end": 19.356
+        },
+        {
+          "text": "di",
+          "start": 19.377,
+          "end": 19.417
+        },
+        {
+          "text": "input",
+          "start": 19.457,
+          "end": 19.737
+        },
+        {
+          "text": "sovrascrive",
+          "start": 19.877,
+          "end": 20.457
+        },
+        {
+          "text": "la",
+          "start": 20.496,
+          "end": 20.556
+        },
+        {
+          "text": "memoria",
+          "start": 20.597,
+          "end": 20.916
+        },
+        {
+          "text": "adiacente",
+          "start": 20.937,
+          "end": 21.477
+        }
+      ]
+    },
+    {
+      "start": 21.737,
+      "end": 25.418,
+      "text": "e può deviare l'indirizzo di ritorno di una funzione verso codice dannoso.",
+      "words": [
+        {
+          "text": "e",
+          "start": 21.737,
+          "end": 21.777
+        },
+        {
+          "text": "può",
+          "start": 21.837,
+          "end": 21.916
+        },
+        {
+          "text": "deviare",
+          "start": 22.017,
+          "end": 22.337
+        },
+        {
+          "text": "l'indirizzo",
+          "start": 22.397,
+          "end": 22.897
+        },
+        {
+          "text": "di",
+          "start": 22.916,
+          "end": 22.977
+        },
+        {
+          "text": "ritorno",
+          "start": 23.017,
+          "end": 23.377
+        },
+        {
+          "text": "di",
+          "start": 23.416,
+          "end": 23.457
+        },
+        {
+          "text": "una",
+          "start": 23.477,
+          "end": 23.577
+        },
+        {
+          "text": "funzione",
+          "start": 23.597,
+          "end": 24.056
+        },
+        {
+          "text": "verso",
+          "start": 24.356,
+          "end": 24.597
+        },
+        {
+          "text": "codice",
+          "start": 24.636,
+          "end": 24.957
+        },
+        {
+          "text": "dannoso.",
+          "start": 24.996,
+          "end": 25.418
+        }
+      ]
+    },
+    {
+      "start": 26.097,
+      "end": 29.017,
+      "text": "Nelle applicazioni web è frequente invece il SQL poisoning.",
+      "words": [
+        {
+          "text": "Nelle",
+          "start": 26.097,
+          "end": 26.278
+        },
+        {
+          "text": "applicazioni",
+          "start": 26.297,
+          "end": 26.778
+        },
+        {
+          "text": "web",
+          "start": 26.858,
+          "end": 27.058
+        },
+        {
+          "text": "è",
+          "start": 27.297,
+          "end": 27.338
+        },
+        {
+          "text": "frequente",
+          "start": 27.398,
+          "end": 27.758
+        },
+        {
+          "text": "invece",
+          "start": 27.797,
+          "end": 28.058
+        },
+        {
+          "text": "il",
+          "start": 28.097,
+          "end": 28.157
+        },
+        {
+          "text": "SQL",
+          "start": 28.218,
+          "end": 28.498
+        },
+        {
+          "text": "poisoning.",
+          "start": 28.538,
+          "end": 29.017
+        }
+      ]
+    },
+    {
+      "start": 29.818,
+      "end": 32.879,
+      "text": "Se una query viene costruita concatenando l'input utente,",
+      "words": [
+        {
+          "text": "Se",
+          "start": 29.818,
+          "end": 29.877
+        },
+        {
+          "text": "una",
+          "start": 29.957,
+          "end": 30.058
+        },
+        {
+          "text": "query",
+          "start": 30.118,
+          "end": 30.438
+        },
+        {
+          "text": "viene",
+          "start": 30.498,
+          "end": 30.678
+        },
+        {
+          "text": "costruita",
+          "start": 30.718,
+          "end": 31.157
+        },
+        {
+          "text": "concatenando",
+          "start": 31.237,
+          "end": 32.017
+        },
+        {
+          "text": "l'input",
+          "start": 32.058,
+          "end": 32.418
+        },
+        {
+          "text": "utente,",
+          "start": 32.478,
+          "end": 32.879
+        }
+      ]
+    },
+    {
+      "start": 33.439,
+      "end": 38.519,
+      "text": "inserire un apostrofo seguito da OR uno uguale uno rende vera la clausola WHERE per",
+      "words": [
+        {
+          "text": "inserire",
+          "start": 33.439,
+          "end": 33.898
+        },
+        {
+          "text": "un",
+          "start": 33.978,
+          "end": 34.059
+        },
+        {
+          "text": "apostrofo",
+          "start": 34.118,
+          "end": 34.678
+        },
+        {
+          "text": "seguito",
+          "start": 34.779,
+          "end": 35.099
+        },
+        {
+          "text": "da",
+          "start": 35.139,
+          "end": 35.199
+        },
+        {
+          "text": "OR",
+          "start": 35.459,
+          "end": 35.618
+        },
+        {
+          "text": "uno",
+          "start": 35.879,
+          "end": 36.059
+        },
+        {
+          "text": "uguale",
+          "start": 36.118,
+          "end": 36.379
+        },
+        {
+          "text": "uno",
+          "start": 36.499,
+          "end": 36.659
+        },
+        {
+          "text": "rende",
+          "start": 37.099,
+          "end": 37.279
+        },
+        {
+          "text": "vera",
+          "start": 37.319,
+          "end": 37.519
+        },
+        {
+          "text": "la",
+          "start": 37.559,
+          "end": 37.618
+        },
+        {
+          "text": "clausola",
+          "start": 37.659,
+          "end": 37.999
+        },
+        {
+          "text": "WHERE",
+          "start": 38.059,
+          "end": 38.279
+        },
+        {
+          "text": "per",
+          "start": 38.379,
+          "end": 38.519
+        }
+      ]
+    },
+    {
+      "start": 38.559,
+      "end": 41.44,
+      "text": "ogni riga, restituendo i dati di tutti i correntisti.",
+      "words": [
+        {
+          "text": "ogni",
+          "start": 38.559,
+          "end": 38.758
+        },
+        {
+          "text": "riga,",
+          "start": 38.859,
+          "end": 39.099
+        },
+        {
+          "text": "restituendo",
+          "start": 39.478,
+          "end": 39.939
+        },
+        {
+          "text": "i",
+          "start": 39.978,
+          "end": 40.019
+        },
+        {
+          "text": "dati",
+          "start": 40.019,
+          "end": 40.24
+        },
+        {
+          "text": "di",
+          "start": 40.3,
+          "end": 40.359
+        },
+        {
+          "text": "tutti",
+          "start": 40.46,
+          "end": 40.719
+        },
+        {
+          "text": "i",
+          "start": 40.779,
+          "end": 40.82
+        },
+        {
+          "text": "correntisti.",
+          "start": 40.82,
+          "end": 41.44
+        }
+      ]
+    },
+    {
+      "start": 42.2,
+      "end": 44.9,
+      "text": "La difesa principale è validare rigorosamente l'input.",
+      "words": [
+        {
+          "text": "La",
+          "start": 42.2,
+          "end": 42.26
+        },
+        {
+          "text": "difesa",
+          "start": 42.3,
+          "end": 42.54
+        },
+        {
+          "text": "principale",
+          "start": 42.58,
+          "end": 43.139
+        },
+        {
+          "text": "è",
+          "start": 43.279,
+          "end": 43.32
+        },
+        {
+          "text": "validare",
+          "start": 43.359,
+          "end": 43.74
+        },
+        {
+          "text": "rigorosamente",
+          "start": 43.859,
+          "end": 44.48
+        },
+        {
+          "text": "l'input.",
+          "start": 44.52,
+          "end": 44.9
+        }
+      ]
+    },
+    {
+      "start": 45.58,
+      "end": 47.62,
+      "text": "Un altro attacco critico è il session hijacking.",
+      "words": [
+        {
+          "text": "Un",
+          "start": 45.58,
+          "end": 45.639
+        },
+        {
+          "text": "altro",
+          "start": 45.68,
+          "end": 45.859
+        },
+        {
+          "text": "attacco",
+          "start": 45.88,
+          "end": 46.12
+        },
+        {
+          "text": "critico",
+          "start": 46.16,
+          "end": 46.52
+        },
+        {
+          "text": "è",
+          "start": 46.6,
+          "end": 46.64
+        },
+        {
+          "text": "il",
+          "start": 46.68,
+          "end": 46.74
+        },
+        {
+          "text": "session",
+          "start": 46.8,
+          "end": 47.1
+        },
+        {
+          "text": "hijacking.",
+          "start": 47.12,
+          "end": 47.62
+        }
+      ]
+    },
+    {
+      "start": 48.081,
+      "end": 52.401,
+      "text": "Nelle app web il server assegna un session cookie per mantenere valida l'autenticazione tra una",
+      "words": [
+        {
+          "text": "Nelle",
+          "start": 48.081,
+          "end": 48.261
+        },
+        {
+          "text": "app",
+          "start": 48.3,
+          "end": 48.401
+        },
+        {
+          "text": "web",
+          "start": 48.481,
+          "end": 48.701
+        },
+        {
+          "text": "il",
+          "start": 48.8,
+          "end": 48.861
+        },
+        {
+          "text": "server",
+          "start": 48.921,
+          "end": 49.221
+        },
+        {
+          "text": "assegna",
+          "start": 49.24,
+          "end": 49.561
+        },
+        {
+          "text": "un",
+          "start": 49.621,
+          "end": 49.681
+        },
+        {
+          "text": "session",
+          "start": 49.74,
+          "end": 50.061
+        },
+        {
+          "text": "cookie",
+          "start": 50.121,
+          "end": 50.421
+        },
+        {
+          "text": "per",
+          "start": 50.441,
+          "end": 50.541
+        },
+        {
+          "text": "mantenere",
+          "start": 50.581,
+          "end": 50.96
+        },
+        {
+          "text": "valida",
+          "start": 51.02,
+          "end": 51.321
+        },
+        {
+          "text": "l'autenticazione",
+          "start": 51.361,
+          "end": 52.1
+        },
+        {
+          "text": "tra",
+          "start": 52.16,
+          "end": 52.241
+        },
+        {
+          "text": "una",
+          "start": 52.301,
+          "end": 52.401
+        }
+      ]
+    },
+    {
+      "start": 52.441,
+      "end": 54.82,
+      "text": "richiesta e l'altra fino al log out o al timeout.",
+      "words": [
+        {
+          "text": "richiesta",
+          "start": 52.441,
+          "end": 52.721
+        },
+        {
+          "text": "e",
+          "start": 52.781,
+          "end": 52.821
+        },
+        {
+          "text": "l'altra",
+          "start": 52.861,
+          "end": 53.181
+        },
+        {
+          "text": "fino",
+          "start": 53.301,
+          "end": 53.48
+        },
+        {
+          "text": "al",
+          "start": 53.521,
+          "end": 53.6
+        },
+        {
+          "text": "log",
+          "start": 53.621,
+          "end": 53.76
+        },
+        {
+          "text": "out",
+          "start": 53.82,
+          "end": 54.04
+        },
+        {
+          "text": "o",
+          "start": 54.2,
+          "end": 54.24
+        },
+        {
+          "text": "al",
+          "start": 54.281,
+          "end": 54.361
+        },
+        {
+          "text": "timeout.",
+          "start": 54.38,
+          "end": 54.82
+        }
+      ]
+    },
+    {
+      "start": 55.562,
+      "end": 60.222,
+      "text": "Se un attaccante ruba il cookie tramite cross-site scripting o intercettando traffico su Wi-Fi non",
+      "words": [
+        {
+          "text": "Se",
+          "start": 55.562,
+          "end": 55.641
+        },
+        {
+          "text": "un",
+          "start": 55.682,
+          "end": 55.761
+        },
+        {
+          "text": "attaccante",
+          "start": 55.782,
+          "end": 56.222
+        },
+        {
+          "text": "ruba",
+          "start": 56.342,
+          "end": 56.521
+        },
+        {
+          "text": "il",
+          "start": 56.562,
+          "end": 56.622
+        },
+        {
+          "text": "cookie",
+          "start": 56.682,
+          "end": 57.021
+        },
+        {
+          "text": "tramite",
+          "start": 57.041,
+          "end": 57.382
+        },
+        {
+          "text": "cross-site",
+          "start": 57.481,
+          "end": 57.902
+        },
+        {
+          "text": "scripting",
+          "start": 57.921,
+          "end": 58.462
+        },
+        {
+          "text": "o",
+          "start": 58.521,
+          "end": 58.561
+        },
+        {
+          "text": "intercettando",
+          "start": 58.622,
+          "end": 59.162
+        },
+        {
+          "text": "traffico",
+          "start": 59.201,
+          "end": 59.562
+        },
+        {
+          "text": "su",
+          "start": 59.602,
+          "end": 59.662
+        },
+        {
+          "text": "Wi-Fi",
+          "start": 59.722,
+          "end": 60.062
+        },
+        {
+          "text": "non",
+          "start": 60.081,
+          "end": 60.222
+        }
+      ]
+    },
+    {
+      "start": 60.242,
+      "end": 64.623,
+      "text": "cifrato, può agire al posto della vittima in modo attivo oppure spiare i dati in",
+      "words": [
+        {
+          "text": "cifrato,",
+          "start": 60.242,
+          "end": 60.682
+        },
+        {
+          "text": "può",
+          "start": 61.201,
+          "end": 61.282
+        },
+        {
+          "text": "agire",
+          "start": 61.342,
+          "end": 61.581
+        },
+        {
+          "text": "al",
+          "start": 61.602,
+          "end": 61.682
+        },
+        {
+          "text": "posto",
+          "start": 61.722,
+          "end": 61.962
+        },
+        {
+          "text": "della",
+          "start": 61.981,
+          "end": 62.122
+        },
+        {
+          "text": "vittima",
+          "start": 62.162,
+          "end": 62.481
+        },
+        {
+          "text": "in",
+          "start": 62.521,
+          "end": 62.581
+        },
+        {
+          "text": "modo",
+          "start": 62.622,
+          "end": 62.802
+        },
+        {
+          "text": "attivo",
+          "start": 62.843,
+          "end": 63.203
+        },
+        {
+          "text": "oppure",
+          "start": 63.543,
+          "end": 63.823
+        },
+        {
+          "text": "spiare",
+          "start": 63.883,
+          "end": 64.203
+        },
+        {
+          "text": "i",
+          "start": 64.242,
+          "end": 64.28200000000001
+        },
+        {
+          "text": "dati",
+          "start": 64.302,
+          "end": 64.543
+        },
+        {
+          "text": "in",
+          "start": 64.582,
+          "end": 64.623
+        }
+      ]
+    },
+    {
+      "start": 64.663,
+      "end": 65.223,
+      "text": "modo passivo.",
+      "words": [
+        {
+          "text": "modo",
+          "start": 64.663,
+          "end": 64.802
+        },
+        {
+          "text": "passivo.",
+          "start": 64.823,
+          "end": 65.223
+        }
+      ]
+    },
+    {
+      "start": 65.802,
+      "end": 66.543,
+      "text": "Le difese sono tre:",
+      "words": [
+        {
+          "text": "Le",
+          "start": 65.802,
+          "end": 65.862
+        },
+        {
+          "text": "difese",
+          "start": 65.902,
+          "end": 66.182
+        },
+        {
+          "text": "sono",
+          "start": 66.223,
+          "end": 66.383
+        },
+        {
+          "text": "tre:",
+          "start": 66.443,
+          "end": 66.543
+        }
+      ]
+    },
+    {
+      "start": 67.142,
+      "end": 72.884,
+      "text": "cifrare il traffico con HTTPS, richiedere autenticazione a più fattori per operazioni critiche e impostare",
+      "words": [
+        {
+          "text": "cifrare",
+          "start": 67.142,
+          "end": 67.522
+        },
+        {
+          "text": "il",
+          "start": 67.563,
+          "end": 67.623
+        },
+        {
+          "text": "traffico",
+          "start": 67.642,
+          "end": 68.043
+        },
+        {
+          "text": "con",
+          "start": 68.082,
+          "end": 68.203
+        },
+        {
+          "text": "HTTPS,",
+          "start": 68.323,
+          "end": 68.983
+        },
+        {
+          "text": "richiedere",
+          "start": 69.483,
+          "end": 69.862
+        },
+        {
+          "text": "autenticazione",
+          "start": 69.902,
+          "end": 70.504
+        },
+        {
+          "text": "a",
+          "start": 70.544,
+          "end": 70.584
+        },
+        {
+          "text": "più",
+          "start": 70.584,
+          "end": 70.683
+        },
+        {
+          "text": "fattori",
+          "start": 70.724,
+          "end": 71.084
+        },
+        {
+          "text": "per",
+          "start": 71.104,
+          "end": 71.224
+        },
+        {
+          "text": "operazioni",
+          "start": 71.243,
+          "end": 71.683
+        },
+        {
+          "text": "critiche",
+          "start": 71.724,
+          "end": 72.104
+        },
+        {
+          "text": "e",
+          "start": 72.403,
+          "end": 72.44300000000001
+        },
+        {
+          "text": "impostare",
+          "start": 72.463,
+          "end": 72.884
+        }
+      ]
+    },
+    {
+      "start": 72.944,
+      "end": 73.563,
+      "text": "timeout brevi.",
+      "words": [
+        {
+          "text": "timeout",
+          "start": 72.944,
+          "end": 73.264
+        },
+        {
+          "text": "brevi.",
+          "start": 73.343,
+          "end": 73.563
+        }
+      ]
+    }
+  ]
+}

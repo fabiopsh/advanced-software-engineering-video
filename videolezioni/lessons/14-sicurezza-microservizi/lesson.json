@@ -1,0 +1,673 @@
+{
+  "lesson_id": "14-sicurezza-microservizi",
+  "chapter": 14,
+  "part": "Parte IV · Dal monolite alla produzione",
+  "title": "Sicurezza dei microservizi",
+  "voice_config": {
+    "provider": "gemini",
+    "model": "gemini-3.8-flash-tts",
+    "voice_name": "Ludo",
+    "style": "chiaro, didattico, calmo e preciso, stile lezione universitaria di ingegneria del software"
+  },
+  "scenes": [
+    {
+      "id": "scene-01",
+      "section": "14.1 · Superficie d'attacco, Zero Trust e automazione",
+      "title": "Superficie d'attacco, controlli distribuiti e fiducia automatica",
+      "tts_text": "Benvenuti al quattordicesimo capitolo, dedicato alla sicurezza dei microservizi. [pause:0.5] La prima sfida riguarda la superficie d'attacco, cioè l'insieme dei punti da cui un attaccante può entrare nel sistema. Mentre in un monolite i componenti comunicano dentro un unico processo, nei microservizi dialogano tramite chiamate remote con molti punti d'ingresso: la sicurezza dell'applicazione è pari alla robustezza del suo punto più debole. [pause:0.6] Seconda sfida: i controlli distribuiti pesano sulle prestazioni. Nel monolite il security screening avviene una volta sola; nei microservizi ogni servizio esegue un controllo indipendente, contattando spesso un security token service remoto. [pause:0.5] Le strategie possibili sono due: il ripiego trust-the-network, che salta i controlli fidandosi della rete interna, oppure i principi dello zero-trust networking, dove nessuna richiesta è fidata solo perché arriva dalla rete interna, attuando una difesa in profondità attenta alle prestazioni complessive. [pause:0.6] Terza sfida: stabilire la fiducia tra servizi su canali protetti con certificati e chiave privata. Ogni servizio autentica sé stesso e valida il chiamante, gestendo bootstrap iniziale, revoca e rotazione periodica. Su larga scala servono strumenti di automazione come Docker e Kubernetes.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">14.1 · Le prime tre sfide</div>\n  <h2 class=\"slide-title\">Superficie d'attacco, Zero Trust e automazione della fiducia</h2>\n  <div id=\"s1\" class=\"split-visual cue-hidden\">\n    <div id=\"svg-surface\" class=\"svg-panel\">\n      <svg viewBox=\"0 0 360 195\" class=\"diagram-svg\" aria-label=\"Confronto superficie d'attacco monolite e microservizi\">\n        <defs>\n          <marker id=\"arr-sec1\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\">\n            <path d=\"M0 1 L9 5 L0 9 z\" fill=\"var(--ink-soft)\"/>\n          </marker>\n        </defs>\n        <g id=\"svg-mono\">\n          <text x=\"75\" y=\"18\" text-anchor=\"middle\" class=\"svg-math-sm\">Monolite</text>\n          <rect x=\"18\" y=\"28\" width=\"114\" height=\"150\" rx=\"8\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.6\"/>\n          <rect x=\"34\" y=\"42\" width=\"82\" height=\"26\" rx=\"5\" fill=\"var(--bg-surface, #fff)\" stroke=\"var(--blue)\" stroke-width=\"1.2\"/>\n          <text x=\"75\" y=\"59\" text-anchor=\"middle\" class=\"svg-tick\">1 Security screening</text>\n          <rect x=\"34\" y=\"84\" width=\"82\" height=\"80\" rx=\"5\" fill=\"none\" stroke=\"var(--muted)\" stroke-dasharray=\"4 3\"/>\n          <text x=\"75\" y=\"118\" text-anchor=\"middle\" class=\"svg-tick\">Chiamate</text>\n          <text x=\"75\" y=\"134\" text-anchor=\"middle\" class=\"svg-tick\">in-process</text>\n        </g>\n        <g id=\"svg-micro\">\n          <text x=\"256\" y=\"18\" text-anchor=\"middle\" class=\"svg-math-sm\">Microservizi (Zero Trust)</text>\n          <line x1=\"156\" y1=\"56\" x2=\"186\" y2=\"56\" stroke=\"var(--red)\" stroke-width=\"1.6\" marker-end=\"url(#arr-sec1)\"/>\n          <line x1=\"156\" y1=\"106\" x2=\"186\" y2=\"106\" stroke=\"var(--red)\" stroke-width=\"1.6\" marker-end=\"url(#arr-sec1)\"/>\n          <line x1=\"156\" y1=\"156\" x2=\"186\" y2=\"156\" stroke=\"var(--red)\" stroke-width=\"1.6\" marker-end=\"url(#arr-sec1)\"/>\n          <rect x=\"190\" y=\"34\" width=\"72\" height=\"42\" rx=\"6\" fill=\"var(--orange-soft, rgba(217,119,6,0.12))\" stroke=\"var(--orange)\" stroke-width=\"1.5\" stroke-dasharray=\"4 2\"/>\n          <text x=\"226\" y=\"53\" text-anchor=\"middle\" class=\"svg-tick\">MS A</text>\n          <text x=\"226\" y=\"67\" text-anchor=\"middle\" class=\"svg-caption\">check + STS</text>\n          <rect x=\"190\" y=\"85\" width=\"72\" height=\"42\" rx=\"6\" fill=\"var(--orange-soft, rgba(217,119,6,0.12))\" stroke=\"var(--orange)\" stroke-width=\"1.5\" stroke-dasharray=\"4 2\"/>\n          <text x=\"226\" y=\"104\" text-anchor=\"middle\" class=\"svg-tick\">MS B</text>\n          <text x=\"226\" y=\"118\" text-anchor=\"middle\" class=\"svg-caption\">check + STS</text>\n          <rect x=\"190\" y=\"136\" width=\"72\" height=\"42\" rx=\"6\" fill=\"var(--orange-soft, rgba(217,119,6,0.12))\" stroke=\"var(--orange)\" stroke-width=\"1.5\" stroke-dasharray=\"4 2\"/>\n          <text x=\"226\" y=\"155\" text-anchor=\"middle\" class=\"svg-tick\">MS C</text>\n          <text x=\"226\" y=\"169\" text-anchor=\"middle\" class=\"svg-caption\">check + STS</text>\n          <rect x=\"282\" y=\"66\" width=\"64\" height=\"80\" rx=\"6\" fill=\"var(--green-soft, rgba(21,128,61,0.12))\" stroke=\"var(--green)\" stroke-width=\"1.5\"/>\n          <text x=\"314\" y=\"102\" text-anchor=\"middle\" class=\"svg-tick\">STS /</text>\n          <text x=\"314\" y=\"117\" text-anchor=\"middle\" class=\"svg-tick\">Cert CA</text>\n          <line x1=\"262\" y1=\"56\" x2=\"280\" y2=\"90\" stroke=\"var(--muted)\" stroke-width=\"1.2\"/>\n          <line x1=\"262\" y1=\"106\" x2=\"280\" y2=\"106\" stroke=\"var(--muted)\" stroke-width=\"1.2\"/>\n          <line x1=\"262\" y1=\"156\" x2=\"280\" y2=\"122\" stroke=\"var(--muted)\" stroke-width=\"1.2\"/>\n        </g>\n      </svg>\n    </div>\n    <div class=\"formula-col\">\n      <div id=\"b-surf\" class=\"box box-warn\">\n        <div class=\"box-label\">1 · Superficie d'attacco più ampia</div>\n        <p>Chiamate remote e molti ingressi: la sicurezza dell'app vale quanto il suo <strong>punto più debole</strong>.</p>\n      </div>\n      <div id=\"b-trust\" class=\"box box-def\">\n        <div class=\"box-label\">2 · Controlli distribuiti &amp; Zero Trust</div>\n        <p>No al ripiego <em>trust-the-network</em>: in <strong>Zero Trust</strong> nessuna chiamata interna è fidata (controlli indipendenti + <em>STS</em>, curando le prestazioni).</p>\n      </div>\n    </div>\n  </div>\n  <div id=\"s2\" class=\"box box-primary cue-hidden\">\n    <div class=\"box-label\">3 · Fiducia tra microservizi tramite automazione (Docker &amp; Kubernetes)</div>\n    <div class=\"pill-strip\">\n      <span id=\"p-cert\" class=\"pill\">Certificato &amp; chiave privata per servizio</span>\n      <span id=\"p-boot\" class=\"pill\">Validazione chiamante &amp; bootstrap iniziale</span>\n      <span id=\"p-rot\" class=\"pill pill-accent\">Revoca &amp; rotazione periodica automatizzata</span>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 4.1,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "La prima sfida riguarda"
+        },
+        {
+          "at": 6.06,
+          "action": "highlight",
+          "target": "#b-surf",
+          "duration": 6.5,
+          "anchor": "La prima sfida riguarda"
+        },
+        {
+          "at": 13.02,
+          "action": "highlight",
+          "target": "#svg-mono",
+          "duration": 4.2,
+          "anchor": "Mentre in un monolite"
+        },
+        {
+          "at": 17.42,
+          "action": "highlight",
+          "target": "#svg-micro",
+          "duration": 9.4,
+          "anchor": "nei microservizi dialogano tramite"
+        },
+        {
+          "at": 26.94,
+          "action": "highlight",
+          "target": "#b-trust",
+          "duration": 11.8,
+          "anchor": "Seconda sfida: i controlli distribuiti"
+        },
+        {
+          "at": 43.25,
+          "action": "highlight",
+          "target": "#svg-micro",
+          "duration": 18.2,
+          "anchor": "Le strategie possibili sono due"
+        },
+        {
+          "at": 62.65,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Terza sfida: stabilire la fiducia"
+        },
+        {
+          "at": 62.65,
+          "action": "highlight",
+          "target": "#p-cert",
+          "duration": 6.2,
+          "anchor": "Terza sfida: stabilire la fiducia"
+        },
+        {
+          "at": 69.09,
+          "action": "highlight",
+          "target": "#p-boot",
+          "duration": 5.5,
+          "anchor": "Ogni servizio autentica sé stesso"
+        },
+        {
+          "at": 76.69,
+          "action": "highlight",
+          "target": "#p-rot",
+          "duration": 9.5,
+          "anchor": "Su larga scala servono strumenti"
+        }
+      ],
+      "audio_file": "audio/scene-01.wav",
+      "subtitle_file": "subtitles/scene-01.json",
+      "duration_sec": 80.84
+    },
+    {
+      "id": "scene-02",
+      "section": "14.2 · Tracing, container, contesto utente e team",
+      "title": "Observability, container immutabili, JWT e responsabilità dei team",
+      "tts_text": "Vediamo le altre quattro sfide della sicurezza nei microservizi. [pause:0.5] Quarta sfida: tracciare richieste che attraversano più servizi. Distinguiamo tre elementi: un log registra un singolo evento; le metriche aggregano i log per mostrare lo stato del sistema, per esempio gli accessi non validi all'ora, facendo scattare allarmi; le trace seguono una richiesta dall'ingresso all'uscita. Strumenti chiave sono Prometheus e Grafana per il monitoraggio, Jaeger e Zipkin per il distributed tracing. [pause:0.6] Quinta sfida: i container sono server immutabili che non cambiano stato dopo l'avvio. Occorre mantenere liste dinamiche di client ammessi e politiche d'accesso scaricate in push o pull da un endpoint amministrativo, oltre a iniettare e ruotare le credenziali nel filesystem del container all'avvio. [pause:0.6] Sesta sfida: condividere esplicitamente il contesto utente, cioè chi è l'utente e quali attributi possiede, costruendo fiducia tra chiamante e ricevente tramite JSON Web Token firmati crittograficamente contro ogni alterazione. [pause:0.5] Settima sfida: in architetture poliglotte le responsabilità sono divise tra squad con pratiche e strumenti di security testing statico e dinamico diversi; molte organizzazioni adottano un approccio ibrido con un team centrale ed esperti nelle singole squad, come sintetizzato da Siriwardena e Dias.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">14.2 · Le sfide da 4 a 7</div>\n  <h2 class=\"slide-title\">Tracing, container immutabili, contesto utente e team</h2>\n  <div id=\"s1\" class=\"grid-2 cue-hidden\">\n    <div id=\"c4-trace\" class=\"box box-def\">\n      <div class=\"box-label\">4 · Tracing distribuito</div>\n      <p><strong>Log</strong> (singolo evento) → <strong>Metriche</strong> (allarmi) → <strong>Trace</strong> (percorso end-to-end). Tool: <em>Prometheus/Grafana</em> e <em>Jaeger/Zipkin</em>.</p>\n    </div>\n    <div id=\"c5-cont\" class=\"box box-primary\">\n      <div class=\"box-label\">5 · Container immutabili</div>\n      <p>Liste client e politiche <em>dinamiche</em> (push/pull da policy endpoint); credenziali nel filesystem iniettate all'avvio e ruotate.</p>\n    </div>\n    <div id=\"c6-jwt\" class=\"box box-primary\">\n      <div class=\"box-label\">6 · Contesto utente condiviso</div>\n      <p>Identità e attributi passati esplicitamente via <strong>JSON Web Token (JWT)</strong> firmati per verificarne l'integrità.</p>\n    </div>\n    <div id=\"c7-team\" class=\"box box-def\">\n      <div class=\"box-label\">7 · Responsabilità tra team</div>\n      <p>Stack poliglotti e tool SAST/DAST diversi: approccio <strong>ibrido</strong> (team centrale + esperti di sicurezza nelle squad).</p>\n    </div>\n  </div>\n  <div id=\"s2\" class=\"box box-idea cue-hidden\">\n    <div class=\"box-label\">Le 7 sfide — Microservices Security in Action (Siriwardena &amp; Dias, 2020)</div>\n    <div class=\"pill-strip\">\n      <span class=\"pill\">1. Superficie d'attacco</span>\n      <span class=\"pill\">2. Controlli &amp; Zero Trust</span>\n      <span class=\"pill\">3. Fiducia automatizzata</span>\n      <span class=\"pill\">4. Tracing</span>\n      <span class=\"pill\">5. Container</span>\n      <span class=\"pill\">6. Contesto JWT</span>\n      <span class=\"pill\">7. Team ibrido</span>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 3.88,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "Quarta sfida: tracciare richieste"
+        },
+        {
+          "at": 3.88,
+          "action": "highlight",
+          "target": "#c4-trace",
+          "duration": 22.8,
+          "anchor": "Quarta sfida: tracciare richieste"
+        },
+        {
+          "at": 30,
+          "action": "highlight",
+          "target": "#c5-cont",
+          "duration": 17.27,
+          "anchor": "Quinta sfida: i container"
+        },
+        {
+          "at": 47.39,
+          "action": "highlight",
+          "target": "#c6-jwt",
+          "duration": 13.2,
+          "anchor": "Sesta sfida: condividere esplicitamente"
+        },
+        {
+          "at": 61.19,
+          "action": "highlight",
+          "target": "#c7-team",
+          "duration": 13.84,
+          "anchor": "Settima sfida: in architetture poliglotte"
+        },
+        {
+          "at": 75.15,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "come sintetizzato da Siriwardena"
+        },
+        {
+          "at": 75.15,
+          "action": "highlight",
+          "target": "#s2",
+          "duration": 5.5,
+          "anchor": "come sintetizzato da Siriwardena"
+        }
+      ],
+      "audio_file": "audio/scene-02.wav",
+      "subtitle_file": "subtitles/scene-02.json",
+      "duration_sec": 77.82
+    },
+    {
+      "id": "scene-03",
+      "section": "14.3 · Proprietà ISO/IEC 25010 e tassonomia degli smell",
+      "title": "Multivocal review: 3 proprietà, 10 smell e 10 refactoring",
+      "tts_text": "Passiamo dalla diagnosi alle soluzioni concrete. Una multivocal review su cinquantotto riferimenti di letteratura bianca e grigia, pubblicata da Ponce, Soldani, Astudillo e Brogi nel duemilaventidue, definisce una tassonomia con dieci smell di sicurezza e dieci refactoring che proteggono tre proprietà dello standard ISO IEC venticinquemiladieci. [pause:0.6] Prima proprietà, Confidentiality: garantire che i dati siano accessibili solo a chi è autorizzato ad accedervi, colpita dai primi sette smell. [pause:0.5] Seconda, Integrity: impedire modifiche non autorizzate di programmi o dati, colpita dagli smell dal terzo al settimo. [pause:0.5] Terza, Authenticity: dimostrare che l'identità di un soggetto o di una risorsa è quella dichiarata, minacciata dagli smell dal quarto al decimo. [pause:0.6] Osserviamo la mappa completa e le percentuali di citazione nella rassegna: al vertice ci sono le comunicazioni tra servizi non protette al cinquantacinque percento, poi controllo accessi insufficiente e microservizi pubblici entrambi al quarantatré percento, autenticazione multipla al trentaquattro percento e autorizzazione centralizzata al trentatré percento.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">14.3 · Tassonomia della sicurezza (58 riferimenti)</div>\n  <h2 class=\"slide-title\">Standard ISO/IEC 25010, 10 smell e 10 refactoring</h2>\n  <div id=\"s1\" class=\"grid-3 cue-hidden\">\n    <div id=\"p-conf\" class=\"box box-primary\">\n      <div class=\"box-label\">Confidentiality (Smell 1–7)</div>\n      <p>Dati accessibili <strong>solo</strong> a soggetti autorizzati ad accedervi.</p>\n    </div>\n    <div id=\"p-int\" class=\"box box-def\">\n      <div class=\"box-label\">Integrity (Smell 3–7)</div>\n      <p>Impedire <strong>modifiche non autorizzate</strong> di programmi o dati.</p>\n    </div>\n    <div id=\"p-auth\" class=\"box box-primary\">\n      <div class=\"box-label\">Authenticity (Smell 4–10)</div>\n      <p>Dimostrare che l'<strong>identità dichiarata</strong> di soggetto o risorsa è vera.</p>\n    </div>\n  </div>\n  <div id=\"s2\" class=\"svg-panel svg-panel-wide cue-hidden\">\n    <svg viewBox=\"0 0 680 218\" class=\"diagram-svg\" aria-label=\"Tassonomia dei 10 smell di sicurezza e 10 refactoring\">\n      <defs>\n        <marker id=\"arr-tax\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"5\" markerHeight=\"5\" orient=\"auto\">\n          <path d=\"M0 1 L9 5 L0 9 z\" fill=\"var(--muted)\"/>\n        </marker>\n      </defs>\n      <g id=\"tax-headers\">\n        <text x=\"68\" y=\"14\" text-anchor=\"middle\" class=\"svg-caption\">PROPRIETÀ ISO</text>\n        <text x=\"315\" y=\"14\" text-anchor=\"middle\" class=\"svg-caption\">10 SECURITY SMELL</text>\n        <text x=\"570\" y=\"14\" text-anchor=\"middle\" class=\"svg-caption\">10 REFACTORING</text>\n      </g>\n      <g id=\"tax-bars\">\n        <rect x=\"12\" y=\"22\" width=\"30\" height=\"132\" rx=\"4\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.2\"/>\n        <text x=\"27\" y=\"88\" text-anchor=\"middle\" transform=\"rotate(-90 27 88)\" class=\"svg-tick\">Confidentiality (1–7)</text>\n        <rect x=\"48\" y=\"60\" width=\"30\" height=\"94\" rx=\"4\" fill=\"var(--orange-soft, rgba(217,119,6,0.12))\" stroke=\"var(--orange)\" stroke-width=\"1.2\"/>\n        <text x=\"63\" y=\"107\" text-anchor=\"middle\" transform=\"rotate(-90 63 107)\" class=\"svg-tick\">Integrity (3–7)</text>\n        <rect x=\"84\" y=\"80\" width=\"30\" height=\"132\" rx=\"4\" fill=\"var(--green-soft, rgba(21,128,61,0.12))\" stroke=\"var(--green)\" stroke-width=\"1.2\"/>\n        <text x=\"99\" y=\"146\" text-anchor=\"middle\" transform=\"rotate(-90 99 146)\" class=\"svg-tick\">Authenticity (4–10)</text>\n      </g>\n      <g id=\"tax-top\">\n        <text x=\"162\" y=\"33\" text-anchor=\"end\" class=\"svg-tick\" font-weight=\"700\">43%</text>\n        <rect x=\"168\" y=\"22\" width=\"250\" height=\"16\" rx=\"3\" fill=\"none\" stroke=\"var(--red)\"/><text x=\"293\" y=\"33\" text-anchor=\"middle\" class=\"svg-tick\">1. Insufficient access control</text>\n        <text x=\"162\" y=\"52\" text-anchor=\"end\" class=\"svg-tick\" font-weight=\"700\">43%</text>\n        <rect x=\"168\" y=\"41\" width=\"250\" height=\"16\" rx=\"3\" fill=\"none\" stroke=\"var(--red)\"/><text x=\"293\" y=\"52\" text-anchor=\"middle\" class=\"svg-tick\">2. Publicly accessible microservices</text>\n        <rect x=\"168\" y=\"60\" width=\"250\" height=\"16\" rx=\"3\" fill=\"none\" stroke=\"var(--red)\"/><text x=\"293\" y=\"71\" text-anchor=\"middle\" class=\"svg-tick\">3. Unnecessary privileges</text>\n        <rect x=\"460\" y=\"22\" width=\"208\" height=\"16\" rx=\"3\" fill=\"none\" stroke=\"var(--green)\"/><text x=\"564\" y=\"33\" text-anchor=\"middle\" class=\"svg-tick\">Use OAuth 2.0</text>\n        <rect x=\"460\" y=\"41\" width=\"208\" height=\"16\" rx=\"3\" fill=\"none\" stroke=\"var(--green)\"/><text x=\"564\" y=\"52\" text-anchor=\"middle\" class=\"svg-tick\">Add an API gateway</text>\n        <rect x=\"460\" y=\"60\" width=\"208\" height=\"16\" rx=\"3\" fill=\"none\" stroke=\"var(--green)\"/><text x=\"564\" y=\"71\" text-anchor=\"middle\" class=\"svg-tick\">Least privilege principle</text>\n        <line x1=\"418\" y1=\"30\" x2=\"457\" y2=\"30\" stroke=\"var(--muted)\" marker-end=\"url(#arr-tax)\"/>\n        <line x1=\"418\" y1=\"49\" x2=\"457\" y2=\"49\" stroke=\"var(--muted)\" marker-end=\"url(#arr-tax)\"/>\n        <line x1=\"418\" y1=\"68\" x2=\"457\" y2=\"68\" stroke=\"var(--muted)\" marker-end=\"url(#arr-tax)\"/>\n      </g>\n      <g id=\"tax-mid\">\n        <rect x=\"168\" y=\"79\" width=\"250\" height=\"16\" rx=\"3\" fill=\"none\" stroke=\"var(--red)\"/><text x=\"293\" y=\"90\" text-anchor=\"middle\" class=\"svg-tick\">4. Own crypto code</text>\n        <rect x=\"168\" y=\"98\" width=\"250\" height=\"16\" rx=\"3\" fill=\"none\" stroke=\"var(--red)\"/><text x=\"293\" y=\"109\" text-anchor=\"middle\" class=\"svg-tick\">5. Non-encrypted data exposure</text>\n        <rect x=\"168\" y=\"117\" width=\"250\" height=\"16\" rx=\"3\" fill=\"none\" stroke=\"var(--red)\"/><text x=\"293\" y=\"128\" text-anchor=\"middle\" class=\"svg-tick\">6. Hardcoded secrets</text>\n        <rect x=\"460\" y=\"79\" width=\"208\" height=\"16\" rx=\"3\" fill=\"none\" stroke=\"var(--green)\"/><text x=\"564\" y=\"90\" text-anchor=\"middle\" class=\"svg-tick\">Established encryption tech</text>\n        <rect x=\"460\" y=\"98\" width=\"208\" height=\"16\" rx=\"3\" fill=\"none\" stroke=\"var(--green)\"/><text x=\"564\" y=\"109\" text-anchor=\"middle\" class=\"svg-tick\">Encrypt sensitive data at rest</text>\n        <rect x=\"460\" y=\"117\" width=\"208\" height=\"16\" rx=\"3\" fill=\"none\" stroke=\"var(--green)\"/><text x=\"564\" y=\"128\" text-anchor=\"middle\" class=\"svg-tick\">Encrypt secrets at rest</text>\n        <line x1=\"418\" y1=\"87\" x2=\"457\" y2=\"87\" stroke=\"var(--muted)\" marker-end=\"url(#arr-tax)\"/>\n        <line x1=\"418\" y1=\"106\" x2=\"457\" y2=\"106\" stroke=\"var(--muted)\" marker-end=\"url(#arr-tax)\"/>\n        <line x1=\"418\" y1=\"125\" x2=\"457\" y2=\"125\" stroke=\"var(--muted)\" marker-end=\"url(#arr-tax)\"/>\n      </g>\n      <g id=\"tax-bot\">\n        <text x=\"162\" y=\"147\" text-anchor=\"end\" class=\"svg-tick\" font-weight=\"700\">55%</text>\n        <rect x=\"168\" y=\"136\" width=\"250\" height=\"16\" rx=\"3\" fill=\"none\" stroke=\"var(--red)\"/><text x=\"293\" y=\"147\" text-anchor=\"middle\" class=\"svg-tick\">7. Non-secured S2S comm.</text>\n        <rect x=\"168\" y=\"155\" width=\"250\" height=\"16\" rx=\"3\" fill=\"none\" stroke=\"var(--red)\"/><text x=\"293\" y=\"166\" text-anchor=\"middle\" class=\"svg-tick\">8. Unauthenticated traffic</text>\n        <text x=\"162\" y=\"185\" text-anchor=\"end\" class=\"svg-tick\" font-weight=\"700\">34%</text>\n        <rect x=\"168\" y=\"174\" width=\"250\" height=\"16\" rx=\"3\" fill=\"none\" stroke=\"var(--red)\"/><text x=\"293\" y=\"185\" text-anchor=\"middle\" class=\"svg-tick\">9. Multiple user authentication</text>\n        <text x=\"162\" y=\"204\" text-anchor=\"end\" class=\"svg-tick\" font-weight=\"700\">33%</text>\n        <rect x=\"168\" y=\"193\" width=\"250\" height=\"16\" rx=\"3\" fill=\"none\" stroke=\"var(--red)\"/><text x=\"293\" y=\"204\" text-anchor=\"middle\" class=\"svg-tick\">10. Centralized authorization</text>\n        <rect x=\"460\" y=\"136\" width=\"208\" height=\"16\" rx=\"3\" fill=\"none\" stroke=\"var(--green)\"/><text x=\"564\" y=\"147\" text-anchor=\"middle\" class=\"svg-tick\">Use mutual TLS (7, 8)</text>\n        <rect x=\"460\" y=\"155\" width=\"208\" height=\"16\" rx=\"3\" fill=\"none\" stroke=\"var(--green)\"/><text x=\"564\" y=\"166\" text-anchor=\"middle\" class=\"svg-tick\">Use OpenID Connect (8, 9)</text>\n        <rect x=\"460\" y=\"174\" width=\"208\" height=\"16\" rx=\"3\" fill=\"none\" stroke=\"var(--green)\"/><text x=\"564\" y=\"185\" text-anchor=\"middle\" class=\"svg-tick\">Use single sign-on (+ GW)</text>\n        <rect x=\"460\" y=\"193\" width=\"208\" height=\"16\" rx=\"3\" fill=\"none\" stroke=\"var(--green)\"/><text x=\"564\" y=\"204\" text-anchor=\"middle\" class=\"svg-tick\">Decentralized authorization</text>\n        <line x1=\"418\" y1=\"144\" x2=\"457\" y2=\"144\" stroke=\"var(--muted)\" marker-end=\"url(#arr-tax)\"/>\n        <line x1=\"418\" y1=\"163\" x2=\"457\" y2=\"163\" stroke=\"var(--muted)\" marker-end=\"url(#arr-tax)\"/>\n        <line x1=\"418\" y1=\"182\" x2=\"457\" y2=\"182\" stroke=\"var(--muted)\" marker-end=\"url(#arr-tax)\"/>\n        <line x1=\"418\" y1=\"201\" x2=\"457\" y2=\"201\" stroke=\"var(--muted)\" marker-end=\"url(#arr-tax)\"/>\n      </g>\n    </svg>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 3.56,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "Una multivocal review su"
+        },
+        {
+          "at": 3.56,
+          "action": "highlight",
+          "target": "#s1",
+          "duration": 14,
+          "anchor": "Una multivocal review su"
+        },
+        {
+          "at": 22.04,
+          "action": "highlight",
+          "target": "#p-conf",
+          "duration": 8,
+          "anchor": "Prima proprietà, Confidentiality"
+        },
+        {
+          "at": 31.02,
+          "action": "highlight",
+          "target": "#p-int",
+          "duration": 8,
+          "anchor": "Seconda, Integrity: impedire modifiche"
+        },
+        {
+          "at": 39.14,
+          "action": "highlight",
+          "target": "#p-auth",
+          "duration": 9.2,
+          "anchor": "Terza, Authenticity: dimostrare che"
+        },
+        {
+          "at": 48.46,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Osserviamo la mappa completa"
+        },
+        {
+          "at": 48.46,
+          "action": "highlight",
+          "target": "#tax-bars",
+          "duration": 4.2,
+          "anchor": "Osserviamo la mappa completa"
+        },
+        {
+          "at": 52.78,
+          "action": "highlight",
+          "target": "#tax-bot",
+          "duration": 4.88,
+          "anchor": "al vertice ci sono le comunicazioni"
+        },
+        {
+          "at": 57.78,
+          "action": "highlight",
+          "target": "#tax-top",
+          "duration": 5.12,
+          "anchor": "poi controllo accessi insufficiente"
+        },
+        {
+          "at": 63.02,
+          "action": "highlight",
+          "target": "#tax-bot",
+          "duration": 8.2,
+          "anchor": "autenticazione multipla al trentaquattro"
+        }
+      ],
+      "audio_file": "audio/scene-03.wav",
+      "subtitle_file": "subtitles/scene-03.json",
+      "duration_sec": 68.48
+    },
+    {
+      "id": "scene-04",
+      "section": "14.4 · Controllo degli accessi ed esposizione edge",
+      "title": "OAuth 2.0, API Gateway Security e Least Privilege",
+      "tts_text": "Analizziamo il primo gruppo di smell, dedicato al controllo degli accessi e alla sicurezza ai margini, ovvero l'edge security. [pause:0.5] Primo smell: insufficient access control, citato al quarantatré percento e critico per la confidentiality. Senza verifica dei permessi al momento della richiesta emerge il confused deputy problem: un componente con privilegi legittimi viene indotto a usarli per conto di chi non ne ha diritto. Il refactoring è usare OAuth due punto zero, un framework basato su token per l'accesso delegato con durata e scope limitati, evitando latenza verso un servizio centrale. [pause:0.6] Secondo smell: publicly accessible microservices, anch'esso al quarantatré percento. Esporre direttamente i servizi ai client espone le credenziali e costa caro in manutenzione. La soluzione è aggiungere un API gateway per tenere i microservizi dietro un firewall, imponendo al margine autenticazione, autorizzazione, throttling e validazione dei messaggi, risolvendo anche lo smell no API gateway. [pause:0.5] Terzo smell: unnecessary privileges to microservices, che mina confidentiality e integrity dando accessi superflui a database o code. Si applica il least privilege principle: concedere al codice in esecuzione solo i permessi necessari per completare i suoi compiti.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">14.4 · Controllo degli accessi &amp; Edge Security (Smell 1–3)</div>\n  <h2 class=\"slide-title\">Confused Deputy, OAuth 2.0, API Gateway e Least Privilege</h2>\n  <div id=\"s1\" class=\"split-visual cue-hidden\">\n    <div id=\"svg-edge\" class=\"svg-panel\">\n      <svg viewBox=\"0 0 360 195\" class=\"diagram-svg\" aria-label=\"Sicurezza ai margini con API Gateway e controllo accessi\">\n        <defs>\n          <marker id=\"arr-ed\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\">\n            <path d=\"M0 1 L9 5 L0 9 z\" fill=\"var(--ink-soft)\"/>\n          </marker>\n        </defs>\n        <g id=\"svg-cli\">\n          <rect x=\"10\" y=\"68\" width=\"64\" height=\"56\" rx=\"7\" fill=\"none\" stroke=\"var(--red)\" stroke-width=\"1.6\"/>\n          <text x=\"42\" y=\"93\" text-anchor=\"middle\" class=\"svg-tick\">Client</text>\n          <text x=\"42\" y=\"109\" text-anchor=\"middle\" class=\"svg-caption\">esterno</text>\n        </g>\n        <line x1=\"74\" y1=\"96\" x2=\"98\" y2=\"96\" stroke=\"var(--ink-soft)\" stroke-width=\"1.6\" marker-end=\"url(#arr-ed)\"/>\n        <g id=\"svg-gw\">\n          <rect x=\"102\" y=\"32\" width=\"96\" height=\"130\" rx=\"8\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.8\"/>\n          <text x=\"150\" y=\"52\" text-anchor=\"middle\" class=\"svg-math-sm\">API Gateway</text>\n          <text x=\"150\" y=\"76\" text-anchor=\"middle\" class=\"svg-tick\">Auth &amp; Authz</text>\n          <text x=\"150\" y=\"96\" text-anchor=\"middle\" class=\"svg-tick\">Throttling</text>\n          <text x=\"150\" y=\"116\" text-anchor=\"middle\" class=\"svg-tick\">Validazione</text>\n          <text x=\"150\" y=\"142\" text-anchor=\"middle\" class=\"svg-caption\">+ Firewall</text>\n        </g>\n        <line x1=\"198\" y1=\"66\" x2=\"226\" y2=\"66\" stroke=\"var(--ink-soft)\" stroke-width=\"1.5\" marker-end=\"url(#arr-ed)\"/>\n        <line x1=\"198\" y1=\"130\" x2=\"226\" y2=\"130\" stroke=\"var(--ink-soft)\" stroke-width=\"1.5\" marker-end=\"url(#arr-ed)\"/>\n        <g id=\"svg-ms-lp\">\n          <rect x=\"230\" y=\"40\" width=\"118\" height=\"50\" rx=\"6\" fill=\"var(--green-soft, rgba(21,128,61,0.12))\" stroke=\"var(--green)\" stroke-width=\"1.5\"/>\n          <text x=\"289\" y=\"61\" text-anchor=\"middle\" class=\"svg-tick\">Microservizio A</text>\n          <text x=\"289\" y=\"76\" text-anchor=\"middle\" class=\"svg-caption\">OAuth 2.0 (scope)</text>\n          <rect x=\"230\" y=\"104\" width=\"118\" height=\"52\" rx=\"6\" fill=\"var(--bg-surface, #fff)\" stroke=\"var(--ink-soft)\" stroke-width=\"1.4\"/>\n          <text x=\"289\" y=\"126\" text-anchor=\"middle\" class=\"svg-tick\">Microservizio B</text>\n          <text x=\"289\" y=\"142\" text-anchor=\"middle\" class=\"svg-caption\">Least privilege (DB/Code)</text>\n        </g>\n      </svg>\n    </div>\n    <div class=\"formula-col\">\n      <div id=\"b-sm1\" class=\"box box-warn\">\n        <div class=\"box-label\">1 · Insufficient access control (43% · C)</div>\n        <p>Rischio <strong>confused deputy problem</strong>: un componente privilegiato agisce per conto di chi non ha diritti. Refactoring: <strong>OAuth 2.0</strong> (token delegato con tempo e <em>scope</em> limitati).</p>\n      </div>\n      <div id=\"b-sm2\" class=\"box box-primary\">\n        <div class=\"box-label\">2 · Publicly accessible microservices (43% · C)</div>\n        <p>Esporre i servizi aumenta costi e rischio credenziali. Refactoring: <strong>API Gateway</strong> dietro firewall (auth, <em>throttling</em>, validazione; risolve anche <em>no API gateway</em>).</p>\n      </div>\n    </div>\n  </div>\n  <div id=\"s2\" class=\"box box-def cue-hidden\">\n    <div class=\"box-label\">3 · Unnecessary privileges (C, I) → Least Privilege Principle</div>\n    <p>Accessi non necessari a DB o code allargano la superficie d'attacco. Il <strong>principio del privilegio minimo</strong> concede al codice in esecuzione <em>solo</em> i permessi strettamente necessari per completare i compiti richiesti.</p>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 2.86,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "dedicato al controllo degli"
+        },
+        {
+          "at": 2.86,
+          "action": "highlight",
+          "target": "#b-sm1",
+          "duration": 17.5,
+          "anchor": "dedicato al controllo degli"
+        },
+        {
+          "at": 25.2,
+          "action": "highlight",
+          "target": "#svg-ms-lp",
+          "duration": 10.44,
+          "anchor": "Il refactoring è usare OAuth"
+        },
+        {
+          "at": 35.76,
+          "action": "highlight",
+          "target": "#b-sm2",
+          "duration": 11.02,
+          "anchor": "Secondo smell: publicly accessible"
+        },
+        {
+          "at": 46.9,
+          "action": "highlight",
+          "target": "#svg-gw",
+          "duration": 14.75,
+          "anchor": "La soluzione è aggiungere un API"
+        },
+        {
+          "at": 61.77,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Terzo smell: unnecessary privileges"
+        },
+        {
+          "at": 61.77,
+          "action": "highlight",
+          "target": "#s2",
+          "duration": 17.5,
+          "anchor": "Terzo smell: unnecessary privileges"
+        }
+      ],
+      "audio_file": "audio/scene-04.wav",
+      "subtitle_file": "subtitles/scene-04.json",
+      "duration_sec": 77.96
+    },
+    {
+      "id": "scene-05",
+      "section": "14.5 · Cifratura, dati a riposo e gestione dei segreti",
+      "title": "Crittografia consolidata, cifratura a riposo e secrets management",
+      "tts_text": "Il secondo gruppo riguarda cifratura e gestione dei segreti, e mette a rischio tutte e tre le proprietà: confidentiality, integrity e authenticity. [pause:0.5] Quarto smell: own crypto code, cioè scrivere codice crittografico fatto in casa. È perfino peggio di nessuna cifratura perché induce un falso senso di sicurezza. Il refactoring è adottare tecnologie di cifratura consolidate, scegliendo librerie collaudate e riviste regolarmente dalla comunità ed evitando algoritmi sperimentali. [pause:0.6] Quinto smell: non-encrypted data exposure, quando dati sensibili e credenziali restano memorizzati in chiaro o protetti male. Il refactoring è cifrare tutti i dati sensibili a riposo, decifrandoli solo quando servono, attraverso il DBMS, il sistema operativo a livello di disco, il livello applicativo e la cache. Poiché la cifratura consuma risorse, si individuano i dati critici e si cifra solo quanto serve. [pause:0.6] Sesto smell: hardcoded secrets, cioè chiavi API, segreti dei client e credenziali nel codice sorgente o negli script di deploy. Attenzione alle variabili d'ambiente in Docker Compose: non vanno mai usate per i segreti, perché un gestore delle eccezioni può inviarle per sbaglio al logging. I segreti vanno cifrati a riposo e tenuti fuori dai repository.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">14.5 · Cifratura &amp; Secrets Management (Smell 4–6 · C, I, A)</div>\n  <h2 class=\"slide-title\">Librerie consolidate, dati a riposo e protezione dei segreti</h2>\n  <div id=\"s1\" class=\"grid-3 cue-hidden\">\n    <div id=\"c-own\" class=\"box box-def\">\n      <div class=\"box-label\">4 · Own crypto code</div>\n      <p>Crittografia «fatta in casa» dà un falso senso di sicurezza.<br><strong>Refactoring</strong>: librerie collaudate e riviste dalla comunità; no algoritmi sperimentali.</p>\n    </div>\n    <div id=\"c-rest\" class=\"box box-primary\">\n      <div class=\"box-label\">5 · Non-encrypted data exposure</div>\n      <p>Dati sensibili esposti in chiaro.<br><strong>Refactoring</strong>: <em>encrypt at rest</em> su <strong>DBMS</strong>, <strong>OS (disco)</strong>, <strong>app</strong> e <strong>cache</strong>; cifrare solo i dati critici.</p>\n    </div>\n    <div id=\"c-sec\" class=\"box box-def\">\n      <div class=\"box-label\">6 · Hardcoded secrets</div>\n      <p>Chiavi API e credenziali in sorgenti o script di deploy.<br><strong>Refactoring</strong>: <em>encrypt secrets at rest</em> fuori da codice e repository.</p>\n    </div>\n  </div>\n  <div id=\"s2\" class=\"box box-warn cue-hidden\">\n    <div class=\"box-label\">Regola critica di Secrets Management</div>\n    <p><strong>Mai passare segreti tramite variabili d'ambiente</strong> (es. in Docker Compose): un gestore delle eccezioni può inviarle accidentalmente a una piattaforma di logging. Decifrare i dati critici <em>solo quando servono</em> per bilanciare sicurezza e risorse.</p>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 0.98,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "riguarda cifratura e gestione"
+        },
+        {
+          "at": 9.78,
+          "action": "highlight",
+          "target": "#c-own",
+          "duration": 21,
+          "anchor": "Quarto smell: own crypto code"
+        },
+        {
+          "at": 31.58,
+          "action": "highlight",
+          "target": "#c-rest",
+          "duration": 25,
+          "anchor": "Quinto smell: non-encrypted data"
+        },
+        {
+          "at": 58.3,
+          "action": "highlight",
+          "target": "#c-sec",
+          "duration": 8.62,
+          "anchor": "Sesto smell: hardcoded secrets"
+        },
+        {
+          "at": 67.04,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Attenzione alle variabili d'ambiente"
+        },
+        {
+          "at": 67.04,
+          "action": "highlight",
+          "target": "#s2",
+          "duration": 16.5,
+          "anchor": "Attenzione alle variabili d'ambiente"
+        }
+      ],
+      "audio_file": "audio/scene-05.wav",
+      "subtitle_file": "subtitles/scene-05.json",
+      "duration_sec": 79.76
+    },
+    {
+      "id": "scene-06",
+      "section": "14.6 · Comunicazioni service-to-service e mutual TLS",
+      "title": "Proteggere il traffico interno: mTLS e OpenID Connect",
+      "tts_text": "Passiamo ora alla protezione del traffico interno tra microservizi. [pause:0.5] Settimo smell, il più citato della rassegna con il cinquantacinque percento: comunicazioni service-to-service non protette. Parlare su canali in chiaro espone i dati in transito ad attacchi man-in-the-middle, intercettazioni chiamate eavesdropping e manomissioni chiamate tampering, compromettendo confidentiality, integrity e authenticity. [pause:0.6] Il refactoring raccomandato è il mutual TLS. A differenza del TLS tradizionale, in cui solo il server presenta un certificato al client, nel mutual TLS entrambe le parti presentano e validano un certificato. Oltre a cifrare il canale e garantirne riservatezza e integrità, ogni microservizio identifica con certezza l'interlocutore tramite autenticazione reciproca. [pause:0.6] Ottavo smell: unauthenticated traffic, cioè traffico privo di autenticazione dall'esterno o tra microservizi, specialmente durante il passaggio del contesto utente. Espone a tampering, denial of service ed elevation of privileges, minacciando l'authenticity. Qui si applicano due refactoring: il mutual TLS per autenticare i servizi, e OpenID Connect, che usa token JWT per verificare l'identità dell'utente presso un authorization server.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">14.6 · Sicurezza Service-to-Service (Smell 7–8)</div>\n  <h2 class=\"slide-title\">Canali cifrati con mutual TLS e autenticazione del traffico</h2>\n  <div id=\"s1\" class=\"split-visual cue-hidden\">\n    <div id=\"svg-mtls-box\" class=\"svg-panel\">\n      <svg viewBox=\"0 0 360 195\" class=\"diagram-svg\" aria-label=\"Confronto tra TLS standard e mutual TLS\">\n        <defs>\n          <marker id=\"arr-mt\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\">\n            <path d=\"M0 1 L9 5 L0 9 z\" fill=\"var(--blue)\"/>\n          </marker>\n        </defs>\n        <g id=\"svg-tls-std\">\n          <text x=\"180\" y=\"18\" text-anchor=\"middle\" class=\"svg-caption\">TLS standard (solo server autenticato)</text>\n          <rect x=\"22\" y=\"28\" width=\"96\" height=\"42\" rx=\"6\" fill=\"none\" stroke=\"var(--muted)\" stroke-width=\"1.4\"/>\n          <text x=\"70\" y=\"53\" text-anchor=\"middle\" class=\"svg-tick\">Client</text>\n          <rect x=\"242\" y=\"28\" width=\"96\" height=\"42\" rx=\"6\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.5\"/>\n          <text x=\"290\" y=\"48\" text-anchor=\"middle\" class=\"svg-tick\">Server</text>\n          <text x=\"290\" y=\"62\" text-anchor=\"middle\" class=\"svg-caption\">Certificato X.509</text>\n          <line x1=\"240\" y1=\"49\" x2=\"122\" y2=\"49\" stroke=\"var(--blue)\" stroke-width=\"1.6\" marker-end=\"url(#arr-mt)\"/>\n          <text x=\"180\" y=\"42\" text-anchor=\"middle\" class=\"svg-tick\">verifica solo server</text>\n        </g>\n        <line x1=\"18\" y1=\"86\" x2=\"342\" y2=\"86\" stroke=\"var(--border, #ccc)\" stroke-dasharray=\"5 4\"/>\n        <g id=\"svg-mtls\">\n          <text x=\"180\" y=\"105\" text-anchor=\"middle\" class=\"svg-math-sm\">mutual TLS (mTLS · autenticazione reciproca)</text>\n          <rect x=\"22\" y=\"118\" width=\"104\" height=\"60\" rx=\"6\" fill=\"var(--green-soft, rgba(21,128,61,0.12))\" stroke=\"var(--green)\" stroke-width=\"1.6\"/>\n          <text x=\"74\" y=\"142\" text-anchor=\"middle\" class=\"svg-tick\">Microservizio A</text>\n          <text x=\"74\" y=\"159\" text-anchor=\"middle\" class=\"svg-caption\">Certificato A</text>\n          <rect x=\"234\" y=\"118\" width=\"104\" height=\"60\" rx=\"6\" fill=\"var(--green-soft, rgba(21,128,61,0.12))\" stroke=\"var(--green)\" stroke-width=\"1.6\"/>\n          <text x=\"286\" y=\"142\" text-anchor=\"middle\" class=\"svg-tick\">Microservizio B</text>\n          <text x=\"286\" y=\"159\" text-anchor=\"middle\" class=\"svg-caption\">Certificato B</text>\n          <line x1=\"128\" y1=\"136\" x2=\"230\" y2=\"136\" stroke=\"var(--blue)\" stroke-width=\"1.6\" marker-end=\"url(#arr-mt)\"/>\n          <line x1=\"232\" y1=\"160\" x2=\"130\" y2=\"160\" stroke=\"var(--blue)\" stroke-width=\"1.6\" marker-end=\"url(#arr-mt)\"/>\n          <text x=\"180\" y=\"152\" text-anchor=\"middle\" class=\"svg-caption\">canale cifrato</text>\n        </g>\n      </svg>\n    </div>\n    <div class=\"formula-col\">\n      <div id=\"b-s2s\" class=\"box box-primary\">\n        <div class=\"box-label\">7 · Non-secured S2S comm. (55% · C, I, A)</div>\n        <p>Minacce: <em>man-in-the-middle</em>, <em>eavesdropping</em>, <em>tampering</em>. Refactoring: <strong>mutual TLS</strong> (cifratura + integrità + autenticazione reciproca).</p>\n      </div>\n      <div id=\"b-unauth\" class=\"box box-def\">\n        <div class=\"box-label\">8 · Unauthenticated traffic (A)</div>\n        <p>Espone a <em>tampering</em>, <em>DoS</em> ed <em>elevation of privileges</em>. Refactoring: <strong>mutual TLS</strong> + <strong>OpenID Connect</strong> (JWT verificati presso <em>authorization server</em>).</p>\n      </div>\n    </div>\n  </div>\n  <div id=\"s2\" class=\"box box-idea cue-hidden\">\n    <div class=\"box-label\">Sinergia mTLS + OpenID Connect</div>\n    <p><strong>mTLS</strong> garantisce l'identità dei <em>servizi</em> sul canale di trasporto; <strong>OpenID Connect</strong> trasporta e verifica in modo sicuro l'identità dell'<em>utente</em> attraverso la catena di chiamate.</p>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 1.3,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "protezione del traffico interno"
+        },
+        {
+          "at": 4.52,
+          "action": "highlight",
+          "target": "#b-s2s",
+          "duration": 18,
+          "anchor": "Settimo smell, il più citato"
+        },
+        {
+          "at": 25.19,
+          "action": "highlight",
+          "target": "#svg-tls-std",
+          "duration": 8,
+          "anchor": "Il refactoring raccomandato è"
+        },
+        {
+          "at": 33.53,
+          "action": "highlight",
+          "target": "#svg-mtls",
+          "duration": 13.98,
+          "anchor": "nel mutual TLS entrambe le parti"
+        },
+        {
+          "at": 47.63,
+          "action": "highlight",
+          "target": "#b-unauth",
+          "duration": 16,
+          "anchor": "Ottavo smell: unauthenticated traffic"
+        },
+        {
+          "at": 64.55,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "il mutual TLS per autenticare"
+        },
+        {
+          "at": 64.55,
+          "action": "highlight",
+          "target": "#s2",
+          "duration": 11.5,
+          "anchor": "il mutual TLS per autenticare"
+        }
+      ],
+      "audio_file": "audio/scene-06.wav",
+      "subtitle_file": "subtitles/scene-06.json",
+      "duration_sec": 73.2
+    },
+    {
+      "id": "scene-07",
+      "section": "14.7 · Single Sign-On, autorizzazione decentralizzata e JWT",
+      "title": "SSO ai margini, verifica locale dei token e struttura del JWT",
+      "tts_text": "Chiudiamo la tassonomia con gli ultimi due smell su autenticazione e autorizzazione, entrambi critici per l'authenticity. [pause:0.5] Nono smell, al trentaquattro percento: multiple user authentication. Offrire più punti di accesso per il login moltiplica i vettori d'attacco e i costi di manutenzione. Il refactoring è usare il single sign-on: un unico punto d'ingresso autentica gli utenti, applica la sicurezza e semplifica logging e auditing, combinando un API gateway con OpenID Connect. [pause:0.6] Decimo smell, al trentatré percento: centralized authorization. Applicare l'autorizzazione solo ai margini nell'API gateway trasforma quest'ultimo in un collo di bottiglia per le prestazioni e reintroduce un confused deputy problem, perché i microservizi si fidano del gateway in base alla sola identità. [pause:0.5] Il refactoring è l'autorizzazione decentralizzata: ogni richiesta porta un token d'accesso, come un JSON Web Token, verificato localmente da ciascun microservizio. Come mostra lo schema, un JWT ha tre parti codificate in Base sessantaquattro e separate da punti: l'Header con algoritmo e tipo, il Payload con i claims sull'utente, e la Signature crittografica che ne certifica l'integrità.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">14.7 · Autenticazione unica &amp; Autorizzazione decentralizzata (Smell 9–10)</div>\n  <h2 class=\"slide-title\">Single Sign-On, verifica locale e struttura del JSON Web Token</h2>\n  <div id=\"s1\" class=\"split-visual cue-hidden\">\n    <div id=\"svg-jwt\" class=\"svg-panel\">\n      <svg viewBox=\"0 0 360 200\" class=\"diagram-svg\" aria-label=\"Struttura del JSON Web Token e verifica decentralizzata\">\n        <defs>\n          <marker id=\"arr-jw\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\">\n            <path d=\"M0 1 L9 5 L0 9 z\" fill=\"var(--ink-soft)\"/>\n          </marker>\n        </defs>\n        <g id=\"svg-jwt-flow\">\n          <rect x=\"14\" y=\"14\" width=\"100\" height=\"42\" rx=\"6\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.5\"/>\n          <text x=\"64\" y=\"33\" text-anchor=\"middle\" class=\"svg-tick\">API Gateway</text>\n          <text x=\"64\" y=\"47\" text-anchor=\"middle\" class=\"svg-caption\">SSO + OIDC</text>\n          <line x1=\"114\" y1=\"35\" x2=\"156\" y2=\"35\" stroke=\"var(--ink-soft)\" stroke-width=\"1.5\" marker-end=\"url(#arr-jw)\"/>\n          <rect x=\"160\" y=\"14\" width=\"82\" height=\"42\" rx=\"6\" fill=\"var(--green-soft, rgba(21,128,61,0.12))\" stroke=\"var(--green)\" stroke-width=\"1.5\"/>\n          <text x=\"201\" y=\"33\" text-anchor=\"middle\" class=\"svg-tick\">MS 1</text>\n          <text x=\"201\" y=\"47\" text-anchor=\"middle\" class=\"svg-caption\">verifica JWT</text>\n          <line x1=\"242\" y1=\"35\" x2=\"264\" y2=\"35\" stroke=\"var(--ink-soft)\" stroke-width=\"1.5\" marker-end=\"url(#arr-jw)\"/>\n          <rect x=\"268\" y=\"14\" width=\"80\" height=\"42\" rx=\"6\" fill=\"var(--green-soft, rgba(21,128,61,0.12))\" stroke=\"var(--green)\" stroke-width=\"1.5\"/>\n          <text x=\"308\" y=\"33\" text-anchor=\"middle\" class=\"svg-tick\">MS 2</text>\n          <text x=\"308\" y=\"47\" text-anchor=\"middle\" class=\"svg-caption\">verifica JWT</text>\n        </g>\n        <text x=\"180\" y=\"80\" text-anchor=\"middle\" class=\"svg-caption\">Struttura JWT: Header . Payload . Signature (Base64URL)</text>\n        <g id=\"jwt-head\">\n          <rect x=\"12\" y=\"92\" width=\"104\" height=\"92\" rx=\"6\" fill=\"var(--red-soft, rgba(192,57,43,0.10))\" stroke=\"var(--red)\" stroke-width=\"1.5\"/>\n          <text x=\"64\" y=\"112\" text-anchor=\"middle\" class=\"svg-math-sm\">Header</text>\n          <text x=\"64\" y=\"134\" text-anchor=\"middle\" class=\"svg-tick\">alg: RS256</text>\n          <text x=\"64\" y=\"152\" text-anchor=\"middle\" class=\"svg-tick\">typ: JWT</text>\n          <text x=\"64\" y=\"172\" text-anchor=\"middle\" class=\"svg-caption\">metadati firma</text>\n        </g>\n        <text x=\"122\" y=\"142\" text-anchor=\"middle\" class=\"svg-symbol\">.</text>\n        <g id=\"jwt-pay\">\n          <rect x=\"128\" y=\"92\" width=\"104\" height=\"92\" rx=\"6\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.5\"/>\n          <text x=\"180\" y=\"112\" text-anchor=\"middle\" class=\"svg-math-sm\">Payload</text>\n          <text x=\"180\" y=\"134\" text-anchor=\"middle\" class=\"svg-tick\">sub: user-42</text>\n          <text x=\"180\" y=\"152\" text-anchor=\"middle\" class=\"svg-tick\">scope: orders</text>\n          <text x=\"180\" y=\"172\" text-anchor=\"middle\" class=\"svg-caption\">claims utente</text>\n        </g>\n        <text x=\"238\" y=\"142\" text-anchor=\"middle\" class=\"svg-symbol\">.</text>\n        <g id=\"jwt-sig\">\n          <rect x=\"244\" y=\"92\" width=\"104\" height=\"92\" rx=\"6\" fill=\"var(--green-soft, rgba(21,128,61,0.12))\" stroke=\"var(--green)\" stroke-width=\"1.5\"/>\n          <text x=\"296\" y=\"112\" text-anchor=\"middle\" class=\"svg-math-sm\">Signature</text>\n          <text x=\"296\" y=\"134\" text-anchor=\"middle\" class=\"svg-tick\">Sign(H + P)</text>\n          <text x=\"296\" y=\"152\" text-anchor=\"middle\" class=\"svg-tick\">anti-tampering</text>\n          <text x=\"296\" y=\"172\" text-anchor=\"middle\" class=\"svg-caption\">verifica locale</text>\n        </g>\n      </svg>\n    </div>\n    <div class=\"formula-col\">\n      <div id=\"b-sso\" class=\"box box-primary\">\n        <div class=\"box-label\">9 · Multiple user auth (34% · A)</div>\n        <p>Più punti di login moltiplicano vettori d'attacco e costi. Refactoring: <strong>Single Sign-On</strong> (API gateway + OpenID Connect) per logging e <em>auditing</em> centralizzati.</p>\n      </div>\n      <div id=\"b-dec\" class=\"box box-warn\">\n        <div class=\"box-label\">10 · Centralized authorization (33% · A)</div>\n        <p>Solo al gateway = collo di bottiglia + <em>confused deputy</em>. Refactoring: <strong>decentralized authorization</strong> con token JWT verificato in ogni microservizio.</p>\n      </div>\n    </div>\n  </div>\n  <div id=\"s2\" class=\"box box-def cue-hidden\">\n    <div class=\"box-label\">Regola architetturale Edge vs Service-to-Service</div>\n    <p><strong>Autenticazione utente (SSO)</strong> centralizzata al margine con API Gateway + OIDC; <strong>autorizzazione fine-grained</strong> distribuita in ogni microservizio verificando firma e <em>claims</em> del JWT.</p>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 1.6,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "ultimi due smell su autenticazione"
+        },
+        {
+          "at": 8.34,
+          "action": "highlight",
+          "target": "#b-sso",
+          "duration": 18.5,
+          "anchor": "Nono smell, al trentaquattro percento"
+        },
+        {
+          "at": 34.74,
+          "action": "highlight",
+          "target": "#b-dec",
+          "duration": 16.5,
+          "anchor": "Decimo smell, al trentatré percento"
+        },
+        {
+          "at": 55.34,
+          "action": "highlight",
+          "target": "#svg-jwt-flow",
+          "duration": 12,
+          "anchor": "Il refactoring è l'autorizzazione decentralizzata"
+        },
+        {
+          "at": 72.56,
+          "action": "highlight",
+          "target": "#jwt-head",
+          "duration": 1.9,
+          "anchor": "l'Header con algoritmo e tipo"
+        },
+        {
+          "at": 74.58,
+          "action": "highlight",
+          "target": "#jwt-pay",
+          "duration": 2.42,
+          "anchor": "il Payload con i claims"
+        },
+        {
+          "at": 77.12,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "e la Signature crittografica"
+        },
+        {
+          "at": 77.12,
+          "action": "highlight",
+          "target": "#jwt-sig",
+          "duration": 1.64,
+          "anchor": "e la Signature crittografica"
+        },
+        {
+          "at": 78.88,
+          "action": "highlight",
+          "target": "#s2",
+          "duration": 8,
+          "anchor": "che ne certifica l'integrità"
+        }
+      ],
+      "audio_file": "audio/scene-07.wav",
+      "subtitle_file": "subtitles/scene-07.json",
+      "duration_sec": 80.48
+    },
+    {
+      "id": "scene-08",
+      "section": "14.8 · Come eliminare gli smell di sicurezza",
+      "title": "Procedimento Detect, Triage, Refactor e difesa in profondità",
+      "tts_text": "Come si eliminano concretamente gli smell di sicurezza da un'applicazione a microservizi esistente? Il capitolo propone un procedimento iterativo in tre fasi, analogo a quello visto per gli smell architetturali. [pause:0.5] Primo passo, Detect: individuare sistematicamente gli smell di sicurezza nel codice, nelle configurazioni e nelle comunicazioni di rete. [pause:0.5] Secondo passo, Triage: decidere quali smell affrontare e in quale ordine di priorità. Questa decisione bilancia insieme quattro criteri chiave: quanto è rilevante il microservizio nel sistema, l'impatto dello smell sugli attributi di qualità, lo sforzo necessario per eseguire il refactoring e l'eventuale necessità di coordinarsi con altri team. [pause:0.6] Terzo passo, Refactor: scegliere dalla tassonomia il refactoring più adatto e applicarlo. Poiché il triage incrocia più dimensioni contemporaneamente, servono strumenti di supporto dedicati, analoghi alla toolchain per gli smell architetturali. [pause:0.5] Nel complesso, combinare API gateway e single sign-on ai margini, mutual TLS tra servizi, token JWT verificati localmente, privilegio minimo e cifratura a riposo realizza una vera difesa in profondità.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">14.8 · Processo di mitigazione &amp; Defense in Depth</div>\n  <h2 class=\"slide-title\">Eliminare gli smell: Detect, Triage, Refactor</h2>\n  <div id=\"s1\" class=\"flow-chain cue-hidden\">\n    <div id=\"st-det\" class=\"flow-node\">\n      <strong>1 · Detect</strong>\n      <span>Individuare gli smell di sicurezza (codice, config, rete)</span>\n    </div>\n    <div class=\"flow-arrow\">→</div>\n    <div id=\"st-tri\" class=\"flow-node flow-node-accent\">\n      <strong>2 · Triage</strong>\n      <span>Prioritizzare su 4 dimensioni con toolchain dedicata</span>\n    </div>\n    <div class=\"flow-arrow\">→</div>\n    <div id=\"st-ref\" class=\"flow-node\">\n      <strong>3 · Refactor</strong>\n      <span>Scegliere e applicare il refactoring dalla tassonomia</span>\n    </div>\n  </div>\n  <div id=\"s2\" class=\"grid-2 cue-hidden\">\n    <div id=\"b-triage\" class=\"box box-algo\">\n      <div class=\"box-label\">I 4 criteri del Triage (supportati da strumenti)</div>\n      <ul class=\"clean-list\">\n        <li id=\"tr-1\"><strong>Rilevanza del servizio</strong> nell'architettura</li>\n        <li id=\"tr-2\"><strong>Impatto sugli attributi di qualità</strong> (C, I, A)</li>\n        <li id=\"tr-3\"><strong>Sforzo necessario</strong> per il refactoring</li>\n        <li id=\"tr-4\"><strong>Interazione tra team</strong> diversi</li>\n      </ul>\n    </div>\n    <div id=\"b-did\" class=\"box box-primary\">\n      <div class=\"box-label\">Sintesi: Defense in Depth nei microservizi</div>\n      <p>Nessun controllo singolo basta: servono strati coordinati — <strong>API Gateway + SSO</strong> al margine, <strong>mTLS + Zero Trust</strong> sul traffico interno, <strong>JWT + Least Privilege</strong> in ogni servizio e <strong>cifratura a riposo</strong> per dati e segreti.</p>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 4.1,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "Il capitolo propone un"
+        },
+        {
+          "at": 4.2,
+          "action": "highlight",
+          "target": "#s1",
+          "duration": 8.9,
+          "anchor": "Il capitolo propone un"
+        },
+        {
+          "at": 13.31,
+          "action": "highlight",
+          "target": "#st-det",
+          "duration": 7.5,
+          "anchor": "Primo passo, Detect: individuare"
+        },
+        {
+          "at": 22.63,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Secondo passo, Triage: decidere"
+        },
+        {
+          "at": 22.63,
+          "action": "highlight",
+          "target": "#st-tri",
+          "duration": 5.5,
+          "anchor": "Secondo passo, Triage: decidere"
+        },
+        {
+          "at": 32.27,
+          "action": "highlight",
+          "target": "#tr-1",
+          "duration": 2.58,
+          "anchor": "quanto è rilevante il microservizio"
+        },
+        {
+          "at": 34.97,
+          "action": "highlight",
+          "target": "#tr-2",
+          "duration": 2.64,
+          "anchor": "l'impatto dello smell sugli"
+        },
+        {
+          "at": 37.73,
+          "action": "highlight",
+          "target": "#tr-3",
+          "duration": 2.8,
+          "anchor": "lo sforzo necessario per"
+        },
+        {
+          "at": 40.65,
+          "action": "highlight",
+          "target": "#tr-4",
+          "duration": 2.88,
+          "anchor": "l'eventuale necessità di coordinarsi"
+        },
+        {
+          "at": 43.65,
+          "action": "highlight",
+          "target": "#st-ref",
+          "duration": 5.9,
+          "anchor": "Terzo passo, Refactor: scegliere"
+        },
+        {
+          "at": 49.67,
+          "action": "highlight",
+          "target": "#b-triage",
+          "duration": 8.96,
+          "anchor": "Poiché il triage incrocia"
+        },
+        {
+          "at": 58.75,
+          "action": "highlight",
+          "target": "#b-did",
+          "duration": 14,
+          "anchor": "Nel complesso, combinare API"
+        }
+      ],
+      "audio_file": "audio/scene-08.wav",
+      "subtitle_file": "subtitles/scene-08.json",
+      "duration_sec": 71.86
+    },
+    {
+      "id": "scene-09",
+      "section": "14.9 · Riepilogo e autoverifica",
+      "title": "Punti chiave del capitolo e domande d'esame",
+      "tts_text": "Fissiamo i sei punti chiave della sicurezza nei microservizi. [pause:0.4] Primo: le sette sfide coprono superficie d'attacco più ampia, controlli distribuiti da trust-the-network a zero trust, fiducia automatizzata con certificati, tracing distribuito, container immutabili, contesto utente con JWT e responsabilità divise tra team. [pause:0.5] Secondo: una multivocal review su cinquantotto riferimenti mappa dieci smell e dieci refactoring su tre proprietà ISO IEC venticinquemiladieci: confidentiality, integrity e authenticity. [pause:0.5] Terzo: il controllo accessi si protegge con OAuth due punto zero contro il confused deputy, API gateway al margine e principio del privilegio minimo. [pause:0.5] Quarto: niente crittografia fatta in casa né segreti nelle variabili d'ambiente; dati sensibili e segreti vanno sempre cifrati a riposo. [pause:0.5] Quinto: mutual TLS, OpenID Connect, single sign-on e autorizzazione decentralizzata con JWT proteggono il traffico interno e l'identità utente. [pause:0.5] Sesto: gli smell si eliminano con il ciclo Detect, Triage su quattro dimensioni e Refactor con strumenti di supporto. [pause:0.6] Mettete alla prova la preparazione rispondendo alle domande sulla destra.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">14.9 · Riepilogo &amp; Autoverifica</div>\n  <h2 class=\"slide-title\">Punti chiave e domande di verifica</h2>\n  <div class=\"grid-2\">\n    <div class=\"box box-algo\">\n      <div class=\"box-label\">Punti chiave da fissare</div>\n      <ul class=\"clean-list\">\n        <li id=\"s1\" class=\"cue-hidden\"><strong>7 sfide</strong>: superficie ampia, Zero Trust, certificati auto, tracing, container, JWT, team ibridi.</li>\n        <li id=\"s2\" class=\"cue-hidden\"><strong>Tassonomia (58 ref.)</strong>: 10 smell, 10 refactoring, 3 proprietà ISO/IEC 25010 (C, I, A).</li>\n        <li id=\"s3\" class=\"cue-hidden\"><strong>Accesso &amp; Edge</strong>: insufficient access → OAuth 2.0; esposti → API gateway; privilegi → least privilege.</li>\n        <li id=\"s4\" class=\"cue-hidden\"><strong>Cifratura &amp; Segreti</strong>: no own crypto; dati e segreti cifrati a riposo (mai in env vars).</li>\n        <li id=\"s5\" class=\"cue-hidden\"><strong>Auth &amp; Authz</strong>: mTLS + OIDC, Single Sign-On (GW + OIDC), autorizzazione decentralizzata JWT.</li>\n        <li id=\"s6\" class=\"cue-hidden\"><strong>Mitigazione</strong>: ciclo <em>Detect → Triage (4 criteri) → Refactor</em> con toolchain dedicata.</li>\n      </ul>\n    </div>\n    <div id=\"s7\" class=\"box box-theorem cue-hidden\">\n      <div class=\"box-label\">Domande di verifica</div>\n      <ol class=\"verify-list\">\n        <li>Superficie d'attacco vs monolite; <em>trust-the-network</em> vs <em>zero trust</em>?</li>\n        <li>Perché la fiducia tra servizi richiede automazione?</li>\n        <li>Perché il tracing è difficile? Differenza tra <em>log</em> e <em>trace</em>?</li>\n        <li>Perché i container complicano credenziali e politiche?</li>\n        <li>Come si condivide il contesto utente tra microservizi?</li>\n        <li>Definire <em>confidentiality</em>, <em>integrity</em> e <em>authenticity</em> (ISO 25010).</li>\n        <li>Cos'è il <em>confused deputy problem</em> e in quali smell compare?</li>\n        <li>Perché non passare i segreti tramite variabili d'ambiente?</li>\n        <li>Cosa aggiunge <em>mutual TLS</em> al TLS? Quali smell risolve?</li>\n        <li>Come si realizza <em>SSO</em>? Passi e criteri del <em>triage</em>?</li>\n      </ol>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 4.34,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "Primo: le sette sfide"
+        },
+        {
+          "at": 4.34,
+          "action": "highlight",
+          "target": "#s1",
+          "duration": 16.8,
+          "anchor": "Primo: le sette sfide"
+        },
+        {
+          "at": 23.24,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Secondo: una multivocal review"
+        },
+        {
+          "at": 23.24,
+          "action": "highlight",
+          "target": "#s2",
+          "duration": 11.2,
+          "anchor": "Secondo: una multivocal review"
+        },
+        {
+          "at": 37.05,
+          "action": "show",
+          "target": "#s3",
+          "anchor": "Terzo: il controllo accessi"
+        },
+        {
+          "at": 37.05,
+          "action": "highlight",
+          "target": "#s3",
+          "duration": 9.44,
+          "anchor": "Terzo: il controllo accessi"
+        },
+        {
+          "at": 46.61,
+          "action": "show",
+          "target": "#s4",
+          "anchor": "Quarto: niente crittografia fatta"
+        },
+        {
+          "at": 46.61,
+          "action": "highlight",
+          "target": "#s4",
+          "duration": 9.24,
+          "anchor": "Quarto: niente crittografia fatta"
+        },
+        {
+          "at": 55.97,
+          "action": "show",
+          "target": "#s5",
+          "anchor": "Quinto: mutual TLS, OpenID"
+        },
+        {
+          "at": 55.97,
+          "action": "highlight",
+          "target": "#s5",
+          "duration": 10.2,
+          "anchor": "Quinto: mutual TLS, OpenID"
+        },
+        {
+          "at": 66.89,
+          "action": "show",
+          "target": "#s6",
+          "anchor": "Sesto: gli smell si"
+        },
+        {
+          "at": 66.89,
+          "action": "highlight",
+          "target": "#s6",
+          "duration": 7.5,
+          "anchor": "Sesto: gli smell si"
+        },
+        {
+          "at": 74.61,
+          "action": "show",
+          "target": "#s7",
+          "anchor": "Mettete alla prova la"
+        },
+        {
+          "at": 74.61,
+          "action": "highlight",
+          "target": "#s7",
+          "duration": 4.2,
+          "anchor": "Mettete alla prova la"
+        }
+      ],
+      "audio_file": "audio/scene-09.wav",
+      "subtitle_file": "subtitles/scene-09.json",
+      "duration_sec": 78.14
+    }
+  ]
+}

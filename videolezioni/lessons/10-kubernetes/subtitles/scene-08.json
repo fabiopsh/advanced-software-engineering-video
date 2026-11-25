@@ -1,0 +1,803 @@
+{
+  "duration": 58.407,
+  "segments": [
+    {
+      "start": 0.672,
+      "end": 6.213,
+      "text": "Kubernetes è potente, ma introduce complessità operativa e costi di gestione che non convengono in",
+      "words": [
+        {
+          "text": "Kubernetes",
+          "start": 0.672,
+          "end": 1.232
+        },
+        {
+          "text": "è",
+          "start": 1.432,
+          "end": 1.472
+        },
+        {
+          "text": "potente,",
+          "start": 1.532,
+          "end": 2.012
+        },
+        {
+          "text": "ma",
+          "start": 2.172,
+          "end": 2.232
+        },
+        {
+          "text": "introduce",
+          "start": 2.312,
+          "end": 2.732
+        },
+        {
+          "text": "complessità",
+          "start": 2.792,
+          "end": 3.272
+        },
+        {
+          "text": "operativa",
+          "start": 3.332,
+          "end": 3.813
+        },
+        {
+          "text": "e",
+          "start": 3.873,
+          "end": 3.9130000000000003
+        },
+        {
+          "text": "costi",
+          "start": 4.013,
+          "end": 4.333
+        },
+        {
+          "text": "di",
+          "start": 4.393,
+          "end": 4.453
+        },
+        {
+          "text": "gestione",
+          "start": 4.493,
+          "end": 4.893
+        },
+        {
+          "text": "che",
+          "start": 5.273,
+          "end": 5.353
+        },
+        {
+          "text": "non",
+          "start": 5.433,
+          "end": 5.553
+        },
+        {
+          "text": "convengono",
+          "start": 5.593,
+          "end": 6.093
+        },
+        {
+          "text": "in",
+          "start": 6.153,
+          "end": 6.213
+        }
+      ]
+    },
+    {
+      "start": 6.253,
+      "end": 6.893,
+      "text": "ogni progetto.",
+      "words": [
+        {
+          "text": "ogni",
+          "start": 6.253,
+          "end": 6.393
+        },
+        {
+          "text": "progetto.",
+          "start": 6.433,
+          "end": 6.893
+        }
+      ]
+    },
+    {
+      "start": 7.593,
+      "end": 10.233,
+      "text": "Cinque segnali indicano che probabilmente non serve:",
+      "words": [
+        {
+          "text": "Cinque",
+          "start": 7.593,
+          "end": 7.853
+        },
+        {
+          "text": "segnali",
+          "start": 7.893,
+          "end": 8.313
+        },
+        {
+          "text": "indicano",
+          "start": 8.493,
+          "end": 8.913
+        },
+        {
+          "text": "che",
+          "start": 8.953,
+          "end": 9.033
+        },
+        {
+          "text": "probabilmente",
+          "start": 9.093,
+          "end": 9.673
+        },
+        {
+          "text": "non",
+          "start": 9.713,
+          "end": 9.833
+        },
+        {
+          "text": "serve:",
+          "start": 9.893,
+          "end": 10.233
+        }
+      ]
+    },
+    {
+      "start": 10.993,
+      "end": 15.613,
+      "text": "il workload gira comodamente su una sola macchina; le esigenze di calcolo sono leggere;",
+      "words": [
+        {
+          "text": "il",
+          "start": 10.993,
+          "end": 11.053
+        },
+        {
+          "text": "workload",
+          "start": 11.113,
+          "end": 11.553
+        },
+        {
+          "text": "gira",
+          "start": 11.673,
+          "end": 11.873
+        },
+        {
+          "text": "comodamente",
+          "start": 11.933,
+          "end": 12.433
+        },
+        {
+          "text": "su",
+          "start": 12.493,
+          "end": 12.553
+        },
+        {
+          "text": "una",
+          "start": 12.613,
+          "end": 12.733
+        },
+        {
+          "text": "sola",
+          "start": 12.773,
+          "end": 12.933
+        },
+        {
+          "text": "macchina;",
+          "start": 12.973,
+          "end": 13.373
+        },
+        {
+          "text": "le",
+          "start": 13.853,
+          "end": 13.913
+        },
+        {
+          "text": "esigenze",
+          "start": 13.993,
+          "end": 14.433
+        },
+        {
+          "text": "di",
+          "start": 14.473,
+          "end": 14.513
+        },
+        {
+          "text": "calcolo",
+          "start": 14.553,
+          "end": 14.933
+        },
+        {
+          "text": "sono",
+          "start": 14.993,
+          "end": 15.173
+        },
+        {
+          "text": "leggere;",
+          "start": 15.213,
+          "end": 15.613
+        }
+      ]
+    },
+    {
+      "start": 16.254,
+      "end": 19.334,
+      "text": "non occorre alta disponibilità e un breve fermo è tollerabile;",
+      "words": [
+        {
+          "text": "non",
+          "start": 16.254,
+          "end": 16.394
+        },
+        {
+          "text": "occorre",
+          "start": 16.414,
+          "end": 16.814
+        },
+        {
+          "text": "alta",
+          "start": 16.894,
+          "end": 17.074
+        },
+        {
+          "text": "disponibilità",
+          "start": 17.114,
+          "end": 17.734
+        },
+        {
+          "text": "e",
+          "start": 17.994,
+          "end": 18.034
+        },
+        {
+          "text": "un",
+          "start": 18.094,
+          "end": 18.154
+        },
+        {
+          "text": "breve",
+          "start": 18.194,
+          "end": 18.394
+        },
+        {
+          "text": "fermo",
+          "start": 18.434,
+          "end": 18.674
+        },
+        {
+          "text": "è",
+          "start": 18.694,
+          "end": 18.734
+        },
+        {
+          "text": "tollerabile;",
+          "start": 18.774,
+          "end": 19.334
+        }
+      ]
+    },
+    {
+      "start": 20.034,
+      "end": 25.014,
+      "text": "i servizi cambiano raramente; oppure si gestisce un monolite che non si intende scomporre in",
+      "words": [
+        {
+          "text": "i",
+          "start": 20.034,
+          "end": 20.074
+        },
+        {
+          "text": "servizi",
+          "start": 20.114,
+          "end": 20.534
+        },
+        {
+          "text": "cambiano",
+          "start": 20.614,
+          "end": 20.994
+        },
+        {
+          "text": "raramente;",
+          "start": 21.034,
+          "end": 21.534
+        },
+        {
+          "text": "oppure",
+          "start": 21.954,
+          "end": 22.214
+        },
+        {
+          "text": "si",
+          "start": 22.374,
+          "end": 22.454
+        },
+        {
+          "text": "gestisce",
+          "start": 22.514,
+          "end": 22.914
+        },
+        {
+          "text": "un",
+          "start": 22.954,
+          "end": 23.034
+        },
+        {
+          "text": "monolite",
+          "start": 23.074,
+          "end": 23.494
+        },
+        {
+          "text": "che",
+          "start": 23.574,
+          "end": 23.654
+        },
+        {
+          "text": "non",
+          "start": 23.774,
+          "end": 23.914
+        },
+        {
+          "text": "si",
+          "start": 23.974,
+          "end": 24.034
+        },
+        {
+          "text": "intende",
+          "start": 24.074,
+          "end": 24.394
+        },
+        {
+          "text": "scomporre",
+          "start": 24.434,
+          "end": 24.934
+        },
+        {
+          "text": "in",
+          "start": 24.974,
+          "end": 25.014
+        }
+      ]
+    },
+    {
+      "start": 25.054,
+      "end": 25.774,
+      "text": "microservizi.",
+      "words": [
+        {
+          "text": "microservizi.",
+          "start": 25.054,
+          "end": 25.774
+        }
+      ]
+    },
+    {
+      "start": 26.634,
+      "end": 30.635,
+      "text": "Quando invece serve orchestrazione ma si privilegiano velocità e semplicità,",
+      "words": [
+        {
+          "text": "Quando",
+          "start": 26.634,
+          "end": 26.814
+        },
+        {
+          "text": "invece",
+          "start": 26.834,
+          "end": 27.094
+        },
+        {
+          "text": "serve",
+          "start": 27.214,
+          "end": 27.474
+        },
+        {
+          "text": "orchestrazione",
+          "start": 27.534,
+          "end": 28.375
+        },
+        {
+          "text": "ma",
+          "start": 28.515,
+          "end": 28.575
+        },
+        {
+          "text": "si",
+          "start": 28.655,
+          "end": 28.735
+        },
+        {
+          "text": "privilegiano",
+          "start": 28.775,
+          "end": 29.315
+        },
+        {
+          "text": "velocità",
+          "start": 29.395,
+          "end": 29.815
+        },
+        {
+          "text": "e",
+          "start": 30.015,
+          "end": 30.055
+        },
+        {
+          "text": "semplicità,",
+          "start": 30.135,
+          "end": 30.635
+        }
+      ]
+    },
+    {
+      "start": 31.135,
+      "end": 35.415,
+      "text": "un'alternativa diretta è Docker Swarm, l'orchestratore nativo integrato in Docker.",
+      "words": [
+        {
+          "text": "un'alternativa",
+          "start": 31.135,
+          "end": 31.715
+        },
+        {
+          "text": "diretta",
+          "start": 31.735,
+          "end": 32.095
+        },
+        {
+          "text": "è",
+          "start": 32.275,
+          "end": 32.315
+        },
+        {
+          "text": "Docker",
+          "start": 32.415,
+          "end": 32.695
+        },
+        {
+          "text": "Swarm,",
+          "start": 32.735,
+          "end": 33.115
+        },
+        {
+          "text": "l'orchestratore",
+          "start": 33.555,
+          "end": 34.155
+        },
+        {
+          "text": "nativo",
+          "start": 34.215,
+          "end": 34.495
+        },
+        {
+          "text": "integrato",
+          "start": 34.555,
+          "end": 34.955
+        },
+        {
+          "text": "in",
+          "start": 34.995,
+          "end": 35.055
+        },
+        {
+          "text": "Docker.",
+          "start": 35.095,
+          "end": 35.415
+        }
+      ]
+    },
+    {
+      "start": 35.915,
+      "end": 39.975,
+      "text": "Docker Swarm è molto più semplice da installare e offre una curva di apprendimento più",
+      "words": [
+        {
+          "text": "Docker",
+          "start": 35.915,
+          "end": 36.155
+        },
+        {
+          "text": "Swarm",
+          "start": 36.195,
+          "end": 36.475
+        },
+        {
+          "text": "è",
+          "start": 36.555,
+          "end": 36.595
+        },
+        {
+          "text": "molto",
+          "start": 36.655,
+          "end": 36.895
+        },
+        {
+          "text": "più",
+          "start": 36.955,
+          "end": 37.035
+        },
+        {
+          "text": "semplice",
+          "start": 37.095,
+          "end": 37.435
+        },
+        {
+          "text": "da",
+          "start": 37.455,
+          "end": 37.515
+        },
+        {
+          "text": "installare",
+          "start": 37.555,
+          "end": 38.035
+        },
+        {
+          "text": "e",
+          "start": 38.435,
+          "end": 38.475
+        },
+        {
+          "text": "offre",
+          "start": 38.515,
+          "end": 38.715
+        },
+        {
+          "text": "una",
+          "start": 38.755,
+          "end": 38.875
+        },
+        {
+          "text": "curva",
+          "start": 38.915,
+          "end": 39.155
+        },
+        {
+          "text": "di",
+          "start": 39.195,
+          "end": 39.235
+        },
+        {
+          "text": "apprendimento",
+          "start": 39.275,
+          "end": 39.835
+        },
+        {
+          "text": "più",
+          "start": 39.895,
+          "end": 39.975
+        }
+      ]
+    },
+    {
+      "start": 40.055,
+      "end": 43.376,
+      "text": "dolce, risultando ideale per team piccoli e sviluppo rapido.",
+      "words": [
+        {
+          "text": "dolce,",
+          "start": 40.055,
+          "end": 40.416
+        },
+        {
+          "text": "risultando",
+          "start": 40.716,
+          "end": 41.136
+        },
+        {
+          "text": "ideale",
+          "start": 41.196,
+          "end": 41.516
+        },
+        {
+          "text": "per",
+          "start": 41.556,
+          "end": 41.696
+        },
+        {
+          "text": "team",
+          "start": 41.756,
+          "end": 41.896
+        },
+        {
+          "text": "piccoli",
+          "start": 41.956,
+          "end": 42.396
+        },
+        {
+          "text": "e",
+          "start": 42.576,
+          "end": 42.616
+        },
+        {
+          "text": "sviluppo",
+          "start": 42.676,
+          "end": 43.016
+        },
+        {
+          "text": "rapido.",
+          "start": 43.056,
+          "end": 43.376
+        }
+      ]
+    },
+    {
+      "start": 44.056,
+      "end": 48.196,
+      "text": "Kubernetes vince invece per auto-scaling nativo, maggiore tolleranza ai guasti,",
+      "words": [
+        {
+          "text": "Kubernetes",
+          "start": 44.056,
+          "end": 44.436
+        },
+        {
+          "text": "vince",
+          "start": 44.536,
+          "end": 44.816
+        },
+        {
+          "text": "invece",
+          "start": 44.896,
+          "end": 45.216
+        },
+        {
+          "text": "per",
+          "start": 45.256,
+          "end": 45.356
+        },
+        {
+          "text": "auto-scaling",
+          "start": 45.396,
+          "end": 45.956
+        },
+        {
+          "text": "nativo,",
+          "start": 45.976,
+          "end": 46.376
+        },
+        {
+          "text": "maggiore",
+          "start": 46.756,
+          "end": 47.096
+        },
+        {
+          "text": "tolleranza",
+          "start": 47.156,
+          "end": 47.656
+        },
+        {
+          "text": "ai",
+          "start": 47.676,
+          "end": 47.756
+        },
+        {
+          "text": "guasti,",
+          "start": 47.796,
+          "end": 48.196
+        }
+      ]
+    },
+    {
+      "start": 48.596,
+      "end": 52.677,
+      "text": "una comunità vastissima e il supporto della Cloud Native Computing Foundation,",
+      "words": [
+        {
+          "text": "una",
+          "start": 48.596,
+          "end": 48.736
+        },
+        {
+          "text": "comunità",
+          "start": 48.776,
+          "end": 49.156
+        },
+        {
+          "text": "vastissima",
+          "start": 49.256,
+          "end": 49.896
+        },
+        {
+          "text": "e",
+          "start": 50.056,
+          "end": 50.096
+        },
+        {
+          "text": "il",
+          "start": 50.136,
+          "end": 50.216
+        },
+        {
+          "text": "supporto",
+          "start": 50.256,
+          "end": 50.716
+        },
+        {
+          "text": "della",
+          "start": 50.756,
+          "end": 50.916
+        },
+        {
+          "text": "Cloud",
+          "start": 50.956,
+          "end": 51.236
+        },
+        {
+          "text": "Native",
+          "start": 51.316,
+          "end": 51.616
+        },
+        {
+          "text": "Computing",
+          "start": 51.636,
+          "end": 52.056
+        },
+        {
+          "text": "Foundation,",
+          "start": 52.096,
+          "end": 52.677
+        }
+      ]
+    },
+    {
+      "start": 53.017,
+      "end": 58.157,
+      "text": "diventando la scelta d'elezione per cluster medio-grandi e applicazioni distribuite complesse.",
+      "words": [
+        {
+          "text": "diventando",
+          "start": 53.017,
+          "end": 53.457
+        },
+        {
+          "text": "la",
+          "start": 53.497,
+          "end": 53.577
+        },
+        {
+          "text": "scelta",
+          "start": 53.597,
+          "end": 53.897
+        },
+        {
+          "text": "d'elezione",
+          "start": 53.957,
+          "end": 54.577
+        },
+        {
+          "text": "per",
+          "start": 54.637,
+          "end": 54.737
+        },
+        {
+          "text": "cluster",
+          "start": 54.797,
+          "end": 55.157
+        },
+        {
+          "text": "medio-grandi",
+          "start": 55.217,
+          "end": 55.837
+        },
+        {
+          "text": "e",
+          "start": 56.197,
+          "end": 56.237
+        },
+        {
+          "text": "applicazioni",
+          "start": 56.277,
+          "end": 56.877
+        },
+        {
+          "text": "distribuite",
+          "start": 56.917,
+          "end": 57.477
+        },
+        {
+          "text": "complesse.",
+          "start": 57.577,
+          "end": 58.157
+        }
+      ]
+    }
+  ]
+}

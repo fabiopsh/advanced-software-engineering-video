@@ -1,0 +1,1068 @@
+{
+  "duration": 79.761,
+  "segments": [
+    {
+      "start": 0.08,
+      "end": 3.54,
+      "text": "Il secondo gruppo riguarda cifratura e gestione dei segreti,",
+      "words": [
+        {
+          "text": "Il",
+          "start": 0.08,
+          "end": 0.18
+        },
+        {
+          "text": "secondo",
+          "start": 0.24,
+          "end": 0.58
+        },
+        {
+          "text": "gruppo",
+          "start": 0.62,
+          "end": 0.94
+        },
+        {
+          "text": "riguarda",
+          "start": 1.1,
+          "end": 1.48
+        },
+        {
+          "text": "cifratura",
+          "start": 1.58,
+          "end": 2.18
+        },
+        {
+          "text": "e",
+          "start": 2.34,
+          "end": 2.38
+        },
+        {
+          "text": "gestione",
+          "start": 2.44,
+          "end": 2.86
+        },
+        {
+          "text": "dei",
+          "start": 2.92,
+          "end": 3.06
+        },
+        {
+          "text": "segreti,",
+          "start": 3.12,
+          "end": 3.54
+        }
+      ]
+    },
+    {
+      "start": 3.92,
+      "end": 5.92,
+      "text": "e mette a rischio tutte e tre le proprietà:",
+      "words": [
+        {
+          "text": "e",
+          "start": 3.92,
+          "end": 3.96
+        },
+        {
+          "text": "mette",
+          "start": 4.02,
+          "end": 4.22
+        },
+        {
+          "text": "a",
+          "start": 4.26,
+          "end": 4.3
+        },
+        {
+          "text": "rischio",
+          "start": 4.36,
+          "end": 4.64
+        },
+        {
+          "text": "tutte",
+          "start": 4.8,
+          "end": 5.1
+        },
+        {
+          "text": "e",
+          "start": 5.14,
+          "end": 5.18
+        },
+        {
+          "text": "tre",
+          "start": 5.2,
+          "end": 5.32
+        },
+        {
+          "text": "le",
+          "start": 5.42,
+          "end": 5.48
+        },
+        {
+          "text": "proprietà:",
+          "start": 5.52,
+          "end": 5.92
+        }
+      ]
+    },
+    {
+      "start": 6.34,
+      "end": 8.901,
+      "text": "confidentiality, integrity e authenticity.",
+      "words": [
+        {
+          "text": "confidentiality,",
+          "start": 6.34,
+          "end": 7.24
+        },
+        {
+          "text": "integrity",
+          "start": 7.48,
+          "end": 8.041
+        },
+        {
+          "text": "e",
+          "start": 8.221,
+          "end": 8.261
+        },
+        {
+          "text": "authenticity.",
+          "start": 8.321,
+          "end": 8.901
+        }
+      ]
+    },
+    {
+      "start": 9.901,
+      "end": 15.021,
+      "text": "Quarto smell: own crypto code, cioè scrivere codice crittografico fatto in casa.",
+      "words": [
+        {
+          "text": "Quarto",
+          "start": 9.901,
+          "end": 10.161
+        },
+        {
+          "text": "smell:",
+          "start": 10.221,
+          "end": 10.461
+        },
+        {
+          "text": "own",
+          "start": 10.941,
+          "end": 11.121
+        },
+        {
+          "text": "crypto",
+          "start": 11.221,
+          "end": 11.541
+        },
+        {
+          "text": "code,",
+          "start": 11.601,
+          "end": 11.881
+        },
+        {
+          "text": "cioè",
+          "start": 12.321,
+          "end": 12.461
+        },
+        {
+          "text": "scrivere",
+          "start": 12.601,
+          "end": 13.001
+        },
+        {
+          "text": "codice",
+          "start": 13.081,
+          "end": 13.441
+        },
+        {
+          "text": "crittografico",
+          "start": 13.501,
+          "end": 14.201
+        },
+        {
+          "text": "fatto",
+          "start": 14.301,
+          "end": 14.561
+        },
+        {
+          "text": "in",
+          "start": 14.601,
+          "end": 14.681
+        },
+        {
+          "text": "casa.",
+          "start": 14.721,
+          "end": 15.021
+        }
+      ]
+    },
+    {
+      "start": 15.561,
+      "end": 20.081,
+      "text": "È perfino peggio di nessuna cifratura perché induce un falso senso di sicurezza.",
+      "words": [
+        {
+          "text": "È",
+          "start": 15.561,
+          "end": 15.601
+        },
+        {
+          "text": "perfino",
+          "start": 15.661,
+          "end": 15.981
+        },
+        {
+          "text": "peggio",
+          "start": 16.121,
+          "end": 16.481
+        },
+        {
+          "text": "di",
+          "start": 16.541,
+          "end": 16.601
+        },
+        {
+          "text": "nessuna",
+          "start": 16.721,
+          "end": 17.121
+        },
+        {
+          "text": "cifratura",
+          "start": 17.161,
+          "end": 17.641
+        },
+        {
+          "text": "perché",
+          "start": 17.941,
+          "end": 18.161
+        },
+        {
+          "text": "induce",
+          "start": 18.221,
+          "end": 18.541
+        },
+        {
+          "text": "un",
+          "start": 18.601,
+          "end": 18.681
+        },
+        {
+          "text": "falso",
+          "start": 18.761,
+          "end": 19.121
+        },
+        {
+          "text": "senso",
+          "start": 19.181,
+          "end": 19.461
+        },
+        {
+          "text": "di",
+          "start": 19.521,
+          "end": 19.561
+        },
+        {
+          "text": "sicurezza.",
+          "start": 19.621,
+          "end": 20.081
+        }
+      ]
+    },
+    {
+      "start": 20.861,
+      "end": 27.982,
+      "text": "Il refactoring è adottare tecnologie di cifratura consolidate, scegliendo librerie collaudate e riviste regolarmente dalla",
+      "words": [
+        {
+          "text": "Il",
+          "start": 20.861,
+          "end": 20.941
+        },
+        {
+          "text": "refactoring",
+          "start": 20.981,
+          "end": 21.581
+        },
+        {
+          "text": "è",
+          "start": 21.621,
+          "end": 21.661
+        },
+        {
+          "text": "adottare",
+          "start": 22.021,
+          "end": 22.461
+        },
+        {
+          "text": "tecnologie",
+          "start": 22.541,
+          "end": 23.222
+        },
+        {
+          "text": "di",
+          "start": 23.242,
+          "end": 23.302
+        },
+        {
+          "text": "cifratura",
+          "start": 23.342,
+          "end": 23.782
+        },
+        {
+          "text": "consolidate,",
+          "start": 23.822,
+          "end": 24.462
+        },
+        {
+          "text": "scegliendo",
+          "start": 24.782,
+          "end": 25.222
+        },
+        {
+          "text": "librerie",
+          "start": 25.342,
+          "end": 25.802
+        },
+        {
+          "text": "collaudate",
+          "start": 25.862,
+          "end": 26.482
+        },
+        {
+          "text": "e",
+          "start": 26.602,
+          "end": 26.642
+        },
+        {
+          "text": "riviste",
+          "start": 26.682,
+          "end": 27.022
+        },
+        {
+          "text": "regolarmente",
+          "start": 27.142,
+          "end": 27.742
+        },
+        {
+          "text": "dalla",
+          "start": 27.782,
+          "end": 27.982
+        }
+      ]
+    },
+    {
+      "start": 28.022,
+      "end": 30.702,
+      "text": "comunità ed evitando algoritmi sperimentali.",
+      "words": [
+        {
+          "text": "comunità",
+          "start": 28.022,
+          "end": 28.422
+        },
+        {
+          "text": "ed",
+          "start": 28.802,
+          "end": 28.902
+        },
+        {
+          "text": "evitando",
+          "start": 28.922,
+          "end": 29.362
+        },
+        {
+          "text": "algoritmi",
+          "start": 29.482,
+          "end": 29.962
+        },
+        {
+          "text": "sperimentali.",
+          "start": 30.042,
+          "end": 30.702
+        }
+      ]
+    },
+    {
+      "start": 31.702,
+      "end": 34.162,
+      "text": "Quinto smell: non-encrypted data exposure,",
+      "words": [
+        {
+          "text": "Quinto",
+          "start": 31.702,
+          "end": 31.922
+        },
+        {
+          "text": "smell:",
+          "start": 31.962,
+          "end": 32.182
+        },
+        {
+          "text": "non-encrypted",
+          "start": 32.682,
+          "end": 33.362
+        },
+        {
+          "text": "data",
+          "start": 33.402,
+          "end": 33.622
+        },
+        {
+          "text": "exposure,",
+          "start": 33.682,
+          "end": 34.162
+        }
+      ]
+    },
+    {
+      "start": 34.742,
+      "end": 39.423,
+      "text": "quando dati sensibili e credenziali restano memorizzati in chiaro o protetti male.",
+      "words": [
+        {
+          "text": "quando",
+          "start": 34.742,
+          "end": 34.962
+        },
+        {
+          "text": "dati",
+          "start": 35.062,
+          "end": 35.262
+        },
+        {
+          "text": "sensibili",
+          "start": 35.322,
+          "end": 35.862
+        },
+        {
+          "text": "e",
+          "start": 35.922,
+          "end": 35.962
+        },
+        {
+          "text": "credenziali",
+          "start": 36.002,
+          "end": 36.642
+        },
+        {
+          "text": "restano",
+          "start": 36.982,
+          "end": 37.302
+        },
+        {
+          "text": "memorizzati",
+          "start": 37.362,
+          "end": 37.922
+        },
+        {
+          "text": "in",
+          "start": 38.002,
+          "end": 38.062
+        },
+        {
+          "text": "chiaro",
+          "start": 38.122,
+          "end": 38.463
+        },
+        {
+          "text": "o",
+          "start": 38.623,
+          "end": 38.663
+        },
+        {
+          "text": "protetti",
+          "start": 38.723,
+          "end": 39.143
+        },
+        {
+          "text": "male.",
+          "start": 39.183,
+          "end": 39.423
+        }
+      ]
+    },
+    {
+      "start": 40.283,
+      "end": 43.703,
+      "text": "Il refactoring è cifrare tutti i dati sensibili a riposo,",
+      "words": [
+        {
+          "text": "Il",
+          "start": 40.283,
+          "end": 40.363
+        },
+        {
+          "text": "refactoring",
+          "start": 40.403,
+          "end": 40.943
+        },
+        {
+          "text": "è",
+          "start": 41.003,
+          "end": 41.043
+        },
+        {
+          "text": "cifrare",
+          "start": 41.323,
+          "end": 41.763
+        },
+        {
+          "text": "tutti",
+          "start": 41.883,
+          "end": 42.183
+        },
+        {
+          "text": "i",
+          "start": 42.243,
+          "end": 42.283
+        },
+        {
+          "text": "dati",
+          "start": 42.303,
+          "end": 42.523
+        },
+        {
+          "text": "sensibili",
+          "start": 42.583,
+          "end": 43.103
+        },
+        {
+          "text": "a",
+          "start": 43.183,
+          "end": 43.223
+        },
+        {
+          "text": "riposo,",
+          "start": 43.283,
+          "end": 43.703
+        }
+      ]
+    },
+    {
+      "start": 44.003,
+      "end": 49.523,
+      "text": "decifrandoli solo quando servono, attraverso il DBMS, il sistema operativo a livello di disco,",
+      "words": [
+        {
+          "text": "decifrandoli",
+          "start": 44.003,
+          "end": 44.583
+        },
+        {
+          "text": "solo",
+          "start": 44.683,
+          "end": 44.883
+        },
+        {
+          "text": "quando",
+          "start": 44.923,
+          "end": 45.143
+        },
+        {
+          "text": "servono,",
+          "start": 45.183,
+          "end": 45.583
+        },
+        {
+          "text": "attraverso",
+          "start": 46.003,
+          "end": 46.423
+        },
+        {
+          "text": "il",
+          "start": 46.483,
+          "end": 46.543
+        },
+        {
+          "text": "DBMS,",
+          "start": 46.603,
+          "end": 47.303
+        },
+        {
+          "text": "il",
+          "start": 47.783,
+          "end": 47.863
+        },
+        {
+          "text": "sistema",
+          "start": 47.903,
+          "end": 48.183
+        },
+        {
+          "text": "operativo",
+          "start": 48.243,
+          "end": 48.663
+        },
+        {
+          "text": "a",
+          "start": 48.703,
+          "end": 48.743
+        },
+        {
+          "text": "livello",
+          "start": 48.803,
+          "end": 49.083
+        },
+        {
+          "text": "di",
+          "start": 49.103,
+          "end": 49.183
+        },
+        {
+          "text": "disco,",
+          "start": 49.223,
+          "end": 49.523
+        }
+      ]
+    },
+    {
+      "start": 49.883,
+      "end": 51.643,
+      "text": "il livello applicativo e la cache.",
+      "words": [
+        {
+          "text": "il",
+          "start": 49.883,
+          "end": 49.943
+        },
+        {
+          "text": "livello",
+          "start": 49.983,
+          "end": 50.283
+        },
+        {
+          "text": "applicativo",
+          "start": 50.303,
+          "end": 50.883
+        },
+        {
+          "text": "e",
+          "start": 51.163,
+          "end": 51.203
+        },
+        {
+          "text": "la",
+          "start": 51.243,
+          "end": 51.323
+        },
+        {
+          "text": "cache.",
+          "start": 51.363,
+          "end": 51.643
+        }
+      ]
+    },
+    {
+      "start": 52.303,
+      "end": 57.064,
+      "text": "Poiché la cifratura consuma risorse, si individuano i dati critici e si cifra solo quanto",
+      "words": [
+        {
+          "text": "Poiché",
+          "start": 52.303,
+          "end": 52.523
+        },
+        {
+          "text": "la",
+          "start": 52.583,
+          "end": 52.623
+        },
+        {
+          "text": "cifratura",
+          "start": 52.663,
+          "end": 53.083
+        },
+        {
+          "text": "consuma",
+          "start": 53.143,
+          "end": 53.483
+        },
+        {
+          "text": "risorse,",
+          "start": 53.524,
+          "end": 53.904
+        },
+        {
+          "text": "si",
+          "start": 54.244,
+          "end": 54.304
+        },
+        {
+          "text": "individuano",
+          "start": 54.384,
+          "end": 54.924
+        },
+        {
+          "text": "i",
+          "start": 55.004,
+          "end": 55.044
+        },
+        {
+          "text": "dati",
+          "start": 55.064,
+          "end": 55.264
+        },
+        {
+          "text": "critici",
+          "start": 55.284,
+          "end": 55.684
+        },
+        {
+          "text": "e",
+          "start": 55.924,
+          "end": 55.964
+        },
+        {
+          "text": "si",
+          "start": 56.004,
+          "end": 56.084
+        },
+        {
+          "text": "cifra",
+          "start": 56.144,
+          "end": 56.404
+        },
+        {
+          "text": "solo",
+          "start": 56.544,
+          "end": 56.784
+        },
+        {
+          "text": "quanto",
+          "start": 56.824,
+          "end": 57.064
+        }
+      ]
+    },
+    {
+      "start": 57.124,
+      "end": 57.444,
+      "text": "serve.",
+      "words": [
+        {
+          "text": "serve.",
+          "start": 57.124,
+          "end": 57.444
+        }
+      ]
+    },
+    {
+      "start": 58.424,
+      "end": 65.204,
+      "text": "Sesto smell: hardcoded secrets, cioè chiavi API, segreti dei client e credenziali nel codice sorgente",
+      "words": [
+        {
+          "text": "Sesto",
+          "start": 58.424,
+          "end": 58.664
+        },
+        {
+          "text": "smell:",
+          "start": 58.704,
+          "end": 58.944
+        },
+        {
+          "text": "hardcoded",
+          "start": 59.384,
+          "end": 59.944
+        },
+        {
+          "text": "secrets,",
+          "start": 60.004,
+          "end": 60.384
+        },
+        {
+          "text": "cioè",
+          "start": 60.784,
+          "end": 60.924
+        },
+        {
+          "text": "chiavi",
+          "start": 61.124,
+          "end": 61.424
+        },
+        {
+          "text": "API,",
+          "start": 61.524,
+          "end": 61.964
+        },
+        {
+          "text": "segreti",
+          "start": 62.204,
+          "end": 62.564
+        },
+        {
+          "text": "dei",
+          "start": 62.604,
+          "end": 62.744
+        },
+        {
+          "text": "client",
+          "start": 62.764,
+          "end": 63.204
+        },
+        {
+          "text": "e",
+          "start": 63.264,
+          "end": 63.304
+        },
+        {
+          "text": "credenziali",
+          "start": 63.344,
+          "end": 64.044
+        },
+        {
+          "text": "nel",
+          "start": 64.144,
+          "end": 64.284
+        },
+        {
+          "text": "codice",
+          "start": 64.344,
+          "end": 64.664
+        },
+        {
+          "text": "sorgente",
+          "start": 64.724,
+          "end": 65.204
+        }
+      ]
+    },
+    {
+      "start": 65.344,
+      "end": 66.484,
+      "text": "o negli script di deploy.",
+      "words": [
+        {
+          "text": "o",
+          "start": 65.344,
+          "end": 65.384
+        },
+        {
+          "text": "negli",
+          "start": 65.424,
+          "end": 65.644
+        },
+        {
+          "text": "script",
+          "start": 65.684,
+          "end": 65.964
+        },
+        {
+          "text": "di",
+          "start": 66.044,
+          "end": 66.104
+        },
+        {
+          "text": "deploy.",
+          "start": 66.164,
+          "end": 66.484
+        }
+      ]
+    },
+    {
+      "start": 67.164,
+      "end": 71.825,
+      "text": "Attenzione alle variabili d'ambiente in Docker Compose: non vanno mai usate per i segreti,",
+      "words": [
+        {
+          "text": "Attenzione",
+          "start": 67.164,
+          "end": 67.664
+        },
+        {
+          "text": "alle",
+          "start": 67.704,
+          "end": 67.844
+        },
+        {
+          "text": "variabili",
+          "start": 67.884,
+          "end": 68.304
+        },
+        {
+          "text": "d'ambiente",
+          "start": 68.324,
+          "end": 68.784
+        },
+        {
+          "text": "in",
+          "start": 68.845,
+          "end": 68.905
+        },
+        {
+          "text": "Docker",
+          "start": 68.945,
+          "end": 69.185
+        },
+        {
+          "text": "Compose:",
+          "start": 69.245,
+          "end": 69.685
+        },
+        {
+          "text": "non",
+          "start": 70.025,
+          "end": 70.145
+        },
+        {
+          "text": "vanno",
+          "start": 70.185,
+          "end": 70.425
+        },
+        {
+          "text": "mai",
+          "start": 70.605,
+          "end": 70.805
+        },
+        {
+          "text": "usate",
+          "start": 70.885,
+          "end": 71.205
+        },
+        {
+          "text": "per",
+          "start": 71.245,
+          "end": 71.365
+        },
+        {
+          "text": "i",
+          "start": 71.385,
+          "end": 71.42500000000001
+        },
+        {
+          "text": "segreti,",
+          "start": 71.465,
+          "end": 71.825
+        }
+      ]
+    },
+    {
+      "start": 72.125,
+      "end": 75.385,
+      "text": "perché un gestore delle eccezioni può inviarle per sbaglio al logging.",
+      "words": [
+        {
+          "text": "perché",
+          "start": 72.125,
+          "end": 72.325
+        },
+        {
+          "text": "un",
+          "start": 72.365,
+          "end": 72.425
+        },
+        {
+          "text": "gestore",
+          "start": 72.465,
+          "end": 72.805
+        },
+        {
+          "text": "delle",
+          "start": 72.845,
+          "end": 73.005
+        },
+        {
+          "text": "eccezioni",
+          "start": 73.045,
+          "end": 73.525
+        },
+        {
+          "text": "può",
+          "start": 73.625,
+          "end": 73.705
+        },
+        {
+          "text": "inviarle",
+          "start": 73.785,
+          "end": 74.225
+        },
+        {
+          "text": "per",
+          "start": 74.305,
+          "end": 74.425
+        },
+        {
+          "text": "sbaglio",
+          "start": 74.485,
+          "end": 74.865
+        },
+        {
+          "text": "al",
+          "start": 74.905,
+          "end": 74.965
+        },
+        {
+          "text": "logging.",
+          "start": 75.005,
+          "end": 75.385
+        }
+      ]
+    },
+    {
+      "start": 75.925,
+      "end": 79.385,
+      "text": "I segreti vanno cifrati a riposo e tenuti fuori dai repository.",
+      "words": [
+        {
+          "text": "I",
+          "start": 75.925,
+          "end": 75.965
+        },
+        {
+          "text": "segreti",
+          "start": 76.005,
+          "end": 76.365
+        },
+        {
+          "text": "vanno",
+          "start": 76.405,
+          "end": 76.625
+        },
+        {
+          "text": "cifrati",
+          "start": 76.685,
+          "end": 77.105
+        },
+        {
+          "text": "a",
+          "start": 77.165,
+          "end": 77.20500000000001
+        },
+        {
+          "text": "riposo",
+          "start": 77.245,
+          "end": 77.645
+        },
+        {
+          "text": "e",
+          "start": 77.825,
+          "end": 77.86500000000001
+        },
+        {
+          "text": "tenuti",
+          "start": 77.945,
+          "end": 78.285
+        },
+        {
+          "text": "fuori",
+          "start": 78.385,
+          "end": 78.645
+        },
+        {
+          "text": "dai",
+          "start": 78.685,
+          "end": 78.825
+        },
+        {
+          "text": "repository.",
+          "start": 78.865,
+          "end": 79.385
+        }
+      ]
+    }
+  ]
+}

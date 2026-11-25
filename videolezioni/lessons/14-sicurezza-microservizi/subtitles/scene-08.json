@@ -1,0 +1,900 @@
+{
+  "duration": 71.865,
+  "segments": [
+    {
+      "start": 1.11,
+      "end": 6.031,
+      "text": "Come si eliminano concretamente gli smell di sicurezza da un'applicazione a microservizi esistente?",
+      "words": [
+        {
+          "text": "Come",
+          "start": 1.11,
+          "end": 1.27
+        },
+        {
+          "text": "si",
+          "start": 1.33,
+          "end": 1.41
+        },
+        {
+          "text": "eliminano",
+          "start": 1.47,
+          "end": 1.93
+        },
+        {
+          "text": "concretamente",
+          "start": 2.07,
+          "end": 2.79
+        },
+        {
+          "text": "gli",
+          "start": 2.83,
+          "end": 2.97
+        },
+        {
+          "text": "smell",
+          "start": 3.03,
+          "end": 3.25
+        },
+        {
+          "text": "di",
+          "start": 3.29,
+          "end": 3.37
+        },
+        {
+          "text": "sicurezza",
+          "start": 3.411,
+          "end": 3.871
+        },
+        {
+          "text": "da",
+          "start": 3.951,
+          "end": 4.031
+        },
+        {
+          "text": "un'applicazione",
+          "start": 4.071,
+          "end": 4.731
+        },
+        {
+          "text": "a",
+          "start": 4.771,
+          "end": 4.811
+        },
+        {
+          "text": "microservizi",
+          "start": 4.851,
+          "end": 5.471
+        },
+        {
+          "text": "esistente?",
+          "start": 5.531,
+          "end": 6.031
+        }
+      ]
+    },
+    {
+      "start": 7.031,
+      "end": 9.871,
+      "text": "Il capitolo propone un procedimento iterativo in tre fasi,",
+      "words": [
+        {
+          "text": "Il",
+          "start": 7.031,
+          "end": 7.111
+        },
+        {
+          "text": "capitolo",
+          "start": 7.151,
+          "end": 7.571
+        },
+        {
+          "text": "propone",
+          "start": 7.611,
+          "end": 7.931
+        },
+        {
+          "text": "un",
+          "start": 7.991,
+          "end": 8.051
+        },
+        {
+          "text": "procedimento",
+          "start": 8.071,
+          "end": 8.631
+        },
+        {
+          "text": "iterativo",
+          "start": 8.711,
+          "end": 9.211
+        },
+        {
+          "text": "in",
+          "start": 9.271,
+          "end": 9.331
+        },
+        {
+          "text": "tre",
+          "start": 9.351,
+          "end": 9.471
+        },
+        {
+          "text": "fasi,",
+          "start": 9.551,
+          "end": 9.871
+        }
+      ]
+    },
+    {
+      "start": 10.211,
+      "end": 12.411,
+      "text": "analogo a quello visto per gli smell architetturali.",
+      "words": [
+        {
+          "text": "analogo",
+          "start": 10.211,
+          "end": 10.571
+        },
+        {
+          "text": "a",
+          "start": 10.611,
+          "end": 10.651
+        },
+        {
+          "text": "quello",
+          "start": 10.671,
+          "end": 10.871
+        },
+        {
+          "text": "visto",
+          "start": 10.891,
+          "end": 11.151
+        },
+        {
+          "text": "per",
+          "start": 11.191,
+          "end": 11.291
+        },
+        {
+          "text": "gli",
+          "start": 11.311,
+          "end": 11.431
+        },
+        {
+          "text": "smell",
+          "start": 11.471,
+          "end": 11.691
+        },
+        {
+          "text": "architetturali.",
+          "start": 11.731,
+          "end": 12.411
+        }
+      ]
+    },
+    {
+      "start": 13.431,
+      "end": 18.531,
+      "text": "Primo passo, Detect: individuare sistematicamente gli smell di sicurezza nel codice,",
+      "words": [
+        {
+          "text": "Primo",
+          "start": 13.431,
+          "end": 13.671
+        },
+        {
+          "text": "passo,",
+          "start": 13.711,
+          "end": 14.031
+        },
+        {
+          "text": "Detect:",
+          "start": 14.431,
+          "end": 14.811
+        },
+        {
+          "text": "individuare",
+          "start": 15.451,
+          "end": 15.991
+        },
+        {
+          "text": "sistematicamente",
+          "start": 16.091,
+          "end": 16.871
+        },
+        {
+          "text": "gli",
+          "start": 16.891,
+          "end": 17.031
+        },
+        {
+          "text": "smell",
+          "start": 17.071,
+          "end": 17.271
+        },
+        {
+          "text": "di",
+          "start": 17.311,
+          "end": 17.371
+        },
+        {
+          "text": "sicurezza",
+          "start": 17.411,
+          "end": 17.831
+        },
+        {
+          "text": "nel",
+          "start": 17.891,
+          "end": 18.031
+        },
+        {
+          "text": "codice,",
+          "start": 18.111,
+          "end": 18.531
+        }
+      ]
+    },
+    {
+      "start": 18.772,
+      "end": 21.592,
+      "text": "nelle configurazioni e nelle comunicazioni di rete.",
+      "words": [
+        {
+          "text": "nelle",
+          "start": 18.772,
+          "end": 18.972
+        },
+        {
+          "text": "configurazioni",
+          "start": 19.012,
+          "end": 19.872
+        },
+        {
+          "text": "e",
+          "start": 20.252,
+          "end": 20.292
+        },
+        {
+          "text": "nelle",
+          "start": 20.332,
+          "end": 20.532
+        },
+        {
+          "text": "comunicazioni",
+          "start": 20.572,
+          "end": 21.232
+        },
+        {
+          "text": "di",
+          "start": 21.272,
+          "end": 21.332
+        },
+        {
+          "text": "rete.",
+          "start": 21.372,
+          "end": 21.592
+        }
+      ]
+    },
+    {
+      "start": 22.752,
+      "end": 28.332,
+      "text": "Secondo passo, Triage: decidere quali smell affrontare e in quale ordine di priorità.",
+      "words": [
+        {
+          "text": "Secondo",
+          "start": 22.752,
+          "end": 23.052
+        },
+        {
+          "text": "passo,",
+          "start": 23.092,
+          "end": 23.392
+        },
+        {
+          "text": "Triage:",
+          "start": 23.792,
+          "end": 24.252
+        },
+        {
+          "text": "decidere",
+          "start": 24.912,
+          "end": 25.292
+        },
+        {
+          "text": "quali",
+          "start": 25.372,
+          "end": 25.672
+        },
+        {
+          "text": "smell",
+          "start": 25.712,
+          "end": 25.932
+        },
+        {
+          "text": "affrontare",
+          "start": 25.972,
+          "end": 26.592
+        },
+        {
+          "text": "e",
+          "start": 26.892,
+          "end": 26.932
+        },
+        {
+          "text": "in",
+          "start": 26.992,
+          "end": 27.072
+        },
+        {
+          "text": "quale",
+          "start": 27.152,
+          "end": 27.432
+        },
+        {
+          "text": "ordine",
+          "start": 27.492,
+          "end": 27.792
+        },
+        {
+          "text": "di",
+          "start": 27.832,
+          "end": 27.892
+        },
+        {
+          "text": "priorità.",
+          "start": 27.932,
+          "end": 28.332
+        }
+      ]
+    },
+    {
+      "start": 29.052,
+      "end": 31.592,
+      "text": "Questa decisione bilancia insieme quattro criteri chiave:",
+      "words": [
+        {
+          "text": "Questa",
+          "start": 29.052,
+          "end": 29.272
+        },
+        {
+          "text": "decisione",
+          "start": 29.312,
+          "end": 29.732
+        },
+        {
+          "text": "bilancia",
+          "start": 29.772,
+          "end": 30.092
+        },
+        {
+          "text": "insieme",
+          "start": 30.132,
+          "end": 30.452
+        },
+        {
+          "text": "quattro",
+          "start": 30.532,
+          "end": 30.872
+        },
+        {
+          "text": "criteri",
+          "start": 30.932,
+          "end": 31.232
+        },
+        {
+          "text": "chiave:",
+          "start": 31.272,
+          "end": 31.592
+        }
+      ]
+    },
+    {
+      "start": 32.392,
+      "end": 37.173,
+      "text": "quanto è rilevante il microservizio nel sistema, l'impatto dello smell sugli attributi di qualità,",
+      "words": [
+        {
+          "text": "quanto",
+          "start": 32.392,
+          "end": 32.672
+        },
+        {
+          "text": "è",
+          "start": 32.732,
+          "end": 32.772
+        },
+        {
+          "text": "rilevante",
+          "start": 32.832,
+          "end": 33.292
+        },
+        {
+          "text": "il",
+          "start": 33.332,
+          "end": 33.372
+        },
+        {
+          "text": "microservizio",
+          "start": 33.392,
+          "end": 33.993
+        },
+        {
+          "text": "nel",
+          "start": 34.033,
+          "end": 34.153
+        },
+        {
+          "text": "sistema,",
+          "start": 34.193,
+          "end": 34.573
+        },
+        {
+          "text": "l'impatto",
+          "start": 35.093,
+          "end": 35.533
+        },
+        {
+          "text": "dello",
+          "start": 35.573,
+          "end": 35.733
+        },
+        {
+          "text": "smell",
+          "start": 35.773,
+          "end": 36.033
+        },
+        {
+          "text": "sugli",
+          "start": 36.113,
+          "end": 36.293
+        },
+        {
+          "text": "attributi",
+          "start": 36.293,
+          "end": 36.733
+        },
+        {
+          "text": "di",
+          "start": 36.773,
+          "end": 36.833
+        },
+        {
+          "text": "qualità,",
+          "start": 36.873,
+          "end": 37.173
+        }
+      ]
+    },
+    {
+      "start": 37.853,
+      "end": 43.173,
+      "text": "lo sforzo necessario per eseguire il refactoring e l'eventuale necessità di coordinarsi con altri team.",
+      "words": [
+        {
+          "text": "lo",
+          "start": 37.853,
+          "end": 37.933
+        },
+        {
+          "text": "sforzo",
+          "start": 37.993,
+          "end": 38.413
+        },
+        {
+          "text": "necessario",
+          "start": 38.473,
+          "end": 39.053
+        },
+        {
+          "text": "per",
+          "start": 39.113,
+          "end": 39.213
+        },
+        {
+          "text": "eseguire",
+          "start": 39.213,
+          "end": 39.553
+        },
+        {
+          "text": "il",
+          "start": 39.573,
+          "end": 39.613
+        },
+        {
+          "text": "refactoring",
+          "start": 39.653,
+          "end": 40.213
+        },
+        {
+          "text": "e",
+          "start": 40.693,
+          "end": 40.733
+        },
+        {
+          "text": "l'eventuale",
+          "start": 40.773,
+          "end": 41.213
+        },
+        {
+          "text": "necessità",
+          "start": 41.253,
+          "end": 41.693
+        },
+        {
+          "text": "di",
+          "start": 41.753,
+          "end": 41.813
+        },
+        {
+          "text": "coordinarsi",
+          "start": 41.873,
+          "end": 42.513
+        },
+        {
+          "text": "con",
+          "start": 42.573,
+          "end": 42.673
+        },
+        {
+          "text": "altri",
+          "start": 42.713,
+          "end": 42.913
+        },
+        {
+          "text": "team.",
+          "start": 42.973,
+          "end": 43.173
+        }
+      ]
+    },
+    {
+      "start": 43.773,
+      "end": 48.773,
+      "text": "Terzo passo, Refactor: scegliere dalla tassonomia il refactoring più adatto e applicarlo.",
+      "words": [
+        {
+          "text": "Terzo",
+          "start": 43.773,
+          "end": 44.033
+        },
+        {
+          "text": "passo,",
+          "start": 44.073,
+          "end": 44.373
+        },
+        {
+          "text": "Refactor:",
+          "start": 44.733,
+          "end": 45.133
+        },
+        {
+          "text": "scegliere",
+          "start": 45.653,
+          "end": 46.073
+        },
+        {
+          "text": "dalla",
+          "start": 46.133,
+          "end": 46.313
+        },
+        {
+          "text": "tassonomia",
+          "start": 46.333,
+          "end": 46.873
+        },
+        {
+          "text": "il",
+          "start": 46.913,
+          "end": 46.993
+        },
+        {
+          "text": "refactoring",
+          "start": 47.033,
+          "end": 47.513
+        },
+        {
+          "text": "più",
+          "start": 47.513,
+          "end": 47.613
+        },
+        {
+          "text": "adatto",
+          "start": 47.653,
+          "end": 47.993
+        },
+        {
+          "text": "e",
+          "start": 48.193,
+          "end": 48.233
+        },
+        {
+          "text": "applicarlo.",
+          "start": 48.273,
+          "end": 48.773
+        }
+      ]
+    },
+    {
+      "start": 49.794,
+      "end": 55.034,
+      "text": "Poiché il triage incrocia più dimensioni contemporaneamente, servono strumenti di supporto dedicati,",
+      "words": [
+        {
+          "text": "Poiché",
+          "start": 49.794,
+          "end": 50.054
+        },
+        {
+          "text": "il",
+          "start": 50.094,
+          "end": 50.174
+        },
+        {
+          "text": "triage",
+          "start": 50.214,
+          "end": 50.694
+        },
+        {
+          "text": "incrocia",
+          "start": 50.734,
+          "end": 51.074
+        },
+        {
+          "text": "più",
+          "start": 51.154,
+          "end": 51.274
+        },
+        {
+          "text": "dimensioni",
+          "start": 51.354,
+          "end": 51.774
+        },
+        {
+          "text": "contemporaneamente,",
+          "start": 51.814,
+          "end": 52.774
+        },
+        {
+          "text": "servono",
+          "start": 53.214,
+          "end": 53.494
+        },
+        {
+          "text": "strumenti",
+          "start": 53.554,
+          "end": 53.894
+        },
+        {
+          "text": "di",
+          "start": 53.934,
+          "end": 53.994
+        },
+        {
+          "text": "supporto",
+          "start": 54.034,
+          "end": 54.434
+        },
+        {
+          "text": "dedicati,",
+          "start": 54.494,
+          "end": 55.034
+        }
+      ]
+    },
+    {
+      "start": 55.394,
+      "end": 57.914,
+      "text": "analoghi alla toolchain per gli smell architetturali.",
+      "words": [
+        {
+          "text": "analoghi",
+          "start": 55.394,
+          "end": 55.834
+        },
+        {
+          "text": "alla",
+          "start": 55.894,
+          "end": 56.054
+        },
+        {
+          "text": "toolchain",
+          "start": 56.094,
+          "end": 56.554
+        },
+        {
+          "text": "per",
+          "start": 56.674,
+          "end": 56.774
+        },
+        {
+          "text": "gli",
+          "start": 56.794,
+          "end": 56.914
+        },
+        {
+          "text": "smell",
+          "start": 56.934,
+          "end": 57.154
+        },
+        {
+          "text": "architetturali.",
+          "start": 57.234,
+          "end": 57.914
+        }
+      ]
+    },
+    {
+      "start": 58.874,
+      "end": 62.954,
+      "text": "Nel complesso, combinare API gateway e single sign-on ai margini,",
+      "words": [
+        {
+          "text": "Nel",
+          "start": 58.874,
+          "end": 58.994
+        },
+        {
+          "text": "complesso,",
+          "start": 59.014,
+          "end": 59.454
+        },
+        {
+          "text": "combinare",
+          "start": 59.754,
+          "end": 60.234
+        },
+        {
+          "text": "API",
+          "start": 60.374,
+          "end": 60.794
+        },
+        {
+          "text": "gateway",
+          "start": 60.874,
+          "end": 61.274
+        },
+        {
+          "text": "e",
+          "start": 61.494,
+          "end": 61.534
+        },
+        {
+          "text": "single",
+          "start": 61.634,
+          "end": 61.934
+        },
+        {
+          "text": "sign-on",
+          "start": 61.974,
+          "end": 62.354
+        },
+        {
+          "text": "ai",
+          "start": 62.414,
+          "end": 62.494
+        },
+        {
+          "text": "margini,",
+          "start": 62.534,
+          "end": 62.954
+        }
+      ]
+    },
+    {
+      "start": 63.234,
+      "end": 70.115,
+      "text": "mutual TLS tra servizi, token JWT verificati localmente, privilegio minimo e cifratura a riposo realizza",
+      "words": [
+        {
+          "text": "mutual",
+          "start": 63.234,
+          "end": 63.614
+        },
+        {
+          "text": "TLS",
+          "start": 63.634,
+          "end": 64.094
+        },
+        {
+          "text": "tra",
+          "start": 64.134,
+          "end": 64.234
+        },
+        {
+          "text": "servizi,",
+          "start": 64.314,
+          "end": 64.815
+        },
+        {
+          "text": "token",
+          "start": 65.155,
+          "end": 65.455
+        },
+        {
+          "text": "JWT",
+          "start": 65.495,
+          "end": 65.975
+        },
+        {
+          "text": "verificati",
+          "start": 66.135,
+          "end": 66.595
+        },
+        {
+          "text": "localmente,",
+          "start": 66.635,
+          "end": 67.195
+        },
+        {
+          "text": "privilegio",
+          "start": 67.355,
+          "end": 67.875
+        },
+        {
+          "text": "minimo",
+          "start": 67.915,
+          "end": 68.275
+        },
+        {
+          "text": "e",
+          "start": 68.335,
+          "end": 68.375
+        },
+        {
+          "text": "cifratura",
+          "start": 68.415,
+          "end": 68.875
+        },
+        {
+          "text": "a",
+          "start": 68.915,
+          "end": 68.95500000000001
+        },
+        {
+          "text": "riposo",
+          "start": 68.995,
+          "end": 69.355
+        },
+        {
+          "text": "realizza",
+          "start": 69.755,
+          "end": 70.115
+        }
+      ]
+    },
+    {
+      "start": 70.175,
+      "end": 71.615,
+      "text": "una vera difesa in profondità.",
+      "words": [
+        {
+          "text": "una",
+          "start": 70.175,
+          "end": 70.295
+        },
+        {
+          "text": "vera",
+          "start": 70.435,
+          "end": 70.655
+        },
+        {
+          "text": "difesa",
+          "start": 70.695,
+          "end": 71.015
+        },
+        {
+          "text": "in",
+          "start": 71.055,
+          "end": 71.115
+        },
+        {
+          "text": "profondità.",
+          "start": 71.135,
+          "end": 71.615
+        }
+      ]
+    }
+  ]
+}

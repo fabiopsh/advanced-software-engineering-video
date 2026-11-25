@@ -1,0 +1,989 @@
+{
+  "duration": 77.626,
+  "segments": [
+    {
+      "start": 0.666,
+      "end": 3.027,
+      "text": "Vediamo ora da vicino che cos'è un microservizio.",
+      "words": [
+        {
+          "text": "Vediamo",
+          "start": 0.666,
+          "end": 0.926
+        },
+        {
+          "text": "ora",
+          "start": 0.966,
+          "end": 1.066
+        },
+        {
+          "text": "da",
+          "start": 1.106,
+          "end": 1.166
+        },
+        {
+          "text": "vicino",
+          "start": 1.206,
+          "end": 1.506
+        },
+        {
+          "text": "che",
+          "start": 1.626,
+          "end": 1.726
+        },
+        {
+          "text": "cos'è",
+          "start": 1.827,
+          "end": 2.067
+        },
+        {
+          "text": "un",
+          "start": 2.207,
+          "end": 2.267
+        },
+        {
+          "text": "microservizio.",
+          "start": 2.287,
+          "end": 3.027
+        }
+      ]
+    },
+    {
+      "start": 3.707,
+      "end": 7.527,
+      "text": "È un servizio piccolo, combinabile con altri per costruire applicazioni,",
+      "words": [
+        {
+          "text": "È",
+          "start": 3.707,
+          "end": 3.747
+        },
+        {
+          "text": "un",
+          "start": 3.787,
+          "end": 3.867
+        },
+        {
+          "text": "servizio",
+          "start": 3.907,
+          "end": 4.307
+        },
+        {
+          "text": "piccolo,",
+          "start": 4.387,
+          "end": 4.807
+        },
+        {
+          "text": "combinabile",
+          "start": 5.007,
+          "end": 5.667
+        },
+        {
+          "text": "con",
+          "start": 5.707,
+          "end": 5.847
+        },
+        {
+          "text": "altri",
+          "start": 5.907,
+          "end": 6.167
+        },
+        {
+          "text": "per",
+          "start": 6.207,
+          "end": 6.327
+        },
+        {
+          "text": "costruire",
+          "start": 6.347,
+          "end": 6.787
+        },
+        {
+          "text": "applicazioni,",
+          "start": 6.827,
+          "end": 7.527
+        }
+      ]
+    },
+    {
+      "start": 7.867,
+      "end": 12.588,
+      "text": "la cui interfaccia resta stabile anche quando gli altri servizi cambiano o vengono ridistribuiti.",
+      "words": [
+        {
+          "text": "la",
+          "start": 7.867,
+          "end": 7.947
+        },
+        {
+          "text": "cui",
+          "start": 8.007,
+          "end": 8.127
+        },
+        {
+          "text": "interfaccia",
+          "start": 8.167,
+          "end": 8.687
+        },
+        {
+          "text": "resta",
+          "start": 8.727,
+          "end": 8.967
+        },
+        {
+          "text": "stabile",
+          "start": 9.047,
+          "end": 9.447
+        },
+        {
+          "text": "anche",
+          "start": 9.607,
+          "end": 9.828
+        },
+        {
+          "text": "quando",
+          "start": 9.888,
+          "end": 10.128
+        },
+        {
+          "text": "gli",
+          "start": 10.128,
+          "end": 10.228
+        },
+        {
+          "text": "altri",
+          "start": 10.248,
+          "end": 10.468
+        },
+        {
+          "text": "servizi",
+          "start": 10.508,
+          "end": 10.868
+        },
+        {
+          "text": "cambiano",
+          "start": 10.948,
+          "end": 11.328
+        },
+        {
+          "text": "o",
+          "start": 11.448,
+          "end": 11.488
+        },
+        {
+          "text": "vengono",
+          "start": 11.528,
+          "end": 11.848
+        },
+        {
+          "text": "ridistribuiti.",
+          "start": 11.888,
+          "end": 12.588
+        }
+      ]
+    },
+    {
+      "start": 13.628,
+      "end": 16.428,
+      "text": "Ogni microservizio possiede cinque caratteristiche chiave.",
+      "words": [
+        {
+          "text": "Ogni",
+          "start": 13.628,
+          "end": 13.808
+        },
+        {
+          "text": "microservizio",
+          "start": 13.848,
+          "end": 14.548
+        },
+        {
+          "text": "possiede",
+          "start": 14.648,
+          "end": 15.008
+        },
+        {
+          "text": "cinque",
+          "start": 15.108,
+          "end": 15.468
+        },
+        {
+          "text": "caratteristiche",
+          "start": 15.488,
+          "end": 16.108
+        },
+        {
+          "text": "chiave.",
+          "start": 16.168,
+          "end": 16.428
+        }
+      ]
+    },
+    {
+      "start": 17.128,
+      "end": 21.509,
+      "text": "È self-contained, senza dipendenze esterne, con propri dati e interfaccia.",
+      "words": [
+        {
+          "text": "È",
+          "start": 17.128,
+          "end": 17.168
+        },
+        {
+          "text": "self-contained,",
+          "start": 17.388,
+          "end": 18.189
+        },
+        {
+          "text": "senza",
+          "start": 18.509,
+          "end": 18.749
+        },
+        {
+          "text": "dipendenze",
+          "start": 18.809,
+          "end": 19.289
+        },
+        {
+          "text": "esterne,",
+          "start": 19.329,
+          "end": 19.789
+        },
+        {
+          "text": "con",
+          "start": 19.889,
+          "end": 20.009
+        },
+        {
+          "text": "propri",
+          "start": 20.069,
+          "end": 20.289
+        },
+        {
+          "text": "dati",
+          "start": 20.349,
+          "end": 20.629
+        },
+        {
+          "text": "e",
+          "start": 20.789,
+          "end": 20.829
+        },
+        {
+          "text": "interfaccia.",
+          "start": 20.909,
+          "end": 21.509
+        }
+      ]
+    },
+    {
+      "start": 22.209,
+      "end": 25.449,
+      "text": "È lightweight, perché usa protocolli leggeri a basso overhead.",
+      "words": [
+        {
+          "text": "È",
+          "start": 22.209,
+          "end": 22.249
+        },
+        {
+          "text": "lightweight,",
+          "start": 22.469,
+          "end": 23.029
+        },
+        {
+          "text": "perché",
+          "start": 23.269,
+          "end": 23.469
+        },
+        {
+          "text": "usa",
+          "start": 23.529,
+          "end": 23.669
+        },
+        {
+          "text": "protocolli",
+          "start": 23.729,
+          "end": 24.149
+        },
+        {
+          "text": "leggeri",
+          "start": 24.209,
+          "end": 24.589
+        },
+        {
+          "text": "a",
+          "start": 24.729,
+          "end": 24.769
+        },
+        {
+          "text": "basso",
+          "start": 24.829,
+          "end": 25.089
+        },
+        {
+          "text": "overhead.",
+          "start": 25.109,
+          "end": 25.449
+        }
+      ]
+    },
+    {
+      "start": 26.23,
+      "end": 31.17,
+      "text": "È implementation independent, quindi ogni team sceglie linguaggi e database diversi.",
+      "words": [
+        {
+          "text": "È",
+          "start": 26.23,
+          "end": 26.27
+        },
+        {
+          "text": "implementation",
+          "start": 26.49,
+          "end": 27.21
+        },
+        {
+          "text": "independent,",
+          "start": 27.27,
+          "end": 27.87
+        },
+        {
+          "text": "quindi",
+          "start": 28.09,
+          "end": 28.33
+        },
+        {
+          "text": "ogni",
+          "start": 28.49,
+          "end": 28.69
+        },
+        {
+          "text": "team",
+          "start": 28.75,
+          "end": 28.95
+        },
+        {
+          "text": "sceglie",
+          "start": 29.17,
+          "end": 29.47
+        },
+        {
+          "text": "linguaggi",
+          "start": 29.55,
+          "end": 30.07
+        },
+        {
+          "text": "e",
+          "start": 30.21,
+          "end": 30.25
+        },
+        {
+          "text": "database",
+          "start": 30.29,
+          "end": 30.73
+        },
+        {
+          "text": "diversi.",
+          "start": 30.75,
+          "end": 31.17
+        }
+      ]
+    },
+    {
+      "start": 31.83,
+      "end": 36.211,
+      "text": "È independently deployable, girando in un processo proprio con deploy automatico.",
+      "words": [
+        {
+          "text": "È",
+          "start": 31.83,
+          "end": 31.87
+        },
+        {
+          "text": "independently",
+          "start": 32.07,
+          "end": 32.79
+        },
+        {
+          "text": "deployable,",
+          "start": 32.85,
+          "end": 33.45
+        },
+        {
+          "text": "girando",
+          "start": 33.69,
+          "end": 34.051
+        },
+        {
+          "text": "in",
+          "start": 34.111,
+          "end": 34.171
+        },
+        {
+          "text": "un",
+          "start": 34.191,
+          "end": 34.251
+        },
+        {
+          "text": "processo",
+          "start": 34.271,
+          "end": 34.671
+        },
+        {
+          "text": "proprio",
+          "start": 34.711,
+          "end": 35.071
+        },
+        {
+          "text": "con",
+          "start": 35.171,
+          "end": 35.291
+        },
+        {
+          "text": "deploy",
+          "start": 35.331,
+          "end": 35.611
+        },
+        {
+          "text": "automatico.",
+          "start": 35.691,
+          "end": 36.211
+        }
+      ]
+    },
+    {
+      "start": 36.891,
+      "end": 41.471,
+      "text": "Infine è business-oriented, cioè realizza una precisa capacità di business.",
+      "words": [
+        {
+          "text": "Infine",
+          "start": 36.891,
+          "end": 37.251
+        },
+        {
+          "text": "è",
+          "start": 37.471,
+          "end": 37.511
+        },
+        {
+          "text": "business-oriented,",
+          "start": 37.631,
+          "end": 38.551
+        },
+        {
+          "text": "cioè",
+          "start": 38.951,
+          "end": 39.131
+        },
+        {
+          "text": "realizza",
+          "start": 39.251,
+          "end": 39.731
+        },
+        {
+          "text": "una",
+          "start": 39.811,
+          "end": 39.931
+        },
+        {
+          "text": "precisa",
+          "start": 40.011,
+          "end": 40.431
+        },
+        {
+          "text": "capacità",
+          "start": 40.491,
+          "end": 40.911
+        },
+        {
+          "text": "di",
+          "start": 40.951,
+          "end": 41.031
+        },
+        {
+          "text": "business.",
+          "start": 41.071,
+          "end": 41.471
+        }
+      ]
+    },
+    {
+      "start": 42.492,
+      "end": 48.652,
+      "text": "Per progettarli bene servono basso coupling, cioè poche relazioni tra servizi così da aggiornarli separatamente,",
+      "words": [
+        {
+          "text": "Per",
+          "start": 42.492,
+          "end": 42.592
+        },
+        {
+          "text": "progettarli",
+          "start": 42.632,
+          "end": 43.132
+        },
+        {
+          "text": "bene",
+          "start": 43.172,
+          "end": 43.412
+        },
+        {
+          "text": "servono",
+          "start": 43.592,
+          "end": 43.932
+        },
+        {
+          "text": "basso",
+          "start": 44.032,
+          "end": 44.292
+        },
+        {
+          "text": "coupling,",
+          "start": 44.352,
+          "end": 44.732
+        },
+        {
+          "text": "cioè",
+          "start": 45.052,
+          "end": 45.232
+        },
+        {
+          "text": "poche",
+          "start": 45.392,
+          "end": 45.652
+        },
+        {
+          "text": "relazioni",
+          "start": 45.692,
+          "end": 46.092
+        },
+        {
+          "text": "tra",
+          "start": 46.152,
+          "end": 46.232
+        },
+        {
+          "text": "servizi",
+          "start": 46.312,
+          "end": 46.792
+        },
+        {
+          "text": "così",
+          "start": 46.952,
+          "end": 47.152
+        },
+        {
+          "text": "da",
+          "start": 47.212,
+          "end": 47.292
+        },
+        {
+          "text": "aggiornarli",
+          "start": 47.332,
+          "end": 47.892
+        },
+        {
+          "text": "separatamente,",
+          "start": 47.952,
+          "end": 48.652
+        }
+      ]
+    },
+    {
+      "start": 49.152,
+      "end": 54.433,
+      "text": "e alta cohesion, cioè molte relazioni interne al servizio per ridurre le chiamate di rete,",
+      "words": [
+        {
+          "text": "e",
+          "start": 49.152,
+          "end": 49.192
+        },
+        {
+          "text": "alta",
+          "start": 49.352,
+          "end": 49.592
+        },
+        {
+          "text": "cohesion,",
+          "start": 49.652,
+          "end": 50.153
+        },
+        {
+          "text": "cioè",
+          "start": 50.733,
+          "end": 50.933
+        },
+        {
+          "text": "molte",
+          "start": 51.193,
+          "end": 51.553
+        },
+        {
+          "text": "relazioni",
+          "start": 51.613,
+          "end": 52.013
+        },
+        {
+          "text": "interne",
+          "start": 52.053,
+          "end": 52.413
+        },
+        {
+          "text": "al",
+          "start": 52.453,
+          "end": 52.513
+        },
+        {
+          "text": "servizio",
+          "start": 52.553,
+          "end": 52.993
+        },
+        {
+          "text": "per",
+          "start": 53.073,
+          "end": 53.193
+        },
+        {
+          "text": "ridurre",
+          "start": 53.253,
+          "end": 53.633
+        },
+        {
+          "text": "le",
+          "start": 53.673,
+          "end": 53.753
+        },
+        {
+          "text": "chiamate",
+          "start": 53.773,
+          "end": 54.073
+        },
+        {
+          "text": "di",
+          "start": 54.113,
+          "end": 54.173
+        },
+        {
+          "text": "rete,",
+          "start": 54.213,
+          "end": 54.433
+        }
+      ]
+    },
+    {
+      "start": 54.813,
+      "end": 56.853,
+      "text": "secondo il single responsibility principle.",
+      "words": [
+        {
+          "text": "secondo",
+          "start": 54.813,
+          "end": 55.113
+        },
+        {
+          "text": "il",
+          "start": 55.153,
+          "end": 55.213
+        },
+        {
+          "text": "single",
+          "start": 55.293,
+          "end": 55.653
+        },
+        {
+          "text": "responsibility",
+          "start": 55.693,
+          "end": 56.373
+        },
+        {
+          "text": "principle.",
+          "start": 56.413,
+          "end": 56.853
+        }
+      ]
+    },
+    {
+      "start": 57.834,
+      "end": 60.234,
+      "text": "Ma quanto deve essere grande un microservizio?",
+      "words": [
+        {
+          "text": "Ma",
+          "start": 57.834,
+          "end": 57.894
+        },
+        {
+          "text": "quanto",
+          "start": 57.954,
+          "end": 58.194
+        },
+        {
+          "text": "deve",
+          "start": 58.234,
+          "end": 58.354
+        },
+        {
+          "text": "essere",
+          "start": 58.414,
+          "end": 58.674
+        },
+        {
+          "text": "grande",
+          "start": 58.754,
+          "end": 59.214
+        },
+        {
+          "text": "un",
+          "start": 59.394,
+          "end": 59.474
+        },
+        {
+          "text": "microservizio?",
+          "start": 59.514,
+          "end": 60.234
+        }
+      ]
+    },
+    {
+      "start": 61.154,
+      "end": 64.174,
+      "text": "Vale la rule of twos: un team di otto o dieci persone,",
+      "words": [
+        {
+          "text": "Vale",
+          "start": 61.154,
+          "end": 61.334
+        },
+        {
+          "text": "la",
+          "start": 61.374,
+          "end": 61.434
+        },
+        {
+          "text": "rule",
+          "start": 61.514,
+          "end": 61.674
+        },
+        {
+          "text": "of",
+          "start": 61.694,
+          "end": 61.754
+        },
+        {
+          "text": "twos:",
+          "start": 61.794,
+          "end": 62.054
+        },
+        {
+          "text": "un",
+          "start": 62.554,
+          "end": 62.654
+        },
+        {
+          "text": "team",
+          "start": 62.694,
+          "end": 62.894
+        },
+        {
+          "text": "di",
+          "start": 63.014,
+          "end": 63.094
+        },
+        {
+          "text": "otto",
+          "start": 63.194,
+          "end": 63.374
+        },
+        {
+          "text": "o",
+          "start": 63.394,
+          "end": 63.434
+        },
+        {
+          "text": "dieci",
+          "start": 63.474,
+          "end": 63.694
+        },
+        {
+          "text": "persone,",
+          "start": 63.734,
+          "end": 64.174
+        }
+      ]
+    },
+    {
+      "start": 64.434,
+      "end": 70.135,
+      "text": "sfamabile con due pizze grandi, deve poterlo sviluppare, collaudare e distribuire in due settimane.",
+      "words": [
+        {
+          "text": "sfamabile",
+          "start": 64.434,
+          "end": 64.954
+        },
+        {
+          "text": "con",
+          "start": 65.014,
+          "end": 65.154
+        },
+        {
+          "text": "due",
+          "start": 65.234,
+          "end": 65.394
+        },
+        {
+          "text": "pizze",
+          "start": 65.434,
+          "end": 65.674
+        },
+        {
+          "text": "grandi,",
+          "start": 65.715,
+          "end": 66.055
+        },
+        {
+          "text": "deve",
+          "start": 66.415,
+          "end": 66.575
+        },
+        {
+          "text": "poterlo",
+          "start": 66.635,
+          "end": 66.975
+        },
+        {
+          "text": "sviluppare,",
+          "start": 67.015,
+          "end": 67.595
+        },
+        {
+          "text": "collaudare",
+          "start": 67.835,
+          "end": 68.455
+        },
+        {
+          "text": "e",
+          "start": 68.615,
+          "end": 68.655
+        },
+        {
+          "text": "distribuire",
+          "start": 68.695,
+          "end": 69.275
+        },
+        {
+          "text": "in",
+          "start": 69.335,
+          "end": 69.395
+        },
+        {
+          "text": "due",
+          "start": 69.475,
+          "end": 69.615
+        },
+        {
+          "text": "settimane.",
+          "start": 69.655,
+          "end": 70.135
+        }
+      ]
+    },
+    {
+      "start": 70.775,
+      "end": 74.476,
+      "text": "Un team così serve per gestire messaggi, guasti, coerenza dei dati,",
+      "words": [
+        {
+          "text": "Un",
+          "start": 70.775,
+          "end": 70.855
+        },
+        {
+          "text": "team",
+          "start": 70.895,
+          "end": 70.995
+        },
+        {
+          "text": "così",
+          "start": 71.055,
+          "end": 71.215
+        },
+        {
+          "text": "serve",
+          "start": 71.375,
+          "end": 71.575
+        },
+        {
+          "text": "per",
+          "start": 71.615,
+          "end": 71.715
+        },
+        {
+          "text": "gestire",
+          "start": 71.755,
+          "end": 72.075
+        },
+        {
+          "text": "messaggi,",
+          "start": 72.115,
+          "end": 72.635
+        },
+        {
+          "text": "guasti,",
+          "start": 72.855,
+          "end": 73.255
+        },
+        {
+          "text": "coerenza",
+          "start": 73.555,
+          "end": 74.016
+        },
+        {
+          "text": "dei",
+          "start": 74.056,
+          "end": 74.176
+        },
+        {
+          "text": "dati,",
+          "start": 74.196,
+          "end": 74.476
+        }
+      ]
+    },
+    {
+      "start": 74.816,
+      "end": 77.376,
+      "text": "interfaccia, test e supporto post-rilascio.",
+      "words": [
+        {
+          "text": "interfaccia,",
+          "start": 74.816,
+          "end": 75.396
+        },
+        {
+          "text": "test",
+          "start": 75.636,
+          "end": 75.916
+        },
+        {
+          "text": "e",
+          "start": 76.196,
+          "end": 76.236
+        },
+        {
+          "text": "supporto",
+          "start": 76.276,
+          "end": 76.676
+        },
+        {
+          "text": "post-rilascio.",
+          "start": 76.736,
+          "end": 77.376
+        }
+      ]
+    }
+  ]
+}

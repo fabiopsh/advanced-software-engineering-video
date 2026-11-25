@@ -1,0 +1,931 @@
+{
+  "duration": 73.199,
+  "segments": [
+    {
+      "start": 0.724,
+      "end": 3.864,
+      "text": "Passiamo ora alla protezione del traffico interno tra microservizi.",
+      "words": [
+        {
+          "text": "Passiamo",
+          "start": 0.724,
+          "end": 1.044
+        },
+        {
+          "text": "ora",
+          "start": 1.104,
+          "end": 1.204
+        },
+        {
+          "text": "alla",
+          "start": 1.244,
+          "end": 1.384
+        },
+        {
+          "text": "protezione",
+          "start": 1.424,
+          "end": 1.924
+        },
+        {
+          "text": "del",
+          "start": 1.964,
+          "end": 2.084
+        },
+        {
+          "text": "traffico",
+          "start": 2.124,
+          "end": 2.484
+        },
+        {
+          "text": "interno",
+          "start": 2.564,
+          "end": 2.924
+        },
+        {
+          "text": "tra",
+          "start": 2.984,
+          "end": 3.084
+        },
+        {
+          "text": "microservizi.",
+          "start": 3.164,
+          "end": 3.864
+        }
+      ]
+    },
+    {
+      "start": 4.645,
+      "end": 8.445,
+      "text": "Settimo smell, il più citato della rassegna con il cinquantacinque percento:",
+      "words": [
+        {
+          "text": "Settimo",
+          "start": 4.645,
+          "end": 4.965
+        },
+        {
+          "text": "smell,",
+          "start": 5.025,
+          "end": 5.265
+        },
+        {
+          "text": "il",
+          "start": 5.585,
+          "end": 5.665
+        },
+        {
+          "text": "più",
+          "start": 5.725,
+          "end": 5.825
+        },
+        {
+          "text": "citato",
+          "start": 5.925,
+          "end": 6.365
+        },
+        {
+          "text": "della",
+          "start": 6.405,
+          "end": 6.565
+        },
+        {
+          "text": "rassegna",
+          "start": 6.605,
+          "end": 7.005
+        },
+        {
+          "text": "con",
+          "start": 7.065,
+          "end": 7.165
+        },
+        {
+          "text": "il",
+          "start": 7.205,
+          "end": 7.285
+        },
+        {
+          "text": "cinquantacinque",
+          "start": 7.305,
+          "end": 7.945
+        },
+        {
+          "text": "percento:",
+          "start": 7.985,
+          "end": 8.445
+        }
+      ]
+    },
+    {
+      "start": 8.865,
+      "end": 11.285,
+      "text": "comunicazioni service-to-service non protette.",
+      "words": [
+        {
+          "text": "comunicazioni",
+          "start": 8.865,
+          "end": 9.505
+        },
+        {
+          "text": "service-to-service",
+          "start": 9.625,
+          "end": 10.505
+        },
+        {
+          "text": "non",
+          "start": 10.685,
+          "end": 10.805
+        },
+        {
+          "text": "protette.",
+          "start": 10.845,
+          "end": 11.285
+        }
+      ]
+    },
+    {
+      "start": 12.085,
+      "end": 16.285,
+      "text": "Parlare su canali in chiaro espone i dati in transito ad attacchi man-in-the-middle,",
+      "words": [
+        {
+          "text": "Parlare",
+          "start": 12.085,
+          "end": 12.445
+        },
+        {
+          "text": "su",
+          "start": 12.505,
+          "end": 12.585
+        },
+        {
+          "text": "canali",
+          "start": 12.625,
+          "end": 12.885
+        },
+        {
+          "text": "in",
+          "start": 12.925,
+          "end": 12.985
+        },
+        {
+          "text": "chiaro",
+          "start": 13.025,
+          "end": 13.285
+        },
+        {
+          "text": "espone",
+          "start": 13.625,
+          "end": 13.985
+        },
+        {
+          "text": "i",
+          "start": 14.045,
+          "end": 14.085
+        },
+        {
+          "text": "dati",
+          "start": 14.105,
+          "end": 14.305
+        },
+        {
+          "text": "in",
+          "start": 14.345,
+          "end": 14.385
+        },
+        {
+          "text": "transito",
+          "start": 14.425,
+          "end": 14.885
+        },
+        {
+          "text": "ad",
+          "start": 14.925,
+          "end": 15.005
+        },
+        {
+          "text": "attacchi",
+          "start": 15.045,
+          "end": 15.425
+        },
+        {
+          "text": "man-in-the-middle,",
+          "start": 15.545,
+          "end": 16.285
+        }
+      ]
+    },
+    {
+      "start": 16.625,
+      "end": 22.966,
+      "text": "intercettazioni chiamate eavesdropping e manomissioni chiamate tampering, compromettendo confidentiality,",
+      "words": [
+        {
+          "text": "intercettazioni",
+          "start": 16.625,
+          "end": 17.425
+        },
+        {
+          "text": "chiamate",
+          "start": 17.525,
+          "end": 17.845
+        },
+        {
+          "text": "eavesdropping",
+          "start": 18.025,
+          "end": 18.605
+        },
+        {
+          "text": "e",
+          "start": 18.985,
+          "end": 19.025
+        },
+        {
+          "text": "manomissioni",
+          "start": 19.105,
+          "end": 19.725
+        },
+        {
+          "text": "chiamate",
+          "start": 19.946,
+          "end": 20.246
+        },
+        {
+          "text": "tampering,",
+          "start": 20.406,
+          "end": 20.926
+        },
+        {
+          "text": "compromettendo",
+          "start": 21.426,
+          "end": 22.006
+        },
+        {
+          "text": "confidentiality,",
+          "start": 22.126,
+          "end": 22.966
+        }
+      ]
+    },
+    {
+      "start": 23.186,
+      "end": 24.586,
+      "text": "integrity e authenticity.",
+      "words": [
+        {
+          "text": "integrity",
+          "start": 23.186,
+          "end": 23.726
+        },
+        {
+          "text": "e",
+          "start": 23.926,
+          "end": 23.966
+        },
+        {
+          "text": "authenticity.",
+          "start": 24.026,
+          "end": 24.586
+        }
+      ]
+    },
+    {
+      "start": 25.306,
+      "end": 27.786,
+      "text": "Il refactoring raccomandato è il mutual TLS.",
+      "words": [
+        {
+          "text": "Il",
+          "start": 25.306,
+          "end": 25.386
+        },
+        {
+          "text": "refactoring",
+          "start": 25.426,
+          "end": 25.966
+        },
+        {
+          "text": "raccomandato",
+          "start": 25.986,
+          "end": 26.566
+        },
+        {
+          "text": "è",
+          "start": 26.706,
+          "end": 26.746
+        },
+        {
+          "text": "il",
+          "start": 26.806,
+          "end": 26.886
+        },
+        {
+          "text": "mutual",
+          "start": 26.966,
+          "end": 27.346
+        },
+        {
+          "text": "TLS.",
+          "start": 27.386,
+          "end": 27.786
+        }
+      ]
+    },
+    {
+      "start": 28.466,
+      "end": 33.206,
+      "text": "A differenza del TLS tradizionale, in cui solo il server presenta un certificato al client,",
+      "words": [
+        {
+          "text": "A",
+          "start": 28.466,
+          "end": 28.506
+        },
+        {
+          "text": "differenza",
+          "start": 28.546,
+          "end": 28.986
+        },
+        {
+          "text": "del",
+          "start": 29.026,
+          "end": 29.146
+        },
+        {
+          "text": "TLS",
+          "start": 29.206,
+          "end": 29.566
+        },
+        {
+          "text": "tradizionale,",
+          "start": 29.606,
+          "end": 30.326
+        },
+        {
+          "text": "in",
+          "start": 30.446,
+          "end": 30.526
+        },
+        {
+          "text": "cui",
+          "start": 30.566,
+          "end": 30.686
+        },
+        {
+          "text": "solo",
+          "start": 30.766,
+          "end": 30.926
+        },
+        {
+          "text": "il",
+          "start": 30.986,
+          "end": 31.046
+        },
+        {
+          "text": "server",
+          "start": 31.126,
+          "end": 31.506
+        },
+        {
+          "text": "presenta",
+          "start": 31.586,
+          "end": 31.946
+        },
+        {
+          "text": "un",
+          "start": 31.986,
+          "end": 32.046
+        },
+        {
+          "text": "certificato",
+          "start": 32.066,
+          "end": 32.606
+        },
+        {
+          "text": "al",
+          "start": 32.626,
+          "end": 32.706
+        },
+        {
+          "text": "client,",
+          "start": 32.746,
+          "end": 33.206
+        }
+      ]
+    },
+    {
+      "start": 33.646,
+      "end": 37.887,
+      "text": "nel mutual TLS entrambe le parti presentano e validano un certificato.",
+      "words": [
+        {
+          "text": "nel",
+          "start": 33.646,
+          "end": 33.786
+        },
+        {
+          "text": "mutual",
+          "start": 33.846,
+          "end": 34.266
+        },
+        {
+          "text": "TLS",
+          "start": 34.326,
+          "end": 34.726
+        },
+        {
+          "text": "entrambe",
+          "start": 34.966,
+          "end": 35.467
+        },
+        {
+          "text": "le",
+          "start": 35.507,
+          "end": 35.587
+        },
+        {
+          "text": "parti",
+          "start": 35.627,
+          "end": 35.987
+        },
+        {
+          "text": "presentano",
+          "start": 36.047,
+          "end": 36.607
+        },
+        {
+          "text": "e",
+          "start": 36.647,
+          "end": 36.687
+        },
+        {
+          "text": "validano",
+          "start": 36.727,
+          "end": 37.127
+        },
+        {
+          "text": "un",
+          "start": 37.167,
+          "end": 37.227
+        },
+        {
+          "text": "certificato.",
+          "start": 37.267,
+          "end": 37.887
+        }
+      ]
+    },
+    {
+      "start": 38.687,
+      "end": 41.707,
+      "text": "Oltre a cifrare il canale e garantirne riservatezza e integrità,",
+      "words": [
+        {
+          "text": "Oltre",
+          "start": 38.687,
+          "end": 38.907
+        },
+        {
+          "text": "a",
+          "start": 38.927,
+          "end": 38.967
+        },
+        {
+          "text": "cifrare",
+          "start": 38.987,
+          "end": 39.327
+        },
+        {
+          "text": "il",
+          "start": 39.367,
+          "end": 39.427
+        },
+        {
+          "text": "canale",
+          "start": 39.467,
+          "end": 39.867
+        },
+        {
+          "text": "e",
+          "start": 39.927,
+          "end": 39.967
+        },
+        {
+          "text": "garantirne",
+          "start": 40.007,
+          "end": 40.527
+        },
+        {
+          "text": "riservatezza",
+          "start": 40.607,
+          "end": 41.187
+        },
+        {
+          "text": "e",
+          "start": 41.227,
+          "end": 41.267
+        },
+        {
+          "text": "integrità,",
+          "start": 41.287,
+          "end": 41.707
+        }
+      ]
+    },
+    {
+      "start": 42.247,
+      "end": 47.107,
+      "text": "ogni microservizio identifica con certezza l'interlocutore tramite autenticazione reciproca.",
+      "words": [
+        {
+          "text": "ogni",
+          "start": 42.247,
+          "end": 42.427
+        },
+        {
+          "text": "microservizio",
+          "start": 42.487,
+          "end": 43.207
+        },
+        {
+          "text": "identifica",
+          "start": 43.407,
+          "end": 43.987
+        },
+        {
+          "text": "con",
+          "start": 44.047,
+          "end": 44.147
+        },
+        {
+          "text": "certezza",
+          "start": 44.187,
+          "end": 44.607
+        },
+        {
+          "text": "l'interlocutore",
+          "start": 44.707,
+          "end": 45.447
+        },
+        {
+          "text": "tramite",
+          "start": 45.567,
+          "end": 45.907
+        },
+        {
+          "text": "autenticazione",
+          "start": 45.967,
+          "end": 46.587
+        },
+        {
+          "text": "reciproca.",
+          "start": 46.627,
+          "end": 47.107
+        }
+      ]
+    },
+    {
+      "start": 47.747,
+      "end": 53.828,
+      "text": "Ottavo smell: unauthenticated traffic, cioè traffico privo di autenticazione dall'esterno o tra microservizi,",
+      "words": [
+        {
+          "text": "Ottavo",
+          "start": 47.747,
+          "end": 48.047
+        },
+        {
+          "text": "smell:",
+          "start": 48.087,
+          "end": 48.347
+        },
+        {
+          "text": "unauthenticated",
+          "start": 48.787,
+          "end": 49.527
+        },
+        {
+          "text": "traffic,",
+          "start": 49.567,
+          "end": 49.967
+        },
+        {
+          "text": "cioè",
+          "start": 50.287,
+          "end": 50.448
+        },
+        {
+          "text": "traffico",
+          "start": 50.548,
+          "end": 50.928
+        },
+        {
+          "text": "privo",
+          "start": 51.008,
+          "end": 51.288
+        },
+        {
+          "text": "di",
+          "start": 51.348,
+          "end": 51.388
+        },
+        {
+          "text": "autenticazione",
+          "start": 51.448,
+          "end": 52.068
+        },
+        {
+          "text": "dall'esterno",
+          "start": 52.088,
+          "end": 52.668
+        },
+        {
+          "text": "o",
+          "start": 52.808,
+          "end": 52.848
+        },
+        {
+          "text": "tra",
+          "start": 52.928,
+          "end": 53.048
+        },
+        {
+          "text": "microservizi,",
+          "start": 53.108,
+          "end": 53.828
+        }
+      ]
+    },
+    {
+      "start": 54.168,
+      "end": 56.228,
+      "text": "specialmente durante il passaggio del contesto utente.",
+      "words": [
+        {
+          "text": "specialmente",
+          "start": 54.168,
+          "end": 54.628
+        },
+        {
+          "text": "durante",
+          "start": 54.668,
+          "end": 54.888
+        },
+        {
+          "text": "il",
+          "start": 54.908,
+          "end": 54.968
+        },
+        {
+          "text": "passaggio",
+          "start": 54.988,
+          "end": 55.348
+        },
+        {
+          "text": "del",
+          "start": 55.368,
+          "end": 55.488
+        },
+        {
+          "text": "contesto",
+          "start": 55.508,
+          "end": 55.848
+        },
+        {
+          "text": "utente.",
+          "start": 55.888,
+          "end": 56.228
+        }
+      ]
+    },
+    {
+      "start": 56.808,
+      "end": 60.088,
+      "text": "Espone a tampering, denial of service ed elevation of privileges,",
+      "words": [
+        {
+          "text": "Espone",
+          "start": 56.808,
+          "end": 57.088
+        },
+        {
+          "text": "a",
+          "start": 57.108,
+          "end": 57.148
+        },
+        {
+          "text": "tampering,",
+          "start": 57.208,
+          "end": 57.668
+        },
+        {
+          "text": "denial",
+          "start": 57.888,
+          "end": 58.208
+        },
+        {
+          "text": "of",
+          "start": 58.228,
+          "end": 58.308
+        },
+        {
+          "text": "service",
+          "start": 58.348,
+          "end": 58.728
+        },
+        {
+          "text": "ed",
+          "start": 58.908,
+          "end": 58.988
+        },
+        {
+          "text": "elevation",
+          "start": 59.068,
+          "end": 59.468
+        },
+        {
+          "text": "of",
+          "start": 59.508,
+          "end": 59.568
+        },
+        {
+          "text": "privileges,",
+          "start": 59.608,
+          "end": 60.088
+        }
+      ]
+    },
+    {
+      "start": 60.428,
+      "end": 61.808,
+      "text": "minacciando l'authenticity.",
+      "words": [
+        {
+          "text": "minacciando",
+          "start": 60.428,
+          "end": 61.008
+        },
+        {
+          "text": "l'authenticity.",
+          "start": 61.128,
+          "end": 61.808
+        }
+      ]
+    },
+    {
+      "start": 62.508,
+      "end": 63.988,
+      "text": "Qui si applicano due refactoring:",
+      "words": [
+        {
+          "text": "Qui",
+          "start": 62.508,
+          "end": 62.628
+        },
+        {
+          "text": "si",
+          "start": 62.688,
+          "end": 62.748
+        },
+        {
+          "text": "applicano",
+          "start": 62.808,
+          "end": 63.188
+        },
+        {
+          "text": "due",
+          "start": 63.248,
+          "end": 63.408
+        },
+        {
+          "text": "refactoring:",
+          "start": 63.448,
+          "end": 63.988
+        }
+      ]
+    },
+    {
+      "start": 64.668,
+      "end": 68.409,
+      "text": "il mutual TLS per autenticare i servizi, e OpenID Connect,",
+      "words": [
+        {
+          "text": "il",
+          "start": 64.668,
+          "end": 64.768
+        },
+        {
+          "text": "mutual",
+          "start": 64.848,
+          "end": 65.228
+        },
+        {
+          "text": "TLS",
+          "start": 65.248,
+          "end": 65.688
+        },
+        {
+          "text": "per",
+          "start": 65.889,
+          "end": 65.989
+        },
+        {
+          "text": "autenticare",
+          "start": 66.009,
+          "end": 66.449
+        },
+        {
+          "text": "i",
+          "start": 66.469,
+          "end": 66.509
+        },
+        {
+          "text": "servizi,",
+          "start": 66.529,
+          "end": 66.949
+        },
+        {
+          "text": "e",
+          "start": 67.289,
+          "end": 67.32900000000001
+        },
+        {
+          "text": "OpenID",
+          "start": 67.489,
+          "end": 67.889
+        },
+        {
+          "text": "Connect,",
+          "start": 68.029,
+          "end": 68.409
+        }
+      ]
+    },
+    {
+      "start": 68.629,
+      "end": 72.949,
+      "text": "che usa token JWT per verificare l'identità dell'utente presso un authorization server.",
+      "words": [
+        {
+          "text": "che",
+          "start": 68.629,
+          "end": 68.729
+        },
+        {
+          "text": "usa",
+          "start": 68.749,
+          "end": 68.869
+        },
+        {
+          "text": "token",
+          "start": 68.909,
+          "end": 69.189
+        },
+        {
+          "text": "JWT",
+          "start": 69.249,
+          "end": 69.709
+        },
+        {
+          "text": "per",
+          "start": 69.849,
+          "end": 69.969
+        },
+        {
+          "text": "verificare",
+          "start": 70.009,
+          "end": 70.469
+        },
+        {
+          "text": "l'identità",
+          "start": 70.529,
+          "end": 71.009
+        },
+        {
+          "text": "dell'utente",
+          "start": 71.069,
+          "end": 71.549
+        },
+        {
+          "text": "presso",
+          "start": 71.629,
+          "end": 71.889
+        },
+        {
+          "text": "un",
+          "start": 71.929,
+          "end": 71.989
+        },
+        {
+          "text": "authorization",
+          "start": 72.049,
+          "end": 72.609
+        },
+        {
+          "text": "server.",
+          "start": 72.669,
+          "end": 72.949
+        }
+      ]
+    }
+  ]
+}

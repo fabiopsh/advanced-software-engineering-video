@@ -1,0 +1,827 @@
+{
+  "lesson_id": "12-devops",
+  "chapter": 12,
+  "part": "Parte IV · Dal monolite alla produzione",
+  "title": "DevOps e code management",
+  "voice_config": {
+    "provider": "gemini",
+    "model": "gemini-3.8-flash-tts",
+    "voice_name": "Ludo",
+    "style": "chiaro, didattico, calmo e preciso, stile lezione universitaria di ingegneria del software"
+  },
+  "scenes": [
+    {
+      "id": "scene-01",
+      "section": "12.1 · Perché DevOps",
+      "title": "Dai team separati all'approccio DevOps e alle sue radici",
+      "tts_text": "Benvenuti al dodicesimo capitolo, dedicato a DevOps e code management. [pause:0.5] Tradizionalmente sviluppo, rilascio e supporto sono affidati a tre team separati. Lo sviluppo consegna il codice al team di rilascio, che lo collauda e lo distribuisce ai clienti, mentre il supporto gestisce l'assistenza e rimanda indietro i bug. [pause:0.6] Questo modello genera ritardi di comunicazione, strumenti incompatibili e giorni di attesa per correggere bug urgenti o vulnerabilità, richiedendo settimane per andare in produzione. [pause:0.6] Tre fattori hanno sbloccato il cambiamento: i metodi agili hanno reso il rilascio il vero collo di bottiglia; Amazon ha riorganizzato i microservizi affidando sviluppo e supporto allo stesso team; e il cloud ha reso naturale il Software as a Service. [pause:0.6] Nasce così DevOps, cioè Development più Operations: un unico team integra sviluppo, distribuzione e supporto, con ambienti identici tra sviluppo e produzione e rilasci molto più frequenti. [pause:0.5] Le sue radici uniscono Agile, microservizi, i sette principi del Lean Software Development e due idee Toyota: kaizen, il miglioramento continuo, e jidoka, fermare la produzione perché non debba fermarsi mai.",
+      "slide_html": "<div class=\"slide-card\">\n  <div class=\"slide-kicker\">12.1 · Perché DevOps</div>\n  <h2 class=\"slide-title\">Dai team separati a un unico team DevOps</h2>\n  <div id=\"s1\" class=\"split-visual cue-hidden\">\n    <div id=\"svg-teams\" class=\"svg-panel\">\n      <svg viewBox=\"0 0 360 190\" class=\"diagram-svg\" aria-label=\"Flusso tradizionale a tre team separati\">\n        <defs>\n          <marker id=\"arr-d1\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\">\n            <path d=\"M0 1 L9 5 L0 9 z\" fill=\"var(--ink-soft)\"/>\n          </marker>\n          <marker id=\"arr-r1\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\">\n            <path d=\"M0 1 L9 5 L0 9 z\" fill=\"var(--red)\"/>\n          </marker>\n        </defs>\n        <g id=\"t-dev\">\n          <rect x=\"12\" y=\"68\" width=\"94\" height=\"38\" rx=\"7\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.6\"/>\n          <text x=\"59\" y=\"91\" text-anchor=\"middle\" class=\"svg-math-sm\">Development</text>\n        </g>\n        <g id=\"t-rel\">\n          <rect x=\"133\" y=\"68\" width=\"94\" height=\"38\" rx=\"7\" fill=\"var(--orange-soft, rgba(217,119,6,0.12))\" stroke=\"var(--orange)\" stroke-width=\"1.6\"/>\n          <text x=\"180\" y=\"91\" text-anchor=\"middle\" class=\"svg-math-sm\">Release</text>\n        </g>\n        <g id=\"t-sup\">\n          <rect x=\"254\" y=\"68\" width=\"94\" height=\"38\" rx=\"7\" fill=\"var(--green-soft, rgba(21,128,61,0.12))\" stroke=\"var(--green)\" stroke-width=\"1.6\"/>\n          <text x=\"301\" y=\"91\" text-anchor=\"middle\" class=\"svg-math-sm\">Support</text>\n        </g>\n        <g id=\"t-bug\">\n          <ellipse cx=\"180\" cy=\"26\" rx=\"74\" ry=\"17\" fill=\"none\" stroke=\"var(--red)\" stroke-width=\"1.4\" stroke-dasharray=\"4 3\"/>\n          <text x=\"180\" y=\"30\" text-anchor=\"middle\" class=\"svg-caption\">Problem &amp; bug reports</text>\n          <path d=\"M301 66 L301 26 L258 26\" fill=\"none\" stroke=\"var(--red)\" stroke-width=\"1.4\" marker-end=\"url(#arr-r1)\"/>\n          <path d=\"M102 26 L59 26 L59 64\" fill=\"none\" stroke=\"var(--red)\" stroke-width=\"1.4\" marker-end=\"url(#arr-r1)\"/>\n        </g>\n        <ellipse cx=\"119\" cy=\"152\" rx=\"56\" ry=\"19\" fill=\"none\" stroke=\"var(--muted)\" stroke-width=\"1.2\"/>\n        <text x=\"119\" y=\"149\" text-anchor=\"middle\" class=\"svg-tick\">Tested SW</text>\n        <text x=\"119\" y=\"162\" text-anchor=\"middle\" class=\"svg-tick\">for release</text>\n        <ellipse cx=\"241\" cy=\"152\" rx=\"56\" ry=\"19\" fill=\"none\" stroke=\"var(--muted)\" stroke-width=\"1.2\"/>\n        <text x=\"241\" y=\"149\" text-anchor=\"middle\" class=\"svg-tick\">Deployed SW</text>\n        <text x=\"241\" y=\"162\" text-anchor=\"middle\" class=\"svg-tick\">ready for use</text>\n        <path d=\"M59 108 L59 152 L61 152\" fill=\"none\" stroke=\"var(--ink-soft)\" stroke-width=\"1.4\"/>\n        <line x1=\"106\" y1=\"87\" x2=\"129\" y2=\"87\" stroke=\"var(--ink-soft)\" stroke-width=\"1.5\" marker-end=\"url(#arr-d1)\"/>\n        <line x1=\"227\" y1=\"87\" x2=\"250\" y2=\"87\" stroke=\"var(--ink-soft)\" stroke-width=\"1.5\" marker-end=\"url(#arr-d1)\"/>\n      </svg>\n    </div>\n    <div class=\"formula-col\">\n      <div id=\"b-prob\" class=\"box box-warn\">\n        <div class=\"box-label\">Problemi dei team separati</div>\n        <p>Ritardi di comunicazione, strumenti e competenze diversi, giorni per bug urgenti o vulnerabilità e settimane per rilasciare in produzione.</p>\n      </div>\n      <div id=\"b-def\" class=\"box box-def\">\n        <div class=\"box-label\">Definizione · DevOps</div>\n        <p><strong>Development + Operations</strong> integra sviluppo, distribuzione e supporto in un <strong>unico team</strong>: stesso ambiente dev/prod, test automatizzati e rilasci frequenti.</p>\n      </div>\n    </div>\n  </div>\n  <div id=\"s2\" class=\"grid-2 cue-hidden\">\n    <div id=\"b-fat\" class=\"box box-primary\">\n      <div class=\"box-label\">Tre fattori abilitanti</div>\n      <ul class=\"clean-list\">\n        <li><strong>Agile</strong>: riduce i tempi di sviluppo; il rilascio diventa il collo di bottiglia.</li>\n        <li><strong>Microservizi (Amazon)</strong>: stesso team per sviluppo e supporto di un servizio.</li>\n        <li><strong>Cloud e SaaS</strong>: distribuzione continua su cloud pubblici o privati.</li>\n      </ul>\n    </div>\n    <div id=\"b-rad\" class=\"box box-idea\">\n      <div class=\"box-label\">Radici culturali e tecniche</div>\n      <ul class=\"clean-list\">\n        <li><strong>Agile &amp; Microservizi</strong> più i 7 principi <em>Lean</em> (eliminare sprechi, consegnare presto, dare responsabilità al team).</li>\n        <li><strong>Toyota Production System</strong>: <em>kaizen</em> (miglioramento continuo) e <em>jidoka</em> (fermare la produzione per evitare blocchi futuri).</li>\n      </ul>\n    </div>\n  </div>\n</div>",
+      "cues": [
+        {
+          "at": 4.1,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "Tradizionalmente sviluppo, rilascio"
+        },
+        {
+          "at": 5.22,
+          "action": "highlight",
+          "target": "#t-dev",
+          "duration": 4.94,
+          "anchor": "Tradizionalmente sviluppo, rilascio"
+        },
+        {
+          "at": 10.28,
+          "action": "highlight",
+          "target": "#t-rel",
+          "duration": 5,
+          "anchor": "Lo sviluppo consegna il codice"
+        },
+        {
+          "at": 15.4,
+          "action": "highlight",
+          "target": "#t-sup",
+          "duration": 3.54,
+          "anchor": "mentre il supporto gestisce"
+        },
+        {
+          "at": 19.06,
+          "action": "highlight",
+          "target": "#b-prob",
+          "duration": 10.16,
+          "anchor": "Questo modello genera ritardi"
+        },
+        {
+          "at": 29.34,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Tre fattori hanno sbloccato"
+        },
+        {
+          "at": 29.34,
+          "action": "highlight",
+          "target": "#b-fat",
+          "duration": 13.61,
+          "anchor": "Tre fattori hanno sbloccato"
+        },
+        {
+          "at": 43.07,
+          "action": "highlight",
+          "target": "#b-def",
+          "duration": 12.1,
+          "anchor": "Nasce così DevOps"
+        },
+        {
+          "at": 55.29,
+          "action": "highlight",
+          "target": "#b-rad",
+          "duration": 14.8,
+          "anchor": "Le sue radici uniscono Agile"
+        }
+      ],
+      "audio_file": "audio/scene-01.wav",
+      "subtitle_file": "subtitles/scene-01.json",
+      "duration_sec": 68
+    },
+    {
+      "id": "scene-02",
+      "section": "12.2 · Principi, benefici e cultura",
+      "title": "Principi fondamentali, benefici, team e strumenti",
+      "tts_text": "Su quali pilastri poggia un team DevOps? La disciplina si fonda su tre principi essenziali. [pause:0.5] Primo: tutti sono responsabili di tutto, dallo sviluppo alla consegna fino al supporto in esercizio. Secondo: tutto ciò che può essere automatizzato va automatizzato, inclusi test, rilasci e infrastruttura. Terzo: prima si misura, poi si cambia, guidando ogni decisione con dati reali. [pause:0.6] Applicarli porta quattro benefici concreti: distribuzione più veloce grazie a zero attese tra team; rischio ridotto perché piccoli incrementi causano meno guasti; riparazione più rapida senza scaricabarile tra reparti; e team complessivamente più produttivi. [pause:0.6] Ma un team DevOps non è fatto di soli programmatori: richiede competenze di ingegneria del software, UX design, sicurezza, infrastruttura e contatto diretto con i clienti, tenute insieme da rispetto reciproco e condivisione. [pause:0.5] Infine servono quattro famiglie di strumenti: source control come GitHub, build e test continui come Jenkins o Travis, configuration management come Puppet, Chef, SaltStack o Ansible, e monitoraggio delle prestazioni, detto A P M, con strumenti come New Relic e Pingdom.",
+      "slide_html": "<div class=\"slide-card\">\n  <div class=\"slide-kicker\">12.2 · Principi, benefici e cultura</div>\n  <h2 class=\"slide-title\">Tre principi, quattro benefici e l'ecosistema di competenze</h2>\n  <div id=\"s1\" class=\"grid-2 cue-hidden\">\n    <div id=\"b-prin\" class=\"box box-theorem\">\n      <div class=\"box-label\">Tre principi di DevOps</div>\n      <ul class=\"clean-list\">\n        <li id=\"p1\"><strong>Everyone is responsible for everything</strong>: sviluppo, consegna e supporto sono responsabilità condivise.</li>\n        <li id=\"p2\"><strong>Everything that can be automated should be automated</strong>: test, distribuzione e supporto vanno automatizzati.</li>\n        <li id=\"p3\"><strong>Measure first, change later</strong>: si raccolgono dati sul sistema e si cambia sulla base delle misure.</li>\n      </ul>\n    </div>\n    <div id=\"b-ben\" class=\"box box-primary\">\n      <div class=\"box-label\">Quattro benefici</div>\n      <ul class=\"clean-list\">\n        <li id=\"bn1\"><strong>Distribuzione più veloce</strong>: cadono i ritardi di comunicazione tra team.</li>\n        <li id=\"bn2\"><strong>Rischio ridotto</strong>: rilasci piccoli riducono interazioni tra feature e guasti.</li>\n        <li id=\"bn3\"><strong>Riparazione più veloce</strong>: nessun tempo perso a cercare il team responsabile.</li>\n        <li id=\"bn4\"><strong>Team più produttivi</strong>: maggiore efficacia rispetto ai reparti separati.</li>\n      </ul>\n    </div>\n  </div>\n  <div id=\"s2\" class=\"grid-2 cue-hidden\">\n    <div id=\"b-cult\" class=\"box box-def\">\n      <div class=\"box-label\">Competenze e cultura del team</div>\n      <p>Unisce <strong>SE, UX design, sicurezza, infrastruttura e interazione clienti</strong>. Si regge su rispetto reciproco e condivisione: chi sviluppa supporta i propri servizi.</p>\n    </div>\n    <div id=\"b-tools\" class=\"box box-algo\">\n      <div class=\"box-label\">Quattro famiglie di strumenti</div>\n      <ul class=\"clean-list\">\n        <li><strong>Source control</strong> (GitHub) · <strong>Build/test continui</strong> (Jenkins, Travis)</li>\n        <li><strong>Configuration management</strong> (Puppet, Chef, SaltStack, Ansible)</li>\n        <li><strong>APM</strong> (<em>Application Performance Monitoring</em>: New Relic, Pingdom)</li>\n      </ul>\n    </div>\n  </div>\n</div>",
+      "cues": [
+        {
+          "at": 0.77,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "Su quali pilastri poggia"
+        },
+        {
+          "at": 6.31,
+          "action": "highlight",
+          "target": "#p1",
+          "duration": 5.79,
+          "anchor": "Primo: tutti sono responsabili"
+        },
+        {
+          "at": 12.22,
+          "action": "highlight",
+          "target": "#p2",
+          "duration": 5.84,
+          "anchor": "Secondo: tutto ciò che può"
+        },
+        {
+          "at": 18.18,
+          "action": "highlight",
+          "target": "#p3",
+          "duration": 4.94,
+          "anchor": "Terzo: prima si misura"
+        },
+        {
+          "at": 23.24,
+          "action": "highlight",
+          "target": "#b-ben",
+          "duration": 15.36,
+          "anchor": "Applicarli porta quattro benefici"
+        },
+        {
+          "at": 38.72,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Ma un team DevOps non"
+        },
+        {
+          "at": 38.72,
+          "action": "highlight",
+          "target": "#b-cult",
+          "duration": 13,
+          "anchor": "Ma un team DevOps non"
+        },
+        {
+          "at": 51.88,
+          "action": "highlight",
+          "target": "#b-tools",
+          "duration": 18,
+          "anchor": "Infine servono quattro famiglie"
+        }
+      ],
+      "audio_file": "audio/scene-02.wav",
+      "subtitle_file": "subtitles/scene-02.json",
+      "duration_sec": 67.59
+    },
+    {
+      "id": "scene-03",
+      "section": "12.3 · Code management",
+      "title": "Il repository al centro di automazione e misura",
+      "tts_text": "Alla base di tutta l'architettura DevOps c'è il code management, cioè la gestione dell'evoluzione del codebase. [pause:0.5] I suoi obiettivi sono due: memorizzare e recuperare le versioni dei singoli componenti o dell'intero sistema, e consentire agli sviluppatori di lavorare in parallelo senza calpestarsi i piedi, integrando poi il lavoro. [pause:0.6] Un sistema moderno come Git offre cinque funzionalità fondamentali. Trasferisce i file tra il computer locale e il repository; conserva tutte le versioni senza mai sovrascriverle; gestisce branching e merging per lavorare su rami paralleli; traccia storia delle modifiche e metadati; e supporta i progetti permettendo il check out simultaneo di tutti i file. [pause:0.6] Come vedete nel diagramma, il code management sta esattamente al centro dell'ecosistema. Sopra di esso operano gli strumenti di automazione DevOps, cioè continuous integration, delivery, deployment e infrastructure as code; sotto lavorano gli strumenti di misura per raccolta dati, analisi e report. Entrambi leggono dal repository e vi scrivono di continuo.",
+      "slide_html": "<div class=\"slide-card\">\n  <div class=\"slide-kicker\">12.3 · Code management</div>\n  <h2 class=\"slide-title\">Il sistema di Code Management al centro di DevOps</h2>\n  <div id=\"s1\" class=\"split-visual cue-hidden\">\n    <div id=\"svg-cm\" class=\"svg-panel\">\n      <svg viewBox=\"0 0 360 210\" class=\"diagram-svg\" aria-label=\"Code management al centro tra automazione e misura\">\n        <defs>\n          <marker id=\"arr-b1\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\">\n            <path d=\"M0 1 L9 5 L0 9 z\" fill=\"var(--blue)\"/>\n          </marker>\n        </defs>\n        <g id=\"cm-auto\">\n          <rect x=\"12\" y=\"8\" width=\"336\" height=\"50\" rx=\"7\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.4\"/>\n          <text x=\"180\" y=\"24\" text-anchor=\"middle\" class=\"svg-math-sm\">DevOps Automation</text>\n          <text x=\"180\" y=\"44\" text-anchor=\"middle\" class=\"svg-tick\">CI · Continuous Delivery · Continuous Deployment · IaC</text>\n        </g>\n        <g id=\"cm-core\">\n          <rect x=\"12\" y=\"76\" width=\"336\" height=\"60\" rx=\"7\" fill=\"var(--green-soft, rgba(21,128,61,0.12))\" stroke=\"var(--green)\" stroke-width=\"1.8\"/>\n          <text x=\"180\" y=\"93\" text-anchor=\"middle\" class=\"svg-math\">Code Management System</text>\n          <text x=\"180\" y=\"110\" text-anchor=\"middle\" class=\"svg-caption\">Code repository · Branching &amp; merging</text>\n          <text x=\"180\" y=\"125\" text-anchor=\"middle\" class=\"svg-tick\">Version history · Save/retrieve · Transfer filestore</text>\n        </g>\n        <g id=\"cm-meas\">\n          <rect x=\"12\" y=\"154\" width=\"336\" height=\"48\" rx=\"7\" fill=\"var(--orange-soft, rgba(217,119,6,0.12))\" stroke=\"var(--orange)\" stroke-width=\"1.4\"/>\n          <text x=\"180\" y=\"171\" text-anchor=\"middle\" class=\"svg-math-sm\">DevOps Measurement</text>\n          <text x=\"180\" y=\"189\" text-anchor=\"middle\" class=\"svg-tick\">Data collection · Data analysis · Report generation</text>\n        </g>\n        <line x1=\"115\" y1=\"75\" x2=\"115\" y2=\"60\" stroke=\"var(--blue)\" stroke-width=\"1.8\" marker-end=\"url(#arr-b1)\"/>\n        <line x1=\"245\" y1=\"58\" x2=\"245\" y2=\"73\" stroke=\"var(--blue)\" stroke-width=\"1.8\" marker-end=\"url(#arr-b1)\"/>\n        <line x1=\"115\" y1=\"153\" x2=\"115\" y2=\"138\" stroke=\"var(--blue)\" stroke-width=\"1.8\" marker-end=\"url(#arr-b1)\"/>\n        <line x1=\"245\" y1=\"136\" x2=\"245\" y2=\"151\" stroke=\"var(--blue)\" stroke-width=\"1.8\" marker-end=\"url(#arr-b1)\"/>\n      </svg>\n    </div>\n    <div class=\"formula-col\">\n      <div id=\"b-cm-obj\" class=\"box box-def\">\n        <div class=\"box-label\">Due obiettivi</div>\n        <ul class=\"clean-list\">\n          <li>Memorizzare e recuperare versioni di componenti e interi sistemi.</li>\n          <li>Consentire lavoro parallelo senza interferenze e integrarlo.</li>\n        </ul>\n      </div>\n      <div id=\"b-cm-feat\" class=\"box box-primary\">\n        <div class=\"box-label\">5 funzionalità chiave (es. Git)</div>\n        <ol class=\"algo-list\">\n          <li>Trasferimento da e verso il filesystem locale.</li>\n          <li>Archivio versioni senza mai sovrascrivere i file.</li>\n          <li><strong>Branching e merging</strong> per rami paralleli.</li>\n          <li>Storia delle modifiche e info di versione.</li>\n          <li><strong>Check out</strong> congiunto di tutto il progetto.</li>\n        </ol>\n      </div>\n    </div>\n  </div>\n</div>",
+      "cues": [
+        {
+          "at": 2.48,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "c'è il code management"
+        },
+        {
+          "at": 6.98,
+          "action": "highlight",
+          "target": "#b-cm-obj",
+          "duration": 12.68,
+          "anchor": "I suoi obiettivi sono due"
+        },
+        {
+          "at": 19.78,
+          "action": "highlight",
+          "target": "#b-cm-feat",
+          "duration": 20,
+          "anchor": "Un sistema moderno come Git"
+        },
+        {
+          "at": 40.79,
+          "action": "highlight",
+          "target": "#cm-core",
+          "duration": 4.52,
+          "anchor": "Come vedete nel diagramma"
+        },
+        {
+          "at": 45.43,
+          "action": "highlight",
+          "target": "#cm-auto",
+          "duration": 7.64,
+          "anchor": "Sopra di esso operano"
+        },
+        {
+          "at": 53.19,
+          "action": "highlight",
+          "target": "#cm-meas",
+          "duration": 9,
+          "anchor": "sotto lavorano gli strumenti"
+        }
+      ],
+      "audio_file": "audio/scene-03.wav",
+      "subtitle_file": "subtitles/scene-03.json",
+      "duration_sec": 61.25
+    },
+    {
+      "id": "scene-04",
+      "section": "12.4 · Continuous Integration",
+      "title": "System building, integrare due volte e build incrementale",
+      "tts_text": "L'automazione DevOps poggia su quattro pratiche: continuous integration, continuous delivery, continuous deployment e infrastructure as code. Vediamo la prima, la continuous integration. [pause:0.5] Integrare un sistema non significa solo compilare: occorre predisporre il database con dati di test, compilare e collegare librerie, verificare i servizi esterni, aggiornare i file di configurazione ed eseguire i system test. [pause:0.6] Con la C I, a ogni push sul repository parte un trigger verso l'integration server, che preleva i sorgenti, compila e costruisce l'eseguibile, poi lancia i test per produrre un sistema distribuibile. [pause:0.5] Per non rompere la build e bloccare i colleghi bisogna integrare due volte: prima si fonde il ramo principale in locale e si collauda sul proprio computer, poi si fa il push sul repository condiviso. Così i bug emergono subito, esiste sempre una versione funzionante e cresce la cultura della qualità. [pause:0.6] Per risparmiare tempo si usa la build incrementale: si confrontano i timestamp e si ricompila solo se il codice sorgente o una definizione di classe sono più recenti del codice compilato. Gli strumenti tipici vanno da make, Ant, Maven e Rake fino a server come Jenkins, Travis, Bamboo e GitHub Actions.",
+      "slide_html": "<div class=\"slide-card\">\n  <div class=\"slide-kicker\">12.4 · DevOps Automation · Continuous Integration</div>\n  <h2 class=\"slide-title\">Continuous Integration, Integrate Twice e Build Incrementale</h2>\n  <div id=\"s1\" class=\"svg-panel cue-hidden\">\n    <svg viewBox=\"0 0 640 155\" class=\"diagram-svg\" aria-label=\"Pipeline di Continuous Integration\">\n      <defs>\n        <marker id=\"arr-ci\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\">\n          <path d=\"M0 1 L9 5 L0 9 z\" fill=\"var(--ink-soft)\"/>\n        </marker>\n      </defs>\n      <g id=\"ci-get\">\n        <text x=\"65\" y=\"22\" text-anchor=\"middle\" class=\"svg-caption\">Source code</text>\n        <line x1=\"65\" y1=\"28\" x2=\"65\" y2=\"48\" stroke=\"var(--ink-soft)\" stroke-width=\"1.4\" marker-end=\"url(#arr-ci)\"/>\n        <rect x=\"22\" y=\"52\" width=\"86\" height=\"42\" rx=\"6\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.6\"/>\n        <text x=\"65\" y=\"77\" text-anchor=\"middle\" class=\"svg-math-sm\">GET</text>\n        <text x=\"65\" y=\"135\" text-anchor=\"middle\" class=\"svg-tick\">Trigger (push)</text>\n        <line x1=\"65\" y1=\"122\" x2=\"65\" y2=\"97\" stroke=\"var(--orange)\" stroke-width=\"1.5\" stroke-dasharray=\"4 3\" marker-end=\"url(#arr-ci)\"/>\n      </g>\n      <g id=\"ci-build\">\n        <text x=\"235\" y=\"22\" text-anchor=\"middle\" class=\"svg-caption\">Database files</text>\n        <line x1=\"235\" y1=\"28\" x2=\"235\" y2=\"48\" stroke=\"var(--ink-soft)\" stroke-width=\"1.4\" marker-end=\"url(#arr-ci)\"/>\n        <rect x=\"165\" y=\"52\" width=\"140\" height=\"42\" rx=\"6\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.6\"/>\n        <text x=\"235\" y=\"77\" text-anchor=\"middle\" class=\"svg-math-sm\">COMPILE &amp; BUILD</text>\n        <text x=\"195\" y=\"135\" text-anchor=\"middle\" class=\"svg-tick\">Libraries</text>\n        <text x=\"275\" y=\"135\" text-anchor=\"middle\" class=\"svg-tick\">Config files</text>\n        <line x1=\"195\" y1=\"122\" x2=\"210\" y2=\"97\" stroke=\"var(--ink-soft)\" stroke-width=\"1.3\" marker-end=\"url(#arr-ci)\"/>\n        <line x1=\"275\" y1=\"122\" x2=\"260\" y2=\"97\" stroke=\"var(--ink-soft)\" stroke-width=\"1.3\" marker-end=\"url(#arr-ci)\"/>\n      </g>\n      <circle cx=\"350\" cy=\"73\" r=\"11\" fill=\"none\" stroke=\"var(--blue)\" stroke-width=\"1.8\"/>\n      <text x=\"350\" y=\"103\" text-anchor=\"middle\" class=\"svg-tick\">Executable</text>\n      <g id=\"ci-test\">\n        <text x=\"455\" y=\"22\" text-anchor=\"middle\" class=\"svg-caption\">Executable tests</text>\n        <line x1=\"455\" y1=\"28\" x2=\"455\" y2=\"48\" stroke=\"var(--ink-soft)\" stroke-width=\"1.4\" marker-end=\"url(#arr-ci)\"/>\n        <rect x=\"405\" y=\"52\" width=\"100\" height=\"42\" rx=\"6\" fill=\"var(--green-soft, rgba(21,128,61,0.12))\" stroke=\"var(--green)\" stroke-width=\"1.6\"/>\n        <text x=\"455\" y=\"77\" text-anchor=\"middle\" class=\"svg-math-sm\">TEST</text>\n      </g>\n      <circle cx=\"570\" cy=\"73\" r=\"11\" fill=\"var(--green-soft, rgba(21,128,61,0.2))\" stroke=\"var(--green)\" stroke-width=\"1.8\"/>\n      <text x=\"570\" y=\"103\" text-anchor=\"middle\" class=\"svg-tick\">Deployable system</text>\n      <line x1=\"108\" y1=\"73\" x2=\"161\" y2=\"73\" stroke=\"var(--ink-soft)\" stroke-width=\"1.6\" marker-end=\"url(#arr-ci)\"/>\n      <line x1=\"305\" y1=\"73\" x2=\"336\" y2=\"73\" stroke=\"var(--ink-soft)\" stroke-width=\"1.6\" marker-end=\"url(#arr-ci)\"/>\n      <line x1=\"361\" y1=\"73\" x2=\"401\" y2=\"73\" stroke=\"var(--ink-soft)\" stroke-width=\"1.6\" marker-end=\"url(#arr-ci)\"/>\n      <line x1=\"505\" y1=\"73\" x2=\"556\" y2=\"73\" stroke=\"var(--ink-soft)\" stroke-width=\"1.6\" marker-end=\"url(#arr-ci)\"/>\n    </svg>\n  </div>\n  <div id=\"s2\" class=\"grid-2 cue-hidden\">\n    <div id=\"b-ci-2x\" class=\"box box-algo\">\n      <div class=\"box-label\">System building &amp; Integrate twice</div>\n      <ul class=\"clean-list\">\n        <li id=\"ci-steps\"><strong>7 passi di build</strong>: DB + dati test, compila, link librerie, servizi esterni, config files, system test.</li>\n        <li id=\"ci-twice\"><strong>Integrare due volte</strong> per non rompere la build: (1) pull/merge master e test in locale; (2) push su repo condiviso.</li>\n        <li id=\"ci-ben\"><strong>Vantaggi</strong>: bug isolati subito, sistema sempre funzionante, cultura della qualità.</li>\n      </ul>\n    </div>\n    <div id=\"b-ci-inc\" class=\"math-card\">\n      <div class=\"step-tag-inline\">Build incrementale (timestamp) &amp; Strumenti</div>\n      <p class=\"math-note\">\\(\\htmlId{f-inc1}{\\text{data}(\\text{compilato}) \\gt \\text{data}(\\text{sorgente})} \\Rightarrow\\) non si fa nulla</p>\n      <p class=\"math-note\">\\(\\htmlId{f-inc2}{\\text{data}(\\text{compilato}) \\lt \\text{data}(\\text{sorgente})} \\Rightarrow\\) si ricompila</p>\n      <p class=\"math-note\">\\(\\htmlId{f-inc3}{\\text{data}(\\text{compilato}) \\lt \\text{data}(\\text{classe})} \\Rightarrow\\) si ricompila</p>\n      <p class=\"math-note\"><strong>Build</strong>: <code>make</code>, Ant, Maven, Rake · <strong>CI</strong>: Jenkins, Travis, Bamboo, GitHub Actions</p>\n    </div>\n  </div>\n</div>",
+      "cues": [
+        {
+          "at": 0.94,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "L'automazione DevOps poggia su"
+        },
+        {
+          "at": 0.94,
+          "action": "highlight",
+          "target": "#s1",
+          "duration": 8.5,
+          "anchor": "L'automazione DevOps poggia su"
+        },
+        {
+          "at": 12.48,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Integrare un sistema non significa"
+        },
+        {
+          "at": 12.48,
+          "action": "highlight",
+          "target": "#ci-steps",
+          "duration": 13.2,
+          "anchor": "Integrare un sistema non significa"
+        },
+        {
+          "at": 26.74,
+          "action": "highlight",
+          "target": "#ci-get",
+          "duration": 3.76,
+          "anchor": "a ogni push sul repository"
+        },
+        {
+          "at": 30.62,
+          "action": "highlight",
+          "target": "#ci-build",
+          "duration": 3.33,
+          "anchor": "preleva i sorgenti, compila"
+        },
+        {
+          "at": 34.07,
+          "action": "highlight",
+          "target": "#ci-test",
+          "duration": 2.78,
+          "anchor": "lancia i test per produrre"
+        },
+        {
+          "at": 36.97,
+          "action": "highlight",
+          "target": "#ci-twice",
+          "duration": 10.5,
+          "anchor": "Per non rompere la build"
+        },
+        {
+          "at": 47.97,
+          "action": "highlight",
+          "target": "#ci-ben",
+          "duration": 5.96,
+          "anchor": "Così i bug emergono subito"
+        },
+        {
+          "at": 54.05,
+          "action": "highlight",
+          "target": "#b-ci-inc",
+          "duration": 10.46,
+          "anchor": "Per risparmiare tempo si usa"
+        },
+        {
+          "at": 64.63,
+          "action": "highlight",
+          "target": "#b-ci-inc",
+          "duration": 12,
+          "anchor": "Gli strumenti tipici vanno"
+        }
+      ],
+      "audio_file": "audio/scene-04.wav",
+      "subtitle_file": "subtitles/scene-04.json",
+      "duration_sec": 72.54
+    },
+    {
+      "id": "scene-05",
+      "section": "12.5 · Continuous Delivery e Deployment",
+      "title": "Dalla replica di produzione all'A/B testing e ai limiti di business",
+      "tts_text": "La continuous integration costruisce un sistema eseguibile, ma l'ambiente di produzione reale ha filesystem, permessi e servizi diversi, capaci di far emergere nuovi bug. [pause:0.5] Ecco perché serve la continuous delivery: si configura un ambiente di test staged che replica la produzione, spesso tramite container, e si eseguono gli acceptance test funzionali e di carico. [pause:0.6] Se tutti i test passano, scatta la continuous deployment: il software viene installato sui server di produzione, si smette di accettare nuove richieste lasciando completare le transazioni in corso alla vecchia versione, e poi si passa alla nuova. [pause:0.6] Nei sistemi cloud questo azzera i costi manuali di rilascio, velocizza la diagnosi e il feedback dei clienti, e abilita l'A B testing: il load balancer dirotta una frazione di utenti sulla nuova versione per misurarne l'uso reale. [pause:0.5] Tuttavia non sempre conviene distribuire ogni singola modifica: per proteggere feature incomplete dai concorrenti, non irritare gli utenti con cambi continui di interfaccia, o sincronizzare i rilasci con cicli di business noti, come l'inizio dell'anno accademico.",
+      "slide_html": "<div class=\"slide-card\">\n  <div class=\"slide-kicker\">12.5 · Continuous Delivery &amp; Continuous Deployment</div>\n  <h2 class=\"slide-title\">Pipeline di rilascio, A/B testing e scelte di business</h2>\n  <div id=\"s1\" class=\"svg-panel cue-hidden\">\n    <svg viewBox=\"0 0 640 165\" class=\"diagram-svg\" aria-label=\"Pipeline Continuous Delivery e Deployment\">\n      <defs>\n        <marker id=\"arr-cd\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\">\n          <path d=\"M0 1 L9 5 L0 9 z\" fill=\"var(--ink-soft)\"/>\n        </marker>\n      </defs>\n      <g id=\"cd-deliv\">\n        <rect x=\"12\" y=\"14\" width=\"358\" height=\"76\" rx=\"8\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.4\"/>\n        <text x=\"22\" y=\"30\" class=\"svg-caption\">Continuous Delivery (staged replica / container)</text>\n        <rect x=\"22\" y=\"38\" width=\"100\" height=\"40\" rx=\"5\" fill=\"var(--bg-surface, #fff)\" stroke=\"var(--blue)\" stroke-width=\"1.4\"/>\n        <text x=\"72\" y=\"55\" text-anchor=\"middle\" class=\"svg-tick\">Configure</text>\n        <text x=\"72\" y=\"69\" text-anchor=\"middle\" class=\"svg-tick\">test server</text>\n        <rect x=\"140\" y=\"38\" width=\"100\" height=\"40\" rx=\"5\" fill=\"var(--bg-surface, #fff)\" stroke=\"var(--blue)\" stroke-width=\"1.4\"/>\n        <text x=\"190\" y=\"55\" text-anchor=\"middle\" class=\"svg-tick\">Install</text>\n        <text x=\"190\" y=\"69\" text-anchor=\"middle\" class=\"svg-tick\">tested system</text>\n        <rect x=\"258\" y=\"38\" width=\"100\" height=\"40\" rx=\"5\" fill=\"var(--bg-surface, #fff)\" stroke=\"var(--blue)\" stroke-width=\"1.4\"/>\n        <text x=\"308\" y=\"55\" text-anchor=\"middle\" class=\"svg-tick\">Acceptance &amp;</text>\n        <text x=\"308\" y=\"69\" text-anchor=\"middle\" class=\"svg-tick\">load tests</text>\n        <line x1=\"122\" y1=\"58\" x2=\"137\" y2=\"58\" stroke=\"var(--ink-soft)\" stroke-width=\"1.4\" marker-end=\"url(#arr-cd)\"/>\n        <line x1=\"240\" y1=\"58\" x2=\"255\" y2=\"58\" stroke=\"var(--ink-soft)\" stroke-width=\"1.4\" marker-end=\"url(#arr-cd)\"/>\n      </g>\n      <path d=\"M370 58 L398 58 L398 118 L412 118\" fill=\"none\" stroke=\"var(--green)\" stroke-width=\"1.8\" marker-end=\"url(#arr-cd)\"/>\n      <text x=\"398\" y=\"48\" text-anchor=\"middle\" class=\"svg-caption\">All pass</text>\n      <g id=\"cd-depl\">\n        <rect x=\"416\" y=\"76\" width=\"212\" height=\"76\" rx=\"8\" fill=\"var(--green-soft, rgba(21,128,61,0.12))\" stroke=\"var(--green)\" stroke-width=\"1.6\"/>\n        <text x=\"426\" y=\"92\" class=\"svg-caption\">Continuous Deployment (Cloud)</text>\n        <rect x=\"426\" y=\"100\" width=\"90\" height=\"40\" rx=\"5\" fill=\"var(--bg-surface, #fff)\" stroke=\"var(--green)\" stroke-width=\"1.4\"/>\n        <text x=\"471\" y=\"117\" text-anchor=\"middle\" class=\"svg-tick\">Install on</text>\n        <text x=\"471\" y=\"131\" text-anchor=\"middle\" class=\"svg-tick\">prod servers</text>\n        <rect x=\"528\" y=\"100\" width=\"90\" height=\"40\" rx=\"5\" fill=\"var(--bg-surface, #fff)\" stroke=\"var(--green)\" stroke-width=\"1.4\"/>\n        <text x=\"573\" y=\"117\" text-anchor=\"middle\" class=\"svg-tick\">Drain &amp; switch</text>\n        <text x=\"573\" y=\"131\" text-anchor=\"middle\" class=\"svg-tick\">to new version</text>\n        <line x1=\"516\" y1=\"120\" x2=\"525\" y2=\"120\" stroke=\"var(--ink-soft)\" stroke-width=\"1.4\" marker-end=\"url(#arr-cd)\"/>\n      </g>\n    </svg>\n  </div>\n  <div id=\"s2\" class=\"grid-2 cue-hidden\">\n    <div id=\"b-cd-ben\" class=\"box box-primary\">\n      <div class=\"box-label\">Benefici del Deployment &amp; A/B testing</div>\n      <ul class=\"clean-list\">\n        <li id=\"cdb-1\"><strong>Costi e diagnosi</strong>: pipeline automatica, modifiche piccole e feedback immediato.</li>\n        <li id=\"cdb-2\"><strong>A/B testing</strong>: rilascio su un sottoinsieme di server, il <em>load balancer</em> dirotta parte dei clienti e si misura l'uso.</li>\n        <li id=\"cdb-3\"><strong>Strumenti</strong>: Jenkins/Travis + Chef, Puppet, Ansible (o container + CI nel cloud).</li>\n      </ul>\n    </div>\n    <div id=\"b-cd-no\" class=\"box box-warn\">\n      <div class=\"box-label\">Perché NON distribuire ogni modifica</div>\n      <ol class=\"algo-list\">\n        <li id=\"cdn-1\">Feature incomplete da non svelare ai concorrenti.</li>\n        <li id=\"cdn-2\">Evitare di irritare gli utenti con cambi continui di UI.</li>\n        <li id=\"cdn-3\">Allineare i rilasci ai cicli di business (es. anno accademico).</li>\n      </ol>\n    </div>\n  </div>\n</div>",
+      "cues": [
+        {
+          "at": 1.34,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "costruisce un sistema eseguibile"
+        },
+        {
+          "at": 1.34,
+          "action": "highlight",
+          "target": "#s1",
+          "duration": 7.5,
+          "anchor": "costruisce un sistema eseguibile"
+        },
+        {
+          "at": 11.24,
+          "action": "highlight",
+          "target": "#cd-deliv",
+          "duration": 11.5,
+          "anchor": "serve la continuous delivery"
+        },
+        {
+          "at": 23,
+          "action": "highlight",
+          "target": "#cd-depl",
+          "duration": 13.26,
+          "anchor": "Se tutti i test passano"
+        },
+        {
+          "at": 36.38,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Nei sistemi cloud questo"
+        },
+        {
+          "at": 36.38,
+          "action": "highlight",
+          "target": "#cdb-1",
+          "duration": 6.04,
+          "anchor": "Nei sistemi cloud questo"
+        },
+        {
+          "at": 42.54,
+          "action": "highlight",
+          "target": "#cdb-2",
+          "duration": 6.7,
+          "anchor": "e abilita l'A B testing"
+        },
+        {
+          "at": 49.36,
+          "action": "highlight",
+          "target": "#b-cd-no",
+          "duration": 20,
+          "anchor": "Tuttavia non sempre conviene"
+        }
+      ],
+      "audio_file": "audio/scene-05.wav",
+      "subtitle_file": "subtitles/scene-05.json",
+      "duration_sec": 63.88
+    },
+    {
+      "id": "scene-06",
+      "section": "12.6 · Infrastructure as Code",
+      "title": "Gestione automatica dei server, caso NYSE e container",
+      "tts_text": "Gestire a mano decine o centinaia di server è lento e rischioso: cambiano configurazioni e dipendenze, e le modifiche d'emergenza spesso non vengono documentate. [pause:0.5] L'Infrastructure as Code risolve il problema descrivendo rete, server e software da installare in un modello leggibile dalla macchina. Uno strumento di configuration management, come Puppet, Chef o Ansible, legge questa definizione e applica le modifiche in automatico a tutti i server. [pause:0.6] I vantaggi sono quattro: visibility, perché l'intero team può leggere e rivedere il modello; reproducibility, perché l'ambiente ricreato è sempre identico; reliability, evitando gli errori manuali; e recovery, perché il modello è versionato nel code management e consente un rollback immediato. [pause:0.6] Un caso celebre è la Borsa di New York, parte di Intercontinental Exchange: adottando Puppet Enterprise, gestisce il settantacinque per cento dei suoi ventimila server, cioè quindicimila macchine; ogni amministratore segue settecento server invece di trecento, e preparare un ambiente di sviluppo richiede ventuno minuti anziché uno o due giorni. [pause:0.5] Nel cloud, questo approccio si sposa benissimo con immagini container immutabili e orchestratori come Kubernetes.",
+      "slide_html": "<div class=\"slide-card\">\n  <div class=\"slide-kicker\">12.6 · Infrastructure as Code &amp; Container</div>\n  <h2 class=\"slide-title\">Modelli leggibili dalla macchina, caso NYSE/ICE e Container</h2>\n  <div id=\"s1\" class=\"split-visual cue-hidden\">\n    <div id=\"svg-iac\" class=\"svg-panel\">\n      <svg viewBox=\"0 0 360 175\" class=\"diagram-svg\" aria-label=\"Flusso Infrastructure as Code\">\n        <defs>\n          <marker id=\"arr-iac\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\">\n            <path d=\"M0 1 L9 5 L0 9 z\" fill=\"var(--blue)\"/>\n          </marker>\n        </defs>\n        <g id=\"iac-def\">\n          <text x=\"62\" y=\"24\" text-anchor=\"middle\" class=\"svg-caption\">Infrastructure def.</text>\n          <rect x=\"14\" y=\"32\" width=\"96\" height=\"112\" rx=\"6\" fill=\"var(--bg-muted, #f3f4f6)\" stroke=\"var(--ink-soft)\" stroke-width=\"1.4\"/>\n          <text x=\"24\" y=\"54\" class=\"svg-tick\">S1: pkg, DB...</text>\n          <text x=\"24\" y=\"76\" class=\"svg-tick\">S2: runtime...</text>\n          <text x=\"24\" y=\"98\" class=\"svg-tick\">S3, S4: net...</text>\n          <text x=\"24\" y=\"124\" class=\"svg-caption\">(versionata)</text>\n        </g>\n        <g id=\"iac-cm\">\n          <rect x=\"140\" y=\"58\" width=\"104\" height=\"60\" rx=\"7\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.6\"/>\n          <text x=\"192\" y=\"81\" text-anchor=\"middle\" class=\"svg-math-sm\">CM Tool</text>\n          <text x=\"192\" y=\"99\" text-anchor=\"middle\" class=\"svg-tick\">Puppet / Chef /</text>\n          <text x=\"192\" y=\"111\" text-anchor=\"middle\" class=\"svg-tick\">Ansible</text>\n        </g>\n        <g id=\"iac-srv\">\n          <text x=\"316\" y=\"18\" text-anchor=\"middle\" class=\"svg-caption\">Servers</text>\n          <rect x=\"286\" y=\"24\" width=\"58\" height=\"26\" rx=\"4\" fill=\"var(--green-soft, rgba(21,128,61,0.12))\" stroke=\"var(--green)\" stroke-width=\"1.4\"/>\n          <text x=\"315\" y=\"41\" text-anchor=\"middle\" class=\"svg-tick\">S1</text>\n          <rect x=\"286\" y=\"58\" width=\"58\" height=\"26\" rx=\"4\" fill=\"var(--green-soft, rgba(21,128,61,0.12))\" stroke=\"var(--green)\" stroke-width=\"1.4\"/>\n          <text x=\"315\" y=\"75\" text-anchor=\"middle\" class=\"svg-tick\">S2</text>\n          <rect x=\"286\" y=\"92\" width=\"58\" height=\"26\" rx=\"4\" fill=\"var(--green-soft, rgba(21,128,61,0.12))\" stroke=\"var(--green)\" stroke-width=\"1.4\"/>\n          <text x=\"315\" y=\"109\" text-anchor=\"middle\" class=\"svg-tick\">S3</text>\n          <rect x=\"286\" y=\"126\" width=\"58\" height=\"26\" rx=\"4\" fill=\"var(--green-soft, rgba(21,128,61,0.12))\" stroke=\"var(--green)\" stroke-width=\"1.4\"/>\n          <text x=\"315\" y=\"143\" text-anchor=\"middle\" class=\"svg-tick\">S4</text>\n        </g>\n        <line x1=\"110\" y1=\"88\" x2=\"136\" y2=\"88\" stroke=\"var(--blue)\" stroke-width=\"1.8\" marker-end=\"url(#arr-iac)\"/>\n        <line x1=\"244\" y1=\"76\" x2=\"282\" y2=\"38\" stroke=\"var(--blue)\" stroke-width=\"1.4\" marker-end=\"url(#arr-iac)\"/>\n        <line x1=\"244\" y1=\"84\" x2=\"282\" y2=\"71\" stroke=\"var(--blue)\" stroke-width=\"1.4\" marker-end=\"url(#arr-iac)\"/>\n        <line x1=\"244\" y1=\"92\" x2=\"282\" y2=\"105\" stroke=\"var(--blue)\" stroke-width=\"1.4\" marker-end=\"url(#arr-iac)\"/>\n        <line x1=\"244\" y1=\"100\" x2=\"282\" y2=\"139\" stroke=\"var(--blue)\" stroke-width=\"1.4\" marker-end=\"url(#arr-iac)\"/>\n      </svg>\n    </div>\n    <div class=\"formula-col\">\n      <div id=\"b-iac-def\" class=\"box box-def\">\n        <div class=\"box-label\">Infrastructure as Code (IaC)</div>\n        <p>Modello dell'infrastruttura <strong>leggibile dalla macchina</strong> (rete, server, compilatori, librerie, DBMS): il CM tool installa e aggiorna automaticamente ogni nodo.</p>\n      </div>\n      <div id=\"b-iac-adv\" class=\"box box-primary\">\n        <div class=\"box-label\">Quattro vantaggi chiave</div>\n        <ul class=\"clean-list\">\n          <li id=\"adv-vis\"><strong>Visibility</strong>: modello leggibile e revisionabile dal team.</li>\n          <li id=\"adv-rep\"><strong>Reproducibility</strong> &amp; <strong>Reliability</strong>: stessa sequenza, zero errori manuali.</li>\n          <li id=\"adv-rec\"><strong>Recovery</strong>: modello versionato per rollback rapidi.</li>\n        </ul>\n      </div>\n    </div>\n  </div>\n  <div id=\"s2\" class=\"metrics-row cue-hidden\">\n    <div id=\"m-nyse1\" class=\"metric\">\n      <div class=\"metric-val\">75%</div>\n      <div class=\"metric-lbl\">15.000 / 20.000 server ICE con Puppet</div>\n    </div>\n    <div id=\"m-nyse2\" class=\"metric metric-accent\">\n      <div class=\"metric-val\">700 vs 300</div>\n      <div class=\"metric-lbl\">Server per admin (2,3× produttività)</div>\n    </div>\n    <div id=\"m-nyse3\" class=\"metric\">\n      <div class=\"metric-val\">21 min</div>\n      <div class=\"metric-lbl\">Provisioning dev (vs 1–2 giorni, no debug manuali)</div>\n    </div>\n    <div id=\"m-cont\" class=\"metric\">\n      <div class=\"metric-val\">Container</div>\n      <div class=\"metric-lbl\">Immagini immutabili + Kubernetes per scaling</div>\n    </div>\n  </div>\n</div>",
+      "cues": [
+        {
+          "at": 0.04,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "Gestire a mano decine"
+        },
+        {
+          "at": 0.04,
+          "action": "highlight",
+          "target": "#s1",
+          "duration": 7.1,
+          "anchor": "Gestire a mano decine"
+        },
+        {
+          "at": 9.82,
+          "action": "highlight",
+          "target": "#b-iac-def",
+          "duration": 11.8,
+          "anchor": "L'Infrastructure as Code risolve"
+        },
+        {
+          "at": 21.74,
+          "action": "highlight",
+          "target": "#iac-cm",
+          "duration": 4.22,
+          "anchor": "legge questa definizione"
+        },
+        {
+          "at": 26.08,
+          "action": "highlight",
+          "target": "#b-iac-adv",
+          "duration": 18,
+          "anchor": "I vantaggi sono quattro"
+        },
+        {
+          "at": 44.29,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Un caso celebre è"
+        },
+        {
+          "at": 44.29,
+          "action": "highlight",
+          "target": "#m-nyse1",
+          "duration": 8,
+          "anchor": "Un caso celebre è"
+        },
+        {
+          "at": 55.47,
+          "action": "highlight",
+          "target": "#m-nyse2",
+          "duration": 3.56,
+          "anchor": "ogni amministratore segue settecento"
+        },
+        {
+          "at": 59.15,
+          "action": "highlight",
+          "target": "#m-nyse3",
+          "duration": 5.12,
+          "anchor": "preparare un ambiente di sviluppo"
+        },
+        {
+          "at": 64.39,
+          "action": "highlight",
+          "target": "#m-cont",
+          "duration": 9,
+          "anchor": "Nel cloud, questo approccio"
+        }
+      ],
+      "audio_file": "audio/scene-06.wav",
+      "subtitle_file": "subtitles/scene-06.json",
+      "duration_sec": 70.5
+    },
+    {
+      "id": "scene-07",
+      "section": "12.7 · DevOps Measurement e APM",
+      "title": "Tipi di misure, metriche settimanali e raccolta automatica",
+      "tts_text": "Ricordate il terzo principio di DevOps: prima si misura, poi si cambia. Per migliorare processo e prodotto servono quattro tipi di misure. [pause:0.5] Le process measurements analizzano sviluppo, test e rilascio; le service measurements misurano prestazioni, affidabilità e accettabilità; le usage measurements osservano come i clienti usano l'app per scovare difetti; e le business success measurements valutano l'impatto economico, anche se è difficile isolare l'effetto di DevOps da altri fattori come manager migliori. [pause:0.6] Misurare non è banale: bisogna scegliere metriche utili, dedurre indicatori indiretti come la fidelizzazione e definire regole chiare, perché anche il lead time può essere letto in modi diversi. [pause:0.5] Perciò la raccolta dati va automatizzata da quattro fonti: gli strumenti di continuous integration come Jenkins, il monitoraggio cloud come Amazon CloudWatch, i sistemi di issue management e la strumentazione del software, cioè log con data e ora analizzati in automatico. [pause:0.5] Nelle revisioni settimanali si affiancano metriche di processo, come frequenza dei rilasci, lead time e mean time to recovery, a metriche di servizio come disponibilità, prestazioni e reclami dei clienti.",
+      "slide_html": "<div class=\"slide-card\">\n  <div class=\"slide-kicker\">12.7 · DevOps Measurement &amp; APM</div>\n  <h2 class=\"slide-title\">Misure, strumentazione e metriche di processo e servizio</h2>\n  <div id=\"s1\" class=\"grid-2 cue-hidden\">\n    <div id=\"b-meas-4\" class=\"box box-def\">\n      <div class=\"box-label\">Quattro tipi di misure &amp; complessità</div>\n      <ul class=\"clean-list\">\n        <li id=\"ms-1\"><strong>Process</strong>: dati su sviluppo, test e distribuzione.</li>\n        <li id=\"ms-2\"><strong>Service</strong>: prestazioni, affidabilità, accettabilità.</li>\n        <li id=\"ms-3\"><strong>Usage</strong>: uso reale del prodotto per scoprire difetti.</li>\n        <li id=\"ms-4\"><strong>Business success</strong>: difficile isolare il solo effetto DevOps; anche il <em>lead time</em> può risultare ambiguo.</li>\n      </ul>\n    </div>\n    <div id=\"b-meas-src\" class=\"box box-algo\">\n      <div class=\"box-label\">Quattro fonti di raccolta automatica</div>\n      <ol class=\"algo-list\">\n        <li id=\"src-1\"><strong>Strumenti CI</strong> (es. Jenkins): test riusciti, distribuzioni.</li>\n        <li id=\"src-2\"><strong>Monitoraggio cloud / APM</strong> (es. Amazon CloudWatch, New Relic).</li>\n        <li id=\"src-3\"><strong>Issue management</strong>: segnalazioni inviate dai clienti.</li>\n        <li id=\"src-4\"><strong>Strumentazione del prodotto</strong>: file di log con timestamp + log analysis.</li>\n      </ol>\n    </div>\n  </div>\n  <table id=\"s2\" class=\"acad-table cue-hidden\">\n    <thead>\n      <tr><th>Gruppo (tendenze settimanali)</th><th>Metriche monitorate</th></tr>\n    </thead>\n    <tbody>\n      <tr id=\"mt-proc\"><td><strong>Metriche di processo</strong></td><td>Frequenza distribuzioni · Volume modifiche · Lead time · % distribuzioni fallite · <strong>Mean Time to Recovery (MTTR)</strong></td></tr>\n      <tr id=\"mt-serv\"><td><strong>Metriche di servizio</strong></td><td>Prestazioni · Disponibilità (<em>availability</em>) · Numero reclami clienti · Aumento % numero di clienti</td></tr>\n    </tbody>\n  </table>\n</div>",
+      "cues": [
+        {
+          "at": 0,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "Ricordate il terzo principio"
+        },
+        {
+          "at": 0,
+          "action": "highlight",
+          "target": "#b-meas-4",
+          "duration": 7.1,
+          "anchor": "Ricordate il terzo principio"
+        },
+        {
+          "at": 8.82,
+          "action": "highlight",
+          "target": "#ms-1",
+          "duration": 4.14,
+          "anchor": "Le process measurements analizzano"
+        },
+        {
+          "at": 13.08,
+          "action": "highlight",
+          "target": "#ms-2",
+          "duration": 5,
+          "anchor": "le service measurements misurano"
+        },
+        {
+          "at": 18.36,
+          "action": "highlight",
+          "target": "#ms-3",
+          "duration": 4.94,
+          "anchor": "le usage measurements osservano"
+        },
+        {
+          "at": 23.42,
+          "action": "highlight",
+          "target": "#ms-4",
+          "duration": 18,
+          "anchor": "e le business success"
+        },
+        {
+          "at": 43.79,
+          "action": "highlight",
+          "target": "#b-meas-src",
+          "duration": 16.5,
+          "anchor": "Perciò la raccolta dati"
+        },
+        {
+          "at": 60.53,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Nelle revisioni settimanali si"
+        },
+        {
+          "at": 60.53,
+          "action": "highlight",
+          "target": "#mt-proc",
+          "duration": 6.7,
+          "anchor": "Nelle revisioni settimanali si"
+        },
+        {
+          "at": 67.35,
+          "action": "highlight",
+          "target": "#mt-serv",
+          "duration": 7.5,
+          "anchor": "a metriche di servizio"
+        }
+      ],
+      "audio_file": "audio/scene-07.wav",
+      "subtitle_file": "subtitles/scene-07.json",
+      "duration_sec": 72.43
+    },
+    {
+      "id": "scene-08",
+      "section": "12.8 · La cultura di ingegneria di Spotify",
+      "title": "Squad, Tribe, Chapter, Guild e filosofia Fail Fast",
+      "tts_text": "Chiudiamo esplorando un caso emblematico di cultura DevOps: l'organizzazione di Spotify. [pause:0.5] Il lavoro ruota attorno a quattro strutture. Una squad è un team agile autonomo con un Product Owner dedicato, capace di progettare, collaudare e rilasciare in produzione. Più squad della stessa area di business, per esempio il mobile, lavorano vicine dentro una tribe. [pause:0.6] In senso trasversale, un chapter riunisce gli specialisti dello stesso ruolo tra le squad di una tribe per fare cross-pollination e gestire le code review, dove servono due più uno per il merge. Infine, una guild è una comunità d'interesse che attraversa l'intera azienda, anche tra tribe diverse. [pause:0.6] Questa struttura è sostenuta da una cultura precisa: squad debolmente accoppiate ma strettamente allineate, open source interno e fiducia nelle persone. [pause:0.5] Spotify abbraccia il motto fail fast, learn fast, improve fast: usa fail wall, post-mortem e un'architettura che limita il blast radius dei guasti. Lavora in stile lean startup privilegiando l'impatto sulla velocity, concede il dieci per cento di hack time per sperimentare, combatte gli sprechi e forma la cultura con agile coach e boot camp.",
+      "slide_html": "<div class=\"slide-card\">\n  <div class=\"slide-kicker\">12.8 · Caso studio · Cultura di ingegneria Spotify</div>\n  <h2 class=\"slide-title\">Squad, Tribe, Chapter, Guild e filosofia «Fail Fast»</h2>\n  <div id=\"s1\" class=\"split-visual cue-hidden\">\n    <div id=\"svg-spot\" class=\"svg-panel\">\n      <svg viewBox=\"0 0 360 185\" class=\"diagram-svg\" aria-label=\"Struttura organizzativa Spotify\">\n        <g id=\"sp-tribeA\">\n          <rect x=\"12\" y=\"22\" width=\"158\" height=\"150\" rx=\"8\" fill=\"none\" stroke=\"var(--ink-soft)\" stroke-width=\"1.4\"/>\n          <text x=\"91\" y=\"15\" text-anchor=\"middle\" class=\"svg-math-sm\">Tribe A</text>\n          <rect x=\"22\" y=\"38\" width=\"38\" height=\"124\" rx=\"6\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.4\"/>\n          <text x=\"41\" y=\"34\" text-anchor=\"middle\" class=\"svg-tick\">PO</text>\n          <text x=\"41\" y=\"170\" text-anchor=\"middle\" class=\"svg-tick\">Squad</text>\n          <rect x=\"72\" y=\"38\" width=\"38\" height=\"124\" rx=\"6\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.4\"/>\n          <text x=\"91\" y=\"34\" text-anchor=\"middle\" class=\"svg-tick\">PO</text>\n          <rect x=\"122\" y=\"38\" width=\"38\" height=\"124\" rx=\"6\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.4\"/>\n          <text x=\"141\" y=\"34\" text-anchor=\"middle\" class=\"svg-tick\">PO</text>\n          <rect id=\"sp-chap\" x=\"18\" y=\"52\" width=\"146\" height=\"26\" rx=\"5\" fill=\"var(--green-soft, rgba(21,128,61,0.18))\" stroke=\"var(--green)\" stroke-width=\"1.4\"/>\n          <text x=\"91\" y=\"69\" text-anchor=\"middle\" class=\"svg-caption\">Chapter (stessa specialità)</text>\n        </g>\n        <g id=\"sp-tribeB\">\n          <rect x=\"190\" y=\"22\" width=\"158\" height=\"150\" rx=\"8\" fill=\"none\" stroke=\"var(--ink-soft)\" stroke-width=\"1.4\"/>\n          <text x=\"269\" y=\"15\" text-anchor=\"middle\" class=\"svg-math-sm\">Tribe B</text>\n          <rect x=\"200\" y=\"38\" width=\"38\" height=\"124\" rx=\"6\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.4\"/>\n          <text x=\"219\" y=\"34\" text-anchor=\"middle\" class=\"svg-tick\">PO</text>\n          <rect x=\"250\" y=\"38\" width=\"38\" height=\"124\" rx=\"6\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.4\"/>\n          <text x=\"269\" y=\"34\" text-anchor=\"middle\" class=\"svg-tick\">PO</text>\n          <rect x=\"300\" y=\"38\" width=\"38\" height=\"124\" rx=\"6\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.4\"/>\n          <text x=\"319\" y=\"34\" text-anchor=\"middle\" class=\"svg-tick\">PO</text>\n        </g>\n        <g id=\"sp-guild\">\n          <rect x=\"74\" y=\"118\" width=\"212\" height=\"28\" rx=\"8\" fill=\"var(--orange-soft, rgba(217,119,6,0.14))\" stroke=\"var(--orange)\" stroke-width=\"1.6\" stroke-dasharray=\"5 3\"/>\n          <text x=\"180\" y=\"136\" text-anchor=\"middle\" class=\"svg-math-sm\">Guild (comunità cross-tribe)</text>\n        </g>\n      </svg>\n    </div>\n    <div class=\"formula-col\">\n      <div id=\"b-sp-org\" class=\"box box-primary\">\n        <div class=\"box-label\">Quattro strutture &amp; Code Review</div>\n        <ul class=\"clean-list\">\n          <li id=\"st-sq\"><strong>Squad &amp; Tribe</strong>: team autonomo con PO; più squad co-locate nella stessa area formano una <em>Tribe</em>.</li>\n          <li id=\"st-ch\"><strong>Chapter</strong>: stessa specialità dentro la tribe; promuove <em>cross-pollination</em> e fa <strong>code review</strong> (servono <strong>due +1</strong> per il merge).</li>\n          <li id=\"st-gu\"><strong>Guild</strong>: comunità d'interesse trasversale a tutta l'organizzazione.</li>\n        </ul>\n      </div>\n    </div>\n  </div>\n  <div id=\"s2\" class=\"box box-idea cue-hidden\">\n    <div class=\"box-label\">Principi culturali · «Una cultura sana guarisce un processo rotto»</div>\n    <p><strong>Loosely coupled, tightly aligned</strong> · Open source interno · <strong>Fail fast, learn fast, improve fast</strong> (<em>fail wall</em>, <em>post-mortem</em>, piccolo <em>blast radius</em>) · <strong>Lean startup</strong> (impatto &gt; velocity) · <strong>10% hack time</strong> · Rifiuto degli sprechi (Toyota <em>kata</em>, agile coach, <em>boot camp</em>).</p>\n  </div>\n</div>",
+      "cues": [
+        {
+          "at": 3.56,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "l'organizzazione di Spotify"
+        },
+        {
+          "at": 8.18,
+          "action": "highlight",
+          "target": "#st-sq",
+          "duration": 14.1,
+          "anchor": "Una squad è un team"
+        },
+        {
+          "at": 22.4,
+          "action": "highlight",
+          "target": "#st-ch",
+          "duration": 10.5,
+          "anchor": "In senso trasversale, un chapter"
+        },
+        {
+          "at": 33.82,
+          "action": "highlight",
+          "target": "#st-gu",
+          "duration": 5.64,
+          "anchor": "Infine, una guild è"
+        },
+        {
+          "at": 39.58,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Questa struttura è sostenuta"
+        },
+        {
+          "at": 39.58,
+          "action": "highlight",
+          "target": "#s2",
+          "duration": 8.91,
+          "anchor": "Questa struttura è sostenuta"
+        },
+        {
+          "at": 48.61,
+          "action": "highlight",
+          "target": "#s2",
+          "duration": 22,
+          "anchor": "Spotify abbraccia il motto"
+        }
+      ],
+      "audio_file": "audio/scene-08.wav",
+      "subtitle_file": "subtitles/scene-08.json",
+      "duration_sec": 70.1
+    },
+    {
+      "id": "scene-09",
+      "section": "12.9 · I 7 principi Lean, build CI e Infrastructure as Code",
+      "title": "I sette principi Lean, dettagli CI e gestione dello skew IaC",
+      "tts_text": "Approfondiamo alcuni dettagli tecnici chiave, partendo dalle radici Lean e dai processi di build e infrastruttura. [pause:0.5] Il Lean Software Development comprende sette principi: eliminare gli sprechi, amplificare l'apprendimento, decidere il più tardi possibile, consegnare il più presto possibile, dare responsabilità al team, costruire l'integrità dentro il prodotto e vedere l'insieme. [pause:0.6] Con i team separati, il rilascio prepara la release documentation e le modifiche possono passare a un maintenance team separato; i team non si comprendono, adattano a fatica il codice alla produzione e devono pianificare ogni distribuzione. [pause:0.6] Nella continuous integration, preparare la build richiede il database con lo schema corretto e la rimozione dei vecchi file di configurazione. [pause:0.5] Per non rompere la build si segue il ciclo completo: commit locale, pull del ramo master, merge, compilazione e build, quindi i test; se falliscono si riparte dal codice, altrimenti si fa push. La prima build compila tutti i sorgenti e test eseguibili, le successive rigenerano i file oggetto solo per i file modificati. [pause:0.6] Infine, nell'Infrastructure as Code c'è il dependency skew, perché alcuni server vanno aggiornati e altri no per dipendenze legacy; come dice I C E con Puppet, non si cerca più il guasto in un server lento o instabile, lo si ricostruisce.",
+      "slide_html": "<div class=\"slide-card\">\n  <div class=\"slide-kicker\">12.9 · I 7 principi Lean, build CI e Infrastructure as Code</div>\n  <h2 class=\"slide-title\">Principi Lean completi, ciclo CI e dependency skew IaC</h2>\n  <div id=\"s1\" class=\"grid-2 cue-hidden\">\n    <div id=\"b-lean\" class=\"box box-theorem\">\n      <div class=\"box-label\">I 7 principi Lean Software Development</div>\n      <ol class=\"algo-list\">\n        <li>Eliminare gli sprechi</li>\n        <li><strong>Amplificare l'apprendimento</strong></li>\n        <li><strong>Decidere il più tardi possibile</strong></li>\n        <li>Consegnare il più presto possibile</li>\n        <li>Dare responsabilità al team</li>\n        <li><strong>Costruire l'integrità dentro il prodotto</strong></li>\n        <li><strong>Vedere l'insieme</strong></li>\n      </ol>\n    </div>\n    <div class=\"formula-col\">\n      <div id=\"b-sep\" class=\"box box-warn\">\n        <div class=\"box-label\">Team separati · Dettagli critici</div>\n        <p>Il rilascio prepara la <strong>release documentation</strong>; le modifiche passano a Sviluppo o a un <strong>maintenance team</strong> separato. Incomprensione reciproca, codice adattato a fatica in produzione e <strong>distribuzioni da pianificare</strong>.</p>\n      </div>\n      <div id=\"b-iac\" class=\"box box-def\">\n        <div class=\"box-label\">IaC · Dependency skew &amp; ICE / Puppet</div>\n        <p>Alcuni server vanno aggiornati e altri <strong>no</strong> per dipendenze legacy. Motto ICE: <em>«non si cerca più il guasto in un server lento o instabile, lo si ricostruisce»</em>.</p>\n      </div>\n    </div>\n  </div>\n  <div id=\"s2\" class=\"split-visual cue-hidden\">\n    <div id=\"svg-twice\" class=\"svg-panel\">\n      <svg viewBox=\"0 0 380 170\" class=\"diagram-svg\" aria-label=\"Ciclo completo Non rompere la build\">\n        <defs>\n          <marker id=\"arr-tw\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\">\n            <path d=\"M0 1 L9 5 L0 9 z\" fill=\"var(--ink-soft)\"/>\n          </marker>\n          <marker id=\"arr-tw-r\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\">\n            <path d=\"M0 1 L9 5 L0 9 z\" fill=\"var(--red)\"/>\n          </marker>\n          <marker id=\"arr-tw-g\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\">\n            <path d=\"M0 1 L9 5 L0 9 z\" fill=\"var(--green)\"/>\n          </marker>\n        </defs>\n        <g id=\"tw-prep\">\n          <rect x=\"12\" y=\"16\" width=\"104\" height=\"36\" rx=\"6\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.4\"/>\n          <text x=\"64\" y=\"38\" text-anchor=\"middle\" class=\"svg-tick\">Edit &amp; Commit loc.</text>\n          <rect x=\"138\" y=\"16\" width=\"104\" height=\"36\" rx=\"6\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.4\"/>\n          <text x=\"190\" y=\"38\" text-anchor=\"middle\" class=\"svg-tick\">Pull master</text>\n          <rect x=\"264\" y=\"16\" width=\"104\" height=\"36\" rx=\"6\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.4\"/>\n          <text x=\"316\" y=\"38\" text-anchor=\"middle\" class=\"svg-tick\">Merge locale</text>\n          <line x1=\"116\" y1=\"34\" x2=\"135\" y2=\"34\" stroke=\"var(--ink-soft)\" stroke-width=\"1.4\" marker-end=\"url(#arr-tw)\"/>\n          <line x1=\"242\" y1=\"34\" x2=\"261\" y2=\"34\" stroke=\"var(--ink-soft)\" stroke-width=\"1.4\" marker-end=\"url(#arr-tw)\"/>\n        </g>\n        <g id=\"tw-build\">\n          <rect x=\"48\" y=\"84\" width=\"118\" height=\"36\" rx=\"6\" fill=\"var(--orange-soft, rgba(217,119,6,0.14))\" stroke=\"var(--orange)\" stroke-width=\"1.4\"/>\n          <text x=\"107\" y=\"106\" text-anchor=\"middle\" class=\"svg-tick\">Compile &amp; Build</text>\n          <rect x=\"190\" y=\"84\" width=\"94\" height=\"36\" rx=\"6\" fill=\"var(--green-soft, rgba(21,128,61,0.14))\" stroke=\"var(--green)\" stroke-width=\"1.4\"/>\n          <text x=\"237\" y=\"106\" text-anchor=\"middle\" class=\"svg-tick\">Test system</text>\n          <rect x=\"306\" y=\"84\" width=\"64\" height=\"36\" rx=\"6\" fill=\"var(--green-soft, rgba(21,128,61,0.22))\" stroke=\"var(--green)\" stroke-width=\"1.6\"/>\n          <text x=\"338\" y=\"106\" text-anchor=\"middle\" class=\"svg-math-sm\">Push</text>\n          <path d=\"M316 52 L316 68 L107 68 L107 80\" fill=\"none\" stroke=\"var(--ink-soft)\" stroke-width=\"1.4\" marker-end=\"url(#arr-tw)\"/>\n          <line x1=\"166\" y1=\"102\" x2=\"187\" y2=\"102\" stroke=\"var(--ink-soft)\" stroke-width=\"1.4\" marker-end=\"url(#arr-tw)\"/>\n          <line x1=\"284\" y1=\"102\" x2=\"303\" y2=\"102\" stroke=\"var(--green)\" stroke-width=\"1.6\" marker-end=\"url(#arr-tw-g)\"/>\n          <text x=\"294\" y=\"95\" text-anchor=\"middle\" class=\"svg-tick\">OK</text>\n        </g>\n        <path d=\"M237 120 L237 148 L26 148 L26 56\" fill=\"none\" stroke=\"var(--red)\" stroke-width=\"1.5\" stroke-dasharray=\"4 3\" marker-end=\"url(#arr-tw-r)\"/>\n        <text x=\"132\" y=\"161\" text-anchor=\"middle\" class=\"svg-caption\">Test failure → loop modifica codice</text>\n      </svg>\n    </div>\n    <div class=\"formula-col\">\n      <div id=\"b-ci-det\" class=\"box box-algo\">\n        <div class=\"box-label\">System Building &amp; Build Incrementale</div>\n        <ul class=\"clean-list\">\n          <li id=\"ci-db\"><strong>DB &amp; config</strong>: installare DBMS con lo <strong>schema corretto</strong>, spostare i config file e <strong>cancellare quelli vecchi</strong>.</li>\n          <li id=\"ci-inc\"><strong>Build incrementale</strong>: la <strong>1ª build</strong> compila <em>tutti</em> i sorgenti e test eseguibili; le <strong>successive</strong> creano file oggetto <em>solo</em> per sorgenti e test modificati.</li>\n        </ul>\n      </div>\n    </div>\n  </div>\n</div>",
+      "cues": [
+        {
+          "at": 2.3,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "partendo dalle radici Lean"
+        },
+        {
+          "at": 6.9,
+          "action": "highlight",
+          "target": "#b-lean",
+          "duration": 16.5,
+          "anchor": "Il Lean Software Development"
+        },
+        {
+          "at": 23.56,
+          "action": "highlight",
+          "target": "#b-sep",
+          "duration": 14.61,
+          "anchor": "Con i team separati"
+        },
+        {
+          "at": 38.29,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Nella continuous integration, preparare"
+        },
+        {
+          "at": 38.29,
+          "action": "highlight",
+          "target": "#ci-db",
+          "duration": 7.78,
+          "anchor": "Nella continuous integration, preparare"
+        },
+        {
+          "at": 46.19,
+          "action": "highlight",
+          "target": "#tw-prep",
+          "duration": 5.34,
+          "anchor": "Per non rompere la build"
+        },
+        {
+          "at": 51.65,
+          "action": "highlight",
+          "target": "#tw-build",
+          "duration": 7,
+          "anchor": "merge, compilazione e build"
+        },
+        {
+          "at": 59.09,
+          "action": "highlight",
+          "target": "#ci-inc",
+          "duration": 7.26,
+          "anchor": "La prima build compila"
+        },
+        {
+          "at": 66.47,
+          "action": "highlight",
+          "target": "#b-iac",
+          "duration": 14,
+          "anchor": "Infine, nell'Infrastructure as Code"
+        }
+      ],
+      "audio_file": "audio/scene-09.wav",
+      "subtitle_file": "subtitles/scene-09.json",
+      "duration_sec": 80.84
+    },
+    {
+      "id": "scene-10",
+      "section": "12.10 · Insidie delle metriche e cultura Spotify",
+      "title": "Ambiguità del lead time e pilastri operativi di Spotify",
+      "tts_text": "Passiamo alle insidie della misurazione del processo e ai pilastri operativi della cultura di ingegneria Spotify. [pause:0.5] Misurare il processo non è semplice, perché persone diverse registrano i dati in modo diverso. Prendiamo il lead time di una modifica: dobbiamo contare il tempo trascorso totale oppure il tempo effettivo speso dagli sviluppatori? E come si tiene conto dei cambiamenti urgenti che hanno rallentato tutto il resto del lavoro? [pause:0.6] Nel modello Spotify, lo sviluppo segue il ciclo Lean Startup: think, build, ship e tweak. Qui l'innovazione conta più della prevedibilità e la consegna di valore più del rispetto del piano, proprio come l'impatto supera la semplice velocity. [pause:0.5] Anziché cercare di evitare ogni guasto a ogni costo, si punta a riprendersi rapidamente dai guasti, usando rilasci graduali, chiamati gradual rollout, per limitare il blast radius, insieme ad analisi retrospettive. [pause:0.6] L'organizzazione rifiuta gli sprechi mantenendo pochissima burocrazia, solo quanta basta a evitare il caos, riducendo i grandi progetti e affidandosi a improvement boards, Toyota kata e storytelling. [pause:0.5] Infine, il Tribe Leader ha il compito di offrire alle squad l'ambiente giusto, con spazi comuni ed eventi informali regolari in cui i team condividono ciò su cui lavorano.",
+      "slide_html": "<div class=\"slide-card\">\n  <div class=\"slide-kicker\">12.10 · Insidie delle metriche e cultura Spotify</div>\n  <h2 class=\"slide-title\">Ambiguità delle misure di processo e cultura operativa Spotify</h2>\n  <div id=\"s1\" class=\"box box-warn cue-hidden\">\n    <div class=\"box-label\">Attenzione · Misurare il processo non è semplice</div>\n    <ul class=\"clean-list\">\n      <li id=\"m-div\"><strong>Dati eterogenei</strong>: persone diverse registrano le informazioni in modi diversi.</li>\n      <li id=\"m-lead\"><strong>Lead time ambiguo</strong>: conta il <em>tempo trascorso totale</em> oppure il <em>tempo effettivo</em> degli sviluppatori?</li>\n      <li id=\"m-urg\"><strong>Cambiamenti urgenti</strong>: come pesare le modifiche urgenti che hanno rallentato il resto del lavoro?</li>\n    </ul>\n  </div>\n  <div id=\"s2\" class=\"split-visual cue-hidden\">\n    <div id=\"svg-spot-cycle\" class=\"svg-panel\">\n      <svg viewBox=\"0 0 360 175\" class=\"diagram-svg\" aria-label=\"Ciclo Lean Startup e Gradual Rollout Spotify\">\n        <defs>\n          <marker id=\"arr-sp\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\">\n            <path d=\"M0 1 L9 5 L0 9 z\" fill=\"var(--blue)\"/>\n          </marker>\n        </defs>\n        <g id=\"sp-loop\">\n          <text x=\"180\" y=\"20\" text-anchor=\"middle\" class=\"svg-caption\">Ciclo Lean Startup (Spotify)</text>\n          <rect x=\"14\" y=\"32\" width=\"68\" height=\"36\" rx=\"6\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.4\"/>\n          <text x=\"48\" y=\"54\" text-anchor=\"middle\" class=\"svg-math-sm\">Think</text>\n          <rect x=\"102\" y=\"32\" width=\"68\" height=\"36\" rx=\"6\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.4\"/>\n          <text x=\"136\" y=\"54\" text-anchor=\"middle\" class=\"svg-math-sm\">Build</text>\n          <rect x=\"190\" y=\"32\" width=\"68\" height=\"36\" rx=\"6\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.4\"/>\n          <text x=\"224\" y=\"54\" text-anchor=\"middle\" class=\"svg-math-sm\">Ship</text>\n          <rect x=\"278\" y=\"32\" width=\"68\" height=\"36\" rx=\"6\" fill=\"var(--green-soft, rgba(21,128,61,0.16))\" stroke=\"var(--green)\" stroke-width=\"1.4\"/>\n          <text x=\"312\" y=\"54\" text-anchor=\"middle\" class=\"svg-math-sm\">Tweak</text>\n          <line x1=\"82\" y1=\"50\" x2=\"99\" y2=\"50\" stroke=\"var(--blue)\" stroke-width=\"1.4\" marker-end=\"url(#arr-sp)\"/>\n          <line x1=\"170\" y1=\"50\" x2=\"187\" y2=\"50\" stroke=\"var(--blue)\" stroke-width=\"1.4\" marker-end=\"url(#arr-sp)\"/>\n          <line x1=\"258\" y1=\"50\" x2=\"275\" y2=\"50\" stroke=\"var(--blue)\" stroke-width=\"1.4\" marker-end=\"url(#arr-sp)\"/>\n          <path d=\"M312 68 L312 84 L48 84 L48 71\" fill=\"none\" stroke=\"var(--blue)\" stroke-width=\"1.3\" stroke-dasharray=\"4 3\" marker-end=\"url(#arr-sp)\"/>\n        </g>\n        <g id=\"sp-blast\">\n          <rect x=\"14\" y=\"104\" width=\"332\" height=\"58\" rx=\"8\" fill=\"var(--orange-soft, rgba(217,119,6,0.12))\" stroke=\"var(--orange)\" stroke-width=\"1.4\"/>\n          <text x=\"180\" y=\"124\" text-anchor=\"middle\" class=\"svg-math-sm\">Riprendersi dai guasti &gt; evitarli a ogni costo</text>\n          <text x=\"180\" y=\"144\" text-anchor=\"middle\" class=\"svg-tick\">Gradual rollout → piccolo blast radius · Retrospettive</text>\n        </g>\n      </svg>\n    </div>\n    <div class=\"formula-col\">\n      <div id=\"b-sp-val\" class=\"box box-primary\">\n        <div class=\"box-label\">Priorità Lean Startup</div>\n        <p><strong>Innovazione &gt; prevedibilità</strong> · <strong>Valore &gt; piano</strong> · Impatto &gt; velocity. Rilasci graduali e <strong>retrospettive</strong> per apprendere dai guasti.</p>\n      </div>\n      <div id=\"b-sp-env\" class=\"box box-idea\">\n        <div class=\"box-label\">Snellezza &amp; Tribe Leader</div>\n        <ul class=\"clean-list\">\n          <li><strong>Poca burocrazia</strong> (solo anti-caos), meno grandi progetti, <strong>improvement boards</strong> (<em>kata</em>) e <strong>storytelling</strong>.</li>\n          <li id=\"sp-tribe\"><strong>Tribe Leader</strong>: offre alle squad l'ambiente giusto con spazi comuni ed <strong>eventi informali</strong> di condivisione.</li>\n        </ul>\n      </div>\n    </div>\n  </div>\n</div>",
+      "cues": [
+        {
+          "at": 0.94,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "insidie della misurazione del"
+        },
+        {
+          "at": 7.86,
+          "action": "highlight",
+          "target": "#m-div",
+          "duration": 5.52,
+          "anchor": "Misurare il processo non"
+        },
+        {
+          "at": 13.5,
+          "action": "highlight",
+          "target": "#m-lead",
+          "duration": 8.93,
+          "anchor": "Prendiamo il lead time"
+        },
+        {
+          "at": 22.55,
+          "action": "highlight",
+          "target": "#m-urg",
+          "duration": 4.08,
+          "anchor": "dei cambiamenti urgenti che"
+        },
+        {
+          "at": 26.75,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Nel modello Spotify, lo"
+        },
+        {
+          "at": 26.75,
+          "action": "highlight",
+          "target": "#sp-loop",
+          "duration": 6.32,
+          "anchor": "Nel modello Spotify, lo"
+        },
+        {
+          "at": 33.19,
+          "action": "highlight",
+          "target": "#b-sp-val",
+          "duration": 9.5,
+          "anchor": "Qui l'innovazione conta più"
+        },
+        {
+          "at": 46.19,
+          "action": "highlight",
+          "target": "#sp-blast",
+          "duration": 11.87,
+          "anchor": "riprendersi rapidamente dai guasti"
+        },
+        {
+          "at": 58.18,
+          "action": "highlight",
+          "target": "#b-sp-env",
+          "duration": 10.92,
+          "anchor": "mantenendo pochissima burocrazia"
+        },
+        {
+          "at": 69.22,
+          "action": "highlight",
+          "target": "#sp-tribe",
+          "duration": 13,
+          "anchor": "il Tribe Leader ha"
+        }
+      ],
+      "audio_file": "audio/scene-10.wav",
+      "subtitle_file": "subtitles/scene-10.json",
+      "duration_sec": 78.73
+    },
+    {
+      "id": "scene-11",
+      "section": "12.11 · Riepilogo e autoverifica",
+      "title": "Punti chiave del capitolo e domande d'esame",
+      "tts_text": "Chiudiamo questo capitolo fissando i sei punti chiave da portare all'esame. [pause:0.5] Primo: i team separati rallentano i rilasci; DevOps integra sviluppo, distribuzione e supporto in un unico team multidisciplinare. [pause:0.5] Secondo: i tre principi sono responsabilità condivisa, automazione totale e decisioni guidate dalle misure, con quattro benefici su velocità, rischio, riparazione e produttività. [pause:0.5] Terzo: il code management, con versioni, branching e merging, è la base centrale di automazione e misura. [pause:0.5] Quarto: la continuous integration costruisce e collauda a ogni push, integrando due volte e usando build incrementali con i timestamp. [pause:0.5] Quinto: continuous delivery e deployment portano il test su repliche di produzione fino al rilascio automatico e all'A B testing, salvo vincoli di business; l'infrastructure as code automatizza i server con visibilità, riproducibilità, affidabilità e recovery. [pause:0.5] Sesto: servono misure automatiche di processo, servizio, uso e business, e una cultura sana come nel modello Spotify. [pause:0.6] Per verificare la vostra preparazione, provate a rispondere alle undici domande sulla destra.",
+      "slide_html": "<div class=\"slide-card\">\n  <div class=\"slide-kicker\">12.11 · Riepilogo &amp; Autoverifica</div>\n  <h2 class=\"slide-title\">Punti chiave e domande di verifica</h2>\n  <div class=\"grid-2\">\n    <div class=\"box box-algo\">\n      <div class=\"box-label\">Punti chiave da fissare</div>\n      <ul class=\"clean-list\">\n        <li id=\"s1\" class=\"cue-hidden\"><strong>Team unico</strong>: DevOps supera ritardi e strumenti diversi integrando sviluppo, rilascio e supporto.</li>\n        <li id=\"s2\" class=\"cue-hidden\"><strong>3 principi e 4 benefici</strong>: responsabilità condivisa, automazione, <em>measure first</em>; velocità, meno rischio, riparazione rapida, produttività.</li>\n        <li id=\"s3\" class=\"cue-hidden\"><strong>Code management</strong>: versioni, branching/merging e storia sono la base di automazione e misura.</li>\n        <li id=\"s4\" class=\"cue-hidden\"><strong>Continuous Integration</strong>: build e test a ogni push, <em>integrate twice</em>, build incrementale via timestamp.</li>\n        <li id=\"s5\" class=\"cue-hidden\"><strong>Delivery, Deployment &amp; IaC</strong>: test su replica prod, A/B testing (salvo limiti business); modelli macchina (visibility, reproducibility, reliability, recovery).</li>\n        <li id=\"s6\" class=\"cue-hidden\"><strong>Misure &amp; Cultura</strong>: processo, servizio, uso, business in automatico; modello Spotify (Squad, Tribe, Chapter, Guild).</li>\n      </ul>\n    </div>\n    <div id=\"s7\" class=\"box box-theorem cue-hidden\">\n      <div class=\"box-label\">Domande di verifica</div>\n      <ol class=\"verify-list\">\n        <li>Quali problemi creano i team separati per sviluppo, rilascio e supporto?</li>\n        <li>Fattori abilitanti, principi e benefici di DevOps?</li>\n        <li>Cosa fa un sistema di code management e perché è la base di DevOps?</li>\n        <li>Definisci CI, continuous delivery, continuous deployment e IaC.</li>\n        <li>Cosa significa «non rompere la build» e come si integra due volte?</li>\n        <li>Come funziona una build incrementale?</li>\n        <li>Perché serve la continuous delivery oltre alla CI? Cos'è l'A/B testing?</li>\n        <li>Perché a volte non conviene distribuire ogni modifica ai clienti?</li>\n        <li>Quali sono i vantaggi dell'infrastructure as code?</li>\n        <li>Quali tipi di misure servono in DevOps e perché misurare il processo è difficile?</li>\n        <li>Cosa sono squad, tribe, chapter e guild a Spotify e chi fa le code review?</li>\n      </ol>\n    </div>\n  </div>\n</div>",
+      "cues": [
+        {
+          "at": 4.62,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "Primo: i team separati"
+        },
+        {
+          "at": 4.62,
+          "action": "highlight",
+          "target": "#s1",
+          "duration": 8,
+          "anchor": "Primo: i team separati"
+        },
+        {
+          "at": 13.84,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Secondo: i tre principi"
+        },
+        {
+          "at": 13.84,
+          "action": "highlight",
+          "target": "#s2",
+          "duration": 10.5,
+          "anchor": "Secondo: i tre principi"
+        },
+        {
+          "at": 26.63,
+          "action": "show",
+          "target": "#s3",
+          "anchor": "Terzo: il code management"
+        },
+        {
+          "at": 26.63,
+          "action": "highlight",
+          "target": "#s3",
+          "duration": 7.34,
+          "anchor": "Terzo: il code management"
+        },
+        {
+          "at": 34.09,
+          "action": "show",
+          "target": "#s4",
+          "anchor": "Quarto: la continuous integration"
+        },
+        {
+          "at": 34.09,
+          "action": "highlight",
+          "target": "#s4",
+          "duration": 9,
+          "anchor": "Quarto: la continuous integration"
+        },
+        {
+          "at": 43.31,
+          "action": "show",
+          "target": "#s5",
+          "anchor": "Quinto: continuous delivery"
+        },
+        {
+          "at": 43.31,
+          "action": "highlight",
+          "target": "#s5",
+          "duration": 16.5,
+          "anchor": "Quinto: continuous delivery"
+        },
+        {
+          "at": 60.3,
+          "action": "show",
+          "target": "#s6",
+          "anchor": "Sesto: servono misure automatiche"
+        },
+        {
+          "at": 60.3,
+          "action": "highlight",
+          "target": "#s6",
+          "duration": 9,
+          "anchor": "Sesto: servono misure automatiche"
+        },
+        {
+          "at": 68.6,
+          "action": "show",
+          "target": "#s7",
+          "anchor": "Per verificare la vostra preparazione"
+        }
+      ],
+      "audio_file": "audio/scene-11.wav",
+      "subtitle_file": "subtitles/scene-11.json",
+      "duration_sec": 73.07
+    }
+  ]
+}

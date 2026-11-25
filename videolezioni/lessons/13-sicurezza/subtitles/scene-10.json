@@ -1,0 +1,897 @@
+{
+  "duration": 72.129,
+  "segments": [
+    {
+      "start": 0.629,
+      "end": 4.029,
+      "text": "Riepiloghiamo i punti essenziali di questo capitolo su sicurezza e privacy.",
+      "words": [
+        {
+          "text": "Riepiloghiamo",
+          "start": 0.629,
+          "end": 1.169
+        },
+        {
+          "text": "i",
+          "start": 1.209,
+          "end": 1.249
+        },
+        {
+          "text": "punti",
+          "start": 1.269,
+          "end": 1.489
+        },
+        {
+          "text": "essenziali",
+          "start": 1.529,
+          "end": 2.049
+        },
+        {
+          "text": "di",
+          "start": 2.089,
+          "end": 2.129
+        },
+        {
+          "text": "questo",
+          "start": 2.169,
+          "end": 2.369
+        },
+        {
+          "text": "capitolo",
+          "start": 2.409,
+          "end": 2.789
+        },
+        {
+          "text": "su",
+          "start": 2.889,
+          "end": 2.969
+        },
+        {
+          "text": "sicurezza",
+          "start": 3.109,
+          "end": 3.509
+        },
+        {
+          "text": "e",
+          "start": 3.549,
+          "end": 3.589
+        },
+        {
+          "text": "privacy.",
+          "start": 3.609,
+          "end": 4.029
+        }
+      ]
+    },
+    {
+      "start": 4.89,
+      "end": 11.09,
+      "text": "Primo: le minacce riguardano disponibilità, integrità e riservatezza lungo l'intero stack di sistema,",
+      "words": [
+        {
+          "text": "Primo:",
+          "start": 4.89,
+          "end": 5.11
+        },
+        {
+          "text": "le",
+          "start": 5.71,
+          "end": 5.77
+        },
+        {
+          "text": "minacce",
+          "start": 5.81,
+          "end": 6.19
+        },
+        {
+          "text": "riguardano",
+          "start": 6.35,
+          "end": 6.79
+        },
+        {
+          "text": "disponibilità,",
+          "start": 6.87,
+          "end": 7.53
+        },
+        {
+          "text": "integrità",
+          "start": 7.93,
+          "end": 8.43
+        },
+        {
+          "text": "e",
+          "start": 8.73,
+          "end": 8.77
+        },
+        {
+          "text": "riservatezza",
+          "start": 8.87,
+          "end": 9.51
+        },
+        {
+          "text": "lungo",
+          "start": 9.57,
+          "end": 9.77
+        },
+        {
+          "text": "l'intero",
+          "start": 9.81,
+          "end": 10.27
+        },
+        {
+          "text": "stack",
+          "start": 10.33,
+          "end": 10.51
+        },
+        {
+          "text": "di",
+          "start": 10.57,
+          "end": 10.63
+        },
+        {
+          "text": "sistema,",
+          "start": 10.67,
+          "end": 11.09
+        }
+      ]
+    },
+    {
+      "start": 11.531,
+      "end": 15.111,
+      "text": "e richiedono autenticazione forte, patch, monitoraggio e backup.",
+      "words": [
+        {
+          "text": "e",
+          "start": 11.531,
+          "end": 11.571
+        },
+        {
+          "text": "richiedono",
+          "start": 11.611,
+          "end": 11.951
+        },
+        {
+          "text": "autenticazione",
+          "start": 12.011,
+          "end": 12.611
+        },
+        {
+          "text": "forte,",
+          "start": 12.651,
+          "end": 13.011
+        },
+        {
+          "text": "patch,",
+          "start": 13.251,
+          "end": 13.571
+        },
+        {
+          "text": "monitoraggio",
+          "start": 13.851,
+          "end": 14.471
+        },
+        {
+          "text": "e",
+          "start": 14.651,
+          "end": 14.691
+        },
+        {
+          "text": "backup.",
+          "start": 14.771,
+          "end": 15.111
+        }
+      ]
+    },
+    {
+      "start": 15.891,
+      "end": 21.952,
+      "text": "Secondo: contro gli attacchi comuni servono validazione e HTML encode per injection e XSS,",
+      "words": [
+        {
+          "text": "Secondo:",
+          "start": 15.891,
+          "end": 16.271
+        },
+        {
+          "text": "contro",
+          "start": 16.991,
+          "end": 17.251
+        },
+        {
+          "text": "gli",
+          "start": 17.271,
+          "end": 17.391
+        },
+        {
+          "text": "attacchi",
+          "start": 17.431,
+          "end": 17.751
+        },
+        {
+          "text": "comuni",
+          "start": 17.791,
+          "end": 18.131
+        },
+        {
+          "text": "servono",
+          "start": 18.291,
+          "end": 18.632
+        },
+        {
+          "text": "validazione",
+          "start": 18.712,
+          "end": 19.312
+        },
+        {
+          "text": "e",
+          "start": 19.352,
+          "end": 19.392
+        },
+        {
+          "text": "HTML",
+          "start": 19.492,
+          "end": 19.972
+        },
+        {
+          "text": "encode",
+          "start": 20.032,
+          "end": 20.432
+        },
+        {
+          "text": "per",
+          "start": 20.472,
+          "end": 20.572
+        },
+        {
+          "text": "injection",
+          "start": 20.632,
+          "end": 21.112
+        },
+        {
+          "text": "e",
+          "start": 21.232,
+          "end": 21.272
+        },
+        {
+          "text": "XSS,",
+          "start": 21.392,
+          "end": 21.952
+        }
+      ]
+    },
+    {
+      "start": 22.752,
+      "end": 26.253,
+      "text": "HTTPS, MFA e timeout brevi per session hijacking,",
+      "words": [
+        {
+          "text": "HTTPS,",
+          "start": 22.752,
+          "end": 23.452
+        },
+        {
+          "text": "MFA",
+          "start": 23.812,
+          "end": 24.172
+        },
+        {
+          "text": "e",
+          "start": 24.272,
+          "end": 24.312
+        },
+        {
+          "text": "timeout",
+          "start": 24.372,
+          "end": 24.772
+        },
+        {
+          "text": "brevi",
+          "start": 24.872,
+          "end": 25.152
+        },
+        {
+          "text": "per",
+          "start": 25.292,
+          "end": 25.412
+        },
+        {
+          "text": "session",
+          "start": 25.472,
+          "end": 25.773
+        },
+        {
+          "text": "hijacking,",
+          "start": 25.773,
+          "end": 26.253
+        }
+      ]
+    },
+    {
+      "start": 26.993,
+      "end": 29.433,
+      "text": "filtri e blocchi temporanei per DoS e DDoS,",
+      "words": [
+        {
+          "text": "filtri",
+          "start": 26.993,
+          "end": 27.353
+        },
+        {
+          "text": "e",
+          "start": 27.413,
+          "end": 27.453
+        },
+        {
+          "text": "blocchi",
+          "start": 27.513,
+          "end": 27.753
+        },
+        {
+          "text": "temporanei",
+          "start": 27.773,
+          "end": 28.293
+        },
+        {
+          "text": "per",
+          "start": 28.333,
+          "end": 28.453
+        },
+        {
+          "text": "DoS",
+          "start": 28.533,
+          "end": 28.813
+        },
+        {
+          "text": "e",
+          "start": 29.013,
+          "end": 29.053
+        },
+        {
+          "text": "DDoS,",
+          "start": 29.073,
+          "end": 29.433
+        }
+      ]
+    },
+    {
+      "start": 30.053,
+      "end": 31.833,
+      "text": "password lunghe contro il brute force.",
+      "words": [
+        {
+          "text": "password",
+          "start": 30.053,
+          "end": 30.433
+        },
+        {
+          "text": "lunghe",
+          "start": 30.513,
+          "end": 30.773
+        },
+        {
+          "text": "contro",
+          "start": 30.893,
+          "end": 31.133
+        },
+        {
+          "text": "il",
+          "start": 31.173,
+          "end": 31.233
+        },
+        {
+          "text": "brute",
+          "start": 31.253,
+          "end": 31.453
+        },
+        {
+          "text": "force.",
+          "start": 31.493,
+          "end": 31.833
+        }
+      ]
+    },
+    {
+      "start": 32.813,
+      "end": 37.694,
+      "text": "Terzo: l'autenticazione verifica l'identità anche tramite identità federata OAuth,",
+      "words": [
+        {
+          "text": "Terzo:",
+          "start": 32.813,
+          "end": 33.134
+        },
+        {
+          "text": "l'autenticazione",
+          "start": 33.774,
+          "end": 34.514
+        },
+        {
+          "text": "verifica",
+          "start": 34.594,
+          "end": 34.994
+        },
+        {
+          "text": "l'identità",
+          "start": 35.034,
+          "end": 35.494
+        },
+        {
+          "text": "anche",
+          "start": 35.914,
+          "end": 36.094
+        },
+        {
+          "text": "tramite",
+          "start": 36.134,
+          "end": 36.434
+        },
+        {
+          "text": "identità",
+          "start": 36.494,
+          "end": 36.834
+        },
+        {
+          "text": "federata",
+          "start": 36.894,
+          "end": 37.314
+        },
+        {
+          "text": "OAuth,",
+          "start": 37.394,
+          "end": 37.694
+        }
+      ]
+    },
+    {
+      "start": 38.254,
+      "end": 42.455,
+      "text": "mentre l'autorizzazione regola i permessi sulle risorse tramite ACL e gruppi.",
+      "words": [
+        {
+          "text": "mentre",
+          "start": 38.254,
+          "end": 38.514
+        },
+        {
+          "text": "l'autorizzazione",
+          "start": 38.614,
+          "end": 39.374
+        },
+        {
+          "text": "regola",
+          "start": 39.574,
+          "end": 39.834
+        },
+        {
+          "text": "i",
+          "start": 39.894,
+          "end": 39.934
+        },
+        {
+          "text": "permessi",
+          "start": 39.974,
+          "end": 40.395
+        },
+        {
+          "text": "sulle",
+          "start": 40.435,
+          "end": 40.615
+        },
+        {
+          "text": "risorse",
+          "start": 40.655,
+          "end": 41.055
+        },
+        {
+          "text": "tramite",
+          "start": 41.115,
+          "end": 41.435
+        },
+        {
+          "text": "ACL",
+          "start": 41.515,
+          "end": 41.935
+        },
+        {
+          "text": "e",
+          "start": 42.075,
+          "end": 42.115
+        },
+        {
+          "text": "gruppi.",
+          "start": 42.155,
+          "end": 42.455
+        }
+      ]
+    },
+    {
+      "start": 43.015,
+      "end": 48.836,
+      "text": "Quarto: la cifratura simmetrica condivide una chiave, l'asimmetrica usa coppia pubblica e privata;",
+      "words": [
+        {
+          "text": "Quarto:",
+          "start": 43.015,
+          "end": 43.375
+        },
+        {
+          "text": "la",
+          "start": 43.875,
+          "end": 43.935
+        },
+        {
+          "text": "cifratura",
+          "start": 43.995,
+          "end": 44.435
+        },
+        {
+          "text": "simmetrica",
+          "start": 44.475,
+          "end": 45.015
+        },
+        {
+          "text": "condivide",
+          "start": 45.135,
+          "end": 45.615
+        },
+        {
+          "text": "una",
+          "start": 45.655,
+          "end": 45.775
+        },
+        {
+          "text": "chiave,",
+          "start": 45.835,
+          "end": 46.135
+        },
+        {
+          "text": "l'asimmetrica",
+          "start": 46.495,
+          "end": 47.256
+        },
+        {
+          "text": "usa",
+          "start": 47.436,
+          "end": 47.616
+        },
+        {
+          "text": "coppia",
+          "start": 47.676,
+          "end": 47.976
+        },
+        {
+          "text": "pubblica",
+          "start": 48.016,
+          "end": 48.356
+        },
+        {
+          "text": "e",
+          "start": 48.396,
+          "end": 48.436
+        },
+        {
+          "text": "privata;",
+          "start": 48.456,
+          "end": 48.836
+        }
+      ]
+    },
+    {
+      "start": 49.416,
+      "end": 53.956,
+      "text": "TLS combina certificati CA e asimmetrica per negoziare una chiave simmetrica,",
+      "words": [
+        {
+          "text": "TLS",
+          "start": 49.416,
+          "end": 49.836
+        },
+        {
+          "text": "combina",
+          "start": 49.976,
+          "end": 50.336
+        },
+        {
+          "text": "certificati",
+          "start": 50.396,
+          "end": 50.956
+        },
+        {
+          "text": "CA",
+          "start": 51.016,
+          "end": 51.236
+        },
+        {
+          "text": "e",
+          "start": 51.496,
+          "end": 51.536
+        },
+        {
+          "text": "asimmetrica",
+          "start": 51.616,
+          "end": 52.316
+        },
+        {
+          "text": "per",
+          "start": 52.376,
+          "end": 52.496
+        },
+        {
+          "text": "negoziare",
+          "start": 52.556,
+          "end": 52.996
+        },
+        {
+          "text": "una",
+          "start": 53.036,
+          "end": 53.136
+        },
+        {
+          "text": "chiave",
+          "start": 53.176,
+          "end": 53.376
+        },
+        {
+          "text": "simmetrica,",
+          "start": 53.416,
+          "end": 53.956
+        }
+      ]
+    },
+    {
+      "start": 54.256,
+      "end": 56.057,
+      "text": "con gestione affidata al KMS.",
+      "words": [
+        {
+          "text": "con",
+          "start": 54.256,
+          "end": 54.357
+        },
+        {
+          "text": "gestione",
+          "start": 54.377,
+          "end": 54.697
+        },
+        {
+          "text": "affidata",
+          "start": 54.737,
+          "end": 55.177
+        },
+        {
+          "text": "al",
+          "start": 55.257,
+          "end": 55.357
+        },
+        {
+          "text": "KMS.",
+          "start": 55.397,
+          "end": 56.057
+        }
+      ]
+    },
+    {
+      "start": 56.737,
+      "end": 61.858,
+      "text": "Quinto: la privacy tutela i diritti del data subject tramite i sette principi di protezione",
+      "words": [
+        {
+          "text": "Quinto:",
+          "start": 56.737,
+          "end": 57.057
+        },
+        {
+          "text": "la",
+          "start": 57.637,
+          "end": 57.697
+        },
+        {
+          "text": "privacy",
+          "start": 57.737,
+          "end": 58.157
+        },
+        {
+          "text": "tutela",
+          "start": 58.257,
+          "end": 58.597
+        },
+        {
+          "text": "i",
+          "start": 58.637,
+          "end": 58.677
+        },
+        {
+          "text": "diritti",
+          "start": 58.697,
+          "end": 59.017
+        },
+        {
+          "text": "del",
+          "start": 59.057,
+          "end": 59.197
+        },
+        {
+          "text": "data",
+          "start": 59.237,
+          "end": 59.437
+        },
+        {
+          "text": "subject",
+          "start": 59.497,
+          "end": 59.937
+        },
+        {
+          "text": "tramite",
+          "start": 60.077,
+          "end": 60.417
+        },
+        {
+          "text": "i",
+          "start": 60.477,
+          "end": 60.517
+        },
+        {
+          "text": "sette",
+          "start": 60.597,
+          "end": 60.837
+        },
+        {
+          "text": "principi",
+          "start": 60.877,
+          "end": 61.297
+        },
+        {
+          "text": "di",
+          "start": 61.337,
+          "end": 61.397
+        },
+        {
+          "text": "protezione",
+          "start": 61.417,
+          "end": 61.858
+        }
+      ]
+    },
+    {
+      "start": 61.898,
+      "end": 63.998,
+      "text": "dei dati e la minimizzazione della raccolta.",
+      "words": [
+        {
+          "text": "dei",
+          "start": 61.898,
+          "end": 62.018
+        },
+        {
+          "text": "dati",
+          "start": 62.038,
+          "end": 62.278
+        },
+        {
+          "text": "e",
+          "start": 62.438,
+          "end": 62.478
+        },
+        {
+          "text": "la",
+          "start": 62.518,
+          "end": 62.598
+        },
+        {
+          "text": "minimizzazione",
+          "start": 62.658,
+          "end": 63.338
+        },
+        {
+          "text": "della",
+          "start": 63.378,
+          "end": 63.538
+        },
+        {
+          "text": "raccolta.",
+          "start": 63.578,
+          "end": 63.998
+        }
+      ]
+    },
+    {
+      "start": 65.078,
+      "end": 71.339,
+      "text": "Prima del capitolo quattordici sulla sicurezza nei microservizi, verificate la vostra preparazione rispondendo alle domande",
+      "words": [
+        {
+          "text": "Prima",
+          "start": 65.078,
+          "end": 65.278
+        },
+        {
+          "text": "del",
+          "start": 65.318,
+          "end": 65.438
+        },
+        {
+          "text": "capitolo",
+          "start": 65.458,
+          "end": 65.798
+        },
+        {
+          "text": "quattordici",
+          "start": 65.838,
+          "end": 66.438
+        },
+        {
+          "text": "sulla",
+          "start": 66.638,
+          "end": 66.818
+        },
+        {
+          "text": "sicurezza",
+          "start": 66.858,
+          "end": 67.298
+        },
+        {
+          "text": "nei",
+          "start": 67.338,
+          "end": 67.438
+        },
+        {
+          "text": "microservizi,",
+          "start": 67.498,
+          "end": 68.178
+        },
+        {
+          "text": "verificate",
+          "start": 68.619,
+          "end": 69.119
+        },
+        {
+          "text": "la",
+          "start": 69.159,
+          "end": 69.219
+        },
+        {
+          "text": "vostra",
+          "start": 69.259,
+          "end": 69.479
+        },
+        {
+          "text": "preparazione",
+          "start": 69.519,
+          "end": 70.159
+        },
+        {
+          "text": "rispondendo",
+          "start": 70.319,
+          "end": 70.839
+        },
+        {
+          "text": "alle",
+          "start": 70.879,
+          "end": 71.019
+        },
+        {
+          "text": "domande",
+          "start": 71.039,
+          "end": 71.339
+        }
+      ]
+    },
+    {
+      "start": 71.379,
+      "end": 71.879,
+      "text": "sulla destra.",
+      "words": [
+        {
+          "text": "sulla",
+          "start": 71.379,
+          "end": 71.539
+        },
+        {
+          "text": "destra.",
+          "start": 71.579,
+          "end": 71.879
+        }
+      ]
+    }
+  ]
+}

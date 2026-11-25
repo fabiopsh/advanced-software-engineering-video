@@ -1,0 +1,746 @@
+{
+  "lesson_id": "07-microservizi",
+  "chapter": 7,
+  "part": "Parte III · Cloud e microservizi",
+  "title": "Architettura a microservizi",
+  "voice_config": {
+    "provider": "gemini",
+    "model": "gemini-3.8-flash-tts",
+    "voice_name": "Ludo",
+    "style": "chiaro, didattico, calmo e preciso, stile lezione universitaria di ingegneria del software"
+  },
+  "scenes": [
+    {
+      "id": "scene-01",
+      "section": "7.1 · Servizi software ed evoluzione",
+      "title": "Servizi stateless ed evoluzione verso i microservizi",
+      "tts_text": "Benvenuti al settimo capitolo, dedicato all'architettura a microservizi. Partiamo da una domanda di base: come si scompone un sistema software in componenti? [pause:0.5] Tre esigenze guidano la scelta: team diversi devono poter sviluppare in parallelo; i componenti vanno riusati, sostituiti e distribuiti su più computer; infine devono essere replicati e migrati facilmente per sfruttare scalabilità, affidabilità ed elasticità del cloud. [pause:0.6] Per questo usiamo servizi software stateless accessibili via Internet. Dato un input, un servizio produce un output senza effetti collaterali, espone un'interfaccia pubblicata nascondendo l'implementazione, non conserva stato interno ma lo lascia in un database o nella richiesta del chiamante, e può essere riallocato dinamicamente tra server virtuali. [pause:0.6] Storicamente, l'architettura orientata ai servizi di fine anni Novanta ha portato ai Web Services con XML, SOAP e WSDL, gravati però da forte overhead. I sistemi moderni adottano invece protocolli e messaggi molto più leggeri. [pause:0.6] Amazon ha spinto oltre questa idea: un servizio deve coprire una sola funzione di business, avere il proprio database e la propria interfaccia utente, ed essere sostituibile senza toccare gli altri. Nascono così i microservizi.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">7.1 · Servizi software &amp; evoluzione</div>\n  <h2 class=\"slide-title\">Dai servizi stateless alla nascita dei microservizi</h2>\n  <div id=\"s1\" class=\"grid-2 cue-hidden\">\n    <div id=\"b-serv\" class=\"box box-def\">\n      <div class=\"box-label\">Servizio software (stateless)</div>\n      <ul class=\"clean-list\">\n        <li id=\"sv-1\"><strong>Scomposizione cloud</strong>: sviluppo parallelo, riuso/sostituzione e migrazione elastica.</li>\n        <li id=\"sv-2\"><strong>Interfaccia pubblicata</strong>: <em>input &rarr; output</em> senza effetti collaterali, dettagli nascosti.</li>\n        <li id=\"sv-3\"><strong>Stateless</strong>: stato conservato in un database o scambiato nella richiesta del chiamante.</li>\n      </ul>\n    </div>\n    <div id=\"b-amz\" class=\"box box-primary\">\n      <div class=\"box-label\">La svolta di Amazon &rarr; Microservizi</div>\n      <ul class=\"clean-list\">\n        <li id=\"am-1\"><strong>Una funzione di business</strong> per servizio (singola responsabilità).</li>\n        <li id=\"am-2\"><strong>Indipendenza totale</strong>: ogni servizio gestisce il proprio database e la propria UI.</li>\n        <li id=\"am-3\"><strong>Sostituibile e replicabile</strong> senza modificare gli altri servizi.</li>\n      </ul>\n    </div>\n  </div>\n  <table id=\"s2\" class=\"acad-table cue-hidden\">\n    <thead>\n      <tr><th>Generazione</th><th>Tecnologie e formato</th><th>Caratteristica chiave</th></tr>\n    </thead>\n    <tbody>\n      <tr id=\"tr-soa\"><td><strong>SOA</strong> (fine anni '90)</td><td>Servizi autonomi, interfacce pubbliche</td><td>Tecnologie eterogenee, primo modello a servizi</td></tr>\n      <tr id=\"tr-ws\"><td><strong>Web Services</strong> (anni 2000)</td><td>XML, SOAP, WSDL e decine di standard</td><td>Messaggi XML grandi, alto overhead di gestione</td></tr>\n      <tr id=\"tr-mod\"><td><strong>Servizi moderni &amp; Microservizi</strong></td><td>Protocolli leggeri, formati efficienti</td><td>Basso overhead, esecuzione veloce, piccole dimensioni</td></tr>\n    </tbody>\n  </table>\n</div>\n",
+      "cues": [
+        {
+          "at": 4.1,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "Partiamo da una domanda"
+        },
+        {
+          "at": 11.9,
+          "action": "highlight",
+          "target": "#sv-1",
+          "duration": 14.1,
+          "anchor": "Tre esigenze guidano la scelta"
+        },
+        {
+          "at": 30.7,
+          "action": "highlight",
+          "target": "#sv-2",
+          "duration": 6.32,
+          "anchor": "Per questo usiamo servizi software"
+        },
+        {
+          "at": 43.95,
+          "action": "highlight",
+          "target": "#sv-3",
+          "duration": 10.12,
+          "anchor": "non conserva stato interno"
+        },
+        {
+          "at": 53.45,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Storicamente, l'architettura orientata"
+        },
+        {
+          "at": 54.19,
+          "action": "highlight",
+          "target": "#tr-soa",
+          "duration": 2.86,
+          "anchor": "l'architettura orientata ai servizi"
+        },
+        {
+          "at": 57.17,
+          "action": "highlight",
+          "target": "#tr-ws",
+          "duration": 5.64,
+          "anchor": "portato ai Web Services"
+        },
+        {
+          "at": 63.61,
+          "action": "highlight",
+          "target": "#tr-mod",
+          "duration": 4.36,
+          "anchor": "I sistemi moderni adottano invece"
+        },
+        {
+          "at": 68.09,
+          "action": "highlight",
+          "target": "#b-amz",
+          "duration": 16.05,
+          "anchor": "Amazon ha spinto oltre"
+        }
+      ],
+      "audio_file": "audio/scene-01.wav",
+      "subtitle_file": "subtitles/scene-01.json",
+      "duration_sec": 82.08
+    },
+    {
+      "id": "scene-02",
+      "section": "7.2 · Caratteristiche, coupling e dimensione",
+      "title": "Le cinque proprietà, coupling/cohesion e Rule of Twos",
+      "tts_text": "Vediamo ora da vicino che cos'è un microservizio. È un servizio piccolo, combinabile con altri per costruire applicazioni, la cui interfaccia resta stabile anche quando gli altri servizi cambiano o vengono ridistribuiti. [pause:0.5] Ogni microservizio possiede cinque caratteristiche chiave. È self-contained, senza dipendenze esterne, con propri dati e interfaccia. È lightweight, perché usa protocolli leggeri a basso overhead. È implementation independent, quindi ogni team sceglie linguaggi e database diversi. È independently deployable, girando in un processo proprio con deploy automatico. Infine è business-oriented, cioè realizza una precisa capacità di business. [pause:0.6] Per progettarli bene servono basso coupling, cioè poche relazioni tra servizi così da aggiornarli separatamente, e alta cohesion, cioè molte relazioni interne al servizio per ridurre le chiamate di rete, secondo il single responsibility principle. [pause:0.6] Ma quanto deve essere grande un microservizio? Vale la rule of twos: un team di otto o dieci persone, sfamabile con due pizze grandi, deve poterlo sviluppare, collaudare e distribuire in due settimane. Un team così serve per gestire messaggi, guasti, coerenza dei dati, interfaccia, test e supporto post-rilascio.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">7.2 · Caratteristiche, Coupling &amp; Dimensione</div>\n  <h2 class=\"slide-title\">Le cinque proprietà, coupling/cohesion e Rule of Twos</h2>\n  <table id=\"s1\" class=\"acad-table cue-hidden\">\n    <thead>\n      <tr><th>Caratteristica</th><th>Significato operativo</th></tr>\n    </thead>\n    <tbody>\n      <tr id=\"c-1\"><td><strong>Self-contained</strong></td><td>Nessuna dipendenza esterna; gestisce i propri dati e la propria interfaccia utente.</td></tr>\n      <tr id=\"c-2\"><td><strong>Lightweight</strong></td><td>Comunica con protocolli leggeri a basso overhead di comunicazione.</td></tr>\n      <tr id=\"c-3\"><td><strong>Implementation independent</strong></td><td>Linguaggi e tecnologie eterogenee (es. tipi di database differenti per servizio).</td></tr>\n      <tr id=\"c-4\"><td><strong>Independently deployable</strong></td><td>Gira in un processo proprio e si distribuisce in modo indipendente e automatico.</td></tr>\n      <tr id=\"c-5\"><td><strong>Business-oriented</strong></td><td>Implementa capacità ed esigenze di business, non un semplice servizio tecnico.</td></tr>\n    </tbody>\n  </table>\n  <div id=\"s2\" class=\"grid-2 cue-hidden\">\n    <div id=\"b-cc\" class=\"box box-def\">\n      <div class=\"box-label\">Coupling, Cohesion &amp; SRP</div>\n      <p><strong>Coupling basso</strong> (relazioni <em>tra</em> componenti): aggiornamenti indipendenti. <strong>Cohesion alta</strong> (relazioni <em>dentro</em> il componente): meno overhead di rete. Vale il <em>Single Responsibility Principle</em>.</p>\n    </div>\n    <div id=\"b-rot\" class=\"box box-idea\">\n      <div class=\"box-label\">Dimensione: &ldquo;Rule of Twos&rdquo;</div>\n      <p><strong>2 settimane</strong> per sviluppare, collaudare e distribuire; team da <strong>2 pizze grandi</strong> (8&ndash;10 persone) per gestire messaggi, guasti, coerenza dati, interfaccia, test e supporto.</p>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 1.51,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "che cos'è un microservizio"
+        },
+        {
+          "at": 1.51,
+          "action": "highlight",
+          "target": "#s1",
+          "duration": 10.75,
+          "anchor": "che cos'è un microservizio"
+        },
+        {
+          "at": 17.01,
+          "action": "highlight",
+          "target": "#c-1",
+          "duration": 4.96,
+          "anchor": "È self-contained, senza dipendenze"
+        },
+        {
+          "at": 22.09,
+          "action": "highlight",
+          "target": "#c-2",
+          "duration": 3.9,
+          "anchor": "È lightweight, perché usa protocolli"
+        },
+        {
+          "at": 26.11,
+          "action": "highlight",
+          "target": "#c-3",
+          "duration": 4.86,
+          "anchor": "È implementation independent"
+        },
+        {
+          "at": 31.71,
+          "action": "highlight",
+          "target": "#c-4",
+          "duration": 4.86,
+          "anchor": "È independently deployable"
+        },
+        {
+          "at": 36.77,
+          "action": "highlight",
+          "target": "#c-5",
+          "duration": 4.68,
+          "anchor": "Infine è business-oriented"
+        },
+        {
+          "at": 42.37,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Per progettarli bene servono"
+        },
+        {
+          "at": 42.37,
+          "action": "highlight",
+          "target": "#b-cc",
+          "duration": 13.56,
+          "anchor": "Per progettarli bene servono"
+        },
+        {
+          "at": 57.71,
+          "action": "highlight",
+          "target": "#b-rot",
+          "duration": 18.24,
+          "anchor": "Ma quanto deve essere grande"
+        }
+      ],
+      "audio_file": "audio/scene-02.wav",
+      "subtitle_file": "subtitles/scene-02.json",
+      "duration_sec": 77.63
+    },
+    {
+      "id": "scene-03",
+      "section": "7.3 · Motivazioni, scomposizione e API Gateway",
+      "title": "Lead time, scalabilità, criteri di taglio e API Gateway",
+      "tts_text": "Perché le aziende adottano i microservizi? I motivi principali sono due: ridurre il lead time per rilasciare nuove feature e aggiornamenti, e scalare in modo efficace eseguendo ogni servizio in un container separato, così da riavviarlo o replicarlo rapidamente. [pause:0.5] I numeri reali lo confermano: Uber è passata da un monolite Python nel duemilaquattordici a oltre cinquemila microservizi per duecentootto milioni di utenti; Spotify gestisce tremila servizi per settecentosettantasette milioni di utenti mensili e dodici milioni di richieste al secondo; Netflix supera i trecentoventicinque milioni di utenti. [pause:0.6] Nel sistema di stampa fotografica mobile, l'app non parla direttamente con i sei microservizi di registrazione, autenticazione, upload, pagamento, stampa e spedizione: interagisce con un API gateway, unico punto di contatto che isola il client e traduce le richieste. [pause:0.6] Scomporre un sistema però è difficile: troppi servizi danno bassa cohesion e overhead di rete; troppo pochi danno alto coupling. Per scegliere i confini conviene partire dai dati logici, come separare identità utente, password e profilo in autenticazione, applicare il common closure principle tenendo insieme ciò che cambia insieme, allinearsi alle capacità di business, oppure partire da un monolite e scomporlo dopo.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">7.3 · Motivazioni, Scomposizione &amp; API Gateway</div>\n  <h2 class=\"slide-title\">Lead time, scalabilità, tagli dei servizi e API Gateway</h2>\n  <div id=\"s1\" class=\"split-visual cue-hidden\">\n    <div id=\"svg-gw-panel\" class=\"svg-panel\">\n      <svg viewBox=\"0 0 360 190\" class=\"diagram-svg\" aria-label=\"API Gateway per sistema di stampa\">\n        <defs>\n          <marker id=\"arr-gw\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"5\" markerHeight=\"5\" orient=\"auto-start-reverse\">\n            <path d=\"M0 1 L9 5 L0 9 z\" fill=\"var(--ink-soft)\"/>\n          </marker>\n        </defs>\n        <g id=\"svg-app\">\n          <circle cx=\"40\" cy=\"95\" r=\"28\" fill=\"var(--orange-soft, rgba(217,119,6,0.12))\" stroke=\"var(--orange)\" stroke-width=\"1.8\"/>\n          <text x=\"40\" y=\"91\" text-anchor=\"middle\" class=\"svg-tick\">Mobile</text>\n          <text x=\"40\" y=\"105\" text-anchor=\"middle\" class=\"svg-tick\">app</text>\n        </g>\n        <g id=\"svg-gw\">\n          <rect x=\"102\" y=\"20\" width=\"64\" height=\"150\" rx=\"8\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.8\"/>\n          <text x=\"134\" y=\"90\" text-anchor=\"middle\" class=\"svg-math\">API</text>\n          <text x=\"134\" y=\"106\" text-anchor=\"middle\" class=\"svg-math\">gateway</text>\n        </g>\n        <line x1=\"70\" y1=\"95\" x2=\"100\" y2=\"95\" stroke=\"var(--ink-soft)\" stroke-width=\"1.7\" marker-start=\"url(#arr-gw)\" marker-end=\"url(#arr-gw)\"/>\n        <g id=\"svg-ms\">\n          <rect x=\"214\" y=\"12\" width=\"134\" height=\"22\" rx=\"5\" fill=\"var(--green-soft, rgba(21,128,61,0.12))\" stroke=\"var(--green)\" stroke-width=\"1.4\"/>\n          <text x=\"281\" y=\"27\" text-anchor=\"middle\" class=\"svg-tick\">Registration</text>\n          <rect x=\"214\" y=\"40\" width=\"134\" height=\"22\" rx=\"5\" fill=\"var(--green-soft, rgba(21,128,61,0.12))\" stroke=\"var(--green)\" stroke-width=\"1.4\"/>\n          <text x=\"281\" y=\"55\" text-anchor=\"middle\" class=\"svg-tick\">Authentication</text>\n          <rect x=\"214\" y=\"68\" width=\"134\" height=\"22\" rx=\"5\" fill=\"var(--green-soft, rgba(21,128,61,0.12))\" stroke=\"var(--green)\" stroke-width=\"1.4\"/>\n          <text x=\"281\" y=\"83\" text-anchor=\"middle\" class=\"svg-tick\">Upload</text>\n          <rect x=\"214\" y=\"96\" width=\"134\" height=\"22\" rx=\"5\" fill=\"var(--green-soft, rgba(21,128,61,0.12))\" stroke=\"var(--green)\" stroke-width=\"1.4\"/>\n          <text x=\"281\" y=\"111\" text-anchor=\"middle\" class=\"svg-tick\">Payment</text>\n          <rect x=\"214\" y=\"124\" width=\"134\" height=\"22\" rx=\"5\" fill=\"var(--green-soft, rgba(21,128,61,0.12))\" stroke=\"var(--green)\" stroke-width=\"1.4\"/>\n          <text x=\"281\" y=\"139\" text-anchor=\"middle\" class=\"svg-tick\">Printing</text>\n          <rect x=\"214\" y=\"152\" width=\"134\" height=\"22\" rx=\"5\" fill=\"var(--green-soft, rgba(21,128,61,0.12))\" stroke=\"var(--green)\" stroke-width=\"1.4\"/>\n          <text x=\"281\" y=\"167\" text-anchor=\"middle\" class=\"svg-tick\">Dispatch</text>\n          <line x1=\"166\" y1=\"23\" x2=\"212\" y2=\"23\" stroke=\"var(--ink-soft)\" stroke-width=\"1.4\" marker-end=\"url(#arr-gw)\"/>\n          <line x1=\"166\" y1=\"51\" x2=\"212\" y2=\"51\" stroke=\"var(--ink-soft)\" stroke-width=\"1.4\" marker-end=\"url(#arr-gw)\"/>\n          <line x1=\"166\" y1=\"79\" x2=\"212\" y2=\"79\" stroke=\"var(--ink-soft)\" stroke-width=\"1.4\" marker-end=\"url(#arr-gw)\"/>\n          <line x1=\"166\" y1=\"107\" x2=\"212\" y2=\"107\" stroke=\"var(--ink-soft)\" stroke-width=\"1.4\" marker-end=\"url(#arr-gw)\"/>\n          <line x1=\"166\" y1=\"135\" x2=\"212\" y2=\"135\" stroke=\"var(--ink-soft)\" stroke-width=\"1.4\" marker-end=\"url(#arr-gw)\"/>\n          <line x1=\"166\" y1=\"163\" x2=\"212\" y2=\"163\" stroke=\"var(--ink-soft)\" stroke-width=\"1.4\" marker-end=\"url(#arr-gw)\"/>\n        </g>\n      </svg>\n    </div>\n    <div class=\"formula-col\">\n      <div id=\"m-row\" class=\"metrics-row\">\n        <div id=\"m-uber\" class=\"metric\">\n          <div class=\"metric-val\">&gt;5.000</div>\n          <div class=\"metric-lbl\">Uber (208M utenti)</div>\n        </div>\n        <div id=\"m-spot\" class=\"metric\">\n          <div class=\"metric-val\">~3.000</div>\n          <div class=\"metric-lbl\">Spotify (777M · 12M req/s)</div>\n        </div>\n        <div id=\"m-nflx\" class=\"metric\">\n          <div class=\"metric-val\">&gt;325M</div>\n          <div class=\"metric-lbl\">Netflix utenti</div>\n        </div>\n      </div>\n      <div id=\"b-why\" class=\"box box-primary\">\n        <div class=\"box-label\">2 motivi &amp; API Gateway</div>\n        <p><strong>Lead time breve</strong> e <strong>scalabilità</strong> in container separati. L'<strong>API gateway</strong> funge da unico punto di contatto: isola il client e traduce le chiamate.</p>\n      </div>\n    </div>\n  </div>\n  <div id=\"s2\" class=\"box box-def cue-hidden\">\n    <div class=\"box-label\">Come scomporre un sistema (decisioni &amp; consigli)</div>\n    <p><strong>Equilibrio</strong>: non troppi servizi (bassa cohesion) né troppo pochi (alto coupling). Applica il <strong>Common Closure Principle</strong> (cambia insieme &rarr; stesso servizio), allineati al business e isola i dati logici (es. <em>Auth</em>: UID, Password e User info su 3 DB separati); parti dai dati o da un monolite.</p>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 3.12,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "I motivi principali sono due"
+        },
+        {
+          "at": 3.12,
+          "action": "highlight",
+          "target": "#b-why",
+          "duration": 12.16,
+          "anchor": "I motivi principali sono due"
+        },
+        {
+          "at": 17.2,
+          "action": "highlight",
+          "target": "#m-uber",
+          "duration": 6.08,
+          "anchor": "I numeri reali lo confermano"
+        },
+        {
+          "at": 26.62,
+          "action": "highlight",
+          "target": "#m-spot",
+          "duration": 5.8,
+          "anchor": "Spotify gestisce tremila servizi"
+        },
+        {
+          "at": 34.64,
+          "action": "highlight",
+          "target": "#m-nflx",
+          "duration": 3.27,
+          "anchor": "Netflix supera i trecentoventicinque"
+        },
+        {
+          "at": 38.16,
+          "action": "highlight",
+          "target": "#svg-gw",
+          "duration": 13.56,
+          "anchor": "Nel sistema di stampa fotografica"
+        },
+        {
+          "at": 55.82,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Scomporre un sistema però è difficile"
+        },
+        {
+          "at": 55.82,
+          "action": "highlight",
+          "target": "#s2",
+          "duration": 31.33,
+          "anchor": "Scomporre un sistema però è difficile"
+        }
+      ],
+      "audio_file": "audio/scene-03.wav",
+      "subtitle_file": "subtitles/scene-03.json",
+      "duration_sec": 80.69
+    },
+    {
+      "id": "scene-04",
+      "section": "7.4 · Comunicazione tra servizi",
+      "title": "Interazione sincrona/asincrona e diretta/indiretta",
+      "tts_text": "Una delle cinque decisioni chiave riguarda come comunicano i microservizi. Esistono due assi di scelta: interazione sincrona contro asincrona, e comunicazione diretta contro indiretta. [pause:0.6] Nell'interazione sincrona il servizio A chiama il servizio B e resta in attesa finché B non restituisce la risposta. È un modello più semplice da scrivere e da capire, ma crea dipendenza temporale. [pause:0.5] Nell'interazione asincrona A invia la richiesta in una coda verso B e continua subito a elaborare, leggendo poi il risultato dalla propria coda. Questo riduce il coupling e migliora l'efficienza, anche se rende il codice più complesso. [pause:0.6] Sul secondo asse, nella comunicazione diretta i messaggi puntano direttamente all'indirizzo URI del destinatario: è veloce e lineare, ma obbliga il mittente a conoscere e gestire la posizione di ogni servizio. [pause:0.6] Nella comunicazione indiretta, invece, i messaggi sono indirizzati al nome logico del servizio e inviati a un message broker come RabbitMQ. Il broker risolve l'indirizzo tramite service discovery, può tradurre i messaggi e supporta sia chiamate sincrone sia asincrone, facilitando la sostituzione dei servizi al costo di una leggera latenza aggiuntiva.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">7.4 · Comunicazione tra servizi</div>\n  <h2 class=\"slide-title\">Interazione sincrona/asincrona e diretta/indiretta</h2>\n  <div id=\"s1\" class=\"svg-panel cue-hidden\">\n    <svg viewBox=\"0 0 640 190\" class=\"diagram-svg\" aria-label=\"Comunicazione sincrona, asincrona e message broker\">\n      <defs>\n        <marker id=\"arr-c\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"5\" markerHeight=\"5\" orient=\"auto\">\n          <path d=\"M0 1 L9 5 L0 9 z\" fill=\"var(--ink-soft)\"/>\n        </marker>\n        <marker id=\"arr-cbi\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"5\" markerHeight=\"5\" orient=\"auto-start-reverse\">\n          <path d=\"M0 1 L9 5 L0 9 z\" fill=\"var(--blue)\"/>\n        </marker>\n      </defs>\n      <g id=\"svg-sync\">\n        <text x=\"106\" y=\"16\" text-anchor=\"middle\" class=\"svg-math\">Sincrona</text>\n        <rect x=\"16\" y=\"36\" width=\"52\" height=\"26\" rx=\"5\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.4\"/>\n        <text x=\"42\" y=\"53\" text-anchor=\"middle\" class=\"svg-tick\">Proc</text>\n        <rect x=\"80\" y=\"36\" width=\"52\" height=\"26\" rx=\"5\" fill=\"var(--orange-soft, rgba(217,119,6,0.15))\" stroke=\"var(--orange)\" stroke-width=\"1.4\"/>\n        <text x=\"106\" y=\"53\" text-anchor=\"middle\" class=\"svg-tick\">Wait</text>\n        <rect x=\"144\" y=\"36\" width=\"52\" height=\"26\" rx=\"5\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.4\"/>\n        <text x=\"170\" y=\"53\" text-anchor=\"middle\" class=\"svg-tick\">Proc</text>\n        <line x1=\"68\" y1=\"49\" x2=\"78\" y2=\"49\" stroke=\"var(--ink-soft)\" stroke-width=\"1.3\" marker-end=\"url(#arr-c)\"/>\n        <line x1=\"132\" y1=\"49\" x2=\"142\" y2=\"49\" stroke=\"var(--ink-soft)\" stroke-width=\"1.3\" marker-end=\"url(#arr-c)\"/>\n        <rect x=\"54\" y=\"122\" width=\"104\" height=\"28\" rx=\"5\" fill=\"var(--green-soft, rgba(21,128,61,0.12))\" stroke=\"var(--green)\" stroke-width=\"1.4\"/>\n        <text x=\"106\" y=\"140\" text-anchor=\"middle\" class=\"svg-tick\">Service B</text>\n        <line x1=\"56\" y1=\"62\" x2=\"76\" y2=\"120\" stroke=\"var(--ink-soft)\" stroke-width=\"1.4\" marker-end=\"url(#arr-c)\"/>\n        <text x=\"52\" y=\"96\" text-anchor=\"end\" class=\"svg-caption\">calls</text>\n        <line x1=\"134\" y1=\"120\" x2=\"148\" y2=\"64\" stroke=\"var(--ink-soft)\" stroke-width=\"1.4\" marker-end=\"url(#arr-c)\"/>\n        <text x=\"152\" y=\"96\" text-anchor=\"start\" class=\"svg-caption\">returns</text>\n        <text x=\"106\" y=\"174\" text-anchor=\"middle\" class=\"svg-caption\">A resta in attesa</text>\n      </g>\n      <line x1=\"210\" y1=\"14\" x2=\"210\" y2=\"178\" stroke=\"var(--muted)\" stroke-width=\"1\" stroke-dasharray=\"4 4\" opacity=\"0.5\"/>\n      <g id=\"svg-async\">\n        <text x=\"316\" y=\"16\" text-anchor=\"middle\" class=\"svg-math\">Asincrona (code)</text>\n        <rect x=\"228\" y=\"32\" width=\"62\" height=\"24\" rx=\"5\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.4\"/>\n        <text x=\"259\" y=\"48\" text-anchor=\"middle\" class=\"svg-tick\">A · Proc</text>\n        <rect x=\"342\" y=\"32\" width=\"62\" height=\"24\" rx=\"5\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.4\"/>\n        <text x=\"373\" y=\"48\" text-anchor=\"middle\" class=\"svg-tick\">A · Proc</text>\n        <line x1=\"290\" y1=\"44\" x2=\"340\" y2=\"44\" stroke=\"var(--ink-soft)\" stroke-width=\"1.4\" marker-end=\"url(#arr-c)\"/>\n        <rect x=\"228\" y=\"80\" width=\"68\" height=\"24\" rx=\"5\" fill=\"var(--orange-soft, rgba(217,119,6,0.12))\" stroke=\"var(--orange)\" stroke-width=\"1.4\"/>\n        <text x=\"262\" y=\"96\" text-anchor=\"middle\" class=\"svg-tick\">Queue B</text>\n        <rect x=\"336\" y=\"80\" width=\"68\" height=\"24\" rx=\"5\" fill=\"var(--orange-soft, rgba(217,119,6,0.12))\" stroke=\"var(--orange)\" stroke-width=\"1.4\"/>\n        <text x=\"370\" y=\"96\" text-anchor=\"middle\" class=\"svg-tick\">Queue A</text>\n        <rect x=\"228\" y=\"128\" width=\"62\" height=\"24\" rx=\"5\" fill=\"var(--green-soft, rgba(21,128,61,0.12))\" stroke=\"var(--green)\" stroke-width=\"1.4\"/>\n        <text x=\"259\" y=\"144\" text-anchor=\"middle\" class=\"svg-tick\">B · Proc</text>\n        <rect x=\"342\" y=\"128\" width=\"62\" height=\"24\" rx=\"5\" fill=\"var(--green-soft, rgba(21,128,61,0.12))\" stroke=\"var(--green)\" stroke-width=\"1.4\"/>\n        <text x=\"373\" y=\"144\" text-anchor=\"middle\" class=\"svg-tick\">B · Proc</text>\n        <line x1=\"259\" y1=\"56\" x2=\"259\" y2=\"78\" stroke=\"var(--ink-soft)\" stroke-width=\"1.4\" marker-end=\"url(#arr-c)\"/>\n        <line x1=\"259\" y1=\"104\" x2=\"259\" y2=\"126\" stroke=\"var(--ink-soft)\" stroke-width=\"1.4\" marker-end=\"url(#arr-c)\"/>\n        <line x1=\"290\" y1=\"140\" x2=\"340\" y2=\"140\" stroke=\"var(--ink-soft)\" stroke-width=\"1.4\" marker-end=\"url(#arr-c)\"/>\n        <line x1=\"373\" y1=\"128\" x2=\"373\" y2=\"106\" stroke=\"var(--ink-soft)\" stroke-width=\"1.4\" marker-end=\"url(#arr-c)\"/>\n        <line x1=\"373\" y1=\"80\" x2=\"373\" y2=\"58\" stroke=\"var(--ink-soft)\" stroke-width=\"1.4\" marker-end=\"url(#arr-c)\"/>\n        <text x=\"316\" y=\"174\" text-anchor=\"middle\" class=\"svg-caption\">Nessuna attesa bloccante</text>\n      </g>\n      <line x1=\"422\" y1=\"14\" x2=\"422\" y2=\"178\" stroke=\"var(--muted)\" stroke-width=\"1\" stroke-dasharray=\"4 4\" opacity=\"0.5\"/>\n      <g id=\"svg-broker\">\n        <text x=\"530\" y=\"16\" text-anchor=\"middle\" class=\"svg-math\">Diretta vs Indiretta</text>\n        <rect x=\"440\" y=\"32\" width=\"58\" height=\"24\" rx=\"5\" fill=\"none\" stroke=\"var(--muted)\" stroke-width=\"1.4\"/>\n        <text x=\"469\" y=\"48\" text-anchor=\"middle\" class=\"svg-tick\">Srv A</text>\n        <rect x=\"562\" y=\"32\" width=\"58\" height=\"24\" rx=\"5\" fill=\"none\" stroke=\"var(--muted)\" stroke-width=\"1.4\"/>\n        <text x=\"591\" y=\"48\" text-anchor=\"middle\" class=\"svg-tick\">Srv B</text>\n        <line x1=\"500\" y1=\"44\" x2=\"560\" y2=\"44\" stroke=\"var(--blue)\" stroke-width=\"1.6\" marker-start=\"url(#arr-cbi)\" marker-end=\"url(#arr-cbi)\"/>\n        <text x=\"530\" y=\"70\" text-anchor=\"middle\" class=\"svg-caption\">Diretta: URI esplicito</text>\n        <rect x=\"440\" y=\"88\" width=\"180\" height=\"28\" rx=\"6\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.7\"/>\n        <text x=\"530\" y=\"106\" text-anchor=\"middle\" class=\"svg-tick\">Message broker (RabbitMQ)</text>\n        <rect x=\"440\" y=\"138\" width=\"64\" height=\"24\" rx=\"5\" fill=\"var(--green-soft, rgba(21,128,61,0.12))\" stroke=\"var(--green)\" stroke-width=\"1.4\"/>\n        <text x=\"472\" y=\"154\" text-anchor=\"middle\" class=\"svg-tick\">Srv A</text>\n        <rect x=\"556\" y=\"138\" width=\"64\" height=\"24\" rx=\"5\" fill=\"var(--green-soft, rgba(21,128,61,0.12))\" stroke=\"var(--green)\" stroke-width=\"1.4\"/>\n        <text x=\"588\" y=\"154\" text-anchor=\"middle\" class=\"svg-tick\">Srv B</text>\n        <line x1=\"472\" y1=\"118\" x2=\"472\" y2=\"136\" stroke=\"var(--blue)\" stroke-width=\"1.5\" marker-start=\"url(#arr-cbi)\" marker-end=\"url(#arr-cbi)\"/>\n        <line x1=\"588\" y1=\"118\" x2=\"588\" y2=\"136\" stroke=\"var(--blue)\" stroke-width=\"1.5\" marker-start=\"url(#arr-cbi)\" marker-end=\"url(#arr-cbi)\"/>\n        <text x=\"530\" y=\"177\" text-anchor=\"middle\" class=\"svg-caption\">Indiretta: nome logico &amp; discovery</text>\n      </g>\n    </svg>\n  </div>\n  <div id=\"s2\" class=\"grid-2 cue-hidden\">\n    <div id=\"b-sa\" class=\"box box-def\">\n      <div class=\"box-label\">Sincrona vs Asincrona</div>\n      <p><strong>Sincrona</strong>: + facile da scrivere e capire. <strong>Asincrona</strong> (code): + coupling debole ed efficienza; &minus; più complessa da scrivere e debuggare.</p>\n    </div>\n    <div id=\"b-di\" class=\"box box-primary\">\n      <div class=\"box-label\">Diretta vs Indiretta (Message Broker)</div>\n      <p><strong>Diretta</strong>: + veloce; &minus; richiede URI del destinatario. <strong>Indiretta</strong> (es. RabbitMQ): + discovery, traduzione, sync/async, facile sostituzione; &minus; più lenta.</p>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 4.1,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "Esistono due assi di scelta"
+        },
+        {
+          "at": 12.05,
+          "action": "highlight",
+          "target": "#svg-sync",
+          "duration": 10.94,
+          "anchor": "Nell'interazione sincrona il servizio"
+        },
+        {
+          "at": 23.29,
+          "action": "highlight",
+          "target": "#svg-async",
+          "duration": 14.02,
+          "anchor": "Nell'interazione asincrona A invia"
+        },
+        {
+          "at": 37.43,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Sul secondo asse"
+        },
+        {
+          "at": 37.43,
+          "action": "highlight",
+          "target": "#b-sa",
+          "duration": 1.3,
+          "anchor": "Sul secondo asse"
+        },
+        {
+          "at": 38.85,
+          "action": "highlight",
+          "target": "#svg-broker",
+          "duration": 11.42,
+          "anchor": "nella comunicazione diretta"
+        },
+        {
+          "at": 50.55,
+          "action": "highlight",
+          "target": "#b-di",
+          "duration": 23.31,
+          "anchor": "Nella comunicazione indiretta"
+        }
+      ],
+      "audio_file": "audio/scene-04.wav",
+      "subtitle_file": "subtitles/scene-04.json",
+      "duration_sec": 70.21
+    },
+    {
+      "id": "scene-05",
+      "section": "7.5 · Dati distribuiti e Teorema CAP",
+      "title": "Coerenza eventuale e dimostrazione formale del Teorema CAP",
+      "tts_text": "Passiamo alla gestione dei dati. Ogni microservizio possiede il proprio database: la condivisione va ridotta al minimo, quasi sempre in sola lettura, e bisogna sincronizzare le repliche. [pause:0.5] Abbandonando le transazioni ACID del database condiviso, i microservizi accettano un compromesso tra coerenza e prestazioni e gestiscono due incoerenze: la dependent data inconsistency tra servizi diversi e la replica inconsistency tra copie dello stesso servizio, che devono convergere ed essere eventualmente coerenti. Per esempio, se un utente aggiorna l'indirizzo sulla replica A, la replica B può restituire per pochi istanti il valore vecchio finché l'aggiornamento non si propaga. [pause:0.6] Questa scelta ha un fondamento teorico preciso: il teorema CAP formulato da Brewer nel duemila. È impossibile garantire insieme Consistency, cioè risposta giusta, Availability, cioè risposta a ogni richiesta, e Partition-tolerance, cioè tolleranza a ritardi e perdite di rete. [pause:0.6] Poiché nei sistemi distribuiti la partizione di rete P è sempre possibile e va assunta vera, non resta che non C e A. Per le leggi di De Morgan otteniamo non C oppure non A, che equivale a due implicazioni: se garantiamo la disponibilità A rinunciamo alla coerenza non C, e viceversa.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">7.5 · Dati distribuiti &amp; Teorema CAP</div>\n  <h2 class=\"slide-title\">Coerenza eventuale e dimostrazione formale del Teorema CAP</h2>\n  <div id=\"s1\" class=\"grid-2 cue-hidden\">\n    <div id=\"b-data\" class=\"box box-def\">\n      <div class=\"box-label\">Dati per servizio &amp; Coerenza eventuale</div>\n      <ul class=\"clean-list\">\n        <li id=\"dt-1\"><strong>3 regole</strong>: condivisione minima, quasi solo lettura, sync tra repliche.</li>\n        <li id=\"dt-2\"><strong>2 incoerenze</strong> (addio ACID): <em>dependent data</em> e <em>replica inconsistency</em>.</li>\n        <li id=\"dt-3\"><strong>Eventually consistent</strong>: le repliche A e B convergono (es. cambio indirizzo).</li>\n      </ul>\n    </div>\n    <div id=\"b-cap\" class=\"box box-theorem\">\n      <div class=\"box-label\">Teorema CAP (Brewer, 2000)</div>\n      <ul class=\"clean-list\">\n        <li id=\"cap-c\"><strong>Consistency (C)</strong>: risposta &ldquo;giusta&rdquo; a ogni richiesta.</li>\n        <li id=\"cap-a\"><strong>Availability (A)</strong>: ogni richiesta ottiene una risposta.</li>\n        <li id=\"cap-p\"><strong>Partition-tolerance (P)</strong>: la rete può ritardare o perdere messaggi.</li>\n      </ul>\n    </div>\n  </div>\n  <div id=\"s2\" class=\"proof-steps cue-hidden\">\n    <div id=\"p1\" class=\"proof-step\">\n      <div class=\"step-tag\">1 · P vera</div>\n      <div>Nei sistemi distribuiti \\(P\\) vale sempre: \\(\\htmlId{f-cap1}{\\neg(C \\land A \\land P) \\equiv \\neg(C \\land A)}\\)</div>\n    </div>\n    <div id=\"p2\" class=\"proof-step\">\n      <div class=\"step-tag\">2 · De Morgan</div>\n      <div>Per le leggi di De Morgan: \\(\\htmlId{f-cap2}{\\neg(C \\land A) \\equiv \\neg C \\lor \\neg A}\\)</div>\n    </div>\n    <div id=\"p3\" class=\"proof-step proof-step-final\">\n      <div class=\"step-tag\">3 · Scelta pratica</div>\n      <div>\\(\\htmlId{f-cap3}{A \\to \\neg C}\\) (<strong>A &amp; P</strong>: coerenza <em>best-effort</em>, es. 1h ok ma non 1 giorno) &nbsp;|&nbsp; \\(\\htmlId{f-cap4}{C \\to \\neg A}\\) (<strong>C &amp; P</strong>: coerenza forte)</div>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 2.2,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "Ogni microservizio possiede"
+        },
+        {
+          "at": 2.2,
+          "action": "highlight",
+          "target": "#dt-1",
+          "duration": 7.79,
+          "anchor": "Ogni microservizio possiede"
+        },
+        {
+          "at": 11.56,
+          "action": "highlight",
+          "target": "#dt-2",
+          "duration": 13.15,
+          "anchor": "Abbandonando le transazioni ACID"
+        },
+        {
+          "at": 33.5,
+          "action": "highlight",
+          "target": "#dt-3",
+          "duration": 9.59,
+          "anchor": "Per esempio, se un utente"
+        },
+        {
+          "at": 43.21,
+          "action": "highlight",
+          "target": "#b-cap",
+          "duration": 16.07,
+          "anchor": "Questa scelta ha un fondamento"
+        },
+        {
+          "at": 61.05,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Poiché nei sistemi distribuiti"
+        },
+        {
+          "at": 61.05,
+          "action": "highlight",
+          "target": "#p1",
+          "duration": 8.22,
+          "anchor": "Poiché nei sistemi distribuiti"
+        },
+        {
+          "at": 69.39,
+          "action": "highlight",
+          "target": "#p2",
+          "duration": 5.56,
+          "anchor": "Per le leggi di De Morgan"
+        },
+        {
+          "at": 75.07,
+          "action": "highlight",
+          "target": "#p3",
+          "duration": 8.77,
+          "anchor": "se garantiamo la disponibilità"
+        }
+      ],
+      "audio_file": "audio/scene-05.wav",
+      "subtitle_file": "subtitles/scene-05.json",
+      "duration_sec": 80.66
+    },
+    {
+      "id": "scene-06",
+      "section": "7.6 · CAP in pratica, Pattern Saga e Quorum",
+      "title": "Sequenza CAP, transazioni Saga e Quorum di Netflix",
+      "tts_text": "Osserviamo nello schema perché la disponibilità implica rinunciare alla coerenza. Abbiamo due server S uno e S due che replicano il dato d. Quando la rete consegna tutti i messaggi, il client C primo legge il valore aggiornato v uno. Ma se il client C scrive il nuovo valore v due su S uno e il messaggio di aggiornamento verso S due va perso per una partizione di rete, S due risponde comunque alla lettura per garantire disponibilità, restituendo però il dato vecchio v uno. [pause:0.6] Come gestire invece transazioni di business che attraversano più microservizi con database separati? Si usa il pattern Saga: una sequenza di transazioni locali, come prenotare auto T uno, hotel T due e volo T tre. Se T tre fallisce, non c'è rollback unico: nel backward model si eseguono le compensazioni in ordine inverso, C due poi C uno; nel forward model si riprova T tre più tardi. [pause:0.6] Infine, per la replica dei dati su n nodi, Netflix e Apache Cassandra adottano il quorum a maggioranza n mezzi più uno: con cinque repliche bastano tre risposte. Poiché due maggioranze di tre nodi si intersecano sempre in almeno un nodo, il sistema legge il dato più recente e tollera fino a due nodi irraggiungibili.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">7.6 · CAP in pratica, Pattern Saga &amp; Quorum</div>\n  <h2 class=\"slide-title\">Sequenza CAP, transazioni Saga e Quorum di Netflix</h2>\n  <div id=\"s1\" class=\"svg-panel cue-hidden\">\n    <svg viewBox=\"0 0 640 185\" class=\"diagram-svg\" aria-label=\"Diagramma CAP: A implica non C\">\n      <defs>\n        <marker id=\"arr-cap\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"5\" markerHeight=\"5\" orient=\"auto\">\n          <path d=\"M0 1 L9 5 L0 9 z\" fill=\"var(--ink-soft)\"/>\n        </marker>\n        <marker id=\"arr-cap-r\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"5\" markerHeight=\"5\" orient=\"auto\">\n          <path d=\"M0 1 L9 5 L0 9 z\" fill=\"var(--red)\"/>\n        </marker>\n      </defs>\n      <g id=\"svg-cap-ok\">\n        <text x=\"155\" y=\"15\" text-anchor=\"middle\" class=\"svg-math\">Tutti i messaggi arrivano</text>\n        <text x=\"42\" y=\"33\" text-anchor=\"middle\" class=\"svg-tick\">C</text>\n        <text x=\"117\" y=\"33\" text-anchor=\"middle\" class=\"svg-tick\">S1</text>\n        <text x=\"192\" y=\"33\" text-anchor=\"middle\" class=\"svg-tick\">S2</text>\n        <text x=\"267\" y=\"33\" text-anchor=\"middle\" class=\"svg-tick\">C'</text>\n        <line x1=\"42\" y1=\"38\" x2=\"42\" y2=\"172\" stroke=\"var(--muted)\" stroke-width=\"1.2\"/>\n        <line x1=\"117\" y1=\"38\" x2=\"117\" y2=\"172\" stroke=\"var(--muted)\" stroke-width=\"1.2\"/>\n        <line x1=\"192\" y1=\"38\" x2=\"192\" y2=\"172\" stroke=\"var(--muted)\" stroke-width=\"1.2\"/>\n        <line x1=\"267\" y1=\"38\" x2=\"267\" y2=\"172\" stroke=\"var(--muted)\" stroke-width=\"1.2\"/>\n        <line x1=\"42\" y1=\"52\" x2=\"115\" y2=\"62\" stroke=\"var(--ink-soft)\" stroke-width=\"1.4\" marker-end=\"url(#arr-cap)\"/>\n        <text x=\"78\" y=\"49\" text-anchor=\"middle\" class=\"svg-caption\">write(d,v1)</text>\n        <line x1=\"117\" y1=\"72\" x2=\"44\" y2=\"82\" stroke=\"var(--ink-soft)\" stroke-width=\"1.3\" marker-end=\"url(#arr-cap)\"/>\n        <text x=\"80\" y=\"73\" text-anchor=\"middle\" class=\"svg-caption\">ok</text>\n        <line x1=\"117\" y1=\"94\" x2=\"190\" y2=\"104\" stroke=\"var(--ink-soft)\" stroke-width=\"1.4\" marker-end=\"url(#arr-cap)\"/>\n        <text x=\"154\" y=\"91\" text-anchor=\"middle\" class=\"svg-caption\">update(d,v1)</text>\n        <line x1=\"192\" y1=\"114\" x2=\"119\" y2=\"124\" stroke=\"var(--ink-soft)\" stroke-width=\"1.3\" marker-end=\"url(#arr-cap)\"/>\n        <text x=\"155\" y=\"115\" text-anchor=\"middle\" class=\"svg-caption\">ok</text>\n        <line x1=\"267\" y1=\"134\" x2=\"194\" y2=\"144\" stroke=\"var(--ink-soft)\" stroke-width=\"1.4\" marker-end=\"url(#arr-cap)\"/>\n        <text x=\"230\" y=\"131\" text-anchor=\"middle\" class=\"svg-caption\">read(d)</text>\n        <line x1=\"192\" y1=\"156\" x2=\"265\" y2=\"166\" stroke=\"var(--green)\" stroke-width=\"1.8\" marker-end=\"url(#arr-cap)\"/>\n        <text x=\"230\" y=\"177\" text-anchor=\"middle\" class=\"svg-caption\" fill=\"var(--green)\">d = v1 (coerente)</text>\n      </g>\n      <line x1=\"316\" y1=\"10\" x2=\"316\" y2=\"178\" stroke=\"var(--muted)\" stroke-width=\"1\" stroke-dasharray=\"4 4\" opacity=\"0.55\"/>\n      <g id=\"svg-cap-fail\">\n        <text x=\"478\" y=\"15\" text-anchor=\"middle\" class=\"svg-math\">update(d,v2) perso: A &rarr; &not;C</text>\n        <text x=\"355\" y=\"33\" text-anchor=\"middle\" class=\"svg-tick\">C</text>\n        <text x=\"435\" y=\"33\" text-anchor=\"middle\" class=\"svg-tick\">S1</text>\n        <text x=\"515\" y=\"33\" text-anchor=\"middle\" class=\"svg-tick\">S2</text>\n        <text x=\"595\" y=\"33\" text-anchor=\"middle\" class=\"svg-tick\">C'</text>\n        <line x1=\"355\" y1=\"38\" x2=\"355\" y2=\"172\" stroke=\"var(--muted)\" stroke-width=\"1.2\"/>\n        <line x1=\"435\" y1=\"38\" x2=\"435\" y2=\"172\" stroke=\"var(--muted)\" stroke-width=\"1.2\"/>\n        <line x1=\"515\" y1=\"38\" x2=\"515\" y2=\"172\" stroke=\"var(--muted)\" stroke-width=\"1.2\"/>\n        <line x1=\"595\" y1=\"38\" x2=\"595\" y2=\"172\" stroke=\"var(--muted)\" stroke-width=\"1.2\"/>\n        <line x1=\"355\" y1=\"48\" x2=\"433\" y2=\"56\" stroke=\"var(--ink-soft)\" stroke-width=\"1.3\" marker-end=\"url(#arr-cap)\"/>\n        <text x=\"394\" y=\"45\" text-anchor=\"middle\" class=\"svg-caption\">write(d,v1)</text>\n        <line x1=\"435\" y1=\"62\" x2=\"513\" y2=\"70\" stroke=\"var(--ink-soft)\" stroke-width=\"1.3\" marker-end=\"url(#arr-cap)\"/>\n        <text x=\"474\" y=\"60\" text-anchor=\"middle\" class=\"svg-caption\">update(d,v1)</text>\n        <line x1=\"355\" y1=\"82\" x2=\"433\" y2=\"92\" stroke=\"var(--blue)\" stroke-width=\"1.5\" marker-end=\"url(#arr-cap)\"/>\n        <text x=\"394\" y=\"79\" text-anchor=\"middle\" class=\"svg-caption\">write(d,v2)</text>\n        <line x1=\"435\" y1=\"98\" x2=\"357\" y2=\"107\" stroke=\"var(--ink-soft)\" stroke-width=\"1.2\" marker-end=\"url(#arr-cap)\"/>\n        <text x=\"395\" y=\"98\" text-anchor=\"middle\" class=\"svg-caption\">ok</text>\n        <line x1=\"435\" y1=\"116\" x2=\"495\" y2=\"124\" stroke=\"var(--red)\" stroke-width=\"1.6\" stroke-dasharray=\"4 3\"/>\n        <text x=\"505\" y=\"129\" text-anchor=\"middle\" class=\"svg-math\" fill=\"var(--red)\">&times;</text>\n        <text x=\"468\" y=\"114\" text-anchor=\"middle\" class=\"svg-caption\" fill=\"var(--red)\">update(d,v2)</text>\n        <line x1=\"595\" y1=\"136\" x2=\"517\" y2=\"146\" stroke=\"var(--ink-soft)\" stroke-width=\"1.4\" marker-end=\"url(#arr-cap)\"/>\n        <text x=\"556\" y=\"133\" text-anchor=\"middle\" class=\"svg-caption\">read(d)</text>\n        <line x1=\"515\" y1=\"156\" x2=\"593\" y2=\"166\" stroke=\"var(--red)\" stroke-width=\"1.9\" marker-end=\"url(#arr-cap-r)\"/>\n        <text x=\"556\" y=\"177\" text-anchor=\"middle\" class=\"svg-caption\" fill=\"var(--red)\">d = v1 (vecchio!)</text>\n      </g>\n    </svg>\n  </div>\n  <div id=\"s2\" class=\"grid-2 cue-hidden\">\n    <div id=\"b-saga\" class=\"box box-primary\">\n      <div class=\"box-label\">Pattern Saga (transazioni distribuite)</div>\n      <p>Es. viaggio: \\(T_1\\) auto, \\(T_2\\) hotel, \\(T_3\\) volo. Se \\(T_3\\) fallisce: <strong>Backward</strong> (compensa in ordine inverso \\(C_2, C_1\\)) o <strong>Forward</strong> (riprova \\(T_3\\)). Coordina via <em>choreography</em> o <em>orchestration</em>.</p>\n    </div>\n    <div id=\"b-quorum\" class=\"box box-idea\">\n      <div class=\"box-label\">Quorum (Netflix / Apache Cassandra)</div>\n      <p>Su \\(n\\) nodi servono \\(\\lfloor n/2 \\rfloor + 1\\) risposte. Con \\(n=5\\) bastano <strong>3 repliche</strong>: due maggioranze si intersecano sempre; tollerati <strong>2 nodi giù</strong> (allineati dopo).</p>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 4.1,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "Abbiamo due server S uno"
+        },
+        {
+          "at": 9.44,
+          "action": "highlight",
+          "target": "#svg-cap-ok",
+          "duration": 5.86,
+          "anchor": "Quando la rete consegna tutti"
+        },
+        {
+          "at": 15.42,
+          "action": "highlight",
+          "target": "#svg-cap-fail",
+          "duration": 15.06,
+          "anchor": "Ma se il client C"
+        },
+        {
+          "at": 30.6,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Come gestire invece transazioni"
+        },
+        {
+          "at": 30.6,
+          "action": "highlight",
+          "target": "#b-saga",
+          "duration": 24.17,
+          "anchor": "Come gestire invece transazioni"
+        },
+        {
+          "at": 56.17,
+          "action": "highlight",
+          "target": "#b-quorum",
+          "duration": 24.69,
+          "anchor": "Infine, per la replica dei dati"
+        }
+      ],
+      "audio_file": "audio/scene-06.wav",
+      "subtitle_file": "subtitles/scene-06.json",
+      "duration_sec": 75.22
+    },
+    {
+      "id": "scene-07",
+      "section": "7.7 · Coordinamento e gestione dei guasti",
+      "title": "Orchestration vs Choreography, disponibilità composta e Circuit Breaker",
+      "tts_text": "Per coordinare più servizi esistono due approcci. Nella service orchestration un controllore esplicito orchestra le chiamate; nella service choreography i servizi pubblicano e ricevono eventi in publish-and-subscribe senza controllore, rendendo però più complessi debugging e recovery. La regola pratica è iniziare con l'orchestration e passare alla choreography solo se il sistema risulta rigido. [pause:0.6] In un'architettura distribuita i guasti sono inevitabili e si dividono in tre tipi: guasti interni segnalati al chiamante, come un URL non valido; guasti esterni, quando un servizio smette di rispondere e va riavviato; e cali di prestazioni, rilevati dal monitoraggio esterno. [pause:0.5] Attenzione alla disponibilità composta: se una funzione chiama due servizi indipendenti disponibili al novantanove per cento ciascuno, la disponibilità totale è zero virgola novantanove per zero virgola novantanove, cioè novantotto virgola zero uno per cento. L'indisponibilità sale all'uno virgola novantanove per cento, circa ventinove minuti al giorno su ottantaseimilaquattrocento secondi. [pause:0.6] Per proteggere il sistema si usa il circuit breaker: dopo troppi guasti consecutivi l'interruttore scatta e fa fallire subito le chiamate per un timeout; scaduto il tempo lascia passare poche richieste di prova per decidere se ripristinare il flusso. Per collaudare questa resilienza, Netflix usa Chaos Monkey, che termina casualmente container e macchine virtuali in produzione.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">7.7 · Coordinamento &amp; Gestione dei guasti</div>\n  <h2 class=\"slide-title\">Orchestration vs Choreography, disponibilità composta e Circuit Breaker</h2>\n  <div id=\"s1\" class=\"split-visual cue-hidden\">\n    <div id=\"svg-cb-panel\" class=\"svg-panel\">\n      <svg viewBox=\"0 0 360 185\" class=\"diagram-svg\" aria-label=\"Macchina a stati Circuit Breaker\">\n        <defs>\n          <marker id=\"arr-cb\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"5\" markerHeight=\"5\" orient=\"auto\">\n            <path d=\"M0 1 L9 5 L0 9 z\" fill=\"var(--ink-soft)\"/>\n          </marker>\n        </defs>\n        <g id=\"svg-cb-norm\">\n          <rect x=\"12\" y=\"22\" width=\"136\" height=\"46\" rx=\"8\" fill=\"var(--green-soft, rgba(21,128,61,0.12))\" stroke=\"var(--green)\" stroke-width=\"1.7\"/>\n          <text x=\"80\" y=\"42\" text-anchor=\"middle\" class=\"svg-tick\">Normale</text>\n          <text x=\"80\" y=\"57\" text-anchor=\"middle\" class=\"svg-caption\">le chiamate passano</text>\n        </g>\n        <g id=\"svg-cb-trip\">\n          <rect x=\"212\" y=\"22\" width=\"136\" height=\"46\" rx=\"8\" fill=\"var(--red-soft, rgba(220,38,38,0.12))\" stroke=\"var(--red)\" stroke-width=\"1.7\"/>\n          <text x=\"280\" y=\"42\" text-anchor=\"middle\" class=\"svg-tick\">Scattato (timeout)</text>\n          <text x=\"280\" y=\"57\" text-anchor=\"middle\" class=\"svg-caption\">fallimento immediato</text>\n        </g>\n        <line x1=\"150\" y1=\"45\" x2=\"208\" y2=\"45\" stroke=\"var(--red)\" stroke-width=\"1.6\" marker-end=\"url(#arr-cb)\"/>\n        <text x=\"179\" y=\"15\" text-anchor=\"middle\" class=\"svg-caption\">guasti &gt; soglia</text>\n        <g id=\"svg-cb-half\">\n          <rect x=\"94\" y=\"122\" width=\"172\" height=\"48\" rx=\"8\" fill=\"var(--orange-soft, rgba(217,119,6,0.14))\" stroke=\"var(--orange)\" stroke-width=\"1.7\"/>\n          <text x=\"180\" y=\"142\" text-anchor=\"middle\" class=\"svg-tick\">Dopo il timeout</text>\n          <text x=\"180\" y=\"157\" text-anchor=\"middle\" class=\"svg-caption\">poche richieste di prova</text>\n        </g>\n        <line x1=\"248\" y1=\"68\" x2=\"214\" y2=\"120\" stroke=\"var(--ink-soft)\" stroke-width=\"1.5\" marker-end=\"url(#arr-cb)\"/>\n        <text x=\"256\" y=\"99\" text-anchor=\"start\" class=\"svg-caption\">timeout scaduto</text>\n        <path d=\"M 94 146 L 44 146 L 44 71\" fill=\"none\" stroke=\"var(--green)\" stroke-width=\"1.6\" marker-end=\"url(#arr-cb)\"/>\n        <text x=\"39\" y=\"109\" text-anchor=\"end\" class=\"svg-caption\" fill=\"var(--green)\">riescono</text>\n        <path d=\"M 266 146 L 316 146 L 316 71\" fill=\"none\" stroke=\"var(--red)\" stroke-width=\"1.6\" marker-end=\"url(#arr-cb)\"/>\n        <text x=\"321\" y=\"109\" text-anchor=\"start\" class=\"svg-caption\" fill=\"var(--red)\">falliscono</text>\n      </svg>\n    </div>\n    <div class=\"formula-col\">\n      <div id=\"b-coord\" class=\"box box-def\">\n        <div class=\"box-label\">Orchestration vs Choreography</div>\n        <p><strong>Orchestration</strong>: controllore esplicito. <strong>Choreography</strong>: eventi <em>pub/sub</em> (debug e recovery più difficili). Consiglio: parti dall'orchestration.</p>\n      </div>\n      <div id=\"b-avail\" class=\"math-card\">\n        <div class=\"step-tag-inline\">Disponibilità composta &amp; Chaos Monkey</div>\n        \\[ \\htmlId{f-av}{0{,}99 \\times 0{,}99 = 0{,}9801 \\implies 1{,}99\\% \\text{ down} \\approx 29\\text{ min/g}} \\]\n        <p class=\"math-note\">Su 86.400 s/g (~30 min). <strong>Chaos Monkey</strong> termina a caso VM e container in produzione.</p>\n      </div>\n    </div>\n  </div>\n  <table id=\"s2\" class=\"acad-table cue-hidden\">\n    <thead>\n      <tr><th>Tipo di guasto</th><th>Causa e rilevamento</th></tr>\n    </thead>\n    <tbody>\n      <tr id=\"f-int\"><td><strong>Internal service failure</strong></td><td>Condizione rilevata dal servizio e segnalata con errore (es. URL in input non valido).</td></tr>\n      <tr id=\"f-ext\"><td><strong>External service failure</strong></td><td>Causa esterna che compromette la disponibilità: il servizio non risponde e va riavviato.</td></tr>\n      <tr id=\"f-perf\"><td><strong>Service performance failure</strong></td><td>Prestazioni inaccettabili (carico elevato o bug): rilevato tramite monitoraggio esterno.</td></tr>\n    </tbody>\n  </table>\n</div>\n",
+      "cues": [
+        {
+          "at": 3.44,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "Nella service orchestration"
+        },
+        {
+          "at": 3.44,
+          "action": "highlight",
+          "target": "#b-coord",
+          "duration": 21.11,
+          "anchor": "Nella service orchestration"
+        },
+        {
+          "at": 24.82,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "In un'architettura distribuita i guasti"
+        },
+        {
+          "at": 30.06,
+          "action": "highlight",
+          "target": "#f-int",
+          "duration": 3.98,
+          "anchor": "guasti interni segnalati"
+        },
+        {
+          "at": 34.16,
+          "action": "highlight",
+          "target": "#f-ext",
+          "duration": 4.61,
+          "anchor": "guasti esterni, quando"
+        },
+        {
+          "at": 38.89,
+          "action": "highlight",
+          "target": "#f-perf",
+          "duration": 3.82,
+          "anchor": "cali di prestazioni"
+        },
+        {
+          "at": 42.83,
+          "action": "highlight",
+          "target": "#b-avail",
+          "duration": 20.1,
+          "anchor": "Attenzione alla disponibilità composta"
+        },
+        {
+          "at": 66.87,
+          "action": "highlight",
+          "target": "#svg-cb-panel",
+          "duration": 18.09,
+          "anchor": "Per proteggere il sistema si usa"
+        }
+      ],
+      "audio_file": "audio/scene-07.wav",
+      "subtitle_file": "subtitles/scene-07.json",
+      "duration_sec": 90.11
+    },
+    {
+      "id": "scene-08",
+      "section": "7.8 · Distribuzione e scelta architetturale",
+      "title": "DevOps, Continuous Deployment, Rollback e regola di Fowler",
+      "tts_text": "Come si distribuiscono i microservizi in produzione? L'approccio DevOps affida allo stesso team sia lo sviluppo sia la gestione operativa del servizio. [pause:0.5] Ogni modifica al codice avvia una continuous deployment pipeline automatica in sette passi: partono gli unit test, si costruisce il sistema di test e girano gli integration test; poi il servizio viene containerizzato, distribuito come container e verificato con gli acceptance test, fino a sostituire il servizio attivo. Se un solo controllo fallisce, la modifica viene rifiutata. [pause:0.6] Poiché i test non coprono il cento per cento degli imprevisti, serve il monitoraggio continuo con rollback rapido: mantenendo attiva la versione precedente, per esempio Cameras zero zero uno, se il monitor rileva errori su Cameras zero zero due riporta subito il current version link alla versione sicura. [pause:0.6] Tirando le somme, i microservizi accorciano il lead time e offrono scalabilità fine, ma portano overhead di rete, complessità, rischio di tagli sbagliati, duplicazione dei dati e non salvano mai un team scadente. [pause:0.5] Come mostra il grafico di Martin Fowler, per sistemi poco complessi il monolite è più produttivo: conviene passare ai microservizi solo quando la complessità rende il monolite ingestibile.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">7.8 · Distribuzione &amp; Scelta Architetturale</div>\n  <h2 class=\"slide-title\">DevOps, Continuous Deployment, Rollback e regola di Fowler</h2>\n  <div id=\"s1\" class=\"split-visual cue-hidden\">\n    <div id=\"svg-fowler\" class=\"svg-panel\">\n      <svg viewBox=\"0 0 360 185\" class=\"diagram-svg\" aria-label=\"Produttività vs complessità: monolite e microservizi\">\n        <defs>\n          <marker id=\"arr-ax\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"5\" markerHeight=\"5\" orient=\"auto\">\n            <path d=\"M0 1 L9 5 L0 9 z\" fill=\"var(--ink-soft)\"/>\n          </marker>\n        </defs>\n        <line x1=\"36\" y1=\"152\" x2=\"338\" y2=\"152\" stroke=\"var(--ink-soft)\" stroke-width=\"1.6\" marker-end=\"url(#arr-ax)\"/>\n        <line x1=\"36\" y1=\"152\" x2=\"36\" y2=\"18\" stroke=\"var(--ink-soft)\" stroke-width=\"1.6\" marker-end=\"url(#arr-ax)\"/>\n        <text x=\"336\" y=\"170\" text-anchor=\"end\" class=\"svg-caption\">Base complexity</text>\n        <text x=\"44\" y=\"22\" text-anchor=\"start\" class=\"svg-caption\">Productivity</text>\n        <line x1=\"162\" y1=\"28\" x2=\"162\" y2=\"152\" stroke=\"var(--muted)\" stroke-width=\"1.1\" stroke-dasharray=\"4 4\"/>\n        <text x=\"162\" y=\"168\" text-anchor=\"middle\" class=\"svg-caption\">soglia</text>\n        <g id=\"svg-mono\">\n          <path d=\"M 44 34 C 95 35, 130 40, 158 76 C 184 110, 215 134, 326 139\" class=\"svg-curve-green\"/>\n          <text x=\"296\" y=\"130\" text-anchor=\"middle\" class=\"svg-tick\" fill=\"var(--green)\">Monolith</text>\n        </g>\n        <g id=\"svg-micro\">\n          <path d=\"M 44 54 C 110 56, 152 60, 186 78 C 220 96, 255 107, 326 110\" class=\"svg-curve-blue\"/>\n          <text x=\"292\" y=\"98\" text-anchor=\"middle\" class=\"svg-tick\" fill=\"var(--blue)\">Microservice</text>\n        </g>\n      </svg>\n    </div>\n    <div class=\"formula-col\">\n      <div id=\"b-ops\" class=\"box box-primary\">\n        <div class=\"box-label\">DevOps &amp; Rollback (Cameras)</div>\n        <p>Stesso team per <strong>Dev</strong> e <strong>Ops</strong>. Se il <em>Service monitor</em> rileva errori su <em>Cameras 002</em>, il <em>current version link</em> torna subito alla <em>001</em> conservata.</p>\n      </div>\n      <div id=\"b-fow\" class=\"box box-warn\">\n        <div class=\"box-label\">Pro, Contro &amp; Regola di Fowler</div>\n        <p><strong>Pro</strong>: lead time, scalabilità. <strong>Contro</strong>: overhead, complessità, tagli errati, dati duplicati, team scadenti. Evita i microservizi se il monolite basta!</p>\n      </div>\n    </div>\n  </div>\n  <div id=\"s2\" class=\"box box-algo cue-hidden\">\n    <div class=\"box-label\">Continuous Deployment Pipeline (dal commit — ogni test fallito fa &ldquo;reject change&rdquo;)</div>\n    <div class=\"pill-strip\">\n      <span id=\"cd-1\" class=\"pill\">1. Unit tests</span>\n      <span id=\"cd-2\" class=\"pill\">2. Build test</span>\n      <span id=\"cd-3\" class=\"pill\">3. Integration tests</span>\n      <span id=\"cd-4\" class=\"pill pill-accent\">4. Containerize</span>\n      <span id=\"cd-5\" class=\"pill pill-accent\">5. Deploy container</span>\n      <span id=\"cd-6\" class=\"pill\">6. Acceptance tests</span>\n      <span id=\"cd-7\" class=\"pill pill-accent\">7. Replace service</span>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 4.32,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "L'approccio DevOps affida"
+        },
+        {
+          "at": 4.32,
+          "action": "highlight",
+          "target": "#b-ops",
+          "duration": 6.18,
+          "anchor": "L'approccio DevOps affida"
+        },
+        {
+          "at": 10.62,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Ogni modifica al codice avvia"
+        },
+        {
+          "at": 10.62,
+          "action": "highlight",
+          "target": "#s2",
+          "duration": 22.4,
+          "anchor": "Ogni modifica al codice avvia"
+        },
+        {
+          "at": 34.26,
+          "action": "highlight",
+          "target": "#b-ops",
+          "duration": 16.07,
+          "anchor": "Poiché i test non coprono"
+        },
+        {
+          "at": 52.49,
+          "action": "highlight",
+          "target": "#b-fow",
+          "duration": 13.26,
+          "anchor": "Tirando le somme"
+        },
+        {
+          "at": 65.87,
+          "action": "highlight",
+          "target": "#svg-fowler",
+          "duration": 13.64,
+          "anchor": "Come mostra il grafico"
+        }
+      ],
+      "audio_file": "audio/scene-08.wav",
+      "subtitle_file": "subtitles/scene-08.json",
+      "duration_sec": 76.58
+    },
+    {
+      "id": "scene-09",
+      "section": "7.9 · Approfondimenti d'esame: decisioni, coerenza e team",
+      "title": "Le 5 decisioni, metodo Auth, coerenza dipendente e curva di Fowler",
+      "tts_text": "Fissiamo ora quattro approfondimenti chiave per l'esame. [pause:0.5] Le cinque domande architetturali chiedono quali microservizi compongono il sistema, come comunicano, come distribuiscono e condividono i dati, come si coordinano e come rilevano, segnalano e gestiscono i guasti. [pause:0.5] Tra i consigli di scomposizione, il primo bilancia funzionalità a grana fine e prestazioni; il quarto limita ogni servizio ai soli dati necessari con meccanismi di propagazione. [pause:0.5] Nell'esempio di autenticazione con cinque feature, cioè registrazione, UID e password, autenticazione a due fattori, informazioni utente e reset password, il metodo in tre passi scompone le feature a grana grossa, crea un microservizio per ogni dato logico e riduce al minimo i dati replicati. [pause:0.5] Sui dati, si ha dependent data inconsistency quando azioni o guasti di un servizio rendono incoerenti i dati gestiti da un altro. La seconda regola impone condivisione quasi sempre in sola lettura, con pochi servizi responsabili degli aggiornamenti. [pause:0.5] Nel teorema CAP, la scelta C e P garantisce coerenza forte con disponibilità best-effort; in A e P si tollera invece un dato vecchio di un'ora ma non di un giorno. [pause:0.5] Infine, la curva di Fowler ricorda che la competenza del team conta più della scelta tra monolite e microservizi.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">7.9 · Approfondimenti d'esame: decisioni, coerenza e team</div>\n  <h2 class=\"slide-title\">Le 5 decisioni, metodo Auth, coerenza dipendente e curva di Fowler</h2>\n  <div id=\"s1\" class=\"grid-2 cue-hidden\">\n    <div id=\"b-dec\" class=\"box box-primary\">\n      <div class=\"box-label\">5 domande di design &amp; consigli 1 e 4</div>\n      <ul class=\"clean-list\">\n        <li id=\"d-5q\"><strong>5 domande architetturali</strong>: 1) quali microservizi, 2) comunicazione, 3) distribuzione/condivisione dati, 4) coordinamento, 5) rilevazione, segnalazione e gestione guasti.</li>\n        <li id=\"d-c1\"><strong>Consiglio 1</strong>: bilanciare funzionalità a grana fine e prestazioni del sistema.</li>\n        <li id=\"d-c4\"><strong>Consiglio 4</strong>: accedere solo ai dati necessari, usando meccanismi di propagazione dei dati.</li>\n      </ul>\n    </div>\n    <div id=\"b-auth\" class=\"box box-def\">\n      <div class=\"box-label\">Esempio Auth: 5 feature &amp; metodo in 3 passi</div>\n      <p id=\"a-feat\" style=\"margin-bottom:0.35rem\"><strong>5 feature</strong>: registrazione, UID/password, 2FA, informazioni utente, reset password.</p>\n      <ul class=\"clean-list\">\n        <li id=\"a-1\"><strong>1.</strong> Scomporre le feature a grana grossa in funzioni più dettagliate.</li>\n        <li id=\"a-2\"><strong>2.</strong> Un microservizio per ogni dato logico (UID, Password, User data).</li>\n        <li id=\"a-3\"><strong>3.</strong> Ridurre al minimo la gestione di dati replicati.</li>\n      </ul>\n    </div>\n  </div>\n  <div id=\"s2\" class=\"grid-2 cue-hidden\">\n    <div id=\"b-coer\" class=\"box box-warn\">\n      <div class=\"box-label\">Coerenza dipendente, regola 2 &amp; CAP</div>\n      <ul class=\"clean-list\">\n        <li id=\"co-dep\"><strong>Dependent data inconsistency</strong>: azioni o guasti di un servizio rendono incoerenti i dati gestiti da un altro.</li>\n        <li id=\"co-r2\"><strong>Regola 2 dati</strong>: condivisione quasi sempre in sola lettura, con pochi servizi responsabili degli aggiornamenti.</li>\n        <li id=\"co-cap\"><strong>CAP</strong>: \\(C \\land P\\) offre disponibilità <em>best-effort</em>; in \\(A \\land P\\) compromesso temporale (es. <strong>1h</strong> sì, <strong>1 giorno</strong> no).</li>\n      </ul>\n    </div>\n    <div id=\"b-team\" class=\"box box-idea\">\n      <div class=\"box-label\">Curva di Fowler &amp; fattore team</div>\n      <p id=\"tm-p\">Oltre la soglia di complessità i microservizi attenuano il calo di produttività del monolite, ma <strong>la competenza del team conta più della scelta tra monolite e microservizi</strong>.</p>\n      <div class=\"pill-strip\">\n        <span class=\"pill\">Competenza team &gt; Monolite vs Microservizi</span>\n        <span class=\"pill pill-accent\">Un team scadente produce sistemi scadenti</span>\n      </div>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 3.72,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "Le cinque domande architetturali"
+        },
+        {
+          "at": 3.72,
+          "action": "highlight",
+          "target": "#d-5q",
+          "duration": 12.1,
+          "anchor": "Le cinque domande architetturali"
+        },
+        {
+          "at": 18.26,
+          "action": "highlight",
+          "target": "#d-c1",
+          "duration": 5.54,
+          "anchor": "Tra i consigli di scomposizione"
+        },
+        {
+          "at": 23.92,
+          "action": "highlight",
+          "target": "#d-c4",
+          "duration": 5.4,
+          "anchor": "il quarto limita ogni servizio"
+        },
+        {
+          "at": 29.9,
+          "action": "highlight",
+          "target": "#a-feat",
+          "duration": 8.8,
+          "anchor": "Nell'esempio di autenticazione con"
+        },
+        {
+          "at": 39.77,
+          "action": "highlight",
+          "target": "#a-1",
+          "duration": 3.5,
+          "anchor": "il metodo in tre passi"
+        },
+        {
+          "at": 43.39,
+          "action": "highlight",
+          "target": "#a-2",
+          "duration": 2.48,
+          "anchor": "crea un microservizio per ogni"
+        },
+        {
+          "at": 45.99,
+          "action": "highlight",
+          "target": "#a-3",
+          "duration": 2.66,
+          "anchor": "e riduce al minimo i"
+        },
+        {
+          "at": 48.77,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Sui dati, si ha dependent"
+        },
+        {
+          "at": 48.77,
+          "action": "highlight",
+          "target": "#co-dep",
+          "duration": 8.44,
+          "anchor": "Sui dati, si ha dependent"
+        },
+        {
+          "at": 57.33,
+          "action": "highlight",
+          "target": "#co-r2",
+          "duration": 6.7,
+          "anchor": "La seconda regola impone condivisione"
+        },
+        {
+          "at": 64.17,
+          "action": "highlight",
+          "target": "#co-cap",
+          "duration": 10.96,
+          "anchor": "Nel teorema CAP, la scelta"
+        },
+        {
+          "at": 75.25,
+          "action": "highlight",
+          "target": "#b-team",
+          "duration": 8,
+          "anchor": "Infine, la curva di Fowler"
+        }
+      ],
+      "audio_file": "audio/scene-09.wav",
+      "subtitle_file": "subtitles/scene-09.json",
+      "duration_sec": 81.76
+    },
+    {
+      "id": "scene-10",
+      "section": "7.10 · Riepilogo e autoverifica",
+      "title": "Punti chiave del capitolo e domande d'esame",
+      "tts_text": "Chiudiamo il settimo capitolo ricapitolando i sei punti essenziali da fissare per l'esame. [pause:0.5] Primo: un servizio software è stateless con interfaccia pubblica; un microservizio è piccolo, autonomo, orientato al business e possiede i propri dati. [pause:0.5] Secondo: occorrono basso coupling, alta cohesion e dimensione secondo la rule of twos, cioè due settimane e otto o dieci persone; l'API gateway isola i client e accelera lead time e scalabilità. [pause:0.5] Terzo: la comunicazione può essere sincrona o asincrona tramite code, e diretta per URI oppure indiretta tramite un message broker. [pause:0.5] Quarto: per il teorema CAP, assumendo partizioni di rete, si sceglie tra disponibilità con coerenza eventuale e coerenza forte; Saga e quorum gestiscono transazioni e repliche. [pause:0.5] Quinto: conviene iniziare dall'orchestration, proteggere le chiamate con il circuit breaker e collaudare la resilienza con Chaos Monkey. [pause:0.5] Sesto: DevOps, continuous deployment e rollback automatico governano il rilascio, evitando però i microservizi quando un monolite è ancora gestibile. [pause:0.6] Prima di passare al capitolo otto sugli architectural smell, provate a rispondere ad alta voce alle dodici domande di verifica sulla destra.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">7.10 · Riepilogo &amp; Autoverifica</div>\n  <h2 class=\"slide-title\">Punti chiave e domande di verifica</h2>\n  <div class=\"grid-2\">\n    <div class=\"box box-algo\">\n      <div class=\"box-label\">Punti chiave da fissare</div>\n      <ul class=\"clean-list\">\n        <li id=\"s1\" class=\"cue-hidden\"><strong>Servizio &amp; Microservizio</strong>: stateless, interfaccia pubblica, piccolo, indipendente, propri dati.</li>\n        <li id=\"s2\" class=\"cue-hidden\"><strong>Coupling, Cohesion &amp; Gateway</strong>: <em>rule of twos</em> (2 sett., 8&ndash;10 pers.), API gateway, lead time e scalabilità.</li>\n        <li id=\"s3\" class=\"cue-hidden\"><strong>Comunicazione</strong>: sincrona vs asincrona (code); diretta (URI) vs indiretta (message broker).</li>\n        <li id=\"s4\" class=\"cue-hidden\"><strong>CAP, Saga &amp; Quorum</strong>: con \\(P\\), scelta tra \\(A\\) (best-effort) e \\(C\\); Saga e quorum \\(n/2+1\\).</li>\n        <li id=\"s5\" class=\"cue-hidden\"><strong>Coordinamento &amp; Guasti</strong>: orchestration prima, circuit breaker e Chaos Monkey.</li>\n        <li id=\"s6\" class=\"cue-hidden\"><strong>Distribuzione &amp; Limiti</strong>: DevOps, continuous deployment, rollback; evita microservizi se basta il monolite.</li>\n      </ul>\n    </div>\n    <div id=\"s7\" class=\"box box-theorem cue-hidden\">\n      <div class=\"box-label\">Domande di verifica</div>\n      <ol class=\"verify-list\">\n        <li>Cos'è un servizio software e cosa significa stateless?</li>\n        <li>Proprietà di un microservizio, coupling, cohesion e rule of twos?</li>\n        <li>Motivi per i microservizi e ruolo dell'API gateway?</li>\n        <li>Quali consigli aiutano a scomporre un sistema?</li>\n        <li>Confronto: comunicazione sincrona/asincrona e diretta/indiretta.</li>\n        <li>Teorema CAP, prova di \\(A \\to \\neg C\\) con \\(P\\), e due soluzioni pratiche.</li>\n        <li>Cos'è una saga? Come si coordina e come compensa i fallimenti?</li>\n        <li>Orchestration o choreography: differenze e consiglio pratico.</li>\n        <li>Disponibilità di 2 servizi indipendenti al 99% ciascuno?</li>\n        <li>Come funziona un circuit breaker? Cos'è Chaos Monkey?</li>\n        <li>Passi della continuous deployment pipeline e rollback?</li>\n        <li>Quando non conviene usare i microservizi?</li>\n      </ol>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 5.7,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "Primo: un servizio software"
+        },
+        {
+          "at": 5.7,
+          "action": "highlight",
+          "target": "#s1",
+          "duration": 9.37,
+          "anchor": "Primo: un servizio software"
+        },
+        {
+          "at": 16.74,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Secondo: occorrono basso coupling"
+        },
+        {
+          "at": 16.74,
+          "action": "highlight",
+          "target": "#s2",
+          "duration": 12.42,
+          "anchor": "Secondo: occorrono basso coupling"
+        },
+        {
+          "at": 31.74,
+          "action": "show",
+          "target": "#s3",
+          "anchor": "Terzo: la comunicazione può"
+        },
+        {
+          "at": 31.74,
+          "action": "highlight",
+          "target": "#s3",
+          "duration": 8.71,
+          "anchor": "Terzo: la comunicazione può"
+        },
+        {
+          "at": 40.57,
+          "action": "show",
+          "target": "#s4",
+          "anchor": "Quarto: per il teorema CAP"
+        },
+        {
+          "at": 40.57,
+          "action": "highlight",
+          "target": "#s4",
+          "duration": 11.47,
+          "anchor": "Quarto: per il teorema CAP"
+        },
+        {
+          "at": 53.15,
+          "action": "show",
+          "target": "#s5",
+          "anchor": "Quinto: conviene iniziare"
+        },
+        {
+          "at": 53.15,
+          "action": "highlight",
+          "target": "#s5",
+          "duration": 8.12,
+          "anchor": "Quinto: conviene iniziare"
+        },
+        {
+          "at": 61.93,
+          "action": "show",
+          "target": "#s6",
+          "anchor": "Sesto: DevOps, continuous deployment"
+        },
+        {
+          "at": 61.93,
+          "action": "highlight",
+          "target": "#s6",
+          "duration": 8.6,
+          "anchor": "Sesto: DevOps, continuous deployment"
+        },
+        {
+          "at": 71.95,
+          "action": "show",
+          "target": "#s7",
+          "anchor": "Prima di passare al capitolo otto"
+        },
+        {
+          "at": 71.95,
+          "action": "highlight",
+          "target": "#s7",
+          "duration": 5.73,
+          "anchor": "Prima di passare al capitolo otto"
+        }
+      ],
+      "audio_file": "audio/scene-10.wav",
+      "subtitle_file": "subtitles/scene-10.json",
+      "duration_sec": 79.04
+    }
+  ]
+}

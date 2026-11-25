@@ -1,0 +1,927 @@
+{
+  "duration": 66.946,
+  "segments": [
+    {
+      "start": 1.551,
+      "end": 5.692,
+      "text": "Chiudiamo il capitolo nove riassumendo i sei concetti essenziali da portare all'esame.",
+      "words": [
+        {
+          "text": "Chiudiamo",
+          "start": 1.551,
+          "end": 1.871
+        },
+        {
+          "text": "il",
+          "start": 1.891,
+          "end": 1.951
+        },
+        {
+          "text": "capitolo",
+          "start": 1.951,
+          "end": 2.291
+        },
+        {
+          "text": "nove",
+          "start": 2.351,
+          "end": 2.551
+        },
+        {
+          "text": "riassumendo",
+          "start": 2.771,
+          "end": 3.291
+        },
+        {
+          "text": "i",
+          "start": 3.351,
+          "end": 3.391
+        },
+        {
+          "text": "sei",
+          "start": 3.471,
+          "end": 3.631
+        },
+        {
+          "text": "concetti",
+          "start": 3.671,
+          "end": 4.111
+        },
+        {
+          "text": "essenziali",
+          "start": 4.171,
+          "end": 4.831
+        },
+        {
+          "text": "da",
+          "start": 4.871,
+          "end": 4.931
+        },
+        {
+          "text": "portare",
+          "start": 4.971,
+          "end": 5.251
+        },
+        {
+          "text": "all'esame.",
+          "start": 5.271,
+          "end": 5.692
+        }
+      ]
+    },
+    {
+      "start": 6.512,
+      "end": 10.752,
+      "text": "Primo: un monolite che cresce perde cohesion e loose coupling,",
+      "words": [
+        {
+          "text": "Primo:",
+          "start": 6.512,
+          "end": 6.772
+        },
+        {
+          "text": "un",
+          "start": 7.792,
+          "end": 7.872
+        },
+        {
+          "text": "monolite",
+          "start": 7.892,
+          "end": 8.312
+        },
+        {
+          "text": "che",
+          "start": 8.352,
+          "end": 8.432
+        },
+        {
+          "text": "cresce",
+          "start": 8.512,
+          "end": 8.872
+        },
+        {
+          "text": "perde",
+          "start": 9.072,
+          "end": 9.332
+        },
+        {
+          "text": "cohesion",
+          "start": 9.432,
+          "end": 9.912
+        },
+        {
+          "text": "e",
+          "start": 10.032,
+          "end": 10.072
+        },
+        {
+          "text": "loose",
+          "start": 10.172,
+          "end": 10.352
+        },
+        {
+          "text": "coupling,",
+          "start": 10.372,
+          "end": 10.752
+        }
+      ]
+    },
+    {
+      "start": 11.012,
+      "end": 14.392,
+      "text": "e va scomposto solo quando diventa un problema, ma prima che costi troppo.",
+      "words": [
+        {
+          "text": "e",
+          "start": 11.012,
+          "end": 11.052
+        },
+        {
+          "text": "va",
+          "start": 11.072,
+          "end": 11.132
+        },
+        {
+          "text": "scomposto",
+          "start": 11.172,
+          "end": 11.572
+        },
+        {
+          "text": "solo",
+          "start": 11.652,
+          "end": 11.872
+        },
+        {
+          "text": "quando",
+          "start": 11.892,
+          "end": 12.092
+        },
+        {
+          "text": "diventa",
+          "start": 12.112,
+          "end": 12.372
+        },
+        {
+          "text": "un",
+          "start": 12.412,
+          "end": 12.452
+        },
+        {
+          "text": "problema,",
+          "start": 12.472,
+          "end": 12.852
+        },
+        {
+          "text": "ma",
+          "start": 13.132,
+          "end": 13.192
+        },
+        {
+          "text": "prima",
+          "start": 13.292,
+          "end": 13.572
+        },
+        {
+          "text": "che",
+          "start": 13.692,
+          "end": 13.752
+        },
+        {
+          "text": "costi",
+          "start": 13.812,
+          "end": 14.052
+        },
+        {
+          "text": "troppo.",
+          "start": 14.092,
+          "end": 14.392
+        }
+      ]
+    },
+    {
+      "start": 15.352,
+      "end": 20.913,
+      "text": "Secondo: si individua un seam con bounded context e package come in Structure cento uno,",
+      "words": [
+        {
+          "text": "Secondo:",
+          "start": 15.352,
+          "end": 15.752
+        },
+        {
+          "text": "si",
+          "start": 16.372,
+          "end": 16.432
+        },
+        {
+          "text": "individua",
+          "start": 16.492,
+          "end": 16.892
+        },
+        {
+          "text": "un",
+          "start": 16.972,
+          "end": 17.052
+        },
+        {
+          "text": "seam",
+          "start": 17.172,
+          "end": 17.432
+        },
+        {
+          "text": "con",
+          "start": 17.592,
+          "end": 17.752
+        },
+        {
+          "text": "bounded",
+          "start": 17.852,
+          "end": 18.192
+        },
+        {
+          "text": "context",
+          "start": 18.272,
+          "end": 18.772
+        },
+        {
+          "text": "e",
+          "start": 19.032,
+          "end": 19.072
+        },
+        {
+          "text": "package",
+          "start": 19.213,
+          "end": 19.613
+        },
+        {
+          "text": "come",
+          "start": 19.673,
+          "end": 19.833
+        },
+        {
+          "text": "in",
+          "start": 19.873,
+          "end": 19.933
+        },
+        {
+          "text": "Structure",
+          "start": 19.993,
+          "end": 20.413
+        },
+        {
+          "text": "cento",
+          "start": 20.433,
+          "end": 20.693
+        },
+        {
+          "text": "uno,",
+          "start": 20.773,
+          "end": 20.913
+        }
+      ]
+    },
+    {
+      "start": 21.213,
+      "end": 24.533,
+      "text": "iniziando dal massimo beneficio tra ritmo di cambio, struttura team,",
+      "words": [
+        {
+          "text": "iniziando",
+          "start": 21.213,
+          "end": 21.613
+        },
+        {
+          "text": "dal",
+          "start": 21.673,
+          "end": 21.793
+        },
+        {
+          "text": "massimo",
+          "start": 21.853,
+          "end": 22.233
+        },
+        {
+          "text": "beneficio",
+          "start": 22.273,
+          "end": 22.713
+        },
+        {
+          "text": "tra",
+          "start": 22.753,
+          "end": 22.853
+        },
+        {
+          "text": "ritmo",
+          "start": 22.973,
+          "end": 23.233
+        },
+        {
+          "text": "di",
+          "start": 23.273,
+          "end": 23.333
+        },
+        {
+          "text": "cambio,",
+          "start": 23.373,
+          "end": 23.713
+        },
+        {
+          "text": "struttura",
+          "start": 23.913,
+          "end": 24.273
+        },
+        {
+          "text": "team,",
+          "start": 24.333,
+          "end": 24.533
+        }
+      ]
+    },
+    {
+      "start": 24.873,
+      "end": 27.273,
+      "text": "sicurezza, tecnologia e dipendenze minori.",
+      "words": [
+        {
+          "text": "sicurezza,",
+          "start": 24.873,
+          "end": 25.453
+        },
+        {
+          "text": "tecnologia",
+          "start": 25.633,
+          "end": 26.193
+        },
+        {
+          "text": "e",
+          "start": 26.413,
+          "end": 26.453
+        },
+        {
+          "text": "dipendenze",
+          "start": 26.473,
+          "end": 26.933
+        },
+        {
+          "text": "minori.",
+          "start": 26.973,
+          "end": 27.273
+        }
+      ]
+    },
+    {
+      "start": 27.993,
+      "end": 31.493,
+      "text": "Terzo: il database si analizza con Hibernate e SchemaSpy,",
+      "words": [
+        {
+          "text": "Terzo:",
+          "start": 27.993,
+          "end": 28.353
+        },
+        {
+          "text": "il",
+          "start": 28.853,
+          "end": 28.933
+        },
+        {
+          "text": "database",
+          "start": 28.953,
+          "end": 29.353
+        },
+        {
+          "text": "si",
+          "start": 29.393,
+          "end": 29.453
+        },
+        {
+          "text": "analizza",
+          "start": 29.493,
+          "end": 29.833
+        },
+        {
+          "text": "con",
+          "start": 29.873,
+          "end": 29.993
+        },
+        {
+          "text": "Hibernate",
+          "start": 30.153,
+          "end": 30.713
+        },
+        {
+          "text": "e",
+          "start": 30.793,
+          "end": 30.833
+        },
+        {
+          "text": "SchemaSpy,",
+          "start": 30.893,
+          "end": 31.493
+        }
+      ]
+    },
+    {
+      "start": 31.813,
+      "end": 34.474,
+      "text": "sostituendo le foreign key tra contesti con chiamate API.",
+      "words": [
+        {
+          "text": "sostituendo",
+          "start": 31.813,
+          "end": 32.273
+        },
+        {
+          "text": "le",
+          "start": 32.313,
+          "end": 32.373
+        },
+        {
+          "text": "foreign",
+          "start": 32.413,
+          "end": 32.713
+        },
+        {
+          "text": "key",
+          "start": 32.753,
+          "end": 32.854
+        },
+        {
+          "text": "tra",
+          "start": 32.914,
+          "end": 33.014
+        },
+        {
+          "text": "contesti",
+          "start": 33.054,
+          "end": 33.514
+        },
+        {
+          "text": "con",
+          "start": 33.574,
+          "end": 33.694
+        },
+        {
+          "text": "chiamate",
+          "start": 33.734,
+          "end": 34.014
+        },
+        {
+          "text": "API.",
+          "start": 34.054,
+          "end": 34.474
+        }
+      ]
+    },
+    {
+      "start": 35.354,
+      "end": 41.574,
+      "text": "Quarto: i dati statici diventano configurazione, i dati modificabili condivisi diventano un servizio dedicato,",
+      "words": [
+        {
+          "text": "Quarto:",
+          "start": 35.354,
+          "end": 35.794
+        },
+        {
+          "text": "i",
+          "start": 36.274,
+          "end": 36.314
+        },
+        {
+          "text": "dati",
+          "start": 36.334,
+          "end": 36.494
+        },
+        {
+          "text": "statici",
+          "start": 36.554,
+          "end": 36.934
+        },
+        {
+          "text": "diventano",
+          "start": 37.134,
+          "end": 37.534
+        },
+        {
+          "text": "configurazione,",
+          "start": 37.574,
+          "end": 38.394
+        },
+        {
+          "text": "i",
+          "start": 38.834,
+          "end": 38.874
+        },
+        {
+          "text": "dati",
+          "start": 38.894,
+          "end": 39.074
+        },
+        {
+          "text": "modificabili",
+          "start": 39.154,
+          "end": 39.714
+        },
+        {
+          "text": "condivisi",
+          "start": 39.754,
+          "end": 40.194
+        },
+        {
+          "text": "diventano",
+          "start": 40.234,
+          "end": 40.614
+        },
+        {
+          "text": "un",
+          "start": 40.634,
+          "end": 40.674
+        },
+        {
+          "text": "servizio",
+          "start": 40.714,
+          "end": 41.074
+        },
+        {
+          "text": "dedicato,",
+          "start": 41.094,
+          "end": 41.574
+        }
+      ]
+    },
+    {
+      "start": 41.914,
+      "end": 45.414,
+      "text": "le tabelle con due concetti si dividono, e si separano prima gli schemi.",
+      "words": [
+        {
+          "text": "le",
+          "start": 41.914,
+          "end": 41.974
+        },
+        {
+          "text": "tabelle",
+          "start": 42.034,
+          "end": 42.354
+        },
+        {
+          "text": "con",
+          "start": 42.394,
+          "end": 42.514
+        },
+        {
+          "text": "due",
+          "start": 42.574,
+          "end": 42.694
+        },
+        {
+          "text": "concetti",
+          "start": 42.734,
+          "end": 43.174
+        },
+        {
+          "text": "si",
+          "start": 43.214,
+          "end": 43.294
+        },
+        {
+          "text": "dividono,",
+          "start": 43.334,
+          "end": 43.754
+        },
+        {
+          "text": "e",
+          "start": 44.034,
+          "end": 44.074
+        },
+        {
+          "text": "si",
+          "start": 44.114,
+          "end": 44.174
+        },
+        {
+          "text": "separano",
+          "start": 44.234,
+          "end": 44.614
+        },
+        {
+          "text": "prima",
+          "start": 44.674,
+          "end": 44.934
+        },
+        {
+          "text": "gli",
+          "start": 44.974,
+          "end": 45.094
+        },
+        {
+          "text": "schemi.",
+          "start": 45.134,
+          "end": 45.414
+        }
+      ]
+    },
+    {
+      "start": 45.834,
+      "end": 50.115,
+      "text": "Quinto: le transazioni multi-schema si gestiscono con Saga compensative,",
+      "words": [
+        {
+          "text": "Quinto:",
+          "start": 45.834,
+          "end": 46.194
+        },
+        {
+          "text": "le",
+          "start": 46.555,
+          "end": 46.615
+        },
+        {
+          "text": "transazioni",
+          "start": 46.655,
+          "end": 47.255
+        },
+        {
+          "text": "multi-schema",
+          "start": 47.315,
+          "end": 47.995
+        },
+        {
+          "text": "si",
+          "start": 48.075,
+          "end": 48.135
+        },
+        {
+          "text": "gestiscono",
+          "start": 48.195,
+          "end": 48.715
+        },
+        {
+          "text": "con",
+          "start": 48.755,
+          "end": 48.895
+        },
+        {
+          "text": "Saga",
+          "start": 48.995,
+          "end": 49.275
+        },
+        {
+          "text": "compensative,",
+          "start": 49.335,
+          "end": 50.115
+        }
+      ]
+    },
+    {
+      "start": 50.375,
+      "end": 54.755,
+      "text": "Two-Phase Commit o, preferibilmente, riprovando più tardi con eventual consistency.",
+      "words": [
+        {
+          "text": "Two-Phase",
+          "start": 50.375,
+          "end": 50.735
+        },
+        {
+          "text": "Commit",
+          "start": 50.755,
+          "end": 51.075
+        },
+        {
+          "text": "o,",
+          "start": 51.275,
+          "end": 51.315
+        },
+        {
+          "text": "preferibilmente,",
+          "start": 51.395,
+          "end": 52.155
+        },
+        {
+          "text": "riprovando",
+          "start": 52.275,
+          "end": 52.755
+        },
+        {
+          "text": "più",
+          "start": 52.795,
+          "end": 52.895
+        },
+        {
+          "text": "tardi",
+          "start": 52.955,
+          "end": 53.295
+        },
+        {
+          "text": "con",
+          "start": 53.355,
+          "end": 53.495
+        },
+        {
+          "text": "eventual",
+          "start": 53.635,
+          "end": 54.075
+        },
+        {
+          "text": "consistency.",
+          "start": 54.115,
+          "end": 54.755
+        }
+      ]
+    },
+    {
+      "start": 55.715,
+      "end": 61.116,
+      "text": "Sesto: il reporting usa chiamate API, data pump gestiti dal team o event data pump",
+      "words": [
+        {
+          "text": "Sesto:",
+          "start": 55.715,
+          "end": 55.995
+        },
+        {
+          "text": "il",
+          "start": 56.315,
+          "end": 56.395
+        },
+        {
+          "text": "reporting",
+          "start": 56.455,
+          "end": 56.915
+        },
+        {
+          "text": "usa",
+          "start": 56.955,
+          "end": 57.095
+        },
+        {
+          "text": "chiamate",
+          "start": 57.155,
+          "end": 57.455
+        },
+        {
+          "text": "API,",
+          "start": 57.515,
+          "end": 57.955
+        },
+        {
+          "text": "data",
+          "start": 58.295,
+          "end": 58.475
+        },
+        {
+          "text": "pump",
+          "start": 58.515,
+          "end": 58.715
+        },
+        {
+          "text": "gestiti",
+          "start": 58.835,
+          "end": 59.215
+        },
+        {
+          "text": "dal",
+          "start": 59.255,
+          "end": 59.375
+        },
+        {
+          "text": "team",
+          "start": 59.455,
+          "end": 59.675
+        },
+        {
+          "text": "o",
+          "start": 60.055,
+          "end": 60.095
+        },
+        {
+          "text": "event",
+          "start": 60.256,
+          "end": 60.576
+        },
+        {
+          "text": "data",
+          "start": 60.696,
+          "end": 60.876
+        },
+        {
+          "text": "pump",
+          "start": 60.916,
+          "end": 61.116
+        }
+      ]
+    },
+    {
+      "start": 61.236,
+      "end": 61.596,
+      "text": "su coda.",
+      "words": [
+        {
+          "text": "su",
+          "start": 61.236,
+          "end": 61.296
+        },
+        {
+          "text": "coda.",
+          "start": 61.356,
+          "end": 61.596
+        }
+      ]
+    },
+    {
+      "start": 62.256,
+      "end": 66.07600000000001,
+      "text": "Mettetevi ora alla prova rispondendo alle domande di verifica sulla destra prima di passare a",
+      "words": [
+        {
+          "text": "Mettetevi",
+          "start": 62.256,
+          "end": 62.636
+        },
+        {
+          "text": "ora",
+          "start": 62.696,
+          "end": 62.776
+        },
+        {
+          "text": "alla",
+          "start": 62.816,
+          "end": 62.936
+        },
+        {
+          "text": "prova",
+          "start": 62.956,
+          "end": 63.176
+        },
+        {
+          "text": "rispondendo",
+          "start": 63.236,
+          "end": 63.676
+        },
+        {
+          "text": "alle",
+          "start": 63.716,
+          "end": 63.856
+        },
+        {
+          "text": "domande",
+          "start": 63.896,
+          "end": 64.176
+        },
+        {
+          "text": "di",
+          "start": 64.216,
+          "end": 64.276
+        },
+        {
+          "text": "verifica",
+          "start": 64.296,
+          "end": 64.656
+        },
+        {
+          "text": "sulla",
+          "start": 64.716,
+          "end": 64.876
+        },
+        {
+          "text": "destra",
+          "start": 64.896,
+          "end": 65.196
+        },
+        {
+          "text": "prima",
+          "start": 65.316,
+          "end": 65.536
+        },
+        {
+          "text": "di",
+          "start": 65.556,
+          "end": 65.616
+        },
+        {
+          "text": "passare",
+          "start": 65.636,
+          "end": 65.996
+        },
+        {
+          "text": "a",
+          "start": 66.036,
+          "end": 66.07600000000001
+        }
+      ]
+    },
+    {
+      "start": 66.116,
+      "end": 66.696,
+      "text": "Kubernetes.",
+      "words": [
+        {
+          "text": "Kubernetes.",
+          "start": 66.116,
+          "end": 66.696
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1125 @@
+{
+  "duration": 83.36,
+  "segments": [
+    {
+      "start": 0.02,
+      "end": 4.881,
+      "text": "Come si combinano nella pratica cifratura asimmetrica e simmetrica sul web?",
+      "words": [
+        {
+          "text": "Come",
+          "start": 0.02,
+          "end": 0.18
+        },
+        {
+          "text": "si",
+          "start": 0.26,
+          "end": 0.34
+        },
+        {
+          "text": "combinano",
+          "start": 0.4,
+          "end": 1.02
+        },
+        {
+          "text": "nella",
+          "start": 1.14,
+          "end": 1.34
+        },
+        {
+          "text": "pratica",
+          "start": 1.38,
+          "end": 1.8
+        },
+        {
+          "text": "cifratura",
+          "start": 1.98,
+          "end": 2.54
+        },
+        {
+          "text": "asimmetrica",
+          "start": 2.62,
+          "end": 3.42
+        },
+        {
+          "text": "e",
+          "start": 3.62,
+          "end": 3.66
+        },
+        {
+          "text": "simmetrica",
+          "start": 3.74,
+          "end": 4.361
+        },
+        {
+          "text": "sul",
+          "start": 4.441,
+          "end": 4.601
+        },
+        {
+          "text": "web?",
+          "start": 4.661,
+          "end": 4.881
+        }
+      ]
+    },
+    {
+      "start": 5.581,
+      "end": 11.501,
+      "text": "Con HTTPS, cioè HTTP protetto da TLS, che ha sostituito SSL.",
+      "words": [
+        {
+          "text": "Con",
+          "start": 5.581,
+          "end": 5.741
+        },
+        {
+          "text": "HTTPS,",
+          "start": 5.901,
+          "end": 6.601
+        },
+        {
+          "text": "cioè",
+          "start": 7.121,
+          "end": 7.301
+        },
+        {
+          "text": "HTTP",
+          "start": 7.741,
+          "end": 8.261
+        },
+        {
+          "text": "protetto",
+          "start": 8.541,
+          "end": 9.041
+        },
+        {
+          "text": "da",
+          "start": 9.081,
+          "end": 9.141
+        },
+        {
+          "text": "TLS,",
+          "start": 9.221,
+          "end": 9.881
+        },
+        {
+          "text": "che",
+          "start": 10.041,
+          "end": 10.121
+        },
+        {
+          "text": "ha",
+          "start": 10.141,
+          "end": 10.201
+        },
+        {
+          "text": "sostituito",
+          "start": 10.261,
+          "end": 10.801
+        },
+        {
+          "text": "SSL.",
+          "start": 11.021,
+          "end": 11.501
+        }
+      ]
+    },
+    {
+      "start": 12.301,
+      "end": 19.282,
+      "text": "Durante l'handshake TLS client e server scambiano prima messaggi Hello per scegliere l'algoritmo.",
+      "words": [
+        {
+          "text": "Durante",
+          "start": 12.301,
+          "end": 12.622
+        },
+        {
+          "text": "l'handshake",
+          "start": 12.682,
+          "end": 13.462
+        },
+        {
+          "text": "TLS",
+          "start": 13.582,
+          "end": 14.242
+        },
+        {
+          "text": "client",
+          "start": 14.802,
+          "end": 15.262
+        },
+        {
+          "text": "e",
+          "start": 15.322,
+          "end": 15.362
+        },
+        {
+          "text": "server",
+          "start": 15.482,
+          "end": 15.882
+        },
+        {
+          "text": "scambiano",
+          "start": 16.002,
+          "end": 16.402
+        },
+        {
+          "text": "prima",
+          "start": 16.502,
+          "end": 16.742
+        },
+        {
+          "text": "messaggi",
+          "start": 16.802,
+          "end": 17.262
+        },
+        {
+          "text": "Hello",
+          "start": 17.402,
+          "end": 17.682
+        },
+        {
+          "text": "per",
+          "start": 18.142,
+          "end": 18.262
+        },
+        {
+          "text": "scegliere",
+          "start": 18.302,
+          "end": 18.662
+        },
+        {
+          "text": "l'algoritmo.",
+          "start": 18.702,
+          "end": 19.282
+        }
+      ]
+    },
+    {
+      "start": 19.882,
+      "end": 25.283,
+      "text": "Poi il server dimostra la propria identità inviando un certificato digitale emesso da una Certificate",
+      "words": [
+        {
+          "text": "Poi",
+          "start": 19.882,
+          "end": 20.002
+        },
+        {
+          "text": "il",
+          "start": 20.042,
+          "end": 20.102
+        },
+        {
+          "text": "server",
+          "start": 20.182,
+          "end": 20.562
+        },
+        {
+          "text": "dimostra",
+          "start": 20.622,
+          "end": 20.983
+        },
+        {
+          "text": "la",
+          "start": 21.043,
+          "end": 21.103
+        },
+        {
+          "text": "propria",
+          "start": 21.123,
+          "end": 21.363
+        },
+        {
+          "text": "identità",
+          "start": 21.403,
+          "end": 21.843
+        },
+        {
+          "text": "inviando",
+          "start": 21.963,
+          "end": 22.383
+        },
+        {
+          "text": "un",
+          "start": 22.443,
+          "end": 22.503
+        },
+        {
+          "text": "certificato",
+          "start": 22.543,
+          "end": 23.103
+        },
+        {
+          "text": "digitale",
+          "start": 23.183,
+          "end": 23.763
+        },
+        {
+          "text": "emesso",
+          "start": 24.043,
+          "end": 24.363
+        },
+        {
+          "text": "da",
+          "start": 24.403,
+          "end": 24.463
+        },
+        {
+          "text": "una",
+          "start": 24.523,
+          "end": 24.643
+        },
+        {
+          "text": "Certificate",
+          "start": 24.703,
+          "end": 25.283
+        }
+      ]
+    },
+    {
+      "start": 25.303,
+      "end": 30.324,
+      "text": "Authority fidata insieme a un numero casuale R S cifrato con la propria chiave privata.",
+      "words": [
+        {
+          "text": "Authority",
+          "start": 25.303,
+          "end": 25.723
+        },
+        {
+          "text": "fidata",
+          "start": 25.763,
+          "end": 26.163
+        },
+        {
+          "text": "insieme",
+          "start": 26.603,
+          "end": 26.883
+        },
+        {
+          "text": "a",
+          "start": 26.903,
+          "end": 26.943
+        },
+        {
+          "text": "un",
+          "start": 26.943,
+          "end": 26.983
+        },
+        {
+          "text": "numero",
+          "start": 27.023,
+          "end": 27.243
+        },
+        {
+          "text": "casuale",
+          "start": 27.283,
+          "end": 27.683
+        },
+        {
+          "text": "R",
+          "start": 28.043,
+          "end": 28.083
+        },
+        {
+          "text": "S",
+          "start": 28.383,
+          "end": 28.423
+        },
+        {
+          "text": "cifrato",
+          "start": 28.783,
+          "end": 29.143
+        },
+        {
+          "text": "con",
+          "start": 29.183,
+          "end": 29.264
+        },
+        {
+          "text": "la",
+          "start": 29.304,
+          "end": 29.364
+        },
+        {
+          "text": "propria",
+          "start": 29.364,
+          "end": 29.644
+        },
+        {
+          "text": "chiave",
+          "start": 29.684,
+          "end": 29.904
+        },
+        {
+          "text": "privata.",
+          "start": 29.944,
+          "end": 30.324
+        }
+      ]
+    },
+    {
+      "start": 31.044,
+      "end": 34.824,
+      "text": "Il client verifica emittente, validità e firma del certificato,",
+      "words": [
+        {
+          "text": "Il",
+          "start": 31.044,
+          "end": 31.124
+        },
+        {
+          "text": "client",
+          "start": 31.164,
+          "end": 31.564
+        },
+        {
+          "text": "verifica",
+          "start": 31.664,
+          "end": 32.044
+        },
+        {
+          "text": "emittente,",
+          "start": 32.124,
+          "end": 32.744
+        },
+        {
+          "text": "validità",
+          "start": 32.944,
+          "end": 33.364
+        },
+        {
+          "text": "e",
+          "start": 33.624,
+          "end": 33.664
+        },
+        {
+          "text": "firma",
+          "start": 33.724,
+          "end": 34.004
+        },
+        {
+          "text": "del",
+          "start": 34.044,
+          "end": 34.164
+        },
+        {
+          "text": "certificato,",
+          "start": 34.204,
+          "end": 34.824
+        }
+      ]
+    },
+    {
+      "start": 35.384,
+      "end": 38.105,
+      "text": "decifra R S con la chiave pubblica del server,",
+      "words": [
+        {
+          "text": "decifra",
+          "start": 35.384,
+          "end": 35.824
+        },
+        {
+          "text": "R",
+          "start": 36.184,
+          "end": 36.224
+        },
+        {
+          "text": "S",
+          "start": 36.504,
+          "end": 36.544
+        },
+        {
+          "text": "con",
+          "start": 36.664,
+          "end": 36.744
+        },
+        {
+          "text": "la",
+          "start": 36.784,
+          "end": 36.844
+        },
+        {
+          "text": "chiave",
+          "start": 36.864,
+          "end": 37.064
+        },
+        {
+          "text": "pubblica",
+          "start": 37.124,
+          "end": 37.464
+        },
+        {
+          "text": "del",
+          "start": 37.524,
+          "end": 37.645
+        },
+        {
+          "text": "server,",
+          "start": 37.705,
+          "end": 38.105
+        }
+      ]
+    },
+    {
+      "start": 38.585,
+      "end": 40.925,
+      "text": "genera un secondo numero casuale R C",
+      "words": [
+        {
+          "text": "genera",
+          "start": 38.585,
+          "end": 38.905
+        },
+        {
+          "text": "un",
+          "start": 38.985,
+          "end": 39.065
+        },
+        {
+          "text": "secondo",
+          "start": 39.165,
+          "end": 39.625
+        },
+        {
+          "text": "numero",
+          "start": 39.685,
+          "end": 39.905
+        },
+        {
+          "text": "casuale",
+          "start": 39.945,
+          "end": 40.385
+        },
+        {
+          "text": "R",
+          "start": 40.685,
+          "end": 40.725
+        },
+        {
+          "text": "C",
+          "start": 40.885,
+          "end": 40.925
+        }
+      ]
+    },
+    {
+      "start": 41.485,
+      "end": 43.605,
+      "text": "e lo invia cifrato con la stessa chiave pubblica.",
+      "words": [
+        {
+          "text": "e",
+          "start": 41.485,
+          "end": 41.525
+        },
+        {
+          "text": "lo",
+          "start": 41.565,
+          "end": 41.625
+        },
+        {
+          "text": "invia",
+          "start": 41.645,
+          "end": 41.865
+        },
+        {
+          "text": "cifrato",
+          "start": 41.945,
+          "end": 42.445
+        },
+        {
+          "text": "con",
+          "start": 42.485,
+          "end": 42.565
+        },
+        {
+          "text": "la",
+          "start": 42.605,
+          "end": 42.665
+        },
+        {
+          "text": "stessa",
+          "start": 42.685,
+          "end": 42.945
+        },
+        {
+          "text": "chiave",
+          "start": 42.985,
+          "end": 43.185
+        },
+        {
+          "text": "pubblica.",
+          "start": 43.245,
+          "end": 43.605
+        }
+      ]
+    },
+    {
+      "start": 44.625,
+      "end": 47.246,
+      "text": "Il server decifra R C con la propria chiave privata,",
+      "words": [
+        {
+          "text": "Il",
+          "start": 44.625,
+          "end": 44.725
+        },
+        {
+          "text": "server",
+          "start": 44.805,
+          "end": 45.145
+        },
+        {
+          "text": "decifra",
+          "start": 45.205,
+          "end": 45.585
+        },
+        {
+          "text": "R",
+          "start": 45.765,
+          "end": 45.805
+        },
+        {
+          "text": "C",
+          "start": 45.905,
+          "end": 45.945
+        },
+        {
+          "text": "con",
+          "start": 46.106,
+          "end": 46.206
+        },
+        {
+          "text": "la",
+          "start": 46.246,
+          "end": 46.286
+        },
+        {
+          "text": "propria",
+          "start": 46.306,
+          "end": 46.566
+        },
+        {
+          "text": "chiave",
+          "start": 46.606,
+          "end": 46.806
+        },
+        {
+          "text": "privata,",
+          "start": 46.846,
+          "end": 47.246
+        }
+      ]
+    },
+    {
+      "start": 47.806,
+      "end": 52.666,
+      "text": "ed entrambi calcolano da R S e R C la stessa chiave simmetrica per cifrare",
+      "words": [
+        {
+          "text": "ed",
+          "start": 47.806,
+          "end": 47.886
+        },
+        {
+          "text": "entrambi",
+          "start": 47.946,
+          "end": 48.346
+        },
+        {
+          "text": "calcolano",
+          "start": 48.426,
+          "end": 48.926
+        },
+        {
+          "text": "da",
+          "start": 49.006,
+          "end": 49.086
+        },
+        {
+          "text": "R",
+          "start": 49.386,
+          "end": 49.426
+        },
+        {
+          "text": "S",
+          "start": 49.746,
+          "end": 49.786
+        },
+        {
+          "text": "e",
+          "start": 49.826,
+          "end": 49.866
+        },
+        {
+          "text": "R",
+          "start": 50.106,
+          "end": 50.146
+        },
+        {
+          "text": "C",
+          "start": 50.266,
+          "end": 50.306
+        },
+        {
+          "text": "la",
+          "start": 50.726,
+          "end": 50.786
+        },
+        {
+          "text": "stessa",
+          "start": 50.866,
+          "end": 51.166
+        },
+        {
+          "text": "chiave",
+          "start": 51.226,
+          "end": 51.466
+        },
+        {
+          "text": "simmetrica",
+          "start": 51.526,
+          "end": 52.106
+        },
+        {
+          "text": "per",
+          "start": 52.166,
+          "end": 52.286
+        },
+        {
+          "text": "cifrare",
+          "start": 52.326,
+          "end": 52.666
+        }
+      ]
+    },
+    {
+      "start": 52.766,
+      "end": 54.066,
+      "text": "rapidamente l'intera sessione.",
+      "words": [
+        {
+          "text": "rapidamente",
+          "start": 52.766,
+          "end": 53.286
+        },
+        {
+          "text": "l'intera",
+          "start": 53.326,
+          "end": 53.586
+        },
+        {
+          "text": "sessione.",
+          "start": 53.646,
+          "end": 54.066
+        }
+      ]
+    },
+    {
+      "start": 55.027,
+      "end": 57.807,
+      "text": "I dati vanno sempre cifrati in transito e a riposo,",
+      "words": [
+        {
+          "text": "I",
+          "start": 55.027,
+          "end": 55.067
+        },
+        {
+          "text": "dati",
+          "start": 55.107,
+          "end": 55.327
+        },
+        {
+          "text": "vanno",
+          "start": 55.367,
+          "end": 55.587
+        },
+        {
+          "text": "sempre",
+          "start": 55.667,
+          "end": 55.947
+        },
+        {
+          "text": "cifrati",
+          "start": 55.987,
+          "end": 56.327
+        },
+        {
+          "text": "in",
+          "start": 56.387,
+          "end": 56.447
+        },
+        {
+          "text": "transito",
+          "start": 56.507,
+          "end": 57.027
+        },
+        {
+          "text": "e",
+          "start": 57.187,
+          "end": 57.227
+        },
+        {
+          "text": "a",
+          "start": 57.287,
+          "end": 57.327
+        },
+        {
+          "text": "riposo,",
+          "start": 57.407,
+          "end": 57.807
+        }
+      ]
+    },
+    {
+      "start": 58.247,
+      "end": 60.687,
+      "text": "mentre cifrarli in uso rallenta le prestazioni.",
+      "words": [
+        {
+          "text": "mentre",
+          "start": 58.247,
+          "end": 58.527
+        },
+        {
+          "text": "cifrarli",
+          "start": 58.587,
+          "end": 59.007
+        },
+        {
+          "text": "in",
+          "start": 59.067,
+          "end": 59.147
+        },
+        {
+          "text": "uso",
+          "start": 59.207,
+          "end": 59.427
+        },
+        {
+          "text": "rallenta",
+          "start": 59.567,
+          "end": 59.967
+        },
+        {
+          "text": "le",
+          "start": 60.007,
+          "end": 60.067
+        },
+        {
+          "text": "prestazioni.",
+          "start": 60.087,
+          "end": 60.687
+        }
+      ]
+    },
+    {
+      "start": 61.447,
+      "end": 65.328,
+      "text": "La cifratura può operare a quattro livelli: application, database,",
+      "words": [
+        {
+          "text": "La",
+          "start": 61.447,
+          "end": 61.507
+        },
+        {
+          "text": "cifratura",
+          "start": 61.547,
+          "end": 62.007
+        },
+        {
+          "text": "può",
+          "start": 62.067,
+          "end": 62.167
+        },
+        {
+          "text": "operare",
+          "start": 62.207,
+          "end": 62.527
+        },
+        {
+          "text": "a",
+          "start": 62.607,
+          "end": 62.647
+        },
+        {
+          "text": "quattro",
+          "start": 62.708,
+          "end": 63.008
+        },
+        {
+          "text": "livelli:",
+          "start": 63.048,
+          "end": 63.408
+        },
+        {
+          "text": "application,",
+          "start": 63.788,
+          "end": 64.408
+        },
+        {
+          "text": "database,",
+          "start": 64.748,
+          "end": 65.328
+        }
+      ]
+    },
+    {
+      "start": 65.628,
+      "end": 67.988,
+      "text": "file di sistema operativo e media fisici.",
+      "words": [
+        {
+          "text": "file",
+          "start": 65.628,
+          "end": 65.928
+        },
+        {
+          "text": "di",
+          "start": 65.928,
+          "end": 65.988
+        },
+        {
+          "text": "sistema",
+          "start": 66.048,
+          "end": 66.348
+        },
+        {
+          "text": "operativo",
+          "start": 66.388,
+          "end": 66.848
+        },
+        {
+          "text": "e",
+          "start": 67.208,
+          "end": 67.248
+        },
+        {
+          "text": "media",
+          "start": 67.348,
+          "end": 67.568
+        },
+        {
+          "text": "fisici.",
+          "start": 67.608,
+          "end": 67.988
+        }
+      ]
+    },
+    {
+      "start": 68.768,
+      "end": 72.129,
+      "text": "Infine ricordate la regola d'oro: se le chiavi vanno perse,",
+      "words": [
+        {
+          "text": "Infine",
+          "start": 68.768,
+          "end": 69.068
+        },
+        {
+          "text": "ricordate",
+          "start": 69.268,
+          "end": 69.848
+        },
+        {
+          "text": "la",
+          "start": 69.888,
+          "end": 69.948
+        },
+        {
+          "text": "regola",
+          "start": 70.008,
+          "end": 70.228
+        },
+        {
+          "text": "d'oro:",
+          "start": 70.288,
+          "end": 70.548
+        },
+        {
+          "text": "se",
+          "start": 70.908,
+          "end": 70.988
+        },
+        {
+          "text": "le",
+          "start": 71.049,
+          "end": 71.109
+        },
+        {
+          "text": "chiavi",
+          "start": 71.169,
+          "end": 71.449
+        },
+        {
+          "text": "vanno",
+          "start": 71.509,
+          "end": 71.689
+        },
+        {
+          "text": "perse,",
+          "start": 71.729,
+          "end": 72.129
+        }
+      ]
+    },
+    {
+      "start": 72.349,
+      "end": 74.429,
+      "text": "i dati cifrati sono persi per sempre.",
+      "words": [
+        {
+          "text": "i",
+          "start": 72.349,
+          "end": 72.38900000000001
+        },
+        {
+          "text": "dati",
+          "start": 72.429,
+          "end": 72.649
+        },
+        {
+          "text": "cifrati",
+          "start": 72.689,
+          "end": 73.069
+        },
+        {
+          "text": "sono",
+          "start": 73.129,
+          "end": 73.289
+        },
+        {
+          "text": "persi",
+          "start": 73.329,
+          "end": 73.609
+        },
+        {
+          "text": "per",
+          "start": 73.769,
+          "end": 73.929
+        },
+        {
+          "text": "sempre.",
+          "start": 74.029,
+          "end": 74.429
+        }
+      ]
+    },
+    {
+      "start": 74.929,
+      "end": 80.65,
+      "text": "Per gestire rotazione periodica, versioni storiche e accesso autorizzato tramite API si usa un Key",
+      "words": [
+        {
+          "text": "Per",
+          "start": 74.929,
+          "end": 75.029
+        },
+        {
+          "text": "gestire",
+          "start": 75.049,
+          "end": 75.389
+        },
+        {
+          "text": "rotazione",
+          "start": 75.489,
+          "end": 75.949
+        },
+        {
+          "text": "periodica,",
+          "start": 76.009,
+          "end": 76.569
+        },
+        {
+          "text": "versioni",
+          "start": 76.709,
+          "end": 77.049
+        },
+        {
+          "text": "storiche",
+          "start": 77.109,
+          "end": 77.569
+        },
+        {
+          "text": "e",
+          "start": 77.649,
+          "end": 77.68900000000001
+        },
+        {
+          "text": "accesso",
+          "start": 77.749,
+          "end": 78.109
+        },
+        {
+          "text": "autorizzato",
+          "start": 78.149,
+          "end": 78.729
+        },
+        {
+          "text": "tramite",
+          "start": 78.769,
+          "end": 79.109
+        },
+        {
+          "text": "API",
+          "start": 79.169,
+          "end": 79.57
+        },
+        {
+          "text": "si",
+          "start": 79.99,
+          "end": 80.05
+        },
+        {
+          "text": "usa",
+          "start": 80.11,
+          "end": 80.23
+        },
+        {
+          "text": "un",
+          "start": 80.29,
+          "end": 80.37
+        },
+        {
+          "text": "Key",
+          "start": 80.45,
+          "end": 80.65
+        }
+      ]
+    },
+    {
+      "start": 80.71,
+      "end": 83.11,
+      "text": "Management System, o KMS.",
+      "words": [
+        {
+          "text": "Management",
+          "start": 80.71,
+          "end": 81.17
+        },
+        {
+          "text": "System,",
+          "start": 81.25,
+          "end": 81.59
+        },
+        {
+          "text": "o",
+          "start": 81.93,
+          "end": 81.97000000000001
+        },
+        {
+          "text": "KMS.",
+          "start": 82.23,
+          "end": 83.11
+        }
+      ]
+    }
+  ]
+}

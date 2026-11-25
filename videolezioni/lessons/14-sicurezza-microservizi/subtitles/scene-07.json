@@ -1,0 +1,976 @@
+{
+  "duration": 80.475,
+  "segments": [
+    {
+      "start": 0.02,
+      "end": 5.14,
+      "text": "Chiudiamo la tassonomia con gli ultimi due smell su autenticazione e autorizzazione,",
+      "words": [
+        {
+          "text": "Chiudiamo",
+          "start": 0.02,
+          "end": 0.46
+        },
+        {
+          "text": "la",
+          "start": 0.52,
+          "end": 0.6
+        },
+        {
+          "text": "tassonomia",
+          "start": 0.64,
+          "end": 1.24
+        },
+        {
+          "text": "con",
+          "start": 1.36,
+          "end": 1.5
+        },
+        {
+          "text": "gli",
+          "start": 1.52,
+          "end": 1.66
+        },
+        {
+          "text": "ultimi",
+          "start": 1.72,
+          "end": 2.04
+        },
+        {
+          "text": "due",
+          "start": 2.12,
+          "end": 2.28
+        },
+        {
+          "text": "smell",
+          "start": 2.34,
+          "end": 2.64
+        },
+        {
+          "text": "su",
+          "start": 3.02,
+          "end": 3.1
+        },
+        {
+          "text": "autenticazione",
+          "start": 3.24,
+          "end": 4.08
+        },
+        {
+          "text": "e",
+          "start": 4.24,
+          "end": 4.28
+        },
+        {
+          "text": "autorizzazione,",
+          "start": 4.32,
+          "end": 5.14
+        }
+      ]
+    },
+    {
+      "start": 5.48,
+      "end": 7.4,
+      "text": "entrambi critici per l'authenticity.",
+      "words": [
+        {
+          "text": "entrambi",
+          "start": 5.48,
+          "end": 5.92
+        },
+        {
+          "text": "critici",
+          "start": 5.98,
+          "end": 6.42
+        },
+        {
+          "text": "per",
+          "start": 6.54,
+          "end": 6.66
+        },
+        {
+          "text": "l'authenticity.",
+          "start": 6.7,
+          "end": 7.4
+        }
+      ]
+    },
+    {
+      "start": 8.461,
+      "end": 12.681,
+      "text": "Nono smell, al trentaquattro percento: multiple user authentication.",
+      "words": [
+        {
+          "text": "Nono",
+          "start": 8.461,
+          "end": 8.661
+        },
+        {
+          "text": "smell,",
+          "start": 8.701,
+          "end": 8.981
+        },
+        {
+          "text": "al",
+          "start": 9.201,
+          "end": 9.301
+        },
+        {
+          "text": "trentaquattro",
+          "start": 9.361,
+          "end": 9.861
+        },
+        {
+          "text": "percento:",
+          "start": 9.901,
+          "end": 10.381
+        },
+        {
+          "text": "multiple",
+          "start": 10.881,
+          "end": 11.421
+        },
+        {
+          "text": "user",
+          "start": 11.581,
+          "end": 11.801
+        },
+        {
+          "text": "authentication.",
+          "start": 11.921,
+          "end": 12.681
+        }
+      ]
+    },
+    {
+      "start": 13.661,
+      "end": 18.841,
+      "text": "Offrire più punti di accesso per il login moltiplica i vettori d'attacco e i costi",
+      "words": [
+        {
+          "text": "Offrire",
+          "start": 13.661,
+          "end": 14.021
+        },
+        {
+          "text": "più",
+          "start": 14.141,
+          "end": 14.281
+        },
+        {
+          "text": "punti",
+          "start": 14.381,
+          "end": 14.681
+        },
+        {
+          "text": "di",
+          "start": 14.741,
+          "end": 14.781
+        },
+        {
+          "text": "accesso",
+          "start": 14.841,
+          "end": 15.301
+        },
+        {
+          "text": "per",
+          "start": 15.361,
+          "end": 15.461
+        },
+        {
+          "text": "il",
+          "start": 15.501,
+          "end": 15.561
+        },
+        {
+          "text": "login",
+          "start": 15.601,
+          "end": 15.941
+        },
+        {
+          "text": "moltiplica",
+          "start": 16.341,
+          "end": 16.941
+        },
+        {
+          "text": "i",
+          "start": 17.041,
+          "end": 17.081
+        },
+        {
+          "text": "vettori",
+          "start": 17.101,
+          "end": 17.421
+        },
+        {
+          "text": "d'attacco",
+          "start": 17.461,
+          "end": 17.921
+        },
+        {
+          "text": "e",
+          "start": 18.281,
+          "end": 18.321
+        },
+        {
+          "text": "i",
+          "start": 18.421,
+          "end": 18.461
+        },
+        {
+          "text": "costi",
+          "start": 18.521,
+          "end": 18.841
+        }
+      ]
+    },
+    {
+      "start": 18.881,
+      "end": 19.641,
+      "text": "di manutenzione.",
+      "words": [
+        {
+          "text": "di",
+          "start": 18.881,
+          "end": 18.941
+        },
+        {
+          "text": "manutenzione.",
+          "start": 18.981,
+          "end": 19.641
+        }
+      ]
+    },
+    {
+      "start": 20.641,
+      "end": 23.142,
+      "text": "Il refactoring è usare il single sign-on:",
+      "words": [
+        {
+          "text": "Il",
+          "start": 20.641,
+          "end": 20.741
+        },
+        {
+          "text": "refactoring",
+          "start": 20.821,
+          "end": 21.401
+        },
+        {
+          "text": "è",
+          "start": 21.581,
+          "end": 21.621
+        },
+        {
+          "text": "usare",
+          "start": 21.681,
+          "end": 22.001
+        },
+        {
+          "text": "il",
+          "start": 22.061,
+          "end": 22.141
+        },
+        {
+          "text": "single",
+          "start": 22.261,
+          "end": 22.641
+        },
+        {
+          "text": "sign-on:",
+          "start": 22.721,
+          "end": 23.142
+        }
+      ]
+    },
+    {
+      "start": 23.882,
+      "end": 30.022,
+      "text": "un unico punto d'ingresso autentica gli utenti, applica la sicurezza e semplifica logging e auditing,",
+      "words": [
+        {
+          "text": "un",
+          "start": 23.882,
+          "end": 23.962
+        },
+        {
+          "text": "unico",
+          "start": 24.022,
+          "end": 24.282
+        },
+        {
+          "text": "punto",
+          "start": 24.342,
+          "end": 24.602
+        },
+        {
+          "text": "d'ingresso",
+          "start": 24.622,
+          "end": 25.122
+        },
+        {
+          "text": "autentica",
+          "start": 25.442,
+          "end": 25.982
+        },
+        {
+          "text": "gli",
+          "start": 26.002,
+          "end": 26.102
+        },
+        {
+          "text": "utenti,",
+          "start": 26.122,
+          "end": 26.502
+        },
+        {
+          "text": "applica",
+          "start": 26.882,
+          "end": 27.202
+        },
+        {
+          "text": "la",
+          "start": 27.262,
+          "end": 27.322
+        },
+        {
+          "text": "sicurezza",
+          "start": 27.342,
+          "end": 27.822
+        },
+        {
+          "text": "e",
+          "start": 28.202,
+          "end": 28.242
+        },
+        {
+          "text": "semplifica",
+          "start": 28.302,
+          "end": 28.782
+        },
+        {
+          "text": "logging",
+          "start": 28.902,
+          "end": 29.322
+        },
+        {
+          "text": "e",
+          "start": 29.482,
+          "end": 29.522
+        },
+        {
+          "text": "auditing,",
+          "start": 29.622,
+          "end": 30.022
+        }
+      ]
+    },
+    {
+      "start": 30.522,
+      "end": 33.582,
+      "text": "combinando un API gateway con OpenID Connect.",
+      "words": [
+        {
+          "text": "combinando",
+          "start": 30.522,
+          "end": 30.982
+        },
+        {
+          "text": "un",
+          "start": 31.182,
+          "end": 31.262
+        },
+        {
+          "text": "API",
+          "start": 31.322,
+          "end": 31.642
+        },
+        {
+          "text": "gateway",
+          "start": 31.702,
+          "end": 32.042
+        },
+        {
+          "text": "con",
+          "start": 32.322,
+          "end": 32.462
+        },
+        {
+          "text": "OpenID",
+          "start": 32.622,
+          "end": 33.022
+        },
+        {
+          "text": "Connect.",
+          "start": 33.142,
+          "end": 33.582
+        }
+      ]
+    },
+    {
+      "start": 34.862,
+      "end": 38.923,
+      "text": "Decimo smell, al trentatré percento: centralized authorization.",
+      "words": [
+        {
+          "text": "Decimo",
+          "start": 34.862,
+          "end": 35.162
+        },
+        {
+          "text": "smell,",
+          "start": 35.222,
+          "end": 35.502
+        },
+        {
+          "text": "al",
+          "start": 35.742,
+          "end": 35.882
+        },
+        {
+          "text": "trentatré",
+          "start": 35.942,
+          "end": 36.362
+        },
+        {
+          "text": "percento:",
+          "start": 36.422,
+          "end": 36.882
+        },
+        {
+          "text": "centralized",
+          "start": 37.382,
+          "end": 38.062
+        },
+        {
+          "text": "authorization.",
+          "start": 38.243,
+          "end": 38.923
+        }
+      ]
+    },
+    {
+      "start": 40.083,
+      "end": 46.523,
+      "text": "Applicare l'autorizzazione solo ai margini nell'API gateway trasforma quest'ultimo in un collo di bottiglia per",
+      "words": [
+        {
+          "text": "Applicare",
+          "start": 40.083,
+          "end": 40.543
+        },
+        {
+          "text": "l'autorizzazione",
+          "start": 40.603,
+          "end": 41.323
+        },
+        {
+          "text": "solo",
+          "start": 41.483,
+          "end": 41.683
+        },
+        {
+          "text": "ai",
+          "start": 41.703,
+          "end": 41.783
+        },
+        {
+          "text": "margini",
+          "start": 41.843,
+          "end": 42.343
+        },
+        {
+          "text": "nell'API",
+          "start": 42.623,
+          "end": 43.143
+        },
+        {
+          "text": "gateway",
+          "start": 43.183,
+          "end": 43.583
+        },
+        {
+          "text": "trasforma",
+          "start": 43.963,
+          "end": 44.363
+        },
+        {
+          "text": "quest'ultimo",
+          "start": 44.403,
+          "end": 44.903
+        },
+        {
+          "text": "in",
+          "start": 45.023,
+          "end": 45.123
+        },
+        {
+          "text": "un",
+          "start": 45.163,
+          "end": 45.223
+        },
+        {
+          "text": "collo",
+          "start": 45.263,
+          "end": 45.503
+        },
+        {
+          "text": "di",
+          "start": 45.523,
+          "end": 45.603
+        },
+        {
+          "text": "bottiglia",
+          "start": 45.643,
+          "end": 46.143
+        },
+        {
+          "text": "per",
+          "start": 46.403,
+          "end": 46.523
+        }
+      ]
+    },
+    {
+      "start": 46.583,
+      "end": 52.823,
+      "text": "le prestazioni e reintroduce un confused deputy problem, perché i microservizi si fidano del gateway",
+      "words": [
+        {
+          "text": "le",
+          "start": 46.583,
+          "end": 46.643
+        },
+        {
+          "text": "prestazioni",
+          "start": 46.663,
+          "end": 47.263
+        },
+        {
+          "text": "e",
+          "start": 47.783,
+          "end": 47.823
+        },
+        {
+          "text": "reintroduce",
+          "start": 48.003,
+          "end": 48.603
+        },
+        {
+          "text": "un",
+          "start": 48.663,
+          "end": 48.743
+        },
+        {
+          "text": "confused",
+          "start": 48.803,
+          "end": 49.343
+        },
+        {
+          "text": "deputy",
+          "start": 49.363,
+          "end": 49.623
+        },
+        {
+          "text": "problem,",
+          "start": 49.663,
+          "end": 50.023
+        },
+        {
+          "text": "perché",
+          "start": 50.403,
+          "end": 50.643
+        },
+        {
+          "text": "i",
+          "start": 50.783,
+          "end": 50.823
+        },
+        {
+          "text": "microservizi",
+          "start": 50.863,
+          "end": 51.543
+        },
+        {
+          "text": "si",
+          "start": 51.743,
+          "end": 51.843
+        },
+        {
+          "text": "fidano",
+          "start": 51.903,
+          "end": 52.263
+        },
+        {
+          "text": "del",
+          "start": 52.283,
+          "end": 52.403
+        },
+        {
+          "text": "gateway",
+          "start": 52.443,
+          "end": 52.823
+        }
+      ]
+    },
+    {
+      "start": 53.003,
+      "end": 54.304,
+      "text": "in base alla sola identità.",
+      "words": [
+        {
+          "text": "in",
+          "start": 53.003,
+          "end": 53.083
+        },
+        {
+          "text": "base",
+          "start": 53.123,
+          "end": 53.384
+        },
+        {
+          "text": "alla",
+          "start": 53.444,
+          "end": 53.584
+        },
+        {
+          "text": "sola",
+          "start": 53.644,
+          "end": 53.844
+        },
+        {
+          "text": "identità.",
+          "start": 53.924,
+          "end": 54.304
+        }
+      ]
+    },
+    {
+      "start": 55.464,
+      "end": 58.324,
+      "text": "Il refactoring è l'autorizzazione decentralizzata:",
+      "words": [
+        {
+          "text": "Il",
+          "start": 55.464,
+          "end": 55.544
+        },
+        {
+          "text": "refactoring",
+          "start": 55.624,
+          "end": 56.204
+        },
+        {
+          "text": "è",
+          "start": 56.404,
+          "end": 56.444
+        },
+        {
+          "text": "l'autorizzazione",
+          "start": 56.544,
+          "end": 57.284
+        },
+        {
+          "text": "decentralizzata:",
+          "start": 57.404,
+          "end": 58.324
+        }
+      ]
+    },
+    {
+      "start": 58.924,
+      "end": 62.484,
+      "text": "ogni richiesta porta un token d'accesso, come un JSON Web Token,",
+      "words": [
+        {
+          "text": "ogni",
+          "start": 58.924,
+          "end": 59.104
+        },
+        {
+          "text": "richiesta",
+          "start": 59.164,
+          "end": 59.584
+        },
+        {
+          "text": "porta",
+          "start": 59.644,
+          "end": 59.904
+        },
+        {
+          "text": "un",
+          "start": 59.944,
+          "end": 60.024
+        },
+        {
+          "text": "token",
+          "start": 60.064,
+          "end": 60.324
+        },
+        {
+          "text": "d'accesso,",
+          "start": 60.344,
+          "end": 60.824
+        },
+        {
+          "text": "come",
+          "start": 61.084,
+          "end": 61.264
+        },
+        {
+          "text": "un",
+          "start": 61.344,
+          "end": 61.444
+        },
+        {
+          "text": "JSON",
+          "start": 61.544,
+          "end": 61.904
+        },
+        {
+          "text": "Web",
+          "start": 61.964,
+          "end": 62.104
+        },
+        {
+          "text": "Token,",
+          "start": 62.184,
+          "end": 62.484
+        }
+      ]
+    },
+    {
+      "start": 62.884,
+      "end": 65.284,
+      "text": "verificato localmente da ciascun microservizio.",
+      "words": [
+        {
+          "text": "verificato",
+          "start": 62.884,
+          "end": 63.364
+        },
+        {
+          "text": "localmente",
+          "start": 63.484,
+          "end": 64.044
+        },
+        {
+          "text": "da",
+          "start": 64.084,
+          "end": 64.144
+        },
+        {
+          "text": "ciascun",
+          "start": 64.204,
+          "end": 64.524
+        },
+        {
+          "text": "microservizio.",
+          "start": 64.564,
+          "end": 65.284
+        }
+      ]
+    },
+    {
+      "start": 66.164,
+      "end": 71.565,
+      "text": "Come mostra lo schema, un JWT ha tre parti codificate in Base sessantaquattro e separate",
+      "words": [
+        {
+          "text": "Come",
+          "start": 66.164,
+          "end": 66.344
+        },
+        {
+          "text": "mostra",
+          "start": 66.404,
+          "end": 66.664
+        },
+        {
+          "text": "lo",
+          "start": 66.704,
+          "end": 66.764
+        },
+        {
+          "text": "schema,",
+          "start": 66.804,
+          "end": 67.064
+        },
+        {
+          "text": "un",
+          "start": 67.504,
+          "end": 67.624
+        },
+        {
+          "text": "JWT",
+          "start": 67.724,
+          "end": 68.264
+        },
+        {
+          "text": "ha",
+          "start": 68.484,
+          "end": 68.544
+        },
+        {
+          "text": "tre",
+          "start": 68.645,
+          "end": 68.785
+        },
+        {
+          "text": "parti",
+          "start": 68.865,
+          "end": 69.145
+        },
+        {
+          "text": "codificate",
+          "start": 69.185,
+          "end": 69.765
+        },
+        {
+          "text": "in",
+          "start": 69.805,
+          "end": 69.865
+        },
+        {
+          "text": "Base",
+          "start": 69.925,
+          "end": 70.205
+        },
+        {
+          "text": "sessantaquattro",
+          "start": 70.265,
+          "end": 70.965
+        },
+        {
+          "text": "e",
+          "start": 71.105,
+          "end": 71.14500000000001
+        },
+        {
+          "text": "separate",
+          "start": 71.205,
+          "end": 71.565
+        }
+      ]
+    },
+    {
+      "start": 71.585,
+      "end": 76.845,
+      "text": "da punti: l'Header con algoritmo e tipo, il Payload con i claims sull'utente,",
+      "words": [
+        {
+          "text": "da",
+          "start": 71.585,
+          "end": 71.645
+        },
+        {
+          "text": "punti:",
+          "start": 71.685,
+          "end": 72.025
+        },
+        {
+          "text": "l'Header",
+          "start": 72.685,
+          "end": 73.005
+        },
+        {
+          "text": "con",
+          "start": 73.225,
+          "end": 73.325
+        },
+        {
+          "text": "algoritmo",
+          "start": 73.365,
+          "end": 73.825
+        },
+        {
+          "text": "e",
+          "start": 73.885,
+          "end": 73.92500000000001
+        },
+        {
+          "text": "tipo,",
+          "start": 73.965,
+          "end": 74.205
+        },
+        {
+          "text": "il",
+          "start": 74.705,
+          "end": 74.805
+        },
+        {
+          "text": "Payload",
+          "start": 74.925,
+          "end": 75.405
+        },
+        {
+          "text": "con",
+          "start": 75.685,
+          "end": 75.805
+        },
+        {
+          "text": "i",
+          "start": 75.825,
+          "end": 75.86500000000001
+        },
+        {
+          "text": "claims",
+          "start": 75.885,
+          "end": 76.225
+        },
+        {
+          "text": "sull'utente,",
+          "start": 76.325,
+          "end": 76.845
+        }
+      ]
+    },
+    {
+      "start": 77.245,
+      "end": 80.185,
+      "text": "e la Signature crittografica che ne certifica l'integrità.",
+      "words": [
+        {
+          "text": "e",
+          "start": 77.245,
+          "end": 77.28500000000001
+        },
+        {
+          "text": "la",
+          "start": 77.305,
+          "end": 77.385
+        },
+        {
+          "text": "Signature",
+          "start": 77.485,
+          "end": 78.005
+        },
+        {
+          "text": "crittografica",
+          "start": 78.045,
+          "end": 78.725
+        },
+        {
+          "text": "che",
+          "start": 79.005,
+          "end": 79.085
+        },
+        {
+          "text": "ne",
+          "start": 79.125,
+          "end": 79.185
+        },
+        {
+          "text": "certifica",
+          "start": 79.225,
+          "end": 79.665
+        },
+        {
+          "text": "l'integrità.",
+          "start": 79.725,
+          "end": 80.185
+        }
+      ]
+    }
+  ]
+}

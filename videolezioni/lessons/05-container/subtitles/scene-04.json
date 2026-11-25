@@ -1,0 +1,815 @@
+{
+  "duration": 50.709,
+  "segments": [
+    {
+      "start": 0.595,
+      "end": 2.674,
+      "text": "Vediamo come è fatta internamente un'immagine Docker.",
+      "words": [
+        {
+          "text": "Vediamo",
+          "start": 0.595,
+          "end": 0.855
+        },
+        {
+          "text": "come",
+          "start": 0.895,
+          "end": 1.035
+        },
+        {
+          "text": "è",
+          "start": 1.055,
+          "end": 1.095
+        },
+        {
+          "text": "fatta",
+          "start": 1.095,
+          "end": 1.294
+        },
+        {
+          "text": "internamente",
+          "start": 1.315,
+          "end": 1.855
+        },
+        {
+          "text": "un'immagine",
+          "start": 1.895,
+          "end": 2.315
+        },
+        {
+          "text": "Docker.",
+          "start": 2.355,
+          "end": 2.674
+        }
+      ]
+    },
+    {
+      "start": 3.195,
+      "end": 7.174,
+      "text": "Le immagini sono organizzate in strati, detti layer, tutti di sola lettura,",
+      "words": [
+        {
+          "text": "Le",
+          "start": 3.195,
+          "end": 3.255
+        },
+        {
+          "text": "immagini",
+          "start": 3.275,
+          "end": 3.635
+        },
+        {
+          "text": "sono",
+          "start": 3.674,
+          "end": 3.835
+        },
+        {
+          "text": "organizzate",
+          "start": 3.855,
+          "end": 4.314
+        },
+        {
+          "text": "in",
+          "start": 4.374,
+          "end": 4.434
+        },
+        {
+          "text": "strati,",
+          "start": 4.475,
+          "end": 4.855
+        },
+        {
+          "text": "detti",
+          "start": 5.094,
+          "end": 5.314
+        },
+        {
+          "text": "layer,",
+          "start": 5.395,
+          "end": 5.755
+        },
+        {
+          "text": "tutti",
+          "start": 6.115,
+          "end": 6.374
+        },
+        {
+          "text": "di",
+          "start": 6.415,
+          "end": 6.475
+        },
+        {
+          "text": "sola",
+          "start": 6.514,
+          "end": 6.715
+        },
+        {
+          "text": "lettura,",
+          "start": 6.755,
+          "end": 7.174
+        }
+      ]
+    },
+    {
+      "start": 7.555,
+      "end": 9.654,
+      "text": "dove ogni strato è a sua volta un'immagine.",
+      "words": [
+        {
+          "text": "dove",
+          "start": 7.555,
+          "end": 7.715
+        },
+        {
+          "text": "ogni",
+          "start": 7.874,
+          "end": 8.075
+        },
+        {
+          "text": "strato",
+          "start": 8.154,
+          "end": 8.514
+        },
+        {
+          "text": "è",
+          "start": 8.635,
+          "end": 8.675
+        },
+        {
+          "text": "a",
+          "start": 8.695,
+          "end": 8.735
+        },
+        {
+          "text": "sua",
+          "start": 8.755,
+          "end": 8.895
+        },
+        {
+          "text": "volta",
+          "start": 8.915,
+          "end": 9.115
+        },
+        {
+          "text": "un'immagine.",
+          "start": 9.154,
+          "end": 9.654
+        }
+      ]
+    },
+    {
+      "start": 10.335,
+      "end": 12.436,
+      "text": "Lo strato più in basso si chiama base image,",
+      "words": [
+        {
+          "text": "Lo",
+          "start": 10.335,
+          "end": 10.415
+        },
+        {
+          "text": "strato",
+          "start": 10.454,
+          "end": 10.715
+        },
+        {
+          "text": "più",
+          "start": 10.734,
+          "end": 10.814
+        },
+        {
+          "text": "in",
+          "start": 10.855,
+          "end": 10.915
+        },
+        {
+          "text": "basso",
+          "start": 10.954,
+          "end": 11.215
+        },
+        {
+          "text": "si",
+          "start": 11.275,
+          "end": 11.335
+        },
+        {
+          "text": "chiama",
+          "start": 11.374,
+          "end": 11.576
+        },
+        {
+          "text": "base",
+          "start": 11.695,
+          "end": 12.016
+        },
+        {
+          "text": "image,",
+          "start": 12.055,
+          "end": 12.436
+        }
+      ]
+    },
+    {
+      "start": 12.636,
+      "end": 15.636,
+      "text": "per esempio Debian; sopra di esso si impilano altri strati,",
+      "words": [
+        {
+          "text": "per",
+          "start": 12.636,
+          "end": 12.736
+        },
+        {
+          "text": "esempio",
+          "start": 12.755,
+          "end": 13.055
+        },
+        {
+          "text": "Debian;",
+          "start": 13.096,
+          "end": 13.475
+        },
+        {
+          "text": "sopra",
+          "start": 13.876,
+          "end": 14.076
+        },
+        {
+          "text": "di",
+          "start": 14.115,
+          "end": 14.175
+        },
+        {
+          "text": "esso",
+          "start": 14.236,
+          "end": 14.415
+        },
+        {
+          "text": "si",
+          "start": 14.456,
+          "end": 14.516
+        },
+        {
+          "text": "impilano",
+          "start": 14.555,
+          "end": 14.895
+        },
+        {
+          "text": "altri",
+          "start": 14.996,
+          "end": 15.216
+        },
+        {
+          "text": "strati,",
+          "start": 15.276,
+          "end": 15.636
+        }
+      ]
+    },
+    {
+      "start": 15.816,
+      "end": 17.276,
+      "text": "come Java e poi Dropwizard.",
+      "words": [
+        {
+          "text": "come",
+          "start": 15.816,
+          "end": 15.956
+        },
+        {
+          "text": "Java",
+          "start": 16.016,
+          "end": 16.316
+        },
+        {
+          "text": "e",
+          "start": 16.415,
+          "end": 16.456
+        },
+        {
+          "text": "poi",
+          "start": 16.496,
+          "end": 16.636
+        },
+        {
+          "text": "Dropwizard.",
+          "start": 16.675,
+          "end": 17.276
+        }
+      ]
+    },
+    {
+      "start": 17.835,
+      "end": 22.615,
+      "text": "Quando avviamo un container, Docker aggiunge in cima un nuovo strato scrivibile in cui l'applicazione",
+      "words": [
+        {
+          "text": "Quando",
+          "start": 17.835,
+          "end": 18.035
+        },
+        {
+          "text": "avviamo",
+          "start": 18.076,
+          "end": 18.356
+        },
+        {
+          "text": "un",
+          "start": 18.395,
+          "end": 18.456
+        },
+        {
+          "text": "container,",
+          "start": 18.475,
+          "end": 19.035
+        },
+        {
+          "text": "Docker",
+          "start": 19.276,
+          "end": 19.555
+        },
+        {
+          "text": "aggiunge",
+          "start": 19.555,
+          "end": 19.876
+        },
+        {
+          "text": "in",
+          "start": 19.915,
+          "end": 19.975
+        },
+        {
+          "text": "cima",
+          "start": 20.016,
+          "end": 20.236
+        },
+        {
+          "text": "un",
+          "start": 20.296,
+          "end": 20.356
+        },
+        {
+          "text": "nuovo",
+          "start": 20.395,
+          "end": 20.596
+        },
+        {
+          "text": "strato",
+          "start": 20.656,
+          "end": 20.895
+        },
+        {
+          "text": "scrivibile",
+          "start": 20.956,
+          "end": 21.475
+        },
+        {
+          "text": "in",
+          "start": 21.695,
+          "end": 21.776
+        },
+        {
+          "text": "cui",
+          "start": 21.796,
+          "end": 21.936
+        },
+        {
+          "text": "l'applicazione",
+          "start": 21.975,
+          "end": 22.615
+        }
+      ]
+    },
+    {
+      "start": 22.677,
+      "end": 23.576,
+      "text": "può salvare file.",
+      "words": [
+        {
+          "text": "può",
+          "start": 22.677,
+          "end": 22.757
+        },
+        {
+          "text": "salvare",
+          "start": 22.877,
+          "end": 23.177
+        },
+        {
+          "text": "file.",
+          "start": 23.216,
+          "end": 23.576
+        }
+      ]
+    },
+    {
+      "start": 24.237,
+      "end": 28.076,
+      "text": "Le modifiche dello strato scrivibile possono essere trasformate in una nuova immagine.",
+      "words": [
+        {
+          "text": "Le",
+          "start": 24.237,
+          "end": 24.317
+        },
+        {
+          "text": "modifiche",
+          "start": 24.337,
+          "end": 24.716
+        },
+        {
+          "text": "dello",
+          "start": 24.757,
+          "end": 24.916
+        },
+        {
+          "text": "strato",
+          "start": 24.957,
+          "end": 25.197
+        },
+        {
+          "text": "scrivibile",
+          "start": 25.237,
+          "end": 25.737
+        },
+        {
+          "text": "possono",
+          "start": 25.916,
+          "end": 26.216
+        },
+        {
+          "text": "essere",
+          "start": 26.257,
+          "end": 26.496
+        },
+        {
+          "text": "trasformate",
+          "start": 26.537,
+          "end": 27.117
+        },
+        {
+          "text": "in",
+          "start": 27.157,
+          "end": 27.216
+        },
+        {
+          "text": "una",
+          "start": 27.237,
+          "end": 27.356
+        },
+        {
+          "text": "nuova",
+          "start": 27.397,
+          "end": 27.597
+        },
+        {
+          "text": "immagine.",
+          "start": 27.657,
+          "end": 28.076
+        }
+      ]
+    },
+    {
+      "start": 28.776,
+      "end": 31.117,
+      "text": "Tutto questo è governato da cinque comandi essenziali.",
+      "words": [
+        {
+          "text": "Tutto",
+          "start": 28.776,
+          "end": 28.996
+        },
+        {
+          "text": "questo",
+          "start": 29.017,
+          "end": 29.257
+        },
+        {
+          "text": "è",
+          "start": 29.296,
+          "end": 29.337
+        },
+        {
+          "text": "governato",
+          "start": 29.356,
+          "end": 29.776
+        },
+        {
+          "text": "da",
+          "start": 29.817,
+          "end": 29.877
+        },
+        {
+          "text": "cinque",
+          "start": 29.957,
+          "end": 30.237
+        },
+        {
+          "text": "comandi",
+          "start": 30.276,
+          "end": 30.537
+        },
+        {
+          "text": "essenziali.",
+          "start": 30.576,
+          "end": 31.117
+        }
+      ]
+    },
+    {
+      "start": 31.556,
+      "end": 35.237,
+      "text": "Con build costruiamo un'immagine partendo dalle istruzioni di un Dockerfile.",
+      "words": [
+        {
+          "text": "Con",
+          "start": 31.556,
+          "end": 31.697
+        },
+        {
+          "text": "build",
+          "start": 31.737,
+          "end": 31.996
+        },
+        {
+          "text": "costruiamo",
+          "start": 32.136,
+          "end": 32.657
+        },
+        {
+          "text": "un'immagine",
+          "start": 32.697,
+          "end": 33.216
+        },
+        {
+          "text": "partendo",
+          "start": 33.257,
+          "end": 33.617
+        },
+        {
+          "text": "dalle",
+          "start": 33.657,
+          "end": 33.837
+        },
+        {
+          "text": "istruzioni",
+          "start": 33.877,
+          "end": 34.358
+        },
+        {
+          "text": "di",
+          "start": 34.398,
+          "end": 34.457
+        },
+        {
+          "text": "un",
+          "start": 34.478,
+          "end": 34.558
+        },
+        {
+          "text": "Dockerfile.",
+          "start": 34.578,
+          "end": 35.237
+        }
+      ]
+    },
+    {
+      "start": 35.657,
+      "end": 40.177,
+      "text": "Con push inviamo l'immagine a un registry, mentre con pull la scarichiamo dal registry sul",
+      "words": [
+        {
+          "text": "Con",
+          "start": 35.657,
+          "end": 35.797
+        },
+        {
+          "text": "push",
+          "start": 35.858,
+          "end": 36.138
+        },
+        {
+          "text": "inviamo",
+          "start": 36.398,
+          "end": 36.737
+        },
+        {
+          "text": "l'immagine",
+          "start": 36.817,
+          "end": 37.258
+        },
+        {
+          "text": "a",
+          "start": 37.278,
+          "end": 37.318
+        },
+        {
+          "text": "un",
+          "start": 37.338,
+          "end": 37.378
+        },
+        {
+          "text": "registry,",
+          "start": 37.418,
+          "end": 37.838
+        },
+        {
+          "text": "mentre",
+          "start": 38.078,
+          "end": 38.317
+        },
+        {
+          "text": "con",
+          "start": 38.377,
+          "end": 38.517
+        },
+        {
+          "text": "pull",
+          "start": 38.558,
+          "end": 38.797
+        },
+        {
+          "text": "la",
+          "start": 38.978,
+          "end": 39.037
+        },
+        {
+          "text": "scarichiamo",
+          "start": 39.078,
+          "end": 39.498
+        },
+        {
+          "text": "dal",
+          "start": 39.517,
+          "end": 39.618
+        },
+        {
+          "text": "registry",
+          "start": 39.657,
+          "end": 40.017
+        },
+        {
+          "text": "sul",
+          "start": 40.058,
+          "end": 40.177
+        }
+      ]
+    },
+    {
+      "start": 40.218,
+      "end": 40.838,
+      "text": "nostro server.",
+      "words": [
+        {
+          "text": "nostro",
+          "start": 40.218,
+          "end": 40.457
+        },
+        {
+          "text": "server.",
+          "start": 40.517,
+          "end": 40.838
+        }
+      ]
+    },
+    {
+      "start": 41.317,
+      "end": 45.258,
+      "text": "Con run creiamo e avviamo un container a partire da un'immagine.",
+      "words": [
+        {
+          "text": "Con",
+          "start": 41.317,
+          "end": 41.478
+        },
+        {
+          "text": "run",
+          "start": 41.578,
+          "end": 41.797
+        },
+        {
+          "text": "creiamo",
+          "start": 42.037,
+          "end": 42.618
+        },
+        {
+          "text": "e",
+          "start": 42.718,
+          "end": 42.758
+        },
+        {
+          "text": "avviamo",
+          "start": 42.817,
+          "end": 43.177
+        },
+        {
+          "text": "un",
+          "start": 43.218,
+          "end": 43.297
+        },
+        {
+          "text": "container",
+          "start": 43.338,
+          "end": 43.898
+        },
+        {
+          "text": "a",
+          "start": 44.058,
+          "end": 44.098
+        },
+        {
+          "text": "partire",
+          "start": 44.157,
+          "end": 44.537
+        },
+        {
+          "text": "da",
+          "start": 44.578,
+          "end": 44.638
+        },
+        {
+          "text": "un'immagine.",
+          "start": 44.698,
+          "end": 45.258
+        }
+      ]
+    },
+    {
+      "start": 45.898,
+      "end": 50.459,
+      "text": "Infine, con commit salviamo lo stato corrente di un container in una nuova immagine.",
+      "words": [
+        {
+          "text": "Infine,",
+          "start": 45.898,
+          "end": 46.239
+        },
+        {
+          "text": "con",
+          "start": 46.319,
+          "end": 46.459
+        },
+        {
+          "text": "commit",
+          "start": 46.519,
+          "end": 46.959
+        },
+        {
+          "text": "salviamo",
+          "start": 47.299,
+          "end": 47.739
+        },
+        {
+          "text": "lo",
+          "start": 47.779,
+          "end": 47.838
+        },
+        {
+          "text": "stato",
+          "start": 47.898,
+          "end": 48.139
+        },
+        {
+          "text": "corrente",
+          "start": 48.178,
+          "end": 48.579
+        },
+        {
+          "text": "di",
+          "start": 48.618,
+          "end": 48.678
+        },
+        {
+          "text": "un",
+          "start": 48.719,
+          "end": 48.799
+        },
+        {
+          "text": "container",
+          "start": 48.819,
+          "end": 49.359
+        },
+        {
+          "text": "in",
+          "start": 49.519,
+          "end": 49.599
+        },
+        {
+          "text": "una",
+          "start": 49.639,
+          "end": 49.758
+        },
+        {
+          "text": "nuova",
+          "start": 49.799,
+          "end": 49.999
+        },
+        {
+          "text": "immagine.",
+          "start": 50.038,
+          "end": 50.459
+        }
+      ]
+    }
+  ]
+}

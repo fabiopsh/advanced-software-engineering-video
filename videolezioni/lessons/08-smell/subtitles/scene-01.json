@@ -1,0 +1,895 @@
+{
+  "duration": 66.792,
+  "segments": [
+    {
+      "start": 0.08,
+      "end": 3.24,
+      "text": "Benvenuti all'ottavo capitolo di Advanced Software Engineering.",
+      "words": [
+        {
+          "text": "Benvenuti",
+          "start": 0.08,
+          "end": 0.54
+        },
+        {
+          "text": "all'ottavo",
+          "start": 0.64,
+          "end": 1.08
+        },
+        {
+          "text": "capitolo",
+          "start": 1.14,
+          "end": 1.56
+        },
+        {
+          "text": "di",
+          "start": 1.72,
+          "end": 1.8
+        },
+        {
+          "text": "Advanced",
+          "start": 1.88,
+          "end": 2.28
+        },
+        {
+          "text": "Software",
+          "start": 2.3,
+          "end": 2.7
+        },
+        {
+          "text": "Engineering.",
+          "start": 2.74,
+          "end": 3.24
+        }
+      ]
+    },
+    {
+      "start": 4.2,
+      "end": 9.041,
+      "text": "Oggi ci chiediamo se un'applicazione a microservizi rispetti davvero i principi per cui è stata",
+      "words": [
+        {
+          "text": "Oggi",
+          "start": 4.2,
+          "end": 4.38
+        },
+        {
+          "text": "ci",
+          "start": 4.44,
+          "end": 4.5
+        },
+        {
+          "text": "chiediamo",
+          "start": 4.54,
+          "end": 4.88
+        },
+        {
+          "text": "se",
+          "start": 4.96,
+          "end": 5.04
+        },
+        {
+          "text": "un'applicazione",
+          "start": 5.1,
+          "end": 5.9
+        },
+        {
+          "text": "a",
+          "start": 5.96,
+          "end": 6.0
+        },
+        {
+          "text": "microservizi",
+          "start": 6.04,
+          "end": 6.841
+        },
+        {
+          "text": "rispetti",
+          "start": 7.041,
+          "end": 7.461
+        },
+        {
+          "text": "davvero",
+          "start": 7.501,
+          "end": 7.901
+        },
+        {
+          "text": "i",
+          "start": 7.961,
+          "end": 8.001
+        },
+        {
+          "text": "principi",
+          "start": 8.001,
+          "end": 8.421
+        },
+        {
+          "text": "per",
+          "start": 8.461,
+          "end": 8.561
+        },
+        {
+          "text": "cui",
+          "start": 8.601,
+          "end": 8.741
+        },
+        {
+          "text": "è",
+          "start": 8.781,
+          "end": 8.821
+        },
+        {
+          "text": "stata",
+          "start": 8.841,
+          "end": 9.041
+        }
+      ]
+    },
+    {
+      "start": 9.081,
+      "end": 11.401,
+      "text": "progettata e come correggerla quando li viola.",
+      "words": [
+        {
+          "text": "progettata",
+          "start": 9.081,
+          "end": 9.621
+        },
+        {
+          "text": "e",
+          "start": 9.921,
+          "end": 9.961
+        },
+        {
+          "text": "come",
+          "start": 10.021,
+          "end": 10.201
+        },
+        {
+          "text": "correggerla",
+          "start": 10.241,
+          "end": 10.761
+        },
+        {
+          "text": "quando",
+          "start": 10.801,
+          "end": 11.001
+        },
+        {
+          "text": "li",
+          "start": 11.041,
+          "end": 11.101
+        },
+        {
+          "text": "viola.",
+          "start": 11.121,
+          "end": 11.401
+        }
+      ]
+    },
+    {
+      "start": 12.321,
+      "end": 16.321,
+      "text": "Ricordiamo che i microservizi sono servizi stateless di piccole dimensioni,",
+      "words": [
+        {
+          "text": "Ricordiamo",
+          "start": 12.321,
+          "end": 12.841
+        },
+        {
+          "text": "che",
+          "start": 12.901,
+          "end": 12.981
+        },
+        {
+          "text": "i",
+          "start": 13.021,
+          "end": 13.061
+        },
+        {
+          "text": "microservizi",
+          "start": 13.081,
+          "end": 13.801
+        },
+        {
+          "text": "sono",
+          "start": 13.881,
+          "end": 14.061
+        },
+        {
+          "text": "servizi",
+          "start": 14.161,
+          "end": 14.561
+        },
+        {
+          "text": "stateless",
+          "start": 14.661,
+          "end": 15.181
+        },
+        {
+          "text": "di",
+          "start": 15.261,
+          "end": 15.341
+        },
+        {
+          "text": "piccole",
+          "start": 15.381,
+          "end": 15.701
+        },
+        {
+          "text": "dimensioni,",
+          "start": 15.741,
+          "end": 16.321
+        }
+      ]
+    },
+    {
+      "start": 16.561,
+      "end": 22.462,
+      "text": "eseguiti ciascuno in un proprio container, costruiti attorno a capacità di business con comunicazione leggera,",
+      "words": [
+        {
+          "text": "eseguiti",
+          "start": 16.561,
+          "end": 17.001
+        },
+        {
+          "text": "ciascuno",
+          "start": 17.061,
+          "end": 17.561
+        },
+        {
+          "text": "in",
+          "start": 17.601,
+          "end": 17.681
+        },
+        {
+          "text": "un",
+          "start": 17.701,
+          "end": 17.761
+        },
+        {
+          "text": "proprio",
+          "start": 17.801,
+          "end": 18.081
+        },
+        {
+          "text": "container,",
+          "start": 18.101,
+          "end": 18.621
+        },
+        {
+          "text": "costruiti",
+          "start": 19.081,
+          "end": 19.541
+        },
+        {
+          "text": "attorno",
+          "start": 19.601,
+          "end": 19.982
+        },
+        {
+          "text": "a",
+          "start": 20.022,
+          "end": 20.062
+        },
+        {
+          "text": "capacità",
+          "start": 20.082,
+          "end": 20.462
+        },
+        {
+          "text": "di",
+          "start": 20.522,
+          "end": 20.582
+        },
+        {
+          "text": "business",
+          "start": 20.622,
+          "end": 21.042
+        },
+        {
+          "text": "con",
+          "start": 21.242,
+          "end": 21.362
+        },
+        {
+          "text": "comunicazione",
+          "start": 21.402,
+          "end": 22.002
+        },
+        {
+          "text": "leggera,",
+          "start": 22.062,
+          "end": 22.462
+        }
+      ]
+    },
+    {
+      "start": 22.802,
+      "end": 25.702,
+      "text": "gestione decentralizzata dei dati e approccio DevOps.",
+      "words": [
+        {
+          "text": "gestione",
+          "start": 22.802,
+          "end": 23.202
+        },
+        {
+          "text": "decentralizzata",
+          "start": 23.302,
+          "end": 24.082
+        },
+        {
+          "text": "dei",
+          "start": 24.122,
+          "end": 24.242
+        },
+        {
+          "text": "dati",
+          "start": 24.282,
+          "end": 24.562
+        },
+        {
+          "text": "e",
+          "start": 24.802,
+          "end": 24.842
+        },
+        {
+          "text": "approccio",
+          "start": 24.902,
+          "end": 25.302
+        },
+        {
+          "text": "DevOps.",
+          "start": 25.322,
+          "end": 25.702
+        }
+      ]
+    },
+    {
+      "start": 26.842,
+      "end": 33.022,
+      "text": "Introduciamo la nozione di architectural smell: una decisione architetturale di uso comune che produce un",
+      "words": [
+        {
+          "text": "Introduciamo",
+          "start": 26.842,
+          "end": 27.402
+        },
+        {
+          "text": "la",
+          "start": 27.462,
+          "end": 27.522
+        },
+        {
+          "text": "nozione",
+          "start": 27.562,
+          "end": 28.022
+        },
+        {
+          "text": "di",
+          "start": 28.162,
+          "end": 28.242
+        },
+        {
+          "text": "architectural",
+          "start": 28.382,
+          "end": 29.102
+        },
+        {
+          "text": "smell:",
+          "start": 29.162,
+          "end": 29.502
+        },
+        {
+          "text": "una",
+          "start": 29.962,
+          "end": 30.102
+        },
+        {
+          "text": "decisione",
+          "start": 30.142,
+          "end": 30.522
+        },
+        {
+          "text": "architetturale",
+          "start": 30.562,
+          "end": 31.302
+        },
+        {
+          "text": "di",
+          "start": 31.342,
+          "end": 31.402
+        },
+        {
+          "text": "uso",
+          "start": 31.462,
+          "end": 31.622
+        },
+        {
+          "text": "comune",
+          "start": 31.662,
+          "end": 32.022
+        },
+        {
+          "text": "che",
+          "start": 32.362,
+          "end": 32.442
+        },
+        {
+          "text": "produce",
+          "start": 32.482,
+          "end": 32.842
+        },
+        {
+          "text": "un",
+          "start": 32.942,
+          "end": 33.022
+        }
+      ]
+    },
+    {
+      "start": 33.062,
+      "end": 36.383,
+      "text": "impatto negativo sulle qualità del sistema lungo il suo ciclo di vita.",
+      "words": [
+        {
+          "text": "impatto",
+          "start": 33.062,
+          "end": 33.463
+        },
+        {
+          "text": "negativo",
+          "start": 33.503,
+          "end": 33.903
+        },
+        {
+          "text": "sulle",
+          "start": 33.963,
+          "end": 34.183
+        },
+        {
+          "text": "qualità",
+          "start": 34.223,
+          "end": 34.523
+        },
+        {
+          "text": "del",
+          "start": 34.583,
+          "end": 34.703
+        },
+        {
+          "text": "sistema",
+          "start": 34.763,
+          "end": 35.183
+        },
+        {
+          "text": "lungo",
+          "start": 35.383,
+          "end": 35.583
+        },
+        {
+          "text": "il",
+          "start": 35.603,
+          "end": 35.663
+        },
+        {
+          "text": "suo",
+          "start": 35.683,
+          "end": 35.783
+        },
+        {
+          "text": "ciclo",
+          "start": 35.803,
+          "end": 36.063
+        },
+        {
+          "text": "di",
+          "start": 36.083,
+          "end": 36.143
+        },
+        {
+          "text": "vita.",
+          "start": 36.163,
+          "end": 36.383
+        }
+      ]
+    },
+    {
+      "start": 37.363,
+      "end": 43.083,
+      "text": "Da una multivocal review su quarantuno riferimenti tra letteratura accademica e industriale emerge una struttura",
+      "words": [
+        {
+          "text": "Da",
+          "start": 37.363,
+          "end": 37.443
+        },
+        {
+          "text": "una",
+          "start": 37.503,
+          "end": 37.643
+        },
+        {
+          "text": "multivocal",
+          "start": 37.723,
+          "end": 38.263
+        },
+        {
+          "text": "review",
+          "start": 38.343,
+          "end": 38.583
+        },
+        {
+          "text": "su",
+          "start": 38.703,
+          "end": 38.783
+        },
+        {
+          "text": "quarantuno",
+          "start": 38.863,
+          "end": 39.343
+        },
+        {
+          "text": "riferimenti",
+          "start": 39.383,
+          "end": 40.003
+        },
+        {
+          "text": "tra",
+          "start": 40.043,
+          "end": 40.163
+        },
+        {
+          "text": "letteratura",
+          "start": 40.223,
+          "end": 40.683
+        },
+        {
+          "text": "accademica",
+          "start": 40.743,
+          "end": 41.243
+        },
+        {
+          "text": "e",
+          "start": 41.283,
+          "end": 41.323
+        },
+        {
+          "text": "industriale",
+          "start": 41.343,
+          "end": 41.943
+        },
+        {
+          "text": "emerge",
+          "start": 42.223,
+          "end": 42.503
+        },
+        {
+          "text": "una",
+          "start": 42.563,
+          "end": 42.683
+        },
+        {
+          "text": "struttura",
+          "start": 42.723,
+          "end": 43.083
+        }
+      ]
+    },
+    {
+      "start": 43.103,
+      "end": 47.904,
+      "text": "precisa: ogni smell viola un principio di design ed è risolto da uno o più",
+      "words": [
+        {
+          "text": "precisa:",
+          "start": 43.103,
+          "end": 43.503
+        },
+        {
+          "text": "ogni",
+          "start": 44.023,
+          "end": 44.183
+        },
+        {
+          "text": "smell",
+          "start": 44.243,
+          "end": 44.503
+        },
+        {
+          "text": "viola",
+          "start": 44.623,
+          "end": 44.923
+        },
+        {
+          "text": "un",
+          "start": 44.983,
+          "end": 45.043
+        },
+        {
+          "text": "principio",
+          "start": 45.103,
+          "end": 45.583
+        },
+        {
+          "text": "di",
+          "start": 45.603,
+          "end": 45.663
+        },
+        {
+          "text": "design",
+          "start": 45.703,
+          "end": 46.143
+        },
+        {
+          "text": "ed",
+          "start": 46.463,
+          "end": 46.543
+        },
+        {
+          "text": "è",
+          "start": 46.584,
+          "end": 46.624
+        },
+        {
+          "text": "risolto",
+          "start": 46.644,
+          "end": 47.044
+        },
+        {
+          "text": "da",
+          "start": 47.144,
+          "end": 47.204
+        },
+        {
+          "text": "uno",
+          "start": 47.324,
+          "end": 47.504
+        },
+        {
+          "text": "o",
+          "start": 47.684,
+          "end": 47.724
+        },
+        {
+          "text": "più",
+          "start": 47.784,
+          "end": 47.904
+        }
+      ]
+    },
+    {
+      "start": 47.984,
+      "end": 48.584,
+      "text": "refactoring.",
+      "words": [
+        {
+          "text": "refactoring.",
+          "start": 47.984,
+          "end": 48.584
+        }
+      ]
+    },
+    {
+      "start": 49.344,
+      "end": 55.144,
+      "text": "I principi di riferimento sono quattro: independent deployability, per distribuire ogni servizio separatamente;",
+      "words": [
+        {
+          "text": "I",
+          "start": 49.344,
+          "end": 49.384
+        },
+        {
+          "text": "principi",
+          "start": 49.424,
+          "end": 49.764
+        },
+        {
+          "text": "di",
+          "start": 49.804,
+          "end": 49.864
+        },
+        {
+          "text": "riferimento",
+          "start": 49.904,
+          "end": 50.384
+        },
+        {
+          "text": "sono",
+          "start": 50.464,
+          "end": 50.624
+        },
+        {
+          "text": "quattro:",
+          "start": 50.664,
+          "end": 51.004
+        },
+        {
+          "text": "independent",
+          "start": 51.384,
+          "end": 51.924
+        },
+        {
+          "text": "deployability,",
+          "start": 52.024,
+          "end": 52.684
+        },
+        {
+          "text": "per",
+          "start": 52.984,
+          "end": 53.104
+        },
+        {
+          "text": "distribuire",
+          "start": 53.144,
+          "end": 53.744
+        },
+        {
+          "text": "ogni",
+          "start": 53.844,
+          "end": 53.984
+        },
+        {
+          "text": "servizio",
+          "start": 54.024,
+          "end": 54.444
+        },
+        {
+          "text": "separatamente;",
+          "start": 54.484,
+          "end": 55.144
+        }
+      ]
+    },
+    {
+      "start": 55.764,
+      "end": 59.965,
+      "text": "horizontal scalability, per aggiungere o togliere repliche di un singolo servizio;",
+      "words": [
+        {
+          "text": "horizontal",
+          "start": 55.764,
+          "end": 56.304
+        },
+        {
+          "text": "scalability,",
+          "start": 56.364,
+          "end": 56.944
+        },
+        {
+          "text": "per",
+          "start": 57.244,
+          "end": 57.344
+        },
+        {
+          "text": "aggiungere",
+          "start": 57.384,
+          "end": 57.904
+        },
+        {
+          "text": "o",
+          "start": 58.004,
+          "end": 58.044
+        },
+        {
+          "text": "togliere",
+          "start": 58.104,
+          "end": 58.464
+        },
+        {
+          "text": "repliche",
+          "start": 58.544,
+          "end": 58.904
+        },
+        {
+          "text": "di",
+          "start": 58.944,
+          "end": 59.004
+        },
+        {
+          "text": "un",
+          "start": 59.044,
+          "end": 59.104
+        },
+        {
+          "text": "singolo",
+          "start": 59.164,
+          "end": 59.464
+        },
+        {
+          "text": "servizio;",
+          "start": 59.504,
+          "end": 59.965
+        }
+      ]
+    },
+    {
+      "start": 60.745,
+      "end": 64.365,
+      "text": "isolation of failures, per contenere i guasti; e decentralisation,",
+      "words": [
+        {
+          "text": "isolation",
+          "start": 60.745,
+          "end": 61.185
+        },
+        {
+          "text": "of",
+          "start": 61.205,
+          "end": 61.285
+        },
+        {
+          "text": "failures,",
+          "start": 61.345,
+          "end": 61.785
+        },
+        {
+          "text": "per",
+          "start": 61.925,
+          "end": 62.045
+        },
+        {
+          "text": "contenere",
+          "start": 62.085,
+          "end": 62.505
+        },
+        {
+          "text": "i",
+          "start": 62.525,
+          "end": 62.565
+        },
+        {
+          "text": "guasti;",
+          "start": 62.585,
+          "end": 62.945
+        },
+        {
+          "text": "e",
+          "start": 63.345,
+          "end": 63.385
+        },
+        {
+          "text": "decentralisation,",
+          "start": 63.505,
+          "end": 64.365
+        }
+      ]
+    },
+    {
+      "start": 64.645,
+      "end": 66.205,
+      "text": "dai dati fino alla governance.",
+      "words": [
+        {
+          "text": "dai",
+          "start": 64.645,
+          "end": 64.785
+        },
+        {
+          "text": "dati",
+          "start": 64.825,
+          "end": 65.085
+        },
+        {
+          "text": "fino",
+          "start": 65.245,
+          "end": 65.445
+        },
+        {
+          "text": "alla",
+          "start": 65.465,
+          "end": 65.605
+        },
+        {
+          "text": "governance.",
+          "start": 65.645,
+          "end": 66.205
+        }
+      ]
+    }
+  ]
+}

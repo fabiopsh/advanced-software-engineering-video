@@ -1,0 +1,890 @@
+{
+  "duration": 62.814,
+  "segments": [
+    {
+      "start": 0.08,
+      "end": 5.221,
+      "text": "Progettare un sistema Software as a Service richiede di affrontare quattro questioni chiave di design.",
+      "words": [
+        {
+          "text": "Progettare",
+          "start": 0.08,
+          "end": 0.64
+        },
+        {
+          "text": "un",
+          "start": 0.76,
+          "end": 0.84
+        },
+        {
+          "text": "sistema",
+          "start": 0.88,
+          "end": 1.22
+        },
+        {
+          "text": "Software",
+          "start": 1.38,
+          "end": 1.84
+        },
+        {
+          "text": "as",
+          "start": 1.84,
+          "end": 1.94
+        },
+        {
+          "text": "a",
+          "start": 1.98,
+          "end": 2.02
+        },
+        {
+          "text": "Service",
+          "start": 2.1,
+          "end": 2.52
+        },
+        {
+          "text": "richiede",
+          "start": 2.68,
+          "end": 3.02
+        },
+        {
+          "text": "di",
+          "start": 3.06,
+          "end": 3.12
+        },
+        {
+          "text": "affrontare",
+          "start": 3.14,
+          "end": 3.581
+        },
+        {
+          "text": "quattro",
+          "start": 3.641,
+          "end": 3.941
+        },
+        {
+          "text": "questioni",
+          "start": 3.981,
+          "end": 4.361
+        },
+        {
+          "text": "chiave",
+          "start": 4.421,
+          "end": 4.701
+        },
+        {
+          "text": "di",
+          "start": 4.761,
+          "end": 4.821
+        },
+        {
+          "text": "design.",
+          "start": 4.861,
+          "end": 5.221
+        }
+      ]
+    },
+    {
+      "start": 5.961,
+      "end": 9.801,
+      "text": "La prima riguarda dove eseguire l'elaborazione: in locale o in remoto.",
+      "words": [
+        {
+          "text": "La",
+          "start": 5.961,
+          "end": 6.021
+        },
+        {
+          "text": "prima",
+          "start": 6.081,
+          "end": 6.321
+        },
+        {
+          "text": "riguarda",
+          "start": 6.421,
+          "end": 6.761
+        },
+        {
+          "text": "dove",
+          "start": 6.841,
+          "end": 7.061
+        },
+        {
+          "text": "eseguire",
+          "start": 7.121,
+          "end": 7.521
+        },
+        {
+          "text": "l'elaborazione:",
+          "start": 7.581,
+          "end": 8.281
+        },
+        {
+          "text": "in",
+          "start": 8.561,
+          "end": 8.621
+        },
+        {
+          "text": "locale",
+          "start": 8.661,
+          "end": 9.021
+        },
+        {
+          "text": "o",
+          "start": 9.281,
+          "end": 9.321
+        },
+        {
+          "text": "in",
+          "start": 9.381,
+          "end": 9.441
+        },
+        {
+          "text": "remoto.",
+          "start": 9.481,
+          "end": 9.801
+        }
+      ]
+    },
+    {
+      "start": 10.542,
+      "end": 15.322,
+      "text": "Eseguire alcune feature sul dispositivo del cliente riduce il traffico di rete e velocizza la",
+      "words": [
+        {
+          "text": "Eseguire",
+          "start": 10.542,
+          "end": 10.942
+        },
+        {
+          "text": "alcune",
+          "start": 11.022,
+          "end": 11.282
+        },
+        {
+          "text": "feature",
+          "start": 11.342,
+          "end": 11.662
+        },
+        {
+          "text": "sul",
+          "start": 11.722,
+          "end": 11.862
+        },
+        {
+          "text": "dispositivo",
+          "start": 11.882,
+          "end": 12.442
+        },
+        {
+          "text": "del",
+          "start": 12.482,
+          "end": 12.582
+        },
+        {
+          "text": "cliente",
+          "start": 12.642,
+          "end": 13.062
+        },
+        {
+          "text": "riduce",
+          "start": 13.222,
+          "end": 13.522
+        },
+        {
+          "text": "il",
+          "start": 13.582,
+          "end": 13.642
+        },
+        {
+          "text": "traffico",
+          "start": 13.682,
+          "end": 14.082
+        },
+        {
+          "text": "di",
+          "start": 14.122,
+          "end": 14.162
+        },
+        {
+          "text": "rete",
+          "start": 14.202,
+          "end": 14.462
+        },
+        {
+          "text": "e",
+          "start": 14.642,
+          "end": 14.682
+        },
+        {
+          "text": "velocizza",
+          "start": 14.762,
+          "end": 15.202
+        },
+        {
+          "text": "la",
+          "start": 15.282,
+          "end": 15.322
+        }
+      ]
+    },
+    {
+      "start": 15.362,
+      "end": 19.143,
+      "text": "risposta, ma aumenta il consumo energetico sui dispositivi a batteria.",
+      "words": [
+        {
+          "text": "risposta,",
+          "start": 15.362,
+          "end": 15.822
+        },
+        {
+          "text": "ma",
+          "start": 16.202,
+          "end": 16.262
+        },
+        {
+          "text": "aumenta",
+          "start": 16.402,
+          "end": 16.762
+        },
+        {
+          "text": "il",
+          "start": 16.802,
+          "end": 16.882
+        },
+        {
+          "text": "consumo",
+          "start": 16.902,
+          "end": 17.223
+        },
+        {
+          "text": "energetico",
+          "start": 17.263,
+          "end": 17.823
+        },
+        {
+          "text": "sui",
+          "start": 17.923,
+          "end": 18.063
+        },
+        {
+          "text": "dispositivi",
+          "start": 18.083,
+          "end": 18.623
+        },
+        {
+          "text": "a",
+          "start": 18.663,
+          "end": 18.703
+        },
+        {
+          "text": "batteria.",
+          "start": 18.743,
+          "end": 19.143
+        }
+      ]
+    },
+    {
+      "start": 20.043,
+      "end": 21.883,
+      "text": "La seconda questione è l'autenticazione.",
+      "words": [
+        {
+          "text": "La",
+          "start": 20.043,
+          "end": 20.103
+        },
+        {
+          "text": "seconda",
+          "start": 20.163,
+          "end": 20.443
+        },
+        {
+          "text": "questione",
+          "start": 20.463,
+          "end": 20.843
+        },
+        {
+          "text": "è",
+          "start": 20.963,
+          "end": 21.003
+        },
+        {
+          "text": "l'autenticazione.",
+          "start": 21.063,
+          "end": 21.883
+        }
+      ]
+    },
+    {
+      "start": 22.563,
+      "end": 26.584,
+      "text": "Un prodotto può gestire un proprio sistema conservando e verificando le credenziali,",
+      "words": [
+        {
+          "text": "Un",
+          "start": 22.563,
+          "end": 22.643
+        },
+        {
+          "text": "prodotto",
+          "start": 22.663,
+          "end": 23.023
+        },
+        {
+          "text": "può",
+          "start": 23.083,
+          "end": 23.163
+        },
+        {
+          "text": "gestire",
+          "start": 23.243,
+          "end": 23.583
+        },
+        {
+          "text": "un",
+          "start": 23.643,
+          "end": 23.703
+        },
+        {
+          "text": "proprio",
+          "start": 23.723,
+          "end": 23.984
+        },
+        {
+          "text": "sistema",
+          "start": 24.024,
+          "end": 24.424
+        },
+        {
+          "text": "conservando",
+          "start": 24.624,
+          "end": 25.244
+        },
+        {
+          "text": "e",
+          "start": 25.304,
+          "end": 25.344
+        },
+        {
+          "text": "verificando",
+          "start": 25.364,
+          "end": 25.864
+        },
+        {
+          "text": "le",
+          "start": 25.924,
+          "end": 25.964
+        },
+        {
+          "text": "credenziali,",
+          "start": 25.984,
+          "end": 26.584
+        }
+      ]
+    },
+    {
+      "start": 26.964,
+      "end": 31.545,
+      "text": "oppure usare l'autenticazione federata tramite fornitori esterni come Google o LinkedIn.",
+      "words": [
+        {
+          "text": "oppure",
+          "start": 26.964,
+          "end": 27.204
+        },
+        {
+          "text": "usare",
+          "start": 27.304,
+          "end": 27.544
+        },
+        {
+          "text": "l'autenticazione",
+          "start": 27.584,
+          "end": 28.344
+        },
+        {
+          "text": "federata",
+          "start": 28.404,
+          "end": 28.924
+        },
+        {
+          "text": "tramite",
+          "start": 29.044,
+          "end": 29.344
+        },
+        {
+          "text": "fornitori",
+          "start": 29.464,
+          "end": 29.884
+        },
+        {
+          "text": "esterni",
+          "start": 29.924,
+          "end": 30.344
+        },
+        {
+          "text": "come",
+          "start": 30.404,
+          "end": 30.584
+        },
+        {
+          "text": "Google",
+          "start": 30.644,
+          "end": 30.925
+        },
+        {
+          "text": "o",
+          "start": 31.005,
+          "end": 31.045
+        },
+        {
+          "text": "LinkedIn.",
+          "start": 31.125,
+          "end": 31.545
+        }
+      ]
+    },
+    {
+      "start": 32.185,
+      "end": 36.785,
+      "text": "In questo caso il prodotto riceve solo la conferma dell'identità e non conserva la password,",
+      "words": [
+        {
+          "text": "In",
+          "start": 32.185,
+          "end": 32.245
+        },
+        {
+          "text": "questo",
+          "start": 32.265,
+          "end": 32.445
+        },
+        {
+          "text": "caso",
+          "start": 32.485,
+          "end": 32.685
+        },
+        {
+          "text": "il",
+          "start": 32.825,
+          "end": 32.905
+        },
+        {
+          "text": "prodotto",
+          "start": 32.965,
+          "end": 33.345
+        },
+        {
+          "text": "riceve",
+          "start": 33.385,
+          "end": 33.705
+        },
+        {
+          "text": "solo",
+          "start": 33.845,
+          "end": 34.065
+        },
+        {
+          "text": "la",
+          "start": 34.105,
+          "end": 34.165
+        },
+        {
+          "text": "conferma",
+          "start": 34.205,
+          "end": 34.625
+        },
+        {
+          "text": "dell'identità",
+          "start": 34.685,
+          "end": 35.245
+        },
+        {
+          "text": "e",
+          "start": 35.505,
+          "end": 35.545
+        },
+        {
+          "text": "non",
+          "start": 35.625,
+          "end": 35.745
+        },
+        {
+          "text": "conserva",
+          "start": 35.785,
+          "end": 36.225
+        },
+        {
+          "text": "la",
+          "start": 36.285,
+          "end": 36.325
+        },
+        {
+          "text": "password,",
+          "start": 36.365,
+          "end": 36.785
+        }
+      ]
+    },
+    {
+      "start": 37.145,
+      "end": 39.906,
+      "text": "permettendo alle aziende di usare le proprie credenziali interne.",
+      "words": [
+        {
+          "text": "permettendo",
+          "start": 37.145,
+          "end": 37.566
+        },
+        {
+          "text": "alle",
+          "start": 37.586,
+          "end": 37.726
+        },
+        {
+          "text": "aziende",
+          "start": 37.746,
+          "end": 38.086
+        },
+        {
+          "text": "di",
+          "start": 38.146,
+          "end": 38.186
+        },
+        {
+          "text": "usare",
+          "start": 38.226,
+          "end": 38.466
+        },
+        {
+          "text": "le",
+          "start": 38.526,
+          "end": 38.606
+        },
+        {
+          "text": "proprie",
+          "start": 38.646,
+          "end": 38.966
+        },
+        {
+          "text": "credenziali",
+          "start": 39.006,
+          "end": 39.466
+        },
+        {
+          "text": "interne.",
+          "start": 39.506,
+          "end": 39.906
+        }
+      ]
+    },
+    {
+      "start": 40.966,
+      "end": 43.186,
+      "text": "La terza questione è l'information leakage:",
+      "words": [
+        {
+          "text": "La",
+          "start": 40.966,
+          "end": 41.046
+        },
+        {
+          "text": "terza",
+          "start": 41.106,
+          "end": 41.346
+        },
+        {
+          "text": "questione",
+          "start": 41.386,
+          "end": 41.766
+        },
+        {
+          "text": "è",
+          "start": 41.866,
+          "end": 41.906
+        },
+        {
+          "text": "l'information",
+          "start": 41.966,
+          "end": 42.686
+        },
+        {
+          "text": "leakage:",
+          "start": 42.746,
+          "end": 43.186
+        }
+      ]
+    },
+    {
+      "start": 43.766,
+      "end": 47.227,
+      "text": "quando utenti di organizzazioni diverse condividono lo stesso sistema,",
+      "words": [
+        {
+          "text": "quando",
+          "start": 43.766,
+          "end": 43.966
+        },
+        {
+          "text": "utenti",
+          "start": 44.066,
+          "end": 44.427
+        },
+        {
+          "text": "di",
+          "start": 44.467,
+          "end": 44.527
+        },
+        {
+          "text": "organizzazioni",
+          "start": 44.587,
+          "end": 45.207
+        },
+        {
+          "text": "diverse",
+          "start": 45.267,
+          "end": 45.747
+        },
+        {
+          "text": "condividono",
+          "start": 45.807,
+          "end": 46.327
+        },
+        {
+          "text": "lo",
+          "start": 46.387,
+          "end": 46.467
+        },
+        {
+          "text": "stesso",
+          "start": 46.487,
+          "end": 46.747
+        },
+        {
+          "text": "sistema,",
+          "start": 46.787,
+          "end": 47.227
+        }
+      ]
+    },
+    {
+      "start": 47.587,
+      "end": 50.867,
+      "text": "c'è il rischio che i dati di un'azienda diventino visibili a un'altra.",
+      "words": [
+        {
+          "text": "c'è",
+          "start": 47.587,
+          "end": 47.687
+        },
+        {
+          "text": "il",
+          "start": 47.747,
+          "end": 47.807
+        },
+        {
+          "text": "rischio",
+          "start": 47.847,
+          "end": 48.147
+        },
+        {
+          "text": "che",
+          "start": 48.207,
+          "end": 48.287
+        },
+        {
+          "text": "i",
+          "start": 48.367,
+          "end": 48.407
+        },
+        {
+          "text": "dati",
+          "start": 48.447,
+          "end": 48.667
+        },
+        {
+          "text": "di",
+          "start": 48.707,
+          "end": 48.767
+        },
+        {
+          "text": "un'azienda",
+          "start": 48.787,
+          "end": 49.287
+        },
+        {
+          "text": "diventino",
+          "start": 49.427,
+          "end": 49.867
+        },
+        {
+          "text": "visibili",
+          "start": 49.927,
+          "end": 50.347
+        },
+        {
+          "text": "a",
+          "start": 50.407,
+          "end": 50.447
+        },
+        {
+          "text": "un'altra.",
+          "start": 50.487,
+          "end": 50.867
+        }
+      ]
+    },
+    {
+      "start": 51.448,
+      "end": 53.848,
+      "text": "Si mitiga con controllo degli accessi e cifratura.",
+      "words": [
+        {
+          "text": "Si",
+          "start": 51.448,
+          "end": 51.528
+        },
+        {
+          "text": "mitiga",
+          "start": 51.568,
+          "end": 51.868
+        },
+        {
+          "text": "con",
+          "start": 51.948,
+          "end": 52.068
+        },
+        {
+          "text": "controllo",
+          "start": 52.128,
+          "end": 52.568
+        },
+        {
+          "text": "degli",
+          "start": 52.588,
+          "end": 52.748
+        },
+        {
+          "text": "accessi",
+          "start": 52.768,
+          "end": 53.188
+        },
+        {
+          "text": "e",
+          "start": 53.288,
+          "end": 53.328
+        },
+        {
+          "text": "cifratura.",
+          "start": 53.388,
+          "end": 53.848
+        }
+      ]
+    },
+    {
+      "start": 54.808,
+      "end": 57.908,
+      "text": "Infine, la quarta decisione riguarda la gestione del database:",
+      "words": [
+        {
+          "text": "Infine,",
+          "start": 54.808,
+          "end": 55.128
+        },
+        {
+          "text": "la",
+          "start": 55.248,
+          "end": 55.328
+        },
+        {
+          "text": "quarta",
+          "start": 55.388,
+          "end": 55.648
+        },
+        {
+          "text": "decisione",
+          "start": 55.708,
+          "end": 56.168
+        },
+        {
+          "text": "riguarda",
+          "start": 56.268,
+          "end": 56.588
+        },
+        {
+          "text": "la",
+          "start": 56.708,
+          "end": 56.748
+        },
+        {
+          "text": "gestione",
+          "start": 56.808,
+          "end": 57.188
+        },
+        {
+          "text": "del",
+          "start": 57.228,
+          "end": 57.328
+        },
+        {
+          "text": "database:",
+          "start": 57.368,
+          "end": 57.908
+        }
+      ]
+    },
+    {
+      "start": 58.289,
+      "end": 62.469,
+      "text": "usare un unico repository multi-tenant oppure copie separate multi-instance.",
+      "words": [
+        {
+          "text": "usare",
+          "start": 58.289,
+          "end": 58.549
+        },
+        {
+          "text": "un",
+          "start": 58.609,
+          "end": 58.709
+        },
+        {
+          "text": "unico",
+          "start": 58.769,
+          "end": 58.989
+        },
+        {
+          "text": "repository",
+          "start": 59.029,
+          "end": 59.529
+        },
+        {
+          "text": "multi-tenant",
+          "start": 59.629,
+          "end": 60.249
+        },
+        {
+          "text": "oppure",
+          "start": 60.629,
+          "end": 60.869
+        },
+        {
+          "text": "copie",
+          "start": 60.949,
+          "end": 61.209
+        },
+        {
+          "text": "separate",
+          "start": 61.249,
+          "end": 61.669
+        },
+        {
+          "text": "multi-instance.",
+          "start": 61.769,
+          "end": 62.469
+        }
+      ]
+    }
+  ]
+}

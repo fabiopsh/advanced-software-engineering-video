@@ -1,0 +1,1112 @@
+{
+  "duration": 78.73,
+  "segments": [
+    {
+      "start": 0.02,
+      "end": 6.422,
+      "text": "Passiamo alle insidie della misurazione del processo e ai pilastri operativi della cultura di ingegneria",
+      "words": [
+        {
+          "text": "Passiamo",
+          "start": 0.02,
+          "end": 0.48
+        },
+        {
+          "text": "alle",
+          "start": 0.82,
+          "end": 1.0
+        },
+        {
+          "text": "insidie",
+          "start": 1.06,
+          "end": 1.72
+        },
+        {
+          "text": "della",
+          "start": 1.86,
+          "end": 2.061
+        },
+        {
+          "text": "misurazione",
+          "start": 2.121,
+          "end": 2.661
+        },
+        {
+          "text": "del",
+          "start": 2.701,
+          "end": 2.821
+        },
+        {
+          "text": "processo",
+          "start": 2.861,
+          "end": 3.361
+        },
+        {
+          "text": "e",
+          "start": 3.761,
+          "end": 3.801
+        },
+        {
+          "text": "ai",
+          "start": 3.841,
+          "end": 3.961
+        },
+        {
+          "text": "pilastri",
+          "start": 4.021,
+          "end": 4.441
+        },
+        {
+          "text": "operativi",
+          "start": 4.501,
+          "end": 4.981
+        },
+        {
+          "text": "della",
+          "start": 5.041,
+          "end": 5.241
+        },
+        {
+          "text": "cultura",
+          "start": 5.301,
+          "end": 5.721
+        },
+        {
+          "text": "di",
+          "start": 5.761,
+          "end": 5.821
+        },
+        {
+          "text": "ingegneria",
+          "start": 5.901,
+          "end": 6.422
+        }
+      ]
+    },
+    {
+      "start": 6.462,
+      "end": 6.962,
+      "text": "Spotify.",
+      "words": [
+        {
+          "text": "Spotify.",
+          "start": 6.462,
+          "end": 6.962
+        }
+      ]
+    },
+    {
+      "start": 7.982,
+      "end": 13.023,
+      "text": "Misurare il processo non è semplice, perché persone diverse registrano i dati in modo diverso.",
+      "words": [
+        {
+          "text": "Misurare",
+          "start": 7.982,
+          "end": 8.362
+        },
+        {
+          "text": "il",
+          "start": 8.402,
+          "end": 8.462
+        },
+        {
+          "text": "processo",
+          "start": 8.482,
+          "end": 8.902
+        },
+        {
+          "text": "non",
+          "start": 9.022,
+          "end": 9.162
+        },
+        {
+          "text": "è",
+          "start": 9.222,
+          "end": 9.262
+        },
+        {
+          "text": "semplice,",
+          "start": 9.422,
+          "end": 9.943
+        },
+        {
+          "text": "perché",
+          "start": 10.223,
+          "end": 10.443
+        },
+        {
+          "text": "persone",
+          "start": 10.623,
+          "end": 10.983
+        },
+        {
+          "text": "diverse",
+          "start": 11.023,
+          "end": 11.443
+        },
+        {
+          "text": "registrano",
+          "start": 11.483,
+          "end": 11.943
+        },
+        {
+          "text": "i",
+          "start": 12.003,
+          "end": 12.043
+        },
+        {
+          "text": "dati",
+          "start": 12.063,
+          "end": 12.263
+        },
+        {
+          "text": "in",
+          "start": 12.323,
+          "end": 12.383
+        },
+        {
+          "text": "modo",
+          "start": 12.403,
+          "end": 12.583
+        },
+        {
+          "text": "diverso.",
+          "start": 12.623,
+          "end": 13.023
+        }
+      ]
+    },
+    {
+      "start": 13.623,
+      "end": 18.965,
+      "text": "Prendiamo il lead time di una modifica: dobbiamo contare il tempo trascorso totale oppure il",
+      "words": [
+        {
+          "text": "Prendiamo",
+          "start": 13.623,
+          "end": 13.944
+        },
+        {
+          "text": "il",
+          "start": 14.024,
+          "end": 14.104
+        },
+        {
+          "text": "lead",
+          "start": 14.184,
+          "end": 14.364
+        },
+        {
+          "text": "time",
+          "start": 14.464,
+          "end": 14.764
+        },
+        {
+          "text": "di",
+          "start": 14.804,
+          "end": 14.844
+        },
+        {
+          "text": "una",
+          "start": 14.884,
+          "end": 14.984
+        },
+        {
+          "text": "modifica:",
+          "start": 15.004,
+          "end": 15.444
+        },
+        {
+          "text": "dobbiamo",
+          "start": 15.924,
+          "end": 16.204
+        },
+        {
+          "text": "contare",
+          "start": 16.244,
+          "end": 16.584
+        },
+        {
+          "text": "il",
+          "start": 16.644,
+          "end": 16.704
+        },
+        {
+          "text": "tempo",
+          "start": 16.764,
+          "end": 17.004
+        },
+        {
+          "text": "trascorso",
+          "start": 17.064,
+          "end": 17.544
+        },
+        {
+          "text": "totale",
+          "start": 17.644,
+          "end": 18.085
+        },
+        {
+          "text": "oppure",
+          "start": 18.485,
+          "end": 18.765
+        },
+        {
+          "text": "il",
+          "start": 18.885,
+          "end": 18.965
+        }
+      ]
+    },
+    {
+      "start": 19.005,
+      "end": 21.025,
+      "text": "tempo effettivo speso dagli sviluppatori?",
+      "words": [
+        {
+          "text": "tempo",
+          "start": 19.005,
+          "end": 19.205
+        },
+        {
+          "text": "effettivo",
+          "start": 19.265,
+          "end": 19.705
+        },
+        {
+          "text": "speso",
+          "start": 19.785,
+          "end": 20.125
+        },
+        {
+          "text": "dagli",
+          "start": 20.165,
+          "end": 20.385
+        },
+        {
+          "text": "sviluppatori?",
+          "start": 20.445,
+          "end": 21.025
+        }
+      ]
+    },
+    {
+      "start": 21.625,
+      "end": 25.647,
+      "text": "E come si tiene conto dei cambiamenti urgenti che hanno rallentato tutto il resto del",
+      "words": [
+        {
+          "text": "E",
+          "start": 21.625,
+          "end": 21.665
+        },
+        {
+          "text": "come",
+          "start": 21.746,
+          "end": 21.906
+        },
+        {
+          "text": "si",
+          "start": 21.926,
+          "end": 22.006
+        },
+        {
+          "text": "tiene",
+          "start": 22.046,
+          "end": 22.206
+        },
+        {
+          "text": "conto",
+          "start": 22.266,
+          "end": 22.606
+        },
+        {
+          "text": "dei",
+          "start": 22.666,
+          "end": 22.786
+        },
+        {
+          "text": "cambiamenti",
+          "start": 22.826,
+          "end": 23.266
+        },
+        {
+          "text": "urgenti",
+          "start": 23.306,
+          "end": 23.826
+        },
+        {
+          "text": "che",
+          "start": 23.906,
+          "end": 23.966
+        },
+        {
+          "text": "hanno",
+          "start": 23.986,
+          "end": 24.166
+        },
+        {
+          "text": "rallentato",
+          "start": 24.226,
+          "end": 24.786
+        },
+        {
+          "text": "tutto",
+          "start": 24.926,
+          "end": 25.166
+        },
+        {
+          "text": "il",
+          "start": 25.186,
+          "end": 25.246
+        },
+        {
+          "text": "resto",
+          "start": 25.286,
+          "end": 25.506
+        },
+        {
+          "text": "del",
+          "start": 25.546,
+          "end": 25.647
+        }
+      ]
+    },
+    {
+      "start": 25.667,
+      "end": 25.967,
+      "text": "lavoro?",
+      "words": [
+        {
+          "text": "lavoro?",
+          "start": 25.667,
+          "end": 25.967
+        }
+      ]
+    },
+    {
+      "start": 26.867,
+      "end": 30.168,
+      "text": "Nel modello Spotify, lo sviluppo segue il ciclo Lean Startup:",
+      "words": [
+        {
+          "text": "Nel",
+          "start": 26.867,
+          "end": 26.987
+        },
+        {
+          "text": "modello",
+          "start": 27.027,
+          "end": 27.287
+        },
+        {
+          "text": "Spotify,",
+          "start": 27.327,
+          "end": 27.887
+        },
+        {
+          "text": "lo",
+          "start": 28.067,
+          "end": 28.147
+        },
+        {
+          "text": "sviluppo",
+          "start": 28.187,
+          "end": 28.527
+        },
+        {
+          "text": "segue",
+          "start": 28.607,
+          "end": 28.807
+        },
+        {
+          "text": "il",
+          "start": 28.847,
+          "end": 28.887
+        },
+        {
+          "text": "ciclo",
+          "start": 28.947,
+          "end": 29.227
+        },
+        {
+          "text": "Lean",
+          "start": 29.407,
+          "end": 29.588
+        },
+        {
+          "text": "Startup:",
+          "start": 29.688,
+          "end": 30.168
+        }
+      ]
+    },
+    {
+      "start": 30.688,
+      "end": 32.628,
+      "text": "think, build, ship e tweak.",
+      "words": [
+        {
+          "text": "think,",
+          "start": 30.688,
+          "end": 30.968
+        },
+        {
+          "text": "build,",
+          "start": 31.288,
+          "end": 31.548
+        },
+        {
+          "text": "ship",
+          "start": 31.808,
+          "end": 32.048
+        },
+        {
+          "text": "e",
+          "start": 32.308,
+          "end": 32.348
+        },
+        {
+          "text": "tweak.",
+          "start": 32.388,
+          "end": 32.628
+        }
+      ]
+    },
+    {
+      "start": 33.308,
+      "end": 35.769,
+      "text": "Qui l'innovazione conta più della prevedibilità",
+      "words": [
+        {
+          "text": "Qui",
+          "start": 33.308,
+          "end": 33.428
+        },
+        {
+          "text": "l'innovazione",
+          "start": 33.629,
+          "end": 34.309
+        },
+        {
+          "text": "conta",
+          "start": 34.369,
+          "end": 34.629
+        },
+        {
+          "text": "più",
+          "start": 34.729,
+          "end": 34.869
+        },
+        {
+          "text": "della",
+          "start": 34.949,
+          "end": 35.109
+        },
+        {
+          "text": "prevedibilità",
+          "start": 35.149,
+          "end": 35.769
+        }
+      ]
+    },
+    {
+      "start": 36.329,
+      "end": 38.83,
+      "text": "e la consegna di valore più del rispetto del piano,",
+      "words": [
+        {
+          "text": "e",
+          "start": 36.329,
+          "end": 36.369
+        },
+        {
+          "text": "la",
+          "start": 36.449,
+          "end": 36.509
+        },
+        {
+          "text": "consegna",
+          "start": 36.549,
+          "end": 37.009
+        },
+        {
+          "text": "di",
+          "start": 37.049,
+          "end": 37.109
+        },
+        {
+          "text": "valore",
+          "start": 37.149,
+          "end": 37.49
+        },
+        {
+          "text": "più",
+          "start": 37.61,
+          "end": 37.75
+        },
+        {
+          "text": "del",
+          "start": 37.91,
+          "end": 38.01
+        },
+        {
+          "text": "rispetto",
+          "start": 38.05,
+          "end": 38.37
+        },
+        {
+          "text": "del",
+          "start": 38.41,
+          "end": 38.51
+        },
+        {
+          "text": "piano,",
+          "start": 38.55,
+          "end": 38.83
+        }
+      ]
+    },
+    {
+      "start": 39.19,
+      "end": 41.731,
+      "text": "proprio come l'impatto supera la semplice velocity.",
+      "words": [
+        {
+          "text": "proprio",
+          "start": 39.19,
+          "end": 39.45
+        },
+        {
+          "text": "come",
+          "start": 39.49,
+          "end": 39.65
+        },
+        {
+          "text": "l'impatto",
+          "start": 39.75,
+          "end": 40.27
+        },
+        {
+          "text": "supera",
+          "start": 40.37,
+          "end": 40.69
+        },
+        {
+          "text": "la",
+          "start": 40.75,
+          "end": 40.81
+        },
+        {
+          "text": "semplice",
+          "start": 40.87,
+          "end": 41.25
+        },
+        {
+          "text": "velocity.",
+          "start": 41.29,
+          "end": 41.731
+        }
+      ]
+    },
+    {
+      "start": 42.711,
+      "end": 45.472,
+      "text": "Anziché cercare di evitare ogni guasto a ogni costo,",
+      "words": [
+        {
+          "text": "Anziché",
+          "start": 42.711,
+          "end": 43.011
+        },
+        {
+          "text": "cercare",
+          "start": 43.051,
+          "end": 43.391
+        },
+        {
+          "text": "di",
+          "start": 43.431,
+          "end": 43.491
+        },
+        {
+          "text": "evitare",
+          "start": 43.531,
+          "end": 43.911
+        },
+        {
+          "text": "ogni",
+          "start": 43.971,
+          "end": 44.151
+        },
+        {
+          "text": "guasto",
+          "start": 44.191,
+          "end": 44.611
+        },
+        {
+          "text": "a",
+          "start": 44.651,
+          "end": 44.691
+        },
+        {
+          "text": "ogni",
+          "start": 44.771,
+          "end": 44.951
+        },
+        {
+          "text": "costo,",
+          "start": 45.051,
+          "end": 45.472
+        }
+      ]
+    },
+    {
+      "start": 45.792,
+      "end": 49.633,
+      "text": "si punta a riprendersi rapidamente dai guasti, usando rilasci graduali,",
+      "words": [
+        {
+          "text": "si",
+          "start": 45.792,
+          "end": 45.872
+        },
+        {
+          "text": "punta",
+          "start": 45.932,
+          "end": 46.172
+        },
+        {
+          "text": "a",
+          "start": 46.212,
+          "end": 46.252
+        },
+        {
+          "text": "riprendersi",
+          "start": 46.312,
+          "end": 46.852
+        },
+        {
+          "text": "rapidamente",
+          "start": 46.892,
+          "end": 47.412
+        },
+        {
+          "text": "dai",
+          "start": 47.432,
+          "end": 47.552
+        },
+        {
+          "text": "guasti,",
+          "start": 47.592,
+          "end": 47.972
+        },
+        {
+          "text": "usando",
+          "start": 48.372,
+          "end": 48.632
+        },
+        {
+          "text": "rilasci",
+          "start": 48.792,
+          "end": 49.132
+        },
+        {
+          "text": "graduali,",
+          "start": 49.172,
+          "end": 49.633
+        }
+      ]
+    },
+    {
+      "start": 49.753,
+      "end": 55.174,
+      "text": "chiamati gradual rollout, per limitare il blast radius, insieme ad analisi retrospettive.",
+      "words": [
+        {
+          "text": "chiamati",
+          "start": 49.753,
+          "end": 50.033
+        },
+        {
+          "text": "gradual",
+          "start": 50.293,
+          "end": 50.673
+        },
+        {
+          "text": "rollout,",
+          "start": 50.733,
+          "end": 51.153
+        },
+        {
+          "text": "per",
+          "start": 51.633,
+          "end": 51.753
+        },
+        {
+          "text": "limitare",
+          "start": 51.793,
+          "end": 52.173
+        },
+        {
+          "text": "il",
+          "start": 52.233,
+          "end": 52.313
+        },
+        {
+          "text": "blast",
+          "start": 52.353,
+          "end": 52.593
+        },
+        {
+          "text": "radius,",
+          "start": 52.653,
+          "end": 53.053
+        },
+        {
+          "text": "insieme",
+          "start": 53.434,
+          "end": 53.794
+        },
+        {
+          "text": "ad",
+          "start": 53.954,
+          "end": 54.034
+        },
+        {
+          "text": "analisi",
+          "start": 54.074,
+          "end": 54.434
+        },
+        {
+          "text": "retrospettive.",
+          "start": 54.494,
+          "end": 55.174
+        }
+      ]
+    },
+    {
+      "start": 56.154,
+      "end": 62.036,
+      "text": "L'organizzazione rifiuta gli sprechi mantenendo pochissima burocrazia, solo quanta basta a evitare il caos,",
+      "words": [
+        {
+          "text": "L'organizzazione",
+          "start": 56.154,
+          "end": 57.034
+        },
+        {
+          "text": "rifiuta",
+          "start": 57.215,
+          "end": 57.575
+        },
+        {
+          "text": "gli",
+          "start": 57.615,
+          "end": 57.715
+        },
+        {
+          "text": "sprechi",
+          "start": 57.755,
+          "end": 58.135
+        },
+        {
+          "text": "mantenendo",
+          "start": 58.295,
+          "end": 58.735
+        },
+        {
+          "text": "pochissima",
+          "start": 58.815,
+          "end": 59.335
+        },
+        {
+          "text": "burocrazia,",
+          "start": 59.375,
+          "end": 59.975
+        },
+        {
+          "text": "solo",
+          "start": 60.295,
+          "end": 60.495
+        },
+        {
+          "text": "quanta",
+          "start": 60.555,
+          "end": 60.815
+        },
+        {
+          "text": "basta",
+          "start": 60.855,
+          "end": 61.156
+        },
+        {
+          "text": "a",
+          "start": 61.196,
+          "end": 61.236
+        },
+        {
+          "text": "evitare",
+          "start": 61.276,
+          "end": 61.576
+        },
+        {
+          "text": "il",
+          "start": 61.616,
+          "end": 61.656
+        },
+        {
+          "text": "caos,",
+          "start": 61.696,
+          "end": 62.036
+        }
+      ]
+    },
+    {
+      "start": 62.656,
+      "end": 66.017,
+      "text": "riducendo i grandi progetti e affidandosi a improvement boards,",
+      "words": [
+        {
+          "text": "riducendo",
+          "start": 62.656,
+          "end": 63.216
+        },
+        {
+          "text": "i",
+          "start": 63.256,
+          "end": 63.296
+        },
+        {
+          "text": "grandi",
+          "start": 63.296,
+          "end": 63.556
+        },
+        {
+          "text": "progetti",
+          "start": 63.616,
+          "end": 64.096
+        },
+        {
+          "text": "e",
+          "start": 64.256,
+          "end": 64.296
+        },
+        {
+          "text": "affidandosi",
+          "start": 64.356,
+          "end": 64.936
+        },
+        {
+          "text": "a",
+          "start": 65.017,
+          "end": 65.057
+        },
+        {
+          "text": "improvement",
+          "start": 65.157,
+          "end": 65.637
+        },
+        {
+          "text": "boards,",
+          "start": 65.697,
+          "end": 66.017
+        }
+      ]
+    },
+    {
+      "start": 66.317,
+      "end": 67.897,
+      "text": "Toyota kata e storytelling.",
+      "words": [
+        {
+          "text": "Toyota",
+          "start": 66.317,
+          "end": 66.637
+        },
+        {
+          "text": "kata",
+          "start": 66.677,
+          "end": 66.957
+        },
+        {
+          "text": "e",
+          "start": 67.117,
+          "end": 67.15700000000001
+        },
+        {
+          "text": "storytelling.",
+          "start": 67.257,
+          "end": 67.897
+        }
+      ]
+    },
+    {
+      "start": 68.677,
+      "end": 72.999,
+      "text": "Infine, il Tribe Leader ha il compito di offrire alle squad l'ambiente giusto,",
+      "words": [
+        {
+          "text": "Infine,",
+          "start": 68.677,
+          "end": 69.078
+        },
+        {
+          "text": "il",
+          "start": 69.338,
+          "end": 69.438
+        },
+        {
+          "text": "Tribe",
+          "start": 69.518,
+          "end": 69.838
+        },
+        {
+          "text": "Leader",
+          "start": 69.898,
+          "end": 70.198
+        },
+        {
+          "text": "ha",
+          "start": 70.438,
+          "end": 70.498
+        },
+        {
+          "text": "il",
+          "start": 70.558,
+          "end": 70.618
+        },
+        {
+          "text": "compito",
+          "start": 70.658,
+          "end": 70.998
+        },
+        {
+          "text": "di",
+          "start": 71.038,
+          "end": 71.078
+        },
+        {
+          "text": "offrire",
+          "start": 71.118,
+          "end": 71.438
+        },
+        {
+          "text": "alle",
+          "start": 71.478,
+          "end": 71.638
+        },
+        {
+          "text": "squad",
+          "start": 71.678,
+          "end": 71.998
+        },
+        {
+          "text": "l'ambiente",
+          "start": 72.238,
+          "end": 72.658
+        },
+        {
+          "text": "giusto,",
+          "start": 72.698,
+          "end": 72.999
+        }
+      ]
+    },
+    {
+      "start": 73.339,
+      "end": 78.08,
+      "text": "con spazi comuni ed eventi informali regolari in cui i team condividono ciò su cui",
+      "words": [
+        {
+          "text": "con",
+          "start": 73.339,
+          "end": 73.459
+        },
+        {
+          "text": "spazi",
+          "start": 73.519,
+          "end": 73.839
+        },
+        {
+          "text": "comuni",
+          "start": 73.879,
+          "end": 74.259
+        },
+        {
+          "text": "ed",
+          "start": 74.319,
+          "end": 74.399
+        },
+        {
+          "text": "eventi",
+          "start": 74.419,
+          "end": 74.699
+        },
+        {
+          "text": "informali",
+          "start": 74.759,
+          "end": 75.219
+        },
+        {
+          "text": "regolari",
+          "start": 75.319,
+          "end": 75.739
+        },
+        {
+          "text": "in",
+          "start": 76.159,
+          "end": 76.239
+        },
+        {
+          "text": "cui",
+          "start": 76.279,
+          "end": 76.419
+        },
+        {
+          "text": "i",
+          "start": 76.459,
+          "end": 76.49900000000001
+        },
+        {
+          "text": "team",
+          "start": 76.559,
+          "end": 76.779
+        },
+        {
+          "text": "condividono",
+          "start": 76.92,
+          "end": 77.44
+        },
+        {
+          "text": "ciò",
+          "start": 77.6,
+          "end": 77.7
+        },
+        {
+          "text": "su",
+          "start": 77.84,
+          "end": 77.92
+        },
+        {
+          "text": "cui",
+          "start": 77.98,
+          "end": 78.08
+        }
+      ]
+    },
+    {
+      "start": 78.12,
+      "end": 78.48,
+      "text": "lavorano.",
+      "words": [
+        {
+          "text": "lavorano.",
+          "start": 78.12,
+          "end": 78.48
+        }
+      ]
+    }
+  ]
+}

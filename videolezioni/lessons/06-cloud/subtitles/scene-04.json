@@ -1,0 +1,982 @@
+{
+  "duration": 73.976,
+  "segments": [
+    {
+      "start": 0.755,
+      "end": 2.496,
+      "text": "Vediamo da vicino i sistemi multi-tenant.",
+      "words": [
+        {
+          "text": "Vediamo",
+          "start": 0.755,
+          "end": 0.995
+        },
+        {
+          "text": "da",
+          "start": 1.035,
+          "end": 1.075
+        },
+        {
+          "text": "vicino",
+          "start": 1.115,
+          "end": 1.375
+        },
+        {
+          "text": "i",
+          "start": 1.475,
+          "end": 1.5150000000000001
+        },
+        {
+          "text": "sistemi",
+          "start": 1.535,
+          "end": 1.855
+        },
+        {
+          "text": "multi-tenant.",
+          "start": 1.915,
+          "end": 2.496
+        }
+      ]
+    },
+    {
+      "start": 3.196,
+      "end": 6.956,
+      "text": "In questa architettura tutti gli utenti condividono un unico schema di database:",
+      "words": [
+        {
+          "text": "In",
+          "start": 3.196,
+          "end": 3.276
+        },
+        {
+          "text": "questa",
+          "start": 3.296,
+          "end": 3.496
+        },
+        {
+          "text": "architettura",
+          "start": 3.516,
+          "end": 4.076
+        },
+        {
+          "text": "tutti",
+          "start": 4.236,
+          "end": 4.456
+        },
+        {
+          "text": "gli",
+          "start": 4.496,
+          "end": 4.596
+        },
+        {
+          "text": "utenti",
+          "start": 4.616,
+          "end": 4.976
+        },
+        {
+          "text": "condividono",
+          "start": 5.036,
+          "end": 5.556
+        },
+        {
+          "text": "un",
+          "start": 5.616,
+          "end": 5.696
+        },
+        {
+          "text": "unico",
+          "start": 5.756,
+          "end": 5.996
+        },
+        {
+          "text": "schema",
+          "start": 6.036,
+          "end": 6.296
+        },
+        {
+          "text": "di",
+          "start": 6.336,
+          "end": 6.396
+        },
+        {
+          "text": "database:",
+          "start": 6.436,
+          "end": 6.956
+        }
+      ]
+    },
+    {
+      "start": 7.536,
+      "end": 10.297,
+      "text": "ogni riga viene etichettata con un identificatore del tenant,",
+      "words": [
+        {
+          "text": "ogni",
+          "start": 7.536,
+          "end": 7.676
+        },
+        {
+          "text": "riga",
+          "start": 7.736,
+          "end": 7.916
+        },
+        {
+          "text": "viene",
+          "start": 7.956,
+          "end": 8.176
+        },
+        {
+          "text": "etichettata",
+          "start": 8.216,
+          "end": 8.696
+        },
+        {
+          "text": "con",
+          "start": 8.756,
+          "end": 8.896
+        },
+        {
+          "text": "un",
+          "start": 8.936,
+          "end": 9.017
+        },
+        {
+          "text": "identificatore",
+          "start": 9.057,
+          "end": 9.737
+        },
+        {
+          "text": "del",
+          "start": 9.777,
+          "end": 9.897
+        },
+        {
+          "text": "tenant,",
+          "start": 9.937,
+          "end": 10.297
+        }
+      ]
+    },
+    {
+      "start": 10.537,
+      "end": 13.197,
+      "text": "cioè del cliente, garantendo così un isolamento logico.",
+      "words": [
+        {
+          "text": "cioè",
+          "start": 10.537,
+          "end": 10.697
+        },
+        {
+          "text": "del",
+          "start": 10.757,
+          "end": 10.877
+        },
+        {
+          "text": "cliente,",
+          "start": 10.917,
+          "end": 11.317
+        },
+        {
+          "text": "garantendo",
+          "start": 11.637,
+          "end": 12.037
+        },
+        {
+          "text": "così",
+          "start": 12.077,
+          "end": 12.237
+        },
+        {
+          "text": "un",
+          "start": 12.317,
+          "end": 12.377
+        },
+        {
+          "text": "isolamento",
+          "start": 12.417,
+          "end": 12.837
+        },
+        {
+          "text": "logico.",
+          "start": 12.877,
+          "end": 13.197
+        }
+      ]
+    },
+    {
+      "start": 13.837,
+      "end": 19.438,
+      "text": "Guardate l'esempio della tabella Stock management: la colonna Tenant distingue i record dei clienti T516,",
+      "words": [
+        {
+          "text": "Guardate",
+          "start": 13.837,
+          "end": 14.137
+        },
+        {
+          "text": "l'esempio",
+          "start": 14.217,
+          "end": 14.677
+        },
+        {
+          "text": "della",
+          "start": 14.737,
+          "end": 14.897
+        },
+        {
+          "text": "tabella",
+          "start": 14.917,
+          "end": 15.257
+        },
+        {
+          "text": "Stock",
+          "start": 15.357,
+          "end": 15.597
+        },
+        {
+          "text": "management:",
+          "start": 15.677,
+          "end": 16.158
+        },
+        {
+          "text": "la",
+          "start": 16.698,
+          "end": 16.758
+        },
+        {
+          "text": "colonna",
+          "start": 16.798,
+          "end": 17.098
+        },
+        {
+          "text": "Tenant",
+          "start": 17.218,
+          "end": 17.598
+        },
+        {
+          "text": "distingue",
+          "start": 17.778,
+          "end": 18.158
+        },
+        {
+          "text": "i",
+          "start": 18.198,
+          "end": 18.238
+        },
+        {
+          "text": "record",
+          "start": 18.298,
+          "end": 18.638
+        },
+        {
+          "text": "dei",
+          "start": 18.718,
+          "end": 18.838
+        },
+        {
+          "text": "clienti",
+          "start": 18.878,
+          "end": 19.278
+        },
+        {
+          "text": "T516,",
+          "start": 19.398,
+          "end": 19.438
+        }
+      ]
+    },
+    {
+      "start": 20.638,
+      "end": 25.859,
+      "text": "T632 e T973 pur convivendo nella stessa tabella fisica.",
+      "words": [
+        {
+          "text": "T632",
+          "start": 20.638,
+          "end": 20.678
+        },
+        {
+          "text": "e",
+          "start": 22.098,
+          "end": 22.138
+        },
+        {
+          "text": "T973",
+          "start": 22.278,
+          "end": 22.318
+        },
+        {
+          "text": "pur",
+          "start": 23.979,
+          "end": 24.099
+        },
+        {
+          "text": "convivendo",
+          "start": 24.139,
+          "end": 24.579
+        },
+        {
+          "text": "nella",
+          "start": 24.679,
+          "end": 24.879
+        },
+        {
+          "text": "stessa",
+          "start": 24.919,
+          "end": 25.179
+        },
+        {
+          "text": "tabella",
+          "start": 25.219,
+          "end": 25.499
+        },
+        {
+          "text": "fisica.",
+          "start": 25.519,
+          "end": 25.859
+        }
+      ]
+    },
+    {
+      "start": 26.599,
+      "end": 28.419,
+      "text": "Questa soluzione offre tre grandi vantaggi.",
+      "words": [
+        {
+          "text": "Questa",
+          "start": 26.599,
+          "end": 26.779
+        },
+        {
+          "text": "soluzione",
+          "start": 26.819,
+          "end": 27.179
+        },
+        {
+          "text": "offre",
+          "start": 27.239,
+          "end": 27.459
+        },
+        {
+          "text": "tre",
+          "start": 27.519,
+          "end": 27.639
+        },
+        {
+          "text": "grandi",
+          "start": 27.699,
+          "end": 27.939
+        },
+        {
+          "text": "vantaggi.",
+          "start": 27.959,
+          "end": 28.419
+        }
+      ]
+    },
+    {
+      "start": 28.979,
+      "end": 34.18,
+      "text": "Primo, ottima resource utilization: il provider controlla tutte le risorse e può ottimizzarle.",
+      "words": [
+        {
+          "text": "Primo,",
+          "start": 28.979,
+          "end": 29.199
+        },
+        {
+          "text": "ottima",
+          "start": 29.419,
+          "end": 29.72
+        },
+        {
+          "text": "resource",
+          "start": 29.8,
+          "end": 30.24
+        },
+        {
+          "text": "utilization:",
+          "start": 30.32,
+          "end": 30.96
+        },
+        {
+          "text": "il",
+          "start": 31.36,
+          "end": 31.44
+        },
+        {
+          "text": "provider",
+          "start": 31.46,
+          "end": 31.84
+        },
+        {
+          "text": "controlla",
+          "start": 31.9,
+          "end": 32.34
+        },
+        {
+          "text": "tutte",
+          "start": 32.44,
+          "end": 32.68
+        },
+        {
+          "text": "le",
+          "start": 32.7,
+          "end": 32.78
+        },
+        {
+          "text": "risorse",
+          "start": 32.8,
+          "end": 33.22
+        },
+        {
+          "text": "e",
+          "start": 33.34,
+          "end": 33.38
+        },
+        {
+          "text": "può",
+          "start": 33.4,
+          "end": 33.5
+        },
+        {
+          "text": "ottimizzarle.",
+          "start": 33.56,
+          "end": 34.18
+        }
+      ]
+    },
+    {
+      "start": 34.86,
+      "end": 40.341,
+      "text": "Secondo, sicurezza e manutenzione: il database è progettato fin dall'inizio per isolare i clienti e",
+      "words": [
+        {
+          "text": "Secondo,",
+          "start": 34.86,
+          "end": 35.2
+        },
+        {
+          "text": "sicurezza",
+          "start": 35.32,
+          "end": 35.78
+        },
+        {
+          "text": "e",
+          "start": 35.82,
+          "end": 35.86
+        },
+        {
+          "text": "manutenzione:",
+          "start": 35.88,
+          "end": 36.481
+        },
+        {
+          "text": "il",
+          "start": 36.981,
+          "end": 37.041
+        },
+        {
+          "text": "database",
+          "start": 37.061,
+          "end": 37.461
+        },
+        {
+          "text": "è",
+          "start": 37.501,
+          "end": 37.541
+        },
+        {
+          "text": "progettato",
+          "start": 37.561,
+          "end": 38.021
+        },
+        {
+          "text": "fin",
+          "start": 38.141,
+          "end": 38.301
+        },
+        {
+          "text": "dall'inizio",
+          "start": 38.341,
+          "end": 38.941
+        },
+        {
+          "text": "per",
+          "start": 38.981,
+          "end": 39.101
+        },
+        {
+          "text": "isolare",
+          "start": 39.141,
+          "end": 39.501
+        },
+        {
+          "text": "i",
+          "start": 39.521,
+          "end": 39.561
+        },
+        {
+          "text": "clienti",
+          "start": 39.561,
+          "end": 40.021
+        },
+        {
+          "text": "e",
+          "start": 40.301,
+          "end": 40.341
+        }
+      ]
+    },
+    {
+      "start": 40.361,
+      "end": 43.702,
+      "text": "c'è una sola copia del software da correggere in caso di vulnerabilità.",
+      "words": [
+        {
+          "text": "c'è",
+          "start": 40.361,
+          "end": 40.481
+        },
+        {
+          "text": "una",
+          "start": 40.601,
+          "end": 40.741
+        },
+        {
+          "text": "sola",
+          "start": 40.821,
+          "end": 41.041
+        },
+        {
+          "text": "copia",
+          "start": 41.101,
+          "end": 41.361
+        },
+        {
+          "text": "del",
+          "start": 41.381,
+          "end": 41.501
+        },
+        {
+          "text": "software",
+          "start": 41.561,
+          "end": 41.981
+        },
+        {
+          "text": "da",
+          "start": 41.981,
+          "end": 42.041
+        },
+        {
+          "text": "correggere",
+          "start": 42.081,
+          "end": 42.561
+        },
+        {
+          "text": "in",
+          "start": 42.681,
+          "end": 42.741
+        },
+        {
+          "text": "caso",
+          "start": 42.781,
+          "end": 42.961
+        },
+        {
+          "text": "di",
+          "start": 43.001,
+          "end": 43.061
+        },
+        {
+          "text": "vulnerabilità.",
+          "start": 43.101,
+          "end": 43.702
+        }
+      ]
+    },
+    {
+      "start": 44.742,
+      "end": 50.983,
+      "text": "Terzo, update management semplice: si aggiorna un'unica istanza e tutti usano subito l'ultima versione.",
+      "words": [
+        {
+          "text": "Terzo,",
+          "start": 44.742,
+          "end": 45.142
+        },
+        {
+          "text": "update",
+          "start": 45.462,
+          "end": 45.842
+        },
+        {
+          "text": "management",
+          "start": 45.882,
+          "end": 46.342
+        },
+        {
+          "text": "semplice:",
+          "start": 46.442,
+          "end": 46.902
+        },
+        {
+          "text": "si",
+          "start": 47.202,
+          "end": 47.242
+        },
+        {
+          "text": "aggiorna",
+          "start": 47.282,
+          "end": 47.642
+        },
+        {
+          "text": "un'unica",
+          "start": 47.722,
+          "end": 48.202
+        },
+        {
+          "text": "istanza",
+          "start": 48.242,
+          "end": 48.762
+        },
+        {
+          "text": "e",
+          "start": 48.942,
+          "end": 48.982
+        },
+        {
+          "text": "tutti",
+          "start": 49.122,
+          "end": 49.442
+        },
+        {
+          "text": "usano",
+          "start": 49.522,
+          "end": 49.742
+        },
+        {
+          "text": "subito",
+          "start": 49.802,
+          "end": 50.103
+        },
+        {
+          "text": "l'ultima",
+          "start": 50.183,
+          "end": 50.503
+        },
+        {
+          "text": "versione.",
+          "start": 50.543,
+          "end": 50.983
+        }
+      ]
+    },
+    {
+      "start": 51.883,
+      "end": 54.103,
+      "text": "Di contro emergono tre svantaggi importanti.",
+      "words": [
+        {
+          "text": "Di",
+          "start": 51.883,
+          "end": 51.943
+        },
+        {
+          "text": "contro",
+          "start": 52.003,
+          "end": 52.263
+        },
+        {
+          "text": "emergono",
+          "start": 52.303,
+          "end": 52.703
+        },
+        {
+          "text": "tre",
+          "start": 52.803,
+          "end": 52.943
+        },
+        {
+          "text": "svantaggi",
+          "start": 53.003,
+          "end": 53.463
+        },
+        {
+          "text": "importanti.",
+          "start": 53.503,
+          "end": 54.103
+        }
+      ]
+    },
+    {
+      "start": 54.563,
+      "end": 60.104,
+      "text": "Primo, inflessibilità: tutti condividono lo stesso schema con margini limitati di adattamento.",
+      "words": [
+        {
+          "text": "Primo,",
+          "start": 54.563,
+          "end": 54.843
+        },
+        {
+          "text": "inflessibilità:",
+          "start": 55.123,
+          "end": 56.003
+        },
+        {
+          "text": "tutti",
+          "start": 56.563,
+          "end": 56.823
+        },
+        {
+          "text": "condividono",
+          "start": 56.863,
+          "end": 57.344
+        },
+        {
+          "text": "lo",
+          "start": 57.404,
+          "end": 57.484
+        },
+        {
+          "text": "stesso",
+          "start": 57.524,
+          "end": 57.784
+        },
+        {
+          "text": "schema",
+          "start": 57.844,
+          "end": 58.164
+        },
+        {
+          "text": "con",
+          "start": 58.244,
+          "end": 58.364
+        },
+        {
+          "text": "margini",
+          "start": 58.424,
+          "end": 58.804
+        },
+        {
+          "text": "limitati",
+          "start": 58.884,
+          "end": 59.364
+        },
+        {
+          "text": "di",
+          "start": 59.404,
+          "end": 59.464
+        },
+        {
+          "text": "adattamento.",
+          "start": 59.504,
+          "end": 60.104
+        }
+      ]
+    },
+    {
+      "start": 60.584,
+      "end": 64.985,
+      "text": "Secondo, il rischio teorico di fuga dati tra tenant e il fatto che una violazione",
+      "words": [
+        {
+          "text": "Secondo,",
+          "start": 60.584,
+          "end": 60.984
+        },
+        {
+          "text": "il",
+          "start": 61.104,
+          "end": 61.184
+        },
+        {
+          "text": "rischio",
+          "start": 61.224,
+          "end": 61.444
+        },
+        {
+          "text": "teorico",
+          "start": 61.524,
+          "end": 61.984
+        },
+        {
+          "text": "di",
+          "start": 62.024,
+          "end": 62.104
+        },
+        {
+          "text": "fuga",
+          "start": 62.184,
+          "end": 62.404
+        },
+        {
+          "text": "dati",
+          "start": 62.444,
+          "end": 62.704
+        },
+        {
+          "text": "tra",
+          "start": 62.764,
+          "end": 62.864
+        },
+        {
+          "text": "tenant",
+          "start": 62.944,
+          "end": 63.304
+        },
+        {
+          "text": "e",
+          "start": 63.825,
+          "end": 63.865
+        },
+        {
+          "text": "il",
+          "start": 63.905,
+          "end": 63.965
+        },
+        {
+          "text": "fatto",
+          "start": 63.985,
+          "end": 64.185
+        },
+        {
+          "text": "che",
+          "start": 64.205,
+          "end": 64.305
+        },
+        {
+          "text": "una",
+          "start": 64.365,
+          "end": 64.485
+        },
+        {
+          "text": "violazione",
+          "start": 64.545,
+          "end": 64.985
+        }
+      ]
+    },
+    {
+      "start": 65.025,
+      "end": 67.485,
+      "text": "del database colpirebbe tutti i clienti insieme.",
+      "words": [
+        {
+          "text": "del",
+          "start": 65.025,
+          "end": 65.105
+        },
+        {
+          "text": "database",
+          "start": 65.145,
+          "end": 65.625
+        },
+        {
+          "text": "colpirebbe",
+          "start": 65.705,
+          "end": 66.165
+        },
+        {
+          "text": "tutti",
+          "start": 66.265,
+          "end": 66.545
+        },
+        {
+          "text": "i",
+          "start": 66.585,
+          "end": 66.625
+        },
+        {
+          "text": "clienti",
+          "start": 66.625,
+          "end": 67.025
+        },
+        {
+          "text": "insieme.",
+          "start": 67.085,
+          "end": 67.485
+        }
+      ]
+    },
+    {
+      "start": 68.065,
+      "end": 73.726,
+      "text": "Terzo, maggiore complessità software rispetto al multi-instance, con conseguente aumento della probabilità di bug.",
+      "words": [
+        {
+          "text": "Terzo,",
+          "start": 68.065,
+          "end": 68.405
+        },
+        {
+          "text": "maggiore",
+          "start": 68.625,
+          "end": 68.965
+        },
+        {
+          "text": "complessità",
+          "start": 69.005,
+          "end": 69.505
+        },
+        {
+          "text": "software",
+          "start": 69.605,
+          "end": 70.005
+        },
+        {
+          "text": "rispetto",
+          "start": 70.025,
+          "end": 70.345
+        },
+        {
+          "text": "al",
+          "start": 70.365,
+          "end": 70.445
+        },
+        {
+          "text": "multi-instance,",
+          "start": 70.505,
+          "end": 71.306
+        },
+        {
+          "text": "con",
+          "start": 71.606,
+          "end": 71.726
+        },
+        {
+          "text": "conseguente",
+          "start": 71.746,
+          "end": 72.206
+        },
+        {
+          "text": "aumento",
+          "start": 72.266,
+          "end": 72.606
+        },
+        {
+          "text": "della",
+          "start": 72.646,
+          "end": 72.806
+        },
+        {
+          "text": "probabilità",
+          "start": 72.846,
+          "end": 73.366
+        },
+        {
+          "text": "di",
+          "start": 73.406,
+          "end": 73.466
+        },
+        {
+          "text": "bug.",
+          "start": 73.526,
+          "end": 73.726
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1059 @@
+{
+  "duration": 80.694,
+  "segments": [
+    {
+      "start": 0.02,
+      "end": 2.6,
+      "text": "Perché le aziende adottano i microservizi?",
+      "words": [
+        {
+          "text": "Perché",
+          "start": 0.02,
+          "end": 0.32
+        },
+        {
+          "text": "le",
+          "start": 0.48,
+          "end": 0.56
+        },
+        {
+          "text": "aziende",
+          "start": 0.6,
+          "end": 1.08
+        },
+        {
+          "text": "adottano",
+          "start": 1.16,
+          "end": 1.58
+        },
+        {
+          "text": "i",
+          "start": 1.66,
+          "end": 1.7
+        },
+        {
+          "text": "microservizi?",
+          "start": 1.74,
+          "end": 2.6
+        }
+      ]
+    },
+    {
+      "start": 3.24,
+      "end": 8.681,
+      "text": "I motivi principali sono due: ridurre il lead time per rilasciare nuove feature e aggiornamenti,",
+      "words": [
+        {
+          "text": "I",
+          "start": 3.24,
+          "end": 3.2800000000000002
+        },
+        {
+          "text": "motivi",
+          "start": 3.32,
+          "end": 3.58
+        },
+        {
+          "text": "principali",
+          "start": 3.62,
+          "end": 4.04
+        },
+        {
+          "text": "sono",
+          "start": 4.06,
+          "end": 4.22
+        },
+        {
+          "text": "due:",
+          "start": 4.28,
+          "end": 4.42
+        },
+        {
+          "text": "ridurre",
+          "start": 4.94,
+          "end": 5.38
+        },
+        {
+          "text": "il",
+          "start": 5.52,
+          "end": 5.6
+        },
+        {
+          "text": "lead",
+          "start": 5.7,
+          "end": 5.88
+        },
+        {
+          "text": "time",
+          "start": 5.96,
+          "end": 6.34
+        },
+        {
+          "text": "per",
+          "start": 6.5,
+          "end": 6.62
+        },
+        {
+          "text": "rilasciare",
+          "start": 6.66,
+          "end": 7.16
+        },
+        {
+          "text": "nuove",
+          "start": 7.22,
+          "end": 7.46
+        },
+        {
+          "text": "feature",
+          "start": 7.54,
+          "end": 7.921
+        },
+        {
+          "text": "e",
+          "start": 7.981,
+          "end": 8.021
+        },
+        {
+          "text": "aggiornamenti,",
+          "start": 8.061,
+          "end": 8.681
+        }
+      ]
+    },
+    {
+      "start": 9.301,
+      "end": 13.781,
+      "text": "e scalare in modo efficace eseguendo ogni servizio in un container separato,",
+      "words": [
+        {
+          "text": "e",
+          "start": 9.301,
+          "end": 9.341
+        },
+        {
+          "text": "scalare",
+          "start": 9.461,
+          "end": 9.981
+        },
+        {
+          "text": "in",
+          "start": 10.061,
+          "end": 10.141
+        },
+        {
+          "text": "modo",
+          "start": 10.181,
+          "end": 10.341
+        },
+        {
+          "text": "efficace",
+          "start": 10.401,
+          "end": 10.981
+        },
+        {
+          "text": "eseguendo",
+          "start": 11.081,
+          "end": 11.501
+        },
+        {
+          "text": "ogni",
+          "start": 11.681,
+          "end": 11.941
+        },
+        {
+          "text": "servizio",
+          "start": 12.021,
+          "end": 12.501
+        },
+        {
+          "text": "in",
+          "start": 12.541,
+          "end": 12.601
+        },
+        {
+          "text": "un",
+          "start": 12.641,
+          "end": 12.701
+        },
+        {
+          "text": "container",
+          "start": 12.761,
+          "end": 13.261
+        },
+        {
+          "text": "separato,",
+          "start": 13.321,
+          "end": 13.781
+        }
+      ]
+    },
+    {
+      "start": 14.121,
+      "end": 16.581,
+      "text": "così da riavviarlo o replicarlo rapidamente.",
+      "words": [
+        {
+          "text": "così",
+          "start": 14.121,
+          "end": 14.321
+        },
+        {
+          "text": "da",
+          "start": 14.381,
+          "end": 14.441
+        },
+        {
+          "text": "riavviarlo",
+          "start": 14.521,
+          "end": 15.161
+        },
+        {
+          "text": "o",
+          "start": 15.301,
+          "end": 15.341
+        },
+        {
+          "text": "replicarlo",
+          "start": 15.401,
+          "end": 15.921
+        },
+        {
+          "text": "rapidamente.",
+          "start": 16.021,
+          "end": 16.581
+        }
+      ]
+    },
+    {
+      "start": 17.321,
+      "end": 22.481,
+      "text": "I numeri reali lo confermano: Uber è passata da un monolite Python nel duemilaquattordici a",
+      "words": [
+        {
+          "text": "I",
+          "start": 17.321,
+          "end": 17.361
+        },
+        {
+          "text": "numeri",
+          "start": 17.381,
+          "end": 17.641
+        },
+        {
+          "text": "reali",
+          "start": 17.701,
+          "end": 18.001
+        },
+        {
+          "text": "lo",
+          "start": 18.041,
+          "end": 18.101
+        },
+        {
+          "text": "confermano:",
+          "start": 18.121,
+          "end": 18.641
+        },
+        {
+          "text": "Uber",
+          "start": 19.021,
+          "end": 19.241
+        },
+        {
+          "text": "è",
+          "start": 19.401,
+          "end": 19.441
+        },
+        {
+          "text": "passata",
+          "start": 19.481,
+          "end": 19.801
+        },
+        {
+          "text": "da",
+          "start": 19.841,
+          "end": 19.901
+        },
+        {
+          "text": "un",
+          "start": 19.981,
+          "end": 20.041
+        },
+        {
+          "text": "monolite",
+          "start": 20.081,
+          "end": 20.481
+        },
+        {
+          "text": "Python",
+          "start": 20.541,
+          "end": 20.981
+        },
+        {
+          "text": "nel",
+          "start": 21.101,
+          "end": 21.241
+        },
+        {
+          "text": "duemilaquattordici",
+          "start": 21.261,
+          "end": 22.121
+        },
+        {
+          "text": "a",
+          "start": 22.441,
+          "end": 22.481
+        }
+      ]
+    },
+    {
+      "start": 22.541,
+      "end": 30.862,
+      "text": "oltre cinquemila microservizi per duecentootto milioni di utenti; Spotify gestisce tremila servizi per settecentosettantasette milioni",
+      "words": [
+        {
+          "text": "oltre",
+          "start": 22.541,
+          "end": 22.762
+        },
+        {
+          "text": "cinquemila",
+          "start": 22.862,
+          "end": 23.462
+        },
+        {
+          "text": "microservizi",
+          "start": 23.502,
+          "end": 24.222
+        },
+        {
+          "text": "per",
+          "start": 24.282,
+          "end": 24.402
+        },
+        {
+          "text": "duecentootto",
+          "start": 24.462,
+          "end": 25.302
+        },
+        {
+          "text": "milioni",
+          "start": 25.342,
+          "end": 25.682
+        },
+        {
+          "text": "di",
+          "start": 25.722,
+          "end": 25.782
+        },
+        {
+          "text": "utenti;",
+          "start": 25.842,
+          "end": 26.242
+        },
+        {
+          "text": "Spotify",
+          "start": 26.742,
+          "end": 27.202
+        },
+        {
+          "text": "gestisce",
+          "start": 27.322,
+          "end": 27.742
+        },
+        {
+          "text": "tremila",
+          "start": 27.842,
+          "end": 28.302
+        },
+        {
+          "text": "servizi",
+          "start": 28.362,
+          "end": 28.862
+        },
+        {
+          "text": "per",
+          "start": 29.102,
+          "end": 29.242
+        },
+        {
+          "text": "settecentosettantasette",
+          "start": 29.322,
+          "end": 30.542
+        },
+        {
+          "text": "milioni",
+          "start": 30.582,
+          "end": 30.862
+        }
+      ]
+    },
+    {
+      "start": 30.922,
+      "end": 34.242,
+      "text": "di utenti mensili e dodici milioni di richieste al secondo;",
+      "words": [
+        {
+          "text": "di",
+          "start": 30.922,
+          "end": 30.982
+        },
+        {
+          "text": "utenti",
+          "start": 31.022,
+          "end": 31.302
+        },
+        {
+          "text": "mensili",
+          "start": 31.342,
+          "end": 31.782
+        },
+        {
+          "text": "e",
+          "start": 32.082,
+          "end": 32.122
+        },
+        {
+          "text": "dodici",
+          "start": 32.262,
+          "end": 32.662
+        },
+        {
+          "text": "milioni",
+          "start": 32.702,
+          "end": 33.062
+        },
+        {
+          "text": "di",
+          "start": 33.102,
+          "end": 33.162
+        },
+        {
+          "text": "richieste",
+          "start": 33.202,
+          "end": 33.602
+        },
+        {
+          "text": "al",
+          "start": 33.662,
+          "end": 33.742
+        },
+        {
+          "text": "secondo;",
+          "start": 33.802,
+          "end": 34.242
+        }
+      ]
+    },
+    {
+      "start": 34.762,
+      "end": 37.602,
+      "text": "Netflix supera i trecentoventicinque milioni di utenti.",
+      "words": [
+        {
+          "text": "Netflix",
+          "start": 34.762,
+          "end": 35.182
+        },
+        {
+          "text": "supera",
+          "start": 35.502,
+          "end": 35.742
+        },
+        {
+          "text": "i",
+          "start": 35.802,
+          "end": 35.842
+        },
+        {
+          "text": "trecentoventicinque",
+          "start": 35.882,
+          "end": 36.822
+        },
+        {
+          "text": "milioni",
+          "start": 36.862,
+          "end": 37.142
+        },
+        {
+          "text": "di",
+          "start": 37.182,
+          "end": 37.242
+        },
+        {
+          "text": "utenti.",
+          "start": 37.282,
+          "end": 37.602
+        }
+      ]
+    },
+    {
+      "start": 38.283,
+      "end": 43.623,
+      "text": "Nel sistema di stampa fotografica mobile, l'app non parla direttamente con i sei microservizi di",
+      "words": [
+        {
+          "text": "Nel",
+          "start": 38.283,
+          "end": 38.423
+        },
+        {
+          "text": "sistema",
+          "start": 38.463,
+          "end": 38.783
+        },
+        {
+          "text": "di",
+          "start": 38.823,
+          "end": 38.883
+        },
+        {
+          "text": "stampa",
+          "start": 38.943,
+          "end": 39.183
+        },
+        {
+          "text": "fotografica",
+          "start": 39.223,
+          "end": 39.763
+        },
+        {
+          "text": "mobile,",
+          "start": 39.803,
+          "end": 40.143
+        },
+        {
+          "text": "l'app",
+          "start": 40.543,
+          "end": 40.763
+        },
+        {
+          "text": "non",
+          "start": 40.943,
+          "end": 41.063
+        },
+        {
+          "text": "parla",
+          "start": 41.123,
+          "end": 41.423
+        },
+        {
+          "text": "direttamente",
+          "start": 41.523,
+          "end": 42.203
+        },
+        {
+          "text": "con",
+          "start": 42.263,
+          "end": 42.383
+        },
+        {
+          "text": "i",
+          "start": 42.423,
+          "end": 42.463
+        },
+        {
+          "text": "sei",
+          "start": 42.523,
+          "end": 42.683
+        },
+        {
+          "text": "microservizi",
+          "start": 42.743,
+          "end": 43.463
+        },
+        {
+          "text": "di",
+          "start": 43.543,
+          "end": 43.623
+        }
+      ]
+    },
+    {
+      "start": 43.683,
+      "end": 50.823,
+      "text": "registrazione, autenticazione, upload, pagamento, stampa e spedizione: interagisce con un API gateway,",
+      "words": [
+        {
+          "text": "registrazione,",
+          "start": 43.683,
+          "end": 44.463
+        },
+        {
+          "text": "autenticazione,",
+          "start": 44.803,
+          "end": 45.743
+        },
+        {
+          "text": "upload,",
+          "start": 45.923,
+          "end": 46.383
+        },
+        {
+          "text": "pagamento,",
+          "start": 46.723,
+          "end": 47.283
+        },
+        {
+          "text": "stampa",
+          "start": 47.383,
+          "end": 47.783
+        },
+        {
+          "text": "e",
+          "start": 47.823,
+          "end": 47.863
+        },
+        {
+          "text": "spedizione:",
+          "start": 47.923,
+          "end": 48.543
+        },
+        {
+          "text": "interagisce",
+          "start": 49.083,
+          "end": 49.623
+        },
+        {
+          "text": "con",
+          "start": 49.683,
+          "end": 49.803
+        },
+        {
+          "text": "un",
+          "start": 49.843,
+          "end": 49.923
+        },
+        {
+          "text": "API",
+          "start": 49.963,
+          "end": 50.343
+        },
+        {
+          "text": "gateway,",
+          "start": 50.403,
+          "end": 50.823
+        }
+      ]
+    },
+    {
+      "start": 51.223,
+      "end": 55.184,
+      "text": "unico punto di contatto che isola il client e traduce le richieste.",
+      "words": [
+        {
+          "text": "unico",
+          "start": 51.223,
+          "end": 51.523
+        },
+        {
+          "text": "punto",
+          "start": 51.583,
+          "end": 51.863
+        },
+        {
+          "text": "di",
+          "start": 51.903,
+          "end": 51.963
+        },
+        {
+          "text": "contatto",
+          "start": 52.003,
+          "end": 52.503
+        },
+        {
+          "text": "che",
+          "start": 52.603,
+          "end": 52.703
+        },
+        {
+          "text": "isola",
+          "start": 52.944,
+          "end": 53.224
+        },
+        {
+          "text": "il",
+          "start": 53.264,
+          "end": 53.344
+        },
+        {
+          "text": "client",
+          "start": 53.404,
+          "end": 53.884
+        },
+        {
+          "text": "e",
+          "start": 54.124,
+          "end": 54.164
+        },
+        {
+          "text": "traduce",
+          "start": 54.244,
+          "end": 54.604
+        },
+        {
+          "text": "le",
+          "start": 54.644,
+          "end": 54.724
+        },
+        {
+          "text": "richieste.",
+          "start": 54.744,
+          "end": 55.184
+        }
+      ]
+    },
+    {
+      "start": 55.944,
+      "end": 61.124,
+      "text": "Scomporre un sistema però è difficile: troppi servizi danno bassa cohesion e overhead di rete;",
+      "words": [
+        {
+          "text": "Scomporre",
+          "start": 55.944,
+          "end": 56.304
+        },
+        {
+          "text": "un",
+          "start": 56.344,
+          "end": 56.404
+        },
+        {
+          "text": "sistema",
+          "start": 56.424,
+          "end": 56.744
+        },
+        {
+          "text": "però",
+          "start": 56.964,
+          "end": 57.104
+        },
+        {
+          "text": "è",
+          "start": 57.184,
+          "end": 57.224
+        },
+        {
+          "text": "difficile:",
+          "start": 57.244,
+          "end": 57.724
+        },
+        {
+          "text": "troppi",
+          "start": 58.144,
+          "end": 58.444
+        },
+        {
+          "text": "servizi",
+          "start": 58.504,
+          "end": 58.944
+        },
+        {
+          "text": "danno",
+          "start": 59.024,
+          "end": 59.224
+        },
+        {
+          "text": "bassa",
+          "start": 59.304,
+          "end": 59.584
+        },
+        {
+          "text": "cohesion",
+          "start": 59.644,
+          "end": 60.084
+        },
+        {
+          "text": "e",
+          "start": 60.224,
+          "end": 60.264
+        },
+        {
+          "text": "overhead",
+          "start": 60.344,
+          "end": 60.684
+        },
+        {
+          "text": "di",
+          "start": 60.784,
+          "end": 60.844
+        },
+        {
+          "text": "rete;",
+          "start": 60.864,
+          "end": 61.124
+        }
+      ]
+    },
+    {
+      "start": 61.524,
+      "end": 63.004,
+      "text": "troppo pochi danno alto coupling.",
+      "words": [
+        {
+          "text": "troppo",
+          "start": 61.524,
+          "end": 61.744
+        },
+        {
+          "text": "pochi",
+          "start": 61.784,
+          "end": 62.064
+        },
+        {
+          "text": "danno",
+          "start": 62.184,
+          "end": 62.384
+        },
+        {
+          "text": "alto",
+          "start": 62.444,
+          "end": 62.604
+        },
+        {
+          "text": "coupling.",
+          "start": 62.644,
+          "end": 63.004
+        }
+      ]
+    },
+    {
+      "start": 63.424,
+      "end": 66.324,
+      "text": "Per scegliere i confini conviene partire dai dati logici,",
+      "words": [
+        {
+          "text": "Per",
+          "start": 63.424,
+          "end": 63.544
+        },
+        {
+          "text": "scegliere",
+          "start": 63.564,
+          "end": 63.924
+        },
+        {
+          "text": "i",
+          "start": 63.964,
+          "end": 64.004
+        },
+        {
+          "text": "confini",
+          "start": 64.024,
+          "end": 64.504
+        },
+        {
+          "text": "conviene",
+          "start": 64.724,
+          "end": 65.044
+        },
+        {
+          "text": "partire",
+          "start": 65.084,
+          "end": 65.424
+        },
+        {
+          "text": "dai",
+          "start": 65.464,
+          "end": 65.604
+        },
+        {
+          "text": "dati",
+          "start": 65.664,
+          "end": 65.864
+        },
+        {
+          "text": "logici,",
+          "start": 65.924,
+          "end": 66.324
+        }
+      ]
+    },
+    {
+      "start": 66.724,
+      "end": 70.725,
+      "text": "come separare identità utente, password e profilo in autenticazione,",
+      "words": [
+        {
+          "text": "come",
+          "start": 66.724,
+          "end": 66.864
+        },
+        {
+          "text": "separare",
+          "start": 66.924,
+          "end": 67.344
+        },
+        {
+          "text": "identità",
+          "start": 67.524,
+          "end": 67.924
+        },
+        {
+          "text": "utente,",
+          "start": 68.005,
+          "end": 68.445
+        },
+        {
+          "text": "password",
+          "start": 68.565,
+          "end": 69.045
+        },
+        {
+          "text": "e",
+          "start": 69.065,
+          "end": 69.105
+        },
+        {
+          "text": "profilo",
+          "start": 69.165,
+          "end": 69.565
+        },
+        {
+          "text": "in",
+          "start": 69.685,
+          "end": 69.765
+        },
+        {
+          "text": "autenticazione,",
+          "start": 69.825,
+          "end": 70.725
+        }
+      ]
+    },
+    {
+      "start": 71.525,
+      "end": 75.625,
+      "text": "applicare il common closure principle tenendo insieme ciò che cambia insieme,",
+      "words": [
+        {
+          "text": "applicare",
+          "start": 71.525,
+          "end": 71.945
+        },
+        {
+          "text": "il",
+          "start": 71.985,
+          "end": 72.045
+        },
+        {
+          "text": "common",
+          "start": 72.125,
+          "end": 72.465
+        },
+        {
+          "text": "closure",
+          "start": 72.565,
+          "end": 72.905
+        },
+        {
+          "text": "principle",
+          "start": 72.945,
+          "end": 73.445
+        },
+        {
+          "text": "tenendo",
+          "start": 73.685,
+          "end": 73.965
+        },
+        {
+          "text": "insieme",
+          "start": 74.005,
+          "end": 74.285
+        },
+        {
+          "text": "ciò",
+          "start": 74.385,
+          "end": 74.485
+        },
+        {
+          "text": "che",
+          "start": 74.585,
+          "end": 74.665
+        },
+        {
+          "text": "cambia",
+          "start": 74.805,
+          "end": 75.125
+        },
+        {
+          "text": "insieme,",
+          "start": 75.185,
+          "end": 75.625
+        }
+      ]
+    },
+    {
+      "start": 76.125,
+      "end": 80.545,
+      "text": "allinearsi alle capacità di business, oppure partire da un monolite e scomporlo dopo.",
+      "words": [
+        {
+          "text": "allinearsi",
+          "start": 76.125,
+          "end": 76.765
+        },
+        {
+          "text": "alle",
+          "start": 76.785,
+          "end": 76.925
+        },
+        {
+          "text": "capacità",
+          "start": 76.945,
+          "end": 77.325
+        },
+        {
+          "text": "di",
+          "start": 77.365,
+          "end": 77.425
+        },
+        {
+          "text": "business,",
+          "start": 77.465,
+          "end": 77.825
+        },
+        {
+          "text": "oppure",
+          "start": 78.225,
+          "end": 78.505
+        },
+        {
+          "text": "partire",
+          "start": 78.585,
+          "end": 78.905
+        },
+        {
+          "text": "da",
+          "start": 78.945,
+          "end": 78.985
+        },
+        {
+          "text": "un",
+          "start": 79.065,
+          "end": 79.145
+        },
+        {
+          "text": "monolite",
+          "start": 79.185,
+          "end": 79.625
+        },
+        {
+          "text": "e",
+          "start": 79.765,
+          "end": 79.805
+        },
+        {
+          "text": "scomporlo",
+          "start": 79.865,
+          "end": 80.285
+        },
+        {
+          "text": "dopo.",
+          "start": 80.325,
+          "end": 80.545
+        }
+      ]
+    }
+  ]
+}

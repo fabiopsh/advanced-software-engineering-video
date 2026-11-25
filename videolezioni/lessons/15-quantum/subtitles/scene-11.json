@@ -1,0 +1,1247 @@
+{
+  "duration": 100.73,
+  "segments": [
+    {
+      "start": 0.02,
+      "end": 4.441,
+      "text": "Completiamo il capitolo con calcolo T V D, validazione e cloud.",
+      "words": [
+        {
+          "text": "Completiamo",
+          "start": 0.02,
+          "end": 0.58
+        },
+        {
+          "text": "il",
+          "start": 0.62,
+          "end": 0.68
+        },
+        {
+          "text": "capitolo",
+          "start": 0.72,
+          "end": 1.18
+        },
+        {
+          "text": "con",
+          "start": 1.32,
+          "end": 1.46
+        },
+        {
+          "text": "calcolo",
+          "start": 1.52,
+          "end": 1.92
+        },
+        {
+          "text": "T",
+          "start": 2.02,
+          "end": 2.06
+        },
+        {
+          "text": "V",
+          "start": 2.2,
+          "end": 2.24
+        },
+        {
+          "text": "D,",
+          "start": 2.42,
+          "end": 2.46
+        },
+        {
+          "text": "validazione",
+          "start": 2.981,
+          "end": 3.701
+        },
+        {
+          "text": "e",
+          "start": 3.921,
+          "end": 3.961
+        },
+        {
+          "text": "cloud.",
+          "start": 4.061,
+          "end": 4.441
+        }
+      ]
+    },
+    {
+      "start": 5.461,
+      "end": 11.482,
+      "text": "Sulle due monete truccate confrontiamo il terzo lancio, uno uno zero uno diviso tre,",
+      "words": [
+        {
+          "text": "Sulle",
+          "start": 5.461,
+          "end": 5.701
+        },
+        {
+          "text": "due",
+          "start": 5.741,
+          "end": 5.881
+        },
+        {
+          "text": "monete",
+          "start": 5.921,
+          "end": 6.241
+        },
+        {
+          "text": "truccate",
+          "start": 6.281,
+          "end": 6.821
+        },
+        {
+          "text": "confrontiamo",
+          "start": 7.001,
+          "end": 7.602
+        },
+        {
+          "text": "il",
+          "start": 7.642,
+          "end": 7.702
+        },
+        {
+          "text": "terzo",
+          "start": 7.742,
+          "end": 7.982
+        },
+        {
+          "text": "lancio,",
+          "start": 8.022,
+          "end": 8.382
+        },
+        {
+          "text": "uno",
+          "start": 8.922,
+          "end": 9.162
+        },
+        {
+          "text": "uno",
+          "start": 9.542,
+          "end": 9.782
+        },
+        {
+          "text": "zero",
+          "start": 10.162,
+          "end": 10.462
+        },
+        {
+          "text": "uno",
+          "start": 10.722,
+          "end": 10.942
+        },
+        {
+          "text": "diviso",
+          "start": 11.022,
+          "end": 11.302
+        },
+        {
+          "text": "tre,",
+          "start": 11.362,
+          "end": 11.482
+        }
+      ]
+    },
+    {
+      "start": 11.882,
+      "end": 15.623,
+      "text": "con il quarto, uno due zero uno diviso quattro,",
+      "words": [
+        {
+          "text": "con",
+          "start": 11.882,
+          "end": 12.002
+        },
+        {
+          "text": "il",
+          "start": 12.042,
+          "end": 12.122
+        },
+        {
+          "text": "quarto,",
+          "start": 12.162,
+          "end": 12.522
+        },
+        {
+          "text": "uno",
+          "start": 13.123,
+          "end": 13.343
+        },
+        {
+          "text": "due",
+          "start": 13.663,
+          "end": 13.903
+        },
+        {
+          "text": "zero",
+          "start": 14.243,
+          "end": 14.503
+        },
+        {
+          "text": "uno",
+          "start": 14.683,
+          "end": 14.883
+        },
+        {
+          "text": "diviso",
+          "start": 14.983,
+          "end": 15.243
+        },
+        {
+          "text": "quattro,",
+          "start": 15.303,
+          "end": 15.623
+        }
+      ]
+    },
+    {
+      "start": 16.243,
+      "end": 21.024,
+      "text": "cioè zero virgola venticinque, zero virgola cinque, zero e zero virgola venticinque.",
+      "words": [
+        {
+          "text": "cioè",
+          "start": 16.243,
+          "end": 16.383
+        },
+        {
+          "text": "zero",
+          "start": 16.583,
+          "end": 16.743
+        },
+        {
+          "text": "virgola",
+          "start": 16.783,
+          "end": 17.043
+        },
+        {
+          "text": "venticinque,",
+          "start": 17.063,
+          "end": 17.724
+        },
+        {
+          "text": "zero",
+          "start": 17.964,
+          "end": 18.144
+        },
+        {
+          "text": "virgola",
+          "start": 18.164,
+          "end": 18.444
+        },
+        {
+          "text": "cinque,",
+          "start": 18.504,
+          "end": 18.904
+        },
+        {
+          "text": "zero",
+          "start": 19.184,
+          "end": 19.464
+        },
+        {
+          "text": "e",
+          "start": 19.804,
+          "end": 19.844
+        },
+        {
+          "text": "zero",
+          "start": 19.964,
+          "end": 20.124
+        },
+        {
+          "text": "virgola",
+          "start": 20.164,
+          "end": 20.424
+        },
+        {
+          "text": "venticinque.",
+          "start": 20.464,
+          "end": 21.024
+        }
+      ]
+    },
+    {
+      "start": 22.204,
+      "end": 25.045,
+      "text": "Le differenze assolute sono zero virgola zero ottantatré,",
+      "words": [
+        {
+          "text": "Le",
+          "start": 22.204,
+          "end": 22.284
+        },
+        {
+          "text": "differenze",
+          "start": 22.344,
+          "end": 22.805
+        },
+        {
+          "text": "assolute",
+          "start": 22.845,
+          "end": 23.265
+        },
+        {
+          "text": "sono",
+          "start": 23.325,
+          "end": 23.505
+        },
+        {
+          "text": "zero",
+          "start": 23.745,
+          "end": 23.945
+        },
+        {
+          "text": "virgola",
+          "start": 23.985,
+          "end": 24.245
+        },
+        {
+          "text": "zero",
+          "start": 24.345,
+          "end": 24.505
+        },
+        {
+          "text": "ottantatré,",
+          "start": 24.525,
+          "end": 25.045
+        }
+      ]
+    },
+    {
+      "start": 25.645,
+      "end": 29.986,
+      "text": "zero virgola centosessantasette, zero e zero virgola zero ottantatré:",
+      "words": [
+        {
+          "text": "zero",
+          "start": 25.645,
+          "end": 25.905
+        },
+        {
+          "text": "virgola",
+          "start": 25.945,
+          "end": 26.265
+        },
+        {
+          "text": "centosessantasette,",
+          "start": 26.325,
+          "end": 27.405
+        },
+        {
+          "text": "zero",
+          "start": 27.946,
+          "end": 28.266
+        },
+        {
+          "text": "e",
+          "start": 28.586,
+          "end": 28.626
+        },
+        {
+          "text": "zero",
+          "start": 28.746,
+          "end": 28.926
+        },
+        {
+          "text": "virgola",
+          "start": 28.966,
+          "end": 29.226
+        },
+        {
+          "text": "zero",
+          "start": 29.306,
+          "end": 29.466
+        },
+        {
+          "text": "ottantatré:",
+          "start": 29.526,
+          "end": 29.986
+        }
+      ]
+    },
+    {
+      "start": 30.546,
+      "end": 36.367,
+      "text": "somma zero virgola trecentotrentatré, la cui metà dà T V D zero virgola centosessantasette.",
+      "words": [
+        {
+          "text": "somma",
+          "start": 30.546,
+          "end": 30.866
+        },
+        {
+          "text": "zero",
+          "start": 31.146,
+          "end": 31.386
+        },
+        {
+          "text": "virgola",
+          "start": 31.426,
+          "end": 31.706
+        },
+        {
+          "text": "trecentotrentatré,",
+          "start": 31.786,
+          "end": 32.586
+        },
+        {
+          "text": "la",
+          "start": 33.047,
+          "end": 33.127
+        },
+        {
+          "text": "cui",
+          "start": 33.167,
+          "end": 33.307
+        },
+        {
+          "text": "metà",
+          "start": 33.347,
+          "end": 33.527
+        },
+        {
+          "text": "dà",
+          "start": 33.767,
+          "end": 33.847
+        },
+        {
+          "text": "T",
+          "start": 34.047,
+          "end": 34.087
+        },
+        {
+          "text": "V",
+          "start": 34.227,
+          "end": 34.267
+        },
+        {
+          "text": "D",
+          "start": 34.407,
+          "end": 34.447
+        },
+        {
+          "text": "zero",
+          "start": 34.767,
+          "end": 34.967
+        },
+        {
+          "text": "virgola",
+          "start": 35.007,
+          "end": 35.287
+        },
+        {
+          "text": "centosessantasette.",
+          "start": 35.347,
+          "end": 36.367
+        }
+      ]
+    },
+    {
+      "start": 37.407,
+      "end": 38.728,
+      "text": "Con b uguale uno,",
+      "words": [
+        {
+          "text": "Con",
+          "start": 37.407,
+          "end": 37.567
+        },
+        {
+          "text": "b",
+          "start": 37.667,
+          "end": 37.707
+        },
+        {
+          "text": "uguale",
+          "start": 38.108,
+          "end": 38.428
+        },
+        {
+          "text": "uno,",
+          "start": 38.528,
+          "end": 38.728
+        }
+      ]
+    },
+    {
+      "start": 39.428,
+      "end": 43.749,
+      "text": "l uguale uno, epsilon zero virgola uno e k uguale due,",
+      "words": [
+        {
+          "text": "l",
+          "start": 39.428,
+          "end": 39.468
+        },
+        {
+          "text": "uguale",
+          "start": 39.848,
+          "end": 40.128
+        },
+        {
+          "text": "uno,",
+          "start": 40.228,
+          "end": 40.408
+        },
+        {
+          "text": "epsilon",
+          "start": 40.948,
+          "end": 41.448
+        },
+        {
+          "text": "zero",
+          "start": 41.608,
+          "end": 41.788
+        },
+        {
+          "text": "virgola",
+          "start": 41.828,
+          "end": 42.929
+        },
+        {
+          "text": "uno",
+          "start": 42.969,
+          "end": 43.089
+        },
+        {
+          "text": "e",
+          "start": 43.109,
+          "end": 43.149
+        },
+        {
+          "text": "k",
+          "start": 43.129,
+          "end": 43.169
+        },
+        {
+          "text": "uguale",
+          "start": 43.189,
+          "end": 43.469
+        },
+        {
+          "text": "due,",
+          "start": 43.529,
+          "end": 43.749
+        }
+      ]
+    },
+    {
+      "start": 44.289,
+      "end": 46.529,
+      "text": "emerge il segnale di rendimenti decrescenti.",
+      "words": [
+        {
+          "text": "emerge",
+          "start": 44.289,
+          "end": 44.669
+        },
+        {
+          "text": "il",
+          "start": 44.729,
+          "end": 44.809
+        },
+        {
+          "text": "segnale",
+          "start": 44.869,
+          "end": 45.229
+        },
+        {
+          "text": "di",
+          "start": 45.269,
+          "end": 45.329
+        },
+        {
+          "text": "rendimenti",
+          "start": 45.369,
+          "end": 45.849
+        },
+        {
+          "text": "decrescenti.",
+          "start": 45.889,
+          "end": 46.529
+        }
+      ]
+    },
+    {
+      "start": 47.709,
+      "end": 52.87,
+      "text": "Con T V D obiettivo zero virgola zero cinque e fallimento zero virgola zero cinque,",
+      "words": [
+        {
+          "text": "Con",
+          "start": 47.709,
+          "end": 47.869
+        },
+        {
+          "text": "T",
+          "start": 47.93,
+          "end": 47.97
+        },
+        {
+          "text": "V",
+          "start": 48.09,
+          "end": 48.13
+        },
+        {
+          "text": "D",
+          "start": 48.25,
+          "end": 48.29
+        },
+        {
+          "text": "obiettivo",
+          "start": 48.53,
+          "end": 49.15
+        },
+        {
+          "text": "zero",
+          "start": 49.29,
+          "end": 49.49
+        },
+        {
+          "text": "virgola",
+          "start": 49.51,
+          "end": 49.79
+        },
+        {
+          "text": "zero",
+          "start": 49.85,
+          "end": 50.01
+        },
+        {
+          "text": "cinque",
+          "start": 50.07,
+          "end": 50.47
+        },
+        {
+          "text": "e",
+          "start": 50.81,
+          "end": 50.85
+        },
+        {
+          "text": "fallimento",
+          "start": 50.95,
+          "end": 51.59
+        },
+        {
+          "text": "zero",
+          "start": 51.71,
+          "end": 51.91
+        },
+        {
+          "text": "virgola",
+          "start": 51.95,
+          "end": 52.23
+        },
+        {
+          "text": "zero",
+          "start": 52.29,
+          "end": 52.43
+        },
+        {
+          "text": "cinque,",
+          "start": 52.49,
+          "end": 52.87
+        }
+      ]
+    },
+    {
+      "start": 53.071,
+      "end": 54.931,
+      "text": "dove esplodono Weissman e Hoeffding,",
+      "words": [
+        {
+          "text": "dove",
+          "start": 53.071,
+          "end": 53.231
+        },
+        {
+          "text": "esplodono",
+          "start": 53.271,
+          "end": 53.731
+        },
+        {
+          "text": "Weissman",
+          "start": 53.811,
+          "end": 54.291
+        },
+        {
+          "text": "e",
+          "start": 54.471,
+          "end": 54.511
+        },
+        {
+          "text": "Hoeffding,",
+          "start": 54.551,
+          "end": 54.931
+        }
+      ]
+    },
+    {
+      "start": 55.531,
+      "end": 60.672,
+      "text": "il test holdout usa sei famiglie di circuiti su quattro backend più un quinto mai",
+      "words": [
+        {
+          "text": "il",
+          "start": 55.531,
+          "end": 55.611
+        },
+        {
+          "text": "test",
+          "start": 55.691,
+          "end": 55.911
+        },
+        {
+          "text": "holdout",
+          "start": 56.011,
+          "end": 56.511
+        },
+        {
+          "text": "usa",
+          "start": 56.911,
+          "end": 57.071
+        },
+        {
+          "text": "sei",
+          "start": 57.191,
+          "end": 57.331
+        },
+        {
+          "text": "famiglie",
+          "start": 57.391,
+          "end": 57.731
+        },
+        {
+          "text": "di",
+          "start": 57.771,
+          "end": 57.831
+        },
+        {
+          "text": "circuiti",
+          "start": 57.871,
+          "end": 58.392
+        },
+        {
+          "text": "su",
+          "start": 58.472,
+          "end": 58.552
+        },
+        {
+          "text": "quattro",
+          "start": 58.672,
+          "end": 58.952
+        },
+        {
+          "text": "backend",
+          "start": 58.992,
+          "end": 59.392
+        },
+        {
+          "text": "più",
+          "start": 59.812,
+          "end": 59.932
+        },
+        {
+          "text": "un",
+          "start": 60.032,
+          "end": 60.092
+        },
+        {
+          "text": "quinto",
+          "start": 60.212,
+          "end": 60.512
+        },
+        {
+          "text": "mai",
+          "start": 60.552,
+          "end": 60.672
+        }
+      ]
+    },
+    {
+      "start": 60.712,
+      "end": 64.513,
+      "text": "visto, per tremilaseicento valutazioni e cento ripetizioni.",
+      "words": [
+        {
+          "text": "visto,",
+          "start": 60.712,
+          "end": 60.992
+        },
+        {
+          "text": "per",
+          "start": 61.432,
+          "end": 61.572
+        },
+        {
+          "text": "tremilaseicento",
+          "start": 61.712,
+          "end": 62.592
+        },
+        {
+          "text": "valutazioni",
+          "start": 62.632,
+          "end": 63.253
+        },
+        {
+          "text": "e",
+          "start": 63.433,
+          "end": 63.473
+        },
+        {
+          "text": "cento",
+          "start": 63.593,
+          "end": 63.853
+        },
+        {
+          "text": "ripetizioni.",
+          "start": 63.893,
+          "end": 64.513
+        }
+      ]
+    },
+    {
+      "start": 65.673,
+      "end": 70.294,
+      "text": "Attenzione: da dodici a quattordici qubit si toccano i ventimila shot,",
+      "words": [
+        {
+          "text": "Attenzione:",
+          "start": 65.673,
+          "end": 66.133
+        },
+        {
+          "text": "da",
+          "start": 66.833,
+          "end": 66.893
+        },
+        {
+          "text": "dodici",
+          "start": 67.013,
+          "end": 67.353
+        },
+        {
+          "text": "a",
+          "start": 67.413,
+          "end": 67.453
+        },
+        {
+          "text": "quattordici",
+          "start": 67.493,
+          "end": 68.033
+        },
+        {
+          "text": "qubit",
+          "start": 68.094,
+          "end": 68.434
+        },
+        {
+          "text": "si",
+          "start": 68.894,
+          "end": 68.974
+        },
+        {
+          "text": "toccano",
+          "start": 69.014,
+          "end": 69.334
+        },
+        {
+          "text": "i",
+          "start": 69.374,
+          "end": 69.414
+        },
+        {
+          "text": "ventimila",
+          "start": 69.474,
+          "end": 69.954
+        },
+        {
+          "text": "shot,",
+          "start": 70.014,
+          "end": 70.294
+        }
+      ]
+    },
+    {
+      "start": 70.754,
+      "end": 74.775,
+      "text": "poiché cinquemila sono troppi per quattro qubit e troppo pochi per otto.",
+      "words": [
+        {
+          "text": "poiché",
+          "start": 70.754,
+          "end": 71.014
+        },
+        {
+          "text": "cinquemila",
+          "start": 71.134,
+          "end": 71.734
+        },
+        {
+          "text": "sono",
+          "start": 71.954,
+          "end": 72.134
+        },
+        {
+          "text": "troppi",
+          "start": 72.194,
+          "end": 72.574
+        },
+        {
+          "text": "per",
+          "start": 72.634,
+          "end": 72.734
+        },
+        {
+          "text": "quattro",
+          "start": 72.774,
+          "end": 73.014
+        },
+        {
+          "text": "qubit",
+          "start": 73.054,
+          "end": 73.355
+        },
+        {
+          "text": "e",
+          "start": 73.755,
+          "end": 73.795
+        },
+        {
+          "text": "troppo",
+          "start": 73.875,
+          "end": 74.135
+        },
+        {
+          "text": "pochi",
+          "start": 74.175,
+          "end": 74.375
+        },
+        {
+          "text": "per",
+          "start": 74.415,
+          "end": 74.515
+        },
+        {
+          "text": "otto.",
+          "start": 74.555,
+          "end": 74.775
+        }
+      ]
+    },
+    {
+      "start": 75.775,
+      "end": 81.736,
+      "text": "Su cloud, I B M Sessions dà priorità ai job iterativi e Braket Reservations offre",
+      "words": [
+        {
+          "text": "Su",
+          "start": 75.775,
+          "end": 75.835
+        },
+        {
+          "text": "cloud,",
+          "start": 75.895,
+          "end": 76.215
+        },
+        {
+          "text": "I",
+          "start": 76.675,
+          "end": 76.715
+        },
+        {
+          "text": "B",
+          "start": 76.735,
+          "end": 76.775
+        },
+        {
+          "text": "M",
+          "start": 76.975,
+          "end": 77.015
+        },
+        {
+          "text": "Sessions",
+          "start": 77.115,
+          "end": 77.595
+        },
+        {
+          "text": "dà",
+          "start": 77.795,
+          "end": 77.875
+        },
+        {
+          "text": "priorità",
+          "start": 77.975,
+          "end": 78.396
+        },
+        {
+          "text": "ai",
+          "start": 78.476,
+          "end": 78.576
+        },
+        {
+          "text": "job",
+          "start": 78.636,
+          "end": 78.836
+        },
+        {
+          "text": "iterativi",
+          "start": 78.836,
+          "end": 79.376
+        },
+        {
+          "text": "e",
+          "start": 79.916,
+          "end": 79.956
+        },
+        {
+          "text": "Braket",
+          "start": 80.076,
+          "end": 80.436
+        },
+        {
+          "text": "Reservations",
+          "start": 80.476,
+          "end": 81.216
+        },
+        {
+          "text": "offre",
+          "start": 81.516,
+          "end": 81.736
+        }
+      ]
+    },
+    {
+      "start": 81.796,
+      "end": 83.877,
+      "text": "accesso esclusivo in finestra prenotata.",
+      "words": [
+        {
+          "text": "accesso",
+          "start": 81.796,
+          "end": 82.196
+        },
+        {
+          "text": "esclusivo",
+          "start": 82.256,
+          "end": 82.776
+        },
+        {
+          "text": "in",
+          "start": 82.816,
+          "end": 82.896
+        },
+        {
+          "text": "finestra",
+          "start": 82.936,
+          "end": 83.317
+        },
+        {
+          "text": "prenotata.",
+          "start": 83.357,
+          "end": 83.877
+        }
+      ]
+    },
+    {
+      "start": 84.837,
+      "end": 89.678,
+      "text": "Ogni arresto entra in una hash chain di record concatenati con l'impronta del precedente,",
+      "words": [
+        {
+          "text": "Ogni",
+          "start": 84.837,
+          "end": 85.017
+        },
+        {
+          "text": "arresto",
+          "start": 85.057,
+          "end": 85.457
+        },
+        {
+          "text": "entra",
+          "start": 85.737,
+          "end": 85.957
+        },
+        {
+          "text": "in",
+          "start": 86.037,
+          "end": 86.097
+        },
+        {
+          "text": "una",
+          "start": 86.157,
+          "end": 86.257
+        },
+        {
+          "text": "hash",
+          "start": 86.277,
+          "end": 86.457
+        },
+        {
+          "text": "chain",
+          "start": 86.577,
+          "end": 86.857
+        },
+        {
+          "text": "di",
+          "start": 86.997,
+          "end": 87.057
+        },
+        {
+          "text": "record",
+          "start": 87.157,
+          "end": 87.517
+        },
+        {
+          "text": "concatenati",
+          "start": 87.597,
+          "end": 88.218
+        },
+        {
+          "text": "con",
+          "start": 88.278,
+          "end": 88.418
+        },
+        {
+          "text": "l'impronta",
+          "start": 88.458,
+          "end": 88.958
+        },
+        {
+          "text": "del",
+          "start": 88.998,
+          "end": 89.098
+        },
+        {
+          "text": "precedente,",
+          "start": 89.138,
+          "end": 89.678
+        }
+      ]
+    },
+    {
+      "start": 90.178,
+      "end": 95.319,
+      "text": "salvando run started, batch accepted, stability check e stop decision;",
+      "words": [
+        {
+          "text": "salvando",
+          "start": 90.178,
+          "end": 90.658
+        },
+        {
+          "text": "run",
+          "start": 90.878,
+          "end": 91.058
+        },
+        {
+          "text": "started,",
+          "start": 91.158,
+          "end": 91.638
+        },
+        {
+          "text": "batch",
+          "start": 92.078,
+          "end": 92.298
+        },
+        {
+          "text": "accepted,",
+          "start": 92.338,
+          "end": 92.858
+        },
+        {
+          "text": "stability",
+          "start": 93.359,
+          "end": 93.839
+        },
+        {
+          "text": "check",
+          "start": 93.899,
+          "end": 94.159
+        },
+        {
+          "text": "e",
+          "start": 94.479,
+          "end": 94.519
+        },
+        {
+          "text": "stop",
+          "start": 94.639,
+          "end": 94.839
+        },
+        {
+          "text": "decision;",
+          "start": 94.899,
+          "end": 95.319
+        }
+      ]
+    },
+    {
+      "start": 96.319,
+      "end": 100.48,
+      "text": "circuit mirroring e suite di benchmark Q S E guidano le estensioni.",
+      "words": [
+        {
+          "text": "circuit",
+          "start": 96.319,
+          "end": 96.679
+        },
+        {
+          "text": "mirroring",
+          "start": 96.759,
+          "end": 97.259
+        },
+        {
+          "text": "e",
+          "start": 97.439,
+          "end": 97.479
+        },
+        {
+          "text": "suite",
+          "start": 97.619,
+          "end": 97.879
+        },
+        {
+          "text": "di",
+          "start": 97.919,
+          "end": 97.979
+        },
+        {
+          "text": "benchmark",
+          "start": 98.019,
+          "end": 98.5
+        },
+        {
+          "text": "Q",
+          "start": 98.62,
+          "end": 98.66000000000001
+        },
+        {
+          "text": "S",
+          "start": 98.96,
+          "end": 99.0
+        },
+        {
+          "text": "E",
+          "start": 99.04,
+          "end": 99.08000000000001
+        },
+        {
+          "text": "guidano",
+          "start": 99.44,
+          "end": 99.8
+        },
+        {
+          "text": "le",
+          "start": 99.86,
+          "end": 99.92
+        },
+        {
+          "text": "estensioni.",
+          "start": 99.96,
+          "end": 100.48
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1178 @@
+{
+  "duration": 88.67,
+  "segments": [
+    {
+      "start": 0.08,
+      "end": 5.101,
+      "text": "Vediamo cinque dettagli d'esame essenziali su sicurezza e protezione dei dati.",
+      "words": [
+        {
+          "text": "Vediamo",
+          "start": 0.08,
+          "end": 0.56
+        },
+        {
+          "text": "cinque",
+          "start": 0.74,
+          "end": 1.16
+        },
+        {
+          "text": "dettagli",
+          "start": 1.22,
+          "end": 1.68
+        },
+        {
+          "text": "d'esame",
+          "start": 1.72,
+          "end": 2.121
+        },
+        {
+          "text": "essenziali",
+          "start": 2.301,
+          "end": 3.141
+        },
+        {
+          "text": "su",
+          "start": 3.381,
+          "end": 3.461
+        },
+        {
+          "text": "sicurezza",
+          "start": 3.581,
+          "end": 4.101
+        },
+        {
+          "text": "e",
+          "start": 4.161,
+          "end": 4.201
+        },
+        {
+          "text": "protezione",
+          "start": 4.221,
+          "end": 4.701
+        },
+        {
+          "text": "dei",
+          "start": 4.741,
+          "end": 4.841
+        },
+        {
+          "text": "dati.",
+          "start": 4.861,
+          "end": 5.101
+        }
+      ]
+    },
+    {
+      "start": 5.921,
+      "end": 11.243,
+      "text": "Primo: nello stack completo del sistema, tra i framework e la rete sta la software",
+      "words": [
+        {
+          "text": "Primo:",
+          "start": 5.921,
+          "end": 6.161
+        },
+        {
+          "text": "nello",
+          "start": 6.802,
+          "end": 7.042
+        },
+        {
+          "text": "stack",
+          "start": 7.142,
+          "end": 7.402
+        },
+        {
+          "text": "completo",
+          "start": 7.542,
+          "end": 7.942
+        },
+        {
+          "text": "del",
+          "start": 7.962,
+          "end": 8.082
+        },
+        {
+          "text": "sistema,",
+          "start": 8.142,
+          "end": 8.562
+        },
+        {
+          "text": "tra",
+          "start": 8.962,
+          "end": 9.062
+        },
+        {
+          "text": "i",
+          "start": 9.142,
+          "end": 9.182
+        },
+        {
+          "text": "framework",
+          "start": 9.222,
+          "end": 9.702
+        },
+        {
+          "text": "e",
+          "start": 9.762,
+          "end": 9.802
+        },
+        {
+          "text": "la",
+          "start": 9.802,
+          "end": 9.862
+        },
+        {
+          "text": "rete",
+          "start": 9.902,
+          "end": 10.162
+        },
+        {
+          "text": "sta",
+          "start": 10.362,
+          "end": 10.482
+        },
+        {
+          "text": "la",
+          "start": 10.562,
+          "end": 10.622
+        },
+        {
+          "text": "software",
+          "start": 10.762,
+          "end": 11.243
+        }
+      ]
+    },
+    {
+      "start": 11.263,
+      "end": 17.364,
+      "text": "infrastructure, che racchiude browser e messaggistica, system libraries, database e sistema operativo.",
+      "words": [
+        {
+          "text": "infrastructure,",
+          "start": 11.263,
+          "end": 12.023
+        },
+        {
+          "text": "che",
+          "start": 12.343,
+          "end": 12.423
+        },
+        {
+          "text": "racchiude",
+          "start": 12.463,
+          "end": 12.803
+        },
+        {
+          "text": "browser",
+          "start": 12.863,
+          "end": 13.283
+        },
+        {
+          "text": "e",
+          "start": 13.363,
+          "end": 13.403
+        },
+        {
+          "text": "messaggistica,",
+          "start": 13.443,
+          "end": 14.123
+        },
+        {
+          "text": "system",
+          "start": 14.523,
+          "end": 14.803
+        },
+        {
+          "text": "libraries,",
+          "start": 14.883,
+          "end": 15.384
+        },
+        {
+          "text": "database",
+          "start": 15.744,
+          "end": 16.304
+        },
+        {
+          "text": "e",
+          "start": 16.464,
+          "end": 16.504
+        },
+        {
+          "text": "sistema",
+          "start": 16.584,
+          "end": 16.864
+        },
+        {
+          "text": "operativo.",
+          "start": 16.924,
+          "end": 17.364
+        }
+      ]
+    },
+    {
+      "start": 18.284,
+      "end": 25.746,
+      "text": "Secondo: nel codice vulnerabile al SQL poisoning, getAccountNumber legge l'input e lo concatena nella query",
+      "words": [
+        {
+          "text": "Secondo:",
+          "start": 18.284,
+          "end": 18.664
+        },
+        {
+          "text": "nel",
+          "start": 19.184,
+          "end": 19.324
+        },
+        {
+          "text": "codice",
+          "start": 19.404,
+          "end": 19.764
+        },
+        {
+          "text": "vulnerabile",
+          "start": 19.824,
+          "end": 20.425
+        },
+        {
+          "text": "al",
+          "start": 20.485,
+          "end": 20.585
+        },
+        {
+          "text": "SQL",
+          "start": 20.745,
+          "end": 21.105
+        },
+        {
+          "text": "poisoning,",
+          "start": 21.185,
+          "end": 21.705
+        },
+        {
+          "text": "getAccountNumber",
+          "start": 22.185,
+          "end": 23.265
+        },
+        {
+          "text": "legge",
+          "start": 23.465,
+          "end": 23.745
+        },
+        {
+          "text": "l'input",
+          "start": 23.805,
+          "end": 24.265
+        },
+        {
+          "text": "e",
+          "start": 24.446,
+          "end": 24.486
+        },
+        {
+          "text": "lo",
+          "start": 24.526,
+          "end": 24.586
+        },
+        {
+          "text": "concatena",
+          "start": 24.666,
+          "end": 25.206
+        },
+        {
+          "text": "nella",
+          "start": 25.246,
+          "end": 25.406
+        },
+        {
+          "text": "query",
+          "start": 25.466,
+          "end": 25.746
+        }
+      ]
+    },
+    {
+      "start": 26.066,
+      "end": 28.026,
+      "text": "SQLstat passata al database.",
+      "words": [
+        {
+          "text": "SQLstat",
+          "start": 26.066,
+          "end": 26.886
+        },
+        {
+          "text": "passata",
+          "start": 27.046,
+          "end": 27.426
+        },
+        {
+          "text": "al",
+          "start": 27.466,
+          "end": 27.526
+        },
+        {
+          "text": "database.",
+          "start": 27.546,
+          "end": 28.026
+        }
+      ]
+    },
+    {
+      "start": 28.526,
+      "end": 33.748,
+      "text": "Con l'input lecito tre quattro due zero zero sei quattro cinque la query cerca un",
+      "words": [
+        {
+          "text": "Con",
+          "start": 28.526,
+          "end": 28.646
+        },
+        {
+          "text": "l'input",
+          "start": 28.686,
+          "end": 28.987
+        },
+        {
+          "text": "lecito",
+          "start": 29.067,
+          "end": 29.407
+        },
+        {
+          "text": "tre",
+          "start": 29.727,
+          "end": 29.887
+        },
+        {
+          "text": "quattro",
+          "start": 30.007,
+          "end": 30.407
+        },
+        {
+          "text": "due",
+          "start": 30.507,
+          "end": 30.707
+        },
+        {
+          "text": "zero",
+          "start": 30.827,
+          "end": 31.027
+        },
+        {
+          "text": "zero",
+          "start": 31.127,
+          "end": 31.387
+        },
+        {
+          "text": "sei",
+          "start": 31.647,
+          "end": 31.807
+        },
+        {
+          "text": "quattro",
+          "start": 31.867,
+          "end": 32.167
+        },
+        {
+          "text": "cinque",
+          "start": 32.227,
+          "end": 32.607
+        },
+        {
+          "text": "la",
+          "start": 32.947,
+          "end": 33.007
+        },
+        {
+          "text": "query",
+          "start": 33.067,
+          "end": 33.328
+        },
+        {
+          "text": "cerca",
+          "start": 33.408,
+          "end": 33.648
+        },
+        {
+          "text": "un",
+          "start": 33.688,
+          "end": 33.748
+        }
+      ]
+    },
+    {
+      "start": 33.788,
+      "end": 34.268,
+      "text": "solo conto.",
+      "words": [
+        {
+          "text": "solo",
+          "start": 33.788,
+          "end": 33.948
+        },
+        {
+          "text": "conto.",
+          "start": 33.968,
+          "end": 34.268
+        }
+      ]
+    },
+    {
+      "start": 35.088,
+      "end": 39.649,
+      "text": "Terzo: gli attacchi denial of service mirano a boicottare il fornitore,",
+      "words": [
+        {
+          "text": "Terzo:",
+          "start": 35.088,
+          "end": 35.388
+        },
+        {
+          "text": "gli",
+          "start": 35.908,
+          "end": 36.008
+        },
+        {
+          "text": "attacchi",
+          "start": 36.028,
+          "end": 36.368
+        },
+        {
+          "text": "denial",
+          "start": 36.468,
+          "end": 37.008
+        },
+        {
+          "text": "of",
+          "start": 37.028,
+          "end": 37.108
+        },
+        {
+          "text": "service",
+          "start": 37.208,
+          "end": 37.749
+        },
+        {
+          "text": "mirano",
+          "start": 37.909,
+          "end": 38.229
+        },
+        {
+          "text": "a",
+          "start": 38.289,
+          "end": 38.329
+        },
+        {
+          "text": "boicottare",
+          "start": 38.409,
+          "end": 38.949
+        },
+        {
+          "text": "il",
+          "start": 38.989,
+          "end": 39.029
+        },
+        {
+          "text": "fornitore,",
+          "start": 39.069,
+          "end": 39.649
+        }
+      ]
+    },
+    {
+      "start": 39.969,
+      "end": 42.25,
+      "text": "chiedere riscatto o semplicemente divertirsi.",
+      "words": [
+        {
+          "text": "chiedere",
+          "start": 39.969,
+          "end": 40.249
+        },
+        {
+          "text": "riscatto",
+          "start": 40.309,
+          "end": 40.829
+        },
+        {
+          "text": "o",
+          "start": 41.069,
+          "end": 41.109
+        },
+        {
+          "text": "semplicemente",
+          "start": 41.169,
+          "end": 41.649
+        },
+        {
+          "text": "divertirsi.",
+          "start": 41.689,
+          "end": 42.25
+        }
+      ]
+    },
+    {
+      "start": 42.81,
+      "end": 46.51,
+      "text": "Per bloccare un singolo utente si sbaglia apposta il login usando la sua email;",
+      "words": [
+        {
+          "text": "Per",
+          "start": 42.81,
+          "end": 42.91
+        },
+        {
+          "text": "bloccare",
+          "start": 42.95,
+          "end": 43.27
+        },
+        {
+          "text": "un",
+          "start": 43.31,
+          "end": 43.39
+        },
+        {
+          "text": "singolo",
+          "start": 43.45,
+          "end": 43.71
+        },
+        {
+          "text": "utente",
+          "start": 43.77,
+          "end": 44.13
+        },
+        {
+          "text": "si",
+          "start": 44.37,
+          "end": 44.43
+        },
+        {
+          "text": "sbaglia",
+          "start": 44.47,
+          "end": 44.75
+        },
+        {
+          "text": "apposta",
+          "start": 44.77,
+          "end": 45.05
+        },
+        {
+          "text": "il",
+          "start": 45.09,
+          "end": 45.13
+        },
+        {
+          "text": "login",
+          "start": 45.15,
+          "end": 45.45
+        },
+        {
+          "text": "usando",
+          "start": 45.75,
+          "end": 45.99
+        },
+        {
+          "text": "la",
+          "start": 46.03,
+          "end": 46.09
+        },
+        {
+          "text": "sua",
+          "start": 46.11,
+          "end": 46.21
+        },
+        {
+          "text": "email;",
+          "start": 46.25,
+          "end": 46.51
+        }
+      ]
+    },
+    {
+      "start": 47.111,
+      "end": 51.412,
+      "text": "la difesa mirata applica il blocco solo quando i fallimenti arrivano da IP insoliti.",
+      "words": [
+        {
+          "text": "la",
+          "start": 47.111,
+          "end": 47.171
+        },
+        {
+          "text": "difesa",
+          "start": 47.211,
+          "end": 47.471
+        },
+        {
+          "text": "mirata",
+          "start": 47.511,
+          "end": 47.831
+        },
+        {
+          "text": "applica",
+          "start": 48.031,
+          "end": 48.331
+        },
+        {
+          "text": "il",
+          "start": 48.391,
+          "end": 48.431
+        },
+        {
+          "text": "blocco",
+          "start": 48.471,
+          "end": 48.771
+        },
+        {
+          "text": "solo",
+          "start": 48.911,
+          "end": 49.171
+        },
+        {
+          "text": "quando",
+          "start": 49.211,
+          "end": 49.451
+        },
+        {
+          "text": "i",
+          "start": 49.491,
+          "end": 49.531
+        },
+        {
+          "text": "fallimenti",
+          "start": 49.551,
+          "end": 50.071
+        },
+        {
+          "text": "arrivano",
+          "start": 50.131,
+          "end": 50.511
+        },
+        {
+          "text": "da",
+          "start": 50.551,
+          "end": 50.611
+        },
+        {
+          "text": "IP",
+          "start": 50.691,
+          "end": 50.791
+        },
+        {
+          "text": "insoliti.",
+          "start": 50.831,
+          "end": 51.412
+        }
+      ]
+    },
+    {
+      "start": 52.352,
+      "end": 57.213,
+      "text": "Quarto: contro password deboli si impongono password forti e domande personali;",
+      "words": [
+        {
+          "text": "Quarto:",
+          "start": 52.352,
+          "end": 52.632
+        },
+        {
+          "text": "contro",
+          "start": 53.152,
+          "end": 53.432
+        },
+        {
+          "text": "password",
+          "start": 53.532,
+          "end": 53.912
+        },
+        {
+          "text": "deboli",
+          "start": 54.032,
+          "end": 54.352
+        },
+        {
+          "text": "si",
+          "start": 54.572,
+          "end": 54.632
+        },
+        {
+          "text": "impongono",
+          "start": 54.692,
+          "end": 55.092
+        },
+        {
+          "text": "password",
+          "start": 55.172,
+          "end": 55.573
+        },
+        {
+          "text": "forti",
+          "start": 55.673,
+          "end": 56.053
+        },
+        {
+          "text": "e",
+          "start": 56.233,
+          "end": 56.273
+        },
+        {
+          "text": "domande",
+          "start": 56.353,
+          "end": 56.653
+        },
+        {
+          "text": "personali;",
+          "start": 56.693,
+          "end": 57.213
+        }
+      ]
+    },
+    {
+      "start": 57.713,
+      "end": 61.554,
+      "text": "se il prodotto non tratta dati riservati basta l'autenticazione knowledge-based.",
+      "words": [
+        {
+          "text": "se",
+          "start": 57.713,
+          "end": 57.773
+        },
+        {
+          "text": "il",
+          "start": 57.833,
+          "end": 57.873
+        },
+        {
+          "text": "prodotto",
+          "start": 57.913,
+          "end": 58.253
+        },
+        {
+          "text": "non",
+          "start": 58.353,
+          "end": 58.493
+        },
+        {
+          "text": "tratta",
+          "start": 58.573,
+          "end": 58.833
+        },
+        {
+          "text": "dati",
+          "start": 58.893,
+          "end": 59.073
+        },
+        {
+          "text": "riservati",
+          "start": 59.113,
+          "end": 59.653
+        },
+        {
+          "text": "basta",
+          "start": 59.833,
+          "end": 60.034
+        },
+        {
+          "text": "l'autenticazione",
+          "start": 60.054,
+          "end": 60.754
+        },
+        {
+          "text": "knowledge-based.",
+          "start": 60.834,
+          "end": 61.554
+        }
+      ]
+    },
+    {
+      "start": 62.274,
+      "end": 66.155,
+      "text": "L'identità federata vale sia per servizi consumer come Google e Facebook,",
+      "words": [
+        {
+          "text": "L'identità",
+          "start": 62.274,
+          "end": 62.694
+        },
+        {
+          "text": "federata",
+          "start": 62.774,
+          "end": 63.234
+        },
+        {
+          "text": "vale",
+          "start": 63.534,
+          "end": 63.714
+        },
+        {
+          "text": "sia",
+          "start": 63.794,
+          "end": 63.954
+        },
+        {
+          "text": "per",
+          "start": 63.994,
+          "end": 64.094
+        },
+        {
+          "text": "servizi",
+          "start": 64.154,
+          "end": 64.495
+        },
+        {
+          "text": "consumer",
+          "start": 64.555,
+          "end": 65.055
+        },
+        {
+          "text": "come",
+          "start": 65.095,
+          "end": 65.255
+        },
+        {
+          "text": "Google",
+          "start": 65.375,
+          "end": 65.635
+        },
+        {
+          "text": "e",
+          "start": 65.655,
+          "end": 65.69500000000001
+        },
+        {
+          "text": "Facebook,",
+          "start": 65.735,
+          "end": 66.155
+        }
+      ]
+    },
+    {
+      "start": 66.595,
+      "end": 70.576,
+      "text": "sia per prodotti aziendali collegati al sistema di gestione identità del cliente.",
+      "words": [
+        {
+          "text": "sia",
+          "start": 66.595,
+          "end": 66.755
+        },
+        {
+          "text": "per",
+          "start": 66.795,
+          "end": 66.915
+        },
+        {
+          "text": "prodotti",
+          "start": 66.975,
+          "end": 67.295
+        },
+        {
+          "text": "aziendali",
+          "start": 67.335,
+          "end": 67.855
+        },
+        {
+          "text": "collegati",
+          "start": 67.955,
+          "end": 68.395
+        },
+        {
+          "text": "al",
+          "start": 68.415,
+          "end": 68.495
+        },
+        {
+          "text": "sistema",
+          "start": 68.535,
+          "end": 68.896
+        },
+        {
+          "text": "di",
+          "start": 68.956,
+          "end": 69.016
+        },
+        {
+          "text": "gestione",
+          "start": 69.056,
+          "end": 69.476
+        },
+        {
+          "text": "identità",
+          "start": 69.516,
+          "end": 69.896
+        },
+        {
+          "text": "del",
+          "start": 69.956,
+          "end": 70.076
+        },
+        {
+          "text": "cliente.",
+          "start": 70.156,
+          "end": 70.576
+        }
+      ]
+    },
+    {
+      "start": 71.296,
+      "end": 76.957,
+      "text": "Su mobile la tastiera è scomoda: si usano certificati digitali di fornitori fidati oppure token",
+      "words": [
+        {
+          "text": "Su",
+          "start": 71.296,
+          "end": 71.376
+        },
+        {
+          "text": "mobile",
+          "start": 71.436,
+          "end": 71.836
+        },
+        {
+          "text": "la",
+          "start": 72.116,
+          "end": 72.176
+        },
+        {
+          "text": "tastiera",
+          "start": 72.196,
+          "end": 72.496
+        },
+        {
+          "text": "è",
+          "start": 72.536,
+          "end": 72.57600000000001
+        },
+        {
+          "text": "scomoda:",
+          "start": 72.576,
+          "end": 72.956
+        },
+        {
+          "text": "si",
+          "start": 73.377,
+          "end": 73.457
+        },
+        {
+          "text": "usano",
+          "start": 73.517,
+          "end": 73.717
+        },
+        {
+          "text": "certificati",
+          "start": 73.817,
+          "end": 74.397
+        },
+        {
+          "text": "digitali",
+          "start": 74.477,
+          "end": 74.937
+        },
+        {
+          "text": "di",
+          "start": 74.997,
+          "end": 75.057
+        },
+        {
+          "text": "fornitori",
+          "start": 75.097,
+          "end": 75.517
+        },
+        {
+          "text": "fidati",
+          "start": 75.557,
+          "end": 75.937
+        },
+        {
+          "text": "oppure",
+          "start": 76.197,
+          "end": 76.477
+        },
+        {
+          "text": "token",
+          "start": 76.637,
+          "end": 76.957
+        }
+      ]
+    },
+    {
+      "start": 77.017,
+      "end": 79.918,
+      "text": "locali, rischiosi se il dispositivo viene rubato o perso.",
+      "words": [
+        {
+          "text": "locali,",
+          "start": 77.017,
+          "end": 77.397
+        },
+        {
+          "text": "rischiosi",
+          "start": 77.698,
+          "end": 78.138
+        },
+        {
+          "text": "se",
+          "start": 78.298,
+          "end": 78.358
+        },
+        {
+          "text": "il",
+          "start": 78.398,
+          "end": 78.458
+        },
+        {
+          "text": "dispositivo",
+          "start": 78.478,
+          "end": 78.958
+        },
+        {
+          "text": "viene",
+          "start": 78.998,
+          "end": 79.178
+        },
+        {
+          "text": "rubato",
+          "start": 79.238,
+          "end": 79.518
+        },
+        {
+          "text": "o",
+          "start": 79.558,
+          "end": 79.59800000000001
+        },
+        {
+          "text": "perso.",
+          "start": 79.618,
+          "end": 79.918
+        }
+      ]
+    },
+    {
+      "start": 80.678,
+      "end": 85.119,
+      "text": "Quinto: le leggi sulla protezione dei dati possono imporre di conservare copie per anni,",
+      "words": [
+        {
+          "text": "Quinto:",
+          "start": 80.678,
+          "end": 80.958
+        },
+        {
+          "text": "le",
+          "start": 81.538,
+          "end": 81.618
+        },
+        {
+          "text": "leggi",
+          "start": 81.658,
+          "end": 81.878
+        },
+        {
+          "text": "sulla",
+          "start": 81.958,
+          "end": 82.118
+        },
+        {
+          "text": "protezione",
+          "start": 82.138,
+          "end": 82.539
+        },
+        {
+          "text": "dei",
+          "start": 82.579,
+          "end": 82.679
+        },
+        {
+          "text": "dati",
+          "start": 82.699,
+          "end": 82.979
+        },
+        {
+          "text": "possono",
+          "start": 83.079,
+          "end": 83.359
+        },
+        {
+          "text": "imporre",
+          "start": 83.379,
+          "end": 83.679
+        },
+        {
+          "text": "di",
+          "start": 83.719,
+          "end": 83.779
+        },
+        {
+          "text": "conservare",
+          "start": 83.839,
+          "end": 84.359
+        },
+        {
+          "text": "copie",
+          "start": 84.399,
+          "end": 84.659
+        },
+        {
+          "text": "per",
+          "start": 84.679,
+          "end": 84.799
+        },
+        {
+          "text": "anni,",
+          "start": 84.859,
+          "end": 85.119
+        }
+      ]
+    },
+    {
+      "start": 85.479,
+      "end": 88.42,
+      "text": "obbligando a custodire le chiavi datate nel KMS.",
+      "words": [
+        {
+          "text": "obbligando",
+          "start": 85.479,
+          "end": 85.919
+        },
+        {
+          "text": "a",
+          "start": 85.959,
+          "end": 85.99900000000001
+        },
+        {
+          "text": "custodire",
+          "start": 86.039,
+          "end": 86.499
+        },
+        {
+          "text": "le",
+          "start": 86.559,
+          "end": 86.62
+        },
+        {
+          "text": "chiavi",
+          "start": 86.68,
+          "end": 86.92
+        },
+        {
+          "text": "datate",
+          "start": 86.96,
+          "end": 87.34
+        },
+        {
+          "text": "nel",
+          "start": 87.46,
+          "end": 87.6
+        },
+        {
+          "text": "KMS.",
+          "start": 87.68,
+          "end": 88.42
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1056 @@
+{
+  "duration": 67.444,
+  "segments": [
+    {
+      "start": 0.484,
+      "end": 5.124,
+      "text": "Quando un'applicazione è composta da più microservizi, lanciare a mano build e run per ciascuno",
+      "words": [
+        {
+          "text": "Quando",
+          "start": 0.484,
+          "end": 0.664
+        },
+        {
+          "text": "un'applicazione",
+          "start": 0.724,
+          "end": 1.244
+        },
+        {
+          "text": "è",
+          "start": 1.264,
+          "end": 1.304
+        },
+        {
+          "text": "composta",
+          "start": 1.284,
+          "end": 1.684
+        },
+        {
+          "text": "da",
+          "start": 1.724,
+          "end": 1.784
+        },
+        {
+          "text": "più",
+          "start": 1.884,
+          "end": 2.004
+        },
+        {
+          "text": "microservizi,",
+          "start": 2.084,
+          "end": 2.884
+        },
+        {
+          "text": "lanciare",
+          "start": 3.044,
+          "end": 3.384
+        },
+        {
+          "text": "a",
+          "start": 3.404,
+          "end": 3.444
+        },
+        {
+          "text": "mano",
+          "start": 3.504,
+          "end": 3.704
+        },
+        {
+          "text": "build",
+          "start": 3.824,
+          "end": 4.064
+        },
+        {
+          "text": "e",
+          "start": 4.104,
+          "end": 4.144
+        },
+        {
+          "text": "run",
+          "start": 4.204,
+          "end": 4.444
+        },
+        {
+          "text": "per",
+          "start": 4.524,
+          "end": 4.624
+        },
+        {
+          "text": "ciascuno",
+          "start": 4.664,
+          "end": 5.124
+        }
+      ]
+    },
+    {
+      "start": 5.184,
+      "end": 5.884,
+      "text": "diventa scomodo.",
+      "words": [
+        {
+          "text": "diventa",
+          "start": 5.184,
+          "end": 5.464
+        },
+        {
+          "text": "scomodo.",
+          "start": 5.504,
+          "end": 5.884
+        }
+      ]
+    },
+    {
+      "start": 6.324,
+      "end": 11.085,
+      "text": "Qui interviene Docker Compose, che permette di descrivere tutti i servizi in un unico file",
+      "words": [
+        {
+          "text": "Qui",
+          "start": 6.324,
+          "end": 6.445
+        },
+        {
+          "text": "interviene",
+          "start": 6.485,
+          "end": 6.925
+        },
+        {
+          "text": "Docker",
+          "start": 7.145,
+          "end": 7.405
+        },
+        {
+          "text": "Compose,",
+          "start": 7.465,
+          "end": 7.945
+        },
+        {
+          "text": "che",
+          "start": 8.205,
+          "end": 8.285
+        },
+        {
+          "text": "permette",
+          "start": 8.325,
+          "end": 8.645
+        },
+        {
+          "text": "di",
+          "start": 8.685,
+          "end": 8.745
+        },
+        {
+          "text": "descrivere",
+          "start": 8.805,
+          "end": 9.325
+        },
+        {
+          "text": "tutti",
+          "start": 9.405,
+          "end": 9.645
+        },
+        {
+          "text": "i",
+          "start": 9.685,
+          "end": 9.725
+        },
+        {
+          "text": "servizi",
+          "start": 9.745,
+          "end": 10.185
+        },
+        {
+          "text": "in",
+          "start": 10.245,
+          "end": 10.305
+        },
+        {
+          "text": "un",
+          "start": 10.325,
+          "end": 10.405
+        },
+        {
+          "text": "unico",
+          "start": 10.445,
+          "end": 10.665
+        },
+        {
+          "text": "file",
+          "start": 10.745,
+          "end": 11.085
+        }
+      ]
+    },
+    {
+      "start": 11.285,
+      "end": 13.166,
+      "text": "e avviarli insieme con un solo comando.",
+      "words": [
+        {
+          "text": "e",
+          "start": 11.285,
+          "end": 11.325
+        },
+        {
+          "text": "avviarli",
+          "start": 11.365,
+          "end": 11.745
+        },
+        {
+          "text": "insieme",
+          "start": 11.805,
+          "end": 12.185
+        },
+        {
+          "text": "con",
+          "start": 12.265,
+          "end": 12.405
+        },
+        {
+          "text": "un",
+          "start": 12.445,
+          "end": 12.525
+        },
+        {
+          "text": "solo",
+          "start": 12.585,
+          "end": 12.785
+        },
+        {
+          "text": "comando.",
+          "start": 12.805,
+          "end": 13.166
+        }
+      ]
+    },
+    {
+      "start": 13.826,
+      "end": 15.866,
+      "text": "Vediamo l'esempio di un negozio con due servizi.",
+      "words": [
+        {
+          "text": "Vediamo",
+          "start": 13.826,
+          "end": 14.066
+        },
+        {
+          "text": "l'esempio",
+          "start": 14.086,
+          "end": 14.426
+        },
+        {
+          "text": "di",
+          "start": 14.466,
+          "end": 14.526
+        },
+        {
+          "text": "un",
+          "start": 14.546,
+          "end": 14.606
+        },
+        {
+          "text": "negozio",
+          "start": 14.646,
+          "end": 15.026
+        },
+        {
+          "text": "con",
+          "start": 15.066,
+          "end": 15.186
+        },
+        {
+          "text": "due",
+          "start": 15.226,
+          "end": 15.366
+        },
+        {
+          "text": "servizi.",
+          "start": 15.406,
+          "end": 15.866
+        }
+      ]
+    },
+    {
+      "start": 16.386,
+      "end": 19.507,
+      "text": "Il primo è product service, scritto in Python con Flask,",
+      "words": [
+        {
+          "text": "Il",
+          "start": 16.386,
+          "end": 16.466
+        },
+        {
+          "text": "primo",
+          "start": 16.506,
+          "end": 16.726
+        },
+        {
+          "text": "è",
+          "start": 16.786,
+          "end": 16.826
+        },
+        {
+          "text": "product",
+          "start": 16.926,
+          "end": 17.286
+        },
+        {
+          "text": "service,",
+          "start": 17.426,
+          "end": 17.866
+        },
+        {
+          "text": "scritto",
+          "start": 18.146,
+          "end": 18.406
+        },
+        {
+          "text": "in",
+          "start": 18.446,
+          "end": 18.506
+        },
+        {
+          "text": "Python",
+          "start": 18.566,
+          "end": 18.906
+        },
+        {
+          "text": "con",
+          "start": 18.986,
+          "end": 19.126
+        },
+        {
+          "text": "Flask,",
+          "start": 19.166,
+          "end": 19.507
+        }
+      ]
+    },
+    {
+      "start": 19.867,
+      "end": 22.967,
+      "text": "che espone sulla porta ottanta un elenco di prodotti in formato JSON;",
+      "words": [
+        {
+          "text": "che",
+          "start": 19.867,
+          "end": 19.947
+        },
+        {
+          "text": "espone",
+          "start": 19.967,
+          "end": 20.287
+        },
+        {
+          "text": "sulla",
+          "start": 20.327,
+          "end": 20.487
+        },
+        {
+          "text": "porta",
+          "start": 20.507,
+          "end": 20.687
+        },
+        {
+          "text": "ottanta",
+          "start": 20.727,
+          "end": 21.047
+        },
+        {
+          "text": "un",
+          "start": 21.107,
+          "end": 21.187
+        },
+        {
+          "text": "elenco",
+          "start": 21.227,
+          "end": 21.527
+        },
+        {
+          "text": "di",
+          "start": 21.567,
+          "end": 21.627
+        },
+        {
+          "text": "prodotti",
+          "start": 21.647,
+          "end": 22.007
+        },
+        {
+          "text": "in",
+          "start": 22.047,
+          "end": 22.107
+        },
+        {
+          "text": "formato",
+          "start": 22.147,
+          "end": 22.527
+        },
+        {
+          "text": "JSON;",
+          "start": 22.607,
+          "end": 22.967
+        }
+      ]
+    },
+    {
+      "start": 23.427,
+      "end": 27.868,
+      "text": "il suo Dockerfile parte da python tre onbuild, copia i file e avvia il server.",
+      "words": [
+        {
+          "text": "il",
+          "start": 23.427,
+          "end": 23.487
+        },
+        {
+          "text": "suo",
+          "start": 23.527,
+          "end": 23.647
+        },
+        {
+          "text": "Dockerfile",
+          "start": 23.687,
+          "end": 24.287
+        },
+        {
+          "text": "parte",
+          "start": 24.347,
+          "end": 24.567
+        },
+        {
+          "text": "da",
+          "start": 24.627,
+          "end": 24.687
+        },
+        {
+          "text": "python",
+          "start": 24.767,
+          "end": 25.107
+        },
+        {
+          "text": "tre",
+          "start": 25.167,
+          "end": 25.307
+        },
+        {
+          "text": "onbuild,",
+          "start": 25.507,
+          "end": 25.948
+        },
+        {
+          "text": "copia",
+          "start": 26.268,
+          "end": 26.528
+        },
+        {
+          "text": "i",
+          "start": 26.548,
+          "end": 26.588
+        },
+        {
+          "text": "file",
+          "start": 26.608,
+          "end": 26.968
+        },
+        {
+          "text": "e",
+          "start": 27.128,
+          "end": 27.168
+        },
+        {
+          "text": "avvia",
+          "start": 27.228,
+          "end": 27.388
+        },
+        {
+          "text": "il",
+          "start": 27.448,
+          "end": 27.508
+        },
+        {
+          "text": "server.",
+          "start": 27.548,
+          "end": 27.868
+        }
+      ]
+    },
+    {
+      "start": 28.568,
+      "end": 33.009,
+      "text": "Il secondo è website, una pagina PHP che interroga il servizio e mostra la lista",
+      "words": [
+        {
+          "text": "Il",
+          "start": 28.568,
+          "end": 28.648
+        },
+        {
+          "text": "secondo",
+          "start": 28.688,
+          "end": 29.008
+        },
+        {
+          "text": "è",
+          "start": 29.048,
+          "end": 29.088
+        },
+        {
+          "text": "website,",
+          "start": 29.148,
+          "end": 29.728
+        },
+        {
+          "text": "una",
+          "start": 30.008,
+          "end": 30.108
+        },
+        {
+          "text": "pagina",
+          "start": 30.148,
+          "end": 30.428
+        },
+        {
+          "text": "PHP",
+          "start": 30.468,
+          "end": 30.788
+        },
+        {
+          "text": "che",
+          "start": 30.928,
+          "end": 31.008
+        },
+        {
+          "text": "interroga",
+          "start": 31.048,
+          "end": 31.488
+        },
+        {
+          "text": "il",
+          "start": 31.528,
+          "end": 31.588
+        },
+        {
+          "text": "servizio",
+          "start": 31.628,
+          "end": 32.108
+        },
+        {
+          "text": "e",
+          "start": 32.229,
+          "end": 32.269
+        },
+        {
+          "text": "mostra",
+          "start": 32.349,
+          "end": 32.649
+        },
+        {
+          "text": "la",
+          "start": 32.729,
+          "end": 32.769
+        },
+        {
+          "text": "lista",
+          "start": 32.809,
+          "end": 33.009
+        }
+      ]
+    },
+    {
+      "start": 33.049,
+      "end": 33.529,
+      "text": "dei prodotti.",
+      "words": [
+        {
+          "text": "dei",
+          "start": 33.049,
+          "end": 33.149
+        },
+        {
+          "text": "prodotti.",
+          "start": 33.149,
+          "end": 33.529
+        }
+      ]
+    },
+    {
+      "start": 34.209,
+      "end": 37.349,
+      "text": "Nel file docker compose punto yml definiamo i due servizi:",
+      "words": [
+        {
+          "text": "Nel",
+          "start": 34.209,
+          "end": 34.329
+        },
+        {
+          "text": "file",
+          "start": 34.369,
+          "end": 34.609
+        },
+        {
+          "text": "docker",
+          "start": 34.669,
+          "end": 34.929
+        },
+        {
+          "text": "compose",
+          "start": 34.969,
+          "end": 35.349
+        },
+        {
+          "text": "punto",
+          "start": 35.389,
+          "end": 35.629
+        },
+        {
+          "text": "yml",
+          "start": 35.709,
+          "end": 36.009
+        },
+        {
+          "text": "definiamo",
+          "start": 36.169,
+          "end": 36.569
+        },
+        {
+          "text": "i",
+          "start": 36.629,
+          "end": 36.669
+        },
+        {
+          "text": "due",
+          "start": 36.689,
+          "end": 36.829
+        },
+        {
+          "text": "servizi:",
+          "start": 36.869,
+          "end": 37.349
+        }
+      ]
+    },
+    {
+      "start": 37.569,
+      "end": 42.43,
+      "text": "per ciascuno indichiamo se costruire l'immagine da una cartella locale con build oppure scaricarla con",
+      "words": [
+        {
+          "text": "per",
+          "start": 37.569,
+          "end": 37.669
+        },
+        {
+          "text": "ciascuno",
+          "start": 37.689,
+          "end": 38.049
+        },
+        {
+          "text": "indichiamo",
+          "start": 38.109,
+          "end": 38.469
+        },
+        {
+          "text": "se",
+          "start": 38.529,
+          "end": 38.589
+        },
+        {
+          "text": "costruire",
+          "start": 38.65,
+          "end": 39.07
+        },
+        {
+          "text": "l'immagine",
+          "start": 39.11,
+          "end": 39.59
+        },
+        {
+          "text": "da",
+          "start": 39.63,
+          "end": 39.67
+        },
+        {
+          "text": "una",
+          "start": 39.71,
+          "end": 39.81
+        },
+        {
+          "text": "cartella",
+          "start": 39.85,
+          "end": 40.21
+        },
+        {
+          "text": "locale",
+          "start": 40.25,
+          "end": 40.59
+        },
+        {
+          "text": "con",
+          "start": 40.65,
+          "end": 40.77
+        },
+        {
+          "text": "build",
+          "start": 40.81,
+          "end": 41.07
+        },
+        {
+          "text": "oppure",
+          "start": 41.51,
+          "end": 41.75
+        },
+        {
+          "text": "scaricarla",
+          "start": 41.81,
+          "end": 42.29
+        },
+        {
+          "text": "con",
+          "start": 42.31,
+          "end": 42.43
+        }
+      ]
+    },
+    {
+      "start": 42.47,
+      "end": 47.951,
+      "text": "image, i volumi montati, le porte nel formato ospite container e le dipendenze con depends",
+      "words": [
+        {
+          "text": "image,",
+          "start": 42.47,
+          "end": 42.77
+        },
+        {
+          "text": "i",
+          "start": 43.07,
+          "end": 43.11
+        },
+        {
+          "text": "volumi",
+          "start": 43.13,
+          "end": 43.39
+        },
+        {
+          "text": "montati,",
+          "start": 43.45,
+          "end": 43.93
+        },
+        {
+          "text": "le",
+          "start": 44.21,
+          "end": 44.29
+        },
+        {
+          "text": "porte",
+          "start": 44.33,
+          "end": 44.67
+        },
+        {
+          "text": "nel",
+          "start": 44.75,
+          "end": 44.85
+        },
+        {
+          "text": "formato",
+          "start": 44.89,
+          "end": 45.251
+        },
+        {
+          "text": "ospite",
+          "start": 45.411,
+          "end": 45.791
+        },
+        {
+          "text": "container",
+          "start": 45.811,
+          "end": 46.351
+        },
+        {
+          "text": "e",
+          "start": 46.731,
+          "end": 46.771
+        },
+        {
+          "text": "le",
+          "start": 46.811,
+          "end": 46.871
+        },
+        {
+          "text": "dipendenze",
+          "start": 46.911,
+          "end": 47.411
+        },
+        {
+          "text": "con",
+          "start": 47.451,
+          "end": 47.571
+        },
+        {
+          "text": "depends",
+          "start": 47.591,
+          "end": 47.951
+        }
+      ]
+    },
+    {
+      "start": 47.991,
+      "end": 48.151,
+      "text": "on.",
+      "words": [
+        {
+          "text": "on.",
+          "start": 47.991,
+          "end": 48.151
+        }
+      ]
+    },
+    {
+      "start": 48.851,
+      "end": 50.291,
+      "text": "Basta eseguire docker compose up.",
+      "words": [
+        {
+          "text": "Basta",
+          "start": 48.851,
+          "end": 49.031
+        },
+        {
+          "text": "eseguire",
+          "start": 49.051,
+          "end": 49.371
+        },
+        {
+          "text": "docker",
+          "start": 49.531,
+          "end": 49.791
+        },
+        {
+          "text": "compose",
+          "start": 49.831,
+          "end": 50.131
+        },
+        {
+          "text": "up.",
+          "start": 50.171,
+          "end": 50.291
+        }
+      ]
+    },
+    {
+      "start": 50.851,
+      "end": 57.452,
+      "text": "Compose crea automaticamente una rete virtuale condivisa: così il sito PHP può contattare il servizio",
+      "words": [
+        {
+          "text": "Compose",
+          "start": 50.851,
+          "end": 51.451
+        },
+        {
+          "text": "crea",
+          "start": 51.532,
+          "end": 51.792
+        },
+        {
+          "text": "automaticamente",
+          "start": 51.912,
+          "end": 52.772
+        },
+        {
+          "text": "una",
+          "start": 52.832,
+          "end": 52.952
+        },
+        {
+          "text": "rete",
+          "start": 52.992,
+          "end": 53.172
+        },
+        {
+          "text": "virtuale",
+          "start": 53.212,
+          "end": 53.692
+        },
+        {
+          "text": "condivisa:",
+          "start": 53.752,
+          "end": 54.372
+        },
+        {
+          "text": "così",
+          "start": 54.752,
+          "end": 54.932
+        },
+        {
+          "text": "il",
+          "start": 55.052,
+          "end": 55.132
+        },
+        {
+          "text": "sito",
+          "start": 55.232,
+          "end": 55.452
+        },
+        {
+          "text": "PHP",
+          "start": 55.492,
+          "end": 55.892
+        },
+        {
+          "text": "può",
+          "start": 56.212,
+          "end": 56.292
+        },
+        {
+          "text": "contattare",
+          "start": 56.352,
+          "end": 56.852
+        },
+        {
+          "text": "il",
+          "start": 56.892,
+          "end": 56.952
+        },
+        {
+          "text": "servizio",
+          "start": 56.972,
+          "end": 57.452
+        }
+      ]
+    },
+    {
+      "start": 57.552,
+      "end": 60.473,
+      "text": "usando direttamente il nome product service come indirizzo.",
+      "words": [
+        {
+          "text": "usando",
+          "start": 57.552,
+          "end": 57.832
+        },
+        {
+          "text": "direttamente",
+          "start": 57.893,
+          "end": 58.453
+        },
+        {
+          "text": "il",
+          "start": 58.493,
+          "end": 58.573
+        },
+        {
+          "text": "nome",
+          "start": 58.613,
+          "end": 58.813
+        },
+        {
+          "text": "product",
+          "start": 58.933,
+          "end": 59.333
+        },
+        {
+          "text": "service",
+          "start": 59.413,
+          "end": 59.793
+        },
+        {
+          "text": "come",
+          "start": 59.813,
+          "end": 59.953
+        },
+        {
+          "text": "indirizzo.",
+          "start": 59.993,
+          "end": 60.473
+        }
+      ]
+    },
+    {
+      "start": 60.893,
+      "end": 67.194,
+      "text": "Visitando localhost cinquemilauno vedremo il JSON, mentre su localhost cinquemila apparirà la pagina del sito.",
+      "words": [
+        {
+          "text": "Visitando",
+          "start": 60.893,
+          "end": 61.333
+        },
+        {
+          "text": "localhost",
+          "start": 61.453,
+          "end": 61.933
+        },
+        {
+          "text": "cinquemilauno",
+          "start": 62.033,
+          "end": 62.793
+        },
+        {
+          "text": "vedremo",
+          "start": 62.873,
+          "end": 63.193
+        },
+        {
+          "text": "il",
+          "start": 63.253,
+          "end": 63.313
+        },
+        {
+          "text": "JSON,",
+          "start": 63.353,
+          "end": 63.733
+        },
+        {
+          "text": "mentre",
+          "start": 64.053,
+          "end": 64.313
+        },
+        {
+          "text": "su",
+          "start": 64.414,
+          "end": 64.494
+        },
+        {
+          "text": "localhost",
+          "start": 64.594,
+          "end": 65.054
+        },
+        {
+          "text": "cinquemila",
+          "start": 65.194,
+          "end": 65.774
+        },
+        {
+          "text": "apparirà",
+          "start": 65.934,
+          "end": 66.314
+        },
+        {
+          "text": "la",
+          "start": 66.394,
+          "end": 66.454
+        },
+        {
+          "text": "pagina",
+          "start": 66.474,
+          "end": 66.774
+        },
+        {
+          "text": "del",
+          "start": 66.814,
+          "end": 66.914
+        },
+        {
+          "text": "sito.",
+          "start": 66.974,
+          "end": 67.194
+        }
+      ]
+    }
+  ]
+}

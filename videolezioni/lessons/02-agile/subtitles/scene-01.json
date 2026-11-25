@@ -1,0 +1,952 @@
+{
+  "duration": 72.838,
+  "segments": [
+    {
+      "start": 0.04,
+      "end": 3.2,
+      "text": "Benvenuti al secondo capitolo, dedicato allo sviluppo agile.",
+      "words": [
+        {
+          "text": "Benvenuti",
+          "start": 0.04,
+          "end": 0.58
+        },
+        {
+          "text": "al",
+          "start": 0.72,
+          "end": 0.82
+        },
+        {
+          "text": "secondo",
+          "start": 0.88,
+          "end": 1.18
+        },
+        {
+          "text": "capitolo,",
+          "start": 1.22,
+          "end": 1.64
+        },
+        {
+          "text": "dedicato",
+          "start": 1.92,
+          "end": 2.3
+        },
+        {
+          "text": "allo",
+          "start": 2.32,
+          "end": 2.46
+        },
+        {
+          "text": "sviluppo",
+          "start": 2.5,
+          "end": 2.84
+        },
+        {
+          "text": "agile.",
+          "start": 2.92,
+          "end": 3.2
+        }
+      ]
+    },
+    {
+      "start": 4.081,
+      "end": 8.221,
+      "text": "Nel primo capitolo abbiamo visto che i prodotti software devono arrivare presto sul mercato.",
+      "words": [
+        {
+          "text": "Nel",
+          "start": 4.081,
+          "end": 4.201
+        },
+        {
+          "text": "primo",
+          "start": 4.241,
+          "end": 4.441
+        },
+        {
+          "text": "capitolo",
+          "start": 4.481,
+          "end": 4.901
+        },
+        {
+          "text": "abbiamo",
+          "start": 5.061,
+          "end": 5.301
+        },
+        {
+          "text": "visto",
+          "start": 5.361,
+          "end": 5.581
+        },
+        {
+          "text": "che",
+          "start": 5.621,
+          "end": 5.701
+        },
+        {
+          "text": "i",
+          "start": 5.761,
+          "end": 5.801
+        },
+        {
+          "text": "prodotti",
+          "start": 5.821,
+          "end": 6.181
+        },
+        {
+          "text": "software",
+          "start": 6.261,
+          "end": 6.661
+        },
+        {
+          "text": "devono",
+          "start": 6.721,
+          "end": 6.941
+        },
+        {
+          "text": "arrivare",
+          "start": 6.961,
+          "end": 7.261
+        },
+        {
+          "text": "presto",
+          "start": 7.341,
+          "end": 7.621
+        },
+        {
+          "text": "sul",
+          "start": 7.681,
+          "end": 7.781
+        },
+        {
+          "text": "mercato.",
+          "start": 7.821,
+          "end": 8.221
+        }
+      ]
+    },
+    {
+      "start": 8.901,
+      "end": 14.262,
+      "text": "Per capire perché servano i metodi agili, confrontiamoli con lo sviluppo plan-driven tipico del Novecento.",
+      "words": [
+        {
+          "text": "Per",
+          "start": 8.901,
+          "end": 9.021
+        },
+        {
+          "text": "capire",
+          "start": 9.061,
+          "end": 9.361
+        },
+        {
+          "text": "perché",
+          "start": 9.441,
+          "end": 9.761
+        },
+        {
+          "text": "servano",
+          "start": 9.861,
+          "end": 10.201
+        },
+        {
+          "text": "i",
+          "start": 10.241,
+          "end": 10.281
+        },
+        {
+          "text": "metodi",
+          "start": 10.301,
+          "end": 10.581
+        },
+        {
+          "text": "agili,",
+          "start": 10.661,
+          "end": 10.921
+        },
+        {
+          "text": "confrontiamoli",
+          "start": 11.162,
+          "end": 11.922
+        },
+        {
+          "text": "con",
+          "start": 11.962,
+          "end": 12.042
+        },
+        {
+          "text": "lo",
+          "start": 12.082,
+          "end": 12.142
+        },
+        {
+          "text": "sviluppo",
+          "start": 12.182,
+          "end": 12.522
+        },
+        {
+          "text": "plan-driven",
+          "start": 12.582,
+          "end": 13.142
+        },
+        {
+          "text": "tipico",
+          "start": 13.242,
+          "end": 13.542
+        },
+        {
+          "text": "del",
+          "start": 13.602,
+          "end": 13.702
+        },
+        {
+          "text": "Novecento.",
+          "start": 13.742,
+          "end": 14.262
+        }
+      ]
+    },
+    {
+      "start": 15.262,
+      "end": 20.343,
+      "text": "L'approccio plan-driven si basa su cinque pilastri: pianificazione dettagliata del progetto,",
+      "words": [
+        {
+          "text": "L'approccio",
+          "start": 15.262,
+          "end": 15.642
+        },
+        {
+          "text": "plan-driven",
+          "start": 15.682,
+          "end": 16.182
+        },
+        {
+          "text": "si",
+          "start": 16.342,
+          "end": 16.422
+        },
+        {
+          "text": "basa",
+          "start": 16.462,
+          "end": 16.662
+        },
+        {
+          "text": "su",
+          "start": 16.762,
+          "end": 16.842
+        },
+        {
+          "text": "cinque",
+          "start": 16.962,
+          "end": 17.282
+        },
+        {
+          "text": "pilastri:",
+          "start": 17.322,
+          "end": 17.782
+        },
+        {
+          "text": "pianificazione",
+          "start": 18.262,
+          "end": 19.023
+        },
+        {
+          "text": "dettagliata",
+          "start": 19.103,
+          "end": 19.683
+        },
+        {
+          "text": "del",
+          "start": 19.723,
+          "end": 19.823
+        },
+        {
+          "text": "progetto,",
+          "start": 19.863,
+          "end": 20.343
+        }
+      ]
+    },
+    {
+      "start": 20.783,
+      "end": 25.163,
+      "text": "specifica formale dei requisiti, metodi rigorosi di analisi e design,",
+      "words": [
+        {
+          "text": "specifica",
+          "start": 20.783,
+          "end": 21.323
+        },
+        {
+          "text": "formale",
+          "start": 21.383,
+          "end": 21.803
+        },
+        {
+          "text": "dei",
+          "start": 21.843,
+          "end": 21.963
+        },
+        {
+          "text": "requisiti,",
+          "start": 22.003,
+          "end": 22.503
+        },
+        {
+          "text": "metodi",
+          "start": 22.963,
+          "end": 23.303
+        },
+        {
+          "text": "rigorosi",
+          "start": 23.443,
+          "end": 23.963
+        },
+        {
+          "text": "di",
+          "start": 24.043,
+          "end": 24.103
+        },
+        {
+          "text": "analisi",
+          "start": 24.183,
+          "end": 24.603
+        },
+        {
+          "text": "e",
+          "start": 24.643,
+          "end": 24.683
+        },
+        {
+          "text": "design,",
+          "start": 24.723,
+          "end": 25.163
+        }
+      ]
+    },
+    {
+      "start": 25.723,
+      "end": 29.504,
+      "text": "documentazione completa del sistema e controllo formale della qualità.",
+      "words": [
+        {
+          "text": "documentazione",
+          "start": 25.723,
+          "end": 26.444
+        },
+        {
+          "text": "completa",
+          "start": 26.504,
+          "end": 26.944
+        },
+        {
+          "text": "del",
+          "start": 26.984,
+          "end": 27.104
+        },
+        {
+          "text": "sistema",
+          "start": 27.144,
+          "end": 27.584
+        },
+        {
+          "text": "e",
+          "start": 27.824,
+          "end": 27.864
+        },
+        {
+          "text": "controllo",
+          "start": 27.964,
+          "end": 28.504
+        },
+        {
+          "text": "formale",
+          "start": 28.544,
+          "end": 28.964
+        },
+        {
+          "text": "della",
+          "start": 28.984,
+          "end": 29.144
+        },
+        {
+          "text": "qualità.",
+          "start": 29.204,
+          "end": 29.504
+        }
+      ]
+    },
+    {
+      "start": 30.404,
+      "end": 34.025,
+      "text": "Tutto questo genera un overhead enorme: per prodotti piccoli e medi,",
+      "words": [
+        {
+          "text": "Tutto",
+          "start": 30.404,
+          "end": 30.604
+        },
+        {
+          "text": "questo",
+          "start": 30.624,
+          "end": 30.884
+        },
+        {
+          "text": "genera",
+          "start": 31.004,
+          "end": 31.324
+        },
+        {
+          "text": "un",
+          "start": 31.404,
+          "end": 31.504
+        },
+        {
+          "text": "overhead",
+          "start": 31.584,
+          "end": 31.904
+        },
+        {
+          "text": "enorme:",
+          "start": 31.964,
+          "end": 32.364
+        },
+        {
+          "text": "per",
+          "start": 32.764,
+          "end": 32.884
+        },
+        {
+          "text": "prodotti",
+          "start": 32.924,
+          "end": 33.284
+        },
+        {
+          "text": "piccoli",
+          "start": 33.344,
+          "end": 33.665
+        },
+        {
+          "text": "e",
+          "start": 33.705,
+          "end": 33.745
+        },
+        {
+          "text": "medi,",
+          "start": 33.805,
+          "end": 34.025
+        }
+      ]
+    },
+    {
+      "start": 34.205,
+      "end": 37.645,
+      "text": "la burocrazia di piano e documenti finisce per dominare lo sviluppo.",
+      "words": [
+        {
+          "text": "la",
+          "start": 34.205,
+          "end": 34.285
+        },
+        {
+          "text": "burocrazia",
+          "start": 34.305,
+          "end": 34.885
+        },
+        {
+          "text": "di",
+          "start": 34.925,
+          "end": 35.005
+        },
+        {
+          "text": "piano",
+          "start": 35.105,
+          "end": 35.425
+        },
+        {
+          "text": "e",
+          "start": 35.505,
+          "end": 35.545
+        },
+        {
+          "text": "documenti",
+          "start": 35.625,
+          "end": 36.125
+        },
+        {
+          "text": "finisce",
+          "start": 36.185,
+          "end": 36.505
+        },
+        {
+          "text": "per",
+          "start": 36.545,
+          "end": 36.665
+        },
+        {
+          "text": "dominare",
+          "start": 36.745,
+          "end": 37.105
+        },
+        {
+          "text": "lo",
+          "start": 37.145,
+          "end": 37.205
+        },
+        {
+          "text": "sviluppo.",
+          "start": 37.245,
+          "end": 37.645
+        }
+      ]
+    },
+    {
+      "start": 38.625,
+      "end": 42.726,
+      "text": "L'Agile software engineering ribalta la prospettiva concentrandosi sul software,",
+      "words": [
+        {
+          "text": "L'Agile",
+          "start": 38.625,
+          "end": 39.045
+        },
+        {
+          "text": "software",
+          "start": 39.105,
+          "end": 39.505
+        },
+        {
+          "text": "engineering",
+          "start": 39.545,
+          "end": 40.025
+        },
+        {
+          "text": "ribalta",
+          "start": 40.245,
+          "end": 40.545
+        },
+        {
+          "text": "la",
+          "start": 40.605,
+          "end": 40.645
+        },
+        {
+          "text": "prospettiva",
+          "start": 40.665,
+          "end": 41.206
+        },
+        {
+          "text": "concentrandosi",
+          "start": 41.306,
+          "end": 42.026
+        },
+        {
+          "text": "sul",
+          "start": 42.066,
+          "end": 42.206
+        },
+        {
+          "text": "software,",
+          "start": 42.266,
+          "end": 42.726
+        }
+      ]
+    },
+    {
+      "start": 43.086,
+      "end": 50.007,
+      "text": "con tre obiettivi: consegnare funzionalità rapidamente, rispondere subito ai cambiamenti e minimizzare l'overhead.",
+      "words": [
+        {
+          "text": "con",
+          "start": 43.086,
+          "end": 43.246
+        },
+        {
+          "text": "tre",
+          "start": 43.326,
+          "end": 43.446
+        },
+        {
+          "text": "obiettivi:",
+          "start": 43.526,
+          "end": 44.046
+        },
+        {
+          "text": "consegnare",
+          "start": 44.486,
+          "end": 45.006
+        },
+        {
+          "text": "funzionalità",
+          "start": 45.066,
+          "end": 45.626
+        },
+        {
+          "text": "rapidamente,",
+          "start": 45.706,
+          "end": 46.286
+        },
+        {
+          "text": "rispondere",
+          "start": 46.686,
+          "end": 47.206
+        },
+        {
+          "text": "subito",
+          "start": 47.286,
+          "end": 47.586
+        },
+        {
+          "text": "ai",
+          "start": 47.626,
+          "end": 47.686
+        },
+        {
+          "text": "cambiamenti",
+          "start": 47.706,
+          "end": 48.266
+        },
+        {
+          "text": "e",
+          "start": 48.707,
+          "end": 48.747
+        },
+        {
+          "text": "minimizzare",
+          "start": 48.867,
+          "end": 49.467
+        },
+        {
+          "text": "l'overhead.",
+          "start": 49.527,
+          "end": 50.007
+        }
+      ]
+    },
+    {
+      "start": 51.027,
+      "end": 54.807,
+      "text": "Nel duemilauno nasce così il Manifesto Agile, fondato su quattro valori:",
+      "words": [
+        {
+          "text": "Nel",
+          "start": 51.027,
+          "end": 51.167
+        },
+        {
+          "text": "duemilauno",
+          "start": 51.187,
+          "end": 51.627
+        },
+        {
+          "text": "nasce",
+          "start": 51.807,
+          "end": 52.047
+        },
+        {
+          "text": "così",
+          "start": 52.087,
+          "end": 52.287
+        },
+        {
+          "text": "il",
+          "start": 52.347,
+          "end": 52.407
+        },
+        {
+          "text": "Manifesto",
+          "start": 52.447,
+          "end": 52.927
+        },
+        {
+          "text": "Agile,",
+          "start": 53.027,
+          "end": 53.387
+        },
+        {
+          "text": "fondato",
+          "start": 53.587,
+          "end": 53.927
+        },
+        {
+          "text": "su",
+          "start": 53.987,
+          "end": 54.067
+        },
+        {
+          "text": "quattro",
+          "start": 54.187,
+          "end": 54.467
+        },
+        {
+          "text": "valori:",
+          "start": 54.507,
+          "end": 54.807
+        }
+      ]
+    },
+    {
+      "start": 55.387,
+      "end": 58.548,
+      "text": "c'è valore negli elementi a destra, ma si preferiscono quelli a sinistra.",
+      "words": [
+        {
+          "text": "c'è",
+          "start": 55.387,
+          "end": 55.487
+        },
+        {
+          "text": "valore",
+          "start": 55.567,
+          "end": 55.868
+        },
+        {
+          "text": "negli",
+          "start": 55.928,
+          "end": 56.108
+        },
+        {
+          "text": "elementi",
+          "start": 56.128,
+          "end": 56.408
+        },
+        {
+          "text": "a",
+          "start": 56.448,
+          "end": 56.488
+        },
+        {
+          "text": "destra,",
+          "start": 56.508,
+          "end": 56.848
+        },
+        {
+          "text": "ma",
+          "start": 57.028,
+          "end": 57.088
+        },
+        {
+          "text": "si",
+          "start": 57.148,
+          "end": 57.228
+        },
+        {
+          "text": "preferiscono",
+          "start": 57.288,
+          "end": 57.808
+        },
+        {
+          "text": "quelli",
+          "start": 57.848,
+          "end": 58.028
+        },
+        {
+          "text": "a",
+          "start": 58.068,
+          "end": 58.108
+        },
+        {
+          "text": "sinistra.",
+          "start": 58.148,
+          "end": 58.548
+        }
+      ]
+    },
+    {
+      "start": 59.608,
+      "end": 62.368,
+      "text": "Individui e interazioni più di processi e strumenti;",
+      "words": [
+        {
+          "text": "Individui",
+          "start": 59.608,
+          "end": 60.128
+        },
+        {
+          "text": "e",
+          "start": 60.188,
+          "end": 60.228
+        },
+        {
+          "text": "interazioni",
+          "start": 60.268,
+          "end": 60.868
+        },
+        {
+          "text": "più",
+          "start": 61.048,
+          "end": 61.168
+        },
+        {
+          "text": "di",
+          "start": 61.228,
+          "end": 61.308
+        },
+        {
+          "text": "processi",
+          "start": 61.368,
+          "end": 61.768
+        },
+        {
+          "text": "e",
+          "start": 61.828,
+          "end": 61.868
+        },
+        {
+          "text": "strumenti;",
+          "start": 61.888,
+          "end": 62.368
+        }
+      ]
+    },
+    {
+      "start": 62.988,
+      "end": 65.569,
+      "text": "software funzionante più di documentazione completa;",
+      "words": [
+        {
+          "text": "software",
+          "start": 62.988,
+          "end": 63.389
+        },
+        {
+          "text": "funzionante",
+          "start": 63.409,
+          "end": 64.029
+        },
+        {
+          "text": "più",
+          "start": 64.129,
+          "end": 64.249
+        },
+        {
+          "text": "di",
+          "start": 64.309,
+          "end": 64.369
+        },
+        {
+          "text": "documentazione",
+          "start": 64.429,
+          "end": 65.109
+        },
+        {
+          "text": "completa;",
+          "start": 65.149,
+          "end": 65.569
+        }
+      ]
+    },
+    {
+      "start": 66.329,
+      "end": 69.369,
+      "text": "collaborazione con il cliente più di negoziazione del contratto;",
+      "words": [
+        {
+          "text": "collaborazione",
+          "start": 66.329,
+          "end": 67.009
+        },
+        {
+          "text": "con",
+          "start": 67.049,
+          "end": 67.149
+        },
+        {
+          "text": "il",
+          "start": 67.169,
+          "end": 67.249
+        },
+        {
+          "text": "cliente",
+          "start": 67.269,
+          "end": 67.709
+        },
+        {
+          "text": "più",
+          "start": 67.809,
+          "end": 67.929
+        },
+        {
+          "text": "di",
+          "start": 67.969,
+          "end": 68.049
+        },
+        {
+          "text": "negoziazione",
+          "start": 68.089,
+          "end": 68.669
+        },
+        {
+          "text": "del",
+          "start": 68.689,
+          "end": 68.809
+        },
+        {
+          "text": "contratto;",
+          "start": 68.849,
+          "end": 69.369
+        }
+      ]
+    },
+    {
+      "start": 69.869,
+      "end": 72.45,
+      "text": "e risposta al cambiamento più di aderenza a un piano.",
+      "words": [
+        {
+          "text": "e",
+          "start": 69.869,
+          "end": 69.909
+        },
+        {
+          "text": "risposta",
+          "start": 70.029,
+          "end": 70.469
+        },
+        {
+          "text": "al",
+          "start": 70.489,
+          "end": 70.57
+        },
+        {
+          "text": "cambiamento",
+          "start": 70.59,
+          "end": 71.15
+        },
+        {
+          "text": "più",
+          "start": 71.25,
+          "end": 71.37
+        },
+        {
+          "text": "di",
+          "start": 71.47,
+          "end": 71.53
+        },
+        {
+          "text": "aderenza",
+          "start": 71.59,
+          "end": 71.99
+        },
+        {
+          "text": "a",
+          "start": 72.03,
+          "end": 72.07000000000001
+        },
+        {
+          "text": "un",
+          "start": 72.07,
+          "end": 72.13
+        },
+        {
+          "text": "piano.",
+          "start": 72.17,
+          "end": 72.45
+        }
+      ]
+    }
+  ]
+}

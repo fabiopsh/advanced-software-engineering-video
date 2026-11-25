@@ -1,0 +1,1115 @@
+{
+  "duration": 72.516,
+  "segments": [
+    {
+      "start": 0.06,
+      "end": 4.081,
+      "text": "Benvenuti al quindicesimo capitolo, dedicato alla Quantum Software Engineering.",
+      "words": [
+        {
+          "text": "Benvenuti",
+          "start": 0.06,
+          "end": 0.48
+        },
+        {
+          "text": "al",
+          "start": 0.54,
+          "end": 0.62
+        },
+        {
+          "text": "quindicesimo",
+          "start": 0.66,
+          "end": 1.22
+        },
+        {
+          "text": "capitolo,",
+          "start": 1.26,
+          "end": 1.68
+        },
+        {
+          "text": "dedicato",
+          "start": 1.96,
+          "end": 2.42
+        },
+        {
+          "text": "alla",
+          "start": 2.46,
+          "end": 2.6
+        },
+        {
+          "text": "Quantum",
+          "start": 2.68,
+          "end": 3.08
+        },
+        {
+          "text": "Software",
+          "start": 3.14,
+          "end": 3.56
+        },
+        {
+          "text": "Engineering.",
+          "start": 3.58,
+          "end": 4.081
+        }
+      ]
+    },
+    {
+      "start": 4.941,
+      "end": 10.101,
+      "text": "Partiamo da una domanda semplice: perché i computer quantistici interessano l'ingegneria del software?",
+      "words": [
+        {
+          "text": "Partiamo",
+          "start": 4.941,
+          "end": 5.241
+        },
+        {
+          "text": "da",
+          "start": 5.301,
+          "end": 5.341
+        },
+        {
+          "text": "una",
+          "start": 5.381,
+          "end": 5.481
+        },
+        {
+          "text": "domanda",
+          "start": 5.501,
+          "end": 5.761
+        },
+        {
+          "text": "semplice:",
+          "start": 5.841,
+          "end": 6.261
+        },
+        {
+          "text": "perché",
+          "start": 6.721,
+          "end": 7.101
+        },
+        {
+          "text": "i",
+          "start": 7.201,
+          "end": 7.241
+        },
+        {
+          "text": "computer",
+          "start": 7.261,
+          "end": 7.641
+        },
+        {
+          "text": "quantistici",
+          "start": 7.681,
+          "end": 8.261
+        },
+        {
+          "text": "interessano",
+          "start": 8.381,
+          "end": 8.961
+        },
+        {
+          "text": "l'ingegneria",
+          "start": 9.001,
+          "end": 9.501
+        },
+        {
+          "text": "del",
+          "start": 9.521,
+          "end": 9.641
+        },
+        {
+          "text": "software?",
+          "start": 9.681,
+          "end": 10.101
+        }
+      ]
+    },
+    {
+      "start": 10.901,
+      "end": 14.902,
+      "text": "Perché risolvono certi problemi in modo esponenzialmente più veloce dei computer classici.",
+      "words": [
+        {
+          "text": "Perché",
+          "start": 10.901,
+          "end": 11.102
+        },
+        {
+          "text": "risolvono",
+          "start": 11.142,
+          "end": 11.562
+        },
+        {
+          "text": "certi",
+          "start": 11.622,
+          "end": 11.842
+        },
+        {
+          "text": "problemi",
+          "start": 11.882,
+          "end": 12.202
+        },
+        {
+          "text": "in",
+          "start": 12.242,
+          "end": 12.282
+        },
+        {
+          "text": "modo",
+          "start": 12.322,
+          "end": 12.482
+        },
+        {
+          "text": "esponenzialmente",
+          "start": 12.642,
+          "end": 13.442
+        },
+        {
+          "text": "più",
+          "start": 13.482,
+          "end": 13.562
+        },
+        {
+          "text": "veloce",
+          "start": 13.602,
+          "end": 13.922
+        },
+        {
+          "text": "dei",
+          "start": 13.962,
+          "end": 14.042
+        },
+        {
+          "text": "computer",
+          "start": 14.062,
+          "end": 14.402
+        },
+        {
+          "text": "classici.",
+          "start": 14.442,
+          "end": 14.902
+        }
+      ]
+    },
+    {
+      "start": 15.702,
+      "end": 17.942,
+      "text": "Formalmente definiamo la classe B Q P,",
+      "words": [
+        {
+          "text": "Formalmente",
+          "start": 15.702,
+          "end": 16.282
+        },
+        {
+          "text": "definiamo",
+          "start": 16.442,
+          "end": 16.862
+        },
+        {
+          "text": "la",
+          "start": 16.902,
+          "end": 16.962
+        },
+        {
+          "text": "classe",
+          "start": 17.002,
+          "end": 17.322
+        },
+        {
+          "text": "B",
+          "start": 17.462,
+          "end": 17.502
+        },
+        {
+          "text": "Q",
+          "start": 17.662,
+          "end": 17.702
+        },
+        {
+          "text": "P,",
+          "start": 17.902,
+          "end": 17.942
+        }
+      ]
+    },
+    {
+      "start": 18.523,
+      "end": 20.543,
+      "text": "Bounded-error Quantum Polynomial time:",
+      "words": [
+        {
+          "text": "Bounded-error",
+          "start": 18.523,
+          "end": 19.183
+        },
+        {
+          "text": "Quantum",
+          "start": 19.243,
+          "end": 19.623
+        },
+        {
+          "text": "Polynomial",
+          "start": 19.683,
+          "end": 20.183
+        },
+        {
+          "text": "time:",
+          "start": 20.243,
+          "end": 20.543
+        }
+      ]
+    },
+    {
+      "start": 21.163,
+      "end": 25.603,
+      "text": "comprende tutti i problemi di decisione risolti da un computer quantistico in tempo polinomiale,",
+      "words": [
+        {
+          "text": "comprende",
+          "start": 21.163,
+          "end": 21.563
+        },
+        {
+          "text": "tutti",
+          "start": 21.683,
+          "end": 21.923
+        },
+        {
+          "text": "i",
+          "start": 21.963,
+          "end": 22.003
+        },
+        {
+          "text": "problemi",
+          "start": 22.003,
+          "end": 22.343
+        },
+        {
+          "text": "di",
+          "start": 22.403,
+          "end": 22.463
+        },
+        {
+          "text": "decisione",
+          "start": 22.503,
+          "end": 22.983
+        },
+        {
+          "text": "risolti",
+          "start": 23.083,
+          "end": 23.403
+        },
+        {
+          "text": "da",
+          "start": 23.443,
+          "end": 23.483
+        },
+        {
+          "text": "un",
+          "start": 23.523,
+          "end": 23.563
+        },
+        {
+          "text": "computer",
+          "start": 23.583,
+          "end": 23.943
+        },
+        {
+          "text": "quantistico",
+          "start": 23.983,
+          "end": 24.523
+        },
+        {
+          "text": "in",
+          "start": 24.563,
+          "end": 24.623
+        },
+        {
+          "text": "tempo",
+          "start": 24.663,
+          "end": 24.903
+        },
+        {
+          "text": "polinomiale,",
+          "start": 24.963,
+          "end": 25.603
+        }
+      ]
+    },
+    {
+      "start": 25.704,
+      "end": 28.604,
+      "text": "con probabilità di errore al più di un terzo su ogni istanza.",
+      "words": [
+        {
+          "text": "con",
+          "start": 25.704,
+          "end": 25.824
+        },
+        {
+          "text": "probabilità",
+          "start": 25.864,
+          "end": 26.344
+        },
+        {
+          "text": "di",
+          "start": 26.404,
+          "end": 26.464
+        },
+        {
+          "text": "errore",
+          "start": 26.504,
+          "end": 26.844
+        },
+        {
+          "text": "al",
+          "start": 26.984,
+          "end": 27.084
+        },
+        {
+          "text": "più",
+          "start": 27.164,
+          "end": 27.284
+        },
+        {
+          "text": "di",
+          "start": 27.324,
+          "end": 27.384
+        },
+        {
+          "text": "un",
+          "start": 27.404,
+          "end": 27.484
+        },
+        {
+          "text": "terzo",
+          "start": 27.524,
+          "end": 27.824
+        },
+        {
+          "text": "su",
+          "start": 27.884,
+          "end": 27.964
+        },
+        {
+          "text": "ogni",
+          "start": 27.984,
+          "end": 28.184
+        },
+        {
+          "text": "istanza.",
+          "start": 28.204,
+          "end": 28.604
+        }
+      ]
+    },
+    {
+      "start": 29.444,
+      "end": 33.565,
+      "text": "Nel diagramma di complessità, B Q P contiene tutti i problemi in P e parte",
+      "words": [
+        {
+          "text": "Nel",
+          "start": 29.444,
+          "end": 29.564
+        },
+        {
+          "text": "diagramma",
+          "start": 29.604,
+          "end": 29.924
+        },
+        {
+          "text": "di",
+          "start": 29.964,
+          "end": 30.004
+        },
+        {
+          "text": "complessità,",
+          "start": 30.044,
+          "end": 30.524
+        },
+        {
+          "text": "B",
+          "start": 30.824,
+          "end": 30.864
+        },
+        {
+          "text": "Q",
+          "start": 30.984,
+          "end": 31.024
+        },
+        {
+          "text": "P",
+          "start": 31.184,
+          "end": 31.224
+        },
+        {
+          "text": "contiene",
+          "start": 31.444,
+          "end": 31.824
+        },
+        {
+          "text": "tutti",
+          "start": 31.924,
+          "end": 32.164
+        },
+        {
+          "text": "i",
+          "start": 32.204,
+          "end": 32.244
+        },
+        {
+          "text": "problemi",
+          "start": 32.244,
+          "end": 32.564
+        },
+        {
+          "text": "in",
+          "start": 32.624,
+          "end": 32.684
+        },
+        {
+          "text": "P",
+          "start": 32.764,
+          "end": 32.804
+        },
+        {
+          "text": "e",
+          "start": 33.125,
+          "end": 33.165
+        },
+        {
+          "text": "parte",
+          "start": 33.285,
+          "end": 33.565
+        }
+      ]
+    },
+    {
+      "start": 33.605,
+      "end": 34.245,
+      "text": "di quelli in N P,",
+      "words": [
+        {
+          "text": "di",
+          "start": 33.605,
+          "end": 33.665
+        },
+        {
+          "text": "quelli",
+          "start": 33.705,
+          "end": 33.885
+        },
+        {
+          "text": "in",
+          "start": 33.905,
+          "end": 33.965
+        },
+        {
+          "text": "N",
+          "start": 34.065,
+          "end": 34.105
+        },
+        {
+          "text": "P,",
+          "start": 34.205,
+          "end": 34.245
+        }
+      ]
+    },
+    {
+      "start": 34.945,
+      "end": 37.805,
+      "text": "esce da N P, ma non include i problemi N P completi.",
+      "words": [
+        {
+          "text": "esce",
+          "start": 34.945,
+          "end": 35.185
+        },
+        {
+          "text": "da",
+          "start": 35.225,
+          "end": 35.285
+        },
+        {
+          "text": "N",
+          "start": 35.425,
+          "end": 35.465
+        },
+        {
+          "text": "P,",
+          "start": 35.565,
+          "end": 35.605
+        },
+        {
+          "text": "ma",
+          "start": 35.885,
+          "end": 35.965
+        },
+        {
+          "text": "non",
+          "start": 36.085,
+          "end": 36.245
+        },
+        {
+          "text": "include",
+          "start": 36.285,
+          "end": 36.625
+        },
+        {
+          "text": "i",
+          "start": 36.665,
+          "end": 36.705
+        },
+        {
+          "text": "problemi",
+          "start": 36.705,
+          "end": 37.045
+        },
+        {
+          "text": "N",
+          "start": 37.185,
+          "end": 37.225
+        },
+        {
+          "text": "P",
+          "start": 37.285,
+          "end": 37.325
+        },
+        {
+          "text": "completi.",
+          "start": 37.405,
+          "end": 37.805
+        }
+      ]
+    },
+    {
+      "start": 38.805,
+      "end": 40.285,
+      "text": "Vediamo due accelerazioni celebri.",
+      "words": [
+        {
+          "text": "Vediamo",
+          "start": 38.805,
+          "end": 39.065
+        },
+        {
+          "text": "due",
+          "start": 39.125,
+          "end": 39.245
+        },
+        {
+          "text": "accelerazioni",
+          "start": 39.285,
+          "end": 39.865
+        },
+        {
+          "text": "celebri.",
+          "start": 39.925,
+          "end": 40.285
+        }
+      ]
+    },
+    {
+      "start": 41.066,
+      "end": 45.086,
+      "text": "Con l'algoritmo di Shor, la fattorizzazione di un intero N passa da un tempo classico",
+      "words": [
+        {
+          "text": "Con",
+          "start": 41.066,
+          "end": 41.166
+        },
+        {
+          "text": "l'algoritmo",
+          "start": 41.186,
+          "end": 41.626
+        },
+        {
+          "text": "di",
+          "start": 41.666,
+          "end": 41.706
+        },
+        {
+          "text": "Shor,",
+          "start": 41.766,
+          "end": 42.026
+        },
+        {
+          "text": "la",
+          "start": 42.246,
+          "end": 42.306
+        },
+        {
+          "text": "fattorizzazione",
+          "start": 42.326,
+          "end": 42.966
+        },
+        {
+          "text": "di",
+          "start": 43.006,
+          "end": 43.066
+        },
+        {
+          "text": "un",
+          "start": 43.086,
+          "end": 43.146
+        },
+        {
+          "text": "intero",
+          "start": 43.186,
+          "end": 43.506
+        },
+        {
+          "text": "N",
+          "start": 43.706,
+          "end": 43.746
+        },
+        {
+          "text": "passa",
+          "start": 43.946,
+          "end": 44.186
+        },
+        {
+          "text": "da",
+          "start": 44.226,
+          "end": 44.266
+        },
+        {
+          "text": "un",
+          "start": 44.306,
+          "end": 44.366
+        },
+        {
+          "text": "tempo",
+          "start": 44.406,
+          "end": 44.626
+        },
+        {
+          "text": "classico",
+          "start": 44.666,
+          "end": 45.086
+        }
+      ]
+    },
+    {
+      "start": 45.186,
+      "end": 48.567,
+      "text": "quasi esponenziale a un tempo polinomiale nel logaritmo di N,",
+      "words": [
+        {
+          "text": "quasi",
+          "start": 45.186,
+          "end": 45.486
+        },
+        {
+          "text": "esponenziale",
+          "start": 45.546,
+          "end": 46.206
+        },
+        {
+          "text": "a",
+          "start": 46.506,
+          "end": 46.546
+        },
+        {
+          "text": "un",
+          "start": 46.586,
+          "end": 46.666
+        },
+        {
+          "text": "tempo",
+          "start": 46.686,
+          "end": 46.906
+        },
+        {
+          "text": "polinomiale",
+          "start": 46.986,
+          "end": 47.606
+        },
+        {
+          "text": "nel",
+          "start": 47.646,
+          "end": 47.767
+        },
+        {
+          "text": "logaritmo",
+          "start": 47.787,
+          "end": 48.227
+        },
+        {
+          "text": "di",
+          "start": 48.267,
+          "end": 48.327
+        },
+        {
+          "text": "N,",
+          "start": 48.527,
+          "end": 48.567
+        }
+      ]
+    },
+    {
+      "start": 48.867,
+      "end": 50.467,
+      "text": "minacciando la cifratura asimmetrica.",
+      "words": [
+        {
+          "text": "minacciando",
+          "start": 48.867,
+          "end": 49.287
+        },
+        {
+          "text": "la",
+          "start": 49.347,
+          "end": 49.387
+        },
+        {
+          "text": "cifratura",
+          "start": 49.427,
+          "end": 49.827
+        },
+        {
+          "text": "asimmetrica.",
+          "start": 49.867,
+          "end": 50.467
+        }
+      ]
+    },
+    {
+      "start": 51.127,
+      "end": 55.188,
+      "text": "Con l'algoritmo di Grover, la ricerca in n dati non ordinati scende da O grande",
+      "words": [
+        {
+          "text": "Con",
+          "start": 51.127,
+          "end": 51.227
+        },
+        {
+          "text": "l'algoritmo",
+          "start": 51.267,
+          "end": 51.747
+        },
+        {
+          "text": "di",
+          "start": 51.787,
+          "end": 51.847
+        },
+        {
+          "text": "Grover,",
+          "start": 51.887,
+          "end": 52.207
+        },
+        {
+          "text": "la",
+          "start": 52.427,
+          "end": 52.487
+        },
+        {
+          "text": "ricerca",
+          "start": 52.527,
+          "end": 52.867
+        },
+        {
+          "text": "in",
+          "start": 52.927,
+          "end": 53.007
+        },
+        {
+          "text": "n",
+          "start": 53.147,
+          "end": 53.187
+        },
+        {
+          "text": "dati",
+          "start": 53.267,
+          "end": 53.487
+        },
+        {
+          "text": "non",
+          "start": 53.547,
+          "end": 53.687
+        },
+        {
+          "text": "ordinati",
+          "start": 53.727,
+          "end": 54.207
+        },
+        {
+          "text": "scende",
+          "start": 54.347,
+          "end": 54.627
+        },
+        {
+          "text": "da",
+          "start": 54.667,
+          "end": 54.747
+        },
+        {
+          "text": "O",
+          "start": 54.787,
+          "end": 54.827
+        },
+        {
+          "text": "grande",
+          "start": 54.887,
+          "end": 55.188
+        }
+      ]
+    },
+    {
+      "start": 55.248,
+      "end": 57.088,
+      "text": "di n a O grande di radice di n:",
+      "words": [
+        {
+          "text": "di",
+          "start": 55.248,
+          "end": 55.308
+        },
+        {
+          "text": "n",
+          "start": 55.548,
+          "end": 55.588
+        },
+        {
+          "text": "a",
+          "start": 55.788,
+          "end": 55.828
+        },
+        {
+          "text": "O",
+          "start": 55.868,
+          "end": 55.908
+        },
+        {
+          "text": "grande",
+          "start": 55.948,
+          "end": 56.268
+        },
+        {
+          "text": "di",
+          "start": 56.308,
+          "end": 56.388
+        },
+        {
+          "text": "radice",
+          "start": 56.428,
+          "end": 56.728
+        },
+        {
+          "text": "di",
+          "start": 56.768,
+          "end": 56.848
+        },
+        {
+          "text": "n:",
+          "start": 57.048,
+          "end": 57.088
+        }
+      ]
+    },
+    {
+      "start": 57.788,
+      "end": 60.168,
+      "text": "su un milione di elementi bastano circa mille passi.",
+      "words": [
+        {
+          "text": "su",
+          "start": 57.788,
+          "end": 57.868
+        },
+        {
+          "text": "un",
+          "start": 57.908,
+          "end": 57.948
+        },
+        {
+          "text": "milione",
+          "start": 57.968,
+          "end": 58.288
+        },
+        {
+          "text": "di",
+          "start": 58.328,
+          "end": 58.368
+        },
+        {
+          "text": "elementi",
+          "start": 58.408,
+          "end": 58.788
+        },
+        {
+          "text": "bastano",
+          "start": 59.008,
+          "end": 59.308
+        },
+        {
+          "text": "circa",
+          "start": 59.348,
+          "end": 59.568
+        },
+        {
+          "text": "mille",
+          "start": 59.628,
+          "end": 59.828
+        },
+        {
+          "text": "passi.",
+          "start": 59.868,
+          "end": 60.168
+        }
+      ]
+    },
+    {
+      "start": 61.048,
+      "end": 64.649,
+      "text": "Le applicazioni più promettenti ricadono in tre aree: simulazione,",
+      "words": [
+        {
+          "text": "Le",
+          "start": 61.048,
+          "end": 61.108
+        },
+        {
+          "text": "applicazioni",
+          "start": 61.148,
+          "end": 61.648
+        },
+        {
+          "text": "più",
+          "start": 61.688,
+          "end": 61.768
+        },
+        {
+          "text": "promettenti",
+          "start": 61.808,
+          "end": 62.369
+        },
+        {
+          "text": "ricadono",
+          "start": 62.529,
+          "end": 62.889
+        },
+        {
+          "text": "in",
+          "start": 62.929,
+          "end": 62.989
+        },
+        {
+          "text": "tre",
+          "start": 63.029,
+          "end": 63.169
+        },
+        {
+          "text": "aree:",
+          "start": 63.269,
+          "end": 63.509
+        },
+        {
+          "text": "simulazione,",
+          "start": 63.989,
+          "end": 64.649
+        }
+      ]
+    },
+    {
+      "start": 64.989,
+      "end": 69.269,
+      "text": "ottimizzazione e machine learning, con impatti su chimica, scoperta di farmaci,",
+      "words": [
+        {
+          "text": "ottimizzazione",
+          "start": 64.989,
+          "end": 65.769
+        },
+        {
+          "text": "e",
+          "start": 65.969,
+          "end": 66.009
+        },
+        {
+          "text": "machine",
+          "start": 66.069,
+          "end": 66.389
+        },
+        {
+          "text": "learning,",
+          "start": 66.429,
+          "end": 66.769
+        },
+        {
+          "text": "con",
+          "start": 67.129,
+          "end": 67.249
+        },
+        {
+          "text": "impatti",
+          "start": 67.289,
+          "end": 67.589
+        },
+        {
+          "text": "su",
+          "start": 67.649,
+          "end": 67.729
+        },
+        {
+          "text": "chimica,",
+          "start": 67.789,
+          "end": 68.169
+        },
+        {
+          "text": "scoperta",
+          "start": 68.369,
+          "end": 68.729
+        },
+        {
+          "text": "di",
+          "start": 68.769,
+          "end": 68.829
+        },
+        {
+          "text": "farmaci,",
+          "start": 68.869,
+          "end": 69.269
+        }
+      ]
+    },
+    {
+      "start": 69.529,
+      "end": 72.21,
+      "text": "logistica, meteo, finanza ed energia.",
+      "words": [
+        {
+          "text": "logistica,",
+          "start": 69.529,
+          "end": 70.11
+        },
+        {
+          "text": "meteo,",
+          "start": 70.45,
+          "end": 70.83
+        },
+        {
+          "text": "finanza",
+          "start": 71.03,
+          "end": 71.49
+        },
+        {
+          "text": "ed",
+          "start": 71.65,
+          "end": 71.75
+        },
+        {
+          "text": "energia.",
+          "start": 71.79,
+          "end": 72.21
+        }
+      ]
+    }
+  ]
+}

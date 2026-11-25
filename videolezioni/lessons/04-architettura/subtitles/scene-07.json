@@ -1,0 +1,1016 @@
+{
+  "duration": 73.939,
+  "segments": [
+    {
+      "start": 0.02,
+      "end": 3.06,
+      "text": "Chiudiamo il capitolo esaminando le scelte tecnologiche.",
+      "words": [
+        {
+          "text": "Chiudiamo",
+          "start": 0.02,
+          "end": 0.44
+        },
+        {
+          "text": "il",
+          "start": 0.52,
+          "end": 0.58
+        },
+        {
+          "text": "capitolo",
+          "start": 0.6,
+          "end": 1.06
+        },
+        {
+          "text": "esaminando",
+          "start": 1.26,
+          "end": 1.82
+        },
+        {
+          "text": "le",
+          "start": 1.88,
+          "end": 1.94
+        },
+        {
+          "text": "scelte",
+          "start": 2.0,
+          "end": 2.34
+        },
+        {
+          "text": "tecnologiche.",
+          "start": 2.4,
+          "end": 3.06
+        }
+      ]
+    },
+    {
+      "start": 3.861,
+      "end": 9.541,
+      "text": "Queste decisioni vincolano l'intera architettura e risultano molto costose da cambiare a sviluppo avviato.",
+      "words": [
+        {
+          "text": "Queste",
+          "start": 3.861,
+          "end": 4.081
+        },
+        {
+          "text": "decisioni",
+          "start": 4.121,
+          "end": 4.641
+        },
+        {
+          "text": "vincolano",
+          "start": 4.721,
+          "end": 5.221
+        },
+        {
+          "text": "l'intera",
+          "start": 5.321,
+          "end": 5.801
+        },
+        {
+          "text": "architettura",
+          "start": 5.841,
+          "end": 6.501
+        },
+        {
+          "text": "e",
+          "start": 6.561,
+          "end": 6.601
+        },
+        {
+          "text": "risultano",
+          "start": 6.641,
+          "end": 7.081
+        },
+        {
+          "text": "molto",
+          "start": 7.161,
+          "end": 7.401
+        },
+        {
+          "text": "costose",
+          "start": 7.441,
+          "end": 7.941
+        },
+        {
+          "text": "da",
+          "start": 8.001,
+          "end": 8.061
+        },
+        {
+          "text": "cambiare",
+          "start": 8.121,
+          "end": 8.541
+        },
+        {
+          "text": "a",
+          "start": 8.601,
+          "end": 8.641
+        },
+        {
+          "text": "sviluppo",
+          "start": 8.681,
+          "end": 9.041
+        },
+        {
+          "text": "avviato.",
+          "start": 9.101,
+          "end": 9.541
+        }
+      ]
+    },
+    {
+      "start": 10.261,
+      "end": 11.862,
+      "text": "La prima scelta riguarda il database.",
+      "words": [
+        {
+          "text": "La",
+          "start": 10.261,
+          "end": 10.321
+        },
+        {
+          "text": "prima",
+          "start": 10.361,
+          "end": 10.521
+        },
+        {
+          "text": "scelta",
+          "start": 10.561,
+          "end": 10.881
+        },
+        {
+          "text": "riguarda",
+          "start": 10.921,
+          "end": 11.242
+        },
+        {
+          "text": "il",
+          "start": 11.282,
+          "end": 11.342
+        },
+        {
+          "text": "database.",
+          "start": 11.362,
+          "end": 11.862
+        }
+      ]
+    },
+    {
+      "start": 12.502,
+      "end": 18.963,
+      "text": "I database relazionali, come MySQL, organizzano i dati in tabelle strutturate e garantiscono transazioni affidabili:",
+      "words": [
+        {
+          "text": "I",
+          "start": 12.502,
+          "end": 12.542
+        },
+        {
+          "text": "database",
+          "start": 12.602,
+          "end": 13.002
+        },
+        {
+          "text": "relazionali,",
+          "start": 13.062,
+          "end": 13.682
+        },
+        {
+          "text": "come",
+          "start": 13.782,
+          "end": 13.962
+        },
+        {
+          "text": "MySQL,",
+          "start": 14.062,
+          "end": 14.602
+        },
+        {
+          "text": "organizzano",
+          "start": 14.962,
+          "end": 15.442
+        },
+        {
+          "text": "i",
+          "start": 15.482,
+          "end": 15.522
+        },
+        {
+          "text": "dati",
+          "start": 15.542,
+          "end": 15.762
+        },
+        {
+          "text": "in",
+          "start": 15.802,
+          "end": 15.862
+        },
+        {
+          "text": "tabelle",
+          "start": 15.922,
+          "end": 16.242
+        },
+        {
+          "text": "strutturate",
+          "start": 16.282,
+          "end": 16.902
+        },
+        {
+          "text": "e",
+          "start": 17.042,
+          "end": 17.082
+        },
+        {
+          "text": "garantiscono",
+          "start": 17.142,
+          "end": 17.722
+        },
+        {
+          "text": "transazioni",
+          "start": 17.782,
+          "end": 18.342
+        },
+        {
+          "text": "affidabili:",
+          "start": 18.403,
+          "end": 18.963
+        }
+      ]
+    },
+    {
+      "start": 19.403,
+      "end": 24.183,
+      "text": "sono ideali per un registro di conti correnti, dove un bonifico deve accreditare e addebitare",
+      "words": [
+        {
+          "text": "sono",
+          "start": 19.403,
+          "end": 19.543
+        },
+        {
+          "text": "ideali",
+          "start": 19.603,
+          "end": 19.943
+        },
+        {
+          "text": "per",
+          "start": 20.003,
+          "end": 20.123
+        },
+        {
+          "text": "un",
+          "start": 20.183,
+          "end": 20.243
+        },
+        {
+          "text": "registro",
+          "start": 20.323,
+          "end": 20.703
+        },
+        {
+          "text": "di",
+          "start": 20.743,
+          "end": 20.803
+        },
+        {
+          "text": "conti",
+          "start": 20.843,
+          "end": 21.043
+        },
+        {
+          "text": "correnti,",
+          "start": 21.083,
+          "end": 21.543
+        },
+        {
+          "text": "dove",
+          "start": 21.823,
+          "end": 21.983
+        },
+        {
+          "text": "un",
+          "start": 22.023,
+          "end": 22.083
+        },
+        {
+          "text": "bonifico",
+          "start": 22.123,
+          "end": 22.523
+        },
+        {
+          "text": "deve",
+          "start": 22.563,
+          "end": 22.723
+        },
+        {
+          "text": "accreditare",
+          "start": 22.803,
+          "end": 23.423
+        },
+        {
+          "text": "e",
+          "start": 23.563,
+          "end": 23.603
+        },
+        {
+          "text": "addebitare",
+          "start": 23.643,
+          "end": 24.183
+        }
+      ]
+    },
+    {
+      "start": 24.363,
+      "end": 25.143,
+      "text": "in modo atomico.",
+      "words": [
+        {
+          "text": "in",
+          "start": 24.363,
+          "end": 24.423
+        },
+        {
+          "text": "modo",
+          "start": 24.483,
+          "end": 24.643
+        },
+        {
+          "text": "atomico.",
+          "start": 24.723,
+          "end": 25.143
+        }
+      ]
+    },
+    {
+      "start": 26.004,
+      "end": 30.564,
+      "text": "I database NoSQL, come MongoDB, offrono invece schemi flessibili e gerarchici,",
+      "words": [
+        {
+          "text": "I",
+          "start": 26.004,
+          "end": 26.044
+        },
+        {
+          "text": "database",
+          "start": 26.104,
+          "end": 26.524
+        },
+        {
+          "text": "NoSQL,",
+          "start": 26.564,
+          "end": 27.084
+        },
+        {
+          "text": "come",
+          "start": 27.204,
+          "end": 27.364
+        },
+        {
+          "text": "MongoDB,",
+          "start": 27.444,
+          "end": 27.924
+        },
+        {
+          "text": "offrono",
+          "start": 28.404,
+          "end": 28.684
+        },
+        {
+          "text": "invece",
+          "start": 28.704,
+          "end": 28.964
+        },
+        {
+          "text": "schemi",
+          "start": 29.064,
+          "end": 29.284
+        },
+        {
+          "text": "flessibili",
+          "start": 29.364,
+          "end": 29.864
+        },
+        {
+          "text": "e",
+          "start": 29.924,
+          "end": 29.964
+        },
+        {
+          "text": "gerarchici,",
+          "start": 29.984,
+          "end": 30.564
+        }
+      ]
+    },
+    {
+      "start": 30.884,
+      "end": 34.865,
+      "text": "ottimi per elaborare in parallelo enormi moli di big data dalla forma variabile,",
+      "words": [
+        {
+          "text": "ottimi",
+          "start": 30.884,
+          "end": 31.184
+        },
+        {
+          "text": "per",
+          "start": 31.244,
+          "end": 31.364
+        },
+        {
+          "text": "elaborare",
+          "start": 31.384,
+          "end": 31.804
+        },
+        {
+          "text": "in",
+          "start": 31.844,
+          "end": 31.904
+        },
+        {
+          "text": "parallelo",
+          "start": 31.944,
+          "end": 32.404
+        },
+        {
+          "text": "enormi",
+          "start": 32.504,
+          "end": 32.864
+        },
+        {
+          "text": "moli",
+          "start": 32.944,
+          "end": 33.185
+        },
+        {
+          "text": "di",
+          "start": 33.225,
+          "end": 33.285
+        },
+        {
+          "text": "big",
+          "start": 33.365,
+          "end": 33.505
+        },
+        {
+          "text": "data",
+          "start": 33.565,
+          "end": 33.845
+        },
+        {
+          "text": "dalla",
+          "start": 33.945,
+          "end": 34.125
+        },
+        {
+          "text": "forma",
+          "start": 34.165,
+          "end": 34.345
+        },
+        {
+          "text": "variabile,",
+          "start": 34.405,
+          "end": 34.865
+        }
+      ]
+    },
+    {
+      "start": 35.085,
+      "end": 36.665,
+      "text": "come i clic di milioni di utenti.",
+      "words": [
+        {
+          "text": "come",
+          "start": 35.085,
+          "end": 35.225
+        },
+        {
+          "text": "i",
+          "start": 35.265,
+          "end": 35.305
+        },
+        {
+          "text": "clic",
+          "start": 35.325,
+          "end": 35.565
+        },
+        {
+          "text": "di",
+          "start": 35.665,
+          "end": 35.725
+        },
+        {
+          "text": "milioni",
+          "start": 35.785,
+          "end": 36.165
+        },
+        {
+          "text": "di",
+          "start": 36.205,
+          "end": 36.265
+        },
+        {
+          "text": "utenti.",
+          "start": 36.325,
+          "end": 36.665
+        }
+      ]
+    },
+    {
+      "start": 37.505,
+      "end": 41.026,
+      "text": "Seconda decisione: la piattaforma di consegna, web oppure mobile.",
+      "words": [
+        {
+          "text": "Seconda",
+          "start": 37.505,
+          "end": 37.785
+        },
+        {
+          "text": "decisione:",
+          "start": 37.825,
+          "end": 38.285
+        },
+        {
+          "text": "la",
+          "start": 38.425,
+          "end": 38.485
+        },
+        {
+          "text": "piattaforma",
+          "start": 38.525,
+          "end": 38.985
+        },
+        {
+          "text": "di",
+          "start": 39.025,
+          "end": 39.085
+        },
+        {
+          "text": "consegna,",
+          "start": 39.125,
+          "end": 39.585
+        },
+        {
+          "text": "web",
+          "start": 39.925,
+          "end": 40.125
+        },
+        {
+          "text": "oppure",
+          "start": 40.325,
+          "end": 40.586
+        },
+        {
+          "text": "mobile.",
+          "start": 40.626,
+          "end": 41.026
+        }
+      ]
+    },
+    {
+      "start": 41.546,
+      "end": 45.926,
+      "text": "Su mobile bisogna fronteggiare connettività intermittente, minore potenza di calcolo,",
+      "words": [
+        {
+          "text": "Su",
+          "start": 41.546,
+          "end": 41.606
+        },
+        {
+          "text": "mobile",
+          "start": 41.686,
+          "end": 42.066
+        },
+        {
+          "text": "bisogna",
+          "start": 42.086,
+          "end": 42.406
+        },
+        {
+          "text": "fronteggiare",
+          "start": 42.486,
+          "end": 43.026
+        },
+        {
+          "text": "connettività",
+          "start": 43.086,
+          "end": 43.586
+        },
+        {
+          "text": "intermittente,",
+          "start": 43.646,
+          "end": 44.366
+        },
+        {
+          "text": "minore",
+          "start": 44.686,
+          "end": 44.986
+        },
+        {
+          "text": "potenza",
+          "start": 45.026,
+          "end": 45.346
+        },
+        {
+          "text": "di",
+          "start": 45.406,
+          "end": 45.446
+        },
+        {
+          "text": "calcolo,",
+          "start": 45.486,
+          "end": 45.926
+        }
+      ]
+    },
+    {
+      "start": 46.126,
+      "end": 52.247,
+      "text": "gestione della batteria, schermo ridotto e tastiera virtuale, decidendo presto se privilegiare desktop o mobile.",
+      "words": [
+        {
+          "text": "gestione",
+          "start": 46.126,
+          "end": 46.526
+        },
+        {
+          "text": "della",
+          "start": 46.566,
+          "end": 46.726
+        },
+        {
+          "text": "batteria,",
+          "start": 46.746,
+          "end": 47.186
+        },
+        {
+          "text": "schermo",
+          "start": 47.386,
+          "end": 47.706
+        },
+        {
+          "text": "ridotto",
+          "start": 47.766,
+          "end": 48.147
+        },
+        {
+          "text": "e",
+          "start": 48.247,
+          "end": 48.287
+        },
+        {
+          "text": "tastiera",
+          "start": 48.347,
+          "end": 48.747
+        },
+        {
+          "text": "virtuale,",
+          "start": 48.787,
+          "end": 49.247
+        },
+        {
+          "text": "decidendo",
+          "start": 49.687,
+          "end": 50.067
+        },
+        {
+          "text": "presto",
+          "start": 50.107,
+          "end": 50.367
+        },
+        {
+          "text": "se",
+          "start": 50.427,
+          "end": 50.507
+        },
+        {
+          "text": "privilegiare",
+          "start": 50.547,
+          "end": 51.047
+        },
+        {
+          "text": "desktop",
+          "start": 51.107,
+          "end": 51.507
+        },
+        {
+          "text": "o",
+          "start": 51.707,
+          "end": 51.747
+        },
+        {
+          "text": "mobile.",
+          "start": 51.807,
+          "end": 52.247
+        }
+      ]
+    },
+    {
+      "start": 53.047,
+      "end": 54.487,
+      "text": "Terza decisione: i server.",
+      "words": [
+        {
+          "text": "Terza",
+          "start": 53.047,
+          "end": 53.287
+        },
+        {
+          "text": "decisione:",
+          "start": 53.327,
+          "end": 53.807
+        },
+        {
+          "text": "i",
+          "start": 54.027,
+          "end": 54.067
+        },
+        {
+          "text": "server.",
+          "start": 54.127,
+          "end": 54.487
+        }
+      ]
+    },
+    {
+      "start": 54.967,
+      "end": 60.348,
+      "text": "I prodotti consumer abbinano SOA e cloud, mentre in ambito aziendale pesano sicurezza e stabilità",
+      "words": [
+        {
+          "text": "I",
+          "start": 54.967,
+          "end": 55.007
+        },
+        {
+          "text": "prodotti",
+          "start": 55.047,
+          "end": 55.368
+        },
+        {
+          "text": "consumer",
+          "start": 55.408,
+          "end": 55.928
+        },
+        {
+          "text": "abbinano",
+          "start": 55.948,
+          "end": 56.328
+        },
+        {
+          "text": "SOA",
+          "start": 56.408,
+          "end": 56.668
+        },
+        {
+          "text": "e",
+          "start": 56.808,
+          "end": 56.848
+        },
+        {
+          "text": "cloud,",
+          "start": 56.908,
+          "end": 57.268
+        },
+        {
+          "text": "mentre",
+          "start": 57.488,
+          "end": 57.728
+        },
+        {
+          "text": "in",
+          "start": 57.788,
+          "end": 57.868
+        },
+        {
+          "text": "ambito",
+          "start": 57.908,
+          "end": 58.148
+        },
+        {
+          "text": "aziendale",
+          "start": 58.168,
+          "end": 58.668
+        },
+        {
+          "text": "pesano",
+          "start": 58.708,
+          "end": 59.008
+        },
+        {
+          "text": "sicurezza",
+          "start": 59.128,
+          "end": 59.668
+        },
+        {
+          "text": "e",
+          "start": 59.868,
+          "end": 59.908
+        },
+        {
+          "text": "stabilità",
+          "start": 59.968,
+          "end": 60.348
+        }
+      ]
+    },
+    {
+      "start": 60.408,
+      "end": 63.829,
+      "text": "del carico; sul cloud occorre inoltre valutare il vendor lock-in,",
+      "words": [
+        {
+          "text": "del",
+          "start": 60.408,
+          "end": 60.508
+        },
+        {
+          "text": "carico;",
+          "start": 60.548,
+          "end": 60.888
+        },
+        {
+          "text": "sul",
+          "start": 61.488,
+          "end": 61.608
+        },
+        {
+          "text": "cloud",
+          "start": 61.648,
+          "end": 61.948
+        },
+        {
+          "text": "occorre",
+          "start": 62.008,
+          "end": 62.328
+        },
+        {
+          "text": "inoltre",
+          "start": 62.368,
+          "end": 62.629
+        },
+        {
+          "text": "valutare",
+          "start": 62.689,
+          "end": 63.049
+        },
+        {
+          "text": "il",
+          "start": 63.089,
+          "end": 63.149
+        },
+        {
+          "text": "vendor",
+          "start": 63.169,
+          "end": 63.449
+        },
+        {
+          "text": "lock-in,",
+          "start": 63.489,
+          "end": 63.829
+        }
+      ]
+    },
+    {
+      "start": 64.049,
+      "end": 65.929,
+      "text": "cioè la difficoltà di cambiare fornitore.",
+      "words": [
+        {
+          "text": "cioè",
+          "start": 64.049,
+          "end": 64.169
+        },
+        {
+          "text": "la",
+          "start": 64.189,
+          "end": 64.249
+        },
+        {
+          "text": "difficoltà",
+          "start": 64.309,
+          "end": 64.889
+        },
+        {
+          "text": "di",
+          "start": 64.969,
+          "end": 65.049
+        },
+        {
+          "text": "cambiare",
+          "start": 65.089,
+          "end": 65.429
+        },
+        {
+          "text": "fornitore.",
+          "start": 65.449,
+          "end": 65.929
+        }
+      ]
+    },
+    {
+      "start": 66.729,
+      "end": 72.77,
+      "text": "Infine, framework web spesso basati su MVC e competenze pregresse del team orientano ulteriormente le",
+      "words": [
+        {
+          "text": "Infine,",
+          "start": 66.729,
+          "end": 67.089
+        },
+        {
+          "text": "framework",
+          "start": 67.269,
+          "end": 67.669
+        },
+        {
+          "text": "web",
+          "start": 67.769,
+          "end": 67.969
+        },
+        {
+          "text": "spesso",
+          "start": 68.089,
+          "end": 68.369
+        },
+        {
+          "text": "basati",
+          "start": 68.409,
+          "end": 68.749
+        },
+        {
+          "text": "su",
+          "start": 68.809,
+          "end": 68.889
+        },
+        {
+          "text": "MVC",
+          "start": 69.029,
+          "end": 69.309
+        },
+        {
+          "text": "e",
+          "start": 69.629,
+          "end": 69.66900000000001
+        },
+        {
+          "text": "competenze",
+          "start": 69.789,
+          "end": 70.25
+        },
+        {
+          "text": "pregresse",
+          "start": 70.29,
+          "end": 70.79
+        },
+        {
+          "text": "del",
+          "start": 70.85,
+          "end": 70.97
+        },
+        {
+          "text": "team",
+          "start": 71.03,
+          "end": 71.23
+        },
+        {
+          "text": "orientano",
+          "start": 71.47,
+          "end": 71.91
+        },
+        {
+          "text": "ulteriormente",
+          "start": 71.99,
+          "end": 72.67
+        },
+        {
+          "text": "le",
+          "start": 72.71,
+          "end": 72.77
+        }
+      ]
+    },
+    {
+      "start": 72.81,
+      "end": 73.77,
+      "text": "scelte architetturali.",
+      "words": [
+        {
+          "text": "scelte",
+          "start": 72.81,
+          "end": 73.07
+        },
+        {
+          "text": "architetturali.",
+          "start": 73.13,
+          "end": 73.77
+        }
+      ]
+    }
+  ]
+}

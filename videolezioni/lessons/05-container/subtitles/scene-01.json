@@ -1,0 +1,966 @@
+{
+  "duration": 67.369,
+  "segments": [
+    {
+      "start": 0.06,
+      "end": 5.201,
+      "text": "Benvenuti al quinto capitolo di Advanced Software Engineering, dedicato a cloud computing,",
+      "words": [
+        {
+          "text": "Benvenuti",
+          "start": 0.06,
+          "end": 0.5
+        },
+        {
+          "text": "al",
+          "start": 0.7,
+          "end": 0.8
+        },
+        {
+          "text": "quinto",
+          "start": 0.9,
+          "end": 1.22
+        },
+        {
+          "text": "capitolo",
+          "start": 1.28,
+          "end": 1.72
+        },
+        {
+          "text": "di",
+          "start": 1.78,
+          "end": 1.84
+        },
+        {
+          "text": "Advanced",
+          "start": 2.0,
+          "end": 2.54
+        },
+        {
+          "text": "Software",
+          "start": 2.7,
+          "end": 3.14
+        },
+        {
+          "text": "Engineering,",
+          "start": 3.18,
+          "end": 3.681
+        },
+        {
+          "text": "dedicato",
+          "start": 3.961,
+          "end": 4.321
+        },
+        {
+          "text": "a",
+          "start": 4.361,
+          "end": 4.401
+        },
+        {
+          "text": "cloud",
+          "start": 4.461,
+          "end": 4.681
+        },
+        {
+          "text": "computing,",
+          "start": 4.721,
+          "end": 5.201
+        }
+      ]
+    },
+    {
+      "start": 5.361,
+      "end": 6.501,
+      "text": "container e Docker.",
+      "words": [
+        {
+          "text": "container",
+          "start": 5.361,
+          "end": 5.881
+        },
+        {
+          "text": "e",
+          "start": 6.061,
+          "end": 6.101
+        },
+        {
+          "text": "Docker.",
+          "start": 6.161,
+          "end": 6.501
+        }
+      ]
+    },
+    {
+      "start": 7.841,
+      "end": 11.742,
+      "text": "Hardware potente e reti veloci hanno reso possibile il cloud computing:",
+      "words": [
+        {
+          "text": "Hardware",
+          "start": 7.841,
+          "end": 8.221
+        },
+        {
+          "text": "potente",
+          "start": 8.281,
+          "end": 8.781
+        },
+        {
+          "text": "e",
+          "start": 8.921,
+          "end": 8.961
+        },
+        {
+          "text": "reti",
+          "start": 9.101,
+          "end": 9.281
+        },
+        {
+          "text": "veloci",
+          "start": 9.301,
+          "end": 9.661
+        },
+        {
+          "text": "hanno",
+          "start": 9.782,
+          "end": 9.962
+        },
+        {
+          "text": "reso",
+          "start": 10.002,
+          "end": 10.162
+        },
+        {
+          "text": "possibile",
+          "start": 10.202,
+          "end": 10.662
+        },
+        {
+          "text": "il",
+          "start": 10.762,
+          "end": 10.862
+        },
+        {
+          "text": "cloud",
+          "start": 10.942,
+          "end": 11.202
+        },
+        {
+          "text": "computing:",
+          "start": 11.262,
+          "end": 11.742
+        }
+      ]
+    },
+    {
+      "start": 12.182,
+      "end": 16.223,
+      "text": "risorse virtualizzate, come calcolo, memoria di massa e piattaforma applicativa,",
+      "words": [
+        {
+          "text": "risorse",
+          "start": 12.182,
+          "end": 12.522
+        },
+        {
+          "text": "virtualizzate,",
+          "start": 12.562,
+          "end": 13.282
+        },
+        {
+          "text": "come",
+          "start": 13.542,
+          "end": 13.682
+        },
+        {
+          "text": "calcolo,",
+          "start": 13.762,
+          "end": 14.222
+        },
+        {
+          "text": "memoria",
+          "start": 14.302,
+          "end": 14.582
+        },
+        {
+          "text": "di",
+          "start": 14.602,
+          "end": 14.662
+        },
+        {
+          "text": "massa",
+          "start": 14.702,
+          "end": 15.002
+        },
+        {
+          "text": "e",
+          "start": 15.082,
+          "end": 15.122
+        },
+        {
+          "text": "piattaforma",
+          "start": 15.182,
+          "end": 15.662
+        },
+        {
+          "text": "applicativa,",
+          "start": 15.702,
+          "end": 16.223
+        }
+      ]
+    },
+    {
+      "start": 16.523,
+      "end": 17.783,
+      "text": "accessibili su richiesta.",
+      "words": [
+        {
+          "text": "accessibili",
+          "start": 16.523,
+          "end": 17.123
+        },
+        {
+          "text": "su",
+          "start": 17.223,
+          "end": 17.283
+        },
+        {
+          "text": "richiesta.",
+          "start": 17.343,
+          "end": 17.783
+        }
+      ]
+    },
+    {
+      "start": 18.423,
+      "end": 23.544,
+      "text": "Ma per sfruttare davvero il cloud, il software deve girare in ambienti isolati e portabili.",
+      "words": [
+        {
+          "text": "Ma",
+          "start": 18.423,
+          "end": 18.483
+        },
+        {
+          "text": "per",
+          "start": 18.583,
+          "end": 18.703
+        },
+        {
+          "text": "sfruttare",
+          "start": 18.743,
+          "end": 19.163
+        },
+        {
+          "text": "davvero",
+          "start": 19.223,
+          "end": 19.743
+        },
+        {
+          "text": "il",
+          "start": 19.803,
+          "end": 19.863
+        },
+        {
+          "text": "cloud,",
+          "start": 19.903,
+          "end": 20.283
+        },
+        {
+          "text": "il",
+          "start": 20.643,
+          "end": 20.743
+        },
+        {
+          "text": "software",
+          "start": 20.803,
+          "end": 21.163
+        },
+        {
+          "text": "deve",
+          "start": 21.183,
+          "end": 21.323
+        },
+        {
+          "text": "girare",
+          "start": 21.363,
+          "end": 21.623
+        },
+        {
+          "text": "in",
+          "start": 21.663,
+          "end": 21.723
+        },
+        {
+          "text": "ambienti",
+          "start": 21.763,
+          "end": 22.143
+        },
+        {
+          "text": "isolati",
+          "start": 22.283,
+          "end": 22.744
+        },
+        {
+          "text": "e",
+          "start": 22.884,
+          "end": 22.924
+        },
+        {
+          "text": "portabili.",
+          "start": 23.004,
+          "end": 23.544
+        }
+      ]
+    },
+    {
+      "start": 24.624,
+      "end": 26.924,
+      "text": "I vantaggi principali del cloud computing sono quattro.",
+      "words": [
+        {
+          "text": "I",
+          "start": 24.624,
+          "end": 24.664
+        },
+        {
+          "text": "vantaggi",
+          "start": 24.684,
+          "end": 24.984
+        },
+        {
+          "text": "principali",
+          "start": 25.024,
+          "end": 25.504
+        },
+        {
+          "text": "del",
+          "start": 25.544,
+          "end": 25.644
+        },
+        {
+          "text": "cloud",
+          "start": 25.684,
+          "end": 25.864
+        },
+        {
+          "text": "computing",
+          "start": 25.904,
+          "end": 26.304
+        },
+        {
+          "text": "sono",
+          "start": 26.384,
+          "end": 26.544
+        },
+        {
+          "text": "quattro.",
+          "start": 26.584,
+          "end": 26.924
+        }
+      ]
+    },
+    {
+      "start": 27.564,
+      "end": 33.105,
+      "text": "Primo, scalability: la capacità di mantenere stabili le prestazioni del sistema al crescere del carico",
+      "words": [
+        {
+          "text": "Primo,",
+          "start": 27.564,
+          "end": 27.784
+        },
+        {
+          "text": "scalability:",
+          "start": 28.064,
+          "end": 28.704
+        },
+        {
+          "text": "la",
+          "start": 29.024,
+          "end": 29.085
+        },
+        {
+          "text": "capacità",
+          "start": 29.125,
+          "end": 29.485
+        },
+        {
+          "text": "di",
+          "start": 29.545,
+          "end": 29.605
+        },
+        {
+          "text": "mantenere",
+          "start": 29.645,
+          "end": 30.085
+        },
+        {
+          "text": "stabili",
+          "start": 30.185,
+          "end": 30.605
+        },
+        {
+          "text": "le",
+          "start": 30.685,
+          "end": 30.745
+        },
+        {
+          "text": "prestazioni",
+          "start": 30.765,
+          "end": 31.285
+        },
+        {
+          "text": "del",
+          "start": 31.325,
+          "end": 31.445
+        },
+        {
+          "text": "sistema",
+          "start": 31.485,
+          "end": 31.865
+        },
+        {
+          "text": "al",
+          "start": 32.005,
+          "end": 32.105
+        },
+        {
+          "text": "crescere",
+          "start": 32.165,
+          "end": 32.625
+        },
+        {
+          "text": "del",
+          "start": 32.665,
+          "end": 32.765
+        },
+        {
+          "text": "carico",
+          "start": 32.805,
+          "end": 33.105
+        }
+      ]
+    },
+    {
+      "start": 33.145,
+      "end": 33.525,
+      "text": "di lavoro.",
+      "words": [
+        {
+          "text": "di",
+          "start": 33.145,
+          "end": 33.185
+        },
+        {
+          "text": "lavoro.",
+          "start": 33.225,
+          "end": 33.525
+        }
+      ]
+    },
+    {
+      "start": 34.245,
+      "end": 40.266,
+      "text": "Secondo, elasticity: la possibilità di adattare dinamicamente la configurazione dei server alle richieste che cambiano",
+      "words": [
+        {
+          "text": "Secondo,",
+          "start": 34.245,
+          "end": 34.605
+        },
+        {
+          "text": "elasticity:",
+          "start": 34.865,
+          "end": 35.385
+        },
+        {
+          "text": "la",
+          "start": 35.766,
+          "end": 35.826
+        },
+        {
+          "text": "possibilità",
+          "start": 35.846,
+          "end": 36.326
+        },
+        {
+          "text": "di",
+          "start": 36.446,
+          "end": 36.506
+        },
+        {
+          "text": "adattare",
+          "start": 36.546,
+          "end": 36.946
+        },
+        {
+          "text": "dinamicamente",
+          "start": 37.026,
+          "end": 37.686
+        },
+        {
+          "text": "la",
+          "start": 37.726,
+          "end": 37.786
+        },
+        {
+          "text": "configurazione",
+          "start": 37.826,
+          "end": 38.466
+        },
+        {
+          "text": "dei",
+          "start": 38.506,
+          "end": 38.606
+        },
+        {
+          "text": "server",
+          "start": 38.666,
+          "end": 39.006
+        },
+        {
+          "text": "alle",
+          "start": 39.126,
+          "end": 39.266
+        },
+        {
+          "text": "richieste",
+          "start": 39.306,
+          "end": 39.686
+        },
+        {
+          "text": "che",
+          "start": 39.746,
+          "end": 39.806
+        },
+        {
+          "text": "cambiano",
+          "start": 39.906,
+          "end": 40.266
+        }
+      ]
+    },
+    {
+      "start": 40.326,
+      "end": 40.806,
+      "text": "nel tempo.",
+      "words": [
+        {
+          "text": "nel",
+          "start": 40.326,
+          "end": 40.446
+        },
+        {
+          "text": "tempo.",
+          "start": 40.486,
+          "end": 40.806
+        }
+      ]
+    },
+    {
+      "start": 41.546,
+      "end": 46.347,
+      "text": "Terzo, resilience: la capacità di mantenere attivo il servizio anche in caso di guasto di",
+      "words": [
+        {
+          "text": "Terzo,",
+          "start": 41.546,
+          "end": 41.866
+        },
+        {
+          "text": "resilience:",
+          "start": 42.127,
+          "end": 42.687
+        },
+        {
+          "text": "la",
+          "start": 43.127,
+          "end": 43.187
+        },
+        {
+          "text": "capacità",
+          "start": 43.227,
+          "end": 43.567
+        },
+        {
+          "text": "di",
+          "start": 43.627,
+          "end": 43.687
+        },
+        {
+          "text": "mantenere",
+          "start": 43.727,
+          "end": 44.127
+        },
+        {
+          "text": "attivo",
+          "start": 44.167,
+          "end": 44.487
+        },
+        {
+          "text": "il",
+          "start": 44.547,
+          "end": 44.587
+        },
+        {
+          "text": "servizio",
+          "start": 44.627,
+          "end": 45.067
+        },
+        {
+          "text": "anche",
+          "start": 45.207,
+          "end": 45.427
+        },
+        {
+          "text": "in",
+          "start": 45.487,
+          "end": 45.547
+        },
+        {
+          "text": "caso",
+          "start": 45.567,
+          "end": 45.767
+        },
+        {
+          "text": "di",
+          "start": 45.787,
+          "end": 45.847
+        },
+        {
+          "text": "guasto",
+          "start": 45.887,
+          "end": 46.227
+        },
+        {
+          "text": "di",
+          "start": 46.267,
+          "end": 46.347
+        }
+      ]
+    },
+    {
+      "start": 46.447,
+      "end": 47.387,
+      "text": "uno o più server.",
+      "words": [
+        {
+          "text": "uno",
+          "start": 46.447,
+          "end": 46.607
+        },
+        {
+          "text": "o",
+          "start": 46.767,
+          "end": 46.807
+        },
+        {
+          "text": "più",
+          "start": 46.867,
+          "end": 46.947
+        },
+        {
+          "text": "server.",
+          "start": 47.047,
+          "end": 47.387
+        }
+      ]
+    },
+    {
+      "start": 48.147,
+      "end": 51.548,
+      "text": "Quarto, cost: la riduzione delle spese di capitale iniziali,",
+      "words": [
+        {
+          "text": "Quarto,",
+          "start": 48.147,
+          "end": 48.448
+        },
+        {
+          "text": "cost:",
+          "start": 48.748,
+          "end": 49.048
+        },
+        {
+          "text": "la",
+          "start": 49.468,
+          "end": 49.528
+        },
+        {
+          "text": "riduzione",
+          "start": 49.568,
+          "end": 50.068
+        },
+        {
+          "text": "delle",
+          "start": 50.088,
+          "end": 50.248
+        },
+        {
+          "text": "spese",
+          "start": 50.288,
+          "end": 50.528
+        },
+        {
+          "text": "di",
+          "start": 50.548,
+          "end": 50.608
+        },
+        {
+          "text": "capitale",
+          "start": 50.648,
+          "end": 50.988
+        },
+        {
+          "text": "iniziali,",
+          "start": 51.048,
+          "end": 51.548
+        }
+      ]
+    },
+    {
+      "start": 51.688,
+      "end": 54.949,
+      "text": "cioè il CapEx, grazie al pagamento in base all'uso effettivo,",
+      "words": [
+        {
+          "text": "cioè",
+          "start": 51.688,
+          "end": 51.828
+        },
+        {
+          "text": "il",
+          "start": 51.948,
+          "end": 52.048
+        },
+        {
+          "text": "CapEx,",
+          "start": 52.108,
+          "end": 52.448
+        },
+        {
+          "text": "grazie",
+          "start": 52.908,
+          "end": 53.168
+        },
+        {
+          "text": "al",
+          "start": 53.188,
+          "end": 53.248
+        },
+        {
+          "text": "pagamento",
+          "start": 53.288,
+          "end": 53.708
+        },
+        {
+          "text": "in",
+          "start": 53.768,
+          "end": 53.828
+        },
+        {
+          "text": "base",
+          "start": 53.848,
+          "end": 54.068
+        },
+        {
+          "text": "all'uso",
+          "start": 54.108,
+          "end": 54.428
+        },
+        {
+          "text": "effettivo,",
+          "start": 54.468,
+          "end": 54.949
+        }
+      ]
+    },
+    {
+      "start": 55.269,
+      "end": 56.429,
+      "text": "noto come pay per use.",
+      "words": [
+        {
+          "text": "noto",
+          "start": 55.269,
+          "end": 55.449
+        },
+        {
+          "text": "come",
+          "start": 55.489,
+          "end": 55.629
+        },
+        {
+          "text": "pay",
+          "start": 55.749,
+          "end": 55.889
+        },
+        {
+          "text": "per",
+          "start": 55.949,
+          "end": 56.069
+        },
+        {
+          "text": "use.",
+          "start": 56.209,
+          "end": 56.429
+        }
+      ]
+    },
+    {
+      "start": 57.429,
+      "end": 61.79,
+      "text": "Nei prossimi minuti vedremo come i container e Docker rendano possibile tutto questo,",
+      "words": [
+        {
+          "text": "Nei",
+          "start": 57.429,
+          "end": 57.529
+        },
+        {
+          "text": "prossimi",
+          "start": 57.549,
+          "end": 57.849
+        },
+        {
+          "text": "minuti",
+          "start": 57.889,
+          "end": 58.169
+        },
+        {
+          "text": "vedremo",
+          "start": 58.329,
+          "end": 58.609
+        },
+        {
+          "text": "come",
+          "start": 58.649,
+          "end": 58.809
+        },
+        {
+          "text": "i",
+          "start": 58.849,
+          "end": 58.889
+        },
+        {
+          "text": "container",
+          "start": 58.949,
+          "end": 59.549
+        },
+        {
+          "text": "e",
+          "start": 59.709,
+          "end": 59.749
+        },
+        {
+          "text": "Docker",
+          "start": 59.849,
+          "end": 60.169
+        },
+        {
+          "text": "rendano",
+          "start": 60.389,
+          "end": 60.689
+        },
+        {
+          "text": "possibile",
+          "start": 60.729,
+          "end": 61.169
+        },
+        {
+          "text": "tutto",
+          "start": 61.249,
+          "end": 61.45
+        },
+        {
+          "text": "questo,",
+          "start": 61.51,
+          "end": 61.79
+        }
+      ]
+    },
+    {
+      "start": 62.13,
+      "end": 66.71,
+      "text": "mentre i modelli di servizio e l'architettura del software cloud saranno approfonditi nel capitolo sei.",
+      "words": [
+        {
+          "text": "mentre",
+          "start": 62.13,
+          "end": 62.37
+        },
+        {
+          "text": "i",
+          "start": 62.43,
+          "end": 62.47
+        },
+        {
+          "text": "modelli",
+          "start": 62.49,
+          "end": 62.77
+        },
+        {
+          "text": "di",
+          "start": 62.81,
+          "end": 62.87
+        },
+        {
+          "text": "servizio",
+          "start": 62.91,
+          "end": 63.39
+        },
+        {
+          "text": "e",
+          "start": 63.45,
+          "end": 63.49
+        },
+        {
+          "text": "l'architettura",
+          "start": 63.53,
+          "end": 64.07
+        },
+        {
+          "text": "del",
+          "start": 64.11,
+          "end": 64.21
+        },
+        {
+          "text": "software",
+          "start": 64.27,
+          "end": 64.59
+        },
+        {
+          "text": "cloud",
+          "start": 64.61,
+          "end": 64.91
+        },
+        {
+          "text": "saranno",
+          "start": 65.19,
+          "end": 65.45
+        },
+        {
+          "text": "approfonditi",
+          "start": 65.47,
+          "end": 65.93
+        },
+        {
+          "text": "nel",
+          "start": 65.97,
+          "end": 66.09
+        },
+        {
+          "text": "capitolo",
+          "start": 66.13,
+          "end": 66.45
+        },
+        {
+          "text": "sei.",
+          "start": 66.51,
+          "end": 66.71
+        }
+      ]
+    }
+  ]
+}

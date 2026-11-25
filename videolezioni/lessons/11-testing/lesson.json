@@ -1,0 +1,623 @@
+{
+  "lesson_id": "11-testing",
+  "chapter": 11,
+  "part": "Parte IV · Dal monolite alla produzione",
+  "title": "Testing",
+  "voice_config": {
+    "provider": "gemini",
+    "model": "gemini-3.8-flash-tts",
+    "voice_name": "Ludo",
+    "style": "chiaro, didattico, calmo e preciso, stile lezione universitaria di ingegneria del software"
+  },
+  "scenes": [
+    {
+      "id": "scene-01",
+      "section": "11.1 · Fondamenti del testing",
+      "title": "Che cos'è il testing, i quattro tipi e il limite di Dijkstra",
+      "tts_text": "Benvenuti al capitolo undici, dedicato al testing del software. Che cosa significa collaudare un programma? [pause:0.5] Il testing consiste in due passi: eseguire il programma con dati che simulano gli input degli utenti e osservare il comportamento prodotto. Se corrisponde a quello atteso, il test riesce; altrimenti fallisce. [pause:0.6] Distinguiamo quattro tipi di testing. [pause:0.4] Il functional testing collauda la funzionalità complessiva del sistema per scoprire i bug. [pause:0.4] Lo user testing verifica che il prodotto sia utile e usabile per gli utenti finali: comprende l'alpha testing, in cui si chiede agli utenti se vogliono davvero certe feature, e il beta testing, in cui una versione preliminare viene distribuita per valutare usabilità e interoperabilità. [pause:0.5] Il performance e load testing verifica velocità di risposta, tenuta sotto carichi diversi e scalabilità. Infine, il security testing cerca vulnerabilità sfruttabili da un attaccante. [pause:0.6] Attenzione a un principio fondamentale enunciato da Dijkstra: il testing può mostrare la presenza di bug, mai la loro assenza. Poiché gli input possibili sono enormi, i test ne provano solo alcuni e un bug può restare nascosto; solo la verifica formale dimostra la correttezza su tutti i casi.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">11.1 · Fondamenti del testing</div>\n  <h2 class=\"slide-title\">Definizione, quattro tipi di testing e limite di Dijkstra</h2>\n  <div id=\"s1\" class=\"split-visual cue-hidden\">\n    <div id=\"svg-ver\" class=\"svg-panel\">\n      <svg viewBox=\"0 0 360 205\" class=\"diagram-svg\" aria-label=\"Ciclo del test e differenza tra testing e verifica\">\n        <defs>\n          <marker id=\"arr-t1\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\">\n            <path d=\"M0 1 L9 5 L0 9 z\" fill=\"var(--ink-soft)\"/>\n          </marker>\n          <marker id=\"arr-g1\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\">\n            <path d=\"M0 1 L9 5 L0 9 z\" fill=\"var(--green)\"/>\n          </marker>\n        </defs>\n        <g id=\"svg-ciclo\">\n          <rect x=\"12\" y=\"10\" width=\"108\" height=\"34\" rx=\"6\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.4\"/>\n          <text x=\"66\" y=\"25\" text-anchor=\"middle\" class=\"svg-tick\">1. Esegui con</text>\n          <text x=\"66\" y=\"38\" text-anchor=\"middle\" class=\"svg-tick\">input simulati</text>\n          <line x1=\"122\" y1=\"27\" x2=\"144\" y2=\"27\" stroke=\"var(--ink-soft)\" stroke-width=\"1.5\" marker-end=\"url(#arr-t1)\"/>\n          <rect x=\"148\" y=\"10\" width=\"92\" height=\"34\" rx=\"6\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.4\"/>\n          <text x=\"194\" y=\"25\" text-anchor=\"middle\" class=\"svg-tick\">2. Osserva</text>\n          <text x=\"194\" y=\"38\" text-anchor=\"middle\" class=\"svg-tick\">comportamento</text>\n          <line x1=\"242\" y1=\"27\" x2=\"262\" y2=\"27\" stroke=\"var(--ink-soft)\" stroke-width=\"1.5\" marker-end=\"url(#arr-t1)\"/>\n          <rect x=\"266\" y=\"7\" width=\"82\" height=\"18\" rx=\"4\" fill=\"var(--green-soft, rgba(21,128,61,0.14))\" stroke=\"var(--green)\" stroke-width=\"1.2\"/>\n          <text x=\"307\" y=\"19\" text-anchor=\"middle\" class=\"svg-tick\">Atteso: Pass</text>\n          <rect x=\"266\" y=\"29\" width=\"82\" height=\"18\" rx=\"4\" fill=\"var(--accent-soft)\" stroke=\"var(--red)\" stroke-width=\"1.2\"/>\n          <text x=\"307\" y=\"41\" text-anchor=\"middle\" class=\"svg-tick\">Altro: Fail</text>\n        </g>\n        <line x1=\"12\" y1=\"60\" x2=\"348\" y2=\"60\" stroke=\"var(--muted)\" stroke-width=\"1\" stroke-dasharray=\"4 3\" opacity=\"0.55\"/>\n        <g id=\"svg-dijkstra\">\n          <text x=\"98\" y=\"78\" text-anchor=\"middle\" class=\"svg-caption\">Input possibili (solo alcuni testati)</text>\n          <line x1=\"22\" y1=\"96\" x2=\"62\" y2=\"96\" stroke=\"var(--green)\" stroke-width=\"1.8\" marker-end=\"url(#arr-g1)\"/>\n          <rect x=\"68\" y=\"91\" width=\"42\" height=\"10\" rx=\"2\" fill=\"var(--ink-soft)\"/>\n          <rect x=\"84\" y=\"108\" width=\"42\" height=\"10\" rx=\"2\" fill=\"var(--red)\"/>\n          <text x=\"134\" y=\"116\" class=\"svg-caption\">bug non testato</text>\n          <line x1=\"54\" y1=\"130\" x2=\"94\" y2=\"130\" stroke=\"var(--green)\" stroke-width=\"1.8\" marker-end=\"url(#arr-g1)\"/>\n          <rect x=\"100\" y=\"125\" width=\"42\" height=\"10\" rx=\"2\" fill=\"var(--ink-soft)\"/>\n          <rect x=\"116\" y=\"142\" width=\"42\" height=\"10\" rx=\"2\" fill=\"var(--ink-soft)\"/>\n          <line x1=\"86\" y1=\"164\" x2=\"126\" y2=\"164\" stroke=\"var(--green)\" stroke-width=\"1.8\" marker-end=\"url(#arr-g1)\"/>\n          <rect x=\"132\" y=\"159\" width=\"42\" height=\"10\" rx=\"2\" fill=\"var(--ink-soft)\"/>\n          <text x=\"212\" y=\"136\" text-anchor=\"middle\" class=\"svg-math\">≠</text>\n          <rect x=\"236\" y=\"96\" width=\"112\" height=\"66\" rx=\"8\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.6\"/>\n          <text x=\"292\" y=\"118\" text-anchor=\"middle\" class=\"svg-math\">Verifica formale</text>\n          <text x=\"292\" y=\"135\" text-anchor=\"middle\" class=\"svg-tick\">Dimostrazione su</text>\n          <text x=\"292\" y=\"150\" text-anchor=\"middle\" class=\"svg-tick\">TUTTI gli input</text>\n        </g>\n      </svg>\n    </div>\n    <div class=\"formula-col\">\n      <div id=\"b-def\" class=\"box box-def\">\n        <div class=\"box-label\">Definizione di Testing</div>\n        <p><strong>1.</strong> Eseguire il programma su dati simulati · <strong>2.</strong> Osservare il comportamento e confrontarlo con quello atteso.</p>\n      </div>\n      <table id=\"t-types\" class=\"acad-table\">\n        <thead>\n          <tr><th>Tipo di testing</th><th>Obiettivo principale</th></tr>\n        </thead>\n        <tbody>\n          <tr id=\"tp-1\"><td><strong>Functional</strong></td><td>Collaudare le funzionalità per scoprire i bug</td></tr>\n          <tr id=\"tp-2\"><td><strong>User (Alpha / Beta)</strong></td><td>Utilità e usabilità: <em>alpha</em> (feature volute?), <em>beta</em> (rilascio preliminare, interoperabilità)</td></tr>\n          <tr id=\"tp-3\"><td><strong>Performance &amp; Load</strong></td><td>Tempi di risposta, tenuta a carichi diversi e scalabilità</td></tr>\n          <tr id=\"tp-4\"><td><strong>Security</strong></td><td>Trovare vulnerabilità sfruttabili da un attaccante</td></tr>\n        </tbody>\n      </table>\n    </div>\n  </div>\n  <div id=\"s2\" class=\"box box-warn cue-hidden\">\n    <div class=\"box-label\">Testing ≠ Verification (Edsger W. Dijkstra)</div>\n    <p><em>«Il testing può mostrare la presenza di bug, mai la loro assenza.»</em> I test coprono un sottoinsieme finito di input; la <strong>verifica</strong> dimostra formalmente la correttezza per <em>ogni</em> input possibile.</p>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 4.18,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "Che cosa significa collaudare"
+        },
+        {
+          "at": 7.1,
+          "action": "highlight",
+          "target": "#b-def",
+          "duration": 10.5,
+          "anchor": "Il testing consiste in due passi"
+        },
+        {
+          "at": 22.76,
+          "action": "highlight",
+          "target": "#tp-1",
+          "duration": 5.36,
+          "anchor": "Il functional testing collauda"
+        },
+        {
+          "at": 28.24,
+          "action": "highlight",
+          "target": "#tp-2",
+          "duration": 13.5,
+          "anchor": "Lo user testing verifica"
+        },
+        {
+          "at": 44.51,
+          "action": "highlight",
+          "target": "#tp-3",
+          "duration": 5.5,
+          "anchor": "Il performance e load testing"
+        },
+        {
+          "at": 50.49,
+          "action": "highlight",
+          "target": "#tp-4",
+          "duration": 4.5,
+          "anchor": "Infine, il security testing"
+        },
+        {
+          "at": 55.71,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Attenzione a un principio fondamentale"
+        },
+        {
+          "at": 59.01,
+          "action": "highlight",
+          "target": "#svg-dijkstra",
+          "duration": 9.76,
+          "anchor": "il testing può mostrare"
+        },
+        {
+          "at": 68.89,
+          "action": "highlight",
+          "target": "#s2",
+          "duration": 10,
+          "anchor": "solo la verifica formale"
+        }
+      ],
+      "audio_file": "audio/scene-01.wav",
+      "subtitle_file": "subtitles/scene-01.json",
+      "duration_sec": 72.52
+    },
+    {
+      "id": "scene-02",
+      "section": "11.2 · Functional e Unit testing",
+      "title": "Ciclo a quattro fasi, partizioni di equivalenza e linee guida",
+      "tts_text": "Passiamo al functional testing, che segue tre regole: eseguire tutto il codice almeno una volta, iniziare a testare dal giorno in cui si scrive codice e usare test automatici. [pause:0.5] Il processo è ciclico in quattro fasi: unit, feature, system e release testing, e si ripete a ogni versione. [pause:0.6] Nello unit testing si collauda una singola funzione o metodo in isolamento. Il suo principio dice che, se un'unità funziona su un insieme di input con caratteristiche comuni, funzionerà sull'insieme più grande con le stesse caratteristiche. [pause:0.5] Da qui nasce il metodo delle equivalence partition: si dividono gli input in partizioni trattate allo stesso modo, scegliendo valori interni e soprattutto valori sui confini, dove i programmatori sbagliano più spesso. [pause:0.5] Se una funzione accetta gli interi da uno a novantanove, proviamo meno cinque, quarantacinque e centocinquanta nelle tre partizioni, più i confini zero, uno, novantanove e cento: un errore come x minore di novantanove al posto di x minore o uguale a novantanove emerge solo provando novantanove. [pause:0.6] Per scegliere buoni casi di test valgono otto linee guida pratiche: testare i bordi, forzare errori, riempire i buffer, ripetere sequenze, provocare overflow e underflow, non dimenticare zero, null e sequenze vuote, controllare i conteggi delle liste e provare sequenze di un solo elemento.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">11.2 · Functional &amp; Unit Testing</div>\n  <h2 class=\"slide-title\">Ciclo a quattro fasi, equivalence partition e otto linee guida</h2>\n  <div id=\"s1\" class=\"pill-strip cue-hidden\">\n    <span class=\"strip-label\">Ciclo Functional Testing:</span>\n    <span id=\"ph-1\" class=\"pill pill-accent\">1. Unit</span>\n    <span>→</span>\n    <span id=\"ph-2\" class=\"pill\">2. Feature</span>\n    <span>→</span>\n    <span id=\"ph-3\" class=\"pill\">3. System</span>\n    <span>→</span>\n    <span id=\"ph-4\" class=\"pill\">4. Release</span>\n    <span class=\"pill\">Copertura 100% · Dal giorno 1 · Test automatici</span>\n  </div>\n  <div id=\"s2\" class=\"grid-2 cue-hidden\">\n    <div id=\"b-eq\" class=\"box box-def\">\n      <div class=\"box-label\">Unit Testing · Equivalence Partition &amp; Confini</div>\n      <p>Collauda funzioni/metodi <strong>in isolamento</strong>: se funziona su un campione con caratteristiche comuni, vale sull'intera partizione.</p>\n      <ul class=\"clean-list\" style=\"margin-top:8px\">\n        <li id=\"eq-1\"><strong>Esempio (interi 1–99)</strong>: 3 partizioni (&lt;1 rifiutato, 1–99 accettato, &gt;99 rifiutato) → valori interni: <code>-5, 45, 150</code>.</li>\n        <li id=\"eq-2\"><strong>Test ai confini</strong>: <code>0, 1, 99, 100</code>. Un bug come \\(x \\lt 99\\) invece di \\(x \\le 99\\) si scopre solo provando <strong>99</strong>.</li>\n      </ul>\n    </div>\n    <div id=\"b-guide\" class=\"box box-primary\">\n      <div class=\"box-label\">Otto linee guida per i casi di test</div>\n      <div class=\"grid-2\" style=\"gap:8px\">\n        <ul class=\"clean-list\">\n          <li id=\"g-1\"><strong>Test edge cases</strong>: bordi d'intervallo.</li>\n          <li id=\"g-2\"><strong>Force errors</strong>: forzare tutti i messaggi d'errore.</li>\n          <li id=\"g-3\"><strong>Fill buffers</strong>: far traboccare i buffer di input.</li>\n          <li id=\"g-4\"><strong>Repeat yourself</strong>: ripetere input e sequenze.</li>\n        </ul>\n        <ul class=\"clean-list\">\n          <li id=\"g-5\"><strong>Overflow / underflow</strong>: numeri estremi.</li>\n          <li id=\"g-6\"><strong>Null &amp; zero</strong>: <code>null</code>, lista vuota, <code>0</code>.</li>\n          <li id=\"g-7\"><strong>Keep count</strong>: coerenza conteggi nelle liste.</li>\n          <li id=\"g-8\"><strong>One is different</strong>: sequenze da 1 elemento.</li>\n        </ul>\n      </div>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 0,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "Passiamo al functional testing"
+        },
+        {
+          "at": 10.96,
+          "action": "highlight",
+          "target": "#s1",
+          "duration": 8,
+          "anchor": "Il processo è ciclico"
+        },
+        {
+          "at": 19.16,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Nello unit testing si collauda"
+        },
+        {
+          "at": 19.16,
+          "action": "highlight",
+          "target": "#b-eq",
+          "duration": 10,
+          "anchor": "Nello unit testing si collauda"
+        },
+        {
+          "at": 33.62,
+          "action": "highlight",
+          "target": "#eq-1",
+          "duration": 15,
+          "anchor": "Da qui nasce il metodo"
+        },
+        {
+          "at": 53.6,
+          "action": "highlight",
+          "target": "#eq-2",
+          "duration": 11.96,
+          "anchor": "più i confini zero"
+        },
+        {
+          "at": 65.68,
+          "action": "highlight",
+          "target": "#b-guide",
+          "duration": 18,
+          "anchor": "Per scegliere buoni casi"
+        }
+      ],
+      "audio_file": "audio/scene-02.wav",
+      "subtitle_file": "subtitles/scene-02.json",
+      "duration_sec": 85.61
+    },
+    {
+      "id": "scene-03",
+      "section": "11.3 · Feature, System e Release testing",
+      "title": "Dalle user story al collaudo nell'ambiente operativo reale",
+      "tts_text": "Dopo le singole unità si passa a feature, system e release testing. [pause:0.5] Una feature nasce dall'interazione di più unità e va collaudata sotto due profili: con gli interaction test si verificano le interazioni tra unità, spesso scritte da sviluppatori diversi, scoprendo bug invisibili allo unit testing; con gli usefulness test si verifica che la feature soddisfi i bisogni reali, coinvolgendo il product manager. [pause:0.5] Come si progettano i feature test? Si ricavano dalle user story, traducendo storie come il login con Google o la scelta delle email in scenari concreti di successo ed errore. [pause:0.6] Il system testing collauda invece il sistema nel suo insieme per quattro scopi: scoprire interazioni inattese tra feature, verificare che lavorino bene insieme, controllare diversi ambienti d'uso e misurare qualità come reattività e sicurezza lungo percorsi end-to-end. [pause:0.6] Infine, il release testing collauda il sistema destinato ai clienti direttamente nell'ambiente operativo reale. Il suo obiettivo non è cercare bug, ma decidere se il prodotto è pronto per il rilascio, verificando impacchettamento, installazione di librerie e configurazione, spesso in modo automatico sul cloud.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">11.3 · Feature, System &amp; Release Testing</div>\n  <h2 class=\"slide-title\">Dall'integrazione delle unità alla decisione di rilascio</h2>\n  <div id=\"s1\" class=\"grid-3 cue-hidden\">\n    <div id=\"b-feat\" class=\"box box-def\">\n      <div class=\"box-label\">Feature Testing</div>\n      <ul class=\"clean-list\">\n        <li><strong>Interaction test</strong>: interazioni tra unità (anche di dev diversi).</li>\n        <li><strong>Usefulness test</strong>: risponde ai bisogni reali (col <em>Product Manager</em>).</li>\n      </ul>\n    </div>\n    <div id=\"b-sys\" class=\"box box-primary\">\n      <div class=\"box-label\">System Testing</div>\n      <ul class=\"clean-list\">\n        <li>Interazioni inattese tra feature e flussi <strong>end-to-end</strong> da scenari.</li>\n        <li>Funzionamento in ambienti diversi e attributi di qualità (reattività, throughput, sicurezza).</li>\n      </ul>\n    </div>\n    <div id=\"b-rel\" class=\"box box-idea\">\n      <div class=\"box-label\">Release Testing</div>\n      <ul class=\"clean-list\">\n        <li>Eseguito nell'<strong>ambiente operativo reale</strong>, non in test.</li>\n        <li>Decide se rilasciare (non cerca bug): packaging, librerie, config, rilascio DevOps.</li>\n      </ul>\n    </div>\n  </div>\n  <table id=\"s2\" class=\"acad-table cue-hidden\">\n    <thead>\n      <tr><th>User Story di partenza</th><th>Feature Test derivato</th><th>Comportamento verificato</th></tr>\n    </thead>\n    <tbody>\n      <tr id=\"st-1\"><td><strong>User registration</strong> (login rapido)</td><td>Initial login screen</td><td>Clic su <em>Sign-in with Google</em> mostra le credenziali e completa l'accesso</td></tr>\n      <tr id=\"st-2\"><td><strong>User registration</strong> (gestione errori)</td><td>Incorrect credentials</td><td>Credenziali errate mostrano messaggio d'errore e schermata di retry</td></tr>\n      <tr id=\"st-3\"><td><strong>Information sharing</strong></td><td>Shared information</td><td>Mostra dati condivisi con Google con opzioni <em>annulla</em> e <em>conferma</em></td></tr>\n      <tr id=\"st-4\"><td><strong>Email choice</strong></td><td>Email opt-in</td><td>Menu multi-scelta per le email; nessuna selezione = nessuna iscrizione</td></tr>\n    </tbody>\n  </table>\n</div>\n",
+      "cues": [
+        {
+          "at": 0.58,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "Dopo le singole unità"
+        },
+        {
+          "at": 4.8,
+          "action": "highlight",
+          "target": "#b-feat",
+          "duration": 18,
+          "anchor": "Una feature nasce dall'interazione"
+        },
+        {
+          "at": 25.28,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Come si progettano i feature test"
+        },
+        {
+          "at": 27.18,
+          "action": "highlight",
+          "target": "#s2",
+          "duration": 9.18,
+          "anchor": "Si ricavano dalle user story"
+        },
+        {
+          "at": 36.48,
+          "action": "highlight",
+          "target": "#b-sys",
+          "duration": 15.84,
+          "anchor": "Il system testing collauda"
+        },
+        {
+          "at": 52.44,
+          "action": "highlight",
+          "target": "#b-rel",
+          "duration": 19,
+          "anchor": "Infine, il release testing"
+        }
+      ],
+      "audio_file": "audio/scene-03.wav",
+      "subtitle_file": "subtitles/scene-03.json",
+      "duration_sec": 70.71
+    },
+    {
+      "id": "scene-04",
+      "section": "11.4 · Test automation e piramide dei test",
+      "title": "Arrange–Action–Assert, mock object e distribuzione 70–20–10",
+      "tts_text": "Nelle aziende di prodotto i test vengono automatizzati con appositi framework. Un test automatico è un programma eseguibile che verifica il risultato atteso su dati fissati. [pause:0.5] Ogni buon test segue lo schema in tre fasi Arrange, Action e Assert. Nella fase Arrange si preparano parametri e eventuali mock object, cioè oggetti finti che simulano parti del sistema non ancora collaudate. Nella fase Action si invoca l'unità da testare. Nella fase Assert si dichiara il risultato atteso: per esempio, con capitale zero nell'interest calculator, l'interesse deve essere zero. [pause:0.5] Ricordate però che anche il codice dei test può contenere bug: vanno scritti nel modo più semplice possibile e revisionati insieme al codice collaudato. [pause:0.6] Non tutti i test hanno lo stesso costo di automazione, come mostra la piramide dei test. Alla base stanno gli unit test, circa il settanta per cento: facili da automatizzare ed economici. Al centro i feature test, circa il venti per cento: automatizzarli via interfaccia grafica è costoso e fragile, quindi conviene passare dalle API con più asserzioni. In cima stanno i system test, circa il dieci per cento, dove strumenti di record e replay ripetono in automatico le sequenze utente.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">11.4 · Test Automation &amp; Piramide dei Test</div>\n  <h2 class=\"slide-title\">Pattern Arrange–Action–Assert, mock object e piramide 70–20–10</h2>\n  <div id=\"s1\" class=\"split-visual cue-hidden\">\n    <div id=\"svg-pyr\" class=\"svg-panel\">\n      <svg viewBox=\"0 0 360 195\" class=\"diagram-svg\" aria-label=\"Piramide dei test: 70% unit, 20% feature, 10% system\">\n        <defs>\n          <marker id=\"arr-p1\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\">\n            <path d=\"M0 1 L9 5 L0 9 z\" fill=\"var(--blue)\"/>\n          </marker>\n        </defs>\n        <g id=\"pyr-sys\">\n          <polygon points=\"215,16 177,64 253,64\" fill=\"var(--accent-soft)\" stroke=\"var(--red)\" stroke-width=\"1.6\"/>\n          <text x=\"215\" y=\"49\" text-anchor=\"middle\" class=\"svg-tick\">System</text>\n          <text x=\"272\" y=\"52\" class=\"svg-math\">10%</text>\n        </g>\n        <g id=\"pyr-feat\">\n          <polygon points=\"177,64 253,64 294,116 136,116\" fill=\"var(--orange-soft, rgba(217,119,6,0.14))\" stroke=\"var(--orange)\" stroke-width=\"1.6\"/>\n          <text x=\"215\" y=\"95\" text-anchor=\"middle\" class=\"svg-math\">Feature tests</text>\n          <text x=\"298\" y=\"95\" class=\"svg-math\">20%</text>\n        </g>\n        <g id=\"pyr-unit\">\n          <polygon points=\"136,116 294,116 342,178 88,178\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.8\"/>\n          <text x=\"215\" y=\"152\" text-anchor=\"middle\" class=\"svg-math\">Unit tests</text>\n          <text x=\"336\" y=\"152\" class=\"svg-math\">70%</text>\n        </g>\n        <line x1=\"72\" y1=\"24\" x2=\"72\" y2=\"172\" stroke=\"var(--blue)\" stroke-width=\"2\" marker-end=\"url(#arr-p1)\"/>\n        <text x=\"64\" y=\"90\" text-anchor=\"end\" class=\"svg-caption\">Più automazione,</text>\n        <text x=\"64\" y=\"105\" text-anchor=\"end\" class=\"svg-caption\">costi minori</text>\n      </svg>\n    </div>\n    <div class=\"formula-col\">\n      <div id=\"b-aaa\" class=\"box box-algo\">\n        <div class=\"box-label\">Schema Arrange – Action – Assert (AAA)</div>\n        <ol class=\"clean-list\">\n          <li><strong>Arrange</strong>: prepara input e <em>mock object</em> (sostituti finti).</li>\n          <li><strong>Action</strong>: chiama l'unità (es. <code>interest_calculator(0, 3, 31)</code>).</li>\n          <li><strong>Assert</strong>: verifica il risultato (<code>assertEqual(0, interest)</code>).</li>\n        </ol>\n      </div>\n      <div id=\"b-bug\" class=\"box box-warn\">\n        <div class=\"box-label\">Anche i test possono avere bug</div>\n        <p>Scrivere test il più semplici possibile e rivederli sempre insieme al codice che collaudano.</p>\n      </div>\n    </div>\n  </div>\n  <div id=\"s2\" class=\"grid-3 cue-hidden\">\n    <div id=\"au-u\" class=\"box box-def\">\n      <div class=\"box-label\">Unit tests (70%)</div>\n      <p>Più facili ed economici da automatizzare; riducono ma non eliminano il bisogno di feature test.</p>\n    </div>\n    <div id=\"au-f\" class=\"box box-primary\">\n      <div class=\"box-label\">Feature tests (20%)</div>\n      <p>Via GUI sono costosi e fragili: meglio testare tramite <strong>API</strong> usando più asserzioni.</p>\n    </div>\n    <div id=\"au-s\" class=\"box box-idea\">\n      <div class=\"box-label\">System tests (10%)</div>\n      <p>Simulano sequenze utente: il test manuale è soggetto a errori, meglio tool <em>record-and-replay</em>.</p>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 0,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "Nelle aziende di prodotto"
+        },
+        {
+          "at": 11.42,
+          "action": "highlight",
+          "target": "#b-aaa",
+          "duration": 21,
+          "anchor": "Ogni buon test segue"
+        },
+        {
+          "at": 39.3,
+          "action": "highlight",
+          "target": "#b-bug",
+          "duration": 9.5,
+          "anchor": "Ricordate però che anche"
+        },
+        {
+          "at": 49.61,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Non tutti i test hanno"
+        },
+        {
+          "at": 49.71,
+          "action": "highlight",
+          "target": "#au-u",
+          "duration": 5.1
+        },
+        {
+          "at": 54.93,
+          "action": "highlight",
+          "target": "#pyr-unit",
+          "duration": 6.48,
+          "anchor": "Alla base stanno gli unit"
+        },
+        {
+          "at": 61.53,
+          "action": "highlight",
+          "target": "#au-f",
+          "duration": 11.04,
+          "anchor": "Al centro i feature test"
+        },
+        {
+          "at": 72.69,
+          "action": "highlight",
+          "target": "#au-s",
+          "duration": 10,
+          "anchor": "In cima stanno i system"
+        }
+      ],
+      "audio_file": "audio/scene-04.wav",
+      "subtitle_file": "subtitles/scene-04.json",
+      "duration_sec": 80.82
+    },
+    {
+      "id": "scene-05",
+      "section": "11.5 · Test-driven development (TDD)",
+      "title": "Ciclo Red–Green–Refactor, stub e bilanciamento pro e contro",
+      "tts_text": "Il test-driven development, nato con Extreme Programming, ribalta l'ordine tradizionale: prima si scrive il test eseguibile, poi il codice di produzione, procedendo con mini-unit test su una piccola porzione alla volta. [pause:0.6] Vediamo il ciclo. Si sceglie una funzionalità e una sua realizzazione parziale, poi si scrivono i mini-unit test e uno stub, cioè un abbozzo minimo di codice che fa fallire il nuovo test. Eseguendo tutta la suite automatica otteniamo la fase Red: il nuovo test fallisce. [pause:0.5] A questo punto scriviamo il codice necessario per far passare il test e rieseguiamo tutti i test automatici. Qui avviene anche un regression testing continuo: se qualche vecchio test fallisce torniamo al codice; quando tutti passano siamo nella fase Green. [pause:0.5] Infine rifattorizziamo il codice se serve e passiamo alla porzione successiva o a una nuova funzionalità. [pause:0.6] Il TDD offre vantaggi chiari: copertura sistematica, test che documentano il codice e debugging incrementale. Ma presenta anche limiti: è difficile applicarlo al system testing, scoraggia cambi radicali e può far concentrare sui test o sui dettagli invece che sull'architettura globale.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">11.5 · Test-Driven Development (TDD)</div>\n  <h2 class=\"slide-title\">Il ciclo Red–Green–Refactor e i compromessi del TDD</h2>\n  <div id=\"s1\" class=\"split-visual cue-hidden\">\n    <div id=\"svg-tdd\" class=\"svg-panel\">\n      <svg viewBox=\"0 0 380 195\" class=\"diagram-svg\" aria-label=\"Ciclo TDD Red-Green-Refactor\">\n        <defs>\n          <marker id=\"arr-d1\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\">\n            <path d=\"M0 1 L9 5 L0 9 z\" fill=\"var(--ink-soft)\"/>\n          </marker>\n        </defs>\n        <g id=\"tdd-spec\">\n          <rect x=\"10\" y=\"14\" width=\"112\" height=\"42\" rx=\"6\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.4\"/>\n          <text x=\"66\" y=\"32\" text-anchor=\"middle\" class=\"svg-tick\">1–2. Feature &amp;</text>\n          <text x=\"66\" y=\"46\" text-anchor=\"middle\" class=\"svg-tick\">parte piccola</text>\n          <line x1=\"124\" y1=\"35\" x2=\"144\" y2=\"35\" stroke=\"var(--ink-soft)\" stroke-width=\"1.5\" marker-end=\"url(#arr-d1)\"/>\n          <rect x=\"148\" y=\"14\" width=\"108\" height=\"42\" rx=\"6\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.4\"/>\n          <text x=\"202\" y=\"32\" text-anchor=\"middle\" class=\"svg-tick\">3–4. Mini-unit test</text>\n          <text x=\"202\" y=\"46\" text-anchor=\"middle\" class=\"svg-tick\">+ Stub minimo</text>\n        </g>\n        <line x1=\"258\" y1=\"35\" x2=\"276\" y2=\"35\" stroke=\"var(--ink-soft)\" stroke-width=\"1.5\" marker-end=\"url(#arr-d1)\"/>\n        <g id=\"tdd-red\">\n          <rect x=\"280\" y=\"14\" width=\"90\" height=\"42\" rx=\"6\" fill=\"var(--accent-soft)\" stroke=\"var(--red)\" stroke-width=\"1.8\"/>\n          <text x=\"325\" y=\"32\" text-anchor=\"middle\" class=\"svg-math\">5. RED</text>\n          <text x=\"325\" y=\"46\" text-anchor=\"middle\" class=\"svg-tick\">Test fallisce</text>\n        </g>\n        <line x1=\"325\" y1=\"58\" x2=\"325\" y2=\"84\" stroke=\"var(--ink-soft)\" stroke-width=\"1.5\" marker-end=\"url(#arr-d1)\"/>\n        <g id=\"tdd-green\">\n          <rect x=\"258\" y=\"88\" width=\"112\" height=\"44\" rx=\"6\" fill=\"var(--green-soft, rgba(21,128,61,0.14))\" stroke=\"var(--green)\" stroke-width=\"1.8\"/>\n          <text x=\"314\" y=\"107\" text-anchor=\"middle\" class=\"svg-math\">6–7. GREEN</text>\n          <text x=\"314\" y=\"121\" text-anchor=\"middle\" class=\"svg-tick\">Codice + tutti passano</text>\n        </g>\n        <line x1=\"256\" y1=\"110\" x2=\"182\" y2=\"110\" stroke=\"var(--ink-soft)\" stroke-width=\"1.5\" marker-end=\"url(#arr-d1)\"/>\n        <g id=\"tdd-ref\">\n          <rect x=\"48\" y=\"88\" width=\"130\" height=\"44\" rx=\"6\" fill=\"var(--orange-soft, rgba(217,119,6,0.12))\" stroke=\"var(--orange)\" stroke-width=\"1.6\"/>\n          <text x=\"113\" y=\"107\" text-anchor=\"middle\" class=\"svg-math\">8. REFACTOR</text>\n          <text x=\"113\" y=\"121\" text-anchor=\"middle\" class=\"svg-tick\">Migliora struttura</text>\n        </g>\n        <path d=\"M48,110 L24,110 L24,58\" fill=\"none\" stroke=\"var(--ink-soft)\" stroke-width=\"1.4\" marker-end=\"url(#arr-d1)\"/>\n        <text x=\"190\" y=\"166\" text-anchor=\"middle\" class=\"svg-caption\">9. Se incompleta → prossima parte; se completa → nuova feature</text>\n        <text x=\"190\" y=\"182\" text-anchor=\"middle\" class=\"svg-tick\">Rieseguire sempre l'intera suite = regression testing continuo</text>\n      </svg>\n    </div>\n    <div class=\"formula-col\">\n      <div id=\"b-tdd\" class=\"box box-def\">\n        <div class=\"box-label\">Principio XP · Prima il test, poi il codice</div>\n        <p>Si scrive uno <strong>stub</strong> (abbozzo che fallisce il mini-unit test), poi il codice minimo per passare. Rieseguire tutta la suite a ogni passo garantisce il <strong>regression testing</strong>.</p>\n      </div>\n    </div>\n  </div>\n  <table id=\"s2\" class=\"acad-table cue-hidden\">\n    <thead>\n      <tr><th>Vantaggi del TDD</th><th>Svantaggi del TDD</th></tr>\n    </thead>\n    <tbody>\n      <tr id=\"td-1\"><td>Approccio sistematico: nessuna sezione resta non collaudata</td><td>Difficile da applicare al <strong>system testing</strong></td></tr>\n      <tr id=\"td-2\"><td>I test aiutano a comprendere il comportamento del codice</td><td>Scoraggia cambiamenti architetturali radicali</td></tr>\n      <tr id=\"td-3\"><td>Debugging più semplice e incrementale</td><td>Porta a concentrarsi sui test invece che sul problema</td></tr>\n      <tr id=\"td-4\"><td>Codice risultante spesso più semplice</td><td>Troppa attenzione ai dettagli invece che alla struttura globale</td></tr>\n    </tbody>\n  </table>\n</div>\n",
+      "cues": [
+        {
+          "at": 0.89,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "Il test-driven development"
+        },
+        {
+          "at": 4.51,
+          "action": "highlight",
+          "target": "#b-tdd",
+          "duration": 10.5,
+          "anchor": "ribalta l'ordine tradizionale"
+        },
+        {
+          "at": 15.73,
+          "action": "highlight",
+          "target": "#tdd-spec",
+          "duration": 10.5,
+          "anchor": "Si sceglie una funzionalità"
+        },
+        {
+          "at": 28.25,
+          "action": "highlight",
+          "target": "#tdd-red",
+          "duration": 3.17,
+          "anchor": "otteniamo la fase Red"
+        },
+        {
+          "at": 31.54,
+          "action": "highlight",
+          "target": "#tdd-green",
+          "duration": 14,
+          "anchor": "A questo punto scriviamo"
+        },
+        {
+          "at": 46.94,
+          "action": "highlight",
+          "target": "#tdd-ref",
+          "duration": 6.6,
+          "anchor": "Infine rifattorizziamo il codice"
+        },
+        {
+          "at": 53.66,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Il TDD offre vantaggi chiari"
+        },
+        {
+          "at": 53.66,
+          "action": "highlight",
+          "target": "#s2",
+          "duration": 19,
+          "anchor": "Il TDD offre vantaggi chiari"
+        }
+      ],
+      "audio_file": "audio/scene-05.wav",
+      "subtitle_file": "subtitles/scene-05.json",
+      "duration_sec": 70.97
+    },
+    {
+      "id": "scene-06",
+      "section": "11.6 · Security testing",
+      "title": "Vulnerabilità, approccio basato sul rischio e mentalità da attaccante",
+      "tts_text": "Il security testing persegue due obiettivi: scovare vulnerabilità sfruttabili e fornire prove convincenti che il sistema sia abbastanza sicuro. [pause:0.5] Trovare vulnerabilità è molto più arduo che trovare bug funzionali, per tre ragioni. Prima di tutto bisogna verificare ciò che il software non deve fare, e i casi negativi sono potenzialmente infiniti. Inoltre i test funzionali ordinari spesso non rilevano le falle di sicurezza, e lo stesso stack sottostante — sistema operativo, librerie e database — può contenere vulnerabilità. [pause:0.6] Un penetration testing condotto da specialisti esterni mediante attacchi reali è efficace ma costoso. Per questo si adotta un approccio basato sul rischio: si individuano i rischi di sicurezza prioritari del prodotto e si sviluppano test, in parte automatici e in parte manuali, che ne dimostrino la protezione. [pause:0.5] Tra i rischi tipici rientrano l'abuso di credenziali autorizzate, l'accesso a risorse vietate, attacchi di SQL poisoning sul database, gestione errata di sessioni e cookie HTTP, dati non cifrati e chiavi esposte. [pause:0.6] La regola d'oro è pensare come un attaccante: provare di proposito la cosa sbagliata e ripetere più volte le stesse azioni.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">11.6 · Security Testing</div>\n  <h2 class=\"slide-title\">Approccio basato sul rischio e mentalità da attaccante</h2>\n  <div id=\"s1\" class=\"grid-2 cue-hidden\">\n    <div id=\"b-sec1\" class=\"box box-warn\">\n      <div class=\"box-label\">Obiettivi e 3 difficoltà rispetto ai bug</div>\n      <p><strong>Obiettivi:</strong> trovare vulnerabilità + provare che il sistema è abbastanza sicuro.</p>\n      <ul class=\"clean-list\" style=\"margin-top:6px\">\n        <li>Testare ciò che il software <em>non</em> deve fare (casi infiniti).</li>\n        <li>I normali test funzionali non rivelano le falle.</li>\n        <li>Vulnerabilità nello <strong>stack</strong> (SO, librerie, database).</li>\n      </ul>\n    </div>\n    <div id=\"b-sec2\" class=\"box box-primary\">\n      <div class=\"box-label\">Penetration Testing vs Approccio basato sul rischio</div>\n      <ul class=\"clean-list\">\n        <li><strong>Penetration testing</strong>: specialisti esterni simulano attacchi reali (molto costoso).</li>\n        <li><strong>Approccio basato sul rischio</strong>: si identificano i rischi prioritari e si creano test automatici e verifiche manuali (file e comportamenti) a protezione.</li>\n      </ul>\n    </div>\n  </div>\n  <div id=\"s2\" class=\"grid-2 cue-hidden\">\n    <div id=\"b-risk\" class=\"box box-def\">\n      <div class=\"box-label\">Rischi tipici da collaudare</div>\n      <ul class=\"clean-list\">\n        <li>Abuso di credenziali autorizzate e accesso a risorse vietate.</li>\n        <li>Mancata rilevazione di un attaccante e <strong>SQL poisoning</strong>.</li>\n        <li>Sessioni e cookie HTTP esposti; dati non cifrati o chiavi rubate.</li>\n      </ul>\n    </div>\n    <div id=\"b-att\" class=\"box box-idea\">\n      <div class=\"box-label\">Regola d'oro · Pensare come un attaccante</div>\n      <ul class=\"clean-list\">\n        <li>Non comportarsi come un normale utente finale.</li>\n        <li><strong>Provare di proposito</strong> a fare la cosa sbagliata.</li>\n        <li><strong>Ripetere più volte</strong> le stesse azioni critiche.</li>\n      </ul>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 0,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "Il security testing persegue"
+        },
+        {
+          "at": 10.74,
+          "action": "highlight",
+          "target": "#b-sec1",
+          "duration": 22,
+          "anchor": "Trovare vulnerabilità è molto"
+        },
+        {
+          "at": 34.68,
+          "action": "highlight",
+          "target": "#b-sec2",
+          "duration": 18,
+          "anchor": "Un penetration testing condotto"
+        },
+        {
+          "at": 52.84,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Tra i rischi tipici rientrano"
+        },
+        {
+          "at": 52.84,
+          "action": "highlight",
+          "target": "#b-risk",
+          "duration": 12.5,
+          "anchor": "Tra i rischi tipici rientrano"
+        },
+        {
+          "at": 67.52,
+          "action": "highlight",
+          "target": "#b-att",
+          "duration": 9.5,
+          "anchor": "La regola d'oro è pensare"
+        }
+      ],
+      "audio_file": "audio/scene-06.wav",
+      "subtitle_file": "subtitles/scene-06.json",
+      "duration_sec": 74.79
+    },
+    {
+      "id": "scene-07",
+      "section": "11.7 · Limiti del testing e code review",
+      "title": "I tre limiti del testing, il processo di review e il caso Spotify",
+      "tts_text": "Nonostante la sua importanza, il testing ha tre limiti strutturali. Primo: verifica il codice rispetto a ciò che abbiamo capito, quindi un requisito frainteso finisce sia nel codice sia nei test. Secondo: può lasciare codice non coperto, o nel TDD produrre codice incompleto. Terzo: non misura leggibilità, struttura ed evolvibilità. [pause:0.6] Per questo le code review completano il testing. Il processo si articola in quattro fasi. Nella preparazione il programmatore imposta la review e distribuisce codice e test. Nel code checking il revisore esamina il codice e redige un rapporto. Seguono la discussione tra revisore e programmatore e il follow-up in cui il programmatore corregge il codice. [pause:0.6] Ogni sessione dovrebbe coprire da duecento a quattrocento righe, spesso attivate dai commit con supporto di chat come Slack e guidate da checklist su nomi, gestione errori, eccezioni, parametri di default, tipi e indentazione. [pause:0.5] Un esempio reale è Spotify: le squad autonome sottopongono il codice ai chapter specialistici o alle guild trasversali, e per eseguire il merge servono almeno due più uno, cioè due approvazioni.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">11.7 · Limiti del Testing &amp; Code Review</div>\n  <h2 class=\"slide-title\">Tre limiti dei test, quattro fasi di review e modello Spotify</h2>\n  <div id=\"s1\" class=\"box box-warn cue-hidden\">\n    <div class=\"box-label\">Tre limiti strutturali del testing</div>\n    <p><strong>1.</strong> Fraintendimenti nei requisiti passano sia nel codice sia nei test · <strong>2.</strong> Copertura parziale (o codice incompleto col TDD) · <strong>3.</strong> Nulla dice su leggibilità, struttura ed evolvibilità.</p>\n  </div>\n  <div id=\"s2\" class=\"svg-panel cue-hidden\">\n    <svg viewBox=\"0 0 640 112\" class=\"diagram-svg\" aria-label=\"Quattro fasi della code review\">\n      <defs>\n        <marker id=\"arr-r1\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\">\n          <path d=\"M0 1 L9 5 L0 9 z\" fill=\"var(--ink-soft)\"/>\n        </marker>\n      </defs>\n      <g id=\"cr-1\">\n        <text x=\"76\" y=\"14\" text-anchor=\"middle\" class=\"svg-caption\">Programmer</text>\n        <rect x=\"10\" y=\"22\" width=\"132\" height=\"60\" rx=\"7\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.5\"/>\n        <text x=\"76\" y=\"42\" text-anchor=\"middle\" class=\"svg-tick\">Set up &amp; prepare</text>\n        <text x=\"76\" y=\"58\" text-anchor=\"middle\" class=\"svg-tick\">Distribute code/tests</text>\n        <text x=\"76\" y=\"100\" text-anchor=\"middle\" class=\"svg-math\">1. Preparation</text>\n      </g>\n      <line x1=\"146\" y1=\"52\" x2=\"168\" y2=\"52\" stroke=\"var(--ink-soft)\" stroke-width=\"1.5\" marker-end=\"url(#arr-r1)\"/>\n      <g id=\"cr-2\">\n        <text x=\"238\" y=\"14\" text-anchor=\"middle\" class=\"svg-caption\">Reviewer</text>\n        <rect x=\"172\" y=\"22\" width=\"132\" height=\"60\" rx=\"7\" fill=\"var(--orange-soft, rgba(217,119,6,0.12))\" stroke=\"var(--orange)\" stroke-width=\"1.5\"/>\n        <text x=\"238\" y=\"42\" text-anchor=\"middle\" class=\"svg-tick\">Check code</text>\n        <text x=\"238\" y=\"58\" text-anchor=\"middle\" class=\"svg-tick\">Write review report</text>\n        <text x=\"238\" y=\"100\" text-anchor=\"middle\" class=\"svg-math\">2. Code checking</text>\n      </g>\n      <line x1=\"308\" y1=\"52\" x2=\"330\" y2=\"52\" stroke=\"var(--ink-soft)\" stroke-width=\"1.5\" marker-end=\"url(#arr-r1)\"/>\n      <g id=\"cr-3\">\n        <text x=\"398\" y=\"14\" text-anchor=\"middle\" class=\"svg-caption\">Reviewer + Programmer</text>\n        <ellipse cx=\"398\" cy=\"52\" rx=\"64\" ry=\"28\" fill=\"var(--bg-surface)\" stroke=\"var(--ink)\" stroke-width=\"1.5\"/>\n        <text x=\"398\" y=\"56\" text-anchor=\"middle\" class=\"svg-math\">Discussion</text>\n        <text x=\"398\" y=\"100\" text-anchor=\"middle\" class=\"svg-math\">3. Review</text>\n      </g>\n      <line x1=\"466\" y1=\"52\" x2=\"488\" y2=\"52\" stroke=\"var(--ink-soft)\" stroke-width=\"1.5\" marker-end=\"url(#arr-r1)\"/>\n      <g id=\"cr-4\">\n        <text x=\"560\" y=\"14\" text-anchor=\"middle\" class=\"svg-caption\">Programmer</text>\n        <rect x=\"492\" y=\"22\" width=\"136\" height=\"60\" rx=\"7\" fill=\"var(--green-soft, rgba(21,128,61,0.12))\" stroke=\"var(--green)\" stroke-width=\"1.5\"/>\n        <text x=\"560\" y=\"42\" text-anchor=\"middle\" class=\"svg-tick\">Prepare to-do list</text>\n        <text x=\"560\" y=\"58\" text-anchor=\"middle\" class=\"svg-tick\">Make code changes</text>\n        <text x=\"560\" y=\"100\" text-anchor=\"middle\" class=\"svg-math\">4. Follow-up</text>\n      </g>\n    </svg>\n  </div>\n  <div id=\"s3\" class=\"grid-2 cue-hidden\">\n    <div id=\"b-chk\" class=\"box box-def\">\n      <div class=\"box-label\">Pratiche e Checklist (200–400 righe)</div>\n      <p>Attivate dai commit con chat (es. Slack). Verifica: nomi chiari, errori sui dati e test, eccezioni esplicite; in Python anche parametri di default, tipi e indentazione.</p>\n    </div>\n    <div id=\"b-spot\" class=\"box box-idea\">\n      <div class=\"box-label\">Caso Spotify · Squad, Chapter &amp; Guild</div>\n      <p>Le <em>squad</em> fanno rivedere il codice da <strong>chapter</strong> specialistici o <strong>guild</strong> trasversali. Per il merge servono almeno <strong>due «+1»</strong>.</p>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 0.91,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "Nonostante la sua importanza"
+        },
+        {
+          "at": 2.45,
+          "action": "highlight",
+          "target": "#s1",
+          "duration": 18,
+          "anchor": "il testing ha tre limiti"
+        },
+        {
+          "at": 22.73,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Per questo le code review"
+        },
+        {
+          "at": 28.01,
+          "action": "highlight",
+          "target": "#cr-1",
+          "duration": 4.54,
+          "anchor": "Nella preparazione il programmatore"
+        },
+        {
+          "at": 32.67,
+          "action": "highlight",
+          "target": "#cr-2",
+          "duration": 4.06,
+          "anchor": "Nel code checking il revisore"
+        },
+        {
+          "at": 36.85,
+          "action": "highlight",
+          "target": "#cr-3",
+          "duration": 2.68,
+          "anchor": "Seguono la discussione"
+        },
+        {
+          "at": 39.65,
+          "action": "highlight",
+          "target": "#cr-4",
+          "duration": 3.52,
+          "anchor": "e il follow-up in cui"
+        },
+        {
+          "at": 43.29,
+          "action": "show",
+          "target": "#s3",
+          "anchor": "Ogni sessione dovrebbe coprire"
+        },
+        {
+          "at": 43.29,
+          "action": "highlight",
+          "target": "#b-chk",
+          "duration": 12.5,
+          "anchor": "Ogni sessione dovrebbe coprire"
+        },
+        {
+          "at": 58,
+          "action": "highlight",
+          "target": "#b-spot",
+          "duration": 11.5,
+          "anchor": "Un esempio reale è Spotify"
+        }
+      ],
+      "audio_file": "audio/scene-07.wav",
+      "subtitle_file": "subtitles/scene-07.json",
+      "duration_sec": 69.71
+    },
+    {
+      "id": "scene-08",
+      "section": "11.8 · Casi d'esame: partizioni, interessi, feature e review",
+      "title": "Dettagli chiave su unit, feature test, TDD e code review",
+      "tts_text": "Approfondiamo quattro casi chiave d'esame su unit testing, feature test, TDD e code review. [pause:0.5] Partiamo dal principio dello unit testing: se un'unità funziona sugli input uno, cinque, diciassette, quarantacinque e novantanove, otteniamo fiducia su tutti gli interi da uno a novantanove. [pause:0.5] Nelle linee guida, Force errors chiede input che generino output non validi; Repeat yourself ripete sia singoli input sia sequenze; Don't forget null and zero prova puntatori nulli, stringhe nulle, sequenze vuote e zero. [pause:0.6] Questo spiega l'esempio sugli interessi: con capitale p uguale a zero il risultato atteso è zero qualunque siano il tasso r e i giorni n, applicando proprio la linea guida su null e zero. [pause:0.6] Nei quattro feature test dalle user story, il login iniziale si completa se l'utente è già autenticato su Google; credenziali errate mostrano l'errore; sulle informazioni condivise premere annulla annulla la registrazione; sulle email nessuna scelta significa nessuna iscrizione. [pause:0.6] Infine, su TDD e review: tra i pro del TDD c'è codice forse più semplice; nella code review opera spesso un singolo revisore, anche esterno al team DevOps, che valuta leggibilità e comprensibilità; a Spotify i chapter riuniscono sviluppatori front office, back office, amministratori di database e tester.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">11.8 · Casi d'esame: partizioni, interessi, feature e review</div>\n  <h2 class=\"slide-title\">Dettagli chiave su unit, feature test, TDD e code review</h2>\n  <div id=\"s1\" class=\"grid-2 cue-hidden\">\n    <div id=\"b-unit\" class=\"box box-def\">\n      <div class=\"box-label\">Principio Unit Testing &amp; Linee guida</div>\n      <ul class=\"clean-list\">\n        <li id=\"u-1\"><strong>Campione <code>{1, 5, 17, 45, 99}</code></strong>: se l'unità funziona su questi valori, dà fiducia su tutti gli interi da <code>1</code> a <code>99</code>.</li>\n        <li id=\"u-2\"><strong>Force errors</strong>: input che generano errori e <em>output non validi</em>. <strong>Repeat yourself</strong>: ripetere sia <em>singoli input</em> sia sequenze.</li>\n        <li id=\"u-3\"><strong>Don't forget null and zero</strong>: provare sempre <em>puntatori nulli</em>, <em>stringhe nulle</em>, sequenza vuota e <code>0</code>.</li>\n      </ul>\n    </div>\n    <div id=\"b-int\" class=\"box box-algo\">\n      <div class=\"box-label\">Esempio AAA · Calcolo interessi (p = 0)</div>\n      <p id=\"in-1\"><strong>Arrange</strong>: <code>p = 0, r = 3, n = 31</code>, atteso <code>0</code> · <strong>Action</strong>: <code>interest_calculator(0, 3, 31)</code> · <strong>Assert</strong>: <code>assertEqual(0, interest)</code>.</p>\n      <p id=\"in-2\" style=\"margin-top:6px\">Con capitale <code>p = 0</code> il risultato atteso è sempre <strong>0</strong> indipendentemente da <code>r</code> e <code>n</code>: applica direttamente la linea guida <em>«don't forget null and zero»</em>.</p>\n    </div>\n  </div>\n  <div id=\"s2\" class=\"grid-2 cue-hidden\">\n    <div id=\"b-feat\" class=\"box box-primary\">\n      <div class=\"box-label\">4 Feature test derivati dalle user story</div>\n      <ul class=\"clean-list\">\n        <li id=\"f-1\"><strong>Initial login screen</strong>: clic su Google mostra credenziali; login completato se l'utente è <em>già autenticato su Google</em>.</li>\n        <li id=\"f-2\"><strong>Incorrect credentials</strong>: credenziali errate mostrano errore e retry.</li>\n        <li id=\"f-3\"><strong>Shared information</strong>: opzioni annulla / conferma; premere annulla <strong>annulla la registrazione</strong>.</li>\n        <li id=\"f-4\"><strong>Email opt-in</strong>: menu multi-scelta; nessuna scelta = nessuna iscrizione.</li>\n      </ul>\n    </div>\n    <div id=\"b-rev\" class=\"box box-idea\">\n      <div class=\"box-label\">TDD &amp; Code Review (ruoli e chapter Spotify)</div>\n      <ul class=\"clean-list\">\n        <li id=\"r-1\"><strong>Pro del TDD</strong>: codice <em>(forse)</em> più semplice, oltre a sistematicità e debugging incrementale.</li>\n        <li id=\"r-2\"><strong>Singolo revisore</strong>: spesso 1 solo reviewer (del team DevOps o <em>esterno</em>) che valuta <strong>leggibilità e comprensibilità</strong>.</li>\n        <li id=\"r-3\"><strong>Chapter Spotify</strong>: sviluppatori <em>front office</em>, <em>back office</em>, <em>DBA</em> (amministratori di database) e <em>tester</em>.</li>\n      </ul>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 0,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "Approfondiamo quattro casi chiave"
+        },
+        {
+          "at": 6.8,
+          "action": "highlight",
+          "target": "#u-1",
+          "duration": 11.5,
+          "anchor": "Partiamo dal principio dello unit"
+        },
+        {
+          "at": 18.84,
+          "action": "highlight",
+          "target": "#u-2",
+          "duration": 7.5,
+          "anchor": "Nelle linee guida, Force errors"
+        },
+        {
+          "at": 27.85,
+          "action": "highlight",
+          "target": "#u-3",
+          "duration": 5.86,
+          "anchor": "Don't forget null and zero"
+        },
+        {
+          "at": 33.83,
+          "action": "highlight",
+          "target": "#b-int",
+          "duration": 12.36,
+          "anchor": "Questo spiega l'esempio sugli interessi"
+        },
+        {
+          "at": 46.31,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Nei quattro feature test dalle"
+        },
+        {
+          "at": 46.31,
+          "action": "highlight",
+          "target": "#b-feat",
+          "duration": 15.8,
+          "anchor": "Nei quattro feature test dalle"
+        },
+        {
+          "at": 64.83,
+          "action": "highlight",
+          "target": "#r-1",
+          "duration": 4.8,
+          "anchor": "Infine, su TDD e review"
+        },
+        {
+          "at": 70.86,
+          "action": "highlight",
+          "target": "#r-2",
+          "duration": 7.5,
+          "anchor": "nella code review opera spesso"
+        },
+        {
+          "at": 78.46,
+          "action": "highlight",
+          "target": "#r-3",
+          "duration": 7.5,
+          "anchor": "a Spotify i chapter riuniscono"
+        }
+      ],
+      "audio_file": "audio/scene-08.wav",
+      "subtitle_file": "subtitles/scene-08.json",
+      "duration_sec": 85.11
+    },
+    {
+      "id": "scene-09",
+      "section": "11.9 · Riepilogo e autoverifica",
+      "title": "Punti chiave del capitolo e domande d'esame",
+      "tts_text": "Chiudiamo il capitolo sul testing fissando i cinque punti chiave da portare all'esame. [pause:0.5] Primo: il testing confronta il comportamento osservato con quello atteso su input simulati, ma mostra solo la presenza di bug e non equivale alla verifica formale; i quattro tipi sono functional, user con alpha e beta, performance e security. [pause:0.5] Secondo: il functional testing procede in quattro fasi — unit con partizioni e confini, feature da user story con interaction e usefulness test, system end-to-end e release nell'ambiente reale. [pause:0.5] Terzo: i test automatici seguono Arrange, Action e Assert con eventuali mock object, rispettando la piramide settanta per cento unit, venti per cento feature e dieci per cento system. [pause:0.5] Quarto: il test-driven development applica il ciclo Red, Green e Refactor con stub e regression testing continuo, mentre il security testing adotta un approccio basato sul rischio pensando come un attaccante. [pause:0.5] Quinto: poiché i test non rilevano fraintendimenti dei requisiti né la qualità interna del codice, le code review in quattro fasi li completano. [pause:0.6] Mettetevi ora alla prova rispondendo alle domande di verifica sulla destra.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">11.9 · Riepilogo &amp; Autoverifica</div>\n  <h2 class=\"slide-title\">Punti chiave e domande di verifica</h2>\n  <div class=\"grid-2\">\n    <div class=\"box box-algo\">\n      <div class=\"box-label\">Punti chiave da fissare</div>\n      <ul class=\"clean-list\">\n        <li id=\"s1\" class=\"cue-hidden\"><strong>Testing ≠ Verifica</strong>: mostra i bug ma non la loro assenza; 4 tipi (<em>functional</em>, <em>user</em> alpha/beta, <em>performance/load</em>, <em>security</em>).</li>\n        <li id=\"s2\" class=\"cue-hidden\"><strong>Functional a fasi</strong>: <em>Unit</em> (partizioni e confini), <em>Feature</em> (interaction &amp; usefulness da user story), <em>System</em> (end-to-end), <em>Release</em> (ambiente reale).</li>\n        <li id=\"s3\" class=\"cue-hidden\"><strong>Automazione</strong>: schema <em>Arrange–Action–Assert</em> (+ mock) e piramide 70% unit, 20% feature (API), 10% system.</li>\n        <li id=\"s4\" class=\"cue-hidden\"><strong>TDD &amp; Security</strong>: TDD <em>Red–Green–Refactor</em> con stub e regression continuo; security basato sul rischio pensando da attaccante.</li>\n        <li id=\"s5\" class=\"cue-hidden\"><strong>Code review</strong>: completano i test su comprensione e qualità (4 fasi, 200–400 righe, modello Spotify con due «+1»).</li>\n      </ul>\n    </div>\n    <div id=\"s6\" class=\"box box-theorem cue-hidden\">\n      <div class=\"box-label\">Domande di verifica</div>\n      <ol class=\"verify-list\">\n        <li>Che cos'è il testing e perché non è una verifica formale?</li>\n        <li>Quali sono i tipi di testing? Differenza tra alpha e beta?</li>\n        <li>Principio dello unit testing, equivalence partition e confini?</li>\n        <li>Differenza tra interaction e usefulness test? E le user story?</li>\n        <li>Scopi del system testing e specificità del release testing?</li>\n        <li>Struttura Arrange–Action–Assert e forma della piramide dei test?</li>\n        <li>Ciclo del TDD (stub, refactor), suoi vantaggi e svantaggi?</li>\n        <li>Difficoltà del security testing e approccio basato sul rischio?</li>\n        <li>Quali sono i limiti del testing e le fasi di una code review?</li>\n      </ol>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 4.78,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "Primo: il testing confronta"
+        },
+        {
+          "at": 4.78,
+          "action": "highlight",
+          "target": "#s1",
+          "duration": 14.77,
+          "anchor": "Primo: il testing confronta"
+        },
+        {
+          "at": 19.67,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Secondo: il functional testing"
+        },
+        {
+          "at": 19.67,
+          "action": "highlight",
+          "target": "#s2",
+          "duration": 12.42,
+          "anchor": "Secondo: il functional testing"
+        },
+        {
+          "at": 32.21,
+          "action": "show",
+          "target": "#s3",
+          "anchor": "Terzo: i test automatici"
+        },
+        {
+          "at": 32.21,
+          "action": "highlight",
+          "target": "#s3",
+          "duration": 11.12,
+          "anchor": "Terzo: i test automatici"
+        },
+        {
+          "at": 43.45,
+          "action": "show",
+          "target": "#s4",
+          "anchor": "Quarto: il test-driven development"
+        },
+        {
+          "at": 43.45,
+          "action": "highlight",
+          "target": "#s4",
+          "duration": 11.49,
+          "anchor": "Quarto: il test-driven development"
+        },
+        {
+          "at": 55.06,
+          "action": "show",
+          "target": "#s5",
+          "anchor": "Quinto: poiché i test"
+        },
+        {
+          "at": 55.06,
+          "action": "highlight",
+          "target": "#s5",
+          "duration": 10.5,
+          "anchor": "Quinto: poiché i test"
+        },
+        {
+          "at": 63.2,
+          "action": "show",
+          "target": "#s6",
+          "anchor": "Mettetevi ora alla prova"
+        }
+      ],
+      "audio_file": "audio/scene-09.wav",
+      "subtitle_file": "subtitles/scene-09.json",
+      "duration_sec": 66.45
+    }
+  ]
+}

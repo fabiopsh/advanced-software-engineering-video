@@ -1,0 +1,983 @@
+{
+  "duration": 73.113,
+  "segments": [
+    {
+      "start": 0.06,
+      "end": 4.461,
+      "text": "Il product backlog è l'elenco vivo di tutto ciò che resta da fare per completare",
+      "words": [
+        {
+          "text": "Il",
+          "start": 0.06,
+          "end": 0.18
+        },
+        {
+          "text": "product",
+          "start": 0.28,
+          "end": 0.68
+        },
+        {
+          "text": "backlog",
+          "start": 0.76,
+          "end": 1.28
+        },
+        {
+          "text": "è",
+          "start": 1.6,
+          "end": 1.6400000000000001
+        },
+        {
+          "text": "l'elenco",
+          "start": 1.72,
+          "end": 2.14
+        },
+        {
+          "text": "vivo",
+          "start": 2.22,
+          "end": 2.52
+        },
+        {
+          "text": "di",
+          "start": 2.58,
+          "end": 2.66
+        },
+        {
+          "text": "tutto",
+          "start": 2.72,
+          "end": 2.98
+        },
+        {
+          "text": "ciò",
+          "start": 3.02,
+          "end": 3.12
+        },
+        {
+          "text": "che",
+          "start": 3.16,
+          "end": 3.24
+        },
+        {
+          "text": "resta",
+          "start": 3.3,
+          "end": 3.5
+        },
+        {
+          "text": "da",
+          "start": 3.54,
+          "end": 3.6
+        },
+        {
+          "text": "fare",
+          "start": 3.62,
+          "end": 3.861
+        },
+        {
+          "text": "per",
+          "start": 3.901,
+          "end": 4.021
+        },
+        {
+          "text": "completare",
+          "start": 4.061,
+          "end": 4.461
+        }
+      ]
+    },
+    {
+      "start": 4.501,
+      "end": 5.041,
+      "text": "il prodotto.",
+      "words": [
+        {
+          "text": "il",
+          "start": 4.501,
+          "end": 4.561
+        },
+        {
+          "text": "prodotto.",
+          "start": 4.601,
+          "end": 5.041
+        }
+      ]
+    },
+    {
+      "start": 5.641,
+      "end": 9.001,
+      "text": "Le sue voci si chiamano product backlog item, o P B I,",
+      "words": [
+        {
+          "text": "Le",
+          "start": 5.641,
+          "end": 5.701
+        },
+        {
+          "text": "sue",
+          "start": 5.741,
+          "end": 5.861
+        },
+        {
+          "text": "voci",
+          "start": 5.881,
+          "end": 6.081
+        },
+        {
+          "text": "si",
+          "start": 6.141,
+          "end": 6.221
+        },
+        {
+          "text": "chiamano",
+          "start": 6.261,
+          "end": 6.561
+        },
+        {
+          "text": "product",
+          "start": 6.681,
+          "end": 7.101
+        },
+        {
+          "text": "backlog",
+          "start": 7.201,
+          "end": 7.541
+        },
+        {
+          "text": "item,",
+          "start": 7.781,
+          "end": 8.001
+        },
+        {
+          "text": "o",
+          "start": 8.301,
+          "end": 8.341
+        },
+        {
+          "text": "P",
+          "start": 8.521,
+          "end": 8.561
+        },
+        {
+          "text": "B",
+          "start": 8.661,
+          "end": 8.701
+        },
+        {
+          "text": "I,",
+          "start": 8.961,
+          "end": 9.001
+        }
+      ]
+    },
+    {
+      "start": 9.501,
+      "end": 12.262,
+      "text": "e il backlog deve essere sempre ordinato per priorità.",
+      "words": [
+        {
+          "text": "e",
+          "start": 9.501,
+          "end": 9.541
+        },
+        {
+          "text": "il",
+          "start": 9.601,
+          "end": 9.681
+        },
+        {
+          "text": "backlog",
+          "start": 9.741,
+          "end": 10.161
+        },
+        {
+          "text": "deve",
+          "start": 10.241,
+          "end": 10.381
+        },
+        {
+          "text": "essere",
+          "start": 10.421,
+          "end": 10.661
+        },
+        {
+          "text": "sempre",
+          "start": 10.801,
+          "end": 11.141
+        },
+        {
+          "text": "ordinato",
+          "start": 11.181,
+          "end": 11.622
+        },
+        {
+          "text": "per",
+          "start": 11.662,
+          "end": 11.782
+        },
+        {
+          "text": "priorità.",
+          "start": 11.842,
+          "end": 12.262
+        }
+      ]
+    },
+    {
+      "start": 13.242,
+      "end": 14.342,
+      "text": "Vediamo un esempio reale:",
+      "words": [
+        {
+          "text": "Vediamo",
+          "start": 13.242,
+          "end": 13.482
+        },
+        {
+          "text": "un",
+          "start": 13.502,
+          "end": 13.562
+        },
+        {
+          "text": "esempio",
+          "start": 13.602,
+          "end": 13.882
+        },
+        {
+          "text": "reale:",
+          "start": 13.942,
+          "end": 14.342
+        }
+      ]
+    },
+    {
+      "start": 15.222,
+      "end": 18.502,
+      "text": "include user stories per nuove funzionalità o richieste utente,",
+      "words": [
+        {
+          "text": "include",
+          "start": 15.222,
+          "end": 15.602
+        },
+        {
+          "text": "user",
+          "start": 15.822,
+          "end": 16.042
+        },
+        {
+          "text": "stories",
+          "start": 16.082,
+          "end": 16.442
+        },
+        {
+          "text": "per",
+          "start": 16.502,
+          "end": 16.622
+        },
+        {
+          "text": "nuove",
+          "start": 16.682,
+          "end": 16.902
+        },
+        {
+          "text": "funzionalità",
+          "start": 16.942,
+          "end": 17.502
+        },
+        {
+          "text": "o",
+          "start": 17.682,
+          "end": 17.722
+        },
+        {
+          "text": "richieste",
+          "start": 17.762,
+          "end": 18.102
+        },
+        {
+          "text": "utente,",
+          "start": 18.142,
+          "end": 18.502
+        }
+      ]
+    },
+    {
+      "start": 18.962,
+      "end": 22.883,
+      "text": "come configurare gli strumenti per classe o un'interfaccia grafica per bambini;",
+      "words": [
+        {
+          "text": "come",
+          "start": 18.962,
+          "end": 19.122
+        },
+        {
+          "text": "configurare",
+          "start": 19.262,
+          "end": 19.863
+        },
+        {
+          "text": "gli",
+          "start": 19.883,
+          "end": 19.983
+        },
+        {
+          "text": "strumenti",
+          "start": 20.023,
+          "end": 20.383
+        },
+        {
+          "text": "per",
+          "start": 20.423,
+          "end": 20.523
+        },
+        {
+          "text": "classe",
+          "start": 20.563,
+          "end": 20.943
+        },
+        {
+          "text": "o",
+          "start": 21.323,
+          "end": 21.363
+        },
+        {
+          "text": "un'interfaccia",
+          "start": 21.403,
+          "end": 21.963
+        },
+        {
+          "text": "grafica",
+          "start": 22.003,
+          "end": 22.323
+        },
+        {
+          "text": "per",
+          "start": 22.363,
+          "end": 22.463
+        },
+        {
+          "text": "bambini;",
+          "start": 22.523,
+          "end": 22.883
+        }
+      ]
+    },
+    {
+      "start": 23.763,
+      "end": 27.324,
+      "text": "ma anche attività di sviluppo, come valutare software open source,",
+      "words": [
+        {
+          "text": "ma",
+          "start": 23.763,
+          "end": 23.823
+        },
+        {
+          "text": "anche",
+          "start": 23.883,
+          "end": 24.063
+        },
+        {
+          "text": "attività",
+          "start": 24.263,
+          "end": 24.683
+        },
+        {
+          "text": "di",
+          "start": 24.743,
+          "end": 24.803
+        },
+        {
+          "text": "sviluppo,",
+          "start": 24.863,
+          "end": 25.223
+        },
+        {
+          "text": "come",
+          "start": 25.623,
+          "end": 25.783
+        },
+        {
+          "text": "valutare",
+          "start": 25.903,
+          "end": 26.303
+        },
+        {
+          "text": "software",
+          "start": 26.403,
+          "end": 26.763
+        },
+        {
+          "text": "open",
+          "start": 26.783,
+          "end": 26.943
+        },
+        {
+          "text": "source,",
+          "start": 26.983,
+          "end": 27.324
+        }
+      ]
+    },
+    {
+      "start": 27.764,
+      "end": 31.284,
+      "text": "e miglioramenti tecnici come refactoring o cifratura dei dati.",
+      "words": [
+        {
+          "text": "e",
+          "start": 27.764,
+          "end": 27.804
+        },
+        {
+          "text": "miglioramenti",
+          "start": 27.944,
+          "end": 28.444
+        },
+        {
+          "text": "tecnici",
+          "start": 28.484,
+          "end": 28.924
+        },
+        {
+          "text": "come",
+          "start": 29.324,
+          "end": 29.484
+        },
+        {
+          "text": "refactoring",
+          "start": 29.604,
+          "end": 30.204
+        },
+        {
+          "text": "o",
+          "start": 30.324,
+          "end": 30.364
+        },
+        {
+          "text": "cifratura",
+          "start": 30.424,
+          "end": 30.844
+        },
+        {
+          "text": "dei",
+          "start": 30.884,
+          "end": 30.984
+        },
+        {
+          "text": "dati.",
+          "start": 31.004,
+          "end": 31.284
+        }
+      ]
+    },
+    {
+      "start": 32.464,
+      "end": 35.125,
+      "text": "Ogni P B I attraversa tre stati di maturazione.",
+      "words": [
+        {
+          "text": "Ogni",
+          "start": 32.464,
+          "end": 32.704
+        },
+        {
+          "text": "P",
+          "start": 32.804,
+          "end": 32.844
+        },
+        {
+          "text": "B",
+          "start": 32.944,
+          "end": 32.984
+        },
+        {
+          "text": "I",
+          "start": 33.244,
+          "end": 33.284
+        },
+        {
+          "text": "attraversa",
+          "start": 33.464,
+          "end": 33.884
+        },
+        {
+          "text": "tre",
+          "start": 33.984,
+          "end": 34.104
+        },
+        {
+          "text": "stati",
+          "start": 34.164,
+          "end": 34.404
+        },
+        {
+          "text": "di",
+          "start": 34.444,
+          "end": 34.504
+        },
+        {
+          "text": "maturazione.",
+          "start": 34.524,
+          "end": 35.125
+        }
+      ]
+    },
+    {
+      "start": 36.145,
+      "end": 39.785,
+      "text": "Ready for consideration: idee ad alto livello, ancora provvisorie.",
+      "words": [
+        {
+          "text": "Ready",
+          "start": 36.145,
+          "end": 36.325
+        },
+        {
+          "text": "for",
+          "start": 36.365,
+          "end": 36.505
+        },
+        {
+          "text": "consideration:",
+          "start": 36.525,
+          "end": 37.165
+        },
+        {
+          "text": "idee",
+          "start": 37.685,
+          "end": 37.965
+        },
+        {
+          "text": "ad",
+          "start": 38.005,
+          "end": 38.085
+        },
+        {
+          "text": "alto",
+          "start": 38.105,
+          "end": 38.285
+        },
+        {
+          "text": "livello,",
+          "start": 38.325,
+          "end": 38.605
+        },
+        {
+          "text": "ancora",
+          "start": 38.745,
+          "end": 39.105
+        },
+        {
+          "text": "provvisorie.",
+          "start": 39.145,
+          "end": 39.785
+        }
+      ]
+    },
+    {
+      "start": 40.485,
+      "end": 44.246,
+      "text": "Ready for refinement: voce importante per lo sviluppo corrente,",
+      "words": [
+        {
+          "text": "Ready",
+          "start": 40.485,
+          "end": 40.685
+        },
+        {
+          "text": "for",
+          "start": 40.725,
+          "end": 40.865
+        },
+        {
+          "text": "refinement:",
+          "start": 40.905,
+          "end": 41.465
+        },
+        {
+          "text": "voce",
+          "start": 42.065,
+          "end": 42.305
+        },
+        {
+          "text": "importante",
+          "start": 42.486,
+          "end": 43.146
+        },
+        {
+          "text": "per",
+          "start": 43.166,
+          "end": 43.286
+        },
+        {
+          "text": "lo",
+          "start": 43.326,
+          "end": 43.386
+        },
+        {
+          "text": "sviluppo",
+          "start": 43.426,
+          "end": 43.726
+        },
+        {
+          "text": "corrente,",
+          "start": 43.766,
+          "end": 44.246
+        }
+      ]
+    },
+    {
+      "start": 44.486,
+      "end": 45.866,
+      "text": "chiara ma da raffinare.",
+      "words": [
+        {
+          "text": "chiara",
+          "start": 44.486,
+          "end": 44.886
+        },
+        {
+          "text": "ma",
+          "start": 45.126,
+          "end": 45.186
+        },
+        {
+          "text": "da",
+          "start": 45.246,
+          "end": 45.306
+        },
+        {
+          "text": "raffinare.",
+          "start": 45.346,
+          "end": 45.866
+        }
+      ]
+    },
+    {
+      "start": 46.766,
+      "end": 51.427,
+      "text": "Ready for implementation: dettagliata a sufficienza per stimare lo sforzo e implementarla,",
+      "words": [
+        {
+          "text": "Ready",
+          "start": 46.766,
+          "end": 46.966
+        },
+        {
+          "text": "for",
+          "start": 47.026,
+          "end": 47.166
+        },
+        {
+          "text": "implementation:",
+          "start": 47.226,
+          "end": 47.906
+        },
+        {
+          "text": "dettagliata",
+          "start": 48.386,
+          "end": 48.826
+        },
+        {
+          "text": "a",
+          "start": 48.846,
+          "end": 48.886
+        },
+        {
+          "text": "sufficienza",
+          "start": 48.926,
+          "end": 49.426
+        },
+        {
+          "text": "per",
+          "start": 49.466,
+          "end": 49.566
+        },
+        {
+          "text": "stimare",
+          "start": 49.606,
+          "end": 49.926
+        },
+        {
+          "text": "lo",
+          "start": 49.966,
+          "end": 50.026
+        },
+        {
+          "text": "sforzo",
+          "start": 50.066,
+          "end": 50.507
+        },
+        {
+          "text": "e",
+          "start": 50.647,
+          "end": 50.687
+        },
+        {
+          "text": "implementarla,",
+          "start": 50.767,
+          "end": 51.427
+        }
+      ]
+    },
+    {
+      "start": 51.707,
+      "end": 52.627,
+      "text": "con dipendenze note.",
+      "words": [
+        {
+          "text": "con",
+          "start": 51.707,
+          "end": 51.827
+        },
+        {
+          "text": "dipendenze",
+          "start": 51.867,
+          "end": 52.327
+        },
+        {
+          "text": "note.",
+          "start": 52.367,
+          "end": 52.627
+        }
+      ]
+    },
+    {
+      "start": 53.727,
+      "end": 56.407,
+      "text": "Il backlog viene mantenuto con quattro attività continue:",
+      "words": [
+        {
+          "text": "Il",
+          "start": 53.727,
+          "end": 53.807
+        },
+        {
+          "text": "backlog",
+          "start": 53.867,
+          "end": 54.207
+        },
+        {
+          "text": "viene",
+          "start": 54.367,
+          "end": 54.547
+        },
+        {
+          "text": "mantenuto",
+          "start": 54.627,
+          "end": 55.047
+        },
+        {
+          "text": "con",
+          "start": 55.087,
+          "end": 55.207
+        },
+        {
+          "text": "quattro",
+          "start": 55.267,
+          "end": 55.527
+        },
+        {
+          "text": "attività",
+          "start": 55.547,
+          "end": 55.887
+        },
+        {
+          "text": "continue:",
+          "start": 55.947,
+          "end": 56.407
+        }
+      ]
+    },
+    {
+      "start": 57.287,
+      "end": 59.108,
+      "text": "refinement, per dettagliare le voci;",
+      "words": [
+        {
+          "text": "refinement,",
+          "start": 57.287,
+          "end": 57.807
+        },
+        {
+          "text": "per",
+          "start": 58.148,
+          "end": 58.268
+        },
+        {
+          "text": "dettagliare",
+          "start": 58.328,
+          "end": 58.728
+        },
+        {
+          "text": "le",
+          "start": 58.768,
+          "end": 58.828
+        },
+        {
+          "text": "voci;",
+          "start": 58.848,
+          "end": 59.108
+        }
+      ]
+    },
+    {
+      "start": 59.788,
+      "end": 66.349,
+      "text": "estimation, in person-hour o person-day, dove per esempio dieci person-day con due persone richiedono cinque",
+      "words": [
+        {
+          "text": "estimation,",
+          "start": 59.788,
+          "end": 60.288
+        },
+        {
+          "text": "in",
+          "start": 60.648,
+          "end": 60.748
+        },
+        {
+          "text": "person-hour",
+          "start": 60.808,
+          "end": 61.488
+        },
+        {
+          "text": "o",
+          "start": 61.628,
+          "end": 61.668
+        },
+        {
+          "text": "person-day,",
+          "start": 61.748,
+          "end": 62.288
+        },
+        {
+          "text": "dove",
+          "start": 62.668,
+          "end": 62.808
+        },
+        {
+          "text": "per",
+          "start": 62.888,
+          "end": 62.988
+        },
+        {
+          "text": "esempio",
+          "start": 62.988,
+          "end": 63.288
+        },
+        {
+          "text": "dieci",
+          "start": 63.648,
+          "end": 63.948
+        },
+        {
+          "text": "person-day",
+          "start": 64.008,
+          "end": 64.488
+        },
+        {
+          "text": "con",
+          "start": 64.528,
+          "end": 64.688
+        },
+        {
+          "text": "due",
+          "start": 64.748,
+          "end": 64.868
+        },
+        {
+          "text": "persone",
+          "start": 64.908,
+          "end": 65.388
+        },
+        {
+          "text": "richiedono",
+          "start": 65.568,
+          "end": 65.929
+        },
+        {
+          "text": "cinque",
+          "start": 66.029,
+          "end": 66.349
+        }
+      ]
+    },
+    {
+      "start": 66.389,
+      "end": 72.709,
+      "text": "giorni; creation di nuove voci; e prioritization, per riordinare in base a nuove informazioni.",
+      "words": [
+        {
+          "text": "giorni;",
+          "start": 66.389,
+          "end": 66.689
+        },
+        {
+          "text": "creation",
+          "start": 67.469,
+          "end": 67.989
+        },
+        {
+          "text": "di",
+          "start": 68.189,
+          "end": 68.269
+        },
+        {
+          "text": "nuove",
+          "start": 68.369,
+          "end": 68.609
+        },
+        {
+          "text": "voci;",
+          "start": 68.649,
+          "end": 68.909
+        },
+        {
+          "text": "e",
+          "start": 69.369,
+          "end": 69.409
+        },
+        {
+          "text": "prioritization,",
+          "start": 69.509,
+          "end": 70.309
+        },
+        {
+          "text": "per",
+          "start": 70.749,
+          "end": 70.889
+        },
+        {
+          "text": "riordinare",
+          "start": 70.949,
+          "end": 71.469
+        },
+        {
+          "text": "in",
+          "start": 71.509,
+          "end": 71.549
+        },
+        {
+          "text": "base",
+          "start": 71.589,
+          "end": 71.789
+        },
+        {
+          "text": "a",
+          "start": 71.829,
+          "end": 71.869
+        },
+        {
+          "text": "nuove",
+          "start": 71.929,
+          "end": 72.109
+        },
+        {
+          "text": "informazioni.",
+          "start": 72.129,
+          "end": 72.709
+        }
+      ]
+    }
+  ]
+}

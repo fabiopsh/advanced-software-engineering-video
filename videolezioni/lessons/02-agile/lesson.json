@@ -1,0 +1,827 @@
+{
+  "lesson_id": "02-agile",
+  "chapter": 2,
+  "part": "Parte I · Prodotti software e sviluppo agile",
+  "title": "Sviluppo agile",
+  "voice_config": {
+    "provider": "gemini",
+    "model": "gemini-3.8-flash-tts",
+    "voice_name": "Ludo",
+    "style": "chiaro, didattico, calmo e preciso, stile lezione universitaria di ingegneria del software"
+  },
+  "scenes": [
+    {
+      "id": "scene-01",
+      "section": "2.1 · Plan-driven vs Agile e Manifesto",
+      "title": "Dallo sviluppo plan-driven al Manifesto Agile",
+      "tts_text": "Benvenuti al secondo capitolo, dedicato allo sviluppo agile. Nel primo capitolo abbiamo visto che i prodotti software devono arrivare presto sul mercato. [pause:0.5] Per capire perché servano i metodi agili, confrontiamoli con lo sviluppo plan-driven tipico del Novecento. [pause:0.5] L'approccio plan-driven si basa su cinque pilastri: pianificazione dettagliata del progetto, specifica formale dei requisiti, metodi rigorosi di analisi e design, documentazione completa del sistema e controllo formale della qualità. [pause:0.5] Tutto questo genera un overhead enorme: per prodotti piccoli e medi, la burocrazia di piano e documenti finisce per dominare lo sviluppo. [pause:0.6] L'Agile software engineering ribalta la prospettiva concentrandosi sul software, con tre obiettivi: consegnare funzionalità rapidamente, rispondere subito ai cambiamenti e minimizzare l'overhead. [pause:0.6] Nel duemilauno nasce così il Manifesto Agile, fondato su quattro valori: c'è valore negli elementi a destra, ma si preferiscono quelli a sinistra. [pause:0.5] Individui e interazioni più di processi e strumenti; software funzionante più di documentazione completa; collaborazione con il cliente più di negoziazione del contratto; e risposta al cambiamento più di aderenza a un piano.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">2.1 · Plan-driven vs Agile &amp; Manifesto</div>\n  <h2 class=\"slide-title\">Dallo sviluppo plan-driven al Manifesto Agile (2001)</h2>\n  <div id=\"s1\" class=\"grid-2 cue-hidden\">\n    <div id=\"b-plan\" class=\"box box-warn\">\n      <div class=\"box-label\">Plan-driven (Novecento)</div>\n      <ul class=\"clean-list\">\n        <li>Pianificazione dettagliata &amp; specifica dei requisiti</li>\n        <li>Metodi di analisi e design + documentazione completa</li>\n        <li>Controllo formale della qualità &rarr; <strong>overhead dominante</strong> su prodotti piccoli e medi</li>\n      </ul>\n    </div>\n    <div id=\"b-agile\" class=\"box box-primary\">\n      <div class=\"box-label\">Agile Software Engineering</div>\n      <ul class=\"clean-list\">\n        <li>Consegnare le funzionalità rapidamente</li>\n        <li>Rispondere rapidamente ai cambiamenti</li>\n        <li><strong>Minimizzare l'overhead</strong> concentrandosi sul software</li>\n      </ul>\n    </div>\n  </div>\n  <table id=\"s2\" class=\"acad-table cue-hidden\">\n    <thead>\n      <tr><th>Preferiamo (valore primario)</th><th>più di</th><th>Approccio tradizionale</th></tr>\n    </thead>\n    <tbody>\n      <tr id=\"v-1\"><td><strong>Individui e interazioni</strong></td><td><em>più di</em></td><td>processi e strumenti</td></tr>\n      <tr id=\"v-2\"><td><strong>Software funzionante</strong></td><td><em>più di</em></td><td>documentazione completa</td></tr>\n      <tr id=\"v-3\"><td><strong>Collaborazione con il cliente</strong></td><td><em>più di</em></td><td>negoziazione del contratto</td></tr>\n      <tr id=\"v-4\"><td><strong>Risposta al cambiamento</strong></td><td><em>più di</em></td><td>aderenza a un piano</td></tr>\n    </tbody>\n  </table>\n</div>\n",
+      "cues": [
+        {
+          "at": 1.8,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "dedicato allo sviluppo agile"
+        },
+        {
+          "action": "highlight",
+          "target": "#s1",
+          "anchor": "dedicato allo sviluppo agile",
+          "at": 1.8,
+          "duration": 9.12
+        },
+        {
+          "at": 11.04,
+          "action": "highlight",
+          "target": "#b-plan",
+          "duration": 24.85,
+          "anchor": "confrontiamoli con lo sviluppo"
+        },
+        {
+          "at": 38.51,
+          "action": "highlight",
+          "target": "#b-agile",
+          "duration": 9.95,
+          "anchor": "L'Agile software engineering ribalta"
+        },
+        {
+          "at": 51.69,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "nasce così il Manifesto Agile"
+        },
+        {
+          "at": 51.69,
+          "action": "highlight",
+          "target": "#s2",
+          "duration": 7.68,
+          "anchor": "nasce così il Manifesto Agile"
+        },
+        {
+          "at": 59.49,
+          "action": "highlight",
+          "target": "#v-1",
+          "duration": 3.19,
+          "anchor": "Individui e interazioni più di"
+        },
+        {
+          "at": 62.87,
+          "action": "highlight",
+          "target": "#v-2",
+          "duration": 2.35,
+          "anchor": "software funzionante più di"
+        },
+        {
+          "at": 66.21,
+          "action": "highlight",
+          "target": "#v-3",
+          "duration": 3.58,
+          "anchor": "collaborazione con il cliente"
+        },
+        {
+          "at": 69.91,
+          "action": "highlight",
+          "target": "#v-4",
+          "duration": 3.75,
+          "anchor": "risposta al cambiamento più di"
+        }
+      ],
+      "audio_file": "audio/scene-01.wav",
+      "subtitle_file": "subtitles/scene-01.json",
+      "duration_sec": 72.84
+    },
+    {
+      "id": "scene-02",
+      "section": "2.2 · I 12 Principi e Sviluppo Incrementale",
+      "title": "I dodici principi agili e il ciclo incrementale",
+      "tts_text": "Il Manifesto Agile traduce i suoi quattro valori in dodici principi operativi, e tutti i metodi agili li realizzano tramite lo sviluppo incrementale. [pause:0.5] Guardiamo prima i dodici principi, raggruppati in quattro aree. [pause:0.5] Sul valore per il cliente: priorità massima alla soddisfazione tramite consegne rapide e continue di software funzionante, da poche settimane a un paio di mesi, accogliendo i cambiamenti anche a sviluppo avanzato. [pause:0.5] Sul lavoro di team: business e sviluppatori collaborano ogni giorno; si costruiscono progetti attorno a persone motivate, privilegiando la conversazione faccia a faccia e team che si auto-organizzano. [pause:0.5] Su qualità e ritmo: il software funzionante misura il progresso; serve un ritmo sostenibile indefinitamente, eccellenza tecnica e semplicità, cioè massimizzare il lavoro non fatto. Infine, il team riflette regolarmente per adattarsi e migliorare. [pause:0.6] Sul lato sinistro vedete come tutto questo prenda forma nel ciclo incrementale. [pause:0.5] Partendo dalla lista delle feature del prodotto, si scelgono quelle dell'incremento, se ne raffinano le descrizioni, le si implementa e collauda, le si integra nel sistema e si consegna l'incremento. [pause:0.5] Il ciclo riparte finché tutte le feature sono complete: solo allora avviene la release finale del sistema.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">2.2 · I 12 Principi &amp; Sviluppo Incrementale</div>\n  <h2 class=\"slide-title\">Dodici principi agili e ciclo di consegna incrementale</h2>\n  <div id=\"s1\" class=\"split-visual cue-hidden\">\n    <div id=\"svg-inc\" class=\"svg-panel\">\n      <svg viewBox=\"0 0 360 220\" class=\"diagram-svg\" aria-label=\"Ciclo dello sviluppo incrementale\">\n        <defs>\n          <marker id=\"arr-inc\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\">\n            <path d=\"M0 1 L9 5 L0 9 z\" fill=\"var(--ink-soft)\"/>\n          </marker>\n        </defs>\n        <text x=\"92\" y=\"16\" text-anchor=\"middle\" class=\"svg-caption\">Product feature list</text>\n        <line x1=\"92\" y1=\"21\" x2=\"92\" y2=\"35\" stroke=\"var(--ink-soft)\" stroke-width=\"1.5\" marker-end=\"url(#arr-inc)\"/>\n        <g id=\"inc-choose\">\n          <rect x=\"22\" y=\"38\" width=\"140\" height=\"34\" rx=\"7\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.6\"/>\n          <text x=\"92\" y=\"53\" text-anchor=\"middle\" class=\"svg-tick\">Choose features</text>\n          <text x=\"92\" y=\"65\" text-anchor=\"middle\" class=\"svg-caption\">for increment</text>\n        </g>\n        <line x1=\"162\" y1=\"55\" x2=\"196\" y2=\"55\" stroke=\"var(--ink-soft)\" stroke-width=\"1.5\" marker-end=\"url(#arr-inc)\"/>\n        <g id=\"inc-refine\">\n          <rect x=\"200\" y=\"38\" width=\"140\" height=\"34\" rx=\"7\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.6\"/>\n          <text x=\"270\" y=\"53\" text-anchor=\"middle\" class=\"svg-tick\">Refine feature</text>\n          <text x=\"270\" y=\"65\" text-anchor=\"middle\" class=\"svg-caption\">descriptions</text>\n        </g>\n        <line x1=\"270\" y1=\"72\" x2=\"270\" y2=\"96\" stroke=\"var(--ink-soft)\" stroke-width=\"1.5\" marker-end=\"url(#arr-inc)\"/>\n        <g id=\"inc-impl\">\n          <rect x=\"200\" y=\"100\" width=\"140\" height=\"34\" rx=\"7\" fill=\"var(--orange-soft, rgba(217,119,6,0.12))\" stroke=\"var(--orange)\" stroke-width=\"1.6\"/>\n          <text x=\"270\" y=\"115\" text-anchor=\"middle\" class=\"svg-tick\">Implement and</text>\n          <text x=\"270\" y=\"127\" text-anchor=\"middle\" class=\"svg-caption\">test feature</text>\n        </g>\n        <line x1=\"200\" y1=\"117\" x2=\"166\" y2=\"117\" stroke=\"var(--ink-soft)\" stroke-width=\"1.5\" marker-end=\"url(#arr-inc)\"/>\n        <g id=\"inc-integ\">\n          <rect x=\"22\" y=\"100\" width=\"140\" height=\"34\" rx=\"7\" fill=\"var(--orange-soft, rgba(217,119,6,0.12))\" stroke=\"var(--orange)\" stroke-width=\"1.6\"/>\n          <text x=\"92\" y=\"115\" text-anchor=\"middle\" class=\"svg-tick\">Integrate feature</text>\n          <text x=\"92\" y=\"127\" text-anchor=\"middle\" class=\"svg-caption\">into system</text>\n        </g>\n        <line x1=\"92\" y1=\"134\" x2=\"92\" y2=\"156\" stroke=\"var(--ink-soft)\" stroke-width=\"1.5\" marker-end=\"url(#arr-inc)\"/>\n        <g id=\"inc-deliv\">\n          <rect x=\"22\" y=\"160\" width=\"140\" height=\"34\" rx=\"7\" fill=\"var(--green-soft, rgba(21,128,61,0.12))\" stroke=\"var(--green)\" stroke-width=\"1.6\"/>\n          <text x=\"92\" y=\"175\" text-anchor=\"middle\" class=\"svg-tick\">Deliver system</text>\n          <text x=\"92\" y=\"187\" text-anchor=\"middle\" class=\"svg-caption\">increment</text>\n        </g>\n        <path d=\"M 22 177 L 8 177 L 8 55 L 18 55\" fill=\"none\" stroke=\"var(--blue)\" stroke-width=\"1.5\" marker-end=\"url(#arr-inc)\"/>\n        <line x1=\"162\" y1=\"177\" x2=\"198\" y2=\"177\" stroke=\"var(--green)\" stroke-width=\"1.5\" marker-end=\"url(#arr-inc)\"/>\n        <text x=\"276\" y=\"173\" text-anchor=\"middle\" class=\"svg-caption\">Tutte complete:</text>\n        <text x=\"276\" y=\"186\" text-anchor=\"middle\" class=\"svg-math\">System release</text>\n      </svg>\n    </div>\n    <div class=\"formula-col\">\n      <div id=\"p-val\" class=\"box box-primary\">\n        <div class=\"box-label\">Valore &amp; Consegna (Principi 1–3)</div>\n        <p>Soddisfare il cliente con consegne rapide e continue (2 sett.–2 mesi); cambiamenti benvenuti anche tardi.</p>\n      </div>\n      <div id=\"p-team\" class=\"box box-def\">\n        <div class=\"box-label\">Persone &amp; Team (Principi 4–6, 11)</div>\n        <p>Business e dev ogni giorno insieme; persone motivate, faccia a faccia, architetture da team auto-organizzati.</p>\n      </div>\n      <div id=\"p-qual\" class=\"box box-idea\">\n        <div class=\"box-label\">Qualità &amp; Semplicità (Principi 7–10)</div>\n        <p>Software funzionante = misura del progresso; ritmo sostenibile, eccellenza tecnica, massimizzare il lavoro <em>non</em> fatto.</p>\n      </div>\n      <div id=\"p-adapt\" class=\"box box-algo\">\n        <div class=\"box-label\">Adattamento (Principio 12)</div>\n        <p>A intervalli regolari il team riflette su come diventare più efficace e adatta il proprio comportamento.</p>\n      </div>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 1.55,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "traduce i suoi quattro valori"
+        },
+        {
+          "action": "highlight",
+          "target": "#s1",
+          "anchor": "traduce i suoi quattro valori",
+          "at": 1.55,
+          "duration": 11
+        },
+        {
+          "at": 12.67,
+          "action": "highlight",
+          "target": "#p-val",
+          "duration": 12.34,
+          "anchor": "Sul valore per il cliente"
+        },
+        {
+          "at": 25.13,
+          "action": "highlight",
+          "target": "#p-team",
+          "duration": 11.51,
+          "anchor": "Sul lavoro di team"
+        },
+        {
+          "at": 36.82,
+          "action": "highlight",
+          "target": "#p-qual",
+          "duration": 10.27,
+          "anchor": "Su qualità e ritmo"
+        },
+        {
+          "at": 49,
+          "action": "highlight",
+          "target": "#p-adapt",
+          "duration": 3.6,
+          "anchor": "Infine, il team riflette regolarmente"
+        },
+        {
+          "at": 53.36,
+          "action": "highlight",
+          "target": "#svg-inc",
+          "duration": 4.5,
+          "anchor": "Sul lato sinistro vedete"
+        },
+        {
+          "at": 57.98,
+          "action": "highlight",
+          "target": "#inc-choose",
+          "duration": 4.43,
+          "anchor": "Partendo dalla lista delle feature"
+        },
+        {
+          "at": 62.58,
+          "action": "highlight",
+          "target": "#inc-refine",
+          "duration": 1.56,
+          "anchor": "se ne raffinano le descrizioni"
+        },
+        {
+          "at": 64.26,
+          "action": "highlight",
+          "target": "#inc-impl",
+          "duration": 1.66,
+          "anchor": "le si implementa e collauda"
+        },
+        {
+          "at": 66.04,
+          "action": "highlight",
+          "target": "#inc-integ",
+          "duration": 1.62,
+          "anchor": "le si integra nel sistema"
+        },
+        {
+          "at": 67.78,
+          "action": "highlight",
+          "target": "#inc-deliv",
+          "duration": 8.33,
+          "anchor": "si consegna l'incremento"
+        }
+      ],
+      "audio_file": "audio/scene-02.wav",
+      "subtitle_file": "subtitles/scene-02.json",
+      "duration_sec": 75.59
+    },
+    {
+      "id": "scene-03",
+      "section": "2.3 · Extreme Programming (XP)",
+      "title": "Le dieci pratiche di Extreme Programming",
+      "tts_text": "Tra i metodi agili storici spicca Extreme Programming, abbreviato in X P, che porta all'estremo le buone pratiche ingegneristiche riunendone dieci. [pause:0.5] Vediamo le prime cinque nella tabella in alto. [pause:0.4] Incremental planning con user stories: nessun piano generale rigido, i requisiti nascono col rappresentante del cliente e si scelgono per tempo e priorità. Small releases: si rilascia subito il minimo insieme utile di valore e si aggiungono funzioni con frequenza. [pause:0.5] Test-driven development: si scrivono prima i test automatici e poi il codice, così ogni modifica è subito verificata. Continuous integration: appena un task è pronto si integra nel sistema ed eseguono automaticamente tutti gli unit test. E refactoring: migliorare continuamente struttura, leggibilità, efficienza e sicurezza del codice. [pause:0.6] In basso trovate le altre cinque pratiche. [pause:0.4] Simple design: progettare solo ciò che serve ora, lasciando al refactoring i cambi futuri, applicando il principio dieci. Pair programming: due sviluppatori alla stessa postazione, uno scrive e l'altro controlla. [pause:0.4] Collective ownership: chiunque può modificare qualsiasi parte del codice, protetto dagli unit test. Sustainable pace: niente straordinari continui, secondo il principio otto. Infine on-site customer: un cliente sempre presente con il team, in linea con il principio quattro.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">2.3 · Extreme Programming (XP)</div>\n  <h2 class=\"slide-title\">Le dieci pratiche fondamentali di Extreme Programming</h2>\n  <table id=\"s1\" class=\"acad-table cue-hidden\">\n    <thead>\n      <tr><th>Pratica XP (1–5)</th><th>Descrizione operativa</th></tr>\n    </thead>\n    <tbody>\n      <tr id=\"xp-1\"><td><strong>Incremental planning</strong></td><td>Nessun piano generale: requisiti come <em>user stories</em> con il cliente, scelti per tempo e priorità.</td></tr>\n      <tr id=\"xp-2\"><td><strong>Small releases</strong></td><td>Minimo insieme utile con valore di business, seguito da release frequenti e incrementali.</td></tr>\n      <tr id=\"xp-3\"><td><strong>Test-driven development</strong></td><td>Prima i test poi il codice: suite automatica di unit test eseguita a ogni modifica.</td></tr>\n      <tr id=\"xp-4\"><td><strong>Continuous integration</strong></td><td>Task integrato subito nel sistema; tutti gli unit test devono passare prima di accettare la versione.</td></tr>\n      <tr id=\"xp-5\"><td><strong>Refactoring</strong></td><td>Miglioramento continuo di struttura, leggibilità, efficienza e sicurezza del codice.</td></tr>\n    </tbody>\n  </table>\n  <div id=\"s2\" class=\"grid-2 cue-hidden\">\n    <div class=\"box box-primary\">\n      <div class=\"box-label\">Design &amp; Collaborazione (6–8)</div>\n      <ul class=\"clean-list\">\n        <li id=\"xp-6\"><strong>Simple design</strong>: soluzione più semplice per i requisiti di <em>adesso</em> (Principio 10).</li>\n        <li id=\"xp-7\"><strong>Pair programming</strong>: due dev alla stessa postazione; revisione immediata e conoscenza condivisa.</li>\n        <li id=\"xp-8\"><strong>Collective ownership</strong>: codice di tutto il team; unit test proteggono le modifiche.</li>\n      </ul>\n    </div>\n    <div class=\"box box-def\">\n      <div class=\"box-label\">Ritmo &amp; Cliente (9–10)</div>\n      <ul class=\"clean-list\">\n        <li id=\"xp-9\"><strong>Sustainable pace</strong>: evitare straordinario continuo per preservare la qualità (Principio 8).</li>\n        <li id=\"xp-10\"><strong>On-site customer</strong>: rappresentante cliente sempre col team per dubbi e priorità (Principio 4).</li>\n      </ul>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 0.14,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "metodi agili storici spicca"
+        },
+        {
+          "action": "highlight",
+          "target": "#s1",
+          "anchor": "metodi agili storici spicca",
+          "at": 0.14,
+          "duration": 11
+        },
+        {
+          "at": 12.6,
+          "action": "highlight",
+          "target": "#xp-1",
+          "duration": 9.44,
+          "anchor": "Incremental planning con user stories"
+        },
+        {
+          "at": 23.26,
+          "action": "highlight",
+          "target": "#xp-2",
+          "duration": 6.93,
+          "anchor": "Small releases: si rilascia subito"
+        },
+        {
+          "at": 30.32,
+          "action": "highlight",
+          "target": "#xp-3",
+          "duration": 7.35,
+          "anchor": "Test-driven development: si scrivono prima"
+        },
+        {
+          "at": 37.93,
+          "action": "highlight",
+          "target": "#xp-4",
+          "duration": 6.96,
+          "anchor": "Continuous integration: appena un task"
+        },
+        {
+          "at": 45.01,
+          "action": "highlight",
+          "target": "#xp-5",
+          "duration": 7.35,
+          "anchor": "E refactoring: migliorare continuamente"
+        },
+        {
+          "at": 52.19,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "In basso trovate le altre"
+        },
+        {
+          "at": 54.79,
+          "action": "highlight",
+          "target": "#xp-6",
+          "duration": 6.94,
+          "anchor": "Simple design: progettare solo"
+        },
+        {
+          "at": 61.85,
+          "action": "highlight",
+          "target": "#xp-7",
+          "duration": 4.85,
+          "anchor": "Pair programming: due sviluppatori"
+        },
+        {
+          "at": 67.31,
+          "action": "highlight",
+          "target": "#xp-8",
+          "duration": 5.27,
+          "anchor": "Collective ownership: chiunque può modificare"
+        },
+        {
+          "at": 73.39,
+          "action": "highlight",
+          "target": "#xp-9",
+          "duration": 3.6,
+          "anchor": "Sustainable pace: niente straordinari"
+        },
+        {
+          "at": 78.07,
+          "action": "highlight",
+          "target": "#xp-10",
+          "duration": 6.66,
+          "anchor": "Infine on-site customer: un cliente"
+        }
+      ],
+      "audio_file": "audio/scene-03.wav",
+      "subtitle_file": "subtitles/scene-03.json",
+      "duration_sec": 84.64
+    },
+    {
+      "id": "scene-04",
+      "section": "2.4 · Scrum: Ruoli, Artefatti e Ciclo",
+      "title": "Il framework Scrum e il ciclo dello sprint",
+      "tts_text": "Passiamo ora a Scrum, il framework più diffuso per organizzare un progetto agile. Scrum introduce ruoli designati che fanno da interfaccia tra il team di sviluppo e il resto dell'organizzazione. [pause:0.5] Nel diagramma in alto osserviamo l'intero ciclo di Scrum. [pause:0.4] Tutto parte dal product backlog, l'elenco di feature, bug e miglioramenti da fare. Si selezionano le voci a priorità più alta e, con la fase di plan sprint, si crea lo sprint backlog. [pause:0.5] Durante lo sprint, che dura da due a quattro settimane, il team sviluppa, collauda e tiene lo scrum quotidiano. L'obiettivo è produrre un incremento potenzialmente consegnabile al cliente; le voci incomplete tornano nel product backlog. [pause:0.5] Alla fine, la review sprint valuta il risultato e cerca miglioramenti per lo sprint successivo, richiamando il Toyota Kata: dare potere al team per individuare problemi e soluzioni. [pause:0.6] In basso riassumiamo i tre ruoli chiave: il Development team auto-organizzato di quattro otto persone; il Product Owner che definisce feature, rivede e collauda il lavoro; e lo ScrumMaster, coach del team che garantisce l'uso efficace di Scrum.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">2.4 · Scrum: Ruoli, Artefatti &amp; Ciclo</div>\n  <h2 class=\"slide-title\">Il framework Scrum e il ciclo continuo degli sprint</h2>\n  <div id=\"s1\" class=\"svg-panel cue-hidden\">\n    <svg viewBox=\"0 0 680 185\" class=\"diagram-svg\" aria-label=\"Ciclo di Scrum\">\n      <defs>\n        <marker id=\"arr-sc\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\">\n          <path d=\"M0 1 L9 5 L0 9 z\" fill=\"var(--ink-soft)\"/>\n        </marker>\n      </defs>\n      <g id=\"sc-pb\">\n        <rect x=\"68\" y=\"14\" width=\"150\" height=\"38\" rx=\"7\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.7\"/>\n        <text x=\"143\" y=\"37\" text-anchor=\"middle\" class=\"svg-math\">Product backlog</text>\n      </g>\n      <line x1=\"218\" y1=\"33\" x2=\"262\" y2=\"33\" stroke=\"var(--ink-soft)\" stroke-width=\"1.5\" marker-end=\"url(#arr-sc)\"/>\n      <g id=\"sc-sel\">\n        <rect x=\"266\" y=\"14\" width=\"154\" height=\"38\" rx=\"7\" fill=\"none\" stroke=\"var(--ink-soft)\" stroke-width=\"1.5\"/>\n        <text x=\"343\" y=\"31\" text-anchor=\"middle\" class=\"svg-tick\">Select items</text>\n        <text x=\"343\" y=\"44\" text-anchor=\"middle\" class=\"svg-caption\">to implement</text>\n      </g>\n      <line x1=\"420\" y1=\"33\" x2=\"464\" y2=\"33\" stroke=\"var(--ink-soft)\" stroke-width=\"1.5\" marker-end=\"url(#arr-sc)\"/>\n      <g id=\"sc-plan\">\n        <rect x=\"468\" y=\"14\" width=\"154\" height=\"38\" rx=\"7\" fill=\"none\" stroke=\"var(--ink-soft)\" stroke-width=\"1.5\"/>\n        <text x=\"545\" y=\"37\" text-anchor=\"middle\" class=\"svg-tick\">Plan sprint</text>\n      </g>\n      <line x1=\"545\" y1=\"52\" x2=\"545\" y2=\"74\" stroke=\"var(--ink-soft)\" stroke-width=\"1.5\" marker-end=\"url(#arr-sc)\"/>\n      <g id=\"sc-sb\">\n        <rect x=\"468\" y=\"78\" width=\"154\" height=\"40\" rx=\"7\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.7\"/>\n        <text x=\"545\" y=\"102\" text-anchor=\"middle\" class=\"svg-math\">Sprint backlog</text>\n      </g>\n      <line x1=\"468\" y1=\"98\" x2=\"424\" y2=\"98\" stroke=\"var(--ink-soft)\" stroke-width=\"1.5\" marker-end=\"url(#arr-sc)\"/>\n      <g id=\"sc-sp\">\n        <rect x=\"266\" y=\"76\" width=\"154\" height=\"44\" rx=\"7\" fill=\"var(--orange-soft, rgba(217,119,6,0.12))\" stroke=\"var(--orange)\" stroke-width=\"1.7\"/>\n        <text x=\"343\" y=\"94\" text-anchor=\"middle\" class=\"svg-math\">Sprint (2–4 sett.)</text>\n        <text x=\"343\" y=\"110\" text-anchor=\"middle\" class=\"svg-caption\">dev, test, daily scrum</text>\n      </g>\n      <line x1=\"266\" y1=\"98\" x2=\"222\" y2=\"98\" stroke=\"var(--ink-soft)\" stroke-width=\"1.5\" marker-end=\"url(#arr-sc)\"/>\n      <g id=\"sc-inc\">\n        <rect x=\"68\" y=\"76\" width=\"150\" height=\"44\" rx=\"7\" fill=\"var(--green-soft, rgba(21,128,61,0.12))\" stroke=\"var(--green)\" stroke-width=\"1.7\"/>\n        <text x=\"143\" y=\"95\" text-anchor=\"middle\" class=\"svg-tick\">Shippable product</text>\n        <text x=\"143\" y=\"110\" text-anchor=\"middle\" class=\"svg-tick\">increment</text>\n      </g>\n      <line x1=\"143\" y1=\"120\" x2=\"143\" y2=\"140\" stroke=\"var(--ink-soft)\" stroke-width=\"1.5\" marker-end=\"url(#arr-sc)\"/>\n      <g id=\"sc-rev\">\n        <rect x=\"68\" y=\"144\" width=\"150\" height=\"32\" rx=\"7\" fill=\"none\" stroke=\"var(--blue)\" stroke-width=\"1.5\"/>\n        <text x=\"143\" y=\"164\" text-anchor=\"middle\" class=\"svg-tick\">Review sprint (Toyota Kata)</text>\n      </g>\n      <path d=\"M 68 160 L 24 160 L 24 33 L 64 33\" fill=\"none\" stroke=\"var(--blue)\" stroke-width=\"1.5\" marker-end=\"url(#arr-sc)\"/>\n      <text x=\"28\" y=\"94\" text-anchor=\"start\" class=\"svg-caption\">review</text>\n      <text x=\"28\" y=\"106\" text-anchor=\"start\" class=\"svg-caption\">backlog</text>\n    </svg>\n  </div>\n  <div id=\"s2\" class=\"grid-3 cue-hidden\">\n    <div id=\"r-dev\" class=\"box box-def\">\n      <div class=\"box-label\">Development Team</div>\n      <p>Piccolo team auto-organizzato (<strong>4–8 persone</strong>), responsabile dello sviluppo del prodotto.</p>\n    </div>\n    <div id=\"r-po\" class=\"box box-primary\">\n      <div class=\"box-label\">Product Owner</div>\n      <p>Identifica <em>feature</em> e attributi del prodotto, rivede il lavoro svolto e aiuta a collaudarlo.</p>\n    </div>\n    <div id=\"r-sm\" class=\"box box-idea\">\n      <div class=\"box-label\">ScrumMaster</div>\n      <p><strong>Coach</strong> del team: lo guida a usare Scrum in modo efficace e fa da interfaccia esterna.</p>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 1.25,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "framework più diffuso per organizzare"
+        },
+        {
+          "action": "highlight",
+          "target": "#s1",
+          "anchor": "framework più diffuso per organizzare",
+          "at": 1.25,
+          "duration": 13.27
+        },
+        {
+          "at": 14.64,
+          "action": "highlight",
+          "target": "#sc-pb",
+          "duration": 7.34,
+          "anchor": "Tutto parte dal product backlog"
+        },
+        {
+          "at": 22.1,
+          "action": "highlight",
+          "target": "#sc-plan",
+          "duration": 3.92,
+          "anchor": "con la fase di plan"
+        },
+        {
+          "at": 26.14,
+          "action": "highlight",
+          "target": "#sc-sp",
+          "duration": 6.3,
+          "anchor": "Durante lo sprint, che dura"
+        },
+        {
+          "at": 32.56,
+          "action": "highlight",
+          "target": "#sc-inc",
+          "duration": 6.51,
+          "anchor": "L'obiettivo è produrre un incremento"
+        },
+        {
+          "at": 40,
+          "action": "highlight",
+          "target": "#sc-rev",
+          "duration": 13.62,
+          "anchor": "Alla fine, la review sprint"
+        },
+        {
+          "at": 51.16,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "In basso riassumiamo i tre"
+        },
+        {
+          "at": 53.74,
+          "action": "highlight",
+          "target": "#r-dev",
+          "duration": 3.18,
+          "anchor": "il Development team auto-organizzato"
+        },
+        {
+          "at": 57.34,
+          "action": "highlight",
+          "target": "#r-po",
+          "duration": 4.06,
+          "anchor": "il Product Owner che definisce"
+        },
+        {
+          "at": 61.52,
+          "action": "highlight",
+          "target": "#r-sm",
+          "duration": 5,
+          "anchor": "e lo ScrumMaster, coach del"
+        }
+      ],
+      "audio_file": "audio/scene-04.wav",
+      "subtitle_file": "subtitles/scene-04.json",
+      "duration_sec": 65.71
+    },
+    {
+      "id": "scene-05",
+      "section": "2.5 · Il Product Backlog",
+      "title": "PBI, stati di maturazione e manutenzione del backlog",
+      "tts_text": "Il product backlog è l'elenco vivo di tutto ciò che resta da fare per completare il prodotto. Le sue voci si chiamano product backlog item, o P B I, e il backlog deve essere sempre ordinato per priorità. [pause:0.5] Vediamo un esempio reale: include user stories per nuove funzionalità o richieste utente, come configurare gli strumenti per classe o un'interfaccia grafica per bambini; ma anche attività di sviluppo, come valutare software open source, e miglioramenti tecnici come refactoring o cifratura dei dati. [pause:0.6] Ogni P B I attraversa tre stati di maturazione. [pause:0.4] Ready for consideration: idee ad alto livello, ancora provvisorie. Ready for refinement: voce importante per lo sviluppo corrente, chiara ma da raffinare. Ready for implementation: dettagliata a sufficienza per stimare lo sforzo e implementarla, con dipendenze note. [pause:0.6] Il backlog viene mantenuto con quattro attività continue: refinement, per dettagliare le voci; estimation, in person-hour o person-day, dove per esempio dieci person-day con due persone richiedono cinque giorni; creation di nuove voci; e prioritization, per riordinare in base a nuove informazioni.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">2.5 · Il Product Backlog</div>\n  <h2 class=\"slide-title\">Product Backlog Item (PBI), stati e manutenzione</h2>\n  <div id=\"s1\" class=\"grid-2 cue-hidden\">\n    <div id=\"b-ex\" class=\"box box-def\">\n      <div class=\"box-label\">Esempio di Backlog (ordinato per priorità)</div>\n      <ul class=\"clean-list\">\n        <li><strong>1–3 · User stories</strong>: configurazione strumenti docente, vista lavori genitori, UI pittorica bambini (<em>feature / user request</em>).</li>\n        <li><strong>4 · Development activity</strong>: criteri di valutazione software open source.</li>\n        <li><strong>5–6 · Engineering improvement</strong>: refactoring UI e cifratura dati personali.</li>\n      </ul>\n    </div>\n    <div id=\"b-stati\" class=\"box box-primary\">\n      <div class=\"box-label\">I 3 stati di un PBI</div>\n      <ul class=\"clean-list\">\n        <li id=\"st-1\"><strong>Ready for consideration</strong>: idee ad alto livello, provvisorie (possono cambiare o sparire).</li>\n        <li id=\"st-2\"><strong>Ready for refinement</strong>: voce importante e chiara, ma richiede raffinamento.</li>\n        <li id=\"st-3\"><strong>Ready for implementation</strong>: dettagliata per stimare sforzo e implementare; dipendenze note.</li>\n      </ul>\n    </div>\n  </div>\n  <div id=\"s2\" class=\"metrics-row cue-hidden\">\n    <div id=\"act-ref\" class=\"metric\">\n      <div class=\"metric-val\">Refinement</div>\n      <div class=\"metric-label\">Analisi e scomposizione in voci dettagliate</div>\n    </div>\n    <div id=\"act-est\" class=\"metric\">\n      <div class=\"metric-val\">Estimation</div>\n      <div class=\"metric-label\">Sforzo in <em>person-day</em> (10 pd / 2 pers. = 5 gg)</div>\n    </div>\n    <div id=\"act-cre\" class=\"metric\">\n      <div class=\"metric-val\">Creation</div>\n      <div class=\"metric-label\">Nuove feature, modifiche, miglioramenti o processo</div>\n    </div>\n    <div id=\"act-pri\" class=\"metric\">\n      <div class=\"metric-val\">Prioritization</div>\n      <div class=\"metric-label\">Riordino continuo per nuove informazioni</div>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 1.6,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "l'elenco vivo di tutto ciò"
+        },
+        {
+          "action": "highlight",
+          "target": "#s1",
+          "anchor": "l'elenco vivo di tutto ciò",
+          "at": 1.6,
+          "duration": 11.4
+        },
+        {
+          "at": 13.12,
+          "action": "highlight",
+          "target": "#b-ex",
+          "duration": 21.52,
+          "anchor": "Vediamo un esempio reale"
+        },
+        {
+          "at": 36.03,
+          "action": "highlight",
+          "target": "#st-1",
+          "duration": 3.6,
+          "anchor": "Ready for consideration: idee ad"
+        },
+        {
+          "at": 40.37,
+          "action": "highlight",
+          "target": "#st-2",
+          "duration": 5.27,
+          "anchor": "Ready for refinement: voce importante"
+        },
+        {
+          "at": 46.65,
+          "action": "highlight",
+          "target": "#st-3",
+          "duration": 9.43,
+          "anchor": "Ready for implementation: dettagliata a"
+        },
+        {
+          "at": 53.61,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Il backlog viene mantenuto"
+        },
+        {
+          "at": 57.17,
+          "action": "highlight",
+          "target": "#act-ref",
+          "duration": 1.93,
+          "anchor": "refinement, per dettagliare le voci"
+        },
+        {
+          "at": 59.67,
+          "action": "highlight",
+          "target": "#act-est",
+          "duration": 6.52,
+          "anchor": "estimation, in person-hour o person-day"
+        },
+        {
+          "at": 67.35,
+          "action": "highlight",
+          "target": "#act-cre",
+          "duration": 1.52,
+          "anchor": "creation di nuove voci"
+        },
+        {
+          "at": 69.25,
+          "action": "highlight",
+          "target": "#act-pri",
+          "duration": 3.75,
+          "anchor": "e prioritization, per riordinare"
+        }
+      ],
+      "audio_file": "audio/scene-05.wav",
+      "subtitle_file": "subtitles/scene-05.json",
+      "duration_sec": 73.11
+    },
+    {
+      "id": "scene-06",
+      "section": "2.6 · Sprint Timeboxed, Attività e Velocity",
+      "title": "Timeboxing, attività dello sprint e pianificazione",
+      "tts_text": "Ogni sprint dura da una a quattro settimane, tipicamente da due a quattro in Scrum, ed è rigorosamente timeboxed: ha inizio e fine fissi e lo sviluppo si ferma alla scadenza, che il lavoro sia finito o meno. [pause:0.5] Questo porta tre benefici: progresso dimostrabile con un dimostratore a ogni sprint; problem discovery rapido, perché il lavoro da rifare è limitato a uno sprint; e work planning affidabile su un periodo fisso. [pause:0.6] Uno sprint segue quattro attività. Sprint planning, massimo un giorno: si fissa lo sprint goal, si scelgono i P B I in base alle stime e alla velocity del team, e si crea lo sprint backlog. [pause:0.4] Sprint execution: si implementano le voci; quelle non finite non allungano lo sprint, ma tornano nel product backlog. Scrum quotidiano: breve stand-up di inizio giornata su progressi, ostacoli e piano giornaliero. Infine sprint reviewing, per verificare il lavoro con gli stakeholder e riflettere sul metodo. [pause:0.6] Guardate l'esempio numerico in basso: cinque persone per dieci giorni danno cinquanta person-day. Scegliamo le voci ordinate finché restiamo nella capacità: otto più quindici più dodici più dieci fa quarantacinque, minore o uguale a cinquanta; aggiungendo nove si va a cinquantaquattro, quindi resta fuori. Nella pratica la capacità si stima dalla velocity reale degli sprint passati.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">2.6 · Sprint Timeboxed, Attività &amp; Velocity</div>\n  <h2 class=\"slide-title\">Timeboxing, attività dello sprint e stima della capacità</h2>\n  <div id=\"s1\" class=\"grid-2 cue-hidden\">\n    <div id=\"b-tb\" class=\"box box-primary\">\n      <div class=\"box-label\">Timeboxing (1–4 sett.) · 3 Benefici</div>\n      <ul class=\"clean-list\">\n        <li id=\"tb-1\"><strong>Progresso dimostrabile</strong>: risultato tangibile (dimostratore software) a ogni sprint.</li>\n        <li id=\"tb-2\"><strong>Problem discovery</strong>: lavoro da rifare limitato alla durata di uno sprint.</li>\n        <li id=\"tb-3\"><strong>Work planning</strong>: il team impara quanto lavoro completa in un periodo fisso.</li>\n      </ul>\n    </div>\n    <div id=\"b-act\" class=\"box box-def\">\n      <div class=\"box-label\">Le 4 attività dello Sprint</div>\n      <ul class=\"clean-list\">\n        <li id=\"sp-1\"><strong>Sprint planning</strong> (&le; 1g): <em>sprint goal</em>, PBI per stime e <em>velocity</em>, sprint backlog.</li>\n        <li id=\"sp-2\"><strong>Sprint execution</strong>: niente proroghe; voci incomplete tornano al product backlog.</li>\n        <li id=\"sp-3\"><strong>Scrum quotidiano</strong>: stand-up su progressi, problemi, piano e assegnazione voci.</li>\n        <li id=\"sp-4\"><strong>Sprint reviewing</strong>: verifica con stakeholder e riflessione per migliorare.</li>\n      </ul>\n    </div>\n  </div>\n  <div id=\"s2\" class=\"math-card math-card-accent cue-hidden\">\n    <div class=\"step-tag-inline\">Esempio · Pianificare uno sprint (5 persone &times; 2 settimane = 10 gg lavorativi)</div>\n    <p>Backlog ordinato: <strong>8, 15, 12, 10, 9</strong> <em>person-day</em>. Capacità calendario: \\(5 \\times 10 = 50\\) person-day.</p>\n    \\[ \\htmlId{f-cap}{8 + 15 + 12 + 10 = 45 \\le 50} \\qquad \\htmlId{f-over}{45 + 9 = 54 \\gt 50} \\]\n    <p class=\"math-note\">La voce da 9 resta nel product backlog. In pratica la capacità si stima dalla <strong>velocity</strong> reale degli sprint passati, non dal calendario.</p>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 1.56,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "da una a quattro settimane"
+        },
+        {
+          "action": "highlight",
+          "target": "#b-tb",
+          "anchor": "da una a quattro settimane",
+          "at": 1.56,
+          "duration": 13.54
+        },
+        {
+          "at": 15.22,
+          "action": "highlight",
+          "target": "#tb-1",
+          "duration": 3.18,
+          "anchor": "progresso dimostrabile con un"
+        },
+        {
+          "at": 19.04,
+          "action": "highlight",
+          "target": "#tb-2",
+          "duration": 4.3,
+          "anchor": "problem discovery rapido"
+        },
+        {
+          "at": 23.46,
+          "action": "highlight",
+          "target": "#tb-3",
+          "duration": 5.27,
+          "anchor": "e work planning affidabile"
+        },
+        {
+          "at": 29.6,
+          "action": "highlight",
+          "target": "#sp-1",
+          "duration": 9.12,
+          "anchor": "Sprint planning, massimo un giorno"
+        },
+        {
+          "at": 38.84,
+          "action": "highlight",
+          "target": "#sp-2",
+          "duration": 6.88,
+          "anchor": "Sprint execution: si implementano"
+        },
+        {
+          "at": 45.84,
+          "action": "highlight",
+          "target": "#sp-3",
+          "duration": 5.27,
+          "anchor": "Scrum quotidiano: breve stand-up"
+        },
+        {
+          "at": 52.42,
+          "action": "highlight",
+          "target": "#sp-4",
+          "duration": 5.62,
+          "anchor": "Infine sprint reviewing, per verificare"
+        },
+        {
+          "at": 58.06,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Guardate l'esempio numerico"
+        },
+        {
+          "at": 58.16,
+          "action": "highlight",
+          "target": "#s2",
+          "duration": 6.06
+        },
+        {
+          "at": 64.34,
+          "action": "highlight",
+          "target": "#f-cap",
+          "duration": 8.85,
+          "anchor": "Scegliamo le voci ordinate"
+        },
+        {
+          "at": 73.31,
+          "action": "highlight",
+          "target": "#f-over",
+          "duration": 8.75,
+          "anchor": "aggiungendo nove si va"
+        }
+      ],
+      "audio_file": "audio/scene-06.wav",
+      "subtitle_file": "subtitles/scene-06.json",
+      "duration_sec": 81.16
+    },
+    {
+      "id": "scene-07",
+      "section": "2.7 · Qualità nello Sprint e Team Auto-organizzati",
+      "title": "Completezza del codice, pratiche obbligatorie e team Scrum",
+      "tts_text": "Quando una voce dello sprint può dirsi davvero completa? Serve una code completeness checklist in cinque punti: il codice deve essere reviewed da un collega, unit tested automaticamente, integrated nel codebase, integration tested senza errori, e infine accepted tramite eventuali test di accettazione. [pause:0.5] Anche se Scrum non prescrive le tecniche di programmazione, due pratiche vanno usate sempre: test automation e continuous integration. Si completano a vicenda: integrare il codice più volte al giorno senza test automatici sarebbe rischioso, e i test automatici scoprono subito eventuali regressioni. [pause:0.6] Vediamo infine come funzionano i team che si auto-organizzano. Un team ideale conta cinque otto persone con competenze diverse, come rete, user experience e database: è abbastanza vario, ma piccolo per comunicare in modo informale, con responsabilità condivisa. [pause:0.5] Attenzione però al coordinamento: lo scrum quotidiano assume lavoratori a tempo pieno nella stessa sede e disponibili al mattino, due ipotesi che spesso cadono con lavoro remoto, part-time o multi-progetto. [pause:0.5] Infine, le interazioni esterne spettano solo a Product Owner e ScrumMaster per proteggere gli sviluppatori, e nelle aziende lo ScrumMaster assume spesso anche un ruolo di project management nel reporting verso la direzione.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">2.7 · Qualità nello Sprint &amp; Team Auto-organizzati</div>\n  <h2 class=\"slide-title\">Checklist di completezza, pratiche tecniche e dinamiche di team</h2>\n  <div id=\"s1\" class=\"grid-2 cue-hidden\">\n    <div id=\"b-chk\" class=\"box box-algo\">\n      <div class=\"box-label\">Code Completeness Checklist (5 step)</div>\n      <ol class=\"algo-list\">\n        <li id=\"ck-1\"><strong>Reviewed</strong>: standard, leggibilità, commenti, refactoring.</li>\n        <li id=\"ck-2\"><strong>Unit tested</strong>: unit test automatici superati.</li>\n        <li id=\"ck-3\"><strong>Integrated</strong>: integrato nel codebase senza errori.</li>\n        <li id=\"ck-4\"><strong>Integration tested</strong>: integration test automatici superati.</li>\n        <li id=\"ck-5\"><strong>Accepted</strong>: acceptance test e conferma PO/team.</li>\n      </ol>\n    </div>\n    <div id=\"b-ci\" class=\"box box-primary\">\n      <div class=\"box-label\">Pratiche sempre usate in uno Sprint</div>\n      <ul class=\"clean-list\">\n        <li id=\"pr-ta\"><strong>Test automation</strong>: test eseguiti automaticamente a ogni modifica; scoprono subito gli errori.</li>\n        <li id=\"pr-ci\"><strong>Continuous integration</strong>: integrazione nel codebase più volte al giorno; attiva i test automatici.</li>\n      </ul>\n      <p class=\"math-note\">Si completano: CI frequente senza test automatici sarebbe rischiosa.</p>\n    </div>\n  </div>\n  <div id=\"s2\" class=\"grid-2 cue-hidden\">\n    <div id=\"b-team\" class=\"box box-def\">\n      <div class=\"box-label\">Composizione &amp; Coordinamento (5–8 persone)</div>\n      <ul class=\"clean-list\">\n        <li>Competenze varie (rete, UX, DB), comunicazione informale, responsabilità condivisa.</li>\n        <li><strong>Assunzioni scrum quotidiano</strong>: (1) full-time stessa sede, (2) riunione mattutina &mdash; spesso violate da remoto/part-time/multi-progetto.</li>\n      </ul>\n    </div>\n    <div id=\"b-ext\" class=\"box box-warn\">\n      <div class=\"box-label\">Interazioni esterne &amp; Project Management</div>\n      <ul class=\"clean-list\">\n        <li><strong>Interazioni esterne</strong>: solo Product Owner e ScrumMaster; dev focalizzati sullo sviluppo.</li>\n        <li><strong>Project management</strong>: nelle aziende lo ScrumMaster spesso cura anche avanzamento e reporting alla direzione.</li>\n      </ul>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 1.38,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "può dirsi davvero completa"
+        },
+        {
+          "at": 7.38,
+          "action": "highlight",
+          "target": "#b-chk",
+          "duration": 10.69,
+          "anchor": "il codice deve essere reviewed"
+        },
+        {
+          "at": 19.66,
+          "action": "highlight",
+          "target": "#b-ci",
+          "duration": 20.99,
+          "anchor": "Anche se Scrum non prescrive"
+        },
+        {
+          "at": 36.93,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Vediamo infine come funzionano"
+        },
+        {
+          "at": 40.77,
+          "action": "highlight",
+          "target": "#b-team",
+          "duration": 23.82,
+          "anchor": "Un team ideale conta cinque"
+        },
+        {
+          "at": 64.71,
+          "action": "highlight",
+          "target": "#b-ext",
+          "duration": 13.75,
+          "anchor": "Infine, le interazioni esterne spettano"
+        }
+      ],
+      "audio_file": "audio/scene-07.wav",
+      "subtitle_file": "subtitles/scene-07.json",
+      "duration_sec": 76.29
+    },
+    {
+      "id": "scene-08",
+      "section": "2.8 · Dettagli chiave: 12 principi, Sprint e ruolo dello ScrumMaster",
+      "title": "Principi agili, meccanica dello Sprint e ScrumMaster",
+      "tts_text": "Fissiamo i dettagli chiave su principi agili, sprint e ScrumMaster. [pause:0.5] Nei dodici principi, il principio due sfrutta i cambiamenti a vantaggio competitivo del cliente; il tre consegna software funzionante preferendo la scala di tempo più breve; il cinque dà a persone motivate ambiente e supporto di cui hanno bisogno e fiducia che portino a termine il lavoro. [pause:0.5] Il principio otto vuole che sponsor, sviluppatori e utenti mantengano un ritmo sostenibile; il nove che eccellenza tecnica e buon design aumentano l'agilità; l'undici che architetture, requisiti e design migliori emergono da team auto-organizzati. [pause:0.6] Nello sprint, il potentially shippable product increment è il risultato di qualità sufficiente per essere messo in uso dai clienti. [pause:0.5] Lo sprint goal può riguardare funzionalità, supporto, prestazioni o affidabilità; lo sprint backlog è una versione più dettagliata del product backlog che registra il lavoro dello sprint. Nel Daily Scrum si aggiorna lo sprint backlog togliendo le voci completate e aggiungendone di nuove se emergono informazioni. [pause:0.6] Infine, la responsabilità di team facilita l'ingresso e l'uscita dei membri e fa imparare le aree altrui; inoltre, gli ideatori di Scrum non avevano previsto compiti di project management per lo ScrumMaster, ma oggi spesso li assume perché conosce il lavoro in corso ed è nella posizione migliore per piani e avanzamento accurati.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">2.8 · Dettagli chiave: 12 principi, Sprint &amp; ScrumMaster</div>\n  <h2 class=\"slide-title\">Principi agili, meccanica dello Sprint e ruolo dello ScrumMaster</h2>\n  <div id=\"s1\" class=\"grid-2 cue-hidden\">\n    <div id=\"b-p1\" class=\"box box-primary\">\n      <div class=\"box-label\">12 Principi · Formulazioni esatte (1/2)</div>\n      <ul class=\"clean-list\">\n        <li id=\"pr-2\"><strong>Principio 2</strong>: cambiamenti benvenuti anche tardi, sfruttati <em>a vantaggio competitivo del cliente</em>.</li>\n        <li id=\"pr-3\"><strong>Principio 3</strong>: consegne frequenti (2 sett.–2 mesi), <em>preferendo la scala di tempo più breve</em>.</li>\n        <li id=\"pr-5\"><strong>Principio 5</strong>: persone motivate; dare <em>ambiente e supporto di cui hanno bisogno</em> e <em>fiducia che portino a termine il lavoro</em>.</li>\n      </ul>\n    </div>\n    <div id=\"b-p2\" class=\"box box-def\">\n      <div class=\"box-label\">12 Principi · Formulazioni esatte (2/2)</div>\n      <ul class=\"clean-list\">\n        <li id=\"pr-8\"><strong>Principio 8</strong>: sviluppo sostenibile; <em>sponsor, sviluppatori e utenti</em> mantengono un ritmo costante indefinitamente.</li>\n        <li id=\"pr-9\"><strong>Principio 9</strong>: attenzione continua a <em>eccellenza tecnica e buon design</em> aumenta l'agilità.</li>\n        <li id=\"pr-11\"><strong>Principio 11</strong>: le <em>migliori architetture, requisiti e design</em> emergono da <em>team auto-organizzati</em>.</li>\n      </ul>\n    </div>\n  </div>\n  <div id=\"s2\" class=\"grid-2 cue-hidden\">\n    <div id=\"b-sp\" class=\"box box-idea\">\n      <div class=\"box-label\">Incremento, Sprint Planning &amp; Daily Scrum</div>\n      <ul class=\"clean-list\">\n        <li id=\"sp-inc\"><strong>Potentially shippable product increment</strong>: risultato dello sprint <em>di qualità sufficiente per essere messo in uso dai clienti</em>.</li>\n        <li id=\"sp-plan\"><strong>Sprint planning</strong>: <em>sprint goal</em> su <em>funzionalità, supporto, prestazioni o affidabilità</em>; <em>sprint backlog</em> = versione più dettagliata del product backlog per il lavoro dello sprint.</li>\n        <li id=\"sp-daily\"><strong>Daily Scrum</strong>: aggiorna lo sprint backlog <em>togliendo le voci completate</em> e <em>aggiungendone di nuove</em> se emergono informazioni.</li>\n      </ul>\n    </div>\n    <div id=\"b-sm\" class=\"box box-warn\">\n      <div class=\"box-label\">Team auto-organizzati &amp; ScrumMaster</div>\n      <ul class=\"clean-list\">\n        <li id=\"sm-team\"><strong>Responsabilità di team</strong>: risponde il team (non il singolo) &rarr; facilita <em>ingresso e uscita</em> dei membri e fa imparare le <em>aree altrui</em>.</li>\n        <li id=\"sm-pm\"><strong>ScrumMaster e PM</strong>: gli ideatori di Scrum <em>non</em> avevano previsto compiti di project management, ma spesso li assume perché conosce il lavoro in corso ed è nella posizione migliore per <em>piani e avanzamento accurati</em>.</li>\n      </ul>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 1.58,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "su principi agili, sprint e"
+        },
+        {
+          "at": 1.58,
+          "action": "highlight",
+          "target": "#s1",
+          "duration": 4.2,
+          "anchor": "su principi agili, sprint e"
+        },
+        {
+          "at": 7.14,
+          "action": "highlight",
+          "target": "#pr-2",
+          "duration": 4,
+          "anchor": "principio due sfrutta i cambiamenti"
+        },
+        {
+          "at": 11.46,
+          "action": "highlight",
+          "target": "#pr-3",
+          "duration": 4.5,
+          "anchor": "il tre consegna software funzionante"
+        },
+        {
+          "at": 16.08,
+          "action": "highlight",
+          "target": "#pr-5",
+          "duration": 7.18,
+          "anchor": "il cinque dà a persone"
+        },
+        {
+          "at": 23.38,
+          "action": "highlight",
+          "target": "#pr-8",
+          "duration": 5.3,
+          "anchor": "Il principio otto vuole che"
+        },
+        {
+          "at": 29.2,
+          "action": "highlight",
+          "target": "#pr-9",
+          "duration": 4.8,
+          "anchor": "il nove che eccellenza tecnica"
+        },
+        {
+          "at": 34.62,
+          "action": "highlight",
+          "target": "#pr-11",
+          "duration": 4.2,
+          "anchor": "architetture, requisiti e design migliori"
+        },
+        {
+          "at": 40.19,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Nello sprint, il potentially shippable"
+        },
+        {
+          "at": 40.19,
+          "action": "highlight",
+          "target": "#sp-inc",
+          "duration": 7.68,
+          "anchor": "Nello sprint, il potentially shippable"
+        },
+        {
+          "at": 47.99,
+          "action": "highlight",
+          "target": "#sp-plan",
+          "duration": 11.1,
+          "anchor": "Lo sprint goal può riguardare"
+        },
+        {
+          "at": 59.43,
+          "action": "highlight",
+          "target": "#sp-daily",
+          "duration": 6.88,
+          "anchor": "Nel Daily Scrum si aggiorna"
+        },
+        {
+          "at": 66.43,
+          "action": "highlight",
+          "target": "#sm-team",
+          "duration": 6.2,
+          "anchor": "la responsabilità di team facilita"
+        },
+        {
+          "at": 72.75,
+          "action": "highlight",
+          "target": "#sm-pm",
+          "duration": 12,
+          "anchor": "gli ideatori di Scrum non"
+        }
+      ],
+      "audio_file": "audio/scene-08.wav",
+      "subtitle_file": "subtitles/scene-08.json",
+      "duration_sec": 84.44
+    },
+    {
+      "id": "scene-09",
+      "section": "2.9 · Riepilogo e autoverifica",
+      "title": "Punti chiave del capitolo e domande d'esame",
+      "tts_text": "Chiudiamo il secondo capitolo fissando i sei punti chiave da padroneggiare per l'esame. [pause:0.5] Primo: lo sviluppo plan-driven genera un overhead dominante sui prodotti piccoli e medi; l'Agile punta a consegnare presto, rispondere ai cambiamenti e ridurre l'overhead. [pause:0.5] Secondo: il Manifesto Agile dichiara quattro valori e dodici principi, con il software funzionante come misura principale del progresso. [pause:0.5] Terzo: nello sviluppo incrementale si scelgono feature, si raffinano, si implementano, si integrano e si consegna un incremento alla volta. [pause:0.5] Quarto: Extreme Programming riunisce dieci pratiche chiave, tra cui test-driven development, continuous integration e refactoring. [pause:0.5] Quinto: Scrum organizza il lavoro con team di quattro otto persone, Product Owner, ScrumMaster, product backlog, sprint di due quattro settimane e scrum quotidiano. [pause:0.5] Sesto: ogni sprint è timeboxed, non si allunga mai, e richiede sempre test automation e continuous integration. [pause:0.6] Prima di passare al capitolo sulle feature e user stories, provate a rispondere alle sette domande di verifica sulla destra.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">2.9 · Riepilogo &amp; Autoverifica</div>\n  <h2 class=\"slide-title\">Punti chiave e domande di verifica</h2>\n  <div class=\"grid-2\">\n    <div class=\"box box-algo\">\n      <div class=\"box-label\">Punti chiave da fissare</div>\n      <ul class=\"clean-list\">\n        <li id=\"s1\" class=\"cue-hidden\"><strong>Plan-driven vs Agile</strong>: overhead dominante su prodotti piccoli/medi; Agile per consegnare presto, rispondere ai cambiamenti e ridurre l'overhead.</li>\n        <li id=\"s2\" class=\"cue-hidden\"><strong>Manifesto Agile</strong>: 4 valori e 12 principi; il software funzionante è la misura principale del progresso.</li>\n        <li id=\"s3\" class=\"cue-hidden\"><strong>Sviluppo incrementale</strong>: scegliere feature, raffinare, implementare, integrare e consegnare un incremento.</li>\n        <li id=\"s4\" class=\"cue-hidden\"><strong>Extreme Programming</strong>: 10 pratiche tra cui TDD, continuous integration e refactoring.</li>\n        <li id=\"s5\" class=\"cue-hidden\"><strong>Scrum</strong>: team 4–8 persone, Product Owner, ScrumMaster, product backlog, sprint 2–4 sett., scrum quotidiano.</li>\n        <li id=\"s6\" class=\"cue-hidden\"><strong>Sprint timeboxed</strong>: non si allunga, voci incomplete nel backlog; test automation e CI sempre usate.</li>\n      </ul>\n    </div>\n    <div id=\"s7\" class=\"box box-theorem cue-hidden\">\n      <div class=\"box-label\">Domande di verifica</div>\n      <ol class=\"verify-list\">\n        <li>Perché l'overhead del plan-driven development pesa sui prodotti di dimensioni piccole e medie?</li>\n        <li>Quali sono i quattro valori del manifesto agile?</li>\n        <li>Che cosa significa che gli sprint sono timeboxed e quali sono i benefici?</li>\n        <li>Quali ruoli ha Scrum e quali sono le responsabilità di ciascuno?</li>\n        <li>In quali stati può trovarsi un PBI e quali attività mantengono il backlog?</li>\n        <li>Quali assunzioni sul team fa lo scrum quotidiano e quando non valgono?</li>\n        <li>Quali pratiche tecniche vanno sempre usate in uno sprint?</li>\n      </ol>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 2.28,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "sei punti chiave da"
+        },
+        {
+          "at": 5.38,
+          "action": "highlight",
+          "target": "#s1",
+          "duration": 9.95,
+          "anchor": "Primo: lo sviluppo plan-driven"
+        },
+        {
+          "at": 16.66,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Secondo: il Manifesto Agile"
+        },
+        {
+          "at": 16.66,
+          "action": "highlight",
+          "target": "#s2",
+          "duration": 7.66,
+          "anchor": "Secondo: il Manifesto Agile"
+        },
+        {
+          "at": 25.25,
+          "action": "show",
+          "target": "#s3",
+          "anchor": "Terzo: nello sviluppo incrementale"
+        },
+        {
+          "at": 25.25,
+          "action": "highlight",
+          "target": "#s3",
+          "duration": 8.19,
+          "anchor": "Terzo: nello sviluppo incrementale"
+        },
+        {
+          "at": 34.31,
+          "action": "show",
+          "target": "#s4",
+          "anchor": "Quarto: Extreme Programming riunisce"
+        },
+        {
+          "at": 34.31,
+          "action": "highlight",
+          "target": "#s4",
+          "duration": 6.1,
+          "anchor": "Quarto: Extreme Programming riunisce"
+        },
+        {
+          "at": 43.41,
+          "action": "show",
+          "target": "#s5",
+          "anchor": "Quinto: Scrum organizza il"
+        },
+        {
+          "at": 43.41,
+          "action": "highlight",
+          "target": "#s5",
+          "duration": 9.85,
+          "anchor": "Quinto: Scrum organizza il"
+        },
+        {
+          "at": 54.9,
+          "action": "show",
+          "target": "#s6",
+          "anchor": "Sesto: ogni sprint è timeboxed"
+        },
+        {
+          "at": 54.9,
+          "action": "highlight",
+          "target": "#s6",
+          "duration": 6.93,
+          "anchor": "Sesto: ogni sprint è timeboxed"
+        },
+        {
+          "at": 62.8,
+          "action": "show",
+          "target": "#s7",
+          "anchor": "Prima di passare al capitolo"
+        },
+        {
+          "at": 62.8,
+          "action": "highlight",
+          "target": "#s7",
+          "duration": 8.23,
+          "anchor": "Prima di passare al capitolo"
+        }
+      ],
+      "audio_file": "audio/scene-09.wav",
+      "subtitle_file": "subtitles/scene-09.json",
+      "duration_sec": 69.03
+    }
+  ]
+}

@@ -1,0 +1,1041 @@
+{
+  "duration": 71.871,
+  "segments": [
+    {
+      "start": 0.02,
+      "end": 3.9,
+      "text": "Come è fatto fisicamente un computer quantistico a superconduttori?",
+      "words": [
+        {
+          "text": "Come",
+          "start": 0.02,
+          "end": 0.16
+        },
+        {
+          "text": "è",
+          "start": 0.2,
+          "end": 0.24000000000000002
+        },
+        {
+          "text": "fatto",
+          "start": 0.3,
+          "end": 0.66
+        },
+        {
+          "text": "fisicamente",
+          "start": 0.78,
+          "end": 1.6
+        },
+        {
+          "text": "un",
+          "start": 1.68,
+          "end": 1.76
+        },
+        {
+          "text": "computer",
+          "start": 1.82,
+          "end": 2.28
+        },
+        {
+          "text": "quantistico",
+          "start": 2.34,
+          "end": 2.94
+        },
+        {
+          "text": "a",
+          "start": 3.02,
+          "end": 3.06
+        },
+        {
+          "text": "superconduttori?",
+          "start": 3.12,
+          "end": 3.9
+        }
+      ]
+    },
+    {
+      "start": 4.56,
+      "end": 5.94,
+      "text": "Si articola in cinque parti.",
+      "words": [
+        {
+          "text": "Si",
+          "start": 4.56,
+          "end": 4.62
+        },
+        {
+          "text": "articola",
+          "start": 4.66,
+          "end": 5.04
+        },
+        {
+          "text": "in",
+          "start": 5.1,
+          "end": 5.16
+        },
+        {
+          "text": "cinque",
+          "start": 5.22,
+          "end": 5.54
+        },
+        {
+          "text": "parti.",
+          "start": 5.58,
+          "end": 5.94
+        }
+      ]
+    },
+    {
+      "start": 6.58,
+      "end": 9.521,
+      "text": "In fondo al sistema sta il quantum processor con i qubit,",
+      "words": [
+        {
+          "text": "In",
+          "start": 6.58,
+          "end": 6.64
+        },
+        {
+          "text": "fondo",
+          "start": 6.68,
+          "end": 6.9
+        },
+        {
+          "text": "al",
+          "start": 6.92,
+          "end": 7.0
+        },
+        {
+          "text": "sistema",
+          "start": 7.04,
+          "end": 7.421
+        },
+        {
+          "text": "sta",
+          "start": 7.521,
+          "end": 7.641
+        },
+        {
+          "text": "il",
+          "start": 7.761,
+          "end": 7.821
+        },
+        {
+          "text": "quantum",
+          "start": 7.921,
+          "end": 8.321
+        },
+        {
+          "text": "processor",
+          "start": 8.361,
+          "end": 8.901
+        },
+        {
+          "text": "con",
+          "start": 8.961,
+          "end": 9.081
+        },
+        {
+          "text": "i",
+          "start": 9.101,
+          "end": 9.141
+        },
+        {
+          "text": "qubit,",
+          "start": 9.161,
+          "end": 9.521
+        }
+      ]
+    },
+    {
+      "start": 9.961,
+      "end": 16.041,
+      "text": "raffreddato a temperature bassissime dai piani del dilution refrigerator e protetto dall'involucro esterno,",
+      "words": [
+        {
+          "text": "raffreddato",
+          "start": 9.961,
+          "end": 10.461
+        },
+        {
+          "text": "a",
+          "start": 10.501,
+          "end": 10.541
+        },
+        {
+          "text": "temperature",
+          "start": 10.561,
+          "end": 11.081
+        },
+        {
+          "text": "bassissime",
+          "start": 11.181,
+          "end": 11.881
+        },
+        {
+          "text": "dai",
+          "start": 11.941,
+          "end": 12.081
+        },
+        {
+          "text": "piani",
+          "start": 12.121,
+          "end": 12.441
+        },
+        {
+          "text": "del",
+          "start": 12.501,
+          "end": 12.621
+        },
+        {
+          "text": "dilution",
+          "start": 12.661,
+          "end": 13.141
+        },
+        {
+          "text": "refrigerator",
+          "start": 13.201,
+          "end": 13.881
+        },
+        {
+          "text": "e",
+          "start": 14.241,
+          "end": 14.281
+        },
+        {
+          "text": "protetto",
+          "start": 14.381,
+          "end": 14.841
+        },
+        {
+          "text": "dall'involucro",
+          "start": 14.881,
+          "end": 15.481
+        },
+        {
+          "text": "esterno,",
+          "start": 15.541,
+          "end": 16.041
+        }
+      ]
+    },
+    {
+      "start": 16.221,
+      "end": 17.261,
+      "text": "detto enclosure.",
+      "words": [
+        {
+          "text": "detto",
+          "start": 16.221,
+          "end": 16.461
+        },
+        {
+          "text": "enclosure.",
+          "start": 16.661,
+          "end": 17.261
+        }
+      ]
+    },
+    {
+      "start": 18.041,
+      "end": 22.902,
+      "text": "Un'interfaccia di misura legge lo stato dei qubit, mentre un normale computer funge da classical",
+      "words": [
+        {
+          "text": "Un'interfaccia",
+          "start": 18.041,
+          "end": 18.621
+        },
+        {
+          "text": "di",
+          "start": 18.641,
+          "end": 18.701
+        },
+        {
+          "text": "misura",
+          "start": 18.741,
+          "end": 19.041
+        },
+        {
+          "text": "legge",
+          "start": 19.241,
+          "end": 19.501
+        },
+        {
+          "text": "lo",
+          "start": 19.541,
+          "end": 19.601
+        },
+        {
+          "text": "stato",
+          "start": 19.661,
+          "end": 19.881
+        },
+        {
+          "text": "dei",
+          "start": 19.901,
+          "end": 20.021
+        },
+        {
+          "text": "qubit,",
+          "start": 20.041,
+          "end": 20.341
+        },
+        {
+          "text": "mentre",
+          "start": 20.661,
+          "end": 20.881
+        },
+        {
+          "text": "un",
+          "start": 21.021,
+          "end": 21.081
+        },
+        {
+          "text": "normale",
+          "start": 21.121,
+          "end": 21.461
+        },
+        {
+          "text": "computer",
+          "start": 21.481,
+          "end": 21.942
+        },
+        {
+          "text": "funge",
+          "start": 22.002,
+          "end": 22.262
+        },
+        {
+          "text": "da",
+          "start": 22.282,
+          "end": 22.342
+        },
+        {
+          "text": "classical",
+          "start": 22.402,
+          "end": 22.902
+        }
+      ]
+    },
+    {
+      "start": 22.942,
+      "end": 28.702,
+      "text": "controller: invia le istruzioni via electronic writing e riceve gli esiti via electronic reading,",
+      "words": [
+        {
+          "text": "controller:",
+          "start": 22.942,
+          "end": 23.462
+        },
+        {
+          "text": "invia",
+          "start": 23.922,
+          "end": 24.162
+        },
+        {
+          "text": "le",
+          "start": 24.202,
+          "end": 24.262
+        },
+        {
+          "text": "istruzioni",
+          "start": 24.302,
+          "end": 24.842
+        },
+        {
+          "text": "via",
+          "start": 24.902,
+          "end": 25.062
+        },
+        {
+          "text": "electronic",
+          "start": 25.182,
+          "end": 25.682
+        },
+        {
+          "text": "writing",
+          "start": 25.742,
+          "end": 26.162
+        },
+        {
+          "text": "e",
+          "start": 26.522,
+          "end": 26.562
+        },
+        {
+          "text": "riceve",
+          "start": 26.662,
+          "end": 26.982
+        },
+        {
+          "text": "gli",
+          "start": 27.002,
+          "end": 27.102
+        },
+        {
+          "text": "esiti",
+          "start": 27.162,
+          "end": 27.442
+        },
+        {
+          "text": "via",
+          "start": 27.462,
+          "end": 27.602
+        },
+        {
+          "text": "electronic",
+          "start": 27.742,
+          "end": 28.242
+        },
+        {
+          "text": "reading,",
+          "start": 28.362,
+          "end": 28.702
+        }
+      ]
+    },
+    {
+      "start": 29.022,
+      "end": 30.862,
+      "text": "eseguendo kit come Qiskit e Cirq.",
+      "words": [
+        {
+          "text": "eseguendo",
+          "start": 29.022,
+          "end": 29.382
+        },
+        {
+          "text": "kit",
+          "start": 29.442,
+          "end": 29.682
+        },
+        {
+          "text": "come",
+          "start": 29.782,
+          "end": 29.942
+        },
+        {
+          "text": "Qiskit",
+          "start": 30.042,
+          "end": 30.442
+        },
+        {
+          "text": "e",
+          "start": 30.502,
+          "end": 30.542
+        },
+        {
+          "text": "Cirq.",
+          "start": 30.602,
+          "end": 30.862
+        }
+      ]
+    },
+    {
+      "start": 31.742,
+      "end": 35.502,
+      "text": "Dai due qubit di fine anni Novanta si è arrivati oggi a processori da oltre",
+      "words": [
+        {
+          "text": "Dai",
+          "start": 31.742,
+          "end": 31.902
+        },
+        {
+          "text": "due",
+          "start": 32.002,
+          "end": 32.182
+        },
+        {
+          "text": "qubit",
+          "start": 32.242,
+          "end": 32.602
+        },
+        {
+          "text": "di",
+          "start": 32.702,
+          "end": 32.762
+        },
+        {
+          "text": "fine",
+          "start": 32.842,
+          "end": 33.042
+        },
+        {
+          "text": "anni",
+          "start": 33.102,
+          "end": 33.222
+        },
+        {
+          "text": "Novanta",
+          "start": 33.262,
+          "end": 33.642
+        },
+        {
+          "text": "si",
+          "start": 33.802,
+          "end": 33.862
+        },
+        {
+          "text": "è",
+          "start": 33.882,
+          "end": 33.922
+        },
+        {
+          "text": "arrivati",
+          "start": 33.922,
+          "end": 34.262
+        },
+        {
+          "text": "oggi",
+          "start": 34.322,
+          "end": 34.462
+        },
+        {
+          "text": "a",
+          "start": 34.502,
+          "end": 34.542
+        },
+        {
+          "text": "processori",
+          "start": 34.582,
+          "end": 35.042
+        },
+        {
+          "text": "da",
+          "start": 35.082,
+          "end": 35.142
+        },
+        {
+          "text": "oltre",
+          "start": 35.222,
+          "end": 35.502
+        }
+      ]
+    },
+    {
+      "start": 35.622,
+      "end": 38.623,
+      "text": "mille qubit, come i millecentoventuno qubit di I B M.",
+      "words": [
+        {
+          "text": "mille",
+          "start": 35.622,
+          "end": 35.882
+        },
+        {
+          "text": "qubit,",
+          "start": 35.922,
+          "end": 36.262
+        },
+        {
+          "text": "come",
+          "start": 36.603,
+          "end": 36.743
+        },
+        {
+          "text": "i",
+          "start": 36.783,
+          "end": 36.823
+        },
+        {
+          "text": "millecentoventuno",
+          "start": 36.823,
+          "end": 37.743
+        },
+        {
+          "text": "qubit",
+          "start": 37.783,
+          "end": 38.043
+        },
+        {
+          "text": "di",
+          "start": 38.123,
+          "end": 38.183
+        },
+        {
+          "text": "I",
+          "start": 38.243,
+          "end": 38.283
+        },
+        {
+          "text": "B",
+          "start": 38.303,
+          "end": 38.343
+        },
+        {
+          "text": "M.",
+          "start": 38.583,
+          "end": 38.623
+        }
+      ]
+    },
+    {
+      "start": 39.643,
+      "end": 44.783,
+      "text": "Per eseguire operazioni a due qubit, i qubit coinvolti devono essere collegati fisicamente secondo la",
+      "words": [
+        {
+          "text": "Per",
+          "start": 39.643,
+          "end": 39.743
+        },
+        {
+          "text": "eseguire",
+          "start": 39.783,
+          "end": 40.083
+        },
+        {
+          "text": "operazioni",
+          "start": 40.123,
+          "end": 40.563
+        },
+        {
+          "text": "a",
+          "start": 40.623,
+          "end": 40.663
+        },
+        {
+          "text": "due",
+          "start": 40.703,
+          "end": 40.843
+        },
+        {
+          "text": "qubit,",
+          "start": 40.883,
+          "end": 41.243
+        },
+        {
+          "text": "i",
+          "start": 41.643,
+          "end": 41.683
+        },
+        {
+          "text": "qubit",
+          "start": 41.723,
+          "end": 41.983
+        },
+        {
+          "text": "coinvolti",
+          "start": 42.043,
+          "end": 42.523
+        },
+        {
+          "text": "devono",
+          "start": 42.563,
+          "end": 42.763
+        },
+        {
+          "text": "essere",
+          "start": 42.803,
+          "end": 43.063
+        },
+        {
+          "text": "collegati",
+          "start": 43.123,
+          "end": 43.543
+        },
+        {
+          "text": "fisicamente",
+          "start": 43.623,
+          "end": 44.283
+        },
+        {
+          "text": "secondo",
+          "start": 44.343,
+          "end": 44.663
+        },
+        {
+          "text": "la",
+          "start": 44.703,
+          "end": 44.783
+        }
+      ]
+    },
+    {
+      "start": 44.843,
+      "end": 47.983,
+      "text": "topologia del chip: a linea con al più due vicini,",
+      "words": [
+        {
+          "text": "topologia",
+          "start": 44.843,
+          "end": 45.343
+        },
+        {
+          "text": "del",
+          "start": 45.383,
+          "end": 45.503
+        },
+        {
+          "text": "chip:",
+          "start": 45.563,
+          "end": 45.803
+        },
+        {
+          "text": "a",
+          "start": 46.383,
+          "end": 46.423
+        },
+        {
+          "text": "linea",
+          "start": 46.543,
+          "end": 46.843
+        },
+        {
+          "text": "con",
+          "start": 46.983,
+          "end": 47.103
+        },
+        {
+          "text": "al",
+          "start": 47.143,
+          "end": 47.223
+        },
+        {
+          "text": "più",
+          "start": 47.263,
+          "end": 47.363
+        },
+        {
+          "text": "due",
+          "start": 47.443,
+          "end": 47.583
+        },
+        {
+          "text": "vicini,",
+          "start": 47.603,
+          "end": 47.983
+        }
+      ]
+    },
+    {
+      "start": 48.383,
+      "end": 51.084,
+      "text": "a scala oppure a griglia fino a quattro vicini.",
+      "words": [
+        {
+          "text": "a",
+          "start": 48.383,
+          "end": 48.423
+        },
+        {
+          "text": "scala",
+          "start": 48.463,
+          "end": 48.763
+        },
+        {
+          "text": "oppure",
+          "start": 49.083,
+          "end": 49.323
+        },
+        {
+          "text": "a",
+          "start": 49.363,
+          "end": 49.403
+        },
+        {
+          "text": "griglia",
+          "start": 49.463,
+          "end": 49.823
+        },
+        {
+          "text": "fino",
+          "start": 50.043,
+          "end": 50.223
+        },
+        {
+          "text": "a",
+          "start": 50.263,
+          "end": 50.303
+        },
+        {
+          "text": "quattro",
+          "start": 50.383,
+          "end": 50.703
+        },
+        {
+          "text": "vicini.",
+          "start": 50.723,
+          "end": 51.084
+        }
+      ]
+    },
+    {
+      "start": 51.924,
+      "end": 56.264,
+      "text": "Poiché queste macchine sono grandi, costose e criogeniche, non si acquistano:",
+      "words": [
+        {
+          "text": "Poiché",
+          "start": 51.924,
+          "end": 52.164
+        },
+        {
+          "text": "queste",
+          "start": 52.224,
+          "end": 52.444
+        },
+        {
+          "text": "macchine",
+          "start": 52.464,
+          "end": 52.744
+        },
+        {
+          "text": "sono",
+          "start": 52.784,
+          "end": 52.944
+        },
+        {
+          "text": "grandi,",
+          "start": 53.044,
+          "end": 53.444
+        },
+        {
+          "text": "costose",
+          "start": 53.604,
+          "end": 54.164
+        },
+        {
+          "text": "e",
+          "start": 54.324,
+          "end": 54.364
+        },
+        {
+          "text": "criogeniche,",
+          "start": 54.464,
+          "end": 55.184
+        },
+        {
+          "text": "non",
+          "start": 55.504,
+          "end": 55.624
+        },
+        {
+          "text": "si",
+          "start": 55.664,
+          "end": 55.724
+        },
+        {
+          "text": "acquistano:",
+          "start": 55.764,
+          "end": 56.264
+        }
+      ]
+    },
+    {
+      "start": 56.584,
+      "end": 60.224,
+      "text": "vi si accede via cloud attraverso piattaforme come I B M Quantum,",
+      "words": [
+        {
+          "text": "vi",
+          "start": 56.584,
+          "end": 56.644
+        },
+        {
+          "text": "si",
+          "start": 56.684,
+          "end": 56.724
+        },
+        {
+          "text": "accede",
+          "start": 56.764,
+          "end": 57.004
+        },
+        {
+          "text": "via",
+          "start": 57.044,
+          "end": 57.164
+        },
+        {
+          "text": "cloud",
+          "start": 57.224,
+          "end": 57.544
+        },
+        {
+          "text": "attraverso",
+          "start": 57.924,
+          "end": 58.304
+        },
+        {
+          "text": "piattaforme",
+          "start": 58.344,
+          "end": 58.864
+        },
+        {
+          "text": "come",
+          "start": 58.904,
+          "end": 59.084
+        },
+        {
+          "text": "I",
+          "start": 59.284,
+          "end": 59.324
+        },
+        {
+          "text": "B",
+          "start": 59.364,
+          "end": 59.404
+        },
+        {
+          "text": "M",
+          "start": 59.624,
+          "end": 59.664
+        },
+        {
+          "text": "Quantum,",
+          "start": 59.744,
+          "end": 60.224
+        }
+      ]
+    },
+    {
+      "start": 60.484,
+      "end": 64.744,
+      "text": "Google Quantum A I, Amazon Braket, Azure Quantum, Xanadu,",
+      "words": [
+        {
+          "text": "Google",
+          "start": 60.484,
+          "end": 60.764
+        },
+        {
+          "text": "Quantum",
+          "start": 60.784,
+          "end": 61.124
+        },
+        {
+          "text": "A",
+          "start": 61.284,
+          "end": 61.324
+        },
+        {
+          "text": "I,",
+          "start": 61.664,
+          "end": 61.704
+        },
+        {
+          "text": "Amazon",
+          "start": 62.104,
+          "end": 62.404
+        },
+        {
+          "text": "Braket,",
+          "start": 62.424,
+          "end": 62.804
+        },
+        {
+          "text": "Azure",
+          "start": 63.224,
+          "end": 63.564
+        },
+        {
+          "text": "Quantum,",
+          "start": 63.644,
+          "end": 64.124
+        },
+        {
+          "text": "Xanadu,",
+          "start": 64.264,
+          "end": 64.744
+        }
+      ]
+    },
+    {
+      "start": 65.024,
+      "end": 69.005,
+      "text": "D-Wave o Rigetti, che espongono numero di qubit, stato online,",
+      "words": [
+        {
+          "text": "D-Wave",
+          "start": 65.024,
+          "end": 65.464
+        },
+        {
+          "text": "o",
+          "start": 65.625,
+          "end": 65.665
+        },
+        {
+          "text": "Rigetti,",
+          "start": 65.745,
+          "end": 66.165
+        },
+        {
+          "text": "che",
+          "start": 66.485,
+          "end": 66.565
+        },
+        {
+          "text": "espongono",
+          "start": 66.605,
+          "end": 67.005
+        },
+        {
+          "text": "numero",
+          "start": 67.205,
+          "end": 67.465
+        },
+        {
+          "text": "di",
+          "start": 67.505,
+          "end": 67.565
+        },
+        {
+          "text": "qubit,",
+          "start": 67.605,
+          "end": 67.925
+        },
+        {
+          "text": "stato",
+          "start": 68.225,
+          "end": 68.445
+        },
+        {
+          "text": "online,",
+          "start": 68.505,
+          "end": 69.005
+        }
+      ]
+    },
+    {
+      "start": 69.385,
+      "end": 71.705,
+      "text": "lunghezza della coda, processore e piano.",
+      "words": [
+        {
+          "text": "lunghezza",
+          "start": 69.385,
+          "end": 69.745
+        },
+        {
+          "text": "della",
+          "start": 69.785,
+          "end": 69.945
+        },
+        {
+          "text": "coda,",
+          "start": 69.985,
+          "end": 70.245
+        },
+        {
+          "text": "processore",
+          "start": 70.545,
+          "end": 71.085
+        },
+        {
+          "text": "e",
+          "start": 71.385,
+          "end": 71.42500000000001
+        },
+        {
+          "text": "piano.",
+          "start": 71.445,
+          "end": 71.705
+        }
+      ]
+    }
+  ]
+}

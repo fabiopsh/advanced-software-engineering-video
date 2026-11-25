@@ -1,0 +1,540 @@
+{
+  "lesson_id": "03-feature",
+  "chapter": 3,
+  "part": "Parte I · Prodotti software e sviluppo agile",
+  "title": "Feature, scenari e storie",
+  "voice_config": {
+    "provider": "gemini",
+    "model": "gemini-3.8-flash-tts",
+    "voice_name": "Ludo",
+    "style": "chiaro, didattico, calmo e preciso, stile lezione universitaria di ingegneria del software"
+  },
+  "scenes": [
+    {
+      "id": "scene-01",
+      "section": "3.1 · Perché servono le feature",
+      "title": "Dagli utenti alle feature del prodotto",
+      "tts_text": "Benvenuti al terzo capitolo. Dopo aver visto il passaggio dal progetto al prodotto e i metodi agili, oggi scopriamo come capire che cosa deve fare un prodotto software. [pause:0.5] Il design di un prodotto nasce da quattro fattori: l'ispirazione, i bisogni di aziende o consumatori non ancora soddisfatti, l'insoddisfazione verso i prodotti esistenti e i cambiamenti tecnici che rendono possibili nuovi prodotti. [pause:0.5] Nello sviluppo basato su prodotto non c'è un cliente che fissa i requisiti fin dall'inizio: questi cambiano nel tempo e si documentano molto meno. Si individuano invece le feature, cioè frammenti di funzionalità del prodotto. [pause:0.5] Per scoprirle bisogna studiare gli utenti potenziali con interviste, sondaggi e consultazioni informali, ricordando una trappola tipica: in azienda i manager comprano il prodotto, ma i dipendenti che lo usano potrebbero rifiutarlo. [pause:0.6] Tre strumenti guidano questo percorso: le personas, che ispirano gli scenari; gli scenari, che si sviluppano in storie e ispirano le feature; e le storie, che definiscono le feature, con la possibilità di passare anche direttamente dalle personas alle storie.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">3.1 · Perché servono le feature</div>\n  <h2 class=\"slide-title\">Dagli utenti alle feature del prodotto</h2>\n  <div id=\"s1\" class=\"split-visual cue-hidden\">\n    <div class=\"svg-panel\">\n      <svg viewBox=\"0 0 380 205\" class=\"diagram-svg\" aria-label=\"Relazioni tra personas, scenari, storie e feature\">\n        <defs>\n          <marker id=\"arr-f1\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\">\n            <path d=\"M0 1 L9 5 L0 9 z\" fill=\"var(--ink-soft)\"/>\n          </marker>\n        </defs>\n        <g id=\"svg-p\">\n          <rect x=\"20\" y=\"14\" width=\"120\" height=\"34\" rx=\"8\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.7\"/>\n          <text x=\"80\" y=\"35\" text-anchor=\"middle\" class=\"svg-math\">Personas</text>\n        </g>\n        <g id=\"svg-sc\">\n          <rect x=\"20\" y=\"84\" width=\"120\" height=\"34\" rx=\"8\" fill=\"var(--orange-soft, rgba(217,119,6,0.12))\" stroke=\"var(--orange)\" stroke-width=\"1.7\"/>\n          <text x=\"80\" y=\"105\" text-anchor=\"middle\" class=\"svg-math\">Scenarios</text>\n        </g>\n        <g id=\"svg-st\">\n          <rect x=\"240\" y=\"84\" width=\"120\" height=\"34\" rx=\"8\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.7\"/>\n          <text x=\"300\" y=\"105\" text-anchor=\"middle\" class=\"svg-math\">Stories</text>\n        </g>\n        <g id=\"svg-f\">\n          <rect x=\"130\" y=\"156\" width=\"120\" height=\"34\" rx=\"8\" fill=\"var(--green-soft, rgba(21,128,61,0.12))\" stroke=\"var(--green)\" stroke-width=\"1.8\"/>\n          <text x=\"190\" y=\"177\" text-anchor=\"middle\" class=\"svg-math\">Features</text>\n        </g>\n        <line x1=\"80\" y1=\"48\" x2=\"80\" y2=\"80\" stroke=\"var(--ink-soft)\" stroke-width=\"1.6\" marker-end=\"url(#arr-f1)\"/>\n        <text x=\"86\" y=\"68\" text-anchor=\"start\" class=\"svg-tick\">inspire</text>\n        <line x1=\"140\" y1=\"101\" x2=\"236\" y2=\"101\" stroke=\"var(--ink-soft)\" stroke-width=\"1.6\" marker-end=\"url(#arr-f1)\"/>\n        <text x=\"188\" y=\"93\" text-anchor=\"middle\" class=\"svg-tick\">are-developed-into</text>\n        <line x1=\"105\" y1=\"118\" x2=\"156\" y2=\"154\" stroke=\"var(--ink-soft)\" stroke-width=\"1.6\" marker-end=\"url(#arr-f1)\"/>\n        <text x=\"116\" y=\"144\" text-anchor=\"end\" class=\"svg-tick\">inspire</text>\n        <line x1=\"275\" y1=\"118\" x2=\"224\" y2=\"154\" stroke=\"var(--ink-soft)\" stroke-width=\"1.6\" marker-end=\"url(#arr-f1)\"/>\n        <text x=\"264\" y=\"144\" text-anchor=\"start\" class=\"svg-tick\">define</text>\n        <line x1=\"140\" y1=\"31\" x2=\"296\" y2=\"81\" stroke=\"var(--muted)\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\" marker-end=\"url(#arr-f1)\"/>\n        <text x=\"232\" y=\"46\" text-anchor=\"start\" class=\"svg-caption\">passaggio diretto</text>\n      </svg>\n    </div>\n    <div class=\"formula-col\">\n      <div id=\"b-feat\" class=\"box box-def\">\n        <div class=\"box-label\">Feature vs Requisiti</div>\n        <p>Meno documentazione formale rispetto al project-based: i requisiti cambiano e non li fissa un cliente. Si scoprono le <strong>feature</strong> (frammenti di funzionalità) con interviste, sondaggi e consultazioni.</p>\n      </div>\n      <div id=\"b-buyer\" class=\"box box-warn\">\n        <div class=\"box-label\">Attenzione · Acquirenti &ne; Utenti</div>\n        <p>In un'azienda i <strong>manager</strong> comprano il prodotto, ma i <strong>dipendenti</strong> che lo usano quotidianamente potrebbero non volerlo usare.</p>\n      </div>\n    </div>\n  </div>\n  <div id=\"s2\" class=\"metrics-row cue-hidden\">\n    <div class=\"metric\">\n      <div class=\"metric-val\">1 · Ispirazione</div>\n      <div class=\"metric-lbl\">Nuove idee di prodotto</div>\n    </div>\n    <div class=\"metric\">\n      <div class=\"metric-val\">2 · Bisogni</div>\n      <div class=\"metric-lbl\">Esigenze non soddisfatte</div>\n    </div>\n    <div class=\"metric\">\n      <div class=\"metric-val\">3 · Insoddisfazione</div>\n      <div class=\"metric-lbl\">Limiti dei prodotti attuali</div>\n    </div>\n    <div class=\"metric\">\n      <div class=\"metric-val\">4 · Tecnologia</div>\n      <div class=\"metric-lbl\">Cambiamenti tecnici abilitanti</div>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 2.22,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "Dopo aver visto il"
+        },
+        {
+          "at": 6.76,
+          "action": "highlight",
+          "target": "#b-feat",
+          "duration": 4.04,
+          "anchor": "oggi scopriamo come capire"
+        },
+        {
+          "at": 10.92,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Il design di un prodotto"
+        },
+        {
+          "at": 10.92,
+          "action": "highlight",
+          "target": "#s2",
+          "duration": 11.8,
+          "anchor": "Il design di un prodotto"
+        },
+        {
+          "at": 26,
+          "action": "highlight",
+          "target": "#b-feat",
+          "duration": 12.6,
+          "anchor": "Nello sviluppo basato su"
+        },
+        {
+          "at": 39.22,
+          "action": "highlight",
+          "target": "#b-buyer",
+          "duration": 13.92,
+          "anchor": "Per scoprirle bisogna studiare"
+        },
+        {
+          "at": 53.26,
+          "action": "highlight",
+          "target": "#svg-p",
+          "duration": 3.34,
+          "anchor": "Tre strumenti guidano questo"
+        },
+        {
+          "at": 56.72,
+          "action": "highlight",
+          "target": "#svg-sc",
+          "duration": 2.62,
+          "anchor": "che ispirano gli scenari"
+        },
+        {
+          "at": 59.46,
+          "action": "highlight",
+          "target": "#svg-st",
+          "duration": 3.64,
+          "anchor": "si sviluppano in storie"
+        },
+        {
+          "at": 63.22,
+          "action": "highlight",
+          "target": "#svg-f",
+          "duration": 5.1,
+          "anchor": "che definiscono le feature"
+        }
+      ],
+      "audio_file": "audio/scene-01.wav",
+      "subtitle_file": "subtitles/scene-01.json",
+      "duration_sec": 68.95
+    },
+    {
+      "id": "scene-02",
+      "section": "3.2 · Personas e proto-personas",
+      "title": "Rappresentare gli utenti e il dibattito sulle foto",
+      "tts_text": "Il primo strumento per capire chi userà il prodotto sono le personas. Una persona è un tipo immaginato di utente: per esempio, nell'agenda di uno studio dentistico avremo il dentista, la segretaria e il paziente. [pause:0.5] Bastano poche personas, da una a due e al massimo cinque, per identificare le feature chiave. Quando studiare utenti reali non è possibile, per esempio per un prodotto del tutto nuovo, si creano proto-personas senza dati diretti. [pause:0.5] Ogni persona contiene quattro elementi: la personalization con nome e contesto personale; i dati job-related sul lavoro; la education, cioè formazione e competenze tecniche, cruciali per il design dell'interfaccia; e la relevance, cioè perché potrebbe interessarsi al prodotto. [pause:0.5] Prendiamo Emma, insegnante di storia di quarantuno anni a Edimburgo con due figli: usa social e app d'ufficio da casa, ma odia l'ambiente virtuale scolastico. Non ha un background tecnico e vuole un prodotto per l'amministrazione, non per la didattica mista. [pause:0.5] Infine, inserire una fotografia è discusso: secondo Salminen una foto sorridente aumenta l'efficacia, mentre Cable e Wachter-Boettcher avvertono che contano le azioni, non l'aspetto o i pregiudizi demografici, e Deutsch nota l'effetto mediatore del genere.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">3.2 · Personas e proto-personas</div>\n  <h2 class=\"slide-title\">Rappresentare gli utenti e il dibattito sulle fotografie</h2>\n  <div id=\"s1\" class=\"grid-2 cue-hidden\">\n    <div id=\"p-def\" class=\"box box-def\">\n      <div class=\"box-label\">Persona &amp; Proto-persona</div>\n      <p><strong>Persona</strong>: tipo immaginato di utente (es. agenda studio dentistico: <em>dentista, segretaria, paziente</em>). Ne bastano <strong>1&ndash;2 (max 5)</strong>.</p>\n      <p><strong>Proto-persona</strong>: usata per prodotti nuovi quando studiare utenti reali non è possibile (senza dati diretti).</p>\n    </div>\n    <div id=\"p-fields\" class=\"box box-primary\">\n      <div class=\"box-label\">4 componenti della descrizione</div>\n      <ul class=\"clean-list\">\n        <li><strong>Personalization</strong>: nome, situazione personale, ev. foto.</li>\n        <li><strong>Job-related</strong>: lavoro svolto e compiti (per prodotti aziendali).</li>\n        <li><strong>Education</strong>: competenze tecniche ed esperienza (chiave per la UI).</li>\n        <li><strong>Relevance</strong>: interesse per il prodotto e obiettivi d'uso.</li>\n      </ul>\n    </div>\n  </div>\n  <div id=\"s2\" class=\"grid-2 cue-hidden\">\n    <div id=\"p-emma\" class=\"box box-idea\">\n      <div class=\"box-label\">Esempio · Emma (41 anni, Edimburgo)</div>\n      <p>Insegnante di storia (studenti 12&ndash;18 anni), nata a Cardiff, 2 figli. Usa social e app d'ufficio da casa, ma <strong>odia il VLE scolastico</strong> e preferisce la presenza.</p>\n      <p><strong>Conclusioni</strong>: nessun background tecnico; vuole supporto per l'<em>amministrazione</em> e documenti storici (iLearn).</p>\n    </div>\n    <div id=\"p-foto\" class=\"box box-warn\">\n      <div class=\"box-label\">Fotografie nelle personas · 4 osservazioni</div>\n      <ul class=\"clean-list\">\n        <li><strong>Pro (Salminen)</strong>: foto sorridente aumenta efficacia e adozione.</li>\n        <li><strong>Contro (Cable)</strong>: conta cosa fanno le persone, non l'aspetto.</li>\n        <li><strong>Contro (Wachter-Boettcher)</strong>: troppi dettagli spingono a legare demografia e motivazioni.</li>\n        <li><strong>Genere (Deutsch)</strong>: influenza mediatrice sugli attributi percepiti.</li>\n      </ul>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 1.12,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "capire chi userà il"
+        },
+        {
+          "at": 4.62,
+          "action": "highlight",
+          "target": "#p-def",
+          "duration": 8.4,
+          "anchor": "Una persona è un"
+        },
+        {
+          "at": 13.14,
+          "action": "highlight",
+          "target": "#p-def",
+          "duration": 13,
+          "anchor": "Bastano poche personas"
+        },
+        {
+          "at": 27.2,
+          "action": "highlight",
+          "target": "#p-fields",
+          "duration": 16.5,
+          "anchor": "Ogni persona contiene quattro"
+        },
+        {
+          "at": 45.54,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Prendiamo Emma, insegnante di"
+        },
+        {
+          "at": 45.54,
+          "action": "highlight",
+          "target": "#p-emma",
+          "duration": 16.5,
+          "anchor": "Prendiamo Emma, insegnante di"
+        },
+        {
+          "at": 62.3,
+          "action": "highlight",
+          "target": "#p-foto",
+          "duration": 17.3,
+          "anchor": "inserire una fotografia è"
+        }
+      ],
+      "audio_file": "audio/scene-02.wav",
+      "subtitle_file": "subtitles/scene-02.json",
+      "duration_sec": 78.19
+    },
+    {
+      "id": "scene-03",
+      "section": "3.3 · Scenari d'uso",
+      "title": "Narrazioni ad alto livello per scoprire le feature",
+      "tts_text": "Dalle personas passiamo agli scenari. Uno scenario è una narrazione che descrive una situazione in cui un utente usa le feature del prodotto per raggiungere qualcosa che vuole fare, con l'obiettivo di scoprire nuove funzionalità. [pause:0.5] Uno scenario completo include sei elementi: il nome, le personas coinvolte, l'obiettivo generale, il problema che il sistema esistente non risolve, ciò che serve per raggiungerlo e i modi possibili per affrontarlo. [pause:0.5] Vediamo lo scenario Fishing in Ullapool. Jack insegna alle elementari e avvia un progetto sulla pesca locale usando il wiki di iLearn. Gli studenti devono condividere e commentare fotografie, ma serve moderazione preventiva per copyright e privacy. Su consiglio di due colleghi, Jack adotta KidsTakePics, crea un account docente e uno di classe non integrati con iLearn, e aggiunge il servizio così che gli alunni carichino foto da telefono o computer. [pause:0.5] Ricordiamo infine come si scrivono e quali sono i loro limiti: servono tre o quattro scenari per persona sulle responsabilità principali, scritti dal punto di vista dell'utente, prima da soli e poi discussi in team. Stimolano creatività e comunicazione, ma restano di alto livello: non sono specifiche complete.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">3.3 · Scenari d'uso</div>\n  <h2 class=\"slide-title\">Narrazioni ad alto livello per scoprire le feature</h2>\n  <div id=\"s1\" class=\"grid-2 cue-hidden\">\n    <div id=\"sc-def\" class=\"box box-def\">\n      <div class=\"box-label\">Definizione &amp; 6 elementi dello scenario</div>\n      <p>Narrazione di una situazione in cui l'utente usa il prodotto per fare ciò che vuole (scoperta delle feature):</p>\n      <ul class=\"clean-list\">\n        <li><strong>Nome</strong> e <strong>personas</strong> (attori) coinvolte;</li>\n        <li><strong>Obiettivo generale</strong> e <strong>problema</strong> non risolto dal sistema attuale;</li>\n        <li><strong>Cosa comporta</strong> l'obiettivo e <strong>modi possibili</strong> di soluzione.</li>\n      </ul>\n    </div>\n    <div id=\"sc-jack\" class=\"box box-idea\">\n      <div class=\"box-label\">Esempio · Scenario &ldquo;Fishing in Ullapool&rdquo;</div>\n      <p><strong>Jack</strong> (primaria a Ullapool) avvia un progetto sulla pesca su wiki iLearn. Serve condividere e commentare foto, con <strong>moderazione</strong> per copyright e privacy.</p>\n      <p>Adotta <em>KidsTakePics</em>: crea account docente/classe (senza SSO iLearn) e lo integra nei servizi per upload da smartphone e PC di classe.</p>\n    </div>\n  </div>\n  <div id=\"s2\" class=\"box box-primary cue-hidden\">\n    <div class=\"box-label\">Come si scrivono &amp; limiti degli scenari</div>\n    <ul class=\"clean-list\">\n      <li><strong>Copertura</strong>: 3&ndash;4 scenari per persona sulle responsabilità principali, scritti dal <strong>punto di vista dell'utente</strong>.</li>\n      <li><strong>Processo</strong>: ogni membro ne scrive alcuni individualmente, poi li discute col team e, se possibile, con gli utenti.</li>\n      <li><strong>Valore e limite</strong>: facilitano comunicazione e creatività nel design, ma <strong>non sono specifiche</strong> (mancano dettagli, possono essere incompleti).</li>\n    </ul>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 0.92,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "passiamo agli scenari"
+        },
+        {
+          "at": 2.8,
+          "action": "highlight",
+          "target": "#sc-def",
+          "duration": 11.4,
+          "anchor": "Uno scenario è una"
+        },
+        {
+          "at": 14.66,
+          "action": "highlight",
+          "target": "#sc-def",
+          "duration": 13,
+          "anchor": "Uno scenario completo include"
+        },
+        {
+          "at": 28.46,
+          "action": "highlight",
+          "target": "#sc-jack",
+          "duration": 25,
+          "anchor": "Vediamo lo scenario Fishing"
+        },
+        {
+          "at": 56.54,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Ricordiamo infine come si"
+        },
+        {
+          "at": 56.54,
+          "action": "highlight",
+          "target": "#s2",
+          "duration": 23.8,
+          "anchor": "Ricordiamo infine come si"
+        }
+      ],
+      "audio_file": "audio/scene-03.wav",
+      "subtitle_file": "subtitles/scene-03.json",
+      "duration_sec": 74.99
+    },
+    {
+      "id": "scene-04",
+      "section": "3.4 · User stories, epics e caso Tic Tac Toe",
+      "title": "Dalle storie agili alle fette verticali di valore",
+      "tts_text": "Gli scenari sono ampi; le user stories li traducono in narrazioni più fini secondo il modello: As a ruolo, I want to fare qualcosa, So that motivo o valore. Realizzano tre principi del manifesto agile: consegnare presto valore, consegnare frequentemente e cercare la semplicità. [pause:0.5] Qui cambia la prospettiva: gli sviluppatori vedono l'applicazione come uno stack tecnico, mentre l'utente la vede come fette di funzionalità utilizzabili. Una buona storia richiede uno o due giorni di lavoro; le storie troppo grandi, chiamate epics, si spezzano e alimentano il product backlog di Scrum, dove vengono ordinate per priorità e sforzo nel requirements triage. [pause:0.5] Per esempio, l'epic del Tic Tac Toe per giocare contro il computer richiede ben più di due giorni. La dividiamo in tre fette: prima il computer fa una mossa valida qualsiasi, già giocabile; poi blocca la vittoria avversaria; infine vince quando può. [pause:0.5] Anche quando tutte le storie sono pronte, gli scenari restano utili per lettura naturale, comprensione e contesto, pur potendo passare dalle personas direttamente alle storie. Nella tabella vediamo il caso di Pierfrancesco, nove anni di Pisa, con tutte le storie per la griglia tre per tre.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">3.4 · User stories, epics e caso Tic Tac Toe</div>\n  <h2 class=\"slide-title\">Fette verticali di valore, epics e backlog</h2>\n  <div id=\"s1\" class=\"grid-2 cue-hidden\">\n    <div id=\"st-def\" class=\"box box-def\">\n      <div class=\"box-label\">Modello User Story &amp; Requirements Triage</div>\n      <p><strong>As a</strong> &lt;ruolo&gt;, <strong>I want to</strong> &lt;azione&gt;, <strong>So that</strong> &lt;valore&gt;. Attua 3 principi Agile (valore presto, frequente, semplicità).</p>\n      <p>Durata ideale: <strong>1&ndash;2 giorni</strong>. Le storie alimentano il <em>product backlog</em> Scrum, ordinate per priorità e sforzo (<strong>requirements triage</strong>).</p>\n    </div>\n    <div id=\"st-epic\" class=\"box box-primary\">\n      <div class=\"box-label\">Fette di funzionalità &amp; Spezzare le Epics</div>\n      <p>Sviluppatore vede lo <em>stack</em>; utente vede <strong>fette di valore</strong>. <strong>Epic</strong> Tic Tac Toe (<em>play against computer</em>) &rarr; <strong>1.</strong> mossa valida; <strong>2.</strong> blocca avversario; <strong>3.</strong> vince se può.</p>\n      <p>Gli scenari restano utili per lettura naturale, comprensione e contesto (ma si può saltare da personas a storie).</p>\n    </div>\n  </div>\n  <table id=\"s2\" class=\"acad-table cue-hidden\">\n    <thead>\n      <tr><th>Tic Tac Toe (3&times;3) · Pierfrancesco (9 anni, Pisa)</th><th>I want to (ruolo: Player)</th><th>So that (valore)</th></tr>\n    </thead>\n    <tbody>\n      <tr id=\"tt-1\"><td><strong>Gioco base</strong></td><td>select next valid move &middot; see updated board &middot; see whose turn</td><td>play the game &middot; decide next move &middot; know if I should play</td></tr>\n      <tr id=\"tt-2\"><td><strong>Esito partita</strong></td><td>know when I win/fail/tie &middot; see the winning combo</td><td>celebrate, be sad, or play again &middot; better see it</td></tr>\n      <tr id=\"tt-3\"><td><strong>Gioco in singolo</strong></td><td>play against the computer</td><td>(learn how to) play alone</td></tr>\n      <tr id=\"tt-4\"><td><strong>Personalizzazione</strong></td><td>select my symbol &middot; have a timer</td><td>customise my games &middot; the game is even shorter</td></tr>\n      <tr id=\"tt-5\"><td><strong>Controllo partita</strong></td><td>start a new game &middot; ask for a rematch &middot; surrender</td><td>play with others &middot; eventually win &middot; stop suffering</td></tr>\n    </tbody>\n  </table>\n</div>\n",
+      "cues": [
+        {
+          "at": 0.05,
+          "action": "highlight",
+          "target": "#st-def",
+          "duration": 14.5,
+          "anchor": "Gli scenari sono ampi"
+        },
+        {
+          "at": 1.49,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "le user stories li"
+        },
+        {
+          "at": 18.59,
+          "action": "highlight",
+          "target": "#st-epic",
+          "duration": 11.78,
+          "anchor": "Qui cambia la prospettiva"
+        },
+        {
+          "at": 30.49,
+          "action": "highlight",
+          "target": "#st-def",
+          "duration": 10.5,
+          "anchor": "le storie troppo grandi"
+        },
+        {
+          "at": 41.54,
+          "action": "highlight",
+          "target": "#st-epic",
+          "duration": 16,
+          "anchor": "l'epic del Tic Tac"
+        },
+        {
+          "at": 55.84,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Anche quando tutte le"
+        },
+        {
+          "at": 57.66,
+          "action": "highlight",
+          "target": "#st-epic",
+          "duration": 7.82,
+          "anchor": "gli scenari restano utili"
+        },
+        {
+          "at": 65.6,
+          "action": "highlight",
+          "target": "#s2",
+          "duration": 10.8,
+          "anchor": "Nella tabella vediamo il"
+        }
+      ],
+      "audio_file": "audio/scene-04.wav",
+      "subtitle_file": "subtitles/scene-04.json",
+      "duration_sec": 71.79
+    },
+    {
+      "id": "scene-05",
+      "section": "3.5 · Identificare le feature",
+      "title": "Proprietà delle feature, fonti di conoscenza e trade-off",
+      "tts_text": "Dalle storie e dagli scenari arriviamo finalmente all'elenco delle feature che definiscono il prodotto. Una buona feature possiede tre proprietà fondamentali. [pause:0.5] Prima, l'independence: non dipende da come sono implementate le altre feature né dal loro ordine di attivazione. Seconda, la coherence: è legata a una sola funzionalità, non fa più cose insieme e non produce effetti collaterali. Terza, la relevance: riflette il modo normale in cui gli utenti svolgono un compito, evitando funzioni oscure o richieste di rado. [pause:0.5] Per progettare bene le feature il team attinge a quattro fonti di conoscenza: la user knowledge da scenari e storie; la product knowledge sui prodotti esistenti e le loro funzioni essenziali; la domain knowledge sull'area di lavoro, come finanza o prenotazioni; e la technology knowledge per sfruttare gli sviluppi più recenti. [pause:0.5] Infine, nel comporre l'insieme delle feature bisogna bilanciare tre coppie di fattori in tensione: simplicity contro functionality, control contro automation e familiarity contro novelty, perché aumentare un polo tende a ridurre l'altro.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">3.5 · Identificare le feature</div>\n  <h2 class=\"slide-title\">Proprietà, fonti di conoscenza e fattori in tensione</h2>\n  <div id=\"s1\" class=\"grid-3 cue-hidden\">\n    <div id=\"f-ind\" class=\"box box-def\">\n      <div class=\"box-label\">1 · Independence</div>\n      <p>Non dipende da come sono implementate le altre feature né dal loro ordine di attivazione.</p>\n    </div>\n    <div id=\"f-coh\" class=\"box box-primary\">\n      <div class=\"box-label\">2 · Coherence</div>\n      <p>Legata a una sola funzionalità: non fa più di una cosa e non ha mai effetti collaterali.</p>\n    </div>\n    <div id=\"f-rel\" class=\"box box-idea\">\n      <div class=\"box-label\">3 · Relevance</div>\n      <p>Riflette il modo normale in cui gli utenti lavorano; evita funzioni oscure e richieste di rado.</p>\n    </div>\n  </div>\n  <div id=\"s2\" class=\"split-visual cue-hidden\">\n    <div class=\"svg-panel\">\n      <svg viewBox=\"0 0 360 190\" class=\"diagram-svg\" aria-label=\"Tre coppie di fattori in tensione\">\n        <defs>\n          <marker id=\"arr-ten\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n            <path d=\"M0 1 L9 5 L0 9 z\" fill=\"var(--red)\"/>\n          </marker>\n        </defs>\n        <text x=\"180\" y=\"22\" text-anchor=\"middle\" class=\"svg-math\">Feature set design factors</text>\n        <g id=\"svg-t1\">\n          <rect x=\"14\" y=\"42\" width=\"110\" height=\"32\" rx=\"7\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.5\"/>\n          <text x=\"69\" y=\"62\" text-anchor=\"middle\" class=\"svg-tick\">Simplicity</text>\n          <line x1=\"130\" y1=\"58\" x2=\"230\" y2=\"58\" stroke=\"var(--red)\" stroke-width=\"1.8\" marker-start=\"url(#arr-ten)\" marker-end=\"url(#arr-ten)\"/>\n          <rect x=\"236\" y=\"42\" width=\"110\" height=\"32\" rx=\"7\" fill=\"var(--orange-soft, rgba(217,119,6,0.12))\" stroke=\"var(--orange)\" stroke-width=\"1.5\"/>\n          <text x=\"291\" y=\"62\" text-anchor=\"middle\" class=\"svg-tick\">Functionality</text>\n        </g>\n        <g id=\"svg-t2\">\n          <rect x=\"14\" y=\"92\" width=\"110\" height=\"32\" rx=\"7\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.5\"/>\n          <text x=\"69\" y=\"112\" text-anchor=\"middle\" class=\"svg-tick\">Control</text>\n          <line x1=\"130\" y1=\"108\" x2=\"230\" y2=\"108\" stroke=\"var(--red)\" stroke-width=\"1.8\" marker-start=\"url(#arr-ten)\" marker-end=\"url(#arr-ten)\"/>\n          <rect x=\"236\" y=\"92\" width=\"110\" height=\"32\" rx=\"7\" fill=\"var(--orange-soft, rgba(217,119,6,0.12))\" stroke=\"var(--orange)\" stroke-width=\"1.5\"/>\n          <text x=\"291\" y=\"112\" text-anchor=\"middle\" class=\"svg-tick\">Automation</text>\n        </g>\n        <g id=\"svg-t3\">\n          <rect x=\"14\" y=\"142\" width=\"110\" height=\"32\" rx=\"7\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.5\"/>\n          <text x=\"69\" y=\"162\" text-anchor=\"middle\" class=\"svg-tick\">Familiarity</text>\n          <line x1=\"130\" y1=\"158\" x2=\"230\" y2=\"158\" stroke=\"var(--red)\" stroke-width=\"1.8\" marker-start=\"url(#arr-ten)\" marker-end=\"url(#arr-ten)\"/>\n          <rect x=\"236\" y=\"142\" width=\"110\" height=\"32\" rx=\"7\" fill=\"var(--orange-soft, rgba(217,119,6,0.12))\" stroke=\"var(--orange)\" stroke-width=\"1.5\"/>\n          <text x=\"291\" y=\"162\" text-anchor=\"middle\" class=\"svg-tick\">Novelty</text>\n        </g>\n      </svg>\n    </div>\n    <div class=\"formula-col\">\n      <div id=\"f-know\" class=\"box box-algo\">\n        <div class=\"box-label\">4 fonti di conoscenza</div>\n        <ul class=\"clean-list\">\n          <li><strong>User knowledge</strong>: bisogni e usi da scenari e storie.</li>\n          <li><strong>Product knowledge</strong>: funzioni base replicate da prodotti esistenti.</li>\n          <li><strong>Domain knowledge</strong>: logica del dominio (es. finanza, prenotazioni).</li>\n          <li><strong>Technology knowledge</strong>: innovazioni tecniche rispetto ai concorrenti.</li>\n        </ul>\n      </div>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 1.78,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "arriviamo finalmente all'elenco delle"
+        },
+        {
+          "at": 9.86,
+          "action": "highlight",
+          "target": "#f-ind",
+          "duration": 7.38,
+          "anchor": "Prima, l'independence: non"
+        },
+        {
+          "at": 17.36,
+          "action": "highlight",
+          "target": "#f-coh",
+          "duration": 7.5,
+          "anchor": "Seconda, la coherence: è"
+        },
+        {
+          "at": 25.04,
+          "action": "highlight",
+          "target": "#f-rel",
+          "duration": 8.57,
+          "anchor": "Terza, la relevance: riflette"
+        },
+        {
+          "at": 33.73,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Per progettare bene le"
+        },
+        {
+          "at": 33.73,
+          "action": "highlight",
+          "target": "#f-know",
+          "duration": 19.5,
+          "anchor": "Per progettare bene le"
+        },
+        {
+          "at": 54.75,
+          "action": "highlight",
+          "target": "#svg-t1",
+          "duration": 4.96,
+          "anchor": "nel comporre l'insieme delle"
+        },
+        {
+          "at": 59.83,
+          "action": "highlight",
+          "target": "#svg-t2",
+          "duration": 4.16,
+          "anchor": "simplicity contro functionality"
+        },
+        {
+          "at": 64.11,
+          "action": "highlight",
+          "target": "#svg-t3",
+          "duration": 6.45,
+          "anchor": "familiarity contro novelty"
+        }
+      ],
+      "audio_file": "audio/scene-05.wav",
+      "subtitle_file": "subtitles/scene-05.json",
+      "duration_sec": 69
+    },
+    {
+      "id": "scene-06",
+      "section": "3.6 · Feature creep e descrizione",
+      "title": "Evitare il feature creep e descrivere ogni feature",
+      "tts_text": "Quando si immaginano sempre nuovi utenti potenziali, il numero di feature cresce senza controllo: è il fenomeno del feature creep. Le sue cause sono tre: il marketing vuole accontentare tutte le richieste, spinge a copiare le feature dei concorrenti e si cerca di supportare insieme utenti esperti e inesperti. [pause:0.5] Per evitarlo, ogni nuova proposta deve superare quattro domande filtro: aggiunge davvero qualcosa di nuovo o è solo un doppione? È probabile che sia importante e usata dalla maggior parte degli utenti? Si può ottenere estendendo una feature esistente invece di aggiungerne una nuova? Offre una capacità generale o è troppo specifica? [pause:0.5] Superato il filtro, il team discute scenari e storie e scrive la descrizione strutturata di ogni feature: il nome, l'input dall'utente o da altre fonti, l'activation cioè come viene attivata, l'action cioè come elabora i dati, e l'output restituito a utente e sistema. [pause:0.4] Subito dopo si costruiscono prototipi, partendo dalle feature nuove e da quelle critiche.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">3.6 · Feature creep &amp; derivazione</div>\n  <h2 class=\"slide-title\">Controllare il feature creep e descrivere le feature</h2>\n  <div id=\"s1\" class=\"grid-2 cue-hidden\">\n    <div id=\"fc-cause\" class=\"box box-warn\">\n      <div class=\"box-label\">Feature creep: 3 cause principali</div>\n      <p>Crescita incontrollata immaginando nuovi utenti:</p>\n      <ul class=\"clean-list\">\n        <li>Il marketing vuole soddisfare <strong>tutte</strong> le richieste;</li>\n        <li>Pressione a includere le feature dei <strong>concorrenti</strong>;</li>\n        <li>Voler supportare insieme utenti <strong>esperti e inesperti</strong>.</li>\n      </ul>\n    </div>\n    <div id=\"fc-q\" class=\"box box-algo\">\n      <div class=\"box-label\">4 domande per evitare il feature creep</div>\n      <ul class=\"clean-list\">\n        <li>Aggiunge qualcosa di <strong>nuovo</strong> o è solo un'alternativa?</li>\n        <li>È <strong>importante</strong> e usata dalla maggior parte degli utenti?</li>\n        <li>Si può <strong>estendere</strong> una feature già esistente?</li>\n        <li>È una funzione <strong>generale</strong> o troppo specifica?</li>\n      </ul>\n    </div>\n  </div>\n  <div id=\"s2\" class=\"split-visual cue-hidden\">\n    <div class=\"svg-panel\">\n      <svg viewBox=\"0 0 380 195\" class=\"diagram-svg\" aria-label=\"Struttura della descrizione di una feature\">\n        <defs>\n          <marker id=\"arr-fd\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\">\n            <path d=\"M0 1 L9 5 L0 9 z\" fill=\"var(--ink-soft)\"/>\n          </marker>\n        </defs>\n        <text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"svg-math\">Feature name</text>\n        <g id=\"svg-in\">\n          <rect x=\"16\" y=\"30\" width=\"150\" height=\"42\" rx=\"7\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.6\"/>\n          <text x=\"91\" y=\"47\" text-anchor=\"middle\" class=\"svg-math\">Input</text>\n          <text x=\"91\" y=\"62\" text-anchor=\"middle\" class=\"svg-caption\">da utente e altre fonti</text>\n        </g>\n        <g id=\"svg-act\">\n          <rect x=\"214\" y=\"30\" width=\"150\" height=\"42\" rx=\"7\" fill=\"var(--orange-soft, rgba(217,119,6,0.12))\" stroke=\"var(--orange)\" stroke-width=\"1.6\"/>\n          <text x=\"289\" y=\"47\" text-anchor=\"middle\" class=\"svg-math\">Activation</text>\n          <text x=\"289\" y=\"62\" text-anchor=\"middle\" class=\"svg-caption\">come l'utente la attiva</text>\n        </g>\n        <g id=\"svg-az\">\n          <rect x=\"105\" y=\"92\" width=\"170\" height=\"40\" rx=\"7\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.6\"/>\n          <text x=\"190\" y=\"108\" text-anchor=\"middle\" class=\"svg-math\">Action</text>\n          <text x=\"190\" y=\"123\" text-anchor=\"middle\" class=\"svg-caption\">elaborazione dati di input</text>\n        </g>\n        <g id=\"svg-out\">\n          <rect x=\"105\" y=\"148\" width=\"170\" height=\"40\" rx=\"7\" fill=\"var(--green-soft, rgba(21,128,61,0.12))\" stroke=\"var(--green)\" stroke-width=\"1.6\"/>\n          <text x=\"190\" y=\"164\" text-anchor=\"middle\" class=\"svg-math\">Output</text>\n          <text x=\"190\" y=\"179\" text-anchor=\"middle\" class=\"svg-caption\">all'utente e al sistema</text>\n        </g>\n        <line x1=\"110\" y1=\"72\" x2=\"154\" y2=\"90\" stroke=\"var(--ink-soft)\" stroke-width=\"1.6\" marker-end=\"url(#arr-fd)\"/>\n        <line x1=\"270\" y1=\"72\" x2=\"226\" y2=\"90\" stroke=\"var(--ink-soft)\" stroke-width=\"1.6\" marker-end=\"url(#arr-fd)\"/>\n        <line x1=\"190\" y1=\"132\" x2=\"190\" y2=\"146\" stroke=\"var(--ink-soft)\" stroke-width=\"1.6\" marker-end=\"url(#arr-fd)\"/>\n      </svg>\n    </div>\n    <div class=\"formula-col\">\n      <div id=\"fc-desc\" class=\"box box-def\">\n        <div class=\"box-label\">Derivazione in team</div>\n        <p>Il team di sviluppo discute scenari e storie ed estrae l'elenco formale delle descrizioni delle feature.</p>\n      </div>\n      <div id=\"fc-proto\" class=\"box box-idea\">\n        <div class=\"box-label\">Prototipazione mirata</div>\n        <p>Si costruiscono subito prototipi per dimostrare le feature, partendo da quelle <strong>nuove</strong> e quelle <strong>critiche</strong>.</p>\n      </div>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 0.63,
+          "action": "highlight",
+          "target": "#fc-cause",
+          "duration": 16.5,
+          "anchor": "Quando si immaginano sempre"
+        },
+        {
+          "at": 1.45,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "sempre nuovi utenti potenziali"
+        },
+        {
+          "at": 19,
+          "action": "highlight",
+          "target": "#fc-q",
+          "duration": 19.3,
+          "anchor": "ogni nuova proposta deve"
+        },
+        {
+          "at": 37.22,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Superato il filtro, il"
+        },
+        {
+          "at": 38.42,
+          "action": "highlight",
+          "target": "#fc-desc",
+          "duration": 5.72,
+          "anchor": "il team discute scenari"
+        },
+        {
+          "at": 44.26,
+          "action": "highlight",
+          "target": "#svg-in",
+          "duration": 2.92,
+          "anchor": "il nome, l'input dall'utente"
+        },
+        {
+          "at": 47.3,
+          "action": "highlight",
+          "target": "#svg-act",
+          "duration": 2.42,
+          "anchor": "l'activation cioè come viene"
+        },
+        {
+          "at": 49.84,
+          "action": "highlight",
+          "target": "#svg-az",
+          "duration": 2.26,
+          "anchor": "l'action cioè come elabora"
+        },
+        {
+          "at": 52.22,
+          "action": "highlight",
+          "target": "#svg-out",
+          "duration": 3.04,
+          "anchor": "e l'output restituito a"
+        },
+        {
+          "at": 55.38,
+          "action": "highlight",
+          "target": "#fc-proto",
+          "duration": 4.67,
+          "anchor": "Subito dopo si costruiscono"
+        }
+      ],
+      "audio_file": "audio/scene-06.wav",
+      "subtitle_file": "subtitles/scene-06.json",
+      "duration_sec": 59.68
+    },
+    {
+      "id": "scene-07",
+      "section": "3.7 · Riepilogo e autoverifica",
+      "title": "Punti chiave del capitolo e domande d'esame",
+      "tts_text": "Chiudiamo il terzo capitolo ripassando i sette punti chiave. [pause:0.5] Primo: un prodotto richiede meno documentazione dei requisiti e si fonda sulle feature, frammenti di funzionalità. [pause:0.4] Secondo: la catena di scoperta parte dalle personas, passa agli scenari, poi alle user stories e infine alle feature, con possibilità di saltare gli scenari. [pause:0.4] Terzo: una persona è un tipo immaginato di utente; ne servono una o due, al massimo cinque, con personalization, job-related, education e relevance. [pause:0.4] Quarto: uno scenario è una narrazione di alto livello, non una specifica, scritta in tre o quattro esempi per persona dal punto di vista utente. [pause:0.4] Quinto: la user story segue il modello As a ruolo, I want to azione, So that motivo; dura uno o due giorni e le epics vanno spezzate. [pause:0.4] Sesto: una buona feature deve essere independent, coherent e relevant. [pause:0.4] Settimo: il feature creep si previene con quattro domande su novità, importanza, estendibilità e generalità. [pause:0.5] Prima di passare al capitolo quattro sull'architettura, rispondete alle sette domande di verifica sulla destra.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">3.7 · Riepilogo &amp; Autoverifica</div>\n  <h2 class=\"slide-title\">Punti chiave e domande di verifica</h2>\n  <div class=\"grid-2\">\n    <div class=\"box box-algo\">\n      <div class=\"box-label\">Punti chiave da fissare</div>\n      <ul class=\"clean-list\">\n        <li id=\"s1\" class=\"cue-hidden\"><strong>Prodotto &amp; feature</strong>: meno documentazione dei requisiti; si individuano frammenti di funzionalità.</li>\n        <li id=\"s2\" class=\"cue-hidden\"><strong>Flusso</strong>: Personas &rarr; scenari &rarr; storie &rarr; feature (si possono saltare gli scenari).</li>\n        <li id=\"s3\" class=\"cue-hidden\"><strong>Persona</strong>: utente immaginato, 1&ndash;2 (max 5), con personalization, job-related, education, relevance.</li>\n        <li id=\"s4\" class=\"cue-hidden\"><strong>Scenario</strong>: narrazione ad alto livello, non una specifica; 3&ndash;4 per persona dal punto di vista utente.</li>\n        <li id=\"s5\" class=\"cue-hidden\"><strong>User story</strong>: <em>As a</em> &lt;ruolo&gt; <em>I want to</em> &lt;azione&gt; <em>So that</em> &lt;motivo&gt;; 1&ndash;2 giorni, epics spezzate.</li>\n        <li id=\"s6\" class=\"cue-hidden\"><strong>Proprietà</strong>: una buona feature è <em>independent</em>, <em>coherent</em> e <em>relevant</em>.</li>\n        <li id=\"s7\" class=\"cue-hidden\"><strong>Feature creep</strong>: evitato con 4 domande su novità, importanza, estendibilità e generalità.</li>\n      </ul>\n    </div>\n    <div id=\"s8\" class=\"box box-theorem cue-hidden\">\n      <div class=\"box-label\">Domande di verifica</div>\n      <ol class=\"verify-list\">\n        <li>Perché un prodotto richiede meno documentazione dei requisiti di un progetto?</li>\n        <li>Che cos'è una persona e cosa contiene la sua descrizione? Quante ne servono?</li>\n        <li>In che cosa differiscono scenari e user stories? Perché usare ancora gli scenari?</li>\n        <li>Qual è il modello di una user story? Quanto deve durare e che cos'è una epic?</li>\n        <li>Quali sono le tre proprietà di una buona feature?</li>\n        <li>Che cos'è il feature creep, che cause ha e come si evita?</li>\n        <li>Che cosa contiene la descrizione di una feature?</li>\n      </ol>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 3.6,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "Primo: un prodotto richiede"
+        },
+        {
+          "at": 3.6,
+          "action": "highlight",
+          "target": "#s1",
+          "duration": 7.26,
+          "anchor": "Primo: un prodotto richiede"
+        },
+        {
+          "at": 10.98,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Secondo: la catena di"
+        },
+        {
+          "at": 10.98,
+          "action": "highlight",
+          "target": "#s2",
+          "duration": 9.5,
+          "anchor": "Secondo: la catena di"
+        },
+        {
+          "at": 20.93,
+          "action": "show",
+          "target": "#s3",
+          "anchor": "Terzo: una persona è"
+        },
+        {
+          "at": 20.93,
+          "action": "highlight",
+          "target": "#s3",
+          "duration": 10,
+          "anchor": "Terzo: una persona è"
+        },
+        {
+          "at": 31.73,
+          "action": "show",
+          "target": "#s4",
+          "anchor": "Quarto: uno scenario è"
+        },
+        {
+          "at": 31.73,
+          "action": "highlight",
+          "target": "#s4",
+          "duration": 8.92,
+          "anchor": "Quarto: uno scenario è"
+        },
+        {
+          "at": 40.77,
+          "action": "show",
+          "target": "#s5",
+          "anchor": "Quinto: la user story"
+        },
+        {
+          "at": 40.77,
+          "action": "highlight",
+          "target": "#s5",
+          "duration": 9.95,
+          "anchor": "Quinto: la user story"
+        },
+        {
+          "at": 50.84,
+          "action": "show",
+          "target": "#s6",
+          "anchor": "Sesto: una buona feature"
+        },
+        {
+          "at": 50.84,
+          "action": "highlight",
+          "target": "#s6",
+          "duration": 5.2,
+          "anchor": "Sesto: una buona feature"
+        },
+        {
+          "at": 56.16,
+          "action": "show",
+          "target": "#s7",
+          "anchor": "Settimo: il feature creep"
+        },
+        {
+          "at": 56.16,
+          "action": "highlight",
+          "target": "#s7",
+          "duration": 9,
+          "anchor": "Settimo: il feature creep"
+        },
+        {
+          "at": 64.02,
+          "action": "show",
+          "target": "#s8",
+          "anchor": "Prima di passare al"
+        },
+        {
+          "at": 66.56,
+          "action": "highlight",
+          "target": "#s8",
+          "duration": 6.85,
+          "anchor": "rispondete alle sette domande"
+        }
+      ],
+      "audio_file": "audio/scene-07.wav",
+      "subtitle_file": "subtitles/scene-07.json",
+      "duration_sec": 69.39
+    }
+  ]
+}

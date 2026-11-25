@@ -1,0 +1,813 @@
+{
+  "duration": 60.139,
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 4.22,
+      "text": "Tutti gli oggetti di Kubernetes si descrivono in file chiamati manifest,",
+      "words": [
+        {
+          "text": "Tutti",
+          "start": 0.0,
+          "end": 0.22
+        },
+        {
+          "text": "gli",
+          "start": 0.28,
+          "end": 0.38
+        },
+        {
+          "text": "oggetti",
+          "start": 0.42,
+          "end": 0.8
+        },
+        {
+          "text": "di",
+          "start": 0.84,
+          "end": 0.9
+        },
+        {
+          "text": "Kubernetes",
+          "start": 0.96,
+          "end": 1.66
+        },
+        {
+          "text": "si",
+          "start": 1.78,
+          "end": 1.86
+        },
+        {
+          "text": "descrivono",
+          "start": 1.92,
+          "end": 2.4
+        },
+        {
+          "text": "in",
+          "start": 2.46,
+          "end": 2.54
+        },
+        {
+          "text": "file",
+          "start": 2.62,
+          "end": 2.98
+        },
+        {
+          "text": "chiamati",
+          "start": 3.02,
+          "end": 3.38
+        },
+        {
+          "text": "manifest,",
+          "start": 3.56,
+          "end": 4.22
+        }
+      ]
+    },
+    {
+      "start": 4.72,
+      "end": 7.001,
+      "text": "scritti in formato YAML o JSON.",
+      "words": [
+        {
+          "text": "scritti",
+          "start": 4.72,
+          "end": 5.08
+        },
+        {
+          "text": "in",
+          "start": 5.12,
+          "end": 5.18
+        },
+        {
+          "text": "formato",
+          "start": 5.22,
+          "end": 5.58
+        },
+        {
+          "text": "YAML",
+          "start": 5.8,
+          "end": 6.101
+        },
+        {
+          "text": "o",
+          "start": 6.441,
+          "end": 6.481
+        },
+        {
+          "text": "JSON.",
+          "start": 6.681,
+          "end": 7.001
+        }
+      ]
+    },
+    {
+      "start": 7.881,
+      "end": 12.061,
+      "text": "L'unità fondamentale che Kubernetes esegue non è il singolo container,",
+      "words": [
+        {
+          "text": "L'unità",
+          "start": 7.881,
+          "end": 8.161
+        },
+        {
+          "text": "fondamentale",
+          "start": 8.221,
+          "end": 8.981
+        },
+        {
+          "text": "che",
+          "start": 9.121,
+          "end": 9.201
+        },
+        {
+          "text": "Kubernetes",
+          "start": 9.281,
+          "end": 9.821
+        },
+        {
+          "text": "esegue",
+          "start": 9.881,
+          "end": 10.281
+        },
+        {
+          "text": "non",
+          "start": 10.461,
+          "end": 10.601
+        },
+        {
+          "text": "è",
+          "start": 10.641,
+          "end": 10.681
+        },
+        {
+          "text": "il",
+          "start": 10.821,
+          "end": 10.921
+        },
+        {
+          "text": "singolo",
+          "start": 11.041,
+          "end": 11.421
+        },
+        {
+          "text": "container,",
+          "start": 11.461,
+          "end": 12.061
+        }
+      ]
+    },
+    {
+      "start": 12.281,
+      "end": 12.881,
+      "text": "ma il Pod.",
+      "words": [
+        {
+          "text": "ma",
+          "start": 12.281,
+          "end": 12.341
+        },
+        {
+          "text": "il",
+          "start": 12.441,
+          "end": 12.521
+        },
+        {
+          "text": "Pod.",
+          "start": 12.621,
+          "end": 12.881
+        }
+      ]
+    },
+    {
+      "start": 13.741,
+      "end": 19.082,
+      "text": "Un Pod raggruppa uno o più container strettamente collegati che condividono uno strato di rete,",
+      "words": [
+        {
+          "text": "Un",
+          "start": 13.741,
+          "end": 13.821
+        },
+        {
+          "text": "Pod",
+          "start": 13.881,
+          "end": 14.101
+        },
+        {
+          "text": "raggruppa",
+          "start": 14.321,
+          "end": 14.701
+        },
+        {
+          "text": "uno",
+          "start": 14.881,
+          "end": 15.061
+        },
+        {
+          "text": "o",
+          "start": 15.181,
+          "end": 15.221
+        },
+        {
+          "text": "più",
+          "start": 15.261,
+          "end": 15.361
+        },
+        {
+          "text": "container",
+          "start": 15.421,
+          "end": 15.861
+        },
+        {
+          "text": "strettamente",
+          "start": 15.941,
+          "end": 16.561
+        },
+        {
+          "text": "collegati",
+          "start": 16.601,
+          "end": 17.101
+        },
+        {
+          "text": "che",
+          "start": 17.461,
+          "end": 17.541
+        },
+        {
+          "text": "condividono",
+          "start": 17.601,
+          "end": 18.121
+        },
+        {
+          "text": "uno",
+          "start": 18.201,
+          "end": 18.322
+        },
+        {
+          "text": "strato",
+          "start": 18.402,
+          "end": 18.702
+        },
+        {
+          "text": "di",
+          "start": 18.742,
+          "end": 18.802
+        },
+        {
+          "text": "rete,",
+          "start": 18.862,
+          "end": 19.082
+        }
+      ]
+    },
+    {
+      "start": 19.642,
+      "end": 23.962,
+      "text": "cioè un unico indirizzo IP assegnato al Pod, e i volumi del filesystem.",
+      "words": [
+        {
+          "text": "cioè",
+          "start": 19.642,
+          "end": 19.782
+        },
+        {
+          "text": "un",
+          "start": 19.922,
+          "end": 20.022
+        },
+        {
+          "text": "unico",
+          "start": 20.082,
+          "end": 20.342
+        },
+        {
+          "text": "indirizzo",
+          "start": 20.402,
+          "end": 20.822
+        },
+        {
+          "text": "IP",
+          "start": 20.882,
+          "end": 21.042
+        },
+        {
+          "text": "assegnato",
+          "start": 21.322,
+          "end": 21.742
+        },
+        {
+          "text": "al",
+          "start": 21.782,
+          "end": 21.862
+        },
+        {
+          "text": "Pod,",
+          "start": 21.902,
+          "end": 22.122
+        },
+        {
+          "text": "e",
+          "start": 22.642,
+          "end": 22.682
+        },
+        {
+          "text": "i",
+          "start": 22.722,
+          "end": 22.762
+        },
+        {
+          "text": "volumi",
+          "start": 22.802,
+          "end": 23.102
+        },
+        {
+          "text": "del",
+          "start": 23.262,
+          "end": 23.382
+        },
+        {
+          "text": "filesystem.",
+          "start": 23.422,
+          "end": 23.962
+        }
+      ]
+    },
+    {
+      "start": 24.762,
+      "end": 29.282,
+      "text": "In questo modo i container dentro lo stesso Pod collaborano come se fossero sulla stessa",
+      "words": [
+        {
+          "text": "In",
+          "start": 24.762,
+          "end": 24.822
+        },
+        {
+          "text": "questo",
+          "start": 24.842,
+          "end": 25.062
+        },
+        {
+          "text": "modo",
+          "start": 25.102,
+          "end": 25.262
+        },
+        {
+          "text": "i",
+          "start": 25.402,
+          "end": 25.442
+        },
+        {
+          "text": "container",
+          "start": 25.502,
+          "end": 26.042
+        },
+        {
+          "text": "dentro",
+          "start": 26.142,
+          "end": 26.442
+        },
+        {
+          "text": "lo",
+          "start": 26.522,
+          "end": 26.562
+        },
+        {
+          "text": "stesso",
+          "start": 26.602,
+          "end": 26.882
+        },
+        {
+          "text": "Pod",
+          "start": 26.922,
+          "end": 27.122
+        },
+        {
+          "text": "collaborano",
+          "start": 27.262,
+          "end": 27.922
+        },
+        {
+          "text": "come",
+          "start": 28.162,
+          "end": 28.302
+        },
+        {
+          "text": "se",
+          "start": 28.342,
+          "end": 28.422
+        },
+        {
+          "text": "fossero",
+          "start": 28.462,
+          "end": 28.762
+        },
+        {
+          "text": "sulla",
+          "start": 28.802,
+          "end": 28.982
+        },
+        {
+          "text": "stessa",
+          "start": 29.002,
+          "end": 29.282
+        }
+      ]
+    },
+    {
+      "start": 29.322,
+      "end": 33.403,
+      "text": "macchina locale, mentre rimangono isolati rispetto agli altri Pod del cluster.",
+      "words": [
+        {
+          "text": "macchina",
+          "start": 29.322,
+          "end": 29.622
+        },
+        {
+          "text": "locale,",
+          "start": 29.682,
+          "end": 30.002
+        },
+        {
+          "text": "mentre",
+          "start": 30.342,
+          "end": 30.623
+        },
+        {
+          "text": "rimangono",
+          "start": 30.663,
+          "end": 31.083
+        },
+        {
+          "text": "isolati",
+          "start": 31.203,
+          "end": 31.663
+        },
+        {
+          "text": "rispetto",
+          "start": 31.803,
+          "end": 32.143
+        },
+        {
+          "text": "agli",
+          "start": 32.183,
+          "end": 32.303
+        },
+        {
+          "text": "altri",
+          "start": 32.343,
+          "end": 32.563
+        },
+        {
+          "text": "Pod",
+          "start": 32.603,
+          "end": 32.763
+        },
+        {
+          "text": "del",
+          "start": 32.843,
+          "end": 32.963
+        },
+        {
+          "text": "cluster.",
+          "start": 33.003,
+          "end": 33.403
+        }
+      ]
+    },
+    {
+      "start": 34.443,
+      "end": 38.963,
+      "text": "Ogni manifest che definisce un Pod o qualsiasi altro oggetto è composto da quattro sezioni",
+      "words": [
+        {
+          "text": "Ogni",
+          "start": 34.443,
+          "end": 34.583
+        },
+        {
+          "text": "manifest",
+          "start": 34.663,
+          "end": 35.103
+        },
+        {
+          "text": "che",
+          "start": 35.183,
+          "end": 35.263
+        },
+        {
+          "text": "definisce",
+          "start": 35.283,
+          "end": 35.643
+        },
+        {
+          "text": "un",
+          "start": 35.703,
+          "end": 35.763
+        },
+        {
+          "text": "Pod",
+          "start": 35.803,
+          "end": 36.043
+        },
+        {
+          "text": "o",
+          "start": 36.403,
+          "end": 36.443
+        },
+        {
+          "text": "qualsiasi",
+          "start": 36.503,
+          "end": 36.883
+        },
+        {
+          "text": "altro",
+          "start": 36.923,
+          "end": 37.083
+        },
+        {
+          "text": "oggetto",
+          "start": 37.123,
+          "end": 37.503
+        },
+        {
+          "text": "è",
+          "start": 37.623,
+          "end": 37.663
+        },
+        {
+          "text": "composto",
+          "start": 37.703,
+          "end": 38.063
+        },
+        {
+          "text": "da",
+          "start": 38.103,
+          "end": 38.163
+        },
+        {
+          "text": "quattro",
+          "start": 38.263,
+          "end": 38.563
+        },
+        {
+          "text": "sezioni",
+          "start": 38.623,
+          "end": 38.963
+        }
+      ]
+    },
+    {
+      "start": 39.003,
+      "end": 39.583,
+      "text": "obbligatorie.",
+      "words": [
+        {
+          "text": "obbligatorie.",
+          "start": 39.003,
+          "end": 39.583
+        }
+      ]
+    },
+    {
+      "start": 40.363,
+      "end": 43.744,
+      "text": "apiVersion indica gruppo API e versione dell'oggetto;",
+      "words": [
+        {
+          "text": "apiVersion",
+          "start": 40.363,
+          "end": 40.983
+        },
+        {
+          "text": "indica",
+          "start": 41.303,
+          "end": 41.583
+        },
+        {
+          "text": "gruppo",
+          "start": 41.703,
+          "end": 42.043
+        },
+        {
+          "text": "API",
+          "start": 42.203,
+          "end": 42.443
+        },
+        {
+          "text": "e",
+          "start": 42.624,
+          "end": 42.664
+        },
+        {
+          "text": "versione",
+          "start": 42.744,
+          "end": 43.124
+        },
+        {
+          "text": "dell'oggetto;",
+          "start": 43.164,
+          "end": 43.744
+        }
+      ]
+    },
+    {
+      "start": 44.404,
+      "end": 48.344,
+      "text": "kind specifica il tipo di risorsa, ad esempio Pod o Service;",
+      "words": [
+        {
+          "text": "kind",
+          "start": 44.404,
+          "end": 44.804
+        },
+        {
+          "text": "specifica",
+          "start": 45.084,
+          "end": 45.524
+        },
+        {
+          "text": "il",
+          "start": 45.584,
+          "end": 45.664
+        },
+        {
+          "text": "tipo",
+          "start": 45.724,
+          "end": 45.924
+        },
+        {
+          "text": "di",
+          "start": 45.964,
+          "end": 46.024
+        },
+        {
+          "text": "risorsa,",
+          "start": 46.064,
+          "end": 46.504
+        },
+        {
+          "text": "ad",
+          "start": 46.844,
+          "end": 46.944
+        },
+        {
+          "text": "esempio",
+          "start": 46.964,
+          "end": 47.284
+        },
+        {
+          "text": "Pod",
+          "start": 47.364,
+          "end": 47.604
+        },
+        {
+          "text": "o",
+          "start": 47.804,
+          "end": 47.844
+        },
+        {
+          "text": "Service;",
+          "start": 47.924,
+          "end": 48.344
+        }
+      ]
+    },
+    {
+      "start": 49.104,
+      "end": 53.584,
+      "text": "metadata contiene i dati che identificano l'oggetto, come il nome e le etichette;",
+      "words": [
+        {
+          "text": "metadata",
+          "start": 49.104,
+          "end": 49.624
+        },
+        {
+          "text": "contiene",
+          "start": 49.944,
+          "end": 50.284
+        },
+        {
+          "text": "i",
+          "start": 50.324,
+          "end": 50.364
+        },
+        {
+          "text": "dati",
+          "start": 50.384,
+          "end": 50.624
+        },
+        {
+          "text": "che",
+          "start": 50.684,
+          "end": 50.764
+        },
+        {
+          "text": "identificano",
+          "start": 50.824,
+          "end": 51.464
+        },
+        {
+          "text": "l'oggetto,",
+          "start": 51.504,
+          "end": 52.004
+        },
+        {
+          "text": "come",
+          "start": 52.224,
+          "end": 52.384
+        },
+        {
+          "text": "il",
+          "start": 52.404,
+          "end": 52.484
+        },
+        {
+          "text": "nome",
+          "start": 52.544,
+          "end": 52.764
+        },
+        {
+          "text": "e",
+          "start": 52.924,
+          "end": 52.964
+        },
+        {
+          "text": "le",
+          "start": 53.004,
+          "end": 53.084
+        },
+        {
+          "text": "etichette;",
+          "start": 53.124,
+          "end": 53.584
+        }
+      ]
+    },
+    {
+      "start": 54.204,
+      "end": 59.845,
+      "text": "infine spec descrive lo stato desiderato, cioè immagini, porte e configurazioni.",
+      "words": [
+        {
+          "text": "infine",
+          "start": 54.204,
+          "end": 54.524
+        },
+        {
+          "text": "spec",
+          "start": 54.825,
+          "end": 55.165
+        },
+        {
+          "text": "descrive",
+          "start": 55.705,
+          "end": 56.105
+        },
+        {
+          "text": "lo",
+          "start": 56.185,
+          "end": 56.245
+        },
+        {
+          "text": "stato",
+          "start": 56.305,
+          "end": 56.585
+        },
+        {
+          "text": "desiderato,",
+          "start": 56.645,
+          "end": 57.245
+        },
+        {
+          "text": "cioè",
+          "start": 57.585,
+          "end": 57.705
+        },
+        {
+          "text": "immagini,",
+          "start": 57.865,
+          "end": 58.365
+        },
+        {
+          "text": "porte",
+          "start": 58.545,
+          "end": 58.945
+        },
+        {
+          "text": "e",
+          "start": 59.045,
+          "end": 59.085
+        },
+        {
+          "text": "configurazioni.",
+          "start": 59.125,
+          "end": 59.845
+        }
+      ]
+    }
+  ]
+}

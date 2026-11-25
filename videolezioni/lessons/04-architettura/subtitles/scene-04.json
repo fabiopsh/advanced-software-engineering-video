@@ -1,0 +1,994 @@
+{
+  "duration": 73.13,
+  "segments": [
+    {
+      "start": 0.845,
+      "end": 4.406,
+      "text": "Un modello fondamentale di decomposizione è l'architettura a strati,",
+      "words": [
+        {
+          "text": "Un",
+          "start": 0.845,
+          "end": 0.925
+        },
+        {
+          "text": "modello",
+          "start": 1.005,
+          "end": 1.325
+        },
+        {
+          "text": "fondamentale",
+          "start": 1.385,
+          "end": 2.085
+        },
+        {
+          "text": "di",
+          "start": 2.165,
+          "end": 2.225
+        },
+        {
+          "text": "decomposizione",
+          "start": 2.265,
+          "end": 3.065
+        },
+        {
+          "text": "è",
+          "start": 3.205,
+          "end": 3.245
+        },
+        {
+          "text": "l'architettura",
+          "start": 3.285,
+          "end": 3.885
+        },
+        {
+          "text": "a",
+          "start": 3.925,
+          "end": 3.965
+        },
+        {
+          "text": "strati,",
+          "start": 4.005,
+          "end": 4.406
+        }
+      ]
+    },
+    {
+      "start": 4.746,
+      "end": 5.906,
+      "text": "o layered architecture.",
+      "words": [
+        {
+          "text": "o",
+          "start": 4.746,
+          "end": 4.7860000000000005
+        },
+        {
+          "text": "layered",
+          "start": 4.926,
+          "end": 5.286
+        },
+        {
+          "text": "architecture.",
+          "start": 5.346,
+          "end": 5.906
+        }
+      ]
+    },
+    {
+      "start": 6.546,
+      "end": 9.746,
+      "text": "Qui ogni strato rappresenta una distinta area di interesse,",
+      "words": [
+        {
+          "text": "Qui",
+          "start": 6.546,
+          "end": 6.666
+        },
+        {
+          "text": "ogni",
+          "start": 6.966,
+          "end": 7.166
+        },
+        {
+          "text": "strato",
+          "start": 7.226,
+          "end": 7.586
+        },
+        {
+          "text": "rappresenta",
+          "start": 7.606,
+          "end": 8.046
+        },
+        {
+          "text": "una",
+          "start": 8.106,
+          "end": 8.226
+        },
+        {
+          "text": "distinta",
+          "start": 8.306,
+          "end": 8.786
+        },
+        {
+          "text": "area",
+          "start": 8.866,
+          "end": 9.066
+        },
+        {
+          "text": "di",
+          "start": 9.106,
+          "end": 9.166
+        },
+        {
+          "text": "interesse,",
+          "start": 9.206,
+          "end": 9.746
+        }
+      ]
+    },
+    {
+      "start": 10.186,
+      "end": 13.586,
+      "text": "i componenti dentro uno strato sono indipendenti senza sovrapporsi,",
+      "words": [
+        {
+          "text": "i",
+          "start": 10.186,
+          "end": 10.226
+        },
+        {
+          "text": "componenti",
+          "start": 10.246,
+          "end": 10.726
+        },
+        {
+          "text": "dentro",
+          "start": 10.826,
+          "end": 11.106
+        },
+        {
+          "text": "uno",
+          "start": 11.166,
+          "end": 11.266
+        },
+        {
+          "text": "strato",
+          "start": 11.306,
+          "end": 11.606
+        },
+        {
+          "text": "sono",
+          "start": 11.666,
+          "end": 11.826
+        },
+        {
+          "text": "indipendenti",
+          "start": 11.886,
+          "end": 12.546
+        },
+        {
+          "text": "senza",
+          "start": 12.706,
+          "end": 12.926
+        },
+        {
+          "text": "sovrapporsi,",
+          "start": 12.986,
+          "end": 13.586
+        }
+      ]
+    },
+    {
+      "start": 14.046,
+      "end": 17.926,
+      "text": "e il modello resta ad alto livello senza dettagli di implementazione.",
+      "words": [
+        {
+          "text": "e",
+          "start": 14.046,
+          "end": 14.086
+        },
+        {
+          "text": "il",
+          "start": 14.146,
+          "end": 14.226
+        },
+        {
+          "text": "modello",
+          "start": 14.266,
+          "end": 14.606
+        },
+        {
+          "text": "resta",
+          "start": 14.646,
+          "end": 14.866
+        },
+        {
+          "text": "ad",
+          "start": 14.926,
+          "end": 15.006
+        },
+        {
+          "text": "alto",
+          "start": 15.066,
+          "end": 15.306
+        },
+        {
+          "text": "livello",
+          "start": 15.346,
+          "end": 15.746
+        },
+        {
+          "text": "senza",
+          "start": 16.106,
+          "end": 16.366
+        },
+        {
+          "text": "dettagli",
+          "start": 16.406,
+          "end": 16.886
+        },
+        {
+          "text": "di",
+          "start": 16.926,
+          "end": 16.986
+        },
+        {
+          "text": "implementazione.",
+          "start": 17.046,
+          "end": 17.926
+        }
+      ]
+    },
+    {
+      "start": 18.806,
+      "end": 22.667,
+      "text": "Nella pratica, le preoccupazioni non sono mai separate al cento per cento.",
+      "words": [
+        {
+          "text": "Nella",
+          "start": 18.806,
+          "end": 18.966
+        },
+        {
+          "text": "pratica,",
+          "start": 19.006,
+          "end": 19.386
+        },
+        {
+          "text": "le",
+          "start": 19.727,
+          "end": 19.787
+        },
+        {
+          "text": "preoccupazioni",
+          "start": 19.827,
+          "end": 20.447
+        },
+        {
+          "text": "non",
+          "start": 20.507,
+          "end": 20.607
+        },
+        {
+          "text": "sono",
+          "start": 20.667,
+          "end": 20.827
+        },
+        {
+          "text": "mai",
+          "start": 20.887,
+          "end": 21.087
+        },
+        {
+          "text": "separate",
+          "start": 21.207,
+          "end": 21.687
+        },
+        {
+          "text": "al",
+          "start": 21.727,
+          "end": 21.807
+        },
+        {
+          "text": "cento",
+          "start": 21.867,
+          "end": 22.127
+        },
+        {
+          "text": "per",
+          "start": 22.167,
+          "end": 22.267
+        },
+        {
+          "text": "cento.",
+          "start": 22.327,
+          "end": 22.667
+        }
+      ]
+    },
+    {
+      "start": 23.147,
+      "end": 27.627,
+      "text": "In un sistema di recupero documenti, ad esempio, la validazione compare in due strati diversi:",
+      "words": [
+        {
+          "text": "In",
+          "start": 23.147,
+          "end": 23.227
+        },
+        {
+          "text": "un",
+          "start": 23.267,
+          "end": 23.327
+        },
+        {
+          "text": "sistema",
+          "start": 23.367,
+          "end": 23.667
+        },
+        {
+          "text": "di",
+          "start": 23.707,
+          "end": 23.767
+        },
+        {
+          "text": "recupero",
+          "start": 23.807,
+          "end": 24.127
+        },
+        {
+          "text": "documenti,",
+          "start": 24.167,
+          "end": 24.567
+        },
+        {
+          "text": "ad",
+          "start": 24.587,
+          "end": 24.647
+        },
+        {
+          "text": "esempio,",
+          "start": 24.667,
+          "end": 24.987
+        },
+        {
+          "text": "la",
+          "start": 25.327,
+          "end": 25.387
+        },
+        {
+          "text": "validazione",
+          "start": 25.427,
+          "end": 26.067
+        },
+        {
+          "text": "compare",
+          "start": 26.107,
+          "end": 26.447
+        },
+        {
+          "text": "in",
+          "start": 26.487,
+          "end": 26.567
+        },
+        {
+          "text": "due",
+          "start": 26.627,
+          "end": 26.787
+        },
+        {
+          "text": "strati",
+          "start": 26.847,
+          "end": 27.147
+        },
+        {
+          "text": "diversi:",
+          "start": 27.187,
+          "end": 27.627
+        }
+      ]
+    },
+    {
+      "start": 27.947,
+      "end": 33.587,
+      "text": "come validazione locale dell'input nel browser e come validazione delle query nei servizi di base.",
+      "words": [
+        {
+          "text": "come",
+          "start": 27.947,
+          "end": 28.127
+        },
+        {
+          "text": "validazione",
+          "start": 28.267,
+          "end": 28.847
+        },
+        {
+          "text": "locale",
+          "start": 28.907,
+          "end": 29.287
+        },
+        {
+          "text": "dell'input",
+          "start": 29.327,
+          "end": 29.867
+        },
+        {
+          "text": "nel",
+          "start": 29.947,
+          "end": 30.087
+        },
+        {
+          "text": "browser",
+          "start": 30.107,
+          "end": 30.527
+        },
+        {
+          "text": "e",
+          "start": 31.007,
+          "end": 31.047
+        },
+        {
+          "text": "come",
+          "start": 31.087,
+          "end": 31.267
+        },
+        {
+          "text": "validazione",
+          "start": 31.327,
+          "end": 31.887
+        },
+        {
+          "text": "delle",
+          "start": 31.927,
+          "end": 32.107
+        },
+        {
+          "text": "query",
+          "start": 32.167,
+          "end": 32.467
+        },
+        {
+          "text": "nei",
+          "start": 32.647,
+          "end": 32.767
+        },
+        {
+          "text": "servizi",
+          "start": 32.807,
+          "end": 33.167
+        },
+        {
+          "text": "di",
+          "start": 33.207,
+          "end": 33.267
+        },
+        {
+          "text": "base.",
+          "start": 33.307,
+          "end": 33.587
+        }
+      ]
+    },
+    {
+      "start": 34.087,
+      "end": 39.148,
+      "text": "Per un'applicazione web generica identifichiamo cinque strati tipici: interfaccia browser o mobile,",
+      "words": [
+        {
+          "text": "Per",
+          "start": 34.087,
+          "end": 34.187
+        },
+        {
+          "text": "un'applicazione",
+          "start": 34.207,
+          "end": 34.747
+        },
+        {
+          "text": "web",
+          "start": 34.808,
+          "end": 34.948
+        },
+        {
+          "text": "generica",
+          "start": 35.008,
+          "end": 35.448
+        },
+        {
+          "text": "identifichiamo",
+          "start": 35.628,
+          "end": 36.228
+        },
+        {
+          "text": "cinque",
+          "start": 36.328,
+          "end": 36.628
+        },
+        {
+          "text": "strati",
+          "start": 36.668,
+          "end": 36.928
+        },
+        {
+          "text": "tipici:",
+          "start": 36.988,
+          "end": 37.348
+        },
+        {
+          "text": "interfaccia",
+          "start": 37.728,
+          "end": 38.208
+        },
+        {
+          "text": "browser",
+          "start": 38.248,
+          "end": 38.588
+        },
+        {
+          "text": "o",
+          "start": 38.608,
+          "end": 38.648
+        },
+        {
+          "text": "mobile,",
+          "start": 38.688,
+          "end": 39.148
+        }
+      ]
+    },
+    {
+      "start": 39.408,
+      "end": 44.668,
+      "text": "autenticazione e gestione UI, funzionalità applicative specifiche, servizi condivisi di base,",
+      "words": [
+        {
+          "text": "autenticazione",
+          "start": 39.408,
+          "end": 40.148
+        },
+        {
+          "text": "e",
+          "start": 40.168,
+          "end": 40.208
+        },
+        {
+          "text": "gestione",
+          "start": 40.248,
+          "end": 40.608
+        },
+        {
+          "text": "UI,",
+          "start": 40.748,
+          "end": 41.008
+        },
+        {
+          "text": "funzionalità",
+          "start": 41.488,
+          "end": 41.988
+        },
+        {
+          "text": "applicative",
+          "start": 42.028,
+          "end": 42.468
+        },
+        {
+          "text": "specifiche,",
+          "start": 42.528,
+          "end": 43.068
+        },
+        {
+          "text": "servizi",
+          "start": 43.368,
+          "end": 43.768
+        },
+        {
+          "text": "condivisi",
+          "start": 43.808,
+          "end": 44.248
+        },
+        {
+          "text": "di",
+          "start": 44.288,
+          "end": 44.348
+        },
+        {
+          "text": "base,",
+          "start": 44.388,
+          "end": 44.668
+        }
+      ]
+    },
+    {
+      "start": 44.828,
+      "end": 46.668,
+      "text": "e gestione di database e transazioni.",
+      "words": [
+        {
+          "text": "e",
+          "start": 44.828,
+          "end": 44.868
+        },
+        {
+          "text": "gestione",
+          "start": 45.028,
+          "end": 45.428
+        },
+        {
+          "text": "di",
+          "start": 45.468,
+          "end": 45.528
+        },
+        {
+          "text": "database",
+          "start": 45.568,
+          "end": 45.988
+        },
+        {
+          "text": "e",
+          "start": 46.008,
+          "end": 46.048
+        },
+        {
+          "text": "transazioni.",
+          "start": 46.048,
+          "end": 46.668
+        }
+      ]
+    },
+    {
+      "start": 47.248,
+      "end": 52.729,
+      "text": "Questa decomposizione va definita insieme alle scelte tecnologiche, perché un database relazionale o un'app mobile",
+      "words": [
+        {
+          "text": "Questa",
+          "start": 47.248,
+          "end": 47.468
+        },
+        {
+          "text": "decomposizione",
+          "start": 47.508,
+          "end": 48.308
+        },
+        {
+          "text": "va",
+          "start": 48.428,
+          "end": 48.508
+        },
+        {
+          "text": "definita",
+          "start": 48.548,
+          "end": 48.888
+        },
+        {
+          "text": "insieme",
+          "start": 48.948,
+          "end": 49.228
+        },
+        {
+          "text": "alle",
+          "start": 49.248,
+          "end": 49.368
+        },
+        {
+          "text": "scelte",
+          "start": 49.388,
+          "end": 49.668
+        },
+        {
+          "text": "tecnologiche,",
+          "start": 49.708,
+          "end": 50.329
+        },
+        {
+          "text": "perché",
+          "start": 50.489,
+          "end": 50.689
+        },
+        {
+          "text": "un",
+          "start": 50.729,
+          "end": 50.789
+        },
+        {
+          "text": "database",
+          "start": 50.829,
+          "end": 51.209
+        },
+        {
+          "text": "relazionale",
+          "start": 51.249,
+          "end": 51.849
+        },
+        {
+          "text": "o",
+          "start": 51.989,
+          "end": 52.029
+        },
+        {
+          "text": "un'app",
+          "start": 52.069,
+          "end": 52.249
+        },
+        {
+          "text": "mobile",
+          "start": 52.309,
+          "end": 52.729
+        }
+      ]
+    },
+    {
+      "start": 53.049,
+      "end": 54.629,
+      "text": "condizionano gli strati superiori.",
+      "words": [
+        {
+          "text": "condizionano",
+          "start": 53.049,
+          "end": 53.749
+        },
+        {
+          "text": "gli",
+          "start": 53.769,
+          "end": 53.869
+        },
+        {
+          "text": "strati",
+          "start": 53.909,
+          "end": 54.129
+        },
+        {
+          "text": "superiori.",
+          "start": 54.189,
+          "end": 54.629
+        }
+      ]
+    },
+    {
+      "start": 55.449,
+      "end": 62.729,
+      "text": "Esistono poi preoccupazioni trasversali, le cross-cutting concerns: sicurezza, prestazioni e affidabilità attraversano tutti gli strati",
+      "words": [
+        {
+          "text": "Esistono",
+          "start": 55.449,
+          "end": 55.809
+        },
+        {
+          "text": "poi",
+          "start": 55.829,
+          "end": 56.009
+        },
+        {
+          "text": "preoccupazioni",
+          "start": 56.149,
+          "end": 56.689
+        },
+        {
+          "text": "trasversali,",
+          "start": 56.729,
+          "end": 57.469
+        },
+        {
+          "text": "le",
+          "start": 57.649,
+          "end": 57.709
+        },
+        {
+          "text": "cross-cutting",
+          "start": 57.829,
+          "end": 58.269
+        },
+        {
+          "text": "concerns:",
+          "start": 58.289,
+          "end": 58.829
+        },
+        {
+          "text": "sicurezza,",
+          "start": 59.269,
+          "end": 59.769
+        },
+        {
+          "text": "prestazioni",
+          "start": 59.929,
+          "end": 60.529
+        },
+        {
+          "text": "e",
+          "start": 60.589,
+          "end": 60.629
+        },
+        {
+          "text": "affidabilità",
+          "start": 60.629,
+          "end": 61.169
+        },
+        {
+          "text": "attraversano",
+          "start": 61.329,
+          "end": 61.829
+        },
+        {
+          "text": "tutti",
+          "start": 61.929,
+          "end": 62.209
+        },
+        {
+          "text": "gli",
+          "start": 62.229,
+          "end": 62.369
+        },
+        {
+          "text": "strati",
+          "start": 62.409,
+          "end": 62.729
+        }
+      ]
+    },
+    {
+      "start": 62.829,
+      "end": 64.369,
+      "text": "aggiungendo interazioni tra essi.",
+      "words": [
+        {
+          "text": "aggiungendo",
+          "start": 62.829,
+          "end": 63.309
+        },
+        {
+          "text": "interazioni",
+          "start": 63.389,
+          "end": 63.909
+        },
+        {
+          "text": "tra",
+          "start": 63.949,
+          "end": 64.049
+        },
+        {
+          "text": "essi.",
+          "start": 64.149,
+          "end": 64.369
+        }
+      ]
+    },
+    {
+      "start": 64.869,
+      "end": 67.87,
+      "text": "Nella sicurezza, ad esempio, ogni livello va protetto singolarmente:",
+      "words": [
+        {
+          "text": "Nella",
+          "start": 64.869,
+          "end": 65.029
+        },
+        {
+          "text": "sicurezza,",
+          "start": 65.069,
+          "end": 65.47
+        },
+        {
+          "text": "ad",
+          "start": 65.51,
+          "end": 65.57
+        },
+        {
+          "text": "esempio,",
+          "start": 65.59,
+          "end": 65.95
+        },
+        {
+          "text": "ogni",
+          "start": 66.19,
+          "end": 66.37
+        },
+        {
+          "text": "livello",
+          "start": 66.43,
+          "end": 66.73
+        },
+        {
+          "text": "va",
+          "start": 66.75,
+          "end": 66.81
+        },
+        {
+          "text": "protetto",
+          "start": 66.85,
+          "end": 67.17
+        },
+        {
+          "text": "singolarmente:",
+          "start": 67.23,
+          "end": 67.87
+        }
+      ]
+    },
+    {
+      "start": 68.13,
+      "end": 72.89,
+      "text": "affidarsi a un solo componente di sicurezza crea una vulnerabilità critica se questo viene compromesso.",
+      "words": [
+        {
+          "text": "affidarsi",
+          "start": 68.13,
+          "end": 68.57
+        },
+        {
+          "text": "a",
+          "start": 68.61,
+          "end": 68.65
+        },
+        {
+          "text": "un",
+          "start": 68.67,
+          "end": 68.75
+        },
+        {
+          "text": "solo",
+          "start": 68.81,
+          "end": 68.99
+        },
+        {
+          "text": "componente",
+          "start": 69.03,
+          "end": 69.45
+        },
+        {
+          "text": "di",
+          "start": 69.49,
+          "end": 69.53
+        },
+        {
+          "text": "sicurezza",
+          "start": 69.59,
+          "end": 70.03
+        },
+        {
+          "text": "crea",
+          "start": 70.35,
+          "end": 70.53
+        },
+        {
+          "text": "una",
+          "start": 70.55,
+          "end": 70.65
+        },
+        {
+          "text": "vulnerabilità",
+          "start": 70.73,
+          "end": 71.31
+        },
+        {
+          "text": "critica",
+          "start": 71.37,
+          "end": 71.73
+        },
+        {
+          "text": "se",
+          "start": 71.79,
+          "end": 71.87
+        },
+        {
+          "text": "questo",
+          "start": 71.91,
+          "end": 72.13
+        },
+        {
+          "text": "viene",
+          "start": 72.15,
+          "end": 72.31
+        },
+        {
+          "text": "compromesso.",
+          "start": 72.35,
+          "end": 72.89
+        }
+      ]
+    }
+  ]
+}

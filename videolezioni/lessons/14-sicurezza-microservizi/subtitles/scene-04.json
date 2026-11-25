@@ -1,0 +1,1034 @@
+{
+  "duration": 77.956,
+  "segments": [
+    {
+      "start": 1.201,
+      "end": 5.361,
+      "text": "Analizziamo il primo gruppo di smell, dedicato al controllo degli accessi e alla sicurezza ai",
+      "words": [
+        {
+          "text": "Analizziamo",
+          "start": 1.201,
+          "end": 1.661
+        },
+        {
+          "text": "il",
+          "start": 1.701,
+          "end": 1.781
+        },
+        {
+          "text": "primo",
+          "start": 1.821,
+          "end": 2.021
+        },
+        {
+          "text": "gruppo",
+          "start": 2.081,
+          "end": 2.301
+        },
+        {
+          "text": "di",
+          "start": 2.341,
+          "end": 2.421
+        },
+        {
+          "text": "smell,",
+          "start": 2.461,
+          "end": 2.761
+        },
+        {
+          "text": "dedicato",
+          "start": 2.981,
+          "end": 3.341
+        },
+        {
+          "text": "al",
+          "start": 3.381,
+          "end": 3.461
+        },
+        {
+          "text": "controllo",
+          "start": 3.501,
+          "end": 3.921
+        },
+        {
+          "text": "degli",
+          "start": 3.941,
+          "end": 4.121
+        },
+        {
+          "text": "accessi",
+          "start": 4.141,
+          "end": 4.601
+        },
+        {
+          "text": "e",
+          "start": 4.661,
+          "end": 4.701
+        },
+        {
+          "text": "alla",
+          "start": 4.701,
+          "end": 4.821
+        },
+        {
+          "text": "sicurezza",
+          "start": 4.861,
+          "end": 5.261
+        },
+        {
+          "text": "ai",
+          "start": 5.301,
+          "end": 5.361
+        }
+      ]
+    },
+    {
+      "start": 5.421,
+      "end": 7.101,
+      "text": "margini, ovvero l'edge security.",
+      "words": [
+        {
+          "text": "margini,",
+          "start": 5.421,
+          "end": 5.841
+        },
+        {
+          "text": "ovvero",
+          "start": 5.981,
+          "end": 6.201
+        },
+        {
+          "text": "l'edge",
+          "start": 6.301,
+          "end": 6.561
+        },
+        {
+          "text": "security.",
+          "start": 6.641,
+          "end": 7.101
+        }
+      ]
+    },
+    {
+      "start": 8.141,
+      "end": 14.342,
+      "text": "Primo smell: insufficient access control, citato al quarantatré percento e critico per la confidentiality.",
+      "words": [
+        {
+          "text": "Primo",
+          "start": 8.141,
+          "end": 8.341
+        },
+        {
+          "text": "smell:",
+          "start": 8.401,
+          "end": 8.661
+        },
+        {
+          "text": "insufficient",
+          "start": 8.961,
+          "end": 9.581
+        },
+        {
+          "text": "access",
+          "start": 9.661,
+          "end": 9.921
+        },
+        {
+          "text": "control,",
+          "start": 9.961,
+          "end": 10.381
+        },
+        {
+          "text": "citato",
+          "start": 10.761,
+          "end": 11.061
+        },
+        {
+          "text": "al",
+          "start": 11.101,
+          "end": 11.181
+        },
+        {
+          "text": "quarantatré",
+          "start": 11.221,
+          "end": 11.681
+        },
+        {
+          "text": "percento",
+          "start": 11.741,
+          "end": 12.242
+        },
+        {
+          "text": "e",
+          "start": 12.622,
+          "end": 12.662
+        },
+        {
+          "text": "critico",
+          "start": 12.782,
+          "end": 13.182
+        },
+        {
+          "text": "per",
+          "start": 13.262,
+          "end": 13.362
+        },
+        {
+          "text": "la",
+          "start": 13.402,
+          "end": 13.462
+        },
+        {
+          "text": "confidentiality.",
+          "start": 13.502,
+          "end": 14.342
+        }
+      ]
+    },
+    {
+      "start": 15.102,
+      "end": 19.502,
+      "text": "Senza verifica dei permessi al momento della richiesta emerge il confused deputy problem:",
+      "words": [
+        {
+          "text": "Senza",
+          "start": 15.102,
+          "end": 15.342
+        },
+        {
+          "text": "verifica",
+          "start": 15.362,
+          "end": 15.702
+        },
+        {
+          "text": "dei",
+          "start": 15.742,
+          "end": 15.842
+        },
+        {
+          "text": "permessi",
+          "start": 15.882,
+          "end": 16.262
+        },
+        {
+          "text": "al",
+          "start": 16.302,
+          "end": 16.362
+        },
+        {
+          "text": "momento",
+          "start": 16.402,
+          "end": 16.662
+        },
+        {
+          "text": "della",
+          "start": 16.702,
+          "end": 16.842
+        },
+        {
+          "text": "richiesta",
+          "start": 16.882,
+          "end": 17.262
+        },
+        {
+          "text": "emerge",
+          "start": 17.662,
+          "end": 17.942
+        },
+        {
+          "text": "il",
+          "start": 18.002,
+          "end": 18.062
+        },
+        {
+          "text": "confused",
+          "start": 18.122,
+          "end": 18.642
+        },
+        {
+          "text": "deputy",
+          "start": 18.742,
+          "end": 19.042
+        },
+        {
+          "text": "problem:",
+          "start": 19.082,
+          "end": 19.502
+        }
+      ]
+    },
+    {
+      "start": 19.942,
+      "end": 24.082,
+      "text": "un componente con privilegi legittimi viene indotto a usarli per conto di chi non ne",
+      "words": [
+        {
+          "text": "un",
+          "start": 19.942,
+          "end": 20.022
+        },
+        {
+          "text": "componente",
+          "start": 20.042,
+          "end": 20.522
+        },
+        {
+          "text": "con",
+          "start": 20.582,
+          "end": 20.702
+        },
+        {
+          "text": "privilegi",
+          "start": 20.742,
+          "end": 21.182
+        },
+        {
+          "text": "legittimi",
+          "start": 21.222,
+          "end": 21.762
+        },
+        {
+          "text": "viene",
+          "start": 21.842,
+          "end": 22.042
+        },
+        {
+          "text": "indotto",
+          "start": 22.102,
+          "end": 22.522
+        },
+        {
+          "text": "a",
+          "start": 22.542,
+          "end": 22.582
+        },
+        {
+          "text": "usarli",
+          "start": 22.622,
+          "end": 23.002
+        },
+        {
+          "text": "per",
+          "start": 23.042,
+          "end": 23.142
+        },
+        {
+          "text": "conto",
+          "start": 23.182,
+          "end": 23.422
+        },
+        {
+          "text": "di",
+          "start": 23.482,
+          "end": 23.542
+        },
+        {
+          "text": "chi",
+          "start": 23.622,
+          "end": 23.722
+        },
+        {
+          "text": "non",
+          "start": 23.882,
+          "end": 24.002
+        },
+        {
+          "text": "ne",
+          "start": 24.022,
+          "end": 24.082
+        }
+      ]
+    },
+    {
+      "start": 24.102,
+      "end": 24.562,
+      "text": "ha diritto.",
+      "words": [
+        {
+          "text": "ha",
+          "start": 24.102,
+          "end": 24.142
+        },
+        {
+          "text": "diritto.",
+          "start": 24.182,
+          "end": 24.562
+        }
+      ]
+    },
+    {
+      "start": 25.322,
+      "end": 30.183,
+      "text": "Il refactoring è usare OAuth due punto zero, un framework basato su token per l'accesso",
+      "words": [
+        {
+          "text": "Il",
+          "start": 25.322,
+          "end": 25.402
+        },
+        {
+          "text": "refactoring",
+          "start": 25.442,
+          "end": 25.942
+        },
+        {
+          "text": "è",
+          "start": 26.102,
+          "end": 26.142
+        },
+        {
+          "text": "usare",
+          "start": 26.182,
+          "end": 26.442
+        },
+        {
+          "text": "OAuth",
+          "start": 26.502,
+          "end": 26.843
+        },
+        {
+          "text": "due",
+          "start": 26.943,
+          "end": 27.083
+        },
+        {
+          "text": "punto",
+          "start": 27.123,
+          "end": 27.343
+        },
+        {
+          "text": "zero,",
+          "start": 27.423,
+          "end": 27.643
+        },
+        {
+          "text": "un",
+          "start": 28.063,
+          "end": 28.163
+        },
+        {
+          "text": "framework",
+          "start": 28.203,
+          "end": 28.563
+        },
+        {
+          "text": "basato",
+          "start": 28.663,
+          "end": 28.943
+        },
+        {
+          "text": "su",
+          "start": 28.983,
+          "end": 29.043
+        },
+        {
+          "text": "token",
+          "start": 29.103,
+          "end": 29.463
+        },
+        {
+          "text": "per",
+          "start": 29.623,
+          "end": 29.743
+        },
+        {
+          "text": "l'accesso",
+          "start": 29.783,
+          "end": 30.183
+        }
+      ]
+    },
+    {
+      "start": 30.243,
+      "end": 35.103,
+      "text": "delegato con durata e scope limitati, evitando latenza verso un servizio centrale.",
+      "words": [
+        {
+          "text": "delegato",
+          "start": 30.243,
+          "end": 30.743
+        },
+        {
+          "text": "con",
+          "start": 30.803,
+          "end": 30.963
+        },
+        {
+          "text": "durata",
+          "start": 31.023,
+          "end": 31.423
+        },
+        {
+          "text": "e",
+          "start": 31.583,
+          "end": 31.623
+        },
+        {
+          "text": "scope",
+          "start": 31.703,
+          "end": 31.983
+        },
+        {
+          "text": "limitati,",
+          "start": 32.003,
+          "end": 32.483
+        },
+        {
+          "text": "evitando",
+          "start": 33.023,
+          "end": 33.363
+        },
+        {
+          "text": "latenza",
+          "start": 33.443,
+          "end": 33.863
+        },
+        {
+          "text": "verso",
+          "start": 33.923,
+          "end": 34.123
+        },
+        {
+          "text": "un",
+          "start": 34.163,
+          "end": 34.223
+        },
+        {
+          "text": "servizio",
+          "start": 34.263,
+          "end": 34.603
+        },
+        {
+          "text": "centrale.",
+          "start": 34.663,
+          "end": 35.103
+        }
+      ]
+    },
+    {
+      "start": 35.883,
+      "end": 40.683,
+      "text": "Secondo smell: publicly accessible microservices, anch'esso al quarantatré percento.",
+      "words": [
+        {
+          "text": "Secondo",
+          "start": 35.883,
+          "end": 36.203
+        },
+        {
+          "text": "smell:",
+          "start": 36.243,
+          "end": 36.503
+        },
+        {
+          "text": "publicly",
+          "start": 36.963,
+          "end": 37.403
+        },
+        {
+          "text": "accessible",
+          "start": 37.443,
+          "end": 38.023
+        },
+        {
+          "text": "microservices,",
+          "start": 38.043,
+          "end": 38.823
+        },
+        {
+          "text": "anch'esso",
+          "start": 39.323,
+          "end": 39.603
+        },
+        {
+          "text": "al",
+          "start": 39.643,
+          "end": 39.723
+        },
+        {
+          "text": "quarantatré",
+          "start": 39.743,
+          "end": 40.143
+        },
+        {
+          "text": "percento.",
+          "start": 40.203,
+          "end": 40.683
+        }
+      ]
+    },
+    {
+      "start": 41.343,
+      "end": 46.444,
+      "text": "Esporre direttamente i servizi ai client espone le credenziali e costa caro in manutenzione.",
+      "words": [
+        {
+          "text": "Esporre",
+          "start": 41.343,
+          "end": 41.724
+        },
+        {
+          "text": "direttamente",
+          "start": 41.784,
+          "end": 42.384
+        },
+        {
+          "text": "i",
+          "start": 42.424,
+          "end": 42.464
+        },
+        {
+          "text": "servizi",
+          "start": 42.484,
+          "end": 42.804
+        },
+        {
+          "text": "ai",
+          "start": 42.844,
+          "end": 42.904
+        },
+        {
+          "text": "client",
+          "start": 42.924,
+          "end": 43.324
+        },
+        {
+          "text": "espone",
+          "start": 43.784,
+          "end": 44.084
+        },
+        {
+          "text": "le",
+          "start": 44.124,
+          "end": 44.184
+        },
+        {
+          "text": "credenziali",
+          "start": 44.224,
+          "end": 44.884
+        },
+        {
+          "text": "e",
+          "start": 44.924,
+          "end": 44.964
+        },
+        {
+          "text": "costa",
+          "start": 45.044,
+          "end": 45.384
+        },
+        {
+          "text": "caro",
+          "start": 45.464,
+          "end": 45.684
+        },
+        {
+          "text": "in",
+          "start": 45.704,
+          "end": 45.764
+        },
+        {
+          "text": "manutenzione.",
+          "start": 45.784,
+          "end": 46.444
+        }
+      ]
+    },
+    {
+      "start": 47.024,
+      "end": 52.264,
+      "text": "La soluzione è aggiungere un API gateway per tenere i microservizi dietro un firewall,",
+      "words": [
+        {
+          "text": "La",
+          "start": 47.024,
+          "end": 47.084
+        },
+        {
+          "text": "soluzione",
+          "start": 47.144,
+          "end": 47.684
+        },
+        {
+          "text": "è",
+          "start": 47.884,
+          "end": 47.924
+        },
+        {
+          "text": "aggiungere",
+          "start": 47.984,
+          "end": 48.484
+        },
+        {
+          "text": "un",
+          "start": 48.544,
+          "end": 48.604
+        },
+        {
+          "text": "API",
+          "start": 48.664,
+          "end": 49.004
+        },
+        {
+          "text": "gateway",
+          "start": 49.064,
+          "end": 49.444
+        },
+        {
+          "text": "per",
+          "start": 49.764,
+          "end": 49.884
+        },
+        {
+          "text": "tenere",
+          "start": 49.944,
+          "end": 50.224
+        },
+        {
+          "text": "i",
+          "start": 50.264,
+          "end": 50.304
+        },
+        {
+          "text": "microservizi",
+          "start": 50.324,
+          "end": 51.084
+        },
+        {
+          "text": "dietro",
+          "start": 51.204,
+          "end": 51.564
+        },
+        {
+          "text": "un",
+          "start": 51.604,
+          "end": 51.664
+        },
+        {
+          "text": "firewall,",
+          "start": 51.744,
+          "end": 52.264
+        }
+      ]
+    },
+    {
+      "start": 52.644,
+      "end": 57.985,
+      "text": "imponendo al margine autenticazione, autorizzazione, throttling e validazione dei messaggi,",
+      "words": [
+        {
+          "text": "imponendo",
+          "start": 52.644,
+          "end": 53.084
+        },
+        {
+          "text": "al",
+          "start": 53.104,
+          "end": 53.184
+        },
+        {
+          "text": "margine",
+          "start": 53.244,
+          "end": 53.604
+        },
+        {
+          "text": "autenticazione,",
+          "start": 53.764,
+          "end": 54.664
+        },
+        {
+          "text": "autorizzazione,",
+          "start": 54.964,
+          "end": 55.844
+        },
+        {
+          "text": "throttling",
+          "start": 56.045,
+          "end": 56.565
+        },
+        {
+          "text": "e",
+          "start": 56.685,
+          "end": 56.725
+        },
+        {
+          "text": "validazione",
+          "start": 56.785,
+          "end": 57.345
+        },
+        {
+          "text": "dei",
+          "start": 57.385,
+          "end": 57.445
+        },
+        {
+          "text": "messaggi,",
+          "start": 57.485,
+          "end": 57.985
+        }
+      ]
+    },
+    {
+      "start": 58.425,
+      "end": 61.025,
+      "text": "risolvendo anche lo smell no API gateway.",
+      "words": [
+        {
+          "text": "risolvendo",
+          "start": 58.425,
+          "end": 58.885
+        },
+        {
+          "text": "anche",
+          "start": 59.065,
+          "end": 59.285
+        },
+        {
+          "text": "lo",
+          "start": 59.325,
+          "end": 59.385
+        },
+        {
+          "text": "smell",
+          "start": 59.445,
+          "end": 59.685
+        },
+        {
+          "text": "no",
+          "start": 59.965,
+          "end": 60.085
+        },
+        {
+          "text": "API",
+          "start": 60.265,
+          "end": 60.625
+        },
+        {
+          "text": "gateway.",
+          "start": 60.665,
+          "end": 61.025
+        }
+      ]
+    },
+    {
+      "start": 61.885,
+      "end": 69.165,
+      "text": "Terzo smell: unnecessary privileges to microservices, che mina confidentiality e integrity dando accessi superflui a",
+      "words": [
+        {
+          "text": "Terzo",
+          "start": 61.885,
+          "end": 62.145
+        },
+        {
+          "text": "smell:",
+          "start": 62.185,
+          "end": 62.425
+        },
+        {
+          "text": "unnecessary",
+          "start": 62.865,
+          "end": 63.465
+        },
+        {
+          "text": "privileges",
+          "start": 63.525,
+          "end": 63.985
+        },
+        {
+          "text": "to",
+          "start": 64.025,
+          "end": 64.085
+        },
+        {
+          "text": "microservices,",
+          "start": 64.145,
+          "end": 64.905
+        },
+        {
+          "text": "che",
+          "start": 65.305,
+          "end": 65.405
+        },
+        {
+          "text": "mina",
+          "start": 65.485,
+          "end": 65.725
+        },
+        {
+          "text": "confidentiality",
+          "start": 65.785,
+          "end": 66.545
+        },
+        {
+          "text": "e",
+          "start": 66.705,
+          "end": 66.745
+        },
+        {
+          "text": "integrity",
+          "start": 66.805,
+          "end": 67.345
+        },
+        {
+          "text": "dando",
+          "start": 67.745,
+          "end": 67.945
+        },
+        {
+          "text": "accessi",
+          "start": 67.985,
+          "end": 68.325
+        },
+        {
+          "text": "superflui",
+          "start": 68.425,
+          "end": 69.045
+        },
+        {
+          "text": "a",
+          "start": 69.125,
+          "end": 69.165
+        }
+      ]
+    },
+    {
+      "start": 69.205,
+      "end": 70.025,
+      "text": "database o code.",
+      "words": [
+        {
+          "text": "database",
+          "start": 69.205,
+          "end": 69.645
+        },
+        {
+          "text": "o",
+          "start": 69.665,
+          "end": 69.70500000000001
+        },
+        {
+          "text": "code.",
+          "start": 69.765,
+          "end": 70.025
+        }
+      ]
+    },
+    {
+      "start": 70.746,
+      "end": 76.466,
+      "text": "Si applica il least privilege principle: concedere al codice in esecuzione solo i permessi necessari",
+      "words": [
+        {
+          "text": "Si",
+          "start": 70.746,
+          "end": 70.806
+        },
+        {
+          "text": "applica",
+          "start": 70.886,
+          "end": 71.206
+        },
+        {
+          "text": "il",
+          "start": 71.386,
+          "end": 71.466
+        },
+        {
+          "text": "least",
+          "start": 71.606,
+          "end": 71.886
+        },
+        {
+          "text": "privilege",
+          "start": 71.986,
+          "end": 72.386
+        },
+        {
+          "text": "principle:",
+          "start": 72.406,
+          "end": 72.866
+        },
+        {
+          "text": "concedere",
+          "start": 73.246,
+          "end": 73.726
+        },
+        {
+          "text": "al",
+          "start": 73.746,
+          "end": 73.826
+        },
+        {
+          "text": "codice",
+          "start": 73.886,
+          "end": 74.186
+        },
+        {
+          "text": "in",
+          "start": 74.226,
+          "end": 74.266
+        },
+        {
+          "text": "esecuzione",
+          "start": 74.306,
+          "end": 74.906
+        },
+        {
+          "text": "solo",
+          "start": 75.006,
+          "end": 75.186
+        },
+        {
+          "text": "i",
+          "start": 75.226,
+          "end": 75.266
+        },
+        {
+          "text": "permessi",
+          "start": 75.266,
+          "end": 75.706
+        },
+        {
+          "text": "necessari",
+          "start": 75.826,
+          "end": 76.466
+        }
+      ]
+    },
+    {
+      "start": 76.526,
+      "end": 77.706,
+      "text": "per completare i suoi compiti.",
+      "words": [
+        {
+          "text": "per",
+          "start": 76.526,
+          "end": 76.626
+        },
+        {
+          "text": "completare",
+          "start": 76.666,
+          "end": 77.086
+        },
+        {
+          "text": "i",
+          "start": 77.106,
+          "end": 77.146
+        },
+        {
+          "text": "suoi",
+          "start": 77.166,
+          "end": 77.286
+        },
+        {
+          "text": "compiti.",
+          "start": 77.306,
+          "end": 77.706
+        }
+      ]
+    }
+  ]
+}

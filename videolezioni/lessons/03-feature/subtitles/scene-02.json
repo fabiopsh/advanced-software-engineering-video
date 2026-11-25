@@ -1,0 +1,1068 @@
+{
+  "duration": 78.194,
+  "segments": [
+    {
+      "start": 0.099,
+      "end": 3.979,
+      "text": "Il primo strumento per capire chi userà il prodotto sono le personas.",
+      "words": [
+        {
+          "text": "Il",
+          "start": 0.099,
+          "end": 0.179
+        },
+        {
+          "text": "primo",
+          "start": 0.219,
+          "end": 0.419
+        },
+        {
+          "text": "strumento",
+          "start": 0.479,
+          "end": 1.019
+        },
+        {
+          "text": "per",
+          "start": 1.099,
+          "end": 1.199
+        },
+        {
+          "text": "capire",
+          "start": 1.239,
+          "end": 1.519
+        },
+        {
+          "text": "chi",
+          "start": 1.639,
+          "end": 1.759
+        },
+        {
+          "text": "userà",
+          "start": 1.859,
+          "end": 2.099
+        },
+        {
+          "text": "il",
+          "start": 2.199,
+          "end": 2.279
+        },
+        {
+          "text": "prodotto",
+          "start": 2.299,
+          "end": 2.759
+        },
+        {
+          "text": "sono",
+          "start": 2.859,
+          "end": 3.099
+        },
+        {
+          "text": "le",
+          "start": 3.319,
+          "end": 3.399
+        },
+        {
+          "text": "personas.",
+          "start": 3.439,
+          "end": 3.979
+        }
+      ]
+    },
+    {
+      "start": 4.739,
+      "end": 8.039,
+      "text": "Una persona è un tipo immaginato di utente: per esempio,",
+      "words": [
+        {
+          "text": "Una",
+          "start": 4.739,
+          "end": 4.859
+        },
+        {
+          "text": "persona",
+          "start": 4.899,
+          "end": 5.239
+        },
+        {
+          "text": "è",
+          "start": 5.459,
+          "end": 5.499
+        },
+        {
+          "text": "un",
+          "start": 5.599,
+          "end": 5.679
+        },
+        {
+          "text": "tipo",
+          "start": 5.779,
+          "end": 5.979
+        },
+        {
+          "text": "immaginato",
+          "start": 6.039,
+          "end": 6.559
+        },
+        {
+          "text": "di",
+          "start": 6.599,
+          "end": 6.639
+        },
+        {
+          "text": "utente:",
+          "start": 6.679,
+          "end": 7.079
+        },
+        {
+          "text": "per",
+          "start": 7.559,
+          "end": 7.659
+        },
+        {
+          "text": "esempio,",
+          "start": 7.679,
+          "end": 8.039
+        }
+      ]
+    },
+    {
+      "start": 8.119,
+      "end": 12.68,
+      "text": "nell'agenda di uno studio dentistico avremo il dentista, la segretaria e il paziente.",
+      "words": [
+        {
+          "text": "nell'agenda",
+          "start": 8.119,
+          "end": 8.599
+        },
+        {
+          "text": "di",
+          "start": 8.659,
+          "end": 8.699
+        },
+        {
+          "text": "uno",
+          "start": 8.719,
+          "end": 8.819
+        },
+        {
+          "text": "studio",
+          "start": 8.859,
+          "end": 9.119
+        },
+        {
+          "text": "dentistico",
+          "start": 9.139,
+          "end": 9.679
+        },
+        {
+          "text": "avremo",
+          "start": 9.719,
+          "end": 10.039
+        },
+        {
+          "text": "il",
+          "start": 10.439,
+          "end": 10.519
+        },
+        {
+          "text": "dentista,",
+          "start": 10.539,
+          "end": 11.039
+        },
+        {
+          "text": "la",
+          "start": 11.279,
+          "end": 11.339
+        },
+        {
+          "text": "segretaria",
+          "start": 11.399,
+          "end": 11.939
+        },
+        {
+          "text": "e",
+          "start": 12.06,
+          "end": 12.1
+        },
+        {
+          "text": "il",
+          "start": 12.12,
+          "end": 12.18
+        },
+        {
+          "text": "paziente.",
+          "start": 12.2,
+          "end": 12.68
+        }
+      ]
+    },
+    {
+      "start": 13.26,
+      "end": 16.44,
+      "text": "Bastano poche personas, da una a due e al massimo cinque,",
+      "words": [
+        {
+          "text": "Bastano",
+          "start": 13.26,
+          "end": 13.56
+        },
+        {
+          "text": "poche",
+          "start": 13.72,
+          "end": 13.96
+        },
+        {
+          "text": "personas,",
+          "start": 14.0,
+          "end": 14.56
+        },
+        {
+          "text": "da",
+          "start": 14.86,
+          "end": 14.92
+        },
+        {
+          "text": "una",
+          "start": 15.02,
+          "end": 15.18
+        },
+        {
+          "text": "a",
+          "start": 15.2,
+          "end": 15.24
+        },
+        {
+          "text": "due",
+          "start": 15.3,
+          "end": 15.5
+        },
+        {
+          "text": "e",
+          "start": 15.52,
+          "end": 15.56
+        },
+        {
+          "text": "al",
+          "start": 15.6,
+          "end": 15.68
+        },
+        {
+          "text": "massimo",
+          "start": 15.72,
+          "end": 16.02
+        },
+        {
+          "text": "cinque,",
+          "start": 16.08,
+          "end": 16.44
+        }
+      ]
+    },
+    {
+      "start": 16.74,
+      "end": 18.22,
+      "text": "per identificare le feature chiave.",
+      "words": [
+        {
+          "text": "per",
+          "start": 16.74,
+          "end": 16.84
+        },
+        {
+          "text": "identificare",
+          "start": 16.88,
+          "end": 17.42
+        },
+        {
+          "text": "le",
+          "start": 17.48,
+          "end": 17.54
+        },
+        {
+          "text": "feature",
+          "start": 17.58,
+          "end": 17.88
+        },
+        {
+          "text": "chiave.",
+          "start": 17.9,
+          "end": 18.22
+        }
+      ]
+    },
+    {
+      "start": 18.92,
+      "end": 23.4,
+      "text": "Quando studiare utenti reali non è possibile, per esempio per un prodotto del tutto nuovo,",
+      "words": [
+        {
+          "text": "Quando",
+          "start": 18.92,
+          "end": 19.16
+        },
+        {
+          "text": "studiare",
+          "start": 19.26,
+          "end": 19.62
+        },
+        {
+          "text": "utenti",
+          "start": 19.72,
+          "end": 20.04
+        },
+        {
+          "text": "reali",
+          "start": 20.14,
+          "end": 20.48
+        },
+        {
+          "text": "non",
+          "start": 20.54,
+          "end": 20.66
+        },
+        {
+          "text": "è",
+          "start": 20.68,
+          "end": 20.72
+        },
+        {
+          "text": "possibile,",
+          "start": 20.74,
+          "end": 21.3
+        },
+        {
+          "text": "per",
+          "start": 21.44,
+          "end": 21.54
+        },
+        {
+          "text": "esempio",
+          "start": 21.56,
+          "end": 21.86
+        },
+        {
+          "text": "per",
+          "start": 22.02,
+          "end": 22.14
+        },
+        {
+          "text": "un",
+          "start": 22.16,
+          "end": 22.22
+        },
+        {
+          "text": "prodotto",
+          "start": 22.26,
+          "end": 22.62
+        },
+        {
+          "text": "del",
+          "start": 22.66,
+          "end": 22.78
+        },
+        {
+          "text": "tutto",
+          "start": 22.82,
+          "end": 23.04
+        },
+        {
+          "text": "nuovo,",
+          "start": 23.1,
+          "end": 23.4
+        }
+      ]
+    },
+    {
+      "start": 23.78,
+      "end": 26.52,
+      "text": "si creano proto-personas senza dati diretti.",
+      "words": [
+        {
+          "text": "si",
+          "start": 23.78,
+          "end": 23.84
+        },
+        {
+          "text": "creano",
+          "start": 23.88,
+          "end": 24.16
+        },
+        {
+          "text": "proto-personas",
+          "start": 24.3,
+          "end": 25.22
+        },
+        {
+          "text": "senza",
+          "start": 25.54,
+          "end": 25.84
+        },
+        {
+          "text": "dati",
+          "start": 25.9,
+          "end": 26.08
+        },
+        {
+          "text": "diretti.",
+          "start": 26.12,
+          "end": 26.52
+        }
+      ]
+    },
+    {
+      "start": 27.321,
+      "end": 29.361,
+      "text": "Ogni persona contiene quattro elementi:",
+      "words": [
+        {
+          "text": "Ogni",
+          "start": 27.321,
+          "end": 27.521
+        },
+        {
+          "text": "persona",
+          "start": 27.561,
+          "end": 27.961
+        },
+        {
+          "text": "contiene",
+          "start": 28.101,
+          "end": 28.441
+        },
+        {
+          "text": "quattro",
+          "start": 28.541,
+          "end": 28.861
+        },
+        {
+          "text": "elementi:",
+          "start": 28.921,
+          "end": 29.361
+        }
+      ]
+    },
+    {
+      "start": 29.941,
+      "end": 32.921,
+      "text": "la personalization con nome e contesto personale;",
+      "words": [
+        {
+          "text": "la",
+          "start": 29.941,
+          "end": 30.021
+        },
+        {
+          "text": "personalization",
+          "start": 30.061,
+          "end": 30.841
+        },
+        {
+          "text": "con",
+          "start": 31.201,
+          "end": 31.381
+        },
+        {
+          "text": "nome",
+          "start": 31.481,
+          "end": 31.821
+        },
+        {
+          "text": "e",
+          "start": 31.901,
+          "end": 31.941
+        },
+        {
+          "text": "contesto",
+          "start": 31.981,
+          "end": 32.381
+        },
+        {
+          "text": "personale;",
+          "start": 32.421,
+          "end": 32.921
+        }
+      ]
+    },
+    {
+      "start": 33.661,
+      "end": 35.461,
+      "text": "i dati job-related sul lavoro;",
+      "words": [
+        {
+          "text": "i",
+          "start": 33.661,
+          "end": 33.701
+        },
+        {
+          "text": "dati",
+          "start": 33.741,
+          "end": 33.981
+        },
+        {
+          "text": "job-related",
+          "start": 34.061,
+          "end": 34.701
+        },
+        {
+          "text": "sul",
+          "start": 35.021,
+          "end": 35.121
+        },
+        {
+          "text": "lavoro;",
+          "start": 35.161,
+          "end": 35.461
+        }
+      ]
+    },
+    {
+      "start": 36.121,
+      "end": 41.261,
+      "text": "la education, cioè formazione e competenze tecniche, cruciali per il design dell'interfaccia;",
+      "words": [
+        {
+          "text": "la",
+          "start": 36.121,
+          "end": 36.181
+        },
+        {
+          "text": "education,",
+          "start": 36.241,
+          "end": 36.741
+        },
+        {
+          "text": "cioè",
+          "start": 37.021,
+          "end": 37.141
+        },
+        {
+          "text": "formazione",
+          "start": 37.221,
+          "end": 37.861
+        },
+        {
+          "text": "e",
+          "start": 37.901,
+          "end": 37.941
+        },
+        {
+          "text": "competenze",
+          "start": 37.981,
+          "end": 38.461
+        },
+        {
+          "text": "tecniche,",
+          "start": 38.501,
+          "end": 38.921
+        },
+        {
+          "text": "cruciali",
+          "start": 39.301,
+          "end": 39.841
+        },
+        {
+          "text": "per",
+          "start": 40.001,
+          "end": 40.121
+        },
+        {
+          "text": "il",
+          "start": 40.141,
+          "end": 40.221
+        },
+        {
+          "text": "design",
+          "start": 40.261,
+          "end": 40.561
+        },
+        {
+          "text": "dell'interfaccia;",
+          "start": 40.581,
+          "end": 41.261
+        }
+      ]
+    },
+    {
+      "start": 41.802,
+      "end": 45.082,
+      "text": "e la relevance, cioè perché potrebbe interessarsi al prodotto.",
+      "words": [
+        {
+          "text": "e",
+          "start": 41.802,
+          "end": 41.842
+        },
+        {
+          "text": "la",
+          "start": 41.922,
+          "end": 41.982
+        },
+        {
+          "text": "relevance,",
+          "start": 42.042,
+          "end": 42.582
+        },
+        {
+          "text": "cioè",
+          "start": 42.842,
+          "end": 42.982
+        },
+        {
+          "text": "perché",
+          "start": 43.122,
+          "end": 43.522
+        },
+        {
+          "text": "potrebbe",
+          "start": 43.662,
+          "end": 43.982
+        },
+        {
+          "text": "interessarsi",
+          "start": 44.002,
+          "end": 44.542
+        },
+        {
+          "text": "al",
+          "start": 44.582,
+          "end": 44.642
+        },
+        {
+          "text": "prodotto.",
+          "start": 44.662,
+          "end": 45.082
+        }
+      ]
+    },
+    {
+      "start": 45.662,
+      "end": 50.342,
+      "text": "Prendiamo Emma, insegnante di storia di quarantuno anni a Edimburgo con due figli:",
+      "words": [
+        {
+          "text": "Prendiamo",
+          "start": 45.662,
+          "end": 46.102
+        },
+        {
+          "text": "Emma,",
+          "start": 46.342,
+          "end": 46.582
+        },
+        {
+          "text": "insegnante",
+          "start": 47.142,
+          "end": 47.702
+        },
+        {
+          "text": "di",
+          "start": 47.742,
+          "end": 47.802
+        },
+        {
+          "text": "storia",
+          "start": 47.862,
+          "end": 48.162
+        },
+        {
+          "text": "di",
+          "start": 48.202,
+          "end": 48.262
+        },
+        {
+          "text": "quarantuno",
+          "start": 48.302,
+          "end": 48.742
+        },
+        {
+          "text": "anni",
+          "start": 48.802,
+          "end": 48.982
+        },
+        {
+          "text": "a",
+          "start": 49.022,
+          "end": 49.062
+        },
+        {
+          "text": "Edimburgo",
+          "start": 49.082,
+          "end": 49.602
+        },
+        {
+          "text": "con",
+          "start": 49.702,
+          "end": 49.842
+        },
+        {
+          "text": "due",
+          "start": 49.862,
+          "end": 49.962
+        },
+        {
+          "text": "figli:",
+          "start": 50.022,
+          "end": 50.342
+        }
+      ]
+    },
+    {
+      "start": 50.882,
+      "end": 55.202,
+      "text": "usa social e app d'ufficio da casa, ma odia l'ambiente virtuale scolastico.",
+      "words": [
+        {
+          "text": "usa",
+          "start": 50.882,
+          "end": 51.042
+        },
+        {
+          "text": "social",
+          "start": 51.182,
+          "end": 51.562
+        },
+        {
+          "text": "e",
+          "start": 51.702,
+          "end": 51.742
+        },
+        {
+          "text": "app",
+          "start": 51.822,
+          "end": 51.902
+        },
+        {
+          "text": "d'ufficio",
+          "start": 51.982,
+          "end": 52.342
+        },
+        {
+          "text": "da",
+          "start": 52.362,
+          "end": 52.422
+        },
+        {
+          "text": "casa,",
+          "start": 52.482,
+          "end": 52.762
+        },
+        {
+          "text": "ma",
+          "start": 53.082,
+          "end": 53.142
+        },
+        {
+          "text": "odia",
+          "start": 53.402,
+          "end": 53.662
+        },
+        {
+          "text": "l'ambiente",
+          "start": 53.702,
+          "end": 54.142
+        },
+        {
+          "text": "virtuale",
+          "start": 54.202,
+          "end": 54.602
+        },
+        {
+          "text": "scolastico.",
+          "start": 54.642,
+          "end": 55.202
+        }
+      ]
+    },
+    {
+      "start": 55.962,
+      "end": 59.583,
+      "text": "Non ha un background tecnico e vuole un prodotto per l'amministrazione,",
+      "words": [
+        {
+          "text": "Non",
+          "start": 55.962,
+          "end": 56.122
+        },
+        {
+          "text": "ha",
+          "start": 56.162,
+          "end": 56.223
+        },
+        {
+          "text": "un",
+          "start": 56.303,
+          "end": 56.383
+        },
+        {
+          "text": "background",
+          "start": 56.423,
+          "end": 56.843
+        },
+        {
+          "text": "tecnico",
+          "start": 56.883,
+          "end": 57.323
+        },
+        {
+          "text": "e",
+          "start": 57.663,
+          "end": 57.703
+        },
+        {
+          "text": "vuole",
+          "start": 57.763,
+          "end": 57.963
+        },
+        {
+          "text": "un",
+          "start": 58.023,
+          "end": 58.083
+        },
+        {
+          "text": "prodotto",
+          "start": 58.123,
+          "end": 58.523
+        },
+        {
+          "text": "per",
+          "start": 58.563,
+          "end": 58.683
+        },
+        {
+          "text": "l'amministrazione,",
+          "start": 58.743,
+          "end": 59.583
+        }
+      ]
+    },
+    {
+      "start": 59.923,
+      "end": 61.183,
+      "text": "non per la didattica mista.",
+      "words": [
+        {
+          "text": "non",
+          "start": 59.923,
+          "end": 60.063
+        },
+        {
+          "text": "per",
+          "start": 60.123,
+          "end": 60.243
+        },
+        {
+          "text": "la",
+          "start": 60.303,
+          "end": 60.363
+        },
+        {
+          "text": "didattica",
+          "start": 60.423,
+          "end": 60.843
+        },
+        {
+          "text": "mista.",
+          "start": 60.883,
+          "end": 61.183
+        }
+      ]
+    },
+    {
+      "start": 61.903,
+      "end": 64.363,
+      "text": "Infine, inserire una fotografia è discusso:",
+      "words": [
+        {
+          "text": "Infine,",
+          "start": 61.903,
+          "end": 62.223
+        },
+        {
+          "text": "inserire",
+          "start": 62.423,
+          "end": 62.883
+        },
+        {
+          "text": "una",
+          "start": 62.963,
+          "end": 63.083
+        },
+        {
+          "text": "fotografia",
+          "start": 63.143,
+          "end": 63.683
+        },
+        {
+          "text": "è",
+          "start": 63.763,
+          "end": 63.803
+        },
+        {
+          "text": "discusso:",
+          "start": 63.843,
+          "end": 64.363
+        }
+      ]
+    },
+    {
+      "start": 64.923,
+      "end": 71.904,
+      "text": "secondo Salminen una foto sorridente aumenta l'efficacia, mentre Cable e Wachter-Boettcher avvertono che contano le",
+      "words": [
+        {
+          "text": "secondo",
+          "start": 64.923,
+          "end": 65.243
+        },
+        {
+          "text": "Salminen",
+          "start": 65.303,
+          "end": 65.743
+        },
+        {
+          "text": "una",
+          "start": 65.943,
+          "end": 66.083
+        },
+        {
+          "text": "foto",
+          "start": 66.143,
+          "end": 66.343
+        },
+        {
+          "text": "sorridente",
+          "start": 66.403,
+          "end": 67.023
+        },
+        {
+          "text": "aumenta",
+          "start": 67.183,
+          "end": 67.543
+        },
+        {
+          "text": "l'efficacia,",
+          "start": 67.583,
+          "end": 68.103
+        },
+        {
+          "text": "mentre",
+          "start": 68.443,
+          "end": 68.683
+        },
+        {
+          "text": "Cable",
+          "start": 68.763,
+          "end": 69.163
+        },
+        {
+          "text": "e",
+          "start": 69.303,
+          "end": 69.343
+        },
+        {
+          "text": "Wachter-Boettcher",
+          "start": 69.403,
+          "end": 70.063
+        },
+        {
+          "text": "avvertono",
+          "start": 70.543,
+          "end": 71.004
+        },
+        {
+          "text": "che",
+          "start": 71.104,
+          "end": 71.184
+        },
+        {
+          "text": "contano",
+          "start": 71.344,
+          "end": 71.764
+        },
+        {
+          "text": "le",
+          "start": 71.844,
+          "end": 71.904
+        }
+      ]
+    },
+    {
+      "start": 71.944,
+      "end": 77.944,
+      "text": "azioni, non l'aspetto o i pregiudizi demografici, e Deutsch nota l'effetto mediatore del genere.",
+      "words": [
+        {
+          "text": "azioni,",
+          "start": 71.944,
+          "end": 72.384
+        },
+        {
+          "text": "non",
+          "start": 72.764,
+          "end": 72.884
+        },
+        {
+          "text": "l'aspetto",
+          "start": 72.924,
+          "end": 73.504
+        },
+        {
+          "text": "o",
+          "start": 73.584,
+          "end": 73.62400000000001
+        },
+        {
+          "text": "i",
+          "start": 73.664,
+          "end": 73.70400000000001
+        },
+        {
+          "text": "pregiudizi",
+          "start": 73.764,
+          "end": 74.244
+        },
+        {
+          "text": "demografici,",
+          "start": 74.284,
+          "end": 74.904
+        },
+        {
+          "text": "e",
+          "start": 75.364,
+          "end": 75.40400000000001
+        },
+        {
+          "text": "Deutsch",
+          "start": 75.464,
+          "end": 75.784
+        },
+        {
+          "text": "nota",
+          "start": 76.064,
+          "end": 76.304
+        },
+        {
+          "text": "l'effetto",
+          "start": 76.304,
+          "end": 76.744
+        },
+        {
+          "text": "mediatore",
+          "start": 76.884,
+          "end": 77.384
+        },
+        {
+          "text": "del",
+          "start": 77.444,
+          "end": 77.564
+        },
+        {
+          "text": "genere.",
+          "start": 77.604,
+          "end": 77.944
+        }
+      ]
+    }
+  ]
+}

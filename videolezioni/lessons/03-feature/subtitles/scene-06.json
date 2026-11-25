@@ -1,0 +1,895 @@
+{
+  "duration": 59.683,
+  "segments": [
+    {
+      "start": 0.754,
+      "end": 5.275,
+      "text": "Quando si immaginano sempre nuovi utenti potenziali, il numero di feature cresce senza controllo:",
+      "words": [
+        {
+          "text": "Quando",
+          "start": 0.754,
+          "end": 0.954
+        },
+        {
+          "text": "si",
+          "start": 0.994,
+          "end": 1.054
+        },
+        {
+          "text": "immaginano",
+          "start": 1.074,
+          "end": 1.494
+        },
+        {
+          "text": "sempre",
+          "start": 1.574,
+          "end": 1.894
+        },
+        {
+          "text": "nuovi",
+          "start": 1.974,
+          "end": 2.174
+        },
+        {
+          "text": "utenti",
+          "start": 2.214,
+          "end": 2.514
+        },
+        {
+          "text": "potenziali,",
+          "start": 2.554,
+          "end": 3.174
+        },
+        {
+          "text": "il",
+          "start": 3.354,
+          "end": 3.414
+        },
+        {
+          "text": "numero",
+          "start": 3.454,
+          "end": 3.674
+        },
+        {
+          "text": "di",
+          "start": 3.714,
+          "end": 3.774
+        },
+        {
+          "text": "feature",
+          "start": 3.814,
+          "end": 4.134
+        },
+        {
+          "text": "cresce",
+          "start": 4.174,
+          "end": 4.454
+        },
+        {
+          "text": "senza",
+          "start": 4.514,
+          "end": 4.754
+        },
+        {
+          "text": "controllo:",
+          "start": 4.794,
+          "end": 5.275
+        }
+      ]
+    },
+    {
+      "start": 5.655,
+      "end": 7.075,
+      "text": "è il fenomeno del feature creep.",
+      "words": [
+        {
+          "text": "è",
+          "start": 5.655,
+          "end": 5.695
+        },
+        {
+          "text": "il",
+          "start": 5.735,
+          "end": 5.815
+        },
+        {
+          "text": "fenomeno",
+          "start": 5.855,
+          "end": 6.235
+        },
+        {
+          "text": "del",
+          "start": 6.315,
+          "end": 6.455
+        },
+        {
+          "text": "feature",
+          "start": 6.515,
+          "end": 6.815
+        },
+        {
+          "text": "creep.",
+          "start": 6.835,
+          "end": 7.075
+        }
+      ]
+    },
+    {
+      "start": 7.835,
+      "end": 8.655,
+      "text": "Le sue cause sono tre:",
+      "words": [
+        {
+          "text": "Le",
+          "start": 7.835,
+          "end": 7.895
+        },
+        {
+          "text": "sue",
+          "start": 7.935,
+          "end": 8.055
+        },
+        {
+          "text": "cause",
+          "start": 8.075,
+          "end": 8.295
+        },
+        {
+          "text": "sono",
+          "start": 8.355,
+          "end": 8.515
+        },
+        {
+          "text": "tre:",
+          "start": 8.535,
+          "end": 8.655
+        }
+      ]
+    },
+    {
+      "start": 9.295,
+      "end": 14.456,
+      "text": "il marketing vuole accontentare tutte le richieste, spinge a copiare le feature dei concorrenti e",
+      "words": [
+        {
+          "text": "il",
+          "start": 9.295,
+          "end": 9.375
+        },
+        {
+          "text": "marketing",
+          "start": 9.395,
+          "end": 9.855
+        },
+        {
+          "text": "vuole",
+          "start": 9.975,
+          "end": 10.135
+        },
+        {
+          "text": "accontentare",
+          "start": 10.175,
+          "end": 10.715
+        },
+        {
+          "text": "tutte",
+          "start": 10.795,
+          "end": 11.055
+        },
+        {
+          "text": "le",
+          "start": 11.095,
+          "end": 11.155
+        },
+        {
+          "text": "richieste,",
+          "start": 11.175,
+          "end": 11.616
+        },
+        {
+          "text": "spinge",
+          "start": 12.016,
+          "end": 12.276
+        },
+        {
+          "text": "a",
+          "start": 12.336,
+          "end": 12.376
+        },
+        {
+          "text": "copiare",
+          "start": 12.396,
+          "end": 12.856
+        },
+        {
+          "text": "le",
+          "start": 12.916,
+          "end": 12.976
+        },
+        {
+          "text": "feature",
+          "start": 13.016,
+          "end": 13.316
+        },
+        {
+          "text": "dei",
+          "start": 13.336,
+          "end": 13.416
+        },
+        {
+          "text": "concorrenti",
+          "start": 13.436,
+          "end": 14.056
+        },
+        {
+          "text": "e",
+          "start": 14.416,
+          "end": 14.456
+        }
+      ]
+    },
+    {
+      "start": 14.496,
+      "end": 17.316,
+      "text": "si cerca di supportare insieme utenti esperti e inesperti.",
+      "words": [
+        {
+          "text": "si",
+          "start": 14.496,
+          "end": 14.556
+        },
+        {
+          "text": "cerca",
+          "start": 14.596,
+          "end": 14.816
+        },
+        {
+          "text": "di",
+          "start": 14.856,
+          "end": 14.896
+        },
+        {
+          "text": "supportare",
+          "start": 14.936,
+          "end": 15.416
+        },
+        {
+          "text": "insieme",
+          "start": 15.456,
+          "end": 15.796
+        },
+        {
+          "text": "utenti",
+          "start": 15.916,
+          "end": 16.176
+        },
+        {
+          "text": "esperti",
+          "start": 16.236,
+          "end": 16.676
+        },
+        {
+          "text": "e",
+          "start": 16.716,
+          "end": 16.756
+        },
+        {
+          "text": "inesperti.",
+          "start": 16.796,
+          "end": 17.316
+        }
+      ]
+    },
+    {
+      "start": 18.197,
+      "end": 21.857,
+      "text": "Per evitarlo, ogni nuova proposta deve superare quattro domande filtro:",
+      "words": [
+        {
+          "text": "Per",
+          "start": 18.197,
+          "end": 18.297
+        },
+        {
+          "text": "evitarlo,",
+          "start": 18.317,
+          "end": 18.777
+        },
+        {
+          "text": "ogni",
+          "start": 19.117,
+          "end": 19.277
+        },
+        {
+          "text": "nuova",
+          "start": 19.357,
+          "end": 19.597
+        },
+        {
+          "text": "proposta",
+          "start": 19.637,
+          "end": 20.097
+        },
+        {
+          "text": "deve",
+          "start": 20.137,
+          "end": 20.277
+        },
+        {
+          "text": "superare",
+          "start": 20.317,
+          "end": 20.657
+        },
+        {
+          "text": "quattro",
+          "start": 20.757,
+          "end": 21.117
+        },
+        {
+          "text": "domande",
+          "start": 21.157,
+          "end": 21.477
+        },
+        {
+          "text": "filtro:",
+          "start": 21.517,
+          "end": 21.857
+        }
+      ]
+    },
+    {
+      "start": 22.597,
+      "end": 25.178,
+      "text": "aggiunge davvero qualcosa di nuovo o è solo un doppione?",
+      "words": [
+        {
+          "text": "aggiunge",
+          "start": 22.597,
+          "end": 22.917
+        },
+        {
+          "text": "davvero",
+          "start": 22.997,
+          "end": 23.377
+        },
+        {
+          "text": "qualcosa",
+          "start": 23.417,
+          "end": 23.757
+        },
+        {
+          "text": "di",
+          "start": 23.777,
+          "end": 23.837
+        },
+        {
+          "text": "nuovo",
+          "start": 23.877,
+          "end": 24.137
+        },
+        {
+          "text": "o",
+          "start": 24.378,
+          "end": 24.418
+        },
+        {
+          "text": "è",
+          "start": 24.458,
+          "end": 24.498
+        },
+        {
+          "text": "solo",
+          "start": 24.538,
+          "end": 24.698
+        },
+        {
+          "text": "un",
+          "start": 24.738,
+          "end": 24.778
+        },
+        {
+          "text": "doppione?",
+          "start": 24.798,
+          "end": 25.178
+        }
+      ]
+    },
+    {
+      "start": 25.798,
+      "end": 28.758,
+      "text": "È probabile che sia importante e usata dalla maggior parte degli utenti?",
+      "words": [
+        {
+          "text": "È",
+          "start": 25.798,
+          "end": 25.838
+        },
+        {
+          "text": "probabile",
+          "start": 25.858,
+          "end": 26.238
+        },
+        {
+          "text": "che",
+          "start": 26.278,
+          "end": 26.358
+        },
+        {
+          "text": "sia",
+          "start": 26.398,
+          "end": 26.498
+        },
+        {
+          "text": "importante",
+          "start": 26.538,
+          "end": 27.138
+        },
+        {
+          "text": "e",
+          "start": 27.218,
+          "end": 27.258
+        },
+        {
+          "text": "usata",
+          "start": 27.298,
+          "end": 27.578
+        },
+        {
+          "text": "dalla",
+          "start": 27.618,
+          "end": 27.778
+        },
+        {
+          "text": "maggior",
+          "start": 27.798,
+          "end": 28.038
+        },
+        {
+          "text": "parte",
+          "start": 28.058,
+          "end": 28.258
+        },
+        {
+          "text": "degli",
+          "start": 28.298,
+          "end": 28.438
+        },
+        {
+          "text": "utenti?",
+          "start": 28.458,
+          "end": 28.758
+        }
+      ]
+    },
+    {
+      "start": 29.618,
+      "end": 33.319,
+      "text": "Si può ottenere estendendo una feature esistente invece di aggiungerne una nuova?",
+      "words": [
+        {
+          "text": "Si",
+          "start": 29.618,
+          "end": 29.678
+        },
+        {
+          "text": "può",
+          "start": 29.718,
+          "end": 29.798
+        },
+        {
+          "text": "ottenere",
+          "start": 29.838,
+          "end": 30.178
+        },
+        {
+          "text": "estendendo",
+          "start": 30.298,
+          "end": 30.839
+        },
+        {
+          "text": "una",
+          "start": 30.899,
+          "end": 30.999
+        },
+        {
+          "text": "feature",
+          "start": 31.039,
+          "end": 31.279
+        },
+        {
+          "text": "esistente",
+          "start": 31.299,
+          "end": 31.879
+        },
+        {
+          "text": "invece",
+          "start": 32.079,
+          "end": 32.359
+        },
+        {
+          "text": "di",
+          "start": 32.379,
+          "end": 32.439
+        },
+        {
+          "text": "aggiungerne",
+          "start": 32.459,
+          "end": 32.879
+        },
+        {
+          "text": "una",
+          "start": 32.919,
+          "end": 33.019
+        },
+        {
+          "text": "nuova?",
+          "start": 33.059,
+          "end": 33.319
+        }
+      ]
+    },
+    {
+      "start": 34.099,
+      "end": 36.759,
+      "text": "Offre una capacità generale o è troppo specifica?",
+      "words": [
+        {
+          "text": "Offre",
+          "start": 34.099,
+          "end": 34.359
+        },
+        {
+          "text": "una",
+          "start": 34.519,
+          "end": 34.639
+        },
+        {
+          "text": "capacità",
+          "start": 34.679,
+          "end": 35.059
+        },
+        {
+          "text": "generale",
+          "start": 35.119,
+          "end": 35.559
+        },
+        {
+          "text": "o",
+          "start": 35.899,
+          "end": 35.939
+        },
+        {
+          "text": "è",
+          "start": 35.979,
+          "end": 36.019
+        },
+        {
+          "text": "troppo",
+          "start": 36.039,
+          "end": 36.259
+        },
+        {
+          "text": "specifica?",
+          "start": 36.279,
+          "end": 36.759
+        }
+      ]
+    },
+    {
+      "start": 37.34,
+      "end": 43.02,
+      "text": "Superato il filtro, il team discute scenari e storie e scrive la descrizione strutturata di",
+      "words": [
+        {
+          "text": "Superato",
+          "start": 37.34,
+          "end": 37.72
+        },
+        {
+          "text": "il",
+          "start": 37.76,
+          "end": 37.84
+        },
+        {
+          "text": "filtro,",
+          "start": 37.88,
+          "end": 38.26
+        },
+        {
+          "text": "il",
+          "start": 38.54,
+          "end": 38.62
+        },
+        {
+          "text": "team",
+          "start": 38.7,
+          "end": 38.92
+        },
+        {
+          "text": "discute",
+          "start": 39.04,
+          "end": 39.4
+        },
+        {
+          "text": "scenari",
+          "start": 39.48,
+          "end": 40.02
+        },
+        {
+          "text": "e",
+          "start": 40.1,
+          "end": 40.14
+        },
+        {
+          "text": "storie",
+          "start": 40.24,
+          "end": 40.72
+        },
+        {
+          "text": "e",
+          "start": 41.06,
+          "end": 41.1
+        },
+        {
+          "text": "scrive",
+          "start": 41.14,
+          "end": 41.44
+        },
+        {
+          "text": "la",
+          "start": 41.48,
+          "end": 41.54
+        },
+        {
+          "text": "descrizione",
+          "start": 41.6,
+          "end": 42.28
+        },
+        {
+          "text": "strutturata",
+          "start": 42.34,
+          "end": 42.9
+        },
+        {
+          "text": "di",
+          "start": 42.94,
+          "end": 43.02
+        }
+      ]
+    },
+    {
+      "start": 43.22,
+      "end": 47.001,
+      "text": "ogni feature: il nome, l'input dall'utente o da altre fonti,",
+      "words": [
+        {
+          "text": "ogni",
+          "start": 43.22,
+          "end": 43.42
+        },
+        {
+          "text": "feature:",
+          "start": 43.5,
+          "end": 43.861
+        },
+        {
+          "text": "il",
+          "start": 44.381,
+          "end": 44.461
+        },
+        {
+          "text": "nome,",
+          "start": 44.501,
+          "end": 44.761
+        },
+        {
+          "text": "l'input",
+          "start": 45.221,
+          "end": 45.601
+        },
+        {
+          "text": "dall'utente",
+          "start": 45.681,
+          "end": 46.241
+        },
+        {
+          "text": "o",
+          "start": 46.261,
+          "end": 46.301
+        },
+        {
+          "text": "da",
+          "start": 46.321,
+          "end": 46.361
+        },
+        {
+          "text": "altre",
+          "start": 46.401,
+          "end": 46.621
+        },
+        {
+          "text": "fonti,",
+          "start": 46.661,
+          "end": 47.001
+        }
+      ]
+    },
+    {
+      "start": 47.421,
+      "end": 51.882,
+      "text": "l'activation cioè come viene attivata, l'action cioè come elabora i dati,",
+      "words": [
+        {
+          "text": "l'activation",
+          "start": 47.421,
+          "end": 48.141
+        },
+        {
+          "text": "cioè",
+          "start": 48.361,
+          "end": 48.481
+        },
+        {
+          "text": "come",
+          "start": 48.581,
+          "end": 48.741
+        },
+        {
+          "text": "viene",
+          "start": 48.781,
+          "end": 48.941
+        },
+        {
+          "text": "attivata,",
+          "start": 48.981,
+          "end": 49.481
+        },
+        {
+          "text": "l'action",
+          "start": 49.961,
+          "end": 50.402
+        },
+        {
+          "text": "cioè",
+          "start": 50.682,
+          "end": 50.822
+        },
+        {
+          "text": "come",
+          "start": 50.922,
+          "end": 51.102
+        },
+        {
+          "text": "elabora",
+          "start": 51.162,
+          "end": 51.502
+        },
+        {
+          "text": "i",
+          "start": 51.542,
+          "end": 51.582
+        },
+        {
+          "text": "dati,",
+          "start": 51.582,
+          "end": 51.882
+        }
+      ]
+    },
+    {
+      "start": 52.342,
+      "end": 54.702,
+      "text": "e l'output restituito a utente e sistema.",
+      "words": [
+        {
+          "text": "e",
+          "start": 52.342,
+          "end": 52.382
+        },
+        {
+          "text": "l'output",
+          "start": 52.422,
+          "end": 52.862
+        },
+        {
+          "text": "restituito",
+          "start": 53.242,
+          "end": 53.682
+        },
+        {
+          "text": "a",
+          "start": 53.742,
+          "end": 53.782
+        },
+        {
+          "text": "utente",
+          "start": 53.842,
+          "end": 54.202
+        },
+        {
+          "text": "e",
+          "start": 54.262,
+          "end": 54.302
+        },
+        {
+          "text": "sistema.",
+          "start": 54.342,
+          "end": 54.702
+        }
+      ]
+    },
+    {
+      "start": 55.502,
+      "end": 59.483,
+      "text": "Subito dopo si costruiscono prototipi, partendo dalle feature nuove e da quelle critiche.",
+      "words": [
+        {
+          "text": "Subito",
+          "start": 55.502,
+          "end": 55.742
+        },
+        {
+          "text": "dopo",
+          "start": 55.782,
+          "end": 55.982
+        },
+        {
+          "text": "si",
+          "start": 56.062,
+          "end": 56.142
+        },
+        {
+          "text": "costruiscono",
+          "start": 56.182,
+          "end": 56.703
+        },
+        {
+          "text": "prototipi,",
+          "start": 56.763,
+          "end": 57.263
+        },
+        {
+          "text": "partendo",
+          "start": 57.423,
+          "end": 57.783
+        },
+        {
+          "text": "dalle",
+          "start": 57.823,
+          "end": 58.023
+        },
+        {
+          "text": "feature",
+          "start": 58.063,
+          "end": 58.323
+        },
+        {
+          "text": "nuove",
+          "start": 58.363,
+          "end": 58.643
+        },
+        {
+          "text": "e",
+          "start": 58.783,
+          "end": 58.823
+        },
+        {
+          "text": "da",
+          "start": 58.843,
+          "end": 58.903
+        },
+        {
+          "text": "quelle",
+          "start": 58.943,
+          "end": 59.123
+        },
+        {
+          "text": "critiche.",
+          "start": 59.143,
+          "end": 59.483
+        }
+      ]
+    }
+  ]
+}

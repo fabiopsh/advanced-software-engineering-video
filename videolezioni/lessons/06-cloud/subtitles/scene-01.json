@@ -1,0 +1,1085 @@
+{
+  "duration": 79.074,
+  "segments": [
+    {
+      "start": 0.08,
+      "end": 3.9,
+      "text": "Benvenuti al capitolo sei dedicato al software basato sul cloud.",
+      "words": [
+        {
+          "text": "Benvenuti",
+          "start": 0.08,
+          "end": 0.58
+        },
+        {
+          "text": "al",
+          "start": 0.64,
+          "end": 0.74
+        },
+        {
+          "text": "capitolo",
+          "start": 0.78,
+          "end": 1.14
+        },
+        {
+          "text": "sei",
+          "start": 1.2,
+          "end": 1.4
+        },
+        {
+          "text": "dedicato",
+          "start": 1.92,
+          "end": 2.34
+        },
+        {
+          "text": "al",
+          "start": 2.4,
+          "end": 2.48
+        },
+        {
+          "text": "software",
+          "start": 2.58,
+          "end": 3.04
+        },
+        {
+          "text": "basato",
+          "start": 3.08,
+          "end": 3.38
+        },
+        {
+          "text": "sul",
+          "start": 3.44,
+          "end": 3.56
+        },
+        {
+          "text": "cloud.",
+          "start": 3.6,
+          "end": 3.9
+        }
+      ]
+    },
+    {
+      "start": 4.66,
+      "end": 7.58,
+      "text": "Dopo aver visto container e Docker nel capitolo cinque,",
+      "words": [
+        {
+          "text": "Dopo",
+          "start": 4.66,
+          "end": 4.82
+        },
+        {
+          "text": "aver",
+          "start": 4.86,
+          "end": 5.0
+        },
+        {
+          "text": "visto",
+          "start": 5.04,
+          "end": 5.32
+        },
+        {
+          "text": "container",
+          "start": 5.4,
+          "end": 6.02
+        },
+        {
+          "text": "e",
+          "start": 6.04,
+          "end": 6.08
+        },
+        {
+          "text": "Docker",
+          "start": 6.16,
+          "end": 6.56
+        },
+        {
+          "text": "nel",
+          "start": 6.64,
+          "end": 6.78
+        },
+        {
+          "text": "capitolo",
+          "start": 6.82,
+          "end": 7.16
+        },
+        {
+          "text": "cinque,",
+          "start": 7.22,
+          "end": 7.58
+        }
+      ]
+    },
+    {
+      "start": 8.1,
+      "end": 11.361,
+      "text": "esploriamo come si offrono e si progettano i prodotti cloud,",
+      "words": [
+        {
+          "text": "esploriamo",
+          "start": 8.1,
+          "end": 8.66
+        },
+        {
+          "text": "come",
+          "start": 8.781,
+          "end": 8.961
+        },
+        {
+          "text": "si",
+          "start": 9.081,
+          "end": 9.161
+        },
+        {
+          "text": "offrono",
+          "start": 9.241,
+          "end": 9.641
+        },
+        {
+          "text": "e",
+          "start": 9.781,
+          "end": 9.821
+        },
+        {
+          "text": "si",
+          "start": 9.901,
+          "end": 9.981
+        },
+        {
+          "text": "progettano",
+          "start": 10.041,
+          "end": 10.521
+        },
+        {
+          "text": "i",
+          "start": 10.581,
+          "end": 10.621
+        },
+        {
+          "text": "prodotti",
+          "start": 10.621,
+          "end": 10.981
+        },
+        {
+          "text": "cloud,",
+          "start": 11.021,
+          "end": 11.361
+        }
+      ]
+    },
+    {
+      "start": 11.741,
+      "end": 13.581,
+      "text": "preparando il terreno per i microservizi.",
+      "words": [
+        {
+          "text": "preparando",
+          "start": 11.741,
+          "end": 12.161
+        },
+        {
+          "text": "il",
+          "start": 12.181,
+          "end": 12.241
+        },
+        {
+          "text": "terreno",
+          "start": 12.281,
+          "end": 12.621
+        },
+        {
+          "text": "per",
+          "start": 12.661,
+          "end": 12.761
+        },
+        {
+          "text": "i",
+          "start": 12.801,
+          "end": 12.841
+        },
+        {
+          "text": "microservizi.",
+          "start": 12.861,
+          "end": 13.581
+        }
+      ]
+    },
+    {
+      "start": 14.681,
+      "end": 18.381,
+      "text": "Le risorse del cloud si offrono come servizio a tre livelli principali,",
+      "words": [
+        {
+          "text": "Le",
+          "start": 14.681,
+          "end": 14.761
+        },
+        {
+          "text": "risorse",
+          "start": 14.821,
+          "end": 15.161
+        },
+        {
+          "text": "del",
+          "start": 15.221,
+          "end": 15.321
+        },
+        {
+          "text": "cloud",
+          "start": 15.361,
+          "end": 15.721
+        },
+        {
+          "text": "si",
+          "start": 15.961,
+          "end": 16.041
+        },
+        {
+          "text": "offrono",
+          "start": 16.101,
+          "end": 16.421
+        },
+        {
+          "text": "come",
+          "start": 16.461,
+          "end": 16.601
+        },
+        {
+          "text": "servizio",
+          "start": 16.641,
+          "end": 17.101
+        },
+        {
+          "text": "a",
+          "start": 17.141,
+          "end": 17.181
+        },
+        {
+          "text": "tre",
+          "start": 17.261,
+          "end": 17.401
+        },
+        {
+          "text": "livelli",
+          "start": 17.481,
+          "end": 17.761
+        },
+        {
+          "text": "principali,",
+          "start": 17.801,
+          "end": 18.381
+        }
+      ]
+    },
+    {
+      "start": 18.621,
+      "end": 20.621,
+      "text": "più un quarto modello orientato alle funzioni.",
+      "words": [
+        {
+          "text": "più",
+          "start": 18.621,
+          "end": 18.721
+        },
+        {
+          "text": "un",
+          "start": 18.761,
+          "end": 18.841
+        },
+        {
+          "text": "quarto",
+          "start": 18.881,
+          "end": 19.161
+        },
+        {
+          "text": "modello",
+          "start": 19.201,
+          "end": 19.541
+        },
+        {
+          "text": "orientato",
+          "start": 19.601,
+          "end": 20.021
+        },
+        {
+          "text": "alle",
+          "start": 20.041,
+          "end": 20.161
+        },
+        {
+          "text": "funzioni.",
+          "start": 20.201,
+          "end": 20.621
+        }
+      ]
+    },
+    {
+      "start": 21.341,
+      "end": 27.382,
+      "text": "Con Infrastructure as a Service, o IaaS, il provider gestisce l'intera infrastruttura virtualizzata,",
+      "words": [
+        {
+          "text": "Con",
+          "start": 21.341,
+          "end": 21.501
+        },
+        {
+          "text": "Infrastructure",
+          "start": 21.701,
+          "end": 22.441
+        },
+        {
+          "text": "as",
+          "start": 22.521,
+          "end": 22.641
+        },
+        {
+          "text": "a",
+          "start": 22.661,
+          "end": 22.701
+        },
+        {
+          "text": "Service,",
+          "start": 22.761,
+          "end": 23.221
+        },
+        {
+          "text": "o",
+          "start": 23.361,
+          "end": 23.401
+        },
+        {
+          "text": "IaaS,",
+          "start": 23.601,
+          "end": 23.921
+        },
+        {
+          "text": "il",
+          "start": 24.321,
+          "end": 24.401
+        },
+        {
+          "text": "provider",
+          "start": 24.441,
+          "end": 24.861
+        },
+        {
+          "text": "gestisce",
+          "start": 24.921,
+          "end": 25.401
+        },
+        {
+          "text": "l'intera",
+          "start": 25.501,
+          "end": 25.981
+        },
+        {
+          "text": "infrastruttura",
+          "start": 26.041,
+          "end": 26.682
+        },
+        {
+          "text": "virtualizzata,",
+          "start": 26.702,
+          "end": 27.382
+        }
+      ]
+    },
+    {
+      "start": 27.682,
+      "end": 30.002,
+      "text": "cioè server, memoria di massa e rete.",
+      "words": [
+        {
+          "text": "cioè",
+          "start": 27.682,
+          "end": 27.842
+        },
+        {
+          "text": "server,",
+          "start": 28.062,
+          "end": 28.462
+        },
+        {
+          "text": "memoria",
+          "start": 28.682,
+          "end": 29.022
+        },
+        {
+          "text": "di",
+          "start": 29.042,
+          "end": 29.102
+        },
+        {
+          "text": "massa",
+          "start": 29.142,
+          "end": 29.462
+        },
+        {
+          "text": "e",
+          "start": 29.682,
+          "end": 29.722
+        },
+        {
+          "text": "rete.",
+          "start": 29.782,
+          "end": 30.002
+        }
+      ]
+    },
+    {
+      "start": 30.782,
+      "end": 35.542,
+      "text": "Il cliente invece è responsabile di sistema operativo, software abilitante e applicazione,",
+      "words": [
+        {
+          "text": "Il",
+          "start": 30.782,
+          "end": 30.862
+        },
+        {
+          "text": "cliente",
+          "start": 30.902,
+          "end": 31.222
+        },
+        {
+          "text": "invece",
+          "start": 31.262,
+          "end": 31.482
+        },
+        {
+          "text": "è",
+          "start": 31.522,
+          "end": 31.562
+        },
+        {
+          "text": "responsabile",
+          "start": 31.602,
+          "end": 32.242
+        },
+        {
+          "text": "di",
+          "start": 32.282,
+          "end": 32.342
+        },
+        {
+          "text": "sistema",
+          "start": 32.422,
+          "end": 32.722
+        },
+        {
+          "text": "operativo,",
+          "start": 32.762,
+          "end": 33.222
+        },
+        {
+          "text": "software",
+          "start": 33.542,
+          "end": 33.962
+        },
+        {
+          "text": "abilitante",
+          "start": 33.982,
+          "end": 34.542
+        },
+        {
+          "text": "e",
+          "start": 34.822,
+          "end": 34.862
+        },
+        {
+          "text": "applicazione,",
+          "start": 34.922,
+          "end": 35.542
+        }
+      ]
+    },
+    {
+      "start": 35.882,
+      "end": 37.342,
+      "text": "come avviene con Amazon EC2",
+      "words": [
+        {
+          "text": "come",
+          "start": 35.882,
+          "end": 36.022
+        },
+        {
+          "text": "avviene",
+          "start": 36.062,
+          "end": 36.342
+        },
+        {
+          "text": "con",
+          "start": 36.382,
+          "end": 36.522
+        },
+        {
+          "text": "Amazon",
+          "start": 36.682,
+          "end": 37.062
+        },
+        {
+          "text": "EC2",
+          "start": 37.222,
+          "end": 37.342
+        }
+      ]
+    },
+    {
+      "start": 38.002,
+      "end": 38.322,
+      "text": "e S3.",
+      "words": [
+        {
+          "text": "e",
+          "start": 38.002,
+          "end": 38.042
+        },
+        {
+          "text": "S3.",
+          "start": 38.282,
+          "end": 38.322
+        }
+      ]
+    },
+    {
+      "start": 39.422,
+      "end": 44.883,
+      "text": "Salendo a Platform as a Service, o PaaS, il fornitore fornisce e gestisce infrastruttura,",
+      "words": [
+        {
+          "text": "Salendo",
+          "start": 39.422,
+          "end": 39.742
+        },
+        {
+          "text": "a",
+          "start": 39.782,
+          "end": 39.822
+        },
+        {
+          "text": "Platform",
+          "start": 39.902,
+          "end": 40.442
+        },
+        {
+          "text": "as",
+          "start": 40.522,
+          "end": 40.622
+        },
+        {
+          "text": "a",
+          "start": 40.662,
+          "end": 40.702
+        },
+        {
+          "text": "Service,",
+          "start": 40.742,
+          "end": 41.202
+        },
+        {
+          "text": "o",
+          "start": 41.402,
+          "end": 41.442
+        },
+        {
+          "text": "PaaS,",
+          "start": 41.622,
+          "end": 41.902
+        },
+        {
+          "text": "il",
+          "start": 42.362,
+          "end": 42.442
+        },
+        {
+          "text": "fornitore",
+          "start": 42.482,
+          "end": 42.962
+        },
+        {
+          "text": "fornisce",
+          "start": 43.022,
+          "end": 43.503
+        },
+        {
+          "text": "e",
+          "start": 43.543,
+          "end": 43.583
+        },
+        {
+          "text": "gestisce",
+          "start": 43.623,
+          "end": 44.043
+        },
+        {
+          "text": "infrastruttura,",
+          "start": 44.123,
+          "end": 44.883
+        }
+      ]
+    },
+    {
+      "start": 45.243,
+      "end": 49.843,
+      "text": "sistema operativo e software abilitante, incluse virtual machine e SDK.",
+      "words": [
+        {
+          "text": "sistema",
+          "start": 45.243,
+          "end": 45.623
+        },
+        {
+          "text": "operativo",
+          "start": 45.663,
+          "end": 46.163
+        },
+        {
+          "text": "e",
+          "start": 46.483,
+          "end": 46.523
+        },
+        {
+          "text": "software",
+          "start": 46.603,
+          "end": 47.003
+        },
+        {
+          "text": "abilitante,",
+          "start": 47.023,
+          "end": 47.563
+        },
+        {
+          "text": "incluse",
+          "start": 47.623,
+          "end": 47.983
+        },
+        {
+          "text": "virtual",
+          "start": 48.343,
+          "end": 48.683
+        },
+        {
+          "text": "machine",
+          "start": 48.703,
+          "end": 49.123
+        },
+        {
+          "text": "e",
+          "start": 49.283,
+          "end": 49.323
+        },
+        {
+          "text": "SDK.",
+          "start": 49.603,
+          "end": 49.843
+        }
+      ]
+    },
+    {
+      "start": 50.703,
+      "end": 54.243,
+      "text": "Il cliente si occupa solo di installare e gestire la propria applicazione,",
+      "words": [
+        {
+          "text": "Il",
+          "start": 50.703,
+          "end": 50.803
+        },
+        {
+          "text": "cliente",
+          "start": 50.823,
+          "end": 51.223
+        },
+        {
+          "text": "si",
+          "start": 51.363,
+          "end": 51.423
+        },
+        {
+          "text": "occupa",
+          "start": 51.483,
+          "end": 51.743
+        },
+        {
+          "text": "solo",
+          "start": 51.803,
+          "end": 52.003
+        },
+        {
+          "text": "di",
+          "start": 52.023,
+          "end": 52.083
+        },
+        {
+          "text": "installare",
+          "start": 52.123,
+          "end": 52.663
+        },
+        {
+          "text": "e",
+          "start": 52.683,
+          "end": 52.723
+        },
+        {
+          "text": "gestire",
+          "start": 52.763,
+          "end": 53.163
+        },
+        {
+          "text": "la",
+          "start": 53.203,
+          "end": 53.263
+        },
+        {
+          "text": "propria",
+          "start": 53.303,
+          "end": 53.583
+        },
+        {
+          "text": "applicazione,",
+          "start": 53.623,
+          "end": 54.243
+        }
+      ]
+    },
+    {
+      "start": 54.523,
+      "end": 57.243,
+      "text": "come su Heroku, Azure o Google App Engine.",
+      "words": [
+        {
+          "text": "come",
+          "start": 54.523,
+          "end": 54.683
+        },
+        {
+          "text": "su",
+          "start": 54.723,
+          "end": 54.803
+        },
+        {
+          "text": "Heroku,",
+          "start": 54.963,
+          "end": 55.343
+        },
+        {
+          "text": "Azure",
+          "start": 55.763,
+          "end": 56.083
+        },
+        {
+          "text": "o",
+          "start": 56.343,
+          "end": 56.383
+        },
+        {
+          "text": "Google",
+          "start": 56.483,
+          "end": 56.763
+        },
+        {
+          "text": "App",
+          "start": 56.763,
+          "end": 56.863
+        },
+        {
+          "text": "Engine.",
+          "start": 56.923,
+          "end": 57.243
+        }
+      ]
+    },
+    {
+      "start": 58.043,
+      "end": 60.383,
+      "text": "Con Software as a Service, o SaaS,",
+      "words": [
+        {
+          "text": "Con",
+          "start": 58.043,
+          "end": 58.203
+        },
+        {
+          "text": "Software",
+          "start": 58.463,
+          "end": 58.963
+        },
+        {
+          "text": "as",
+          "start": 58.983,
+          "end": 59.063
+        },
+        {
+          "text": "a",
+          "start": 59.083,
+          "end": 59.123
+        },
+        {
+          "text": "Service,",
+          "start": 59.163,
+          "end": 59.663
+        },
+        {
+          "text": "o",
+          "start": 59.843,
+          "end": 59.883
+        },
+        {
+          "text": "SaaS,",
+          "start": 60.083,
+          "end": 60.383
+        }
+      ]
+    },
+    {
+      "start": 60.944,
+      "end": 64.684,
+      "text": "il software è erogato su richiesta tramite client leggeri o API:",
+      "words": [
+        {
+          "text": "il",
+          "start": 60.944,
+          "end": 61.044
+        },
+        {
+          "text": "software",
+          "start": 61.104,
+          "end": 61.524
+        },
+        {
+          "text": "è",
+          "start": 61.644,
+          "end": 61.684
+        },
+        {
+          "text": "erogato",
+          "start": 61.744,
+          "end": 62.104
+        },
+        {
+          "text": "su",
+          "start": 62.164,
+          "end": 62.244
+        },
+        {
+          "text": "richiesta",
+          "start": 62.324,
+          "end": 62.744
+        },
+        {
+          "text": "tramite",
+          "start": 62.804,
+          "end": 63.104
+        },
+        {
+          "text": "client",
+          "start": 63.164,
+          "end": 63.484
+        },
+        {
+          "text": "leggeri",
+          "start": 63.564,
+          "end": 63.944
+        },
+        {
+          "text": "o",
+          "start": 64.084,
+          "end": 64.12400000000001
+        },
+        {
+          "text": "API:",
+          "start": 64.264,
+          "end": 64.684
+        }
+      ]
+    },
+    {
+      "start": 65.204,
+      "end": 68.884,
+      "text": "il provider gestisce tutto, incluso l'applicativo, come in Salesforce.",
+      "words": [
+        {
+          "text": "il",
+          "start": 65.204,
+          "end": 65.284
+        },
+        {
+          "text": "provider",
+          "start": 65.324,
+          "end": 65.764
+        },
+        {
+          "text": "gestisce",
+          "start": 65.924,
+          "end": 66.264
+        },
+        {
+          "text": "tutto,",
+          "start": 66.304,
+          "end": 66.564
+        },
+        {
+          "text": "incluso",
+          "start": 66.864,
+          "end": 67.244
+        },
+        {
+          "text": "l'applicativo,",
+          "start": 67.264,
+          "end": 67.844
+        },
+        {
+          "text": "come",
+          "start": 68.064,
+          "end": 68.204
+        },
+        {
+          "text": "in",
+          "start": 68.264,
+          "end": 68.324
+        },
+        {
+          "text": "Salesforce.",
+          "start": 68.364,
+          "end": 68.884
+        }
+      ]
+    },
+    {
+      "start": 69.684,
+      "end": 75.424,
+      "text": "Infine, nel Function as a Service, o FaaS, il cliente carica singole funzioni eseguite solo",
+      "words": [
+        {
+          "text": "Infine,",
+          "start": 69.684,
+          "end": 70.024
+        },
+        {
+          "text": "nel",
+          "start": 70.164,
+          "end": 70.304
+        },
+        {
+          "text": "Function",
+          "start": 70.364,
+          "end": 70.744
+        },
+        {
+          "text": "as",
+          "start": 70.844,
+          "end": 70.944
+        },
+        {
+          "text": "a",
+          "start": 70.964,
+          "end": 71.004
+        },
+        {
+          "text": "Service,",
+          "start": 71.064,
+          "end": 71.504
+        },
+        {
+          "text": "o",
+          "start": 71.644,
+          "end": 71.68400000000001
+        },
+        {
+          "text": "FaaS,",
+          "start": 71.864,
+          "end": 72.164
+        },
+        {
+          "text": "il",
+          "start": 72.664,
+          "end": 72.744
+        },
+        {
+          "text": "cliente",
+          "start": 72.804,
+          "end": 73.184
+        },
+        {
+          "text": "carica",
+          "start": 73.264,
+          "end": 73.564
+        },
+        {
+          "text": "singole",
+          "start": 73.724,
+          "end": 74.064
+        },
+        {
+          "text": "funzioni",
+          "start": 74.104,
+          "end": 74.564
+        },
+        {
+          "text": "eseguite",
+          "start": 74.644,
+          "end": 75.044
+        },
+        {
+          "text": "solo",
+          "start": 75.164,
+          "end": 75.424
+        }
+      ]
+    },
+    {
+      "start": 75.444,
+      "end": 78.865,
+      "text": "all'arrivo delle richieste, pagando in base alle esecuzioni effettive.",
+      "words": [
+        {
+          "text": "all'arrivo",
+          "start": 75.444,
+          "end": 75.824
+        },
+        {
+          "text": "delle",
+          "start": 75.864,
+          "end": 76.024
+        },
+        {
+          "text": "richieste,",
+          "start": 76.064,
+          "end": 76.484
+        },
+        {
+          "text": "pagando",
+          "start": 76.824,
+          "end": 77.144
+        },
+        {
+          "text": "in",
+          "start": 77.204,
+          "end": 77.264
+        },
+        {
+          "text": "base",
+          "start": 77.304,
+          "end": 77.564
+        },
+        {
+          "text": "alle",
+          "start": 77.664,
+          "end": 77.824
+        },
+        {
+          "text": "esecuzioni",
+          "start": 77.884,
+          "end": 78.385
+        },
+        {
+          "text": "effettive.",
+          "start": 78.425,
+          "end": 78.865
+        }
+      ]
+    }
+  ]
+}

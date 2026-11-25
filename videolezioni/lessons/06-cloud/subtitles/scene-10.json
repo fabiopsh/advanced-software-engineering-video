@@ -1,0 +1,1004 @@
+{
+  "duration": 79.424,
+  "segments": [
+    {
+      "start": 1.049,
+      "end": 4.329,
+      "text": "Chiudiamo il capitolo sei fissando i punti essenziali da ricordare.",
+      "words": [
+        {
+          "text": "Chiudiamo",
+          "start": 1.049,
+          "end": 1.349
+        },
+        {
+          "text": "il",
+          "start": 1.389,
+          "end": 1.449
+        },
+        {
+          "text": "capitolo",
+          "start": 1.469,
+          "end": 1.809
+        },
+        {
+          "text": "sei",
+          "start": 1.849,
+          "end": 2.069
+        },
+        {
+          "text": "fissando",
+          "start": 2.289,
+          "end": 2.669
+        },
+        {
+          "text": "i",
+          "start": 2.729,
+          "end": 2.769
+        },
+        {
+          "text": "punti",
+          "start": 2.809,
+          "end": 3.069
+        },
+        {
+          "text": "essenziali",
+          "start": 3.129,
+          "end": 3.709
+        },
+        {
+          "text": "da",
+          "start": 3.749,
+          "end": 3.809
+        },
+        {
+          "text": "ricordare.",
+          "start": 3.849,
+          "end": 4.329
+        }
+      ]
+    },
+    {
+      "start": 5.189,
+      "end": 9.55,
+      "text": "Primo: nei modelli cloud si sale dal controllo del cliente in IaaS,",
+      "words": [
+        {
+          "text": "Primo:",
+          "start": 5.189,
+          "end": 5.449
+        },
+        {
+          "text": "nei",
+          "start": 6.049,
+          "end": 6.169
+        },
+        {
+          "text": "modelli",
+          "start": 6.209,
+          "end": 6.469
+        },
+        {
+          "text": "cloud",
+          "start": 6.509,
+          "end": 6.85
+        },
+        {
+          "text": "si",
+          "start": 7.09,
+          "end": 7.17
+        },
+        {
+          "text": "sale",
+          "start": 7.23,
+          "end": 7.43
+        },
+        {
+          "text": "dal",
+          "start": 7.47,
+          "end": 7.59
+        },
+        {
+          "text": "controllo",
+          "start": 7.67,
+          "end": 8.13
+        },
+        {
+          "text": "del",
+          "start": 8.15,
+          "end": 8.27
+        },
+        {
+          "text": "cliente",
+          "start": 8.31,
+          "end": 8.81
+        },
+        {
+          "text": "in",
+          "start": 9.01,
+          "end": 9.11
+        },
+        {
+          "text": "IaaS,",
+          "start": 9.19,
+          "end": 9.55
+        }
+      ]
+    },
+    {
+      "start": 10.09,
+      "end": 15.87,
+      "text": "a quello della sola applicazione in PaaS, fino a nessun onere gestionale in SaaS e",
+      "words": [
+        {
+          "text": "a",
+          "start": 10.09,
+          "end": 10.13
+        },
+        {
+          "text": "quello",
+          "start": 10.17,
+          "end": 10.41
+        },
+        {
+          "text": "della",
+          "start": 10.43,
+          "end": 10.61
+        },
+        {
+          "text": "sola",
+          "start": 10.69,
+          "end": 10.91
+        },
+        {
+          "text": "applicazione",
+          "start": 10.95,
+          "end": 11.63
+        },
+        {
+          "text": "in",
+          "start": 11.93,
+          "end": 12.03
+        },
+        {
+          "text": "PaaS,",
+          "start": 12.11,
+          "end": 12.43
+        },
+        {
+          "text": "fino",
+          "start": 12.95,
+          "end": 13.15
+        },
+        {
+          "text": "a",
+          "start": 13.23,
+          "end": 13.27
+        },
+        {
+          "text": "nessun",
+          "start": 13.35,
+          "end": 13.77
+        },
+        {
+          "text": "onere",
+          "start": 13.85,
+          "end": 14.07
+        },
+        {
+          "text": "gestionale",
+          "start": 14.11,
+          "end": 14.65
+        },
+        {
+          "text": "in",
+          "start": 14.79,
+          "end": 14.87
+        },
+        {
+          "text": "SaaS",
+          "start": 14.97,
+          "end": 15.29
+        },
+        {
+          "text": "e",
+          "start": 15.83,
+          "end": 15.87
+        }
+      ]
+    },
+    {
+      "start": 15.91,
+      "end": 17.45,
+      "text": "al calcolo per richiesta in FaaS.",
+      "words": [
+        {
+          "text": "al",
+          "start": 15.91,
+          "end": 15.99
+        },
+        {
+          "text": "calcolo",
+          "start": 16.03,
+          "end": 16.35
+        },
+        {
+          "text": "per",
+          "start": 16.37,
+          "end": 16.47
+        },
+        {
+          "text": "richiesta",
+          "start": 16.51,
+          "end": 16.93
+        },
+        {
+          "text": "in",
+          "start": 17.07,
+          "end": 17.17
+        },
+        {
+          "text": "FaaS.",
+          "start": 17.25,
+          "end": 17.45
+        }
+      ]
+    },
+    {
+      "start": 17.95,
+      "end": 25.011,
+      "text": "Secondo: il SaaS offre cash flow regolare, aggiornamenti simultanei e rilascio continuo al fornitore;",
+      "words": [
+        {
+          "text": "Secondo:",
+          "start": 17.95,
+          "end": 19.31
+        },
+        {
+          "text": "il",
+          "start": 19.85,
+          "end": 19.93
+        },
+        {
+          "text": "SaaS",
+          "start": 19.99,
+          "end": 20.25
+        },
+        {
+          "text": "offre",
+          "start": 20.43,
+          "end": 20.65
+        },
+        {
+          "text": "cash",
+          "start": 20.73,
+          "end": 20.91
+        },
+        {
+          "text": "flow",
+          "start": 20.97,
+          "end": 21.13
+        },
+        {
+          "text": "regolare,",
+          "start": 21.17,
+          "end": 21.63
+        },
+        {
+          "text": "aggiornamenti",
+          "start": 21.97,
+          "end": 22.49
+        },
+        {
+          "text": "simultanei",
+          "start": 22.53,
+          "end": 23.11
+        },
+        {
+          "text": "e",
+          "start": 23.271,
+          "end": 23.311
+        },
+        {
+          "text": "rilascio",
+          "start": 23.391,
+          "end": 23.731
+        },
+        {
+          "text": "continuo",
+          "start": 23.791,
+          "end": 24.291
+        },
+        {
+          "text": "al",
+          "start": 24.371,
+          "end": 24.451
+        },
+        {
+          "text": "fornitore;",
+          "start": 24.491,
+          "end": 25.011
+        }
+      ]
+    },
+    {
+      "start": 25.731,
+      "end": 29.371,
+      "text": "azzera i costi iniziali per il cliente, ma introduce rischi di privacy,",
+      "words": [
+        {
+          "text": "azzera",
+          "start": 25.731,
+          "end": 26.011
+        },
+        {
+          "text": "i",
+          "start": 26.051,
+          "end": 26.091
+        },
+        {
+          "text": "costi",
+          "start": 26.111,
+          "end": 26.331
+        },
+        {
+          "text": "iniziali",
+          "start": 26.371,
+          "end": 26.771
+        },
+        {
+          "text": "per",
+          "start": 26.811,
+          "end": 26.891
+        },
+        {
+          "text": "il",
+          "start": 26.931,
+          "end": 26.991
+        },
+        {
+          "text": "cliente,",
+          "start": 27.031,
+          "end": 27.451
+        },
+        {
+          "text": "ma",
+          "start": 27.771,
+          "end": 27.831
+        },
+        {
+          "text": "introduce",
+          "start": 27.971,
+          "end": 28.471
+        },
+        {
+          "text": "rischi",
+          "start": 28.531,
+          "end": 28.771
+        },
+        {
+          "text": "di",
+          "start": 28.811,
+          "end": 28.871
+        },
+        {
+          "text": "privacy,",
+          "start": 28.911,
+          "end": 29.371
+        }
+      ]
+    },
+    {
+      "start": 29.591,
+      "end": 30.851,
+      "text": "sicurezza e lock-in.",
+      "words": [
+        {
+          "text": "sicurezza",
+          "start": 29.591,
+          "end": 30.131
+        },
+        {
+          "text": "e",
+          "start": 30.371,
+          "end": 30.411
+        },
+        {
+          "text": "lock-in.",
+          "start": 30.491,
+          "end": 30.851
+        }
+      ]
+    },
+    {
+      "start": 32.051,
+      "end": 38.171,
+      "text": "Terzo: nel multi-tenant un unico schema con identificatore tenant garantisce isolamento logico,",
+      "words": [
+        {
+          "text": "Terzo:",
+          "start": 32.051,
+          "end": 32.411
+        },
+        {
+          "text": "nel",
+          "start": 33.111,
+          "end": 33.231
+        },
+        {
+          "text": "multi-tenant",
+          "start": 33.271,
+          "end": 33.951
+        },
+        {
+          "text": "un",
+          "start": 34.231,
+          "end": 34.311
+        },
+        {
+          "text": "unico",
+          "start": 34.371,
+          "end": 34.611
+        },
+        {
+          "text": "schema",
+          "start": 34.671,
+          "end": 35.011
+        },
+        {
+          "text": "con",
+          "start": 35.111,
+          "end": 35.231
+        },
+        {
+          "text": "identificatore",
+          "start": 35.291,
+          "end": 36.011
+        },
+        {
+          "text": "tenant",
+          "start": 36.071,
+          "end": 36.431
+        },
+        {
+          "text": "garantisce",
+          "start": 36.631,
+          "end": 37.151
+        },
+        {
+          "text": "isolamento",
+          "start": 37.271,
+          "end": 37.791
+        },
+        {
+          "text": "logico,",
+          "start": 37.811,
+          "end": 38.171
+        }
+      ]
+    },
+    {
+      "start": 38.691,
+      "end": 45.452,
+      "text": "personalizzato via profili, colonne extra o extension table, protetto da controllo accessi multilivello e cifratura.",
+      "words": [
+        {
+          "text": "personalizzato",
+          "start": 38.691,
+          "end": 39.452
+        },
+        {
+          "text": "via",
+          "start": 39.532,
+          "end": 39.652
+        },
+        {
+          "text": "profili,",
+          "start": 39.692,
+          "end": 40.112
+        },
+        {
+          "text": "colonne",
+          "start": 40.412,
+          "end": 40.772
+        },
+        {
+          "text": "extra",
+          "start": 40.872,
+          "end": 41.192
+        },
+        {
+          "text": "o",
+          "start": 41.332,
+          "end": 41.372
+        },
+        {
+          "text": "extension",
+          "start": 41.492,
+          "end": 41.972
+        },
+        {
+          "text": "table,",
+          "start": 42.012,
+          "end": 42.332
+        },
+        {
+          "text": "protetto",
+          "start": 42.752,
+          "end": 43.192
+        },
+        {
+          "text": "da",
+          "start": 43.252,
+          "end": 43.312
+        },
+        {
+          "text": "controllo",
+          "start": 43.392,
+          "end": 43.792
+        },
+        {
+          "text": "accessi",
+          "start": 43.812,
+          "end": 44.192
+        },
+        {
+          "text": "multilivello",
+          "start": 44.232,
+          "end": 44.772
+        },
+        {
+          "text": "e",
+          "start": 44.912,
+          "end": 44.952
+        },
+        {
+          "text": "cifratura.",
+          "start": 44.992,
+          "end": 45.452
+        }
+      ]
+    },
+    {
+      "start": 46.352,
+      "end": 52.032,
+      "text": "Quarto: il multi-instance isola sistema e database per cliente su VM o container,",
+      "words": [
+        {
+          "text": "Quarto:",
+          "start": 46.352,
+          "end": 46.672
+        },
+        {
+          "text": "il",
+          "start": 47.472,
+          "end": 47.552
+        },
+        {
+          "text": "multi-instance",
+          "start": 47.612,
+          "end": 48.472
+        },
+        {
+          "text": "isola",
+          "start": 48.692,
+          "end": 48.972
+        },
+        {
+          "text": "sistema",
+          "start": 49.072,
+          "end": 49.532
+        },
+        {
+          "text": "e",
+          "start": 49.652,
+          "end": 49.692
+        },
+        {
+          "text": "database",
+          "start": 49.752,
+          "end": 50.152
+        },
+        {
+          "text": "per",
+          "start": 50.172,
+          "end": 50.272
+        },
+        {
+          "text": "cliente",
+          "start": 50.332,
+          "end": 50.772
+        },
+        {
+          "text": "su",
+          "start": 50.852,
+          "end": 50.932
+        },
+        {
+          "text": "VM",
+          "start": 51.012,
+          "end": 51.312
+        },
+        {
+          "text": "o",
+          "start": 51.492,
+          "end": 51.532
+        },
+        {
+          "text": "container,",
+          "start": 51.572,
+          "end": 52.032
+        }
+      ]
+    },
+    {
+      "start": 52.432,
+      "end": 55.212,
+      "text": "aumentando flessibilità e sicurezza a costo maggiore;",
+      "words": [
+        {
+          "text": "aumentando",
+          "start": 52.432,
+          "end": 52.932
+        },
+        {
+          "text": "flessibilità",
+          "start": 53.012,
+          "end": 53.552
+        },
+        {
+          "text": "e",
+          "start": 53.712,
+          "end": 53.752
+        },
+        {
+          "text": "sicurezza",
+          "start": 53.812,
+          "end": 54.292
+        },
+        {
+          "text": "a",
+          "start": 54.512,
+          "end": 54.552
+        },
+        {
+          "text": "costo",
+          "start": 54.592,
+          "end": 54.812
+        },
+        {
+          "text": "maggiore;",
+          "start": 54.852,
+          "end": 55.212
+        }
+      ]
+    },
+    {
+      "start": 55.873,
+      "end": 58.073,
+      "text": "la scelta del database dipende da cinque fattori.",
+      "words": [
+        {
+          "text": "la",
+          "start": 55.873,
+          "end": 55.933
+        },
+        {
+          "text": "scelta",
+          "start": 55.953,
+          "end": 56.213
+        },
+        {
+          "text": "del",
+          "start": 56.253,
+          "end": 56.353
+        },
+        {
+          "text": "database",
+          "start": 56.393,
+          "end": 56.853
+        },
+        {
+          "text": "dipende",
+          "start": 56.953,
+          "end": 57.253
+        },
+        {
+          "text": "da",
+          "start": 57.293,
+          "end": 57.333
+        },
+        {
+          "text": "cinque",
+          "start": 57.413,
+          "end": 57.673
+        },
+        {
+          "text": "fattori.",
+          "start": 57.713,
+          "end": 58.073
+        }
+      ]
+    },
+    {
+      "start": 59.013,
+      "end": 64.19300000000001,
+      "text": "Quinto: si scala soprattutto con lo scaling out e si garantisce resilienza con hot o",
+      "words": [
+        {
+          "text": "Quinto:",
+          "start": 59.013,
+          "end": 59.293
+        },
+        {
+          "text": "si",
+          "start": 60.033,
+          "end": 60.093
+        },
+        {
+          "text": "scala",
+          "start": 60.133,
+          "end": 60.333
+        },
+        {
+          "text": "soprattutto",
+          "start": 60.373,
+          "end": 60.873
+        },
+        {
+          "text": "con",
+          "start": 60.913,
+          "end": 61.013
+        },
+        {
+          "text": "lo",
+          "start": 61.033,
+          "end": 61.093
+        },
+        {
+          "text": "scaling",
+          "start": 61.133,
+          "end": 61.513
+        },
+        {
+          "text": "out",
+          "start": 61.593,
+          "end": 61.813
+        },
+        {
+          "text": "e",
+          "start": 61.973,
+          "end": 62.013
+        },
+        {
+          "text": "si",
+          "start": 62.073,
+          "end": 62.153
+        },
+        {
+          "text": "garantisce",
+          "start": 62.213,
+          "end": 62.713
+        },
+        {
+          "text": "resilienza",
+          "start": 62.793,
+          "end": 63.393
+        },
+        {
+          "text": "con",
+          "start": 63.493,
+          "end": 63.633
+        },
+        {
+          "text": "hot",
+          "start": 63.753,
+          "end": 63.953
+        },
+        {
+          "text": "o",
+          "start": 64.153,
+          "end": 64.19300000000001
+        }
+      ]
+    },
+    {
+      "start": 64.273,
+      "end": 64.973,
+      "text": "cool standby.",
+      "words": [
+        {
+          "text": "cool",
+          "start": 64.273,
+          "end": 64.473
+        },
+        {
+          "text": "standby.",
+          "start": 64.573,
+          "end": 64.973
+        }
+      ]
+    },
+    {
+      "start": 65.893,
+      "end": 72.354,
+      "text": "Sesto: il monolite serve per prototipi, mentre servizi stateless a grana fine permettono scalabilità e",
+      "words": [
+        {
+          "text": "Sesto:",
+          "start": 65.893,
+          "end": 66.173
+        },
+        {
+          "text": "il",
+          "start": 66.953,
+          "end": 67.013
+        },
+        {
+          "text": "monolite",
+          "start": 67.073,
+          "end": 67.473
+        },
+        {
+          "text": "serve",
+          "start": 67.533,
+          "end": 67.753
+        },
+        {
+          "text": "per",
+          "start": 67.793,
+          "end": 67.893
+        },
+        {
+          "text": "prototipi,",
+          "start": 67.913,
+          "end": 68.413
+        },
+        {
+          "text": "mentre",
+          "start": 68.753,
+          "end": 68.973
+        },
+        {
+          "text": "servizi",
+          "start": 69.033,
+          "end": 69.433
+        },
+        {
+          "text": "stateless",
+          "start": 69.493,
+          "end": 69.973
+        },
+        {
+          "text": "a",
+          "start": 70.153,
+          "end": 70.19300000000001
+        },
+        {
+          "text": "grana",
+          "start": 70.273,
+          "end": 70.493
+        },
+        {
+          "text": "fine",
+          "start": 70.553,
+          "end": 70.813
+        },
+        {
+          "text": "permettono",
+          "start": 71.113,
+          "end": 71.534
+        },
+        {
+          "text": "scalabilità",
+          "start": 71.594,
+          "end": 72.134
+        },
+        {
+          "text": "e",
+          "start": 72.314,
+          "end": 72.354
+        }
+      ]
+    },
+    {
+      "start": 72.374,
+      "end": 73.554,
+      "text": "aggiornamenti indipendenti.",
+      "words": [
+        {
+          "text": "aggiornamenti",
+          "start": 72.374,
+          "end": 72.894
+        },
+        {
+          "text": "indipendenti.",
+          "start": 72.934,
+          "end": 73.554
+        }
+      ]
+    },
+    {
+      "start": 74.194,
+      "end": 79.174,
+      "text": "Prima di passare ai microservizi, verificate la vostra preparazione rispondendo alle nove domande sulla destra.",
+      "words": [
+        {
+          "text": "Prima",
+          "start": 74.194,
+          "end": 74.394
+        },
+        {
+          "text": "di",
+          "start": 74.434,
+          "end": 74.494
+        },
+        {
+          "text": "passare",
+          "start": 74.514,
+          "end": 74.854
+        },
+        {
+          "text": "ai",
+          "start": 74.854,
+          "end": 74.914
+        },
+        {
+          "text": "microservizi,",
+          "start": 74.914,
+          "end": 75.594
+        },
+        {
+          "text": "verificate",
+          "start": 75.734,
+          "end": 76.274
+        },
+        {
+          "text": "la",
+          "start": 76.314,
+          "end": 76.354
+        },
+        {
+          "text": "vostra",
+          "start": 76.394,
+          "end": 76.654
+        },
+        {
+          "text": "preparazione",
+          "start": 76.694,
+          "end": 77.354
+        },
+        {
+          "text": "rispondendo",
+          "start": 77.414,
+          "end": 77.934
+        },
+        {
+          "text": "alle",
+          "start": 77.954,
+          "end": 78.094
+        },
+        {
+          "text": "nove",
+          "start": 78.134,
+          "end": 78.294
+        },
+        {
+          "text": "domande",
+          "start": 78.334,
+          "end": 78.634
+        },
+        {
+          "text": "sulla",
+          "start": 78.674,
+          "end": 78.854
+        },
+        {
+          "text": "destra.",
+          "start": 78.874,
+          "end": 79.174
+        }
+      ]
+    }
+  ]
+}

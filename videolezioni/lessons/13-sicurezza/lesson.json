@@ -1,0 +1,851 @@
+{
+  "lesson_id": "13-sicurezza",
+  "chapter": 13,
+  "part": "Parte IV · Dal monolite alla produzione",
+  "title": "Sicurezza e privacy",
+  "voice_config": {
+    "provider": "gemini",
+    "model": "gemini-3.8-flash-tts",
+    "voice_name": "Ludo",
+    "style": "chiaro, didattico, calmo e preciso, stile lezione universitaria di ingegneria del software"
+  },
+  "scenes": [
+    {
+      "id": "scene-01",
+      "section": "13.1 · Minacce e sicurezza di sistema",
+      "title": "Triade CIA e sicurezza lungo l'intero stack",
+      "tts_text": "Benvenuti al capitolo tredici, dedicato a sicurezza e privacy nei prodotti software. Un attacco informatico può causare perdite gravi di dati, denaro e reputazione sia a chi sviluppa il prodotto sia a chi lo utilizza. [pause:0.5] Le minacce si classificano in tre categorie fondamentali. Prima: le minacce alla disponibilità, o availability threats, in cui l'attaccante nega l'accesso agli utenti legittimi, per esempio con un attacco distributed denial of service. [pause:0.5] Seconda: le minacce all'integrità, o integrity threats, mirate a danneggiare il programma, come fa un virus, oppure i dati, come accade con un ransomware. Terza: le minacce alla riservatezza, o confidentiality threats, con cui si sottraggono informazioni private. Spesso un attacco ne combina più di una: un ransomware cifra i dati violando l'integrità e rende il sistema indisponibile. [pause:0.6] Inoltre la sicurezza riguarda l'intero stack del sistema, dalla rete fino all'ambiente operativo passando per sistema operativo, database e librerie. [pause:0.5] Per mantenerla servono quattro attività di gestione: standard di autenticazione e autorizzazione, manutenzione dell'infrastruttura con patch rapide, monitoraggio regolare degli attacchi e politiche di backup affidabili.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">13.1 · Minacce e sicurezza di sistema</div>\n  <h2 class=\"slide-title\">Triade CIA e sicurezza lungo l'intero stack</h2>\n  <div id=\"s1\" class=\"split-visual cue-hidden\">\n    <div id=\"svg-cia\" class=\"svg-panel\">\n      <svg viewBox=\"0 0 360 205\" class=\"diagram-svg\" aria-label=\"I tre tipi di minacce a un prodotto software\">\n        <defs>\n          <marker id=\"arr-cia\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\">\n            <path d=\"M0 1 L9 5 L0 9 z\" fill=\"var(--blue)\"/>\n          </marker>\n        </defs>\n        <text x=\"180\" y=\"84\" text-anchor=\"middle\" class=\"svg-caption\">SOFTWARE PRODUCT</text>\n        <rect x=\"122\" y=\"92\" width=\"116\" height=\"26\" rx=\"4\" fill=\"var(--bg-surface)\" stroke=\"var(--ink-soft)\" stroke-width=\"1.4\"/>\n        <text x=\"180\" y=\"109\" text-anchor=\"middle\" class=\"svg-tick\">PROGRAM</text>\n        <rect x=\"122\" y=\"118\" width=\"116\" height=\"26\" rx=\"4\" fill=\"var(--bg-surface)\" stroke=\"var(--ink-soft)\" stroke-width=\"1.4\"/>\n        <text x=\"180\" y=\"135\" text-anchor=\"middle\" class=\"svg-tick\">DATA</text>\n        <g id=\"svg-av\">\n          <rect x=\"12\" y=\"16\" width=\"112\" height=\"38\" rx=\"8\" fill=\"var(--orange-soft, rgba(217,119,6,0.12))\" stroke=\"var(--orange)\" stroke-width=\"1.6\"/>\n          <text x=\"68\" y=\"33\" text-anchor=\"middle\" class=\"svg-math-sm\">Availability</text>\n          <text x=\"68\" y=\"47\" text-anchor=\"middle\" class=\"svg-caption\">es. DDoS</text>\n          <path d=\"M 68 54 L 68 105 L 118 105\" fill=\"none\" stroke=\"var(--blue)\" stroke-width=\"1.8\" marker-end=\"url(#arr-cia)\"/>\n        </g>\n        <g id=\"svg-in\">\n          <rect x=\"236\" y=\"16\" width=\"112\" height=\"38\" rx=\"8\" fill=\"var(--red-soft, rgba(192,57,43,0.12))\" stroke=\"var(--red)\" stroke-width=\"1.6\"/>\n          <text x=\"292\" y=\"33\" text-anchor=\"middle\" class=\"svg-math-sm\">Integrity</text>\n          <text x=\"292\" y=\"47\" text-anchor=\"middle\" class=\"svg-caption\">virus / ransomware</text>\n          <path d=\"M 292 54 L 292 105 L 242 105\" fill=\"none\" stroke=\"var(--blue)\" stroke-width=\"1.8\" marker-end=\"url(#arr-cia)\"/>\n          <path d=\"M 292 105 L 292 131 L 242 131\" fill=\"none\" stroke=\"var(--blue)\" stroke-width=\"1.8\" marker-end=\"url(#arr-cia)\"/>\n        </g>\n        <g id=\"svg-co\">\n          <rect x=\"114\" y=\"162\" width=\"132\" height=\"34\" rx=\"8\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.6\"/>\n          <text x=\"180\" y=\"178\" text-anchor=\"middle\" class=\"svg-math-sm\">Confidentiality</text>\n          <text x=\"180\" y=\"191\" text-anchor=\"middle\" class=\"svg-caption\">es. furto di dati</text>\n          <line x1=\"180\" y1=\"144\" x2=\"180\" y2=\"158\" stroke=\"var(--blue)\" stroke-width=\"1.8\" marker-end=\"url(#arr-cia)\"/>\n        </g>\n      </svg>\n    </div>\n    <div class=\"formula-col\">\n      <div id=\"t-av\" class=\"box box-warn\">\n        <div class=\"box-label\">Availability threat</div>\n        <p>Nega l'accesso al sistema agli utenti legittimi (es. <em>DDoS</em>).</p>\n      </div>\n      <div id=\"t-in\" class=\"box box-def\">\n        <div class=\"box-label\">Integrity threat</div>\n        <p>Danneggia programma (<em>virus</em>) o dati (<em>ransomware</em>, che colpisce anche la disponibilità).</p>\n      </div>\n      <div id=\"t-co\" class=\"box box-primary\">\n        <div class=\"box-label\">Confidentiality threat</div>\n        <p>Accesso non autorizzato a informazioni private (furto di dati).</p>\n      </div>\n    </div>\n  </div>\n  <div id=\"s2\" class=\"box box-algo cue-hidden\">\n    <div class=\"box-label\">Sicurezza di tutto lo stack (Rete &rarr; SO &rarr; DB &rarr; Browser &rarr; Framework &rarr; App &rarr; Ambiente)</div>\n    <div class=\"metrics-row\">\n      <div id=\"act-1\" class=\"metric\">\n        <div class=\"metric-val\">Auth &amp; ACL</div>\n        <div class=\"metric-lbl\">Autenticazione forte e permessi corretti</div>\n      </div>\n      <div id=\"act-2\" class=\"metric\">\n        <div class=\"metric-val\">Infrastruttura</div>\n        <div class=\"metric-lbl\">Configurazione corretta e patch rapide</div>\n      </div>\n      <div id=\"act-3\" class=\"metric\">\n        <div class=\"metric-val\">Monitoraggio</div>\n        <div class=\"metric-lbl\">Rilevamento attacchi e resistenza</div>\n      </div>\n      <div id=\"act-4\" class=\"metric\">\n        <div class=\"metric-val\">Backup</div>\n        <div class=\"metric-lbl\">Copie integre di dati e programmi</div>\n      </div>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 1.98,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "dedicato a sicurezza e privacy"
+        },
+        {
+          "at": 1.98,
+          "action": "highlight",
+          "target": "#svg-cia",
+          "duration": 9.8,
+          "anchor": "dedicato a sicurezza e privacy"
+        },
+        {
+          "at": 18.24,
+          "action": "highlight",
+          "target": "#t-av",
+          "duration": 10.5,
+          "anchor": "Prima: le minacce alla disponibilità"
+        },
+        {
+          "at": 29.24,
+          "action": "highlight",
+          "target": "#t-in",
+          "duration": 9,
+          "anchor": "Seconda: le minacce all'integrità"
+        },
+        {
+          "at": 39.41,
+          "action": "highlight",
+          "target": "#t-co",
+          "duration": 6.5,
+          "anchor": "Terza: le minacce alla riservatezza"
+        },
+        {
+          "at": 46.63,
+          "action": "highlight",
+          "target": "#svg-cia",
+          "duration": 7.7,
+          "anchor": "Spesso un attacco ne combina"
+        },
+        {
+          "at": 54.45,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Inoltre la sicurezza riguarda l'intero"
+        },
+        {
+          "at": 54.45,
+          "action": "highlight",
+          "target": "#s2",
+          "duration": 8,
+          "anchor": "Inoltre la sicurezza riguarda l'intero"
+        },
+        {
+          "at": 66.49,
+          "action": "highlight",
+          "target": "#act-1",
+          "duration": 2.42,
+          "anchor": "standard di autenticazione e autorizzazione"
+        },
+        {
+          "at": 69.03,
+          "action": "highlight",
+          "target": "#act-2",
+          "duration": 2.66,
+          "anchor": "manutenzione dell'infrastruttura"
+        },
+        {
+          "at": 71.81,
+          "action": "highlight",
+          "target": "#act-3",
+          "duration": 2.14,
+          "anchor": "monitoraggio regolare degli attacchi"
+        },
+        {
+          "at": 74.07,
+          "action": "highlight",
+          "target": "#act-4",
+          "duration": 4,
+          "anchor": "politiche di backup affidabili"
+        }
+      ],
+      "audio_file": "audio/scene-01.wav",
+      "subtitle_file": "subtitles/scene-01.json",
+      "duration_sec": 75.86
+    },
+    {
+      "id": "scene-02",
+      "section": "13.2 · Injection e Session Hijacking",
+      "title": "Injection attack, SQL poisoning e Session Hijacking",
+      "tts_text": "Passiamo ora agli attacchi più comuni e alle relative difese. In un injection attack l'attaccante sfrutta un campo di input valido per introdurre codice eseguibile o comandi per il database. [pause:0.5] Un esempio classico è il buffer overflow in linguaggi come C e C plus plus, che non controllano i limiti degli array: una stringa di input sovrascrive la memoria adiacente e può deviare l'indirizzo di ritorno di una funzione verso codice dannoso. [pause:0.5] Nelle applicazioni web è frequente invece il SQL poisoning. Se una query viene costruita concatenando l'input utente, inserire un apostrofo seguito da OR uno uguale uno rende vera la clausola WHERE per ogni riga, restituendo i dati di tutti i correntisti. La difesa principale è validare rigorosamente l'input. [pause:0.6] Un altro attacco critico è il session hijacking. Nelle app web il server assegna un session cookie per mantenere valida l'autenticazione tra una richiesta e l'altra fino al log out o al timeout. Se un attaccante ruba il cookie tramite cross-site scripting o intercettando traffico su Wi-Fi non cifrato, può agire al posto della vittima in modo attivo oppure spiare i dati in modo passivo. Le difese sono tre: cifrare il traffico con HTTPS, richiedere autenticazione a più fattori per operazioni critiche e impostare timeout brevi.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">13.2 · Attacchi e difese (1/2)</div>\n  <h2 class=\"slide-title\">Injection Attack, SQL Poisoning e Session Hijacking</h2>\n  <div id=\"s1\" class=\"grid-2 cue-hidden\">\n    <div id=\"inj-box\" class=\"box box-def\">\n      <div class=\"box-label\">Injection attack (input valido &rarr; codice o comandi)</div>\n      <ul class=\"clean-list\">\n        <li id=\"inj-buf\"><strong>Buffer overflow</strong> (C/C++): mancato controllo dei limiti dell'array; sovrascrive la memoria e l'indirizzo di ritorno di una funzione.</li>\n        <li id=\"inj-sql\"><strong>SQL poisoning</strong>: input concatenato nella query rende <code>WHERE</code> sempre vera ed espone tutti i record.</li>\n        <li id=\"inj-def\"><strong>Difesa</strong>: controllare e validare rigorosamente l'input (es. solo cifre per numero di conto).</li>\n      </ul>\n    </div>\n    <div id=\"ses-box\" class=\"box box-warn\">\n      <div class=\"box-label\">Session Hijacking (furto del session cookie)</div>\n      <ul class=\"clean-list\">\n        <li id=\"ses-how\"><strong>Origine</strong>: cookie rubato via XSS oppure monitorando traffico non cifrato su Wi-Fi non protette.</li>\n        <li id=\"ses-mode\"><strong>Attivo vs Passivo</strong>: esegue azioni sul server come utente legittimo oppure spia password e carte.</li>\n        <li id=\"ses-def\"><strong>3 Difese</strong>: cifrare con HTTPS (TLS), multi-factor auth su azioni sensibili, timeout di sessione brevi.</li>\n      </ul>\n    </div>\n  </div>\n  <div id=\"s2\" class=\"box box-primary cue-hidden\">\n    <div class=\"box-label\">Esempio · SQL Poisoning su AccountHolders</div>\n    <p>Input <code>10010010' OR '1'='1</code> &rarr; <code>SELECT * FROM AccountHolders WHERE accountnumber = '10010010' OR '1'='1';</code> — la clausola <code>'1'='1'</code> è sempre vera e restituisce <strong>tutti i correntisti</strong>.</p>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 0.59,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "Passiamo ora agli attacchi più comuni"
+        },
+        {
+          "at": 4.43,
+          "action": "highlight",
+          "target": "#inj-box",
+          "duration": 7,
+          "anchor": "In un injection attack l'attaccante"
+        },
+        {
+          "at": 12.62,
+          "action": "highlight",
+          "target": "#inj-buf",
+          "duration": 13,
+          "anchor": "Un esempio classico è il buffer overflow"
+        },
+        {
+          "at": 25.98,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Nelle applicazioni web è frequente"
+        },
+        {
+          "at": 29.7,
+          "action": "highlight",
+          "target": "#s2",
+          "duration": 12,
+          "anchor": "Se una query viene costruita"
+        },
+        {
+          "at": 42.08,
+          "action": "highlight",
+          "target": "#inj-def",
+          "duration": 3.26,
+          "anchor": "La difesa principale è validare"
+        },
+        {
+          "at": 45.46,
+          "action": "highlight",
+          "target": "#ses-box",
+          "duration": 9.86,
+          "anchor": "Un altro attacco critico è il session"
+        },
+        {
+          "at": 55.44,
+          "action": "highlight",
+          "target": "#ses-how",
+          "duration": 5.66,
+          "anchor": "Se un attaccante ruba il cookie"
+        },
+        {
+          "at": 61.22,
+          "action": "highlight",
+          "target": "#ses-mode",
+          "duration": 4.34,
+          "anchor": "agire al posto della vittima"
+        },
+        {
+          "at": 65.68,
+          "action": "highlight",
+          "target": "#ses-def",
+          "duration": 11,
+          "anchor": "Le difese sono tre: cifrare"
+        }
+      ],
+      "audio_file": "audio/scene-02.wav",
+      "subtitle_file": "subtitles/scene-02.json",
+      "duration_sec": 73.81
+    },
+    {
+      "id": "scene-03",
+      "section": "13.2 · XSS, DoS/DDoS e Brute Force",
+      "title": "Cross-Site Scripting, Denial of Service e Brute Force",
+      "tts_text": "Vediamo altri tre attacchi fondamentali. Il cross-site scripting, o XSS, è un injection attack verso il browser della vittima. [pause:0.4] Prima l'attaccante inserisce JavaScript dannoso insieme a dati validi sul sito del prodotto. Poi la vittima richiede la pagina, riceve lo script e lo esegue nel proprio browser. Infine lo script ruba il session cookie o dirotta l'utente. Per difendersi occorre validare l'input nei form, controllare i dati letti dal database prima di inserirli nella pagina e applicare l'HTML encode per renderli non eseguibili. [pause:0.6] Gli attacchi denial of service, o DoS, mirano invece a rendere il servizio indisponibile, per esempio saturando le connessioni a metà del three-way handshake TCP. Nei distributed DoS, o DDoS, migliaia di macchine dirottate inviano richieste simultanee; a livello di sistema ci si difende con filtri che scartano i pacchetti anomali. Un DoS può colpire anche un singolo utente forzandone il lockout con login errati: servono blocchi temporanei e tracciamento degli indirizzi IP. [pause:0.6] Infine, negli attacchi brute force l'attaccante genera combinazioni finché non trova la password. Con alfabeto di dimensione k e lunghezza n le combinazioni sono k alla n: aggiungere anche pochi caratteri e simboli fa crescere il tempo da un secondo a un mese. La difesa unisce password lunghe non da dizionario e autenticazione a due fattori.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">13.2 · Attacchi e difese (2/2)</div>\n  <h2 class=\"slide-title\">Cross-Site Scripting, Denial of Service e Brute Force</h2>\n  <div id=\"s1\" class=\"split-visual cue-hidden\">\n    <div id=\"svg-xss\" class=\"svg-panel\">\n      <svg viewBox=\"0 0 380 185\" class=\"diagram-svg\" aria-label=\"Flusso di attacco Cross-site scripting\">\n        <defs>\n          <marker id=\"arr-xss\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\">\n            <path d=\"M0 1 L9 5 L0 9 z\" fill=\"var(--blue)\"/>\n          </marker>\n        </defs>\n        <rect x=\"12\" y=\"16\" width=\"104\" height=\"42\" rx=\"6\" fill=\"var(--red-soft, rgba(192,57,43,0.12))\" stroke=\"var(--red)\" stroke-width=\"1.5\"/>\n        <text x=\"64\" y=\"34\" text-anchor=\"middle\" class=\"svg-tick\">Attacker</text>\n        <text x=\"64\" y=\"49\" text-anchor=\"middle\" class=\"svg-caption\">Browser / Website</text>\n        <rect x=\"236\" y=\"16\" width=\"128\" height=\"52\" rx=\"6\" fill=\"var(--bg-surface)\" stroke=\"var(--ink-soft)\" stroke-width=\"1.5\"/>\n        <text x=\"300\" y=\"36\" text-anchor=\"middle\" class=\"svg-tick\">Product website</text>\n        <text x=\"300\" y=\"54\" text-anchor=\"middle\" class=\"svg-caption\">dati + codice JS</text>\n        <rect x=\"12\" y=\"128\" width=\"104\" height=\"42\" rx=\"6\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.5\"/>\n        <text x=\"64\" y=\"146\" text-anchor=\"middle\" class=\"svg-tick\">Victim</text>\n        <text x=\"64\" y=\"161\" text-anchor=\"middle\" class=\"svg-caption\">Browser</text>\n        <g id=\"xss-1\">\n          <line x1=\"118\" y1=\"34\" x2=\"232\" y2=\"34\" stroke=\"var(--blue)\" stroke-width=\"1.8\" marker-end=\"url(#arr-xss)\"/>\n          <text x=\"175\" y=\"26\" text-anchor=\"middle\" class=\"svg-caption\">1. Inserisce JS</text>\n        </g>\n        <g id=\"xss-2\">\n          <path d=\"M 118 140 L 290 140 L 290 72\" fill=\"none\" stroke=\"var(--ink-soft)\" stroke-width=\"1.4\" marker-end=\"url(#arr-xss)\"/>\n          <path d=\"M 314 72 L 314 158 L 122 158\" fill=\"none\" stroke=\"var(--blue)\" stroke-width=\"1.8\" marker-end=\"url(#arr-xss)\"/>\n          <text x=\"218\" y=\"174\" text-anchor=\"middle\" class=\"svg-caption\">2. Consegna script nel browser</text>\n        </g>\n        <g id=\"xss-3\">\n          <line x1=\"64\" y1=\"125\" x2=\"64\" y2=\"62\" stroke=\"var(--red)\" stroke-width=\"1.9\" marker-end=\"url(#arr-xss)\"/>\n          <text x=\"116\" y=\"96\" text-anchor=\"middle\" class=\"svg-caption\">3. Ruba cookie</text>\n        </g>\n      </svg>\n    </div>\n    <div class=\"formula-col\">\n      <div id=\"box-xss-def\" class=\"box box-def\">\n        <div class=\"box-label\">Difese Cross-Site Scripting (XSS)</div>\n        <p>Validare l'input dei form, controllare i dati letti dal DB prima del rendering e applicare HTML <code>encode</code> per renderli non eseguibili.</p>\n      </div>\n      <div id=\"box-dos\" class=\"box box-warn\">\n        <div class=\"box-label\">DoS, DDoS e User Lockout</div>\n        <p><strong>Sistema:</strong> TCP half-open o botnet (DDoS) &rarr; filtri sui pacchetti. <strong>Singolo utente:</strong> blocchi temporanei e tracciamento indirizzi IP.</p>\n      </div>\n    </div>\n  </div>\n  <div id=\"s2\" class=\"math-card math-card-accent cue-hidden\">\n    <div class=\"step-tag-inline\">Brute Force &amp; Crescita Esponenziale</div>\n    \\[ \\htmlId{f-bf}{k^n} \\quad \\text{combinazioni} \\quad (10^4 = 10\\,000 \\;\\to\\; 10^5 = 100\\,000) \\]\n    <p id=\"bf-ex\" class=\"math-note\"><strong>Tempi stimati:</strong> <code>ASE2627</code> (1 sec) &middot; <code>ASE26-27</code> (19 min) &middot; <code>ASE26-27#</code> (16 ore) &middot; <code>ASE26-27##</code> (1 mese). <strong>Difese:</strong> password lunghe non da dizionario + 2FA.</p>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 0,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "Vediamo altri tre attacchi fondamentali"
+        },
+        {
+          "at": 0,
+          "action": "highlight",
+          "target": "#svg-xss",
+          "duration": 6.4,
+          "anchor": "Vediamo altri tre attacchi fondamentali"
+        },
+        {
+          "at": 9.14,
+          "action": "highlight",
+          "target": "#xss-1",
+          "duration": 5.34,
+          "anchor": "Prima l'attaccante inserisce JavaScript"
+        },
+        {
+          "at": 14.6,
+          "action": "highlight",
+          "target": "#xss-2",
+          "duration": 4.82,
+          "anchor": "Poi la vittima richiede la pagina"
+        },
+        {
+          "at": 19.54,
+          "action": "highlight",
+          "target": "#xss-3",
+          "duration": 3.7,
+          "anchor": "Infine lo script ruba"
+        },
+        {
+          "at": 23.36,
+          "action": "highlight",
+          "target": "#box-xss-def",
+          "duration": 10.5,
+          "anchor": "Per difendersi occorre validare l'input"
+        },
+        {
+          "at": 34.26,
+          "action": "highlight",
+          "target": "#box-dos",
+          "duration": 24,
+          "anchor": "Gli attacchi denial of service"
+        },
+        {
+          "at": 62.91,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Infine, negli attacchi brute force"
+        },
+        {
+          "at": 68.33,
+          "action": "highlight",
+          "target": "#f-bf",
+          "duration": 6.88,
+          "anchor": "Con alfabeto di dimensione k"
+        },
+        {
+          "at": 75.33,
+          "action": "highlight",
+          "target": "#bf-ex",
+          "duration": 11,
+          "anchor": "fa crescere il tempo"
+        }
+      ],
+      "audio_file": "audio/scene-03.wav",
+      "subtitle_file": "subtitles/scene-03.json",
+      "duration_sec": 82.96
+    },
+    {
+      "id": "scene-04",
+      "section": "13.3 · Autenticazione e Identità Federata",
+      "title": "Approcci all'autenticazione, password e OAuth federato",
+      "tts_text": "L'autenticazione verifica che gli utenti siano davvero chi dichiarano di essere, attraverso tre approcci principali. [pause:0.4] L'approccio knowledge-based si basa su un segreto noto all'utente, tipicamente la password. L'approccio possession-based richiede un oggetto fisico, come un token dedicato o un codice temporaneo inviato al telefono. L'approccio attribute-based sfrutta invece caratteristiche biometriche uniche, come impronta digitale o riconoscimento facciale. Combinarli realizza l'autenticazione a più fattori. [pause:0.6] Le password restano diffuse ma presentano quattro debolezze note: gli utenti scelgono stringhe semplici, cadono nel phishing tramite link falsi, riutilizzano la stessa password su più servizi e possono subire abusi sul meccanismo di recupero. Se il prodotto tratta dati riservati è quindi indispensabile l'autenticazione a due fasi; sui dispositivi mobili si usano spesso token locali o certificati digitali individuali. [pause:0.6] Per evitare di gestire in casa database di credenziali si ricorre spesso all'identità federata con protocollo OAuth. L'utente chiede accesso al servizio, viene reindirizzato a un autenticatore di fiducia come Google, inserisce lì le credenziali e l'autenticatore restituisce al servizio solo un token di conferma. Il vantaggio è che il servizio non vede mai la password, pur dovendo condividere informazioni utente con un provider esterno.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">13.3 · Autenticazione</div>\n  <h2 class=\"slide-title\">Approcci, limiti delle password e Identità Federata (OAuth)</h2>\n  <div id=\"s1\" class=\"grid-3 cue-hidden\">\n    <div id=\"auth-know\" class=\"box box-def\">\n      <div class=\"box-label\">1 · Knowledge-based</div>\n      <p>Informazioni segrete personali registrate all'iscrizione (es. password).</p>\n    </div>\n    <div id=\"auth-poss\" class=\"box box-primary\">\n      <div class=\"box-label\">2 · Possession-based</div>\n      <p>Dispositivo fisico collegabile o codice usa e getta inviato al telefono.</p>\n    </div>\n    <div id=\"auth-attr\" class=\"box box-idea\">\n      <div class=\"box-label\">3 · Attribute-based</div>\n      <p>Attributo biometrico unico (impronta, volto). Più approcci insieme = <strong>MFA</strong>.</p>\n    </div>\n  </div>\n  <div id=\"s2\" class=\"split-visual cue-hidden\">\n    <div id=\"svg-oauth\" class=\"svg-panel\">\n      <svg viewBox=\"0 0 380 185\" class=\"diagram-svg\" aria-label=\"Sequenza di autenticazione federata OAuth\">\n        <defs>\n          <marker id=\"arr-oa\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"5\" markerHeight=\"5\" orient=\"auto\">\n            <path d=\"M0 1 L9 5 L0 9 z\" fill=\"var(--blue)\"/>\n          </marker>\n        </defs>\n        <text x=\"46\" y=\"18\" text-anchor=\"middle\" class=\"svg-tick\">User</text>\n        <text x=\"186\" y=\"18\" text-anchor=\"middle\" class=\"svg-tick\">Service</text>\n        <text x=\"324\" y=\"18\" text-anchor=\"middle\" class=\"svg-tick\">Trusted Auth</text>\n        <line x1=\"46\" y1=\"25\" x2=\"46\" y2=\"174\" stroke=\"var(--blue)\" stroke-width=\"2\"/>\n        <line x1=\"186\" y1=\"25\" x2=\"186\" y2=\"174\" stroke=\"var(--blue)\" stroke-width=\"2\"/>\n        <line x1=\"324\" y1=\"25\" x2=\"324\" y2=\"174\" stroke=\"var(--blue)\" stroke-width=\"2\"/>\n        <g id=\"oa-12\">\n          <line x1=\"48\" y1=\"42\" x2=\"182\" y2=\"42\" stroke=\"var(--ink-soft)\" stroke-width=\"1.4\" marker-end=\"url(#arr-oa)\"/>\n          <text x=\"115\" y=\"37\" text-anchor=\"middle\" class=\"svg-caption\">1. Req auth</text>\n          <line x1=\"188\" y1=\"66\" x2=\"320\" y2=\"66\" stroke=\"var(--ink-soft)\" stroke-width=\"1.4\" marker-end=\"url(#arr-oa)\"/>\n          <text x=\"254\" y=\"61\" text-anchor=\"middle\" class=\"svg-caption\">2. Divert</text>\n        </g>\n        <g id=\"oa-34\">\n          <line x1=\"322\" y1=\"92\" x2=\"50\" y2=\"92\" stroke=\"var(--ink-soft)\" stroke-width=\"1.4\" marker-end=\"url(#arr-oa)\"/>\n          <text x=\"116\" y=\"87\" text-anchor=\"middle\" class=\"svg-caption\">3. Req credentials</text>\n          <line x1=\"48\" y1=\"116\" x2=\"320\" y2=\"116\" stroke=\"var(--blue)\" stroke-width=\"1.6\" marker-end=\"url(#arr-oa)\"/>\n          <text x=\"116\" y=\"111\" text-anchor=\"middle\" class=\"svg-caption\">4. Provide credentials</text>\n        </g>\n        <g id=\"oa-56\">\n          <line x1=\"322\" y1=\"140\" x2=\"190\" y2=\"140\" stroke=\"var(--green)\" stroke-width=\"1.7\" marker-end=\"url(#arr-oa)\"/>\n          <text x=\"256\" y=\"135\" text-anchor=\"middle\" class=\"svg-caption\">5. Auth token</text>\n          <line x1=\"184\" y1=\"164\" x2=\"50\" y2=\"164\" stroke=\"var(--green)\" stroke-width=\"1.7\" marker-end=\"url(#arr-oa)\"/>\n          <text x=\"116\" y=\"159\" text-anchor=\"middle\" class=\"svg-caption\">6. Auth response</text>\n        </g>\n      </svg>\n    </div>\n    <div class=\"formula-col\">\n      <div id=\"pwd-weak\" class=\"box box-warn\">\n        <div class=\"box-label\">4 Debolezze delle password &amp; Mobile</div>\n        <p>Scelte deboli, <strong>phishing</strong>, riutilizzo su più siti, recupero vulnerabile. Su dati riservati serve <strong>two-stage</strong>; su mobile token locali o certificati digitali.</p>\n      </div>\n      <div id=\"oauth-pros\" class=\"box box-algo\">\n        <div class=\"box-label\">Identità federata (OAuth): Pro &amp; Contro</div>\n        <p><strong>+</strong> Un solo set di credenziali, nessun DB password interno, dati extra su consenso. <strong>&minus;</strong> Condivisione info con provider esterni.</p>\n      </div>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 1.36,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "verifica che gli utenti siano davvero"
+        },
+        {
+          "at": 7.7,
+          "action": "highlight",
+          "target": "#auth-know",
+          "duration": 5.32,
+          "anchor": "L'approccio knowledge-based si basa"
+        },
+        {
+          "at": 13.14,
+          "action": "highlight",
+          "target": "#auth-poss",
+          "duration": 6.5,
+          "anchor": "L'approccio possession-based richiede"
+        },
+        {
+          "at": 20.68,
+          "action": "highlight",
+          "target": "#auth-attr",
+          "duration": 8.5,
+          "anchor": "L'approccio attribute-based sfrutta"
+        },
+        {
+          "at": 32.7,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Le password restano diffuse"
+        },
+        {
+          "at": 34.77,
+          "action": "highlight",
+          "target": "#pwd-weak",
+          "duration": 22,
+          "anchor": "presentano quattro debolezze note"
+        },
+        {
+          "at": 58.67,
+          "action": "highlight",
+          "target": "#oa-12",
+          "duration": 6.5,
+          "anchor": "Per evitare di gestire in casa"
+        },
+        {
+          "at": 65.47,
+          "action": "highlight",
+          "target": "#oa-34",
+          "duration": 5.68,
+          "anchor": "L'utente chiede accesso al servizio"
+        },
+        {
+          "at": 71.27,
+          "action": "highlight",
+          "target": "#oa-56",
+          "duration": 6.22,
+          "anchor": "inserisce lì le credenziali"
+        },
+        {
+          "at": 77.61,
+          "action": "highlight",
+          "target": "#oauth-pros",
+          "duration": 9.5,
+          "anchor": "Il vantaggio è che il servizio"
+        }
+      ],
+      "audio_file": "audio/scene-04.wav",
+      "subtitle_file": "subtitles/scene-04.json",
+      "duration_sec": 84
+    },
+    {
+      "id": "scene-05",
+      "section": "13.4 · Autorizzazione e Access Control List",
+      "title": "Autenticazione contro Autorizzazione e gestione delle ACL",
+      "tts_text": "Attenzione a non confondere autenticazione e autorizzazione: sono due controlli distinti. L'autenticazione accerta chi sei; l'autorizzazione stabilisce che cosa sei autorizzato a fare sulle risorse del sistema. Un utente correttamente autenticato non ha automaticamente diritto ad accedere a tutto. [pause:0.6] In ambiente Unix, per esempio, ogni risorsa mostra una stringa di permessi a dieci caratteri: il primo indica il tipo di risorsa, seguito da tre terne per proprietario, gruppo e tutti gli altri utenti, con lettura, scrittura ed esecuzione. Così una risorsa Events può essere modificabile solo dal proprietario e leggibile dagli altri, mentre una risorsa Blog può risultare aperta a tutti. [pause:0.6] Nei prodotti multiutente il controllo degli accessi si implementa spesso con le access control list, o ACL, liste che specificano per ogni risorsa chi può eseguire quali operazioni. Per evitare liste enormi si raggruppano gli utenti in gruppi e gerarchie di gruppi, appoggiandosi alle ACL del filesystem o del database e rispecchiando le norme legali di protezione dei dati.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">13.4 · Autorizzazione</div>\n  <h2 class=\"slide-title\">Autenticazione &ne; Autorizzazione e Access Control List</h2>\n  <div id=\"s1\" class=\"box box-warn cue-hidden\">\n    <div class=\"box-label\">Principio chiave</div>\n    <p><strong>Autenticazione &ne; Autorizzazione:</strong> l'autenticazione accerta <em>chi sei</em>; l'autorizzazione controlla <em>a quali risorse puoi accedere</em>. Un utente autenticato non è autorizzato a tutto.</p>\n  </div>\n  <div id=\"s2\" class=\"grid-2 cue-hidden\">\n    <div id=\"unix-ex\" class=\"box box-def\">\n      <div class=\"box-label\">Esempio Unix · Permessi su due risorse</div>\n      <ul class=\"clean-list\">\n        <li id=\"ux-ev\"><code>Events -rwxr--r--</code>: modificabile solo dal proprietario (<code>rwx</code>); gruppo e altri in sola lettura (<code>r--</code>).</li>\n        <li id=\"ux-bl\"><code>Blog -rwxrwxrwx</code>: leggibile, scrivibile ed eseguibile da tutti (<code>rwx</code> per ogni gruppo).</li>\n      </ul>\n    </div>\n    <div id=\"acl-box\" class=\"box box-primary\">\n      <div class=\"box-label\">Access Control List (ACL)</div>\n      <ul class=\"clean-list\">\n        <li id=\"acl-1\">Liste che indicano per ogni risorsa chi può fare cosa, in linea con le norme sulla privacy.</li>\n        <li id=\"acl-2\"><strong>Gruppi e gerarchie</strong>: riducono drasticamente la dimensione delle ACL e gestiscono sottogruppi.</li>\n        <li id=\"acl-3\">Spesso realizzate appoggiandosi alle ACL di filesystem o database sottostanti.</li>\n      </ul>\n    </div>\n  </div>\n  <div id=\"s3\" class=\"pill-strip cue-hidden\">\n    <span class=\"strip-label\">Notazione a 10 caratteri:</span>\n    <span class=\"pill\">Tipo (1)</span>\n    <span class=\"pill pill-accent\">Proprietario (rwx)</span>\n    <span class=\"pill\">Gruppo (rwx)</span>\n    <span class=\"pill\">Tutti gli altri (rwx)</span>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 1.08,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "non confondere autenticazione e autorizzazione"
+        },
+        {
+          "at": 5.9,
+          "action": "highlight",
+          "target": "#s1",
+          "duration": 13.5,
+          "anchor": "L'autenticazione accerta chi sei"
+        },
+        {
+          "at": 17.78,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "In ambiente Unix, per esempio"
+        },
+        {
+          "at": 17.78,
+          "action": "show",
+          "target": "#s3",
+          "anchor": "In ambiente Unix, per esempio"
+        },
+        {
+          "at": 19.7,
+          "action": "highlight",
+          "target": "#s3",
+          "duration": 10.5,
+          "anchor": "ogni risorsa mostra una stringa"
+        },
+        {
+          "at": 32.72,
+          "action": "highlight",
+          "target": "#ux-ev",
+          "duration": 4.7,
+          "anchor": "una risorsa Events può essere"
+        },
+        {
+          "at": 37.54,
+          "action": "highlight",
+          "target": "#ux-bl",
+          "duration": 3.46,
+          "anchor": "mentre una risorsa Blog"
+        },
+        {
+          "at": 41.12,
+          "action": "highlight",
+          "target": "#acl-1",
+          "duration": 10.36,
+          "anchor": "Nei prodotti multiutente il controllo"
+        },
+        {
+          "at": 51.6,
+          "action": "highlight",
+          "target": "#acl-2",
+          "duration": 4.3,
+          "anchor": "Per evitare liste enormi"
+        },
+        {
+          "at": 56.02,
+          "action": "highlight",
+          "target": "#acl-3",
+          "duration": 9,
+          "anchor": "appoggiandosi alle ACL del filesystem"
+        }
+      ],
+      "audio_file": "audio/scene-05.wav",
+      "subtitle_file": "subtitles/scene-05.json",
+      "duration_sec": 62.53
+    },
+    {
+      "id": "scene-06",
+      "section": "13.5 · Cifratura simmetrica e asimmetrica",
+      "title": "Cifratura a chiave condivisa e cifratura asimmetrica",
+      "tts_text": "La cifratura protegge i dati trasformando il testo in chiaro, o plain text, in testo cifrato illeggibile tramite un algoritmo e una chiave, per poi ripristinarlo con la decifratura. Oggi gli algoritmi moderni sono considerati praticamente inviolabili, anche se l'arrivo futuro dei computer quantistici potrebbe cambiare lo scenario. [pause:0.6] Esistono due grandi famiglie. Nella cifratura simmetrica mittente e destinatario usano la stessa chiave segreta sia per cifrare sia per decifrare. È molto veloce, ma ha un punto debole critico: come condividere la chiave iniziale in modo sicuro senza che venga intercettata. [pause:0.6] La cifratura asimmetrica risolve il problema usando una coppia di chiavi distinte: una chiave pubblica distribuibile a tutti e una chiave privata custodita dal proprietario. Ciò che si cifra con una si decifra solo con l'altra. [pause:0.5] Offre così due modalità d'uso. Per la riservatezza, Alice cifra con la chiave pubblica di Bob e solo Bob può decifrare con la propria chiave privata. Per l'autenticità, Bob cifra con la propria chiave privata: chiunque riesca a decifrare con la chiave pubblica di Bob ha la certezza che il messaggio provenga proprio da lui.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">13.5 · Cifratura (1/2)</div>\n  <h2 class=\"slide-title\">Cifratura Simmetrica e Asimmetrica: Riservatezza vs Autenticità</h2>\n  <div id=\"s1\" class=\"svg-panel cue-hidden\">\n    <svg viewBox=\"0 0 640 190\" class=\"diagram-svg\" aria-label=\"Confronto tra cifratura simmetrica e asimmetrica\">\n      <defs>\n        <marker id=\"arr-enc\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"5\" markerHeight=\"5\" orient=\"auto\">\n          <path d=\"M0 1 L9 5 L0 9 z\" fill=\"var(--ink-soft)\"/>\n        </marker>\n      </defs>\n      <line x1=\"248\" y1=\"12\" x2=\"248\" y2=\"178\" stroke=\"var(--border-strong)\" stroke-width=\"1.2\" stroke-dasharray=\"5 4\"/>\n      <g id=\"svg-sym\">\n        <text x=\"122\" y=\"22\" text-anchor=\"middle\" class=\"svg-math\">Simmetrica</text>\n        <rect x=\"18\" y=\"40\" width=\"76\" height=\"22\" rx=\"4\" fill=\"var(--bg-surface)\" stroke=\"var(--orange)\" stroke-width=\"1.3\"/>\n        <text x=\"56\" y=\"55\" text-anchor=\"middle\" class=\"svg-caption\">Key: a7Dr6y...</text>\n        <rect x=\"150\" y=\"40\" width=\"76\" height=\"22\" rx=\"4\" fill=\"var(--bg-surface)\" stroke=\"var(--orange)\" stroke-width=\"1.3\"/>\n        <text x=\"188\" y=\"55\" text-anchor=\"middle\" class=\"svg-caption\">Key: a7Dr6y...</text>\n        <rect x=\"12\" y=\"96\" width=\"58\" height=\"32\" rx=\"5\" fill=\"var(--bg-surface)\" stroke=\"var(--ink-soft)\" stroke-width=\"1.3\"/>\n        <text x=\"41\" y=\"116\" text-anchor=\"middle\" class=\"svg-tick\">Plain</text>\n        <rect x=\"92\" y=\"96\" width=\"62\" height=\"32\" rx=\"5\" fill=\"var(--orange-soft, rgba(217,119,6,0.12))\" stroke=\"var(--orange)\" stroke-width=\"1.4\"/>\n        <text x=\"123\" y=\"116\" text-anchor=\"middle\" class=\"svg-tick\">Cipher</text>\n        <rect x=\"176\" y=\"96\" width=\"58\" height=\"32\" rx=\"5\" fill=\"var(--bg-surface)\" stroke=\"var(--ink-soft)\" stroke-width=\"1.3\"/>\n        <text x=\"205\" y=\"116\" text-anchor=\"middle\" class=\"svg-tick\">Plain</text>\n        <line x1=\"70\" y1=\"112\" x2=\"88\" y2=\"112\" stroke=\"var(--ink-soft)\" stroke-width=\"1.5\" marker-end=\"url(#arr-enc)\"/>\n        <line x1=\"154\" y1=\"112\" x2=\"172\" y2=\"112\" stroke=\"var(--ink-soft)\" stroke-width=\"1.5\" marker-end=\"url(#arr-enc)\"/>\n        <line x1=\"56\" y1=\"62\" x2=\"80\" y2=\"96\" stroke=\"var(--orange)\" stroke-width=\"1.3\" marker-end=\"url(#arr-enc)\"/>\n        <line x1=\"188\" y1=\"62\" x2=\"165\" y2=\"96\" stroke=\"var(--orange)\" stroke-width=\"1.3\" marker-end=\"url(#arr-enc)\"/>\n        <text x=\"122\" y=\"158\" text-anchor=\"middle\" class=\"svg-caption\">Stessa chiave per Alice e Bob</text>\n      </g>\n      <text x=\"446\" y=\"22\" text-anchor=\"middle\" class=\"svg-math\">Asimmetrica</text>\n      <g id=\"svg-asym-conf\">\n        <rect x=\"270\" y=\"34\" width=\"356\" height=\"66\" rx=\"7\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.2\"/>\n        <text x=\"448\" y=\"50\" text-anchor=\"middle\" class=\"svg-tick\">Riservatezza: solo Bob legge</text>\n        <rect x=\"282\" y=\"60\" width=\"104\" height=\"28\" rx=\"4\" fill=\"var(--bg-surface)\" stroke=\"var(--blue)\" stroke-width=\"1.2\"/>\n        <text x=\"334\" y=\"78\" text-anchor=\"middle\" class=\"svg-caption\">Pubblica Bob (enc)</text>\n        <line x1=\"388\" y1=\"74\" x2=\"418\" y2=\"74\" stroke=\"var(--ink-soft)\" stroke-width=\"1.4\" marker-end=\"url(#arr-enc)\"/>\n        <rect x=\"422\" y=\"60\" width=\"54\" height=\"28\" rx=\"4\" fill=\"var(--bg-surface)\" stroke=\"var(--ink-soft)\" stroke-width=\"1.2\"/>\n        <text x=\"449\" y=\"78\" text-anchor=\"middle\" class=\"svg-caption\">Cipher</text>\n        <line x1=\"478\" y1=\"74\" x2=\"508\" y2=\"74\" stroke=\"var(--ink-soft)\" stroke-width=\"1.4\" marker-end=\"url(#arr-enc)\"/>\n        <rect x=\"512\" y=\"60\" width=\"102\" height=\"28\" rx=\"4\" fill=\"var(--bg-surface)\" stroke=\"var(--blue)\" stroke-width=\"1.2\"/>\n        <text x=\"563\" y=\"78\" text-anchor=\"middle\" class=\"svg-caption\">Privata Bob (dec)</text>\n      </g>\n      <g id=\"svg-asym-auth\">\n        <rect x=\"270\" y=\"110\" width=\"356\" height=\"66\" rx=\"7\" fill=\"var(--green-soft, rgba(21,128,61,0.10))\" stroke=\"var(--green)\" stroke-width=\"1.2\"/>\n        <text x=\"448\" y=\"126\" text-anchor=\"middle\" class=\"svg-tick\">Autenticità: solo Bob può averlo cifrato</text>\n        <rect x=\"282\" y=\"136\" width=\"104\" height=\"28\" rx=\"4\" fill=\"var(--bg-surface)\" stroke=\"var(--green)\" stroke-width=\"1.2\"/>\n        <text x=\"334\" y=\"154\" text-anchor=\"middle\" class=\"svg-caption\">Privata Bob (enc)</text>\n        <line x1=\"388\" y1=\"150\" x2=\"418\" y2=\"150\" stroke=\"var(--ink-soft)\" stroke-width=\"1.4\" marker-end=\"url(#arr-enc)\"/>\n        <rect x=\"422\" y=\"136\" width=\"54\" height=\"28\" rx=\"4\" fill=\"var(--bg-surface)\" stroke=\"var(--ink-soft)\" stroke-width=\"1.2\"/>\n        <text x=\"449\" y=\"154\" text-anchor=\"middle\" class=\"svg-caption\">Cipher</text>\n        <line x1=\"478\" y1=\"150\" x2=\"508\" y2=\"150\" stroke=\"var(--ink-soft)\" stroke-width=\"1.4\" marker-end=\"url(#arr-enc)\"/>\n        <rect x=\"512\" y=\"136\" width=\"102\" height=\"28\" rx=\"4\" fill=\"var(--bg-surface)\" stroke=\"var(--green)\" stroke-width=\"1.2\"/>\n        <text x=\"563\" y=\"154\" text-anchor=\"middle\" class=\"svg-caption\">Pubblica Bob (dec)</text>\n      </g>\n    </svg>\n  </div>\n  <div id=\"s2\" class=\"grid-2 cue-hidden\">\n    <div id=\"box-sym\" class=\"box box-def\">\n      <div class=\"box-label\">Cifratura Simmetrica &amp; Prospettiva Quantum</div>\n      <p><strong>Stessa chiave segreta</strong> condivisa tra mittente e destinatario: veloce, ma difficile condividere la chiave in modo sicuro. Oggi inviolabile, ma i <em>computer quantistici</em> futuri sono una sfida.</p>\n    </div>\n    <div id=\"box-asym\" class=\"box box-primary\">\n      <div class=\"box-label\">Cifratura Asimmetrica (Pubblica + Privata)</div>\n      <ul class=\"clean-list\">\n        <li id=\"as-conf\"><strong>Riservatezza:</strong> cifro con la chiave <em>pubblica</em> di Bob &rarr; solo la sua <em>privata</em> decifra.</li>\n        <li id=\"as-auth\"><strong>Autenticità:</strong> Bob cifra con la propria <em>privata</em> &rarr; tutti verificano con la sua <em>pubblica</em>.</li>\n      </ul>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 0.84,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "protegge i dati trasformando"
+        },
+        {
+          "at": 0.84,
+          "action": "highlight",
+          "target": "#s1",
+          "duration": 8.8,
+          "anchor": "protegge i dati trasformando"
+        },
+        {
+          "at": 11.26,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Oggi gli algoritmi moderni"
+        },
+        {
+          "at": 11.26,
+          "action": "highlight",
+          "target": "#box-sym",
+          "duration": 9,
+          "anchor": "Oggi gli algoritmi moderni"
+        },
+        {
+          "at": 21.46,
+          "action": "highlight",
+          "target": "#svg-sym",
+          "duration": 14.5,
+          "anchor": "Nella cifratura simmetrica mittente"
+        },
+        {
+          "at": 36.21,
+          "action": "highlight",
+          "target": "#box-asym",
+          "duration": 12,
+          "anchor": "La cifratura asimmetrica risolve"
+        },
+        {
+          "at": 52.21,
+          "action": "highlight",
+          "target": "#svg-asym-conf",
+          "duration": 6.98,
+          "anchor": "Per la riservatezza, Alice cifra"
+        },
+        {
+          "at": 59.31,
+          "action": "highlight",
+          "target": "#svg-asym-auth",
+          "duration": 15,
+          "anchor": "Per l'autenticità, Bob cifra"
+        }
+      ],
+      "audio_file": "audio/scene-06.wav",
+      "subtitle_file": "subtitles/scene-06.json",
+      "duration_sec": 68.77
+    },
+    {
+      "id": "scene-07",
+      "section": "13.5 · TLS, Certificati CA e Gestione Chiavi",
+      "title": "Handshake TLS con CA, livelli di cifratura e KMS",
+      "tts_text": "Come si combinano nella pratica cifratura asimmetrica e simmetrica sul web? Con HTTPS, cioè HTTP protetto da TLS, che ha sostituito SSL. [pause:0.5] Durante l'handshake TLS client e server scambiano prima messaggi Hello per scegliere l'algoritmo. Poi il server dimostra la propria identità inviando un certificato digitale emesso da una Certificate Authority fidata insieme a un numero casuale R S cifrato con la propria chiave privata. [pause:0.5] Il client verifica emittente, validità e firma del certificato, decifra R S con la chiave pubblica del server, genera un secondo numero casuale R C e lo invia cifrato con la stessa chiave pubblica. Il server decifra R C con la propria chiave privata, ed entrambi calcolano da R S e R C la stessa chiave simmetrica per cifrare rapidamente l'intera sessione. [pause:0.6] I dati vanno sempre cifrati in transito e a riposo, mentre cifrarli in uso rallenta le prestazioni. La cifratura può operare a quattro livelli: application, database, file di sistema operativo e media fisici. [pause:0.5] Infine ricordate la regola d'oro: se le chiavi vanno perse, i dati cifrati sono persi per sempre. Per gestire rotazione periodica, versioni storiche e accesso autorizzato tramite API si usa un Key Management System, o KMS.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">13.5 · Cifratura (2/2)</div>\n  <h2 class=\"slide-title\">Handshake TLS, Certificate Authority e Key Management (KMS)</h2>\n  <div id=\"s1\" class=\"split-visual cue-hidden\">\n    <div id=\"svg-tls\" class=\"svg-panel\">\n      <svg viewBox=\"0 0 380 200\" class=\"diagram-svg\" aria-label=\"Handshake TLS con Certificate Authority\">\n        <defs>\n          <marker id=\"arr-tls\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"5\" markerHeight=\"5\" orient=\"auto\">\n            <path d=\"M0 1 L9 5 L0 9 z\" fill=\"var(--blue)\"/>\n          </marker>\n        </defs>\n        <text x=\"52\" y=\"18\" text-anchor=\"middle\" class=\"svg-tick\">Client</text>\n        <text x=\"264\" y=\"18\" text-anchor=\"middle\" class=\"svg-tick\">Server</text>\n        <rect x=\"308\" y=\"6\" width=\"64\" height=\"24\" rx=\"4\" fill=\"var(--green-soft, rgba(21,128,61,0.12))\" stroke=\"var(--green)\" stroke-width=\"1.3\"/>\n        <text x=\"340\" y=\"21\" text-anchor=\"middle\" class=\"svg-caption\">CA fidata</text>\n        <line x1=\"308\" y1=\"18\" x2=\"286\" y2=\"18\" stroke=\"var(--green)\" stroke-width=\"1.2\" stroke-dasharray=\"3 2\"/>\n        <line x1=\"52\" y1=\"26\" x2=\"52\" y2=\"188\" stroke=\"var(--blue)\" stroke-width=\"2\"/>\n        <line x1=\"264\" y1=\"26\" x2=\"264\" y2=\"188\" stroke=\"var(--blue)\" stroke-width=\"2\"/>\n        <g id=\"tls-1\">\n          <line x1=\"54\" y1=\"42\" x2=\"260\" y2=\"42\" stroke=\"var(--ink-soft)\" stroke-width=\"1.4\" marker-end=\"url(#arr-tls)\"/>\n          <line x1=\"262\" y1=\"58\" x2=\"56\" y2=\"58\" stroke=\"var(--ink-soft)\" stroke-width=\"1.4\" marker-end=\"url(#arr-tls)\"/>\n          <text x=\"158\" y=\"37\" text-anchor=\"middle\" class=\"svg-caption\">1-2. Client/Server Hello (metodi)</text>\n        </g>\n        <g id=\"tls-2\">\n          <line x1=\"262\" y1=\"86\" x2=\"56\" y2=\"86\" stroke=\"var(--blue)\" stroke-width=\"1.6\" marker-end=\"url(#arr-tls)\"/>\n          <text x=\"158\" y=\"80\" text-anchor=\"middle\" class=\"svg-caption\">3-4. Certificato CA + RS cifrato (priv.)</text>\n        </g>\n        <g id=\"tls-3\">\n          <text x=\"14\" y=\"106\" class=\"svg-caption\">Verifica CA</text>\n          <line x1=\"54\" y1=\"118\" x2=\"260\" y2=\"118\" stroke=\"var(--blue)\" stroke-width=\"1.6\" marker-end=\"url(#arr-tls)\"/>\n          <text x=\"158\" y=\"112\" text-anchor=\"middle\" class=\"svg-caption\">5-6. Decifra RS, invia RC cifrato (pubb.)</text>\n        </g>\n        <g id=\"tls-4\">\n          <rect x=\"76\" y=\"132\" width=\"164\" height=\"22\" rx=\"4\" fill=\"var(--orange-soft, rgba(217,119,6,0.14))\" stroke=\"var(--orange)\" stroke-width=\"1.3\"/>\n          <text x=\"158\" y=\"147\" text-anchor=\"middle\" class=\"svg-caption\">7. Chiave simmetrica da RS e RC</text>\n          <line x1=\"56\" y1=\"174\" x2=\"260\" y2=\"174\" stroke=\"var(--green)\" stroke-width=\"1.8\" marker-end=\"url(#arr-tls)\"/>\n          <text x=\"158\" y=\"168\" text-anchor=\"middle\" class=\"svg-caption\">8. Dati cifrati (simmetrica)</text>\n        </g>\n      </svg>\n    </div>\n    <div class=\"formula-col\">\n      <div id=\"box-states\" class=\"box box-def\">\n        <div class=\"box-label\">Stati dei dati &amp; HTTPS</div>\n        <p><strong>In transito</strong> (TLS) e <strong>a riposo</strong> (at rest): sempre cifrati. <strong>In uso</strong>: rallenta i tempi di risposta.</p>\n      </div>\n      <div id=\"box-kms\" class=\"box box-warn\">\n        <div class=\"box-label\">Chiavi perse = dati persi &middot; KMS</div>\n        <p>Serve rotazione periodica con versioni datate. Il <strong>Key Management System</strong> espone API, custodisce le chiavi nel <em>key store</em> e le fornisce all'<em>encryption engine</em>.</p>\n      </div>\n    </div>\n  </div>\n  <div id=\"s2\" class=\"metrics-row cue-hidden\">\n    <div id=\"lvl-app\" class=\"metric\">\n      <div class=\"metric-val\">Application</div>\n      <div class=\"metric-lbl\">Scelta selettiva; impatto prestazioni; serve KMS</div>\n    </div>\n    <div id=\"lvl-db\" class=\"metric\">\n      <div class=\"metric-val\">Database</div>\n      <div class=\"metric-lbl\">Intero DB chiuso o singole tabelle/colonne</div>\n    </div>\n    <div id=\"lvl-file\" class=\"metric\">\n      <div class=\"metric-val\">Files</div>\n      <div class=\"metric-lbl\">Sistema operativo cifra i file quando chiusi</div>\n    </div>\n    <div id=\"lvl-media\" class=\"metric\">\n      <div class=\"metric-val\">Media</div>\n      <div class=\"metric-lbl\">Dischi cifrati se smontati (portatili persi)</div>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 1.86,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "cifratura asimmetrica e simmetrica"
+        },
+        {
+          "at": 1.86,
+          "action": "highlight",
+          "target": "#svg-tls",
+          "duration": 7,
+          "anchor": "cifratura asimmetrica e simmetrica"
+        },
+        {
+          "at": 12.18,
+          "action": "highlight",
+          "target": "#tls-1",
+          "duration": 5.5,
+          "anchor": "Durante l'handshake TLS client"
+        },
+        {
+          "at": 19.76,
+          "action": "highlight",
+          "target": "#tls-2",
+          "duration": 10.26,
+          "anchor": "Poi il server dimostra"
+        },
+        {
+          "at": 30.92,
+          "action": "highlight",
+          "target": "#tls-3",
+          "duration": 12,
+          "anchor": "Il client verifica emittente"
+        },
+        {
+          "at": 44.51,
+          "action": "highlight",
+          "target": "#tls-4",
+          "duration": 10.28,
+          "anchor": "Il server decifra R C"
+        },
+        {
+          "at": 54.91,
+          "action": "highlight",
+          "target": "#box-states",
+          "duration": 6.5,
+          "anchor": "I dati vanno sempre cifrati"
+        },
+        {
+          "at": 61.33,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "La cifratura può operare"
+        },
+        {
+          "at": 62.49,
+          "action": "highlight",
+          "target": "#s2",
+          "duration": 5.76,
+          "anchor": "a quattro livelli: application"
+        },
+        {
+          "at": 68.65,
+          "action": "highlight",
+          "target": "#box-kms",
+          "duration": 16,
+          "anchor": "Infine ricordate la regola d'oro"
+        }
+      ],
+      "audio_file": "audio/scene-07.wav",
+      "subtitle_file": "subtitles/scene-07.json",
+      "duration_sec": 83.36
+    },
+    {
+      "id": "scene-08",
+      "section": "13.6 · Privacy e Protezione dei Dati",
+      "title": "Data Controller, Data Subject e principi di protezione dei dati",
+      "tts_text": "Chiudiamo il capitolo con la privacy, cioè la gestione sociale e legale appropriata delle informazioni personali conservate da terze parti. [pause:0.5] Le normative sulla protezione dei dati distinguono due ruoli chiave. Il data controller decide come e perché trattare i dati ed è responsabile di memorizzazione, uso sicuro e accesso agli interessati. Il data subject è invece la persona a cui i dati appartengono, titolare dei diritti di accesso, correzione degli errori, cancellazione e consenso. [pause:0.6] Sette principi guidano la progettazione conforme: consapevolezza e controllo da parte dell'utente; finalità dichiarata; consenso esplicito prima di condividere con terzi; durata limitata, cancellando i dati alla chiusura dell'account; conservazione sicura; possibilità di scoprire e correggere errori; e divieto di trasferire dati in paesi con leggi più deboli senza garanzie equivalenti. [pause:0.6] Curare la privacy conviene anche al business: evita sanzioni e blocchi commerciali, soddisfa i clienti aziendali e protegge la reputazione. In pratica: non raccogliete dati superflui, pubblicate una privacy policy chiara, dichiarate usi pubblicitari mirati e rendete trasparente la condivisione nelle funzioni social.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">13.6 · Privacy</div>\n  <h2 class=\"slide-title\">Data Controller, Data Subject e Principi di Protezione</h2>\n  <div id=\"s1\" class=\"grid-2 cue-hidden\">\n    <div id=\"box-roles\" class=\"box box-def\">\n      <div class=\"box-label\">Leggi sulla protezione dei dati &middot; Ruoli</div>\n      <ul class=\"clean-list\">\n        <li id=\"role-ctrl\"><strong>Data Controller:</strong> decide come/perché trattare i dati; responsabile di storage, uso, sicurezza e accesso.</li>\n        <li id=\"role-subj\"><strong>Data Subject:</strong> la persona interessata; ha diritto a accesso, correzione, cancellazione e consenso.</li>\n      </ul>\n    </div>\n    <div id=\"box-biz\" class=\"box box-primary\">\n      <div class=\"box-label\">Ragioni di business &amp; Buone pratiche</div>\n      <ul class=\"clean-list\">\n        <li id=\"biz-why\"><strong>Business:</strong> evita azioni legali o divieti di vendita, rassicura clienti B2B e tutela la reputazione.</li>\n        <li id=\"biz-how\"><strong>Consigli:</strong> niente dati superflui, <em>privacy policy</em> chiara, trasparenza su ads mirati e condivisioni social.</li>\n      </ul>\n    </div>\n  </div>\n  <div id=\"s2\" class=\"props-grid cue-hidden\">\n    <div id=\"pr-1\" class=\"prop-item\"><span class=\"prop-dot\"></span><span><strong>1. Awareness &amp; control:</strong> sapere quali dati si raccolgono e averne controllo.</span></div>\n    <div id=\"pr-2\" class=\"prop-item\"><span class=\"prop-dot\"></span><span><strong>2. Purpose:</strong> dichiarare lo scopo della raccolta e non usarli per altro.</span></div>\n    <div id=\"pr-3\" class=\"prop-item\"><span class=\"prop-dot\"></span><span><strong>3. Consent:</strong> consenso dell'utente prima di comunicare i dati ad altri.</span></div>\n    <div id=\"pr-4\" class=\"prop-item\"><span class=\"prop-dot\"></span><span><strong>4. Data lifetime:</strong> conservare solo quanto serve; cancellare alla chiusura account.</span></div>\n    <div id=\"pr-5\" class=\"prop-item\"><span class=\"prop-dot\"></span><span><strong>5. Secure storage:</strong> conservazione sicura contro manomissioni e accessi non autorizzati.</span></div>\n    <div id=\"pr-6\" class=\"prop-item\"><span class=\"prop-dot\"></span><span><strong>6. Discovery &amp; correction:</strong> scoprire i propri dati salvati e correggere errori.</span></div>\n    <div id=\"pr-7\" class=\"prop-item\"><span class=\"prop-dot\"></span><span><strong>7. Location:</strong> nessun trasferimento in paesi con leggi più deboli senza accordo forte.</span></div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 0,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "Chiudiamo il capitolo con la privacy"
+        },
+        {
+          "at": 0,
+          "action": "highlight",
+          "target": "#box-roles",
+          "duration": 8.6,
+          "anchor": "Chiudiamo il capitolo con la privacy"
+        },
+        {
+          "at": 11.36,
+          "action": "highlight",
+          "target": "#role-ctrl",
+          "duration": 8.04,
+          "anchor": "Il data controller decide come"
+        },
+        {
+          "at": 19.52,
+          "action": "highlight",
+          "target": "#role-subj",
+          "duration": 8.5,
+          "anchor": "Il data subject è invece"
+        },
+        {
+          "at": 28.36,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Sette principi guidano la progettazione"
+        },
+        {
+          "at": 31.34,
+          "action": "highlight",
+          "target": "#pr-1",
+          "duration": 2.91,
+          "anchor": "consapevolezza e controllo"
+        },
+        {
+          "at": 34.37,
+          "action": "highlight",
+          "target": "#pr-2",
+          "duration": 1.49,
+          "anchor": "finalità dichiarata"
+        },
+        {
+          "at": 35.98,
+          "action": "highlight",
+          "target": "#pr-3",
+          "duration": 3.05,
+          "anchor": "consenso esplicito prima di condividere"
+        },
+        {
+          "at": 39.15,
+          "action": "highlight",
+          "target": "#pr-4",
+          "duration": 3.66,
+          "anchor": "durata limitata, cancellando i dati"
+        },
+        {
+          "at": 42.93,
+          "action": "highlight",
+          "target": "#pr-5",
+          "duration": 2.2,
+          "anchor": "conservazione sicura"
+        },
+        {
+          "at": 45.33,
+          "action": "highlight",
+          "target": "#pr-6",
+          "duration": 2.32,
+          "anchor": "scoprire e correggere errori"
+        },
+        {
+          "at": 47.77,
+          "action": "highlight",
+          "target": "#pr-7",
+          "duration": 5.08,
+          "anchor": "divieto di trasferire dati"
+        },
+        {
+          "at": 52.97,
+          "action": "highlight",
+          "target": "#biz-why",
+          "duration": 7.92,
+          "anchor": "Curare la privacy conviene anche"
+        },
+        {
+          "at": 61.01,
+          "action": "highlight",
+          "target": "#biz-how",
+          "duration": 9,
+          "anchor": "In pratica: non raccogliete dati"
+        }
+      ],
+      "audio_file": "audio/scene-08.wav",
+      "subtitle_file": "subtitles/scene-08.json",
+      "duration_sec": 70.82
+    },
+    {
+      "id": "scene-09",
+      "section": "13.9 · Approfondimenti d'esame: stack, SQL poisoning, DoS, auth e chiavi",
+      "title": "Stack di sicurezza, SQL poisoning, DoS, Auth e Chiavi",
+      "tts_text": "Vediamo cinque dettagli d'esame essenziali su sicurezza e protezione dei dati. [pause:0.5] Primo: nello stack completo del sistema, tra i framework e la rete sta la software infrastructure, che racchiude browser e messaggistica, system libraries, database e sistema operativo. [pause:0.5] Secondo: nel codice vulnerabile al SQL poisoning, getAccountNumber legge l'input e lo concatena nella query SQLstat passata al database. Con l'input lecito tre quattro due zero zero sei quattro cinque la query cerca un solo conto. [pause:0.5] Terzo: gli attacchi denial of service mirano a boicottare il fornitore, chiedere riscatto o semplicemente divertirsi. Per bloccare un singolo utente si sbaglia apposta il login usando la sua email; la difesa mirata applica il blocco solo quando i fallimenti arrivano da IP insoliti. [pause:0.5] Quarto: contro password deboli si impongono password forti e domande personali; se il prodotto non tratta dati riservati basta l'autenticazione knowledge-based. L'identità federata vale sia per servizi consumer come Google e Facebook, sia per prodotti aziendali collegati al sistema di gestione identità del cliente. Su mobile la tastiera è scomoda: si usano certificati digitali di fornitori fidati oppure token locali, rischiosi se il dispositivo viene rubato o perso. [pause:0.5] Quinto: le leggi sulla protezione dei dati possono imporre di conservare copie per anni, obbligando a custodire le chiavi datate nel KMS.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">13.9 · Approfondimenti d'esame</div>\n  <h2 class=\"slide-title\">Stack di sicurezza, SQL poisoning, DoS, Auth e Chiavi</h2>\n  <div id=\"s1\" class=\"split-visual cue-hidden\">\n    <div id=\"svg-stack\" class=\"svg-panel\">\n      <svg viewBox=\"0 0 360 212\" class=\"diagram-svg\" aria-label=\"Stack completo di sicurezza del sistema\">\n        <rect x=\"26\" y=\"4\" width=\"308\" height=\"20\" rx=\"4\" fill=\"var(--bg-surface)\" stroke=\"var(--ink-soft)\" stroke-width=\"1.3\"/>\n        <text x=\"180\" y=\"18\" text-anchor=\"middle\" class=\"svg-tick\">Operational environment</text>\n        <rect x=\"26\" y=\"28\" width=\"308\" height=\"20\" rx=\"4\" fill=\"var(--bg-surface)\" stroke=\"var(--ink-soft)\" stroke-width=\"1.3\"/>\n        <text x=\"180\" y=\"42\" text-anchor=\"middle\" class=\"svg-tick\">Application</text>\n        <rect x=\"26\" y=\"52\" width=\"308\" height=\"20\" rx=\"4\" fill=\"var(--bg-surface)\" stroke=\"var(--ink-soft)\" stroke-width=\"1.3\"/>\n        <text x=\"180\" y=\"66\" text-anchor=\"middle\" class=\"svg-tick\">Frameworks &amp; application libraries</text>\n        <g id=\"svg-infra\">\n          <rect x=\"26\" y=\"77\" width=\"308\" height=\"106\" rx=\"6\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.5\"/>\n          <rect x=\"52\" y=\"83\" width=\"256\" height=\"18\" rx=\"3\" fill=\"var(--bg-surface)\" stroke=\"var(--ink-soft)\" stroke-width=\"1.1\"/>\n          <text x=\"180\" y=\"96\" text-anchor=\"middle\" class=\"svg-caption\">Browsers and messaging</text>\n          <rect x=\"52\" y=\"105\" width=\"256\" height=\"18\" rx=\"3\" fill=\"var(--bg-surface)\" stroke=\"var(--blue)\" stroke-width=\"1.5\"/>\n          <text x=\"180\" y=\"118\" text-anchor=\"middle\" class=\"svg-tick\">System libraries</text>\n          <rect x=\"52\" y=\"127\" width=\"256\" height=\"18\" rx=\"3\" fill=\"var(--bg-surface)\" stroke=\"var(--ink-soft)\" stroke-width=\"1.1\"/>\n          <text x=\"180\" y=\"140\" text-anchor=\"middle\" class=\"svg-caption\">Database</text>\n          <rect x=\"52\" y=\"149\" width=\"256\" height=\"18\" rx=\"3\" fill=\"var(--bg-surface)\" stroke=\"var(--ink-soft)\" stroke-width=\"1.1\"/>\n          <text x=\"180\" y=\"162\" text-anchor=\"middle\" class=\"svg-caption\">Operating system</text>\n          <text x=\"180\" y=\"178\" text-anchor=\"middle\" class=\"svg-math-sm\">Software infrastructure</text>\n        </g>\n        <rect x=\"26\" y=\"188\" width=\"308\" height=\"20\" rx=\"4\" fill=\"var(--bg-surface)\" stroke=\"var(--ink-soft)\" stroke-width=\"1.3\"/>\n        <text x=\"180\" y=\"202\" text-anchor=\"middle\" class=\"svg-tick\">Network</text>\n      </svg>\n    </div>\n    <div class=\"formula-col\">\n      <div id=\"box-sql\" class=\"box box-def\">\n        <div class=\"box-label\">SQL Poisoning · Numero di conto</div>\n        <p><code>accNum = getAccountNumber()</code><br><code>SQLstat = \"SELECT * FROM AccountHolders WHERE accountnumber = '\" + accNum + \"';\"</code><br><code>database.execute(SQLstat)</code> &middot; Input lecito <code>34200645</code>.</p>\n      </div>\n      <div id=\"box-dos\" class=\"box box-warn\">\n        <div class=\"box-label\">DoS · Motivazioni &amp; Lockout singolo utente</div>\n        <p><strong>Scopi:</strong> boicottare il fornitore, chiedere riscatto o &ldquo;divertirsi&rdquo;. <strong>Lockout:</strong> login errati con l'<strong>email dell'utente</strong> &rarr; bloccare solo da <strong>IP insoliti</strong>.</p>\n      </div>\n    </div>\n  </div>\n  <div id=\"s2\" class=\"grid-2 cue-hidden\">\n    <div id=\"box-auth\" class=\"box box-primary\">\n      <div class=\"box-label\">Password, Identità Federata &amp; Mobile</div>\n      <ul class=\"clean-list\">\n        <li id=\"auth-pwd\"><strong>Password:</strong> imporre <em>password forti</em> e <em>domande personali</em>; senza dati riservati basta auth <em>knowledge-based</em>.</li>\n        <li id=\"auth-fed\"><strong>Federata:</strong> consumer (<em>Google/Facebook</em>) e <strong>aziendale</strong> (<em>identity management system</em> del cliente).</li>\n        <li id=\"auth-mob\"><strong>Mobile:</strong> tastiera scomoda &rarr; <em>certificati digitali</em> fidati o <em>token locali</em> (rischio accesso se rubato/perso).</li>\n      </ul>\n    </div>\n    <div id=\"box-keys\" class=\"box box-algo\">\n      <div class=\"box-label\">Conservazione chiavi storiche (KMS)</div>\n      <p>Le <strong>leggi sulla protezione dei dati</strong> possono imporre di conservare copie dei dati <strong>per anni</strong>: con la rotazione periodica, il KMS custodisce le <strong>versioni datate delle chiavi</strong> per decifrarli.</p>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 1.1,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "dettagli d'esame essenziali su sicurezza"
+        },
+        {
+          "at": 1.1,
+          "action": "highlight",
+          "target": "#svg-stack",
+          "duration": 4.5,
+          "anchor": "dettagli d'esame essenziali su sicurezza"
+        },
+        {
+          "at": 6.68,
+          "action": "highlight",
+          "target": "#svg-infra",
+          "duration": 11.5,
+          "anchor": "nello stack completo del sistema"
+        },
+        {
+          "at": 19.06,
+          "action": "highlight",
+          "target": "#box-sql",
+          "duration": 15.5,
+          "anchor": "nel codice vulnerabile al SQL"
+        },
+        {
+          "at": 35.79,
+          "action": "highlight",
+          "target": "#box-dos",
+          "duration": 17.12,
+          "anchor": "gli attacchi denial of service"
+        },
+        {
+          "at": 53.03,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "contro password deboli si impongono"
+        },
+        {
+          "at": 53.03,
+          "action": "highlight",
+          "target": "#auth-pwd",
+          "duration": 8.3,
+          "anchor": "contro password deboli si impongono"
+        },
+        {
+          "at": 62.15,
+          "action": "highlight",
+          "target": "#auth-fed",
+          "duration": 8.91,
+          "anchor": "L'identità federata vale sia"
+        },
+        {
+          "at": 71.18,
+          "action": "highlight",
+          "target": "#auth-mob",
+          "duration": 10.1,
+          "anchor": "Su mobile la tastiera è"
+        },
+        {
+          "at": 81.42,
+          "action": "highlight",
+          "target": "#box-keys",
+          "duration": 10,
+          "anchor": "le leggi sulla protezione dei"
+        }
+      ],
+      "audio_file": "audio/scene-09.wav",
+      "subtitle_file": "subtitles/scene-09.json",
+      "duration_sec": 88.67
+    },
+    {
+      "id": "scene-10",
+      "section": "13.7 · Riepilogo e autoverifica",
+      "title": "Punti chiave del capitolo e domande d'esame",
+      "tts_text": "Riepiloghiamo i punti essenziali di questo capitolo su sicurezza e privacy. [pause:0.5] Primo: le minacce riguardano disponibilità, integrità e riservatezza lungo l'intero stack di sistema, e richiedono autenticazione forte, patch, monitoraggio e backup. [pause:0.5] Secondo: contro gli attacchi comuni servono validazione e HTML encode per injection e XSS, HTTPS, MFA e timeout brevi per session hijacking, filtri e blocchi temporanei per DoS e DDoS, password lunghe contro il brute force. [pause:0.5] Terzo: l'autenticazione verifica l'identità anche tramite identità federata OAuth, mentre l'autorizzazione regola i permessi sulle risorse tramite ACL e gruppi. [pause:0.5] Quarto: la cifratura simmetrica condivide una chiave, l'asimmetrica usa coppia pubblica e privata; TLS combina certificati CA e asimmetrica per negoziare una chiave simmetrica, con gestione affidata al KMS. [pause:0.5] Quinto: la privacy tutela i diritti del data subject tramite i sette principi di protezione dei dati e la minimizzazione della raccolta. [pause:0.6] Prima del capitolo quattordici sulla sicurezza nei microservizi, verificate la vostra preparazione rispondendo alle domande sulla destra.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">13.7 · Riepilogo &amp; Autoverifica</div>\n  <h2 class=\"slide-title\">Punti chiave e domande di verifica</h2>\n  <div class=\"grid-2\">\n    <div class=\"box box-algo\">\n      <div class=\"box-label\">Punti chiave da fissare</div>\n      <ul class=\"clean-list\">\n        <li id=\"s1\" class=\"cue-hidden\"><strong>Minacce &amp; Stack:</strong> disponibilità, integrità, riservatezza; tutto lo stack richiede auth, patch, monitoraggio e backup.</li>\n        <li id=\"s2\" class=\"cue-hidden\"><strong>Attacchi &amp; Difese:</strong> injection/XSS (validazione + encode), hijacking (HTTPS, MFA, timeout), DoS/DDoS (filtri, IP), brute force (\\(k^n\\), 2FA).</li>\n        <li id=\"s3\" class=\"cue-hidden\"><strong>Auth vs Authz:</strong> 3 approcci e OAuth federato vs autorizzazione via ACL e gerarchie di gruppi.</li>\n        <li id=\"s4\" class=\"cue-hidden\"><strong>Cifratura, TLS &amp; KMS:</strong> simmetrica vs asimmetrica; TLS negozia chiave simmetrica con CA; 4 livelli e KMS.</li>\n        <li id=\"s5\" class=\"cue-hidden\"><strong>Privacy:</strong> 7 principi di protezione, ragioni di business, raccogliere solo i dati necessari.</li>\n      </ul>\n    </div>\n    <div id=\"s6\" class=\"box box-theorem cue-hidden\">\n      <div class=\"box-label\">Domande di verifica</div>\n      <ol class=\"verify-list\">\n        <li>Quali sono i 3 tipi di minacce (con esempio combinato) e le 4 attività per proteggere l'intero stack?</li>\n        <li>Come funzionano SQL poisoning, session hijacking e XSS, e quali sono le rispettive difese?</li>\n        <li>Cosa distingue DoS, DDoS e lockout su singolo utente? Come cresce la difesa contro brute force?</li>\n        <li>Quali sono i 3 approcci all'autenticazione, le debolezze delle password e pro/contro di OAuth federato?</li>\n        <li>Che differenza c'è tra autenticazione e autorizzazione? Come si organizzano le ACL?</li>\n        <li>Confronta cifratura simmetrica e asimmetrica (anche per autenticità) e descrivi l'handshake TLS.</li>\n        <li>A quali 4 livelli si cifrano i dati, perché serve un KMS e quali sono i 7 principi di privacy?</li>\n      </ol>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 4.77,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "Primo: le minacce riguardano disponibilità"
+        },
+        {
+          "at": 4.77,
+          "action": "highlight",
+          "target": "#s1",
+          "duration": 10.5,
+          "anchor": "Primo: le minacce riguardano disponibilità"
+        },
+        {
+          "at": 15.77,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Secondo: contro gli attacchi comuni"
+        },
+        {
+          "at": 15.77,
+          "action": "highlight",
+          "target": "#s2",
+          "duration": 16,
+          "anchor": "Secondo: contro gli attacchi comuni"
+        },
+        {
+          "at": 32.69,
+          "action": "show",
+          "target": "#s3",
+          "anchor": "Terzo: l'autenticazione verifica l'identità"
+        },
+        {
+          "at": 32.69,
+          "action": "highlight",
+          "target": "#s3",
+          "duration": 10.09,
+          "anchor": "Terzo: l'autenticazione verifica l'identità"
+        },
+        {
+          "at": 42.9,
+          "action": "show",
+          "target": "#s4",
+          "anchor": "Quarto: la cifratura simmetrica condivide"
+        },
+        {
+          "at": 42.9,
+          "action": "highlight",
+          "target": "#s4",
+          "duration": 13.5,
+          "anchor": "Quarto: la cifratura simmetrica condivide"
+        },
+        {
+          "at": 56.62,
+          "action": "show",
+          "target": "#s5",
+          "anchor": "Quinto: la privacy tutela i diritti"
+        },
+        {
+          "at": 56.62,
+          "action": "highlight",
+          "target": "#s5",
+          "duration": 8.22,
+          "anchor": "Quinto: la privacy tutela i diritti"
+        },
+        {
+          "at": 64.96,
+          "action": "show",
+          "target": "#s6",
+          "anchor": "Prima del capitolo quattordici"
+        },
+        {
+          "at": 64.96,
+          "action": "highlight",
+          "target": "#s6",
+          "duration": 6.5,
+          "anchor": "Prima del capitolo quattordici"
+        }
+      ],
+      "audio_file": "audio/scene-10.wav",
+      "subtitle_file": "subtitles/scene-10.json",
+      "duration_sec": 72.13
+    }
+  ]
+}

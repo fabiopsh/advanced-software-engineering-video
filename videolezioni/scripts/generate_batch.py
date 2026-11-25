@@ -308,6 +308,48 @@ def build_batches(scenes: list[dict[str, Any]], max_batch_words: int) -> list[li
     return batches
 
 
+def detect_scene_tts_anomalies(
+    sc_samples: np.ndarray,
+    sr: int,
+    adj_words: list[dict[str, Any]],
+    pauses: dict[int, float],
+) -> list[str]:
+    """Rileva ripetizioni/allucinazioni TTS post-allineamento (parole allungate, voce nei gap, WPS anomalo)."""
+    issues: list[str] = []
+    if not adj_words or sc_samples.size == 0:
+        return issues
+
+    dur = sc_samples.size / float(sr)
+    eff_dur = max(1.0, dur - sum(pauses.values()))
+    wps = len(adj_words) / eff_dur
+    if wps < 1.92:
+        issues.append(f"LOW_WPS={wps:.2f}")
+
+    def rms_range(t0: float, t1: float) -> float:
+        i0 = max(0, int(round(t0 * sr)))
+        i1 = min(sc_samples.size, int(round(t1 * sr)))
+        if i1 <= i0:
+            return 0.0
+        seg = sc_samples[i0:i1].astype(np.float32)
+        return float(np.sqrt(np.mean(seg * seg)))
+
+    for w in adj_words:
+        wd = w["end"] - w["start"]
+        if wd > 2.2:
+            issues.append(f"STRETCHED_WORD@{w['start']:.1f}s({wd:.2f}s):{w['text']}")
+
+    for idx in range(len(adj_words) - 1):
+        t0 = adj_words[idx]["end"]
+        t1 = adj_words[idx + 1]["start"]
+        gap = t1 - t0
+        if gap > 1.25:
+            r = rms_range(t0 + 0.08, t1 - 0.08)
+            if r > 1100:
+                issues.append(f"SPEECH_IN_GAP@{t0:.1f}..{t1:.1f}s(rms={r:.0f})")
+
+    return issues
+
+
 def run_batch_pipeline(
     lesson_slug: str,
     scene_filter: list[str] | None,
@@ -444,6 +486,40 @@ def run_batch_pipeline(
                 batch_samples, sr, sc_words, meta["pauses"], s_samp, e_samp
             )
             sc_dur = sc_samples.size / float(sr)
+
+            # Guardia anti-ripetizione TTS: se la scena mostra ripetizioni/stutter nel batch, rigenera da sola (max 2 retry)
+            anomalies = detect_scene_tts_anomalies(sc_samples, sr, adj_words, meta["pauses"])
+            if anomalies:
+                print(f"    [guardia anti-ripetizione] {sid} anomalie rilevate: {', '.join(anomalies[:3])} -> retry singolo...")
+                solo_w_list, solo_p_map = parse_words_and_pauses(sc["tts_text"])
+                solo_text = clean_tts_text(sc["tts_text"])
+                for retry_i in range(1, 3):
+                    sh = hashlib.sha1(f"{model}|{voice}|{style}|retry{retry_i}|{solo_text}".encode("utf-8")).hexdigest()[:10]
+                    solo_cache = batches_dir / f"solo-{sid}-r{retry_i}-{sh}.wav"
+                    solo_wav, solo_sr = call_gemini_batch_wav(
+                        solo_text, solo_cache, model, voice, style, api_key,
+                        budget_state, run_spent_eur, max_run_eur, global_cap_eur, force=True
+                    )
+                    _, solo_aligned = aligner.align_wav(solo_wav, " ".join(solo_w_list))
+                    if len(solo_aligned) != len(solo_w_list):
+                        continue
+                    with wave.open(str(solo_wav), "rb") as wf:
+                        solo_raw = np.frombuffer(wf.readframes(wf.getnframes()), dtype=np.int16)
+                    s0 = max(0, int(round(max(0.0, solo_aligned[0]["start"] - 0.08) * solo_sr)))
+                    e0 = min(solo_raw.size, int(round((solo_aligned[-1]["end"] + 0.25) * solo_sr)))
+                    cand_samples, cand_words = splice_scene_with_pauses(
+                        solo_raw, solo_sr, solo_aligned, solo_p_map, s0, e0
+                    )
+                    cand_anom = detect_scene_tts_anomalies(cand_samples, solo_sr, cand_words, solo_p_map)
+                    if len(cand_anom) < len(anomalies):
+                        sc_samples, adj_words, sr = cand_samples, cand_words, solo_sr
+                        sc_dur = sc_samples.size / float(sr)
+                        anomalies = cand_anom
+                        print(f"    [retry {retry_i}/2 OK] {sid}: {sc_dur:.2f}s | anomalie residue={len(anomalies)}")
+                        if not anomalies:
+                            break
+                    else:
+                        print(f"    [retry {retry_i}/2] {sid}: ancora {len(cand_anom)} anomalie ({', '.join(cand_anom[:2])})")
 
             out_wav = lesson_dir / "audio" / f"{sid}.wav"
             out_wav.parent.mkdir(parents=True, exist_ok=True)

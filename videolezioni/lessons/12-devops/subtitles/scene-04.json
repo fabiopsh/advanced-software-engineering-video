@@ -1,0 +1,1083 @@
+{
+  "duration": 72.541,
+  "segments": [
+    {
+      "start": 1.06,
+      "end": 6.041,
+      "text": "L'automazione DevOps poggia su quattro pratiche: continuous integration, continuous delivery,",
+      "words": [
+        {
+          "text": "L'automazione",
+          "start": 1.06,
+          "end": 1.56
+        },
+        {
+          "text": "DevOps",
+          "start": 1.58,
+          "end": 1.92
+        },
+        {
+          "text": "poggia",
+          "start": 2.12,
+          "end": 2.36
+        },
+        {
+          "text": "su",
+          "start": 2.421,
+          "end": 2.501
+        },
+        {
+          "text": "quattro",
+          "start": 2.561,
+          "end": 2.821
+        },
+        {
+          "text": "pratiche:",
+          "start": 2.861,
+          "end": 3.241
+        },
+        {
+          "text": "continuous",
+          "start": 3.761,
+          "end": 4.181
+        },
+        {
+          "text": "integration,",
+          "start": 4.241,
+          "end": 4.781
+        },
+        {
+          "text": "continuous",
+          "start": 5.101,
+          "end": 5.561
+        },
+        {
+          "text": "delivery,",
+          "start": 5.641,
+          "end": 6.041
+        }
+      ]
+    },
+    {
+      "start": 6.461,
+      "end": 8.981,
+      "text": "continuous deployment e infrastructure as code.",
+      "words": [
+        {
+          "text": "continuous",
+          "start": 6.461,
+          "end": 6.881
+        },
+        {
+          "text": "deployment",
+          "start": 6.941,
+          "end": 7.501
+        },
+        {
+          "text": "e",
+          "start": 7.821,
+          "end": 7.861
+        },
+        {
+          "text": "infrastructure",
+          "start": 7.941,
+          "end": 8.601
+        },
+        {
+          "text": "as",
+          "start": 8.621,
+          "end": 8.701
+        },
+        {
+          "text": "code.",
+          "start": 8.741,
+          "end": 8.981
+        }
+      ]
+    },
+    {
+      "start": 9.622,
+      "end": 11.702,
+      "text": "Vediamo la prima, la continuous integration.",
+      "words": [
+        {
+          "text": "Vediamo",
+          "start": 9.622,
+          "end": 9.862
+        },
+        {
+          "text": "la",
+          "start": 9.902,
+          "end": 9.962
+        },
+        {
+          "text": "prima,",
+          "start": 9.982,
+          "end": 10.222
+        },
+        {
+          "text": "la",
+          "start": 10.502,
+          "end": 10.562
+        },
+        {
+          "text": "continuous",
+          "start": 10.602,
+          "end": 11.102
+        },
+        {
+          "text": "integration.",
+          "start": 11.182,
+          "end": 11.702
+        }
+      ]
+    },
+    {
+      "start": 12.602,
+      "end": 14.982,
+      "text": "Integrare un sistema non significa solo compilare:",
+      "words": [
+        {
+          "text": "Integrare",
+          "start": 12.602,
+          "end": 12.982
+        },
+        {
+          "text": "un",
+          "start": 13.022,
+          "end": 13.082
+        },
+        {
+          "text": "sistema",
+          "start": 13.102,
+          "end": 13.402
+        },
+        {
+          "text": "non",
+          "start": 13.482,
+          "end": 13.602
+        },
+        {
+          "text": "significa",
+          "start": 13.662,
+          "end": 14.222
+        },
+        {
+          "text": "solo",
+          "start": 14.302,
+          "end": 14.482
+        },
+        {
+          "text": "compilare:",
+          "start": 14.502,
+          "end": 14.982
+        }
+      ]
+    },
+    {
+      "start": 15.702,
+      "end": 20.443,
+      "text": "occorre predisporre il database con dati di test, compilare e collegare librerie,",
+      "words": [
+        {
+          "text": "occorre",
+          "start": 15.702,
+          "end": 16.023
+        },
+        {
+          "text": "predisporre",
+          "start": 16.083,
+          "end": 16.663
+        },
+        {
+          "text": "il",
+          "start": 17.043,
+          "end": 17.103
+        },
+        {
+          "text": "database",
+          "start": 17.143,
+          "end": 17.663
+        },
+        {
+          "text": "con",
+          "start": 17.723,
+          "end": 17.843
+        },
+        {
+          "text": "dati",
+          "start": 17.883,
+          "end": 18.083
+        },
+        {
+          "text": "di",
+          "start": 18.123,
+          "end": 18.183
+        },
+        {
+          "text": "test,",
+          "start": 18.223,
+          "end": 18.503
+        },
+        {
+          "text": "compilare",
+          "start": 18.943,
+          "end": 19.443
+        },
+        {
+          "text": "e",
+          "start": 19.463,
+          "end": 19.503
+        },
+        {
+          "text": "collegare",
+          "start": 19.523,
+          "end": 19.983
+        },
+        {
+          "text": "librerie,",
+          "start": 20.023,
+          "end": 20.443
+        }
+      ]
+    },
+    {
+      "start": 20.823,
+      "end": 25.524,
+      "text": "verificare i servizi esterni, aggiornare i file di configurazione ed eseguire i system test.",
+      "words": [
+        {
+          "text": "verificare",
+          "start": 20.823,
+          "end": 21.263
+        },
+        {
+          "text": "i",
+          "start": 21.303,
+          "end": 21.343
+        },
+        {
+          "text": "servizi",
+          "start": 21.363,
+          "end": 21.663
+        },
+        {
+          "text": "esterni,",
+          "start": 21.703,
+          "end": 22.143
+        },
+        {
+          "text": "aggiornare",
+          "start": 22.504,
+          "end": 22.924
+        },
+        {
+          "text": "i",
+          "start": 22.964,
+          "end": 23.004
+        },
+        {
+          "text": "file",
+          "start": 23.024,
+          "end": 23.264
+        },
+        {
+          "text": "di",
+          "start": 23.304,
+          "end": 23.344
+        },
+        {
+          "text": "configurazione",
+          "start": 23.384,
+          "end": 24.164
+        },
+        {
+          "text": "ed",
+          "start": 24.284,
+          "end": 24.364
+        },
+        {
+          "text": "eseguire",
+          "start": 24.404,
+          "end": 24.804
+        },
+        {
+          "text": "i",
+          "start": 24.844,
+          "end": 24.884
+        },
+        {
+          "text": "system",
+          "start": 24.904,
+          "end": 25.204
+        },
+        {
+          "text": "test.",
+          "start": 25.264,
+          "end": 25.524
+        }
+      ]
+    },
+    {
+      "start": 26.204,
+      "end": 30.245,
+      "text": "Con la C I, a ogni push sul repository parte un trigger verso l'integration server,",
+      "words": [
+        {
+          "text": "Con",
+          "start": 26.204,
+          "end": 26.284
+        },
+        {
+          "text": "la",
+          "start": 26.304,
+          "end": 26.364
+        },
+        {
+          "text": "C",
+          "start": 26.404,
+          "end": 26.444
+        },
+        {
+          "text": "I,",
+          "start": 26.444,
+          "end": 26.484
+        },
+        {
+          "text": "a",
+          "start": 26.864,
+          "end": 26.904
+        },
+        {
+          "text": "ogni",
+          "start": 26.984,
+          "end": 27.164
+        },
+        {
+          "text": "push",
+          "start": 27.244,
+          "end": 27.504
+        },
+        {
+          "text": "sul",
+          "start": 27.584,
+          "end": 27.704
+        },
+        {
+          "text": "repository",
+          "start": 27.744,
+          "end": 28.224
+        },
+        {
+          "text": "parte",
+          "start": 28.264,
+          "end": 28.484
+        },
+        {
+          "text": "un",
+          "start": 28.524,
+          "end": 28.584
+        },
+        {
+          "text": "trigger",
+          "start": 28.624,
+          "end": 28.964
+        },
+        {
+          "text": "verso",
+          "start": 29.024,
+          "end": 29.245
+        },
+        {
+          "text": "l'integration",
+          "start": 29.285,
+          "end": 29.805
+        },
+        {
+          "text": "server,",
+          "start": 29.885,
+          "end": 30.245
+        }
+      ]
+    },
+    {
+      "start": 30.645,
+      "end": 35.325,
+      "text": "che preleva i sorgenti, compila e costruisce l'eseguibile, poi lancia i test per produrre un",
+      "words": [
+        {
+          "text": "che",
+          "start": 30.645,
+          "end": 30.705
+        },
+        {
+          "text": "preleva",
+          "start": 30.745,
+          "end": 31.065
+        },
+        {
+          "text": "i",
+          "start": 31.085,
+          "end": 31.125
+        },
+        {
+          "text": "sorgenti,",
+          "start": 31.145,
+          "end": 31.665
+        },
+        {
+          "text": "compila",
+          "start": 31.885,
+          "end": 32.325
+        },
+        {
+          "text": "e",
+          "start": 32.385,
+          "end": 32.425
+        },
+        {
+          "text": "costruisce",
+          "start": 32.465,
+          "end": 32.965
+        },
+        {
+          "text": "l'eseguibile,",
+          "start": 33.005,
+          "end": 33.565
+        },
+        {
+          "text": "poi",
+          "start": 33.985,
+          "end": 34.125
+        },
+        {
+          "text": "lancia",
+          "start": 34.185,
+          "end": 34.385
+        },
+        {
+          "text": "i",
+          "start": 34.425,
+          "end": 34.465
+        },
+        {
+          "text": "test",
+          "start": 34.485,
+          "end": 34.685
+        },
+        {
+          "text": "per",
+          "start": 34.765,
+          "end": 34.865
+        },
+        {
+          "text": "produrre",
+          "start": 34.885,
+          "end": 35.225
+        },
+        {
+          "text": "un",
+          "start": 35.265,
+          "end": 35.325
+        }
+      ]
+    },
+    {
+      "start": 35.365,
+      "end": 36.446,
+      "text": "sistema distribuibile.",
+      "words": [
+        {
+          "text": "sistema",
+          "start": 35.365,
+          "end": 35.705
+        },
+        {
+          "text": "distribuibile.",
+          "start": 35.765,
+          "end": 36.446
+        }
+      ]
+    },
+    {
+      "start": 37.086,
+      "end": 40.766,
+      "text": "Per non rompere la build e bloccare i colleghi bisogna integrare due volte:",
+      "words": [
+        {
+          "text": "Per",
+          "start": 37.086,
+          "end": 37.206
+        },
+        {
+          "text": "non",
+          "start": 37.246,
+          "end": 37.346
+        },
+        {
+          "text": "rompere",
+          "start": 37.386,
+          "end": 37.626
+        },
+        {
+          "text": "la",
+          "start": 37.666,
+          "end": 37.706
+        },
+        {
+          "text": "build",
+          "start": 37.746,
+          "end": 37.986
+        },
+        {
+          "text": "e",
+          "start": 38.366,
+          "end": 38.406
+        },
+        {
+          "text": "bloccare",
+          "start": 38.446,
+          "end": 38.766
+        },
+        {
+          "text": "i",
+          "start": 38.786,
+          "end": 38.826
+        },
+        {
+          "text": "colleghi",
+          "start": 38.826,
+          "end": 39.186
+        },
+        {
+          "text": "bisogna",
+          "start": 39.226,
+          "end": 39.546
+        },
+        {
+          "text": "integrare",
+          "start": 39.746,
+          "end": 40.246
+        },
+        {
+          "text": "due",
+          "start": 40.286,
+          "end": 40.406
+        },
+        {
+          "text": "volte:",
+          "start": 40.446,
+          "end": 40.766
+        }
+      ]
+    },
+    {
+      "start": 41.266,
+      "end": 45.007,
+      "text": "prima si fonde il ramo principale in locale e si collauda sul proprio computer,",
+      "words": [
+        {
+          "text": "prima",
+          "start": 41.266,
+          "end": 41.506
+        },
+        {
+          "text": "si",
+          "start": 41.626,
+          "end": 41.706
+        },
+        {
+          "text": "fonde",
+          "start": 41.766,
+          "end": 42.026
+        },
+        {
+          "text": "il",
+          "start": 42.046,
+          "end": 42.086
+        },
+        {
+          "text": "ramo",
+          "start": 42.126,
+          "end": 42.306
+        },
+        {
+          "text": "principale",
+          "start": 42.346,
+          "end": 42.787
+        },
+        {
+          "text": "in",
+          "start": 42.807,
+          "end": 42.847
+        },
+        {
+          "text": "locale",
+          "start": 42.867,
+          "end": 43.227
+        },
+        {
+          "text": "e",
+          "start": 43.327,
+          "end": 43.367
+        },
+        {
+          "text": "si",
+          "start": 43.427,
+          "end": 43.487
+        },
+        {
+          "text": "collauda",
+          "start": 43.547,
+          "end": 44.047
+        },
+        {
+          "text": "sul",
+          "start": 44.107,
+          "end": 44.227
+        },
+        {
+          "text": "proprio",
+          "start": 44.267,
+          "end": 44.487
+        },
+        {
+          "text": "computer,",
+          "start": 44.527,
+          "end": 45.007
+        }
+      ]
+    },
+    {
+      "start": 45.227,
+      "end": 47.427,
+      "text": "poi si fa il push sul repository condiviso.",
+      "words": [
+        {
+          "text": "poi",
+          "start": 45.227,
+          "end": 45.427
+        },
+        {
+          "text": "si",
+          "start": 45.707,
+          "end": 45.787
+        },
+        {
+          "text": "fa",
+          "start": 45.847,
+          "end": 45.907
+        },
+        {
+          "text": "il",
+          "start": 45.947,
+          "end": 46.007
+        },
+        {
+          "text": "push",
+          "start": 46.047,
+          "end": 46.267
+        },
+        {
+          "text": "sul",
+          "start": 46.367,
+          "end": 46.467
+        },
+        {
+          "text": "repository",
+          "start": 46.507,
+          "end": 46.967
+        },
+        {
+          "text": "condiviso.",
+          "start": 46.987,
+          "end": 47.427
+        }
+      ]
+    },
+    {
+      "start": 48.087,
+      "end": 53.088,
+      "text": "Così i bug emergono subito, esiste sempre una versione funzionante e cresce la cultura della",
+      "words": [
+        {
+          "text": "Così",
+          "start": 48.087,
+          "end": 48.327
+        },
+        {
+          "text": "i",
+          "start": 48.447,
+          "end": 48.487
+        },
+        {
+          "text": "bug",
+          "start": 48.547,
+          "end": 48.747
+        },
+        {
+          "text": "emergono",
+          "start": 48.807,
+          "end": 49.167
+        },
+        {
+          "text": "subito,",
+          "start": 49.207,
+          "end": 49.528
+        },
+        {
+          "text": "esiste",
+          "start": 49.788,
+          "end": 50.088
+        },
+        {
+          "text": "sempre",
+          "start": 50.168,
+          "end": 50.468
+        },
+        {
+          "text": "una",
+          "start": 50.508,
+          "end": 50.608
+        },
+        {
+          "text": "versione",
+          "start": 50.648,
+          "end": 50.968
+        },
+        {
+          "text": "funzionante",
+          "start": 50.988,
+          "end": 51.648
+        },
+        {
+          "text": "e",
+          "start": 51.868,
+          "end": 51.908
+        },
+        {
+          "text": "cresce",
+          "start": 52.008,
+          "end": 52.388
+        },
+        {
+          "text": "la",
+          "start": 52.448,
+          "end": 52.508
+        },
+        {
+          "text": "cultura",
+          "start": 52.548,
+          "end": 52.908
+        },
+        {
+          "text": "della",
+          "start": 52.928,
+          "end": 53.088
+        }
+      ]
+    },
+    {
+      "start": 53.108,
+      "end": 53.408,
+      "text": "qualità.",
+      "words": [
+        {
+          "text": "qualità.",
+          "start": 53.108,
+          "end": 53.408
+        }
+      ]
+    },
+    {
+      "start": 54.168,
+      "end": 58.929,
+      "text": "Per risparmiare tempo si usa la build incrementale: si confrontano i timestamp e si ricompila",
+      "words": [
+        {
+          "text": "Per",
+          "start": 54.168,
+          "end": 54.268
+        },
+        {
+          "text": "risparmiare",
+          "start": 54.308,
+          "end": 54.708
+        },
+        {
+          "text": "tempo",
+          "start": 54.728,
+          "end": 54.988
+        },
+        {
+          "text": "si",
+          "start": 55.048,
+          "end": 55.108
+        },
+        {
+          "text": "usa",
+          "start": 55.188,
+          "end": 55.308
+        },
+        {
+          "text": "la",
+          "start": 55.408,
+          "end": 55.468
+        },
+        {
+          "text": "build",
+          "start": 55.488,
+          "end": 55.648
+        },
+        {
+          "text": "incrementale:",
+          "start": 55.688,
+          "end": 56.309
+        },
+        {
+          "text": "si",
+          "start": 56.729,
+          "end": 56.789
+        },
+        {
+          "text": "confrontano",
+          "start": 56.829,
+          "end": 57.329
+        },
+        {
+          "text": "i",
+          "start": 57.389,
+          "end": 57.429
+        },
+        {
+          "text": "timestamp",
+          "start": 57.449,
+          "end": 58.049
+        },
+        {
+          "text": "e",
+          "start": 58.229,
+          "end": 58.269
+        },
+        {
+          "text": "si",
+          "start": 58.369,
+          "end": 58.449
+        },
+        {
+          "text": "ricompila",
+          "start": 58.489,
+          "end": 58.929
+        }
+      ]
+    },
+    {
+      "start": 59.049,
+      "end": 63.31,
+      "text": "solo se il codice sorgente o una definizione di classe sono più recenti del codice",
+      "words": [
+        {
+          "text": "solo",
+          "start": 59.049,
+          "end": 59.249
+        },
+        {
+          "text": "se",
+          "start": 59.289,
+          "end": 59.349
+        },
+        {
+          "text": "il",
+          "start": 59.409,
+          "end": 59.469
+        },
+        {
+          "text": "codice",
+          "start": 59.509,
+          "end": 59.809
+        },
+        {
+          "text": "sorgente",
+          "start": 59.869,
+          "end": 60.469
+        },
+        {
+          "text": "o",
+          "start": 60.629,
+          "end": 60.669
+        },
+        {
+          "text": "una",
+          "start": 60.729,
+          "end": 60.869
+        },
+        {
+          "text": "definizione",
+          "start": 60.909,
+          "end": 61.429
+        },
+        {
+          "text": "di",
+          "start": 61.469,
+          "end": 61.529
+        },
+        {
+          "text": "classe",
+          "start": 61.549,
+          "end": 61.909
+        },
+        {
+          "text": "sono",
+          "start": 61.969,
+          "end": 62.149
+        },
+        {
+          "text": "più",
+          "start": 62.209,
+          "end": 62.309
+        },
+        {
+          "text": "recenti",
+          "start": 62.389,
+          "end": 62.77
+        },
+        {
+          "text": "del",
+          "start": 62.83,
+          "end": 62.93
+        },
+        {
+          "text": "codice",
+          "start": 62.97,
+          "end": 63.31
+        }
+      ]
+    },
+    {
+      "start": 63.33,
+      "end": 63.83,
+      "text": "compilato.",
+      "words": [
+        {
+          "text": "compilato.",
+          "start": 63.33,
+          "end": 63.83
+        }
+      ]
+    },
+    {
+      "start": 64.75,
+      "end": 70.031,
+      "text": "Gli strumenti tipici vanno da make, Ant, Maven e Rake fino a server come Jenkins,",
+      "words": [
+        {
+          "text": "Gli",
+          "start": 64.75,
+          "end": 64.87
+        },
+        {
+          "text": "strumenti",
+          "start": 64.87,
+          "end": 65.19
+        },
+        {
+          "text": "tipici",
+          "start": 65.25,
+          "end": 65.57
+        },
+        {
+          "text": "vanno",
+          "start": 65.63,
+          "end": 65.83
+        },
+        {
+          "text": "da",
+          "start": 65.87,
+          "end": 65.95
+        },
+        {
+          "text": "make,",
+          "start": 66.05,
+          "end": 66.45
+        },
+        {
+          "text": "Ant,",
+          "start": 66.85,
+          "end": 67.13
+        },
+        {
+          "text": "Maven",
+          "start": 67.39,
+          "end": 67.77
+        },
+        {
+          "text": "e",
+          "start": 67.81,
+          "end": 67.85000000000001
+        },
+        {
+          "text": "Rake",
+          "start": 67.97,
+          "end": 68.39
+        },
+        {
+          "text": "fino",
+          "start": 68.53,
+          "end": 68.73
+        },
+        {
+          "text": "a",
+          "start": 68.79,
+          "end": 68.83000000000001
+        },
+        {
+          "text": "server",
+          "start": 68.93,
+          "end": 69.25
+        },
+        {
+          "text": "come",
+          "start": 69.29,
+          "end": 69.451
+        },
+        {
+          "text": "Jenkins,",
+          "start": 69.531,
+          "end": 70.031
+        }
+      ]
+    },
+    {
+      "start": 70.151,
+      "end": 72.291,
+      "text": "Travis, Bamboo e GitHub Actions.",
+      "words": [
+        {
+          "text": "Travis,",
+          "start": 70.151,
+          "end": 70.611
+        },
+        {
+          "text": "Bamboo",
+          "start": 70.791,
+          "end": 71.151
+        },
+        {
+          "text": "e",
+          "start": 71.511,
+          "end": 71.551
+        },
+        {
+          "text": "GitHub",
+          "start": 71.591,
+          "end": 71.871
+        },
+        {
+          "text": "Actions.",
+          "start": 71.891,
+          "end": 72.291
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,903 @@
+{
+  "duration": 62.535,
+  "segments": [
+    {
+      "start": 0.597,
+      "end": 5.337,
+      "text": "Attenzione a non confondere autenticazione e autorizzazione: sono due controlli distinti.",
+      "words": [
+        {
+          "text": "Attenzione",
+          "start": 0.597,
+          "end": 1.097
+        },
+        {
+          "text": "a",
+          "start": 1.137,
+          "end": 1.177
+        },
+        {
+          "text": "non",
+          "start": 1.197,
+          "end": 1.297
+        },
+        {
+          "text": "confondere",
+          "start": 1.317,
+          "end": 1.797
+        },
+        {
+          "text": "autenticazione",
+          "start": 1.917,
+          "end": 2.697
+        },
+        {
+          "text": "e",
+          "start": 2.817,
+          "end": 2.857
+        },
+        {
+          "text": "autorizzazione:",
+          "start": 2.917,
+          "end": 3.737
+        },
+        {
+          "text": "sono",
+          "start": 4.017,
+          "end": 4.177
+        },
+        {
+          "text": "due",
+          "start": 4.237,
+          "end": 4.397
+        },
+        {
+          "text": "controlli",
+          "start": 4.437,
+          "end": 4.817
+        },
+        {
+          "text": "distinti.",
+          "start": 4.857,
+          "end": 5.337
+        }
+      ]
+    },
+    {
+      "start": 6.017,
+      "end": 12.018,
+      "text": "L'autenticazione accerta chi sei; l'autorizzazione stabilisce che cosa sei autorizzato a fare sulle risorse del",
+      "words": [
+        {
+          "text": "L'autenticazione",
+          "start": 6.017,
+          "end": 6.697
+        },
+        {
+          "text": "accerta",
+          "start": 6.817,
+          "end": 7.197
+        },
+        {
+          "text": "chi",
+          "start": 7.317,
+          "end": 7.437
+        },
+        {
+          "text": "sei;",
+          "start": 7.598,
+          "end": 7.878
+        },
+        {
+          "text": "l'autorizzazione",
+          "start": 8.378,
+          "end": 9.138
+        },
+        {
+          "text": "stabilisce",
+          "start": 9.178,
+          "end": 9.658
+        },
+        {
+          "text": "che",
+          "start": 9.738,
+          "end": 9.838
+        },
+        {
+          "text": "cosa",
+          "start": 9.958,
+          "end": 10.238
+        },
+        {
+          "text": "sei",
+          "start": 10.298,
+          "end": 10.438
+        },
+        {
+          "text": "autorizzato",
+          "start": 10.458,
+          "end": 10.918
+        },
+        {
+          "text": "a",
+          "start": 10.958,
+          "end": 10.998
+        },
+        {
+          "text": "fare",
+          "start": 11.038,
+          "end": 11.238
+        },
+        {
+          "text": "sulle",
+          "start": 11.278,
+          "end": 11.458
+        },
+        {
+          "text": "risorse",
+          "start": 11.498,
+          "end": 11.858
+        },
+        {
+          "text": "del",
+          "start": 11.898,
+          "end": 12.018
+        }
+      ]
+    },
+    {
+      "start": 12.038,
+      "end": 12.438,
+      "text": "sistema.",
+      "words": [
+        {
+          "text": "sistema.",
+          "start": 12.038,
+          "end": 12.438
+        }
+      ]
+    },
+    {
+      "start": 13.018,
+      "end": 17.299,
+      "text": "Un utente correttamente autenticato non ha automaticamente diritto ad accedere a tutto.",
+      "words": [
+        {
+          "text": "Un",
+          "start": 13.018,
+          "end": 13.098
+        },
+        {
+          "text": "utente",
+          "start": 13.118,
+          "end": 13.378
+        },
+        {
+          "text": "correttamente",
+          "start": 13.458,
+          "end": 13.998
+        },
+        {
+          "text": "autenticato",
+          "start": 14.038,
+          "end": 14.678
+        },
+        {
+          "text": "non",
+          "start": 15.079,
+          "end": 15.219
+        },
+        {
+          "text": "ha",
+          "start": 15.239,
+          "end": 15.279
+        },
+        {
+          "text": "automaticamente",
+          "start": 15.439,
+          "end": 16.099
+        },
+        {
+          "text": "diritto",
+          "start": 16.159,
+          "end": 16.459
+        },
+        {
+          "text": "ad",
+          "start": 16.499,
+          "end": 16.559
+        },
+        {
+          "text": "accedere",
+          "start": 16.599,
+          "end": 16.919
+        },
+        {
+          "text": "a",
+          "start": 16.959,
+          "end": 16.999
+        },
+        {
+          "text": "tutto.",
+          "start": 17.019,
+          "end": 17.299
+        }
+      ]
+    },
+    {
+      "start": 17.899,
+      "end": 22.86,
+      "text": "In ambiente Unix, per esempio, ogni risorsa mostra una stringa di permessi a dieci caratteri:",
+      "words": [
+        {
+          "text": "In",
+          "start": 17.899,
+          "end": 17.979
+        },
+        {
+          "text": "ambiente",
+          "start": 18.019,
+          "end": 18.339
+        },
+        {
+          "text": "Unix,",
+          "start": 18.499,
+          "end": 18.739
+        },
+        {
+          "text": "per",
+          "start": 19.019,
+          "end": 19.119
+        },
+        {
+          "text": "esempio,",
+          "start": 19.139,
+          "end": 19.539
+        },
+        {
+          "text": "ogni",
+          "start": 19.819,
+          "end": 20.039
+        },
+        {
+          "text": "risorsa",
+          "start": 20.079,
+          "end": 20.539
+        },
+        {
+          "text": "mostra",
+          "start": 20.599,
+          "end": 20.859
+        },
+        {
+          "text": "una",
+          "start": 20.899,
+          "end": 20.999
+        },
+        {
+          "text": "stringa",
+          "start": 21.059,
+          "end": 21.399
+        },
+        {
+          "text": "di",
+          "start": 21.439,
+          "end": 21.479
+        },
+        {
+          "text": "permessi",
+          "start": 21.519,
+          "end": 21.939
+        },
+        {
+          "text": "a",
+          "start": 21.979,
+          "end": 22.019
+        },
+        {
+          "text": "dieci",
+          "start": 22.079,
+          "end": 22.339
+        },
+        {
+          "text": "caratteri:",
+          "start": 22.38,
+          "end": 22.86
+        }
+      ]
+    },
+    {
+      "start": 23.42,
+      "end": 27.28,
+      "text": "il primo indica il tipo di risorsa, seguito da tre terne per proprietario,",
+      "words": [
+        {
+          "text": "il",
+          "start": 23.42,
+          "end": 23.5
+        },
+        {
+          "text": "primo",
+          "start": 23.54,
+          "end": 23.78
+        },
+        {
+          "text": "indica",
+          "start": 23.86,
+          "end": 24.12
+        },
+        {
+          "text": "il",
+          "start": 24.18,
+          "end": 24.24
+        },
+        {
+          "text": "tipo",
+          "start": 24.28,
+          "end": 24.46
+        },
+        {
+          "text": "di",
+          "start": 24.5,
+          "end": 24.56
+        },
+        {
+          "text": "risorsa,",
+          "start": 24.58,
+          "end": 25.08
+        },
+        {
+          "text": "seguito",
+          "start": 25.3,
+          "end": 25.62
+        },
+        {
+          "text": "da",
+          "start": 25.66,
+          "end": 25.74
+        },
+        {
+          "text": "tre",
+          "start": 25.82,
+          "end": 25.94
+        },
+        {
+          "text": "terne",
+          "start": 26.06,
+          "end": 26.38
+        },
+        {
+          "text": "per",
+          "start": 26.44,
+          "end": 26.56
+        },
+        {
+          "text": "proprietario,",
+          "start": 26.62,
+          "end": 27.28
+        }
+      ]
+    },
+    {
+      "start": 27.48,
+      "end": 32.021,
+      "text": "gruppo e tutti gli altri utenti, con lettura, scrittura ed esecuzione.",
+      "words": [
+        {
+          "text": "gruppo",
+          "start": 27.48,
+          "end": 27.88
+        },
+        {
+          "text": "e",
+          "start": 28.04,
+          "end": 28.08
+        },
+        {
+          "text": "tutti",
+          "start": 28.16,
+          "end": 28.42
+        },
+        {
+          "text": "gli",
+          "start": 28.44,
+          "end": 28.54
+        },
+        {
+          "text": "altri",
+          "start": 28.58,
+          "end": 28.76
+        },
+        {
+          "text": "utenti,",
+          "start": 28.82,
+          "end": 29.2
+        },
+        {
+          "text": "con",
+          "start": 29.56,
+          "end": 29.721
+        },
+        {
+          "text": "lettura,",
+          "start": 29.781,
+          "end": 30.261
+        },
+        {
+          "text": "scrittura",
+          "start": 30.481,
+          "end": 31.061
+        },
+        {
+          "text": "ed",
+          "start": 31.261,
+          "end": 31.341
+        },
+        {
+          "text": "esecuzione.",
+          "start": 31.401,
+          "end": 32.021
+        }
+      ]
+    },
+    {
+      "start": 32.601,
+      "end": 37.282,
+      "text": "Così una risorsa Events può essere modificabile solo dal proprietario e leggibile dagli altri,",
+      "words": [
+        {
+          "text": "Così",
+          "start": 32.601,
+          "end": 32.761
+        },
+        {
+          "text": "una",
+          "start": 32.841,
+          "end": 32.941
+        },
+        {
+          "text": "risorsa",
+          "start": 32.981,
+          "end": 33.381
+        },
+        {
+          "text": "Events",
+          "start": 33.501,
+          "end": 33.881
+        },
+        {
+          "text": "può",
+          "start": 34.061,
+          "end": 34.141
+        },
+        {
+          "text": "essere",
+          "start": 34.201,
+          "end": 34.421
+        },
+        {
+          "text": "modificabile",
+          "start": 34.461,
+          "end": 35.101
+        },
+        {
+          "text": "solo",
+          "start": 35.221,
+          "end": 35.421
+        },
+        {
+          "text": "dal",
+          "start": 35.461,
+          "end": 35.581
+        },
+        {
+          "text": "proprietario",
+          "start": 35.621,
+          "end": 36.221
+        },
+        {
+          "text": "e",
+          "start": 36.281,
+          "end": 36.321
+        },
+        {
+          "text": "leggibile",
+          "start": 36.341,
+          "end": 36.741
+        },
+        {
+          "text": "dagli",
+          "start": 36.781,
+          "end": 36.961
+        },
+        {
+          "text": "altri,",
+          "start": 37.001,
+          "end": 37.282
+        }
+      ]
+    },
+    {
+      "start": 37.662,
+      "end": 40.442,
+      "text": "mentre una risorsa Blog può risultare aperta a tutti.",
+      "words": [
+        {
+          "text": "mentre",
+          "start": 37.662,
+          "end": 37.882
+        },
+        {
+          "text": "una",
+          "start": 37.922,
+          "end": 38.042
+        },
+        {
+          "text": "risorsa",
+          "start": 38.082,
+          "end": 38.442
+        },
+        {
+          "text": "Blog",
+          "start": 38.522,
+          "end": 38.822
+        },
+        {
+          "text": "può",
+          "start": 39.042,
+          "end": 39.142
+        },
+        {
+          "text": "risultare",
+          "start": 39.202,
+          "end": 39.662
+        },
+        {
+          "text": "aperta",
+          "start": 39.702,
+          "end": 40.002
+        },
+        {
+          "text": "a",
+          "start": 40.062,
+          "end": 40.102
+        },
+        {
+          "text": "tutti.",
+          "start": 40.142,
+          "end": 40.442
+        }
+      ]
+    },
+    {
+      "start": 41.242,
+      "end": 45.963,
+      "text": "Nei prodotti multiutente il controllo degli accessi si implementa spesso con le access control list,",
+      "words": [
+        {
+          "text": "Nei",
+          "start": 41.242,
+          "end": 41.342
+        },
+        {
+          "text": "prodotti",
+          "start": 41.382,
+          "end": 41.762
+        },
+        {
+          "text": "multiutente",
+          "start": 41.822,
+          "end": 42.442
+        },
+        {
+          "text": "il",
+          "start": 42.502,
+          "end": 42.562
+        },
+        {
+          "text": "controllo",
+          "start": 42.602,
+          "end": 43.042
+        },
+        {
+          "text": "degli",
+          "start": 43.062,
+          "end": 43.222
+        },
+        {
+          "text": "accessi",
+          "start": 43.262,
+          "end": 43.642
+        },
+        {
+          "text": "si",
+          "start": 43.682,
+          "end": 43.782
+        },
+        {
+          "text": "implementa",
+          "start": 43.802,
+          "end": 44.202
+        },
+        {
+          "text": "spesso",
+          "start": 44.262,
+          "end": 44.583
+        },
+        {
+          "text": "con",
+          "start": 44.643,
+          "end": 44.743
+        },
+        {
+          "text": "le",
+          "start": 44.763,
+          "end": 44.823
+        },
+        {
+          "text": "access",
+          "start": 44.963,
+          "end": 45.303
+        },
+        {
+          "text": "control",
+          "start": 45.343,
+          "end": 45.663
+        },
+        {
+          "text": "list,",
+          "start": 45.723,
+          "end": 45.963
+        }
+      ]
+    },
+    {
+      "start": 46.343,
+      "end": 51.143,
+      "text": "o ACL, liste che specificano per ogni risorsa chi può eseguire quali operazioni.",
+      "words": [
+        {
+          "text": "o",
+          "start": 46.343,
+          "end": 46.383
+        },
+        {
+          "text": "ACL,",
+          "start": 46.463,
+          "end": 46.863
+        },
+        {
+          "text": "liste",
+          "start": 47.383,
+          "end": 47.643
+        },
+        {
+          "text": "che",
+          "start": 47.703,
+          "end": 47.763
+        },
+        {
+          "text": "specificano",
+          "start": 47.803,
+          "end": 48.403
+        },
+        {
+          "text": "per",
+          "start": 48.443,
+          "end": 48.563
+        },
+        {
+          "text": "ogni",
+          "start": 48.623,
+          "end": 48.763
+        },
+        {
+          "text": "risorsa",
+          "start": 48.803,
+          "end": 49.263
+        },
+        {
+          "text": "chi",
+          "start": 49.403,
+          "end": 49.503
+        },
+        {
+          "text": "può",
+          "start": 49.603,
+          "end": 49.703
+        },
+        {
+          "text": "eseguire",
+          "start": 49.763,
+          "end": 50.183
+        },
+        {
+          "text": "quali",
+          "start": 50.283,
+          "end": 50.543
+        },
+        {
+          "text": "operazioni.",
+          "start": 50.583,
+          "end": 51.143
+        }
+      ]
+    },
+    {
+      "start": 51.724,
+      "end": 55.764,
+      "text": "Per evitare liste enormi si raggruppano gli utenti in gruppi e gerarchie di gruppi,",
+      "words": [
+        {
+          "text": "Per",
+          "start": 51.724,
+          "end": 51.824
+        },
+        {
+          "text": "evitare",
+          "start": 51.864,
+          "end": 52.224
+        },
+        {
+          "text": "liste",
+          "start": 52.284,
+          "end": 52.524
+        },
+        {
+          "text": "enormi",
+          "start": 52.564,
+          "end": 52.944
+        },
+        {
+          "text": "si",
+          "start": 53.144,
+          "end": 53.204
+        },
+        {
+          "text": "raggruppano",
+          "start": 53.264,
+          "end": 53.704
+        },
+        {
+          "text": "gli",
+          "start": 53.704,
+          "end": 53.804
+        },
+        {
+          "text": "utenti",
+          "start": 53.824,
+          "end": 54.144
+        },
+        {
+          "text": "in",
+          "start": 54.184,
+          "end": 54.244
+        },
+        {
+          "text": "gruppi",
+          "start": 54.304,
+          "end": 54.664
+        },
+        {
+          "text": "e",
+          "start": 54.784,
+          "end": 54.824
+        },
+        {
+          "text": "gerarchie",
+          "start": 54.884,
+          "end": 55.324
+        },
+        {
+          "text": "di",
+          "start": 55.344,
+          "end": 55.404
+        },
+        {
+          "text": "gruppi,",
+          "start": 55.444,
+          "end": 55.764
+        }
+      ]
+    },
+    {
+      "start": 56.144,
+      "end": 61.845,
+      "text": "appoggiandosi alle ACL del filesystem o del database e rispecchiando le norme legali di protezione",
+      "words": [
+        {
+          "text": "appoggiandosi",
+          "start": 56.144,
+          "end": 56.744
+        },
+        {
+          "text": "alle",
+          "start": 56.824,
+          "end": 56.964
+        },
+        {
+          "text": "ACL",
+          "start": 57.024,
+          "end": 57.404
+        },
+        {
+          "text": "del",
+          "start": 57.484,
+          "end": 57.604
+        },
+        {
+          "text": "filesystem",
+          "start": 57.644,
+          "end": 58.244
+        },
+        {
+          "text": "o",
+          "start": 58.384,
+          "end": 58.424
+        },
+        {
+          "text": "del",
+          "start": 58.464,
+          "end": 58.564
+        },
+        {
+          "text": "database",
+          "start": 58.604,
+          "end": 59.125
+        },
+        {
+          "text": "e",
+          "start": 59.525,
+          "end": 59.565
+        },
+        {
+          "text": "rispecchiando",
+          "start": 59.625,
+          "end": 60.225
+        },
+        {
+          "text": "le",
+          "start": 60.325,
+          "end": 60.385
+        },
+        {
+          "text": "norme",
+          "start": 60.425,
+          "end": 60.685
+        },
+        {
+          "text": "legali",
+          "start": 60.725,
+          "end": 61.065
+        },
+        {
+          "text": "di",
+          "start": 61.205,
+          "end": 61.265
+        },
+        {
+          "text": "protezione",
+          "start": 61.305,
+          "end": 61.845
+        }
+      ]
+    },
+    {
+      "start": 61.885,
+      "end": 62.285,
+      "text": "dei dati.",
+      "words": [
+        {
+          "text": "dei",
+          "start": 61.885,
+          "end": 61.985
+        },
+        {
+          "text": "dati.",
+          "start": 62.025,
+          "end": 62.285
+        }
+      ]
+    }
+  ]
+}

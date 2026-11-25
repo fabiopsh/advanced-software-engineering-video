@@ -1,0 +1,772 @@
+{
+  "lesson_id": "04-architettura",
+  "chapter": 4,
+  "part": "Parte II · Architettura del software",
+  "title": "Architettura del software",
+  "voice_config": {
+    "provider": "gemini",
+    "model": "gemini-3.8-flash-tts",
+    "voice_name": "Ludo",
+    "style": "chiaro, didattico, calmo e preciso, stile lezione universitaria di ingegneria del software"
+  },
+  "scenes": [
+    {
+      "id": "scene-01",
+      "section": "4.1 · Architettura e componenti",
+      "title": "Architettura software, componenti e fattori di scelta",
+      "tts_text": "Benvenuti al quarto capitolo, dedicato all'architettura del software. Per costruire un buon prodotto non basta curare le singole feature: occorre progettare l'organizzazione complessiva del sistema. [pause:0.5] Secondo la definizione I E E E, l'architettura software è l'organizzazione fondamentale di un sistema, incorporata nei suoi componenti, nelle loro relazioni reciproche e con l'ambiente, e nei principi che guidano il suo design e la sua evoluzione. [pause:0.5] Ma che cos'è un componente? È un elemento che implementa un insieme coerente di feature e offre una raccolta di servizi usabili da altri componenti. Come vedete nel diagramma, questi servizi possono essere invocati direttamente, oppure esposti esclusivamente attraverso l'API del componente, che ne incapsula i dettagli interni. [pause:0.6] Cinque fattori principali influenzano le scelte architetturali. Primo: le caratteristiche non funzionali, come sicurezza e prestazioni, spesso in contrasto tra loro. Secondo: la durata di vita prevista del prodotto, che richiede un'architettura pronta a evolvere. Terzo: la compatibilità con altro software e dati esistenti. Quarto: il numero di utenti, che su Internet può crescere o calare rapidamente imponendo scalabilità elastica. Quinto: il riuso di componenti esistenti o open source, che fa risparmiare tempo ma vincola il design.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">4.1 · Architettura e componenti</div>\n  <h2 class=\"slide-title\">Definizione IEEE, componenti con API e cinque fattori di scelta</h2>\n  <div id=\"s1\" class=\"split-visual cue-hidden\">\n    <div id=\"svg-comp\" class=\"svg-panel\">\n      <svg viewBox=\"0 0 360 185\" class=\"diagram-svg\" aria-label=\"Accesso diretto ai servizi vs API\">\n        <defs>\n          <marker id=\"arr-c4\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\">\n            <path d=\"M0 1 L9 5 L0 9 z\" fill=\"var(--ink-soft)\"/>\n          </marker>\n        </defs>\n        <g id=\"svg-direct\">\n          <text x=\"88\" y=\"16\" text-anchor=\"middle\" class=\"svg-caption\">Uso diretto dei servizi</text>\n          <line x1=\"46\" y1=\"28\" x2=\"46\" y2=\"90\" stroke=\"var(--ink-soft)\" stroke-width=\"1.5\" marker-end=\"url(#arr-c4)\"/>\n          <line x1=\"88\" y1=\"28\" x2=\"88\" y2=\"90\" stroke=\"var(--ink-soft)\" stroke-width=\"1.5\" marker-end=\"url(#arr-c4)\"/>\n          <line x1=\"130\" y1=\"28\" x2=\"130\" y2=\"90\" stroke=\"var(--ink-soft)\" stroke-width=\"1.5\" marker-end=\"url(#arr-c4)\"/>\n          <rect x=\"16\" y=\"96\" width=\"144\" height=\"60\" rx=\"8\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.6\"/>\n          <rect x=\"28\" y=\"110\" width=\"34\" height=\"32\" rx=\"4\" fill=\"var(--surface, #fff)\" stroke=\"var(--blue)\" stroke-width=\"1.2\"/>\n          <text x=\"45\" y=\"130\" text-anchor=\"middle\" class=\"svg-tick\">S1</text>\n          <rect x=\"71\" y=\"110\" width=\"34\" height=\"32\" rx=\"4\" fill=\"var(--surface, #fff)\" stroke=\"var(--blue)\" stroke-width=\"1.2\"/>\n          <text x=\"88\" y=\"130\" text-anchor=\"middle\" class=\"svg-tick\">S2</text>\n          <rect x=\"114\" y=\"110\" width=\"34\" height=\"32\" rx=\"4\" fill=\"var(--surface, #fff)\" stroke=\"var(--blue)\" stroke-width=\"1.2\"/>\n          <text x=\"131\" y=\"130\" text-anchor=\"middle\" class=\"svg-tick\">S3</text>\n          <text x=\"88\" y=\"174\" text-anchor=\"middle\" class=\"svg-math\">Component 1</text>\n        </g>\n        <g id=\"svg-api\">\n          <text x=\"272\" y=\"16\" text-anchor=\"middle\" class=\"svg-caption\">Uso tramite API</text>\n          <line x1=\"230\" y1=\"26\" x2=\"230\" y2=\"52\" stroke=\"var(--ink-soft)\" stroke-width=\"1.5\" marker-end=\"url(#arr-c4)\"/>\n          <line x1=\"272\" y1=\"26\" x2=\"272\" y2=\"52\" stroke=\"var(--ink-soft)\" stroke-width=\"1.5\" marker-end=\"url(#arr-c4)\"/>\n          <line x1=\"314\" y1=\"26\" x2=\"314\" y2=\"52\" stroke=\"var(--ink-soft)\" stroke-width=\"1.5\" marker-end=\"url(#arr-c4)\"/>\n          <rect x=\"200\" y=\"56\" width=\"144\" height=\"24\" rx=\"6\" fill=\"var(--green-soft, rgba(21,128,61,0.14))\" stroke=\"var(--green)\" stroke-width=\"1.6\"/>\n          <text x=\"272\" y=\"72\" text-anchor=\"middle\" class=\"svg-math\">API</text>\n          <line x1=\"230\" y1=\"80\" x2=\"230\" y2=\"106\" stroke=\"var(--green)\" stroke-width=\"1.4\" marker-end=\"url(#arr-c4)\"/>\n          <line x1=\"272\" y1=\"80\" x2=\"272\" y2=\"106\" stroke=\"var(--green)\" stroke-width=\"1.4\" marker-end=\"url(#arr-c4)\"/>\n          <line x1=\"314\" y1=\"80\" x2=\"314\" y2=\"106\" stroke=\"var(--green)\" stroke-width=\"1.4\" marker-end=\"url(#arr-c4)\"/>\n          <rect x=\"200\" y=\"96\" width=\"144\" height=\"60\" rx=\"8\" fill=\"none\" stroke=\"var(--green)\" stroke-width=\"1.6\"/>\n          <rect x=\"212\" y=\"110\" width=\"34\" height=\"32\" rx=\"4\" fill=\"var(--green-soft, rgba(21,128,61,0.1))\" stroke=\"var(--green)\" stroke-width=\"1.2\"/>\n          <text x=\"229\" y=\"130\" text-anchor=\"middle\" class=\"svg-tick\">S4</text>\n          <rect x=\"255\" y=\"110\" width=\"34\" height=\"32\" rx=\"4\" fill=\"var(--green-soft, rgba(21,128,61,0.1))\" stroke=\"var(--green)\" stroke-width=\"1.2\"/>\n          <text x=\"272\" y=\"130\" text-anchor=\"middle\" class=\"svg-tick\">S5</text>\n          <rect x=\"298\" y=\"110\" width=\"34\" height=\"32\" rx=\"4\" fill=\"var(--green-soft, rgba(21,128,61,0.1))\" stroke=\"var(--green)\" stroke-width=\"1.2\"/>\n          <text x=\"315\" y=\"130\" text-anchor=\"middle\" class=\"svg-tick\">S6</text>\n          <text x=\"272\" y=\"174\" text-anchor=\"middle\" class=\"svg-math\">Component 2</text>\n        </g>\n      </svg>\n    </div>\n    <div class=\"formula-col\">\n      <div id=\"b-ieee\" class=\"box box-def\">\n        <div class=\"box-label\">Software architecture (IEEE)</div>\n        <p>Organizzazione fondamentale di un sistema: <strong>componenti</strong>, relazioni reciproche e con l'ambiente, principi di <em>design</em> ed <em>evoluzione</em>.</p>\n      </div>\n      <div id=\"b-comp\" class=\"box box-primary\">\n        <div class=\"box-label\">Component e API</div>\n        <p>Elemento con insieme coerente di feature: espone <strong>servizi</strong> usati direttamente o incapsulati dietro un'<strong>API</strong>.</p>\n      </div>\n    </div>\n  </div>\n  <div id=\"s2\" class=\"box box-idea cue-hidden\">\n    <div class=\"box-label\">Cinque fattori che influenzano l'architettura</div>\n    <ul class=\"clean-list\">\n      <li id=\"f1\"><strong>Non-functional characteristics</strong>: attributi come sicurezza e prestazioni riguardano tutti; si ottimizza la più critica.</li>\n      <li id=\"f2\"><strong>Product lifetime</strong>: vita lunga richiede revisioni regolari ed evoluzione per nuove feature e tecnologie.</li>\n      <li id=\"f3\"><strong>Software compatibility</strong>: uso di dati da altri sistemi può vincolare scelte chiave (es. database).</li>\n      <li id=\"f4\"><strong>Number of users</strong>: su Internet la platea varia in fretta e impone scalabilità elastica in salita e discesa.</li>\n      <li id=\"f5\"><strong>Software reuse</strong>: riusare componenti o open source risparmia lavoro ma vincola il design.</li>\n    </ul>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 4.14,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "Per costruire un buon prodotto"
+        },
+        {
+          "at": 4.14,
+          "action": "highlight",
+          "target": "#s1",
+          "duration": 6.4,
+          "anchor": "Per costruire un buon prodotto"
+        },
+        {
+          "at": 11.8,
+          "action": "highlight",
+          "target": "#b-ieee",
+          "duration": 13,
+          "anchor": "Secondo la definizione I E E E"
+        },
+        {
+          "at": 26.58,
+          "action": "highlight",
+          "target": "#b-comp",
+          "duration": 9,
+          "anchor": "Ma che cos'è un componente"
+        },
+        {
+          "at": 36.22,
+          "action": "highlight",
+          "target": "#svg-direct",
+          "duration": 4.03,
+          "anchor": "questi servizi possono essere invocati"
+        },
+        {
+          "at": 40.37,
+          "action": "highlight",
+          "target": "#svg-api",
+          "duration": 6.2,
+          "anchor": "attraverso l'API del componente"
+        },
+        {
+          "at": 44.85,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Cinque fattori principali influenzano"
+        },
+        {
+          "at": 48.59,
+          "action": "highlight",
+          "target": "#f1",
+          "duration": 6.2,
+          "anchor": "Primo: le caratteristiche non funzionali"
+        },
+        {
+          "at": 54.91,
+          "action": "highlight",
+          "target": "#f2",
+          "duration": 5.38,
+          "anchor": "Secondo: la durata di vita"
+        },
+        {
+          "at": 60.41,
+          "action": "highlight",
+          "target": "#f3",
+          "duration": 3.7,
+          "anchor": "Terzo: la compatibilità con altro"
+        },
+        {
+          "at": 64.23,
+          "action": "highlight",
+          "target": "#f4",
+          "duration": 6.66,
+          "anchor": "Quarto: il numero di utenti"
+        },
+        {
+          "at": 71.01,
+          "action": "highlight",
+          "target": "#f5",
+          "duration": 7.5,
+          "anchor": "Quinto: il riuso di componenti"
+        }
+      ],
+      "audio_file": "audio/scene-01.wav",
+      "subtitle_file": "subtitles/scene-01.json",
+      "duration_sec": 76.99
+    },
+    {
+      "id": "scene-02",
+      "section": "4.2 · Attributi di qualità non funzionali",
+      "title": "Attributi non funzionali e compromessi di progetto",
+      "tts_text": "L'architettura influisce direttamente sugli attributi di qualità non funzionali del sistema. Questi attributi sono essenziali per il prodotto finale, mentre non rappresentano una priorità per il prototipo iniziale. [pause:0.5] Vediamoli tutti e sette attraverso la loro domanda chiave. La responsiveness verifica se il sistema restituisce i risultati in un tempo ragionevole. La reliability controlla che le feature si comportino come si aspettano sviluppatori e utenti. [pause:0.5] L'availability misura se i servizi sono disponibili quando richiesti. La security verifica la protezione del sistema e dei dati da attacchi e intrusioni non autorizzati. L'usability assicura che gli utenti accedano alle feature rapidamente e senza errori. [pause:0.5] La maintainability indica quanto sia facile aggiornare il software e aggiungere funzionalità a costi contenuti. Infine, la resilience è la capacità di continuare a erogare servizi anche durante un guasto parziale o un attacco esterno. [pause:0.6] Attenzione però ai compromessi: ottimizzare un attributo non funzionale incide sugli altri. Per esempio, rafforzare la sicurezza può penalizzare prestazioni e usabilità, mentre massimizzare la disponibilità entra in conflitto con time-to-market e semplicità.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">4.2 · Attributi di qualità non funzionali</div>\n  <h2 class=\"slide-title\">Sette attributi chiave e compromessi architetturali</h2>\n  <table id=\"s1\" class=\"acad-table cue-hidden\">\n    <thead>\n      <tr><th>Attributo</th><th>Domanda chiave associata</th></tr>\n    </thead>\n    <tbody>\n      <tr id=\"nf-1\"><td><strong>Responsiveness</strong></td><td>Il sistema restituisce i risultati agli utenti in un tempo ragionevole?</td></tr>\n      <tr id=\"nf-2\"><td><strong>Reliability</strong></td><td>Le feature si comportano come si aspettano sia gli sviluppatori sia gli utenti?</td></tr>\n      <tr id=\"nf-3\"><td><strong>Availability</strong></td><td>Il sistema fornisce i servizi quando gli utenti li richiedono?</td></tr>\n      <tr id=\"nf-4\"><td><strong>Security</strong></td><td>Il sistema protegge se stesso e i dati utente da attacchi e intrusioni non autorizzati?</td></tr>\n      <tr id=\"nf-5\"><td><strong>Usability</strong></td><td>Gli utenti accedono alle feature necessarie e le usano in fretta e senza errori?</td></tr>\n      <tr id=\"nf-6\"><td><strong>Maintainability</strong></td><td>Il sistema si può aggiornare facilmente aggiungendo feature senza costi eccessivi?</td></tr>\n      <tr id=\"nf-7\"><td><strong>Resilience</strong></td><td>Il sistema continua a fornire servizi in caso di guasto parziale o attacco esterno?</td></tr>\n    </tbody>\n  </table>\n  <div id=\"s2\" class=\"grid-2 cue-hidden\">\n    <div id=\"b-proto\" class=\"box box-def\">\n      <div class=\"box-label\">Prodotto finale vs Prototipo</div>\n      <p>Gli attributi non funzionali contano per il <strong>prodotto finale</strong>, non per il prototipo rapido iniziale.</p>\n    </div>\n    <div id=\"b-trade\" class=\"box box-warn\">\n      <div class=\"box-label\">Compromessi (Trade-off)</div>\n      <p>Ottimizzare un attributo influisce sugli altri: <strong>security</strong> contro prestazioni e usabilità; <strong>availability</strong> contro time-to-market e semplicità.</p>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 3,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "gli attributi di qualità"
+        },
+        {
+          "at": 6.46,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Questi attributi sono essenziali"
+        },
+        {
+          "at": 6.46,
+          "action": "highlight",
+          "target": "#b-proto",
+          "duration": 6.6,
+          "anchor": "Questi attributi sono essenziali"
+        },
+        {
+          "at": 17.8,
+          "action": "highlight",
+          "target": "#nf-1",
+          "duration": 4.89,
+          "anchor": "La responsiveness verifica"
+        },
+        {
+          "at": 23.54,
+          "action": "highlight",
+          "target": "#nf-2",
+          "duration": 5.24,
+          "anchor": "La reliability controlla"
+        },
+        {
+          "at": 29.42,
+          "action": "highlight",
+          "target": "#nf-3",
+          "duration": 4.5,
+          "anchor": "L'availability misura"
+        },
+        {
+          "at": 34.04,
+          "action": "highlight",
+          "target": "#nf-4",
+          "duration": 6.2,
+          "anchor": "La security verifica la protezione"
+        },
+        {
+          "at": 41.01,
+          "action": "highlight",
+          "target": "#nf-5",
+          "duration": 5.32,
+          "anchor": "L'usability assicura che gli utenti"
+        },
+        {
+          "at": 46.55,
+          "action": "highlight",
+          "target": "#nf-6",
+          "duration": 6.4,
+          "anchor": "La maintainability indica"
+        },
+        {
+          "at": 53.23,
+          "action": "highlight",
+          "target": "#nf-7",
+          "duration": 7,
+          "anchor": "Infine, la resilience"
+        },
+        {
+          "at": 61.15,
+          "action": "highlight",
+          "target": "#b-trade",
+          "duration": 15,
+          "anchor": "Attenzione però ai compromessi"
+        }
+      ],
+      "audio_file": "audio/scene-02.wav",
+      "subtitle_file": "subtitles/scene-02.json",
+      "duration_sec": 75.94
+    },
+    {
+      "id": "scene-03",
+      "section": "4.3 · Decomposizione del sistema",
+      "title": "Viste architetturali, relazioni e controllo della complessità",
+      "tts_text": "Per progettare l'architettura osserviamo il sistema secondo due viste complementari: la vista logica di decomposizione e la vista di distribuzione sui server. Cominciamo dalla decomposizione logica, basata su tre concetti gerarchici. [pause:0.5] Un service è un'unità coerente di funzionalità; un component è un'unità software che offre uno o più servizi; un module è un insieme di componenti. [pause:0.5] Tra due componenti possono esistere quattro relazioni fondamentali: is-part-of, quando un componente è contenuto in un altro; uses, quando uno invoca l'altro; is-located-with, quando risiedono insieme; e shares-data-with, quando condividono gli stessi dati. [pause:0.6] C'è però una trappola strutturale: man mano che cresce il numero di componenti, il numero di relazioni tra essi cresce molto più in fretta, facendo esplodere la complessità. Come ricorda il manifesto agile, la semplicità è essenziale. [pause:0.5] Per governare la complessità seguiamo tre linee guida. Prima: separation of concerns, dedicando ciascun componente a una sola responsabilità. Seconda: stable interfaces, progettando interfacce coerenti che cambiano lentamente. Terza: implement once, evitando di duplicare la stessa funzione in punti diversi.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">4.3 · Decomposizione del sistema</div>\n  <h2 class=\"slide-title\">Gerarchia logica, relazioni tra componenti e linee guida</h2>\n  <div id=\"s1\" class=\"svg-panel cue-hidden\">\n    <svg viewBox=\"0 0 640 155\" class=\"diagram-svg\" aria-label=\"Quattro relazioni tra componenti\">\n      <defs>\n        <marker id=\"arr-rel\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\">\n          <path d=\"M0 1 L9 5 L0 9 z\" fill=\"var(--ink-soft)\"/>\n        </marker>\n        <marker id=\"arr-rel-bi\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n          <path d=\"M0 1 L9 5 L0 9 z\" fill=\"var(--green)\"/>\n        </marker>\n      </defs>\n      <g id=\"rel-part\">\n        <rect x=\"24\" y=\"20\" width=\"118\" height=\"86\" rx=\"8\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.6\"/>\n        <text x=\"46\" y=\"42\" class=\"svg-math\">C2</text>\n        <rect x=\"64\" y=\"52\" width=\"58\" height=\"38\" rx=\"5\" fill=\"var(--surface, #fff)\" stroke=\"var(--blue)\" stroke-width=\"1.4\"/>\n        <text x=\"93\" y=\"76\" text-anchor=\"middle\" class=\"svg-math\">C1</text>\n        <text x=\"83\" y=\"132\" text-anchor=\"middle\" class=\"svg-caption\">C1 is-part-of C2</text>\n      </g>\n      <g id=\"rel-uses\">\n        <rect x=\"210\" y=\"20\" width=\"64\" height=\"30\" rx=\"5\" fill=\"var(--orange-soft, rgba(217,119,6,0.12))\" stroke=\"var(--orange)\" stroke-width=\"1.5\"/>\n        <text x=\"242\" y=\"39\" text-anchor=\"middle\" class=\"svg-math\">C1</text>\n        <line x1=\"242\" y1=\"50\" x2=\"242\" y2=\"74\" stroke=\"var(--ink-soft)\" stroke-width=\"1.6\" marker-end=\"url(#arr-rel)\"/>\n        <text x=\"254\" y=\"66\" class=\"svg-tick\">calls</text>\n        <rect x=\"210\" y=\"78\" width=\"64\" height=\"30\" rx=\"5\" fill=\"var(--orange-soft, rgba(217,119,6,0.12))\" stroke=\"var(--orange)\" stroke-width=\"1.5\"/>\n        <text x=\"242\" y=\"97\" text-anchor=\"middle\" class=\"svg-math\">C2</text>\n        <text x=\"242\" y=\"132\" text-anchor=\"middle\" class=\"svg-caption\">C1 uses C2</text>\n      </g>\n      <g id=\"rel-loc\">\n        <rect x=\"326\" y=\"30\" width=\"128\" height=\"64\" rx=\"8\" fill=\"none\" stroke=\"var(--muted)\" stroke-width=\"1.6\" stroke-dasharray=\"5 3\"/>\n        <rect x=\"338\" y=\"44\" width=\"46\" height=\"36\" rx=\"5\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.4\"/>\n        <text x=\"361\" y=\"66\" text-anchor=\"middle\" class=\"svg-math\">C1</text>\n        <rect x=\"396\" y=\"44\" width=\"46\" height=\"36\" rx=\"5\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.4\"/>\n        <text x=\"419\" y=\"66\" text-anchor=\"middle\" class=\"svg-math\">C2</text>\n        <text x=\"390\" y=\"132\" text-anchor=\"middle\" class=\"svg-caption\">C1 is-located-with C2</text>\n      </g>\n      <g id=\"rel-data\">\n        <rect x=\"482\" y=\"44\" width=\"38\" height=\"36\" rx=\"5\" fill=\"var(--green-soft, rgba(21,128,61,0.12))\" stroke=\"var(--green)\" stroke-width=\"1.4\"/>\n        <text x=\"501\" y=\"66\" text-anchor=\"middle\" class=\"svg-math\">C1</text>\n        <line x1=\"522\" y1=\"62\" x2=\"538\" y2=\"62\" stroke=\"var(--green)\" stroke-width=\"1.5\" marker-start=\"url(#arr-rel-bi)\" marker-end=\"url(#arr-rel-bi)\"/>\n        <rect x=\"540\" y=\"44\" width=\"40\" height=\"36\" rx=\"5\" fill=\"none\" stroke=\"var(--green)\" stroke-width=\"1.5\"/>\n        <text x=\"560\" y=\"66\" text-anchor=\"middle\" class=\"svg-tick\">data</text>\n        <line x1=\"582\" y1=\"62\" x2=\"598\" y2=\"62\" stroke=\"var(--green)\" stroke-width=\"1.5\" marker-start=\"url(#arr-rel-bi)\" marker-end=\"url(#arr-rel-bi)\"/>\n        <rect x=\"600\" y=\"44\" width=\"34\" height=\"36\" rx=\"5\" fill=\"var(--green-soft, rgba(21,128,61,0.12))\" stroke=\"var(--green)\" stroke-width=\"1.4\"/>\n        <text x=\"617\" y=\"66\" text-anchor=\"middle\" class=\"svg-math\">C2</text>\n        <text x=\"560\" y=\"132\" text-anchor=\"middle\" class=\"svg-caption\">C1 shares-data-with C2</text>\n      </g>\n    </svg>\n  </div>\n  <div id=\"s2\" class=\"grid-2 cue-hidden\">\n    <div id=\"b-hier\" class=\"box box-def\">\n      <div class=\"box-label\">Vista logica &amp; Complessità</div>\n      <ul class=\"clean-list\">\n        <li id=\"d-ser\"><strong>Service</strong>: unità coerente di funzionalità.</li>\n        <li id=\"d-com\"><strong>Component</strong>: unità software che offre uno o più servizi.</li>\n        <li id=\"d-mod\"><strong>Module</strong>: insieme di componenti.</li>\n        <li id=\"d-cx\"><em>Complessità</em>: le relazioni crescono più in fretta dei componenti (semplicità agile).</li>\n      </ul>\n    </div>\n    <div id=\"b-guide\" class=\"box box-algo\">\n      <div class=\"box-label\">Tre linee guida per governare la complessità</div>\n      <ul class=\"clean-list\">\n        <li id=\"g-soc\"><strong>Separation of concerns</strong>: ciascun componente si concentra su una sola preoccupazione.</li>\n        <li id=\"g-int\"><strong>Stable interfaces</strong>: interfacce coerenti che cambiano lentamente.</li>\n        <li id=\"g-one\"><strong>Implement once</strong>: evitare di duplicare la stessa funzionalità in più punti.</li>\n      </ul>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 1.94,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "osserviamo il sistema secondo due"
+        },
+        {
+          "at": 1.94,
+          "action": "highlight",
+          "target": "#b-hier",
+          "duration": 7.4,
+          "anchor": "osserviamo il sistema secondo due"
+        },
+        {
+          "at": 16.48,
+          "action": "highlight",
+          "target": "#d-ser",
+          "duration": 3.36,
+          "anchor": "Un service è un'unità"
+        },
+        {
+          "at": 19.96,
+          "action": "highlight",
+          "target": "#d-com",
+          "duration": 3.5,
+          "anchor": "un component è un'unità"
+        },
+        {
+          "at": 24.26,
+          "action": "highlight",
+          "target": "#d-mod",
+          "duration": 3.2,
+          "anchor": "un module è un insieme"
+        },
+        {
+          "at": 27.68,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "Tra due componenti possono esistere"
+        },
+        {
+          "at": 31.56,
+          "action": "highlight",
+          "target": "#rel-part",
+          "duration": 3.76,
+          "anchor": "is-part-of, quando un componente"
+        },
+        {
+          "at": 35.44,
+          "action": "highlight",
+          "target": "#rel-uses",
+          "duration": 2.4,
+          "anchor": "uses, quando uno invoca"
+        },
+        {
+          "at": 37.96,
+          "action": "highlight",
+          "target": "#rel-loc",
+          "duration": 2.84,
+          "anchor": "is-located-with, quando risiedono"
+        },
+        {
+          "at": 40.92,
+          "action": "highlight",
+          "target": "#rel-data",
+          "duration": 4.2,
+          "anchor": "e shares-data-with, quando condividono"
+        },
+        {
+          "at": 45.34,
+          "action": "highlight",
+          "target": "#d-cx",
+          "duration": 13.5,
+          "anchor": "C'è però una trappola strutturale"
+        },
+        {
+          "at": 63.56,
+          "action": "highlight",
+          "target": "#g-soc",
+          "duration": 5.51,
+          "anchor": "Prima: separation of concerns"
+        },
+        {
+          "at": 69.19,
+          "action": "highlight",
+          "target": "#g-int",
+          "duration": 5.46,
+          "anchor": "Seconda: stable interfaces"
+        },
+        {
+          "at": 74.77,
+          "action": "highlight",
+          "target": "#g-one",
+          "duration": 7,
+          "anchor": "Terza: implement once"
+        }
+      ],
+      "audio_file": "audio/scene-03.wav",
+      "subtitle_file": "subtitles/scene-03.json",
+      "duration_sec": 80.24
+    },
+    {
+      "id": "scene-04",
+      "section": "4.4 · Architetture a strati",
+      "title": "Architettura a strati, cross-cutting concerns e sicurezza",
+      "tts_text": "Un modello fondamentale di decomposizione è l'architettura a strati, o layered architecture. Qui ogni strato rappresenta una distinta area di interesse, i componenti dentro uno strato sono indipendenti senza sovrapporsi, e il modello resta ad alto livello senza dettagli di implementazione. [pause:0.5] Nella pratica, le preoccupazioni non sono mai separate al cento per cento. In un sistema di recupero documenti, ad esempio, la validazione compare in due strati diversi: come validazione locale dell'input nel browser e come validazione delle query nei servizi di base. [pause:0.5] Per un'applicazione web generica identifichiamo cinque strati tipici: interfaccia browser o mobile, autenticazione e gestione UI, funzionalità applicative specifiche, servizi condivisi di base, e gestione di database e transazioni. Questa decomposizione va definita insieme alle scelte tecnologiche, perché un database relazionale o un'app mobile condizionano gli strati superiori. [pause:0.6] Esistono poi preoccupazioni trasversali, le cross-cutting concerns: sicurezza, prestazioni e affidabilità attraversano tutti gli strati aggiungendo interazioni tra essi. Nella sicurezza, ad esempio, ogni livello va protetto singolarmente: affidarsi a un solo componente di sicurezza crea una vulnerabilità critica se questo viene compromesso.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">4.4 · Architetture a strati</div>\n  <h2 class=\"slide-title\">Strati generici web, cross-cutting concerns e sicurezza</h2>\n  <div id=\"s1\" class=\"split-visual cue-hidden\">\n    <div id=\"svg-layered\" class=\"svg-panel\">\n      <svg viewBox=\"0 0 360 215\" class=\"diagram-svg\" aria-label=\"Architettura a strati e preoccupazioni trasversali\">\n        <defs>\n          <marker id=\"arr-cc\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\">\n            <path d=\"M0 1 L9 5 L0 9 z\" fill=\"var(--red)\"/>\n          </marker>\n        </defs>\n        <g id=\"svg-layers\">\n          <rect x=\"10\" y=\"30\" width=\"210\" height=\"28\" rx=\"5\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.4\"/>\n          <text x=\"18\" y=\"48\" class=\"svg-tick\">1. Browser / Mobile UI</text>\n          <rect x=\"10\" y=\"66\" width=\"210\" height=\"28\" rx=\"5\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.4\"/>\n          <text x=\"18\" y=\"84\" class=\"svg-tick\">2. Auth &amp; UI management</text>\n          <rect x=\"10\" y=\"102\" width=\"210\" height=\"28\" rx=\"5\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.4\"/>\n          <text x=\"18\" y=\"120\" class=\"svg-tick\">3. Application functionality</text>\n          <rect x=\"10\" y=\"138\" width=\"210\" height=\"28\" rx=\"5\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.4\"/>\n          <text x=\"18\" y=\"156\" class=\"svg-tick\">4. Basic shared services</text>\n          <rect x=\"10\" y=\"174\" width=\"210\" height=\"28\" rx=\"5\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.4\"/>\n          <text x=\"18\" y=\"192\" class=\"svg-tick\">5. Database &amp; transactions</text>\n        </g>\n        <g id=\"svg-cross\">\n          <line x1=\"244\" y1=\"24\" x2=\"244\" y2=\"206\" stroke=\"var(--red)\" stroke-width=\"2.2\" marker-end=\"url(#arr-cc)\"/>\n          <text x=\"244\" y=\"16\" text-anchor=\"middle\" class=\"svg-caption\">Security</text>\n          <line x1=\"288\" y1=\"24\" x2=\"288\" y2=\"206\" stroke=\"var(--orange)\" stroke-width=\"2.2\" marker-end=\"url(#arr-cc)\"/>\n          <text x=\"288\" y=\"16\" text-anchor=\"middle\" class=\"svg-caption\">Perf.</text>\n          <line x1=\"332\" y1=\"24\" x2=\"332\" y2=\"206\" stroke=\"var(--green)\" stroke-width=\"2.2\" marker-end=\"url(#arr-cc)\"/>\n          <text x=\"332\" y=\"16\" text-anchor=\"middle\" class=\"svg-caption\">Reliab.</text>\n        </g>\n      </svg>\n    </div>\n    <div class=\"formula-col\">\n      <div id=\"b-layer\" class=\"box box-def\">\n        <div class=\"box-label\">Architettura a strati (Layered)</div>\n        <ul class=\"clean-list\">\n          <li id=\"l-1\">Ogni strato isola una <em>concern</em> con componenti indipendenti e modello di alto livello.</li>\n          <li id=\"l-2\">Separazione non pura al 100%: nel recupero documenti la <strong>validazione</strong> è sia nel browser sia nei servizi di base.</li>\n          <li id=\"l-3\">Strati web personalizzati insieme alle <strong>scelte tecnologiche</strong> (es. DB relazionale o toolkit mobile).</li>\n        </ul>\n      </div>\n      <div id=\"b-cross\" class=\"box box-warn\">\n        <div class=\"box-label\">Cross-cutting concerns &amp; Security architecture</div>\n        <p id=\"c-1\"><strong>Security, performance e reliability</strong> attraversano tutti gli strati aggiungendo interazioni trasversali.</p>\n        <p id=\"c-2\">Proteggere ogni strato anche da attacchi già riusciti sopra; evitare un solo componente di sicurezza (<em>single point of failure</em>).</p>\n      </div>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 3.17,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "l'architettura a strati"
+        },
+        {
+          "at": 6.43,
+          "action": "highlight",
+          "target": "#l-1",
+          "duration": 11.5,
+          "anchor": "Qui ogni strato rappresenta"
+        },
+        {
+          "at": 18.69,
+          "action": "highlight",
+          "target": "#l-2",
+          "duration": 13.5,
+          "anchor": "Nella pratica, le preoccupazioni"
+        },
+        {
+          "at": 33.97,
+          "action": "highlight",
+          "target": "#svg-layers",
+          "duration": 12,
+          "anchor": "Per un'applicazione web generica"
+        },
+        {
+          "at": 47.13,
+          "action": "highlight",
+          "target": "#l-3",
+          "duration": 8.08,
+          "anchor": "Questa decomposizione va definita"
+        },
+        {
+          "at": 55.33,
+          "action": "highlight",
+          "target": "#svg-cross",
+          "duration": 8,
+          "anchor": "Esistono poi preoccupazioni trasversali"
+        },
+        {
+          "at": 64.75,
+          "action": "highlight",
+          "target": "#c-2",
+          "duration": 14,
+          "anchor": "Nella sicurezza, ad esempio"
+        }
+      ],
+      "audio_file": "audio/scene-04.wav",
+      "subtitle_file": "subtitles/scene-04.json",
+      "duration_sec": 73.13
+    },
+    {
+      "id": "scene-05",
+      "section": "4.5 · Distribuzione: Client-Server e MVC",
+      "title": "Client-server, load balancing e pattern Model-View-Controller",
+      "tts_text": "Passiamo ora dalla decomposizione logica all'architettura di distribuzione, che definisce quali server esistono e come vi sono assegnati i componenti. [pause:0.5] Il modello base è l'architettura client-server, ideale quando più client accedono a un database condiviso e alle operazioni di logica di business su quei dati. I client comunicano tipicamente via HTTP con dati in XML o JSON, passando attraverso un load balancer che distribuisce il carico tra più server web e database. [pause:0.6] Per organizzare l'interazione client-server si usa spesso il pattern Model-View-Controller, o MVC. Il Model risiede sul server ed è disaccoppiato dalla sua presentazione; sul client il Browser invia l'input dell'utente al Controller, che richiede un aggiornamento al Model. [pause:0.5] Ogni View si registra presso il Model: appena lo stato cambia, il Model invia una notifica di aggiornamento a tutte le viste registrate, secondo un meccanismo guidato dagli eventi. [pause:0.5] Pensate a un negozio online: il Model contiene il carrello, mentre la pagina e l'icona del carrello sono due View. Aggiungendo un articolo si aggiornano entrambe, e potremo aggiungere un'app mobile senza modificare il Model.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">4.5 · Distribuzione: Client-Server e MVC</div>\n  <h2 class=\"slide-title\">Architettura Client-Server e pattern Model-View-Controller</h2>\n  <div id=\"s1\" class=\"svg-panel cue-hidden\">\n    <svg viewBox=\"0 0 640 185\" class=\"diagram-svg\" aria-label=\"Client-Server con Load Balancer e pattern MVC\">\n      <defs>\n        <marker id=\"arr-d5\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\">\n          <path d=\"M0 1 L9 5 L0 9 z\" fill=\"var(--ink-soft)\"/>\n        </marker>\n        <marker id=\"arr-d5-bi\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n          <path d=\"M0 1 L9 5 L0 9 z\" fill=\"var(--blue)\"/>\n        </marker>\n      </defs>\n      <line x1=\"305\" y1=\"10\" x2=\"305\" y2=\"175\" stroke=\"var(--muted)\" stroke-width=\"1\" stroke-dasharray=\"4 4\" opacity=\"0.55\"/>\n      <g id=\"svg-cs\">\n        <text x=\"148\" y=\"16\" text-anchor=\"middle\" class=\"svg-math\">Client-Server</text>\n        <ellipse cx=\"48\" cy=\"48\" rx=\"34\" ry=\"14\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.4\"/>\n        <text x=\"48\" y=\"52\" text-anchor=\"middle\" class=\"svg-tick\">Client 1</text>\n        <ellipse cx=\"48\" cy=\"92\" rx=\"34\" ry=\"14\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.4\"/>\n        <text x=\"48\" y=\"96\" text-anchor=\"middle\" class=\"svg-tick\">Client 2</text>\n        <ellipse cx=\"48\" cy=\"136\" rx=\"34\" ry=\"14\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.4\"/>\n        <text x=\"48\" y=\"140\" text-anchor=\"middle\" class=\"svg-tick\">Client ...</text>\n        <line x1=\"84\" y1=\"48\" x2=\"128\" y2=\"48\" stroke=\"var(--blue)\" stroke-width=\"1.4\" marker-start=\"url(#arr-d5-bi)\" marker-end=\"url(#arr-d5-bi)\"/>\n        <line x1=\"84\" y1=\"92\" x2=\"128\" y2=\"92\" stroke=\"var(--blue)\" stroke-width=\"1.4\" marker-start=\"url(#arr-d5-bi)\" marker-end=\"url(#arr-d5-bi)\"/>\n        <line x1=\"84\" y1=\"136\" x2=\"128\" y2=\"136\" stroke=\"var(--blue)\" stroke-width=\"1.4\" marker-start=\"url(#arr-d5-bi)\" marker-end=\"url(#arr-d5-bi)\"/>\n        <rect x=\"132\" y=\"32\" width=\"24\" height=\"120\" rx=\"5\" fill=\"var(--orange-soft, rgba(217,119,6,0.14))\" stroke=\"var(--orange)\" stroke-width=\"1.5\"/>\n        <text x=\"144\" y=\"168\" text-anchor=\"middle\" class=\"svg-caption\">Load balancer</text>\n        <line x1=\"158\" y1=\"92\" x2=\"198\" y2=\"92\" stroke=\"var(--blue)\" stroke-width=\"1.6\" marker-start=\"url(#arr-d5-bi)\" marker-end=\"url(#arr-d5-bi)\"/>\n        <rect x=\"202\" y=\"52\" width=\"88\" height=\"80\" rx=\"8\" fill=\"var(--green-soft, rgba(21,128,61,0.1))\" stroke=\"var(--green)\" stroke-width=\"1.5\"/>\n        <rect x=\"214\" y=\"66\" width=\"24\" height=\"20\" rx=\"3\" fill=\"var(--surface, #fff)\" stroke=\"var(--green)\" stroke-width=\"1.2\"/>\n        <rect x=\"250\" y=\"66\" width=\"24\" height=\"20\" rx=\"3\" fill=\"var(--surface, #fff)\" stroke=\"var(--green)\" stroke-width=\"1.2\"/>\n        <rect x=\"214\" y=\"96\" width=\"24\" height=\"20\" rx=\"3\" fill=\"var(--surface, #fff)\" stroke=\"var(--green)\" stroke-width=\"1.2\"/>\n        <rect x=\"250\" y=\"96\" width=\"24\" height=\"20\" rx=\"3\" fill=\"var(--surface, #fff)\" stroke=\"var(--green)\" stroke-width=\"1.2\"/>\n        <text x=\"246\" y=\"152\" text-anchor=\"middle\" class=\"svg-caption\">Servers (Web / DB)</text>\n      </g>\n      <g id=\"svg-mvc\">\n        <text x=\"475\" y=\"16\" text-anchor=\"middle\" class=\"svg-math\">Pattern MVC</text>\n        <rect x=\"325\" y=\"24\" width=\"300\" height=\"96\" rx=\"8\" fill=\"none\" stroke=\"var(--muted)\" stroke-width=\"1.3\"/>\n        <text x=\"334\" y=\"38\" class=\"svg-caption\">CLIENT</text>\n        <ellipse cx=\"475\" cy=\"44\" rx=\"42\" ry=\"14\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.4\"/>\n        <text x=\"475\" y=\"48\" text-anchor=\"middle\" class=\"svg-tick\">Browser</text>\n        <ellipse cx=\"385\" cy=\"94\" rx=\"46\" ry=\"15\" fill=\"var(--orange-soft, rgba(217,119,6,0.12))\" stroke=\"var(--orange)\" stroke-width=\"1.4\"/>\n        <text x=\"385\" y=\"98\" text-anchor=\"middle\" class=\"svg-tick\">Controller</text>\n        <ellipse cx=\"565\" cy=\"94\" rx=\"40\" ry=\"15\" fill=\"var(--green-soft, rgba(21,128,61,0.12))\" stroke=\"var(--green)\" stroke-width=\"1.4\"/>\n        <text x=\"565\" y=\"98\" text-anchor=\"middle\" class=\"svg-tick\">View</text>\n        <line x1=\"444\" y1=\"54\" x2=\"404\" y2=\"78\" stroke=\"var(--ink-soft)\" stroke-width=\"1.4\" marker-end=\"url(#arr-d5)\"/>\n        <line x1=\"544\" y1=\"80\" x2=\"506\" y2=\"54\" stroke=\"var(--ink-soft)\" stroke-width=\"1.4\" marker-end=\"url(#arr-d5)\"/>\n        <line x1=\"522\" y1=\"94\" x2=\"434\" y2=\"94\" stroke=\"var(--ink-soft)\" stroke-width=\"1.4\" marker-end=\"url(#arr-d5)\"/>\n        <rect x=\"410\" y=\"132\" width=\"130\" height=\"44\" rx=\"8\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.5\"/>\n        <text x=\"420\" y=\"146\" class=\"svg-caption\">SERVER</text>\n        <text x=\"475\" y=\"164\" text-anchor=\"middle\" class=\"svg-math\">Model</text>\n        <line x1=\"395\" y1=\"110\" x2=\"428\" y2=\"134\" stroke=\"var(--ink-soft)\" stroke-width=\"1.4\" marker-end=\"url(#arr-d5)\"/>\n        <line x1=\"522\" y1=\"134\" x2=\"555\" y2=\"110\" stroke=\"var(--green)\" stroke-width=\"1.6\" marker-end=\"url(#arr-d5)\"/>\n      </g>\n    </svg>\n  </div>\n  <div id=\"s2\" class=\"grid-2 cue-hidden\">\n    <div id=\"b-cs\" class=\"box box-def\">\n      <div class=\"box-label\">Client-server e HTTP</div>\n      <p id=\"cs-p1\">Definisce server e assegnazione dei componenti. I client usano logica e DB condivisi via <strong>HTTP</strong> (XML o JSON) tramite <strong>load balancer</strong>.</p>\n    </div>\n    <div id=\"b-mvc\" class=\"box box-idea\">\n      <div class=\"box-label\">Pattern MVC e negozio online</div>\n      <p id=\"mvc-p1\"><strong>Model</strong> sul server disaccoppiato dalla presentazione; ogni <strong>View</strong> si registra per ricevere notifiche di cambiamento.</p>\n      <p id=\"mvc-p2\"><em>Esempio carrello</em>: pagina e icona si aggiornano insieme; si aggiunge un'app mobile senza toccare il Model.</p>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 0.72,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "dalla decomposizione logica"
+        },
+        {
+          "at": 0.72,
+          "action": "highlight",
+          "target": "#s1",
+          "duration": 7.2,
+          "anchor": "dalla decomposizione logica"
+        },
+        {
+          "at": 10.48,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Il modello base è"
+        },
+        {
+          "at": 10.48,
+          "action": "highlight",
+          "target": "#svg-cs",
+          "duration": 9.5,
+          "anchor": "Il modello base è"
+        },
+        {
+          "at": 20.1,
+          "action": "highlight",
+          "target": "#b-cs",
+          "duration": 10.2,
+          "anchor": "I client comunicano tipicamente"
+        },
+        {
+          "at": 31.82,
+          "action": "highlight",
+          "target": "#svg-mvc",
+          "duration": 15,
+          "anchor": "Per organizzare l'interazione client-server"
+        },
+        {
+          "at": 49.95,
+          "action": "highlight",
+          "target": "#mvc-p1",
+          "duration": 10.42,
+          "anchor": "Ogni View si registra"
+        },
+        {
+          "at": 60.49,
+          "action": "highlight",
+          "target": "#mvc-p2",
+          "duration": 15,
+          "anchor": "Pensate a un negozio online"
+        }
+      ],
+      "audio_file": "audio/scene-05.wav",
+      "subtitle_file": "subtitles/scene-05.json",
+      "duration_sec": 73.4
+    },
+    {
+      "id": "scene-06",
+      "section": "4.5 · Multi-tier, SOA e criteri di scelta",
+      "title": "Multi-tier, Service-Oriented Architecture e scelta della distribuzione",
+      "tts_text": "La comunicazione client-server si concretizza in due varianti principali. La prima è l'architettura multi-tier: i client dialogano con un web server, che interroga un application server, il quale a sua volta accede al database server. [pause:0.5] La seconda variante è la Service-Oriented Architecture, o SOA: qui il web server comunica con un service gateway che dà accesso a un insieme di servizi indipendenti e disaccoppiati, da s1 a s6, coordinabili anche in modo asincrono o guidato dagli eventi. [pause:0.6] Come scegliere tra multi-tier e SOA? Valutiamo tre criteri chiave. Primo, tipo di dati e aggiornamenti: se i dati sono strutturati e aggiornati da feature diverse, un unico database condiviso semplifica locking e transazioni; distribuire i dati tra più servizi introduce invece overhead di coerenza. [pause:0.5] Secondo, frequenza di cambiamento: se prevediamo di cambiare o sostituire spesso certi componenti, isolarli in servizi separati riduce l'impatto delle modifiche. [pause:0.5] Terzo, piattaforma di esecuzione: per sistemi cloud esposti su Internet conviene la SOA per scalare facilmente; per sistemi aziendali su server locali è spesso preferibile un'architettura multi-tier.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">4.5 · Multi-tier, SOA e criteri di scelta</div>\n  <h2 class=\"slide-title\">Multi-tier contro Service-Oriented Architecture (SOA)</h2>\n  <div id=\"s1\" class=\"split-visual cue-hidden\">\n    <div id=\"svg-dist\" class=\"svg-panel\">\n      <svg viewBox=\"0 0 360 190\" class=\"diagram-svg\" aria-label=\"Multi-tier contro SOA\">\n        <defs>\n          <marker id=\"arr-t6\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"5\" markerHeight=\"5\" orient=\"auto-start-reverse\">\n            <path d=\"M0 1 L9 5 L0 9 z\" fill=\"var(--ink-soft)\"/>\n          </marker>\n        </defs>\n        <g id=\"svg-tier\">\n          <text x=\"10\" y=\"16\" class=\"svg-math\">Multi-tier</text>\n          <ellipse cx=\"34\" cy=\"42\" rx=\"24\" ry=\"12\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.3\"/>\n          <text x=\"34\" y=\"46\" text-anchor=\"middle\" class=\"svg-tick\">Client</text>\n          <line x1=\"60\" y1=\"42\" x2=\"82\" y2=\"42\" stroke=\"var(--ink-soft)\" stroke-width=\"1.4\" marker-start=\"url(#arr-t6)\" marker-end=\"url(#arr-t6)\"/>\n          <rect x=\"84\" y=\"26\" width=\"68\" height=\"32\" rx=\"5\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.4\"/>\n          <text x=\"118\" y=\"46\" text-anchor=\"middle\" class=\"svg-tick\">Web srv</text>\n          <line x1=\"154\" y1=\"42\" x2=\"176\" y2=\"42\" stroke=\"var(--ink-soft)\" stroke-width=\"1.4\" marker-start=\"url(#arr-t6)\" marker-end=\"url(#arr-t6)\"/>\n          <rect x=\"178\" y=\"26\" width=\"72\" height=\"32\" rx=\"5\" fill=\"var(--orange-soft, rgba(217,119,6,0.12))\" stroke=\"var(--orange)\" stroke-width=\"1.4\"/>\n          <text x=\"214\" y=\"46\" text-anchor=\"middle\" class=\"svg-tick\">App srv</text>\n          <line x1=\"252\" y1=\"42\" x2=\"274\" y2=\"42\" stroke=\"var(--ink-soft)\" stroke-width=\"1.4\" marker-start=\"url(#arr-t6)\" marker-end=\"url(#arr-t6)\"/>\n          <rect x=\"276\" y=\"26\" width=\"72\" height=\"32\" rx=\"5\" fill=\"var(--green-soft, rgba(21,128,61,0.12))\" stroke=\"var(--green)\" stroke-width=\"1.4\"/>\n          <text x=\"312\" y=\"46\" text-anchor=\"middle\" class=\"svg-tick\">DB srv</text>\n        </g>\n        <line x1=\"10\" y1=\"74\" x2=\"350\" y2=\"74\" stroke=\"var(--muted)\" stroke-width=\"1\" stroke-dasharray=\"4 4\" opacity=\"0.55\"/>\n        <g id=\"svg-soa\">\n          <text x=\"10\" y=\"92\" class=\"svg-math\">Service-Oriented (SOA)</text>\n          <ellipse cx=\"34\" cy=\"136\" rx=\"24\" ry=\"12\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.3\"/>\n          <text x=\"34\" y=\"140\" text-anchor=\"middle\" class=\"svg-tick\">Client</text>\n          <line x1=\"60\" y1=\"136\" x2=\"82\" y2=\"136\" stroke=\"var(--ink-soft)\" stroke-width=\"1.4\" marker-start=\"url(#arr-t6)\" marker-end=\"url(#arr-t6)\"/>\n          <rect x=\"84\" y=\"120\" width=\"68\" height=\"32\" rx=\"5\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.4\"/>\n          <text x=\"118\" y=\"140\" text-anchor=\"middle\" class=\"svg-tick\">Web srv</text>\n          <line x1=\"154\" y1=\"136\" x2=\"178\" y2=\"136\" stroke=\"var(--ink-soft)\" stroke-width=\"1.4\" marker-start=\"url(#arr-t6)\" marker-end=\"url(#arr-t6)\"/>\n          <rect x=\"180\" y=\"116\" width=\"78\" height=\"40\" rx=\"5\" fill=\"var(--green-soft, rgba(21,128,61,0.14))\" stroke=\"var(--green)\" stroke-width=\"1.5\"/>\n          <text x=\"219\" y=\"134\" text-anchor=\"middle\" class=\"svg-tick\">Service</text>\n          <text x=\"219\" y=\"147\" text-anchor=\"middle\" class=\"svg-tick\">gateway</text>\n          <line x1=\"260\" y1=\"124\" x2=\"294\" y2=\"98\" stroke=\"var(--green)\" stroke-width=\"1.2\" marker-end=\"url(#arr-t6)\"/>\n          <line x1=\"260\" y1=\"132\" x2=\"294\" y2=\"122\" stroke=\"var(--green)\" stroke-width=\"1.2\" marker-end=\"url(#arr-t6)\"/>\n          <line x1=\"260\" y1=\"140\" x2=\"294\" y2=\"146\" stroke=\"var(--green)\" stroke-width=\"1.2\" marker-end=\"url(#arr-t6)\"/>\n          <line x1=\"260\" y1=\"148\" x2=\"294\" y2=\"170\" stroke=\"var(--green)\" stroke-width=\"1.2\" marker-end=\"url(#arr-t6)\"/>\n          <rect x=\"298\" y=\"88\" width=\"42\" height=\"18\" rx=\"3\" fill=\"var(--surface, #fff)\" stroke=\"var(--green)\" stroke-width=\"1.2\"/>\n          <text x=\"319\" y=\"100\" text-anchor=\"middle\" class=\"svg-tick\">s1</text>\n          <rect x=\"298\" y=\"112\" width=\"42\" height=\"18\" rx=\"3\" fill=\"var(--surface, #fff)\" stroke=\"var(--green)\" stroke-width=\"1.2\"/>\n          <text x=\"319\" y=\"124\" text-anchor=\"middle\" class=\"svg-tick\">s2</text>\n          <rect x=\"298\" y=\"136\" width=\"42\" height=\"18\" rx=\"3\" fill=\"var(--surface, #fff)\" stroke=\"var(--green)\" stroke-width=\"1.2\"/>\n          <text x=\"319\" y=\"148\" text-anchor=\"middle\" class=\"svg-tick\">s3</text>\n          <rect x=\"298\" y=\"160\" width=\"42\" height=\"18\" rx=\"3\" fill=\"var(--surface, #fff)\" stroke=\"var(--green)\" stroke-width=\"1.2\"/>\n          <text x=\"319\" y=\"172\" text-anchor=\"middle\" class=\"svg-tick\">s4..s6</text>\n        </g>\n      </svg>\n    </div>\n    <div class=\"formula-col\">\n      <div id=\"b-tier\" class=\"box box-def\">\n        <div class=\"box-label\">Multi-tier</div>\n        <p>Web server → Application server → Database server. Semplice su server aziendali locali con dati centralizzati.</p>\n      </div>\n      <div id=\"b-soa\" class=\"box box-primary\">\n        <div class=\"box-label\">Service-Oriented Architecture (SOA)</div>\n        <p>Web server → <strong>Service gateway</strong> verso servizi indipendenti (<em>s1–s6</em>), scalabili e coordinabili anche a eventi.</p>\n      </div>\n    </div>\n  </div>\n  <div id=\"s2\" class=\"grid-3 cue-hidden\">\n    <div id=\"c-data\" class=\"box box-idea\">\n      <div class=\"box-label\">1 · Dati e aggiornamenti</div>\n      <p>Dati strutturati aggiornati da più feature favoriscono un <strong>DB condiviso</strong> (locking, transazioni); dati distribuiti aggiungono overhead di coerenza.</p>\n    </div>\n    <div id=\"c-chg\" class=\"box box-idea\">\n      <div class=\"box-label\">2 · Frequenza di cambio</div>\n      <p>Componenti modificati o sostituiti spesso vanno isolati come <strong>servizi separati</strong> per semplificare l'evoluzione.</p>\n    </div>\n    <div id=\"c-plat\" class=\"box box-idea\">\n      <div class=\"box-label\">3 · Piattaforma</div>\n      <p><strong>Cloud su Internet</strong> privilegia SOA per scalabilità elastica; sistemi aziendali su server locali favoriscono <strong>multi-tier</strong>.</p>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 2.2,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "si concretizza in due varianti"
+        },
+        {
+          "at": 5.4,
+          "action": "highlight",
+          "target": "#b-tier",
+          "duration": 9.8,
+          "anchor": "La prima è l'architettura multi-tier"
+        },
+        {
+          "at": 15.76,
+          "action": "highlight",
+          "target": "#b-soa",
+          "duration": 14.5,
+          "anchor": "La seconda variante è"
+        },
+        {
+          "at": 33.25,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Come scegliere tra multi-tier"
+        },
+        {
+          "at": 38.75,
+          "action": "highlight",
+          "target": "#c-data",
+          "duration": 15,
+          "anchor": "Primo, tipo di dati"
+        },
+        {
+          "at": 54.19,
+          "action": "highlight",
+          "target": "#c-chg",
+          "duration": 9.48,
+          "anchor": "Secondo, frequenza di cambiamento"
+        },
+        {
+          "at": 64.78,
+          "action": "highlight",
+          "target": "#c-plat",
+          "duration": 16,
+          "anchor": "Terzo, piattaforma di esecuzione"
+        }
+      ],
+      "audio_file": "audio/scene-06.wav",
+      "subtitle_file": "subtitles/scene-06.json",
+      "duration_sec": 76.2
+    },
+    {
+      "id": "scene-07",
+      "section": "4.6 · Questioni tecnologiche",
+      "title": "Scelte tecnologiche: database, delivery, server e strumenti",
+      "tts_text": "Chiudiamo il capitolo esaminando le scelte tecnologiche. Queste decisioni vincolano l'intera architettura e risultano molto costose da cambiare a sviluppo avviato. [pause:0.5] La prima scelta riguarda il database. I database relazionali, come MySQL, organizzano i dati in tabelle strutturate e garantiscono transazioni affidabili: sono ideali per un registro di conti correnti, dove un bonifico deve accreditare e addebitare in modo atomico. [pause:0.5] I database NoSQL, come MongoDB, offrono invece schemi flessibili e gerarchici, ottimi per elaborare in parallelo enormi moli di big data dalla forma variabile, come i clic di milioni di utenti. [pause:0.6] Seconda decisione: la piattaforma di consegna, web oppure mobile. Su mobile bisogna fronteggiare connettività intermittente, minore potenza di calcolo, gestione della batteria, schermo ridotto e tastiera virtuale, decidendo presto se privilegiare desktop o mobile. [pause:0.5] Terza decisione: i server. I prodotti consumer abbinano SOA e cloud, mentre in ambito aziendale pesano sicurezza e stabilità del carico; sul cloud occorre inoltre valutare il vendor lock-in, cioè la difficoltà di cambiare fornitore. Infine, framework web spesso basati su MVC e competenze pregresse del team orientano ulteriormente le scelte architetturali.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">4.6 · Questioni tecnologiche (vincoli costosi da cambiare)</div>\n  <h2 class=\"slide-title\">Database, piattaforma di consegna, server e strumenti</h2>\n  <div id=\"s1\" class=\"grid-2 cue-hidden\">\n    <div id=\"t-rel\" class=\"box box-def\">\n      <div class=\"box-label\">Database relazionali (es. MySQL)</div>\n      <p>Tabelle strutturate, dati prevedibili e <strong>gestione delle transazioni</strong>. <em>Esempio</em>: conti correnti e bonifici atomici (o entrambi i conti o nessuno).</p>\n    </div>\n    <div id=\"t-nosql\" class=\"box box-primary\">\n      <div class=\"box-label\">Database NoSQL (es. MongoDB)</div>\n      <p>Organizzazione flessibile e gerarchica, elaborazione concorrente di <strong>big data</strong>. <em>Esempio</em>: milioni di clic utente dalla forma variabile.</p>\n    </div>\n  </div>\n  <div id=\"s2\" class=\"grid-2 cue-hidden\">\n    <div id=\"t-deliv\" class=\"box box-idea\">\n      <div class=\"box-label\">Piattaforma di consegna: Web vs Mobile</div>\n      <p>Il mobile impone connettività intermittente, limiti di CPU e batteria, schermo piccolo e tastiera virtuale: servono decomposizioni diverse e una scelta precoce.</p>\n    </div>\n    <div id=\"t-srv\" class=\"box box-warn\">\n      <div class=\"box-label\">Server, Cloud, Vendor lock-in &amp; Framework</div>\n      <p>Consumer: <strong>SOA + cloud</strong>; aziendali: sicurezza e meno picchi. Sul cloud attenzione al <strong>vendor lock-in</strong>. Framework (es. MVC) e abitudini del team vincolano il design.</p>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 1.76,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "le scelte tecnologiche"
+        },
+        {
+          "at": 1.76,
+          "action": "highlight",
+          "target": "#s1",
+          "duration": 7.9,
+          "anchor": "le scelte tecnologiche"
+        },
+        {
+          "at": 10.14,
+          "action": "highlight",
+          "target": "#t-rel",
+          "duration": 15,
+          "anchor": "La prima scelta riguarda il database"
+        },
+        {
+          "at": 25.88,
+          "action": "highlight",
+          "target": "#t-nosql",
+          "duration": 11.39,
+          "anchor": "I database NoSQL, come MongoDB"
+        },
+        {
+          "at": 37.39,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Seconda decisione: la piattaforma"
+        },
+        {
+          "at": 37.39,
+          "action": "highlight",
+          "target": "#t-deliv",
+          "duration": 14.5,
+          "anchor": "Seconda decisione: la piattaforma"
+        },
+        {
+          "at": 52.93,
+          "action": "highlight",
+          "target": "#t-srv",
+          "duration": 20,
+          "anchor": "Terza decisione: i server"
+        }
+      ],
+      "audio_file": "audio/scene-07.wav",
+      "subtitle_file": "subtitles/scene-07.json",
+      "duration_sec": 73.94
+    },
+    {
+      "id": "scene-08",
+      "section": "4.8 · Strati web, difesa a strati, flussi MVC e bias tecnologici",
+      "title": "Strati applicativi, security multilivello, flussi MVC e bias",
+      "tts_text": "Fissiamo ora quattro dettagli operativi fondamentali di questo capitolo. [pause:0.5] Primo, i cinque strati web. L'interfaccia browser o mobile usa form HTML e JavaScript per la validazione locale dell'input. Seguono autenticazione e gestione dell'interfaccia, lo strato applicativo, divisibile in più strati, e i servizi condivisi. In fondo, lo strato database gestisce transazioni e recovery, ma si omette senza database: l'architetto personalizza lo schema aggiungendo o togliendo strati. [pause:0.5] Secondo, la security architecture a strati. Tecnologie diverse hanno vulnerabilità distinte, per esempio un database SQL e il browser Firefox, quindi ogni strato va protetto separatamente. Così ci si difende sia da attacchi già riusciti agli strati superiori, sia da guasti software di un singolo componente di sicurezza. [pause:0.5] Terzo, i flussi completi MVC. Oltre agli input dal Browser al Controller, la View invia al Browser page to display e al Controller user changes; il Controller invia updates al Model, che restituisce i data alle View. Aggiungiamo così una view mobile senza toccare il Model, perché il Model non sa come sono disegnate le view. [pause:0.5] Quarto, i bias tecnologici: un mobile dev toolkit condiziona direttamente il progetto, ma c'è anche un'influenza indiretta, per esempio un team abituato ai database relazionali tenderà a sceglierne uno.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">4.8 · Strati web, difesa a strati, flussi MVC e bias tecnologici</div>\n  <h2 class=\"slide-title\">Strati applicativi, security multilivello, flussi MVC e bias</h2>\n  <div id=\"s1\" class=\"grid-2 cue-hidden\">\n    <div id=\"b-web\" class=\"box box-def\">\n      <div class=\"box-label\">Cinque strati web (schema personalizzabile)</div>\n      <ul class=\"clean-list\">\n        <li id=\"w-1\"><strong>1. Browser / Mobile UI</strong>: form HTML e JavaScript per validazione locale (o app mobile).</li>\n        <li id=\"w-2\"><strong>2. Auth &amp; UI management</strong>: autenticazione utenti e generazione pagine web.</li>\n        <li id=\"w-3\"><strong>3. Application</strong>: funzionalità specifiche (divisibile in più strati).</li>\n        <li id=\"w-4\"><strong>4. Basic shared services</strong>: servizi condivisi usati dallo strato applicazione.</li>\n        <li id=\"w-5\"><strong>5. Database</strong>: gestione transazioni e <em>recovery</em> (omesso se non serve DB).</li>\n      </ul>\n      <p id=\"w-arch\"><em>Ruolo dell'architetto</em>: personalizza lo schema aggiungendo o togliendo strati.</p>\n    </div>\n    <div id=\"b-sec\" class=\"box box-warn\">\n      <div class=\"box-label\">Security architecture a strati</div>\n      <p id=\"sec-1\">Strati diversi usano tecnologie con vulnerabilità distinte (es. <strong>database SQL</strong> e browser <strong>Firefox</strong>): ciascuno va protetto separatamente.</p>\n      <p id=\"sec-2\">Difesa sia da <strong>attacchi già riusciti agli strati superiori</strong> sia da <strong>guasti software</strong> di un singolo componente di sicurezza.</p>\n    </div>\n  </div>\n  <div id=\"s2\" class=\"grid-2 cue-hidden\">\n    <div id=\"b-mvc\" class=\"box box-primary\">\n      <div class=\"box-label\">Flussi completi MVC &amp; Vista mobile</div>\n      <ul class=\"clean-list\">\n        <li id=\"mvc-f1\"><strong>Browser → Controller</strong> (<em>user inputs</em>) · <strong>View → Browser</strong> (<em>page to display</em>) · <strong>View → Controller</strong> (<em>user changes</em>).</li>\n        <li id=\"mvc-f2\"><strong>Controller → Model</strong> (<em>updates</em>) · <strong>Model → View</strong> (<em>data / change notification</em>).</li>\n      </ul>\n      <p id=\"mvc-why\"><strong>Perché una view mobile non tocca il Model?</strong> Perché <em>«il Model non sa come sono disegnate le View»</em>.</p>\n    </div>\n    <div id=\"b-bias\" class=\"box box-idea\">\n      <div class=\"box-label\">Bias delle tecnologie di sviluppo</div>\n      <p id=\"bias-1\">Un <strong>mobile dev toolkit</strong> o un framework web (MVC) condizionano direttamente decomposizione e struttura.</p>\n      <p id=\"bias-2\"><strong>Influenza indiretta</strong>: un team abituato ai <em>database relazionali</em> tenderà a sceglierne uno anche oltre i soli vincoli del dominio.</p>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 0,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "Fissiamo ora quattro dettagli operativi"
+        },
+        {
+          "at": 0,
+          "action": "highlight",
+          "target": "#b-web",
+          "duration": 2.2,
+          "anchor": "Fissiamo ora quattro dettagli operativi"
+        },
+        {
+          "at": 7.26,
+          "action": "highlight",
+          "target": "#w-1",
+          "duration": 5.96,
+          "anchor": "L'interfaccia browser o mobile usa"
+        },
+        {
+          "at": 13.34,
+          "action": "highlight",
+          "target": "#w-2",
+          "duration": 2.3,
+          "anchor": "Seguono autenticazione e gestione dell'interfaccia"
+        },
+        {
+          "at": 16.46,
+          "action": "highlight",
+          "target": "#w-3",
+          "duration": 2.62,
+          "anchor": "lo strato applicativo, divisibile"
+        },
+        {
+          "at": 19.2,
+          "action": "highlight",
+          "target": "#w-4",
+          "duration": 1.54,
+          "anchor": "e i servizi condivisi"
+        },
+        {
+          "at": 20.86,
+          "action": "highlight",
+          "target": "#w-5",
+          "duration": 4.8,
+          "anchor": "In fondo, lo strato database"
+        },
+        {
+          "at": 26.89,
+          "action": "highlight",
+          "target": "#w-arch",
+          "duration": 4.02,
+          "anchor": "l'architetto personalizza lo schema"
+        },
+        {
+          "at": 31.03,
+          "action": "highlight",
+          "target": "#sec-1",
+          "duration": 11,
+          "anchor": "Secondo, la security architecture"
+        },
+        {
+          "at": 44.11,
+          "action": "highlight",
+          "target": "#sec-2",
+          "duration": 7.26,
+          "anchor": "Così ci si difende sia"
+        },
+        {
+          "at": 51.49,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Terzo, i flussi completi"
+        },
+        {
+          "at": 51.49,
+          "action": "highlight",
+          "target": "#b-mvc",
+          "duration": 2,
+          "anchor": "Terzo, i flussi completi"
+        },
+        {
+          "at": 57.11,
+          "action": "highlight",
+          "target": "#mvc-f1",
+          "duration": 4.23,
+          "anchor": "la View invia al Browser"
+        },
+        {
+          "at": 61.46,
+          "action": "highlight",
+          "target": "#mvc-f2",
+          "duration": 4.1,
+          "anchor": "il Controller invia updates"
+        },
+        {
+          "at": 65.68,
+          "action": "highlight",
+          "target": "#mvc-why",
+          "duration": 6.08,
+          "anchor": "Aggiungiamo così una view mobile"
+        },
+        {
+          "at": 71.88,
+          "action": "highlight",
+          "target": "#bias-1",
+          "duration": 5,
+          "anchor": "Quarto, i bias tecnologici"
+        },
+        {
+          "at": 79.86,
+          "action": "highlight",
+          "target": "#bias-2",
+          "duration": 7,
+          "anchor": "per esempio un team abituato"
+        }
+      ],
+      "audio_file": "audio/scene-08.wav",
+      "subtitle_file": "subtitles/scene-08.json",
+      "duration_sec": 83.79
+    },
+    {
+      "id": "scene-09",
+      "section": "4.7 · Riepilogo e autoverifica",
+      "title": "Punti chiave e domande di verifica",
+      "tts_text": "Ricapitoliamo i punti fondamentali di questo quarto capitolo prima di passare al cloud e ai microservizi. [pause:0.5] Primo: l'architettura definisce componenti, relazioni e principi di evoluzione; ogni componente espone servizi accessibili direttamente o attraverso un'API. [pause:0.5] Secondo: i sette attributi di qualità non funzionali governano il successo del prodotto finale e impongono continui compromessi progettuali. [pause:0.5] Terzo: scomponiamo il sistema in servizi, componenti e moduli controllando l'esplosione delle relazioni con separation of concerns, stable interfaces e implement once. [pause:0.5] Quarto: l'architettura a strati separa le responsabilità, ma cross-cutting concerns come sicurezza, prestazioni e affidabilità attraversano ogni livello. [pause:0.5] Quinto: sul piano distributivo scegliamo tra client-server con pattern MVC, multi-tier e SOA valutando dati, frequenza di cambiamento e piattaforma. [pause:0.5] Sesto: le scelte tecnologiche su database relazionali o NoSQL, consegna web o mobile, server locali o cloud e rischi di vendor lock-in vincolano l'intero design. [pause:0.6] Per verificare la preparazione, provate a rispondere alle otto domande d'esame qui a destra.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">4.7 · Riepilogo &amp; Autoverifica</div>\n  <h2 class=\"slide-title\">Punti chiave e domande di verifica</h2>\n  <div class=\"grid-2\">\n    <div class=\"box box-algo\">\n      <div class=\"box-label\">Punti chiave da fissare</div>\n      <ul class=\"clean-list\">\n        <li id=\"s1\" class=\"cue-hidden\"><strong>Architettura e Componenti</strong>: organizzazione fondamentale e relazioni; servizi usati direttamente o via <strong>API</strong>.</li>\n        <li id=\"s2\" class=\"cue-hidden\"><strong>Attributi non funzionali</strong>: responsiveness, reliability, availability, security, usability, maintainability, resilience in <em>compromesso</em>.</li>\n        <li id=\"s3\" class=\"cue-hidden\"><strong>Complessità</strong>: Service → Component → Module; governata da <em>separation of concerns</em>, <em>stable interfaces</em>, <em>implement once</em>.</li>\n        <li id=\"s4\" class=\"cue-hidden\"><strong>Strati e Cross-cutting</strong>: strati per concern; sicurezza, prestazioni e affidabilità attraversano tutti gli strati.</li>\n        <li id=\"s5\" class=\"cue-hidden\"><strong>Distribuzione</strong>: client-server (MVC), multi-tier e SOA secondo dati, frequenza di cambio e piattaforma.</li>\n        <li id=\"s6\" class=\"cue-hidden\"><strong>Tecnologie</strong>: DB (SQL/NoSQL), web/mobile, server/cloud (<em>vendor lock-in</em>) e strumenti vincolano l'architettura.</li>\n      </ul>\n    </div>\n    <div id=\"s7\" class=\"box box-theorem cue-hidden\">\n      <div class=\"box-label\">Domande di verifica</div>\n      <ol class=\"verify-list\">\n        <li>Che cos'è l'architettura software e quali attributi del prodotto influenza?</li>\n        <li>Che differenza c'è tra servizio, componente e modulo?</li>\n        <li>Elencare gli attributi non funzionali e dare un esempio di compromesso tra due di essi.</li>\n        <li>Perché la complessità cresce più in fretta dei componenti e quali linee guida la controllano?</li>\n        <li>Che cos'è un'architettura a strati e che cosa sono le cross-cutting concerns?</li>\n        <li>Che cos'è il pattern MVC?</li>\n        <li>Come si scelgono la distribuzione del sistema e il database? Quando conviene la SOA?</li>\n        <li>Che cos'è il vendor lock-in?</li>\n      </ol>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 6.39,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "Primo: l'architettura definisce componenti"
+        },
+        {
+          "at": 6.39,
+          "action": "highlight",
+          "target": "#s1",
+          "duration": 9.1,
+          "anchor": "Primo: l'architettura definisce componenti"
+        },
+        {
+          "at": 15.61,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Secondo: i sette attributi"
+        },
+        {
+          "at": 15.61,
+          "action": "highlight",
+          "target": "#s2",
+          "duration": 8.28,
+          "anchor": "Secondo: i sette attributi"
+        },
+        {
+          "at": 24.01,
+          "action": "show",
+          "target": "#s3",
+          "anchor": "Terzo: scomponiamo il sistema"
+        },
+        {
+          "at": 24.01,
+          "action": "highlight",
+          "target": "#s3",
+          "duration": 10.37,
+          "anchor": "Terzo: scomponiamo il sistema"
+        },
+        {
+          "at": 34.5,
+          "action": "show",
+          "target": "#s4",
+          "anchor": "Quarto: l'architettura a strati"
+        },
+        {
+          "at": 34.5,
+          "action": "highlight",
+          "target": "#s4",
+          "duration": 10.2,
+          "anchor": "Quarto: l'architettura a strati"
+        },
+        {
+          "at": 45.52,
+          "action": "show",
+          "target": "#s5",
+          "anchor": "Quinto: sul piano distributivo"
+        },
+        {
+          "at": 45.52,
+          "action": "highlight",
+          "target": "#s5",
+          "duration": 10.5,
+          "anchor": "Quinto: sul piano distributivo"
+        },
+        {
+          "at": 56.52,
+          "action": "show",
+          "target": "#s6",
+          "anchor": "Sesto: le scelte tecnologiche"
+        },
+        {
+          "at": 56.52,
+          "action": "highlight",
+          "target": "#s6",
+          "duration": 10.5,
+          "anchor": "Sesto: le scelte tecnologiche"
+        },
+        {
+          "at": 68.38,
+          "action": "show",
+          "target": "#s7",
+          "anchor": "Per verificare la preparazione"
+        }
+      ],
+      "audio_file": "audio/scene-09.wav",
+      "subtitle_file": "subtitles/scene-09.json",
+      "duration_sec": 73.15
+    }
+  ]
+}

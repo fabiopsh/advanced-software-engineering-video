@@ -1,0 +1,922 @@
+{
+  "duration": 68.997,
+  "segments": [
+    {
+      "start": 0.06,
+      "end": 5.621,
+      "text": "Dalle storie e dagli scenari arriviamo finalmente all'elenco delle feature che definiscono il prodotto.",
+      "words": [
+        {
+          "text": "Dalle",
+          "start": 0.06,
+          "end": 0.26
+        },
+        {
+          "text": "storie",
+          "start": 0.34,
+          "end": 0.78
+        },
+        {
+          "text": "e",
+          "start": 0.88,
+          "end": 0.92
+        },
+        {
+          "text": "dagli",
+          "start": 0.94,
+          "end": 1.16
+        },
+        {
+          "text": "scenari",
+          "start": 1.22,
+          "end": 1.68
+        },
+        {
+          "text": "arriviamo",
+          "start": 1.9,
+          "end": 2.36
+        },
+        {
+          "text": "finalmente",
+          "start": 2.44,
+          "end": 3.08
+        },
+        {
+          "text": "all'elenco",
+          "start": 3.2,
+          "end": 3.701
+        },
+        {
+          "text": "delle",
+          "start": 3.741,
+          "end": 3.941
+        },
+        {
+          "text": "feature",
+          "start": 4.001,
+          "end": 4.361
+        },
+        {
+          "text": "che",
+          "start": 4.401,
+          "end": 4.481
+        },
+        {
+          "text": "definiscono",
+          "start": 4.521,
+          "end": 5.041
+        },
+        {
+          "text": "il",
+          "start": 5.081,
+          "end": 5.141
+        },
+        {
+          "text": "prodotto.",
+          "start": 5.161,
+          "end": 5.621
+        }
+      ]
+    },
+    {
+      "start": 6.641,
+      "end": 9.301,
+      "text": "Una buona feature possiede tre proprietà fondamentali.",
+      "words": [
+        {
+          "text": "Una",
+          "start": 6.641,
+          "end": 6.761
+        },
+        {
+          "text": "buona",
+          "start": 6.801,
+          "end": 7.001
+        },
+        {
+          "text": "feature",
+          "start": 7.061,
+          "end": 7.401
+        },
+        {
+          "text": "possiede",
+          "start": 7.461,
+          "end": 7.801
+        },
+        {
+          "text": "tre",
+          "start": 7.921,
+          "end": 8.081
+        },
+        {
+          "text": "proprietà",
+          "start": 8.181,
+          "end": 8.561
+        },
+        {
+          "text": "fondamentali.",
+          "start": 8.621,
+          "end": 9.301
+        }
+      ]
+    },
+    {
+      "start": 9.982,
+      "end": 15.842,
+      "text": "Prima, l'independence: non dipende da come sono implementate le altre feature né dal loro ordine",
+      "words": [
+        {
+          "text": "Prima,",
+          "start": 9.982,
+          "end": 10.222
+        },
+        {
+          "text": "l'independence:",
+          "start": 10.782,
+          "end": 11.522
+        },
+        {
+          "text": "non",
+          "start": 12.122,
+          "end": 12.242
+        },
+        {
+          "text": "dipende",
+          "start": 12.282,
+          "end": 12.682
+        },
+        {
+          "text": "da",
+          "start": 12.722,
+          "end": 12.762
+        },
+        {
+          "text": "come",
+          "start": 12.822,
+          "end": 13.002
+        },
+        {
+          "text": "sono",
+          "start": 13.042,
+          "end": 13.182
+        },
+        {
+          "text": "implementate",
+          "start": 13.222,
+          "end": 13.842
+        },
+        {
+          "text": "le",
+          "start": 13.882,
+          "end": 13.942
+        },
+        {
+          "text": "altre",
+          "start": 14.002,
+          "end": 14.222
+        },
+        {
+          "text": "feature",
+          "start": 14.282,
+          "end": 14.622
+        },
+        {
+          "text": "né",
+          "start": 14.922,
+          "end": 15.022
+        },
+        {
+          "text": "dal",
+          "start": 15.122,
+          "end": 15.242
+        },
+        {
+          "text": "loro",
+          "start": 15.282,
+          "end": 15.442
+        },
+        {
+          "text": "ordine",
+          "start": 15.522,
+          "end": 15.842
+        }
+      ]
+    },
+    {
+      "start": 15.882,
+      "end": 16.523,
+      "text": "di attivazione.",
+      "words": [
+        {
+          "text": "di",
+          "start": 15.882,
+          "end": 15.922
+        },
+        {
+          "text": "attivazione.",
+          "start": 15.962,
+          "end": 16.523
+        }
+      ]
+    },
+    {
+      "start": 17.483,
+      "end": 21.163,
+      "text": "Seconda, la coherence: è legata a una sola funzionalità,",
+      "words": [
+        {
+          "text": "Seconda,",
+          "start": 17.483,
+          "end": 17.843
+        },
+        {
+          "text": "la",
+          "start": 18.323,
+          "end": 18.383
+        },
+        {
+          "text": "coherence:",
+          "start": 18.443,
+          "end": 19.003
+        },
+        {
+          "text": "è",
+          "start": 19.603,
+          "end": 19.643
+        },
+        {
+          "text": "legata",
+          "start": 19.683,
+          "end": 19.983
+        },
+        {
+          "text": "a",
+          "start": 20.123,
+          "end": 20.163
+        },
+        {
+          "text": "una",
+          "start": 20.203,
+          "end": 20.323
+        },
+        {
+          "text": "sola",
+          "start": 20.383,
+          "end": 20.563
+        },
+        {
+          "text": "funzionalità,",
+          "start": 20.603,
+          "end": 21.163
+        }
+      ]
+    },
+    {
+      "start": 21.503,
+      "end": 24.324,
+      "text": "non fa più cose insieme e non produce effetti collaterali.",
+      "words": [
+        {
+          "text": "non",
+          "start": 21.503,
+          "end": 21.603
+        },
+        {
+          "text": "fa",
+          "start": 21.623,
+          "end": 21.703
+        },
+        {
+          "text": "più",
+          "start": 21.783,
+          "end": 21.883
+        },
+        {
+          "text": "cose",
+          "start": 21.943,
+          "end": 22.143
+        },
+        {
+          "text": "insieme",
+          "start": 22.183,
+          "end": 22.604
+        },
+        {
+          "text": "e",
+          "start": 22.804,
+          "end": 22.844
+        },
+        {
+          "text": "non",
+          "start": 22.924,
+          "end": 23.044
+        },
+        {
+          "text": "produce",
+          "start": 23.064,
+          "end": 23.424
+        },
+        {
+          "text": "effetti",
+          "start": 23.464,
+          "end": 23.764
+        },
+        {
+          "text": "collaterali.",
+          "start": 23.804,
+          "end": 24.324
+        }
+      ]
+    },
+    {
+      "start": 25.164,
+      "end": 30.205,
+      "text": "Terza, la relevance: riflette il modo normale in cui gli utenti svolgono un compito,",
+      "words": [
+        {
+          "text": "Terza,",
+          "start": 25.164,
+          "end": 25.484
+        },
+        {
+          "text": "la",
+          "start": 25.904,
+          "end": 25.984
+        },
+        {
+          "text": "relevance:",
+          "start": 26.064,
+          "end": 26.564
+        },
+        {
+          "text": "riflette",
+          "start": 27.184,
+          "end": 27.544
+        },
+        {
+          "text": "il",
+          "start": 27.604,
+          "end": 27.664
+        },
+        {
+          "text": "modo",
+          "start": 27.704,
+          "end": 27.864
+        },
+        {
+          "text": "normale",
+          "start": 27.944,
+          "end": 28.384
+        },
+        {
+          "text": "in",
+          "start": 28.524,
+          "end": 28.604
+        },
+        {
+          "text": "cui",
+          "start": 28.644,
+          "end": 28.764
+        },
+        {
+          "text": "gli",
+          "start": 28.784,
+          "end": 28.864
+        },
+        {
+          "text": "utenti",
+          "start": 28.884,
+          "end": 29.225
+        },
+        {
+          "text": "svolgono",
+          "start": 29.285,
+          "end": 29.665
+        },
+        {
+          "text": "un",
+          "start": 29.705,
+          "end": 29.765
+        },
+        {
+          "text": "compito,",
+          "start": 29.805,
+          "end": 30.205
+        }
+      ]
+    },
+    {
+      "start": 30.505,
+      "end": 32.725,
+      "text": "evitando funzioni oscure o richieste di rado.",
+      "words": [
+        {
+          "text": "evitando",
+          "start": 30.505,
+          "end": 30.865
+        },
+        {
+          "text": "funzioni",
+          "start": 30.905,
+          "end": 31.285
+        },
+        {
+          "text": "oscure",
+          "start": 31.345,
+          "end": 31.785
+        },
+        {
+          "text": "o",
+          "start": 31.885,
+          "end": 31.925
+        },
+        {
+          "text": "richieste",
+          "start": 32.005,
+          "end": 32.365
+        },
+        {
+          "text": "di",
+          "start": 32.405,
+          "end": 32.465
+        },
+        {
+          "text": "rado.",
+          "start": 32.505,
+          "end": 32.725
+        }
+      ]
+    },
+    {
+      "start": 33.845,
+      "end": 37.746,
+      "text": "Per progettare bene le feature il team attinge a quattro fonti di conoscenza:",
+      "words": [
+        {
+          "text": "Per",
+          "start": 33.845,
+          "end": 33.965
+        },
+        {
+          "text": "progettare",
+          "start": 34.025,
+          "end": 34.505
+        },
+        {
+          "text": "bene",
+          "start": 34.545,
+          "end": 34.725
+        },
+        {
+          "text": "le",
+          "start": 34.765,
+          "end": 34.825
+        },
+        {
+          "text": "feature",
+          "start": 34.885,
+          "end": 35.245
+        },
+        {
+          "text": "il",
+          "start": 35.526,
+          "end": 35.626
+        },
+        {
+          "text": "team",
+          "start": 35.686,
+          "end": 35.866
+        },
+        {
+          "text": "attinge",
+          "start": 35.986,
+          "end": 36.306
+        },
+        {
+          "text": "a",
+          "start": 36.346,
+          "end": 36.386
+        },
+        {
+          "text": "quattro",
+          "start": 36.446,
+          "end": 36.786
+        },
+        {
+          "text": "fonti",
+          "start": 36.826,
+          "end": 37.086
+        },
+        {
+          "text": "di",
+          "start": 37.126,
+          "end": 37.166
+        },
+        {
+          "text": "conoscenza:",
+          "start": 37.206,
+          "end": 37.746
+        }
+      ]
+    },
+    {
+      "start": 38.446,
+      "end": 40.526,
+      "text": "la user knowledge da scenari e storie;",
+      "words": [
+        {
+          "text": "la",
+          "start": 38.446,
+          "end": 38.506
+        },
+        {
+          "text": "user",
+          "start": 38.686,
+          "end": 38.906
+        },
+        {
+          "text": "knowledge",
+          "start": 38.946,
+          "end": 39.326
+        },
+        {
+          "text": "da",
+          "start": 39.566,
+          "end": 39.626
+        },
+        {
+          "text": "scenari",
+          "start": 39.666,
+          "end": 40.046
+        },
+        {
+          "text": "e",
+          "start": 40.106,
+          "end": 40.146
+        },
+        {
+          "text": "storie;",
+          "start": 40.186,
+          "end": 40.526
+        }
+      ]
+    },
+    {
+      "start": 41.106,
+      "end": 44.887,
+      "text": "la product knowledge sui prodotti esistenti e le loro funzioni essenziali;",
+      "words": [
+        {
+          "text": "la",
+          "start": 41.106,
+          "end": 41.166
+        },
+        {
+          "text": "product",
+          "start": 41.246,
+          "end": 41.626
+        },
+        {
+          "text": "knowledge",
+          "start": 41.666,
+          "end": 42.067
+        },
+        {
+          "text": "sui",
+          "start": 42.327,
+          "end": 42.447
+        },
+        {
+          "text": "prodotti",
+          "start": 42.487,
+          "end": 42.847
+        },
+        {
+          "text": "esistenti",
+          "start": 42.907,
+          "end": 43.487
+        },
+        {
+          "text": "e",
+          "start": 43.547,
+          "end": 43.587
+        },
+        {
+          "text": "le",
+          "start": 43.627,
+          "end": 43.667
+        },
+        {
+          "text": "loro",
+          "start": 43.707,
+          "end": 43.867
+        },
+        {
+          "text": "funzioni",
+          "start": 43.907,
+          "end": 44.267
+        },
+        {
+          "text": "essenziali;",
+          "start": 44.327,
+          "end": 44.887
+        }
+      ]
+    },
+    {
+      "start": 45.487,
+      "end": 49.528,
+      "text": "la domain knowledge sull'area di lavoro, come finanza o prenotazioni;",
+      "words": [
+        {
+          "text": "la",
+          "start": 45.487,
+          "end": 45.567
+        },
+        {
+          "text": "domain",
+          "start": 45.647,
+          "end": 46.047
+        },
+        {
+          "text": "knowledge",
+          "start": 46.087,
+          "end": 46.507
+        },
+        {
+          "text": "sull'area",
+          "start": 46.707,
+          "end": 47.127
+        },
+        {
+          "text": "di",
+          "start": 47.167,
+          "end": 47.227
+        },
+        {
+          "text": "lavoro,",
+          "start": 47.267,
+          "end": 47.587
+        },
+        {
+          "text": "come",
+          "start": 47.827,
+          "end": 47.987
+        },
+        {
+          "text": "finanza",
+          "start": 48.207,
+          "end": 48.688
+        },
+        {
+          "text": "o",
+          "start": 48.768,
+          "end": 48.808
+        },
+        {
+          "text": "prenotazioni;",
+          "start": 48.848,
+          "end": 49.528
+        }
+      ]
+    },
+    {
+      "start": 50.068,
+      "end": 53.188,
+      "text": "e la technology knowledge per sfruttare gli sviluppi più recenti.",
+      "words": [
+        {
+          "text": "e",
+          "start": 50.068,
+          "end": 50.108
+        },
+        {
+          "text": "la",
+          "start": 50.168,
+          "end": 50.228
+        },
+        {
+          "text": "technology",
+          "start": 50.308,
+          "end": 50.848
+        },
+        {
+          "text": "knowledge",
+          "start": 50.888,
+          "end": 51.268
+        },
+        {
+          "text": "per",
+          "start": 51.528,
+          "end": 51.648
+        },
+        {
+          "text": "sfruttare",
+          "start": 51.748,
+          "end": 52.148
+        },
+        {
+          "text": "gli",
+          "start": 52.168,
+          "end": 52.268
+        },
+        {
+          "text": "sviluppi",
+          "start": 52.288,
+          "end": 52.588
+        },
+        {
+          "text": "più",
+          "start": 52.628,
+          "end": 52.708
+        },
+        {
+          "text": "recenti.",
+          "start": 52.788,
+          "end": 53.188
+        }
+      ]
+    },
+    {
+      "start": 54.208,
+      "end": 59.229,
+      "text": "Infine, nel comporre l'insieme delle feature bisogna bilanciare tre coppie di fattori in tensione:",
+      "words": [
+        {
+          "text": "Infine,",
+          "start": 54.208,
+          "end": 54.528
+        },
+        {
+          "text": "nel",
+          "start": 54.869,
+          "end": 55.009
+        },
+        {
+          "text": "comporre",
+          "start": 55.049,
+          "end": 55.469
+        },
+        {
+          "text": "l'insieme",
+          "start": 55.509,
+          "end": 55.989
+        },
+        {
+          "text": "delle",
+          "start": 56.029,
+          "end": 56.189
+        },
+        {
+          "text": "feature",
+          "start": 56.229,
+          "end": 56.569
+        },
+        {
+          "text": "bisogna",
+          "start": 56.729,
+          "end": 56.989
+        },
+        {
+          "text": "bilanciare",
+          "start": 57.029,
+          "end": 57.469
+        },
+        {
+          "text": "tre",
+          "start": 57.589,
+          "end": 57.729
+        },
+        {
+          "text": "coppie",
+          "start": 57.829,
+          "end": 58.129
+        },
+        {
+          "text": "di",
+          "start": 58.169,
+          "end": 58.229
+        },
+        {
+          "text": "fattori",
+          "start": 58.269,
+          "end": 58.609
+        },
+        {
+          "text": "in",
+          "start": 58.669,
+          "end": 58.709
+        },
+        {
+          "text": "tensione:",
+          "start": 58.749,
+          "end": 59.229
+        }
+      ]
+    },
+    {
+      "start": 59.949,
+      "end": 65.69,
+      "text": "simplicity contro functionality, control contro automation e familiarity contro novelty,",
+      "words": [
+        {
+          "text": "simplicity",
+          "start": 59.949,
+          "end": 60.489
+        },
+        {
+          "text": "contro",
+          "start": 60.729,
+          "end": 60.989
+        },
+        {
+          "text": "functionality,",
+          "start": 61.029,
+          "end": 61.63
+        },
+        {
+          "text": "control",
+          "start": 62.17,
+          "end": 62.61
+        },
+        {
+          "text": "contro",
+          "start": 62.79,
+          "end": 63.05
+        },
+        {
+          "text": "automation",
+          "start": 63.09,
+          "end": 63.59
+        },
+        {
+          "text": "e",
+          "start": 64.05,
+          "end": 64.09
+        },
+        {
+          "text": "familiarity",
+          "start": 64.23,
+          "end": 64.87
+        },
+        {
+          "text": "contro",
+          "start": 65.01,
+          "end": 65.25
+        },
+        {
+          "text": "novelty,",
+          "start": 65.31,
+          "end": 65.69
+        }
+      ]
+    },
+    {
+      "start": 66.11,
+      "end": 68.611,
+      "text": "perché aumentare un polo tende a ridurre l'altro.",
+      "words": [
+        {
+          "text": "perché",
+          "start": 66.11,
+          "end": 66.35
+        },
+        {
+          "text": "aumentare",
+          "start": 66.45,
+          "end": 66.97
+        },
+        {
+          "text": "un",
+          "start": 67.03,
+          "end": 67.09
+        },
+        {
+          "text": "polo",
+          "start": 67.15,
+          "end": 67.41
+        },
+        {
+          "text": "tende",
+          "start": 67.55,
+          "end": 67.771
+        },
+        {
+          "text": "a",
+          "start": 67.831,
+          "end": 67.87100000000001
+        },
+        {
+          "text": "ridurre",
+          "start": 67.931,
+          "end": 68.251
+        },
+        {
+          "text": "l'altro.",
+          "start": 68.291,
+          "end": 68.611
+        }
+      ]
+    }
+  ]
+}

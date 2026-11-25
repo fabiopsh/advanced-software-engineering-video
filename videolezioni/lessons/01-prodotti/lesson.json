@@ -48,7 +48,7 @@
           "at": 16.98,
           "action": "highlight",
           "target": "#b-prod",
-          "duration": 7.0,
+          "duration": 7,
           "anchor": "Oggi quasi nessuna azienda"
         },
         {
@@ -73,7 +73,7 @@
           "anchor": "lo sviluppatore realizza il software"
         },
         {
-          "at": 37.0,
+          "at": 37,
           "action": "highlight",
           "target": "#b-proj",
           "duration": 4.6,
@@ -96,7 +96,7 @@
           "at": 52.3,
           "action": "highlight",
           "target": "#s2",
-          "duration": 6.0,
+          "duration": 6,
           "anchor": "Questo ha una conseguenza critica"
         },
         {

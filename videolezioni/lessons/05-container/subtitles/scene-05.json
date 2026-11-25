@@ -1,0 +1,909 @@
+{
+  "duration": 61.086,
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 2.88,
+      "text": "Passiamo ora alla pratica con un primo esempio completo:",
+      "words": [
+        {
+          "text": "Passiamo",
+          "start": 0.0,
+          "end": 0.36
+        },
+        {
+          "text": "ora",
+          "start": 0.42,
+          "end": 0.56
+        },
+        {
+          "text": "alla",
+          "start": 0.6,
+          "end": 0.76
+        },
+        {
+          "text": "pratica",
+          "start": 0.8,
+          "end": 1.22
+        },
+        {
+          "text": "con",
+          "start": 1.44,
+          "end": 1.56
+        },
+        {
+          "text": "un",
+          "start": 1.6,
+          "end": 1.66
+        },
+        {
+          "text": "primo",
+          "start": 1.74,
+          "end": 1.96
+        },
+        {
+          "text": "esempio",
+          "start": 2.02,
+          "end": 2.36
+        },
+        {
+          "text": "completo:",
+          "start": 2.4,
+          "end": 2.88
+        }
+      ]
+    },
+    {
+      "start": 3.321,
+      "end": 6.461,
+      "text": "una semplice applicazione PHP che stampa Hello World.",
+      "words": [
+        {
+          "text": "una",
+          "start": 3.321,
+          "end": 3.461
+        },
+        {
+          "text": "semplice",
+          "start": 3.581,
+          "end": 3.961
+        },
+        {
+          "text": "applicazione",
+          "start": 4.001,
+          "end": 4.521
+        },
+        {
+          "text": "PHP",
+          "start": 4.601,
+          "end": 4.961
+        },
+        {
+          "text": "che",
+          "start": 5.181,
+          "end": 5.261
+        },
+        {
+          "text": "stampa",
+          "start": 5.321,
+          "end": 5.641
+        },
+        {
+          "text": "Hello",
+          "start": 5.781,
+          "end": 6.061
+        },
+        {
+          "text": "World.",
+          "start": 6.161,
+          "end": 6.461
+        }
+      ]
+    },
+    {
+      "start": 7.081,
+      "end": 8.241,
+      "text": "Ci bastano due file.",
+      "words": [
+        {
+          "text": "Ci",
+          "start": 7.081,
+          "end": 7.161
+        },
+        {
+          "text": "bastano",
+          "start": 7.221,
+          "end": 7.521
+        },
+        {
+          "text": "due",
+          "start": 7.681,
+          "end": 7.821
+        },
+        {
+          "text": "file.",
+          "start": 7.881,
+          "end": 8.241
+        }
+      ]
+    },
+    {
+      "start": 8.681,
+      "end": 12.022,
+      "text": "Il primo è index punto php con la stampa del messaggio.",
+      "words": [
+        {
+          "text": "Il",
+          "start": 8.681,
+          "end": 8.761
+        },
+        {
+          "text": "primo",
+          "start": 8.801,
+          "end": 9.041
+        },
+        {
+          "text": "è",
+          "start": 9.201,
+          "end": 9.241
+        },
+        {
+          "text": "index",
+          "start": 9.461,
+          "end": 9.742
+        },
+        {
+          "text": "punto",
+          "start": 9.902,
+          "end": 10.142
+        },
+        {
+          "text": "php",
+          "start": 10.162,
+          "end": 10.542
+        },
+        {
+          "text": "con",
+          "start": 10.942,
+          "end": 11.042
+        },
+        {
+          "text": "la",
+          "start": 11.062,
+          "end": 11.122
+        },
+        {
+          "text": "stampa",
+          "start": 11.162,
+          "end": 11.402
+        },
+        {
+          "text": "del",
+          "start": 11.442,
+          "end": 11.542
+        },
+        {
+          "text": "messaggio.",
+          "start": 11.582,
+          "end": 12.022
+        }
+      ]
+    },
+    {
+      "start": 12.542,
+      "end": 16.103,
+      "text": "Il secondo è il Dockerfile, che descrive come costruire l'immagine.",
+      "words": [
+        {
+          "text": "Il",
+          "start": 12.542,
+          "end": 12.622
+        },
+        {
+          "text": "secondo",
+          "start": 12.682,
+          "end": 13.062
+        },
+        {
+          "text": "è",
+          "start": 13.122,
+          "end": 13.162
+        },
+        {
+          "text": "il",
+          "start": 13.202,
+          "end": 13.282
+        },
+        {
+          "text": "Dockerfile,",
+          "start": 13.322,
+          "end": 13.942
+        },
+        {
+          "text": "che",
+          "start": 14.162,
+          "end": 14.222
+        },
+        {
+          "text": "descrive",
+          "start": 14.282,
+          "end": 14.642
+        },
+        {
+          "text": "come",
+          "start": 14.762,
+          "end": 14.942
+        },
+        {
+          "text": "costruire",
+          "start": 15.002,
+          "end": 15.562
+        },
+        {
+          "text": "l'immagine.",
+          "start": 15.602,
+          "end": 16.103
+        }
+      ]
+    },
+    {
+      "start": 16.923,
+      "end": 20.163,
+      "text": "L'istruzione FROM sceglie l'immagine di partenza su Docker Hub,",
+      "words": [
+        {
+          "text": "L'istruzione",
+          "start": 16.923,
+          "end": 17.423
+        },
+        {
+          "text": "FROM",
+          "start": 17.543,
+          "end": 17.843
+        },
+        {
+          "text": "sceglie",
+          "start": 18.103,
+          "end": 18.363
+        },
+        {
+          "text": "l'immagine",
+          "start": 18.403,
+          "end": 18.823
+        },
+        {
+          "text": "di",
+          "start": 18.863,
+          "end": 18.923
+        },
+        {
+          "text": "partenza",
+          "start": 18.963,
+          "end": 19.383
+        },
+        {
+          "text": "su",
+          "start": 19.463,
+          "end": 19.523
+        },
+        {
+          "text": "Docker",
+          "start": 19.623,
+          "end": 19.903
+        },
+        {
+          "text": "Hub,",
+          "start": 19.943,
+          "end": 20.163
+        }
+      ]
+    },
+    {
+      "start": 20.543,
+      "end": 22.604,
+      "text": "cioè php sette punto zero apache.",
+      "words": [
+        {
+          "text": "cioè",
+          "start": 20.543,
+          "end": 20.683
+        },
+        {
+          "text": "php",
+          "start": 20.823,
+          "end": 21.203
+        },
+        {
+          "text": "sette",
+          "start": 21.483,
+          "end": 21.703
+        },
+        {
+          "text": "punto",
+          "start": 21.743,
+          "end": 21.943
+        },
+        {
+          "text": "zero",
+          "start": 22.043,
+          "end": 22.223
+        },
+        {
+          "text": "apache.",
+          "start": 22.263,
+          "end": 22.604
+        }
+      ]
+    },
+    {
+      "start": 23.204,
+      "end": 27.604,
+      "text": "COPY copia la cartella locale dei sorgenti nella cartella servita dal web server dentro il",
+      "words": [
+        {
+          "text": "COPY",
+          "start": 23.204,
+          "end": 23.484
+        },
+        {
+          "text": "copia",
+          "start": 23.744,
+          "end": 24.004
+        },
+        {
+          "text": "la",
+          "start": 24.044,
+          "end": 24.084
+        },
+        {
+          "text": "cartella",
+          "start": 24.104,
+          "end": 24.444
+        },
+        {
+          "text": "locale",
+          "start": 24.484,
+          "end": 24.764
+        },
+        {
+          "text": "dei",
+          "start": 24.804,
+          "end": 24.924
+        },
+        {
+          "text": "sorgenti",
+          "start": 24.964,
+          "end": 25.544
+        },
+        {
+          "text": "nella",
+          "start": 25.604,
+          "end": 25.744
+        },
+        {
+          "text": "cartella",
+          "start": 25.784,
+          "end": 26.144
+        },
+        {
+          "text": "servita",
+          "start": 26.184,
+          "end": 26.544
+        },
+        {
+          "text": "dal",
+          "start": 26.604,
+          "end": 26.724
+        },
+        {
+          "text": "web",
+          "start": 26.764,
+          "end": 26.884
+        },
+        {
+          "text": "server",
+          "start": 26.944,
+          "end": 27.244
+        },
+        {
+          "text": "dentro",
+          "start": 27.304,
+          "end": 27.524
+        },
+        {
+          "text": "il",
+          "start": 27.544,
+          "end": 27.604
+        }
+      ]
+    },
+    {
+      "start": 27.624,
+      "end": 28.104,
+      "text": "container.",
+      "words": [
+        {
+          "text": "container.",
+          "start": 27.624,
+          "end": 28.104
+        }
+      ]
+    },
+    {
+      "start": 28.744,
+      "end": 32.105,
+      "text": "EXPOSE dichiara che il container ascolta sulla porta ottanta.",
+      "words": [
+        {
+          "text": "EXPOSE",
+          "start": 28.744,
+          "end": 29.325
+        },
+        {
+          "text": "dichiara",
+          "start": 29.545,
+          "end": 29.885
+        },
+        {
+          "text": "che",
+          "start": 29.925,
+          "end": 30.005
+        },
+        {
+          "text": "il",
+          "start": 30.025,
+          "end": 30.085
+        },
+        {
+          "text": "container",
+          "start": 30.125,
+          "end": 30.625
+        },
+        {
+          "text": "ascolta",
+          "start": 30.785,
+          "end": 31.185
+        },
+        {
+          "text": "sulla",
+          "start": 31.225,
+          "end": 31.405
+        },
+        {
+          "text": "porta",
+          "start": 31.425,
+          "end": 31.625
+        },
+        {
+          "text": "ottanta.",
+          "start": 31.665,
+          "end": 32.105
+        }
+      ]
+    },
+    {
+      "start": 33.105,
+      "end": 35.446,
+      "text": "A questo punto eseguiamo due comandi nel terminale.",
+      "words": [
+        {
+          "text": "A",
+          "start": 33.105,
+          "end": 33.145
+        },
+        {
+          "text": "questo",
+          "start": 33.185,
+          "end": 33.385
+        },
+        {
+          "text": "punto",
+          "start": 33.405,
+          "end": 33.625
+        },
+        {
+          "text": "eseguiamo",
+          "start": 33.745,
+          "end": 34.145
+        },
+        {
+          "text": "due",
+          "start": 34.245,
+          "end": 34.385
+        },
+        {
+          "text": "comandi",
+          "start": 34.445,
+          "end": 34.805
+        },
+        {
+          "text": "nel",
+          "start": 34.865,
+          "end": 34.965
+        },
+        {
+          "text": "terminale.",
+          "start": 34.985,
+          "end": 35.446
+        }
+      ]
+    },
+    {
+      "start": 35.706,
+      "end": 41.226,
+      "text": "Con docker build, l'opzione meno t assegna il nome hello world all'immagine costruita dal Dockerfile",
+      "words": [
+        {
+          "text": "Con",
+          "start": 35.706,
+          "end": 35.846
+        },
+        {
+          "text": "docker",
+          "start": 35.886,
+          "end": 36.126
+        },
+        {
+          "text": "build,",
+          "start": 36.206,
+          "end": 36.446
+        },
+        {
+          "text": "l'opzione",
+          "start": 36.726,
+          "end": 37.126
+        },
+        {
+          "text": "meno",
+          "start": 37.246,
+          "end": 37.446
+        },
+        {
+          "text": "t",
+          "start": 37.586,
+          "end": 37.626
+        },
+        {
+          "text": "assegna",
+          "start": 37.906,
+          "end": 38.266
+        },
+        {
+          "text": "il",
+          "start": 38.306,
+          "end": 38.346
+        },
+        {
+          "text": "nome",
+          "start": 38.366,
+          "end": 38.546
+        },
+        {
+          "text": "hello",
+          "start": 38.626,
+          "end": 38.906
+        },
+        {
+          "text": "world",
+          "start": 39.006,
+          "end": 39.286
+        },
+        {
+          "text": "all'immagine",
+          "start": 39.446,
+          "end": 39.966
+        },
+        {
+          "text": "costruita",
+          "start": 40.006,
+          "end": 40.426
+        },
+        {
+          "text": "dal",
+          "start": 40.466,
+          "end": 40.586
+        },
+        {
+          "text": "Dockerfile",
+          "start": 40.626,
+          "end": 41.226
+        }
+      ]
+    },
+    {
+      "start": 41.306,
+      "end": 43.587,
+      "text": "nella cartella corrente, indicata dal punto.",
+      "words": [
+        {
+          "text": "nella",
+          "start": 41.306,
+          "end": 41.486
+        },
+        {
+          "text": "cartella",
+          "start": 41.506,
+          "end": 41.827
+        },
+        {
+          "text": "corrente,",
+          "start": 41.847,
+          "end": 42.327
+        },
+        {
+          "text": "indicata",
+          "start": 42.667,
+          "end": 43.047
+        },
+        {
+          "text": "dal",
+          "start": 43.087,
+          "end": 43.207
+        },
+        {
+          "text": "punto.",
+          "start": 43.267,
+          "end": 43.587
+        }
+      ]
+    },
+    {
+      "start": 44.187,
+      "end": 48.768,
+      "text": "Poi docker run avvia il container e con l'opzione meno p collega la porta ottanta",
+      "words": [
+        {
+          "text": "Poi",
+          "start": 44.187,
+          "end": 44.347
+        },
+        {
+          "text": "docker",
+          "start": 44.527,
+          "end": 44.787
+        },
+        {
+          "text": "run",
+          "start": 44.847,
+          "end": 45.067
+        },
+        {
+          "text": "avvia",
+          "start": 45.327,
+          "end": 45.607
+        },
+        {
+          "text": "il",
+          "start": 45.647,
+          "end": 45.707
+        },
+        {
+          "text": "container",
+          "start": 45.747,
+          "end": 46.287
+        },
+        {
+          "text": "e",
+          "start": 46.427,
+          "end": 46.467
+        },
+        {
+          "text": "con",
+          "start": 46.507,
+          "end": 46.587
+        },
+        {
+          "text": "l'opzione",
+          "start": 46.607,
+          "end": 46.967
+        },
+        {
+          "text": "meno",
+          "start": 47.087,
+          "end": 47.287
+        },
+        {
+          "text": "p",
+          "start": 47.407,
+          "end": 47.447
+        },
+        {
+          "text": "collega",
+          "start": 47.727,
+          "end": 48.047
+        },
+        {
+          "text": "la",
+          "start": 48.107,
+          "end": 48.147
+        },
+        {
+          "text": "porta",
+          "start": 48.167,
+          "end": 48.368
+        },
+        {
+          "text": "ottanta",
+          "start": 48.408,
+          "end": 48.768
+        }
+      ]
+    },
+    {
+      "start": 48.808,
+      "end": 51.308,
+      "text": "del computer ospite alla porta ottanta del container.",
+      "words": [
+        {
+          "text": "del",
+          "start": 48.808,
+          "end": 48.908
+        },
+        {
+          "text": "computer",
+          "start": 48.948,
+          "end": 49.328
+        },
+        {
+          "text": "ospite",
+          "start": 49.388,
+          "end": 49.708
+        },
+        {
+          "text": "alla",
+          "start": 49.868,
+          "end": 50.028
+        },
+        {
+          "text": "porta",
+          "start": 50.048,
+          "end": 50.268
+        },
+        {
+          "text": "ottanta",
+          "start": 50.308,
+          "end": 50.628
+        },
+        {
+          "text": "del",
+          "start": 50.668,
+          "end": 50.788
+        },
+        {
+          "text": "container.",
+          "start": 50.828,
+          "end": 51.308
+        }
+      ]
+    },
+    {
+      "start": 52.088,
+      "end": 57.549,
+      "text": "Ricordate due regole pratiche fondamentali: usare un volume per condividere una cartella tra ospite e",
+      "words": [
+        {
+          "text": "Ricordate",
+          "start": 52.088,
+          "end": 52.468
+        },
+        {
+          "text": "due",
+          "start": 52.588,
+          "end": 52.748
+        },
+        {
+          "text": "regole",
+          "start": 52.788,
+          "end": 53.048
+        },
+        {
+          "text": "pratiche",
+          "start": 53.088,
+          "end": 53.448
+        },
+        {
+          "text": "fondamentali:",
+          "start": 53.488,
+          "end": 54.108
+        },
+        {
+          "text": "usare",
+          "start": 54.628,
+          "end": 54.909
+        },
+        {
+          "text": "un",
+          "start": 54.969,
+          "end": 55.029
+        },
+        {
+          "text": "volume",
+          "start": 55.089,
+          "end": 55.469
+        },
+        {
+          "text": "per",
+          "start": 55.609,
+          "end": 55.709
+        },
+        {
+          "text": "condividere",
+          "start": 55.749,
+          "end": 56.249
+        },
+        {
+          "text": "una",
+          "start": 56.269,
+          "end": 56.369
+        },
+        {
+          "text": "cartella",
+          "start": 56.409,
+          "end": 56.809
+        },
+        {
+          "text": "tra",
+          "start": 56.889,
+          "end": 56.989
+        },
+        {
+          "text": "ospite",
+          "start": 57.089,
+          "end": 57.449
+        },
+        {
+          "text": "e",
+          "start": 57.509,
+          "end": 57.549
+        }
+      ]
+    },
+    {
+      "start": 57.609,
+      "end": 60.709,
+      "text": "container, ed eseguire un solo processo per container.",
+      "words": [
+        {
+          "text": "container,",
+          "start": 57.609,
+          "end": 58.149
+        },
+        {
+          "text": "ed",
+          "start": 58.529,
+          "end": 58.609
+        },
+        {
+          "text": "eseguire",
+          "start": 58.649,
+          "end": 59.009
+        },
+        {
+          "text": "un",
+          "start": 59.189,
+          "end": 59.309
+        },
+        {
+          "text": "solo",
+          "start": 59.409,
+          "end": 59.609
+        },
+        {
+          "text": "processo",
+          "start": 59.629,
+          "end": 60.029
+        },
+        {
+          "text": "per",
+          "start": 60.069,
+          "end": 60.169
+        },
+        {
+          "text": "container.",
+          "start": 60.209,
+          "end": 60.709
+        }
+      ]
+    }
+  ]
+}

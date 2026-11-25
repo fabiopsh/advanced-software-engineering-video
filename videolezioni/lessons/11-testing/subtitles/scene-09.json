@@ -1,0 +1,999 @@
+{
+  "duration": 66.45,
+  "segments": [
+    {
+      "start": 0.02,
+      "end": 4.261,
+      "text": "Chiudiamo il capitolo sul testing fissando i cinque punti chiave da portare all'esame.",
+      "words": [
+        {
+          "text": "Chiudiamo",
+          "start": 0.02,
+          "end": 0.42
+        },
+        {
+          "text": "il",
+          "start": 0.46,
+          "end": 0.52
+        },
+        {
+          "text": "capitolo",
+          "start": 0.56,
+          "end": 0.98
+        },
+        {
+          "text": "sul",
+          "start": 1.02,
+          "end": 1.16
+        },
+        {
+          "text": "testing",
+          "start": 1.24,
+          "end": 1.681
+        },
+        {
+          "text": "fissando",
+          "start": 1.781,
+          "end": 2.181
+        },
+        {
+          "text": "i",
+          "start": 2.241,
+          "end": 2.281
+        },
+        {
+          "text": "cinque",
+          "start": 2.361,
+          "end": 2.681
+        },
+        {
+          "text": "punti",
+          "start": 2.741,
+          "end": 3.001
+        },
+        {
+          "text": "chiave",
+          "start": 3.041,
+          "end": 3.321
+        },
+        {
+          "text": "da",
+          "start": 3.361,
+          "end": 3.421
+        },
+        {
+          "text": "portare",
+          "start": 3.461,
+          "end": 3.801
+        },
+        {
+          "text": "all'esame.",
+          "start": 3.841,
+          "end": 4.261
+        }
+      ]
+    },
+    {
+      "start": 4.901,
+      "end": 10.123,
+      "text": "Primo: il testing confronta il comportamento osservato con quello atteso su input simulati,",
+      "words": [
+        {
+          "text": "Primo:",
+          "start": 4.901,
+          "end": 5.142
+        },
+        {
+          "text": "il",
+          "start": 5.622,
+          "end": 5.702
+        },
+        {
+          "text": "testing",
+          "start": 5.762,
+          "end": 6.142
+        },
+        {
+          "text": "confronta",
+          "start": 6.242,
+          "end": 6.662
+        },
+        {
+          "text": "il",
+          "start": 6.702,
+          "end": 6.742
+        },
+        {
+          "text": "comportamento",
+          "start": 6.782,
+          "end": 7.422
+        },
+        {
+          "text": "osservato",
+          "start": 7.462,
+          "end": 8.042
+        },
+        {
+          "text": "con",
+          "start": 8.102,
+          "end": 8.202
+        },
+        {
+          "text": "quello",
+          "start": 8.242,
+          "end": 8.463
+        },
+        {
+          "text": "atteso",
+          "start": 8.523,
+          "end": 8.963
+        },
+        {
+          "text": "su",
+          "start": 9.043,
+          "end": 9.123
+        },
+        {
+          "text": "input",
+          "start": 9.223,
+          "end": 9.483
+        },
+        {
+          "text": "simulati,",
+          "start": 9.583,
+          "end": 10.123
+        }
+      ]
+    },
+    {
+      "start": 10.523,
+      "end": 14.324,
+      "text": "ma mostra solo la presenza di bug e non equivale alla verifica formale;",
+      "words": [
+        {
+          "text": "ma",
+          "start": 10.523,
+          "end": 10.583
+        },
+        {
+          "text": "mostra",
+          "start": 10.763,
+          "end": 11.023
+        },
+        {
+          "text": "solo",
+          "start": 11.083,
+          "end": 11.263
+        },
+        {
+          "text": "la",
+          "start": 11.303,
+          "end": 11.363
+        },
+        {
+          "text": "presenza",
+          "start": 11.403,
+          "end": 11.804
+        },
+        {
+          "text": "di",
+          "start": 11.864,
+          "end": 11.944
+        },
+        {
+          "text": "bug",
+          "start": 12.004,
+          "end": 12.244
+        },
+        {
+          "text": "e",
+          "start": 12.544,
+          "end": 12.584
+        },
+        {
+          "text": "non",
+          "start": 12.684,
+          "end": 12.844
+        },
+        {
+          "text": "equivale",
+          "start": 12.904,
+          "end": 13.304
+        },
+        {
+          "text": "alla",
+          "start": 13.344,
+          "end": 13.464
+        },
+        {
+          "text": "verifica",
+          "start": 13.484,
+          "end": 13.844
+        },
+        {
+          "text": "formale;",
+          "start": 13.904,
+          "end": 14.324
+        }
+      ]
+    },
+    {
+      "start": 14.784,
+      "end": 17.525,
+      "text": "i quattro tipi sono functional, user con alpha e beta,",
+      "words": [
+        {
+          "text": "i",
+          "start": 14.784,
+          "end": 14.824
+        },
+        {
+          "text": "quattro",
+          "start": 14.844,
+          "end": 15.085
+        },
+        {
+          "text": "tipi",
+          "start": 15.125,
+          "end": 15.325
+        },
+        {
+          "text": "sono",
+          "start": 15.365,
+          "end": 15.525
+        },
+        {
+          "text": "functional,",
+          "start": 15.605,
+          "end": 16.085
+        },
+        {
+          "text": "user",
+          "start": 16.485,
+          "end": 16.745
+        },
+        {
+          "text": "con",
+          "start": 16.805,
+          "end": 16.925
+        },
+        {
+          "text": "alpha",
+          "start": 16.965,
+          "end": 17.165
+        },
+        {
+          "text": "e",
+          "start": 17.205,
+          "end": 17.245
+        },
+        {
+          "text": "beta,",
+          "start": 17.265,
+          "end": 17.525
+        }
+      ]
+    },
+    {
+      "start": 17.945,
+      "end": 19.146,
+      "text": "performance e security.",
+      "words": [
+        {
+          "text": "performance",
+          "start": 17.945,
+          "end": 18.546
+        },
+        {
+          "text": "e",
+          "start": 18.606,
+          "end": 18.646
+        },
+        {
+          "text": "security.",
+          "start": 18.706,
+          "end": 19.146
+        }
+      ]
+    },
+    {
+      "start": 19.786,
+      "end": 24.827,
+      "text": "Secondo: il functional testing procede in quattro fasi — unit con partizioni e confini,",
+      "words": [
+        {
+          "text": "Secondo:",
+          "start": 19.786,
+          "end": 20.166
+        },
+        {
+          "text": "il",
+          "start": 20.586,
+          "end": 20.666
+        },
+        {
+          "text": "functional",
+          "start": 20.706,
+          "end": 21.066
+        },
+        {
+          "text": "testing",
+          "start": 21.126,
+          "end": 21.466
+        },
+        {
+          "text": "procede",
+          "start": 21.526,
+          "end": 21.847
+        },
+        {
+          "text": "in",
+          "start": 21.887,
+          "end": 21.947
+        },
+        {
+          "text": "quattro",
+          "start": 21.947,
+          "end": 22.187
+        },
+        {
+          "text": "fasi",
+          "start": 22.227,
+          "end": 22.507
+        },
+        {
+          "text": "—",
+          "start": 22.507,
+          "end": 22.657
+        },
+        {
+          "text": "unit",
+          "start": 22.967,
+          "end": 23.227
+        },
+        {
+          "text": "con",
+          "start": 23.547,
+          "end": 23.647
+        },
+        {
+          "text": "partizioni",
+          "start": 23.687,
+          "end": 24.267
+        },
+        {
+          "text": "e",
+          "start": 24.327,
+          "end": 24.367
+        },
+        {
+          "text": "confini,",
+          "start": 24.407,
+          "end": 24.827
+        }
+      ]
+    },
+    {
+      "start": 25.388,
+      "end": 28.269,
+      "text": "feature da user story con interaction e usefulness test,",
+      "words": [
+        {
+          "text": "feature",
+          "start": 25.388,
+          "end": 25.788
+        },
+        {
+          "text": "da",
+          "start": 26.028,
+          "end": 26.088
+        },
+        {
+          "text": "user",
+          "start": 26.168,
+          "end": 26.328
+        },
+        {
+          "text": "story",
+          "start": 26.368,
+          "end": 26.688
+        },
+        {
+          "text": "con",
+          "start": 26.748,
+          "end": 26.848
+        },
+        {
+          "text": "interaction",
+          "start": 26.888,
+          "end": 27.388
+        },
+        {
+          "text": "e",
+          "start": 27.428,
+          "end": 27.468
+        },
+        {
+          "text": "usefulness",
+          "start": 27.528,
+          "end": 27.968
+        },
+        {
+          "text": "test,",
+          "start": 28.008,
+          "end": 28.269
+        }
+      ]
+    },
+    {
+      "start": 28.789,
+      "end": 31.549,
+      "text": "system end-to-end e release nell'ambiente reale.",
+      "words": [
+        {
+          "text": "system",
+          "start": 28.789,
+          "end": 29.129
+        },
+        {
+          "text": "end-to-end",
+          "start": 29.429,
+          "end": 29.889
+        },
+        {
+          "text": "e",
+          "start": 30.369,
+          "end": 30.409
+        },
+        {
+          "text": "release",
+          "start": 30.469,
+          "end": 30.749
+        },
+        {
+          "text": "nell'ambiente",
+          "start": 30.749,
+          "end": 31.209
+        },
+        {
+          "text": "reale.",
+          "start": 31.269,
+          "end": 31.549
+        }
+      ]
+    },
+    {
+      "start": 32.33,
+      "end": 37.251,
+      "text": "Terzo: i test automatici seguono Arrange, Action e Assert con eventuali mock object,",
+      "words": [
+        {
+          "text": "Terzo:",
+          "start": 32.33,
+          "end": 32.63
+        },
+        {
+          "text": "i",
+          "start": 33.13,
+          "end": 33.17
+        },
+        {
+          "text": "test",
+          "start": 33.21,
+          "end": 33.39
+        },
+        {
+          "text": "automatici",
+          "start": 33.41,
+          "end": 33.89
+        },
+        {
+          "text": "seguono",
+          "start": 33.95,
+          "end": 34.23
+        },
+        {
+          "text": "Arrange,",
+          "start": 34.27,
+          "end": 34.71
+        },
+        {
+          "text": "Action",
+          "start": 34.89,
+          "end": 35.211
+        },
+        {
+          "text": "e",
+          "start": 35.311,
+          "end": 35.351
+        },
+        {
+          "text": "Assert",
+          "start": 35.391,
+          "end": 35.771
+        },
+        {
+          "text": "con",
+          "start": 35.871,
+          "end": 35.991
+        },
+        {
+          "text": "eventuali",
+          "start": 36.031,
+          "end": 36.431
+        },
+        {
+          "text": "mock",
+          "start": 36.491,
+          "end": 36.671
+        },
+        {
+          "text": "object,",
+          "start": 36.871,
+          "end": 37.251
+        }
+      ]
+    },
+    {
+      "start": 37.671,
+      "end": 42.473,
+      "text": "rispettando la piramide settanta per cento unit, venti per cento feature e dieci per cento",
+      "words": [
+        {
+          "text": "rispettando",
+          "start": 37.671,
+          "end": 38.151
+        },
+        {
+          "text": "la",
+          "start": 38.171,
+          "end": 38.252
+        },
+        {
+          "text": "piramide",
+          "start": 38.292,
+          "end": 38.732
+        },
+        {
+          "text": "settanta",
+          "start": 39.032,
+          "end": 39.352
+        },
+        {
+          "text": "per",
+          "start": 39.392,
+          "end": 39.492
+        },
+        {
+          "text": "cento",
+          "start": 39.532,
+          "end": 39.772
+        },
+        {
+          "text": "unit,",
+          "start": 39.912,
+          "end": 40.152
+        },
+        {
+          "text": "venti",
+          "start": 40.552,
+          "end": 40.752
+        },
+        {
+          "text": "per",
+          "start": 40.792,
+          "end": 40.892
+        },
+        {
+          "text": "cento",
+          "start": 40.932,
+          "end": 41.152
+        },
+        {
+          "text": "feature",
+          "start": 41.212,
+          "end": 41.553
+        },
+        {
+          "text": "e",
+          "start": 41.813,
+          "end": 41.853
+        },
+        {
+          "text": "dieci",
+          "start": 41.893,
+          "end": 42.093
+        },
+        {
+          "text": "per",
+          "start": 42.133,
+          "end": 42.233
+        },
+        {
+          "text": "cento",
+          "start": 42.273,
+          "end": 42.473
+        }
+      ]
+    },
+    {
+      "start": 42.513,
+      "end": 42.833,
+      "text": "system.",
+      "words": [
+        {
+          "text": "system.",
+          "start": 42.513,
+          "end": 42.833
+        }
+      ]
+    },
+    {
+      "start": 43.573,
+      "end": 48.635,
+      "text": "Quarto: il test-driven development applica il ciclo Red, Green e Refactor con stub e regression",
+      "words": [
+        {
+          "text": "Quarto:",
+          "start": 43.573,
+          "end": 43.913
+        },
+        {
+          "text": "il",
+          "start": 44.193,
+          "end": 44.273
+        },
+        {
+          "text": "test-driven",
+          "start": 44.333,
+          "end": 44.733
+        },
+        {
+          "text": "development",
+          "start": 44.753,
+          "end": 45.194
+        },
+        {
+          "text": "applica",
+          "start": 45.274,
+          "end": 45.534
+        },
+        {
+          "text": "il",
+          "start": 45.574,
+          "end": 45.614
+        },
+        {
+          "text": "ciclo",
+          "start": 45.654,
+          "end": 45.954
+        },
+        {
+          "text": "Red,",
+          "start": 46.054,
+          "end": 46.234
+        },
+        {
+          "text": "Green",
+          "start": 46.414,
+          "end": 46.614
+        },
+        {
+          "text": "e",
+          "start": 46.714,
+          "end": 46.754
+        },
+        {
+          "text": "Refactor",
+          "start": 46.834,
+          "end": 47.294
+        },
+        {
+          "text": "con",
+          "start": 47.534,
+          "end": 47.654
+        },
+        {
+          "text": "stub",
+          "start": 47.714,
+          "end": 47.994
+        },
+        {
+          "text": "e",
+          "start": 48.134,
+          "end": 48.174
+        },
+        {
+          "text": "regression",
+          "start": 48.235,
+          "end": 48.635
+        }
+      ]
+    },
+    {
+      "start": 48.675,
+      "end": 53.836,
+      "text": "testing continuo, mentre il security testing adotta un approccio basato sul rischio pensando come un",
+      "words": [
+        {
+          "text": "testing",
+          "start": 48.675,
+          "end": 48.975
+        },
+        {
+          "text": "continuo,",
+          "start": 48.995,
+          "end": 49.455
+        },
+        {
+          "text": "mentre",
+          "start": 49.755,
+          "end": 49.995
+        },
+        {
+          "text": "il",
+          "start": 50.035,
+          "end": 50.095
+        },
+        {
+          "text": "security",
+          "start": 50.155,
+          "end": 50.615
+        },
+        {
+          "text": "testing",
+          "start": 50.675,
+          "end": 51.075
+        },
+        {
+          "text": "adotta",
+          "start": 51.195,
+          "end": 51.495
+        },
+        {
+          "text": "un",
+          "start": 51.515,
+          "end": 51.576
+        },
+        {
+          "text": "approccio",
+          "start": 51.596,
+          "end": 51.936
+        },
+        {
+          "text": "basato",
+          "start": 51.996,
+          "end": 52.296
+        },
+        {
+          "text": "sul",
+          "start": 52.336,
+          "end": 52.456
+        },
+        {
+          "text": "rischio",
+          "start": 52.516,
+          "end": 52.836
+        },
+        {
+          "text": "pensando",
+          "start": 53.036,
+          "end": 53.596
+        },
+        {
+          "text": "come",
+          "start": 53.636,
+          "end": 53.756
+        },
+        {
+          "text": "un",
+          "start": 53.776,
+          "end": 53.836
+        }
+      ]
+    },
+    {
+      "start": 53.876,
+      "end": 54.436,
+      "text": "attaccante.",
+      "words": [
+        {
+          "text": "attaccante.",
+          "start": 53.876,
+          "end": 54.436
+        }
+      ]
+    },
+    {
+      "start": 55.177,
+      "end": 60.178,
+      "text": "Quinto: poiché i test non rilevano fraintendimenti dei requisiti né la qualità interna del codice,",
+      "words": [
+        {
+          "text": "Quinto:",
+          "start": 55.177,
+          "end": 55.497
+        },
+        {
+          "text": "poiché",
+          "start": 55.957,
+          "end": 56.177
+        },
+        {
+          "text": "i",
+          "start": 56.217,
+          "end": 56.257
+        },
+        {
+          "text": "test",
+          "start": 56.277,
+          "end": 56.477
+        },
+        {
+          "text": "non",
+          "start": 56.577,
+          "end": 56.697
+        },
+        {
+          "text": "rilevano",
+          "start": 56.737,
+          "end": 57.117
+        },
+        {
+          "text": "fraintendimenti",
+          "start": 57.157,
+          "end": 57.797
+        },
+        {
+          "text": "dei",
+          "start": 57.837,
+          "end": 57.917
+        },
+        {
+          "text": "requisiti",
+          "start": 57.957,
+          "end": 58.478
+        },
+        {
+          "text": "né",
+          "start": 58.738,
+          "end": 58.818
+        },
+        {
+          "text": "la",
+          "start": 58.898,
+          "end": 58.978
+        },
+        {
+          "text": "qualità",
+          "start": 59.018,
+          "end": 59.278
+        },
+        {
+          "text": "interna",
+          "start": 59.318,
+          "end": 59.618
+        },
+        {
+          "text": "del",
+          "start": 59.658,
+          "end": 59.758
+        },
+        {
+          "text": "codice,",
+          "start": 59.798,
+          "end": 60.178
+        }
+      ]
+    },
+    {
+      "start": 60.498,
+      "end": 62.659,
+      "text": "le code review in quattro fasi li completano.",
+      "words": [
+        {
+          "text": "le",
+          "start": 60.498,
+          "end": 60.578
+        },
+        {
+          "text": "code",
+          "start": 60.658,
+          "end": 60.878
+        },
+        {
+          "text": "review",
+          "start": 60.878,
+          "end": 61.098
+        },
+        {
+          "text": "in",
+          "start": 61.158,
+          "end": 61.218
+        },
+        {
+          "text": "quattro",
+          "start": 61.238,
+          "end": 61.519
+        },
+        {
+          "text": "fasi",
+          "start": 61.579,
+          "end": 61.839
+        },
+        {
+          "text": "li",
+          "start": 61.999,
+          "end": 62.079
+        },
+        {
+          "text": "completano.",
+          "start": 62.139,
+          "end": 62.659
+        }
+      ]
+    },
+    {
+      "start": 63.319,
+      "end": 66.2,
+      "text": "Mettetevi ora alla prova rispondendo alle domande di verifica sulla destra.",
+      "words": [
+        {
+          "text": "Mettetevi",
+          "start": 63.319,
+          "end": 63.679
+        },
+        {
+          "text": "ora",
+          "start": 63.759,
+          "end": 63.839
+        },
+        {
+          "text": "alla",
+          "start": 63.859,
+          "end": 63.979
+        },
+        {
+          "text": "prova",
+          "start": 63.999,
+          "end": 64.219
+        },
+        {
+          "text": "rispondendo",
+          "start": 64.279,
+          "end": 64.719
+        },
+        {
+          "text": "alle",
+          "start": 64.739,
+          "end": 64.86
+        },
+        {
+          "text": "domande",
+          "start": 64.88,
+          "end": 65.16
+        },
+        {
+          "text": "di",
+          "start": 65.2,
+          "end": 65.26
+        },
+        {
+          "text": "verifica",
+          "start": 65.28,
+          "end": 65.64
+        },
+        {
+          "text": "sulla",
+          "start": 65.68,
+          "end": 65.86
+        },
+        {
+          "text": "destra.",
+          "start": 65.88,
+          "end": 66.2
+        }
+      ]
+    }
+  ]
+}

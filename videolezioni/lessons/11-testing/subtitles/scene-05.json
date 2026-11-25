@@ -1,0 +1,1008 @@
+{
+  "duration": 70.97,
+  "segments": [
+    {
+      "start": 1.011,
+      "end": 6.091,
+      "text": "Il test-driven development, nato con Extreme Programming, ribalta l'ordine tradizionale:",
+      "words": [
+        {
+          "text": "Il",
+          "start": 1.011,
+          "end": 1.131
+        },
+        {
+          "text": "test-driven",
+          "start": 1.231,
+          "end": 1.831
+        },
+        {
+          "text": "development,",
+          "start": 1.871,
+          "end": 2.451
+        },
+        {
+          "text": "nato",
+          "start": 2.871,
+          "end": 3.091
+        },
+        {
+          "text": "con",
+          "start": 3.111,
+          "end": 3.251
+        },
+        {
+          "text": "Extreme",
+          "start": 3.291,
+          "end": 3.671
+        },
+        {
+          "text": "Programming,",
+          "start": 3.691,
+          "end": 4.231
+        },
+        {
+          "text": "ribalta",
+          "start": 4.631,
+          "end": 5.031
+        },
+        {
+          "text": "l'ordine",
+          "start": 5.071,
+          "end": 5.411
+        },
+        {
+          "text": "tradizionale:",
+          "start": 5.451,
+          "end": 6.091
+        }
+      ]
+    },
+    {
+      "start": 6.732,
+      "end": 10.072,
+      "text": "prima si scrive il test eseguibile, poi il codice di produzione,",
+      "words": [
+        {
+          "text": "prima",
+          "start": 6.732,
+          "end": 6.992
+        },
+        {
+          "text": "si",
+          "start": 7.052,
+          "end": 7.132
+        },
+        {
+          "text": "scrive",
+          "start": 7.172,
+          "end": 7.432
+        },
+        {
+          "text": "il",
+          "start": 7.472,
+          "end": 7.532
+        },
+        {
+          "text": "test",
+          "start": 7.592,
+          "end": 7.772
+        },
+        {
+          "text": "eseguibile,",
+          "start": 7.852,
+          "end": 8.332
+        },
+        {
+          "text": "poi",
+          "start": 8.552,
+          "end": 8.772
+        },
+        {
+          "text": "il",
+          "start": 8.912,
+          "end": 8.992
+        },
+        {
+          "text": "codice",
+          "start": 9.052,
+          "end": 9.392
+        },
+        {
+          "text": "di",
+          "start": 9.432,
+          "end": 9.472
+        },
+        {
+          "text": "produzione,",
+          "start": 9.512,
+          "end": 10.072
+        }
+      ]
+    },
+    {
+      "start": 10.452,
+      "end": 13.772,
+      "text": "procedendo con mini-unit test su una piccola porzione alla volta.",
+      "words": [
+        {
+          "text": "procedendo",
+          "start": 10.452,
+          "end": 10.892
+        },
+        {
+          "text": "con",
+          "start": 10.952,
+          "end": 11.072
+        },
+        {
+          "text": "mini-unit",
+          "start": 11.152,
+          "end": 11.752
+        },
+        {
+          "text": "test",
+          "start": 11.872,
+          "end": 12.132
+        },
+        {
+          "text": "su",
+          "start": 12.332,
+          "end": 12.392
+        },
+        {
+          "text": "una",
+          "start": 12.432,
+          "end": 12.552
+        },
+        {
+          "text": "piccola",
+          "start": 12.612,
+          "end": 12.912
+        },
+        {
+          "text": "porzione",
+          "start": 12.952,
+          "end": 13.312
+        },
+        {
+          "text": "alla",
+          "start": 13.332,
+          "end": 13.452
+        },
+        {
+          "text": "volta.",
+          "start": 13.472,
+          "end": 13.772
+        }
+      ]
+    },
+    {
+      "start": 14.413,
+      "end": 15.033,
+      "text": "Vediamo il ciclo.",
+      "words": [
+        {
+          "text": "Vediamo",
+          "start": 14.413,
+          "end": 14.673
+        },
+        {
+          "text": "il",
+          "start": 14.693,
+          "end": 14.753
+        },
+        {
+          "text": "ciclo.",
+          "start": 14.773,
+          "end": 15.033
+        }
+      ]
+    },
+    {
+      "start": 15.853,
+      "end": 18.793,
+      "text": "Si sceglie una funzionalità e una sua realizzazione parziale,",
+      "words": [
+        {
+          "text": "Si",
+          "start": 15.853,
+          "end": 15.913
+        },
+        {
+          "text": "sceglie",
+          "start": 15.953,
+          "end": 16.233
+        },
+        {
+          "text": "una",
+          "start": 16.273,
+          "end": 16.373
+        },
+        {
+          "text": "funzionalità",
+          "start": 16.413,
+          "end": 16.993
+        },
+        {
+          "text": "e",
+          "start": 17.293,
+          "end": 17.333
+        },
+        {
+          "text": "una",
+          "start": 17.393,
+          "end": 17.513
+        },
+        {
+          "text": "sua",
+          "start": 17.573,
+          "end": 17.713
+        },
+        {
+          "text": "realizzazione",
+          "start": 17.753,
+          "end": 18.313
+        },
+        {
+          "text": "parziale,",
+          "start": 18.353,
+          "end": 18.793
+        }
+      ]
+    },
+    {
+      "start": 19.353,
+      "end": 22.034,
+      "text": "poi si scrivono i mini-unit test e uno stub,",
+      "words": [
+        {
+          "text": "poi",
+          "start": 19.353,
+          "end": 19.553
+        },
+        {
+          "text": "si",
+          "start": 19.613,
+          "end": 19.693
+        },
+        {
+          "text": "scrivono",
+          "start": 19.733,
+          "end": 20.093
+        },
+        {
+          "text": "i",
+          "start": 20.153,
+          "end": 20.193
+        },
+        {
+          "text": "mini-unit",
+          "start": 20.253,
+          "end": 20.813
+        },
+        {
+          "text": "test",
+          "start": 20.913,
+          "end": 21.173
+        },
+        {
+          "text": "e",
+          "start": 21.433,
+          "end": 21.473
+        },
+        {
+          "text": "uno",
+          "start": 21.553,
+          "end": 21.673
+        },
+        {
+          "text": "stub,",
+          "start": 21.754,
+          "end": 22.034
+        }
+      ]
+    },
+    {
+      "start": 22.554,
+      "end": 25.554,
+      "text": "cioè un abbozzo minimo di codice che fa fallire il nuovo test.",
+      "words": [
+        {
+          "text": "cioè",
+          "start": 22.554,
+          "end": 22.694
+        },
+        {
+          "text": "un",
+          "start": 22.854,
+          "end": 22.934
+        },
+        {
+          "text": "abbozzo",
+          "start": 22.954,
+          "end": 23.334
+        },
+        {
+          "text": "minimo",
+          "start": 23.414,
+          "end": 23.714
+        },
+        {
+          "text": "di",
+          "start": 23.774,
+          "end": 23.834
+        },
+        {
+          "text": "codice",
+          "start": 23.894,
+          "end": 24.294
+        },
+        {
+          "text": "che",
+          "start": 24.374,
+          "end": 24.454
+        },
+        {
+          "text": "fa",
+          "start": 24.494,
+          "end": 24.554
+        },
+        {
+          "text": "fallire",
+          "start": 24.654,
+          "end": 24.954
+        },
+        {
+          "text": "il",
+          "start": 24.994,
+          "end": 25.034
+        },
+        {
+          "text": "nuovo",
+          "start": 25.074,
+          "end": 25.254
+        },
+        {
+          "text": "test.",
+          "start": 25.294,
+          "end": 25.554
+        }
+      ]
+    },
+    {
+      "start": 26.394,
+      "end": 29.355,
+      "text": "Eseguendo tutta la suite automatica otteniamo la fase Red:",
+      "words": [
+        {
+          "text": "Eseguendo",
+          "start": 26.394,
+          "end": 26.814
+        },
+        {
+          "text": "tutta",
+          "start": 26.914,
+          "end": 27.154
+        },
+        {
+          "text": "la",
+          "start": 27.194,
+          "end": 27.254
+        },
+        {
+          "text": "suite",
+          "start": 27.334,
+          "end": 27.574
+        },
+        {
+          "text": "automatica",
+          "start": 27.614,
+          "end": 28.134
+        },
+        {
+          "text": "otteniamo",
+          "start": 28.374,
+          "end": 28.754
+        },
+        {
+          "text": "la",
+          "start": 28.794,
+          "end": 28.854
+        },
+        {
+          "text": "fase",
+          "start": 28.874,
+          "end": 29.074
+        },
+        {
+          "text": "Red:",
+          "start": 29.134,
+          "end": 29.355
+        }
+      ]
+    },
+    {
+      "start": 29.855,
+      "end": 30.955,
+      "text": "il nuovo test fallisce.",
+      "words": [
+        {
+          "text": "il",
+          "start": 29.855,
+          "end": 29.935
+        },
+        {
+          "text": "nuovo",
+          "start": 29.975,
+          "end": 30.175
+        },
+        {
+          "text": "test",
+          "start": 30.215,
+          "end": 30.415
+        },
+        {
+          "text": "fallisce.",
+          "start": 30.515,
+          "end": 30.955
+        }
+      ]
+    },
+    {
+      "start": 31.655,
+      "end": 36.175,
+      "text": "A questo punto scriviamo il codice necessario per far passare il test e rieseguiamo tutti",
+      "words": [
+        {
+          "text": "A",
+          "start": 31.655,
+          "end": 31.695
+        },
+        {
+          "text": "questo",
+          "start": 31.735,
+          "end": 31.935
+        },
+        {
+          "text": "punto",
+          "start": 31.975,
+          "end": 32.235
+        },
+        {
+          "text": "scriviamo",
+          "start": 32.275,
+          "end": 32.635
+        },
+        {
+          "text": "il",
+          "start": 32.675,
+          "end": 32.735
+        },
+        {
+          "text": "codice",
+          "start": 32.755,
+          "end": 33.055
+        },
+        {
+          "text": "necessario",
+          "start": 33.115,
+          "end": 33.635
+        },
+        {
+          "text": "per",
+          "start": 33.675,
+          "end": 33.795
+        },
+        {
+          "text": "far",
+          "start": 33.835,
+          "end": 33.975
+        },
+        {
+          "text": "passare",
+          "start": 34.015,
+          "end": 34.355
+        },
+        {
+          "text": "il",
+          "start": 34.395,
+          "end": 34.455
+        },
+        {
+          "text": "test",
+          "start": 34.495,
+          "end": 34.755
+        },
+        {
+          "text": "e",
+          "start": 35.135,
+          "end": 35.175
+        },
+        {
+          "text": "rieseguiamo",
+          "start": 35.255,
+          "end": 35.835
+        },
+        {
+          "text": "tutti",
+          "start": 35.935,
+          "end": 36.175
+        }
+      ]
+    },
+    {
+      "start": 36.215,
+      "end": 37.056,
+      "text": "i test automatici.",
+      "words": [
+        {
+          "text": "i",
+          "start": 36.215,
+          "end": 36.255
+        },
+        {
+          "text": "test",
+          "start": 36.275,
+          "end": 36.455
+        },
+        {
+          "text": "automatici.",
+          "start": 36.495,
+          "end": 37.056
+        }
+      ]
+    },
+    {
+      "start": 38.096,
+      "end": 43.476,
+      "text": "Qui avviene anche un regression testing continuo: se qualche vecchio test fallisce torniamo al codice;",
+      "words": [
+        {
+          "text": "Qui",
+          "start": 38.096,
+          "end": 38.236
+        },
+        {
+          "text": "avviene",
+          "start": 38.296,
+          "end": 38.576
+        },
+        {
+          "text": "anche",
+          "start": 38.636,
+          "end": 38.836
+        },
+        {
+          "text": "un",
+          "start": 38.936,
+          "end": 39.016
+        },
+        {
+          "text": "regression",
+          "start": 39.076,
+          "end": 39.556
+        },
+        {
+          "text": "testing",
+          "start": 39.636,
+          "end": 39.976
+        },
+        {
+          "text": "continuo:",
+          "start": 39.996,
+          "end": 40.496
+        },
+        {
+          "text": "se",
+          "start": 40.896,
+          "end": 40.976
+        },
+        {
+          "text": "qualche",
+          "start": 41.096,
+          "end": 41.376
+        },
+        {
+          "text": "vecchio",
+          "start": 41.436,
+          "end": 41.696
+        },
+        {
+          "text": "test",
+          "start": 41.736,
+          "end": 41.936
+        },
+        {
+          "text": "fallisce",
+          "start": 41.996,
+          "end": 42.476
+        },
+        {
+          "text": "torniamo",
+          "start": 42.596,
+          "end": 42.956
+        },
+        {
+          "text": "al",
+          "start": 42.996,
+          "end": 43.056
+        },
+        {
+          "text": "codice;",
+          "start": 43.096,
+          "end": 43.476
+        }
+      ]
+    },
+    {
+      "start": 43.936,
+      "end": 46.197,
+      "text": "quando tutti passano siamo nella fase Green.",
+      "words": [
+        {
+          "text": "quando",
+          "start": 43.936,
+          "end": 44.176
+        },
+        {
+          "text": "tutti",
+          "start": 44.296,
+          "end": 44.577
+        },
+        {
+          "text": "passano",
+          "start": 44.617,
+          "end": 45.037
+        },
+        {
+          "text": "siamo",
+          "start": 45.237,
+          "end": 45.457
+        },
+        {
+          "text": "nella",
+          "start": 45.497,
+          "end": 45.677
+        },
+        {
+          "text": "fase",
+          "start": 45.697,
+          "end": 45.897
+        },
+        {
+          "text": "Green.",
+          "start": 45.937,
+          "end": 46.197
+        }
+      ]
+    },
+    {
+      "start": 47.057,
+      "end": 52.178,
+      "text": "Infine rifattorizziamo il codice se serve e passiamo alla porzione successiva o a una nuova",
+      "words": [
+        {
+          "text": "Infine",
+          "start": 47.057,
+          "end": 47.437
+        },
+        {
+          "text": "rifattorizziamo",
+          "start": 47.697,
+          "end": 48.397
+        },
+        {
+          "text": "il",
+          "start": 48.437,
+          "end": 48.477
+        },
+        {
+          "text": "codice",
+          "start": 48.517,
+          "end": 48.897
+        },
+        {
+          "text": "se",
+          "start": 48.977,
+          "end": 49.057
+        },
+        {
+          "text": "serve",
+          "start": 49.137,
+          "end": 49.457
+        },
+        {
+          "text": "e",
+          "start": 49.737,
+          "end": 49.777
+        },
+        {
+          "text": "passiamo",
+          "start": 49.817,
+          "end": 50.157
+        },
+        {
+          "text": "alla",
+          "start": 50.197,
+          "end": 50.337
+        },
+        {
+          "text": "porzione",
+          "start": 50.397,
+          "end": 50.757
+        },
+        {
+          "text": "successiva",
+          "start": 50.797,
+          "end": 51.397
+        },
+        {
+          "text": "o",
+          "start": 51.497,
+          "end": 51.537
+        },
+        {
+          "text": "a",
+          "start": 51.657,
+          "end": 51.697
+        },
+        {
+          "text": "una",
+          "start": 51.757,
+          "end": 51.897
+        },
+        {
+          "text": "nuova",
+          "start": 51.957,
+          "end": 52.178
+        }
+      ]
+    },
+    {
+      "start": 52.218,
+      "end": 52.798,
+      "text": "funzionalità.",
+      "words": [
+        {
+          "text": "funzionalità.",
+          "start": 52.218,
+          "end": 52.798
+        }
+      ]
+    },
+    {
+      "start": 53.778,
+      "end": 59.979,
+      "text": "Il TDD offre vantaggi chiari: copertura sistematica, test che documentano il codice e debugging incrementale.",
+      "words": [
+        {
+          "text": "Il",
+          "start": 53.778,
+          "end": 53.878
+        },
+        {
+          "text": "TDD",
+          "start": 53.958,
+          "end": 54.278
+        },
+        {
+          "text": "offre",
+          "start": 54.518,
+          "end": 54.758
+        },
+        {
+          "text": "vantaggi",
+          "start": 54.838,
+          "end": 55.198
+        },
+        {
+          "text": "chiari:",
+          "start": 55.258,
+          "end": 55.538
+        },
+        {
+          "text": "copertura",
+          "start": 55.938,
+          "end": 56.358
+        },
+        {
+          "text": "sistematica,",
+          "start": 56.418,
+          "end": 57.038
+        },
+        {
+          "text": "test",
+          "start": 57.238,
+          "end": 57.458
+        },
+        {
+          "text": "che",
+          "start": 57.538,
+          "end": 57.618
+        },
+        {
+          "text": "documentano",
+          "start": 57.658,
+          "end": 58.118
+        },
+        {
+          "text": "il",
+          "start": 58.118,
+          "end": 58.198
+        },
+        {
+          "text": "codice",
+          "start": 58.238,
+          "end": 58.638
+        },
+        {
+          "text": "e",
+          "start": 58.718,
+          "end": 58.758
+        },
+        {
+          "text": "debugging",
+          "start": 58.838,
+          "end": 59.298
+        },
+        {
+          "text": "incrementale.",
+          "start": 59.338,
+          "end": 59.979
+        }
+      ]
+    },
+    {
+      "start": 60.559,
+      "end": 64.199,
+      "text": "Ma presenta anche limiti: è difficile applicarlo al system testing,",
+      "words": [
+        {
+          "text": "Ma",
+          "start": 60.559,
+          "end": 60.639
+        },
+        {
+          "text": "presenta",
+          "start": 60.719,
+          "end": 61.039
+        },
+        {
+          "text": "anche",
+          "start": 61.099,
+          "end": 61.259
+        },
+        {
+          "text": "limiti:",
+          "start": 61.339,
+          "end": 61.659
+        },
+        {
+          "text": "è",
+          "start": 62.059,
+          "end": 62.099
+        },
+        {
+          "text": "difficile",
+          "start": 62.159,
+          "end": 62.739
+        },
+        {
+          "text": "applicarlo",
+          "start": 62.779,
+          "end": 63.279
+        },
+        {
+          "text": "al",
+          "start": 63.299,
+          "end": 63.379
+        },
+        {
+          "text": "system",
+          "start": 63.439,
+          "end": 63.699
+        },
+        {
+          "text": "testing,",
+          "start": 63.779,
+          "end": 64.199
+        }
+      ]
+    },
+    {
+      "start": 64.519,
+      "end": 70.32,
+      "text": "scoraggia cambi radicali e può far concentrare sui test o sui dettagli invece che sull'architettura",
+      "words": [
+        {
+          "text": "scoraggia",
+          "start": 64.519,
+          "end": 65.059
+        },
+        {
+          "text": "cambi",
+          "start": 65.099,
+          "end": 65.339
+        },
+        {
+          "text": "radicali",
+          "start": 65.399,
+          "end": 65.879
+        },
+        {
+          "text": "e",
+          "start": 66.259,
+          "end": 66.299
+        },
+        {
+          "text": "può",
+          "start": 66.359,
+          "end": 66.459
+        },
+        {
+          "text": "far",
+          "start": 66.559,
+          "end": 66.679
+        },
+        {
+          "text": "concentrare",
+          "start": 66.739,
+          "end": 67.3
+        },
+        {
+          "text": "sui",
+          "start": 67.34,
+          "end": 67.48
+        },
+        {
+          "text": "test",
+          "start": 67.5,
+          "end": 67.82
+        },
+        {
+          "text": "o",
+          "start": 68.02,
+          "end": 68.06
+        },
+        {
+          "text": "sui",
+          "start": 68.16,
+          "end": 68.32
+        },
+        {
+          "text": "dettagli",
+          "start": 68.36,
+          "end": 68.92
+        },
+        {
+          "text": "invece",
+          "start": 69.1,
+          "end": 69.44
+        },
+        {
+          "text": "che",
+          "start": 69.48,
+          "end": 69.56
+        },
+        {
+          "text": "sull'architettura",
+          "start": 69.62,
+          "end": 70.32
+        }
+      ]
+    },
+    {
+      "start": 70.36,
+      "end": 70.72,
+      "text": "globale.",
+      "words": [
+        {
+          "text": "globale.",
+          "start": 70.36,
+          "end": 70.72
+        }
+      ]
+    }
+  ]
+}

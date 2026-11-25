@@ -1,0 +1,1019 @@
+{
+  "duration": 68.263,
+  "segments": [
+    {
+      "start": 0.06,
+      "end": 4.56,
+      "text": "Vediamo gli altri tre casi di refactoring del database e l'ordine migliore di migrazione.",
+      "words": [
+        {
+          "text": "Vediamo",
+          "start": 0.06,
+          "end": 0.36
+        },
+        {
+          "text": "gli",
+          "start": 0.4,
+          "end": 0.52
+        },
+        {
+          "text": "altri",
+          "start": 0.58,
+          "end": 0.86
+        },
+        {
+          "text": "tre",
+          "start": 0.98,
+          "end": 1.14
+        },
+        {
+          "text": "casi",
+          "start": 1.24,
+          "end": 1.52
+        },
+        {
+          "text": "di",
+          "start": 1.58,
+          "end": 1.64
+        },
+        {
+          "text": "refactoring",
+          "start": 1.68,
+          "end": 2.22
+        },
+        {
+          "text": "del",
+          "start": 2.24,
+          "end": 2.34
+        },
+        {
+          "text": "database",
+          "start": 2.38,
+          "end": 2.88
+        },
+        {
+          "text": "e",
+          "start": 3.0,
+          "end": 3.04
+        },
+        {
+          "text": "l'ordine",
+          "start": 3.1,
+          "end": 3.46
+        },
+        {
+          "text": "migliore",
+          "start": 3.52,
+          "end": 3.88
+        },
+        {
+          "text": "di",
+          "start": 3.9,
+          "end": 3.96
+        },
+        {
+          "text": "migrazione.",
+          "start": 4.0,
+          "end": 4.56
+        }
+      ]
+    },
+    {
+      "start": 5.52,
+      "end": 10.861,
+      "text": "Secondo caso: dati statici condivisi, come la tabella Country codes letta da Catalog,",
+      "words": [
+        {
+          "text": "Secondo",
+          "start": 5.52,
+          "end": 5.8
+        },
+        {
+          "text": "caso:",
+          "start": 5.82,
+          "end": 6.08
+        },
+        {
+          "text": "dati",
+          "start": 6.6,
+          "end": 6.841
+        },
+        {
+          "text": "statici",
+          "start": 6.921,
+          "end": 7.361
+        },
+        {
+          "text": "condivisi,",
+          "start": 7.441,
+          "end": 8.041
+        },
+        {
+          "text": "come",
+          "start": 8.281,
+          "end": 8.441
+        },
+        {
+          "text": "la",
+          "start": 8.481,
+          "end": 8.541
+        },
+        {
+          "text": "tabella",
+          "start": 8.581,
+          "end": 8.921
+        },
+        {
+          "text": "Country",
+          "start": 9.021,
+          "end": 9.401
+        },
+        {
+          "text": "codes",
+          "start": 9.461,
+          "end": 9.801
+        },
+        {
+          "text": "letta",
+          "start": 9.961,
+          "end": 10.221
+        },
+        {
+          "text": "da",
+          "start": 10.261,
+          "end": 10.321
+        },
+        {
+          "text": "Catalog,",
+          "start": 10.421,
+          "end": 10.861
+        }
+      ]
+    },
+    {
+      "start": 11.001,
+      "end": 12.101,
+      "text": "Warehouse e Finance.",
+      "words": [
+        {
+          "text": "Warehouse",
+          "start": 11.001,
+          "end": 11.481
+        },
+        {
+          "text": "e",
+          "start": 11.541,
+          "end": 11.581
+        },
+        {
+          "text": "Finance.",
+          "start": 11.641,
+          "end": 12.101
+        }
+      ]
+    },
+    {
+      "start": 12.661,
+      "end": 16.941,
+      "text": "Si può duplicare la tabella per package, creare un servizio dedicato che però rischia di",
+      "words": [
+        {
+          "text": "Si",
+          "start": 12.661,
+          "end": 12.741
+        },
+        {
+          "text": "può",
+          "start": 12.781,
+          "end": 12.881
+        },
+        {
+          "text": "duplicare",
+          "start": 12.981,
+          "end": 13.461
+        },
+        {
+          "text": "la",
+          "start": 13.521,
+          "end": 13.561
+        },
+        {
+          "text": "tabella",
+          "start": 13.601,
+          "end": 13.881
+        },
+        {
+          "text": "per",
+          "start": 13.921,
+          "end": 14.041
+        },
+        {
+          "text": "package,",
+          "start": 14.081,
+          "end": 14.441
+        },
+        {
+          "text": "creare",
+          "start": 14.661,
+          "end": 15.001
+        },
+        {
+          "text": "un",
+          "start": 15.041,
+          "end": 15.121
+        },
+        {
+          "text": "servizio",
+          "start": 15.161,
+          "end": 15.541
+        },
+        {
+          "text": "dedicato",
+          "start": 15.561,
+          "end": 16.021
+        },
+        {
+          "text": "che",
+          "start": 16.161,
+          "end": 16.221
+        },
+        {
+          "text": "però",
+          "start": 16.261,
+          "end": 16.401
+        },
+        {
+          "text": "rischia",
+          "start": 16.561,
+          "end": 16.841
+        },
+        {
+          "text": "di",
+          "start": 16.881,
+          "end": 16.941
+        }
+      ]
+    },
+    {
+      "start": 16.981,
+      "end": 21.142,
+      "text": "essere overkill, oppure trattarli come codice in un file di configurazione,",
+      "words": [
+        {
+          "text": "essere",
+          "start": 16.981,
+          "end": 17.241
+        },
+        {
+          "text": "overkill,",
+          "start": 17.321,
+          "end": 17.761
+        },
+        {
+          "text": "oppure",
+          "start": 18.241,
+          "end": 18.521
+        },
+        {
+          "text": "trattarli",
+          "start": 18.661,
+          "end": 19.101
+        },
+        {
+          "text": "come",
+          "start": 19.141,
+          "end": 19.301
+        },
+        {
+          "text": "codice",
+          "start": 19.401,
+          "end": 19.801
+        },
+        {
+          "text": "in",
+          "start": 19.861,
+          "end": 19.921
+        },
+        {
+          "text": "un",
+          "start": 19.961,
+          "end": 20.021
+        },
+        {
+          "text": "file",
+          "start": 20.081,
+          "end": 20.301
+        },
+        {
+          "text": "di",
+          "start": 20.301,
+          "end": 20.361
+        },
+        {
+          "text": "configurazione,",
+          "start": 20.401,
+          "end": 21.142
+        }
+      ]
+    },
+    {
+      "start": 21.282,
+      "end": 22.382,
+      "text": "che è la soluzione preferita.",
+      "words": [
+        {
+          "text": "che",
+          "start": 21.282,
+          "end": 21.342
+        },
+        {
+          "text": "è",
+          "start": 21.402,
+          "end": 21.442
+        },
+        {
+          "text": "la",
+          "start": 21.462,
+          "end": 21.502
+        },
+        {
+          "text": "soluzione",
+          "start": 21.542,
+          "end": 21.922
+        },
+        {
+          "text": "preferita.",
+          "start": 21.942,
+          "end": 22.382
+        }
+      ]
+    },
+    {
+      "start": 23.282,
+      "end": 25.762,
+      "text": "Terzo caso: dati modificabili condivisi.",
+      "words": [
+        {
+          "text": "Terzo",
+          "start": 23.282,
+          "end": 23.542
+        },
+        {
+          "text": "caso:",
+          "start": 23.562,
+          "end": 23.842
+        },
+        {
+          "text": "dati",
+          "start": 24.242,
+          "end": 24.462
+        },
+        {
+          "text": "modificabili",
+          "start": 24.562,
+          "end": 25.262
+        },
+        {
+          "text": "condivisi.",
+          "start": 25.302,
+          "end": 25.762
+        }
+      ]
+    },
+    {
+      "start": 26.382,
+      "end": 30.202,
+      "text": "Finance e Warehouse leggono e scrivono insieme la tabella Customer record.",
+      "words": [
+        {
+          "text": "Finance",
+          "start": 26.382,
+          "end": 26.782
+        },
+        {
+          "text": "e",
+          "start": 26.802,
+          "end": 26.842
+        },
+        {
+          "text": "Warehouse",
+          "start": 26.842,
+          "end": 27.302
+        },
+        {
+          "text": "leggono",
+          "start": 27.442,
+          "end": 27.762
+        },
+        {
+          "text": "e",
+          "start": 27.802,
+          "end": 27.842
+        },
+        {
+          "text": "scrivono",
+          "start": 27.862,
+          "end": 28.242
+        },
+        {
+          "text": "insieme",
+          "start": 28.322,
+          "end": 28.782
+        },
+        {
+          "text": "la",
+          "start": 28.862,
+          "end": 28.922
+        },
+        {
+          "text": "tabella",
+          "start": 28.962,
+          "end": 29.282
+        },
+        {
+          "text": "Customer",
+          "start": 29.402,
+          "end": 29.822
+        },
+        {
+          "text": "record.",
+          "start": 29.882,
+          "end": 30.202
+        }
+      ]
+    },
+    {
+      "start": 30.802,
+      "end": 35.563,
+      "text": "Il concetto di cliente è implicito nel database: si crea allora un Customer service esplicito",
+      "words": [
+        {
+          "text": "Il",
+          "start": 30.802,
+          "end": 30.882
+        },
+        {
+          "text": "concetto",
+          "start": 30.902,
+          "end": 31.222
+        },
+        {
+          "text": "di",
+          "start": 31.242,
+          "end": 31.302
+        },
+        {
+          "text": "cliente",
+          "start": 31.322,
+          "end": 31.702
+        },
+        {
+          "text": "è",
+          "start": 31.762,
+          "end": 31.802
+        },
+        {
+          "text": "implicito",
+          "start": 31.862,
+          "end": 32.342
+        },
+        {
+          "text": "nel",
+          "start": 32.402,
+          "end": 32.502
+        },
+        {
+          "text": "database:",
+          "start": 32.542,
+          "end": 32.982
+        },
+        {
+          "text": "si",
+          "start": 33.382,
+          "end": 33.462
+        },
+        {
+          "text": "crea",
+          "start": 33.502,
+          "end": 33.682
+        },
+        {
+          "text": "allora",
+          "start": 33.722,
+          "end": 33.982
+        },
+        {
+          "text": "un",
+          "start": 34.022,
+          "end": 34.122
+        },
+        {
+          "text": "Customer",
+          "start": 34.183,
+          "end": 34.623
+        },
+        {
+          "text": "service",
+          "start": 34.683,
+          "end": 35.023
+        },
+        {
+          "text": "esplicito",
+          "start": 35.063,
+          "end": 35.563
+        }
+      ]
+    },
+    {
+      "start": 35.723,
+      "end": 37.423,
+      "text": "e gli altri due chiamano la sua API.",
+      "words": [
+        {
+          "text": "e",
+          "start": 35.723,
+          "end": 35.763
+        },
+        {
+          "text": "gli",
+          "start": 35.783,
+          "end": 35.863
+        },
+        {
+          "text": "altri",
+          "start": 35.883,
+          "end": 36.083
+        },
+        {
+          "text": "due",
+          "start": 36.143,
+          "end": 36.303
+        },
+        {
+          "text": "chiamano",
+          "start": 36.363,
+          "end": 36.703
+        },
+        {
+          "text": "la",
+          "start": 36.763,
+          "end": 36.823
+        },
+        {
+          "text": "sua",
+          "start": 36.863,
+          "end": 36.983
+        },
+        {
+          "text": "API.",
+          "start": 37.063,
+          "end": 37.423
+        }
+      ]
+    },
+    {
+      "start": 38.163,
+      "end": 40.023,
+      "text": "Quarto caso: tabelle condivise.",
+      "words": [
+        {
+          "text": "Quarto",
+          "start": 38.163,
+          "end": 38.443
+        },
+        {
+          "text": "caso:",
+          "start": 38.483,
+          "end": 38.723
+        },
+        {
+          "text": "tabelle",
+          "start": 39.003,
+          "end": 39.403
+        },
+        {
+          "text": "condivise.",
+          "start": 39.463,
+          "end": 40.023
+        }
+      ]
+    },
+    {
+      "start": 40.463,
+      "end": 45.243,
+      "text": "La tabella Item contiene sia nome e prezzo per Catalog sia l'inventario per Warehouse.",
+      "words": [
+        {
+          "text": "La",
+          "start": 40.463,
+          "end": 40.523
+        },
+        {
+          "text": "tabella",
+          "start": 40.543,
+          "end": 40.823
+        },
+        {
+          "text": "Item",
+          "start": 41.063,
+          "end": 41.263
+        },
+        {
+          "text": "contiene",
+          "start": 41.363,
+          "end": 41.723
+        },
+        {
+          "text": "sia",
+          "start": 41.823,
+          "end": 42.023
+        },
+        {
+          "text": "nome",
+          "start": 42.123,
+          "end": 42.363
+        },
+        {
+          "text": "e",
+          "start": 42.443,
+          "end": 42.483
+        },
+        {
+          "text": "prezzo",
+          "start": 42.523,
+          "end": 42.883
+        },
+        {
+          "text": "per",
+          "start": 42.923,
+          "end": 43.023
+        },
+        {
+          "text": "Catalog",
+          "start": 43.063,
+          "end": 43.503
+        },
+        {
+          "text": "sia",
+          "start": 43.703,
+          "end": 43.883
+        },
+        {
+          "text": "l'inventario",
+          "start": 43.923,
+          "end": 44.523
+        },
+        {
+          "text": "per",
+          "start": 44.603,
+          "end": 44.723
+        },
+        {
+          "text": "Warehouse.",
+          "start": 44.763,
+          "end": 45.243
+        }
+      ]
+    },
+    {
+      "start": 45.783,
+      "end": 50.404,
+      "text": "Qui due concetti diversi stanno nella stessa tabella: attenzione a non confonderlo col caso precedente!",
+      "words": [
+        {
+          "text": "Qui",
+          "start": 45.783,
+          "end": 45.883
+        },
+        {
+          "text": "due",
+          "start": 45.963,
+          "end": 46.083
+        },
+        {
+          "text": "concetti",
+          "start": 46.123,
+          "end": 46.523
+        },
+        {
+          "text": "diversi",
+          "start": 46.543,
+          "end": 46.883
+        },
+        {
+          "text": "stanno",
+          "start": 46.943,
+          "end": 47.203
+        },
+        {
+          "text": "nella",
+          "start": 47.243,
+          "end": 47.443
+        },
+        {
+          "text": "stessa",
+          "start": 47.503,
+          "end": 47.763
+        },
+        {
+          "text": "tabella:",
+          "start": 47.804,
+          "end": 48.144
+        },
+        {
+          "text": "attenzione",
+          "start": 48.424,
+          "end": 48.824
+        },
+        {
+          "text": "a",
+          "start": 48.864,
+          "end": 48.904
+        },
+        {
+          "text": "non",
+          "start": 48.944,
+          "end": 49.064
+        },
+        {
+          "text": "confonderlo",
+          "start": 49.084,
+          "end": 49.544
+        },
+        {
+          "text": "col",
+          "start": 49.584,
+          "end": 49.704
+        },
+        {
+          "text": "caso",
+          "start": 49.724,
+          "end": 49.904
+        },
+        {
+          "text": "precedente!",
+          "start": 49.924,
+          "end": 50.404
+        }
+      ]
+    },
+    {
+      "start": 51.004,
+      "end": 54.544,
+      "text": "La soluzione è dividere la tabella in Catalog item e Stock levels.",
+      "words": [
+        {
+          "text": "La",
+          "start": 51.004,
+          "end": 51.064
+        },
+        {
+          "text": "soluzione",
+          "start": 51.104,
+          "end": 51.504
+        },
+        {
+          "text": "è",
+          "start": 51.644,
+          "end": 51.684
+        },
+        {
+          "text": "dividere",
+          "start": 51.764,
+          "end": 52.144
+        },
+        {
+          "text": "la",
+          "start": 52.204,
+          "end": 52.264
+        },
+        {
+          "text": "tabella",
+          "start": 52.304,
+          "end": 52.624
+        },
+        {
+          "text": "in",
+          "start": 52.744,
+          "end": 52.824
+        },
+        {
+          "text": "Catalog",
+          "start": 52.944,
+          "end": 53.304
+        },
+        {
+          "text": "item",
+          "start": 53.424,
+          "end": 53.604
+        },
+        {
+          "text": "e",
+          "start": 53.804,
+          "end": 53.844
+        },
+        {
+          "text": "Stock",
+          "start": 53.924,
+          "end": 54.144
+        },
+        {
+          "text": "levels.",
+          "start": 54.224,
+          "end": 54.544
+        }
+      ]
+    },
+    {
+      "start": 55.684,
+      "end": 58.444,
+      "text": "Infine: prima gli schemi o prima i servizi?",
+      "words": [
+        {
+          "text": "Infine:",
+          "start": 55.684,
+          "end": 56.024
+        },
+        {
+          "text": "prima",
+          "start": 56.404,
+          "end": 56.664
+        },
+        {
+          "text": "gli",
+          "start": 56.684,
+          "end": 56.844
+        },
+        {
+          "text": "schemi",
+          "start": 56.944,
+          "end": 57.284
+        },
+        {
+          "text": "o",
+          "start": 57.464,
+          "end": 57.504
+        },
+        {
+          "text": "prima",
+          "start": 57.564,
+          "end": 57.784
+        },
+        {
+          "text": "i",
+          "start": 57.864,
+          "end": 57.904
+        },
+        {
+          "text": "servizi?",
+          "start": 57.964,
+          "end": 58.444
+        }
+      ]
+    },
+    {
+      "start": 59.164,
+      "end": 64.105,
+      "text": "Passare prima a schemi separati lasciando il codice ancora unito nel monolite permette di annullare",
+      "words": [
+        {
+          "text": "Passare",
+          "start": 59.164,
+          "end": 59.524
+        },
+        {
+          "text": "prima",
+          "start": 59.564,
+          "end": 59.784
+        },
+        {
+          "text": "a",
+          "start": 59.844,
+          "end": 59.884
+        },
+        {
+          "text": "schemi",
+          "start": 59.944,
+          "end": 60.204
+        },
+        {
+          "text": "separati",
+          "start": 60.284,
+          "end": 60.784
+        },
+        {
+          "text": "lasciando",
+          "start": 60.844,
+          "end": 61.204
+        },
+        {
+          "text": "il",
+          "start": 61.244,
+          "end": 61.304
+        },
+        {
+          "text": "codice",
+          "start": 61.344,
+          "end": 61.725
+        },
+        {
+          "text": "ancora",
+          "start": 61.745,
+          "end": 62.085
+        },
+        {
+          "text": "unito",
+          "start": 62.125,
+          "end": 62.405
+        },
+        {
+          "text": "nel",
+          "start": 62.445,
+          "end": 62.565
+        },
+        {
+          "text": "monolite",
+          "start": 62.605,
+          "end": 63.025
+        },
+        {
+          "text": "permette",
+          "start": 63.125,
+          "end": 63.545
+        },
+        {
+          "text": "di",
+          "start": 63.585,
+          "end": 63.645
+        },
+        {
+          "text": "annullare",
+          "start": 63.685,
+          "end": 64.105
+        }
+      ]
+    },
+    {
+      "start": 64.125,
+      "end": 67.905,
+      "text": "la modifica con facilità se emergono problemi di prestazioni o transazioni.",
+      "words": [
+        {
+          "text": "la",
+          "start": 64.125,
+          "end": 64.185
+        },
+        {
+          "text": "modifica",
+          "start": 64.225,
+          "end": 64.585
+        },
+        {
+          "text": "con",
+          "start": 64.645,
+          "end": 64.765
+        },
+        {
+          "text": "facilità",
+          "start": 64.785,
+          "end": 65.205
+        },
+        {
+          "text": "se",
+          "start": 65.405,
+          "end": 65.465
+        },
+        {
+          "text": "emergono",
+          "start": 65.525,
+          "end": 65.865
+        },
+        {
+          "text": "problemi",
+          "start": 65.925,
+          "end": 66.265
+        },
+        {
+          "text": "di",
+          "start": 66.325,
+          "end": 66.385
+        },
+        {
+          "text": "prestazioni",
+          "start": 66.405,
+          "end": 67.045
+        },
+        {
+          "text": "o",
+          "start": 67.165,
+          "end": 67.20500000000001
+        },
+        {
+          "text": "transazioni.",
+          "start": 67.285,
+          "end": 67.905
+        }
+      ]
+    }
+  ]
+}

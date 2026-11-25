@@ -1,0 +1,965 @@
+{
+  "duration": 64.945,
+  "segments": [
+    {
+      "start": 0.04,
+      "end": 6.16,
+      "text": "Le aziende medio-grandi raramente accettano un SaaS generico: chiedono personalizzazioni su cinque fronti,",
+      "words": [
+        {
+          "text": "Le",
+          "start": 0.04,
+          "end": 0.1
+        },
+        {
+          "text": "aziende",
+          "start": 0.14,
+          "end": 0.54
+        },
+        {
+          "text": "medio-grandi",
+          "start": 0.66,
+          "end": 1.36
+        },
+        {
+          "text": "raramente",
+          "start": 1.62,
+          "end": 2.16
+        },
+        {
+          "text": "accettano",
+          "start": 2.2,
+          "end": 2.62
+        },
+        {
+          "text": "un",
+          "start": 2.68,
+          "end": 2.74
+        },
+        {
+          "text": "SaaS",
+          "start": 2.82,
+          "end": 3.04
+        },
+        {
+          "text": "generico:",
+          "start": 3.16,
+          "end": 3.66
+        },
+        {
+          "text": "chiedono",
+          "start": 4.02,
+          "end": 4.32
+        },
+        {
+          "text": "personalizzazioni",
+          "start": 4.38,
+          "end": 5.24
+        },
+        {
+          "text": "su",
+          "start": 5.32,
+          "end": 5.4
+        },
+        {
+          "text": "cinque",
+          "start": 5.5,
+          "end": 5.76
+        },
+        {
+          "text": "fronti,",
+          "start": 5.8,
+          "end": 6.16
+        }
+      ]
+    },
+    {
+      "start": 6.58,
+      "end": 12.101,
+      "text": "cioè autenticazione aziendale, branding, regole di business, schemi dati e controllo degli accessi.",
+      "words": [
+        {
+          "text": "cioè",
+          "start": 6.58,
+          "end": 6.74
+        },
+        {
+          "text": "autenticazione",
+          "start": 6.941,
+          "end": 7.641
+        },
+        {
+          "text": "aziendale,",
+          "start": 7.701,
+          "end": 8.221
+        },
+        {
+          "text": "branding,",
+          "start": 8.501,
+          "end": 8.961
+        },
+        {
+          "text": "regole",
+          "start": 9.241,
+          "end": 9.521
+        },
+        {
+          "text": "di",
+          "start": 9.561,
+          "end": 9.621
+        },
+        {
+          "text": "business,",
+          "start": 9.661,
+          "end": 10.041
+        },
+        {
+          "text": "schemi",
+          "start": 10.281,
+          "end": 10.521
+        },
+        {
+          "text": "dati",
+          "start": 10.561,
+          "end": 10.841
+        },
+        {
+          "text": "e",
+          "start": 10.921,
+          "end": 10.961
+        },
+        {
+          "text": "controllo",
+          "start": 11.001,
+          "end": 11.461
+        },
+        {
+          "text": "degli",
+          "start": 11.481,
+          "end": 11.641
+        },
+        {
+          "text": "accessi.",
+          "start": 11.661,
+          "end": 12.101
+        }
+      ]
+    },
+    {
+      "start": 12.801,
+      "end": 18.041,
+      "text": "L'interfaccia si adatta con i profili utente: indicando la propria organizzazione o l'email aziendale,",
+      "words": [
+        {
+          "text": "L'interfaccia",
+          "start": 12.801,
+          "end": 13.361
+        },
+        {
+          "text": "si",
+          "start": 13.481,
+          "end": 13.541
+        },
+        {
+          "text": "adatta",
+          "start": 13.581,
+          "end": 13.821
+        },
+        {
+          "text": "con",
+          "start": 13.861,
+          "end": 13.981
+        },
+        {
+          "text": "i",
+          "start": 14.001,
+          "end": 14.041
+        },
+        {
+          "text": "profili",
+          "start": 14.061,
+          "end": 14.361
+        },
+        {
+          "text": "utente:",
+          "start": 14.421,
+          "end": 14.801
+        },
+        {
+          "text": "indicando",
+          "start": 15.141,
+          "end": 15.541
+        },
+        {
+          "text": "la",
+          "start": 15.581,
+          "end": 15.661
+        },
+        {
+          "text": "propria",
+          "start": 15.741,
+          "end": 16.041
+        },
+        {
+          "text": "organizzazione",
+          "start": 16.101,
+          "end": 16.981
+        },
+        {
+          "text": "o",
+          "start": 17.101,
+          "end": 17.141
+        },
+        {
+          "text": "l'email",
+          "start": 17.201,
+          "end": 17.481
+        },
+        {
+          "text": "aziendale,",
+          "start": 17.541,
+          "end": 18.041
+        }
+      ]
+    },
+    {
+      "start": 18.421,
+      "end": 22.022,
+      "text": "l'applicazione carica il profilo corrispondente, per esempio per le aziende uno,",
+      "words": [
+        {
+          "text": "l'applicazione",
+          "start": 18.421,
+          "end": 19.001
+        },
+        {
+          "text": "carica",
+          "start": 19.061,
+          "end": 19.321
+        },
+        {
+          "text": "il",
+          "start": 19.361,
+          "end": 19.421
+        },
+        {
+          "text": "profilo",
+          "start": 19.441,
+          "end": 19.741
+        },
+        {
+          "text": "corrispondente,",
+          "start": 19.781,
+          "end": 20.521
+        },
+        {
+          "text": "per",
+          "start": 20.682,
+          "end": 20.762
+        },
+        {
+          "text": "esempio",
+          "start": 20.782,
+          "end": 21.062
+        },
+        {
+          "text": "per",
+          "start": 21.082,
+          "end": 21.182
+        },
+        {
+          "text": "le",
+          "start": 21.202,
+          "end": 21.262
+        },
+        {
+          "text": "aziende",
+          "start": 21.302,
+          "end": 21.662
+        },
+        {
+          "text": "uno,",
+          "start": 21.882,
+          "end": 22.022
+        }
+      ]
+    },
+    {
+      "start": 22.102,
+      "end": 25.242,
+      "text": "due o tre, modificando logo, nome o voci di menu.",
+      "words": [
+        {
+          "text": "due",
+          "start": 22.102,
+          "end": 22.262
+        },
+        {
+          "text": "o",
+          "start": 22.342,
+          "end": 22.382
+        },
+        {
+          "text": "tre,",
+          "start": 22.442,
+          "end": 22.562
+        },
+        {
+          "text": "modificando",
+          "start": 22.942,
+          "end": 23.482
+        },
+        {
+          "text": "logo,",
+          "start": 23.582,
+          "end": 23.862
+        },
+        {
+          "text": "nome",
+          "start": 24.142,
+          "end": 24.402
+        },
+        {
+          "text": "o",
+          "start": 24.622,
+          "end": 24.662
+        },
+        {
+          "text": "voci",
+          "start": 24.722,
+          "end": 24.962
+        },
+        {
+          "text": "di",
+          "start": 25.002,
+          "end": 25.042
+        },
+        {
+          "text": "menu.",
+          "start": 25.082,
+          "end": 25.242
+        }
+      ]
+    },
+    {
+      "start": 25.802,
+      "end": 29.202,
+      "text": "Per estendere invece lo schema del database esistono due soluzioni.",
+      "words": [
+        {
+          "text": "Per",
+          "start": 25.802,
+          "end": 25.902
+        },
+        {
+          "text": "estendere",
+          "start": 25.922,
+          "end": 26.322
+        },
+        {
+          "text": "invece",
+          "start": 26.362,
+          "end": 26.622
+        },
+        {
+          "text": "lo",
+          "start": 26.722,
+          "end": 26.802
+        },
+        {
+          "text": "schema",
+          "start": 26.862,
+          "end": 27.142
+        },
+        {
+          "text": "del",
+          "start": 27.202,
+          "end": 27.302
+        },
+        {
+          "text": "database",
+          "start": 27.342,
+          "end": 27.882
+        },
+        {
+          "text": "esistono",
+          "start": 28.022,
+          "end": 28.422
+        },
+        {
+          "text": "due",
+          "start": 28.482,
+          "end": 28.642
+        },
+        {
+          "text": "soluzioni.",
+          "start": 28.682,
+          "end": 29.202
+        }
+      ]
+    },
+    {
+      "start": 29.722,
+      "end": 34.403,
+      "text": "La prima aggiunge colonne extra a ogni tabella, ma è difficile scegliere quante inserirne e",
+      "words": [
+        {
+          "text": "La",
+          "start": 29.722,
+          "end": 29.762
+        },
+        {
+          "text": "prima",
+          "start": 29.802,
+          "end": 30.022
+        },
+        {
+          "text": "aggiunge",
+          "start": 30.122,
+          "end": 30.442
+        },
+        {
+          "text": "colonne",
+          "start": 30.482,
+          "end": 30.782
+        },
+        {
+          "text": "extra",
+          "start": 30.902,
+          "end": 31.182
+        },
+        {
+          "text": "a",
+          "start": 31.222,
+          "end": 31.262
+        },
+        {
+          "text": "ogni",
+          "start": 31.302,
+          "end": 31.442
+        },
+        {
+          "text": "tabella,",
+          "start": 31.502,
+          "end": 31.922
+        },
+        {
+          "text": "ma",
+          "start": 32.082,
+          "end": 32.162
+        },
+        {
+          "text": "è",
+          "start": 32.282,
+          "end": 32.322
+        },
+        {
+          "text": "difficile",
+          "start": 32.382,
+          "end": 32.822
+        },
+        {
+          "text": "scegliere",
+          "start": 32.862,
+          "end": 33.222
+        },
+        {
+          "text": "quante",
+          "start": 33.322,
+          "end": 33.622
+        },
+        {
+          "text": "inserirne",
+          "start": 33.662,
+          "end": 34.243
+        },
+        {
+          "text": "e",
+          "start": 34.363,
+          "end": 34.403
+        }
+      ]
+    },
+    {
+      "start": 34.503,
+      "end": 37.023,
+      "text": "clienti diversi richiedono tipi di dato differenti.",
+      "words": [
+        {
+          "text": "clienti",
+          "start": 34.503,
+          "end": 34.863
+        },
+        {
+          "text": "diversi",
+          "start": 34.903,
+          "end": 35.263
+        },
+        {
+          "text": "richiedono",
+          "start": 35.303,
+          "end": 35.703
+        },
+        {
+          "text": "tipi",
+          "start": 35.843,
+          "end": 36.103
+        },
+        {
+          "text": "di",
+          "start": 36.143,
+          "end": 36.223
+        },
+        {
+          "text": "dato",
+          "start": 36.243,
+          "end": 36.463
+        },
+        {
+          "text": "differenti.",
+          "start": 36.503,
+          "end": 37.023
+        }
+      ]
+    },
+    {
+      "start": 37.603,
+      "end": 42.883,
+      "text": "La seconda usa una extension table: ogni riga della tabella principale punta a un identificatore",
+      "words": [
+        {
+          "text": "La",
+          "start": 37.603,
+          "end": 37.643
+        },
+        {
+          "text": "seconda",
+          "start": 37.703,
+          "end": 38.023
+        },
+        {
+          "text": "usa",
+          "start": 38.103,
+          "end": 38.263
+        },
+        {
+          "text": "una",
+          "start": 38.403,
+          "end": 38.523
+        },
+        {
+          "text": "extension",
+          "start": 38.663,
+          "end": 39.223
+        },
+        {
+          "text": "table:",
+          "start": 39.303,
+          "end": 39.643
+        },
+        {
+          "text": "ogni",
+          "start": 40.023,
+          "end": 40.203
+        },
+        {
+          "text": "riga",
+          "start": 40.243,
+          "end": 40.423
+        },
+        {
+          "text": "della",
+          "start": 40.483,
+          "end": 40.643
+        },
+        {
+          "text": "tabella",
+          "start": 40.683,
+          "end": 40.983
+        },
+        {
+          "text": "principale",
+          "start": 41.003,
+          "end": 41.543
+        },
+        {
+          "text": "punta",
+          "start": 41.643,
+          "end": 41.903
+        },
+        {
+          "text": "a",
+          "start": 41.963,
+          "end": 42.003
+        },
+        {
+          "text": "un",
+          "start": 42.023,
+          "end": 42.103
+        },
+        {
+          "text": "identificatore",
+          "start": 42.143,
+          "end": 42.883
+        }
+      ]
+    },
+    {
+      "start": 42.903,
+      "end": 47.023,
+      "text": "di estensione, abbinato a una tabella dei nomi e tipi dei campi e a una",
+      "words": [
+        {
+          "text": "di",
+          "start": 42.903,
+          "end": 42.963
+        },
+        {
+          "text": "estensione,",
+          "start": 43.003,
+          "end": 43.623
+        },
+        {
+          "text": "abbinato",
+          "start": 43.923,
+          "end": 44.323
+        },
+        {
+          "text": "a",
+          "start": 44.363,
+          "end": 44.403
+        },
+        {
+          "text": "una",
+          "start": 44.463,
+          "end": 44.603
+        },
+        {
+          "text": "tabella",
+          "start": 44.683,
+          "end": 45.043
+        },
+        {
+          "text": "dei",
+          "start": 45.103,
+          "end": 45.203
+        },
+        {
+          "text": "nomi",
+          "start": 45.223,
+          "end": 45.483
+        },
+        {
+          "text": "e",
+          "start": 45.683,
+          "end": 45.723
+        },
+        {
+          "text": "tipi",
+          "start": 45.823,
+          "end": 46.063
+        },
+        {
+          "text": "dei",
+          "start": 46.123,
+          "end": 46.243
+        },
+        {
+          "text": "campi",
+          "start": 46.263,
+          "end": 46.603
+        },
+        {
+          "text": "e",
+          "start": 46.763,
+          "end": 46.803
+        },
+        {
+          "text": "a",
+          "start": 46.843,
+          "end": 46.883
+        },
+        {
+          "text": "una",
+          "start": 46.903,
+          "end": 47.023
+        }
+      ]
+    },
+    {
+      "start": 47.043,
+      "end": 50.764,
+      "text": "tabella dei valori, offrendo flessibilità a fronte di maggiore complessità.",
+      "words": [
+        {
+          "text": "tabella",
+          "start": 47.043,
+          "end": 47.363
+        },
+        {
+          "text": "dei",
+          "start": 47.403,
+          "end": 47.523
+        },
+        {
+          "text": "valori,",
+          "start": 47.543,
+          "end": 47.843
+        },
+        {
+          "text": "offrendo",
+          "start": 48.204,
+          "end": 48.524
+        },
+        {
+          "text": "flessibilità",
+          "start": 48.584,
+          "end": 49.184
+        },
+        {
+          "text": "a",
+          "start": 49.464,
+          "end": 49.504
+        },
+        {
+          "text": "fronte",
+          "start": 49.544,
+          "end": 49.784
+        },
+        {
+          "text": "di",
+          "start": 49.824,
+          "end": 49.884
+        },
+        {
+          "text": "maggiore",
+          "start": 49.924,
+          "end": 50.224
+        },
+        {
+          "text": "complessità.",
+          "start": 50.264,
+          "end": 50.764
+        }
+      ]
+    },
+    {
+      "start": 51.324,
+      "end": 54.344,
+      "text": "Infine, la sicurezza dei dati condivisi richiede due misure:",
+      "words": [
+        {
+          "text": "Infine,",
+          "start": 51.324,
+          "end": 51.624
+        },
+        {
+          "text": "la",
+          "start": 51.944,
+          "end": 52.004
+        },
+        {
+          "text": "sicurezza",
+          "start": 52.064,
+          "end": 52.464
+        },
+        {
+          "text": "dei",
+          "start": 52.504,
+          "end": 52.604
+        },
+        {
+          "text": "dati",
+          "start": 52.624,
+          "end": 52.784
+        },
+        {
+          "text": "condivisi",
+          "start": 52.824,
+          "end": 53.304
+        },
+        {
+          "text": "richiede",
+          "start": 53.424,
+          "end": 53.724
+        },
+        {
+          "text": "due",
+          "start": 53.824,
+          "end": 53.984
+        },
+        {
+          "text": "misure:",
+          "start": 54.024,
+          "end": 54.344
+        }
+      ]
+    },
+    {
+      "start": 54.764,
+      "end": 59.344,
+      "text": "il multilevel access control, a livello sia di organizzazione sia di singolo utente,",
+      "words": [
+        {
+          "text": "il",
+          "start": 54.764,
+          "end": 54.864
+        },
+        {
+          "text": "multilevel",
+          "start": 54.944,
+          "end": 55.444
+        },
+        {
+          "text": "access",
+          "start": 55.504,
+          "end": 55.764
+        },
+        {
+          "text": "control,",
+          "start": 55.804,
+          "end": 56.144
+        },
+        {
+          "text": "a",
+          "start": 56.524,
+          "end": 56.564
+        },
+        {
+          "text": "livello",
+          "start": 56.604,
+          "end": 56.884
+        },
+        {
+          "text": "sia",
+          "start": 56.984,
+          "end": 57.164
+        },
+        {
+          "text": "di",
+          "start": 57.204,
+          "end": 57.264
+        },
+        {
+          "text": "organizzazione",
+          "start": 57.324,
+          "end": 58.104
+        },
+        {
+          "text": "sia",
+          "start": 58.264,
+          "end": 58.444
+        },
+        {
+          "text": "di",
+          "start": 58.504,
+          "end": 58.564
+        },
+        {
+          "text": "singolo",
+          "start": 58.624,
+          "end": 58.924
+        },
+        {
+          "text": "utente,",
+          "start": 58.984,
+          "end": 59.344
+        }
+      ]
+    },
+    {
+      "start": 59.764,
+      "end": 64.20500000000001,
+      "text": "e la cifratura, applicata di solito ai soli dati sensibili perché cifrare e decifrare è",
+      "words": [
+        {
+          "text": "e",
+          "start": 59.764,
+          "end": 59.804
+        },
+        {
+          "text": "la",
+          "start": 59.904,
+          "end": 59.964
+        },
+        {
+          "text": "cifratura,",
+          "start": 60.044,
+          "end": 60.544
+        },
+        {
+          "text": "applicata",
+          "start": 60.824,
+          "end": 61.204
+        },
+        {
+          "text": "di",
+          "start": 61.224,
+          "end": 61.284
+        },
+        {
+          "text": "solito",
+          "start": 61.324,
+          "end": 61.604
+        },
+        {
+          "text": "ai",
+          "start": 61.645,
+          "end": 61.745
+        },
+        {
+          "text": "soli",
+          "start": 61.805,
+          "end": 61.985
+        },
+        {
+          "text": "dati",
+          "start": 62.025,
+          "end": 62.205
+        },
+        {
+          "text": "sensibili",
+          "start": 62.265,
+          "end": 62.785
+        },
+        {
+          "text": "perché",
+          "start": 62.825,
+          "end": 63.025
+        },
+        {
+          "text": "cifrare",
+          "start": 63.105,
+          "end": 63.505
+        },
+        {
+          "text": "e",
+          "start": 63.525,
+          "end": 63.565
+        },
+        {
+          "text": "decifrare",
+          "start": 63.605,
+          "end": 64.105
+        },
+        {
+          "text": "è",
+          "start": 64.165,
+          "end": 64.20500000000001
+        }
+      ]
+    },
+    {
+      "start": 64.245,
+      "end": 64.645,
+      "text": "oneroso.",
+      "words": [
+        {
+          "text": "oneroso.",
+          "start": 64.245,
+          "end": 64.645
+        }
+      ]
+    }
+  ]
+}

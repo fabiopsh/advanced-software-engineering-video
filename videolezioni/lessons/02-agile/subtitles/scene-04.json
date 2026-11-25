@@ -1,0 +1,996 @@
+{
+  "duration": 65.713,
+  "segments": [
+    {
+      "start": 0.094,
+      "end": 4.055,
+      "text": "Passiamo ora a Scrum, il framework più diffuso per organizzare un progetto agile.",
+      "words": [
+        {
+          "text": "Passiamo",
+          "start": 0.094,
+          "end": 0.354
+        },
+        {
+          "text": "ora",
+          "start": 0.414,
+          "end": 0.494
+        },
+        {
+          "text": "a",
+          "start": 0.514,
+          "end": 0.554
+        },
+        {
+          "text": "Scrum,",
+          "start": 0.574,
+          "end": 0.894
+        },
+        {
+          "text": "il",
+          "start": 1.254,
+          "end": 1.334
+        },
+        {
+          "text": "framework",
+          "start": 1.374,
+          "end": 1.754
+        },
+        {
+          "text": "più",
+          "start": 1.874,
+          "end": 1.995
+        },
+        {
+          "text": "diffuso",
+          "start": 2.055,
+          "end": 2.495
+        },
+        {
+          "text": "per",
+          "start": 2.575,
+          "end": 2.675
+        },
+        {
+          "text": "organizzare",
+          "start": 2.715,
+          "end": 3.195
+        },
+        {
+          "text": "un",
+          "start": 3.235,
+          "end": 3.275
+        },
+        {
+          "text": "progetto",
+          "start": 3.315,
+          "end": 3.675
+        },
+        {
+          "text": "agile.",
+          "start": 3.775,
+          "end": 4.055
+        }
+      ]
+    },
+    {
+      "start": 4.975,
+      "end": 9.275,
+      "text": "Scrum introduce ruoli designati che fanno da interfaccia tra il team di sviluppo e il",
+      "words": [
+        {
+          "text": "Scrum",
+          "start": 4.975,
+          "end": 5.235
+        },
+        {
+          "text": "introduce",
+          "start": 5.315,
+          "end": 5.735
+        },
+        {
+          "text": "ruoli",
+          "start": 5.855,
+          "end": 6.155
+        },
+        {
+          "text": "designati",
+          "start": 6.195,
+          "end": 6.775
+        },
+        {
+          "text": "che",
+          "start": 6.835,
+          "end": 6.915
+        },
+        {
+          "text": "fanno",
+          "start": 6.975,
+          "end": 7.175
+        },
+        {
+          "text": "da",
+          "start": 7.235,
+          "end": 7.295
+        },
+        {
+          "text": "interfaccia",
+          "start": 7.355,
+          "end": 8.015
+        },
+        {
+          "text": "tra",
+          "start": 8.095,
+          "end": 8.175
+        },
+        {
+          "text": "il",
+          "start": 8.235,
+          "end": 8.295
+        },
+        {
+          "text": "team",
+          "start": 8.335,
+          "end": 8.475
+        },
+        {
+          "text": "di",
+          "start": 8.515,
+          "end": 8.575
+        },
+        {
+          "text": "sviluppo",
+          "start": 8.615,
+          "end": 9.035
+        },
+        {
+          "text": "e",
+          "start": 9.135,
+          "end": 9.175
+        },
+        {
+          "text": "il",
+          "start": 9.215,
+          "end": 9.275
+        }
+      ]
+    },
+    {
+      "start": 9.315,
+      "end": 10.436,
+      "text": "resto dell'organizzazione.",
+      "words": [
+        {
+          "text": "resto",
+          "start": 9.315,
+          "end": 9.536
+        },
+        {
+          "text": "dell'organizzazione.",
+          "start": 9.556,
+          "end": 10.436
+        }
+      ]
+    },
+    {
+      "start": 11.556,
+      "end": 14.296,
+      "text": "Nel diagramma in alto osserviamo l'intero ciclo di Scrum.",
+      "words": [
+        {
+          "text": "Nel",
+          "start": 11.556,
+          "end": 11.676
+        },
+        {
+          "text": "diagramma",
+          "start": 11.716,
+          "end": 12.036
+        },
+        {
+          "text": "in",
+          "start": 12.076,
+          "end": 12.156
+        },
+        {
+          "text": "alto",
+          "start": 12.196,
+          "end": 12.416
+        },
+        {
+          "text": "osserviamo",
+          "start": 12.536,
+          "end": 12.996
+        },
+        {
+          "text": "l'intero",
+          "start": 13.076,
+          "end": 13.476
+        },
+        {
+          "text": "ciclo",
+          "start": 13.516,
+          "end": 13.796
+        },
+        {
+          "text": "di",
+          "start": 13.816,
+          "end": 13.896
+        },
+        {
+          "text": "Scrum.",
+          "start": 13.956,
+          "end": 14.296
+        }
+      ]
+    },
+    {
+      "start": 14.756,
+      "end": 19.077,
+      "text": "Tutto parte dal product backlog, l'elenco di feature, bug e miglioramenti da fare.",
+      "words": [
+        {
+          "text": "Tutto",
+          "start": 14.756,
+          "end": 14.956
+        },
+        {
+          "text": "parte",
+          "start": 14.996,
+          "end": 15.256
+        },
+        {
+          "text": "dal",
+          "start": 15.376,
+          "end": 15.496
+        },
+        {
+          "text": "product",
+          "start": 15.556,
+          "end": 15.876
+        },
+        {
+          "text": "backlog,",
+          "start": 15.896,
+          "end": 16.256
+        },
+        {
+          "text": "l'elenco",
+          "start": 16.576,
+          "end": 16.896
+        },
+        {
+          "text": "di",
+          "start": 16.937,
+          "end": 16.997
+        },
+        {
+          "text": "feature,",
+          "start": 17.037,
+          "end": 17.377
+        },
+        {
+          "text": "bug",
+          "start": 17.597,
+          "end": 17.857
+        },
+        {
+          "text": "e",
+          "start": 18.017,
+          "end": 18.057
+        },
+        {
+          "text": "miglioramenti",
+          "start": 18.137,
+          "end": 18.697
+        },
+        {
+          "text": "da",
+          "start": 18.717,
+          "end": 18.777
+        },
+        {
+          "text": "fare.",
+          "start": 18.837,
+          "end": 19.077
+        }
+      ]
+    },
+    {
+      "start": 19.777,
+      "end": 22.197,
+      "text": "Si selezionano le voci a priorità più alta e,",
+      "words": [
+        {
+          "text": "Si",
+          "start": 19.777,
+          "end": 19.837
+        },
+        {
+          "text": "selezionano",
+          "start": 19.897,
+          "end": 20.417
+        },
+        {
+          "text": "le",
+          "start": 20.457,
+          "end": 20.517
+        },
+        {
+          "text": "voci",
+          "start": 20.557,
+          "end": 20.777
+        },
+        {
+          "text": "a",
+          "start": 20.877,
+          "end": 20.917
+        },
+        {
+          "text": "priorità",
+          "start": 20.957,
+          "end": 21.297
+        },
+        {
+          "text": "più",
+          "start": 21.337,
+          "end": 21.457
+        },
+        {
+          "text": "alta",
+          "start": 21.557,
+          "end": 21.817
+        },
+        {
+          "text": "e,",
+          "start": 22.157,
+          "end": 22.197
+        }
+      ]
+    },
+    {
+      "start": 22.217,
+      "end": 25.518,
+      "text": "con la fase di plan sprint, si crea lo sprint backlog.",
+      "words": [
+        {
+          "text": "con",
+          "start": 22.217,
+          "end": 22.317
+        },
+        {
+          "text": "la",
+          "start": 22.337,
+          "end": 22.397
+        },
+        {
+          "text": "fase",
+          "start": 22.437,
+          "end": 22.637
+        },
+        {
+          "text": "di",
+          "start": 22.677,
+          "end": 22.757
+        },
+        {
+          "text": "plan",
+          "start": 22.937,
+          "end": 23.197
+        },
+        {
+          "text": "sprint,",
+          "start": 23.297,
+          "end": 23.677
+        },
+        {
+          "text": "si",
+          "start": 23.877,
+          "end": 23.937
+        },
+        {
+          "text": "crea",
+          "start": 23.997,
+          "end": 24.177
+        },
+        {
+          "text": "lo",
+          "start": 24.377,
+          "end": 24.478
+        },
+        {
+          "text": "sprint",
+          "start": 24.618,
+          "end": 25.038
+        },
+        {
+          "text": "backlog.",
+          "start": 25.118,
+          "end": 25.518
+        }
+      ]
+    },
+    {
+      "start": 26.258,
+      "end": 28.698,
+      "text": "Durante lo sprint, che dura da due a quattro settimane,",
+      "words": [
+        {
+          "text": "Durante",
+          "start": 26.258,
+          "end": 26.518
+        },
+        {
+          "text": "lo",
+          "start": 26.558,
+          "end": 26.618
+        },
+        {
+          "text": "sprint,",
+          "start": 26.638,
+          "end": 26.938
+        },
+        {
+          "text": "che",
+          "start": 27.058,
+          "end": 27.138
+        },
+        {
+          "text": "dura",
+          "start": 27.178,
+          "end": 27.358
+        },
+        {
+          "text": "da",
+          "start": 27.458,
+          "end": 27.538
+        },
+        {
+          "text": "due",
+          "start": 27.618,
+          "end": 27.818
+        },
+        {
+          "text": "a",
+          "start": 27.878,
+          "end": 27.918
+        },
+        {
+          "text": "quattro",
+          "start": 27.958,
+          "end": 28.198
+        },
+        {
+          "text": "settimane,",
+          "start": 28.238,
+          "end": 28.698
+        }
+      ]
+    },
+    {
+      "start": 29.138,
+      "end": 32.199,
+      "text": "il team sviluppa, collauda e tiene lo scrum quotidiano.",
+      "words": [
+        {
+          "text": "il",
+          "start": 29.138,
+          "end": 29.218
+        },
+        {
+          "text": "team",
+          "start": 29.258,
+          "end": 29.378
+        },
+        {
+          "text": "sviluppa,",
+          "start": 29.438,
+          "end": 29.918
+        },
+        {
+          "text": "collauda",
+          "start": 30.178,
+          "end": 30.698
+        },
+        {
+          "text": "e",
+          "start": 30.838,
+          "end": 30.878
+        },
+        {
+          "text": "tiene",
+          "start": 30.918,
+          "end": 31.118
+        },
+        {
+          "text": "lo",
+          "start": 31.258,
+          "end": 31.338
+        },
+        {
+          "text": "scrum",
+          "start": 31.418,
+          "end": 31.678
+        },
+        {
+          "text": "quotidiano.",
+          "start": 31.738,
+          "end": 32.199
+        }
+      ]
+    },
+    {
+      "start": 32.679,
+      "end": 36.399,
+      "text": "L'obiettivo è produrre un incremento potenzialmente consegnabile al cliente;",
+      "words": [
+        {
+          "text": "L'obiettivo",
+          "start": 32.679,
+          "end": 33.159
+        },
+        {
+          "text": "è",
+          "start": 33.259,
+          "end": 33.299
+        },
+        {
+          "text": "produrre",
+          "start": 33.359,
+          "end": 33.699
+        },
+        {
+          "text": "un",
+          "start": 33.739,
+          "end": 33.819
+        },
+        {
+          "text": "incremento",
+          "start": 33.859,
+          "end": 34.339
+        },
+        {
+          "text": "potenzialmente",
+          "start": 34.399,
+          "end": 35.039
+        },
+        {
+          "text": "consegnabile",
+          "start": 35.099,
+          "end": 35.759
+        },
+        {
+          "text": "al",
+          "start": 35.799,
+          "end": 35.879
+        },
+        {
+          "text": "cliente;",
+          "start": 35.919,
+          "end": 36.399
+        }
+      ]
+    },
+    {
+      "start": 36.859,
+      "end": 39.419,
+      "text": "le voci incomplete tornano nel product backlog.",
+      "words": [
+        {
+          "text": "le",
+          "start": 36.859,
+          "end": 36.939
+        },
+        {
+          "text": "voci",
+          "start": 36.979,
+          "end": 37.179
+        },
+        {
+          "text": "incomplete",
+          "start": 37.239,
+          "end": 37.779
+        },
+        {
+          "text": "tornano",
+          "start": 38.019,
+          "end": 38.419
+        },
+        {
+          "text": "nel",
+          "start": 38.459,
+          "end": 38.599
+        },
+        {
+          "text": "product",
+          "start": 38.639,
+          "end": 38.979
+        },
+        {
+          "text": "backlog.",
+          "start": 39.039,
+          "end": 39.419
+        }
+      ]
+    },
+    {
+      "start": 40.12,
+      "end": 44.7,
+      "text": "Alla fine, la review sprint valuta il risultato e cerca miglioramenti per lo sprint successivo,",
+      "words": [
+        {
+          "text": "Alla",
+          "start": 40.12,
+          "end": 40.26
+        },
+        {
+          "text": "fine,",
+          "start": 40.28,
+          "end": 40.48
+        },
+        {
+          "text": "la",
+          "start": 40.66,
+          "end": 40.74
+        },
+        {
+          "text": "review",
+          "start": 40.78,
+          "end": 41.02
+        },
+        {
+          "text": "sprint",
+          "start": 41.06,
+          "end": 41.42
+        },
+        {
+          "text": "valuta",
+          "start": 41.54,
+          "end": 41.84
+        },
+        {
+          "text": "il",
+          "start": 41.88,
+          "end": 41.94
+        },
+        {
+          "text": "risultato",
+          "start": 41.96,
+          "end": 42.42
+        },
+        {
+          "text": "e",
+          "start": 42.46,
+          "end": 42.5
+        },
+        {
+          "text": "cerca",
+          "start": 42.52,
+          "end": 42.76
+        },
+        {
+          "text": "miglioramenti",
+          "start": 42.84,
+          "end": 43.44
+        },
+        {
+          "text": "per",
+          "start": 43.5,
+          "end": 43.62
+        },
+        {
+          "text": "lo",
+          "start": 43.66,
+          "end": 43.74
+        },
+        {
+          "text": "sprint",
+          "start": 43.78,
+          "end": 44.08
+        },
+        {
+          "text": "successivo,",
+          "start": 44.18,
+          "end": 44.7
+        }
+      ]
+    },
+    {
+      "start": 45.04,
+      "end": 46.36,
+      "text": "richiamando il Toyota Kata:",
+      "words": [
+        {
+          "text": "richiamando",
+          "start": 45.04,
+          "end": 45.44
+        },
+        {
+          "text": "il",
+          "start": 45.48,
+          "end": 45.56
+        },
+        {
+          "text": "Toyota",
+          "start": 45.64,
+          "end": 46.02
+        },
+        {
+          "text": "Kata:",
+          "start": 46.08,
+          "end": 46.36
+        }
+      ]
+    },
+    {
+      "start": 47.0,
+      "end": 49.981,
+      "text": "dare potere al team per individuare problemi e soluzioni.",
+      "words": [
+        {
+          "text": "dare",
+          "start": 47.0,
+          "end": 47.161
+        },
+        {
+          "text": "potere",
+          "start": 47.221,
+          "end": 47.501
+        },
+        {
+          "text": "al",
+          "start": 47.541,
+          "end": 47.621
+        },
+        {
+          "text": "team",
+          "start": 47.701,
+          "end": 47.881
+        },
+        {
+          "text": "per",
+          "start": 48.061,
+          "end": 48.161
+        },
+        {
+          "text": "individuare",
+          "start": 48.221,
+          "end": 48.661
+        },
+        {
+          "text": "problemi",
+          "start": 48.761,
+          "end": 49.241
+        },
+        {
+          "text": "e",
+          "start": 49.301,
+          "end": 49.341
+        },
+        {
+          "text": "soluzioni.",
+          "start": 49.421,
+          "end": 49.981
+        }
+      ]
+    },
+    {
+      "start": 51.281,
+      "end": 53.301,
+      "text": "In basso riassumiamo i tre ruoli chiave:",
+      "words": [
+        {
+          "text": "In",
+          "start": 51.281,
+          "end": 51.361
+        },
+        {
+          "text": "basso",
+          "start": 51.401,
+          "end": 51.681
+        },
+        {
+          "text": "riassumiamo",
+          "start": 51.801,
+          "end": 52.301
+        },
+        {
+          "text": "i",
+          "start": 52.341,
+          "end": 52.381
+        },
+        {
+          "text": "tre",
+          "start": 52.421,
+          "end": 52.561
+        },
+        {
+          "text": "ruoli",
+          "start": 52.661,
+          "end": 52.921
+        },
+        {
+          "text": "chiave:",
+          "start": 52.981,
+          "end": 53.301
+        }
+      ]
+    },
+    {
+      "start": 53.861,
+      "end": 59.562,
+      "text": "il Development team auto-organizzato di quattro otto persone; il Product Owner che definisce feature,",
+      "words": [
+        {
+          "text": "il",
+          "start": 53.861,
+          "end": 53.941
+        },
+        {
+          "text": "Development",
+          "start": 53.981,
+          "end": 54.521
+        },
+        {
+          "text": "team",
+          "start": 54.562,
+          "end": 54.782
+        },
+        {
+          "text": "auto-organizzato",
+          "start": 55.062,
+          "end": 55.862
+        },
+        {
+          "text": "di",
+          "start": 55.902,
+          "end": 55.962
+        },
+        {
+          "text": "quattro",
+          "start": 56.022,
+          "end": 56.342
+        },
+        {
+          "text": "otto",
+          "start": 56.382,
+          "end": 56.542
+        },
+        {
+          "text": "persone;",
+          "start": 56.562,
+          "end": 57.002
+        },
+        {
+          "text": "il",
+          "start": 57.462,
+          "end": 57.562
+        },
+        {
+          "text": "Product",
+          "start": 57.602,
+          "end": 57.982
+        },
+        {
+          "text": "Owner",
+          "start": 58.062,
+          "end": 58.322
+        },
+        {
+          "text": "che",
+          "start": 58.502,
+          "end": 58.582
+        },
+        {
+          "text": "definisce",
+          "start": 58.622,
+          "end": 59.042
+        },
+        {
+          "text": "feature,",
+          "start": 59.162,
+          "end": 59.562
+        }
+      ]
+    },
+    {
+      "start": 59.762,
+      "end": 65.003,
+      "text": "rivede e collauda il lavoro; e lo ScrumMaster, coach del team che garantisce l'uso efficace",
+      "words": [
+        {
+          "text": "rivede",
+          "start": 59.762,
+          "end": 60.122
+        },
+        {
+          "text": "e",
+          "start": 60.282,
+          "end": 60.322
+        },
+        {
+          "text": "collauda",
+          "start": 60.362,
+          "end": 60.762
+        },
+        {
+          "text": "il",
+          "start": 60.762,
+          "end": 60.802
+        },
+        {
+          "text": "lavoro;",
+          "start": 60.842,
+          "end": 61.142
+        },
+        {
+          "text": "e",
+          "start": 61.642,
+          "end": 61.682
+        },
+        {
+          "text": "lo",
+          "start": 61.742,
+          "end": 61.802
+        },
+        {
+          "text": "ScrumMaster,",
+          "start": 61.842,
+          "end": 62.483
+        },
+        {
+          "text": "coach",
+          "start": 62.863,
+          "end": 63.143
+        },
+        {
+          "text": "del",
+          "start": 63.183,
+          "end": 63.303
+        },
+        {
+          "text": "team",
+          "start": 63.343,
+          "end": 63.523
+        },
+        {
+          "text": "che",
+          "start": 63.643,
+          "end": 63.703
+        },
+        {
+          "text": "garantisce",
+          "start": 63.743,
+          "end": 64.243
+        },
+        {
+          "text": "l'uso",
+          "start": 64.283,
+          "end": 64.483
+        },
+        {
+          "text": "efficace",
+          "start": 64.543,
+          "end": 65.003
+        }
+      ]
+    },
+    {
+      "start": 65.043,
+      "end": 65.463,
+      "text": "di Scrum.",
+      "words": [
+        {
+          "text": "di",
+          "start": 65.043,
+          "end": 65.103
+        },
+        {
+          "text": "Scrum.",
+          "start": 65.143,
+          "end": 65.463
+        }
+      ]
+    }
+  ]
+}

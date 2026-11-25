@@ -1,0 +1,1004 @@
+{
+  "duration": 70.206,
+  "segments": [
+    {
+      "start": 0.771,
+      "end": 4.792,
+      "text": "Una delle cinque decisioni chiave riguarda come comunicano i microservizi.",
+      "words": [
+        {
+          "text": "Una",
+          "start": 0.771,
+          "end": 0.911
+        },
+        {
+          "text": "delle",
+          "start": 0.931,
+          "end": 1.111
+        },
+        {
+          "text": "cinque",
+          "start": 1.171,
+          "end": 1.451
+        },
+        {
+          "text": "decisioni",
+          "start": 1.491,
+          "end": 1.891
+        },
+        {
+          "text": "chiave",
+          "start": 1.951,
+          "end": 2.271
+        },
+        {
+          "text": "riguarda",
+          "start": 2.492,
+          "end": 2.812
+        },
+        {
+          "text": "come",
+          "start": 2.952,
+          "end": 3.172
+        },
+        {
+          "text": "comunicano",
+          "start": 3.312,
+          "end": 3.932
+        },
+        {
+          "text": "i",
+          "start": 3.992,
+          "end": 4.032
+        },
+        {
+          "text": "microservizi.",
+          "start": 4.052,
+          "end": 4.792
+        }
+      ]
+    },
+    {
+      "start": 5.332,
+      "end": 9.172,
+      "text": "Esistono due assi di scelta: interazione sincrona contro asincrona,",
+      "words": [
+        {
+          "text": "Esistono",
+          "start": 5.332,
+          "end": 5.672
+        },
+        {
+          "text": "due",
+          "start": 5.772,
+          "end": 5.952
+        },
+        {
+          "text": "assi",
+          "start": 6.032,
+          "end": 6.252
+        },
+        {
+          "text": "di",
+          "start": 6.292,
+          "end": 6.352
+        },
+        {
+          "text": "scelta:",
+          "start": 6.392,
+          "end": 6.752
+        },
+        {
+          "text": "interazione",
+          "start": 7.212,
+          "end": 7.732
+        },
+        {
+          "text": "sincrona",
+          "start": 7.832,
+          "end": 8.272
+        },
+        {
+          "text": "contro",
+          "start": 8.372,
+          "end": 8.612
+        },
+        {
+          "text": "asincrona,",
+          "start": 8.672,
+          "end": 9.172
+        }
+      ]
+    },
+    {
+      "start": 9.452,
+      "end": 11.452,
+      "text": "e comunicazione diretta contro indiretta.",
+      "words": [
+        {
+          "text": "e",
+          "start": 9.452,
+          "end": 9.492
+        },
+        {
+          "text": "comunicazione",
+          "start": 9.552,
+          "end": 10.152
+        },
+        {
+          "text": "diretta",
+          "start": 10.212,
+          "end": 10.632
+        },
+        {
+          "text": "contro",
+          "start": 10.672,
+          "end": 10.912
+        },
+        {
+          "text": "indiretta.",
+          "start": 10.972,
+          "end": 11.452
+        }
+      ]
+    },
+    {
+      "start": 12.172,
+      "end": 17.052,
+      "text": "Nell'interazione sincrona il servizio A chiama il servizio B e resta in attesa finché B",
+      "words": [
+        {
+          "text": "Nell'interazione",
+          "start": 12.172,
+          "end": 12.812
+        },
+        {
+          "text": "sincrona",
+          "start": 12.892,
+          "end": 13.292
+        },
+        {
+          "text": "il",
+          "start": 13.492,
+          "end": 13.572
+        },
+        {
+          "text": "servizio",
+          "start": 13.592,
+          "end": 13.952
+        },
+        {
+          "text": "A",
+          "start": 14.092,
+          "end": 14.132
+        },
+        {
+          "text": "chiama",
+          "start": 14.472,
+          "end": 14.672
+        },
+        {
+          "text": "il",
+          "start": 14.712,
+          "end": 14.772
+        },
+        {
+          "text": "servizio",
+          "start": 14.812,
+          "end": 15.212
+        },
+        {
+          "text": "B",
+          "start": 15.332,
+          "end": 15.372
+        },
+        {
+          "text": "e",
+          "start": 15.772,
+          "end": 15.812
+        },
+        {
+          "text": "resta",
+          "start": 15.892,
+          "end": 16.112
+        },
+        {
+          "text": "in",
+          "start": 16.152,
+          "end": 16.232
+        },
+        {
+          "text": "attesa",
+          "start": 16.252,
+          "end": 16.592
+        },
+        {
+          "text": "finché",
+          "start": 16.632,
+          "end": 16.912
+        },
+        {
+          "text": "B",
+          "start": 17.012,
+          "end": 17.052
+        }
+      ]
+    },
+    {
+      "start": 17.352,
+      "end": 18.573,
+      "text": "non restituisce la risposta.",
+      "words": [
+        {
+          "text": "non",
+          "start": 17.352,
+          "end": 17.472
+        },
+        {
+          "text": "restituisce",
+          "start": 17.513,
+          "end": 18.013
+        },
+        {
+          "text": "la",
+          "start": 18.053,
+          "end": 18.113
+        },
+        {
+          "text": "risposta.",
+          "start": 18.133,
+          "end": 18.573
+        }
+      ]
+    },
+    {
+      "start": 19.073,
+      "end": 21.113,
+      "text": "È un modello più semplice da scrivere e da capire,",
+      "words": [
+        {
+          "text": "È",
+          "start": 19.073,
+          "end": 19.113
+        },
+        {
+          "text": "un",
+          "start": 19.133,
+          "end": 19.173
+        },
+        {
+          "text": "modello",
+          "start": 19.213,
+          "end": 19.493
+        },
+        {
+          "text": "più",
+          "start": 19.533,
+          "end": 19.613
+        },
+        {
+          "text": "semplice",
+          "start": 19.713,
+          "end": 20.073
+        },
+        {
+          "text": "da",
+          "start": 20.113,
+          "end": 20.173
+        },
+        {
+          "text": "scrivere",
+          "start": 20.233,
+          "end": 20.593
+        },
+        {
+          "text": "e",
+          "start": 20.653,
+          "end": 20.693
+        },
+        {
+          "text": "da",
+          "start": 20.693,
+          "end": 20.753
+        },
+        {
+          "text": "capire,",
+          "start": 20.793,
+          "end": 21.113
+        }
+      ]
+    },
+    {
+      "start": 21.413,
+      "end": 22.853,
+      "text": "ma crea dipendenza temporale.",
+      "words": [
+        {
+          "text": "ma",
+          "start": 21.413,
+          "end": 21.473
+        },
+        {
+          "text": "crea",
+          "start": 21.553,
+          "end": 21.733
+        },
+        {
+          "text": "dipendenza",
+          "start": 21.793,
+          "end": 22.293
+        },
+        {
+          "text": "temporale.",
+          "start": 22.333,
+          "end": 22.853
+        }
+      ]
+    },
+    {
+      "start": 23.413,
+      "end": 28.953,
+      "text": "Nell'interazione asincrona A invia la richiesta in una coda verso B e continua subito a",
+      "words": [
+        {
+          "text": "Nell'interazione",
+          "start": 23.413,
+          "end": 24.113
+        },
+        {
+          "text": "asincrona",
+          "start": 24.273,
+          "end": 24.893
+        },
+        {
+          "text": "A",
+          "start": 25.413,
+          "end": 25.453
+        },
+        {
+          "text": "invia",
+          "start": 25.733,
+          "end": 26.073
+        },
+        {
+          "text": "la",
+          "start": 26.153,
+          "end": 26.193
+        },
+        {
+          "text": "richiesta",
+          "start": 26.233,
+          "end": 26.613
+        },
+        {
+          "text": "in",
+          "start": 26.653,
+          "end": 26.713
+        },
+        {
+          "text": "una",
+          "start": 26.753,
+          "end": 26.873
+        },
+        {
+          "text": "coda",
+          "start": 26.913,
+          "end": 27.153
+        },
+        {
+          "text": "verso",
+          "start": 27.193,
+          "end": 27.453
+        },
+        {
+          "text": "B",
+          "start": 27.553,
+          "end": 27.593
+        },
+        {
+          "text": "e",
+          "start": 27.993,
+          "end": 28.033
+        },
+        {
+          "text": "continua",
+          "start": 28.093,
+          "end": 28.473
+        },
+        {
+          "text": "subito",
+          "start": 28.553,
+          "end": 28.853
+        },
+        {
+          "text": "a",
+          "start": 28.913,
+          "end": 28.953
+        }
+      ]
+    },
+    {
+      "start": 28.973,
+      "end": 31.613,
+      "text": "elaborare, leggendo poi il risultato dalla propria coda.",
+      "words": [
+        {
+          "text": "elaborare,",
+          "start": 28.973,
+          "end": 29.433
+        },
+        {
+          "text": "leggendo",
+          "start": 29.773,
+          "end": 30.093
+        },
+        {
+          "text": "poi",
+          "start": 30.113,
+          "end": 30.253
+        },
+        {
+          "text": "il",
+          "start": 30.313,
+          "end": 30.373
+        },
+        {
+          "text": "risultato",
+          "start": 30.413,
+          "end": 30.893
+        },
+        {
+          "text": "dalla",
+          "start": 30.913,
+          "end": 31.073
+        },
+        {
+          "text": "propria",
+          "start": 31.093,
+          "end": 31.373
+        },
+        {
+          "text": "coda.",
+          "start": 31.413,
+          "end": 31.613
+        }
+      ]
+    },
+    {
+      "start": 32.173,
+      "end": 36.854,
+      "text": "Questo riduce il coupling e migliora l'efficienza, anche se rende il codice più complesso.",
+      "words": [
+        {
+          "text": "Questo",
+          "start": 32.173,
+          "end": 32.453
+        },
+        {
+          "text": "riduce",
+          "start": 32.694,
+          "end": 33.074
+        },
+        {
+          "text": "il",
+          "start": 33.134,
+          "end": 33.194
+        },
+        {
+          "text": "coupling",
+          "start": 33.274,
+          "end": 33.774
+        },
+        {
+          "text": "e",
+          "start": 33.894,
+          "end": 33.934
+        },
+        {
+          "text": "migliora",
+          "start": 34.034,
+          "end": 34.374
+        },
+        {
+          "text": "l'efficienza,",
+          "start": 34.414,
+          "end": 35.054
+        },
+        {
+          "text": "anche",
+          "start": 35.214,
+          "end": 35.374
+        },
+        {
+          "text": "se",
+          "start": 35.414,
+          "end": 35.494
+        },
+        {
+          "text": "rende",
+          "start": 35.614,
+          "end": 35.794
+        },
+        {
+          "text": "il",
+          "start": 35.814,
+          "end": 35.874
+        },
+        {
+          "text": "codice",
+          "start": 35.894,
+          "end": 36.194
+        },
+        {
+          "text": "più",
+          "start": 36.234,
+          "end": 36.314
+        },
+        {
+          "text": "complesso.",
+          "start": 36.354,
+          "end": 36.854
+        }
+      ]
+    },
+    {
+      "start": 37.554,
+      "end": 44.034,
+      "text": "Sul secondo asse, nella comunicazione diretta i messaggi puntano direttamente all'indirizzo URI del destinatario:",
+      "words": [
+        {
+          "text": "Sul",
+          "start": 37.554,
+          "end": 37.694
+        },
+        {
+          "text": "secondo",
+          "start": 37.774,
+          "end": 38.194
+        },
+        {
+          "text": "asse,",
+          "start": 38.274,
+          "end": 38.554
+        },
+        {
+          "text": "nella",
+          "start": 38.974,
+          "end": 39.174
+        },
+        {
+          "text": "comunicazione",
+          "start": 39.214,
+          "end": 39.774
+        },
+        {
+          "text": "diretta",
+          "start": 39.814,
+          "end": 40.294
+        },
+        {
+          "text": "i",
+          "start": 40.494,
+          "end": 40.534
+        },
+        {
+          "text": "messaggi",
+          "start": 40.574,
+          "end": 40.954
+        },
+        {
+          "text": "puntano",
+          "start": 41.014,
+          "end": 41.334
+        },
+        {
+          "text": "direttamente",
+          "start": 41.414,
+          "end": 42.074
+        },
+        {
+          "text": "all'indirizzo",
+          "start": 42.094,
+          "end": 42.714
+        },
+        {
+          "text": "URI",
+          "start": 42.854,
+          "end": 43.074
+        },
+        {
+          "text": "del",
+          "start": 43.254,
+          "end": 43.354
+        },
+        {
+          "text": "destinatario:",
+          "start": 43.394,
+          "end": 44.034
+        }
+      ]
+    },
+    {
+      "start": 44.534,
+      "end": 49.055,
+      "text": "è veloce e lineare, ma obbliga il mittente a conoscere e gestire la posizione di",
+      "words": [
+        {
+          "text": "è",
+          "start": 44.534,
+          "end": 44.574
+        },
+        {
+          "text": "veloce",
+          "start": 44.654,
+          "end": 45.034
+        },
+        {
+          "text": "e",
+          "start": 45.194,
+          "end": 45.234
+        },
+        {
+          "text": "lineare,",
+          "start": 45.294,
+          "end": 45.694
+        },
+        {
+          "text": "ma",
+          "start": 45.754,
+          "end": 45.814
+        },
+        {
+          "text": "obbliga",
+          "start": 46.014,
+          "end": 46.374
+        },
+        {
+          "text": "il",
+          "start": 46.414,
+          "end": 46.474
+        },
+        {
+          "text": "mittente",
+          "start": 46.514,
+          "end": 46.954
+        },
+        {
+          "text": "a",
+          "start": 46.994,
+          "end": 47.034
+        },
+        {
+          "text": "conoscere",
+          "start": 47.094,
+          "end": 47.654
+        },
+        {
+          "text": "e",
+          "start": 47.775,
+          "end": 47.815
+        },
+        {
+          "text": "gestire",
+          "start": 47.895,
+          "end": 48.355
+        },
+        {
+          "text": "la",
+          "start": 48.395,
+          "end": 48.455
+        },
+        {
+          "text": "posizione",
+          "start": 48.495,
+          "end": 48.955
+        },
+        {
+          "text": "di",
+          "start": 48.995,
+          "end": 49.055
+        }
+      ]
+    },
+    {
+      "start": 49.255,
+      "end": 50.015,
+      "text": "ogni servizio.",
+      "words": [
+        {
+          "text": "ogni",
+          "start": 49.255,
+          "end": 49.475
+        },
+        {
+          "text": "servizio.",
+          "start": 49.535,
+          "end": 50.015
+        }
+      ]
+    },
+    {
+      "start": 50.675,
+      "end": 56.235,
+      "text": "Nella comunicazione indiretta, invece, i messaggi sono indirizzati al nome logico del servizio e inviati",
+      "words": [
+        {
+          "text": "Nella",
+          "start": 50.675,
+          "end": 50.855
+        },
+        {
+          "text": "comunicazione",
+          "start": 50.895,
+          "end": 51.455
+        },
+        {
+          "text": "indiretta,",
+          "start": 51.515,
+          "end": 52.075
+        },
+        {
+          "text": "invece,",
+          "start": 52.135,
+          "end": 52.475
+        },
+        {
+          "text": "i",
+          "start": 52.875,
+          "end": 52.915
+        },
+        {
+          "text": "messaggi",
+          "start": 52.935,
+          "end": 53.275
+        },
+        {
+          "text": "sono",
+          "start": 53.335,
+          "end": 53.475
+        },
+        {
+          "text": "indirizzati",
+          "start": 53.515,
+          "end": 54.015
+        },
+        {
+          "text": "al",
+          "start": 54.055,
+          "end": 54.135
+        },
+        {
+          "text": "nome",
+          "start": 54.255,
+          "end": 54.495
+        },
+        {
+          "text": "logico",
+          "start": 54.555,
+          "end": 54.935
+        },
+        {
+          "text": "del",
+          "start": 54.975,
+          "end": 55.095
+        },
+        {
+          "text": "servizio",
+          "start": 55.155,
+          "end": 55.635
+        },
+        {
+          "text": "e",
+          "start": 55.735,
+          "end": 55.775
+        },
+        {
+          "text": "inviati",
+          "start": 55.835,
+          "end": 56.235
+        }
+      ]
+    },
+    {
+      "start": 56.275,
+      "end": 58.135,
+      "text": "a un message broker come RabbitMQ.",
+      "words": [
+        {
+          "text": "a",
+          "start": 56.275,
+          "end": 56.315
+        },
+        {
+          "text": "un",
+          "start": 56.375,
+          "end": 56.455
+        },
+        {
+          "text": "message",
+          "start": 56.535,
+          "end": 56.915
+        },
+        {
+          "text": "broker",
+          "start": 56.955,
+          "end": 57.275
+        },
+        {
+          "text": "come",
+          "start": 57.335,
+          "end": 57.495
+        },
+        {
+          "text": "RabbitMQ.",
+          "start": 57.595,
+          "end": 58.135
+        }
+      ]
+    },
+    {
+      "start": 58.875,
+      "end": 64.216,
+      "text": "Il broker risolve l'indirizzo tramite service discovery, può tradurre i messaggi e supporta sia chiamate",
+      "words": [
+        {
+          "text": "Il",
+          "start": 58.875,
+          "end": 58.955
+        },
+        {
+          "text": "broker",
+          "start": 58.975,
+          "end": 59.255
+        },
+        {
+          "text": "risolve",
+          "start": 59.375,
+          "end": 59.795
+        },
+        {
+          "text": "l'indirizzo",
+          "start": 59.835,
+          "end": 60.295
+        },
+        {
+          "text": "tramite",
+          "start": 60.335,
+          "end": 60.615
+        },
+        {
+          "text": "service",
+          "start": 60.695,
+          "end": 61.015
+        },
+        {
+          "text": "discovery,",
+          "start": 61.015,
+          "end": 61.495
+        },
+        {
+          "text": "può",
+          "start": 61.795,
+          "end": 61.875
+        },
+        {
+          "text": "tradurre",
+          "start": 62.015,
+          "end": 62.435
+        },
+        {
+          "text": "i",
+          "start": 62.475,
+          "end": 62.515
+        },
+        {
+          "text": "messaggi",
+          "start": 62.515,
+          "end": 63.016
+        },
+        {
+          "text": "e",
+          "start": 63.136,
+          "end": 63.176
+        },
+        {
+          "text": "supporta",
+          "start": 63.236,
+          "end": 63.676
+        },
+        {
+          "text": "sia",
+          "start": 63.736,
+          "end": 63.876
+        },
+        {
+          "text": "chiamate",
+          "start": 63.916,
+          "end": 64.216
+        }
+      ]
+    },
+    {
+      "start": 64.296,
+      "end": 69.956,
+      "text": "sincrone sia asincrone, facilitando la sostituzione dei servizi al costo di una leggera latenza aggiuntiva.",
+      "words": [
+        {
+          "text": "sincrone",
+          "start": 64.296,
+          "end": 64.756
+        },
+        {
+          "text": "sia",
+          "start": 64.856,
+          "end": 64.996
+        },
+        {
+          "text": "asincrone,",
+          "start": 65.156,
+          "end": 65.676
+        },
+        {
+          "text": "facilitando",
+          "start": 66.016,
+          "end": 66.556
+        },
+        {
+          "text": "la",
+          "start": 66.596,
+          "end": 66.656
+        },
+        {
+          "text": "sostituzione",
+          "start": 66.696,
+          "end": 67.296
+        },
+        {
+          "text": "dei",
+          "start": 67.336,
+          "end": 67.436
+        },
+        {
+          "text": "servizi",
+          "start": 67.456,
+          "end": 67.876
+        },
+        {
+          "text": "al",
+          "start": 67.956,
+          "end": 68.056
+        },
+        {
+          "text": "costo",
+          "start": 68.096,
+          "end": 68.336
+        },
+        {
+          "text": "di",
+          "start": 68.356,
+          "end": 68.416
+        },
+        {
+          "text": "una",
+          "start": 68.436,
+          "end": 68.536
+        },
+        {
+          "text": "leggera",
+          "start": 68.616,
+          "end": 68.996
+        },
+        {
+          "text": "latenza",
+          "start": 69.056,
+          "end": 69.416
+        },
+        {
+          "text": "aggiuntiva.",
+          "start": 69.456,
+          "end": 69.956
+        }
+      ]
+    }
+  ]
+}

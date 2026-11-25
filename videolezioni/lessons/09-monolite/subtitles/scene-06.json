@@ -1,0 +1,1068 @@
+{
+  "duration": 68.177,
+  "segments": [
+    {
+      "start": 0.482,
+      "end": 4.302,
+      "text": "Separare gli schemi rompe le transazioni ACID tutto-o-niente.",
+      "words": [
+        {
+          "text": "Separare",
+          "start": 0.482,
+          "end": 0.882
+        },
+        {
+          "text": "gli",
+          "start": 0.922,
+          "end": 1.062
+        },
+        {
+          "text": "schemi",
+          "start": 1.142,
+          "end": 1.462
+        },
+        {
+          "text": "rompe",
+          "start": 1.722,
+          "end": 2.042
+        },
+        {
+          "text": "le",
+          "start": 2.082,
+          "end": 2.142
+        },
+        {
+          "text": "transazioni",
+          "start": 2.182,
+          "end": 2.802
+        },
+        {
+          "text": "ACID",
+          "start": 3.022,
+          "end": 3.342
+        },
+        {
+          "text": "tutto-o-niente.",
+          "start": 3.502,
+          "end": 4.302
+        }
+      ]
+    },
+    {
+      "start": 4.782,
+      "end": 8.763,
+      "text": "Quando si crea un ordine, bisogna inserire una riga in Order nello schema Customer e",
+      "words": [
+        {
+          "text": "Quando",
+          "start": 4.782,
+          "end": 4.982
+        },
+        {
+          "text": "si",
+          "start": 5.042,
+          "end": 5.122
+        },
+        {
+          "text": "crea",
+          "start": 5.162,
+          "end": 5.322
+        },
+        {
+          "text": "un",
+          "start": 5.362,
+          "end": 5.442
+        },
+        {
+          "text": "ordine,",
+          "start": 5.502,
+          "end": 5.802
+        },
+        {
+          "text": "bisogna",
+          "start": 5.962,
+          "end": 6.262
+        },
+        {
+          "text": "inserire",
+          "start": 6.302,
+          "end": 6.682
+        },
+        {
+          "text": "una",
+          "start": 6.742,
+          "end": 6.843
+        },
+        {
+          "text": "riga",
+          "start": 6.883,
+          "end": 7.083
+        },
+        {
+          "text": "in",
+          "start": 7.163,
+          "end": 7.223
+        },
+        {
+          "text": "Order",
+          "start": 7.363,
+          "end": 7.623
+        },
+        {
+          "text": "nello",
+          "start": 7.743,
+          "end": 7.903
+        },
+        {
+          "text": "schema",
+          "start": 7.923,
+          "end": 8.123
+        },
+        {
+          "text": "Customer",
+          "start": 8.163,
+          "end": 8.543
+        },
+        {
+          "text": "e",
+          "start": 8.723,
+          "end": 8.763
+        }
+      ]
+    },
+    {
+      "start": 8.823,
+      "end": 10.463,
+      "text": "una in Picking nello schema Warehouse.",
+      "words": [
+        {
+          "text": "una",
+          "start": 8.823,
+          "end": 8.963
+        },
+        {
+          "text": "in",
+          "start": 9.003,
+          "end": 9.083
+        },
+        {
+          "text": "Picking",
+          "start": 9.123,
+          "end": 9.463
+        },
+        {
+          "text": "nello",
+          "start": 9.563,
+          "end": 9.723
+        },
+        {
+          "text": "schema",
+          "start": 9.763,
+          "end": 9.983
+        },
+        {
+          "text": "Warehouse.",
+          "start": 10.023,
+          "end": 10.463
+        }
+      ]
+    },
+    {
+      "start": 10.943,
+      "end": 13.363,
+      "text": "Se il primo inserimento riesce e il secondo fallisce,",
+      "words": [
+        {
+          "text": "Se",
+          "start": 10.943,
+          "end": 11.003
+        },
+        {
+          "text": "il",
+          "start": 11.063,
+          "end": 11.103
+        },
+        {
+          "text": "primo",
+          "start": 11.143,
+          "end": 11.343
+        },
+        {
+          "text": "inserimento",
+          "start": 11.363,
+          "end": 11.803
+        },
+        {
+          "text": "riesce",
+          "start": 11.843,
+          "end": 12.243
+        },
+        {
+          "text": "e",
+          "start": 12.363,
+          "end": 12.403
+        },
+        {
+          "text": "il",
+          "start": 12.463,
+          "end": 12.523
+        },
+        {
+          "text": "secondo",
+          "start": 12.583,
+          "end": 12.883
+        },
+        {
+          "text": "fallisce,",
+          "start": 12.923,
+          "end": 13.363
+        }
+      ]
+    },
+    {
+      "start": 13.583,
+      "end": 15.783,
+      "text": "il cliente ha un ordine ma nessuno lo spedirà.",
+      "words": [
+        {
+          "text": "il",
+          "start": 13.583,
+          "end": 13.663
+        },
+        {
+          "text": "cliente",
+          "start": 13.703,
+          "end": 14.063
+        },
+        {
+          "text": "ha",
+          "start": 14.083,
+          "end": 14.143
+        },
+        {
+          "text": "un",
+          "start": 14.183,
+          "end": 14.263
+        },
+        {
+          "text": "ordine",
+          "start": 14.323,
+          "end": 14.623
+        },
+        {
+          "text": "ma",
+          "start": 14.763,
+          "end": 14.843
+        },
+        {
+          "text": "nessuno",
+          "start": 14.923,
+          "end": 15.343
+        },
+        {
+          "text": "lo",
+          "start": 15.383,
+          "end": 15.443
+        },
+        {
+          "text": "spedirà.",
+          "start": 15.483,
+          "end": 15.783
+        }
+      ]
+    },
+    {
+      "start": 16.823,
+      "end": 17.923,
+      "text": "Esistono tre soluzioni.",
+      "words": [
+        {
+          "text": "Esistono",
+          "start": 16.823,
+          "end": 17.203
+        },
+        {
+          "text": "tre",
+          "start": 17.263,
+          "end": 17.383
+        },
+        {
+          "text": "soluzioni.",
+          "start": 17.443,
+          "end": 17.923
+        }
+      ]
+    },
+    {
+      "start": 18.563,
+      "end": 21.984,
+      "text": "La prima sono le transazioni compensative, come nel pattern Saga:",
+      "words": [
+        {
+          "text": "La",
+          "start": 18.563,
+          "end": 18.623
+        },
+        {
+          "text": "prima",
+          "start": 18.643,
+          "end": 18.863
+        },
+        {
+          "text": "sono",
+          "start": 18.983,
+          "end": 19.143
+        },
+        {
+          "text": "le",
+          "start": 19.183,
+          "end": 19.243
+        },
+        {
+          "text": "transazioni",
+          "start": 19.283,
+          "end": 19.843
+        },
+        {
+          "text": "compensative,",
+          "start": 19.963,
+          "end": 20.724
+        },
+        {
+          "text": "come",
+          "start": 20.944,
+          "end": 21.104
+        },
+        {
+          "text": "nel",
+          "start": 21.124,
+          "end": 21.244
+        },
+        {
+          "text": "pattern",
+          "start": 21.284,
+          "end": 21.604
+        },
+        {
+          "text": "Saga:",
+          "start": 21.724,
+          "end": 21.984
+        }
+      ]
+    },
+    {
+      "start": 22.564,
+      "end": 27.504,
+      "text": "si avvia una seconda transazione per annullare l'ordine già confermato e si segnala l'errore all'utente.",
+      "words": [
+        {
+          "text": "si",
+          "start": 22.564,
+          "end": 22.604
+        },
+        {
+          "text": "avvia",
+          "start": 22.644,
+          "end": 22.844
+        },
+        {
+          "text": "una",
+          "start": 22.884,
+          "end": 23.004
+        },
+        {
+          "text": "seconda",
+          "start": 23.084,
+          "end": 23.424
+        },
+        {
+          "text": "transazione",
+          "start": 23.464,
+          "end": 24.084
+        },
+        {
+          "text": "per",
+          "start": 24.124,
+          "end": 24.224
+        },
+        {
+          "text": "annullare",
+          "start": 24.264,
+          "end": 24.644
+        },
+        {
+          "text": "l'ordine",
+          "start": 24.684,
+          "end": 25.024
+        },
+        {
+          "text": "già",
+          "start": 25.084,
+          "end": 25.184
+        },
+        {
+          "text": "confermato",
+          "start": 25.244,
+          "end": 25.804
+        },
+        {
+          "text": "e",
+          "start": 26.044,
+          "end": 26.084
+        },
+        {
+          "text": "si",
+          "start": 26.124,
+          "end": 26.204
+        },
+        {
+          "text": "segnala",
+          "start": 26.264,
+          "end": 26.604
+        },
+        {
+          "text": "l'errore",
+          "start": 26.644,
+          "end": 26.984
+        },
+        {
+          "text": "all'utente.",
+          "start": 27.024,
+          "end": 27.504
+        }
+      ]
+    },
+    {
+      "start": 28.064,
+      "end": 30.244,
+      "text": "Ma dove risiede la logica di compensazione?",
+      "words": [
+        {
+          "text": "Ma",
+          "start": 28.064,
+          "end": 28.124
+        },
+        {
+          "text": "dove",
+          "start": 28.244,
+          "end": 28.404
+        },
+        {
+          "text": "risiede",
+          "start": 28.444,
+          "end": 28.884
+        },
+        {
+          "text": "la",
+          "start": 28.964,
+          "end": 29.004
+        },
+        {
+          "text": "logica",
+          "start": 29.044,
+          "end": 29.384
+        },
+        {
+          "text": "di",
+          "start": 29.424,
+          "end": 29.484
+        },
+        {
+          "text": "compensazione?",
+          "start": 29.524,
+          "end": 30.244
+        }
+      ]
+    },
+    {
+      "start": 30.684,
+      "end": 34.525,
+      "text": "E che fare se fallisce la compensazione stessa o se le operazioni diventano cinque?",
+      "words": [
+        {
+          "text": "E",
+          "start": 30.684,
+          "end": 30.724
+        },
+        {
+          "text": "che",
+          "start": 30.764,
+          "end": 30.844
+        },
+        {
+          "text": "fare",
+          "start": 30.904,
+          "end": 31.084
+        },
+        {
+          "text": "se",
+          "start": 31.144,
+          "end": 31.224
+        },
+        {
+          "text": "fallisce",
+          "start": 31.284,
+          "end": 31.724
+        },
+        {
+          "text": "la",
+          "start": 31.764,
+          "end": 31.824
+        },
+        {
+          "text": "compensazione",
+          "start": 31.844,
+          "end": 32.404
+        },
+        {
+          "text": "stessa",
+          "start": 32.444,
+          "end": 32.744
+        },
+        {
+          "text": "o",
+          "start": 32.984,
+          "end": 33.024
+        },
+        {
+          "text": "se",
+          "start": 33.104,
+          "end": 33.184
+        },
+        {
+          "text": "le",
+          "start": 33.224,
+          "end": 33.304
+        },
+        {
+          "text": "operazioni",
+          "start": 33.324,
+          "end": 33.764
+        },
+        {
+          "text": "diventano",
+          "start": 33.804,
+          "end": 34.165
+        },
+        {
+          "text": "cinque?",
+          "start": 34.225,
+          "end": 34.525
+        }
+      ]
+    },
+    {
+      "start": 35.565,
+      "end": 39.165,
+      "text": "La seconda soluzione sono le transazioni distribuite con Two-Phase Commit.",
+      "words": [
+        {
+          "text": "La",
+          "start": 35.565,
+          "end": 35.625
+        },
+        {
+          "text": "seconda",
+          "start": 35.665,
+          "end": 35.965
+        },
+        {
+          "text": "soluzione",
+          "start": 36.005,
+          "end": 36.465
+        },
+        {
+          "text": "sono",
+          "start": 36.565,
+          "end": 36.725
+        },
+        {
+          "text": "le",
+          "start": 36.765,
+          "end": 36.845
+        },
+        {
+          "text": "transazioni",
+          "start": 36.865,
+          "end": 37.465
+        },
+        {
+          "text": "distribuite",
+          "start": 37.545,
+          "end": 38.145
+        },
+        {
+          "text": "con",
+          "start": 38.225,
+          "end": 38.345
+        },
+        {
+          "text": "Two-Phase",
+          "start": 38.425,
+          "end": 38.825
+        },
+        {
+          "text": "Commit.",
+          "start": 38.845,
+          "end": 39.165
+        }
+      ]
+    },
+    {
+      "start": 39.625,
+      "end": 45.405,
+      "text": "Un transaction manager orchestra due fasi: nella fase di voto i partecipanti preparano la transazione",
+      "words": [
+        {
+          "text": "Un",
+          "start": 39.625,
+          "end": 39.705
+        },
+        {
+          "text": "transaction",
+          "start": 39.745,
+          "end": 40.265
+        },
+        {
+          "text": "manager",
+          "start": 40.345,
+          "end": 40.705
+        },
+        {
+          "text": "orchestra",
+          "start": 40.825,
+          "end": 41.285
+        },
+        {
+          "text": "due",
+          "start": 41.385,
+          "end": 41.545
+        },
+        {
+          "text": "fasi:",
+          "start": 41.605,
+          "end": 41.905
+        },
+        {
+          "text": "nella",
+          "start": 42.445,
+          "end": 42.585
+        },
+        {
+          "text": "fase",
+          "start": 42.625,
+          "end": 42.805
+        },
+        {
+          "text": "di",
+          "start": 42.845,
+          "end": 42.905
+        },
+        {
+          "text": "voto",
+          "start": 42.945,
+          "end": 43.185
+        },
+        {
+          "text": "i",
+          "start": 43.365,
+          "end": 43.405
+        },
+        {
+          "text": "partecipanti",
+          "start": 43.445,
+          "end": 44.085
+        },
+        {
+          "text": "preparano",
+          "start": 44.205,
+          "end": 44.745
+        },
+        {
+          "text": "la",
+          "start": 44.805,
+          "end": 44.865
+        },
+        {
+          "text": "transazione",
+          "start": 44.885,
+          "end": 45.405
+        }
+      ]
+    },
+    {
+      "start": 45.485,
+      "end": 47.585,
+      "text": "bloccando le risorse e rispondono sì o no;",
+      "words": [
+        {
+          "text": "bloccando",
+          "start": 45.485,
+          "end": 45.925
+        },
+        {
+          "text": "le",
+          "start": 45.965,
+          "end": 46.025
+        },
+        {
+          "text": "risorse",
+          "start": 46.065,
+          "end": 46.465
+        },
+        {
+          "text": "e",
+          "start": 46.565,
+          "end": 46.605
+        },
+        {
+          "text": "rispondono",
+          "start": 46.645,
+          "end": 47.045
+        },
+        {
+          "text": "sì",
+          "start": 47.145,
+          "end": 47.225
+        },
+        {
+          "text": "o",
+          "start": 47.405,
+          "end": 47.445
+        },
+        {
+          "text": "no;",
+          "start": 47.505,
+          "end": 47.585
+        }
+      ]
+    },
+    {
+      "start": 48.246,
+      "end": 51.966,
+      "text": "nella fase di commit il manager ordina il commit a tutti solo se tutti hanno",
+      "words": [
+        {
+          "text": "nella",
+          "start": 48.246,
+          "end": 48.406
+        },
+        {
+          "text": "fase",
+          "start": 48.426,
+          "end": 48.626
+        },
+        {
+          "text": "di",
+          "start": 48.666,
+          "end": 48.726
+        },
+        {
+          "text": "commit",
+          "start": 48.786,
+          "end": 49.126
+        },
+        {
+          "text": "il",
+          "start": 49.306,
+          "end": 49.386
+        },
+        {
+          "text": "manager",
+          "start": 49.446,
+          "end": 49.766
+        },
+        {
+          "text": "ordina",
+          "start": 49.906,
+          "end": 50.226
+        },
+        {
+          "text": "il",
+          "start": 50.226,
+          "end": 50.266
+        },
+        {
+          "text": "commit",
+          "start": 50.306,
+          "end": 50.626
+        },
+        {
+          "text": "a",
+          "start": 50.666,
+          "end": 50.706
+        },
+        {
+          "text": "tutti",
+          "start": 50.746,
+          "end": 51.026
+        },
+        {
+          "text": "solo",
+          "start": 51.186,
+          "end": 51.446
+        },
+        {
+          "text": "se",
+          "start": 51.506,
+          "end": 51.566
+        },
+        {
+          "text": "tutti",
+          "start": 51.626,
+          "end": 51.826
+        },
+        {
+          "text": "hanno",
+          "start": 51.826,
+          "end": 51.966
+        }
+      ]
+    },
+    {
+      "start": 51.986,
+      "end": 53.646,
+      "text": "votato sì, altrimenti rollback.",
+      "words": [
+        {
+          "text": "votato",
+          "start": 51.986,
+          "end": 52.246
+        },
+        {
+          "text": "sì,",
+          "start": 52.306,
+          "end": 52.406
+        },
+        {
+          "text": "altrimenti",
+          "start": 52.726,
+          "end": 53.166
+        },
+        {
+          "text": "rollback.",
+          "start": 53.286,
+          "end": 53.646
+        }
+      ]
+    },
+    {
+      "start": 54.366,
+      "end": 58.186,
+      "text": "È però vulnerabile: se il manager si guasta o un partecipante non risponde,",
+      "words": [
+        {
+          "text": "È",
+          "start": 54.366,
+          "end": 54.406
+        },
+        {
+          "text": "però",
+          "start": 54.446,
+          "end": 54.606
+        },
+        {
+          "text": "vulnerabile:",
+          "start": 54.666,
+          "end": 55.186
+        },
+        {
+          "text": "se",
+          "start": 55.506,
+          "end": 55.566
+        },
+        {
+          "text": "il",
+          "start": 55.606,
+          "end": 55.646
+        },
+        {
+          "text": "manager",
+          "start": 55.666,
+          "end": 56.006
+        },
+        {
+          "text": "si",
+          "start": 56.066,
+          "end": 56.146
+        },
+        {
+          "text": "guasta",
+          "start": 56.186,
+          "end": 56.586
+        },
+        {
+          "text": "o",
+          "start": 56.746,
+          "end": 56.786
+        },
+        {
+          "text": "un",
+          "start": 56.826,
+          "end": 56.886
+        },
+        {
+          "text": "partecipante",
+          "start": 56.906,
+          "end": 57.506
+        },
+        {
+          "text": "non",
+          "start": 57.586,
+          "end": 57.706
+        },
+        {
+          "text": "risponde,",
+          "start": 57.746,
+          "end": 58.186
+        }
+      ]
+    },
+    {
+      "start": 58.286,
+      "end": 59.526,
+      "text": "le risorse restano bloccate.",
+      "words": [
+        {
+          "text": "le",
+          "start": 58.286,
+          "end": 58.346
+        },
+        {
+          "text": "risorse",
+          "start": 58.386,
+          "end": 58.706
+        },
+        {
+          "text": "restano",
+          "start": 58.766,
+          "end": 59.046
+        },
+        {
+          "text": "bloccate.",
+          "start": 59.086,
+          "end": 59.526
+        }
+      ]
+    },
+    {
+      "start": 60.406,
+      "end": 64.547,
+      "text": "La terza soluzione, preferita, è riprovare più tardi accettando l'eventual consistency:",
+      "words": [
+        {
+          "text": "La",
+          "start": 60.406,
+          "end": 60.466
+        },
+        {
+          "text": "terza",
+          "start": 60.506,
+          "end": 60.706
+        },
+        {
+          "text": "soluzione,",
+          "start": 60.746,
+          "end": 61.246
+        },
+        {
+          "text": "preferita,",
+          "start": 61.326,
+          "end": 61.787
+        },
+        {
+          "text": "è",
+          "start": 61.927,
+          "end": 61.967
+        },
+        {
+          "text": "riprovare",
+          "start": 62.047,
+          "end": 62.407
+        },
+        {
+          "text": "più",
+          "start": 62.427,
+          "end": 62.527
+        },
+        {
+          "text": "tardi",
+          "start": 62.607,
+          "end": 62.947
+        },
+        {
+          "text": "accettando",
+          "start": 63.027,
+          "end": 63.447
+        },
+        {
+          "text": "l'eventual",
+          "start": 63.487,
+          "end": 63.927
+        },
+        {
+          "text": "consistency:",
+          "start": 63.947,
+          "end": 64.547
+        }
+      ]
+    },
+    {
+      "start": 65.107,
+      "end": 67.927,
+      "text": "l'inserimento fallito va in coda e viene ritentato finché riesce.",
+      "words": [
+        {
+          "text": "l'inserimento",
+          "start": 65.107,
+          "end": 65.627
+        },
+        {
+          "text": "fallito",
+          "start": 65.647,
+          "end": 65.947
+        },
+        {
+          "text": "va",
+          "start": 65.987,
+          "end": 66.047
+        },
+        {
+          "text": "in",
+          "start": 66.107,
+          "end": 66.167
+        },
+        {
+          "text": "coda",
+          "start": 66.207,
+          "end": 66.467
+        },
+        {
+          "text": "e",
+          "start": 66.607,
+          "end": 66.647
+        },
+        {
+          "text": "viene",
+          "start": 66.667,
+          "end": 66.847
+        },
+        {
+          "text": "ritentato",
+          "start": 66.907,
+          "end": 67.327
+        },
+        {
+          "text": "finché",
+          "start": 67.347,
+          "end": 67.567
+        },
+        {
+          "text": "riesce.",
+          "start": 67.587,
+          "end": 67.927
+        }
+      ]
+    }
+  ]
+}

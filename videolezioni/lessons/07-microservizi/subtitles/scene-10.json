@@ -1,0 +1,989 @@
+{
+  "duration": 79.04,
+  "segments": [
+    {
+      "start": 0.02,
+      "end": 4.761,
+      "text": "Chiudiamo il settimo capitolo ricapitolando i sei punti essenziali da fissare per l'esame.",
+      "words": [
+        {
+          "text": "Chiudiamo",
+          "start": 0.02,
+          "end": 0.46
+        },
+        {
+          "text": "il",
+          "start": 0.56,
+          "end": 0.66
+        },
+        {
+          "text": "settimo",
+          "start": 0.74,
+          "end": 1.1
+        },
+        {
+          "text": "capitolo",
+          "start": 1.16,
+          "end": 1.62
+        },
+        {
+          "text": "ricapitolando",
+          "start": 1.8,
+          "end": 2.46
+        },
+        {
+          "text": "i",
+          "start": 2.52,
+          "end": 2.56
+        },
+        {
+          "text": "sei",
+          "start": 2.62,
+          "end": 2.76
+        },
+        {
+          "text": "punti",
+          "start": 2.8,
+          "end": 3.1
+        },
+        {
+          "text": "essenziali",
+          "start": 3.16,
+          "end": 3.7
+        },
+        {
+          "text": "da",
+          "start": 3.74,
+          "end": 3.8
+        },
+        {
+          "text": "fissare",
+          "start": 3.86,
+          "end": 4.221
+        },
+        {
+          "text": "per",
+          "start": 4.261,
+          "end": 4.361
+        },
+        {
+          "text": "l'esame.",
+          "start": 4.401,
+          "end": 4.761
+        }
+      ]
+    },
+    {
+      "start": 5.821,
+      "end": 9.781,
+      "text": "Primo: un servizio software è stateless con interfaccia pubblica;",
+      "words": [
+        {
+          "text": "Primo:",
+          "start": 5.821,
+          "end": 6.061
+        },
+        {
+          "text": "un",
+          "start": 6.721,
+          "end": 6.801
+        },
+        {
+          "text": "servizio",
+          "start": 6.841,
+          "end": 7.221
+        },
+        {
+          "text": "software",
+          "start": 7.301,
+          "end": 7.721
+        },
+        {
+          "text": "è",
+          "start": 7.881,
+          "end": 7.921
+        },
+        {
+          "text": "stateless",
+          "start": 8.041,
+          "end": 8.561
+        },
+        {
+          "text": "con",
+          "start": 8.621,
+          "end": 8.741
+        },
+        {
+          "text": "interfaccia",
+          "start": 8.801,
+          "end": 9.321
+        },
+        {
+          "text": "pubblica;",
+          "start": 9.361,
+          "end": 9.781
+        }
+      ]
+    },
+    {
+      "start": 10.461,
+      "end": 15.822,
+      "text": "un microservizio è piccolo, autonomo, orientato al business e possiede i propri dati.",
+      "words": [
+        {
+          "text": "un",
+          "start": 10.461,
+          "end": 10.541
+        },
+        {
+          "text": "microservizio",
+          "start": 10.601,
+          "end": 11.441
+        },
+        {
+          "text": "è",
+          "start": 11.661,
+          "end": 11.701
+        },
+        {
+          "text": "piccolo,",
+          "start": 11.801,
+          "end": 12.242
+        },
+        {
+          "text": "autonomo,",
+          "start": 12.522,
+          "end": 13.062
+        },
+        {
+          "text": "orientato",
+          "start": 13.482,
+          "end": 13.942
+        },
+        {
+          "text": "al",
+          "start": 13.982,
+          "end": 14.062
+        },
+        {
+          "text": "business",
+          "start": 14.122,
+          "end": 14.502
+        },
+        {
+          "text": "e",
+          "start": 14.662,
+          "end": 14.702
+        },
+        {
+          "text": "possiede",
+          "start": 14.762,
+          "end": 15.162
+        },
+        {
+          "text": "i",
+          "start": 15.202,
+          "end": 15.242
+        },
+        {
+          "text": "propri",
+          "start": 15.262,
+          "end": 15.502
+        },
+        {
+          "text": "dati.",
+          "start": 15.562,
+          "end": 15.822
+        }
+      ]
+    },
+    {
+      "start": 16.862,
+      "end": 22.443,
+      "text": "Secondo: occorrono basso coupling, alta cohesion e dimensione secondo la rule of twos,",
+      "words": [
+        {
+          "text": "Secondo:",
+          "start": 16.862,
+          "end": 17.242
+        },
+        {
+          "text": "occorrono",
+          "start": 17.822,
+          "end": 18.282
+        },
+        {
+          "text": "basso",
+          "start": 18.362,
+          "end": 18.622
+        },
+        {
+          "text": "coupling,",
+          "start": 18.682,
+          "end": 19.082
+        },
+        {
+          "text": "alta",
+          "start": 19.422,
+          "end": 19.622
+        },
+        {
+          "text": "cohesion",
+          "start": 19.662,
+          "end": 20.123
+        },
+        {
+          "text": "e",
+          "start": 20.423,
+          "end": 20.463
+        },
+        {
+          "text": "dimensione",
+          "start": 20.523,
+          "end": 21.063
+        },
+        {
+          "text": "secondo",
+          "start": 21.123,
+          "end": 21.443
+        },
+        {
+          "text": "la",
+          "start": 21.503,
+          "end": 21.583
+        },
+        {
+          "text": "rule",
+          "start": 21.683,
+          "end": 21.903
+        },
+        {
+          "text": "of",
+          "start": 21.923,
+          "end": 22.003
+        },
+        {
+          "text": "twos,",
+          "start": 22.123,
+          "end": 22.443
+        }
+      ]
+    },
+    {
+      "start": 22.903,
+      "end": 25.443,
+      "text": "cioè due settimane e otto o dieci persone;",
+      "words": [
+        {
+          "text": "cioè",
+          "start": 22.903,
+          "end": 23.083
+        },
+        {
+          "text": "due",
+          "start": 23.343,
+          "end": 23.503
+        },
+        {
+          "text": "settimane",
+          "start": 23.543,
+          "end": 24.083
+        },
+        {
+          "text": "e",
+          "start": 24.263,
+          "end": 24.303
+        },
+        {
+          "text": "otto",
+          "start": 24.383,
+          "end": 24.643
+        },
+        {
+          "text": "o",
+          "start": 24.663,
+          "end": 24.703
+        },
+        {
+          "text": "dieci",
+          "start": 24.723,
+          "end": 24.943
+        },
+        {
+          "text": "persone;",
+          "start": 24.983,
+          "end": 25.443
+        }
+      ]
+    },
+    {
+      "start": 26.303,
+      "end": 30.604,
+      "text": "l'API gateway isola i client e accelera lead time e scalabilità.",
+      "words": [
+        {
+          "text": "l'API",
+          "start": 26.303,
+          "end": 26.763
+        },
+        {
+          "text": "gateway",
+          "start": 26.863,
+          "end": 27.283
+        },
+        {
+          "text": "isola",
+          "start": 27.483,
+          "end": 27.744
+        },
+        {
+          "text": "i",
+          "start": 27.804,
+          "end": 27.844
+        },
+        {
+          "text": "client",
+          "start": 27.864,
+          "end": 28.344
+        },
+        {
+          "text": "e",
+          "start": 28.564,
+          "end": 28.604
+        },
+        {
+          "text": "accelera",
+          "start": 28.684,
+          "end": 29.164
+        },
+        {
+          "text": "lead",
+          "start": 29.244,
+          "end": 29.424
+        },
+        {
+          "text": "time",
+          "start": 29.524,
+          "end": 29.844
+        },
+        {
+          "text": "e",
+          "start": 29.964,
+          "end": 30.004
+        },
+        {
+          "text": "scalabilità.",
+          "start": 30.064,
+          "end": 30.604
+        }
+      ]
+    },
+    {
+      "start": 31.864,
+      "end": 35.785,
+      "text": "Terzo: la comunicazione può essere sincrona o asincrona tramite code,",
+      "words": [
+        {
+          "text": "Terzo:",
+          "start": 31.864,
+          "end": 32.244
+        },
+        {
+          "text": "la",
+          "start": 32.584,
+          "end": 32.664
+        },
+        {
+          "text": "comunicazione",
+          "start": 32.704,
+          "end": 33.324
+        },
+        {
+          "text": "può",
+          "start": 33.364,
+          "end": 33.444
+        },
+        {
+          "text": "essere",
+          "start": 33.484,
+          "end": 33.744
+        },
+        {
+          "text": "sincrona",
+          "start": 33.824,
+          "end": 34.304
+        },
+        {
+          "text": "o",
+          "start": 34.444,
+          "end": 34.484
+        },
+        {
+          "text": "asincrona",
+          "start": 34.544,
+          "end": 35.084
+        },
+        {
+          "text": "tramite",
+          "start": 35.144,
+          "end": 35.464
+        },
+        {
+          "text": "code,",
+          "start": 35.504,
+          "end": 35.785
+        }
+      ]
+    },
+    {
+      "start": 36.265,
+      "end": 39.705,
+      "text": "e diretta per URI oppure indiretta tramite un message broker.",
+      "words": [
+        {
+          "text": "e",
+          "start": 36.265,
+          "end": 36.305
+        },
+        {
+          "text": "diretta",
+          "start": 36.445,
+          "end": 36.825
+        },
+        {
+          "text": "per",
+          "start": 36.865,
+          "end": 36.985
+        },
+        {
+          "text": "URI",
+          "start": 37.045,
+          "end": 37.225
+        },
+        {
+          "text": "oppure",
+          "start": 37.545,
+          "end": 37.865
+        },
+        {
+          "text": "indiretta",
+          "start": 37.925,
+          "end": 38.385
+        },
+        {
+          "text": "tramite",
+          "start": 38.445,
+          "end": 38.785
+        },
+        {
+          "text": "un",
+          "start": 38.845,
+          "end": 38.905
+        },
+        {
+          "text": "message",
+          "start": 38.945,
+          "end": 39.325
+        },
+        {
+          "text": "broker.",
+          "start": 39.345,
+          "end": 39.705
+        }
+      ]
+    },
+    {
+      "start": 40.685,
+      "end": 44.126,
+      "text": "Quarto: per il teorema CAP, assumendo partizioni di rete,",
+      "words": [
+        {
+          "text": "Quarto:",
+          "start": 40.685,
+          "end": 41.065
+        },
+        {
+          "text": "per",
+          "start": 41.505,
+          "end": 41.645
+        },
+        {
+          "text": "il",
+          "start": 41.665,
+          "end": 41.745
+        },
+        {
+          "text": "teorema",
+          "start": 41.765,
+          "end": 42.065
+        },
+        {
+          "text": "CAP,",
+          "start": 42.105,
+          "end": 42.345
+        },
+        {
+          "text": "assumendo",
+          "start": 42.785,
+          "end": 43.185
+        },
+        {
+          "text": "partizioni",
+          "start": 43.225,
+          "end": 43.726
+        },
+        {
+          "text": "di",
+          "start": 43.766,
+          "end": 43.826
+        },
+        {
+          "text": "rete,",
+          "start": 43.866,
+          "end": 44.126
+        }
+      ]
+    },
+    {
+      "start": 44.506,
+      "end": 48.446,
+      "text": "si sceglie tra disponibilità con coerenza eventuale e coerenza forte;",
+      "words": [
+        {
+          "text": "si",
+          "start": 44.506,
+          "end": 44.586
+        },
+        {
+          "text": "sceglie",
+          "start": 44.626,
+          "end": 44.926
+        },
+        {
+          "text": "tra",
+          "start": 44.966,
+          "end": 45.086
+        },
+        {
+          "text": "disponibilità",
+          "start": 45.226,
+          "end": 45.906
+        },
+        {
+          "text": "con",
+          "start": 45.986,
+          "end": 46.126
+        },
+        {
+          "text": "coerenza",
+          "start": 46.186,
+          "end": 46.626
+        },
+        {
+          "text": "eventuale",
+          "start": 46.706,
+          "end": 47.246
+        },
+        {
+          "text": "e",
+          "start": 47.506,
+          "end": 47.546
+        },
+        {
+          "text": "coerenza",
+          "start": 47.626,
+          "end": 48.066
+        },
+        {
+          "text": "forte;",
+          "start": 48.126,
+          "end": 48.446
+        }
+      ]
+    },
+    {
+      "start": 49.066,
+      "end": 52.107,
+      "text": "Saga e quorum gestiscono transazioni e repliche.",
+      "words": [
+        {
+          "text": "Saga",
+          "start": 49.066,
+          "end": 49.326
+        },
+        {
+          "text": "e",
+          "start": 49.526,
+          "end": 49.566
+        },
+        {
+          "text": "quorum",
+          "start": 49.666,
+          "end": 50.066
+        },
+        {
+          "text": "gestiscono",
+          "start": 50.266,
+          "end": 50.766
+        },
+        {
+          "text": "transazioni",
+          "start": 50.806,
+          "end": 51.446
+        },
+        {
+          "text": "e",
+          "start": 51.587,
+          "end": 51.627
+        },
+        {
+          "text": "repliche.",
+          "start": 51.727,
+          "end": 52.107
+        }
+      ]
+    },
+    {
+      "start": 53.267,
+      "end": 59.988,
+      "text": "Quinto: conviene iniziare dall'orchestration, proteggere le chiamate con il circuit breaker e collaudare la resilienza",
+      "words": [
+        {
+          "text": "Quinto:",
+          "start": 53.267,
+          "end": 53.607
+        },
+        {
+          "text": "conviene",
+          "start": 54.007,
+          "end": 54.347
+        },
+        {
+          "text": "iniziare",
+          "start": 54.407,
+          "end": 54.807
+        },
+        {
+          "text": "dall'orchestration,",
+          "start": 54.847,
+          "end": 55.687
+        },
+        {
+          "text": "proteggere",
+          "start": 56.047,
+          "end": 56.527
+        },
+        {
+          "text": "le",
+          "start": 56.567,
+          "end": 56.627
+        },
+        {
+          "text": "chiamate",
+          "start": 56.667,
+          "end": 56.987
+        },
+        {
+          "text": "con",
+          "start": 57.027,
+          "end": 57.147
+        },
+        {
+          "text": "il",
+          "start": 57.187,
+          "end": 57.267
+        },
+        {
+          "text": "circuit",
+          "start": 57.327,
+          "end": 57.707
+        },
+        {
+          "text": "breaker",
+          "start": 57.787,
+          "end": 58.127
+        },
+        {
+          "text": "e",
+          "start": 58.607,
+          "end": 58.647
+        },
+        {
+          "text": "collaudare",
+          "start": 58.747,
+          "end": 59.307
+        },
+        {
+          "text": "la",
+          "start": 59.347,
+          "end": 59.408
+        },
+        {
+          "text": "resilienza",
+          "start": 59.448,
+          "end": 59.988
+        }
+      ]
+    },
+    {
+      "start": 60.048,
+      "end": 60.848,
+      "text": "con Chaos Monkey.",
+      "words": [
+        {
+          "text": "con",
+          "start": 60.048,
+          "end": 60.148
+        },
+        {
+          "text": "Chaos",
+          "start": 60.208,
+          "end": 60.468
+        },
+        {
+          "text": "Monkey.",
+          "start": 60.528,
+          "end": 60.848
+        }
+      ]
+    },
+    {
+      "start": 62.048,
+      "end": 67.429,
+      "text": "Sesto: DevOps, continuous deployment e rollback automatico governano il rilascio,",
+      "words": [
+        {
+          "text": "Sesto:",
+          "start": 62.048,
+          "end": 62.388
+        },
+        {
+          "text": "DevOps,",
+          "start": 62.908,
+          "end": 63.308
+        },
+        {
+          "text": "continuous",
+          "start": 63.648,
+          "end": 64.168
+        },
+        {
+          "text": "deployment",
+          "start": 64.228,
+          "end": 64.768
+        },
+        {
+          "text": "e",
+          "start": 64.988,
+          "end": 65.028
+        },
+        {
+          "text": "rollback",
+          "start": 65.168,
+          "end": 65.568
+        },
+        {
+          "text": "automatico",
+          "start": 65.648,
+          "end": 66.208
+        },
+        {
+          "text": "governano",
+          "start": 66.388,
+          "end": 66.808
+        },
+        {
+          "text": "il",
+          "start": 66.868,
+          "end": 66.928
+        },
+        {
+          "text": "rilascio,",
+          "start": 66.968,
+          "end": 67.429
+        }
+      ]
+    },
+    {
+      "start": 67.889,
+      "end": 70.969,
+      "text": "evitando però i microservizi quando un monolite è ancora gestibile.",
+      "words": [
+        {
+          "text": "evitando",
+          "start": 67.889,
+          "end": 68.249
+        },
+        {
+          "text": "però",
+          "start": 68.269,
+          "end": 68.429
+        },
+        {
+          "text": "i",
+          "start": 68.489,
+          "end": 68.52900000000001
+        },
+        {
+          "text": "microservizi",
+          "start": 68.549,
+          "end": 69.209
+        },
+        {
+          "text": "quando",
+          "start": 69.329,
+          "end": 69.569
+        },
+        {
+          "text": "un",
+          "start": 69.609,
+          "end": 69.649
+        },
+        {
+          "text": "monolite",
+          "start": 69.689,
+          "end": 70.069
+        },
+        {
+          "text": "è",
+          "start": 70.129,
+          "end": 70.16900000000001
+        },
+        {
+          "text": "ancora",
+          "start": 70.169,
+          "end": 70.429
+        },
+        {
+          "text": "gestibile.",
+          "start": 70.469,
+          "end": 70.969
+        }
+      ]
+    },
+    {
+      "start": 72.069,
+      "end": 74.969,
+      "text": "Prima di passare al capitolo otto sugli architectural smell,",
+      "words": [
+        {
+          "text": "Prima",
+          "start": 72.069,
+          "end": 72.289
+        },
+        {
+          "text": "di",
+          "start": 72.309,
+          "end": 72.369
+        },
+        {
+          "text": "passare",
+          "start": 72.409,
+          "end": 72.729
+        },
+        {
+          "text": "al",
+          "start": 72.749,
+          "end": 72.829
+        },
+        {
+          "text": "capitolo",
+          "start": 72.869,
+          "end": 73.229
+        },
+        {
+          "text": "otto",
+          "start": 73.329,
+          "end": 73.569
+        },
+        {
+          "text": "sugli",
+          "start": 73.749,
+          "end": 73.949
+        },
+        {
+          "text": "architectural",
+          "start": 73.989,
+          "end": 74.629
+        },
+        {
+          "text": "smell,",
+          "start": 74.669,
+          "end": 74.969
+        }
+      ]
+    },
+    {
+      "start": 75.27,
+      "end": 78.79,
+      "text": "provate a rispondere ad alta voce alle dodici domande di verifica sulla destra.",
+      "words": [
+        {
+          "text": "provate",
+          "start": 75.27,
+          "end": 75.57
+        },
+        {
+          "text": "a",
+          "start": 75.59,
+          "end": 75.63000000000001
+        },
+        {
+          "text": "rispondere",
+          "start": 75.67,
+          "end": 76.11
+        },
+        {
+          "text": "ad",
+          "start": 76.13,
+          "end": 76.21
+        },
+        {
+          "text": "alta",
+          "start": 76.25,
+          "end": 76.43
+        },
+        {
+          "text": "voce",
+          "start": 76.47,
+          "end": 76.71
+        },
+        {
+          "text": "alle",
+          "start": 76.85,
+          "end": 77.03
+        },
+        {
+          "text": "dodici",
+          "start": 77.09,
+          "end": 77.41
+        },
+        {
+          "text": "domande",
+          "start": 77.43,
+          "end": 77.73
+        },
+        {
+          "text": "di",
+          "start": 77.77,
+          "end": 77.83
+        },
+        {
+          "text": "verifica",
+          "start": 77.85,
+          "end": 78.23
+        },
+        {
+          "text": "sulla",
+          "start": 78.27,
+          "end": 78.45
+        },
+        {
+          "text": "destra.",
+          "start": 78.47,
+          "end": 78.79
+        }
+      ]
+    }
+  ]
+}

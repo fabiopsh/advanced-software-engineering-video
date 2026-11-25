@@ -1,0 +1,802 @@
+{
+  "lesson_id": "06-cloud",
+  "chapter": 6,
+  "part": "Parte III · Cloud e microservizi",
+  "title": "Software basato sul cloud",
+  "voice_config": {
+    "provider": "gemini",
+    "model": "gemini-3.8-flash-tts",
+    "voice_name": "Ludo",
+    "style": "chiaro, didattico, calmo e preciso, stile lezione universitaria di ingegneria del software"
+  },
+  "scenes": [
+    {
+      "id": "scene-01",
+      "section": "6.1 · Tutto come servizio",
+      "title": "I modelli di servizio: IaaS, PaaS, SaaS e FaaS",
+      "tts_text": "Benvenuti al capitolo sei dedicato al software basato sul cloud. Dopo aver visto container e Docker nel capitolo cinque, esploriamo come si offrono e si progettano i prodotti cloud, preparando il terreno per i microservizi. [pause:0.5] Le risorse del cloud si offrono come servizio a tre livelli principali, più un quarto modello orientato alle funzioni. [pause:0.5] Con Infrastructure as a Service, o IaaS, il provider gestisce l'intera infrastruttura virtualizzata, cioè server, memoria di massa e rete. Il cliente invece è responsabile di sistema operativo, software abilitante e applicazione, come avviene con Amazon EC2 e S3. [pause:0.5] Salendo a Platform as a Service, o PaaS, il fornitore fornisce e gestisce infrastruttura, sistema operativo e software abilitante, incluse virtual machine e SDK. Il cliente si occupa solo di installare e gestire la propria applicazione, come su Heroku, Azure o Google App Engine. [pause:0.5] Con Software as a Service, o SaaS, il software è erogato su richiesta tramite client leggeri o API: il provider gestisce tutto, incluso l'applicativo, come in Salesforce. [pause:0.5] Infine, nel Function as a Service, o FaaS, il cliente carica singole funzioni eseguite solo all'arrivo delle richieste, pagando in base alle esecuzioni effettive.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">6.1 · Tutto come servizio</div>\n  <h2 class=\"slide-title\">I modelli di servizio: IaaS, PaaS, SaaS e FaaS</h2>\n  <div id=\"s1\" class=\"svg-panel cue-hidden\">\n    <svg viewBox=\"0 0 640 195\" class=\"diagram-svg\" aria-label=\"Matrice delle responsabilità IaaS, PaaS, SaaS e FaaS\">\n      <text x=\"12\" y=\"52\" class=\"svg-caption\">App / Funzione</text>\n      <text x=\"12\" y=\"91\" class=\"svg-caption\">SW abilitante</text>\n      <text x=\"12\" y=\"130\" class=\"svg-caption\">Sistema op.</text>\n      <text x=\"12\" y=\"169\" class=\"svg-caption\">Infrastruttura</text>\n      <g id=\"svg-iaas\">\n        <text x=\"182\" y=\"22\" text-anchor=\"middle\" class=\"svg-math\">IaaS</text>\n        <rect x=\"126\" y=\"32\" width=\"112\" height=\"32\" rx=\"5\" fill=\"var(--orange-soft, rgba(217,119,6,0.12))\" stroke=\"var(--orange)\" stroke-width=\"1.4\"/>\n        <text x=\"182\" y=\"52\" text-anchor=\"middle\" class=\"svg-tick\">Cliente</text>\n        <rect x=\"126\" y=\"71\" width=\"112\" height=\"32\" rx=\"5\" fill=\"var(--orange-soft, rgba(217,119,6,0.12))\" stroke=\"var(--orange)\" stroke-width=\"1.4\"/>\n        <text x=\"182\" y=\"91\" text-anchor=\"middle\" class=\"svg-tick\">Cliente</text>\n        <rect x=\"126\" y=\"110\" width=\"112\" height=\"32\" rx=\"5\" fill=\"var(--orange-soft, rgba(217,119,6,0.12))\" stroke=\"var(--orange)\" stroke-width=\"1.4\"/>\n        <text x=\"182\" y=\"130\" text-anchor=\"middle\" class=\"svg-tick\">Cliente</text>\n        <rect x=\"126\" y=\"149\" width=\"112\" height=\"32\" rx=\"5\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.4\"/>\n        <text x=\"182\" y=\"169\" text-anchor=\"middle\" class=\"svg-tick\">Provider</text>\n      </g>\n      <g id=\"svg-paas\">\n        <text x=\"308\" y=\"22\" text-anchor=\"middle\" class=\"svg-math\">PaaS</text>\n        <rect x=\"252\" y=\"32\" width=\"112\" height=\"32\" rx=\"5\" fill=\"var(--orange-soft, rgba(217,119,6,0.12))\" stroke=\"var(--orange)\" stroke-width=\"1.4\"/>\n        <text x=\"308\" y=\"52\" text-anchor=\"middle\" class=\"svg-tick\">Cliente</text>\n        <rect x=\"252\" y=\"71\" width=\"112\" height=\"32\" rx=\"5\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.4\"/>\n        <text x=\"308\" y=\"91\" text-anchor=\"middle\" class=\"svg-tick\">Provider</text>\n        <rect x=\"252\" y=\"110\" width=\"112\" height=\"32\" rx=\"5\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.4\"/>\n        <text x=\"308\" y=\"130\" text-anchor=\"middle\" class=\"svg-tick\">Provider</text>\n        <rect x=\"252\" y=\"149\" width=\"112\" height=\"32\" rx=\"5\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.4\"/>\n        <text x=\"308\" y=\"169\" text-anchor=\"middle\" class=\"svg-tick\">Provider</text>\n      </g>\n      <g id=\"svg-saas\">\n        <text x=\"434\" y=\"22\" text-anchor=\"middle\" class=\"svg-math\">SaaS</text>\n        <rect x=\"378\" y=\"32\" width=\"112\" height=\"32\" rx=\"5\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.4\"/>\n        <text x=\"434\" y=\"52\" text-anchor=\"middle\" class=\"svg-tick\">Provider</text>\n        <rect x=\"378\" y=\"71\" width=\"112\" height=\"32\" rx=\"5\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.4\"/>\n        <text x=\"434\" y=\"91\" text-anchor=\"middle\" class=\"svg-tick\">Provider</text>\n        <rect x=\"378\" y=\"110\" width=\"112\" height=\"32\" rx=\"5\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.4\"/>\n        <text x=\"434\" y=\"130\" text-anchor=\"middle\" class=\"svg-tick\">Provider</text>\n        <rect x=\"378\" y=\"149\" width=\"112\" height=\"32\" rx=\"5\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.4\"/>\n        <text x=\"434\" y=\"169\" text-anchor=\"middle\" class=\"svg-tick\">Provider</text>\n      </g>\n      <g id=\"svg-faas\">\n        <text x=\"560\" y=\"22\" text-anchor=\"middle\" class=\"svg-math\">FaaS</text>\n        <rect x=\"504\" y=\"32\" width=\"112\" height=\"32\" rx=\"5\" fill=\"var(--green-soft, rgba(21,128,61,0.12))\" stroke=\"var(--green)\" stroke-width=\"1.4\"/>\n        <text x=\"560\" y=\"52\" text-anchor=\"middle\" class=\"svg-tick\">Funzione (on-demand)</text>\n        <rect x=\"504\" y=\"71\" width=\"112\" height=\"32\" rx=\"5\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.4\"/>\n        <text x=\"560\" y=\"91\" text-anchor=\"middle\" class=\"svg-tick\">Provider</text>\n        <rect x=\"504\" y=\"110\" width=\"112\" height=\"32\" rx=\"5\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.4\"/>\n        <text x=\"560\" y=\"130\" text-anchor=\"middle\" class=\"svg-tick\">Provider</text>\n        <rect x=\"504\" y=\"149\" width=\"112\" height=\"32\" rx=\"5\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.4\"/>\n        <text x=\"560\" y=\"169\" text-anchor=\"middle\" class=\"svg-tick\">Provider</text>\n      </g>\n    </svg>\n  </div>\n  <div id=\"s2\" class=\"grid-2 cue-hidden\">\n    <div id=\"m-iaas\" class=\"box box-def\">\n      <div class=\"box-label\">IaaS · Infrastructure as a Service</div>\n      <p>Server, memoria di massa e rete virtualizzati. Il cliente gestisce OS, SW abilitante e app (es. <em>EC2, S3</em>).</p>\n    </div>\n    <div id=\"m-paas\" class=\"box box-primary\">\n      <div class=\"box-label\">PaaS · Platform as a Service</div>\n      <p>Piattaforma completa (VM, OS, servizi, SDK). Il cliente gestisce solo l'app (es. <em>Heroku, Azure, GAE</em>).</p>\n    </div>\n    <div id=\"m-saas\" class=\"box box-idea\">\n      <div class=\"box-label\">SaaS · Software as a Service</div>\n      <p>Software su richiesta via <em>thin client</em> o API. Il cliente non gestisce nulla (es. <em>salesforce.com</em>).</p>\n    </div>\n    <div id=\"m-faas\" class=\"box box-theorem\">\n      <div class=\"box-label\">FaaS · Function as a Service</div>\n      <p>Il cliente carica singole funzioni eseguite solo alle richieste; si paga per numero di esecuzioni.</p>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 0.52,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "al capitolo sei dedicato"
+        },
+        {
+          "at": 0.52,
+          "action": "highlight",
+          "target": "#s1",
+          "duration": 9,
+          "anchor": "al capitolo sei dedicato"
+        },
+        {
+          "at": 14.56,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Le risorse del cloud"
+        },
+        {
+          "at": 14.56,
+          "action": "highlight",
+          "target": "#svg-iaas",
+          "duration": 6.5,
+          "anchor": "Le risorse del cloud"
+        },
+        {
+          "at": 21.22,
+          "action": "highlight",
+          "target": "#m-iaas",
+          "duration": 15.5,
+          "anchor": "Con Infrastructure as a Service"
+        },
+        {
+          "at": 39.3,
+          "action": "highlight",
+          "target": "#svg-paas",
+          "duration": 6,
+          "anchor": "Salendo a Platform as a Service"
+        },
+        {
+          "at": 50.58,
+          "action": "highlight",
+          "target": "#m-paas",
+          "duration": 7.22,
+          "anchor": "Il cliente si occupa"
+        },
+        {
+          "at": 57.92,
+          "action": "highlight",
+          "target": "#m-saas",
+          "duration": 11.52,
+          "anchor": "Con Software as a Service"
+        },
+        {
+          "at": 69.56,
+          "action": "highlight",
+          "target": "#m-faas",
+          "duration": 12.8,
+          "anchor": "Infine, nel Function as a Service"
+        }
+      ],
+      "audio_file": "audio/scene-01.wav",
+      "subtitle_file": "subtitles/scene-01.json",
+      "duration_sec": 79.07
+    },
+    {
+      "id": "scene-02",
+      "section": "6.2 · Software as a Service",
+      "title": "Benefici per il fornitore, vantaggi e rischi per i clienti",
+      "tts_text": "Approfondiamo il modello Software as a Service. In origine i prodotti venivano installati sui computer dei clienti, generando tre problemi: configurazione locale complessa, gestione degli aggiornamenti a carico dell'utente e necessità per l'azienda di mantenere più versioni diverse. [pause:0.5] Con il SaaS il cliente non installa nulla, paga un abbonamento e accede da remoto. [pause:0.5] Per chi offre il prodotto ci sono sei grandi vantaggi. Primo, cash flow regolare tramite abbonamenti o pagamento a consumo. Secondo, update management centralizzato: tutti ricevono gli aggiornamenti insieme su un'unica versione. Terzo, continuous deployment immediato dopo il collaudo. Quarto, payment flexibility per attrarre anche piccole aziende senza grandi costi iniziali. Quinto, formule try before you buy per raccogliere presto il riscontro degli utenti, e sesto, data collection diretta sull'uso del prodotto. [pause:0.6] Dal lato cliente i vantaggi sono chiari: accesso da mobile, laptop e desktop, nessun costo iniziale per hardware o licenze e aggiornamenti immediati. [pause:0.5] Tuttavia restano sei svantaggi critici: conformità alle norme europee sulla privacy, timori di sicurezza nel cedere i dati, vincoli di rete nei grandi trasferimenti, scambio dati difficile senza API adatte, perdita di controllo sugli aggiornamenti e rischio di service lock-in.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">6.2 · Software as a Service</div>\n  <h2 class=\"slide-title\">Benefici per il fornitore, vantaggi e rischi per i clienti</h2>\n  <div id=\"s1\" class=\"box box-def cue-hidden\">\n    <div class=\"box-label\">Dal software installato al servizio SaaS</div>\n    <p>Supera i 3 problemi dell'installazione locale (configurazione, aggiornamenti a carico del cliente, più versioni da mantenere): nessuna installazione, accesso remoto e pagamento in abbonamento.</p>\n  </div>\n  <div id=\"s2\" class=\"grid-2 cue-hidden\">\n    <div id=\"b-vendor\" class=\"box box-primary\">\n      <div class=\"box-label\">Benefici per chi offre il prodotto (6)</div>\n      <ul class=\"clean-list\">\n        <li id=\"v-1\"><strong>Cash flow &amp; Payment flexibility</strong>: entrate regolari e opzioni adatte anche alle piccole aziende.</li>\n        <li id=\"v-2\"><strong>Update management &amp; Continuous deployment</strong>: un'unica versione aggiornata subito e per tutti.</li>\n        <li id=\"v-3\"><strong>Try before you buy &amp; Data collection</strong>: prova gratuita iniziale e raccolta dati sull'uso.</li>\n      </ul>\n    </div>\n    <div id=\"b-client\" class=\"box box-warn\">\n      <div class=\"box-label\">Pro e Contro per i clienti</div>\n      <ul class=\"clean-list\">\n        <li id=\"c-1\"><strong>Pro</strong>: accesso da mobile/laptop/desktop, zero costi iniziali, aggiornamenti immediati, costi ridotti.</li>\n        <li id=\"c-2\"><strong>Contro (dati &amp; rete)</strong>: norme privacy UE, sicurezza, vincoli di rete, scambio dati senza API adatte.</li>\n        <li id=\"c-3\"><strong>Contro (controllo)</strong>: perdita di controllo sugli aggiornamenti e <em>service lock-in</em>.</li>\n      </ul>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 0,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "Approfondiamo il modello Software"
+        },
+        {
+          "at": 0,
+          "action": "highlight",
+          "target": "#s1",
+          "duration": 19,
+          "anchor": "Approfondiamo il modello Software"
+        },
+        {
+          "at": 23.12,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Per chi offre il prodotto"
+        },
+        {
+          "at": 26.28,
+          "action": "highlight",
+          "target": "#v-1",
+          "duration": 4.18,
+          "anchor": "Primo, cash flow regolare"
+        },
+        {
+          "at": 30.94,
+          "action": "highlight",
+          "target": "#v-2",
+          "duration": 10.5,
+          "anchor": "Secondo, update management centralizzato"
+        },
+        {
+          "at": 46.57,
+          "action": "highlight",
+          "target": "#v-3",
+          "duration": 8.84,
+          "anchor": "Quinto, formule try before"
+        },
+        {
+          "at": 55.53,
+          "action": "highlight",
+          "target": "#c-1",
+          "duration": 8.7,
+          "anchor": "Dal lato cliente i vantaggi"
+        },
+        {
+          "at": 64.35,
+          "action": "highlight",
+          "target": "#c-2",
+          "duration": 11.5,
+          "anchor": "Tuttavia restano sei svantaggi"
+        },
+        {
+          "at": 76.67,
+          "action": "highlight",
+          "target": "#c-3",
+          "duration": 6.6,
+          "anchor": "perdita di controllo sugli aggiornamenti"
+        }
+      ],
+      "audio_file": "audio/scene-02.wav",
+      "subtitle_file": "subtitles/scene-02.json",
+      "duration_sec": 80.62
+    },
+    {
+      "id": "scene-03",
+      "section": "6.3 · Questioni di design del SaaS",
+      "title": "Quattro scelte fondamentali nel design di un SaaS",
+      "tts_text": "Progettare un sistema Software as a Service richiede di affrontare quattro questioni chiave di design. [pause:0.5] La prima riguarda dove eseguire l'elaborazione: in locale o in remoto. Eseguire alcune feature sul dispositivo del cliente riduce il traffico di rete e velocizza la risposta, ma aumenta il consumo energetico sui dispositivi a batteria. [pause:0.5] La seconda questione è l'autenticazione. Un prodotto può gestire un proprio sistema conservando e verificando le credenziali, oppure usare l'autenticazione federata tramite fornitori esterni come Google o LinkedIn. In questo caso il prodotto riceve solo la conferma dell'identità e non conserva la password, permettendo alle aziende di usare le proprie credenziali interne. [pause:0.5] La terza questione è l'information leakage: quando utenti di organizzazioni diverse condividono lo stesso sistema, c'è il rischio che i dati di un'azienda diventino visibili a un'altra. Si mitiga con controllo degli accessi e cifratura. [pause:0.5] Infine, la quarta decisione riguarda la gestione del database: usare un unico repository multi-tenant oppure copie separate multi-instance.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">6.3 · Questioni di design del SaaS</div>\n  <h2 class=\"slide-title\">Quattro scelte fondamentali nel design di un SaaS</h2>\n  <div id=\"s1\" class=\"grid-2 cue-hidden\">\n    <div id=\"d-local\" class=\"box box-def\">\n      <div class=\"box-label\">1 · Elaborazione locale o remota</div>\n      <p>Eseguire feature in locale riduce il traffico di rete e accelera la risposta, ma aumenta il consumo di batteria sui dispositivi mobili.</p>\n    </div>\n    <div id=\"d-auth\" class=\"box box-primary\">\n      <div class=\"box-label\">2 · Autenticazione propria vs federata</div>\n      <p>Sistema proprio (conserva e verifica password) oppure <strong>autenticazione federata</strong> (es. Google, LinkedIn): nessuna password salvata, uso delle credenziali aziendali.</p>\n    </div>\n  </div>\n  <div id=\"s2\" class=\"grid-2 cue-hidden\">\n    <div id=\"d-leak\" class=\"box box-warn\">\n      <div class=\"box-label\">3 · Information leakage</div>\n      <p>Rischio che dati di un'organizzazione diventino visibili a utenti di un'altra sullo stesso sistema. Mitigato da controllo degli accessi e cifratura.</p>\n    </div>\n    <div id=\"d-db\" class=\"box box-idea\">\n      <div class=\"box-label\">4 · Gestione del database</div>\n      <p>Un unico repository condiviso (<em>multi-tenant</em>) oppure copie separate di sistema e database per cliente (<em>multi-instance</em>).</p>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 0,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "Progettare un sistema Software"
+        },
+        {
+          "at": 5.84,
+          "action": "highlight",
+          "target": "#d-local",
+          "duration": 13.96,
+          "anchor": "La prima riguarda dove eseguire"
+        },
+        {
+          "at": 19.92,
+          "action": "highlight",
+          "target": "#d-auth",
+          "duration": 20.5,
+          "anchor": "La seconda questione è l'autenticazione"
+        },
+        {
+          "at": 40.85,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "La terza questione è"
+        },
+        {
+          "at": 40.85,
+          "action": "highlight",
+          "target": "#d-leak",
+          "duration": 13.72,
+          "anchor": "La terza questione è"
+        },
+        {
+          "at": 54.69,
+          "action": "highlight",
+          "target": "#d-db",
+          "duration": 11.4,
+          "anchor": "Infine, la quarta decisione"
+        }
+      ],
+      "audio_file": "audio/scene-03.wav",
+      "subtitle_file": "subtitles/scene-03.json",
+      "duration_sec": 62.81
+    },
+    {
+      "id": "scene-04",
+      "section": "6.4 · Sistemi multi-tenant",
+      "title": "Isolamento logico condiviso: esempio e trade-off",
+      "tts_text": "Vediamo da vicino i sistemi multi-tenant. In questa architettura tutti gli utenti condividono un unico schema di database: ogni riga viene etichettata con un identificatore del tenant, cioè del cliente, garantendo così un isolamento logico. [pause:0.5] Guardate l'esempio della tabella Stock management: la colonna Tenant distingue i record dei clienti T516, T632 e T973 pur convivendo nella stessa tabella fisica. [pause:0.6] Questa soluzione offre tre grandi vantaggi. Primo, ottima resource utilization: il provider controlla tutte le risorse e può ottimizzarle. Secondo, sicurezza e manutenzione: il database è progettato fin dall'inizio per isolare i clienti e c'è una sola copia del software da correggere in caso di vulnerabilità. Terzo, update management semplice: si aggiorna un'unica istanza e tutti usano subito l'ultima versione. [pause:0.6] Di contro emergono tre svantaggi importanti. Primo, inflessibilità: tutti condividono lo stesso schema con margini limitati di adattamento. Secondo, il rischio teorico di fuga dati tra tenant e il fatto che una violazione del database colpirebbe tutti i clienti insieme. Terzo, maggiore complessità software rispetto al multi-instance, con conseguente aumento della probabilità di bug.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">6.4 · Sistemi multi-tenant</div>\n  <h2 class=\"slide-title\">Isolamento logico condiviso: esempio e trade-off</h2>\n  <div class=\"grid-2\">\n    <div id=\"s1\" class=\"formula-col cue-hidden\">\n      <div id=\"b-mt-def\" class=\"box box-def\">\n        <div class=\"box-label\">Definizione · Sistema multi-tenant</div>\n        <p>Tutti gli utenti condividono un unico schema di database; ogni voce è etichettata con un identificatore del <code>Tenant</code> per offrire <strong>isolamento logico</strong>.</p>\n      </div>\n      <table id=\"t-stock\" class=\"acad-table\">\n        <thead>\n          <tr><th>Tenant</th><th>Key</th><th>Item</th><th>Stock</th><th>Supplier</th></tr>\n        </thead>\n        <tbody>\n          <tr><td><strong>T516</strong></td><td>100</td><td>Widg 1</td><td>27</td><td>S13</td></tr>\n          <tr><td><strong>T632</strong></td><td>100</td><td>Obj 1</td><td>5</td><td>S13</td></tr>\n          <tr><td><strong>T973</strong></td><td>100</td><td>Thing 1</td><td>241</td><td>S13</td></tr>\n          <tr><td><strong>T516</strong></td><td>110</td><td>Widg 2</td><td>14</td><td>S13</td></tr>\n        </tbody>\n      </table>\n    </div>\n    <table id=\"s2\" class=\"acad-table cue-hidden\">\n      <thead>\n        <tr><th>Aspetto</th><th>Vantaggi</th><th>Svantaggi</th></tr>\n      </thead>\n      <tbody>\n        <tr id=\"mt-1\"><td><strong>Risorse &amp; Schema</strong></td><td><em>Resource utilization</em>: ottimizzazione centralizzata delle risorse</td><td><em>Inflexibility</em>: schema unico con adattamento limitato</td></tr>\n        <tr id=\"mt-2\"><td><strong>Sicurezza</strong></td><td>Progettato per isolamento; una sola copia da correggere</td><td>Rischio teorico di fuga dati; una violazione colpisce tutti</td></tr>\n        <tr id=\"mt-3\"><td><strong>Aggiornamenti</strong></td><td><em>Update management</em>: una sola istanza, tutti sull'ultima versione</td><td><em>Complexity</em>: più complesso del multi-instance, più bug</td></tr>\n      </tbody>\n    </table>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 0.64,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "Vediamo da vicino i sistemi"
+        },
+        {
+          "at": 3.08,
+          "action": "highlight",
+          "target": "#b-mt-def",
+          "duration": 10.52,
+          "anchor": "In questa architettura tutti"
+        },
+        {
+          "at": 13.72,
+          "action": "highlight",
+          "target": "#t-stock",
+          "duration": 11.5,
+          "anchor": "Guardate l'esempio della tabella"
+        },
+        {
+          "at": 26.48,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Questa soluzione offre tre"
+        },
+        {
+          "at": 28.86,
+          "action": "highlight",
+          "target": "#mt-1",
+          "duration": 5.76,
+          "anchor": "Primo, ottima resource utilization"
+        },
+        {
+          "at": 34.74,
+          "action": "highlight",
+          "target": "#mt-2",
+          "duration": 9.76,
+          "anchor": "Secondo, sicurezza e manutenzione"
+        },
+        {
+          "at": 44.62,
+          "action": "highlight",
+          "target": "#mt-3",
+          "duration": 7.02,
+          "anchor": "Terzo, update management semplice"
+        },
+        {
+          "at": 51.76,
+          "action": "highlight",
+          "target": "#mt-1",
+          "duration": 7,
+          "anchor": "Di contro emergono tre"
+        },
+        {
+          "at": 60.46,
+          "action": "highlight",
+          "target": "#mt-2",
+          "duration": 7.36,
+          "anchor": "Secondo, il rischio teorico"
+        },
+        {
+          "at": 67.94,
+          "action": "highlight",
+          "target": "#mt-3",
+          "duration": 7.1,
+          "anchor": "Terzo, maggiore complessità software"
+        }
+      ],
+      "audio_file": "audio/scene-04.wav",
+      "subtitle_file": "subtitles/scene-04.json",
+      "duration_sec": 73.98
+    },
+    {
+      "id": "scene-05",
+      "section": "6.5 · Personalizzazione e sicurezza multi-tenant",
+      "title": "Profili utente, adattamento dello schema e protezione dati",
+      "tts_text": "Le aziende medio-grandi raramente accettano un SaaS generico: chiedono personalizzazioni su cinque fronti, cioè autenticazione aziendale, branding, regole di business, schemi dati e controllo degli accessi. [pause:0.5] L'interfaccia si adatta con i profili utente: indicando la propria organizzazione o l'email aziendale, l'applicazione carica il profilo corrispondente, per esempio per le aziende uno, due o tre, modificando logo, nome o voci di menu. [pause:0.5] Per estendere invece lo schema del database esistono due soluzioni. La prima aggiunge colonne extra a ogni tabella, ma è difficile scegliere quante inserirne e clienti diversi richiedono tipi di dato differenti. La seconda usa una extension table: ogni riga della tabella principale punta a un identificatore di estensione, abbinato a una tabella dei nomi e tipi dei campi e a una tabella dei valori, offrendo flessibilità a fronte di maggiore complessità. [pause:0.6] Infine, la sicurezza dei dati condivisi richiede due misure: il multilevel access control, a livello sia di organizzazione sia di singolo utente, e la cifratura, applicata di solito ai soli dati sensibili perché cifrare e decifrare è oneroso.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">6.5 · Personalizzazione &amp; Sicurezza</div>\n  <h2 class=\"slide-title\">Profili utente, adattamento dello schema e sicurezza multi-tenant</h2>\n  <div id=\"s1\" class=\"pill-strip cue-hidden\">\n    <span id=\"p-1\" class=\"pill\">1 · Authentication</span>\n    <span id=\"p-2\" class=\"pill\">2 · Branding</span>\n    <span id=\"p-3\" class=\"pill\">3 · Business rules</span>\n    <span id=\"p-4\" class=\"pill\">4 · Data schemas</span>\n    <span id=\"p-5\" class=\"pill\">5 · Access control</span>\n  </div>\n  <div id=\"s2\" class=\"split-visual cue-hidden\">\n    <div id=\"svg-prof\" class=\"svg-panel\">\n      <svg viewBox=\"0 0 360 195\" class=\"diagram-svg\" aria-label=\"Configurazione interfaccia con profili utente\">\n        <circle cx=\"180\" cy=\"150\" r=\"34\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.8\"/>\n        <text x=\"180\" y=\"147\" text-anchor=\"middle\" class=\"svg-math\">SaaS</text>\n        <text x=\"180\" y=\"161\" text-anchor=\"middle\" class=\"svg-caption\">application</text>\n        <rect x=\"24\" y=\"74\" width=\"82\" height=\"24\" rx=\"4\" fill=\"var(--orange-soft, rgba(217,119,6,0.12))\" stroke=\"var(--orange)\" stroke-width=\"1.5\"/>\n        <text x=\"65\" y=\"90\" text-anchor=\"middle\" class=\"svg-tick\">Profile co1</text>\n        <rect x=\"139\" y=\"64\" width=\"82\" height=\"24\" rx=\"4\" fill=\"var(--orange-soft, rgba(217,119,6,0.12))\" stroke=\"var(--orange)\" stroke-width=\"1.5\"/>\n        <text x=\"180\" y=\"80\" text-anchor=\"middle\" class=\"svg-tick\">Profile co2</text>\n        <rect x=\"254\" y=\"74\" width=\"82\" height=\"24\" rx=\"4\" fill=\"var(--orange-soft, rgba(217,119,6,0.12))\" stroke=\"var(--orange)\" stroke-width=\"1.5\"/>\n        <text x=\"295\" y=\"90\" text-anchor=\"middle\" class=\"svg-tick\">Profile co3</text>\n        <line x1=\"150\" y1=\"132\" x2=\"82\" y2=\"98\" stroke=\"var(--ink-soft)\" stroke-width=\"1.5\"/>\n        <line x1=\"180\" y1=\"116\" x2=\"180\" y2=\"88\" stroke=\"var(--ink-soft)\" stroke-width=\"1.5\"/>\n        <line x1=\"210\" y1=\"132\" x2=\"278\" y2=\"98\" stroke=\"var(--ink-soft)\" stroke-width=\"1.5\"/>\n        <ellipse cx=\"36\" cy=\"26\" rx=\"30\" ry=\"13\" fill=\"none\" stroke=\"var(--green)\" stroke-width=\"1.4\"/>\n        <text x=\"36\" y=\"30\" text-anchor=\"middle\" class=\"svg-caption\">co1 user</text>\n        <ellipse cx=\"96\" cy=\"26\" rx=\"30\" ry=\"13\" fill=\"none\" stroke=\"var(--green)\" stroke-width=\"1.4\"/>\n        <text x=\"96\" y=\"30\" text-anchor=\"middle\" class=\"svg-caption\">co1 user</text>\n        <ellipse cx=\"150\" cy=\"18\" rx=\"28\" ry=\"13\" fill=\"none\" stroke=\"var(--green)\" stroke-width=\"1.4\"/>\n        <text x=\"150\" y=\"22\" text-anchor=\"middle\" class=\"svg-caption\">co2 user</text>\n        <ellipse cx=\"210\" cy=\"18\" rx=\"28\" ry=\"13\" fill=\"none\" stroke=\"var(--green)\" stroke-width=\"1.4\"/>\n        <text x=\"210\" y=\"22\" text-anchor=\"middle\" class=\"svg-caption\">co2 user</text>\n        <ellipse cx=\"264\" cy=\"26\" rx=\"30\" ry=\"13\" fill=\"none\" stroke=\"var(--green)\" stroke-width=\"1.4\"/>\n        <text x=\"264\" y=\"30\" text-anchor=\"middle\" class=\"svg-caption\">co3 user</text>\n        <ellipse cx=\"324\" cy=\"26\" rx=\"30\" ry=\"13\" fill=\"none\" stroke=\"var(--green)\" stroke-width=\"1.4\"/>\n        <text x=\"324\" y=\"30\" text-anchor=\"middle\" class=\"svg-caption\">co3 user</text>\n        <line x1=\"56\" y1=\"74\" x2=\"36\" y2=\"39\" stroke=\"var(--ink-soft)\" stroke-width=\"1.2\"/>\n        <line x1=\"74\" y1=\"74\" x2=\"96\" y2=\"39\" stroke=\"var(--ink-soft)\" stroke-width=\"1.2\"/>\n        <line x1=\"172\" y1=\"64\" x2=\"150\" y2=\"31\" stroke=\"var(--ink-soft)\" stroke-width=\"1.2\"/>\n        <line x1=\"188\" y1=\"64\" x2=\"210\" y2=\"31\" stroke=\"var(--ink-soft)\" stroke-width=\"1.2\"/>\n        <line x1=\"286\" y1=\"74\" x2=\"264\" y2=\"39\" stroke=\"var(--ink-soft)\" stroke-width=\"1.2\"/>\n        <line x1=\"304\" y1=\"74\" x2=\"324\" y2=\"39\" stroke=\"var(--ink-soft)\" stroke-width=\"1.2\"/>\n      </svg>\n    </div>\n    <div class=\"formula-col\">\n      <div id=\"b-ext\" class=\"box box-primary\">\n        <div class=\"box-label\">Adattare lo schema del database</div>\n        <ul class=\"clean-list\">\n          <li><strong>Colonne extra</strong> (<code>Ext 1, Ext 2...</code>): difficile stimare quante metterne; tipi diversi per cliente.</li>\n          <li><strong>Extension table</strong>: ID estensione (es. <code>E123</code>) + tabella nomi/tipi + tabella valori; più flessibile ma più complessa.</li>\n        </ul>\n      </div>\n      <div id=\"b-sec\" class=\"box box-warn\">\n        <div class=\"box-label\">Sicurezza nei database condivisi</div>\n        <ul class=\"clean-list\">\n          <li><strong>Multilevel access control</strong>: controllo a livello di organizzazione e permessi per singolo utente.</li>\n          <li><strong>Encryption</strong>: decifrazione con chiave; onerosa, quindi applicata di solito ai soli dati sensibili.</li>\n        </ul>\n      </div>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 0,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "Le aziende medio-grandi raramente"
+        },
+        {
+          "at": 0,
+          "action": "highlight",
+          "target": "#s1",
+          "duration": 11.5,
+          "anchor": "Le aziende medio-grandi raramente"
+        },
+        {
+          "at": 12.68,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "L'interfaccia si adatta"
+        },
+        {
+          "at": 12.68,
+          "action": "highlight",
+          "target": "#svg-prof",
+          "duration": 12.88,
+          "anchor": "L'interfaccia si adatta"
+        },
+        {
+          "at": 25.68,
+          "action": "highlight",
+          "target": "#b-ext",
+          "duration": 25.4,
+          "anchor": "Per estendere invece lo schema"
+        },
+        {
+          "at": 51.2,
+          "action": "highlight",
+          "target": "#b-sec",
+          "duration": 19.4,
+          "anchor": "Infine, la sicurezza dei dati"
+        }
+      ],
+      "audio_file": "audio/scene-05.wav",
+      "subtitle_file": "subtitles/scene-05.json",
+      "duration_sec": 64.95
+    },
+    {
+      "id": "scene-06",
+      "section": "6.6 · Multi-instance e scelta del database",
+      "title": "Sistemi multi-instance e fattori per organizzare il database",
+      "tts_text": "Passiamo ai sistemi multi-instance: qui ogni cliente ha un proprio sistema adattato alle sue esigenze, con database e controlli di sicurezza dedicati. È concettualmente più semplice ed evita fughe di dati tra organizzazioni. [pause:0.5] Ne esistono due tipi: basati su virtual machine, dove app e database del cliente girano in una VM condivisa dai suoi utenti, oppure basati su container, dove ogni utente ha istanze isolate di software e dati, anche dentro una VM aziendale. [pause:0.5] I vantaggi sono flessibilità totale sugli schemi, sicurezza isolata, scalabilità per singolo cliente e resilienza ai guasti. Gli svantaggi sono il costo delle VM tenute sempre attive per il lento avvio e la complessità di aggiornare molte istanze personalizzate. [pause:0.6] Nel progettare un prodotto cloud si prendono quattro decisioni architetturali: organizzazione del database, scalabilità e resilienza, struttura del software e, di conseguenza, la piattaforma cloud. [pause:0.5] La scelta tra database multi-tenant, multi-instance su VM o su container dipende da cinque fattori: profilo dei target customers, requisiti transazionali ACID, dimensione e connettività del database, interoperabilità degli schemi e struttura orientata ai servizi.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">6.6 · Multi-instance &amp; Scelta del database</div>\n  <h2 class=\"slide-title\">Sistemi multi-instance e fattori per organizzare il database</h2>\n  <div id=\"s1\" class=\"grid-2 cue-hidden\">\n    <div id=\"b-mi\" class=\"box box-def\">\n      <div class=\"box-label\">Sistemi multi-instance (VM vs Container)</div>\n      <ul class=\"clean-list\">\n        <li id=\"mi-type\"><strong>Tipi</strong>: basati su <em>VM</em> (per cliente) o su <em>container</em> (per utenti indipendenti, anche dentro VM).</li>\n        <li id=\"mi-pro\"><strong>Pro</strong>: schemi liberi, zero fughe dati, scaling per cliente, guasto isolato (<em>resilience</em>).</li>\n        <li id=\"mi-con\"><strong>Contro</strong>: costo delle VM sempre attive (avvio lento) e update complessi su molte istanze.</li>\n      </ul>\n    </div>\n    <div id=\"b-dec\" class=\"box box-primary\">\n      <div class=\"box-label\">Le 4 decisioni architetturali</div>\n      <p>Tre scelte primarie determinano la quarta (<strong>piattaforma cloud</strong>):</p>\n      <ul class=\"clean-list\">\n        <li>1. <strong>Database organization</strong>: multi-tenant, multi-instance VM o container.</li>\n        <li>2. <strong>Scalability &amp; resilience</strong>: carico atteso e tolleranza ai guasti.</li>\n        <li>3. <strong>Software structure</strong>: monolite o servizi orientati al cloud.</li>\n      </ul>\n    </div>\n  </div>\n  <table id=\"s2\" class=\"acad-table cue-hidden\">\n    <thead>\n      <tr><th>Fattore di scelta del DB</th><th>Indicazione architetturale</th></tr>\n    </thead>\n    <tbody>\n      <tr id=\"f-1\"><td><strong>Target customers</strong></td><td>Consumatori/PMI → multi-tenant; grandi aziende o dubbi sicurezza → multi-instance</td></tr>\n      <tr id=\"f-2\"><td><strong>Transaction requirements</strong></td><td>Coerenza ACID critica (es. finanza) → multi-tenant o multi-instance su VM</td></tr>\n      <tr id=\"f-3\"><td><strong>Database size &amp; connectivity</strong></td><td>Database molto grandi e relazionali → multi-tenant per ottimizzare prestazioni</td></tr>\n      <tr id=\"f-4\"><td><strong>Database interoperability</strong></td><td>Trasferimenti da molti schemi diversi → multi-instance</td></tr>\n      <tr id=\"f-5\"><td><strong>System structure</strong></td><td>Architettura orientata ai servizi → database multi-instance containerizzati</td></tr>\n    </tbody>\n  </table>\n</div>\n",
+      "cues": [
+        {
+          "at": 0.26,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "Passiamo ai sistemi multi-instance"
+        },
+        {
+          "at": 0.26,
+          "action": "highlight",
+          "target": "#b-mi",
+          "duration": 12.78,
+          "anchor": "Passiamo ai sistemi multi-instance"
+        },
+        {
+          "at": 13.16,
+          "action": "highlight",
+          "target": "#mi-type",
+          "duration": 12.5,
+          "anchor": "Ne esistono due tipi"
+        },
+        {
+          "at": 27.14,
+          "action": "highlight",
+          "target": "#mi-pro",
+          "duration": 7.5,
+          "anchor": "I vantaggi sono flessibilità"
+        },
+        {
+          "at": 34.94,
+          "action": "highlight",
+          "target": "#mi-con",
+          "duration": 7.96,
+          "anchor": "Gli svantaggi sono il costo"
+        },
+        {
+          "at": 43.02,
+          "action": "highlight",
+          "target": "#b-dec",
+          "duration": 13.5,
+          "anchor": "Nel progettare un prodotto cloud"
+        },
+        {
+          "at": 54.92,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "La scelta tra database"
+        },
+        {
+          "at": 61.38,
+          "action": "highlight",
+          "target": "#f-1",
+          "duration": 1.84,
+          "anchor": "profilo dei target customers"
+        },
+        {
+          "at": 63.34,
+          "action": "highlight",
+          "target": "#f-2",
+          "duration": 2.04,
+          "anchor": "requisiti transazionali ACID"
+        },
+        {
+          "at": 65.5,
+          "action": "highlight",
+          "target": "#f-3",
+          "duration": 2.54,
+          "anchor": "dimensione e connettività"
+        },
+        {
+          "at": 68.16,
+          "action": "highlight",
+          "target": "#f-4",
+          "duration": 1.86,
+          "anchor": "interoperabilità degli schemi"
+        },
+        {
+          "at": 70.14,
+          "action": "highlight",
+          "target": "#f-5",
+          "duration": 2.5,
+          "anchor": "struttura orientata ai servizi"
+        }
+      ],
+      "audio_file": "audio/scene-06.wav",
+      "subtitle_file": "subtitles/scene-06.json",
+      "duration_sec": 71.91
+    },
+    {
+      "id": "scene-07",
+      "section": "6.7 · Scalabilità, resilienza, struttura e piattaforma",
+      "title": "Elasticità, tolleranza ai guasti e scelta del provider",
+      "tts_text": "Esaminiamo le ultime tre decisioni architetturali. La scalabilità è la capacità di adattarsi automaticamente al carico. Con lo scaling up si potenzia il server, ma esiste un limite fisico; nel cloud prevale lo scaling out, cioè aggiungere server virtuali con un load balancer. [pause:0.5] Se ogni istanza regge cento richieste al secondo e ne arrivano quattrocentocinquanta, si avviano cinque istanze; se il carico scende a centocinquanta, ne bastano due e si paga solo ciò che serve. [pause:0.5] La resilienza garantisce i servizi critici in caso di guasto o uso malevolo. Nell'hot standby un system monitor controlla un sistema attivo nella sede A e uno in attesa nella sede B, con replica continua dei database. Il cool standby costa meno, ma ripristina da backup con interruzione del servizio. [pause:0.6] Quanto alla struttura, l'approccio monolitico serve per un prototipo, mentre i servizi stateless a grana fine, cioè i microservizi senza stato interno, si replicano e migrano facilmente in container. [pause:0.6] Infine, la scelta della piattaforma cloud bilancia questioni tecniche, cioè carico, resilienza, servizi supportati e privacy sui luoghi di conservazione nell'Unione Europea, con questioni di business: costi, esperienza del team, preferenze dei clienti, garanzie SLA e un exit plan contro il vendor lock-in.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">6.7 · Scalabilità, Resilienza, Struttura &amp; Piattaforma</div>\n  <h2 class=\"slide-title\">Elasticità, tolleranza ai guasti e scelta del provider</h2>\n  <div id=\"s1\" class=\"split-visual cue-hidden\">\n    <div class=\"svg-panel\">\n      <svg viewBox=\"0 0 360 190\" class=\"diagram-svg\" aria-label=\"Architettura Hot Standby\">\n        <defs>\n          <marker id=\"arr-hs\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"5\" markerHeight=\"5\" orient=\"auto-start-reverse\">\n            <path d=\"M0 1 L9 5 L0 9 z\" fill=\"var(--ink-soft)\"/>\n          </marker>\n        </defs>\n        <g id=\"svg-mon\">\n          <rect x=\"45\" y=\"10\" width=\"270\" height=\"30\" rx=\"6\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.6\"/>\n          <text x=\"180\" y=\"29\" text-anchor=\"middle\" class=\"svg-math\">System monitor</text>\n        </g>\n        <g id=\"svg-locA\">\n          <text x=\"80\" y=\"57\" text-anchor=\"middle\" class=\"svg-caption\">Location A</text>\n          <rect x=\"24\" y=\"64\" width=\"112\" height=\"34\" rx=\"6\" fill=\"var(--green-soft, rgba(21,128,61,0.12))\" stroke=\"var(--green)\" stroke-width=\"1.6\"/>\n          <text x=\"80\" y=\"85\" text-anchor=\"middle\" class=\"svg-tick\">Active system</text>\n          <rect x=\"24\" y=\"136\" width=\"112\" height=\"34\" rx=\"6\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.5\"/>\n          <text x=\"80\" y=\"157\" text-anchor=\"middle\" class=\"svg-tick\">Database 1</text>\n          <line x1=\"80\" y1=\"42\" x2=\"80\" y2=\"62\" stroke=\"var(--ink-soft)\" stroke-width=\"1.5\" marker-start=\"url(#arr-hs)\" marker-end=\"url(#arr-hs)\"/>\n          <line x1=\"80\" y1=\"100\" x2=\"80\" y2=\"134\" stroke=\"var(--ink-soft)\" stroke-width=\"1.8\" marker-start=\"url(#arr-hs)\" marker-end=\"url(#arr-hs)\"/>\n        </g>\n        <g id=\"svg-locB\">\n          <text x=\"280\" y=\"57\" text-anchor=\"middle\" class=\"svg-caption\">Location B</text>\n          <rect x=\"224\" y=\"64\" width=\"112\" height=\"34\" rx=\"6\" fill=\"var(--orange-soft, rgba(217,119,6,0.12))\" stroke=\"var(--orange)\" stroke-width=\"1.6\"/>\n          <text x=\"280\" y=\"85\" text-anchor=\"middle\" class=\"svg-tick\">Standby system</text>\n          <rect x=\"224\" y=\"136\" width=\"112\" height=\"34\" rx=\"6\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.5\"/>\n          <text x=\"280\" y=\"157\" text-anchor=\"middle\" class=\"svg-tick\">Database 2</text>\n          <line x1=\"280\" y1=\"42\" x2=\"280\" y2=\"62\" stroke=\"var(--ink-soft)\" stroke-width=\"1.5\" marker-start=\"url(#arr-hs)\" marker-end=\"url(#arr-hs)\"/>\n          <line x1=\"280\" y1=\"100\" x2=\"280\" y2=\"134\" stroke=\"var(--ink-soft)\" stroke-width=\"1.8\" marker-start=\"url(#arr-hs)\" marker-end=\"url(#arr-hs)\"/>\n        </g>\n        <g id=\"svg-mir\">\n          <line x1=\"140\" y1=\"153\" x2=\"220\" y2=\"153\" stroke=\"var(--blue)\" stroke-width=\"2.6\" marker-start=\"url(#arr-hs)\" marker-end=\"url(#arr-hs)\"/>\n          <text x=\"180\" y=\"144\" text-anchor=\"middle\" class=\"svg-caption\">Database mirror</text>\n        </g>\n      </svg>\n    </div>\n    <div class=\"formula-col\">\n      <div id=\"b-scal\" class=\"box box-def\">\n        <div class=\"box-label\">Scalabilità &amp; Resilienza</div>\n        <p><strong>Scaling out</strong> (es. \\(\\lceil 450/100 \\rceil = 5\\) istanze + load balancer; scende a 2 a 150 req/s) vs <strong>scaling up</strong> (limite hardware). <strong>Hot standby</strong> (mirror continuo) vs <strong>cool standby</strong> (ripristino da backup).</p>\n      </div>\n      <div id=\"b-struct\" class=\"box box-primary\">\n        <div class=\"box-label\">Struttura del software</div>\n        <p><strong>Monolite</strong> utile per prototipi; <strong>servizi stateless a grana fine</strong> (microservizi in container) per replicare, migrare, scalare e aggiornare parti indipendenti.</p>\n      </div>\n    </div>\n  </div>\n  <div id=\"s2\" class=\"grid-2 cue-hidden\">\n    <div id=\"b-tech\" class=\"box box-idea\">\n      <div class=\"box-label\">Piattaforma · Questioni tecniche</div>\n      <p>Carico atteso e prevedibilità, requisiti di resilienza, servizi cloud supportati, privacy e garanzie UE sui luoghi di conservazione dati.</p>\n    </div>\n    <div id=\"b-biz\" class=\"box box-warn\">\n      <div class=\"box-label\">Piattaforma · Questioni di business</div>\n      <p>Costi diretti e indiretti, esperienza sviluppatori, fornitori fidati per i clienti, garanzie SLA (QoS) ed <strong>exit plan</strong> anti <em>vendor lock-in</em>.</p>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 0,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "Esaminiamo le ultime tre decisioni"
+        },
+        {
+          "at": 3.52,
+          "action": "highlight",
+          "target": "#b-scal",
+          "duration": 23.5,
+          "anchor": "La scalabilità è la capacità"
+        },
+        {
+          "at": 30.7,
+          "action": "highlight",
+          "target": "#svg-mon",
+          "duration": 5.02,
+          "anchor": "La resilienza garantisce i servizi"
+        },
+        {
+          "at": 35.84,
+          "action": "highlight",
+          "target": "#svg-mir",
+          "duration": 12.5,
+          "anchor": "Nell'hot standby un system monitor"
+        },
+        {
+          "at": 50.52,
+          "action": "highlight",
+          "target": "#b-struct",
+          "duration": 12.44,
+          "anchor": "Quanto alla struttura"
+        },
+        {
+          "at": 61.98,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Infine, la scelta della piattaforma"
+        },
+        {
+          "at": 63.08,
+          "action": "highlight",
+          "target": "#b-tech",
+          "duration": 9.5,
+          "anchor": "piattaforma cloud bilancia questioni"
+        },
+        {
+          "at": 72.74,
+          "action": "highlight",
+          "target": "#b-biz",
+          "duration": 11.8,
+          "anchor": "con questioni di business"
+        }
+      ],
+      "audio_file": "audio/scene-07.wav",
+      "subtitle_file": "subtitles/scene-07.json",
+      "duration_sec": 82.02
+    },
+    {
+      "id": "scene-08",
+      "section": "6.8 · Personalizzazione, Extension Table e Multi-instance",
+      "title": "Business rules, Extension Table e Multi-instance a container",
+      "tts_text": "Approfondiamo tre aspetti pratici dell'architettura dati nel cloud. [pause:0.5] Sul fronte della personalizzazione di un SaaS, due esigenze chiave sono le business rules, cioè definire regole di business e flussi di lavoro propri applicati ai dati del cliente, e l'access control, cioè stabilire un proprio modello su quali dati utenti o gruppi possono usare e quali operazioni sono consentite. [pause:0.5] Per adattare lo schema del database, la soluzione a colonne extra impone un compromesso: troppe poche colonne non bastano, mentre troppe sprecano spazio. [pause:0.5] Con l'extension table, invece, la riga del tenant T cinquecentosedici nella tabella principale punta con il campo Ext uno al record E centoventitré. Questo si collega alla tabella dei nomi, con gli attributi Location, Weight e Fragile, e alla tabella dei valori, che registra A diciassette barra S sei, quattro e False. [pause:0.5] Il multi-instance basato su container conviene quando gli utenti lavorano per lo più indipendentemente con poca condivisione di dati, per esempio utenti individuali. Offre grande flexibility nel trasferire dati dal database esistente del cliente, ma comporta costi per gestire più sistemi oltre al noleggio di virtual machine sempre accese a causa dell'avvio lento. [pause:0.5] Sul multi-tenant, essendo progettato per l'isolamento, ha spesso meno vulnerabilità dei database standard e le fughe cross-tenant restano molto rare in pratica.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">6.8 · Personalizzazione, Extension Table &amp; Multi-instance</div>\n  <h2 class=\"slide-title\">Business rules, Extension Table e Multi-instance a container</h2>\n  <div id=\"s1\" class=\"split-visual cue-hidden\">\n    <div class=\"formula-col\">\n      <div id=\"b-pers\" class=\"box box-def\">\n        <div class=\"box-label\">Personalizzazione SaaS &amp; Colonne extra</div>\n        <ul class=\"clean-list\">\n          <li id=\"p-br\"><strong>Business rules</strong>: definire regole di business e flussi di lavoro propri applicati ai propri dati.</li>\n          <li id=\"p-ac\"><strong>Access control</strong>: modello proprio su quali dati utenti o gruppi possono usare e quali operazioni sono consentite.</li>\n          <li id=\"p-col\"><strong>Soluzione I (colonne extra)</strong>: compromesso critico — troppe poche non bastano, troppe sprecano spazio (e tipi diversi).</li>\n        </ul>\n      </div>\n    </div>\n    <div id=\"svg-ext\" class=\"svg-panel\">\n      <svg viewBox=\"0 0 360 195\" class=\"diagram-svg\" aria-label=\"Esempio concreto Extension Table per T516\">\n        <defs>\n          <marker id=\"arr-ext\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"5\" markerHeight=\"5\" orient=\"auto\">\n            <path d=\"M0 1 L9 5 L0 9 z\" fill=\"var(--ink-soft)\"/>\n          </marker>\n        </defs>\n        <g id=\"svg-ext-main\">\n          <rect x=\"10\" y=\"8\" width=\"340\" height=\"48\" rx=\"6\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.5\"/>\n          <text x=\"20\" y=\"25\" class=\"svg-caption\">Tabella principale · Tenant T516 (voce 100)</text>\n          <text x=\"20\" y=\"44\" class=\"svg-tick\">Item: Widg 1 | Stock: 27 | Ext 1 = E123</text>\n        </g>\n        <line x1=\"245\" y1=\"56\" x2=\"110\" y2=\"76\" stroke=\"var(--ink-soft)\" stroke-width=\"1.4\" marker-end=\"url(#arr-ext)\"/>\n        <line x1=\"275\" y1=\"56\" x2=\"268\" y2=\"76\" stroke=\"var(--ink-soft)\" stroke-width=\"1.4\" marker-end=\"url(#arr-ext)\"/>\n        <g id=\"svg-ext-names\">\n          <rect x=\"10\" y=\"78\" width=\"162\" height=\"106\" rx=\"6\" fill=\"var(--orange-soft, rgba(217,119,6,0.12))\" stroke=\"var(--orange)\" stroke-width=\"1.5\"/>\n          <text x=\"20\" y=\"97\" class=\"svg-caption\">Nomi dei campi (T516)</text>\n          <text x=\"20\" y=\"121\" class=\"svg-tick\">Location · String</text>\n          <text x=\"20\" y=\"144\" class=\"svg-tick\">Weight · Integer</text>\n          <text x=\"20\" y=\"167\" class=\"svg-tick\">Fragile · Bool</text>\n        </g>\n        <g id=\"svg-ext-vals\">\n          <rect x=\"188\" y=\"78\" width=\"162\" height=\"106\" rx=\"6\" fill=\"var(--green-soft, rgba(21,128,61,0.12))\" stroke=\"var(--green)\" stroke-width=\"1.5\"/>\n          <text x=\"198\" y=\"97\" class=\"svg-caption\">Valori dei campi (E123)</text>\n          <text x=\"198\" y=\"121\" class=\"svg-tick\">E123 → 'A17/S6'</text>\n          <text x=\"198\" y=\"144\" class=\"svg-tick\">E123 → '4'</text>\n          <text x=\"198\" y=\"167\" class=\"svg-tick\">E123 → 'False'</text>\n        </g>\n      </svg>\n    </div>\n  </div>\n  <div id=\"s2\" class=\"grid-2 cue-hidden\">\n    <div id=\"b-mi-cont\" class=\"box box-primary\">\n      <div class=\"box-label\">Multi-instance a container: uso, Flexibility e Costi</div>\n      <ul class=\"clean-list\">\n        <li id=\"mi-when\"><strong>Quando conviene</strong>: utenti che lavorano per lo più indipendentemente con poca condivisione di dati (es. utenti individuali).</li>\n        <li id=\"mi-flex\"><strong>Flexibility</strong>: schemi liberi e facile trasferimento dati dal DB esistente del cliente.</li>\n        <li id=\"mi-cost\"><strong>Costi</strong>: gestione di più sistemi oltre al noleggio di VM sempre accese per via dell'avvio lento.</li>\n      </ul>\n    </div>\n    <div id=\"b-mt-sec\" class=\"box box-idea\">\n      <div class=\"box-label\">Sicurezza multi-tenant in pratica</div>\n      <p>Progettati per l'isolamento, i DB multi-tenant hanno probabilmente <strong>meno vulnerabilità</strong> dei DB standard (una sola copia da patchare): il passaggio di dati tra clienti è teorico e le <strong>fughe cross-tenant sono molto rare in pratica</strong>.</p>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 0,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "Approfondiamo tre aspetti pratici"
+        },
+        {
+          "at": 0,
+          "action": "highlight",
+          "target": "#b-pers",
+          "duration": 3.4,
+          "anchor": "Approfondiamo tre aspetti pratici"
+        },
+        {
+          "at": 4.38,
+          "action": "highlight",
+          "target": "#p-br",
+          "duration": 10.12,
+          "anchor": "Sul fronte della personalizzazione"
+        },
+        {
+          "at": 14.62,
+          "action": "highlight",
+          "target": "#p-ac",
+          "duration": 8.34,
+          "anchor": "e l'access control, cioè"
+        },
+        {
+          "at": 23.08,
+          "action": "highlight",
+          "target": "#p-col",
+          "duration": 8.74,
+          "anchor": "Per adattare lo schema del"
+        },
+        {
+          "at": 31.94,
+          "action": "highlight",
+          "target": "#svg-ext-main",
+          "duration": 8.97,
+          "anchor": "Con l'extension table, invece"
+        },
+        {
+          "at": 41.03,
+          "action": "highlight",
+          "target": "#svg-ext-names",
+          "duration": 4.66,
+          "anchor": "Questo si collega alla tabella"
+        },
+        {
+          "at": 45.81,
+          "action": "highlight",
+          "target": "#svg-ext-vals",
+          "duration": 5.18,
+          "anchor": "e alla tabella dei valori"
+        },
+        {
+          "at": 51.11,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Il multi-instance basato su"
+        },
+        {
+          "at": 51.11,
+          "action": "highlight",
+          "target": "#mi-when",
+          "duration": 8.64,
+          "anchor": "Il multi-instance basato su"
+        },
+        {
+          "at": 59.87,
+          "action": "highlight",
+          "target": "#mi-flex",
+          "duration": 4.2,
+          "anchor": "Offre grande flexibility nel"
+        },
+        {
+          "at": 64.19,
+          "action": "highlight",
+          "target": "#mi-cost",
+          "duration": 6.76,
+          "anchor": "ma comporta costi per gestire"
+        },
+        {
+          "at": 71.07,
+          "action": "highlight",
+          "target": "#b-mt-sec",
+          "duration": 10,
+          "anchor": "Sul multi-tenant, essendo progettato"
+        }
+      ],
+      "audio_file": "audio/scene-08.wav",
+      "subtitle_file": "subtitles/scene-08.json",
+      "duration_sec": 80.16
+    },
+    {
+      "id": "scene-09",
+      "section": "6.9 · Scelta del database e piattaforma cloud: fattori tecnici e di business",
+      "title": "Scelta del database e valutazione della piattaforma cloud",
+      "tts_text": "Come scegliere l'organizzazione del database tra multi-tenant, multi-instance su virtual machine o su container? Decidono cinque fattori. [pause:0.5] Primo, i target customers: consumatori e piccole imprese non chiedono personalizzazioni e usano un multi-tenant, mentre le grandi aziende o chi teme per la sicurezza preferiscono il multi-instance. [pause:0.5] Secondo, i requisiti transazionali ACID: dove la coerenza è critica, per esempio in finanza, serve un database multi-tenant oppure multi-instance su virtual machine. [pause:0.5] Terzo, dimensione e connettività del database: con molte relazioni tra le voci e grandi volumi conviene il multi-tenant, così da concentrare l'ottimizzazione delle prestazioni. [pause:0.5] Quarto, l'interoperabilità del database: se i clienti importano dati da molti schemi diversi serve il multi-instance. [pause:0.5] Quinto, la struttura del sistema: se il database del cliente è distribuibile su più servizi e container, vince il multi-instance containerizzato. [pause:0.6] Sulla piattaforma cloud, occorre valutare il compromesso tra costi diretti e costi indiretti, per esempio la gestione del cloud, e l'interoperabilità col software usato dal cliente. Occorre inoltre valutare criticamente gli accordi SLA: la qualità del servizio, cioè la QoS, è davvero garantita? Infine, preparare un exit plan per la portabilità è una questione sia tecnica sia di business, e quando parti diverse si aggiornano o scalano in momenti diversi si sceglie una struttura modulare a microservizi.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">6.9 · Scelta del database &amp; Piattaforma cloud</div>\n  <h2 class=\"slide-title\">I cinque fattori per il DB e le scelte sulla piattaforma cloud</h2>\n  <table id=\"s1\" class=\"acad-table cue-hidden\">\n    <thead>\n      <tr><th>Fattore di scelta DB</th><th>Criterio operativo e soluzione indicata</th></tr>\n    </thead>\n    <tbody>\n      <tr id=\"db-1\"><td><strong>1 · Target customers</strong></td><td>Consumatori e PMI → <em>multi-tenant</em>; grandi aziende o dubbi di sicurezza → <em>multi-instance</em>.</td></tr>\n      <tr id=\"db-2\"><td><strong>2 · Transaction requirements (ACID)</strong></td><td>Coerenza critica garantita (es. finanza) → <em>multi-tenant</em> o <em>multi-instance su VM</em>.</td></tr>\n      <tr id=\"db-3\"><td><strong>3 · DB size &amp; connectivity</strong></td><td>Database molto grandi con molte relazioni tra voci → <em>multi-tenant</em> per concentrare l'ottimizzazione prestazioni.</td></tr>\n      <tr id=\"db-4\"><td><strong>4 · DB interoperability</strong></td><td>Importazione da molti schemi diversi esistenti → <em>multi-instance</em>.</td></tr>\n      <tr id=\"db-5\"><td><strong>5 · System structure</strong></td><td>Architettura a servizi con DB del cliente distribuibile su più container/servizi → <em>multi-instance containerizzato</em>.</td></tr>\n    </tbody>\n  </table>\n  <div id=\"s2\" class=\"grid-2 cue-hidden\">\n    <div id=\"b-plat-biz\" class=\"box box-warn\">\n      <div class=\"box-label\">Piattaforma cloud: costi, clienti, SLA &amp; Exit plan</div>\n      <ul class=\"clean-list\">\n        <li id=\"pb-cost\"><strong>Costi diretti vs indiretti</strong> (es. gestione cloud) e interoperabilità col software del cliente.</li>\n        <li id=\"pb-sla\"><strong>SLA / QoS &amp; Exit plan</strong>: la qualità del servizio è davvero garantita? Portabilità ed <em>exit plan</em> anti lock-in sono questioni <strong>sia tecniche sia di business</strong>.</li>\n      </ul>\n    </div>\n    <div id=\"b-plat-mod\" class=\"box box-primary\">\n      <div class=\"box-label\">Struttura del software modulare</div>\n      <p>Quando parti diverse del software devono essere <strong>aggiornate</strong> o <strong>scalate in momenti diversi</strong>, si abbandona il monolite per una struttura modulare a microservizi stateless.</p>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 0,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "Come scegliere l'organizzazione del"
+        },
+        {
+          "at": 0,
+          "action": "highlight",
+          "target": "#s1",
+          "duration": 8,
+          "anchor": "Come scegliere l'organizzazione del"
+        },
+        {
+          "at": 9.46,
+          "action": "highlight",
+          "target": "#db-1",
+          "duration": 11.7,
+          "anchor": "Primo, i target customers"
+        },
+        {
+          "at": 21.28,
+          "action": "highlight",
+          "target": "#db-2",
+          "duration": 10.1,
+          "anchor": "Secondo, i requisiti transazionali ACID"
+        },
+        {
+          "at": 31.98,
+          "action": "highlight",
+          "target": "#db-3",
+          "duration": 9.95,
+          "anchor": "Terzo, dimensione e connettività"
+        },
+        {
+          "at": 42.05,
+          "action": "highlight",
+          "target": "#db-4",
+          "duration": 7.2,
+          "anchor": "Quarto, l'interoperabilità del database"
+        },
+        {
+          "at": 49.65,
+          "action": "highlight",
+          "target": "#db-5",
+          "duration": 9.28,
+          "anchor": "Quinto, la struttura del sistema"
+        },
+        {
+          "at": 59.05,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Sulla piattaforma cloud, occorre"
+        },
+        {
+          "at": 59.05,
+          "action": "highlight",
+          "target": "#pb-cost",
+          "duration": 9.84,
+          "anchor": "Sulla piattaforma cloud, occorre"
+        },
+        {
+          "at": 69.01,
+          "action": "highlight",
+          "target": "#pb-sla",
+          "duration": 6.56,
+          "anchor": "Occorre inoltre valutare criticamente"
+        },
+        {
+          "at": 75.69,
+          "action": "highlight",
+          "target": "#pb-sla",
+          "duration": 5.5,
+          "anchor": "Infine, preparare un exit plan"
+        },
+        {
+          "at": 81.41,
+          "action": "highlight",
+          "target": "#b-plat-mod",
+          "duration": 8,
+          "anchor": "e quando parti diverse si"
+        }
+      ],
+      "audio_file": "audio/scene-09.wav",
+      "subtitle_file": "subtitles/scene-09.json",
+      "duration_sec": 87.05
+    },
+    {
+      "id": "scene-10",
+      "section": "6.10 · Riepilogo e autoverifica",
+      "title": "Punti chiave del capitolo e domande d'esame",
+      "tts_text": "Chiudiamo il capitolo sei fissando i punti essenziali da ricordare. [pause:0.5] Primo: nei modelli cloud si sale dal controllo del cliente in IaaS, a quello della sola applicazione in PaaS, fino a nessun onere gestionale in SaaS e al calcolo per richiesta in FaaS. [pause:0.5] Secondo: il SaaS offre cash flow regolare, aggiornamenti simultanei e rilascio continuo al fornitore; azzera i costi iniziali per il cliente, ma introduce rischi di privacy, sicurezza e lock-in. [pause:0.5] Terzo: nel multi-tenant un unico schema con identificatore tenant garantisce isolamento logico, personalizzato via profili, colonne extra o extension table, protetto da controllo accessi multilivello e cifratura. [pause:0.5] Quarto: il multi-instance isola sistema e database per cliente su VM o container, aumentando flessibilità e sicurezza a costo maggiore; la scelta del database dipende da cinque fattori. [pause:0.5] Quinto: si scala soprattutto con lo scaling out e si garantisce resilienza con hot o cool standby. [pause:0.5] Sesto: il monolite serve per prototipi, mentre servizi stateless a grana fine permettono scalabilità e aggiornamenti indipendenti. [pause:0.6] Prima di passare ai microservizi, verificate la vostra preparazione rispondendo alle nove domande sulla destra.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">6.10 · Riepilogo &amp; Autoverifica</div>\n  <h2 class=\"slide-title\">Punti chiave e domande di verifica</h2>\n  <div class=\"grid-2\">\n    <div class=\"box box-algo\">\n      <div class=\"box-label\">Punti chiave da fissare</div>\n      <ul class=\"clean-list\">\n        <li id=\"s1\" class=\"cue-hidden\"><strong>IaaS, PaaS, SaaS, FaaS</strong>: in IaaS il cliente gestisce OS e app; in PaaS solo app; in SaaS nulla; FaaS esegue funzioni su richiesta.</li>\n        <li id=\"s2\" class=\"cue-hidden\"><strong>SaaS pro e contro</strong>: cash flow, update simultanei, CD per il vendor; zero costi iniziali ma privacy, sicurezza e lock-in per i clienti.</li>\n        <li id=\"s3\" class=\"cue-hidden\"><strong>Multi-tenant</strong>: schema unico con ID tenant; profili, colonne extra o extension table; access control multilivello e cifratura.</li>\n        <li id=\"s4\" class=\"cue-hidden\"><strong>Multi-instance &amp; DB</strong>: sistema/DB per cliente su VM o container (+ flessibile e sicuro, + costoso); scelta DB su 5 fattori.</li>\n        <li id=\"s5\" class=\"cue-hidden\"><strong>Scalabilità &amp; Resilienza</strong>: scaling out (più server virtuali) o scaling up; hot standby o cool standby.</li>\n        <li id=\"s6\" class=\"cue-hidden\"><strong>Struttura &amp; Piattaforma</strong>: monolite per prototipi; servizi stateless a grana fine per scalare e aggiornare parti diverse.</li>\n      </ul>\n    </div>\n    <div id=\"s7\" class=\"box box-theorem cue-hidden\">\n      <div class=\"box-label\">Domande di verifica</div>\n      <ol class=\"verify-list\">\n        <li>Differenza tra IaaS, PaaS e SaaS e chi gestisce che cosa?</li>\n        <li>Benefici del SaaS per fornitore e cliente? Quali i rischi?</li>\n        <li>Cos'è un sistema multi-tenant e come si garantisce l'isolamento logico?</li>\n        <li>Come si adatta lo schema multi-tenant? Confronta le due soluzioni.</li>\n        <li>Quali misure di sicurezza servono nei database multi-tenant?</li>\n        <li>Cosa sono i sistemi multi-instance, quali tipi esistono, pro e contro?</li>\n        <li>Quali fattori guidano la scelta tra DB multi-tenant e multi-instance?</li>\n        <li>Cosa sono scaling out/up e la differenza tra hot e cool standby?</li>\n        <li>Quali questioni tecniche e di business guidano la scelta della piattaforma?</li>\n      </ol>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 5.07,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "Primo: nei modelli cloud"
+        },
+        {
+          "at": 5.07,
+          "action": "highlight",
+          "target": "#s1",
+          "duration": 12.5,
+          "anchor": "Primo: nei modelli cloud"
+        },
+        {
+          "at": 17.83,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Secondo: il SaaS offre"
+        },
+        {
+          "at": 17.83,
+          "action": "highlight",
+          "target": "#s2",
+          "duration": 12.5,
+          "anchor": "Secondo: il SaaS offre"
+        },
+        {
+          "at": 31.93,
+          "action": "show",
+          "target": "#s3",
+          "anchor": "Terzo: nel multi-tenant"
+        },
+        {
+          "at": 31.93,
+          "action": "highlight",
+          "target": "#s3",
+          "duration": 13.5,
+          "anchor": "Terzo: nel multi-tenant"
+        },
+        {
+          "at": 46.23,
+          "action": "show",
+          "target": "#s4",
+          "anchor": "Quarto: il multi-instance"
+        },
+        {
+          "at": 46.23,
+          "action": "highlight",
+          "target": "#s4",
+          "duration": 11.5,
+          "anchor": "Quarto: il multi-instance"
+        },
+        {
+          "at": 58.89,
+          "action": "show",
+          "target": "#s5",
+          "anchor": "Quinto: si scala soprattutto"
+        },
+        {
+          "at": 58.89,
+          "action": "highlight",
+          "target": "#s5",
+          "duration": 6.76,
+          "anchor": "Quinto: si scala soprattutto"
+        },
+        {
+          "at": 65.77,
+          "action": "show",
+          "target": "#s6",
+          "anchor": "Sesto: il monolite serve"
+        },
+        {
+          "at": 65.77,
+          "action": "highlight",
+          "target": "#s6",
+          "duration": 7,
+          "anchor": "Sesto: il monolite serve"
+        },
+        {
+          "at": 74.07,
+          "action": "show",
+          "target": "#s7",
+          "anchor": "Prima di passare ai microservizi"
+        },
+        {
+          "at": 74.07,
+          "action": "highlight",
+          "target": "#s7",
+          "duration": 6.5,
+          "anchor": "Prima di passare ai microservizi"
+        }
+      ],
+      "audio_file": "audio/scene-10.wav",
+      "subtitle_file": "subtitles/scene-10.json",
+      "duration_sec": 79.42
+    }
+  ]
+}

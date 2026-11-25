@@ -1,0 +1,1174 @@
+{
+  "duration": 80.84,
+  "segments": [
+    {
+      "start": 0.02,
+      "end": 5.421,
+      "text": "Approfondiamo alcuni dettagli tecnici chiave, partendo dalle radici Lean e dai processi di build e",
+      "words": [
+        {
+          "text": "Approfondiamo",
+          "start": 0.02,
+          "end": 0.62
+        },
+        {
+          "text": "alcuni",
+          "start": 0.68,
+          "end": 0.96
+        },
+        {
+          "text": "dettagli",
+          "start": 1.02,
+          "end": 1.4
+        },
+        {
+          "text": "tecnici",
+          "start": 1.46,
+          "end": 1.86
+        },
+        {
+          "text": "chiave,",
+          "start": 1.92,
+          "end": 2.26
+        },
+        {
+          "text": "partendo",
+          "start": 2.42,
+          "end": 2.8
+        },
+        {
+          "text": "dalle",
+          "start": 2.86,
+          "end": 3.06
+        },
+        {
+          "text": "radici",
+          "start": 3.16,
+          "end": 3.5
+        },
+        {
+          "text": "Lean",
+          "start": 3.6,
+          "end": 3.86
+        },
+        {
+          "text": "e",
+          "start": 4.061,
+          "end": 4.101
+        },
+        {
+          "text": "dai",
+          "start": 4.161,
+          "end": 4.281
+        },
+        {
+          "text": "processi",
+          "start": 4.321,
+          "end": 4.721
+        },
+        {
+          "text": "di",
+          "start": 4.761,
+          "end": 4.841
+        },
+        {
+          "text": "build",
+          "start": 4.901,
+          "end": 5.201
+        },
+        {
+          "text": "e",
+          "start": 5.381,
+          "end": 5.421
+        }
+      ]
+    },
+    {
+      "start": 5.501,
+      "end": 6.241,
+      "text": "infrastruttura.",
+      "words": [
+        {
+          "text": "infrastruttura.",
+          "start": 5.501,
+          "end": 6.241
+        }
+      ]
+    },
+    {
+      "start": 7.021,
+      "end": 9.981,
+      "text": "Il Lean Software Development comprende sette principi:",
+      "words": [
+        {
+          "text": "Il",
+          "start": 7.021,
+          "end": 7.121
+        },
+        {
+          "text": "Lean",
+          "start": 7.201,
+          "end": 7.421
+        },
+        {
+          "text": "Software",
+          "start": 7.561,
+          "end": 7.981
+        },
+        {
+          "text": "Development",
+          "start": 8.001,
+          "end": 8.561
+        },
+        {
+          "text": "comprende",
+          "start": 8.661,
+          "end": 9.081
+        },
+        {
+          "text": "sette",
+          "start": 9.201,
+          "end": 9.461
+        },
+        {
+          "text": "principi:",
+          "start": 9.481,
+          "end": 9.981
+        }
+      ]
+    },
+    {
+      "start": 10.661,
+      "end": 15.242,
+      "text": "eliminare gli sprechi, amplificare l'apprendimento, decidere il più tardi possibile,",
+      "words": [
+        {
+          "text": "eliminare",
+          "start": 10.661,
+          "end": 11.101
+        },
+        {
+          "text": "gli",
+          "start": 11.121,
+          "end": 11.261
+        },
+        {
+          "text": "sprechi,",
+          "start": 11.301,
+          "end": 11.701
+        },
+        {
+          "text": "amplificare",
+          "start": 11.961,
+          "end": 12.542
+        },
+        {
+          "text": "l'apprendimento,",
+          "start": 12.582,
+          "end": 13.322
+        },
+        {
+          "text": "decidere",
+          "start": 13.662,
+          "end": 14.042
+        },
+        {
+          "text": "il",
+          "start": 14.082,
+          "end": 14.142
+        },
+        {
+          "text": "più",
+          "start": 14.182,
+          "end": 14.262
+        },
+        {
+          "text": "tardi",
+          "start": 14.362,
+          "end": 14.642
+        },
+        {
+          "text": "possibile,",
+          "start": 14.682,
+          "end": 15.242
+        }
+      ]
+    },
+    {
+      "start": 15.462,
+      "end": 19.262,
+      "text": "consegnare il più presto possibile, dare responsabilità al team,",
+      "words": [
+        {
+          "text": "consegnare",
+          "start": 15.462,
+          "end": 16.202
+        },
+        {
+          "text": "il",
+          "start": 16.242,
+          "end": 16.302
+        },
+        {
+          "text": "più",
+          "start": 16.342,
+          "end": 16.442
+        },
+        {
+          "text": "presto",
+          "start": 16.522,
+          "end": 16.842
+        },
+        {
+          "text": "possibile,",
+          "start": 16.882,
+          "end": 17.402
+        },
+        {
+          "text": "dare",
+          "start": 17.882,
+          "end": 18.082
+        },
+        {
+          "text": "responsabilità",
+          "start": 18.142,
+          "end": 18.802
+        },
+        {
+          "text": "al",
+          "start": 18.882,
+          "end": 18.962
+        },
+        {
+          "text": "team,",
+          "start": 19.042,
+          "end": 19.262
+        }
+      ]
+    },
+    {
+      "start": 19.662,
+      "end": 22.863,
+      "text": "costruire l'integrità dentro il prodotto e vedere l'insieme.",
+      "words": [
+        {
+          "text": "costruire",
+          "start": 19.662,
+          "end": 20.162
+        },
+        {
+          "text": "l'integrità",
+          "start": 20.243,
+          "end": 20.803
+        },
+        {
+          "text": "dentro",
+          "start": 20.923,
+          "end": 21.223
+        },
+        {
+          "text": "il",
+          "start": 21.263,
+          "end": 21.323
+        },
+        {
+          "text": "prodotto",
+          "start": 21.363,
+          "end": 21.823
+        },
+        {
+          "text": "e",
+          "start": 21.903,
+          "end": 21.943
+        },
+        {
+          "text": "vedere",
+          "start": 22.023,
+          "end": 22.303
+        },
+        {
+          "text": "l'insieme.",
+          "start": 22.343,
+          "end": 22.863
+        }
+      ]
+    },
+    {
+      "start": 23.683,
+      "end": 28.744,
+      "text": "Con i team separati, il rilascio prepara la release documentation e le modifiche possono passare",
+      "words": [
+        {
+          "text": "Con",
+          "start": 23.683,
+          "end": 23.823
+        },
+        {
+          "text": "i",
+          "start": 23.843,
+          "end": 23.883
+        },
+        {
+          "text": "team",
+          "start": 23.903,
+          "end": 24.023
+        },
+        {
+          "text": "separati,",
+          "start": 24.103,
+          "end": 24.603
+        },
+        {
+          "text": "il",
+          "start": 24.763,
+          "end": 24.863
+        },
+        {
+          "text": "rilascio",
+          "start": 24.903,
+          "end": 25.323
+        },
+        {
+          "text": "prepara",
+          "start": 25.363,
+          "end": 25.683
+        },
+        {
+          "text": "la",
+          "start": 25.763,
+          "end": 25.823
+        },
+        {
+          "text": "release",
+          "start": 25.883,
+          "end": 26.203
+        },
+        {
+          "text": "documentation",
+          "start": 26.243,
+          "end": 26.963
+        },
+        {
+          "text": "e",
+          "start": 27.403,
+          "end": 27.443
+        },
+        {
+          "text": "le",
+          "start": 27.523,
+          "end": 27.583
+        },
+        {
+          "text": "modifiche",
+          "start": 27.623,
+          "end": 28.023
+        },
+        {
+          "text": "possono",
+          "start": 28.043,
+          "end": 28.344
+        },
+        {
+          "text": "passare",
+          "start": 28.384,
+          "end": 28.744
+        }
+      ]
+    },
+    {
+      "start": 28.844,
+      "end": 30.564,
+      "text": "a un maintenance team separato;",
+      "words": [
+        {
+          "text": "a",
+          "start": 28.844,
+          "end": 28.884
+        },
+        {
+          "text": "un",
+          "start": 28.964,
+          "end": 29.044
+        },
+        {
+          "text": "maintenance",
+          "start": 29.124,
+          "end": 29.684
+        },
+        {
+          "text": "team",
+          "start": 29.724,
+          "end": 29.964
+        },
+        {
+          "text": "separato;",
+          "start": 30.104,
+          "end": 30.564
+        }
+      ]
+    },
+    {
+      "start": 31.224,
+      "end": 36.284,
+      "text": "i team non si comprendono, adattano a fatica il codice alla produzione e devono pianificare",
+      "words": [
+        {
+          "text": "i",
+          "start": 31.224,
+          "end": 31.264
+        },
+        {
+          "text": "team",
+          "start": 31.304,
+          "end": 31.484
+        },
+        {
+          "text": "non",
+          "start": 31.784,
+          "end": 31.924
+        },
+        {
+          "text": "si",
+          "start": 31.964,
+          "end": 32.024
+        },
+        {
+          "text": "comprendono,",
+          "start": 32.064,
+          "end": 32.644
+        },
+        {
+          "text": "adattano",
+          "start": 32.984,
+          "end": 33.344
+        },
+        {
+          "text": "a",
+          "start": 33.404,
+          "end": 33.444
+        },
+        {
+          "text": "fatica",
+          "start": 33.524,
+          "end": 33.944
+        },
+        {
+          "text": "il",
+          "start": 34.004,
+          "end": 34.084
+        },
+        {
+          "text": "codice",
+          "start": 34.124,
+          "end": 34.464
+        },
+        {
+          "text": "alla",
+          "start": 34.504,
+          "end": 34.644
+        },
+        {
+          "text": "produzione",
+          "start": 34.664,
+          "end": 35.264
+        },
+        {
+          "text": "e",
+          "start": 35.404,
+          "end": 35.444
+        },
+        {
+          "text": "devono",
+          "start": 35.464,
+          "end": 35.684
+        },
+        {
+          "text": "pianificare",
+          "start": 35.744,
+          "end": 36.284
+        }
+      ]
+    },
+    {
+      "start": 36.465,
+      "end": 37.525,
+      "text": "ogni distribuzione.",
+      "words": [
+        {
+          "text": "ogni",
+          "start": 36.465,
+          "end": 36.705
+        },
+        {
+          "text": "distribuzione.",
+          "start": 36.765,
+          "end": 37.525
+        }
+      ]
+    },
+    {
+      "start": 38.405,
+      "end": 43.485,
+      "text": "Nella continuous integration, preparare la build richiede il database con lo schema corretto e la",
+      "words": [
+        {
+          "text": "Nella",
+          "start": 38.405,
+          "end": 38.605
+        },
+        {
+          "text": "continuous",
+          "start": 38.645,
+          "end": 39.125
+        },
+        {
+          "text": "integration,",
+          "start": 39.165,
+          "end": 39.785
+        },
+        {
+          "text": "preparare",
+          "start": 40.045,
+          "end": 40.445
+        },
+        {
+          "text": "la",
+          "start": 40.505,
+          "end": 40.565
+        },
+        {
+          "text": "build",
+          "start": 40.605,
+          "end": 40.885
+        },
+        {
+          "text": "richiede",
+          "start": 40.985,
+          "end": 41.325
+        },
+        {
+          "text": "il",
+          "start": 41.385,
+          "end": 41.465
+        },
+        {
+          "text": "database",
+          "start": 41.485,
+          "end": 42.005
+        },
+        {
+          "text": "con",
+          "start": 42.065,
+          "end": 42.165
+        },
+        {
+          "text": "lo",
+          "start": 42.205,
+          "end": 42.265
+        },
+        {
+          "text": "schema",
+          "start": 42.285,
+          "end": 42.525
+        },
+        {
+          "text": "corretto",
+          "start": 42.565,
+          "end": 43.025
+        },
+        {
+          "text": "e",
+          "start": 43.365,
+          "end": 43.405
+        },
+        {
+          "text": "la",
+          "start": 43.445,
+          "end": 43.485
+        }
+      ]
+    },
+    {
+      "start": 43.545,
+      "end": 45.666,
+      "text": "rimozione dei vecchi file di configurazione.",
+      "words": [
+        {
+          "text": "rimozione",
+          "start": 43.545,
+          "end": 44.125
+        },
+        {
+          "text": "dei",
+          "start": 44.145,
+          "end": 44.265
+        },
+        {
+          "text": "vecchi",
+          "start": 44.285,
+          "end": 44.526
+        },
+        {
+          "text": "file",
+          "start": 44.546,
+          "end": 44.786
+        },
+        {
+          "text": "di",
+          "start": 44.786,
+          "end": 44.846
+        },
+        {
+          "text": "configurazione.",
+          "start": 44.886,
+          "end": 45.666
+        }
+      ]
+    },
+    {
+      "start": 46.306,
+      "end": 48.666,
+      "text": "Per non rompere la build si segue il ciclo completo:",
+      "words": [
+        {
+          "text": "Per",
+          "start": 46.306,
+          "end": 46.406
+        },
+        {
+          "text": "non",
+          "start": 46.446,
+          "end": 46.566
+        },
+        {
+          "text": "rompere",
+          "start": 46.606,
+          "end": 46.906
+        },
+        {
+          "text": "la",
+          "start": 46.946,
+          "end": 47.006
+        },
+        {
+          "text": "build",
+          "start": 47.046,
+          "end": 47.266
+        },
+        {
+          "text": "si",
+          "start": 47.426,
+          "end": 47.486
+        },
+        {
+          "text": "segue",
+          "start": 47.546,
+          "end": 47.766
+        },
+        {
+          "text": "il",
+          "start": 47.806,
+          "end": 47.866
+        },
+        {
+          "text": "ciclo",
+          "start": 47.906,
+          "end": 48.166
+        },
+        {
+          "text": "completo:",
+          "start": 48.206,
+          "end": 48.666
+        }
+      ]
+    },
+    {
+      "start": 49.166,
+      "end": 53.687,
+      "text": "commit locale, pull del ramo master, merge, compilazione e build,",
+      "words": [
+        {
+          "text": "commit",
+          "start": 49.166,
+          "end": 49.506
+        },
+        {
+          "text": "locale,",
+          "start": 49.606,
+          "end": 50.006
+        },
+        {
+          "text": "pull",
+          "start": 50.346,
+          "end": 50.566
+        },
+        {
+          "text": "del",
+          "start": 50.626,
+          "end": 50.726
+        },
+        {
+          "text": "ramo",
+          "start": 50.786,
+          "end": 50.946
+        },
+        {
+          "text": "master,",
+          "start": 50.986,
+          "end": 51.406
+        },
+        {
+          "text": "merge,",
+          "start": 51.766,
+          "end": 52.166
+        },
+        {
+          "text": "compilazione",
+          "start": 52.567,
+          "end": 53.247
+        },
+        {
+          "text": "e",
+          "start": 53.307,
+          "end": 53.347
+        },
+        {
+          "text": "build,",
+          "start": 53.407,
+          "end": 53.687
+        }
+      ]
+    },
+    {
+      "start": 54.047,
+      "end": 57.047,
+      "text": "quindi i test; se falliscono si riparte dal codice,",
+      "words": [
+        {
+          "text": "quindi",
+          "start": 54.047,
+          "end": 54.307
+        },
+        {
+          "text": "i",
+          "start": 54.367,
+          "end": 54.407
+        },
+        {
+          "text": "test;",
+          "start": 54.447,
+          "end": 54.747
+        },
+        {
+          "text": "se",
+          "start": 55.347,
+          "end": 55.427
+        },
+        {
+          "text": "falliscono",
+          "start": 55.487,
+          "end": 55.927
+        },
+        {
+          "text": "si",
+          "start": 56.047,
+          "end": 56.107
+        },
+        {
+          "text": "riparte",
+          "start": 56.147,
+          "end": 56.447
+        },
+        {
+          "text": "dal",
+          "start": 56.487,
+          "end": 56.627
+        },
+        {
+          "text": "codice,",
+          "start": 56.667,
+          "end": 57.047
+        }
+      ]
+    },
+    {
+      "start": 57.307,
+      "end": 58.267,
+      "text": "altrimenti si fa push.",
+      "words": [
+        {
+          "text": "altrimenti",
+          "start": 57.307,
+          "end": 57.727
+        },
+        {
+          "text": "si",
+          "start": 57.767,
+          "end": 57.827
+        },
+        {
+          "text": "fa",
+          "start": 57.867,
+          "end": 57.927
+        },
+        {
+          "text": "push.",
+          "start": 58.007,
+          "end": 58.267
+        }
+      ]
+    },
+    {
+      "start": 59.207,
+      "end": 61.868,
+      "text": "La prima build compila tutti i sorgenti e test eseguibili,",
+      "words": [
+        {
+          "text": "La",
+          "start": 59.207,
+          "end": 59.267
+        },
+        {
+          "text": "prima",
+          "start": 59.287,
+          "end": 59.467
+        },
+        {
+          "text": "build",
+          "start": 59.507,
+          "end": 59.687
+        },
+        {
+          "text": "compila",
+          "start": 59.767,
+          "end": 60.107
+        },
+        {
+          "text": "tutti",
+          "start": 60.187,
+          "end": 60.407
+        },
+        {
+          "text": "i",
+          "start": 60.447,
+          "end": 60.487
+        },
+        {
+          "text": "sorgenti",
+          "start": 60.487,
+          "end": 60.988
+        },
+        {
+          "text": "e",
+          "start": 61.028,
+          "end": 61.068
+        },
+        {
+          "text": "test",
+          "start": 61.108,
+          "end": 61.308
+        },
+        {
+          "text": "eseguibili,",
+          "start": 61.368,
+          "end": 61.868
+        }
+      ]
+    },
+    {
+      "start": 62.268,
+      "end": 65.788,
+      "text": "le successive rigenerano i file oggetto solo per i file modificati.",
+      "words": [
+        {
+          "text": "le",
+          "start": 62.268,
+          "end": 62.328
+        },
+        {
+          "text": "successive",
+          "start": 62.368,
+          "end": 62.908
+        },
+        {
+          "text": "rigenerano",
+          "start": 63.108,
+          "end": 63.588
+        },
+        {
+          "text": "i",
+          "start": 63.668,
+          "end": 63.708
+        },
+        {
+          "text": "file",
+          "start": 63.748,
+          "end": 63.988
+        },
+        {
+          "text": "oggetto",
+          "start": 64.028,
+          "end": 64.388
+        },
+        {
+          "text": "solo",
+          "start": 64.528,
+          "end": 64.808
+        },
+        {
+          "text": "per",
+          "start": 64.848,
+          "end": 64.948
+        },
+        {
+          "text": "i",
+          "start": 64.968,
+          "end": 65.00800000000001
+        },
+        {
+          "text": "file",
+          "start": 65.028,
+          "end": 65.228
+        },
+        {
+          "text": "modificati.",
+          "start": 65.228,
+          "end": 65.788
+        }
+      ]
+    },
+    {
+      "start": 66.588,
+      "end": 72.569,
+      "text": "Infine, nell'Infrastructure as Code c'è il dependency skew, perché alcuni server vanno aggiornati e altri",
+      "words": [
+        {
+          "text": "Infine,",
+          "start": 66.588,
+          "end": 66.928
+        },
+        {
+          "text": "nell'Infrastructure",
+          "start": 67.108,
+          "end": 67.988
+        },
+        {
+          "text": "as",
+          "start": 68.028,
+          "end": 68.128
+        },
+        {
+          "text": "Code",
+          "start": 68.168,
+          "end": 68.468
+        },
+        {
+          "text": "c'è",
+          "start": 68.809,
+          "end": 68.909
+        },
+        {
+          "text": "il",
+          "start": 68.989,
+          "end": 69.069
+        },
+        {
+          "text": "dependency",
+          "start": 69.109,
+          "end": 69.609
+        },
+        {
+          "text": "skew,",
+          "start": 69.669,
+          "end": 69.869
+        },
+        {
+          "text": "perché",
+          "start": 70.309,
+          "end": 70.509
+        },
+        {
+          "text": "alcuni",
+          "start": 70.549,
+          "end": 70.769
+        },
+        {
+          "text": "server",
+          "start": 70.809,
+          "end": 71.109
+        },
+        {
+          "text": "vanno",
+          "start": 71.149,
+          "end": 71.349
+        },
+        {
+          "text": "aggiornati",
+          "start": 71.389,
+          "end": 72.009
+        },
+        {
+          "text": "e",
+          "start": 72.169,
+          "end": 72.209
+        },
+        {
+          "text": "altri",
+          "start": 72.329,
+          "end": 72.569
+        }
+      ]
+    },
+    {
+      "start": 72.609,
+      "end": 73.709,
+      "text": "no per dipendenze legacy;",
+      "words": [
+        {
+          "text": "no",
+          "start": 72.609,
+          "end": 72.669
+        },
+        {
+          "text": "per",
+          "start": 72.749,
+          "end": 72.849
+        },
+        {
+          "text": "dipendenze",
+          "start": 72.889,
+          "end": 73.309
+        },
+        {
+          "text": "legacy;",
+          "start": 73.369,
+          "end": 73.709
+        }
+      ]
+    },
+    {
+      "start": 74.289,
+      "end": 77.95,
+      "text": "come dice I C E con Puppet, non si cerca più il guasto in un",
+      "words": [
+        {
+          "text": "come",
+          "start": 74.289,
+          "end": 74.449
+        },
+        {
+          "text": "dice",
+          "start": 74.469,
+          "end": 74.649
+        },
+        {
+          "text": "I",
+          "start": 74.809,
+          "end": 74.849
+        },
+        {
+          "text": "C",
+          "start": 74.889,
+          "end": 74.929
+        },
+        {
+          "text": "E",
+          "start": 75.089,
+          "end": 75.129
+        },
+        {
+          "text": "con",
+          "start": 75.229,
+          "end": 75.349
+        },
+        {
+          "text": "Puppet,",
+          "start": 75.409,
+          "end": 75.829
+        },
+        {
+          "text": "non",
+          "start": 76.189,
+          "end": 76.349
+        },
+        {
+          "text": "si",
+          "start": 76.409,
+          "end": 76.489
+        },
+        {
+          "text": "cerca",
+          "start": 76.549,
+          "end": 76.85
+        },
+        {
+          "text": "più",
+          "start": 76.95,
+          "end": 77.09
+        },
+        {
+          "text": "il",
+          "start": 77.19,
+          "end": 77.27
+        },
+        {
+          "text": "guasto",
+          "start": 77.33,
+          "end": 77.73
+        },
+        {
+          "text": "in",
+          "start": 77.77,
+          "end": 77.83
+        },
+        {
+          "text": "un",
+          "start": 77.87,
+          "end": 77.95
+        }
+      ]
+    },
+    {
+      "start": 77.97,
+      "end": 80.59,
+      "text": "server lento o instabile, lo si ricostruisce.",
+      "words": [
+        {
+          "text": "server",
+          "start": 77.97,
+          "end": 78.27
+        },
+        {
+          "text": "lento",
+          "start": 78.33,
+          "end": 78.61
+        },
+        {
+          "text": "o",
+          "start": 78.67,
+          "end": 78.71000000000001
+        },
+        {
+          "text": "instabile,",
+          "start": 78.77,
+          "end": 79.29
+        },
+        {
+          "text": "lo",
+          "start": 79.69,
+          "end": 79.75
+        },
+        {
+          "text": "si",
+          "start": 79.81,
+          "end": 79.89
+        },
+        {
+          "text": "ricostruisce.",
+          "start": 79.93,
+          "end": 80.59
+        }
+      ]
+    }
+  ]
+}

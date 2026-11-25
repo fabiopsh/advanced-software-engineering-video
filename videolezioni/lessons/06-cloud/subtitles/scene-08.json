@@ -1,0 +1,1178 @@
+{
+  "duration": 80.16,
+  "segments": [
+    {
+      "start": 0.06,
+      "end": 3.62,
+      "text": "Approfondiamo tre aspetti pratici dell'architettura dati nel cloud.",
+      "words": [
+        {
+          "text": "Approfondiamo",
+          "start": 0.06,
+          "end": 0.7
+        },
+        {
+          "text": "tre",
+          "start": 0.86,
+          "end": 1.0
+        },
+        {
+          "text": "aspetti",
+          "start": 1.1,
+          "end": 1.48
+        },
+        {
+          "text": "pratici",
+          "start": 1.52,
+          "end": 1.94
+        },
+        {
+          "text": "dell'architettura",
+          "start": 1.98,
+          "end": 2.74
+        },
+        {
+          "text": "dati",
+          "start": 2.8,
+          "end": 3.06
+        },
+        {
+          "text": "nel",
+          "start": 3.1,
+          "end": 3.22
+        },
+        {
+          "text": "cloud.",
+          "start": 3.28,
+          "end": 3.62
+        }
+      ]
+    },
+    {
+      "start": 4.501,
+      "end": 9.381,
+      "text": "Sul fronte della personalizzazione di un SaaS, due esigenze chiave sono le business rules,",
+      "words": [
+        {
+          "text": "Sul",
+          "start": 4.501,
+          "end": 4.621
+        },
+        {
+          "text": "fronte",
+          "start": 4.661,
+          "end": 4.921
+        },
+        {
+          "text": "della",
+          "start": 4.961,
+          "end": 5.141
+        },
+        {
+          "text": "personalizzazione",
+          "start": 5.181,
+          "end": 6.141
+        },
+        {
+          "text": "di",
+          "start": 6.181,
+          "end": 6.241
+        },
+        {
+          "text": "un",
+          "start": 6.261,
+          "end": 6.341
+        },
+        {
+          "text": "SaaS,",
+          "start": 6.401,
+          "end": 6.701
+        },
+        {
+          "text": "due",
+          "start": 7.161,
+          "end": 7.321
+        },
+        {
+          "text": "esigenze",
+          "start": 7.381,
+          "end": 7.781
+        },
+        {
+          "text": "chiave",
+          "start": 7.841,
+          "end": 8.101
+        },
+        {
+          "text": "sono",
+          "start": 8.161,
+          "end": 8.341
+        },
+        {
+          "text": "le",
+          "start": 8.561,
+          "end": 8.621
+        },
+        {
+          "text": "business",
+          "start": 8.721,
+          "end": 9.021
+        },
+        {
+          "text": "rules,",
+          "start": 9.081,
+          "end": 9.381
+        }
+      ]
+    },
+    {
+      "start": 9.841,
+      "end": 14.162,
+      "text": "cioè definire regole di business e flussi di lavoro propri applicati ai dati del cliente,",
+      "words": [
+        {
+          "text": "cioè",
+          "start": 9.841,
+          "end": 9.981
+        },
+        {
+          "text": "definire",
+          "start": 10.061,
+          "end": 10.521
+        },
+        {
+          "text": "regole",
+          "start": 10.581,
+          "end": 10.861
+        },
+        {
+          "text": "di",
+          "start": 10.901,
+          "end": 10.961
+        },
+        {
+          "text": "business",
+          "start": 11.001,
+          "end": 11.421
+        },
+        {
+          "text": "e",
+          "start": 11.481,
+          "end": 11.521
+        },
+        {
+          "text": "flussi",
+          "start": 11.561,
+          "end": 11.861
+        },
+        {
+          "text": "di",
+          "start": 11.901,
+          "end": 11.961
+        },
+        {
+          "text": "lavoro",
+          "start": 12.001,
+          "end": 12.242
+        },
+        {
+          "text": "propri",
+          "start": 12.282,
+          "end": 12.602
+        },
+        {
+          "text": "applicati",
+          "start": 12.662,
+          "end": 13.102
+        },
+        {
+          "text": "ai",
+          "start": 13.142,
+          "end": 13.222
+        },
+        {
+          "text": "dati",
+          "start": 13.282,
+          "end": 13.502
+        },
+        {
+          "text": "del",
+          "start": 13.542,
+          "end": 13.642
+        },
+        {
+          "text": "cliente,",
+          "start": 13.702,
+          "end": 14.162
+        }
+      ]
+    },
+    {
+      "start": 14.742,
+      "end": 19.942,
+      "text": "e l'access control, cioè stabilire un proprio modello su quali dati utenti o gruppi possono",
+      "words": [
+        {
+          "text": "e",
+          "start": 14.742,
+          "end": 14.782
+        },
+        {
+          "text": "l'access",
+          "start": 14.882,
+          "end": 15.262
+        },
+        {
+          "text": "control,",
+          "start": 15.302,
+          "end": 15.742
+        },
+        {
+          "text": "cioè",
+          "start": 16.102,
+          "end": 16.242
+        },
+        {
+          "text": "stabilire",
+          "start": 16.282,
+          "end": 16.702
+        },
+        {
+          "text": "un",
+          "start": 16.742,
+          "end": 16.802
+        },
+        {
+          "text": "proprio",
+          "start": 16.882,
+          "end": 17.222
+        },
+        {
+          "text": "modello",
+          "start": 17.242,
+          "end": 17.622
+        },
+        {
+          "text": "su",
+          "start": 17.682,
+          "end": 17.742
+        },
+        {
+          "text": "quali",
+          "start": 17.802,
+          "end": 18.022
+        },
+        {
+          "text": "dati",
+          "start": 18.082,
+          "end": 18.402
+        },
+        {
+          "text": "utenti",
+          "start": 18.682,
+          "end": 19.122
+        },
+        {
+          "text": "o",
+          "start": 19.182,
+          "end": 19.222
+        },
+        {
+          "text": "gruppi",
+          "start": 19.282,
+          "end": 19.582
+        },
+        {
+          "text": "possono",
+          "start": 19.642,
+          "end": 19.942
+        }
+      ]
+    },
+    {
+      "start": 20.022,
+      "end": 22.203,
+      "text": "usare e quali operazioni sono consentite.",
+      "words": [
+        {
+          "text": "usare",
+          "start": 20.022,
+          "end": 20.343
+        },
+        {
+          "text": "e",
+          "start": 20.623,
+          "end": 20.663
+        },
+        {
+          "text": "quali",
+          "start": 20.723,
+          "end": 20.923
+        },
+        {
+          "text": "operazioni",
+          "start": 20.963,
+          "end": 21.403
+        },
+        {
+          "text": "sono",
+          "start": 21.463,
+          "end": 21.603
+        },
+        {
+          "text": "consentite.",
+          "start": 21.643,
+          "end": 22.203
+        }
+      ]
+    },
+    {
+      "start": 23.203,
+      "end": 27.863,
+      "text": "Per adattare lo schema del database, la soluzione a colonne extra impone un compromesso:",
+      "words": [
+        {
+          "text": "Per",
+          "start": 23.203,
+          "end": 23.343
+        },
+        {
+          "text": "adattare",
+          "start": 23.463,
+          "end": 23.863
+        },
+        {
+          "text": "lo",
+          "start": 23.903,
+          "end": 23.963
+        },
+        {
+          "text": "schema",
+          "start": 24.003,
+          "end": 24.203
+        },
+        {
+          "text": "del",
+          "start": 24.263,
+          "end": 24.363
+        },
+        {
+          "text": "database,",
+          "start": 24.383,
+          "end": 24.923
+        },
+        {
+          "text": "la",
+          "start": 25.203,
+          "end": 25.263
+        },
+        {
+          "text": "soluzione",
+          "start": 25.303,
+          "end": 25.723
+        },
+        {
+          "text": "a",
+          "start": 25.763,
+          "end": 25.803
+        },
+        {
+          "text": "colonne",
+          "start": 25.863,
+          "end": 26.223
+        },
+        {
+          "text": "extra",
+          "start": 26.323,
+          "end": 26.623
+        },
+        {
+          "text": "impone",
+          "start": 26.823,
+          "end": 27.103
+        },
+        {
+          "text": "un",
+          "start": 27.163,
+          "end": 27.223
+        },
+        {
+          "text": "compromesso:",
+          "start": 27.263,
+          "end": 27.863
+        }
+      ]
+    },
+    {
+      "start": 28.364,
+      "end": 31.384,
+      "text": "troppe poche colonne non bastano, mentre troppe sprecano spazio.",
+      "words": [
+        {
+          "text": "troppe",
+          "start": 28.364,
+          "end": 28.604
+        },
+        {
+          "text": "poche",
+          "start": 28.664,
+          "end": 28.844
+        },
+        {
+          "text": "colonne",
+          "start": 28.884,
+          "end": 29.204
+        },
+        {
+          "text": "non",
+          "start": 29.244,
+          "end": 29.364
+        },
+        {
+          "text": "bastano,",
+          "start": 29.404,
+          "end": 29.804
+        },
+        {
+          "text": "mentre",
+          "start": 29.924,
+          "end": 30.184
+        },
+        {
+          "text": "troppe",
+          "start": 30.244,
+          "end": 30.544
+        },
+        {
+          "text": "sprecano",
+          "start": 30.604,
+          "end": 30.964
+        },
+        {
+          "text": "spazio.",
+          "start": 31.004,
+          "end": 31.384
+        }
+      ]
+    },
+    {
+      "start": 32.064,
+      "end": 37.725,
+      "text": "Con l'extension table, invece, la riga del tenant T cinquecentosedici nella tabella principale punta con",
+      "words": [
+        {
+          "text": "Con",
+          "start": 32.064,
+          "end": 32.144
+        },
+        {
+          "text": "l'extension",
+          "start": 32.184,
+          "end": 32.644
+        },
+        {
+          "text": "table,",
+          "start": 32.684,
+          "end": 33.004
+        },
+        {
+          "text": "invece,",
+          "start": 33.044,
+          "end": 33.344
+        },
+        {
+          "text": "la",
+          "start": 33.644,
+          "end": 33.704
+        },
+        {
+          "text": "riga",
+          "start": 33.744,
+          "end": 33.904
+        },
+        {
+          "text": "del",
+          "start": 33.944,
+          "end": 34.064
+        },
+        {
+          "text": "tenant",
+          "start": 34.124,
+          "end": 34.444
+        },
+        {
+          "text": "T",
+          "start": 34.604,
+          "end": 34.644
+        },
+        {
+          "text": "cinquecentosedici",
+          "start": 34.624,
+          "end": 35.704
+        },
+        {
+          "text": "nella",
+          "start": 35.764,
+          "end": 35.944
+        },
+        {
+          "text": "tabella",
+          "start": 35.984,
+          "end": 36.245
+        },
+        {
+          "text": "principale",
+          "start": 36.265,
+          "end": 36.825
+        },
+        {
+          "text": "punta",
+          "start": 37.305,
+          "end": 37.565
+        },
+        {
+          "text": "con",
+          "start": 37.605,
+          "end": 37.725
+        }
+      ]
+    },
+    {
+      "start": 37.745,
+      "end": 40.465,
+      "text": "il campo Ext uno al record E centoventitré.",
+      "words": [
+        {
+          "text": "il",
+          "start": 37.745,
+          "end": 37.825
+        },
+        {
+          "text": "campo",
+          "start": 37.865,
+          "end": 38.125
+        },
+        {
+          "text": "Ext",
+          "start": 38.285,
+          "end": 38.505
+        },
+        {
+          "text": "uno",
+          "start": 38.645,
+          "end": 38.805
+        },
+        {
+          "text": "al",
+          "start": 39.005,
+          "end": 39.125
+        },
+        {
+          "text": "record",
+          "start": 39.225,
+          "end": 39.505
+        },
+        {
+          "text": "E",
+          "start": 39.705,
+          "end": 39.745
+        },
+        {
+          "text": "centoventitré.",
+          "start": 39.825,
+          "end": 40.465
+        }
+      ]
+    },
+    {
+      "start": 41.145,
+      "end": 44.206,
+      "text": "Questo si collega alla tabella dei nomi, con gli attributi Location,",
+      "words": [
+        {
+          "text": "Questo",
+          "start": 41.145,
+          "end": 41.365
+        },
+        {
+          "text": "si",
+          "start": 41.405,
+          "end": 41.465
+        },
+        {
+          "text": "collega",
+          "start": 41.505,
+          "end": 41.825
+        },
+        {
+          "text": "alla",
+          "start": 41.865,
+          "end": 42.005
+        },
+        {
+          "text": "tabella",
+          "start": 42.045,
+          "end": 42.325
+        },
+        {
+          "text": "dei",
+          "start": 42.365,
+          "end": 42.485
+        },
+        {
+          "text": "nomi,",
+          "start": 42.525,
+          "end": 42.765
+        },
+        {
+          "text": "con",
+          "start": 42.985,
+          "end": 43.085
+        },
+        {
+          "text": "gli",
+          "start": 43.085,
+          "end": 43.185
+        },
+        {
+          "text": "attributi",
+          "start": 43.205,
+          "end": 43.585
+        },
+        {
+          "text": "Location,",
+          "start": 43.685,
+          "end": 44.206
+        }
+      ]
+    },
+    {
+      "start": 44.426,
+      "end": 49.306,
+      "text": "Weight e Fragile, e alla tabella dei valori, che registra A diciassette barra S sei,",
+      "words": [
+        {
+          "text": "Weight",
+          "start": 44.426,
+          "end": 44.746
+        },
+        {
+          "text": "e",
+          "start": 44.906,
+          "end": 44.946
+        },
+        {
+          "text": "Fragile,",
+          "start": 45.006,
+          "end": 45.426
+        },
+        {
+          "text": "e",
+          "start": 45.926,
+          "end": 45.966
+        },
+        {
+          "text": "alla",
+          "start": 46.006,
+          "end": 46.146
+        },
+        {
+          "text": "tabella",
+          "start": 46.166,
+          "end": 46.426
+        },
+        {
+          "text": "dei",
+          "start": 46.446,
+          "end": 46.566
+        },
+        {
+          "text": "valori,",
+          "start": 46.586,
+          "end": 46.886
+        },
+        {
+          "text": "che",
+          "start": 47.206,
+          "end": 47.286
+        },
+        {
+          "text": "registra",
+          "start": 47.326,
+          "end": 47.706
+        },
+        {
+          "text": "A",
+          "start": 47.726,
+          "end": 47.766
+        },
+        {
+          "text": "diciassette",
+          "start": 47.806,
+          "end": 48.506
+        },
+        {
+          "text": "barra",
+          "start": 48.566,
+          "end": 48.766
+        },
+        {
+          "text": "S",
+          "start": 48.946,
+          "end": 48.986
+        },
+        {
+          "text": "sei,",
+          "start": 49.086,
+          "end": 49.306
+        }
+      ]
+    },
+    {
+      "start": 49.586,
+      "end": 50.626,
+      "text": "quattro e False.",
+      "words": [
+        {
+          "text": "quattro",
+          "start": 49.586,
+          "end": 49.966
+        },
+        {
+          "text": "e",
+          "start": 50.166,
+          "end": 50.206
+        },
+        {
+          "text": "False.",
+          "start": 50.286,
+          "end": 50.626
+        }
+      ]
+    },
+    {
+      "start": 51.226,
+      "end": 56.407,
+      "text": "Il multi-instance basato su container conviene quando gli utenti lavorano per lo più indipendentemente con",
+      "words": [
+        {
+          "text": "Il",
+          "start": 51.226,
+          "end": 51.306
+        },
+        {
+          "text": "multi-instance",
+          "start": 51.346,
+          "end": 52.046
+        },
+        {
+          "text": "basato",
+          "start": 52.066,
+          "end": 52.347
+        },
+        {
+          "text": "su",
+          "start": 52.387,
+          "end": 52.447
+        },
+        {
+          "text": "container",
+          "start": 52.527,
+          "end": 53.067
+        },
+        {
+          "text": "conviene",
+          "start": 53.127,
+          "end": 53.467
+        },
+        {
+          "text": "quando",
+          "start": 53.507,
+          "end": 53.687
+        },
+        {
+          "text": "gli",
+          "start": 53.707,
+          "end": 53.787
+        },
+        {
+          "text": "utenti",
+          "start": 53.827,
+          "end": 54.107
+        },
+        {
+          "text": "lavorano",
+          "start": 54.147,
+          "end": 54.467
+        },
+        {
+          "text": "per",
+          "start": 54.527,
+          "end": 54.627
+        },
+        {
+          "text": "lo",
+          "start": 54.667,
+          "end": 54.747
+        },
+        {
+          "text": "più",
+          "start": 54.807,
+          "end": 54.927
+        },
+        {
+          "text": "indipendentemente",
+          "start": 55.087,
+          "end": 56.047
+        },
+        {
+          "text": "con",
+          "start": 56.287,
+          "end": 56.407
+        }
+      ]
+    },
+    {
+      "start": 56.467,
+      "end": 59.247,
+      "text": "poca condivisione di dati, per esempio utenti individuali.",
+      "words": [
+        {
+          "text": "poca",
+          "start": 56.467,
+          "end": 56.667
+        },
+        {
+          "text": "condivisione",
+          "start": 56.707,
+          "end": 57.207
+        },
+        {
+          "text": "di",
+          "start": 57.227,
+          "end": 57.287
+        },
+        {
+          "text": "dati,",
+          "start": 57.327,
+          "end": 57.587
+        },
+        {
+          "text": "per",
+          "start": 57.827,
+          "end": 57.927
+        },
+        {
+          "text": "esempio",
+          "start": 57.967,
+          "end": 58.247
+        },
+        {
+          "text": "utenti",
+          "start": 58.347,
+          "end": 58.647
+        },
+        {
+          "text": "individuali.",
+          "start": 58.687,
+          "end": 59.247
+        }
+      ]
+    },
+    {
+      "start": 59.987,
+      "end": 63.868,
+      "text": "Offre grande flexibility nel trasferire dati dal database esistente del cliente,",
+      "words": [
+        {
+          "text": "Offre",
+          "start": 59.987,
+          "end": 60.208
+        },
+        {
+          "text": "grande",
+          "start": 60.288,
+          "end": 60.568
+        },
+        {
+          "text": "flexibility",
+          "start": 60.628,
+          "end": 61.308
+        },
+        {
+          "text": "nel",
+          "start": 61.368,
+          "end": 61.468
+        },
+        {
+          "text": "trasferire",
+          "start": 61.508,
+          "end": 61.948
+        },
+        {
+          "text": "dati",
+          "start": 61.988,
+          "end": 62.208
+        },
+        {
+          "text": "dal",
+          "start": 62.248,
+          "end": 62.348
+        },
+        {
+          "text": "database",
+          "start": 62.388,
+          "end": 62.788
+        },
+        {
+          "text": "esistente",
+          "start": 62.828,
+          "end": 63.248
+        },
+        {
+          "text": "del",
+          "start": 63.288,
+          "end": 63.388
+        },
+        {
+          "text": "cliente,",
+          "start": 63.428,
+          "end": 63.868
+        }
+      ]
+    },
+    {
+      "start": 64.308,
+      "end": 68.989,
+      "text": "ma comporta costi per gestire più sistemi oltre al noleggio di virtual machine sempre accese",
+      "words": [
+        {
+          "text": "ma",
+          "start": 64.308,
+          "end": 64.368
+        },
+        {
+          "text": "comporta",
+          "start": 64.448,
+          "end": 64.788
+        },
+        {
+          "text": "costi",
+          "start": 64.848,
+          "end": 65.148
+        },
+        {
+          "text": "per",
+          "start": 65.208,
+          "end": 65.328
+        },
+        {
+          "text": "gestire",
+          "start": 65.368,
+          "end": 65.688
+        },
+        {
+          "text": "più",
+          "start": 65.768,
+          "end": 65.888
+        },
+        {
+          "text": "sistemi",
+          "start": 65.988,
+          "end": 66.468
+        },
+        {
+          "text": "oltre",
+          "start": 66.648,
+          "end": 66.868
+        },
+        {
+          "text": "al",
+          "start": 66.908,
+          "end": 66.968
+        },
+        {
+          "text": "noleggio",
+          "start": 67.008,
+          "end": 67.368
+        },
+        {
+          "text": "di",
+          "start": 67.408,
+          "end": 67.468
+        },
+        {
+          "text": "virtual",
+          "start": 67.508,
+          "end": 67.868
+        },
+        {
+          "text": "machine",
+          "start": 67.888,
+          "end": 68.229
+        },
+        {
+          "text": "sempre",
+          "start": 68.309,
+          "end": 68.569
+        },
+        {
+          "text": "accese",
+          "start": 68.609,
+          "end": 68.989
+        }
+      ]
+    },
+    {
+      "start": 69.129,
+      "end": 70.249,
+      "text": "a causa dell'avvio lento.",
+      "words": [
+        {
+          "text": "a",
+          "start": 69.129,
+          "end": 69.16900000000001
+        },
+        {
+          "text": "causa",
+          "start": 69.249,
+          "end": 69.529
+        },
+        {
+          "text": "dell'avvio",
+          "start": 69.569,
+          "end": 69.909
+        },
+        {
+          "text": "lento.",
+          "start": 69.949,
+          "end": 70.249
+        }
+      ]
+    },
+    {
+      "start": 71.189,
+      "end": 77.33,
+      "text": "Sul multi-tenant, essendo progettato per l'isolamento, ha spesso meno vulnerabilità dei database standard e le",
+      "words": [
+        {
+          "text": "Sul",
+          "start": 71.189,
+          "end": 71.329
+        },
+        {
+          "text": "multi-tenant,",
+          "start": 71.369,
+          "end": 71.989
+        },
+        {
+          "text": "essendo",
+          "start": 72.329,
+          "end": 72.629
+        },
+        {
+          "text": "progettato",
+          "start": 72.669,
+          "end": 73.189
+        },
+        {
+          "text": "per",
+          "start": 73.209,
+          "end": 73.309
+        },
+        {
+          "text": "l'isolamento,",
+          "start": 73.349,
+          "end": 73.929
+        },
+        {
+          "text": "ha",
+          "start": 74.329,
+          "end": 74.389
+        },
+        {
+          "text": "spesso",
+          "start": 74.429,
+          "end": 74.689
+        },
+        {
+          "text": "meno",
+          "start": 74.809,
+          "end": 75.009
+        },
+        {
+          "text": "vulnerabilità",
+          "start": 75.069,
+          "end": 75.689
+        },
+        {
+          "text": "dei",
+          "start": 75.769,
+          "end": 75.889
+        },
+        {
+          "text": "database",
+          "start": 75.929,
+          "end": 76.31
+        },
+        {
+          "text": "standard",
+          "start": 76.37,
+          "end": 76.83
+        },
+        {
+          "text": "e",
+          "start": 77.19,
+          "end": 77.23
+        },
+        {
+          "text": "le",
+          "start": 77.27,
+          "end": 77.33
+        }
+      ]
+    },
+    {
+      "start": 77.35,
+      "end": 79.91,
+      "text": "fughe cross-tenant restano molto rare in pratica.",
+      "words": [
+        {
+          "text": "fughe",
+          "start": 77.35,
+          "end": 77.55
+        },
+        {
+          "text": "cross-tenant",
+          "start": 77.59,
+          "end": 78.17
+        },
+        {
+          "text": "restano",
+          "start": 78.39,
+          "end": 78.69
+        },
+        {
+          "text": "molto",
+          "start": 78.83,
+          "end": 79.13
+        },
+        {
+          "text": "rare",
+          "start": 79.21,
+          "end": 79.39
+        },
+        {
+          "text": "in",
+          "start": 79.43,
+          "end": 79.49
+        },
+        {
+          "text": "pratica.",
+          "start": 79.53,
+          "end": 79.91
+        }
+      ]
+    }
+  ]
+}

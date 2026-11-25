@@ -1,0 +1,1196 @@
+{
+  "duration": 87.05,
+  "segments": [
+    {
+      "start": 0.04,
+      "end": 6.901,
+      "text": "Come scegliere l'organizzazione del database tra multi-tenant, multi-instance su virtual machine o su container?",
+      "words": [
+        {
+          "text": "Come",
+          "start": 0.04,
+          "end": 0.22
+        },
+        {
+          "text": "scegliere",
+          "start": 0.34,
+          "end": 0.78
+        },
+        {
+          "text": "l'organizzazione",
+          "start": 0.86,
+          "end": 1.6
+        },
+        {
+          "text": "del",
+          "start": 1.62,
+          "end": 1.74
+        },
+        {
+          "text": "database",
+          "start": 1.78,
+          "end": 2.38
+        },
+        {
+          "text": "tra",
+          "start": 2.5,
+          "end": 2.62
+        },
+        {
+          "text": "multi-tenant,",
+          "start": 2.76,
+          "end": 3.48
+        },
+        {
+          "text": "multi-instance",
+          "start": 3.92,
+          "end": 4.881
+        },
+        {
+          "text": "su",
+          "start": 4.961,
+          "end": 5.041
+        },
+        {
+          "text": "virtual",
+          "start": 5.161,
+          "end": 5.481
+        },
+        {
+          "text": "machine",
+          "start": 5.501,
+          "end": 5.921
+        },
+        {
+          "text": "o",
+          "start": 6.181,
+          "end": 6.221
+        },
+        {
+          "text": "su",
+          "start": 6.281,
+          "end": 6.361
+        },
+        {
+          "text": "container?",
+          "start": 6.421,
+          "end": 6.901
+        }
+      ]
+    },
+    {
+      "start": 7.661,
+      "end": 8.861,
+      "text": "Decidono cinque fattori.",
+      "words": [
+        {
+          "text": "Decidono",
+          "start": 7.661,
+          "end": 8.041
+        },
+        {
+          "text": "cinque",
+          "start": 8.141,
+          "end": 8.441
+        },
+        {
+          "text": "fattori.",
+          "start": 8.481,
+          "end": 8.861
+        }
+      ]
+    },
+    {
+      "start": 9.581,
+      "end": 10.901,
+      "text": "Primo, i target customers:",
+      "words": [
+        {
+          "text": "Primo,",
+          "start": 9.581,
+          "end": 9.821
+        },
+        {
+          "text": "i",
+          "start": 10.041,
+          "end": 10.081
+        },
+        {
+          "text": "target",
+          "start": 10.101,
+          "end": 10.381
+        },
+        {
+          "text": "customers:",
+          "start": 10.421,
+          "end": 10.901
+        }
+      ]
+    },
+    {
+      "start": 11.501,
+      "end": 15.882,
+      "text": "consumatori e piccole imprese non chiedono personalizzazioni e usano un multi-tenant,",
+      "words": [
+        {
+          "text": "consumatori",
+          "start": 11.501,
+          "end": 12.101
+        },
+        {
+          "text": "e",
+          "start": 12.181,
+          "end": 12.221
+        },
+        {
+          "text": "piccole",
+          "start": 12.241,
+          "end": 12.521
+        },
+        {
+          "text": "imprese",
+          "start": 12.561,
+          "end": 12.881
+        },
+        {
+          "text": "non",
+          "start": 12.961,
+          "end": 13.082
+        },
+        {
+          "text": "chiedono",
+          "start": 13.122,
+          "end": 13.482
+        },
+        {
+          "text": "personalizzazioni",
+          "start": 13.522,
+          "end": 14.422
+        },
+        {
+          "text": "e",
+          "start": 14.542,
+          "end": 14.582
+        },
+        {
+          "text": "usano",
+          "start": 14.662,
+          "end": 14.962
+        },
+        {
+          "text": "un",
+          "start": 15.082,
+          "end": 15.182
+        },
+        {
+          "text": "multi-tenant,",
+          "start": 15.242,
+          "end": 15.882
+        }
+      ]
+    },
+    {
+      "start": 16.362,
+      "end": 20.522,
+      "text": "mentre le grandi aziende o chi teme per la sicurezza preferiscono il multi-instance.",
+      "words": [
+        {
+          "text": "mentre",
+          "start": 16.362,
+          "end": 16.642
+        },
+        {
+          "text": "le",
+          "start": 16.702,
+          "end": 16.762
+        },
+        {
+          "text": "grandi",
+          "start": 16.802,
+          "end": 17.042
+        },
+        {
+          "text": "aziende",
+          "start": 17.082,
+          "end": 17.602
+        },
+        {
+          "text": "o",
+          "start": 17.702,
+          "end": 17.742
+        },
+        {
+          "text": "chi",
+          "start": 17.862,
+          "end": 17.982
+        },
+        {
+          "text": "teme",
+          "start": 18.042,
+          "end": 18.282
+        },
+        {
+          "text": "per",
+          "start": 18.322,
+          "end": 18.442
+        },
+        {
+          "text": "la",
+          "start": 18.482,
+          "end": 18.542
+        },
+        {
+          "text": "sicurezza",
+          "start": 18.602,
+          "end": 19.062
+        },
+        {
+          "text": "preferiscono",
+          "start": 19.162,
+          "end": 19.662
+        },
+        {
+          "text": "il",
+          "start": 19.702,
+          "end": 19.762
+        },
+        {
+          "text": "multi-instance.",
+          "start": 19.802,
+          "end": 20.522
+        }
+      ]
+    },
+    {
+      "start": 21.402,
+      "end": 23.543,
+      "text": "Secondo, i requisiti transazionali ACID:",
+      "words": [
+        {
+          "text": "Secondo,",
+          "start": 21.402,
+          "end": 21.762
+        },
+        {
+          "text": "i",
+          "start": 21.963,
+          "end": 22.003
+        },
+        {
+          "text": "requisiti",
+          "start": 22.063,
+          "end": 22.483
+        },
+        {
+          "text": "transazionali",
+          "start": 22.523,
+          "end": 23.183
+        },
+        {
+          "text": "ACID:",
+          "start": 23.263,
+          "end": 23.543
+        }
+      ]
+    },
+    {
+      "start": 24.323,
+      "end": 26.623,
+      "text": "dove la coerenza è critica, per esempio in finanza,",
+      "words": [
+        {
+          "text": "dove",
+          "start": 24.323,
+          "end": 24.463
+        },
+        {
+          "text": "la",
+          "start": 24.503,
+          "end": 24.563
+        },
+        {
+          "text": "coerenza",
+          "start": 24.583,
+          "end": 25.003
+        },
+        {
+          "text": "è",
+          "start": 25.043,
+          "end": 25.083
+        },
+        {
+          "text": "critica,",
+          "start": 25.103,
+          "end": 25.523
+        },
+        {
+          "text": "per",
+          "start": 25.663,
+          "end": 25.743
+        },
+        {
+          "text": "esempio",
+          "start": 25.763,
+          "end": 26.023
+        },
+        {
+          "text": "in",
+          "start": 26.063,
+          "end": 26.123
+        },
+        {
+          "text": "finanza,",
+          "start": 26.163,
+          "end": 26.623
+        }
+      ]
+    },
+    {
+      "start": 27.023,
+      "end": 31.144,
+      "text": "serve un database multi-tenant oppure multi-instance su virtual machine.",
+      "words": [
+        {
+          "text": "serve",
+          "start": 27.023,
+          "end": 27.283
+        },
+        {
+          "text": "un",
+          "start": 27.323,
+          "end": 27.383
+        },
+        {
+          "text": "database",
+          "start": 27.423,
+          "end": 27.883
+        },
+        {
+          "text": "multi-tenant",
+          "start": 27.943,
+          "end": 28.543
+        },
+        {
+          "text": "oppure",
+          "start": 28.843,
+          "end": 29.203
+        },
+        {
+          "text": "multi-instance",
+          "start": 29.403,
+          "end": 30.223
+        },
+        {
+          "text": "su",
+          "start": 30.303,
+          "end": 30.383
+        },
+        {
+          "text": "virtual",
+          "start": 30.443,
+          "end": 30.724
+        },
+        {
+          "text": "machine.",
+          "start": 30.764,
+          "end": 31.144
+        }
+      ]
+    },
+    {
+      "start": 32.104,
+      "end": 34.624,
+      "text": "Terzo, dimensione e connettività del database:",
+      "words": [
+        {
+          "text": "Terzo,",
+          "start": 32.104,
+          "end": 32.484
+        },
+        {
+          "text": "dimensione",
+          "start": 32.684,
+          "end": 33.184
+        },
+        {
+          "text": "e",
+          "start": 33.224,
+          "end": 33.264
+        },
+        {
+          "text": "connettività",
+          "start": 33.324,
+          "end": 33.864
+        },
+        {
+          "text": "del",
+          "start": 33.944,
+          "end": 34.064
+        },
+        {
+          "text": "database:",
+          "start": 34.104,
+          "end": 34.624
+        }
+      ]
+    },
+    {
+      "start": 35.364,
+      "end": 38.824,
+      "text": "con molte relazioni tra le voci e grandi volumi conviene il multi-tenant,",
+      "words": [
+        {
+          "text": "con",
+          "start": 35.364,
+          "end": 35.444
+        },
+        {
+          "text": "molte",
+          "start": 35.484,
+          "end": 35.664
+        },
+        {
+          "text": "relazioni",
+          "start": 35.724,
+          "end": 36.144
+        },
+        {
+          "text": "tra",
+          "start": 36.244,
+          "end": 36.324
+        },
+        {
+          "text": "le",
+          "start": 36.384,
+          "end": 36.444
+        },
+        {
+          "text": "voci",
+          "start": 36.484,
+          "end": 36.784
+        },
+        {
+          "text": "e",
+          "start": 36.844,
+          "end": 36.884
+        },
+        {
+          "text": "grandi",
+          "start": 36.924,
+          "end": 37.184
+        },
+        {
+          "text": "volumi",
+          "start": 37.224,
+          "end": 37.524
+        },
+        {
+          "text": "conviene",
+          "start": 37.644,
+          "end": 38.024
+        },
+        {
+          "text": "il",
+          "start": 38.064,
+          "end": 38.124
+        },
+        {
+          "text": "multi-tenant,",
+          "start": 38.164,
+          "end": 38.824
+        }
+      ]
+    },
+    {
+      "start": 39.164,
+      "end": 41.525,
+      "text": "così da concentrare l'ottimizzazione delle prestazioni.",
+      "words": [
+        {
+          "text": "così",
+          "start": 39.164,
+          "end": 39.325
+        },
+        {
+          "text": "da",
+          "start": 39.365,
+          "end": 39.425
+        },
+        {
+          "text": "concentrare",
+          "start": 39.465,
+          "end": 39.985
+        },
+        {
+          "text": "l'ottimizzazione",
+          "start": 40.045,
+          "end": 40.765
+        },
+        {
+          "text": "delle",
+          "start": 40.785,
+          "end": 40.945
+        },
+        {
+          "text": "prestazioni.",
+          "start": 40.965,
+          "end": 41.525
+        }
+      ]
+    },
+    {
+      "start": 42.165,
+      "end": 44.845,
+      "text": "Quarto, l'interoperabilità del database:",
+      "words": [
+        {
+          "text": "Quarto,",
+          "start": 42.165,
+          "end": 42.565
+        },
+        {
+          "text": "l'interoperabilità",
+          "start": 43.065,
+          "end": 44.025
+        },
+        {
+          "text": "del",
+          "start": 44.125,
+          "end": 44.265
+        },
+        {
+          "text": "database:",
+          "start": 44.305,
+          "end": 44.845
+        }
+      ]
+    },
+    {
+      "start": 45.585,
+      "end": 49.106,
+      "text": "se i clienti importano dati da molti schemi diversi serve il multi-instance.",
+      "words": [
+        {
+          "text": "se",
+          "start": 45.585,
+          "end": 45.645
+        },
+        {
+          "text": "i",
+          "start": 45.705,
+          "end": 45.745
+        },
+        {
+          "text": "clienti",
+          "start": 45.745,
+          "end": 46.045
+        },
+        {
+          "text": "importano",
+          "start": 46.105,
+          "end": 46.505
+        },
+        {
+          "text": "dati",
+          "start": 46.545,
+          "end": 46.765
+        },
+        {
+          "text": "da",
+          "start": 46.805,
+          "end": 46.865
+        },
+        {
+          "text": "molti",
+          "start": 46.905,
+          "end": 47.085
+        },
+        {
+          "text": "schemi",
+          "start": 47.145,
+          "end": 47.365
+        },
+        {
+          "text": "diversi",
+          "start": 47.405,
+          "end": 47.825
+        },
+        {
+          "text": "serve",
+          "start": 47.966,
+          "end": 48.226
+        },
+        {
+          "text": "il",
+          "start": 48.266,
+          "end": 48.326
+        },
+        {
+          "text": "multi-instance.",
+          "start": 48.346,
+          "end": 49.106
+        }
+      ]
+    },
+    {
+      "start": 49.766,
+      "end": 51.646,
+      "text": "Quinto, la struttura del sistema:",
+      "words": [
+        {
+          "text": "Quinto,",
+          "start": 49.766,
+          "end": 50.166
+        },
+        {
+          "text": "la",
+          "start": 50.586,
+          "end": 50.646
+        },
+        {
+          "text": "struttura",
+          "start": 50.686,
+          "end": 51.026
+        },
+        {
+          "text": "del",
+          "start": 51.086,
+          "end": 51.206
+        },
+        {
+          "text": "sistema:",
+          "start": 51.246,
+          "end": 51.646
+        }
+      ]
+    },
+    {
+      "start": 52.286,
+      "end": 55.846,
+      "text": "se il database del cliente è distribuibile su più servizi e container,",
+      "words": [
+        {
+          "text": "se",
+          "start": 52.286,
+          "end": 52.346
+        },
+        {
+          "text": "il",
+          "start": 52.386,
+          "end": 52.446
+        },
+        {
+          "text": "database",
+          "start": 52.466,
+          "end": 52.926
+        },
+        {
+          "text": "del",
+          "start": 52.986,
+          "end": 53.086
+        },
+        {
+          "text": "cliente",
+          "start": 53.126,
+          "end": 53.566
+        },
+        {
+          "text": "è",
+          "start": 53.606,
+          "end": 53.646
+        },
+        {
+          "text": "distribuibile",
+          "start": 53.686,
+          "end": 54.366
+        },
+        {
+          "text": "su",
+          "start": 54.426,
+          "end": 54.486
+        },
+        {
+          "text": "più",
+          "start": 54.546,
+          "end": 54.626
+        },
+        {
+          "text": "servizi",
+          "start": 54.706,
+          "end": 55.126
+        },
+        {
+          "text": "e",
+          "start": 55.206,
+          "end": 55.246
+        },
+        {
+          "text": "container,",
+          "start": 55.306,
+          "end": 55.846
+        }
+      ]
+    },
+    {
+      "start": 56.226,
+      "end": 58.267,
+      "text": "vince il multi-instance containerizzato.",
+      "words": [
+        {
+          "text": "vince",
+          "start": 56.226,
+          "end": 56.526
+        },
+        {
+          "text": "il",
+          "start": 56.566,
+          "end": 56.627
+        },
+        {
+          "text": "multi-instance",
+          "start": 56.667,
+          "end": 57.447
+        },
+        {
+          "text": "containerizzato.",
+          "start": 57.467,
+          "end": 58.267
+        }
+      ]
+    },
+    {
+      "start": 59.167,
+      "end": 63.847,
+      "text": "Sulla piattaforma cloud, occorre valutare il compromesso tra costi diretti e costi indiretti,",
+      "words": [
+        {
+          "text": "Sulla",
+          "start": 59.167,
+          "end": 59.347
+        },
+        {
+          "text": "piattaforma",
+          "start": 59.367,
+          "end": 59.767
+        },
+        {
+          "text": "cloud,",
+          "start": 59.807,
+          "end": 60.147
+        },
+        {
+          "text": "occorre",
+          "start": 60.347,
+          "end": 60.647
+        },
+        {
+          "text": "valutare",
+          "start": 60.707,
+          "end": 61.047
+        },
+        {
+          "text": "il",
+          "start": 61.087,
+          "end": 61.147
+        },
+        {
+          "text": "compromesso",
+          "start": 61.187,
+          "end": 61.747
+        },
+        {
+          "text": "tra",
+          "start": 61.827,
+          "end": 61.927
+        },
+        {
+          "text": "costi",
+          "start": 62.007,
+          "end": 62.267
+        },
+        {
+          "text": "diretti",
+          "start": 62.327,
+          "end": 62.747
+        },
+        {
+          "text": "e",
+          "start": 62.887,
+          "end": 62.927
+        },
+        {
+          "text": "costi",
+          "start": 62.987,
+          "end": 63.247
+        },
+        {
+          "text": "indiretti,",
+          "start": 63.307,
+          "end": 63.847
+        }
+      ]
+    },
+    {
+      "start": 63.967,
+      "end": 68.408,
+      "text": "per esempio la gestione del cloud, e l'interoperabilità col software usato dal cliente.",
+      "words": [
+        {
+          "text": "per",
+          "start": 63.967,
+          "end": 64.067
+        },
+        {
+          "text": "esempio",
+          "start": 64.087,
+          "end": 64.387
+        },
+        {
+          "text": "la",
+          "start": 64.527,
+          "end": 64.607
+        },
+        {
+          "text": "gestione",
+          "start": 64.647,
+          "end": 64.947
+        },
+        {
+          "text": "del",
+          "start": 64.967,
+          "end": 65.067
+        },
+        {
+          "text": "cloud,",
+          "start": 65.107,
+          "end": 65.428
+        },
+        {
+          "text": "e",
+          "start": 65.948,
+          "end": 65.988
+        },
+        {
+          "text": "l'interoperabilità",
+          "start": 66.028,
+          "end": 66.868
+        },
+        {
+          "text": "col",
+          "start": 66.968,
+          "end": 67.128
+        },
+        {
+          "text": "software",
+          "start": 67.208,
+          "end": 67.588
+        },
+        {
+          "text": "usato",
+          "start": 67.608,
+          "end": 67.828
+        },
+        {
+          "text": "dal",
+          "start": 67.868,
+          "end": 67.968
+        },
+        {
+          "text": "cliente.",
+          "start": 68.008,
+          "end": 68.408
+        }
+      ]
+    },
+    {
+      "start": 69.128,
+      "end": 73.108,
+      "text": "Occorre inoltre valutare criticamente gli accordi SLA: la qualità del servizio,",
+      "words": [
+        {
+          "text": "Occorre",
+          "start": 69.128,
+          "end": 69.448
+        },
+        {
+          "text": "inoltre",
+          "start": 69.488,
+          "end": 69.788
+        },
+        {
+          "text": "valutare",
+          "start": 69.828,
+          "end": 70.168
+        },
+        {
+          "text": "criticamente",
+          "start": 70.228,
+          "end": 70.768
+        },
+        {
+          "text": "gli",
+          "start": 70.808,
+          "end": 70.888
+        },
+        {
+          "text": "accordi",
+          "start": 70.908,
+          "end": 71.228
+        },
+        {
+          "text": "SLA:",
+          "start": 71.288,
+          "end": 71.468
+        },
+        {
+          "text": "la",
+          "start": 71.988,
+          "end": 72.048
+        },
+        {
+          "text": "qualità",
+          "start": 72.108,
+          "end": 72.368
+        },
+        {
+          "text": "del",
+          "start": 72.408,
+          "end": 72.528
+        },
+        {
+          "text": "servizio,",
+          "start": 72.588,
+          "end": 73.108
+        }
+      ]
+    },
+    {
+      "start": 73.208,
+      "end": 74.929,
+      "text": "cioè la QoS, è davvero garantita?",
+      "words": [
+        {
+          "text": "cioè",
+          "start": 73.208,
+          "end": 73.328
+        },
+        {
+          "text": "la",
+          "start": 73.368,
+          "end": 73.428
+        },
+        {
+          "text": "QoS,",
+          "start": 73.468,
+          "end": 73.888
+        },
+        {
+          "text": "è",
+          "start": 74.169,
+          "end": 74.209
+        },
+        {
+          "text": "davvero",
+          "start": 74.249,
+          "end": 74.509
+        },
+        {
+          "text": "garantita?",
+          "start": 74.529,
+          "end": 74.929
+        }
+      ]
+    },
+    {
+      "start": 75.809,
+      "end": 80.429,
+      "text": "Infine, preparare un exit plan per la portabilità è una questione sia tecnica sia di",
+      "words": [
+        {
+          "text": "Infine,",
+          "start": 75.809,
+          "end": 76.189
+        },
+        {
+          "text": "preparare",
+          "start": 76.309,
+          "end": 76.709
+        },
+        {
+          "text": "un",
+          "start": 76.749,
+          "end": 76.829
+        },
+        {
+          "text": "exit",
+          "start": 76.889,
+          "end": 77.169
+        },
+        {
+          "text": "plan",
+          "start": 77.229,
+          "end": 77.469
+        },
+        {
+          "text": "per",
+          "start": 77.569,
+          "end": 77.669
+        },
+        {
+          "text": "la",
+          "start": 77.709,
+          "end": 77.769
+        },
+        {
+          "text": "portabilità",
+          "start": 77.809,
+          "end": 78.369
+        },
+        {
+          "text": "è",
+          "start": 78.569,
+          "end": 78.60900000000001
+        },
+        {
+          "text": "una",
+          "start": 78.669,
+          "end": 78.789
+        },
+        {
+          "text": "questione",
+          "start": 78.829,
+          "end": 79.189
+        },
+        {
+          "text": "sia",
+          "start": 79.309,
+          "end": 79.489
+        },
+        {
+          "text": "tecnica",
+          "start": 79.569,
+          "end": 80.029
+        },
+        {
+          "text": "sia",
+          "start": 80.189,
+          "end": 80.329
+        },
+        {
+          "text": "di",
+          "start": 80.349,
+          "end": 80.429
+        }
+      ]
+    },
+    {
+      "start": 80.469,
+      "end": 85.27,
+      "text": "business, e quando parti diverse si aggiornano o scalano in momenti diversi si sceglie una",
+      "words": [
+        {
+          "text": "business,",
+          "start": 80.469,
+          "end": 80.869
+        },
+        {
+          "text": "e",
+          "start": 81.529,
+          "end": 81.569
+        },
+        {
+          "text": "quando",
+          "start": 81.589,
+          "end": 81.789
+        },
+        {
+          "text": "parti",
+          "start": 81.869,
+          "end": 82.069
+        },
+        {
+          "text": "diverse",
+          "start": 82.109,
+          "end": 82.409
+        },
+        {
+          "text": "si",
+          "start": 82.469,
+          "end": 82.529
+        },
+        {
+          "text": "aggiornano",
+          "start": 82.569,
+          "end": 83.11
+        },
+        {
+          "text": "o",
+          "start": 83.19,
+          "end": 83.23
+        },
+        {
+          "text": "scalano",
+          "start": 83.29,
+          "end": 83.73
+        },
+        {
+          "text": "in",
+          "start": 83.77,
+          "end": 83.83
+        },
+        {
+          "text": "momenti",
+          "start": 83.85,
+          "end": 84.13
+        },
+        {
+          "text": "diversi",
+          "start": 84.17,
+          "end": 84.55
+        },
+        {
+          "text": "si",
+          "start": 84.67,
+          "end": 84.75
+        },
+        {
+          "text": "sceglie",
+          "start": 84.79,
+          "end": 85.07
+        },
+        {
+          "text": "una",
+          "start": 85.15,
+          "end": 85.27
+        }
+      ]
+    },
+    {
+      "start": 85.31,
+      "end": 86.93,
+      "text": "struttura modulare a microservizi.",
+      "words": [
+        {
+          "text": "struttura",
+          "start": 85.31,
+          "end": 85.71
+        },
+        {
+          "text": "modulare",
+          "start": 85.77,
+          "end": 86.19
+        },
+        {
+          "text": "a",
+          "start": 86.23,
+          "end": 86.27000000000001
+        },
+        {
+          "text": "microservizi.",
+          "start": 86.29,
+          "end": 86.93
+        }
+      ]
+    }
+  ]
+}

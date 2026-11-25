@@ -1,0 +1,1028 @@
+{
+  "duration": 70.098,
+  "segments": [
+    {
+      "start": 0.298,
+      "end": 3.079,
+      "text": "Chiudiamo esplorando un caso emblematico di cultura DevOps:",
+      "words": [
+        {
+          "text": "Chiudiamo",
+          "start": 0.298,
+          "end": 0.638
+        },
+        {
+          "text": "esplorando",
+          "start": 0.678,
+          "end": 1.178
+        },
+        {
+          "text": "un",
+          "start": 1.238,
+          "end": 1.298
+        },
+        {
+          "text": "caso",
+          "start": 1.378,
+          "end": 1.618
+        },
+        {
+          "text": "emblematico",
+          "start": 1.658,
+          "end": 2.198
+        },
+        {
+          "text": "di",
+          "start": 2.238,
+          "end": 2.298
+        },
+        {
+          "text": "cultura",
+          "start": 2.338,
+          "end": 2.679
+        },
+        {
+          "text": "DevOps:",
+          "start": 2.719,
+          "end": 3.079
+        }
+      ]
+    },
+    {
+      "start": 3.679,
+      "end": 5.039,
+      "text": "l'organizzazione di Spotify.",
+      "words": [
+        {
+          "text": "l'organizzazione",
+          "start": 3.679,
+          "end": 4.379
+        },
+        {
+          "text": "di",
+          "start": 4.419,
+          "end": 4.479
+        },
+        {
+          "text": "Spotify.",
+          "start": 4.539,
+          "end": 5.039
+        }
+      ]
+    },
+    {
+      "start": 5.699,
+      "end": 7.579,
+      "text": "Il lavoro ruota attorno a quattro strutture.",
+      "words": [
+        {
+          "text": "Il",
+          "start": 5.699,
+          "end": 5.759
+        },
+        {
+          "text": "lavoro",
+          "start": 5.799,
+          "end": 6.039
+        },
+        {
+          "text": "ruota",
+          "start": 6.179,
+          "end": 6.379
+        },
+        {
+          "text": "attorno",
+          "start": 6.399,
+          "end": 6.699
+        },
+        {
+          "text": "a",
+          "start": 6.739,
+          "end": 6.779
+        },
+        {
+          "text": "quattro",
+          "start": 6.819,
+          "end": 7.059
+        },
+        {
+          "text": "strutture.",
+          "start": 7.099,
+          "end": 7.579
+        }
+      ]
+    },
+    {
+      "start": 8.299,
+      "end": 12.22,
+      "text": "Una squad è un team agile autonomo con un Product Owner dedicato,",
+      "words": [
+        {
+          "text": "Una",
+          "start": 8.299,
+          "end": 8.439
+        },
+        {
+          "text": "squad",
+          "start": 8.499,
+          "end": 8.839
+        },
+        {
+          "text": "è",
+          "start": 9.199,
+          "end": 9.239
+        },
+        {
+          "text": "un",
+          "start": 9.299,
+          "end": 9.379
+        },
+        {
+          "text": "team",
+          "start": 9.419,
+          "end": 9.6
+        },
+        {
+          "text": "agile",
+          "start": 9.86,
+          "end": 10.18
+        },
+        {
+          "text": "autonomo",
+          "start": 10.34,
+          "end": 10.86
+        },
+        {
+          "text": "con",
+          "start": 10.94,
+          "end": 11.06
+        },
+        {
+          "text": "un",
+          "start": 11.08,
+          "end": 11.16
+        },
+        {
+          "text": "Product",
+          "start": 11.18,
+          "end": 11.52
+        },
+        {
+          "text": "Owner",
+          "start": 11.56,
+          "end": 11.74
+        },
+        {
+          "text": "dedicato,",
+          "start": 11.78,
+          "end": 12.22
+        }
+      ]
+    },
+    {
+      "start": 12.56,
+      "end": 15.9,
+      "text": "capace di progettare, collaudare e rilasciare in produzione.",
+      "words": [
+        {
+          "text": "capace",
+          "start": 12.56,
+          "end": 12.84
+        },
+        {
+          "text": "di",
+          "start": 12.88,
+          "end": 12.94
+        },
+        {
+          "text": "progettare,",
+          "start": 13.0,
+          "end": 13.6
+        },
+        {
+          "text": "collaudare",
+          "start": 13.8,
+          "end": 14.4
+        },
+        {
+          "text": "e",
+          "start": 14.74,
+          "end": 14.78
+        },
+        {
+          "text": "rilasciare",
+          "start": 14.84,
+          "end": 15.26
+        },
+        {
+          "text": "in",
+          "start": 15.3,
+          "end": 15.34
+        },
+        {
+          "text": "produzione.",
+          "start": 15.36,
+          "end": 15.9
+        }
+      ]
+    },
+    {
+      "start": 16.6,
+      "end": 19.941,
+      "text": "Più squad della stessa area di business, per esempio il mobile,",
+      "words": [
+        {
+          "text": "Più",
+          "start": 16.6,
+          "end": 16.7
+        },
+        {
+          "text": "squad",
+          "start": 16.761,
+          "end": 17.061
+        },
+        {
+          "text": "della",
+          "start": 17.241,
+          "end": 17.401
+        },
+        {
+          "text": "stessa",
+          "start": 17.441,
+          "end": 17.681
+        },
+        {
+          "text": "area",
+          "start": 17.761,
+          "end": 17.921
+        },
+        {
+          "text": "di",
+          "start": 17.961,
+          "end": 18.021
+        },
+        {
+          "text": "business,",
+          "start": 18.061,
+          "end": 18.521
+        },
+        {
+          "text": "per",
+          "start": 18.781,
+          "end": 18.881
+        },
+        {
+          "text": "esempio",
+          "start": 18.901,
+          "end": 19.181
+        },
+        {
+          "text": "il",
+          "start": 19.401,
+          "end": 19.481
+        },
+        {
+          "text": "mobile,",
+          "start": 19.521,
+          "end": 19.941
+        }
+      ]
+    },
+    {
+      "start": 20.341,
+      "end": 21.821,
+      "text": "lavorano vicine dentro una tribe.",
+      "words": [
+        {
+          "text": "lavorano",
+          "start": 20.341,
+          "end": 20.661
+        },
+        {
+          "text": "vicine",
+          "start": 20.721,
+          "end": 21.001
+        },
+        {
+          "text": "dentro",
+          "start": 21.041,
+          "end": 21.281
+        },
+        {
+          "text": "una",
+          "start": 21.341,
+          "end": 21.441
+        },
+        {
+          "text": "tribe.",
+          "start": 21.481,
+          "end": 21.821
+        }
+      ]
+    },
+    {
+      "start": 22.521,
+      "end": 27.602,
+      "text": "In senso trasversale, un chapter riunisce gli specialisti dello stesso ruolo tra le squad di",
+      "words": [
+        {
+          "text": "In",
+          "start": 22.521,
+          "end": 22.601
+        },
+        {
+          "text": "senso",
+          "start": 22.641,
+          "end": 22.901
+        },
+        {
+          "text": "trasversale,",
+          "start": 23.001,
+          "end": 23.701
+        },
+        {
+          "text": "un",
+          "start": 23.982,
+          "end": 24.082
+        },
+        {
+          "text": "chapter",
+          "start": 24.162,
+          "end": 24.562
+        },
+        {
+          "text": "riunisce",
+          "start": 24.702,
+          "end": 25.102
+        },
+        {
+          "text": "gli",
+          "start": 25.142,
+          "end": 25.262
+        },
+        {
+          "text": "specialisti",
+          "start": 25.302,
+          "end": 25.842
+        },
+        {
+          "text": "dello",
+          "start": 25.882,
+          "end": 26.082
+        },
+        {
+          "text": "stesso",
+          "start": 26.142,
+          "end": 26.442
+        },
+        {
+          "text": "ruolo",
+          "start": 26.502,
+          "end": 26.802
+        },
+        {
+          "text": "tra",
+          "start": 26.882,
+          "end": 26.982
+        },
+        {
+          "text": "le",
+          "start": 27.042,
+          "end": 27.122
+        },
+        {
+          "text": "squad",
+          "start": 27.162,
+          "end": 27.462
+        },
+        {
+          "text": "di",
+          "start": 27.542,
+          "end": 27.602
+        }
+      ]
+    },
+    {
+      "start": 27.622,
+      "end": 30.922,
+      "text": "una tribe per fare cross-pollination e gestire le code review,",
+      "words": [
+        {
+          "text": "una",
+          "start": 27.622,
+          "end": 27.722
+        },
+        {
+          "text": "tribe",
+          "start": 27.762,
+          "end": 28.122
+        },
+        {
+          "text": "per",
+          "start": 28.462,
+          "end": 28.562
+        },
+        {
+          "text": "fare",
+          "start": 28.602,
+          "end": 28.762
+        },
+        {
+          "text": "cross-pollination",
+          "start": 28.802,
+          "end": 29.642
+        },
+        {
+          "text": "e",
+          "start": 29.802,
+          "end": 29.842
+        },
+        {
+          "text": "gestire",
+          "start": 29.882,
+          "end": 30.242
+        },
+        {
+          "text": "le",
+          "start": 30.302,
+          "end": 30.362
+        },
+        {
+          "text": "code",
+          "start": 30.422,
+          "end": 30.622
+        },
+        {
+          "text": "review,",
+          "start": 30.662,
+          "end": 30.922
+        }
+      ]
+    },
+    {
+      "start": 31.283,
+      "end": 33.303,
+      "text": "dove servono due più uno per il merge.",
+      "words": [
+        {
+          "text": "dove",
+          "start": 31.283,
+          "end": 31.403
+        },
+        {
+          "text": "servono",
+          "start": 31.463,
+          "end": 31.763
+        },
+        {
+          "text": "due",
+          "start": 31.843,
+          "end": 32.043
+        },
+        {
+          "text": "più",
+          "start": 32.183,
+          "end": 32.323
+        },
+        {
+          "text": "uno",
+          "start": 32.423,
+          "end": 32.583
+        },
+        {
+          "text": "per",
+          "start": 32.723,
+          "end": 32.843
+        },
+        {
+          "text": "il",
+          "start": 32.883,
+          "end": 32.943
+        },
+        {
+          "text": "merge.",
+          "start": 32.983,
+          "end": 33.303
+        }
+      ]
+    },
+    {
+      "start": 33.943,
+      "end": 37.703,
+      "text": "Infine, una guild è una comunità d'interesse che attraversa l'intera azienda,",
+      "words": [
+        {
+          "text": "Infine,",
+          "start": 33.943,
+          "end": 34.243
+        },
+        {
+          "text": "una",
+          "start": 34.303,
+          "end": 34.403
+        },
+        {
+          "text": "guild",
+          "start": 34.463,
+          "end": 34.703
+        },
+        {
+          "text": "è",
+          "start": 34.923,
+          "end": 34.963
+        },
+        {
+          "text": "una",
+          "start": 35.003,
+          "end": 35.123
+        },
+        {
+          "text": "comunità",
+          "start": 35.183,
+          "end": 35.563
+        },
+        {
+          "text": "d'interesse",
+          "start": 35.623,
+          "end": 36.223
+        },
+        {
+          "text": "che",
+          "start": 36.303,
+          "end": 36.383
+        },
+        {
+          "text": "attraversa",
+          "start": 36.423,
+          "end": 36.903
+        },
+        {
+          "text": "l'intera",
+          "start": 36.943,
+          "end": 37.263
+        },
+        {
+          "text": "azienda,",
+          "start": 37.303,
+          "end": 37.703
+        }
+      ]
+    },
+    {
+      "start": 38.043,
+      "end": 39.164,
+      "text": "anche tra tribe diverse.",
+      "words": [
+        {
+          "text": "anche",
+          "start": 38.043,
+          "end": 38.244
+        },
+        {
+          "text": "tra",
+          "start": 38.304,
+          "end": 38.404
+        },
+        {
+          "text": "tribe",
+          "start": 38.464,
+          "end": 38.704
+        },
+        {
+          "text": "diverse.",
+          "start": 38.724,
+          "end": 39.164
+        }
+      ]
+    },
+    {
+      "start": 39.704,
+      "end": 45.385,
+      "text": "Questa struttura è sostenuta da una cultura precisa: squad debolmente accoppiate ma strettamente allineate,",
+      "words": [
+        {
+          "text": "Questa",
+          "start": 39.704,
+          "end": 39.944
+        },
+        {
+          "text": "struttura",
+          "start": 39.984,
+          "end": 40.444
+        },
+        {
+          "text": "è",
+          "start": 40.564,
+          "end": 40.604
+        },
+        {
+          "text": "sostenuta",
+          "start": 40.644,
+          "end": 41.104
+        },
+        {
+          "text": "da",
+          "start": 41.144,
+          "end": 41.204
+        },
+        {
+          "text": "una",
+          "start": 41.244,
+          "end": 41.364
+        },
+        {
+          "text": "cultura",
+          "start": 41.424,
+          "end": 41.744
+        },
+        {
+          "text": "precisa:",
+          "start": 41.784,
+          "end": 42.244
+        },
+        {
+          "text": "squad",
+          "start": 42.684,
+          "end": 43.024
+        },
+        {
+          "text": "debolmente",
+          "start": 43.144,
+          "end": 43.644
+        },
+        {
+          "text": "accoppiate",
+          "start": 43.684,
+          "end": 44.204
+        },
+        {
+          "text": "ma",
+          "start": 44.264,
+          "end": 44.304
+        },
+        {
+          "text": "strettamente",
+          "start": 44.384,
+          "end": 44.884
+        },
+        {
+          "text": "allineate,",
+          "start": 44.924,
+          "end": 45.385
+        }
+      ]
+    },
+    {
+      "start": 45.805,
+      "end": 48.005,
+      "text": "open source interno e fiducia nelle persone.",
+      "words": [
+        {
+          "text": "open",
+          "start": 45.805,
+          "end": 46.025
+        },
+        {
+          "text": "source",
+          "start": 46.065,
+          "end": 46.325
+        },
+        {
+          "text": "interno",
+          "start": 46.385,
+          "end": 46.785
+        },
+        {
+          "text": "e",
+          "start": 46.945,
+          "end": 46.985
+        },
+        {
+          "text": "fiducia",
+          "start": 47.045,
+          "end": 47.385
+        },
+        {
+          "text": "nelle",
+          "start": 47.425,
+          "end": 47.585
+        },
+        {
+          "text": "persone.",
+          "start": 47.605,
+          "end": 48.005
+        }
+      ]
+    },
+    {
+      "start": 48.725,
+      "end": 52.766,
+      "text": "Spotify abbraccia il motto fail fast, learn fast, improve fast:",
+      "words": [
+        {
+          "text": "Spotify",
+          "start": 48.725,
+          "end": 49.205
+        },
+        {
+          "text": "abbraccia",
+          "start": 49.325,
+          "end": 49.705
+        },
+        {
+          "text": "il",
+          "start": 49.745,
+          "end": 49.785
+        },
+        {
+          "text": "motto",
+          "start": 49.825,
+          "end": 50.085
+        },
+        {
+          "text": "fail",
+          "start": 50.265,
+          "end": 50.505
+        },
+        {
+          "text": "fast,",
+          "start": 50.585,
+          "end": 50.885
+        },
+        {
+          "text": "learn",
+          "start": 51.145,
+          "end": 51.345
+        },
+        {
+          "text": "fast,",
+          "start": 51.445,
+          "end": 51.745
+        },
+        {
+          "text": "improve",
+          "start": 51.985,
+          "end": 52.426
+        },
+        {
+          "text": "fast:",
+          "start": 52.486,
+          "end": 52.766
+        }
+      ]
+    },
+    {
+      "start": 53.426,
+      "end": 58.406,
+      "text": "usa fail wall, post-mortem e un'architettura che limita il blast radius dei guasti.",
+      "words": [
+        {
+          "text": "usa",
+          "start": 53.426,
+          "end": 53.606
+        },
+        {
+          "text": "fail",
+          "start": 53.866,
+          "end": 54.126
+        },
+        {
+          "text": "wall,",
+          "start": 54.186,
+          "end": 54.446
+        },
+        {
+          "text": "post-mortem",
+          "start": 54.706,
+          "end": 55.366
+        },
+        {
+          "text": "e",
+          "start": 55.706,
+          "end": 55.746
+        },
+        {
+          "text": "un'architettura",
+          "start": 55.786,
+          "end": 56.446
+        },
+        {
+          "text": "che",
+          "start": 56.506,
+          "end": 56.606
+        },
+        {
+          "text": "limita",
+          "start": 56.666,
+          "end": 56.966
+        },
+        {
+          "text": "il",
+          "start": 57.006,
+          "end": 57.086
+        },
+        {
+          "text": "blast",
+          "start": 57.146,
+          "end": 57.386
+        },
+        {
+          "text": "radius",
+          "start": 57.486,
+          "end": 57.846
+        },
+        {
+          "text": "dei",
+          "start": 57.886,
+          "end": 58.006
+        },
+        {
+          "text": "guasti.",
+          "start": 58.046,
+          "end": 58.406
+        }
+      ]
+    },
+    {
+      "start": 59.086,
+      "end": 62.827,
+      "text": "Lavora in stile lean startup privilegiando l'impatto sulla velocity,",
+      "words": [
+        {
+          "text": "Lavora",
+          "start": 59.086,
+          "end": 59.346
+        },
+        {
+          "text": "in",
+          "start": 59.486,
+          "end": 59.587
+        },
+        {
+          "text": "stile",
+          "start": 59.627,
+          "end": 59.887
+        },
+        {
+          "text": "lean",
+          "start": 60.047,
+          "end": 60.227
+        },
+        {
+          "text": "startup",
+          "start": 60.307,
+          "end": 60.787
+        },
+        {
+          "text": "privilegiando",
+          "start": 61.167,
+          "end": 61.707
+        },
+        {
+          "text": "l'impatto",
+          "start": 61.727,
+          "end": 62.167
+        },
+        {
+          "text": "sulla",
+          "start": 62.227,
+          "end": 62.407
+        },
+        {
+          "text": "velocity,",
+          "start": 62.427,
+          "end": 62.827
+        }
+      ]
+    },
+    {
+      "start": 63.167,
+      "end": 65.907,
+      "text": "concede il dieci per cento di hack time per sperimentare,",
+      "words": [
+        {
+          "text": "concede",
+          "start": 63.167,
+          "end": 63.507
+        },
+        {
+          "text": "il",
+          "start": 63.547,
+          "end": 63.607
+        },
+        {
+          "text": "dieci",
+          "start": 63.647,
+          "end": 63.867
+        },
+        {
+          "text": "per",
+          "start": 63.927,
+          "end": 64.027
+        },
+        {
+          "text": "cento",
+          "start": 64.067,
+          "end": 64.347
+        },
+        {
+          "text": "di",
+          "start": 64.387,
+          "end": 64.447
+        },
+        {
+          "text": "hack",
+          "start": 64.507,
+          "end": 64.687
+        },
+        {
+          "text": "time",
+          "start": 64.767,
+          "end": 65.067
+        },
+        {
+          "text": "per",
+          "start": 65.147,
+          "end": 65.227
+        },
+        {
+          "text": "sperimentare,",
+          "start": 65.287,
+          "end": 65.907
+        }
+      ]
+    },
+    {
+      "start": 66.267,
+      "end": 69.848,
+      "text": "combatte gli sprechi e forma la cultura con agile coach e boot camp.",
+      "words": [
+        {
+          "text": "combatte",
+          "start": 66.267,
+          "end": 66.607
+        },
+        {
+          "text": "gli",
+          "start": 66.648,
+          "end": 66.768
+        },
+        {
+          "text": "sprechi",
+          "start": 66.808,
+          "end": 67.168
+        },
+        {
+          "text": "e",
+          "start": 67.428,
+          "end": 67.468
+        },
+        {
+          "text": "forma",
+          "start": 67.548,
+          "end": 67.788
+        },
+        {
+          "text": "la",
+          "start": 67.828,
+          "end": 67.888
+        },
+        {
+          "text": "cultura",
+          "start": 67.928,
+          "end": 68.248
+        },
+        {
+          "text": "con",
+          "start": 68.308,
+          "end": 68.428
+        },
+        {
+          "text": "agile",
+          "start": 68.548,
+          "end": 68.808
+        },
+        {
+          "text": "coach",
+          "start": 68.848,
+          "end": 69.128
+        },
+        {
+          "text": "e",
+          "start": 69.288,
+          "end": 69.328
+        },
+        {
+          "text": "boot",
+          "start": 69.408,
+          "end": 69.548
+        },
+        {
+          "text": "camp.",
+          "start": 69.608,
+          "end": 69.848
+        }
+      ]
+    }
+  ]
+}

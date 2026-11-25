@@ -1,0 +1,956 @@
+{
+  "duration": 69.39,
+  "segments": [
+    {
+      "start": 0.02,
+      "end": 3.041,
+      "text": "Chiudiamo il terzo capitolo ripassando i sette punti chiave.",
+      "words": [
+        {
+          "text": "Chiudiamo",
+          "start": 0.02,
+          "end": 0.4
+        },
+        {
+          "text": "il",
+          "start": 0.46,
+          "end": 0.52
+        },
+        {
+          "text": "terzo",
+          "start": 0.6,
+          "end": 0.88
+        },
+        {
+          "text": "capitolo",
+          "start": 0.92,
+          "end": 1.34
+        },
+        {
+          "text": "ripassando",
+          "start": 1.52,
+          "end": 2.021
+        },
+        {
+          "text": "i",
+          "start": 2.081,
+          "end": 2.121
+        },
+        {
+          "text": "sette",
+          "start": 2.181,
+          "end": 2.421
+        },
+        {
+          "text": "punti",
+          "start": 2.461,
+          "end": 2.701
+        },
+        {
+          "text": "chiave.",
+          "start": 2.761,
+          "end": 3.041
+        }
+      ]
+    },
+    {
+      "start": 3.721,
+      "end": 8.903,
+      "text": "Primo: un prodotto richiede meno documentazione dei requisiti e si fonda sulle feature,",
+      "words": [
+        {
+          "text": "Primo:",
+          "start": 3.721,
+          "end": 3.961
+        },
+        {
+          "text": "un",
+          "start": 4.761,
+          "end": 4.841
+        },
+        {
+          "text": "prodotto",
+          "start": 4.881,
+          "end": 5.282
+        },
+        {
+          "text": "richiede",
+          "start": 5.422,
+          "end": 5.742
+        },
+        {
+          "text": "meno",
+          "start": 5.862,
+          "end": 6.082
+        },
+        {
+          "text": "documentazione",
+          "start": 6.122,
+          "end": 6.822
+        },
+        {
+          "text": "dei",
+          "start": 6.862,
+          "end": 6.982
+        },
+        {
+          "text": "requisiti",
+          "start": 7.042,
+          "end": 7.562
+        },
+        {
+          "text": "e",
+          "start": 7.722,
+          "end": 7.7620000000000005
+        },
+        {
+          "text": "si",
+          "start": 7.822,
+          "end": 7.902
+        },
+        {
+          "text": "fonda",
+          "start": 7.942,
+          "end": 8.182
+        },
+        {
+          "text": "sulle",
+          "start": 8.242,
+          "end": 8.482
+        },
+        {
+          "text": "feature,",
+          "start": 8.522,
+          "end": 8.903
+        }
+      ]
+    },
+    {
+      "start": 9.063,
+      "end": 10.283,
+      "text": "frammenti di funzionalità.",
+      "words": [
+        {
+          "text": "frammenti",
+          "start": 9.063,
+          "end": 9.563
+        },
+        {
+          "text": "di",
+          "start": 9.603,
+          "end": 9.683
+        },
+        {
+          "text": "funzionalità.",
+          "start": 9.723,
+          "end": 10.283
+        }
+      ]
+    },
+    {
+      "start": 11.103,
+      "end": 15.384,
+      "text": "Secondo: la catena di scoperta parte dalle personas, passa agli scenari,",
+      "words": [
+        {
+          "text": "Secondo:",
+          "start": 11.103,
+          "end": 11.483
+        },
+        {
+          "text": "la",
+          "start": 11.843,
+          "end": 11.923
+        },
+        {
+          "text": "catena",
+          "start": 11.963,
+          "end": 12.224
+        },
+        {
+          "text": "di",
+          "start": 12.264,
+          "end": 12.324
+        },
+        {
+          "text": "scoperta",
+          "start": 12.364,
+          "end": 12.804
+        },
+        {
+          "text": "parte",
+          "start": 12.964,
+          "end": 13.224
+        },
+        {
+          "text": "dalle",
+          "start": 13.264,
+          "end": 13.484
+        },
+        {
+          "text": "personas,",
+          "start": 13.524,
+          "end": 14.104
+        },
+        {
+          "text": "passa",
+          "start": 14.404,
+          "end": 14.664
+        },
+        {
+          "text": "agli",
+          "start": 14.724,
+          "end": 14.904
+        },
+        {
+          "text": "scenari,",
+          "start": 14.924,
+          "end": 15.384
+        }
+      ]
+    },
+    {
+      "start": 15.745,
+      "end": 20.406,
+      "text": "poi alle user stories e infine alle feature, con possibilità di saltare gli scenari.",
+      "words": [
+        {
+          "text": "poi",
+          "start": 15.745,
+          "end": 15.925
+        },
+        {
+          "text": "alle",
+          "start": 16.065,
+          "end": 16.225
+        },
+        {
+          "text": "user",
+          "start": 16.365,
+          "end": 16.565
+        },
+        {
+          "text": "stories",
+          "start": 16.645,
+          "end": 17.045
+        },
+        {
+          "text": "e",
+          "start": 17.225,
+          "end": 17.265
+        },
+        {
+          "text": "infine",
+          "start": 17.325,
+          "end": 17.665
+        },
+        {
+          "text": "alle",
+          "start": 17.725,
+          "end": 17.885
+        },
+        {
+          "text": "feature,",
+          "start": 17.945,
+          "end": 18.305
+        },
+        {
+          "text": "con",
+          "start": 18.585,
+          "end": 18.745
+        },
+        {
+          "text": "possibilità",
+          "start": 18.785,
+          "end": 19.306
+        },
+        {
+          "text": "di",
+          "start": 19.386,
+          "end": 19.446
+        },
+        {
+          "text": "saltare",
+          "start": 19.526,
+          "end": 19.886
+        },
+        {
+          "text": "gli",
+          "start": 19.906,
+          "end": 20.006
+        },
+        {
+          "text": "scenari.",
+          "start": 20.046,
+          "end": 20.406
+        }
+      ]
+    },
+    {
+      "start": 21.046,
+      "end": 24.367,
+      "text": "Terzo: una persona è un tipo immaginato di utente;",
+      "words": [
+        {
+          "text": "Terzo:",
+          "start": 21.046,
+          "end": 21.366
+        },
+        {
+          "text": "una",
+          "start": 22.006,
+          "end": 22.146
+        },
+        {
+          "text": "persona",
+          "start": 22.226,
+          "end": 22.687
+        },
+        {
+          "text": "è",
+          "start": 22.887,
+          "end": 22.927
+        },
+        {
+          "text": "un",
+          "start": 22.987,
+          "end": 23.087
+        },
+        {
+          "text": "tipo",
+          "start": 23.127,
+          "end": 23.327
+        },
+        {
+          "text": "immaginato",
+          "start": 23.387,
+          "end": 23.847
+        },
+        {
+          "text": "di",
+          "start": 23.887,
+          "end": 23.927
+        },
+        {
+          "text": "utente;",
+          "start": 23.987,
+          "end": 24.367
+        }
+      ]
+    },
+    {
+      "start": 24.747,
+      "end": 28.628,
+      "text": "ne servono una o due, al massimo cinque, con personalization,",
+      "words": [
+        {
+          "text": "ne",
+          "start": 24.747,
+          "end": 24.807
+        },
+        {
+          "text": "servono",
+          "start": 24.867,
+          "end": 25.187
+        },
+        {
+          "text": "una",
+          "start": 25.407,
+          "end": 25.567
+        },
+        {
+          "text": "o",
+          "start": 25.607,
+          "end": 25.647
+        },
+        {
+          "text": "due,",
+          "start": 25.727,
+          "end": 25.927
+        },
+        {
+          "text": "al",
+          "start": 26.188,
+          "end": 26.288
+        },
+        {
+          "text": "massimo",
+          "start": 26.368,
+          "end": 26.768
+        },
+        {
+          "text": "cinque,",
+          "start": 26.828,
+          "end": 27.168
+        },
+        {
+          "text": "con",
+          "start": 27.508,
+          "end": 27.668
+        },
+        {
+          "text": "personalization,",
+          "start": 27.808,
+          "end": 28.628
+        }
+      ]
+    },
+    {
+      "start": 28.908,
+      "end": 31.109,
+      "text": "job-related, education e relevance.",
+      "words": [
+        {
+          "text": "job-related,",
+          "start": 28.908,
+          "end": 29.589
+        },
+        {
+          "text": "education",
+          "start": 29.909,
+          "end": 30.429
+        },
+        {
+          "text": "e",
+          "start": 30.489,
+          "end": 30.529
+        },
+        {
+          "text": "relevance.",
+          "start": 30.609,
+          "end": 31.109
+        }
+      ]
+    },
+    {
+      "start": 31.849,
+      "end": 35.01,
+      "text": "Quarto: uno scenario è una narrazione di alto livello,",
+      "words": [
+        {
+          "text": "Quarto:",
+          "start": 31.849,
+          "end": 32.149
+        },
+        {
+          "text": "uno",
+          "start": 32.429,
+          "end": 32.569
+        },
+        {
+          "text": "scenario",
+          "start": 32.609,
+          "end": 33.07
+        },
+        {
+          "text": "è",
+          "start": 33.25,
+          "end": 33.29
+        },
+        {
+          "text": "una",
+          "start": 33.35,
+          "end": 33.49
+        },
+        {
+          "text": "narrazione",
+          "start": 33.55,
+          "end": 34.17
+        },
+        {
+          "text": "di",
+          "start": 34.23,
+          "end": 34.27
+        },
+        {
+          "text": "alto",
+          "start": 34.35,
+          "end": 34.55
+        },
+        {
+          "text": "livello,",
+          "start": 34.59,
+          "end": 35.01
+        }
+      ]
+    },
+    {
+      "start": 35.27,
+      "end": 39.591,
+      "text": "non una specifica, scritta in tre o quattro esempi per persona dal punto di vista",
+      "words": [
+        {
+          "text": "non",
+          "start": 35.27,
+          "end": 35.47
+        },
+        {
+          "text": "una",
+          "start": 35.53,
+          "end": 35.65
+        },
+        {
+          "text": "specifica,",
+          "start": 35.71,
+          "end": 36.25
+        },
+        {
+          "text": "scritta",
+          "start": 36.611,
+          "end": 36.931
+        },
+        {
+          "text": "in",
+          "start": 36.991,
+          "end": 37.051
+        },
+        {
+          "text": "tre",
+          "start": 37.091,
+          "end": 37.231
+        },
+        {
+          "text": "o",
+          "start": 37.311,
+          "end": 37.351
+        },
+        {
+          "text": "quattro",
+          "start": 37.391,
+          "end": 37.631
+        },
+        {
+          "text": "esempi",
+          "start": 37.671,
+          "end": 37.991
+        },
+        {
+          "text": "per",
+          "start": 38.031,
+          "end": 38.151
+        },
+        {
+          "text": "persona",
+          "start": 38.191,
+          "end": 38.631
+        },
+        {
+          "text": "dal",
+          "start": 38.791,
+          "end": 38.931
+        },
+        {
+          "text": "punto",
+          "start": 38.991,
+          "end": 39.231
+        },
+        {
+          "text": "di",
+          "start": 39.271,
+          "end": 39.331
+        },
+        {
+          "text": "vista",
+          "start": 39.371,
+          "end": 39.591
+        }
+      ]
+    },
+    {
+      "start": 39.651,
+      "end": 40.052,
+      "text": "utente.",
+      "words": [
+        {
+          "text": "utente.",
+          "start": 39.651,
+          "end": 40.052
+        }
+      ]
+    },
+    {
+      "start": 40.892,
+      "end": 44.193,
+      "text": "Quinto: la user story segue il modello As a ruolo,",
+      "words": [
+        {
+          "text": "Quinto:",
+          "start": 40.892,
+          "end": 41.212
+        },
+        {
+          "text": "la",
+          "start": 41.652,
+          "end": 41.732
+        },
+        {
+          "text": "user",
+          "start": 41.892,
+          "end": 42.092
+        },
+        {
+          "text": "story",
+          "start": 42.152,
+          "end": 42.452
+        },
+        {
+          "text": "segue",
+          "start": 42.672,
+          "end": 42.872
+        },
+        {
+          "text": "il",
+          "start": 42.892,
+          "end": 42.952
+        },
+        {
+          "text": "modello",
+          "start": 42.972,
+          "end": 43.252
+        },
+        {
+          "text": "As",
+          "start": 43.573,
+          "end": 43.713
+        },
+        {
+          "text": "a",
+          "start": 43.773,
+          "end": 43.813
+        },
+        {
+          "text": "ruolo,",
+          "start": 43.833,
+          "end": 44.193
+        }
+      ]
+    },
+    {
+      "start": 44.573,
+      "end": 49.254,
+      "text": "I want to azione, So that motivo; dura uno o due giorni e le epics",
+      "words": [
+        {
+          "text": "I",
+          "start": 44.573,
+          "end": 44.613
+        },
+        {
+          "text": "want",
+          "start": 44.693,
+          "end": 44.893
+        },
+        {
+          "text": "to",
+          "start": 44.953,
+          "end": 45.053
+        },
+        {
+          "text": "azione,",
+          "start": 45.273,
+          "end": 45.773
+        },
+        {
+          "text": "So",
+          "start": 46.053,
+          "end": 46.153
+        },
+        {
+          "text": "that",
+          "start": 46.233,
+          "end": 46.393
+        },
+        {
+          "text": "motivo;",
+          "start": 46.493,
+          "end": 46.873
+        },
+        {
+          "text": "dura",
+          "start": 47.394,
+          "end": 47.574
+        },
+        {
+          "text": "uno",
+          "start": 47.754,
+          "end": 47.914
+        },
+        {
+          "text": "o",
+          "start": 47.954,
+          "end": 47.994
+        },
+        {
+          "text": "due",
+          "start": 48.014,
+          "end": 48.154
+        },
+        {
+          "text": "giorni",
+          "start": 48.174,
+          "end": 48.494
+        },
+        {
+          "text": "e",
+          "start": 48.734,
+          "end": 48.774
+        },
+        {
+          "text": "le",
+          "start": 48.814,
+          "end": 48.894
+        },
+        {
+          "text": "epics",
+          "start": 48.974,
+          "end": 49.254
+        }
+      ]
+    },
+    {
+      "start": 49.374,
+      "end": 50.134,
+      "text": "vanno spezzate.",
+      "words": [
+        {
+          "text": "vanno",
+          "start": 49.374,
+          "end": 49.574
+        },
+        {
+          "text": "spezzate.",
+          "start": 49.634,
+          "end": 50.134
+        }
+      ]
+    },
+    {
+      "start": 50.955,
+      "end": 55.516,
+      "text": "Sesto: una buona feature deve essere independent, coherent e relevant.",
+      "words": [
+        {
+          "text": "Sesto:",
+          "start": 50.955,
+          "end": 51.275
+        },
+        {
+          "text": "una",
+          "start": 51.615,
+          "end": 51.755
+        },
+        {
+          "text": "buona",
+          "start": 51.855,
+          "end": 52.055
+        },
+        {
+          "text": "feature",
+          "start": 52.115,
+          "end": 52.435
+        },
+        {
+          "text": "deve",
+          "start": 52.475,
+          "end": 52.615
+        },
+        {
+          "text": "essere",
+          "start": 52.655,
+          "end": 52.915
+        },
+        {
+          "text": "independent,",
+          "start": 53.055,
+          "end": 53.695
+        },
+        {
+          "text": "coherent",
+          "start": 53.936,
+          "end": 54.476
+        },
+        {
+          "text": "e",
+          "start": 54.776,
+          "end": 54.816
+        },
+        {
+          "text": "relevant.",
+          "start": 55.056,
+          "end": 55.516
+        }
+      ]
+    },
+    {
+      "start": 56.276,
+      "end": 59.997,
+      "text": "Settimo: il feature creep si previene con quattro domande su novità,",
+      "words": [
+        {
+          "text": "Settimo:",
+          "start": 56.276,
+          "end": 56.656
+        },
+        {
+          "text": "il",
+          "start": 57.156,
+          "end": 57.256
+        },
+        {
+          "text": "feature",
+          "start": 57.337,
+          "end": 57.637
+        },
+        {
+          "text": "creep",
+          "start": 57.677,
+          "end": 57.897
+        },
+        {
+          "text": "si",
+          "start": 58.037,
+          "end": 58.097
+        },
+        {
+          "text": "previene",
+          "start": 58.137,
+          "end": 58.477
+        },
+        {
+          "text": "con",
+          "start": 58.517,
+          "end": 58.657
+        },
+        {
+          "text": "quattro",
+          "start": 58.737,
+          "end": 59.037
+        },
+        {
+          "text": "domande",
+          "start": 59.077,
+          "end": 59.417
+        },
+        {
+          "text": "su",
+          "start": 59.477,
+          "end": 59.537
+        },
+        {
+          "text": "novità,",
+          "start": 59.697,
+          "end": 59.997
+        }
+      ]
+    },
+    {
+      "start": 60.417,
+      "end": 63.258,
+      "text": "importanza, estendibilità e generalità.",
+      "words": [
+        {
+          "text": "importanza,",
+          "start": 60.417,
+          "end": 61.118
+        },
+        {
+          "text": "estendibilità",
+          "start": 61.458,
+          "end": 62.258
+        },
+        {
+          "text": "e",
+          "start": 62.558,
+          "end": 62.598
+        },
+        {
+          "text": "generalità.",
+          "start": 62.718,
+          "end": 63.258
+        }
+      ]
+    },
+    {
+      "start": 64.138,
+      "end": 69.14,
+      "text": "Prima di passare al capitolo quattro sull'architettura, rispondete alle sette domande di verifica sulla destra.",
+      "words": [
+        {
+          "text": "Prima",
+          "start": 64.138,
+          "end": 64.339
+        },
+        {
+          "text": "di",
+          "start": 64.379,
+          "end": 64.439
+        },
+        {
+          "text": "passare",
+          "start": 64.479,
+          "end": 64.739
+        },
+        {
+          "text": "al",
+          "start": 64.759,
+          "end": 64.839
+        },
+        {
+          "text": "capitolo",
+          "start": 64.859,
+          "end": 65.179
+        },
+        {
+          "text": "quattro",
+          "start": 65.219,
+          "end": 65.519
+        },
+        {
+          "text": "sull'architettura,",
+          "start": 65.599,
+          "end": 66.359
+        },
+        {
+          "text": "rispondete",
+          "start": 66.679,
+          "end": 67.119
+        },
+        {
+          "text": "alle",
+          "start": 67.159,
+          "end": 67.319
+        },
+        {
+          "text": "sette",
+          "start": 67.399,
+          "end": 67.639
+        },
+        {
+          "text": "domande",
+          "start": 67.679,
+          "end": 67.96
+        },
+        {
+          "text": "di",
+          "start": 68.0,
+          "end": 68.04
+        },
+        {
+          "text": "verifica",
+          "start": 68.08,
+          "end": 68.48
+        },
+        {
+          "text": "sulla",
+          "start": 68.62,
+          "end": 68.8
+        },
+        {
+          "text": "destra.",
+          "start": 68.84,
+          "end": 69.14
+        }
+      ]
+    }
+  ]
+}

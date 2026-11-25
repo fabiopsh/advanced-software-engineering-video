@@ -1,0 +1,1012 @@
+{
+  "duration": 73.94,
+  "segments": [
+    {
+      "start": 0.02,
+      "end": 5.741,
+      "text": "Chiudiamo questo quindicesimo e ultimo capitolo fissando i sei punti essenziali da ricordare per l'esame.",
+      "words": [
+        {
+          "text": "Chiudiamo",
+          "start": 0.02,
+          "end": 0.42
+        },
+        {
+          "text": "questo",
+          "start": 0.48,
+          "end": 0.76
+        },
+        {
+          "text": "quindicesimo",
+          "start": 0.84,
+          "end": 1.64
+        },
+        {
+          "text": "e",
+          "start": 1.76,
+          "end": 1.8
+        },
+        {
+          "text": "ultimo",
+          "start": 1.86,
+          "end": 2.18
+        },
+        {
+          "text": "capitolo",
+          "start": 2.24,
+          "end": 2.64
+        },
+        {
+          "text": "fissando",
+          "start": 2.7,
+          "end": 3.14
+        },
+        {
+          "text": "i",
+          "start": 3.2,
+          "end": 3.24
+        },
+        {
+          "text": "sei",
+          "start": 3.34,
+          "end": 3.54
+        },
+        {
+          "text": "punti",
+          "start": 3.62,
+          "end": 3.941
+        },
+        {
+          "text": "essenziali",
+          "start": 4.001,
+          "end": 4.621
+        },
+        {
+          "text": "da",
+          "start": 4.661,
+          "end": 4.721
+        },
+        {
+          "text": "ricordare",
+          "start": 4.761,
+          "end": 5.201
+        },
+        {
+          "text": "per",
+          "start": 5.221,
+          "end": 5.321
+        },
+        {
+          "text": "l'esame.",
+          "start": 5.381,
+          "end": 5.741
+        }
+      ]
+    },
+    {
+      "start": 6.461,
+      "end": 11.102,
+      "text": "Primo: i computer quantistici risolvono alcuni problemi esponenzialmente più in fretta,",
+      "words": [
+        {
+          "text": "Primo:",
+          "start": 6.461,
+          "end": 6.701
+        },
+        {
+          "text": "i",
+          "start": 7.121,
+          "end": 7.1610000000000005
+        },
+        {
+          "text": "computer",
+          "start": 7.201,
+          "end": 7.641
+        },
+        {
+          "text": "quantistici",
+          "start": 7.681,
+          "end": 8.301
+        },
+        {
+          "text": "risolvono",
+          "start": 8.441,
+          "end": 8.861
+        },
+        {
+          "text": "alcuni",
+          "start": 8.901,
+          "end": 9.181
+        },
+        {
+          "text": "problemi",
+          "start": 9.221,
+          "end": 9.561
+        },
+        {
+          "text": "esponenzialmente",
+          "start": 9.661,
+          "end": 10.441
+        },
+        {
+          "text": "più",
+          "start": 10.461,
+          "end": 10.541
+        },
+        {
+          "text": "in",
+          "start": 10.601,
+          "end": 10.641
+        },
+        {
+          "text": "fretta,",
+          "start": 10.701,
+          "end": 11.102
+        }
+      ]
+    },
+    {
+      "start": 11.182,
+      "end": 15.362,
+      "text": "nella classe B Q P, come la fattorizzazione di Shor e la ricerca di Grover.",
+      "words": [
+        {
+          "text": "nella",
+          "start": 11.182,
+          "end": 11.342
+        },
+        {
+          "text": "classe",
+          "start": 11.362,
+          "end": 11.662
+        },
+        {
+          "text": "B",
+          "start": 11.782,
+          "end": 11.822
+        },
+        {
+          "text": "Q",
+          "start": 11.942,
+          "end": 11.982
+        },
+        {
+          "text": "P,",
+          "start": 12.182,
+          "end": 12.222
+        },
+        {
+          "text": "come",
+          "start": 12.722,
+          "end": 12.882
+        },
+        {
+          "text": "la",
+          "start": 13.002,
+          "end": 13.062
+        },
+        {
+          "text": "fattorizzazione",
+          "start": 13.102,
+          "end": 13.862
+        },
+        {
+          "text": "di",
+          "start": 13.902,
+          "end": 13.962
+        },
+        {
+          "text": "Shor",
+          "start": 14.042,
+          "end": 14.282
+        },
+        {
+          "text": "e",
+          "start": 14.462,
+          "end": 14.502
+        },
+        {
+          "text": "la",
+          "start": 14.562,
+          "end": 14.622
+        },
+        {
+          "text": "ricerca",
+          "start": 14.642,
+          "end": 14.962
+        },
+        {
+          "text": "di",
+          "start": 15.002,
+          "end": 15.042
+        },
+        {
+          "text": "Grover.",
+          "start": 15.082,
+          "end": 15.362
+        }
+      ]
+    },
+    {
+      "start": 16.102,
+      "end": 22.183,
+      "text": "Secondo: il qubit vive in sovrapposizione secondo ket psi uguale alfa per stato zero più",
+      "words": [
+        {
+          "text": "Secondo:",
+          "start": 16.102,
+          "end": 16.482
+        },
+        {
+          "text": "il",
+          "start": 16.942,
+          "end": 17.042
+        },
+        {
+          "text": "qubit",
+          "start": 17.162,
+          "end": 17.602
+        },
+        {
+          "text": "vive",
+          "start": 17.902,
+          "end": 18.082
+        },
+        {
+          "text": "in",
+          "start": 18.142,
+          "end": 18.202
+        },
+        {
+          "text": "sovrapposizione",
+          "start": 18.262,
+          "end": 19.043
+        },
+        {
+          "text": "secondo",
+          "start": 19.103,
+          "end": 19.463
+        },
+        {
+          "text": "ket",
+          "start": 19.643,
+          "end": 19.863
+        },
+        {
+          "text": "psi",
+          "start": 19.983,
+          "end": 20.203
+        },
+        {
+          "text": "uguale",
+          "start": 20.483,
+          "end": 20.783
+        },
+        {
+          "text": "alfa",
+          "start": 20.863,
+          "end": 21.143
+        },
+        {
+          "text": "per",
+          "start": 21.183,
+          "end": 21.283
+        },
+        {
+          "text": "stato",
+          "start": 21.323,
+          "end": 21.523
+        },
+        {
+          "text": "zero",
+          "start": 21.623,
+          "end": 21.903
+        },
+        {
+          "text": "più",
+          "start": 22.063,
+          "end": 22.183
+        }
+      ]
+    },
+    {
+      "start": 22.283,
+      "end": 26.944,
+      "text": "beta per stato uno, collassa alla misura e può essere entangled a qualunque distanza.",
+      "words": [
+        {
+          "text": "beta",
+          "start": 22.283,
+          "end": 22.523
+        },
+        {
+          "text": "per",
+          "start": 22.563,
+          "end": 22.663
+        },
+        {
+          "text": "stato",
+          "start": 22.703,
+          "end": 22.903
+        },
+        {
+          "text": "uno,",
+          "start": 23.003,
+          "end": 23.163
+        },
+        {
+          "text": "collassa",
+          "start": 23.623,
+          "end": 24.103
+        },
+        {
+          "text": "alla",
+          "start": 24.163,
+          "end": 24.323
+        },
+        {
+          "text": "misura",
+          "start": 24.343,
+          "end": 24.703
+        },
+        {
+          "text": "e",
+          "start": 24.923,
+          "end": 24.963
+        },
+        {
+          "text": "può",
+          "start": 25.023,
+          "end": 25.123
+        },
+        {
+          "text": "essere",
+          "start": 25.163,
+          "end": 25.403
+        },
+        {
+          "text": "entangled",
+          "start": 25.443,
+          "end": 25.964
+        },
+        {
+          "text": "a",
+          "start": 25.984,
+          "end": 26.024
+        },
+        {
+          "text": "qualunque",
+          "start": 26.084,
+          "end": 26.444
+        },
+        {
+          "text": "distanza.",
+          "start": 26.464,
+          "end": 26.944
+        }
+      ]
+    },
+    {
+      "start": 27.944,
+      "end": 33.505,
+      "text": "Terzo: l'hardware integra processore criogenico, interfaccia di misura e controller classico;",
+      "words": [
+        {
+          "text": "Terzo:",
+          "start": 27.944,
+          "end": 28.284
+        },
+        {
+          "text": "l'hardware",
+          "start": 28.704,
+          "end": 29.144
+        },
+        {
+          "text": "integra",
+          "start": 29.304,
+          "end": 29.624
+        },
+        {
+          "text": "processore",
+          "start": 29.724,
+          "end": 30.184
+        },
+        {
+          "text": "criogenico,",
+          "start": 30.244,
+          "end": 30.904
+        },
+        {
+          "text": "interfaccia",
+          "start": 31.184,
+          "end": 31.684
+        },
+        {
+          "text": "di",
+          "start": 31.724,
+          "end": 31.784
+        },
+        {
+          "text": "misura",
+          "start": 31.824,
+          "end": 32.204
+        },
+        {
+          "text": "e",
+          "start": 32.444,
+          "end": 32.484
+        },
+        {
+          "text": "controller",
+          "start": 32.544,
+          "end": 33.004
+        },
+        {
+          "text": "classico;",
+          "start": 33.044,
+          "end": 33.505
+        }
+      ]
+    },
+    {
+      "start": 34.065,
+      "end": 37.605,
+      "text": "si accede via cloud, scegliendo tra tecnologie e topologie diverse.",
+      "words": [
+        {
+          "text": "si",
+          "start": 34.065,
+          "end": 34.125
+        },
+        {
+          "text": "accede",
+          "start": 34.145,
+          "end": 34.385
+        },
+        {
+          "text": "via",
+          "start": 34.445,
+          "end": 34.585
+        },
+        {
+          "text": "cloud,",
+          "start": 34.645,
+          "end": 35.045
+        },
+        {
+          "text": "scegliendo",
+          "start": 35.325,
+          "end": 35.705
+        },
+        {
+          "text": "tra",
+          "start": 35.745,
+          "end": 35.845
+        },
+        {
+          "text": "tecnologie",
+          "start": 35.965,
+          "end": 36.585
+        },
+        {
+          "text": "e",
+          "start": 36.625,
+          "end": 36.665
+        },
+        {
+          "text": "topologie",
+          "start": 36.725,
+          "end": 37.165
+        },
+        {
+          "text": "diverse.",
+          "start": 37.185,
+          "end": 37.605
+        }
+      ]
+    },
+    {
+      "start": 38.485,
+      "end": 41.986,
+      "text": "Quarto: si programma a circuiti quantistici con porte e misure;",
+      "words": [
+        {
+          "text": "Quarto:",
+          "start": 38.485,
+          "end": 38.865
+        },
+        {
+          "text": "si",
+          "start": 39.165,
+          "end": 39.245
+        },
+        {
+          "text": "programma",
+          "start": 39.285,
+          "end": 39.605
+        },
+        {
+          "text": "a",
+          "start": 39.665,
+          "end": 39.705
+        },
+        {
+          "text": "circuiti",
+          "start": 39.745,
+          "end": 40.145
+        },
+        {
+          "text": "quantistici",
+          "start": 40.185,
+          "end": 40.786
+        },
+        {
+          "text": "con",
+          "start": 40.846,
+          "end": 40.986
+        },
+        {
+          "text": "porte",
+          "start": 41.086,
+          "end": 41.446
+        },
+        {
+          "text": "e",
+          "start": 41.506,
+          "end": 41.546
+        },
+        {
+          "text": "misure;",
+          "start": 41.586,
+          "end": 41.986
+        }
+      ]
+    },
+    {
+      "start": 42.286,
+      "end": 45.386,
+      "text": "poiché l'uscita è probabilistica e le macchine NISQ sono rumorose,",
+      "words": [
+        {
+          "text": "poiché",
+          "start": 42.286,
+          "end": 42.466
+        },
+        {
+          "text": "l'uscita",
+          "start": 42.546,
+          "end": 42.886
+        },
+        {
+          "text": "è",
+          "start": 42.946,
+          "end": 42.986
+        },
+        {
+          "text": "probabilistica",
+          "start": 43.006,
+          "end": 43.726
+        },
+        {
+          "text": "e",
+          "start": 43.786,
+          "end": 43.826
+        },
+        {
+          "text": "le",
+          "start": 43.866,
+          "end": 43.926
+        },
+        {
+          "text": "macchine",
+          "start": 43.946,
+          "end": 44.286
+        },
+        {
+          "text": "NISQ",
+          "start": 44.346,
+          "end": 44.626
+        },
+        {
+          "text": "sono",
+          "start": 44.726,
+          "end": 44.886
+        },
+        {
+          "text": "rumorose,",
+          "start": 44.926,
+          "end": 45.386
+        }
+      ]
+    },
+    {
+      "start": 45.546,
+      "end": 46.586,
+      "text": "servono molti shot.",
+      "words": [
+        {
+          "text": "servono",
+          "start": 45.546,
+          "end": 45.866
+        },
+        {
+          "text": "molti",
+          "start": 45.946,
+          "end": 46.246
+        },
+        {
+          "text": "shot.",
+          "start": 46.306,
+          "end": 46.586
+        }
+      ]
+    },
+    {
+      "start": 47.386,
+      "end": 53.187,
+      "text": "Quinto: la Quantum Software Engineering applica principi di ingegneria secondo la definizione di Zhao e",
+      "words": [
+        {
+          "text": "Quinto:",
+          "start": 47.386,
+          "end": 47.726
+        },
+        {
+          "text": "la",
+          "start": 48.086,
+          "end": 48.167
+        },
+        {
+          "text": "Quantum",
+          "start": 48.267,
+          "end": 48.667
+        },
+        {
+          "text": "Software",
+          "start": 48.747,
+          "end": 49.127
+        },
+        {
+          "text": "Engineering",
+          "start": 49.167,
+          "end": 49.707
+        },
+        {
+          "text": "applica",
+          "start": 49.927,
+          "end": 50.227
+        },
+        {
+          "text": "principi",
+          "start": 50.287,
+          "end": 50.707
+        },
+        {
+          "text": "di",
+          "start": 50.727,
+          "end": 50.787
+        },
+        {
+          "text": "ingegneria",
+          "start": 50.807,
+          "end": 51.307
+        },
+        {
+          "text": "secondo",
+          "start": 51.407,
+          "end": 51.727
+        },
+        {
+          "text": "la",
+          "start": 51.747,
+          "end": 51.807
+        },
+        {
+          "text": "definizione",
+          "start": 51.847,
+          "end": 52.387
+        },
+        {
+          "text": "di",
+          "start": 52.427,
+          "end": 52.487
+        },
+        {
+          "text": "Zhao",
+          "start": 52.567,
+          "end": 52.887
+        },
+        {
+          "text": "e",
+          "start": 53.147,
+          "end": 53.187
+        }
+      ]
+    },
+    {
+      "start": 53.227,
+      "end": 55.067,
+      "text": "i nove punti del Talavera Manifesto.",
+      "words": [
+        {
+          "text": "i",
+          "start": 53.227,
+          "end": 53.267
+        },
+        {
+          "text": "nove",
+          "start": 53.307,
+          "end": 53.547
+        },
+        {
+          "text": "punti",
+          "start": 53.587,
+          "end": 53.927
+        },
+        {
+          "text": "del",
+          "start": 53.967,
+          "end": 54.107
+        },
+        {
+          "text": "Talavera",
+          "start": 54.167,
+          "end": 54.507
+        },
+        {
+          "text": "Manifesto.",
+          "start": 54.547,
+          "end": 55.067
+        }
+      ]
+    },
+    {
+      "start": 55.888,
+      "end": 61.968,
+      "text": "Sesto: shot-wise distribution, Quantum Broker, Cut and Shoot e StableShots migliorano affidabilità,",
+      "words": [
+        {
+          "text": "Sesto:",
+          "start": 55.888,
+          "end": 56.188
+        },
+        {
+          "text": "shot-wise",
+          "start": 56.588,
+          "end": 57.068
+        },
+        {
+          "text": "distribution,",
+          "start": 57.108,
+          "end": 57.748
+        },
+        {
+          "text": "Quantum",
+          "start": 57.948,
+          "end": 58.288
+        },
+        {
+          "text": "Broker,",
+          "start": 58.328,
+          "end": 58.688
+        },
+        {
+          "text": "Cut",
+          "start": 58.848,
+          "end": 59.008
+        },
+        {
+          "text": "and",
+          "start": 59.048,
+          "end": 59.148
+        },
+        {
+          "text": "Shoot",
+          "start": 59.188,
+          "end": 59.448
+        },
+        {
+          "text": "e",
+          "start": 59.568,
+          "end": 59.608
+        },
+        {
+          "text": "StableShots",
+          "start": 59.688,
+          "end": 60.388
+        },
+        {
+          "text": "migliorano",
+          "start": 60.908,
+          "end": 61.308
+        },
+        {
+          "text": "affidabilità,",
+          "start": 61.368,
+          "end": 61.968
+        }
+      ]
+    },
+    {
+      "start": 62.348,
+      "end": 68.409,
+      "text": "scalabilità e costi grazie a split, taglio dei circuiti e arresto adattivo verificabile basato sulla",
+      "words": [
+        {
+          "text": "scalabilità",
+          "start": 62.348,
+          "end": 62.909
+        },
+        {
+          "text": "e",
+          "start": 63.209,
+          "end": 63.249
+        },
+        {
+          "text": "costi",
+          "start": 63.329,
+          "end": 63.709
+        },
+        {
+          "text": "grazie",
+          "start": 64.009,
+          "end": 64.269
+        },
+        {
+          "text": "a",
+          "start": 64.309,
+          "end": 64.349
+        },
+        {
+          "text": "split,",
+          "start": 64.389,
+          "end": 64.729
+        },
+        {
+          "text": "taglio",
+          "start": 65.109,
+          "end": 65.369
+        },
+        {
+          "text": "dei",
+          "start": 65.389,
+          "end": 65.489
+        },
+        {
+          "text": "circuiti",
+          "start": 65.509,
+          "end": 66.069
+        },
+        {
+          "text": "e",
+          "start": 66.269,
+          "end": 66.30900000000001
+        },
+        {
+          "text": "arresto",
+          "start": 66.349,
+          "end": 66.709
+        },
+        {
+          "text": "adattivo",
+          "start": 66.749,
+          "end": 67.149
+        },
+        {
+          "text": "verificabile",
+          "start": 67.189,
+          "end": 67.829
+        },
+        {
+          "text": "basato",
+          "start": 67.909,
+          "end": 68.189
+        },
+        {
+          "text": "sulla",
+          "start": 68.229,
+          "end": 68.409
+        }
+      ]
+    },
+    {
+      "start": 68.449,
+      "end": 68.80900000000001,
+      "text": "T V D.",
+      "words": [
+        {
+          "text": "T",
+          "start": 68.449,
+          "end": 68.489
+        },
+        {
+          "text": "V",
+          "start": 68.589,
+          "end": 68.629
+        },
+        {
+          "text": "D.",
+          "start": 68.769,
+          "end": 68.80900000000001
+        }
+      ]
+    },
+    {
+      "start": 69.649,
+      "end": 73.69,
+      "text": "Per completare il ripasso, provate a rispondere alle dodici domande di verifica sulla destra.",
+      "words": [
+        {
+          "text": "Per",
+          "start": 69.649,
+          "end": 69.769
+        },
+        {
+          "text": "completare",
+          "start": 69.789,
+          "end": 70.149
+        },
+        {
+          "text": "il",
+          "start": 70.169,
+          "end": 70.229
+        },
+        {
+          "text": "ripasso,",
+          "start": 70.249,
+          "end": 70.63
+        },
+        {
+          "text": "provate",
+          "start": 70.95,
+          "end": 71.25
+        },
+        {
+          "text": "a",
+          "start": 71.27,
+          "end": 71.31
+        },
+        {
+          "text": "rispondere",
+          "start": 71.33,
+          "end": 71.73
+        },
+        {
+          "text": "alle",
+          "start": 71.77,
+          "end": 71.91
+        },
+        {
+          "text": "dodici",
+          "start": 71.97,
+          "end": 72.31
+        },
+        {
+          "text": "domande",
+          "start": 72.35,
+          "end": 72.63
+        },
+        {
+          "text": "di",
+          "start": 72.67,
+          "end": 72.73
+        },
+        {
+          "text": "verifica",
+          "start": 72.77,
+          "end": 73.17
+        },
+        {
+          "text": "sulla",
+          "start": 73.21,
+          "end": 73.39
+        },
+        {
+          "text": "destra.",
+          "start": 73.41,
+          "end": 73.69
+        }
+      ]
+    }
+  ]
+}

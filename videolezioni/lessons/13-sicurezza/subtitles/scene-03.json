@@ -1,0 +1,1191 @@
+{
+  "duration": 82.96,
+  "segments": [
+    {
+      "start": 0.04,
+      "end": 2.38,
+      "text": "Vediamo altri tre attacchi fondamentali.",
+      "words": [
+        {
+          "text": "Vediamo",
+          "start": 0.04,
+          "end": 0.36
+        },
+        {
+          "text": "altri",
+          "start": 0.56,
+          "end": 0.86
+        },
+        {
+          "text": "tre",
+          "start": 0.98,
+          "end": 1.12
+        },
+        {
+          "text": "attacchi",
+          "start": 1.24,
+          "end": 1.62
+        },
+        {
+          "text": "fondamentali.",
+          "start": 1.66,
+          "end": 2.38
+        }
+      ]
+    },
+    {
+      "start": 3.06,
+      "end": 8.641,
+      "text": "Il cross-site scripting, o XSS, è un injection attack verso il browser della vittima.",
+      "words": [
+        {
+          "text": "Il",
+          "start": 3.06,
+          "end": 3.16
+        },
+        {
+          "text": "cross-site",
+          "start": 3.26,
+          "end": 4.02
+        },
+        {
+          "text": "scripting,",
+          "start": 4.06,
+          "end": 4.601
+        },
+        {
+          "text": "o",
+          "start": 4.761,
+          "end": 4.801
+        },
+        {
+          "text": "XSS,",
+          "start": 5.041,
+          "end": 5.641
+        },
+        {
+          "text": "è",
+          "start": 6.101,
+          "end": 6.141
+        },
+        {
+          "text": "un",
+          "start": 6.201,
+          "end": 6.281
+        },
+        {
+          "text": "injection",
+          "start": 6.321,
+          "end": 6.781
+        },
+        {
+          "text": "attack",
+          "start": 6.821,
+          "end": 7.141
+        },
+        {
+          "text": "verso",
+          "start": 7.281,
+          "end": 7.521
+        },
+        {
+          "text": "il",
+          "start": 7.561,
+          "end": 7.621
+        },
+        {
+          "text": "browser",
+          "start": 7.681,
+          "end": 8.021
+        },
+        {
+          "text": "della",
+          "start": 8.081,
+          "end": 8.261
+        },
+        {
+          "text": "vittima.",
+          "start": 8.281,
+          "end": 8.641
+        }
+      ]
+    },
+    {
+      "start": 9.261,
+      "end": 14.082,
+      "text": "Prima l'attaccante inserisce JavaScript dannoso insieme a dati validi sul sito del prodotto.",
+      "words": [
+        {
+          "text": "Prima",
+          "start": 9.261,
+          "end": 9.501
+        },
+        {
+          "text": "l'attaccante",
+          "start": 9.641,
+          "end": 10.161
+        },
+        {
+          "text": "inserisce",
+          "start": 10.221,
+          "end": 10.661
+        },
+        {
+          "text": "JavaScript",
+          "start": 10.741,
+          "end": 11.221
+        },
+        {
+          "text": "dannoso",
+          "start": 11.321,
+          "end": 11.801
+        },
+        {
+          "text": "insieme",
+          "start": 11.921,
+          "end": 12.241
+        },
+        {
+          "text": "a",
+          "start": 12.301,
+          "end": 12.341
+        },
+        {
+          "text": "dati",
+          "start": 12.381,
+          "end": 12.582
+        },
+        {
+          "text": "validi",
+          "start": 12.642,
+          "end": 12.982
+        },
+        {
+          "text": "sul",
+          "start": 13.062,
+          "end": 13.242
+        },
+        {
+          "text": "sito",
+          "start": 13.302,
+          "end": 13.482
+        },
+        {
+          "text": "del",
+          "start": 13.522,
+          "end": 13.622
+        },
+        {
+          "text": "prodotto.",
+          "start": 13.642,
+          "end": 14.082
+        }
+      ]
+    },
+    {
+      "start": 14.722,
+      "end": 18.782,
+      "text": "Poi la vittima richiede la pagina, riceve lo script e lo esegue nel proprio browser.",
+      "words": [
+        {
+          "text": "Poi",
+          "start": 14.722,
+          "end": 14.842
+        },
+        {
+          "text": "la",
+          "start": 14.862,
+          "end": 14.922
+        },
+        {
+          "text": "vittima",
+          "start": 14.962,
+          "end": 15.282
+        },
+        {
+          "text": "richiede",
+          "start": 15.422,
+          "end": 15.702
+        },
+        {
+          "text": "la",
+          "start": 15.762,
+          "end": 15.802
+        },
+        {
+          "text": "pagina,",
+          "start": 15.842,
+          "end": 16.182
+        },
+        {
+          "text": "riceve",
+          "start": 16.442,
+          "end": 16.722
+        },
+        {
+          "text": "lo",
+          "start": 16.762,
+          "end": 16.822
+        },
+        {
+          "text": "script",
+          "start": 16.862,
+          "end": 17.202
+        },
+        {
+          "text": "e",
+          "start": 17.402,
+          "end": 17.442
+        },
+        {
+          "text": "lo",
+          "start": 17.502,
+          "end": 17.562
+        },
+        {
+          "text": "esegue",
+          "start": 17.582,
+          "end": 17.902
+        },
+        {
+          "text": "nel",
+          "start": 17.942,
+          "end": 18.062
+        },
+        {
+          "text": "proprio",
+          "start": 18.102,
+          "end": 18.342
+        },
+        {
+          "text": "browser.",
+          "start": 18.382,
+          "end": 18.782
+        }
+      ]
+    },
+    {
+      "start": 19.662,
+      "end": 22.743,
+      "text": "Infine lo script ruba il session cookie o dirotta l'utente.",
+      "words": [
+        {
+          "text": "Infine",
+          "start": 19.662,
+          "end": 19.982
+        },
+        {
+          "text": "lo",
+          "start": 20.082,
+          "end": 20.162
+        },
+        {
+          "text": "script",
+          "start": 20.202,
+          "end": 20.482
+        },
+        {
+          "text": "ruba",
+          "start": 20.642,
+          "end": 20.843
+        },
+        {
+          "text": "il",
+          "start": 20.903,
+          "end": 20.963
+        },
+        {
+          "text": "session",
+          "start": 21.023,
+          "end": 21.323
+        },
+        {
+          "text": "cookie",
+          "start": 21.383,
+          "end": 21.683
+        },
+        {
+          "text": "o",
+          "start": 21.803,
+          "end": 21.843
+        },
+        {
+          "text": "dirotta",
+          "start": 21.923,
+          "end": 22.283
+        },
+        {
+          "text": "l'utente.",
+          "start": 22.303,
+          "end": 22.743
+        }
+      ]
+    },
+    {
+      "start": 23.483,
+      "end": 28.543,
+      "text": "Per difendersi occorre validare l'input nei form, controllare i dati letti dal database prima di",
+      "words": [
+        {
+          "text": "Per",
+          "start": 23.483,
+          "end": 23.603
+        },
+        {
+          "text": "difendersi",
+          "start": 23.643,
+          "end": 24.123
+        },
+        {
+          "text": "occorre",
+          "start": 24.243,
+          "end": 24.603
+        },
+        {
+          "text": "validare",
+          "start": 24.683,
+          "end": 25.083
+        },
+        {
+          "text": "l'input",
+          "start": 25.163,
+          "end": 25.543
+        },
+        {
+          "text": "nei",
+          "start": 25.623,
+          "end": 25.743
+        },
+        {
+          "text": "form,",
+          "start": 25.783,
+          "end": 26.103
+        },
+        {
+          "text": "controllare",
+          "start": 26.443,
+          "end": 26.923
+        },
+        {
+          "text": "i",
+          "start": 26.963,
+          "end": 27.003
+        },
+        {
+          "text": "dati",
+          "start": 27.023,
+          "end": 27.223
+        },
+        {
+          "text": "letti",
+          "start": 27.283,
+          "end": 27.503
+        },
+        {
+          "text": "dal",
+          "start": 27.543,
+          "end": 27.663
+        },
+        {
+          "text": "database",
+          "start": 27.683,
+          "end": 28.203
+        },
+        {
+          "text": "prima",
+          "start": 28.263,
+          "end": 28.463
+        },
+        {
+          "text": "di",
+          "start": 28.503,
+          "end": 28.543
+        }
+      ]
+    },
+    {
+      "start": 28.583,
+      "end": 33.424,
+      "text": "inserirli nella pagina e applicare l'HTML encode per renderli non eseguibili.",
+      "words": [
+        {
+          "text": "inserirli",
+          "start": 28.583,
+          "end": 29.043
+        },
+        {
+          "text": "nella",
+          "start": 29.084,
+          "end": 29.264
+        },
+        {
+          "text": "pagina",
+          "start": 29.284,
+          "end": 29.644
+        },
+        {
+          "text": "e",
+          "start": 30.044,
+          "end": 30.084
+        },
+        {
+          "text": "applicare",
+          "start": 30.144,
+          "end": 30.584
+        },
+        {
+          "text": "l'HTML",
+          "start": 30.664,
+          "end": 31.364
+        },
+        {
+          "text": "encode",
+          "start": 31.384,
+          "end": 31.864
+        },
+        {
+          "text": "per",
+          "start": 32.084,
+          "end": 32.204
+        },
+        {
+          "text": "renderli",
+          "start": 32.264,
+          "end": 32.644
+        },
+        {
+          "text": "non",
+          "start": 32.744,
+          "end": 32.864
+        },
+        {
+          "text": "eseguibili.",
+          "start": 32.904,
+          "end": 33.424
+        }
+      ]
+    },
+    {
+      "start": 34.384,
+      "end": 39.265,
+      "text": "Gli attacchi denial of service, o DoS, mirano invece a rendere il servizio indisponibile,",
+      "words": [
+        {
+          "text": "Gli",
+          "start": 34.384,
+          "end": 34.464
+        },
+        {
+          "text": "attacchi",
+          "start": 34.484,
+          "end": 34.804
+        },
+        {
+          "text": "denial",
+          "start": 34.904,
+          "end": 35.224
+        },
+        {
+          "text": "of",
+          "start": 35.244,
+          "end": 35.324
+        },
+        {
+          "text": "service,",
+          "start": 35.384,
+          "end": 35.864
+        },
+        {
+          "text": "o",
+          "start": 35.984,
+          "end": 36.024
+        },
+        {
+          "text": "DoS,",
+          "start": 36.124,
+          "end": 36.404
+        },
+        {
+          "text": "mirano",
+          "start": 36.884,
+          "end": 37.144
+        },
+        {
+          "text": "invece",
+          "start": 37.204,
+          "end": 37.445
+        },
+        {
+          "text": "a",
+          "start": 37.485,
+          "end": 37.525
+        },
+        {
+          "text": "rendere",
+          "start": 37.585,
+          "end": 37.845
+        },
+        {
+          "text": "il",
+          "start": 37.885,
+          "end": 37.945
+        },
+        {
+          "text": "servizio",
+          "start": 37.985,
+          "end": 38.365
+        },
+        {
+          "text": "indisponibile,",
+          "start": 38.505,
+          "end": 39.265
+        }
+      ]
+    },
+    {
+      "start": 39.605,
+      "end": 43.065,
+      "text": "per esempio saturando le connessioni a metà del three-way handshake TCP.",
+      "words": [
+        {
+          "text": "per",
+          "start": 39.605,
+          "end": 39.685
+        },
+        {
+          "text": "esempio",
+          "start": 39.705,
+          "end": 40.025
+        },
+        {
+          "text": "saturando",
+          "start": 40.105,
+          "end": 40.505
+        },
+        {
+          "text": "le",
+          "start": 40.565,
+          "end": 40.625
+        },
+        {
+          "text": "connessioni",
+          "start": 40.645,
+          "end": 41.185
+        },
+        {
+          "text": "a",
+          "start": 41.345,
+          "end": 41.385
+        },
+        {
+          "text": "metà",
+          "start": 41.425,
+          "end": 41.625
+        },
+        {
+          "text": "del",
+          "start": 41.685,
+          "end": 41.785
+        },
+        {
+          "text": "three-way",
+          "start": 41.825,
+          "end": 42.185
+        },
+        {
+          "text": "handshake",
+          "start": 42.245,
+          "end": 42.705
+        },
+        {
+          "text": "TCP.",
+          "start": 42.765,
+          "end": 43.065
+        }
+      ]
+    },
+    {
+      "start": 44.065,
+      "end": 49.786,
+      "text": "Nei distributed DoS, o DDoS, migliaia di macchine dirottate inviano richieste simultanee;",
+      "words": [
+        {
+          "text": "Nei",
+          "start": 44.065,
+          "end": 44.225
+        },
+        {
+          "text": "distributed",
+          "start": 44.365,
+          "end": 44.965
+        },
+        {
+          "text": "DoS,",
+          "start": 45.005,
+          "end": 45.325
+        },
+        {
+          "text": "o",
+          "start": 45.645,
+          "end": 45.685
+        },
+        {
+          "text": "DDoS,",
+          "start": 45.806,
+          "end": 46.246
+        },
+        {
+          "text": "migliaia",
+          "start": 46.726,
+          "end": 47.126
+        },
+        {
+          "text": "di",
+          "start": 47.186,
+          "end": 47.226
+        },
+        {
+          "text": "macchine",
+          "start": 47.266,
+          "end": 47.606
+        },
+        {
+          "text": "dirottate",
+          "start": 47.646,
+          "end": 48.186
+        },
+        {
+          "text": "inviano",
+          "start": 48.326,
+          "end": 48.646
+        },
+        {
+          "text": "richieste",
+          "start": 48.706,
+          "end": 49.106
+        },
+        {
+          "text": "simultanee;",
+          "start": 49.166,
+          "end": 49.786
+        }
+      ]
+    },
+    {
+      "start": 50.406,
+      "end": 53.786,
+      "text": "a livello di sistema ci si difende con filtri che scartano i pacchetti anomali.",
+      "words": [
+        {
+          "text": "a",
+          "start": 50.406,
+          "end": 50.446
+        },
+        {
+          "text": "livello",
+          "start": 50.486,
+          "end": 50.706
+        },
+        {
+          "text": "di",
+          "start": 50.726,
+          "end": 50.786
+        },
+        {
+          "text": "sistema",
+          "start": 50.826,
+          "end": 51.186
+        },
+        {
+          "text": "ci",
+          "start": 51.246,
+          "end": 51.326
+        },
+        {
+          "text": "si",
+          "start": 51.366,
+          "end": 51.446
+        },
+        {
+          "text": "difende",
+          "start": 51.486,
+          "end": 51.806
+        },
+        {
+          "text": "con",
+          "start": 51.886,
+          "end": 52.026
+        },
+        {
+          "text": "filtri",
+          "start": 52.086,
+          "end": 52.426
+        },
+        {
+          "text": "che",
+          "start": 52.486,
+          "end": 52.566
+        },
+        {
+          "text": "scartano",
+          "start": 52.606,
+          "end": 52.986
+        },
+        {
+          "text": "i",
+          "start": 53.026,
+          "end": 53.066
+        },
+        {
+          "text": "pacchetti",
+          "start": 53.086,
+          "end": 53.406
+        },
+        {
+          "text": "anomali.",
+          "start": 53.426,
+          "end": 53.786
+        }
+      ]
+    },
+    {
+      "start": 54.407,
+      "end": 58.967,
+      "text": "Un DoS può colpire anche un singolo utente forzandone il lockout con login errati:",
+      "words": [
+        {
+          "text": "Un",
+          "start": 54.407,
+          "end": 54.487
+        },
+        {
+          "text": "DoS",
+          "start": 54.507,
+          "end": 54.727
+        },
+        {
+          "text": "può",
+          "start": 54.887,
+          "end": 54.967
+        },
+        {
+          "text": "colpire",
+          "start": 55.027,
+          "end": 55.367
+        },
+        {
+          "text": "anche",
+          "start": 55.527,
+          "end": 55.747
+        },
+        {
+          "text": "un",
+          "start": 55.807,
+          "end": 55.887
+        },
+        {
+          "text": "singolo",
+          "start": 55.947,
+          "end": 56.247
+        },
+        {
+          "text": "utente",
+          "start": 56.287,
+          "end": 56.667
+        },
+        {
+          "text": "forzandone",
+          "start": 56.967,
+          "end": 57.447
+        },
+        {
+          "text": "il",
+          "start": 57.507,
+          "end": 57.567
+        },
+        {
+          "text": "lockout",
+          "start": 57.587,
+          "end": 58.047
+        },
+        {
+          "text": "con",
+          "start": 58.147,
+          "end": 58.267
+        },
+        {
+          "text": "login",
+          "start": 58.307,
+          "end": 58.567
+        },
+        {
+          "text": "errati:",
+          "start": 58.587,
+          "end": 58.967
+        }
+      ]
+    },
+    {
+      "start": 59.467,
+      "end": 62.127,
+      "text": "servono blocchi temporanei e tracciamento degli indirizzi IP.",
+      "words": [
+        {
+          "text": "servono",
+          "start": 59.467,
+          "end": 59.767
+        },
+        {
+          "text": "blocchi",
+          "start": 59.827,
+          "end": 60.127
+        },
+        {
+          "text": "temporanei",
+          "start": 60.167,
+          "end": 60.747
+        },
+        {
+          "text": "e",
+          "start": 60.827,
+          "end": 60.867
+        },
+        {
+          "text": "tracciamento",
+          "start": 60.907,
+          "end": 61.407
+        },
+        {
+          "text": "degli",
+          "start": 61.447,
+          "end": 61.607
+        },
+        {
+          "text": "indirizzi",
+          "start": 61.647,
+          "end": 62.027
+        },
+        {
+          "text": "IP.",
+          "start": 62.047,
+          "end": 62.127
+        }
+      ]
+    },
+    {
+      "start": 63.028,
+      "end": 67.788,
+      "text": "Infine, negli attacchi brute force l'attaccante genera combinazioni finché non trova la password.",
+      "words": [
+        {
+          "text": "Infine,",
+          "start": 63.028,
+          "end": 63.348
+        },
+        {
+          "text": "negli",
+          "start": 63.468,
+          "end": 63.628
+        },
+        {
+          "text": "attacchi",
+          "start": 63.668,
+          "end": 63.988
+        },
+        {
+          "text": "brute",
+          "start": 64.048,
+          "end": 64.268
+        },
+        {
+          "text": "force",
+          "start": 64.288,
+          "end": 64.628
+        },
+        {
+          "text": "l'attaccante",
+          "start": 65.028,
+          "end": 65.508
+        },
+        {
+          "text": "genera",
+          "start": 65.588,
+          "end": 65.868
+        },
+        {
+          "text": "combinazioni",
+          "start": 65.928,
+          "end": 66.588
+        },
+        {
+          "text": "finché",
+          "start": 66.648,
+          "end": 66.888
+        },
+        {
+          "text": "non",
+          "start": 66.928,
+          "end": 67.028
+        },
+        {
+          "text": "trova",
+          "start": 67.068,
+          "end": 67.248
+        },
+        {
+          "text": "la",
+          "start": 67.288,
+          "end": 67.328
+        },
+        {
+          "text": "password.",
+          "start": 67.368,
+          "end": 67.788
+        }
+      ]
+    },
+    {
+      "start": 68.448,
+      "end": 72.849,
+      "text": "Con alfabeto di dimensione k e lunghezza n le combinazioni sono k alla n:",
+      "words": [
+        {
+          "text": "Con",
+          "start": 68.448,
+          "end": 68.568
+        },
+        {
+          "text": "alfabeto",
+          "start": 68.648,
+          "end": 69.088
+        },
+        {
+          "text": "di",
+          "start": 69.128,
+          "end": 69.188
+        },
+        {
+          "text": "dimensione",
+          "start": 69.228,
+          "end": 69.648
+        },
+        {
+          "text": "k",
+          "start": 69.708,
+          "end": 69.748
+        },
+        {
+          "text": "e",
+          "start": 70.088,
+          "end": 70.128
+        },
+        {
+          "text": "lunghezza",
+          "start": 70.168,
+          "end": 70.568
+        },
+        {
+          "text": "n",
+          "start": 70.749,
+          "end": 70.789
+        },
+        {
+          "text": "le",
+          "start": 71.129,
+          "end": 71.209
+        },
+        {
+          "text": "combinazioni",
+          "start": 71.249,
+          "end": 71.769
+        },
+        {
+          "text": "sono",
+          "start": 71.829,
+          "end": 71.989
+        },
+        {
+          "text": "k",
+          "start": 72.089,
+          "end": 72.129
+        },
+        {
+          "text": "alla",
+          "start": 72.149,
+          "end": 72.569
+        },
+        {
+          "text": "n:",
+          "start": 72.809,
+          "end": 72.849
+        }
+      ]
+    },
+    {
+      "start": 73.449,
+      "end": 77.089,
+      "text": "aggiungere anche pochi caratteri e simboli fa crescere il tempo da un secondo a un",
+      "words": [
+        {
+          "text": "aggiungere",
+          "start": 73.449,
+          "end": 73.809
+        },
+        {
+          "text": "anche",
+          "start": 73.869,
+          "end": 74.029
+        },
+        {
+          "text": "pochi",
+          "start": 74.109,
+          "end": 74.329
+        },
+        {
+          "text": "caratteri",
+          "start": 74.369,
+          "end": 74.849
+        },
+        {
+          "text": "e",
+          "start": 74.909,
+          "end": 74.94900000000001
+        },
+        {
+          "text": "simboli",
+          "start": 75.009,
+          "end": 75.369
+        },
+        {
+          "text": "fa",
+          "start": 75.449,
+          "end": 75.529
+        },
+        {
+          "text": "crescere",
+          "start": 75.589,
+          "end": 75.909
+        },
+        {
+          "text": "il",
+          "start": 75.949,
+          "end": 75.989
+        },
+        {
+          "text": "tempo",
+          "start": 76.029,
+          "end": 76.269
+        },
+        {
+          "text": "da",
+          "start": 76.329,
+          "end": 76.389
+        },
+        {
+          "text": "un",
+          "start": 76.449,
+          "end": 76.509
+        },
+        {
+          "text": "secondo",
+          "start": 76.549,
+          "end": 76.909
+        },
+        {
+          "text": "a",
+          "start": 76.949,
+          "end": 76.989
+        },
+        {
+          "text": "un",
+          "start": 77.029,
+          "end": 77.089
+        }
+      ]
+    },
+    {
+      "start": 77.129,
+      "end": 77.349,
+      "text": "mese.",
+      "words": [
+        {
+          "text": "mese.",
+          "start": 77.129,
+          "end": 77.349
+        }
+      ]
+    },
+    {
+      "start": 78.009,
+      "end": 82.71,
+      "text": "La difesa unisce password lunghe non da dizionario e autenticazione a due fattori.",
+      "words": [
+        {
+          "text": "La",
+          "start": 78.009,
+          "end": 78.069
+        },
+        {
+          "text": "difesa",
+          "start": 78.109,
+          "end": 78.409
+        },
+        {
+          "text": "unisce",
+          "start": 78.549,
+          "end": 78.829
+        },
+        {
+          "text": "password",
+          "start": 78.93,
+          "end": 79.29
+        },
+        {
+          "text": "lunghe",
+          "start": 79.39,
+          "end": 79.67
+        },
+        {
+          "text": "non",
+          "start": 80.05,
+          "end": 80.19
+        },
+        {
+          "text": "da",
+          "start": 80.23,
+          "end": 80.31
+        },
+        {
+          "text": "dizionario",
+          "start": 80.35,
+          "end": 80.93
+        },
+        {
+          "text": "e",
+          "start": 81.19,
+          "end": 81.23
+        },
+        {
+          "text": "autenticazione",
+          "start": 81.31,
+          "end": 82.03
+        },
+        {
+          "text": "a",
+          "start": 82.09,
+          "end": 82.13000000000001
+        },
+        {
+          "text": "due",
+          "start": 82.15,
+          "end": 82.27
+        },
+        {
+          "text": "fattori.",
+          "start": 82.31,
+          "end": 82.71
+        }
+      ]
+    }
+  ]
+}

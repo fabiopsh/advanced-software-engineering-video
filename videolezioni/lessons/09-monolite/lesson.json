@@ -1,0 +1,658 @@
+{
+  "lesson_id": "09-monolite",
+  "chapter": 9,
+  "part": "Parte IV · Dal monolite alla produzione",
+  "title": "Scomporre il monolite",
+  "voice_config": {
+    "provider": "gemini",
+    "model": "gemini-3.8-flash-tts",
+    "voice_name": "Ludo",
+    "style": "chiaro, didattico, calmo e preciso, stile lezione universitaria di ingegneria del software"
+  },
+  "scenes": [
+    {
+      "id": "scene-01",
+      "section": "9.1 · Quando e perché scomporre",
+      "title": "Il monolite cresce: cohesion, loose coupling e quando dividere",
+      "tts_text": "Benvenuti al nono capitolo di Advanced Software Engineering, dedicato a come scomporre un monolite in microservizi. [pause:0.5] Richiamiamo perché si adottano i microservizi: servizi stateless piccoli, nel proprio container, costruiti attorno a capacità di business con gestione decentralizzata dei dati, distribuibili in modo indipendente, scalabili orizzontalmente e resilienti ai guasti, in approccio DevOps. [pause:0.6] I due obiettivi chiave sono ridurre il lead time tra decisione di modifica e rilascio agli utenti, e scalare in modo efficace. [pause:0.6] Un monolite invece cresce nel tempo per l'aggiunta continua di funzionalità e righe di codice. Crescendo perde due proprietà essenziali: la cohesion, perché codice senza relazione finisce nello stesso blocco, e il loose coupling, perché una piccola modifica impatta il resto e costringe a ridistribuire l'intero monolite. [pause:0.6] Attenzione però alla regola pratica fondamentale: il monolite si scompone quando diventa un problema, non prima. Farlo crescere finché non richiede divisione è normale, purché si intervenga prima che dividere costi troppo, migrando gradualmente un servizio alla volta come nello Strangler Fig pattern.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">9.1 · Quando e perché scomporre</div>\n  <h2 class=\"slide-title\">Il monolite che cresce e i due obiettivi dei microservizi</h2>\n  <div id=\"s1\" class=\"grid-2 cue-hidden\">\n    <div id=\"m-micro\" class=\"box box-primary\">\n      <div class=\"box-label\">Obiettivo microservizi (Cap. 7)</div>\n      <ul class=\"clean-list\">\n        <li id=\"mi-1\"><strong>Ridurre il lead time</strong> delle nuove feature e degli aggiornamenti.</li>\n        <li id=\"mi-2\"><strong>Scalare in modo efficace</strong> (scalabilità orizzontale, resilienza ai guasti).</li>\n        <li id=\"mi-3\">Servizi <em>stateless</em> in container propri, dati decentralizzati, approccio DevOps.</li>\n      </ul>\n    </div>\n    <div id=\"m-mono\" class=\"box box-warn\">\n      <div class=\"box-label\">Quando il monolite cresce</div>\n      <ul class=\"clean-list\">\n        <li id=\"mo-1\"><strong>Perde cohesion</strong>: codice eterogeneo senza relazione finisce nello stesso blocco.</li>\n        <li id=\"mo-2\"><strong>Perde loose coupling</strong>: ogni piccolo cambio propaga effetti sul resto del sistema.</li>\n        <li id=\"mo-3\">Per rilasciare una modifica bisogna <strong>ridistribuire l'intero monolite</strong>.</li>\n      </ul>\n    </div>\n  </div>\n  <div id=\"s2\" class=\"box box-idea cue-hidden\">\n    <div class=\"box-label\">Regola pratica · Quando scomporre</div>\n    <p>Il monolite si scompone <strong>quando diventa un problema</strong>, non prima: va diviso prima che il costo esploda, estraendo un servizio alla volta in modo incrementale (come nello <em>Strangler Fig pattern</em>).</p>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 3.84,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "dedicato a come scomporre"
+        },
+        {
+          "at": 7.94,
+          "action": "highlight",
+          "target": "#m-micro",
+          "duration": 15,
+          "anchor": "Richiamiamo perché si adottano"
+        },
+        {
+          "at": 29.5,
+          "action": "highlight",
+          "target": "#mi-1",
+          "duration": 6.5,
+          "anchor": "ridurre il lead time"
+        },
+        {
+          "at": 36.82,
+          "action": "highlight",
+          "target": "#m-mono",
+          "duration": 6,
+          "anchor": "Un monolite invece cresce"
+        },
+        {
+          "at": 45.42,
+          "action": "highlight",
+          "target": "#mo-1",
+          "duration": 4.62,
+          "anchor": "la cohesion, perché codice"
+        },
+        {
+          "at": 50.16,
+          "action": "highlight",
+          "target": "#mo-2",
+          "duration": 7.5,
+          "anchor": "e il loose coupling"
+        },
+        {
+          "at": 57.92,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Attenzione però alla regola"
+        },
+        {
+          "at": 60.78,
+          "action": "highlight",
+          "target": "#s2",
+          "duration": 22,
+          "anchor": "il monolite si scompone"
+        }
+      ],
+      "audio_file": "audio/scene-01.wav",
+      "subtitle_file": "subtitles/scene-01.json",
+      "duration_sec": 76.52
+    },
+    {
+      "id": "scene-02",
+      "section": "9.2 · Trovare i seam",
+      "title": "Seam, bounded context e organizzazione in package",
+      "tts_text": "Dove si taglia un monolite? Lungo i suoi seam. In sartoria il seam è la cucitura tra due tessuti; nel software un seam è una porzione di codice trattabile in isolamento, modificabile senza effetti sul resto. [pause:0.5] Per trasformare i seam in confini di servizio aiutano due strumenti: il bounded context e i package o namespace del linguaggio. [pause:0.5] Un bounded context funziona come una cellula: la membrana decide cosa resta privato dentro, come lo scaffale di un articolo in magazzino, e cosa attraversa un'interfaccia esplicita verso l'esterno, come il numero di articoli spediti richiesto dalla contabilità. Quell'interfaccia diventerà la futura API del servizio. [pause:0.6] Prendiamo l'esempio di MusicCorp, un negozio online di musica il cui monolite copre quattro contesti: Catalog per i metadati degli articoli, Finance per contabilità, pagamenti e rimborsi, Warehouse per spedizioni, resi e giacenze, e Recommendation per i suggerimenti. [pause:0.5] Individuati i contesti, si creano dei package corrispondenti e vi si sposta il codice in modo incrementale, verificando ogni passo coi test. Il codice che resta fuori può rivelare nuovi contesti, mentre strumenti come Structure cento uno mostrano il grafo delle dipendenze per allinearle alla struttura reale dell'organizzazione.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">9.2 · Trovare i seam</div>\n  <h2 class=\"slide-title\">Seam, bounded context e package di MusicCorp</h2>\n  <div id=\"s1\" class=\"split-visual cue-hidden\">\n    <div id=\"svg-seam\" class=\"svg-panel\">\n      <svg viewBox=\"0 0 360 205\" class=\"diagram-svg\" aria-label=\"Bounded context come cellula e 4 contesti MusicCorp\">\n        <defs>\n          <marker id=\"arr-s2\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\">\n            <path d=\"M0 1 L9 5 L0 9 z\" fill=\"var(--blue)\"/>\n          </marker>\n        </defs>\n        <g id=\"svg-cell\">\n          <rect x=\"12\" y=\"12\" width=\"210\" height=\"118\" rx=\"22\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"2\" stroke-dasharray=\"6 3\"/>\n          <text x=\"117\" y=\"32\" text-anchor=\"middle\" class=\"svg-math-sm\">Bounded Context · Warehouse</text>\n          <rect x=\"28\" y=\"44\" width=\"178\" height=\"42\" rx=\"6\" fill=\"var(--bg-surface, #fff)\" stroke=\"var(--border-strong, #999)\" stroke-width=\"1.2\"/>\n          <text x=\"117\" y=\"62\" text-anchor=\"middle\" class=\"svg-tick\">Dati interni (privati):</text>\n          <text x=\"117\" y=\"77\" text-anchor=\"middle\" class=\"svg-caption\">scaffale, ordini in preparazione</text>\n          <rect x=\"48\" y=\"96\" width=\"138\" height=\"24\" rx=\"5\" fill=\"var(--green-soft, rgba(21,128,61,0.14))\" stroke=\"var(--green)\" stroke-width=\"1.5\"/>\n          <text x=\"117\" y=\"112\" text-anchor=\"middle\" class=\"svg-tick\">Interfaccia esplicita (futura API)</text>\n        </g>\n        <g id=\"svg-out\">\n          <line x1=\"224\" y1=\"108\" x2=\"268\" y2=\"108\" stroke=\"var(--blue)\" stroke-width=\"2\" marker-end=\"url(#arr-s2)\"/>\n          <rect x=\"272\" y=\"84\" width=\"78\" height=\"46\" rx=\"7\" fill=\"var(--orange-soft, rgba(217,119,6,0.12))\" stroke=\"var(--orange)\" stroke-width=\"1.5\"/>\n          <text x=\"311\" y=\"104\" text-anchor=\"middle\" class=\"svg-tick\">Finance</text>\n          <text x=\"311\" y=\"119\" text-anchor=\"middle\" class=\"svg-caption\">articoli spediti</text>\n        </g>\n        <g id=\"svg-mc\">\n          <text x=\"180\" y=\"152\" text-anchor=\"middle\" class=\"svg-caption\">Package di MusicCorp (refactoring incrementale + test)</text>\n          <rect x=\"10\" y=\"162\" width=\"78\" height=\"32\" rx=\"6\" fill=\"var(--bg-surface, #fff)\" stroke=\"var(--ink-soft)\" stroke-width=\"1.4\"/>\n          <text x=\"49\" y=\"182\" text-anchor=\"middle\" class=\"svg-tick\">Catalog</text>\n          <rect x=\"96\" y=\"162\" width=\"78\" height=\"32\" rx=\"6\" fill=\"var(--bg-surface, #fff)\" stroke=\"var(--ink-soft)\" stroke-width=\"1.4\"/>\n          <text x=\"135\" y=\"182\" text-anchor=\"middle\" class=\"svg-tick\">Finance</text>\n          <rect x=\"182\" y=\"162\" width=\"78\" height=\"32\" rx=\"6\" fill=\"var(--bg-surface, #fff)\" stroke=\"var(--ink-soft)\" stroke-width=\"1.4\"/>\n          <text x=\"221\" y=\"182\" text-anchor=\"middle\" class=\"svg-tick\">Warehouse</text>\n          <rect x=\"268\" y=\"162\" width=\"84\" height=\"32\" rx=\"6\" fill=\"var(--bg-surface, #fff)\" stroke=\"var(--ink-soft)\" stroke-width=\"1.4\"/>\n          <text x=\"310\" y=\"182\" text-anchor=\"middle\" class=\"svg-tick\">Recommend.</text>\n        </g>\n      </svg>\n    </div>\n    <div class=\"formula-col\">\n      <div id=\"b-seam\" class=\"box box-def\">\n        <div class=\"box-label\">Seam &amp; Bounded Context</div>\n        <p>Un <strong>seam</strong> è codice trattabile in isolamento. La membrana del <em>bounded context</em> separa i dati privati dall'interfaccia esplicita, che diventa l'<strong>API del servizio</strong>.</p>\n      </div>\n      <div id=\"b-pkg\" class=\"box box-primary\">\n        <div class=\"box-label\">Package &amp; Structure 101</div>\n        <p>Si spostano le classi nei package <strong>un passo alla volta coi test</strong>. I grafi (es. <em>Structure 101</em>) verificano che le dipendenze riflettano i team reali (es. Warehouse non dipende da Finance).</p>\n      </div>\n    </div>\n  </div>\n  <div id=\"s2\" class=\"box box-idea cue-hidden\">\n    <div class=\"box-label\">Esempio · I quattro contesti di MusicCorp</div>\n    <p><strong>Catalog</strong> (metadati articoli) · <strong>Finance</strong> (contabilità, pagamenti, rimborsi) · <strong>Warehouse</strong> (spedizioni, resi, scorte) · <strong>Recommendation</strong> (raccomandazioni in attesa di brevetto).</p>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 2.28,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "Lungo i suoi seam"
+        },
+        {
+          "at": 2.28,
+          "action": "highlight",
+          "target": "#b-seam",
+          "duration": 14,
+          "anchor": "Lungo i suoi seam"
+        },
+        {
+          "at": 23.84,
+          "action": "highlight",
+          "target": "#svg-cell",
+          "duration": 15.45,
+          "anchor": "Un bounded context funziona"
+        },
+        {
+          "at": 39.41,
+          "action": "highlight",
+          "target": "#svg-out",
+          "duration": 3.54,
+          "anchor": "Quell'interfaccia diventerà"
+        },
+        {
+          "at": 43.07,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Prendiamo l'esempio di MusicCorp"
+        },
+        {
+          "at": 43.07,
+          "action": "highlight",
+          "target": "#s2",
+          "duration": 16.5,
+          "anchor": "Prendiamo l'esempio di MusicCorp"
+        },
+        {
+          "at": 59.75,
+          "action": "highlight",
+          "target": "#svg-mc",
+          "duration": 8,
+          "anchor": "Individuati i contesti"
+        },
+        {
+          "at": 67.89,
+          "action": "highlight",
+          "target": "#b-pkg",
+          "duration": 13,
+          "anchor": "Il codice che resta fuori"
+        }
+      ],
+      "audio_file": "audio/scene-02.wav",
+      "subtitle_file": "subtitles/scene-02.json",
+      "duration_sec": 77.7
+    },
+    {
+      "id": "scene-03",
+      "section": "9.3 · Da dove iniziare",
+      "title": "I cinque driver di priorità e il grafo delle dipendenze",
+      "tts_text": "Una volta individuati i seam nel codice, da quale conviene iniziare l'estrazione? Si sceglie il seam che porta il massimo beneficio, valutando cinque driver principali. [pause:0.5] Primo, pace of change: se il magazzino sta per ricevere molte modifiche, separare Warehouse consente rilasci rapidi e isolati. [pause:0.5] Secondo, team structure: se gli sviluppatori lavorano in due regioni geografiche diverse, conviene dividere le parti assegnate a ciascuna sede. [pause:0.5] Terzo, security: isolare Finance permette di applicare controlli di sicurezza più severi solo sui dati sensibili. [pause:0.5] Quarto, technology: separare Recommendation lascia libero il team di sperimentare nuovi algoritmi in Clojure senza vincolare il resto del sistema. [pause:0.5] Quinto, tangled dependencies: guardando il grafo delle dipendenze, conviene estrarre per primo il seam da cui gli altri dipendono meno. [pause:0.6] Guardiamo il grafo di MusicCorp a sinistra. Catalog è usato da tutti e tre gli altri package, quindi estrarlo per primo costringerebbe a modificarli tutti. Warehouse è usato da Finance. Finance non è usato da nessuno, ma dipende da due package. Recommendation invece non è usato da nessuno e dipende solo da Catalog: è il primo candidato ideale, perché basta convertire le sue chiamate locali in chiamate all'API di Catalog.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">9.3 · Da dove iniziare</div>\n  <h2 class=\"slide-title\">Cinque driver di scelta e il grafo di MusicCorp</h2>\n  <div id=\"s1\" class=\"split-visual cue-hidden\">\n    <div id=\"svg-deps\" class=\"svg-panel\">\n      <svg viewBox=\"0 0 360 205\" class=\"diagram-svg\" aria-label=\"Grafo delle dipendenze tra package di MusicCorp\">\n        <defs>\n          <marker id=\"arr-d\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\">\n            <path d=\"M0 1 L9 5 L0 9 z\" fill=\"var(--ink-soft)\"/>\n          </marker>\n        </defs>\n        <g id=\"node-fin\">\n          <rect x=\"12\" y=\"16\" width=\"96\" height=\"34\" rx=\"6\" fill=\"var(--bg-surface, #fff)\" stroke=\"var(--ink-soft)\" stroke-width=\"1.6\"/>\n          <text x=\"60\" y=\"37\" text-anchor=\"middle\" class=\"svg-tick\">Finance</text>\n          <text x=\"60\" y=\"63\" text-anchor=\"middle\" class=\"svg-caption\">usato da 0 · usa 2</text>\n        </g>\n        <g id=\"node-war\">\n          <rect x=\"12\" y=\"140\" width=\"96\" height=\"34\" rx=\"6\" fill=\"var(--bg-surface, #fff)\" stroke=\"var(--ink-soft)\" stroke-width=\"1.6\"/>\n          <text x=\"60\" y=\"161\" text-anchor=\"middle\" class=\"svg-tick\">Warehouse</text>\n          <text x=\"60\" y=\"189\" text-anchor=\"middle\" class=\"svg-caption\">usato da 1</text>\n        </g>\n        <g id=\"node-cat\">\n          <rect x=\"142\" y=\"78\" width=\"88\" height=\"34\" rx=\"6\" fill=\"var(--orange-soft, rgba(217,119,6,0.14))\" stroke=\"var(--orange)\" stroke-width=\"1.8\"/>\n          <text x=\"186\" y=\"99\" text-anchor=\"middle\" class=\"svg-tick\">Catalog</text>\n          <text x=\"186\" y=\"127\" text-anchor=\"middle\" class=\"svg-caption\">usato da 3</text>\n        </g>\n        <g id=\"node-rec\">\n          <rect x=\"254\" y=\"78\" width=\"96\" height=\"34\" rx=\"6\" fill=\"var(--green-soft, rgba(21,128,61,0.16))\" stroke=\"var(--green)\" stroke-width=\"2\"/>\n          <text x=\"302\" y=\"99\" text-anchor=\"middle\" class=\"svg-tick\">Recommend.</text>\n          <text x=\"302\" y=\"127\" text-anchor=\"middle\" class=\"svg-caption\" fill=\"var(--green)\">usato da 0 · usa 1</text>\n          <text x=\"302\" y=\"142\" text-anchor=\"middle\" class=\"svg-caption\" fill=\"var(--green)\">(1° candidato)</text>\n        </g>\n        <line x1=\"60\" y1=\"50\" x2=\"60\" y2=\"136\" stroke=\"var(--ink-soft)\" stroke-width=\"1.6\" marker-end=\"url(#arr-d)\"/>\n        <line x1=\"108\" y1=\"42\" x2=\"140\" y2=\"86\" stroke=\"var(--ink-soft)\" stroke-width=\"1.6\" marker-end=\"url(#arr-d)\"/>\n        <line x1=\"108\" y1=\"148\" x2=\"140\" y2=\"104\" stroke=\"var(--ink-soft)\" stroke-width=\"1.6\" marker-end=\"url(#arr-d)\"/>\n        <line x1=\"254\" y1=\"95\" x2=\"234\" y2=\"95\" stroke=\"var(--green)\" stroke-width=\"2\" marker-end=\"url(#arr-d)\"/>\n      </svg>\n    </div>\n    <div class=\"formula-col\">\n      <table id=\"s2\" class=\"acad-table cue-hidden\">\n        <thead>\n          <tr><th>Driver</th><th>Esempio MusicCorp</th></tr>\n        </thead>\n        <tbody>\n          <tr id=\"dr-1\"><td><strong>Pace of change</strong></td><td>Molte modifiche in arrivo su <em>Warehouse</em></td></tr>\n          <tr id=\"dr-2\"><td><strong>Team structure</strong></td><td>Team divisi in due regioni geografiche</td></tr>\n          <tr id=\"dr-3\"><td><strong>Security</strong></td><td>Protezione extra per dati sensibili di <em>Finance</em></td></tr>\n          <tr id=\"dr-4\"><td><strong>Technology</strong></td><td>Sperimentare Clojure in <em>Recommendation</em></td></tr>\n          <tr id=\"dr-5\"><td><strong>Tangled dependencies</strong></td><td>Estrarre per primo il seam meno dipeso</td></tr>\n        </tbody>\n      </table>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 2.64,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "da quale conviene iniziare"
+        },
+        {
+          "at": 8.12,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "valutando cinque driver principali"
+        },
+        {
+          "at": 10.52,
+          "action": "highlight",
+          "target": "#dr-1",
+          "duration": 7.5,
+          "anchor": "Primo, pace of change"
+        },
+        {
+          "at": 18.82,
+          "action": "highlight",
+          "target": "#dr-2",
+          "duration": 7.5,
+          "anchor": "Secondo, team structure"
+        },
+        {
+          "at": 27.72,
+          "action": "highlight",
+          "target": "#dr-3",
+          "duration": 7,
+          "anchor": "Terzo, security: isolare Finance"
+        },
+        {
+          "at": 35.82,
+          "action": "highlight",
+          "target": "#dr-4",
+          "duration": 8.5,
+          "anchor": "Quarto, technology: separare Recommendation"
+        },
+        {
+          "at": 44.98,
+          "action": "highlight",
+          "target": "#dr-5",
+          "duration": 8,
+          "anchor": "Quinto, tangled dependencies"
+        },
+        {
+          "at": 53.36,
+          "action": "highlight",
+          "target": "#node-cat",
+          "duration": 8,
+          "anchor": "Guardiamo il grafo di MusicCorp"
+        },
+        {
+          "at": 62.5,
+          "action": "highlight",
+          "target": "#node-fin",
+          "duration": 5.93,
+          "anchor": "Warehouse è usato da Finance"
+        },
+        {
+          "at": 68.55,
+          "action": "highlight",
+          "target": "#node-rec",
+          "duration": 14,
+          "anchor": "Recommendation invece non è usato"
+        }
+      ],
+      "audio_file": "audio/scene-03.wav",
+      "subtitle_file": "subtitles/scene-03.json",
+      "duration_sec": 78.64
+    },
+    {
+      "id": "scene-04",
+      "section": "9.4 · Il database e le foreign key",
+      "title": "Analizzare il database e spezzare le foreign key",
+      "tts_text": "Separati i package nel codice, si affronta la madre di tutte le dipendenze aggrovigliate: il database. Spesso parti diverse del monolite leggono e scrivono le stesse tabelle invece di comunicare via interfaccia. [pause:0.5] Tre attività aiutano l'analisi: tracciare quale codice accede a quali tabelle, ad esempio tramite un ORM come Hibernate in Java; individuare le foreign key tra contesti diversi con strumenti grafici come SchemaSpy; e segnare le tabelle usate da più bounded context. [pause:0.5] Ricordiamo che una foreign key impedisce a livello di database di inserire riferimenti inesistenti o cancellare righe ancora riferite. [pause:0.6] Primo caso pratico in MusicCorp: Finance genera report mensili sulle vendite, e per farlo legge direttamente la tabella Line items di Catalog, mentre la sua tabella Ledger possiede una foreign key verso Line items. [pause:0.5] Come si risolve? Catalog espone i dati tramite un'API e Finance la interroga al posto di leggere la tabella. [pause:0.5] Restano due conseguenze: un overhead dovuto alla chiamata API e la perdita del vincolo di foreign key. La coerenza va ora gestita nei servizi, ed è una scelta di business stabilire come trattare, ad esempio, un ordine su un articolo rimosso dal catalogo.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">9.4 · Il database e le foreign key</div>\n  <h2 class=\"slide-title\">Analisi dello schema e rimozione delle foreign key</h2>\n  <div id=\"s1\" class=\"grid-2 cue-hidden\">\n    <div id=\"db-ana\" class=\"box box-def\">\n      <div class=\"box-label\">Analizzare il database (3 attività)</div>\n      <ul class=\"clean-list\">\n        <li id=\"da-1\"><strong>Codice ↔ tabelle</strong>: mappare letture e scritture tramite ORM (es. <em>Hibernate</em>).</li>\n        <li id=\"da-2\"><strong>Vincoli DB</strong>: trovare <em>foreign key</em> tra contesti diversi con <em>SchemaSpy</em>.</li>\n        <li id=\"da-3\"><strong>Tabelle condivise</strong>: individuare le tabelle usate da più bounded context.</li>\n      </ul>\n    </div>\n    <div id=\"db-fk\" class=\"box box-warn\">\n      <div class=\"box-label\">Spezzare una FK · Conseguenze</div>\n      <ul class=\"clean-list\">\n        <li id=\"fk-1\"><strong>Overhead</strong>: una chiamata API costa più di una lettura diretta su DB.</li>\n        <li id=\"fk-2\"><strong>Perdita della foreign key</strong>: integrità referenziale gestita nei servizi.</li>\n        <li id=\"fk-3\"><strong>Scelta di business</strong>: come gestire un ordine su un articolo rimosso dal catalogo?</li>\n      </ul>\n    </div>\n  </div>\n  <div id=\"s2\" class=\"svg-panel svg-panel-wide cue-hidden\">\n    <svg viewBox=\"0 0 640 165\" class=\"diagram-svg\" aria-label=\"Spezzare una foreign key tramite API\">\n      <defs>\n        <marker id=\"arr-fk\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\">\n          <path d=\"M0 1 L9 5 L0 9 z\" fill=\"var(--ink-soft)\"/>\n        </marker>\n        <marker id=\"arr-fk-g\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\">\n          <path d=\"M0 1 L9 5 L0 9 z\" fill=\"var(--green)\"/>\n        </marker>\n      </defs>\n      <g id=\"fk-before\">\n        <rect x=\"10\" y=\"8\" width=\"264\" height=\"66\" rx=\"6\" fill=\"none\" stroke=\"var(--border-strong, #999)\" stroke-width=\"1.4\"/>\n        <text x=\"142\" y=\"23\" text-anchor=\"middle\" class=\"svg-caption\">MusicCorpMono</text>\n        <rect x=\"24\" y=\"32\" width=\"104\" height=\"32\" rx=\"5\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.5\"/>\n        <text x=\"76\" y=\"52\" text-anchor=\"middle\" class=\"svg-tick\">Catalog</text>\n        <rect x=\"156\" y=\"32\" width=\"104\" height=\"32\" rx=\"5\" fill=\"var(--orange-soft, rgba(217,119,6,0.12))\" stroke=\"var(--orange)\" stroke-width=\"1.5\"/>\n        <text x=\"208\" y=\"52\" text-anchor=\"middle\" class=\"svg-tick\">Finance</text>\n        <rect x=\"24\" y=\"114\" width=\"104\" height=\"36\" rx=\"5\" fill=\"var(--bg-surface, #fff)\" stroke=\"var(--ink-soft)\" stroke-width=\"1.5\"/>\n        <text x=\"76\" y=\"136\" text-anchor=\"middle\" class=\"svg-tick\">Line items</text>\n        <rect x=\"156\" y=\"114\" width=\"104\" height=\"36\" rx=\"5\" fill=\"var(--bg-surface, #fff)\" stroke=\"var(--ink-soft)\" stroke-width=\"1.5\"/>\n        <text x=\"208\" y=\"136\" text-anchor=\"middle\" class=\"svg-tick\">Ledger</text>\n        <line x1=\"76\" y1=\"64\" x2=\"76\" y2=\"110\" stroke=\"var(--ink-soft)\" stroke-width=\"1.5\" marker-end=\"url(#arr-fk)\"/>\n        <line x1=\"208\" y1=\"64\" x2=\"208\" y2=\"110\" stroke=\"var(--ink-soft)\" stroke-width=\"1.5\" marker-end=\"url(#arr-fk)\"/>\n        <line x1=\"184\" y1=\"64\" x2=\"104\" y2=\"112\" stroke=\"var(--red)\" stroke-width=\"1.5\" stroke-dasharray=\"4 3\" marker-end=\"url(#arr-fk)\"/>\n        <line x1=\"156\" y1=\"132\" x2=\"132\" y2=\"132\" stroke=\"var(--red)\" stroke-width=\"1.5\" stroke-dasharray=\"4 3\" marker-end=\"url(#arr-fk)\"/>\n        <text x=\"144\" y=\"158\" text-anchor=\"middle\" class=\"svg-caption\" fill=\"var(--red)\">FK + lettura cross-contesto</text>\n      </g>\n      <line x1=\"288\" y1=\"86\" x2=\"334\" y2=\"86\" stroke=\"var(--green)\" stroke-width=\"3\" marker-end=\"url(#arr-fk-g)\"/>\n      <g id=\"fk-after\">\n        <rect x=\"352\" y=\"32\" width=\"120\" height=\"34\" rx=\"5\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.6\"/>\n        <text x=\"412\" y=\"53\" text-anchor=\"middle\" class=\"svg-tick\">Catalog service</text>\n        <rect x=\"508\" y=\"32\" width=\"120\" height=\"34\" rx=\"5\" fill=\"var(--green-soft, rgba(21,128,61,0.12))\" stroke=\"var(--green)\" stroke-width=\"1.6\"/>\n        <text x=\"568\" y=\"53\" text-anchor=\"middle\" class=\"svg-tick\">Finance service</text>\n        <line x1=\"508\" y1=\"49\" x2=\"476\" y2=\"49\" stroke=\"var(--green)\" stroke-width=\"2\" stroke-dasharray=\"4 3\" marker-end=\"url(#arr-fk-g)\"/>\n        <text x=\"492\" y=\"23\" text-anchor=\"middle\" class=\"svg-math-sm\">API</text>\n        <rect x=\"352\" y=\"114\" width=\"120\" height=\"36\" rx=\"5\" fill=\"var(--bg-surface, #fff)\" stroke=\"var(--ink-soft)\" stroke-width=\"1.5\"/>\n        <text x=\"412\" y=\"136\" text-anchor=\"middle\" class=\"svg-tick\">Line items</text>\n        <rect x=\"508\" y=\"114\" width=\"120\" height=\"36\" rx=\"5\" fill=\"var(--bg-surface, #fff)\" stroke=\"var(--ink-soft)\" stroke-width=\"1.5\"/>\n        <text x=\"568\" y=\"136\" text-anchor=\"middle\" class=\"svg-tick\">Ledger</text>\n        <line x1=\"412\" y1=\"66\" x2=\"412\" y2=\"110\" stroke=\"var(--ink-soft)\" stroke-width=\"1.5\" marker-end=\"url(#arr-fk)\"/>\n        <line x1=\"568\" y1=\"66\" x2=\"568\" y2=\"110\" stroke=\"var(--ink-soft)\" stroke-width=\"1.5\" marker-end=\"url(#arr-fk)\"/>\n        <text x=\"490\" y=\"158\" text-anchor=\"middle\" class=\"svg-caption\" fill=\"var(--green)\">Ogni servizio accede solo al proprio DB</text>\n      </g>\n    </svg>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 2.4,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "si affronta la madre"
+        },
+        {
+          "at": 12.92,
+          "action": "highlight",
+          "target": "#db-ana",
+          "duration": 17.72,
+          "anchor": "Tre attività aiutano l'analisi"
+        },
+        {
+          "at": 30.76,
+          "action": "highlight",
+          "target": "#da-2",
+          "duration": 7.5,
+          "anchor": "Ricordiamo che una foreign"
+        },
+        {
+          "at": 38.54,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Primo caso pratico in MusicCorp"
+        },
+        {
+          "at": 38.54,
+          "action": "highlight",
+          "target": "#fk-before",
+          "duration": 11.5,
+          "anchor": "Primo caso pratico in MusicCorp"
+        },
+        {
+          "at": 53.19,
+          "action": "highlight",
+          "target": "#fk-after",
+          "duration": 5.38,
+          "anchor": "Catalog espone i dati"
+        },
+        {
+          "at": 58.69,
+          "action": "highlight",
+          "target": "#db-fk",
+          "duration": 19.5,
+          "anchor": "Restano due conseguenze"
+        }
+      ],
+      "audio_file": "audio/scene-04.wav",
+      "subtitle_file": "subtitles/scene-04.json",
+      "duration_sec": 72.92
+    },
+    {
+      "id": "scene-05",
+      "section": "9.5 · Refactoring del database e ordine di migrazione",
+      "title": "Dati condivisi, tabelle condivise e separazione degli schemi",
+      "tts_text": "Vediamo gli altri tre casi di refactoring del database e l'ordine migliore di migrazione. [pause:0.5] Secondo caso: dati statici condivisi, come la tabella Country codes letta da Catalog, Warehouse e Finance. Si può duplicare la tabella per package, creare un servizio dedicato che però rischia di essere overkill, oppure trattarli come codice in un file di configurazione, che è la soluzione preferita. [pause:0.5] Terzo caso: dati modificabili condivisi. Finance e Warehouse leggono e scrivono insieme la tabella Customer record. Il concetto di cliente è implicito nel database: si crea allora un Customer service esplicito e gli altri due chiamano la sua API. [pause:0.5] Quarto caso: tabelle condivise. La tabella Item contiene sia nome e prezzo per Catalog sia l'inventario per Warehouse. Qui due concetti diversi stanno nella stessa tabella: attenzione a non confonderlo col caso precedente! La soluzione è dividere la tabella in Catalog item e Stock levels. [pause:0.6] Infine: prima gli schemi o prima i servizi? Passare prima a schemi separati lasciando il codice ancora unito nel monolite permette di annullare la modifica con facilità se emergono problemi di prestazioni o transazioni.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">9.5 · Pattern di refactoring del database</div>\n  <h2 class=\"slide-title\">Dati condivisi, tabelle condivise e tre tappe di migrazione</h2>\n  <div id=\"s1\" class=\"grid-3 cue-hidden\">\n    <div id=\"p-stat\" class=\"box box-def\">\n      <div class=\"box-label\">Dati statici condivisi</div>\n      <p>Es. <em>Country codes</em>: duplicare la tabella, servizio dedicato (<em>overkill</em>) o <strong>file di configurazione</strong> nel codice (preferita).</p>\n    </div>\n    <div id=\"p-mut\" class=\"box box-primary\">\n      <div class=\"box-label\">Dati modificabili condivisi</div>\n      <p>Es. <em>Customer record</em> scritto da Finance e Warehouse: <strong>stesso concetto</strong> → nuovo <strong>Customer service</strong> con API.</p>\n    </div>\n    <div id=\"p-tab\" class=\"box box-warn\">\n      <div class=\"box-label\">Tabelle condivise</div>\n      <p>Es. <em>Item</em> (prezzi + scorte): <strong>due concetti diversi</strong> nella stessa tabella → dividere in <em>Catalog item</em> e <em>Stock levels</em>.</p>\n    </div>\n  </div>\n  <div id=\"s2\" class=\"svg-panel svg-panel-wide cue-hidden\">\n    <svg viewBox=\"0 0 640 150\" class=\"diagram-svg\" aria-label=\"Tre tappe: prima gli schemi, poi i servizi\">\n      <defs>\n        <marker id=\"arr-m\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\">\n          <path d=\"M0 1 L9 5 L0 9 z\" fill=\"var(--ink-soft)\"/>\n        </marker>\n        <marker id=\"arr-m-b\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\">\n          <path d=\"M0 1 L9 5 L0 9 z\" fill=\"var(--blue)\"/>\n        </marker>\n      </defs>\n      <g id=\"st-1\">\n        <rect x=\"14\" y=\"14\" width=\"172\" height=\"46\" rx=\"6\" fill=\"none\" stroke=\"var(--ink-soft)\" stroke-width=\"1.4\"/>\n        <text x=\"100\" y=\"28\" text-anchor=\"middle\" class=\"svg-caption\">Monolithic service</text>\n        <rect x=\"24\" y=\"34\" width=\"72\" height=\"20\" rx=\"4\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.2\"/>\n        <text x=\"60\" y=\"48\" text-anchor=\"middle\" class=\"svg-tick\">Finance</text>\n        <rect x=\"104\" y=\"34\" width=\"72\" height=\"20\" rx=\"4\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.2\"/>\n        <text x=\"140\" y=\"48\" text-anchor=\"middle\" class=\"svg-tick\">Customer</text>\n        <rect x=\"44\" y=\"84\" width=\"112\" height=\"32\" rx=\"6\" fill=\"var(--bg-surface, #fff)\" stroke=\"var(--ink-soft)\" stroke-width=\"1.5\"/>\n        <text x=\"100\" y=\"104\" text-anchor=\"middle\" class=\"svg-tick\">Monolithic schema</text>\n        <line x1=\"100\" y1=\"60\" x2=\"100\" y2=\"80\" stroke=\"var(--ink-soft)\" stroke-width=\"1.5\" marker-end=\"url(#arr-m)\"/>\n        <text x=\"100\" y=\"138\" text-anchor=\"middle\" class=\"svg-math-sm\">1. Single schema</text>\n      </g>\n      <line x1=\"194\" y1=\"68\" x2=\"222\" y2=\"68\" stroke=\"var(--blue)\" stroke-width=\"2.4\" marker-end=\"url(#arr-m-b)\"/>\n      <g id=\"st-2\">\n        <rect x=\"230\" y=\"10\" width=\"180\" height=\"112\" rx=\"8\" fill=\"var(--green-soft, rgba(21,128,61,0.08))\" stroke=\"var(--green)\" stroke-width=\"1.6\" stroke-dasharray=\"5 3\"/>\n        <rect x=\"236\" y=\"16\" width=\"168\" height=\"44\" rx=\"5\" fill=\"var(--bg-surface, #fff)\" stroke=\"var(--ink-soft)\" stroke-width=\"1.3\"/>\n        <text x=\"320\" y=\"29\" text-anchor=\"middle\" class=\"svg-caption\">Monolithic service</text>\n        <rect x=\"244\" y=\"34\" width=\"72\" height=\"20\" rx=\"4\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.2\"/>\n        <text x=\"280\" y=\"48\" text-anchor=\"middle\" class=\"svg-tick\">Finance</text>\n        <rect x=\"324\" y=\"34\" width=\"72\" height=\"20\" rx=\"4\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.2\"/>\n        <text x=\"360\" y=\"48\" text-anchor=\"middle\" class=\"svg-tick\">Customer</text>\n        <rect x=\"244\" y=\"84\" width=\"72\" height=\"30\" rx=\"5\" fill=\"var(--bg-surface, #fff)\" stroke=\"var(--green)\" stroke-width=\"1.5\"/>\n        <text x=\"280\" y=\"103\" text-anchor=\"middle\" class=\"svg-tick\">Fin. schema</text>\n        <rect x=\"324\" y=\"84\" width=\"72\" height=\"30\" rx=\"5\" fill=\"var(--bg-surface, #fff)\" stroke=\"var(--green)\" stroke-width=\"1.5\"/>\n        <text x=\"360\" y=\"103\" text-anchor=\"middle\" class=\"svg-tick\">Cust. schema</text>\n        <line x1=\"280\" y1=\"60\" x2=\"280\" y2=\"80\" stroke=\"var(--ink-soft)\" stroke-width=\"1.5\" marker-end=\"url(#arr-m)\"/>\n        <line x1=\"360\" y1=\"60\" x2=\"360\" y2=\"80\" stroke=\"var(--ink-soft)\" stroke-width=\"1.5\" marker-end=\"url(#arr-m)\"/>\n        <text x=\"320\" y=\"138\" text-anchor=\"middle\" class=\"svg-math-sm\" fill=\"var(--green)\">2. Split schemas (rollback facile)</text>\n      </g>\n      <line x1=\"418\" y1=\"68\" x2=\"446\" y2=\"68\" stroke=\"var(--blue)\" stroke-width=\"2.4\" marker-end=\"url(#arr-m-b)\"/>\n      <g id=\"st-3\">\n        <rect x=\"458\" y=\"24\" width=\"78\" height=\"32\" rx=\"5\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.5\"/>\n        <text x=\"497\" y=\"44\" text-anchor=\"middle\" class=\"svg-tick\">Finance svc</text>\n        <rect x=\"548\" y=\"24\" width=\"78\" height=\"32\" rx=\"5\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.5\"/>\n        <text x=\"587\" y=\"44\" text-anchor=\"middle\" class=\"svg-tick\">Customer svc</text>\n        <rect x=\"458\" y=\"84\" width=\"78\" height=\"30\" rx=\"5\" fill=\"var(--bg-surface, #fff)\" stroke=\"var(--ink-soft)\" stroke-width=\"1.5\"/>\n        <text x=\"497\" y=\"103\" text-anchor=\"middle\" class=\"svg-tick\">Fin. schema</text>\n        <rect x=\"548\" y=\"84\" width=\"78\" height=\"30\" rx=\"5\" fill=\"var(--bg-surface, #fff)\" stroke=\"var(--ink-soft)\" stroke-width=\"1.5\"/>\n        <text x=\"587\" y=\"103\" text-anchor=\"middle\" class=\"svg-tick\">Cust. schema</text>\n        <line x1=\"497\" y1=\"56\" x2=\"497\" y2=\"80\" stroke=\"var(--ink-soft)\" stroke-width=\"1.5\" marker-end=\"url(#arr-m)\"/>\n        <line x1=\"587\" y1=\"56\" x2=\"587\" y2=\"80\" stroke=\"var(--ink-soft)\" stroke-width=\"1.5\" marker-end=\"url(#arr-m)\"/>\n        <text x=\"542\" y=\"138\" text-anchor=\"middle\" class=\"svg-math-sm\">3. Split into services</text>\n      </g>\n    </svg>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 1.12,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "casi di refactoring del database"
+        },
+        {
+          "at": 5.4,
+          "action": "highlight",
+          "target": "#p-stat",
+          "duration": 15,
+          "anchor": "Secondo caso: dati statici"
+        },
+        {
+          "at": 23.16,
+          "action": "highlight",
+          "target": "#p-mut",
+          "duration": 14.5,
+          "anchor": "Terzo caso: dati modificabili"
+        },
+        {
+          "at": 38.04,
+          "action": "highlight",
+          "target": "#p-tab",
+          "duration": 17,
+          "anchor": "Quarto caso: tabelle condivise"
+        },
+        {
+          "at": 55.56,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Infine: prima gli schemi"
+        },
+        {
+          "at": 55.56,
+          "action": "highlight",
+          "target": "#st-1",
+          "duration": 3.36,
+          "anchor": "Infine: prima gli schemi"
+        },
+        {
+          "at": 59.04,
+          "action": "highlight",
+          "target": "#st-2",
+          "duration": 6.12,
+          "anchor": "Passare prima a schemi separati"
+        },
+        {
+          "at": 65.28,
+          "action": "highlight",
+          "target": "#st-3",
+          "duration": 6.5,
+          "anchor": "se emergono problemi di prestazioni"
+        }
+      ],
+      "audio_file": "audio/scene-05.wav",
+      "subtitle_file": "subtitles/scene-05.json",
+      "duration_sec": 68.26
+    },
+    {
+      "id": "scene-06",
+      "section": "9.6 · Transazioni su più schemi",
+      "title": "Transazioni distribuite: Saga, Two-Phase Commit e Retry",
+      "tts_text": "Separare gli schemi rompe le transazioni ACID tutto-o-niente. Quando si crea un ordine, bisogna inserire una riga in Order nello schema Customer e una in Picking nello schema Warehouse. Se il primo inserimento riesce e il secondo fallisce, il cliente ha un ordine ma nessuno lo spedirà. [pause:0.5] Esistono tre soluzioni. [pause:0.4] La prima sono le transazioni compensative, come nel pattern Saga: si avvia una seconda transazione per annullare l'ordine già confermato e si segnala l'errore all'utente. Ma dove risiede la logica di compensazione? E che fare se fallisce la compensazione stessa o se le operazioni diventano cinque? [pause:0.5] La seconda soluzione sono le transazioni distribuite con Two-Phase Commit. Un transaction manager orchestra due fasi: nella fase di voto i partecipanti preparano la transazione bloccando le risorse e rispondono sì o no; nella fase di commit il manager ordina il commit a tutti solo se tutti hanno votato sì, altrimenti rollback. È però vulnerabile: se il manager si guasta o un partecipante non risponde, le risorse restano bloccate. [pause:0.6] La terza soluzione, preferita, è riprovare più tardi accettando l'eventual consistency: l'inserimento fallito va in coda e viene ritentato finché riesce.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">9.6 · Transazioni su più schemi</div>\n  <h2 class=\"slide-title\">Confini transazionali, Saga, Two-Phase Commit e Retry</h2>\n  <div id=\"s1\" class=\"svg-panel svg-panel-wide cue-hidden\">\n    <svg viewBox=\"0 0 640 160\" class=\"diagram-svg\" aria-label=\"Confini transazionali separati e Two-Phase Commit\">\n      <defs>\n        <marker id=\"arr-t\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\">\n          <path d=\"M0 1 L9 5 L0 9 z\" fill=\"var(--ink-soft)\"/>\n        </marker>\n      </defs>\n      <g id=\"svg-bounds\">\n        <text x=\"118\" y=\"16\" text-anchor=\"middle\" class=\"svg-math-sm\">Due confini separati</text>\n        <rect x=\"14\" y=\"26\" width=\"96\" height=\"106\" rx=\"6\" fill=\"none\" stroke=\"var(--red)\" stroke-width=\"1.6\" stroke-dasharray=\"5 3\"/>\n        <rect x=\"24\" y=\"34\" width=\"76\" height=\"26\" rx=\"4\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.3\"/>\n        <text x=\"62\" y=\"51\" text-anchor=\"middle\" class=\"svg-tick\">Customer</text>\n        <rect x=\"24\" y=\"84\" width=\"76\" height=\"32\" rx=\"4\" fill=\"var(--bg-surface, #fff)\" stroke=\"var(--ink-soft)\" stroke-width=\"1.4\"/>\n        <text x=\"62\" y=\"104\" text-anchor=\"middle\" class=\"svg-tick\">Order table</text>\n        <line x1=\"62\" y1=\"60\" x2=\"62\" y2=\"80\" stroke=\"var(--ink-soft)\" stroke-width=\"1.4\" marker-end=\"url(#arr-t)\"/>\n        <rect x=\"126\" y=\"26\" width=\"96\" height=\"106\" rx=\"6\" fill=\"none\" stroke=\"var(--red)\" stroke-width=\"1.6\" stroke-dasharray=\"5 3\"/>\n        <rect x=\"136\" y=\"34\" width=\"76\" height=\"26\" rx=\"4\" fill=\"var(--orange-soft, rgba(217,119,6,0.12))\" stroke=\"var(--orange)\" stroke-width=\"1.3\"/>\n        <text x=\"174\" y=\"51\" text-anchor=\"middle\" class=\"svg-tick\">Warehouse</text>\n        <rect x=\"136\" y=\"84\" width=\"76\" height=\"32\" rx=\"4\" fill=\"var(--bg-surface, #fff)\" stroke=\"var(--ink-soft)\" stroke-width=\"1.4\"/>\n        <text x=\"174\" y=\"104\" text-anchor=\"middle\" class=\"svg-tick\">Picking table</text>\n        <line x1=\"174\" y1=\"60\" x2=\"174\" y2=\"80\" stroke=\"var(--ink-soft)\" stroke-width=\"1.4\" marker-end=\"url(#arr-t)\"/>\n        <text x=\"118\" y=\"150\" text-anchor=\"middle\" class=\"svg-caption\" fill=\"var(--red)\">Order riesce, Picking fallisce?</text>\n      </g>\n      <line x1=\"244\" y1=\"12\" x2=\"244\" y2=\"150\" stroke=\"var(--border-strong, #ccc)\" stroke-width=\"1.2\"/>\n      <g id=\"svg-2pc\">\n        <text x=\"442\" y=\"16\" text-anchor=\"middle\" class=\"svg-math-sm\">Two-Phase Commit (2PC)</text>\n        <rect x=\"272\" y=\"24\" width=\"104\" height=\"22\" rx=\"4\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.4\"/>\n        <text x=\"324\" y=\"39\" text-anchor=\"middle\" class=\"svg-tick\">Tx Manager</text>\n        <rect x=\"406\" y=\"24\" width=\"94\" height=\"22\" rx=\"4\" fill=\"var(--bg-surface, #fff)\" stroke=\"var(--ink-soft)\" stroke-width=\"1.3\"/>\n        <text x=\"453\" y=\"39\" text-anchor=\"middle\" class=\"svg-tick\">Customer DB</text>\n        <rect x=\"524\" y=\"24\" width=\"98\" height=\"22\" rx=\"4\" fill=\"var(--bg-surface, #fff)\" stroke=\"var(--ink-soft)\" stroke-width=\"1.3\"/>\n        <text x=\"573\" y=\"39\" text-anchor=\"middle\" class=\"svg-tick\">Warehouse DB</text>\n        <line x1=\"324\" y1=\"46\" x2=\"324\" y2=\"148\" stroke=\"var(--muted)\" stroke-width=\"1.2\"/>\n        <line x1=\"453\" y1=\"46\" x2=\"453\" y2=\"148\" stroke=\"var(--muted)\" stroke-width=\"1.2\"/>\n        <line x1=\"573\" y1=\"46\" x2=\"573\" y2=\"148\" stroke=\"var(--muted)\" stroke-width=\"1.2\"/>\n        <line x1=\"324\" y1=\"64\" x2=\"569\" y2=\"64\" stroke=\"var(--ink-soft)\" stroke-width=\"1.4\" marker-end=\"url(#arr-t)\"/>\n        <text x=\"390\" y=\"59\" text-anchor=\"middle\" class=\"svg-caption\">1. Voto: commit?</text>\n        <line x1=\"573\" y1=\"84\" x2=\"328\" y2=\"84\" stroke=\"var(--orange)\" stroke-width=\"1.4\" stroke-dasharray=\"4 2\" marker-end=\"url(#arr-t)\"/>\n        <text x=\"512\" y=\"79\" text-anchor=\"middle\" class=\"svg-caption\">sì (risorse bloccate)</text>\n        <line x1=\"260\" y1=\"96\" x2=\"620\" y2=\"96\" stroke=\"var(--muted)\" stroke-width=\"1\" stroke-dasharray=\"3 3\"/>\n        <line x1=\"324\" y1=\"116\" x2=\"569\" y2=\"116\" stroke=\"var(--ink-soft)\" stroke-width=\"1.4\" marker-end=\"url(#arr-t)\"/>\n        <text x=\"390\" y=\"111\" text-anchor=\"middle\" class=\"svg-caption\">2. Commit / Rollback</text>\n        <line x1=\"573\" y1=\"136\" x2=\"328\" y2=\"136\" stroke=\"var(--green)\" stroke-width=\"1.4\" stroke-dasharray=\"4 2\" marker-end=\"url(#arr-t)\"/>\n        <text x=\"512\" y=\"131\" text-anchor=\"middle\" class=\"svg-caption\">fatto</text>\n      </g>\n    </svg>\n  </div>\n  <div id=\"s2\" class=\"grid-3 cue-hidden\">\n    <div id=\"tx-saga\" class=\"box box-def\">\n      <div class=\"box-label\">1 · Compensative (Saga)</div>\n      <p>Annulla la tx confermata. Difficile collocare la logica, gestire <em>retry</em> della compensazione e 5+ step.</p>\n    </div>\n    <div id=\"tx-2pc\" class=\"box box-warn\">\n      <div class=\"box-label\">2 · Two-Phase Commit</div>\n      <p>Manager + lock tra voto e commit. Vulnerabile: guasto del manager o nodo muto blocca tutto.</p>\n    </div>\n    <div id=\"tx-retry\" class=\"box box-primary\">\n      <div class=\"box-label\">3 · Try again later (preferita)</div>\n      <p>L'insert fallito va in coda e si ritenta: si accetta l'<strong>eventual consistency</strong> per guasti transitori.</p>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 1.6,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "rompe le transazioni ACID"
+        },
+        {
+          "at": 1.6,
+          "action": "highlight",
+          "target": "#svg-bounds",
+          "duration": 15,
+          "anchor": "rompe le transazioni ACID"
+        },
+        {
+          "at": 16.7,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Esistono tre soluzioni"
+        },
+        {
+          "at": 18.44,
+          "action": "highlight",
+          "target": "#tx-saga",
+          "duration": 16.89,
+          "anchor": "La prima sono le transazioni"
+        },
+        {
+          "at": 35.45,
+          "action": "highlight",
+          "target": "#svg-2pc",
+          "duration": 17.5,
+          "anchor": "La seconda soluzione sono"
+        },
+        {
+          "at": 54.25,
+          "action": "highlight",
+          "target": "#tx-2pc",
+          "duration": 5.92,
+          "anchor": "È però vulnerabile"
+        },
+        {
+          "at": 60.29,
+          "action": "highlight",
+          "target": "#tx-retry",
+          "duration": 14.5,
+          "anchor": "La terza soluzione, preferita"
+        }
+      ],
+      "audio_file": "audio/scene-06.wav",
+      "subtitle_file": "subtitles/scene-06.json",
+      "duration_sec": 68.18
+    },
+    {
+      "id": "scene-07",
+      "section": "9.7 · Reporting e considerazioni finali",
+      "title": "Ricostruire il reporting e migrare per piccoli passi",
+      "tts_text": "L'ultima sfida è il reporting, che deve combinare dati di più contesti, come libro contabile e catalogo. Nei monoliti i report leggono una read replica sincronizzata periodicamente per non rallentare il primario. Con i database divisi servono tre alternative. [pause:0.5] La prima è interrogare via API i servizi: non scala su grandi volumi e le API raramente supportano estrazioni massive. [pause:0.5] La seconda è il data pump, che legge il database del servizio e spinge i dati nello schema centrale di reporting. Crea un coupling con lo schema interno: per controllarlo lo gestisce e lo versiona lo stesso team del servizio, anche appoggiandosi ai backup come fa Netflix. [pause:0.5] La terza è l'event data pump: il servizio pubblica eventi di cambio stato su una coda, e un mapper subscriber aggiorna il reporting. Elimina il coupling sul database ed è più veloce, ma richiede che ogni dato diventi evento e soffre con volumi enormi. [pause:0.6] Chiudiamo con il principio guida di Sam Newman: pianificare passi piccoli e incrementali contiene il costo degli errori, e conviene dividere il monolite solo quando serve, prima che diventi troppo oneroso.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">9.7 · Reporting e considerazioni finali</div>\n  <h2 class=\"slide-title\">Tre pattern di reporting dopo la divisione del database</h2>\n  <div id=\"s1\" class=\"svg-panel svg-panel-wide cue-hidden\">\n    <svg viewBox=\"0 0 640 140\" class=\"diagram-svg\" aria-label=\"Data pump ed Event data pump\">\n      <defs>\n        <marker id=\"arr-r\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\">\n          <path d=\"M0 1 L9 5 L0 9 z\" fill=\"var(--ink-soft)\"/>\n        </marker>\n      </defs>\n      <g id=\"svg-dp\">\n        <rect x=\"10\" y=\"10\" width=\"300\" height=\"122\" rx=\"8\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.4\" stroke-dasharray=\"5 3\"/>\n        <text x=\"160\" y=\"25\" text-anchor=\"middle\" class=\"svg-caption\" fill=\"var(--blue)\">Data pump (stesso team · stessa versione v123)</text>\n        <rect x=\"22\" y=\"36\" width=\"96\" height=\"32\" rx=\"5\" fill=\"var(--bg-surface, #fff)\" stroke=\"var(--blue)\" stroke-width=\"1.4\"/>\n        <text x=\"70\" y=\"56\" text-anchor=\"middle\" class=\"svg-tick\">Customer v123</text>\n        <rect x=\"22\" y=\"88\" width=\"96\" height=\"32\" rx=\"5\" fill=\"var(--bg-surface, #fff)\" stroke=\"var(--ink-soft)\" stroke-width=\"1.4\"/>\n        <text x=\"70\" y=\"108\" text-anchor=\"middle\" class=\"svg-tick\">Service DB</text>\n        <line x1=\"70\" y1=\"68\" x2=\"70\" y2=\"84\" stroke=\"var(--ink-soft)\" stroke-width=\"1.4\" marker-end=\"url(#arr-r)\"/>\n        <rect x=\"134\" y=\"88\" width=\"92\" height=\"32\" rx=\"5\" fill=\"var(--bg-surface, #fff)\" stroke=\"var(--blue)\" stroke-width=\"1.5\"/>\n        <text x=\"180\" y=\"108\" text-anchor=\"middle\" class=\"svg-tick\">Data pump</text>\n        <line x1=\"118\" y1=\"104\" x2=\"130\" y2=\"104\" stroke=\"var(--ink-soft)\" stroke-width=\"1.4\" marker-end=\"url(#arr-r)\"/>\n        <rect x=\"240\" y=\"88\" width=\"62\" height=\"32\" rx=\"5\" fill=\"var(--green-soft, rgba(21,128,61,0.14))\" stroke=\"var(--green)\" stroke-width=\"1.4\"/>\n        <text x=\"271\" y=\"108\" text-anchor=\"middle\" class=\"svg-tick\">Rep. DB</text>\n        <line x1=\"226\" y1=\"104\" x2=\"236\" y2=\"104\" stroke=\"var(--ink-soft)\" stroke-width=\"1.4\" marker-end=\"url(#arr-r)\"/>\n      </g>\n      <g id=\"svg-edp\">\n        <rect x=\"326\" y=\"10\" width=\"304\" height=\"122\" rx=\"8\" fill=\"none\" stroke=\"var(--border-strong, #ccc)\" stroke-width=\"1.3\"/>\n        <text x=\"478\" y=\"25\" text-anchor=\"middle\" class=\"svg-caption\">Event data pump (team indipendente)</text>\n        <rect x=\"336\" y=\"62\" width=\"72\" height=\"36\" rx=\"5\" fill=\"var(--bg-surface, #fff)\" stroke=\"var(--ink-soft)\" stroke-width=\"1.4\"/>\n        <text x=\"372\" y=\"84\" text-anchor=\"middle\" class=\"svg-tick\">Customer</text>\n        <circle cx=\"428\" cy=\"80\" r=\"8\" fill=\"var(--orange-soft, rgba(217,119,6,0.3))\" stroke=\"var(--orange)\" stroke-width=\"1.4\"/>\n        <rect x=\"448\" y=\"48\" width=\"24\" height=\"64\" rx=\"4\" fill=\"var(--bg-surface, #fff)\" stroke=\"var(--orange)\" stroke-width=\"1.4\"/>\n        <text x=\"460\" y=\"124\" text-anchor=\"middle\" class=\"svg-caption\">Coda</text>\n        <rect x=\"486\" y=\"62\" width=\"66\" height=\"36\" rx=\"5\" fill=\"var(--bg-surface, #fff)\" stroke=\"var(--blue)\" stroke-width=\"1.4\"/>\n        <text x=\"519\" y=\"84\" text-anchor=\"middle\" class=\"svg-tick\">Mapper</text>\n        <rect x=\"566\" y=\"62\" width=\"54\" height=\"36\" rx=\"5\" fill=\"var(--green-soft, rgba(21,128,61,0.14))\" stroke=\"var(--green)\" stroke-width=\"1.4\"/>\n        <text x=\"593\" y=\"84\" text-anchor=\"middle\" class=\"svg-tick\">Rep. DB</text>\n        <line x1=\"408\" y1=\"80\" x2=\"418\" y2=\"80\" stroke=\"var(--ink-soft)\" stroke-width=\"1.4\"/>\n        <line x1=\"436\" y1=\"80\" x2=\"444\" y2=\"80\" stroke=\"var(--ink-soft)\" stroke-width=\"1.4\" marker-end=\"url(#arr-r)\"/>\n        <line x1=\"472\" y1=\"80\" x2=\"482\" y2=\"80\" stroke=\"var(--ink-soft)\" stroke-width=\"1.4\" marker-end=\"url(#arr-r)\"/>\n        <line x1=\"552\" y1=\"80\" x2=\"562\" y2=\"80\" stroke=\"var(--ink-soft)\" stroke-width=\"1.4\" marker-end=\"url(#arr-r)\"/>\n      </g>\n    </svg>\n  </div>\n  <table id=\"s2\" class=\"acad-table cue-hidden\">\n    <thead>\n      <tr><th>Soluzione</th><th>Chi muove i dati</th><th>Legame con il servizio</th><th>Limite</th></tr>\n    </thead>\n    <tbody>\n      <tr id=\"rp-1\"><td><strong>Chiamate API</strong></td><td>Reporting (<em>pull</em>)</td><td>Solo API pubblica</td><td>Grandi volumi; API inadatte al bulk</td></tr>\n      <tr id=\"rp-2\"><td><strong>Data pump</strong></td><td>Data pump (<em>push</em>)</td><td>Schema interno DB; stesso team/versione</td><td>Coupling con DB (es. backup Netflix)</td></tr>\n      <tr id=\"rp-3\"><td><strong>Event data pump</strong></td><td>Subscriber eventi</td><td>Solo eventi pubblici</td><td>Tutto deve diventare evento; volumi</td></tr>\n    </tbody>\n  </table>\n  <div id=\"s3\" class=\"box box-idea cue-hidden\">\n    <div class=\"box-label\">Sam Newman · Building Microservices (2021, cap. 5)</div>\n    <p>Cambiamenti <strong>piccoli e incrementali</strong> contengono l'impatto e il costo degli errori; far crescere il sistema finché serve, ma dividerlo prima che diventi troppo costoso.</p>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 0,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "L'ultima sfida è il reporting"
+        },
+        {
+          "at": 17.34,
+          "action": "highlight",
+          "target": "#rp-1",
+          "duration": 8,
+          "anchor": "La prima è interrogare via"
+        },
+        {
+          "at": 25.52,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "La seconda è il data pump"
+        },
+        {
+          "at": 25.52,
+          "action": "highlight",
+          "target": "#svg-dp",
+          "duration": 16.4,
+          "anchor": "La seconda è il data pump"
+        },
+        {
+          "at": 42.04,
+          "action": "highlight",
+          "target": "#svg-edp",
+          "duration": 17.5,
+          "anchor": "La terza è l'event data pump"
+        },
+        {
+          "at": 58.56,
+          "action": "show",
+          "target": "#s3",
+          "anchor": "Chiudiamo con il principio guida"
+        },
+        {
+          "at": 61.44,
+          "action": "highlight",
+          "target": "#s3",
+          "duration": 14,
+          "anchor": "pianificare passi piccoli e incrementali"
+        }
+      ],
+      "audio_file": "audio/scene-07.wav",
+      "subtitle_file": "subtitles/scene-07.json",
+      "duration_sec": 69.95
+    },
+    {
+      "id": "scene-08",
+      "section": "9.8 · Dettagli critici su DB, 2PC e Reporting",
+      "title": "Sei dettagli chiave su dipendenze, database, 2PC e reporting",
+      "tts_text": "Prima del riepilogo finale, fissiamo sei dettagli critici su codice, database, transazioni e reporting. [pause:0.5] Primo: nei grafi di Structure cento uno ogni nodo è un package e ogni arco indica una dipendenza, riportando il numero di riferimenti da un package all'altro. [pause:0.5] Secondo: quando si spezza una foreign key via API, i vincoli si gestiscono nei servizi con controlli di coerenza tra servizi oppure con azioni di ripulitura dei dati collegati. [pause:0.5] Terzo: trattare i dati statici condivisi come file di configurazione è la scelta preferita, ma i problemi di coerenza restano comunque; semplicemente aggiornare un file di configurazione è più pratico che aggiornare una tabella del database. [pause:0.5] Quarto: nel Two-Phase Commit, oltre al manager guasto o al partecipante muto, c'è una terza vulnerabilità: cosa succede se un commit fallisce dopo la fase di voto, a risorse ormai bloccate? [pause:0.5] Quinto: nel reporting tramite chiamate API spesso manca un endpoint per ottenere tutti i clienti; recuperarli uno per uno è inefficiente e sovraccarica il servizio interrogato. [pause:0.5] Sesto: per l'event data pump vale una regola organizzativa chiave. Leggendo solo eventi pubblici, non deve essere gestito dal team del servizio, ma da un team separato e dedicato.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">9.8 · Dettagli critici su DB, 2PC e Reporting</div>\n  <h2 class=\"slide-title\">Sei dettagli chiave su dipendenze, database, 2PC e reporting</h2>\n  <div id=\"s1\" class=\"svg-panel svg-panel-wide cue-hidden\">\n    <svg viewBox=\"0 0 640 124\" class=\"diagram-svg\" aria-label=\"Structure 101 archi pesati, 2PC commit fallito post-voto, Event Data Pump team separato\">\n      <defs>\n        <marker id=\"arr-d8\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\">\n          <path d=\"M0 1 L9 5 L0 9 z\" fill=\"var(--ink-soft)\"/>\n        </marker>\n        <marker id=\"arr-d8-r\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\">\n          <path d=\"M0 1 L9 5 L0 9 z\" fill=\"var(--red)\"/>\n        </marker>\n      </defs>\n      <g id=\"svg-s101\">\n        <rect x=\"8\" y=\"8\" width=\"196\" height=\"108\" rx=\"8\" fill=\"none\" stroke=\"var(--border-strong, #ccc)\" stroke-width=\"1.3\"/>\n        <text x=\"106\" y=\"24\" text-anchor=\"middle\" class=\"svg-caption\">Structure 101 · Archi con # riferimenti</text>\n        <rect x=\"20\" y=\"48\" width=\"66\" height=\"32\" rx=\"5\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.4\"/>\n        <text x=\"53\" y=\"68\" text-anchor=\"middle\" class=\"svg-tick\">Finance</text>\n        <rect x=\"128\" y=\"48\" width=\"66\" height=\"32\" rx=\"5\" fill=\"var(--bg-surface, #fff)\" stroke=\"var(--ink-soft)\" stroke-width=\"1.4\"/>\n        <text x=\"161\" y=\"68\" text-anchor=\"middle\" class=\"svg-tick\">Catalog</text>\n        <line x1=\"86\" y1=\"64\" x2=\"124\" y2=\"64\" stroke=\"var(--ink-soft)\" stroke-width=\"1.6\" marker-end=\"url(#arr-d8)\"/>\n        <rect x=\"91\" y=\"42\" width=\"32\" height=\"16\" rx=\"4\" fill=\"var(--orange-soft, rgba(217,119,6,0.16))\" stroke=\"var(--orange)\" stroke-width=\"1.1\"/>\n        <text x=\"107\" y=\"53\" text-anchor=\"middle\" class=\"svg-caption\">14 rif.</text>\n        <text x=\"106\" y=\"102\" text-anchor=\"middle\" class=\"svg-caption\">Peso dell'arco = n° riferimenti</text>\n      </g>\n      <g id=\"svg-2pc3\">\n        <rect x=\"218\" y=\"8\" width=\"204\" height=\"108\" rx=\"8\" fill=\"none\" stroke=\"var(--border-strong, #ccc)\" stroke-width=\"1.3\"/>\n        <text x=\"320\" y=\"24\" text-anchor=\"middle\" class=\"svg-caption\">2PC · 3ª vulnerabilità post-voto</text>\n        <rect x=\"228\" y=\"44\" width=\"84\" height=\"34\" rx=\"5\" fill=\"var(--orange-soft, rgba(217,119,6,0.14))\" stroke=\"var(--orange)\" stroke-width=\"1.4\"/>\n        <text x=\"270\" y=\"59\" text-anchor=\"middle\" class=\"svg-tick\">1. Voto: Sì</text>\n        <text x=\"270\" y=\"72\" text-anchor=\"middle\" class=\"svg-caption\">(lock attivi)</text>\n        <line x1=\"312\" y1=\"61\" x2=\"334\" y2=\"61\" stroke=\"var(--red)\" stroke-width=\"1.6\" marker-end=\"url(#arr-d8-r)\"/>\n        <rect x=\"338\" y=\"44\" width=\"74\" height=\"34\" rx=\"5\" fill=\"var(--red-soft, rgba(220,38,38,0.12))\" stroke=\"var(--red)\" stroke-width=\"1.6\"/>\n        <text x=\"375\" y=\"59\" text-anchor=\"middle\" class=\"svg-tick\" fill=\"var(--red)\">2. Commit</text>\n        <text x=\"375\" y=\"72\" text-anchor=\"middle\" class=\"svg-caption\" fill=\"var(--red)\">fallisce!</text>\n        <text x=\"320\" y=\"102\" text-anchor=\"middle\" class=\"svg-caption\" fill=\"var(--red)\">Stato incerto dopo il voto</text>\n      </g>\n      <g id=\"svg-edp-team\">\n        <rect x=\"436\" y=\"8\" width=\"196\" height=\"108\" rx=\"8\" fill=\"none\" stroke=\"var(--border-strong, #ccc)\" stroke-width=\"1.3\"/>\n        <text x=\"534\" y=\"24\" text-anchor=\"middle\" class=\"svg-caption\">Event Data Pump · Governance</text>\n        <rect x=\"446\" y=\"46\" width=\"66\" height=\"34\" rx=\"5\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.4\"/>\n        <text x=\"479\" y=\"61\" text-anchor=\"middle\" class=\"svg-tick\">Servizio</text>\n        <text x=\"479\" y=\"74\" text-anchor=\"middle\" class=\"svg-caption\">Team A</text>\n        <line x1=\"512\" y1=\"63\" x2=\"538\" y2=\"63\" stroke=\"var(--ink-soft)\" stroke-width=\"1.5\" stroke-dasharray=\"4 2\" marker-end=\"url(#arr-d8)\"/>\n        <rect x=\"542\" y=\"46\" width=\"80\" height=\"34\" rx=\"5\" fill=\"var(--green-soft, rgba(21,128,61,0.14))\" stroke=\"var(--green)\" stroke-width=\"1.5\"/>\n        <text x=\"582\" y=\"61\" text-anchor=\"middle\" class=\"svg-tick\">Event Pump</text>\n        <text x=\"582\" y=\"74\" text-anchor=\"middle\" class=\"svg-caption\" fill=\"var(--green)\">Team separato</text>\n        <text x=\"534\" y=\"102\" text-anchor=\"middle\" class=\"svg-caption\">Solo eventi pubblici, altro team</text>\n      </g>\n    </svg>\n  </div>\n  <div id=\"s2\" class=\"grid-2 cue-hidden\">\n    <div id=\"b-db\" class=\"box box-def\">\n      <div class=\"box-label\">Dipendenze &amp; Database</div>\n      <ul class=\"clean-list\">\n        <li id=\"d-1\"><strong>Structure 101</strong>: ogni arco del grafo indica una dipendenza con il <strong>numero di riferimenti</strong> tra package.</li>\n        <li id=\"d-2\"><strong>Spezzare le Foreign Key</strong>: integrità sostituita nei servizi con <strong>controlli di coerenza tra servizi</strong> o <strong>azioni di ripulitura</strong> dei dati collegati.</li>\n        <li id=\"d-3\"><strong>Dati statici (config file)</strong>: i <strong>problemi di coerenza restano comunque</strong>, ma aggiornare un file è più pratico di una tabella DB.</li>\n      </ul>\n    </div>\n    <div id=\"b-rep\" class=\"box box-warn\">\n      <div class=\"box-label\">2PC &amp; Reporting</div>\n      <ul class=\"clean-list\">\n        <li id=\"d-4\"><strong>2PC · 3ª vulnerabilità</strong>: cosa succede se un <strong>commit fallisce dopo la fase di voto</strong> (a risorse ormai bloccate)?</li>\n        <li id=\"d-5\"><strong>Reporting Sol. 1 (API)</strong>: spesso manca un endpoint per tutti i clienti; recuperarli <strong>uno per uno</strong> è inefficiente e <strong>sovraccarica il servizio</strong>.</li>\n        <li id=\"d-6\"><strong>Reporting Sol. 3 (Event Pump)</strong>: regola organizzativa chiave — <strong>non deve essere gestito dal team del servizio</strong>, ma da un team separato/dedicato.</li>\n      </ul>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 1.68,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "fissiamo sei dettagli critici"
+        },
+        {
+          "at": 1.68,
+          "action": "highlight",
+          "target": "#b-db",
+          "duration": 4.2,
+          "anchor": "fissiamo sei dettagli critici"
+        },
+        {
+          "at": 8.62,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "nei grafi di Structure"
+        },
+        {
+          "at": 8.62,
+          "action": "highlight",
+          "target": "#svg-s101",
+          "duration": 5,
+          "anchor": "nei grafi di Structure"
+        },
+        {
+          "at": 15.1,
+          "action": "highlight",
+          "target": "#d-1",
+          "duration": 4.78,
+          "anchor": "riportando il numero di"
+        },
+        {
+          "at": 20,
+          "action": "highlight",
+          "target": "#d-2",
+          "duration": 11.35,
+          "anchor": "quando si spezza una foreign"
+        },
+        {
+          "at": 31.47,
+          "action": "highlight",
+          "target": "#d-3",
+          "duration": 15.5,
+          "anchor": "trattare i dati statici condivisi"
+        },
+        {
+          "at": 47.55,
+          "action": "highlight",
+          "target": "#svg-2pc3",
+          "duration": 5.62,
+          "anchor": "oltre al manager guasto"
+        },
+        {
+          "at": 53.29,
+          "action": "highlight",
+          "target": "#d-4",
+          "duration": 5.73,
+          "anchor": "se un commit fallisce dopo"
+        },
+        {
+          "at": 59.14,
+          "action": "highlight",
+          "target": "#d-5",
+          "duration": 11.7,
+          "anchor": "nel reporting tramite chiamate"
+        },
+        {
+          "at": 71.38,
+          "action": "highlight",
+          "target": "#svg-edp-team",
+          "duration": 3.58,
+          "anchor": "vale una regola organizzativa"
+        },
+        {
+          "at": 75.08,
+          "action": "highlight",
+          "target": "#d-6",
+          "duration": 7.2,
+          "anchor": "non deve essere gestito"
+        }
+      ],
+      "audio_file": "audio/scene-08.wav",
+      "subtitle_file": "subtitles/scene-08.json",
+      "duration_sec": 79.33
+    },
+    {
+      "id": "scene-09",
+      "section": "9.9 · Riepilogo e autoverifica",
+      "title": "Punti chiave del capitolo e domande d'esame",
+      "tts_text": "Chiudiamo il capitolo nove riassumendo i sei concetti essenziali da portare all'esame. [pause:0.5] Primo: un monolite che cresce perde cohesion e loose coupling, e va scomposto solo quando diventa un problema, ma prima che costi troppo. [pause:0.5] Secondo: si individua un seam con bounded context e package come in Structure cento uno, iniziando dal massimo beneficio tra ritmo di cambio, struttura team, sicurezza, tecnologia e dipendenze minori. [pause:0.5] Terzo: il database si analizza con Hibernate e SchemaSpy, sostituendo le foreign key tra contesti con chiamate API. [pause:0.5] Quarto: i dati statici diventano configurazione, i dati modificabili condivisi diventano un servizio dedicato, le tabelle con due concetti si dividono, e si separano prima gli schemi. [pause:0.5] Quinto: le transazioni multi-schema si gestiscono con Saga compensative, Two-Phase Commit o, preferibilmente, riprovando più tardi con eventual consistency. [pause:0.5] Sesto: il reporting usa chiamate API, data pump gestiti dal team o event data pump su coda. [pause:0.6] Mettetevi ora alla prova rispondendo alle domande di verifica sulla destra prima di passare a Kubernetes.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">9.8 · Riepilogo &amp; Autoverifica</div>\n  <h2 class=\"slide-title\">Punti chiave e domande di verifica</h2>\n  <div class=\"grid-2\">\n    <div class=\"box box-algo\">\n      <div class=\"box-label\">Punti chiave da fissare</div>\n      <ul class=\"clean-list\">\n        <li id=\"s1\" class=\"cue-hidden\"><strong>Monolite &amp; timing</strong>: perde <em>cohesion</em> e <em>loose coupling</em>; si divide quando serve, prima che costi troppo.</li>\n        <li id=\"s2\" class=\"cue-hidden\"><strong>Seam &amp; 5 driver</strong>: <em>bounded context</em> + package (Structure 101); partenza da massimo beneficio e meno dipendenze.</li>\n        <li id=\"s3\" class=\"cue-hidden\"><strong>Database &amp; FK</strong>: analisi con Hibernate/SchemaSpy; FK tra contesti sostituite da API (scelte di business).</li>\n        <li id=\"s4\" class=\"cue-hidden\"><strong>Condivisione &amp; ordine</strong>: statici → config; modificabili → nuovo servizio; 2 concetti → 2 tabelle. Prima gli schemi.</li>\n        <li id=\"s5\" class=\"cue-hidden\"><strong>Transazioni</strong>: Saga compensative, 2PC (vulnerabile a blocchi) o <em>try again later</em> + <em>eventual consistency</em>.</li>\n        <li id=\"s6\" class=\"cue-hidden\"><strong>Reporting</strong>: chiamate API (<em>pull</em>), <em>data pump</em> (stesso team/versione) o <em>event data pump</em> asincrono.</li>\n      </ul>\n    </div>\n    <div id=\"s7\" class=\"box box-theorem cue-hidden\">\n      <div class=\"box-label\">Domande di verifica</div>\n      <ol class=\"verify-list\">\n        <li>Perché un monolite perde cohesion e loose coupling, e quando scomporlo?</li>\n        <li>Cos'è un seam? Come aiutano bounded context e package a trovarlo?</li>\n        <li>Quali sono i 5 criteri per scegliere il primo seam? (Esempio per ciascuno)</li>\n        <li>Perché il DB è la dipendenza più difficile? Quali strumenti lo analizzano?</li>\n        <li>Come si elimina una foreign key tra due contesti e cosa si perde?</li>\n        <li>Soluzioni per dati statici condivisi, modificabili condivisi e tabelle condivise?</li>\n        <li>Conviene separare prima gli schemi o prima i servizi? Perché?</li>\n        <li>Confronta le tre soluzioni per le transazioni e le vulnerabilità di 2PC.</li>\n        <li>Come fare reporting su DB diviso? Confronta data pump ed event data pump.</li>\n      </ol>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 6.39,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "Primo: un monolite che cresce"
+        },
+        {
+          "at": 6.39,
+          "action": "highlight",
+          "target": "#s1",
+          "duration": 8.72,
+          "anchor": "Primo: un monolite che cresce"
+        },
+        {
+          "at": 15.23,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Secondo: si individua un seam"
+        },
+        {
+          "at": 15.23,
+          "action": "highlight",
+          "target": "#s2",
+          "duration": 12.52,
+          "anchor": "Secondo: si individua un seam"
+        },
+        {
+          "at": 27.87,
+          "action": "show",
+          "target": "#s3",
+          "anchor": "Terzo: il database si analizza"
+        },
+        {
+          "at": 27.87,
+          "action": "highlight",
+          "target": "#s3",
+          "duration": 7.24,
+          "anchor": "Terzo: il database si analizza"
+        },
+        {
+          "at": 35.23,
+          "action": "show",
+          "target": "#s4",
+          "anchor": "Quarto: i dati statici diventano"
+        },
+        {
+          "at": 35.23,
+          "action": "highlight",
+          "target": "#s4",
+          "duration": 10.36,
+          "anchor": "Quarto: i dati statici diventano"
+        },
+        {
+          "at": 45.71,
+          "action": "show",
+          "target": "#s5",
+          "anchor": "Quinto: le transazioni multi-schema"
+        },
+        {
+          "at": 45.71,
+          "action": "highlight",
+          "target": "#s5",
+          "duration": 9.77,
+          "anchor": "Quinto: le transazioni multi-schema"
+        },
+        {
+          "at": 55.6,
+          "action": "show",
+          "target": "#s6",
+          "anchor": "Sesto: il reporting usa chiamate"
+        },
+        {
+          "at": 55.6,
+          "action": "highlight",
+          "target": "#s6",
+          "duration": 9,
+          "anchor": "Sesto: il reporting usa chiamate"
+        },
+        {
+          "at": 62.14,
+          "action": "show",
+          "target": "#s7",
+          "anchor": "Mettetevi ora alla prova"
+        }
+      ],
+      "audio_file": "audio/scene-09.wav",
+      "subtitle_file": "subtitles/scene-09.json",
+      "duration_sec": 66.95
+    }
+  ]
+}

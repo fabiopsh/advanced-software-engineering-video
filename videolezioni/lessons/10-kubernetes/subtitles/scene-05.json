@@ -1,0 +1,820 @@
+{
+  "duration": 54.259,
+  "segments": [
+    {
+      "start": 0.04,
+      "end": 2.0,
+      "text": "Ogni Pod ha un proprio indirizzo IP,",
+      "words": [
+        {
+          "text": "Ogni",
+          "start": 0.04,
+          "end": 0.24
+        },
+        {
+          "text": "Pod",
+          "start": 0.3,
+          "end": 0.58
+        },
+        {
+          "text": "ha",
+          "start": 0.82,
+          "end": 0.88
+        },
+        {
+          "text": "un",
+          "start": 0.94,
+          "end": 1.0
+        },
+        {
+          "text": "proprio",
+          "start": 1.06,
+          "end": 1.38
+        },
+        {
+          "text": "indirizzo",
+          "start": 1.4,
+          "end": 1.84
+        },
+        {
+          "text": "IP,",
+          "start": 1.88,
+          "end": 2.0
+        }
+      ]
+    },
+    {
+      "start": 2.58,
+      "end": 6.361,
+      "text": "ma i Pod di un Deployment nascono e muoiono di continuo durante guasti,",
+      "words": [
+        {
+          "text": "ma",
+          "start": 2.58,
+          "end": 2.62
+        },
+        {
+          "text": "i",
+          "start": 2.68,
+          "end": 2.72
+        },
+        {
+          "text": "Pod",
+          "start": 2.76,
+          "end": 2.96
+        },
+        {
+          "text": "di",
+          "start": 3.06,
+          "end": 3.12
+        },
+        {
+          "text": "un",
+          "start": 3.14,
+          "end": 3.2
+        },
+        {
+          "text": "Deployment",
+          "start": 3.22,
+          "end": 3.78
+        },
+        {
+          "text": "nascono",
+          "start": 3.92,
+          "end": 4.36
+        },
+        {
+          "text": "e",
+          "start": 4.38,
+          "end": 4.42
+        },
+        {
+          "text": "muoiono",
+          "start": 4.46,
+          "end": 4.82
+        },
+        {
+          "text": "di",
+          "start": 4.86,
+          "end": 4.92
+        },
+        {
+          "text": "continuo",
+          "start": 4.96,
+          "end": 5.42
+        },
+        {
+          "text": "durante",
+          "start": 5.46,
+          "end": 5.8
+        },
+        {
+          "text": "guasti,",
+          "start": 5.9,
+          "end": 6.361
+        }
+      ]
+    },
+    {
+      "start": 6.441,
+      "end": 7.661,
+      "text": "scaling o aggiornamenti.",
+      "words": [
+        {
+          "text": "scaling",
+          "start": 6.441,
+          "end": 6.921
+        },
+        {
+          "text": "o",
+          "start": 6.961,
+          "end": 7.001
+        },
+        {
+          "text": "aggiornamenti.",
+          "start": 7.021,
+          "end": 7.661
+        }
+      ]
+    },
+    {
+      "start": 8.241,
+      "end": 11.401,
+      "text": "Come fa quindi un client a contattarli in modo affidabile?",
+      "words": [
+        {
+          "text": "Come",
+          "start": 8.241,
+          "end": 8.461
+        },
+        {
+          "text": "fa",
+          "start": 8.521,
+          "end": 8.601
+        },
+        {
+          "text": "quindi",
+          "start": 8.721,
+          "end": 9.021
+        },
+        {
+          "text": "un",
+          "start": 9.081,
+          "end": 9.141
+        },
+        {
+          "text": "client",
+          "start": 9.201,
+          "end": 9.621
+        },
+        {
+          "text": "a",
+          "start": 9.781,
+          "end": 9.821
+        },
+        {
+          "text": "contattarli",
+          "start": 9.901,
+          "end": 10.561
+        },
+        {
+          "text": "in",
+          "start": 10.581,
+          "end": 10.641
+        },
+        {
+          "text": "modo",
+          "start": 10.661,
+          "end": 10.821
+        },
+        {
+          "text": "affidabile?",
+          "start": 10.861,
+          "end": 11.401
+        }
+      ]
+    },
+    {
+      "start": 12.061,
+      "end": 13.181,
+      "text": "Con un oggetto Service.",
+      "words": [
+        {
+          "text": "Con",
+          "start": 12.061,
+          "end": 12.181
+        },
+        {
+          "text": "un",
+          "start": 12.221,
+          "end": 12.281
+        },
+        {
+          "text": "oggetto",
+          "start": 12.321,
+          "end": 12.681
+        },
+        {
+          "text": "Service.",
+          "start": 12.761,
+          "end": 13.181
+        }
+      ]
+    },
+    {
+      "start": 13.941,
+      "end": 18.742,
+      "text": "Un Service offre un endpoint di rete stabile e distribuisce il traffico verso tutti i",
+      "words": [
+        {
+          "text": "Un",
+          "start": 13.941,
+          "end": 14.021
+        },
+        {
+          "text": "Service",
+          "start": 14.081,
+          "end": 14.501
+        },
+        {
+          "text": "offre",
+          "start": 14.661,
+          "end": 14.901
+        },
+        {
+          "text": "un",
+          "start": 14.941,
+          "end": 15.021
+        },
+        {
+          "text": "endpoint",
+          "start": 15.061,
+          "end": 15.501
+        },
+        {
+          "text": "di",
+          "start": 15.621,
+          "end": 15.681
+        },
+        {
+          "text": "rete",
+          "start": 15.741,
+          "end": 15.941
+        },
+        {
+          "text": "stabile",
+          "start": 16.001,
+          "end": 16.461
+        },
+        {
+          "text": "e",
+          "start": 16.781,
+          "end": 16.821
+        },
+        {
+          "text": "distribuisce",
+          "start": 16.861,
+          "end": 17.421
+        },
+        {
+          "text": "il",
+          "start": 17.461,
+          "end": 17.521
+        },
+        {
+          "text": "traffico",
+          "start": 17.541,
+          "end": 17.981
+        },
+        {
+          "text": "verso",
+          "start": 18.021,
+          "end": 18.282
+        },
+        {
+          "text": "tutti",
+          "start": 18.382,
+          "end": 18.662
+        },
+        {
+          "text": "i",
+          "start": 18.702,
+          "end": 18.742
+        }
+      ]
+    },
+    {
+      "start": 18.742,
+      "end": 21.162,
+      "text": "Pod attivi che corrispondono a determinate label.",
+      "words": [
+        {
+          "text": "Pod",
+          "start": 18.742,
+          "end": 18.922
+        },
+        {
+          "text": "attivi",
+          "start": 18.982,
+          "end": 19.342
+        },
+        {
+          "text": "che",
+          "start": 19.402,
+          "end": 19.482
+        },
+        {
+          "text": "corrispondono",
+          "start": 19.542,
+          "end": 20.182
+        },
+        {
+          "text": "a",
+          "start": 20.202,
+          "end": 20.242
+        },
+        {
+          "text": "determinate",
+          "start": 20.282,
+          "end": 20.822
+        },
+        {
+          "text": "label.",
+          "start": 20.862,
+          "end": 21.162
+        }
+      ]
+    },
+    {
+      "start": 21.902,
+      "end": 26.662,
+      "text": "Osservate il diagramma: il secondo Pod si è guastato ed è stato escluso dal bilanciamento;",
+      "words": [
+        {
+          "text": "Osservate",
+          "start": 21.902,
+          "end": 22.302
+        },
+        {
+          "text": "il",
+          "start": 22.342,
+          "end": 22.402
+        },
+        {
+          "text": "diagramma:",
+          "start": 22.422,
+          "end": 22.842
+        },
+        {
+          "text": "il",
+          "start": 23.422,
+          "end": 23.502
+        },
+        {
+          "text": "secondo",
+          "start": 23.542,
+          "end": 23.862
+        },
+        {
+          "text": "Pod",
+          "start": 23.902,
+          "end": 24.122
+        },
+        {
+          "text": "si",
+          "start": 24.222,
+          "end": 24.282
+        },
+        {
+          "text": "è",
+          "start": 24.302,
+          "end": 24.342
+        },
+        {
+          "text": "guastato",
+          "start": 24.382,
+          "end": 24.842
+        },
+        {
+          "text": "ed",
+          "start": 25.082,
+          "end": 25.162
+        },
+        {
+          "text": "è",
+          "start": 25.182,
+          "end": 25.222
+        },
+        {
+          "text": "stato",
+          "start": 25.242,
+          "end": 25.442
+        },
+        {
+          "text": "escluso",
+          "start": 25.482,
+          "end": 25.842
+        },
+        {
+          "text": "dal",
+          "start": 25.862,
+          "end": 25.982
+        },
+        {
+          "text": "bilanciamento;",
+          "start": 26.002,
+          "end": 26.662
+        }
+      ]
+    },
+    {
+      "start": 27.362,
+      "end": 32.683,
+      "text": "il Deployment avvia subito un Pod sostitutivo con la stessa label app uguale ml-model,",
+      "words": [
+        {
+          "text": "il",
+          "start": 27.362,
+          "end": 27.442
+        },
+        {
+          "text": "Deployment",
+          "start": 27.482,
+          "end": 27.982
+        },
+        {
+          "text": "avvia",
+          "start": 28.122,
+          "end": 28.362
+        },
+        {
+          "text": "subito",
+          "start": 28.442,
+          "end": 28.782
+        },
+        {
+          "text": "un",
+          "start": 28.822,
+          "end": 28.882
+        },
+        {
+          "text": "Pod",
+          "start": 28.922,
+          "end": 29.102
+        },
+        {
+          "text": "sostitutivo",
+          "start": 29.222,
+          "end": 29.822
+        },
+        {
+          "text": "con",
+          "start": 30.103,
+          "end": 30.183
+        },
+        {
+          "text": "la",
+          "start": 30.223,
+          "end": 30.263
+        },
+        {
+          "text": "stessa",
+          "start": 30.283,
+          "end": 30.523
+        },
+        {
+          "text": "label",
+          "start": 30.563,
+          "end": 30.843
+        },
+        {
+          "text": "app",
+          "start": 31.043,
+          "end": 31.203
+        },
+        {
+          "text": "uguale",
+          "start": 31.403,
+          "end": 31.743
+        },
+        {
+          "text": "ml-model,",
+          "start": 32.043,
+          "end": 32.683
+        }
+      ]
+    },
+    {
+      "start": 33.203,
+      "end": 36.983,
+      "text": "e il Service inizia a instradargli le richieste senza che il client si accorga di",
+      "words": [
+        {
+          "text": "e",
+          "start": 33.203,
+          "end": 33.243
+        },
+        {
+          "text": "il",
+          "start": 33.323,
+          "end": 33.383
+        },
+        {
+          "text": "Service",
+          "start": 33.463,
+          "end": 33.863
+        },
+        {
+          "text": "inizia",
+          "start": 33.983,
+          "end": 34.303
+        },
+        {
+          "text": "a",
+          "start": 34.323,
+          "end": 34.363
+        },
+        {
+          "text": "instradargli",
+          "start": 34.363,
+          "end": 34.883
+        },
+        {
+          "text": "le",
+          "start": 34.923,
+          "end": 34.983
+        },
+        {
+          "text": "richieste",
+          "start": 35.023,
+          "end": 35.443
+        },
+        {
+          "text": "senza",
+          "start": 35.543,
+          "end": 35.823
+        },
+        {
+          "text": "che",
+          "start": 35.863,
+          "end": 35.943
+        },
+        {
+          "text": "il",
+          "start": 35.983,
+          "end": 36.023
+        },
+        {
+          "text": "client",
+          "start": 36.063,
+          "end": 36.403
+        },
+        {
+          "text": "si",
+          "start": 36.503,
+          "end": 36.563
+        },
+        {
+          "text": "accorga",
+          "start": 36.583,
+          "end": 36.883
+        },
+        {
+          "text": "di",
+          "start": 36.923,
+          "end": 36.983
+        }
+      ]
+    },
+    {
+      "start": 37.023,
+      "end": 37.283,
+      "text": "nulla.",
+      "words": [
+        {
+          "text": "nulla.",
+          "start": 37.023,
+          "end": 37.283
+        }
+      ]
+    },
+    {
+      "start": 38.383,
+      "end": 44.204,
+      "text": "Nel manifest, il tipo ClusterIP espone il Service soltanto all'interno del cluster sulla porta TCP",
+      "words": [
+        {
+          "text": "Nel",
+          "start": 38.383,
+          "end": 38.503
+        },
+        {
+          "text": "manifest,",
+          "start": 38.543,
+          "end": 38.983
+        },
+        {
+          "text": "il",
+          "start": 39.163,
+          "end": 39.243
+        },
+        {
+          "text": "tipo",
+          "start": 39.303,
+          "end": 39.503
+        },
+        {
+          "text": "ClusterIP",
+          "start": 39.623,
+          "end": 40.243
+        },
+        {
+          "text": "espone",
+          "start": 40.603,
+          "end": 40.923
+        },
+        {
+          "text": "il",
+          "start": 40.983,
+          "end": 41.063
+        },
+        {
+          "text": "Service",
+          "start": 41.103,
+          "end": 41.523
+        },
+        {
+          "text": "soltanto",
+          "start": 41.603,
+          "end": 42.043
+        },
+        {
+          "text": "all'interno",
+          "start": 42.083,
+          "end": 42.644
+        },
+        {
+          "text": "del",
+          "start": 42.684,
+          "end": 42.804
+        },
+        {
+          "text": "cluster",
+          "start": 42.824,
+          "end": 43.244
+        },
+        {
+          "text": "sulla",
+          "start": 43.324,
+          "end": 43.504
+        },
+        {
+          "text": "porta",
+          "start": 43.544,
+          "end": 43.784
+        },
+        {
+          "text": "TCP",
+          "start": 43.864,
+          "end": 44.204
+        }
+      ]
+    },
+    {
+      "start": 44.344,
+      "end": 44.824,
+      "text": "ottanta.",
+      "words": [
+        {
+          "text": "ottanta.",
+          "start": 44.344,
+          "end": 44.824
+        }
+      ]
+    },
+    {
+      "start": 45.404,
+      "end": 49.964,
+      "text": "Quando serve esporre porte direttamente sui nodi o tramite un bilanciatore del cloud provider,",
+      "words": [
+        {
+          "text": "Quando",
+          "start": 45.404,
+          "end": 45.624
+        },
+        {
+          "text": "serve",
+          "start": 45.664,
+          "end": 45.884
+        },
+        {
+          "text": "esporre",
+          "start": 45.904,
+          "end": 46.244
+        },
+        {
+          "text": "porte",
+          "start": 46.284,
+          "end": 46.564
+        },
+        {
+          "text": "direttamente",
+          "start": 46.624,
+          "end": 47.204
+        },
+        {
+          "text": "sui",
+          "start": 47.244,
+          "end": 47.384
+        },
+        {
+          "text": "nodi",
+          "start": 47.424,
+          "end": 47.684
+        },
+        {
+          "text": "o",
+          "start": 47.924,
+          "end": 47.964
+        },
+        {
+          "text": "tramite",
+          "start": 48.004,
+          "end": 48.324
+        },
+        {
+          "text": "un",
+          "start": 48.364,
+          "end": 48.424
+        },
+        {
+          "text": "bilanciatore",
+          "start": 48.444,
+          "end": 49.044
+        },
+        {
+          "text": "del",
+          "start": 49.084,
+          "end": 49.204
+        },
+        {
+          "text": "cloud",
+          "start": 49.244,
+          "end": 49.464
+        },
+        {
+          "text": "provider,",
+          "start": 49.504,
+          "end": 49.964
+        }
+      ]
+    },
+    {
+      "start": 50.324,
+      "end": 53.524,
+      "text": "Kubernetes prevede anche i tipi NodePort e LoadBalancer.",
+      "words": [
+        {
+          "text": "Kubernetes",
+          "start": 50.324,
+          "end": 50.824
+        },
+        {
+          "text": "prevede",
+          "start": 50.864,
+          "end": 51.164
+        },
+        {
+          "text": "anche",
+          "start": 51.224,
+          "end": 51.404
+        },
+        {
+          "text": "i",
+          "start": 51.444,
+          "end": 51.484
+        },
+        {
+          "text": "tipi",
+          "start": 51.504,
+          "end": 51.784
+        },
+        {
+          "text": "NodePort",
+          "start": 51.884,
+          "end": 52.464
+        },
+        {
+          "text": "e",
+          "start": 52.664,
+          "end": 52.704
+        },
+        {
+          "text": "LoadBalancer.",
+          "start": 52.844,
+          "end": 53.524
+        }
+      ]
+    }
+  ]
+}

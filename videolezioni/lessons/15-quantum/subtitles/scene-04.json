@@ -1,0 +1,1083 @@
+{
+  "duration": 73.729,
+  "segments": [
+    {
+      "start": 0.834,
+      "end": 2.714,
+      "text": "Non esiste un solo modo di costruire un qubit:",
+      "words": [
+        {
+          "text": "Non",
+          "start": 0.834,
+          "end": 0.954
+        },
+        {
+          "text": "esiste",
+          "start": 0.974,
+          "end": 1.234
+        },
+        {
+          "text": "un",
+          "start": 1.274,
+          "end": 1.354
+        },
+        {
+          "text": "solo",
+          "start": 1.374,
+          "end": 1.534
+        },
+        {
+          "text": "modo",
+          "start": 1.574,
+          "end": 1.754
+        },
+        {
+          "text": "di",
+          "start": 1.794,
+          "end": 1.854
+        },
+        {
+          "text": "costruire",
+          "start": 1.894,
+          "end": 2.294
+        },
+        {
+          "text": "un",
+          "start": 2.334,
+          "end": 2.394
+        },
+        {
+          "text": "qubit:",
+          "start": 2.414,
+          "end": 2.714
+        }
+      ]
+    },
+    {
+      "start": 3.294,
+      "end": 8.335,
+      "text": "ogni tecnologia hardware comporta compromessi precisi, sintetizzati da cinque caratteristiche chiave.",
+      "words": [
+        {
+          "text": "ogni",
+          "start": 3.294,
+          "end": 3.454
+        },
+        {
+          "text": "tecnologia",
+          "start": 3.514,
+          "end": 4.014
+        },
+        {
+          "text": "hardware",
+          "start": 4.074,
+          "end": 4.434
+        },
+        {
+          "text": "comporta",
+          "start": 4.454,
+          "end": 4.814
+        },
+        {
+          "text": "compromessi",
+          "start": 4.914,
+          "end": 5.434
+        },
+        {
+          "text": "precisi,",
+          "start": 5.474,
+          "end": 5.914
+        },
+        {
+          "text": "sintetizzati",
+          "start": 6.234,
+          "end": 6.814
+        },
+        {
+          "text": "da",
+          "start": 6.854,
+          "end": 6.914
+        },
+        {
+          "text": "cinque",
+          "start": 7.014,
+          "end": 7.354
+        },
+        {
+          "text": "caratteristiche",
+          "start": 7.374,
+          "end": 8.014
+        },
+        {
+          "text": "chiave.",
+          "start": 8.054,
+          "end": 8.335
+        }
+      ]
+    },
+    {
+      "start": 8.775,
+      "end": 13.555,
+      "text": "Il qubit lifetime misura il tempo di coerenza, cioè quanto a lungo il qubit conserva",
+      "words": [
+        {
+          "text": "Il",
+          "start": 8.775,
+          "end": 8.875
+        },
+        {
+          "text": "qubit",
+          "start": 8.935,
+          "end": 9.215
+        },
+        {
+          "text": "lifetime",
+          "start": 9.315,
+          "end": 9.875
+        },
+        {
+          "text": "misura",
+          "start": 10.175,
+          "end": 10.475
+        },
+        {
+          "text": "il",
+          "start": 10.535,
+          "end": 10.595
+        },
+        {
+          "text": "tempo",
+          "start": 10.635,
+          "end": 10.875
+        },
+        {
+          "text": "di",
+          "start": 10.915,
+          "end": 10.975
+        },
+        {
+          "text": "coerenza,",
+          "start": 11.015,
+          "end": 11.515
+        },
+        {
+          "text": "cioè",
+          "start": 11.715,
+          "end": 11.835
+        },
+        {
+          "text": "quanto",
+          "start": 11.975,
+          "end": 12.255
+        },
+        {
+          "text": "a",
+          "start": 12.295,
+          "end": 12.335
+        },
+        {
+          "text": "lungo",
+          "start": 12.395,
+          "end": 12.655
+        },
+        {
+          "text": "il",
+          "start": 12.715,
+          "end": 12.775
+        },
+        {
+          "text": "qubit",
+          "start": 12.795,
+          "end": 13.095
+        },
+        {
+          "text": "conserva",
+          "start": 13.175,
+          "end": 13.555
+        }
+      ]
+    },
+    {
+      "start": 13.595,
+      "end": 14.235,
+      "text": "il proprio stato.",
+      "words": [
+        {
+          "text": "il",
+          "start": 13.595,
+          "end": 13.635
+        },
+        {
+          "text": "proprio",
+          "start": 13.675,
+          "end": 13.935
+        },
+        {
+          "text": "stato.",
+          "start": 13.975,
+          "end": 14.235
+        }
+      ]
+    },
+    {
+      "start": 15.055,
+      "end": 18.175,
+      "text": "La gate fidelity è la fedeltà delle operazioni a due qubit,",
+      "words": [
+        {
+          "text": "La",
+          "start": 15.055,
+          "end": 15.115
+        },
+        {
+          "text": "gate",
+          "start": 15.215,
+          "end": 15.495
+        },
+        {
+          "text": "fidelity",
+          "start": 15.555,
+          "end": 16.035
+        },
+        {
+          "text": "è",
+          "start": 16.335,
+          "end": 16.375
+        },
+        {
+          "text": "la",
+          "start": 16.395,
+          "end": 16.455
+        },
+        {
+          "text": "fedeltà",
+          "start": 16.515,
+          "end": 16.855
+        },
+        {
+          "text": "delle",
+          "start": 16.915,
+          "end": 17.075
+        },
+        {
+          "text": "operazioni",
+          "start": 17.115,
+          "end": 17.595
+        },
+        {
+          "text": "a",
+          "start": 17.655,
+          "end": 17.695
+        },
+        {
+          "text": "due",
+          "start": 17.735,
+          "end": 17.855
+        },
+        {
+          "text": "qubit,",
+          "start": 17.895,
+          "end": 18.175
+        }
+      ]
+    },
+    {
+      "start": 18.675,
+      "end": 22.095,
+      "text": "mentre il gate operation time indica la velocità di esecuzione.",
+      "words": [
+        {
+          "text": "mentre",
+          "start": 18.675,
+          "end": 18.935
+        },
+        {
+          "text": "il",
+          "start": 18.995,
+          "end": 19.055
+        },
+        {
+          "text": "gate",
+          "start": 19.115,
+          "end": 19.375
+        },
+        {
+          "text": "operation",
+          "start": 19.395,
+          "end": 19.775
+        },
+        {
+          "text": "time",
+          "start": 19.855,
+          "end": 20.215
+        },
+        {
+          "text": "indica",
+          "start": 20.395,
+          "end": 20.695
+        },
+        {
+          "text": "la",
+          "start": 20.755,
+          "end": 20.815
+        },
+        {
+          "text": "velocità",
+          "start": 20.895,
+          "end": 21.295
+        },
+        {
+          "text": "di",
+          "start": 21.375,
+          "end": 21.435
+        },
+        {
+          "text": "esecuzione.",
+          "start": 21.475,
+          "end": 22.095
+        }
+      ]
+    },
+    {
+      "start": 22.836,
+      "end": 27.036,
+      "text": "Completano il quadro la connettività tra qubit e la scalabilità del numero di qubit.",
+      "words": [
+        {
+          "text": "Completano",
+          "start": 22.836,
+          "end": 23.276
+        },
+        {
+          "text": "il",
+          "start": 23.316,
+          "end": 23.376
+        },
+        {
+          "text": "quadro",
+          "start": 23.416,
+          "end": 23.696
+        },
+        {
+          "text": "la",
+          "start": 23.756,
+          "end": 23.816
+        },
+        {
+          "text": "connettività",
+          "start": 23.876,
+          "end": 24.496
+        },
+        {
+          "text": "tra",
+          "start": 24.596,
+          "end": 24.696
+        },
+        {
+          "text": "qubit",
+          "start": 24.736,
+          "end": 25.056
+        },
+        {
+          "text": "e",
+          "start": 25.296,
+          "end": 25.336
+        },
+        {
+          "text": "la",
+          "start": 25.376,
+          "end": 25.436
+        },
+        {
+          "text": "scalabilità",
+          "start": 25.516,
+          "end": 26.036
+        },
+        {
+          "text": "del",
+          "start": 26.136,
+          "end": 26.276
+        },
+        {
+          "text": "numero",
+          "start": 26.356,
+          "end": 26.616
+        },
+        {
+          "text": "di",
+          "start": 26.656,
+          "end": 26.716
+        },
+        {
+          "text": "qubit.",
+          "start": 26.756,
+          "end": 27.036
+        }
+      ]
+    },
+    {
+      "start": 28.136,
+      "end": 30.876,
+      "text": "I qubit a superconduttori, usati da I B M e Google,",
+      "words": [
+        {
+          "text": "I",
+          "start": 28.136,
+          "end": 28.176
+        },
+        {
+          "text": "qubit",
+          "start": 28.196,
+          "end": 28.416
+        },
+        {
+          "text": "a",
+          "start": 28.476,
+          "end": 28.516
+        },
+        {
+          "text": "superconduttori,",
+          "start": 28.556,
+          "end": 29.276
+        },
+        {
+          "text": "usati",
+          "start": 29.436,
+          "end": 29.696
+        },
+        {
+          "text": "da",
+          "start": 29.736,
+          "end": 29.796
+        },
+        {
+          "text": "I",
+          "start": 29.956,
+          "end": 29.996
+        },
+        {
+          "text": "B",
+          "start": 30.036,
+          "end": 30.076
+        },
+        {
+          "text": "M",
+          "start": 30.336,
+          "end": 30.376
+        },
+        {
+          "text": "e",
+          "start": 30.456,
+          "end": 30.496
+        },
+        {
+          "text": "Google,",
+          "start": 30.536,
+          "end": 30.876
+        }
+      ]
+    },
+    {
+      "start": 31.216,
+      "end": 36.656,
+      "text": "sono molto veloci e scalabili, ma hanno vita breve dell'ordine di cinquanta cento microsecondi e",
+      "words": [
+        {
+          "text": "sono",
+          "start": 31.216,
+          "end": 31.376
+        },
+        {
+          "text": "molto",
+          "start": 31.456,
+          "end": 31.676
+        },
+        {
+          "text": "veloci",
+          "start": 31.716,
+          "end": 31.976
+        },
+        {
+          "text": "e",
+          "start": 32.016,
+          "end": 32.056
+        },
+        {
+          "text": "scalabili,",
+          "start": 32.076,
+          "end": 32.536
+        },
+        {
+          "text": "ma",
+          "start": 32.596,
+          "end": 32.656
+        },
+        {
+          "text": "hanno",
+          "start": 32.736,
+          "end": 32.916
+        },
+        {
+          "text": "vita",
+          "start": 32.956,
+          "end": 33.136
+        },
+        {
+          "text": "breve",
+          "start": 33.196,
+          "end": 33.496
+        },
+        {
+          "text": "dell'ordine",
+          "start": 33.736,
+          "end": 34.196
+        },
+        {
+          "text": "di",
+          "start": 34.236,
+          "end": 34.316
+        },
+        {
+          "text": "cinquanta",
+          "start": 34.676,
+          "end": 35.336
+        },
+        {
+          "text": "cento",
+          "start": 35.376,
+          "end": 35.656
+        },
+        {
+          "text": "microsecondi",
+          "start": 35.696,
+          "end": 36.316
+        },
+        {
+          "text": "e",
+          "start": 36.616,
+          "end": 36.656
+        }
+      ]
+    },
+    {
+      "start": 36.716,
+      "end": 38.337,
+      "text": "richiedono raffreddamento criogenico.",
+      "words": [
+        {
+          "text": "richiedono",
+          "start": 36.716,
+          "end": 37.096
+        },
+        {
+          "text": "raffreddamento",
+          "start": 37.176,
+          "end": 37.737
+        },
+        {
+          "text": "criogenico.",
+          "start": 37.777,
+          "end": 38.337
+        }
+      ]
+    },
+    {
+      "start": 39.197,
+      "end": 40.957,
+      "text": "Le trappole ioniche, come IonQ,",
+      "words": [
+        {
+          "text": "Le",
+          "start": 39.197,
+          "end": 39.277
+        },
+        {
+          "text": "trappole",
+          "start": 39.337,
+          "end": 39.717
+        },
+        {
+          "text": "ioniche,",
+          "start": 39.777,
+          "end": 40.237
+        },
+        {
+          "text": "come",
+          "start": 40.337,
+          "end": 40.537
+        },
+        {
+          "text": "IonQ,",
+          "start": 40.717,
+          "end": 40.957
+        }
+      ]
+    },
+    {
+      "start": 41.597,
+      "end": 47.457,
+      "text": "raggiungono oltre mille secondi di coerenza, fedeltà al novantanove virgola nove per cento e connettività",
+      "words": [
+        {
+          "text": "raggiungono",
+          "start": 41.597,
+          "end": 42.037
+        },
+        {
+          "text": "oltre",
+          "start": 42.157,
+          "end": 42.417
+        },
+        {
+          "text": "mille",
+          "start": 42.517,
+          "end": 42.817
+        },
+        {
+          "text": "secondi",
+          "start": 42.897,
+          "end": 43.277
+        },
+        {
+          "text": "di",
+          "start": 43.317,
+          "end": 43.377
+        },
+        {
+          "text": "coerenza,",
+          "start": 43.417,
+          "end": 43.957
+        },
+        {
+          "text": "fedeltà",
+          "start": 44.197,
+          "end": 44.617
+        },
+        {
+          "text": "al",
+          "start": 44.717,
+          "end": 44.797
+        },
+        {
+          "text": "novantanove",
+          "start": 44.837,
+          "end": 45.457
+        },
+        {
+          "text": "virgola",
+          "start": 45.477,
+          "end": 45.737
+        },
+        {
+          "text": "nove",
+          "start": 45.777,
+          "end": 45.937
+        },
+        {
+          "text": "per",
+          "start": 45.977,
+          "end": 46.097
+        },
+        {
+          "text": "cento",
+          "start": 46.157,
+          "end": 46.517
+        },
+        {
+          "text": "e",
+          "start": 46.677,
+          "end": 46.717
+        },
+        {
+          "text": "connettività",
+          "start": 46.837,
+          "end": 47.457
+        }
+      ]
+    },
+    {
+      "start": 47.617,
+      "end": 50.417,
+      "text": "tutti con tutti, al prezzo di operazioni più lente.",
+      "words": [
+        {
+          "text": "tutti",
+          "start": 47.617,
+          "end": 47.857
+        },
+        {
+          "text": "con",
+          "start": 47.917,
+          "end": 48.037
+        },
+        {
+          "text": "tutti,",
+          "start": 48.097,
+          "end": 48.417
+        },
+        {
+          "text": "al",
+          "start": 48.837,
+          "end": 48.917
+        },
+        {
+          "text": "prezzo",
+          "start": 48.977,
+          "end": 49.297
+        },
+        {
+          "text": "di",
+          "start": 49.357,
+          "end": 49.417
+        },
+        {
+          "text": "operazioni",
+          "start": 49.477,
+          "end": 49.917
+        },
+        {
+          "text": "più",
+          "start": 49.957,
+          "end": 50.057
+        },
+        {
+          "text": "lente.",
+          "start": 50.117,
+          "end": 50.417
+        }
+      ]
+    },
+    {
+      "start": 51.277,
+      "end": 54.798,
+      "text": "La fotonica opera senza requisiti di temperatura in un nanosecondo,",
+      "words": [
+        {
+          "text": "La",
+          "start": 51.277,
+          "end": 51.337
+        },
+        {
+          "text": "fotonica",
+          "start": 51.377,
+          "end": 51.797
+        },
+        {
+          "text": "opera",
+          "start": 51.958,
+          "end": 52.198
+        },
+        {
+          "text": "senza",
+          "start": 52.278,
+          "end": 52.538
+        },
+        {
+          "text": "requisiti",
+          "start": 52.578,
+          "end": 53.058
+        },
+        {
+          "text": "di",
+          "start": 53.098,
+          "end": 53.178
+        },
+        {
+          "text": "temperatura",
+          "start": 53.218,
+          "end": 53.778
+        },
+        {
+          "text": "in",
+          "start": 53.918,
+          "end": 53.998
+        },
+        {
+          "text": "un",
+          "start": 54.038,
+          "end": 54.118
+        },
+        {
+          "text": "nanosecondo,",
+          "start": 54.138,
+          "end": 54.798
+        }
+      ]
+    },
+    {
+      "start": 54.918,
+      "end": 55.738,
+      "text": "ma è nascente.",
+      "words": [
+        {
+          "text": "ma",
+          "start": 54.918,
+          "end": 54.978
+        },
+        {
+          "text": "è",
+          "start": 55.058,
+          "end": 55.098
+        },
+        {
+          "text": "nascente.",
+          "start": 55.158,
+          "end": 55.738
+        }
+      ]
+    },
+    {
+      "start": 56.358,
+      "end": 59.558,
+      "text": "Gli atomi neutri offrono lunga coerenza ma sono ancora acerbi;",
+      "words": [
+        {
+          "text": "Gli",
+          "start": 56.358,
+          "end": 56.458
+        },
+        {
+          "text": "atomi",
+          "start": 56.478,
+          "end": 56.698
+        },
+        {
+          "text": "neutri",
+          "start": 56.738,
+          "end": 57.058
+        },
+        {
+          "text": "offrono",
+          "start": 57.178,
+          "end": 57.538
+        },
+        {
+          "text": "lunga",
+          "start": 57.638,
+          "end": 57.918
+        },
+        {
+          "text": "coerenza",
+          "start": 57.958,
+          "end": 58.418
+        },
+        {
+          "text": "ma",
+          "start": 58.538,
+          "end": 58.598
+        },
+        {
+          "text": "sono",
+          "start": 58.678,
+          "end": 58.818
+        },
+        {
+          "text": "ancora",
+          "start": 58.858,
+          "end": 59.098
+        },
+        {
+          "text": "acerbi;",
+          "start": 59.158,
+          "end": 59.558
+        }
+      ]
+    },
+    {
+      "start": 60.258,
+      "end": 65.318,
+      "text": "i qubit in silicio sfruttano l'industria dei semiconduttori con tempi da uno a dieci secondi;",
+      "words": [
+        {
+          "text": "i",
+          "start": 60.258,
+          "end": 60.298
+        },
+        {
+          "text": "qubit",
+          "start": 60.418,
+          "end": 60.758
+        },
+        {
+          "text": "in",
+          "start": 60.818,
+          "end": 60.898
+        },
+        {
+          "text": "silicio",
+          "start": 60.958,
+          "end": 61.338
+        },
+        {
+          "text": "sfruttano",
+          "start": 61.498,
+          "end": 61.858
+        },
+        {
+          "text": "l'industria",
+          "start": 61.898,
+          "end": 62.378
+        },
+        {
+          "text": "dei",
+          "start": 62.398,
+          "end": 62.518
+        },
+        {
+          "text": "semiconduttori",
+          "start": 62.558,
+          "end": 63.378
+        },
+        {
+          "text": "con",
+          "start": 63.538,
+          "end": 63.658
+        },
+        {
+          "text": "tempi",
+          "start": 63.718,
+          "end": 63.978
+        },
+        {
+          "text": "da",
+          "start": 64.018,
+          "end": 64.098
+        },
+        {
+          "text": "uno",
+          "start": 64.198,
+          "end": 64.378
+        },
+        {
+          "text": "a",
+          "start": 64.518,
+          "end": 64.558
+        },
+        {
+          "text": "dieci",
+          "start": 64.638,
+          "end": 64.858
+        },
+        {
+          "text": "secondi;",
+          "start": 64.918,
+          "end": 65.318
+        }
+      ]
+    },
+    {
+      "start": 65.958,
+      "end": 70.539,
+      "text": "infine i qubit topologici di Microsoft promettono stabilità e fedeltà altissime,",
+      "words": [
+        {
+          "text": "infine",
+          "start": 65.958,
+          "end": 66.318
+        },
+        {
+          "text": "i",
+          "start": 66.458,
+          "end": 66.498
+        },
+        {
+          "text": "qubit",
+          "start": 66.539,
+          "end": 66.819
+        },
+        {
+          "text": "topologici",
+          "start": 66.919,
+          "end": 67.459
+        },
+        {
+          "text": "di",
+          "start": 67.519,
+          "end": 67.579
+        },
+        {
+          "text": "Microsoft",
+          "start": 67.619,
+          "end": 68.119
+        },
+        {
+          "text": "promettono",
+          "start": 68.239,
+          "end": 68.659
+        },
+        {
+          "text": "stabilità",
+          "start": 68.739,
+          "end": 69.239
+        },
+        {
+          "text": "e",
+          "start": 69.419,
+          "end": 69.459
+        },
+        {
+          "text": "fedeltà",
+          "start": 69.519,
+          "end": 69.899
+        },
+        {
+          "text": "altissime,",
+          "start": 69.979,
+          "end": 70.539
+        }
+      ]
+    },
+    {
+      "start": 70.959,
+      "end": 73.479,
+      "text": "ma la loro esistenza fisica è ancora da confermare.",
+      "words": [
+        {
+          "text": "ma",
+          "start": 70.959,
+          "end": 71.039
+        },
+        {
+          "text": "la",
+          "start": 71.179,
+          "end": 71.239
+        },
+        {
+          "text": "loro",
+          "start": 71.299,
+          "end": 71.439
+        },
+        {
+          "text": "esistenza",
+          "start": 71.479,
+          "end": 71.879
+        },
+        {
+          "text": "fisica",
+          "start": 71.919,
+          "end": 72.299
+        },
+        {
+          "text": "è",
+          "start": 72.459,
+          "end": 72.49900000000001
+        },
+        {
+          "text": "ancora",
+          "start": 72.559,
+          "end": 72.839
+        },
+        {
+          "text": "da",
+          "start": 72.859,
+          "end": 72.919
+        },
+        {
+          "text": "confermare.",
+          "start": 72.959,
+          "end": 73.479
+        }
+      ]
+    }
+  ]
+}

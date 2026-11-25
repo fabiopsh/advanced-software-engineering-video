@@ -1,0 +1,1173 @@
+{
+  "duration": 75.22,
+  "segments": [
+    {
+      "start": 0.08,
+      "end": 4.741,
+      "text": "Osserviamo nello schema perché la disponibilità implica rinunciare alla coerenza.",
+      "words": [
+        {
+          "text": "Osserviamo",
+          "start": 0.08,
+          "end": 0.58
+        },
+        {
+          "text": "nello",
+          "start": 0.68,
+          "end": 0.9
+        },
+        {
+          "text": "schema",
+          "start": 0.94,
+          "end": 1.26
+        },
+        {
+          "text": "perché",
+          "start": 1.54,
+          "end": 1.86
+        },
+        {
+          "text": "la",
+          "start": 1.96,
+          "end": 2.02
+        },
+        {
+          "text": "disponibilità",
+          "start": 2.08,
+          "end": 2.76
+        },
+        {
+          "text": "implica",
+          "start": 3.02,
+          "end": 3.4
+        },
+        {
+          "text": "rinunciare",
+          "start": 3.48,
+          "end": 4.061
+        },
+        {
+          "text": "alla",
+          "start": 4.081,
+          "end": 4.221
+        },
+        {
+          "text": "coerenza.",
+          "start": 4.261,
+          "end": 4.741
+        }
+      ]
+    },
+    {
+      "start": 5.301,
+      "end": 8.921,
+      "text": "Abbiamo due server S uno e S due che replicano il dato d.",
+      "words": [
+        {
+          "text": "Abbiamo",
+          "start": 5.301,
+          "end": 5.561
+        },
+        {
+          "text": "due",
+          "start": 5.621,
+          "end": 5.761
+        },
+        {
+          "text": "server",
+          "start": 5.801,
+          "end": 6.161
+        },
+        {
+          "text": "S",
+          "start": 6.581,
+          "end": 6.621
+        },
+        {
+          "text": "uno",
+          "start": 6.821,
+          "end": 6.981
+        },
+        {
+          "text": "e",
+          "start": 7.141,
+          "end": 7.181
+        },
+        {
+          "text": "S",
+          "start": 7.321,
+          "end": 7.361
+        },
+        {
+          "text": "due",
+          "start": 7.461,
+          "end": 7.641
+        },
+        {
+          "text": "che",
+          "start": 7.741,
+          "end": 7.841
+        },
+        {
+          "text": "replicano",
+          "start": 7.981,
+          "end": 8.441
+        },
+        {
+          "text": "il",
+          "start": 8.501,
+          "end": 8.561
+        },
+        {
+          "text": "dato",
+          "start": 8.581,
+          "end": 8.781
+        },
+        {
+          "text": "d.",
+          "start": 8.881,
+          "end": 8.921
+        }
+      ]
+    },
+    {
+      "start": 9.561,
+      "end": 14.422,
+      "text": "Quando la rete consegna tutti i messaggi, il client C primo legge il valore aggiornato",
+      "words": [
+        {
+          "text": "Quando",
+          "start": 9.561,
+          "end": 9.781
+        },
+        {
+          "text": "la",
+          "start": 9.921,
+          "end": 10.001
+        },
+        {
+          "text": "rete",
+          "start": 10.021,
+          "end": 10.201
+        },
+        {
+          "text": "consegna",
+          "start": 10.241,
+          "end": 10.641
+        },
+        {
+          "text": "tutti",
+          "start": 10.761,
+          "end": 11.021
+        },
+        {
+          "text": "i",
+          "start": 11.061,
+          "end": 11.101
+        },
+        {
+          "text": "messaggi,",
+          "start": 11.101,
+          "end": 11.662
+        },
+        {
+          "text": "il",
+          "start": 11.842,
+          "end": 11.922
+        },
+        {
+          "text": "client",
+          "start": 11.982,
+          "end": 12.462
+        },
+        {
+          "text": "C",
+          "start": 12.622,
+          "end": 12.662
+        },
+        {
+          "text": "primo",
+          "start": 12.822,
+          "end": 13.122
+        },
+        {
+          "text": "legge",
+          "start": 13.322,
+          "end": 13.542
+        },
+        {
+          "text": "il",
+          "start": 13.582,
+          "end": 13.642
+        },
+        {
+          "text": "valore",
+          "start": 13.682,
+          "end": 13.942
+        },
+        {
+          "text": "aggiornato",
+          "start": 13.982,
+          "end": 14.422
+        }
+      ]
+    },
+    {
+      "start": 14.542,
+      "end": 14.882,
+      "text": "v uno.",
+      "words": [
+        {
+          "text": "v",
+          "start": 14.542,
+          "end": 14.582
+        },
+        {
+          "text": "uno.",
+          "start": 14.622,
+          "end": 14.882
+        }
+      ]
+    },
+    {
+      "start": 15.542,
+      "end": 19.643,
+      "text": "Ma se il client C scrive il nuovo valore v due su S uno e",
+      "words": [
+        {
+          "text": "Ma",
+          "start": 15.542,
+          "end": 15.602
+        },
+        {
+          "text": "se",
+          "start": 15.722,
+          "end": 15.782
+        },
+        {
+          "text": "il",
+          "start": 15.822,
+          "end": 15.882
+        },
+        {
+          "text": "client",
+          "start": 15.942,
+          "end": 16.322
+        },
+        {
+          "text": "C",
+          "start": 16.462,
+          "end": 16.502
+        },
+        {
+          "text": "scrive",
+          "start": 16.982,
+          "end": 17.262
+        },
+        {
+          "text": "il",
+          "start": 17.302,
+          "end": 17.382
+        },
+        {
+          "text": "nuovo",
+          "start": 17.402,
+          "end": 17.602
+        },
+        {
+          "text": "valore",
+          "start": 17.662,
+          "end": 17.942
+        },
+        {
+          "text": "v",
+          "start": 18.102,
+          "end": 18.142
+        },
+        {
+          "text": "due",
+          "start": 18.302,
+          "end": 18.582
+        },
+        {
+          "text": "su",
+          "start": 18.783,
+          "end": 18.863
+        },
+        {
+          "text": "S",
+          "start": 19.043,
+          "end": 19.083
+        },
+        {
+          "text": "uno",
+          "start": 19.243,
+          "end": 19.443
+        },
+        {
+          "text": "e",
+          "start": 19.603,
+          "end": 19.643
+        }
+      ]
+    },
+    {
+      "start": 19.703,
+      "end": 23.403,
+      "text": "il messaggio di aggiornamento verso S due va perso per una partizione di rete,",
+      "words": [
+        {
+          "text": "il",
+          "start": 19.703,
+          "end": 19.763
+        },
+        {
+          "text": "messaggio",
+          "start": 19.803,
+          "end": 20.183
+        },
+        {
+          "text": "di",
+          "start": 20.203,
+          "end": 20.263
+        },
+        {
+          "text": "aggiornamento",
+          "start": 20.283,
+          "end": 20.783
+        },
+        {
+          "text": "verso",
+          "start": 20.823,
+          "end": 21.083
+        },
+        {
+          "text": "S",
+          "start": 21.223,
+          "end": 21.263
+        },
+        {
+          "text": "due",
+          "start": 21.363,
+          "end": 21.523
+        },
+        {
+          "text": "va",
+          "start": 21.563,
+          "end": 21.623
+        },
+        {
+          "text": "perso",
+          "start": 21.723,
+          "end": 22.123
+        },
+        {
+          "text": "per",
+          "start": 22.183,
+          "end": 22.283
+        },
+        {
+          "text": "una",
+          "start": 22.323,
+          "end": 22.443
+        },
+        {
+          "text": "partizione",
+          "start": 22.503,
+          "end": 23.003
+        },
+        {
+          "text": "di",
+          "start": 23.043,
+          "end": 23.123
+        },
+        {
+          "text": "rete,",
+          "start": 23.163,
+          "end": 23.403
+        }
+      ]
+    },
+    {
+      "start": 24.103,
+      "end": 27.424,
+      "text": "S due risponde comunque alla lettura per garantire disponibilità,",
+      "words": [
+        {
+          "text": "S",
+          "start": 24.103,
+          "end": 24.143
+        },
+        {
+          "text": "due",
+          "start": 24.223,
+          "end": 24.343
+        },
+        {
+          "text": "risponde",
+          "start": 24.403,
+          "end": 24.783
+        },
+        {
+          "text": "comunque",
+          "start": 24.863,
+          "end": 25.383
+        },
+        {
+          "text": "alla",
+          "start": 25.403,
+          "end": 25.543
+        },
+        {
+          "text": "lettura",
+          "start": 25.583,
+          "end": 25.963
+        },
+        {
+          "text": "per",
+          "start": 26.143,
+          "end": 26.244
+        },
+        {
+          "text": "garantire",
+          "start": 26.284,
+          "end": 26.684
+        },
+        {
+          "text": "disponibilità,",
+          "start": 26.744,
+          "end": 27.424
+        }
+      ]
+    },
+    {
+      "start": 27.864,
+      "end": 29.864,
+      "text": "restituendo però il dato vecchio v uno.",
+      "words": [
+        {
+          "text": "restituendo",
+          "start": 27.864,
+          "end": 28.524
+        },
+        {
+          "text": "però",
+          "start": 28.564,
+          "end": 28.704
+        },
+        {
+          "text": "il",
+          "start": 28.804,
+          "end": 28.864
+        },
+        {
+          "text": "dato",
+          "start": 28.904,
+          "end": 29.104
+        },
+        {
+          "text": "vecchio",
+          "start": 29.144,
+          "end": 29.464
+        },
+        {
+          "text": "v",
+          "start": 29.544,
+          "end": 29.584
+        },
+        {
+          "text": "uno.",
+          "start": 29.624,
+          "end": 29.864
+        }
+      ]
+    },
+    {
+      "start": 30.724,
+      "end": 36.305,
+      "text": "Come gestire invece transazioni di business che attraversano più microservizi con database separati?",
+      "words": [
+        {
+          "text": "Come",
+          "start": 30.724,
+          "end": 30.904
+        },
+        {
+          "text": "gestire",
+          "start": 30.964,
+          "end": 31.344
+        },
+        {
+          "text": "invece",
+          "start": 31.404,
+          "end": 31.744
+        },
+        {
+          "text": "transazioni",
+          "start": 32.124,
+          "end": 32.824
+        },
+        {
+          "text": "di",
+          "start": 32.884,
+          "end": 32.944
+        },
+        {
+          "text": "business",
+          "start": 32.984,
+          "end": 33.404
+        },
+        {
+          "text": "che",
+          "start": 33.484,
+          "end": 33.564
+        },
+        {
+          "text": "attraversano",
+          "start": 33.604,
+          "end": 34.165
+        },
+        {
+          "text": "più",
+          "start": 34.245,
+          "end": 34.385
+        },
+        {
+          "text": "microservizi",
+          "start": 34.445,
+          "end": 35.185
+        },
+        {
+          "text": "con",
+          "start": 35.245,
+          "end": 35.365
+        },
+        {
+          "text": "database",
+          "start": 35.405,
+          "end": 35.785
+        },
+        {
+          "text": "separati?",
+          "start": 35.845,
+          "end": 36.305
+        }
+      ]
+    },
+    {
+      "start": 37.025,
+      "end": 40.705,
+      "text": "Si usa il pattern Saga: una sequenza di transazioni locali,",
+      "words": [
+        {
+          "text": "Si",
+          "start": 37.025,
+          "end": 37.105
+        },
+        {
+          "text": "usa",
+          "start": 37.165,
+          "end": 37.305
+        },
+        {
+          "text": "il",
+          "start": 37.365,
+          "end": 37.425
+        },
+        {
+          "text": "pattern",
+          "start": 37.485,
+          "end": 37.925
+        },
+        {
+          "text": "Saga:",
+          "start": 38.185,
+          "end": 38.545
+        },
+        {
+          "text": "una",
+          "start": 39.005,
+          "end": 39.125
+        },
+        {
+          "text": "sequenza",
+          "start": 39.185,
+          "end": 39.545
+        },
+        {
+          "text": "di",
+          "start": 39.585,
+          "end": 39.645
+        },
+        {
+          "text": "transazioni",
+          "start": 39.705,
+          "end": 40.285
+        },
+        {
+          "text": "locali,",
+          "start": 40.345,
+          "end": 40.705
+        }
+      ]
+    },
+    {
+      "start": 40.965,
+      "end": 44.406,
+      "text": "come prenotare auto T uno, hotel T due e volo T tre.",
+      "words": [
+        {
+          "text": "come",
+          "start": 40.965,
+          "end": 41.145
+        },
+        {
+          "text": "prenotare",
+          "start": 41.285,
+          "end": 41.726
+        },
+        {
+          "text": "auto",
+          "start": 41.846,
+          "end": 42.046
+        },
+        {
+          "text": "T",
+          "start": 42.146,
+          "end": 42.186
+        },
+        {
+          "text": "uno,",
+          "start": 42.366,
+          "end": 42.566
+        },
+        {
+          "text": "hotel",
+          "start": 42.766,
+          "end": 43.026
+        },
+        {
+          "text": "T",
+          "start": 43.106,
+          "end": 43.146
+        },
+        {
+          "text": "due",
+          "start": 43.246,
+          "end": 43.486
+        },
+        {
+          "text": "e",
+          "start": 43.666,
+          "end": 43.706
+        },
+        {
+          "text": "volo",
+          "start": 43.826,
+          "end": 44.026
+        },
+        {
+          "text": "T",
+          "start": 44.106,
+          "end": 44.146
+        },
+        {
+          "text": "tre.",
+          "start": 44.286,
+          "end": 44.406
+        }
+      ]
+    },
+    {
+      "start": 44.946,
+      "end": 50.347,
+      "text": "Se T tre fallisce, non c'è rollback unico: nel backward model si eseguono le compensazioni",
+      "words": [
+        {
+          "text": "Se",
+          "start": 44.946,
+          "end": 45.026
+        },
+        {
+          "text": "T",
+          "start": 45.166,
+          "end": 45.206
+        },
+        {
+          "text": "tre",
+          "start": 45.346,
+          "end": 45.466
+        },
+        {
+          "text": "fallisce,",
+          "start": 45.566,
+          "end": 46.066
+        },
+        {
+          "text": "non",
+          "start": 46.346,
+          "end": 46.446
+        },
+        {
+          "text": "c'è",
+          "start": 46.466,
+          "end": 46.586
+        },
+        {
+          "text": "rollback",
+          "start": 46.646,
+          "end": 46.966
+        },
+        {
+          "text": "unico:",
+          "start": 47.086,
+          "end": 47.366
+        },
+        {
+          "text": "nel",
+          "start": 47.806,
+          "end": 47.946
+        },
+        {
+          "text": "backward",
+          "start": 48.006,
+          "end": 48.406
+        },
+        {
+          "text": "model",
+          "start": 48.466,
+          "end": 48.786
+        },
+        {
+          "text": "si",
+          "start": 49.027,
+          "end": 49.067
+        },
+        {
+          "text": "eseguono",
+          "start": 49.127,
+          "end": 49.467
+        },
+        {
+          "text": "le",
+          "start": 49.507,
+          "end": 49.567
+        },
+        {
+          "text": "compensazioni",
+          "start": 49.607,
+          "end": 50.347
+        }
+      ]
+    },
+    {
+      "start": 50.407,
+      "end": 55.027,
+      "text": "in ordine inverso, C due poi C uno; nel forward model si riprova T tre",
+      "words": [
+        {
+          "text": "in",
+          "start": 50.407,
+          "end": 50.467
+        },
+        {
+          "text": "ordine",
+          "start": 50.527,
+          "end": 50.787
+        },
+        {
+          "text": "inverso,",
+          "start": 50.827,
+          "end": 51.267
+        },
+        {
+          "text": "C",
+          "start": 51.507,
+          "end": 51.547
+        },
+        {
+          "text": "due",
+          "start": 51.687,
+          "end": 51.907
+        },
+        {
+          "text": "poi",
+          "start": 52.047,
+          "end": 52.207
+        },
+        {
+          "text": "C",
+          "start": 52.267,
+          "end": 52.307
+        },
+        {
+          "text": "uno;",
+          "start": 52.467,
+          "end": 52.627
+        },
+        {
+          "text": "nel",
+          "start": 52.987,
+          "end": 53.127
+        },
+        {
+          "text": "forward",
+          "start": 53.187,
+          "end": 53.587
+        },
+        {
+          "text": "model",
+          "start": 53.667,
+          "end": 53.967
+        },
+        {
+          "text": "si",
+          "start": 54.207,
+          "end": 54.267
+        },
+        {
+          "text": "riprova",
+          "start": 54.307,
+          "end": 54.607
+        },
+        {
+          "text": "T",
+          "start": 54.707,
+          "end": 54.747
+        },
+        {
+          "text": "tre",
+          "start": 54.887,
+          "end": 55.027
+        }
+      ]
+    },
+    {
+      "start": 55.107,
+      "end": 55.587,
+      "text": "più tardi.",
+      "words": [
+        {
+          "text": "più",
+          "start": 55.107,
+          "end": 55.207
+        },
+        {
+          "text": "tardi.",
+          "start": 55.287,
+          "end": 55.587
+        }
+      ]
+    },
+    {
+      "start": 56.287,
+      "end": 58.748,
+      "text": "Infine, per la replica dei dati su n nodi,",
+      "words": [
+        {
+          "text": "Infine,",
+          "start": 56.287,
+          "end": 56.728
+        },
+        {
+          "text": "per",
+          "start": 56.888,
+          "end": 57.008
+        },
+        {
+          "text": "la",
+          "start": 57.068,
+          "end": 57.148
+        },
+        {
+          "text": "replica",
+          "start": 57.228,
+          "end": 57.568
+        },
+        {
+          "text": "dei",
+          "start": 57.628,
+          "end": 57.748
+        },
+        {
+          "text": "dati",
+          "start": 57.788,
+          "end": 58.028
+        },
+        {
+          "text": "su",
+          "start": 58.088,
+          "end": 58.168
+        },
+        {
+          "text": "n",
+          "start": 58.348,
+          "end": 58.388
+        },
+        {
+          "text": "nodi,",
+          "start": 58.468,
+          "end": 58.748
+        }
+      ]
+    },
+    {
+      "start": 59.148,
+      "end": 63.448,
+      "text": "Netflix e Apache Cassandra adottano il quorum a maggioranza n mezzi più uno:",
+      "words": [
+        {
+          "text": "Netflix",
+          "start": 59.148,
+          "end": 59.608
+        },
+        {
+          "text": "e",
+          "start": 59.728,
+          "end": 59.768
+        },
+        {
+          "text": "Apache",
+          "start": 59.788,
+          "end": 60.048
+        },
+        {
+          "text": "Cassandra",
+          "start": 60.068,
+          "end": 60.608
+        },
+        {
+          "text": "adottano",
+          "start": 60.728,
+          "end": 61.108
+        },
+        {
+          "text": "il",
+          "start": 61.148,
+          "end": 61.208
+        },
+        {
+          "text": "quorum",
+          "start": 61.248,
+          "end": 61.608
+        },
+        {
+          "text": "a",
+          "start": 61.668,
+          "end": 61.708
+        },
+        {
+          "text": "maggioranza",
+          "start": 61.748,
+          "end": 62.268
+        },
+        {
+          "text": "n",
+          "start": 62.628,
+          "end": 62.668
+        },
+        {
+          "text": "mezzi",
+          "start": 62.768,
+          "end": 63.028
+        },
+        {
+          "text": "più",
+          "start": 63.088,
+          "end": 63.188
+        },
+        {
+          "text": "uno:",
+          "start": 63.288,
+          "end": 63.448
+        }
+      ]
+    },
+    {
+      "start": 63.868,
+      "end": 65.849,
+      "text": "con cinque repliche bastano tre risposte.",
+      "words": [
+        {
+          "text": "con",
+          "start": 63.868,
+          "end": 63.988
+        },
+        {
+          "text": "cinque",
+          "start": 64.049,
+          "end": 64.309
+        },
+        {
+          "text": "repliche",
+          "start": 64.349,
+          "end": 64.689
+        },
+        {
+          "text": "bastano",
+          "start": 64.769,
+          "end": 65.089
+        },
+        {
+          "text": "tre",
+          "start": 65.169,
+          "end": 65.289
+        },
+        {
+          "text": "risposte.",
+          "start": 65.389,
+          "end": 65.849
+        }
+      ]
+    },
+    {
+      "start": 66.489,
+      "end": 70.369,
+      "text": "Poiché due maggioranze di tre nodi si intersecano sempre in almeno un nodo,",
+      "words": [
+        {
+          "text": "Poiché",
+          "start": 66.489,
+          "end": 66.769
+        },
+        {
+          "text": "due",
+          "start": 66.909,
+          "end": 67.089
+        },
+        {
+          "text": "maggioranze",
+          "start": 67.129,
+          "end": 67.609
+        },
+        {
+          "text": "di",
+          "start": 67.649,
+          "end": 67.729
+        },
+        {
+          "text": "tre",
+          "start": 67.809,
+          "end": 67.929
+        },
+        {
+          "text": "nodi",
+          "start": 68.049,
+          "end": 68.329
+        },
+        {
+          "text": "si",
+          "start": 68.389,
+          "end": 68.449
+        },
+        {
+          "text": "intersecano",
+          "start": 68.509,
+          "end": 69.009
+        },
+        {
+          "text": "sempre",
+          "start": 69.129,
+          "end": 69.509
+        },
+        {
+          "text": "in",
+          "start": 69.569,
+          "end": 69.629
+        },
+        {
+          "text": "almeno",
+          "start": 69.669,
+          "end": 69.949
+        },
+        {
+          "text": "un",
+          "start": 69.989,
+          "end": 70.049
+        },
+        {
+          "text": "nodo,",
+          "start": 70.089,
+          "end": 70.369
+        }
+      ]
+    },
+    {
+      "start": 70.789,
+      "end": 74.97,
+      "text": "il sistema legge il dato più recente e tollera fino a due nodi irraggiungibili.",
+      "words": [
+        {
+          "text": "il",
+          "start": 70.789,
+          "end": 70.869
+        },
+        {
+          "text": "sistema",
+          "start": 70.889,
+          "end": 71.209
+        },
+        {
+          "text": "legge",
+          "start": 71.269,
+          "end": 71.469
+        },
+        {
+          "text": "il",
+          "start": 71.529,
+          "end": 71.59
+        },
+        {
+          "text": "dato",
+          "start": 71.67,
+          "end": 71.93
+        },
+        {
+          "text": "più",
+          "start": 72.01,
+          "end": 72.11
+        },
+        {
+          "text": "recente",
+          "start": 72.21,
+          "end": 72.69
+        },
+        {
+          "text": "e",
+          "start": 72.99,
+          "end": 73.03
+        },
+        {
+          "text": "tollera",
+          "start": 73.09,
+          "end": 73.39
+        },
+        {
+          "text": "fino",
+          "start": 73.47,
+          "end": 73.65
+        },
+        {
+          "text": "a",
+          "start": 73.71,
+          "end": 73.75
+        },
+        {
+          "text": "due",
+          "start": 73.83,
+          "end": 74.03
+        },
+        {
+          "text": "nodi",
+          "start": 74.07,
+          "end": 74.27
+        },
+        {
+          "text": "irraggiungibili.",
+          "start": 74.31,
+          "end": 74.97
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,806 @@
+{
+  "duration": 61.421,
+  "segments": [
+    {
+      "start": 0.806,
+      "end": 3.646,
+      "text": "In produzione raramente si crea un singolo Pod isolato.",
+      "words": [
+        {
+          "text": "In",
+          "start": 0.806,
+          "end": 0.886
+        },
+        {
+          "text": "produzione",
+          "start": 0.906,
+          "end": 1.406
+        },
+        {
+          "text": "raramente",
+          "start": 1.566,
+          "end": 2.006
+        },
+        {
+          "text": "si",
+          "start": 2.066,
+          "end": 2.146
+        },
+        {
+          "text": "crea",
+          "start": 2.186,
+          "end": 2.386
+        },
+        {
+          "text": "un",
+          "start": 2.466,
+          "end": 2.526
+        },
+        {
+          "text": "singolo",
+          "start": 2.606,
+          "end": 2.946
+        },
+        {
+          "text": "Pod",
+          "start": 2.986,
+          "end": 3.166
+        },
+        {
+          "text": "isolato.",
+          "start": 3.246,
+          "end": 3.646
+        }
+      ]
+    },
+    {
+      "start": 4.226,
+      "end": 9.107,
+      "text": "Si usa invece un Deployment, che combina un template di Pod con un replica count,",
+      "words": [
+        {
+          "text": "Si",
+          "start": 4.226,
+          "end": 4.286
+        },
+        {
+          "text": "usa",
+          "start": 4.326,
+          "end": 4.446
+        },
+        {
+          "text": "invece",
+          "start": 4.486,
+          "end": 4.766
+        },
+        {
+          "text": "un",
+          "start": 4.926,
+          "end": 5.026
+        },
+        {
+          "text": "Deployment,",
+          "start": 5.086,
+          "end": 5.646
+        },
+        {
+          "text": "che",
+          "start": 6.186,
+          "end": 6.266
+        },
+        {
+          "text": "combina",
+          "start": 6.306,
+          "end": 6.626
+        },
+        {
+          "text": "un",
+          "start": 6.706,
+          "end": 6.787
+        },
+        {
+          "text": "template",
+          "start": 6.847,
+          "end": 7.367
+        },
+        {
+          "text": "di",
+          "start": 7.407,
+          "end": 7.487
+        },
+        {
+          "text": "Pod",
+          "start": 7.547,
+          "end": 7.787
+        },
+        {
+          "text": "con",
+          "start": 8.047,
+          "end": 8.187
+        },
+        {
+          "text": "un",
+          "start": 8.227,
+          "end": 8.307
+        },
+        {
+          "text": "replica",
+          "start": 8.387,
+          "end": 8.727
+        },
+        {
+          "text": "count,",
+          "start": 8.787,
+          "end": 9.107
+        }
+      ]
+    },
+    {
+      "start": 9.487,
+      "end": 12.507,
+      "text": "cioè il numero enne di copie identiche da mantenere attive,",
+      "words": [
+        {
+          "text": "cioè",
+          "start": 9.487,
+          "end": 9.607
+        },
+        {
+          "text": "il",
+          "start": 9.707,
+          "end": 9.787
+        },
+        {
+          "text": "numero",
+          "start": 9.847,
+          "end": 10.087
+        },
+        {
+          "text": "enne",
+          "start": 10.247,
+          "end": 10.547
+        },
+        {
+          "text": "di",
+          "start": 10.707,
+          "end": 10.787
+        },
+        {
+          "text": "copie",
+          "start": 10.847,
+          "end": 11.127
+        },
+        {
+          "text": "identiche",
+          "start": 11.167,
+          "end": 11.607
+        },
+        {
+          "text": "da",
+          "start": 11.647,
+          "end": 11.687
+        },
+        {
+          "text": "mantenere",
+          "start": 11.747,
+          "end": 12.127
+        },
+        {
+          "text": "attive,",
+          "start": 12.167,
+          "end": 12.507
+        }
+      ]
+    },
+    {
+      "start": 12.807,
+      "end": 15.207,
+      "text": "coordinate internamente tramite un ReplicaSet.",
+      "words": [
+        {
+          "text": "coordinate",
+          "start": 12.807,
+          "end": 13.307
+        },
+        {
+          "text": "internamente",
+          "start": 13.367,
+          "end": 13.947
+        },
+        {
+          "text": "tramite",
+          "start": 14.047,
+          "end": 14.407
+        },
+        {
+          "text": "un",
+          "start": 14.527,
+          "end": 14.607
+        },
+        {
+          "text": "ReplicaSet.",
+          "start": 14.647,
+          "end": 15.207
+        }
+      ]
+    },
+    {
+      "start": 16.127,
+      "end": 20.208,
+      "text": "Se un Deployment chiede dieci repliche e tre Pod si guastano per un crash o",
+      "words": [
+        {
+          "text": "Se",
+          "start": 16.127,
+          "end": 16.207
+        },
+        {
+          "text": "un",
+          "start": 16.247,
+          "end": 16.327
+        },
+        {
+          "text": "Deployment",
+          "start": 16.347,
+          "end": 16.767
+        },
+        {
+          "text": "chiede",
+          "start": 16.867,
+          "end": 17.067
+        },
+        {
+          "text": "dieci",
+          "start": 17.187,
+          "end": 17.467
+        },
+        {
+          "text": "repliche",
+          "start": 17.527,
+          "end": 17.947
+        },
+        {
+          "text": "e",
+          "start": 18.187,
+          "end": 18.227
+        },
+        {
+          "text": "tre",
+          "start": 18.327,
+          "end": 18.427
+        },
+        {
+          "text": "Pod",
+          "start": 18.507,
+          "end": 18.687
+        },
+        {
+          "text": "si",
+          "start": 18.787,
+          "end": 18.847
+        },
+        {
+          "text": "guastano",
+          "start": 18.907,
+          "end": 19.328
+        },
+        {
+          "text": "per",
+          "start": 19.368,
+          "end": 19.468
+        },
+        {
+          "text": "un",
+          "start": 19.488,
+          "end": 19.568
+        },
+        {
+          "text": "crash",
+          "start": 19.608,
+          "end": 19.968
+        },
+        {
+          "text": "o",
+          "start": 20.168,
+          "end": 20.208
+        }
+      ]
+    },
+    {
+      "start": 20.308,
+      "end": 24.808,
+      "text": "per la caduta di un nodo, Kubernetes se ne accorge e pianifica subito tre nuovi",
+      "words": [
+        {
+          "text": "per",
+          "start": 20.308,
+          "end": 20.428
+        },
+        {
+          "text": "la",
+          "start": 20.468,
+          "end": 20.548
+        },
+        {
+          "text": "caduta",
+          "start": 20.588,
+          "end": 20.848
+        },
+        {
+          "text": "di",
+          "start": 20.908,
+          "end": 20.948
+        },
+        {
+          "text": "un",
+          "start": 20.988,
+          "end": 21.048
+        },
+        {
+          "text": "nodo,",
+          "start": 21.088,
+          "end": 21.328
+        },
+        {
+          "text": "Kubernetes",
+          "start": 21.748,
+          "end": 22.308
+        },
+        {
+          "text": "se",
+          "start": 22.428,
+          "end": 22.488
+        },
+        {
+          "text": "ne",
+          "start": 22.528,
+          "end": 22.588
+        },
+        {
+          "text": "accorge",
+          "start": 22.608,
+          "end": 23.048
+        },
+        {
+          "text": "e",
+          "start": 23.388,
+          "end": 23.428
+        },
+        {
+          "text": "pianifica",
+          "start": 23.468,
+          "end": 23.868
+        },
+        {
+          "text": "subito",
+          "start": 23.948,
+          "end": 24.248
+        },
+        {
+          "text": "tre",
+          "start": 24.388,
+          "end": 24.528
+        },
+        {
+          "text": "nuovi",
+          "start": 24.608,
+          "end": 24.808
+        }
+      ]
+    },
+    {
+      "start": 24.868,
+      "end": 26.448,
+      "text": "Pod su altre macchine del cluster.",
+      "words": [
+        {
+          "text": "Pod",
+          "start": 24.868,
+          "end": 25.068
+        },
+        {
+          "text": "su",
+          "start": 25.188,
+          "end": 25.268
+        },
+        {
+          "text": "altre",
+          "start": 25.348,
+          "end": 25.568
+        },
+        {
+          "text": "macchine",
+          "start": 25.608,
+          "end": 25.888
+        },
+        {
+          "text": "del",
+          "start": 25.928,
+          "end": 26.028
+        },
+        {
+          "text": "cluster.",
+          "start": 26.068,
+          "end": 26.448
+        }
+      ]
+    },
+    {
+      "start": 27.468,
+      "end": 31.028,
+      "text": "Guardiamo il manifest reale per servire un modello di machine learning via REST.",
+      "words": [
+        {
+          "text": "Guardiamo",
+          "start": 27.468,
+          "end": 27.788
+        },
+        {
+          "text": "il",
+          "start": 27.828,
+          "end": 27.888
+        },
+        {
+          "text": "manifest",
+          "start": 27.928,
+          "end": 28.308
+        },
+        {
+          "text": "reale",
+          "start": 28.408,
+          "end": 28.728
+        },
+        {
+          "text": "per",
+          "start": 28.868,
+          "end": 28.988
+        },
+        {
+          "text": "servire",
+          "start": 29.048,
+          "end": 29.348
+        },
+        {
+          "text": "un",
+          "start": 29.388,
+          "end": 29.448
+        },
+        {
+          "text": "modello",
+          "start": 29.468,
+          "end": 29.768
+        },
+        {
+          "text": "di",
+          "start": 29.808,
+          "end": 29.848
+        },
+        {
+          "text": "machine",
+          "start": 29.888,
+          "end": 30.188
+        },
+        {
+          "text": "learning",
+          "start": 30.208,
+          "end": 30.548
+        },
+        {
+          "text": "via",
+          "start": 30.588,
+          "end": 30.728
+        },
+        {
+          "text": "REST.",
+          "start": 30.768,
+          "end": 31.028
+        }
+      ]
+    },
+    {
+      "start": 31.889,
+      "end": 34.389,
+      "text": "Nella sezione spec troviamo quattro elementi chiave.",
+      "words": [
+        {
+          "text": "Nella",
+          "start": 31.889,
+          "end": 32.049
+        },
+        {
+          "text": "sezione",
+          "start": 32.089,
+          "end": 32.409
+        },
+        {
+          "text": "spec",
+          "start": 32.469,
+          "end": 32.729
+        },
+        {
+          "text": "troviamo",
+          "start": 33.009,
+          "end": 33.309
+        },
+        {
+          "text": "quattro",
+          "start": 33.409,
+          "end": 33.709
+        },
+        {
+          "text": "elementi",
+          "start": 33.749,
+          "end": 34.069
+        },
+        {
+          "text": "chiave.",
+          "start": 34.109,
+          "end": 34.389
+        }
+      ]
+    },
+    {
+      "start": 35.069,
+      "end": 37.629,
+      "text": "replicas imposta il numero desiderato a dieci.",
+      "words": [
+        {
+          "text": "replicas",
+          "start": 35.069,
+          "end": 35.529
+        },
+        {
+          "text": "imposta",
+          "start": 35.929,
+          "end": 36.289
+        },
+        {
+          "text": "il",
+          "start": 36.349,
+          "end": 36.409
+        },
+        {
+          "text": "numero",
+          "start": 36.449,
+          "end": 36.669
+        },
+        {
+          "text": "desiderato",
+          "start": 36.709,
+          "end": 37.209
+        },
+        {
+          "text": "a",
+          "start": 37.249,
+          "end": 37.289
+        },
+        {
+          "text": "dieci.",
+          "start": 37.329,
+          "end": 37.629
+        }
+      ]
+    },
+    {
+      "start": 38.309,
+      "end": 45.33,
+      "text": "selector, con matchLabels app uguale ml-model, indica quali Pod appartengono al Deployment.",
+      "words": [
+        {
+          "text": "selector,",
+          "start": 38.309,
+          "end": 38.809
+        },
+        {
+          "text": "con",
+          "start": 39.149,
+          "end": 39.329
+        },
+        {
+          "text": "matchLabels",
+          "start": 39.489,
+          "end": 40.149
+        },
+        {
+          "text": "app",
+          "start": 40.389,
+          "end": 40.569
+        },
+        {
+          "text": "uguale",
+          "start": 40.809,
+          "end": 41.089
+        },
+        {
+          "text": "ml-model,",
+          "start": 41.369,
+          "end": 42.409
+        },
+        {
+          "text": "indica",
+          "start": 42.909,
+          "end": 43.209
+        },
+        {
+          "text": "quali",
+          "start": 43.39,
+          "end": 43.67
+        },
+        {
+          "text": "Pod",
+          "start": 43.73,
+          "end": 43.95
+        },
+        {
+          "text": "appartengono",
+          "start": 44.09,
+          "end": 44.67
+        },
+        {
+          "text": "al",
+          "start": 44.71,
+          "end": 44.79
+        },
+        {
+          "text": "Deployment.",
+          "start": 44.81,
+          "end": 45.33
+        }
+      ]
+    },
+    {
+      "start": 46.19,
+      "end": 53.45,
+      "text": "template definisce la ricetta di ogni Pod, aggiungendo nei metadati proprio l'etichetta app uguale ml-model.",
+      "words": [
+        {
+          "text": "template",
+          "start": 46.19,
+          "end": 46.75
+        },
+        {
+          "text": "definisce",
+          "start": 47.13,
+          "end": 47.55
+        },
+        {
+          "text": "la",
+          "start": 47.61,
+          "end": 47.67
+        },
+        {
+          "text": "ricetta",
+          "start": 47.71,
+          "end": 48.11
+        },
+        {
+          "text": "di",
+          "start": 48.17,
+          "end": 48.23
+        },
+        {
+          "text": "ogni",
+          "start": 48.31,
+          "end": 48.49
+        },
+        {
+          "text": "Pod,",
+          "start": 48.55,
+          "end": 48.81
+        },
+        {
+          "text": "aggiungendo",
+          "start": 49.27,
+          "end": 49.75
+        },
+        {
+          "text": "nei",
+          "start": 49.81,
+          "end": 49.93
+        },
+        {
+          "text": "metadati",
+          "start": 49.97,
+          "end": 50.39
+        },
+        {
+          "text": "proprio",
+          "start": 50.49,
+          "end": 50.77
+        },
+        {
+          "text": "l'etichetta",
+          "start": 50.79,
+          "end": 51.27
+        },
+        {
+          "text": "app",
+          "start": 51.43,
+          "end": 51.63
+        },
+        {
+          "text": "uguale",
+          "start": 51.85,
+          "end": 52.17
+        },
+        {
+          "text": "ml-model.",
+          "start": 52.41,
+          "end": 53.45
+        }
+      ]
+    },
+    {
+      "start": 54.35,
+      "end": 61.171,
+      "text": "Infine containers specifica l'immagine ml-serving uno punto zero in ascolto sulla porta ottanta.",
+      "words": [
+        {
+          "text": "Infine",
+          "start": 54.35,
+          "end": 54.63
+        },
+        {
+          "text": "containers",
+          "start": 54.85,
+          "end": 55.511
+        },
+        {
+          "text": "specifica",
+          "start": 55.911,
+          "end": 56.371
+        },
+        {
+          "text": "l'immagine",
+          "start": 56.451,
+          "end": 56.991
+        },
+        {
+          "text": "ml-serving",
+          "start": 57.271,
+          "end": 58.531
+        },
+        {
+          "text": "uno",
+          "start": 58.711,
+          "end": 58.851
+        },
+        {
+          "text": "punto",
+          "start": 58.871,
+          "end": 59.091
+        },
+        {
+          "text": "zero",
+          "start": 59.171,
+          "end": 59.371
+        },
+        {
+          "text": "in",
+          "start": 59.791,
+          "end": 59.851
+        },
+        {
+          "text": "ascolto",
+          "start": 59.871,
+          "end": 60.231
+        },
+        {
+          "text": "sulla",
+          "start": 60.371,
+          "end": 60.531
+        },
+        {
+          "text": "porta",
+          "start": 60.571,
+          "end": 60.771
+        },
+        {
+          "text": "ottanta.",
+          "start": 60.811,
+          "end": 61.171
+        }
+      ]
+    }
+  ]
+}

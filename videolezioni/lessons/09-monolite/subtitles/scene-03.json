@@ -1,0 +1,1102 @@
+{
+  "duration": 78.644,
+  "segments": [
+    {
+      "start": 0.04,
+      "end": 4.6,
+      "text": "Una volta individuati i seam nel codice, da quale conviene iniziare l'estrazione?",
+      "words": [
+        {
+          "text": "Una",
+          "start": 0.04,
+          "end": 0.12
+        },
+        {
+          "text": "volta",
+          "start": 0.16,
+          "end": 0.38
+        },
+        {
+          "text": "individuati",
+          "start": 0.46,
+          "end": 1.02
+        },
+        {
+          "text": "i",
+          "start": 1.04,
+          "end": 1.08
+        },
+        {
+          "text": "seam",
+          "start": 1.24,
+          "end": 1.48
+        },
+        {
+          "text": "nel",
+          "start": 1.6,
+          "end": 1.74
+        },
+        {
+          "text": "codice,",
+          "start": 1.82,
+          "end": 2.3
+        },
+        {
+          "text": "da",
+          "start": 2.76,
+          "end": 2.82
+        },
+        {
+          "text": "quale",
+          "start": 2.86,
+          "end": 3.04
+        },
+        {
+          "text": "conviene",
+          "start": 3.06,
+          "end": 3.4
+        },
+        {
+          "text": "iniziare",
+          "start": 3.46,
+          "end": 3.92
+        },
+        {
+          "text": "l'estrazione?",
+          "start": 3.96,
+          "end": 4.6
+        }
+      ]
+    },
+    {
+      "start": 5.56,
+      "end": 8.001,
+      "text": "Si sceglie il seam che porta il massimo beneficio,",
+      "words": [
+        {
+          "text": "Si",
+          "start": 5.56,
+          "end": 5.64
+        },
+        {
+          "text": "sceglie",
+          "start": 5.68,
+          "end": 5.96
+        },
+        {
+          "text": "il",
+          "start": 6.0,
+          "end": 6.08
+        },
+        {
+          "text": "seam",
+          "start": 6.16,
+          "end": 6.4
+        },
+        {
+          "text": "che",
+          "start": 6.5,
+          "end": 6.58
+        },
+        {
+          "text": "porta",
+          "start": 6.62,
+          "end": 6.9
+        },
+        {
+          "text": "il",
+          "start": 6.96,
+          "end": 7.02
+        },
+        {
+          "text": "massimo",
+          "start": 7.1,
+          "end": 7.46
+        },
+        {
+          "text": "beneficio,",
+          "start": 7.52,
+          "end": 8.001
+        }
+      ]
+    },
+    {
+      "start": 8.241,
+      "end": 10.001,
+      "text": "valutando cinque driver principali.",
+      "words": [
+        {
+          "text": "valutando",
+          "start": 8.241,
+          "end": 8.621
+        },
+        {
+          "text": "cinque",
+          "start": 8.721,
+          "end": 9.021
+        },
+        {
+          "text": "driver",
+          "start": 9.061,
+          "end": 9.381
+        },
+        {
+          "text": "principali.",
+          "start": 9.441,
+          "end": 10.001
+        }
+      ]
+    },
+    {
+      "start": 10.641,
+      "end": 12.101,
+      "text": "Primo, pace of change:",
+      "words": [
+        {
+          "text": "Primo,",
+          "start": 10.641,
+          "end": 10.881
+        },
+        {
+          "text": "pace",
+          "start": 11.281,
+          "end": 11.501
+        },
+        {
+          "text": "of",
+          "start": 11.521,
+          "end": 11.581
+        },
+        {
+          "text": "change:",
+          "start": 11.661,
+          "end": 12.101
+        }
+      ]
+    },
+    {
+      "start": 12.681,
+      "end": 18.021,
+      "text": "se il magazzino sta per ricevere molte modifiche, separare Warehouse consente rilasci rapidi e isolati.",
+      "words": [
+        {
+          "text": "se",
+          "start": 12.681,
+          "end": 12.741
+        },
+        {
+          "text": "il",
+          "start": 12.801,
+          "end": 12.861
+        },
+        {
+          "text": "magazzino",
+          "start": 12.881,
+          "end": 13.321
+        },
+        {
+          "text": "sta",
+          "start": 13.361,
+          "end": 13.461
+        },
+        {
+          "text": "per",
+          "start": 13.521,
+          "end": 13.621
+        },
+        {
+          "text": "ricevere",
+          "start": 13.641,
+          "end": 13.981
+        },
+        {
+          "text": "molte",
+          "start": 14.021,
+          "end": 14.241
+        },
+        {
+          "text": "modifiche,",
+          "start": 14.281,
+          "end": 14.721
+        },
+        {
+          "text": "separare",
+          "start": 15.121,
+          "end": 15.501
+        },
+        {
+          "text": "Warehouse",
+          "start": 15.601,
+          "end": 16.121
+        },
+        {
+          "text": "consente",
+          "start": 16.161,
+          "end": 16.541
+        },
+        {
+          "text": "rilasci",
+          "start": 16.581,
+          "end": 16.961
+        },
+        {
+          "text": "rapidi",
+          "start": 17.021,
+          "end": 17.381
+        },
+        {
+          "text": "e",
+          "start": 17.481,
+          "end": 17.521
+        },
+        {
+          "text": "isolati.",
+          "start": 17.601,
+          "end": 18.021
+        }
+      ]
+    },
+    {
+      "start": 18.941,
+      "end": 23.962,
+      "text": "Secondo, team structure: se gli sviluppatori lavorano in due regioni geografiche diverse,",
+      "words": [
+        {
+          "text": "Secondo,",
+          "start": 18.941,
+          "end": 19.301
+        },
+        {
+          "text": "team",
+          "start": 19.581,
+          "end": 19.761
+        },
+        {
+          "text": "structure:",
+          "start": 19.841,
+          "end": 20.281
+        },
+        {
+          "text": "se",
+          "start": 20.921,
+          "end": 21.001
+        },
+        {
+          "text": "gli",
+          "start": 21.021,
+          "end": 21.141
+        },
+        {
+          "text": "sviluppatori",
+          "start": 21.201,
+          "end": 21.701
+        },
+        {
+          "text": "lavorano",
+          "start": 21.761,
+          "end": 22.121
+        },
+        {
+          "text": "in",
+          "start": 22.261,
+          "end": 22.361
+        },
+        {
+          "text": "due",
+          "start": 22.421,
+          "end": 22.561
+        },
+        {
+          "text": "regioni",
+          "start": 22.581,
+          "end": 22.842
+        },
+        {
+          "text": "geografiche",
+          "start": 22.902,
+          "end": 23.402
+        },
+        {
+          "text": "diverse,",
+          "start": 23.422,
+          "end": 23.962
+        }
+      ]
+    },
+    {
+      "start": 24.342,
+      "end": 26.842,
+      "text": "conviene dividere le parti assegnate a ciascuna sede.",
+      "words": [
+        {
+          "text": "conviene",
+          "start": 24.342,
+          "end": 24.662
+        },
+        {
+          "text": "dividere",
+          "start": 24.722,
+          "end": 25.042
+        },
+        {
+          "text": "le",
+          "start": 25.082,
+          "end": 25.142
+        },
+        {
+          "text": "parti",
+          "start": 25.182,
+          "end": 25.422
+        },
+        {
+          "text": "assegnate",
+          "start": 25.482,
+          "end": 25.982
+        },
+        {
+          "text": "a",
+          "start": 26.122,
+          "end": 26.162
+        },
+        {
+          "text": "ciascuna",
+          "start": 26.222,
+          "end": 26.562
+        },
+        {
+          "text": "sede.",
+          "start": 26.602,
+          "end": 26.842
+        }
+      ]
+    },
+    {
+      "start": 27.842,
+      "end": 34.322,
+      "text": "Terzo, security: isolare Finance permette di applicare controlli di sicurezza più severi solo sui dati",
+      "words": [
+        {
+          "text": "Terzo,",
+          "start": 27.842,
+          "end": 28.202
+        },
+        {
+          "text": "security:",
+          "start": 28.442,
+          "end": 28.922
+        },
+        {
+          "text": "isolare",
+          "start": 29.562,
+          "end": 29.942
+        },
+        {
+          "text": "Finance",
+          "start": 30.122,
+          "end": 30.682
+        },
+        {
+          "text": "permette",
+          "start": 30.762,
+          "end": 31.062
+        },
+        {
+          "text": "di",
+          "start": 31.102,
+          "end": 31.162
+        },
+        {
+          "text": "applicare",
+          "start": 31.182,
+          "end": 31.582
+        },
+        {
+          "text": "controlli",
+          "start": 31.702,
+          "end": 32.202
+        },
+        {
+          "text": "di",
+          "start": 32.242,
+          "end": 32.302
+        },
+        {
+          "text": "sicurezza",
+          "start": 32.362,
+          "end": 32.802
+        },
+        {
+          "text": "più",
+          "start": 32.902,
+          "end": 33.042
+        },
+        {
+          "text": "severi",
+          "start": 33.122,
+          "end": 33.482
+        },
+        {
+          "text": "solo",
+          "start": 33.722,
+          "end": 33.942
+        },
+        {
+          "text": "sui",
+          "start": 33.982,
+          "end": 34.122
+        },
+        {
+          "text": "dati",
+          "start": 34.142,
+          "end": 34.322
+        }
+      ]
+    },
+    {
+      "start": 34.382,
+      "end": 34.902,
+      "text": "sensibili.",
+      "words": [
+        {
+          "text": "sensibili.",
+          "start": 34.382,
+          "end": 34.902
+        }
+      ]
+    },
+    {
+      "start": 35.942,
+      "end": 42.843,
+      "text": "Quarto, technology: separare Recommendation lascia libero il team di sperimentare nuovi algoritmi in Clojure senza",
+      "words": [
+        {
+          "text": "Quarto,",
+          "start": 35.942,
+          "end": 36.282
+        },
+        {
+          "text": "technology:",
+          "start": 36.502,
+          "end": 37.062
+        },
+        {
+          "text": "separare",
+          "start": 37.602,
+          "end": 37.983
+        },
+        {
+          "text": "Recommendation",
+          "start": 38.203,
+          "end": 39.043
+        },
+        {
+          "text": "lascia",
+          "start": 39.343,
+          "end": 39.563
+        },
+        {
+          "text": "libero",
+          "start": 39.603,
+          "end": 39.823
+        },
+        {
+          "text": "il",
+          "start": 39.863,
+          "end": 39.923
+        },
+        {
+          "text": "team",
+          "start": 39.963,
+          "end": 40.163
+        },
+        {
+          "text": "di",
+          "start": 40.283,
+          "end": 40.343
+        },
+        {
+          "text": "sperimentare",
+          "start": 40.423,
+          "end": 40.963
+        },
+        {
+          "text": "nuovi",
+          "start": 41.043,
+          "end": 41.263
+        },
+        {
+          "text": "algoritmi",
+          "start": 41.303,
+          "end": 41.783
+        },
+        {
+          "text": "in",
+          "start": 41.923,
+          "end": 41.983
+        },
+        {
+          "text": "Clojure",
+          "start": 42.023,
+          "end": 42.443
+        },
+        {
+          "text": "senza",
+          "start": 42.623,
+          "end": 42.843
+        }
+      ]
+    },
+    {
+      "start": 42.883,
+      "end": 44.223,
+      "text": "vincolare il resto del sistema.",
+      "words": [
+        {
+          "text": "vincolare",
+          "start": 42.883,
+          "end": 43.323
+        },
+        {
+          "text": "il",
+          "start": 43.363,
+          "end": 43.423
+        },
+        {
+          "text": "resto",
+          "start": 43.443,
+          "end": 43.663
+        },
+        {
+          "text": "del",
+          "start": 43.683,
+          "end": 43.803
+        },
+        {
+          "text": "sistema.",
+          "start": 43.843,
+          "end": 44.223
+        }
+      ]
+    },
+    {
+      "start": 45.103,
+      "end": 51.323,
+      "text": "Quinto, tangled dependencies: guardando il grafo delle dipendenze, conviene estrarre per primo il seam da",
+      "words": [
+        {
+          "text": "Quinto,",
+          "start": 45.103,
+          "end": 45.403
+        },
+        {
+          "text": "tangled",
+          "start": 45.683,
+          "end": 46.103
+        },
+        {
+          "text": "dependencies:",
+          "start": 46.223,
+          "end": 46.843
+        },
+        {
+          "text": "guardando",
+          "start": 47.623,
+          "end": 47.943
+        },
+        {
+          "text": "il",
+          "start": 47.983,
+          "end": 48.043
+        },
+        {
+          "text": "grafo",
+          "start": 48.083,
+          "end": 48.343
+        },
+        {
+          "text": "delle",
+          "start": 48.363,
+          "end": 48.523
+        },
+        {
+          "text": "dipendenze,",
+          "start": 48.563,
+          "end": 49.223
+        },
+        {
+          "text": "conviene",
+          "start": 49.563,
+          "end": 49.863
+        },
+        {
+          "text": "estrarre",
+          "start": 49.903,
+          "end": 50.243
+        },
+        {
+          "text": "per",
+          "start": 50.263,
+          "end": 50.383
+        },
+        {
+          "text": "primo",
+          "start": 50.423,
+          "end": 50.663
+        },
+        {
+          "text": "il",
+          "start": 50.743,
+          "end": 50.803
+        },
+        {
+          "text": "seam",
+          "start": 50.923,
+          "end": 51.163
+        },
+        {
+          "text": "da",
+          "start": 51.263,
+          "end": 51.323
+        }
+      ]
+    },
+    {
+      "start": 51.363,
+      "end": 52.723,
+      "text": "cui gli altri dipendono meno.",
+      "words": [
+        {
+          "text": "cui",
+          "start": 51.363,
+          "end": 51.483
+        },
+        {
+          "text": "gli",
+          "start": 51.483,
+          "end": 51.603
+        },
+        {
+          "text": "altri",
+          "start": 51.643,
+          "end": 51.883
+        },
+        {
+          "text": "dipendono",
+          "start": 51.943,
+          "end": 52.383
+        },
+        {
+          "text": "meno.",
+          "start": 52.463,
+          "end": 52.723
+        }
+      ]
+    },
+    {
+      "start": 53.484,
+      "end": 55.504,
+      "text": "Guardiamo il grafo di MusicCorp a sinistra.",
+      "words": [
+        {
+          "text": "Guardiamo",
+          "start": 53.484,
+          "end": 53.764
+        },
+        {
+          "text": "il",
+          "start": 53.804,
+          "end": 53.864
+        },
+        {
+          "text": "grafo",
+          "start": 53.884,
+          "end": 54.104
+        },
+        {
+          "text": "di",
+          "start": 54.144,
+          "end": 54.204
+        },
+        {
+          "text": "MusicCorp",
+          "start": 54.284,
+          "end": 54.824
+        },
+        {
+          "text": "a",
+          "start": 55.004,
+          "end": 55.044
+        },
+        {
+          "text": "sinistra.",
+          "start": 55.084,
+          "end": 55.504
+        }
+      ]
+    },
+    {
+      "start": 56.244,
+      "end": 58.784,
+      "text": "Catalog è usato da tutti e tre gli altri package,",
+      "words": [
+        {
+          "text": "Catalog",
+          "start": 56.244,
+          "end": 56.684
+        },
+        {
+          "text": "è",
+          "start": 56.844,
+          "end": 56.884
+        },
+        {
+          "text": "usato",
+          "start": 56.924,
+          "end": 57.204
+        },
+        {
+          "text": "da",
+          "start": 57.304,
+          "end": 57.364
+        },
+        {
+          "text": "tutti",
+          "start": 57.484,
+          "end": 57.724
+        },
+        {
+          "text": "e",
+          "start": 57.764,
+          "end": 57.804
+        },
+        {
+          "text": "tre",
+          "start": 57.844,
+          "end": 57.984
+        },
+        {
+          "text": "gli",
+          "start": 58.004,
+          "end": 58.104
+        },
+        {
+          "text": "altri",
+          "start": 58.144,
+          "end": 58.344
+        },
+        {
+          "text": "package,",
+          "start": 58.384,
+          "end": 58.784
+        }
+      ]
+    },
+    {
+      "start": 59.224,
+      "end": 61.864,
+      "text": "quindi estrarlo per primo costringerebbe a modificarli tutti.",
+      "words": [
+        {
+          "text": "quindi",
+          "start": 59.224,
+          "end": 59.404
+        },
+        {
+          "text": "estrarlo",
+          "start": 59.464,
+          "end": 59.824
+        },
+        {
+          "text": "per",
+          "start": 59.844,
+          "end": 59.964
+        },
+        {
+          "text": "primo",
+          "start": 60.004,
+          "end": 60.244
+        },
+        {
+          "text": "costringerebbe",
+          "start": 60.304,
+          "end": 60.884
+        },
+        {
+          "text": "a",
+          "start": 60.924,
+          "end": 60.964
+        },
+        {
+          "text": "modificarli",
+          "start": 61.004,
+          "end": 61.544
+        },
+        {
+          "text": "tutti.",
+          "start": 61.584,
+          "end": 61.864
+        }
+      ]
+    },
+    {
+      "start": 62.624,
+      "end": 64.384,
+      "text": "Warehouse è usato da Finance.",
+      "words": [
+        {
+          "text": "Warehouse",
+          "start": 62.624,
+          "end": 63.184
+        },
+        {
+          "text": "è",
+          "start": 63.364,
+          "end": 63.404
+        },
+        {
+          "text": "usato",
+          "start": 63.444,
+          "end": 63.684
+        },
+        {
+          "text": "da",
+          "start": 63.724,
+          "end": 63.784
+        },
+        {
+          "text": "Finance.",
+          "start": 63.864,
+          "end": 64.384
+        }
+      ]
+    },
+    {
+      "start": 65.084,
+      "end": 67.984,
+      "text": "Finance non è usato da nessuno, ma dipende da due package.",
+      "words": [
+        {
+          "text": "Finance",
+          "start": 65.084,
+          "end": 65.504
+        },
+        {
+          "text": "non",
+          "start": 65.624,
+          "end": 65.744
+        },
+        {
+          "text": "è",
+          "start": 65.784,
+          "end": 65.82400000000001
+        },
+        {
+          "text": "usato",
+          "start": 65.844,
+          "end": 66.064
+        },
+        {
+          "text": "da",
+          "start": 66.104,
+          "end": 66.164
+        },
+        {
+          "text": "nessuno,",
+          "start": 66.204,
+          "end": 66.624
+        },
+        {
+          "text": "ma",
+          "start": 66.784,
+          "end": 66.844
+        },
+        {
+          "text": "dipende",
+          "start": 66.884,
+          "end": 67.184
+        },
+        {
+          "text": "da",
+          "start": 67.244,
+          "end": 67.284
+        },
+        {
+          "text": "due",
+          "start": 67.384,
+          "end": 67.524
+        },
+        {
+          "text": "package.",
+          "start": 67.564,
+          "end": 67.984
+        }
+      ]
+    },
+    {
+      "start": 68.665,
+      "end": 72.245,
+      "text": "Recommendation invece non è usato da nessuno e dipende solo da Catalog:",
+      "words": [
+        {
+          "text": "Recommendation",
+          "start": 68.665,
+          "end": 69.285
+        },
+        {
+          "text": "invece",
+          "start": 69.325,
+          "end": 69.645
+        },
+        {
+          "text": "non",
+          "start": 69.705,
+          "end": 69.845
+        },
+        {
+          "text": "è",
+          "start": 69.885,
+          "end": 69.92500000000001
+        },
+        {
+          "text": "usato",
+          "start": 69.965,
+          "end": 70.205
+        },
+        {
+          "text": "da",
+          "start": 70.245,
+          "end": 70.305
+        },
+        {
+          "text": "nessuno",
+          "start": 70.345,
+          "end": 70.765
+        },
+        {
+          "text": "e",
+          "start": 70.885,
+          "end": 70.92500000000001
+        },
+        {
+          "text": "dipende",
+          "start": 70.945,
+          "end": 71.225
+        },
+        {
+          "text": "solo",
+          "start": 71.385,
+          "end": 71.605
+        },
+        {
+          "text": "da",
+          "start": 71.645,
+          "end": 71.705
+        },
+        {
+          "text": "Catalog:",
+          "start": 71.765,
+          "end": 72.245
+        }
+      ]
+    },
+    {
+      "start": 72.845,
+      "end": 77.585,
+      "text": "è il primo candidato ideale, perché basta convertire le sue chiamate locali in chiamate all'API",
+      "words": [
+        {
+          "text": "è",
+          "start": 72.845,
+          "end": 72.885
+        },
+        {
+          "text": "il",
+          "start": 72.965,
+          "end": 73.025
+        },
+        {
+          "text": "primo",
+          "start": 73.085,
+          "end": 73.365
+        },
+        {
+          "text": "candidato",
+          "start": 73.425,
+          "end": 73.825
+        },
+        {
+          "text": "ideale,",
+          "start": 73.885,
+          "end": 74.305
+        },
+        {
+          "text": "perché",
+          "start": 74.525,
+          "end": 74.725
+        },
+        {
+          "text": "basta",
+          "start": 74.745,
+          "end": 74.965
+        },
+        {
+          "text": "convertire",
+          "start": 75.005,
+          "end": 75.485
+        },
+        {
+          "text": "le",
+          "start": 75.565,
+          "end": 75.605
+        },
+        {
+          "text": "sue",
+          "start": 75.645,
+          "end": 75.765
+        },
+        {
+          "text": "chiamate",
+          "start": 75.805,
+          "end": 76.085
+        },
+        {
+          "text": "locali",
+          "start": 76.125,
+          "end": 76.425
+        },
+        {
+          "text": "in",
+          "start": 76.485,
+          "end": 76.545
+        },
+        {
+          "text": "chiamate",
+          "start": 76.585,
+          "end": 76.965
+        },
+        {
+          "text": "all'API",
+          "start": 77.005,
+          "end": 77.585
+        }
+      ]
+    },
+    {
+      "start": 77.665,
+      "end": 78.265,
+      "text": "di Catalog.",
+      "words": [
+        {
+          "text": "di",
+          "start": 77.665,
+          "end": 77.725
+        },
+        {
+          "text": "Catalog.",
+          "start": 77.805,
+          "end": 78.265
+        }
+      ]
+    }
+  ]
+}

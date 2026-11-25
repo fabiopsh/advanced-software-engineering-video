@@ -1,0 +1,987 @@
+{
+  "duration": 70.712,
+  "segments": [
+    {
+      "start": 0.698,
+      "end": 4.358,
+      "text": "Dopo le singole unità si passa a feature, system e release testing.",
+      "words": [
+        {
+          "text": "Dopo",
+          "start": 0.698,
+          "end": 0.858
+        },
+        {
+          "text": "le",
+          "start": 0.898,
+          "end": 0.958
+        },
+        {
+          "text": "singole",
+          "start": 0.998,
+          "end": 1.298
+        },
+        {
+          "text": "unità",
+          "start": 1.338,
+          "end": 1.598
+        },
+        {
+          "text": "si",
+          "start": 1.798,
+          "end": 1.858
+        },
+        {
+          "text": "passa",
+          "start": 1.918,
+          "end": 2.138
+        },
+        {
+          "text": "a",
+          "start": 2.218,
+          "end": 2.258
+        },
+        {
+          "text": "feature,",
+          "start": 2.318,
+          "end": 2.678
+        },
+        {
+          "text": "system",
+          "start": 2.898,
+          "end": 3.258
+        },
+        {
+          "text": "e",
+          "start": 3.458,
+          "end": 3.498
+        },
+        {
+          "text": "release",
+          "start": 3.618,
+          "end": 3.898
+        },
+        {
+          "text": "testing.",
+          "start": 3.918,
+          "end": 4.358
+        }
+      ]
+    },
+    {
+      "start": 4.918,
+      "end": 9.278,
+      "text": "Una feature nasce dall'interazione di più unità e va collaudata sotto due profili:",
+      "words": [
+        {
+          "text": "Una",
+          "start": 4.918,
+          "end": 5.038
+        },
+        {
+          "text": "feature",
+          "start": 5.078,
+          "end": 5.398
+        },
+        {
+          "text": "nasce",
+          "start": 5.418,
+          "end": 5.658
+        },
+        {
+          "text": "dall'interazione",
+          "start": 5.718,
+          "end": 6.418
+        },
+        {
+          "text": "di",
+          "start": 6.458,
+          "end": 6.518
+        },
+        {
+          "text": "più",
+          "start": 6.598,
+          "end": 6.718
+        },
+        {
+          "text": "unità",
+          "start": 6.818,
+          "end": 7.098
+        },
+        {
+          "text": "e",
+          "start": 7.498,
+          "end": 7.538
+        },
+        {
+          "text": "va",
+          "start": 7.618,
+          "end": 7.698
+        },
+        {
+          "text": "collaudata",
+          "start": 7.798,
+          "end": 8.298
+        },
+        {
+          "text": "sotto",
+          "start": 8.358,
+          "end": 8.598
+        },
+        {
+          "text": "due",
+          "start": 8.678,
+          "end": 8.858
+        },
+        {
+          "text": "profili:",
+          "start": 8.878,
+          "end": 9.278
+        }
+      ]
+    },
+    {
+      "start": 9.698,
+      "end": 12.878,
+      "text": "con gli interaction test si verificano le interazioni tra unità,",
+      "words": [
+        {
+          "text": "con",
+          "start": 9.698,
+          "end": 9.778
+        },
+        {
+          "text": "gli",
+          "start": 9.778,
+          "end": 9.898
+        },
+        {
+          "text": "interaction",
+          "start": 9.958,
+          "end": 10.478
+        },
+        {
+          "text": "test",
+          "start": 10.538,
+          "end": 10.818
+        },
+        {
+          "text": "si",
+          "start": 11.098,
+          "end": 11.178
+        },
+        {
+          "text": "verificano",
+          "start": 11.238,
+          "end": 11.718
+        },
+        {
+          "text": "le",
+          "start": 11.778,
+          "end": 11.838
+        },
+        {
+          "text": "interazioni",
+          "start": 11.878,
+          "end": 12.398
+        },
+        {
+          "text": "tra",
+          "start": 12.438,
+          "end": 12.558
+        },
+        {
+          "text": "unità,",
+          "start": 12.618,
+          "end": 12.878
+        }
+      ]
+    },
+    {
+      "start": 13.238,
+      "end": 17.959,
+      "text": "spesso scritte da sviluppatori diversi, scoprendo bug invisibili allo unit testing;",
+      "words": [
+        {
+          "text": "spesso",
+          "start": 13.238,
+          "end": 13.498
+        },
+        {
+          "text": "scritte",
+          "start": 13.558,
+          "end": 13.918
+        },
+        {
+          "text": "da",
+          "start": 13.958,
+          "end": 14.018
+        },
+        {
+          "text": "sviluppatori",
+          "start": 14.078,
+          "end": 14.598
+        },
+        {
+          "text": "diversi,",
+          "start": 14.618,
+          "end": 15.058
+        },
+        {
+          "text": "scoprendo",
+          "start": 15.318,
+          "end": 15.698
+        },
+        {
+          "text": "bug",
+          "start": 15.798,
+          "end": 16.018
+        },
+        {
+          "text": "invisibili",
+          "start": 16.239,
+          "end": 16.939
+        },
+        {
+          "text": "allo",
+          "start": 16.999,
+          "end": 17.139
+        },
+        {
+          "text": "unit",
+          "start": 17.259,
+          "end": 17.459
+        },
+        {
+          "text": "testing;",
+          "start": 17.499,
+          "end": 17.959
+        }
+      ]
+    },
+    {
+      "start": 18.499,
+      "end": 22.919,
+      "text": "con gli usefulness test si verifica che la feature soddisfi i bisogni reali,",
+      "words": [
+        {
+          "text": "con",
+          "start": 18.499,
+          "end": 18.579
+        },
+        {
+          "text": "gli",
+          "start": 18.599,
+          "end": 18.739
+        },
+        {
+          "text": "usefulness",
+          "start": 18.999,
+          "end": 19.619
+        },
+        {
+          "text": "test",
+          "start": 19.679,
+          "end": 19.999
+        },
+        {
+          "text": "si",
+          "start": 20.399,
+          "end": 20.459
+        },
+        {
+          "text": "verifica",
+          "start": 20.519,
+          "end": 20.899
+        },
+        {
+          "text": "che",
+          "start": 20.939,
+          "end": 21.019
+        },
+        {
+          "text": "la",
+          "start": 21.039,
+          "end": 21.099
+        },
+        {
+          "text": "feature",
+          "start": 21.159,
+          "end": 21.479
+        },
+        {
+          "text": "soddisfi",
+          "start": 21.559,
+          "end": 21.959
+        },
+        {
+          "text": "i",
+          "start": 22.019,
+          "end": 22.059
+        },
+        {
+          "text": "bisogni",
+          "start": 22.079,
+          "end": 22.439
+        },
+        {
+          "text": "reali,",
+          "start": 22.519,
+          "end": 22.919
+        }
+      ]
+    },
+    {
+      "start": 23.079,
+      "end": 24.659,
+      "text": "coinvolgendo il product manager.",
+      "words": [
+        {
+          "text": "coinvolgendo",
+          "start": 23.079,
+          "end": 23.679
+        },
+        {
+          "text": "il",
+          "start": 23.719,
+          "end": 23.779
+        },
+        {
+          "text": "product",
+          "start": 23.839,
+          "end": 24.199
+        },
+        {
+          "text": "manager.",
+          "start": 24.259,
+          "end": 24.659
+        }
+      ]
+    },
+    {
+      "start": 25.399,
+      "end": 26.779,
+      "text": "Come si progettano i feature test?",
+      "words": [
+        {
+          "text": "Come",
+          "start": 25.399,
+          "end": 25.559
+        },
+        {
+          "text": "si",
+          "start": 25.599,
+          "end": 25.659
+        },
+        {
+          "text": "progettano",
+          "start": 25.699,
+          "end": 26.139
+        },
+        {
+          "text": "i",
+          "start": 26.179,
+          "end": 26.219
+        },
+        {
+          "text": "feature",
+          "start": 26.219,
+          "end": 26.499
+        },
+        {
+          "text": "test?",
+          "start": 26.519,
+          "end": 26.779
+        }
+      ]
+    },
+    {
+      "start": 27.299,
+      "end": 32.06,
+      "text": "Si ricavano dalle user story, traducendo storie come il login con Google o la scelta",
+      "words": [
+        {
+          "text": "Si",
+          "start": 27.299,
+          "end": 27.359
+        },
+        {
+          "text": "ricavano",
+          "start": 27.419,
+          "end": 27.799
+        },
+        {
+          "text": "dalle",
+          "start": 27.859,
+          "end": 28.059
+        },
+        {
+          "text": "user",
+          "start": 28.239,
+          "end": 28.479
+        },
+        {
+          "text": "story,",
+          "start": 28.559,
+          "end": 28.939
+        },
+        {
+          "text": "traducendo",
+          "start": 29.139,
+          "end": 29.639
+        },
+        {
+          "text": "storie",
+          "start": 29.719,
+          "end": 30.039
+        },
+        {
+          "text": "come",
+          "start": 30.099,
+          "end": 30.279
+        },
+        {
+          "text": "il",
+          "start": 30.339,
+          "end": 30.399
+        },
+        {
+          "text": "login",
+          "start": 30.439,
+          "end": 30.739
+        },
+        {
+          "text": "con",
+          "start": 30.799,
+          "end": 30.939
+        },
+        {
+          "text": "Google",
+          "start": 31.019,
+          "end": 31.459
+        },
+        {
+          "text": "o",
+          "start": 31.479,
+          "end": 31.519
+        },
+        {
+          "text": "la",
+          "start": 31.579,
+          "end": 31.659
+        },
+        {
+          "text": "scelta",
+          "start": 31.699,
+          "end": 32.06
+        }
+      ]
+    },
+    {
+      "start": 32.12,
+      "end": 35.58,
+      "text": "delle email in scenari concreti di successo ed errore.",
+      "words": [
+        {
+          "text": "delle",
+          "start": 32.12,
+          "end": 32.32
+        },
+        {
+          "text": "email",
+          "start": 32.36,
+          "end": 32.66
+        },
+        {
+          "text": "in",
+          "start": 33.02,
+          "end": 33.12
+        },
+        {
+          "text": "scenari",
+          "start": 33.18,
+          "end": 33.64
+        },
+        {
+          "text": "concreti",
+          "start": 33.68,
+          "end": 34.26
+        },
+        {
+          "text": "di",
+          "start": 34.32,
+          "end": 34.38
+        },
+        {
+          "text": "successo",
+          "start": 34.44,
+          "end": 34.98
+        },
+        {
+          "text": "ed",
+          "start": 35.1,
+          "end": 35.2
+        },
+        {
+          "text": "errore.",
+          "start": 35.24,
+          "end": 35.58
+        }
+      ]
+    },
+    {
+      "start": 36.6,
+      "end": 40.52,
+      "text": "Il system testing collauda invece il sistema nel suo insieme per quattro scopi:",
+      "words": [
+        {
+          "text": "Il",
+          "start": 36.6,
+          "end": 36.68
+        },
+        {
+          "text": "system",
+          "start": 36.76,
+          "end": 37.06
+        },
+        {
+          "text": "testing",
+          "start": 37.12,
+          "end": 37.54
+        },
+        {
+          "text": "collauda",
+          "start": 37.68,
+          "end": 38.06
+        },
+        {
+          "text": "invece",
+          "start": 38.1,
+          "end": 38.38
+        },
+        {
+          "text": "il",
+          "start": 38.44,
+          "end": 38.5
+        },
+        {
+          "text": "sistema",
+          "start": 38.56,
+          "end": 38.9
+        },
+        {
+          "text": "nel",
+          "start": 38.96,
+          "end": 39.08
+        },
+        {
+          "text": "suo",
+          "start": 39.14,
+          "end": 39.26
+        },
+        {
+          "text": "insieme",
+          "start": 39.32,
+          "end": 39.7
+        },
+        {
+          "text": "per",
+          "start": 39.76,
+          "end": 39.86
+        },
+        {
+          "text": "quattro",
+          "start": 39.9,
+          "end": 40.16
+        },
+        {
+          "text": "scopi:",
+          "start": 40.2,
+          "end": 40.52
+        }
+      ]
+    },
+    {
+      "start": 41.06,
+      "end": 45.18,
+      "text": "scoprire interazioni inattese tra feature, verificare che lavorino bene insieme,",
+      "words": [
+        {
+          "text": "scoprire",
+          "start": 41.06,
+          "end": 41.46
+        },
+        {
+          "text": "interazioni",
+          "start": 41.52,
+          "end": 42.06
+        },
+        {
+          "text": "inattese",
+          "start": 42.12,
+          "end": 42.58
+        },
+        {
+          "text": "tra",
+          "start": 42.62,
+          "end": 42.72
+        },
+        {
+          "text": "feature,",
+          "start": 42.78,
+          "end": 43.16
+        },
+        {
+          "text": "verificare",
+          "start": 43.44,
+          "end": 43.96
+        },
+        {
+          "text": "che",
+          "start": 44.0,
+          "end": 44.08
+        },
+        {
+          "text": "lavorino",
+          "start": 44.12,
+          "end": 44.48
+        },
+        {
+          "text": "bene",
+          "start": 44.52,
+          "end": 44.68
+        },
+        {
+          "text": "insieme,",
+          "start": 44.74,
+          "end": 45.18
+        }
+      ]
+    },
+    {
+      "start": 45.64,
+      "end": 51.601,
+      "text": "controllare diversi ambienti d'uso e misurare qualità come reattività e sicurezza lungo percorsi end-to-end.",
+      "words": [
+        {
+          "text": "controllare",
+          "start": 45.64,
+          "end": 46.24
+        },
+        {
+          "text": "diversi",
+          "start": 46.3,
+          "end": 46.68
+        },
+        {
+          "text": "ambienti",
+          "start": 46.74,
+          "end": 47.16
+        },
+        {
+          "text": "d'uso",
+          "start": 47.2,
+          "end": 47.481
+        },
+        {
+          "text": "e",
+          "start": 47.901,
+          "end": 47.941
+        },
+        {
+          "text": "misurare",
+          "start": 48.001,
+          "end": 48.421
+        },
+        {
+          "text": "qualità",
+          "start": 48.461,
+          "end": 48.761
+        },
+        {
+          "text": "come",
+          "start": 48.861,
+          "end": 49.041
+        },
+        {
+          "text": "reattività",
+          "start": 49.121,
+          "end": 49.661
+        },
+        {
+          "text": "e",
+          "start": 49.781,
+          "end": 49.821
+        },
+        {
+          "text": "sicurezza",
+          "start": 49.881,
+          "end": 50.341
+        },
+        {
+          "text": "lungo",
+          "start": 50.421,
+          "end": 50.581
+        },
+        {
+          "text": "percorsi",
+          "start": 50.621,
+          "end": 51.061
+        },
+        {
+          "text": "end-to-end.",
+          "start": 51.141,
+          "end": 51.601
+        }
+      ]
+    },
+    {
+      "start": 52.561,
+      "end": 58.781,
+      "text": "Infine, il release testing collauda il sistema destinato ai clienti direttamente nell'ambiente operativo reale.",
+      "words": [
+        {
+          "text": "Infine,",
+          "start": 52.561,
+          "end": 52.901
+        },
+        {
+          "text": "il",
+          "start": 53.121,
+          "end": 53.221
+        },
+        {
+          "text": "release",
+          "start": 53.341,
+          "end": 53.721
+        },
+        {
+          "text": "testing",
+          "start": 53.761,
+          "end": 54.201
+        },
+        {
+          "text": "collauda",
+          "start": 54.341,
+          "end": 54.721
+        },
+        {
+          "text": "il",
+          "start": 54.761,
+          "end": 54.821
+        },
+        {
+          "text": "sistema",
+          "start": 54.861,
+          "end": 55.201
+        },
+        {
+          "text": "destinato",
+          "start": 55.261,
+          "end": 55.721
+        },
+        {
+          "text": "ai",
+          "start": 55.761,
+          "end": 55.821
+        },
+        {
+          "text": "clienti",
+          "start": 55.841,
+          "end": 56.341
+        },
+        {
+          "text": "direttamente",
+          "start": 56.641,
+          "end": 57.341
+        },
+        {
+          "text": "nell'ambiente",
+          "start": 57.421,
+          "end": 57.941
+        },
+        {
+          "text": "operativo",
+          "start": 57.981,
+          "end": 58.381
+        },
+        {
+          "text": "reale.",
+          "start": 58.441,
+          "end": 58.781
+        }
+      ]
+    },
+    {
+      "start": 59.521,
+      "end": 63.682,
+      "text": "Il suo obiettivo non è cercare bug, ma decidere se il prodotto è pronto per",
+      "words": [
+        {
+          "text": "Il",
+          "start": 59.521,
+          "end": 59.581
+        },
+        {
+          "text": "suo",
+          "start": 59.621,
+          "end": 59.681
+        },
+        {
+          "text": "obiettivo",
+          "start": 59.701,
+          "end": 60.081
+        },
+        {
+          "text": "non",
+          "start": 60.361,
+          "end": 60.501
+        },
+        {
+          "text": "è",
+          "start": 60.561,
+          "end": 60.601
+        },
+        {
+          "text": "cercare",
+          "start": 60.681,
+          "end": 61.041
+        },
+        {
+          "text": "bug,",
+          "start": 61.081,
+          "end": 61.321
+        },
+        {
+          "text": "ma",
+          "start": 61.601,
+          "end": 61.681
+        },
+        {
+          "text": "decidere",
+          "start": 61.741,
+          "end": 62.161
+        },
+        {
+          "text": "se",
+          "start": 62.201,
+          "end": 62.281
+        },
+        {
+          "text": "il",
+          "start": 62.341,
+          "end": 62.421
+        },
+        {
+          "text": "prodotto",
+          "start": 62.481,
+          "end": 62.901
+        },
+        {
+          "text": "è",
+          "start": 62.981,
+          "end": 63.021
+        },
+        {
+          "text": "pronto",
+          "start": 63.102,
+          "end": 63.482
+        },
+        {
+          "text": "per",
+          "start": 63.542,
+          "end": 63.682
+        }
+      ]
+    },
+    {
+      "start": 63.742,
+      "end": 68.462,
+      "text": "il rilascio, verificando impacchettamento, installazione di librerie e configurazione,",
+      "words": [
+        {
+          "text": "il",
+          "start": 63.742,
+          "end": 63.802
+        },
+        {
+          "text": "rilascio,",
+          "start": 63.902,
+          "end": 64.382
+        },
+        {
+          "text": "verificando",
+          "start": 64.742,
+          "end": 65.262
+        },
+        {
+          "text": "impacchettamento,",
+          "start": 65.302,
+          "end": 66.082
+        },
+        {
+          "text": "installazione",
+          "start": 66.282,
+          "end": 66.882
+        },
+        {
+          "text": "di",
+          "start": 66.922,
+          "end": 66.982
+        },
+        {
+          "text": "librerie",
+          "start": 67.042,
+          "end": 67.482
+        },
+        {
+          "text": "e",
+          "start": 67.642,
+          "end": 67.682
+        },
+        {
+          "text": "configurazione,",
+          "start": 67.722,
+          "end": 68.462
+        }
+      ]
+    },
+    {
+      "start": 68.842,
+      "end": 70.462,
+      "text": "spesso in modo automatico sul cloud.",
+      "words": [
+        {
+          "text": "spesso",
+          "start": 68.842,
+          "end": 69.102
+        },
+        {
+          "text": "in",
+          "start": 69.162,
+          "end": 69.20200000000001
+        },
+        {
+          "text": "modo",
+          "start": 69.242,
+          "end": 69.382
+        },
+        {
+          "text": "automatico",
+          "start": 69.442,
+          "end": 69.942
+        },
+        {
+          "text": "sul",
+          "start": 70.002,
+          "end": 70.122
+        },
+        {
+          "text": "cloud.",
+          "start": 70.142,
+          "end": 70.462
+        }
+      ]
+    }
+  ]
+}

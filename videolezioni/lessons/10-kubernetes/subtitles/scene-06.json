@@ -1,0 +1,818 @@
+{
+  "duration": 65.961,
+  "segments": [
+    {
+      "start": 0.946,
+      "end": 4.006,
+      "text": "Un Service ClusterIP funziona solo dentro il cluster.",
+      "words": [
+        {
+          "text": "Un",
+          "start": 0.946,
+          "end": 1.026
+        },
+        {
+          "text": "Service",
+          "start": 1.066,
+          "end": 1.446
+        },
+        {
+          "text": "ClusterIP",
+          "start": 1.526,
+          "end": 2.126
+        },
+        {
+          "text": "funziona",
+          "start": 2.366,
+          "end": 2.746
+        },
+        {
+          "text": "solo",
+          "start": 2.866,
+          "end": 3.106
+        },
+        {
+          "text": "dentro",
+          "start": 3.186,
+          "end": 3.446
+        },
+        {
+          "text": "il",
+          "start": 3.486,
+          "end": 3.546
+        },
+        {
+          "text": "cluster.",
+          "start": 3.586,
+          "end": 4.006
+        }
+      ]
+    },
+    {
+      "start": 4.526,
+      "end": 7.906,
+      "text": "Per esporre l'applicazione al traffico esterno si usa l'oggetto Ingress,",
+      "words": [
+        {
+          "text": "Per",
+          "start": 4.526,
+          "end": 4.626
+        },
+        {
+          "text": "esporre",
+          "start": 4.666,
+          "end": 4.966
+        },
+        {
+          "text": "l'applicazione",
+          "start": 5.026,
+          "end": 5.646
+        },
+        {
+          "text": "al",
+          "start": 5.686,
+          "end": 5.766
+        },
+        {
+          "text": "traffico",
+          "start": 5.806,
+          "end": 6.146
+        },
+        {
+          "text": "esterno",
+          "start": 6.186,
+          "end": 6.566
+        },
+        {
+          "text": "si",
+          "start": 6.646,
+          "end": 6.706
+        },
+        {
+          "text": "usa",
+          "start": 6.746,
+          "end": 6.866
+        },
+        {
+          "text": "l'oggetto",
+          "start": 6.906,
+          "end": 7.306
+        },
+        {
+          "text": "Ingress,",
+          "start": 7.526,
+          "end": 7.906
+        }
+      ]
+    },
+    {
+      "start": 8.406,
+      "end": 11.146,
+      "text": "che svolge in Kubernetes il ruolo di API gateway.",
+      "words": [
+        {
+          "text": "che",
+          "start": 8.406,
+          "end": 8.486
+        },
+        {
+          "text": "svolge",
+          "start": 8.526,
+          "end": 8.806
+        },
+        {
+          "text": "in",
+          "start": 8.846,
+          "end": 8.886
+        },
+        {
+          "text": "Kubernetes",
+          "start": 8.906,
+          "end": 9.466
+        },
+        {
+          "text": "il",
+          "start": 9.606,
+          "end": 9.686
+        },
+        {
+          "text": "ruolo",
+          "start": 9.746,
+          "end": 9.966
+        },
+        {
+          "text": "di",
+          "start": 10.026,
+          "end": 10.106
+        },
+        {
+          "text": "API",
+          "start": 10.266,
+          "end": 10.686
+        },
+        {
+          "text": "gateway.",
+          "start": 10.746,
+          "end": 11.146
+        }
+      ]
+    },
+    {
+      "start": 12.067,
+      "end": 17.107,
+      "text": "Attraverso un Ingress controller come nginx, configurato con apposite annotations nel manifest,",
+      "words": [
+        {
+          "text": "Attraverso",
+          "start": 12.067,
+          "end": 12.507
+        },
+        {
+          "text": "un",
+          "start": 12.547,
+          "end": 12.607
+        },
+        {
+          "text": "Ingress",
+          "start": 12.647,
+          "end": 12.927
+        },
+        {
+          "text": "controller",
+          "start": 12.947,
+          "end": 13.487
+        },
+        {
+          "text": "come",
+          "start": 13.547,
+          "end": 13.687
+        },
+        {
+          "text": "nginx,",
+          "start": 13.827,
+          "end": 14.187
+        },
+        {
+          "text": "configurato",
+          "start": 14.607,
+          "end": 15.147
+        },
+        {
+          "text": "con",
+          "start": 15.187,
+          "end": 15.307
+        },
+        {
+          "text": "apposite",
+          "start": 15.327,
+          "end": 15.767
+        },
+        {
+          "text": "annotations",
+          "start": 15.787,
+          "end": 16.367
+        },
+        {
+          "text": "nel",
+          "start": 16.467,
+          "end": 16.587
+        },
+        {
+          "text": "manifest,",
+          "start": 16.627,
+          "end": 17.107
+        }
+      ]
+    },
+    {
+      "start": 17.607,
+      "end": 24.408,
+      "text": "e mediante regole sui percorsi HTTP, per esempio barra app verso il backend user-interface-svc sulla",
+      "words": [
+        {
+          "text": "e",
+          "start": 17.607,
+          "end": 17.647
+        },
+        {
+          "text": "mediante",
+          "start": 17.707,
+          "end": 18.067
+        },
+        {
+          "text": "regole",
+          "start": 18.167,
+          "end": 18.407
+        },
+        {
+          "text": "sui",
+          "start": 18.447,
+          "end": 18.547
+        },
+        {
+          "text": "percorsi",
+          "start": 18.567,
+          "end": 18.967
+        },
+        {
+          "text": "HTTP,",
+          "start": 19.107,
+          "end": 19.547
+        },
+        {
+          "text": "per",
+          "start": 20.047,
+          "end": 20.147
+        },
+        {
+          "text": "esempio",
+          "start": 20.167,
+          "end": 20.487
+        },
+        {
+          "text": "barra",
+          "start": 20.647,
+          "end": 20.907
+        },
+        {
+          "text": "app",
+          "start": 21.007,
+          "end": 21.167
+        },
+        {
+          "text": "verso",
+          "start": 21.347,
+          "end": 21.567
+        },
+        {
+          "text": "il",
+          "start": 21.607,
+          "end": 21.647
+        },
+        {
+          "text": "backend",
+          "start": 21.667,
+          "end": 22.027
+        },
+        {
+          "text": "user-interface-svc",
+          "start": 22.267,
+          "end": 24.028
+        },
+        {
+          "text": "sulla",
+          "start": 24.228,
+          "end": 24.408
+        }
+      ]
+    },
+    {
+      "start": 24.428,
+      "end": 29.328,
+      "text": "porta ottanta, l'Ingress instrada le richieste esterne solo verso i Service scelti,",
+      "words": [
+        {
+          "text": "porta",
+          "start": 24.428,
+          "end": 24.648
+        },
+        {
+          "text": "ottanta,",
+          "start": 24.708,
+          "end": 25.128
+        },
+        {
+          "text": "l'Ingress",
+          "start": 25.828,
+          "end": 26.268
+        },
+        {
+          "text": "instrada",
+          "start": 26.428,
+          "end": 26.808
+        },
+        {
+          "text": "le",
+          "start": 26.868,
+          "end": 26.928
+        },
+        {
+          "text": "richieste",
+          "start": 26.968,
+          "end": 27.308
+        },
+        {
+          "text": "esterne",
+          "start": 27.368,
+          "end": 27.788
+        },
+        {
+          "text": "solo",
+          "start": 27.888,
+          "end": 28.148
+        },
+        {
+          "text": "verso",
+          "start": 28.168,
+          "end": 28.408
+        },
+        {
+          "text": "i",
+          "start": 28.448,
+          "end": 28.488
+        },
+        {
+          "text": "Service",
+          "start": 28.528,
+          "end": 28.888
+        },
+        {
+          "text": "scelti,",
+          "start": 28.928,
+          "end": 29.328
+        }
+      ]
+    },
+    {
+      "start": 29.668,
+      "end": 32.068,
+      "text": "mantenendo protetti e isolati i servizi interni.",
+      "words": [
+        {
+          "text": "mantenendo",
+          "start": 29.668,
+          "end": 30.088
+        },
+        {
+          "text": "protetti",
+          "start": 30.148,
+          "end": 30.628
+        },
+        {
+          "text": "e",
+          "start": 30.688,
+          "end": 30.728
+        },
+        {
+          "text": "isolati",
+          "start": 30.768,
+          "end": 31.188
+        },
+        {
+          "text": "i",
+          "start": 31.248,
+          "end": 31.288
+        },
+        {
+          "text": "servizi",
+          "start": 31.288,
+          "end": 31.628
+        },
+        {
+          "text": "interni.",
+          "start": 31.668,
+          "end": 32.068
+        }
+      ]
+    },
+    {
+      "start": 32.808,
+      "end": 38.469,
+      "text": "Oltre a Pod, Deployment, Service e Ingress, Kubernetes offre altri oggetti essenziali in produzione.",
+      "words": [
+        {
+          "text": "Oltre",
+          "start": 32.808,
+          "end": 33.028
+        },
+        {
+          "text": "a",
+          "start": 33.108,
+          "end": 33.148
+        },
+        {
+          "text": "Pod,",
+          "start": 33.208,
+          "end": 33.468
+        },
+        {
+          "text": "Deployment,",
+          "start": 33.588,
+          "end": 34.168
+        },
+        {
+          "text": "Service",
+          "start": 34.308,
+          "end": 34.748
+        },
+        {
+          "text": "e",
+          "start": 34.768,
+          "end": 34.808
+        },
+        {
+          "text": "Ingress,",
+          "start": 34.868,
+          "end": 35.208
+        },
+        {
+          "text": "Kubernetes",
+          "start": 35.668,
+          "end": 36.189
+        },
+        {
+          "text": "offre",
+          "start": 36.249,
+          "end": 36.469
+        },
+        {
+          "text": "altri",
+          "start": 36.609,
+          "end": 36.869
+        },
+        {
+          "text": "oggetti",
+          "start": 36.909,
+          "end": 37.209
+        },
+        {
+          "text": "essenziali",
+          "start": 37.249,
+          "end": 37.769
+        },
+        {
+          "text": "in",
+          "start": 37.789,
+          "end": 37.849
+        },
+        {
+          "text": "produzione.",
+          "start": 37.869,
+          "end": 38.469
+        }
+      ]
+    },
+    {
+      "start": 39.049,
+      "end": 44.609,
+      "text": "ConfigMap e Secret separano parametri di configurazione e dati sensibili dall'immagine del container,",
+      "words": [
+        {
+          "text": "ConfigMap",
+          "start": 39.049,
+          "end": 39.669
+        },
+        {
+          "text": "e",
+          "start": 39.909,
+          "end": 39.949
+        },
+        {
+          "text": "Secret",
+          "start": 40.089,
+          "end": 40.469
+        },
+        {
+          "text": "separano",
+          "start": 40.709,
+          "end": 41.109
+        },
+        {
+          "text": "parametri",
+          "start": 41.169,
+          "end": 41.629
+        },
+        {
+          "text": "di",
+          "start": 41.669,
+          "end": 41.729
+        },
+        {
+          "text": "configurazione",
+          "start": 41.769,
+          "end": 42.509
+        },
+        {
+          "text": "e",
+          "start": 42.529,
+          "end": 42.569
+        },
+        {
+          "text": "dati",
+          "start": 42.589,
+          "end": 42.789
+        },
+        {
+          "text": "sensibili",
+          "start": 42.829,
+          "end": 43.369
+        },
+        {
+          "text": "dall'immagine",
+          "start": 43.409,
+          "end": 43.949
+        },
+        {
+          "text": "del",
+          "start": 43.989,
+          "end": 44.089
+        },
+        {
+          "text": "container,",
+          "start": 44.129,
+          "end": 44.609
+        }
+      ]
+    },
+    {
+      "start": 45.029,
+      "end": 47.109,
+      "text": "preservando l'immutabilità tra gli ambienti.",
+      "words": [
+        {
+          "text": "preservando",
+          "start": 45.029,
+          "end": 45.509
+        },
+        {
+          "text": "l'immutabilità",
+          "start": 45.589,
+          "end": 46.309
+        },
+        {
+          "text": "tra",
+          "start": 46.389,
+          "end": 46.489
+        },
+        {
+          "text": "gli",
+          "start": 46.509,
+          "end": 46.609
+        },
+        {
+          "text": "ambienti.",
+          "start": 46.649,
+          "end": 47.109
+        }
+      ]
+    },
+    {
+      "start": 47.709,
+      "end": 52.47,
+      "text": "I Volume offrono archiviazione persistente o condivisa oltre la durata del singolo container.",
+      "words": [
+        {
+          "text": "I",
+          "start": 47.709,
+          "end": 47.749
+        },
+        {
+          "text": "Volume",
+          "start": 47.789,
+          "end": 48.17
+        },
+        {
+          "text": "offrono",
+          "start": 48.27,
+          "end": 48.57
+        },
+        {
+          "text": "archiviazione",
+          "start": 48.63,
+          "end": 49.19
+        },
+        {
+          "text": "persistente",
+          "start": 49.23,
+          "end": 49.91
+        },
+        {
+          "text": "o",
+          "start": 49.99,
+          "end": 50.03
+        },
+        {
+          "text": "condivisa",
+          "start": 50.07,
+          "end": 50.57
+        },
+        {
+          "text": "oltre",
+          "start": 50.73,
+          "end": 51.01
+        },
+        {
+          "text": "la",
+          "start": 51.07,
+          "end": 51.13
+        },
+        {
+          "text": "durata",
+          "start": 51.17,
+          "end": 51.47
+        },
+        {
+          "text": "del",
+          "start": 51.53,
+          "end": 51.63
+        },
+        {
+          "text": "singolo",
+          "start": 51.69,
+          "end": 51.99
+        },
+        {
+          "text": "container.",
+          "start": 52.01,
+          "end": 52.47
+        }
+      ]
+    },
+    {
+      "start": 53.05,
+      "end": 57.81,
+      "text": "L'HorizontalPodAutoscaler adatta automaticamente il numero di repliche al carico misurato,",
+      "words": [
+        {
+          "text": "L'HorizontalPodAutoscaler",
+          "start": 53.05,
+          "end": 54.51
+        },
+        {
+          "text": "adatta",
+          "start": 54.77,
+          "end": 55.07
+        },
+        {
+          "text": "automaticamente",
+          "start": 55.13,
+          "end": 55.85
+        },
+        {
+          "text": "il",
+          "start": 55.91,
+          "end": 55.97
+        },
+        {
+          "text": "numero",
+          "start": 56.01,
+          "end": 56.25
+        },
+        {
+          "text": "di",
+          "start": 56.29,
+          "end": 56.35
+        },
+        {
+          "text": "repliche",
+          "start": 56.39,
+          "end": 56.77
+        },
+        {
+          "text": "al",
+          "start": 56.91,
+          "end": 57.01
+        },
+        {
+          "text": "carico",
+          "start": 57.05,
+          "end": 57.31
+        },
+        {
+          "text": "misurato,",
+          "start": 57.35,
+          "end": 57.81
+        }
+      ]
+    },
+    {
+      "start": 58.11,
+      "end": 63.111,
+      "text": "mentre Job, Namespace e StatefulSet gestiscono rispettivamente attività batch,",
+      "words": [
+        {
+          "text": "mentre",
+          "start": 58.11,
+          "end": 58.35
+        },
+        {
+          "text": "Job,",
+          "start": 58.43,
+          "end": 58.69
+        },
+        {
+          "text": "Namespace",
+          "start": 58.99,
+          "end": 59.65
+        },
+        {
+          "text": "e",
+          "start": 59.81,
+          "end": 59.85
+        },
+        {
+          "text": "StatefulSet",
+          "start": 60.01,
+          "end": 60.711
+        },
+        {
+          "text": "gestiscono",
+          "start": 61.151,
+          "end": 61.651
+        },
+        {
+          "text": "rispettivamente",
+          "start": 61.691,
+          "end": 62.371
+        },
+        {
+          "text": "attività",
+          "start": 62.451,
+          "end": 62.791
+        },
+        {
+          "text": "batch,",
+          "start": 62.851,
+          "end": 63.111
+        }
+      ]
+    },
+    {
+      "start": 63.471,
+      "end": 65.711,
+      "text": "isolamento logico e workload con stato.",
+      "words": [
+        {
+          "text": "isolamento",
+          "start": 63.471,
+          "end": 63.931
+        },
+        {
+          "text": "logico",
+          "start": 63.971,
+          "end": 64.331
+        },
+        {
+          "text": "e",
+          "start": 64.571,
+          "end": 64.611
+        },
+        {
+          "text": "workload",
+          "start": 64.751,
+          "end": 65.191
+        },
+        {
+          "text": "con",
+          "start": 65.271,
+          "end": 65.391
+        },
+        {
+          "text": "stato.",
+          "start": 65.431,
+          "end": 65.711
+        }
+      ]
+    }
+  ]
+}

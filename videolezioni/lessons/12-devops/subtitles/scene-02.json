@@ -1,0 +1,942 @@
+{
+  "duration": 67.594,
+  "segments": [
+    {
+      "start": 0.894,
+      "end": 2.674,
+      "text": "Su quali pilastri poggia un team DevOps?",
+      "words": [
+        {
+          "text": "Su",
+          "start": 0.894,
+          "end": 0.974
+        },
+        {
+          "text": "quali",
+          "start": 1.054,
+          "end": 1.234
+        },
+        {
+          "text": "pilastri",
+          "start": 1.274,
+          "end": 1.694
+        },
+        {
+          "text": "poggia",
+          "start": 1.734,
+          "end": 1.994
+        },
+        {
+          "text": "un",
+          "start": 2.034,
+          "end": 2.114
+        },
+        {
+          "text": "team",
+          "start": 2.154,
+          "end": 2.294
+        },
+        {
+          "text": "DevOps?",
+          "start": 2.334,
+          "end": 2.674
+        }
+      ]
+    },
+    {
+      "start": 3.415,
+      "end": 5.895,
+      "text": "La disciplina si fonda su tre principi essenziali.",
+      "words": [
+        {
+          "text": "La",
+          "start": 3.415,
+          "end": 3.475
+        },
+        {
+          "text": "disciplina",
+          "start": 3.495,
+          "end": 3.915
+        },
+        {
+          "text": "si",
+          "start": 4.015,
+          "end": 4.075
+        },
+        {
+          "text": "fonda",
+          "start": 4.135,
+          "end": 4.335
+        },
+        {
+          "text": "su",
+          "start": 4.375,
+          "end": 4.455
+        },
+        {
+          "text": "tre",
+          "start": 4.595,
+          "end": 4.735
+        },
+        {
+          "text": "principi",
+          "start": 4.795,
+          "end": 5.255
+        },
+        {
+          "text": "essenziali.",
+          "start": 5.315,
+          "end": 5.895
+        }
+      ]
+    },
+    {
+      "start": 6.435,
+      "end": 11.636,
+      "text": "Primo: tutti sono responsabili di tutto, dallo sviluppo alla consegna fino al supporto in esercizio.",
+      "words": [
+        {
+          "text": "Primo:",
+          "start": 6.435,
+          "end": 6.655
+        },
+        {
+          "text": "tutti",
+          "start": 6.915,
+          "end": 7.195
+        },
+        {
+          "text": "sono",
+          "start": 7.315,
+          "end": 7.495
+        },
+        {
+          "text": "responsabili",
+          "start": 7.535,
+          "end": 8.195
+        },
+        {
+          "text": "di",
+          "start": 8.235,
+          "end": 8.295
+        },
+        {
+          "text": "tutto,",
+          "start": 8.355,
+          "end": 8.655
+        },
+        {
+          "text": "dallo",
+          "start": 8.955,
+          "end": 9.135
+        },
+        {
+          "text": "sviluppo",
+          "start": 9.175,
+          "end": 9.495
+        },
+        {
+          "text": "alla",
+          "start": 9.515,
+          "end": 9.635
+        },
+        {
+          "text": "consegna",
+          "start": 9.675,
+          "end": 10.156
+        },
+        {
+          "text": "fino",
+          "start": 10.276,
+          "end": 10.436
+        },
+        {
+          "text": "al",
+          "start": 10.476,
+          "end": 10.536
+        },
+        {
+          "text": "supporto",
+          "start": 10.596,
+          "end": 10.996
+        },
+        {
+          "text": "in",
+          "start": 11.016,
+          "end": 11.076
+        },
+        {
+          "text": "esercizio.",
+          "start": 11.116,
+          "end": 11.636
+        }
+      ]
+    },
+    {
+      "start": 12.336,
+      "end": 15.576,
+      "text": "Secondo: tutto ciò che può essere automatizzato va automatizzato,",
+      "words": [
+        {
+          "text": "Secondo:",
+          "start": 12.336,
+          "end": 12.636
+        },
+        {
+          "text": "tutto",
+          "start": 12.776,
+          "end": 13.056
+        },
+        {
+          "text": "ciò",
+          "start": 13.096,
+          "end": 13.196
+        },
+        {
+          "text": "che",
+          "start": 13.276,
+          "end": 13.356
+        },
+        {
+          "text": "può",
+          "start": 13.396,
+          "end": 13.496
+        },
+        {
+          "text": "essere",
+          "start": 13.556,
+          "end": 13.776
+        },
+        {
+          "text": "automatizzato",
+          "start": 13.816,
+          "end": 14.536
+        },
+        {
+          "text": "va",
+          "start": 14.656,
+          "end": 14.716
+        },
+        {
+          "text": "automatizzato,",
+          "start": 14.816,
+          "end": 15.576
+        }
+      ]
+    },
+    {
+      "start": 15.776,
+      "end": 17.697,
+      "text": "inclusi test, rilasci e infrastruttura.",
+      "words": [
+        {
+          "text": "inclusi",
+          "start": 15.776,
+          "end": 16.076
+        },
+        {
+          "text": "test,",
+          "start": 16.196,
+          "end": 16.476
+        },
+        {
+          "text": "rilasci",
+          "start": 16.596,
+          "end": 16.977
+        },
+        {
+          "text": "e",
+          "start": 16.997,
+          "end": 17.037
+        },
+        {
+          "text": "infrastruttura.",
+          "start": 17.057,
+          "end": 17.697
+        }
+      ]
+    },
+    {
+      "start": 18.297,
+      "end": 22.577,
+      "text": "Terzo: prima si misura, poi si cambia, guidando ogni decisione con dati reali.",
+      "words": [
+        {
+          "text": "Terzo:",
+          "start": 18.297,
+          "end": 18.577
+        },
+        {
+          "text": "prima",
+          "start": 18.797,
+          "end": 19.037
+        },
+        {
+          "text": "si",
+          "start": 19.097,
+          "end": 19.177
+        },
+        {
+          "text": "misura,",
+          "start": 19.217,
+          "end": 19.537
+        },
+        {
+          "text": "poi",
+          "start": 19.697,
+          "end": 19.857
+        },
+        {
+          "text": "si",
+          "start": 19.917,
+          "end": 19.997
+        },
+        {
+          "text": "cambia,",
+          "start": 20.037,
+          "end": 20.357
+        },
+        {
+          "text": "guidando",
+          "start": 20.597,
+          "end": 20.937
+        },
+        {
+          "text": "ogni",
+          "start": 21.097,
+          "end": 21.317
+        },
+        {
+          "text": "decisione",
+          "start": 21.377,
+          "end": 21.817
+        },
+        {
+          "text": "con",
+          "start": 21.877,
+          "end": 21.997
+        },
+        {
+          "text": "dati",
+          "start": 22.037,
+          "end": 22.217
+        },
+        {
+          "text": "reali.",
+          "start": 22.257,
+          "end": 22.577
+        }
+      ]
+    },
+    {
+      "start": 23.357,
+      "end": 28.738,
+      "text": "Applicarli porta quattro benefici concreti: distribuzione più veloce grazie a zero attese tra team;",
+      "words": [
+        {
+          "text": "Applicarli",
+          "start": 23.357,
+          "end": 23.798
+        },
+        {
+          "text": "porta",
+          "start": 23.858,
+          "end": 24.078
+        },
+        {
+          "text": "quattro",
+          "start": 24.178,
+          "end": 24.498
+        },
+        {
+          "text": "benefici",
+          "start": 24.538,
+          "end": 24.898
+        },
+        {
+          "text": "concreti:",
+          "start": 24.938,
+          "end": 25.358
+        },
+        {
+          "text": "distribuzione",
+          "start": 25.878,
+          "end": 26.458
+        },
+        {
+          "text": "più",
+          "start": 26.538,
+          "end": 26.638
+        },
+        {
+          "text": "veloce",
+          "start": 26.718,
+          "end": 27.078
+        },
+        {
+          "text": "grazie",
+          "start": 27.258,
+          "end": 27.518
+        },
+        {
+          "text": "a",
+          "start": 27.558,
+          "end": 27.598
+        },
+        {
+          "text": "zero",
+          "start": 27.718,
+          "end": 27.918
+        },
+        {
+          "text": "attese",
+          "start": 27.978,
+          "end": 28.318
+        },
+        {
+          "text": "tra",
+          "start": 28.358,
+          "end": 28.458
+        },
+        {
+          "text": "team;",
+          "start": 28.518,
+          "end": 28.738
+        }
+      ]
+    },
+    {
+      "start": 29.358,
+      "end": 32.399,
+      "text": "rischio ridotto perché piccoli incrementi causano meno guasti;",
+      "words": [
+        {
+          "text": "rischio",
+          "start": 29.358,
+          "end": 29.658
+        },
+        {
+          "text": "ridotto",
+          "start": 29.698,
+          "end": 30.138
+        },
+        {
+          "text": "perché",
+          "start": 30.338,
+          "end": 30.539
+        },
+        {
+          "text": "piccoli",
+          "start": 30.619,
+          "end": 30.939
+        },
+        {
+          "text": "incrementi",
+          "start": 30.979,
+          "end": 31.399
+        },
+        {
+          "text": "causano",
+          "start": 31.439,
+          "end": 31.739
+        },
+        {
+          "text": "meno",
+          "start": 31.819,
+          "end": 31.979
+        },
+        {
+          "text": "guasti;",
+          "start": 32.019,
+          "end": 32.399
+        }
+      ]
+    },
+    {
+      "start": 32.959,
+      "end": 38.24,
+      "text": "riparazione più rapida senza scaricabarile tra reparti; e team complessivamente più produttivi.",
+      "words": [
+        {
+          "text": "riparazione",
+          "start": 32.959,
+          "end": 33.459
+        },
+        {
+          "text": "più",
+          "start": 33.519,
+          "end": 33.619
+        },
+        {
+          "text": "rapida",
+          "start": 33.739,
+          "end": 34.079
+        },
+        {
+          "text": "senza",
+          "start": 34.339,
+          "end": 34.559
+        },
+        {
+          "text": "scaricabarile",
+          "start": 34.619,
+          "end": 35.279
+        },
+        {
+          "text": "tra",
+          "start": 35.359,
+          "end": 35.459
+        },
+        {
+          "text": "reparti;",
+          "start": 35.519,
+          "end": 35.939
+        },
+        {
+          "text": "e",
+          "start": 36.319,
+          "end": 36.359
+        },
+        {
+          "text": "team",
+          "start": 36.539,
+          "end": 36.719
+        },
+        {
+          "text": "complessivamente",
+          "start": 36.839,
+          "end": 37.6
+        },
+        {
+          "text": "più",
+          "start": 37.64,
+          "end": 37.72
+        },
+        {
+          "text": "produttivi.",
+          "start": 37.76,
+          "end": 38.24
+        }
+      ]
+    },
+    {
+      "start": 38.84,
+      "end": 41.42,
+      "text": "Ma un team DevOps non è fatto di soli programmatori:",
+      "words": [
+        {
+          "text": "Ma",
+          "start": 38.84,
+          "end": 38.88
+        },
+        {
+          "text": "un",
+          "start": 38.96,
+          "end": 39.02
+        },
+        {
+          "text": "team",
+          "start": 39.06,
+          "end": 39.24
+        },
+        {
+          "text": "DevOps",
+          "start": 39.32,
+          "end": 39.7
+        },
+        {
+          "text": "non",
+          "start": 39.88,
+          "end": 40.0
+        },
+        {
+          "text": "è",
+          "start": 40.04,
+          "end": 40.08
+        },
+        {
+          "text": "fatto",
+          "start": 40.16,
+          "end": 40.4
+        },
+        {
+          "text": "di",
+          "start": 40.44,
+          "end": 40.52
+        },
+        {
+          "text": "soli",
+          "start": 40.58,
+          "end": 40.78
+        },
+        {
+          "text": "programmatori:",
+          "start": 40.82,
+          "end": 41.42
+        }
+      ]
+    },
+    {
+      "start": 41.86,
+      "end": 45.721,
+      "text": "richiede competenze di ingegneria del software, UX design, sicurezza,",
+      "words": [
+        {
+          "text": "richiede",
+          "start": 41.86,
+          "end": 42.12
+        },
+        {
+          "text": "competenze",
+          "start": 42.18,
+          "end": 42.68
+        },
+        {
+          "text": "di",
+          "start": 42.76,
+          "end": 42.82
+        },
+        {
+          "text": "ingegneria",
+          "start": 42.88,
+          "end": 43.38
+        },
+        {
+          "text": "del",
+          "start": 43.42,
+          "end": 43.54
+        },
+        {
+          "text": "software,",
+          "start": 43.6,
+          "end": 44.061
+        },
+        {
+          "text": "UX",
+          "start": 44.241,
+          "end": 44.381
+        },
+        {
+          "text": "design,",
+          "start": 44.481,
+          "end": 44.881
+        },
+        {
+          "text": "sicurezza,",
+          "start": 45.181,
+          "end": 45.721
+        }
+      ]
+    },
+    {
+      "start": 46.041,
+      "end": 51.342,
+      "text": "infrastruttura e contatto diretto con i clienti, tenute insieme da rispetto reciproco e condivisione.",
+      "words": [
+        {
+          "text": "infrastruttura",
+          "start": 46.041,
+          "end": 46.801
+        },
+        {
+          "text": "e",
+          "start": 47.041,
+          "end": 47.081
+        },
+        {
+          "text": "contatto",
+          "start": 47.121,
+          "end": 47.501
+        },
+        {
+          "text": "diretto",
+          "start": 47.561,
+          "end": 47.901
+        },
+        {
+          "text": "con",
+          "start": 47.941,
+          "end": 48.041
+        },
+        {
+          "text": "i",
+          "start": 48.061,
+          "end": 48.101
+        },
+        {
+          "text": "clienti,",
+          "start": 48.121,
+          "end": 48.541
+        },
+        {
+          "text": "tenute",
+          "start": 48.881,
+          "end": 49.121
+        },
+        {
+          "text": "insieme",
+          "start": 49.161,
+          "end": 49.481
+        },
+        {
+          "text": "da",
+          "start": 49.541,
+          "end": 49.621
+        },
+        {
+          "text": "rispetto",
+          "start": 49.701,
+          "end": 50.061
+        },
+        {
+          "text": "reciproco",
+          "start": 50.101,
+          "end": 50.561
+        },
+        {
+          "text": "e",
+          "start": 50.701,
+          "end": 50.741
+        },
+        {
+          "text": "condivisione.",
+          "start": 50.761,
+          "end": 51.342
+        }
+      ]
+    },
+    {
+      "start": 52.002,
+      "end": 54.062,
+      "text": "Infine servono quattro famiglie di strumenti:",
+      "words": [
+        {
+          "text": "Infine",
+          "start": 52.002,
+          "end": 52.302
+        },
+        {
+          "text": "servono",
+          "start": 52.402,
+          "end": 52.722
+        },
+        {
+          "text": "quattro",
+          "start": 52.822,
+          "end": 53.122
+        },
+        {
+          "text": "famiglie",
+          "start": 53.162,
+          "end": 53.442
+        },
+        {
+          "text": "di",
+          "start": 53.482,
+          "end": 53.542
+        },
+        {
+          "text": "strumenti:",
+          "start": 53.582,
+          "end": 54.062
+        }
+      ]
+    },
+    {
+      "start": 54.622,
+      "end": 58.583,
+      "text": "source control come GitHub, build e test continui come Jenkins o Travis,",
+      "words": [
+        {
+          "text": "source",
+          "start": 54.622,
+          "end": 54.822
+        },
+        {
+          "text": "control",
+          "start": 54.822,
+          "end": 55.202
+        },
+        {
+          "text": "come",
+          "start": 55.262,
+          "end": 55.402
+        },
+        {
+          "text": "GitHub,",
+          "start": 55.482,
+          "end": 55.802
+        },
+        {
+          "text": "build",
+          "start": 56.302,
+          "end": 56.502
+        },
+        {
+          "text": "e",
+          "start": 56.542,
+          "end": 56.582
+        },
+        {
+          "text": "test",
+          "start": 56.602,
+          "end": 56.842
+        },
+        {
+          "text": "continui",
+          "start": 56.922,
+          "end": 57.382
+        },
+        {
+          "text": "come",
+          "start": 57.442,
+          "end": 57.603
+        },
+        {
+          "text": "Jenkins",
+          "start": 57.663,
+          "end": 58.083
+        },
+        {
+          "text": "o",
+          "start": 58.123,
+          "end": 58.163
+        },
+        {
+          "text": "Travis,",
+          "start": 58.203,
+          "end": 58.583
+        }
+      ]
+    },
+    {
+      "start": 58.943,
+      "end": 64.043,
+      "text": "configuration management come Puppet, Chef, SaltStack o Ansible, e monitoraggio delle prestazioni,",
+      "words": [
+        {
+          "text": "configuration",
+          "start": 58.943,
+          "end": 59.503
+        },
+        {
+          "text": "management",
+          "start": 59.563,
+          "end": 60.023
+        },
+        {
+          "text": "come",
+          "start": 60.063,
+          "end": 60.223
+        },
+        {
+          "text": "Puppet,",
+          "start": 60.383,
+          "end": 60.763
+        },
+        {
+          "text": "Chef,",
+          "start": 60.883,
+          "end": 61.143
+        },
+        {
+          "text": "SaltStack",
+          "start": 61.303,
+          "end": 61.783
+        },
+        {
+          "text": "o",
+          "start": 61.823,
+          "end": 61.863
+        },
+        {
+          "text": "Ansible,",
+          "start": 61.923,
+          "end": 62.323
+        },
+        {
+          "text": "e",
+          "start": 62.723,
+          "end": 62.763
+        },
+        {
+          "text": "monitoraggio",
+          "start": 62.823,
+          "end": 63.283
+        },
+        {
+          "text": "delle",
+          "start": 63.323,
+          "end": 63.463
+        },
+        {
+          "text": "prestazioni,",
+          "start": 63.463,
+          "end": 64.043
+        }
+      ]
+    },
+    {
+      "start": 64.223,
+      "end": 67.344,
+      "text": "detto A P M, con strumenti come New Relic e Pingdom.",
+      "words": [
+        {
+          "text": "detto",
+          "start": 64.223,
+          "end": 64.464
+        },
+        {
+          "text": "A",
+          "start": 64.624,
+          "end": 64.664
+        },
+        {
+          "text": "P",
+          "start": 64.724,
+          "end": 64.76400000000001
+        },
+        {
+          "text": "M,",
+          "start": 65.064,
+          "end": 65.104
+        },
+        {
+          "text": "con",
+          "start": 65.484,
+          "end": 65.604
+        },
+        {
+          "text": "strumenti",
+          "start": 65.624,
+          "end": 65.964
+        },
+        {
+          "text": "come",
+          "start": 66.024,
+          "end": 66.184
+        },
+        {
+          "text": "New",
+          "start": 66.264,
+          "end": 66.384
+        },
+        {
+          "text": "Relic",
+          "start": 66.424,
+          "end": 66.704
+        },
+        {
+          "text": "e",
+          "start": 66.884,
+          "end": 66.924
+        },
+        {
+          "text": "Pingdom.",
+          "start": 66.984,
+          "end": 67.344
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,865 @@
+{
+  "duration": 61.701,
+  "segments": [
+    {
+      "start": 0.642,
+      "end": 4.542,
+      "text": "Per eseguire software in ambienti isolati si parte dalla virtualizzazione dei server.",
+      "words": [
+        {
+          "text": "Per",
+          "start": 0.642,
+          "end": 0.742
+        },
+        {
+          "text": "eseguire",
+          "start": 0.782,
+          "end": 1.122
+        },
+        {
+          "text": "software",
+          "start": 1.202,
+          "end": 1.582
+        },
+        {
+          "text": "in",
+          "start": 1.602,
+          "end": 1.682
+        },
+        {
+          "text": "ambienti",
+          "start": 1.702,
+          "end": 2.022
+        },
+        {
+          "text": "isolati",
+          "start": 2.082,
+          "end": 2.502
+        },
+        {
+          "text": "si",
+          "start": 2.682,
+          "end": 2.762
+        },
+        {
+          "text": "parte",
+          "start": 2.802,
+          "end": 3.042
+        },
+        {
+          "text": "dalla",
+          "start": 3.102,
+          "end": 3.262
+        },
+        {
+          "text": "virtualizzazione",
+          "start": 3.282,
+          "end": 3.982
+        },
+        {
+          "text": "dei",
+          "start": 4.022,
+          "end": 4.162
+        },
+        {
+          "text": "server.",
+          "start": 4.202,
+          "end": 4.542
+        }
+      ]
+    },
+    {
+      "start": 5.302,
+      "end": 10.283,
+      "text": "Nel modello tradizionale a macchine virtuali, sopra il server hardware gira un hypervisor di tipo",
+      "words": [
+        {
+          "text": "Nel",
+          "start": 5.302,
+          "end": 5.422
+        },
+        {
+          "text": "modello",
+          "start": 5.442,
+          "end": 5.722
+        },
+        {
+          "text": "tradizionale",
+          "start": 5.782,
+          "end": 6.402
+        },
+        {
+          "text": "a",
+          "start": 6.442,
+          "end": 6.482
+        },
+        {
+          "text": "macchine",
+          "start": 6.542,
+          "end": 6.862
+        },
+        {
+          "text": "virtuali,",
+          "start": 6.903,
+          "end": 7.343
+        },
+        {
+          "text": "sopra",
+          "start": 7.543,
+          "end": 7.763
+        },
+        {
+          "text": "il",
+          "start": 7.823,
+          "end": 7.883
+        },
+        {
+          "text": "server",
+          "start": 7.923,
+          "end": 8.183
+        },
+        {
+          "text": "hardware",
+          "start": 8.203,
+          "end": 8.543
+        },
+        {
+          "text": "gira",
+          "start": 8.643,
+          "end": 8.843
+        },
+        {
+          "text": "un",
+          "start": 8.943,
+          "end": 9.063
+        },
+        {
+          "text": "hypervisor",
+          "start": 9.163,
+          "end": 9.923
+        },
+        {
+          "text": "di",
+          "start": 10.003,
+          "end": 10.063
+        },
+        {
+          "text": "tipo",
+          "start": 10.103,
+          "end": 10.283
+        }
+      ]
+    },
+    {
+      "start": 10.363,
+      "end": 12.403,
+      "text": "uno, caricato direttamente sull'hardware.",
+      "words": [
+        {
+          "text": "uno,",
+          "start": 10.363,
+          "end": 10.523
+        },
+        {
+          "text": "caricato",
+          "start": 10.823,
+          "end": 11.203
+        },
+        {
+          "text": "direttamente",
+          "start": 11.263,
+          "end": 11.823
+        },
+        {
+          "text": "sull'hardware.",
+          "start": 11.863,
+          "end": 12.403
+        }
+      ]
+    },
+    {
+      "start": 13.003,
+      "end": 18.264,
+      "text": "Sopra l'hypervisor girano più macchine virtuali, e ciascuna include un proprio sistema operativo completo,",
+      "words": [
+        {
+          "text": "Sopra",
+          "start": 13.003,
+          "end": 13.243
+        },
+        {
+          "text": "l'hypervisor",
+          "start": 13.303,
+          "end": 13.904
+        },
+        {
+          "text": "girano",
+          "start": 14.064,
+          "end": 14.344
+        },
+        {
+          "text": "più",
+          "start": 14.424,
+          "end": 14.544
+        },
+        {
+          "text": "macchine",
+          "start": 14.624,
+          "end": 14.964
+        },
+        {
+          "text": "virtuali,",
+          "start": 15.004,
+          "end": 15.424
+        },
+        {
+          "text": "e",
+          "start": 15.764,
+          "end": 15.804
+        },
+        {
+          "text": "ciascuna",
+          "start": 15.844,
+          "end": 16.144
+        },
+        {
+          "text": "include",
+          "start": 16.164,
+          "end": 16.444
+        },
+        {
+          "text": "un",
+          "start": 16.504,
+          "end": 16.564
+        },
+        {
+          "text": "proprio",
+          "start": 16.604,
+          "end": 16.924
+        },
+        {
+          "text": "sistema",
+          "start": 16.984,
+          "end": 17.284
+        },
+        {
+          "text": "operativo",
+          "start": 17.344,
+          "end": 17.724
+        },
+        {
+          "text": "completo,",
+          "start": 17.784,
+          "end": 18.264
+        }
+      ]
+    },
+    {
+      "start": 18.604,
+      "end": 21.645,
+      "text": "il Guest OS, oltre alle librerie e all'applicazione.",
+      "words": [
+        {
+          "text": "il",
+          "start": 18.604,
+          "end": 18.684
+        },
+        {
+          "text": "Guest",
+          "start": 18.764,
+          "end": 19.004
+        },
+        {
+          "text": "OS,",
+          "start": 19.064,
+          "end": 19.344
+        },
+        {
+          "text": "oltre",
+          "start": 19.744,
+          "end": 19.985
+        },
+        {
+          "text": "alle",
+          "start": 20.025,
+          "end": 20.185
+        },
+        {
+          "text": "librerie",
+          "start": 20.245,
+          "end": 20.685
+        },
+        {
+          "text": "e",
+          "start": 20.865,
+          "end": 20.905
+        },
+        {
+          "text": "all'applicazione.",
+          "start": 20.945,
+          "end": 21.645
+        }
+      ]
+    },
+    {
+      "start": 22.325,
+      "end": 24.325,
+      "text": "I container cambiano radicalmente la pila.",
+      "words": [
+        {
+          "text": "I",
+          "start": 22.325,
+          "end": 22.365
+        },
+        {
+          "text": "container",
+          "start": 22.385,
+          "end": 22.825
+        },
+        {
+          "text": "cambiano",
+          "start": 22.985,
+          "end": 23.365
+        },
+        {
+          "text": "radicalmente",
+          "start": 23.425,
+          "end": 23.965
+        },
+        {
+          "text": "la",
+          "start": 24.005,
+          "end": 24.065
+        },
+        {
+          "text": "pila.",
+          "start": 24.105,
+          "end": 24.325
+        }
+      ]
+    },
+    {
+      "start": 24.945,
+      "end": 27.686,
+      "text": "Sfruttano la capacità del kernel del sistema operativo ospite,",
+      "words": [
+        {
+          "text": "Sfruttano",
+          "start": 24.945,
+          "end": 25.325
+        },
+        {
+          "text": "la",
+          "start": 25.385,
+          "end": 25.425
+        },
+        {
+          "text": "capacità",
+          "start": 25.465,
+          "end": 25.825
+        },
+        {
+          "text": "del",
+          "start": 25.865,
+          "end": 25.985
+        },
+        {
+          "text": "kernel",
+          "start": 26.065,
+          "end": 26.386
+        },
+        {
+          "text": "del",
+          "start": 26.426,
+          "end": 26.546
+        },
+        {
+          "text": "sistema",
+          "start": 26.586,
+          "end": 26.866
+        },
+        {
+          "text": "operativo",
+          "start": 26.906,
+          "end": 27.246
+        },
+        {
+          "text": "ospite,",
+          "start": 27.346,
+          "end": 27.686
+        }
+      ]
+    },
+    {
+      "start": 27.906,
+      "end": 33.007,
+      "text": "l'Host OS, di mantenere più istanze isolate dello spazio utente sotto un container manager.",
+      "words": [
+        {
+          "text": "l'Host",
+          "start": 27.906,
+          "end": 28.166
+        },
+        {
+          "text": "OS,",
+          "start": 28.206,
+          "end": 28.506
+        },
+        {
+          "text": "di",
+          "start": 28.846,
+          "end": 28.906
+        },
+        {
+          "text": "mantenere",
+          "start": 28.946,
+          "end": 29.366
+        },
+        {
+          "text": "più",
+          "start": 29.446,
+          "end": 29.586
+        },
+        {
+          "text": "istanze",
+          "start": 29.686,
+          "end": 30.106
+        },
+        {
+          "text": "isolate",
+          "start": 30.186,
+          "end": 30.586
+        },
+        {
+          "text": "dello",
+          "start": 30.626,
+          "end": 30.806
+        },
+        {
+          "text": "spazio",
+          "start": 30.866,
+          "end": 31.166
+        },
+        {
+          "text": "utente",
+          "start": 31.206,
+          "end": 31.546
+        },
+        {
+          "text": "sotto",
+          "start": 31.666,
+          "end": 31.906
+        },
+        {
+          "text": "un",
+          "start": 31.946,
+          "end": 32.006
+        },
+        {
+          "text": "container",
+          "start": 32.046,
+          "end": 32.566
+        },
+        {
+          "text": "manager.",
+          "start": 32.626,
+          "end": 33.007
+        }
+      ]
+    },
+    {
+      "start": 33.767,
+      "end": 37.967,
+      "text": "Ogni container contiene quindi soltanto l'applicazione e le sue librerie necessarie,",
+      "words": [
+        {
+          "text": "Ogni",
+          "start": 33.767,
+          "end": 33.927
+        },
+        {
+          "text": "container",
+          "start": 33.967,
+          "end": 34.427
+        },
+        {
+          "text": "contiene",
+          "start": 34.587,
+          "end": 34.887
+        },
+        {
+          "text": "quindi",
+          "start": 34.947,
+          "end": 35.167
+        },
+        {
+          "text": "soltanto",
+          "start": 35.247,
+          "end": 35.687
+        },
+        {
+          "text": "l'applicazione",
+          "start": 35.767,
+          "end": 36.387
+        },
+        {
+          "text": "e",
+          "start": 36.547,
+          "end": 36.587
+        },
+        {
+          "text": "le",
+          "start": 36.627,
+          "end": 36.687
+        },
+        {
+          "text": "sue",
+          "start": 36.727,
+          "end": 36.887
+        },
+        {
+          "text": "librerie",
+          "start": 36.947,
+          "end": 37.347
+        },
+        {
+          "text": "necessarie,",
+          "start": 37.387,
+          "end": 37.967
+        }
+      ]
+    },
+    {
+      "start": 38.227,
+      "end": 40.228,
+      "text": "senza replicare un intero sistema operativo.",
+      "words": [
+        {
+          "text": "senza",
+          "start": 38.227,
+          "end": 38.427
+        },
+        {
+          "text": "replicare",
+          "start": 38.487,
+          "end": 38.927
+        },
+        {
+          "text": "un",
+          "start": 38.967,
+          "end": 39.047
+        },
+        {
+          "text": "intero",
+          "start": 39.087,
+          "end": 39.408
+        },
+        {
+          "text": "sistema",
+          "start": 39.448,
+          "end": 39.748
+        },
+        {
+          "text": "operativo.",
+          "start": 39.808,
+          "end": 40.228
+        }
+      ]
+    },
+    {
+      "start": 41.048,
+      "end": 43.888,
+      "text": "Il confronto mostra due vantaggi netti e un compromesso.",
+      "words": [
+        {
+          "text": "Il",
+          "start": 41.048,
+          "end": 41.108
+        },
+        {
+          "text": "confronto",
+          "start": 41.148,
+          "end": 41.548
+        },
+        {
+          "text": "mostra",
+          "start": 41.688,
+          "end": 41.968
+        },
+        {
+          "text": "due",
+          "start": 42.048,
+          "end": 42.208
+        },
+        {
+          "text": "vantaggi",
+          "start": 42.248,
+          "end": 42.588
+        },
+        {
+          "text": "netti",
+          "start": 42.628,
+          "end": 42.888
+        },
+        {
+          "text": "e",
+          "start": 43.168,
+          "end": 43.208
+        },
+        {
+          "text": "un",
+          "start": 43.248,
+          "end": 43.308
+        },
+        {
+          "text": "compromesso.",
+          "start": 43.348,
+          "end": 43.888
+        }
+      ]
+    },
+    {
+      "start": 44.648,
+      "end": 50.069,
+      "text": "I container sono molto più leggeri, passando dall'ordine dei gigabyte a quello dei megabyte,",
+      "words": [
+        {
+          "text": "I",
+          "start": 44.648,
+          "end": 44.688
+        },
+        {
+          "text": "container",
+          "start": 44.728,
+          "end": 45.308
+        },
+        {
+          "text": "sono",
+          "start": 45.528,
+          "end": 45.709
+        },
+        {
+          "text": "molto",
+          "start": 45.809,
+          "end": 46.049
+        },
+        {
+          "text": "più",
+          "start": 46.089,
+          "end": 46.169
+        },
+        {
+          "text": "leggeri,",
+          "start": 46.249,
+          "end": 46.729
+        },
+        {
+          "text": "passando",
+          "start": 47.049,
+          "end": 47.429
+        },
+        {
+          "text": "dall'ordine",
+          "start": 47.489,
+          "end": 47.989
+        },
+        {
+          "text": "dei",
+          "start": 48.029,
+          "end": 48.149
+        },
+        {
+          "text": "gigabyte",
+          "start": 48.209,
+          "end": 48.789
+        },
+        {
+          "text": "a",
+          "start": 48.929,
+          "end": 48.969
+        },
+        {
+          "text": "quello",
+          "start": 49.029,
+          "end": 49.229
+        },
+        {
+          "text": "dei",
+          "start": 49.249,
+          "end": 49.389
+        },
+        {
+          "text": "megabyte,",
+          "start": 49.449,
+          "end": 50.069
+        }
+      ]
+    },
+    {
+      "start": 50.649,
+      "end": 54.13,
+      "text": "e si avviano molto più in fretta, passando dai minuti ai secondi.",
+      "words": [
+        {
+          "text": "e",
+          "start": 50.649,
+          "end": 50.689
+        },
+        {
+          "text": "si",
+          "start": 50.829,
+          "end": 50.889
+        },
+        {
+          "text": "avviano",
+          "start": 50.929,
+          "end": 51.289
+        },
+        {
+          "text": "molto",
+          "start": 51.389,
+          "end": 51.649
+        },
+        {
+          "text": "più",
+          "start": 51.669,
+          "end": 51.749
+        },
+        {
+          "text": "in",
+          "start": 51.809,
+          "end": 51.849
+        },
+        {
+          "text": "fretta,",
+          "start": 51.889,
+          "end": 52.25
+        },
+        {
+          "text": "passando",
+          "start": 52.49,
+          "end": 52.85
+        },
+        {
+          "text": "dai",
+          "start": 52.93,
+          "end": 53.05
+        },
+        {
+          "text": "minuti",
+          "start": 53.11,
+          "end": 53.45
+        },
+        {
+          "text": "ai",
+          "start": 53.59,
+          "end": 53.69
+        },
+        {
+          "text": "secondi.",
+          "start": 53.73,
+          "end": 54.13
+        }
+      ]
+    },
+    {
+      "start": 55.05,
+      "end": 60.331,
+      "text": "Lo svantaggio principale è che tutti i container sullo stesso host condividono lo stesso sistema",
+      "words": [
+        {
+          "text": "Lo",
+          "start": 55.05,
+          "end": 55.13
+        },
+        {
+          "text": "svantaggio",
+          "start": 55.17,
+          "end": 55.55
+        },
+        {
+          "text": "principale",
+          "start": 55.59,
+          "end": 56.11
+        },
+        {
+          "text": "è",
+          "start": 56.53,
+          "end": 56.57
+        },
+        {
+          "text": "che",
+          "start": 56.65,
+          "end": 56.75
+        },
+        {
+          "text": "tutti",
+          "start": 56.89,
+          "end": 57.19
+        },
+        {
+          "text": "i",
+          "start": 57.21,
+          "end": 57.25
+        },
+        {
+          "text": "container",
+          "start": 57.27,
+          "end": 57.87
+        },
+        {
+          "text": "sullo",
+          "start": 57.97,
+          "end": 58.15
+        },
+        {
+          "text": "stesso",
+          "start": 58.17,
+          "end": 58.45
+        },
+        {
+          "text": "host",
+          "start": 58.511,
+          "end": 58.771
+        },
+        {
+          "text": "condividono",
+          "start": 59.031,
+          "end": 59.511
+        },
+        {
+          "text": "lo",
+          "start": 59.591,
+          "end": 59.651
+        },
+        {
+          "text": "stesso",
+          "start": 59.691,
+          "end": 59.991
+        },
+        {
+          "text": "sistema",
+          "start": 60.031,
+          "end": 60.331
+        }
+      ]
+    },
+    {
+      "start": 60.371,
+      "end": 61.451,
+      "text": "operativo sottostante.",
+      "words": [
+        {
+          "text": "operativo",
+          "start": 60.371,
+          "end": 60.751
+        },
+        {
+          "text": "sottostante.",
+          "start": 60.831,
+          "end": 61.451
+        }
+      ]
+    }
+  ]
+}

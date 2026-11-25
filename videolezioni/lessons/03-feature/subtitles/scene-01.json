@@ -1,0 +1,964 @@
+{
+  "duration": 68.946,
+  "segments": [
+    {
+      "start": 0.04,
+      "end": 1.58,
+      "text": "Benvenuti al terzo capitolo.",
+      "words": [
+        {
+          "text": "Benvenuti",
+          "start": 0.04,
+          "end": 0.54
+        },
+        {
+          "text": "al",
+          "start": 0.7,
+          "end": 0.8
+        },
+        {
+          "text": "terzo",
+          "start": 0.86,
+          "end": 1.14
+        },
+        {
+          "text": "capitolo.",
+          "start": 1.16,
+          "end": 1.58
+        }
+      ]
+    },
+    {
+      "start": 2.34,
+      "end": 6.28,
+      "text": "Dopo aver visto il passaggio dal progetto al prodotto e i metodi agili,",
+      "words": [
+        {
+          "text": "Dopo",
+          "start": 2.34,
+          "end": 2.5
+        },
+        {
+          "text": "aver",
+          "start": 2.54,
+          "end": 2.68
+        },
+        {
+          "text": "visto",
+          "start": 2.72,
+          "end": 2.94
+        },
+        {
+          "text": "il",
+          "start": 2.98,
+          "end": 3.04
+        },
+        {
+          "text": "passaggio",
+          "start": 3.08,
+          "end": 3.6
+        },
+        {
+          "text": "dal",
+          "start": 3.66,
+          "end": 3.8
+        },
+        {
+          "text": "progetto",
+          "start": 3.86,
+          "end": 4.4
+        },
+        {
+          "text": "al",
+          "start": 4.46,
+          "end": 4.56
+        },
+        {
+          "text": "prodotto",
+          "start": 4.62,
+          "end": 5.18
+        },
+        {
+          "text": "e",
+          "start": 5.3,
+          "end": 5.34
+        },
+        {
+          "text": "i",
+          "start": 5.42,
+          "end": 5.46
+        },
+        {
+          "text": "metodi",
+          "start": 5.52,
+          "end": 5.82
+        },
+        {
+          "text": "agili,",
+          "start": 5.94,
+          "end": 6.28
+        }
+      ]
+    },
+    {
+      "start": 6.88,
+      "end": 10.161,
+      "text": "oggi scopriamo come capire che cosa deve fare un prodotto software.",
+      "words": [
+        {
+          "text": "oggi",
+          "start": 6.88,
+          "end": 7.08
+        },
+        {
+          "text": "scopriamo",
+          "start": 7.12,
+          "end": 7.541
+        },
+        {
+          "text": "come",
+          "start": 7.681,
+          "end": 7.881
+        },
+        {
+          "text": "capire",
+          "start": 7.921,
+          "end": 8.301
+        },
+        {
+          "text": "che",
+          "start": 8.361,
+          "end": 8.441
+        },
+        {
+          "text": "cosa",
+          "start": 8.541,
+          "end": 8.741
+        },
+        {
+          "text": "deve",
+          "start": 8.781,
+          "end": 8.941
+        },
+        {
+          "text": "fare",
+          "start": 8.981,
+          "end": 9.181
+        },
+        {
+          "text": "un",
+          "start": 9.201,
+          "end": 9.261
+        },
+        {
+          "text": "prodotto",
+          "start": 9.301,
+          "end": 9.661
+        },
+        {
+          "text": "software.",
+          "start": 9.701,
+          "end": 10.161
+        }
+      ]
+    },
+    {
+      "start": 11.041,
+      "end": 13.741,
+      "text": "Il design di un prodotto nasce da quattro fattori:",
+      "words": [
+        {
+          "text": "Il",
+          "start": 11.041,
+          "end": 11.121
+        },
+        {
+          "text": "design",
+          "start": 11.161,
+          "end": 11.481
+        },
+        {
+          "text": "di",
+          "start": 11.521,
+          "end": 11.581
+        },
+        {
+          "text": "un",
+          "start": 11.621,
+          "end": 11.681
+        },
+        {
+          "text": "prodotto",
+          "start": 11.701,
+          "end": 12.161
+        },
+        {
+          "text": "nasce",
+          "start": 12.501,
+          "end": 12.781
+        },
+        {
+          "text": "da",
+          "start": 12.821,
+          "end": 12.901
+        },
+        {
+          "text": "quattro",
+          "start": 13.021,
+          "end": 13.301
+        },
+        {
+          "text": "fattori:",
+          "start": 13.341,
+          "end": 13.741
+        }
+      ]
+    },
+    {
+      "start": 14.361,
+      "end": 18.721,
+      "text": "l'ispirazione, i bisogni di aziende o consumatori non ancora soddisfatti,",
+      "words": [
+        {
+          "text": "l'ispirazione,",
+          "start": 14.361,
+          "end": 15.121
+        },
+        {
+          "text": "i",
+          "start": 15.721,
+          "end": 15.761
+        },
+        {
+          "text": "bisogni",
+          "start": 15.801,
+          "end": 16.141
+        },
+        {
+          "text": "di",
+          "start": 16.201,
+          "end": 16.261
+        },
+        {
+          "text": "aziende",
+          "start": 16.301,
+          "end": 16.741
+        },
+        {
+          "text": "o",
+          "start": 16.781,
+          "end": 16.821
+        },
+        {
+          "text": "consumatori",
+          "start": 16.841,
+          "end": 17.421
+        },
+        {
+          "text": "non",
+          "start": 17.521,
+          "end": 17.661
+        },
+        {
+          "text": "ancora",
+          "start": 17.701,
+          "end": 17.981
+        },
+        {
+          "text": "soddisfatti,",
+          "start": 18.041,
+          "end": 18.721
+        }
+      ]
+    },
+    {
+      "start": 19.361,
+      "end": 25.362,
+      "text": "l'insoddisfazione verso i prodotti esistenti e i cambiamenti tecnici che rendono possibili nuovi prodotti.",
+      "words": [
+        {
+          "text": "l'insoddisfazione",
+          "start": 19.361,
+          "end": 20.301
+        },
+        {
+          "text": "verso",
+          "start": 20.361,
+          "end": 20.601
+        },
+        {
+          "text": "i",
+          "start": 20.641,
+          "end": 20.681
+        },
+        {
+          "text": "prodotti",
+          "start": 20.701,
+          "end": 21.021
+        },
+        {
+          "text": "esistenti",
+          "start": 21.081,
+          "end": 21.661
+        },
+        {
+          "text": "e",
+          "start": 22.182,
+          "end": 22.222
+        },
+        {
+          "text": "i",
+          "start": 22.322,
+          "end": 22.362
+        },
+        {
+          "text": "cambiamenti",
+          "start": 22.422,
+          "end": 23.022
+        },
+        {
+          "text": "tecnici",
+          "start": 23.102,
+          "end": 23.522
+        },
+        {
+          "text": "che",
+          "start": 23.582,
+          "end": 23.682
+        },
+        {
+          "text": "rendono",
+          "start": 23.762,
+          "end": 24.022
+        },
+        {
+          "text": "possibili",
+          "start": 24.062,
+          "end": 24.522
+        },
+        {
+          "text": "nuovi",
+          "start": 24.622,
+          "end": 24.862
+        },
+        {
+          "text": "prodotti.",
+          "start": 24.902,
+          "end": 25.362
+        }
+      ]
+    },
+    {
+      "start": 26.122,
+      "end": 30.702,
+      "text": "Nello sviluppo basato su prodotto non c'è un cliente che fissa i requisiti fin dall'inizio:",
+      "words": [
+        {
+          "text": "Nello",
+          "start": 26.122,
+          "end": 26.322
+        },
+        {
+          "text": "sviluppo",
+          "start": 26.362,
+          "end": 26.682
+        },
+        {
+          "text": "basato",
+          "start": 26.742,
+          "end": 27.022
+        },
+        {
+          "text": "su",
+          "start": 27.062,
+          "end": 27.122
+        },
+        {
+          "text": "prodotto",
+          "start": 27.202,
+          "end": 27.562
+        },
+        {
+          "text": "non",
+          "start": 27.902,
+          "end": 28.062
+        },
+        {
+          "text": "c'è",
+          "start": 28.122,
+          "end": 28.262
+        },
+        {
+          "text": "un",
+          "start": 28.342,
+          "end": 28.422
+        },
+        {
+          "text": "cliente",
+          "start": 28.482,
+          "end": 28.902
+        },
+        {
+          "text": "che",
+          "start": 28.942,
+          "end": 29.022
+        },
+        {
+          "text": "fissa",
+          "start": 29.082,
+          "end": 29.342
+        },
+        {
+          "text": "i",
+          "start": 29.402,
+          "end": 29.442
+        },
+        {
+          "text": "requisiti",
+          "start": 29.482,
+          "end": 29.962
+        },
+        {
+          "text": "fin",
+          "start": 30.002,
+          "end": 30.142
+        },
+        {
+          "text": "dall'inizio:",
+          "start": 30.162,
+          "end": 30.702
+        }
+      ]
+    },
+    {
+      "start": 31.302,
+      "end": 34.162,
+      "text": "questi cambiano nel tempo e si documentano molto meno.",
+      "words": [
+        {
+          "text": "questi",
+          "start": 31.302,
+          "end": 31.562
+        },
+        {
+          "text": "cambiano",
+          "start": 31.702,
+          "end": 32.042
+        },
+        {
+          "text": "nel",
+          "start": 32.082,
+          "end": 32.202
+        },
+        {
+          "text": "tempo",
+          "start": 32.282,
+          "end": 32.622
+        },
+        {
+          "text": "e",
+          "start": 32.862,
+          "end": 32.902
+        },
+        {
+          "text": "si",
+          "start": 32.962,
+          "end": 33.042
+        },
+        {
+          "text": "documentano",
+          "start": 33.082,
+          "end": 33.602
+        },
+        {
+          "text": "molto",
+          "start": 33.682,
+          "end": 33.922
+        },
+        {
+          "text": "meno.",
+          "start": 33.962,
+          "end": 34.162
+        }
+      ]
+    },
+    {
+      "start": 34.922,
+      "end": 38.703,
+      "text": "Si individuano invece le feature, cioè frammenti di funzionalità del prodotto.",
+      "words": [
+        {
+          "text": "Si",
+          "start": 34.922,
+          "end": 34.982
+        },
+        {
+          "text": "individuano",
+          "start": 35.022,
+          "end": 35.462
+        },
+        {
+          "text": "invece",
+          "start": 35.482,
+          "end": 35.762
+        },
+        {
+          "text": "le",
+          "start": 35.862,
+          "end": 35.922
+        },
+        {
+          "text": "feature,",
+          "start": 35.982,
+          "end": 36.382
+        },
+        {
+          "text": "cioè",
+          "start": 36.602,
+          "end": 36.742
+        },
+        {
+          "text": "frammenti",
+          "start": 36.843,
+          "end": 37.343
+        },
+        {
+          "text": "di",
+          "start": 37.383,
+          "end": 37.443
+        },
+        {
+          "text": "funzionalità",
+          "start": 37.483,
+          "end": 38.083
+        },
+        {
+          "text": "del",
+          "start": 38.143,
+          "end": 38.263
+        },
+        {
+          "text": "prodotto.",
+          "start": 38.283,
+          "end": 38.703
+        }
+      ]
+    },
+    {
+      "start": 39.343,
+      "end": 42.983,
+      "text": "Per scoprirle bisogna studiare gli utenti potenziali con interviste,",
+      "words": [
+        {
+          "text": "Per",
+          "start": 39.343,
+          "end": 39.443
+        },
+        {
+          "text": "scoprirle",
+          "start": 39.483,
+          "end": 39.963
+        },
+        {
+          "text": "bisogna",
+          "start": 40.123,
+          "end": 40.423
+        },
+        {
+          "text": "studiare",
+          "start": 40.503,
+          "end": 40.923
+        },
+        {
+          "text": "gli",
+          "start": 40.943,
+          "end": 41.063
+        },
+        {
+          "text": "utenti",
+          "start": 41.083,
+          "end": 41.363
+        },
+        {
+          "text": "potenziali",
+          "start": 41.423,
+          "end": 42.043
+        },
+        {
+          "text": "con",
+          "start": 42.143,
+          "end": 42.283
+        },
+        {
+          "text": "interviste,",
+          "start": 42.363,
+          "end": 42.983
+        }
+      ]
+    },
+    {
+      "start": 43.183,
+      "end": 49.863,
+      "text": "sondaggi e consultazioni informali, ricordando una trappola tipica: in azienda i manager comprano il prodotto,",
+      "words": [
+        {
+          "text": "sondaggi",
+          "start": 43.183,
+          "end": 43.803
+        },
+        {
+          "text": "e",
+          "start": 43.903,
+          "end": 43.943
+        },
+        {
+          "text": "consultazioni",
+          "start": 44.003,
+          "end": 44.563
+        },
+        {
+          "text": "informali,",
+          "start": 44.603,
+          "end": 45.083
+        },
+        {
+          "text": "ricordando",
+          "start": 45.543,
+          "end": 46.063
+        },
+        {
+          "text": "una",
+          "start": 46.123,
+          "end": 46.263
+        },
+        {
+          "text": "trappola",
+          "start": 46.323,
+          "end": 46.723
+        },
+        {
+          "text": "tipica:",
+          "start": 46.803,
+          "end": 47.163
+        },
+        {
+          "text": "in",
+          "start": 47.603,
+          "end": 47.683
+        },
+        {
+          "text": "azienda",
+          "start": 47.723,
+          "end": 48.083
+        },
+        {
+          "text": "i",
+          "start": 48.263,
+          "end": 48.303
+        },
+        {
+          "text": "manager",
+          "start": 48.343,
+          "end": 48.703
+        },
+        {
+          "text": "comprano",
+          "start": 48.823,
+          "end": 49.283
+        },
+        {
+          "text": "il",
+          "start": 49.323,
+          "end": 49.383
+        },
+        {
+          "text": "prodotto,",
+          "start": 49.403,
+          "end": 49.863
+        }
+      ]
+    },
+    {
+      "start": 50.303,
+      "end": 52.724,
+      "text": "ma i dipendenti che lo usano potrebbero rifiutarlo.",
+      "words": [
+        {
+          "text": "ma",
+          "start": 50.303,
+          "end": 50.363
+        },
+        {
+          "text": "i",
+          "start": 50.483,
+          "end": 50.523
+        },
+        {
+          "text": "dipendenti",
+          "start": 50.563,
+          "end": 51.023
+        },
+        {
+          "text": "che",
+          "start": 51.103,
+          "end": 51.183
+        },
+        {
+          "text": "lo",
+          "start": 51.223,
+          "end": 51.283
+        },
+        {
+          "text": "usano",
+          "start": 51.343,
+          "end": 51.604
+        },
+        {
+          "text": "potrebbero",
+          "start": 51.744,
+          "end": 52.124
+        },
+        {
+          "text": "rifiutarlo.",
+          "start": 52.184,
+          "end": 52.724
+        }
+      ]
+    },
+    {
+      "start": 53.384,
+      "end": 55.224,
+      "text": "Tre strumenti guidano questo percorso:",
+      "words": [
+        {
+          "text": "Tre",
+          "start": 53.384,
+          "end": 53.504
+        },
+        {
+          "text": "strumenti",
+          "start": 53.604,
+          "end": 54.084
+        },
+        {
+          "text": "guidano",
+          "start": 54.164,
+          "end": 54.444
+        },
+        {
+          "text": "questo",
+          "start": 54.484,
+          "end": 54.684
+        },
+        {
+          "text": "percorso:",
+          "start": 54.724,
+          "end": 55.224
+        }
+      ]
+    },
+    {
+      "start": 55.884,
+      "end": 57.944,
+      "text": "le personas, che ispirano gli scenari;",
+      "words": [
+        {
+          "text": "le",
+          "start": 55.884,
+          "end": 55.944
+        },
+        {
+          "text": "personas,",
+          "start": 55.984,
+          "end": 56.524
+        },
+        {
+          "text": "che",
+          "start": 56.844,
+          "end": 56.924
+        },
+        {
+          "text": "ispirano",
+          "start": 56.964,
+          "end": 57.344
+        },
+        {
+          "text": "gli",
+          "start": 57.384,
+          "end": 57.504
+        },
+        {
+          "text": "scenari;",
+          "start": 57.544,
+          "end": 57.944
+        }
+      ]
+    },
+    {
+      "start": 58.504,
+      "end": 61.944,
+      "text": "gli scenari, che si sviluppano in storie e ispirano le feature;",
+      "words": [
+        {
+          "text": "gli",
+          "start": 58.504,
+          "end": 58.644
+        },
+        {
+          "text": "scenari,",
+          "start": 58.684,
+          "end": 59.124
+        },
+        {
+          "text": "che",
+          "start": 59.464,
+          "end": 59.544
+        },
+        {
+          "text": "si",
+          "start": 59.584,
+          "end": 59.664
+        },
+        {
+          "text": "sviluppano",
+          "start": 59.704,
+          "end": 60.104
+        },
+        {
+          "text": "in",
+          "start": 60.164,
+          "end": 60.244
+        },
+        {
+          "text": "storie",
+          "start": 60.324,
+          "end": 60.704
+        },
+        {
+          "text": "e",
+          "start": 60.844,
+          "end": 60.884
+        },
+        {
+          "text": "ispirano",
+          "start": 60.944,
+          "end": 61.404
+        },
+        {
+          "text": "le",
+          "start": 61.464,
+          "end": 61.524
+        },
+        {
+          "text": "feature;",
+          "start": 61.564,
+          "end": 61.944
+        }
+      ]
+    },
+    {
+      "start": 62.384,
+      "end": 67.045,
+      "text": "e le storie, che definiscono le feature, con la possibilità di passare anche direttamente dalle",
+      "words": [
+        {
+          "text": "e",
+          "start": 62.384,
+          "end": 62.424
+        },
+        {
+          "text": "le",
+          "start": 62.484,
+          "end": 62.544
+        },
+        {
+          "text": "storie,",
+          "start": 62.624,
+          "end": 63.004
+        },
+        {
+          "text": "che",
+          "start": 63.344,
+          "end": 63.424
+        },
+        {
+          "text": "definiscono",
+          "start": 63.464,
+          "end": 64.064
+        },
+        {
+          "text": "le",
+          "start": 64.104,
+          "end": 64.164
+        },
+        {
+          "text": "feature,",
+          "start": 64.224,
+          "end": 64.564
+        },
+        {
+          "text": "con",
+          "start": 64.744,
+          "end": 64.844
+        },
+        {
+          "text": "la",
+          "start": 64.864,
+          "end": 64.924
+        },
+        {
+          "text": "possibilità",
+          "start": 64.944,
+          "end": 65.424
+        },
+        {
+          "text": "di",
+          "start": 65.464,
+          "end": 65.524
+        },
+        {
+          "text": "passare",
+          "start": 65.544,
+          "end": 65.884
+        },
+        {
+          "text": "anche",
+          "start": 65.944,
+          "end": 66.124
+        },
+        {
+          "text": "direttamente",
+          "start": 66.184,
+          "end": 66.825
+        },
+        {
+          "text": "dalle",
+          "start": 66.865,
+          "end": 67.045
+        }
+      ]
+    },
+    {
+      "start": 67.065,
+      "end": 68.205,
+      "text": "personas alle storie.",
+      "words": [
+        {
+          "text": "personas",
+          "start": 67.065,
+          "end": 67.545
+        },
+        {
+          "text": "alle",
+          "start": 67.645,
+          "end": 67.805
+        },
+        {
+          "text": "storie.",
+          "start": 67.865,
+          "end": 68.205
+        }
+      ]
+    }
+  ]
+}

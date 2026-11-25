@@ -1,0 +1,1105 @@
+{
+  "duration": 80.82,
+  "segments": [
+    {
+      "start": 0.04,
+      "end": 4.601,
+      "text": "Nelle aziende di prodotto i test vengono automatizzati con appositi framework.",
+      "words": [
+        {
+          "text": "Nelle",
+          "start": 0.04,
+          "end": 0.24
+        },
+        {
+          "text": "aziende",
+          "start": 0.28,
+          "end": 0.66
+        },
+        {
+          "text": "di",
+          "start": 0.7,
+          "end": 0.76
+        },
+        {
+          "text": "prodotto",
+          "start": 0.8,
+          "end": 1.34
+        },
+        {
+          "text": "i",
+          "start": 1.66,
+          "end": 1.7
+        },
+        {
+          "text": "test",
+          "start": 1.78,
+          "end": 2.1
+        },
+        {
+          "text": "vengono",
+          "start": 2.24,
+          "end": 2.56
+        },
+        {
+          "text": "automatizzati",
+          "start": 2.62,
+          "end": 3.36
+        },
+        {
+          "text": "con",
+          "start": 3.44,
+          "end": 3.56
+        },
+        {
+          "text": "appositi",
+          "start": 3.6,
+          "end": 4.041
+        },
+        {
+          "text": "framework.",
+          "start": 4.101,
+          "end": 4.601
+        }
+      ]
+    },
+    {
+      "start": 5.521,
+      "end": 10.721,
+      "text": "Un test automatico è un programma eseguibile che verifica il risultato atteso su dati fissati.",
+      "words": [
+        {
+          "text": "Un",
+          "start": 5.521,
+          "end": 5.621
+        },
+        {
+          "text": "test",
+          "start": 5.681,
+          "end": 5.861
+        },
+        {
+          "text": "automatico",
+          "start": 5.921,
+          "end": 6.461
+        },
+        {
+          "text": "è",
+          "start": 6.761,
+          "end": 6.801
+        },
+        {
+          "text": "un",
+          "start": 6.841,
+          "end": 6.921
+        },
+        {
+          "text": "programma",
+          "start": 6.941,
+          "end": 7.361
+        },
+        {
+          "text": "eseguibile",
+          "start": 7.421,
+          "end": 8.061
+        },
+        {
+          "text": "che",
+          "start": 8.161,
+          "end": 8.241
+        },
+        {
+          "text": "verifica",
+          "start": 8.301,
+          "end": 8.681
+        },
+        {
+          "text": "il",
+          "start": 8.741,
+          "end": 8.801
+        },
+        {
+          "text": "risultato",
+          "start": 8.861,
+          "end": 9.321
+        },
+        {
+          "text": "atteso",
+          "start": 9.361,
+          "end": 9.721
+        },
+        {
+          "text": "su",
+          "start": 9.801,
+          "end": 9.861
+        },
+        {
+          "text": "dati",
+          "start": 9.961,
+          "end": 10.181
+        },
+        {
+          "text": "fissati.",
+          "start": 10.221,
+          "end": 10.721
+        }
+      ]
+    },
+    {
+      "start": 11.542,
+      "end": 15.142,
+      "text": "Ogni buon test segue lo schema in tre fasi Arrange,",
+      "words": [
+        {
+          "text": "Ogni",
+          "start": 11.542,
+          "end": 11.742
+        },
+        {
+          "text": "buon",
+          "start": 11.862,
+          "end": 12.062
+        },
+        {
+          "text": "test",
+          "start": 12.182,
+          "end": 12.462
+        },
+        {
+          "text": "segue",
+          "start": 12.762,
+          "end": 12.982
+        },
+        {
+          "text": "lo",
+          "start": 13.042,
+          "end": 13.102
+        },
+        {
+          "text": "schema",
+          "start": 13.162,
+          "end": 13.462
+        },
+        {
+          "text": "in",
+          "start": 13.522,
+          "end": 13.602
+        },
+        {
+          "text": "tre",
+          "start": 13.642,
+          "end": 13.782
+        },
+        {
+          "text": "fasi",
+          "start": 13.882,
+          "end": 14.222
+        },
+        {
+          "text": "Arrange,",
+          "start": 14.662,
+          "end": 15.142
+        }
+      ]
+    },
+    {
+      "start": 15.582,
+      "end": 16.762,
+      "text": "Action e Assert.",
+      "words": [
+        {
+          "text": "Action",
+          "start": 15.582,
+          "end": 15.922
+        },
+        {
+          "text": "e",
+          "start": 16.262,
+          "end": 16.302
+        },
+        {
+          "text": "Assert.",
+          "start": 16.342,
+          "end": 16.762
+        }
+      ]
+    },
+    {
+      "start": 17.542,
+      "end": 21.563,
+      "text": "Nella fase Arrange si preparano parametri e eventuali mock object,",
+      "words": [
+        {
+          "text": "Nella",
+          "start": 17.542,
+          "end": 17.702
+        },
+        {
+          "text": "fase",
+          "start": 17.742,
+          "end": 17.962
+        },
+        {
+          "text": "Arrange",
+          "start": 18.042,
+          "end": 18.502
+        },
+        {
+          "text": "si",
+          "start": 18.782,
+          "end": 18.862
+        },
+        {
+          "text": "preparano",
+          "start": 18.902,
+          "end": 19.343
+        },
+        {
+          "text": "parametri",
+          "start": 19.443,
+          "end": 19.983
+        },
+        {
+          "text": "e",
+          "start": 20.163,
+          "end": 20.203
+        },
+        {
+          "text": "eventuali",
+          "start": 20.283,
+          "end": 20.763
+        },
+        {
+          "text": "mock",
+          "start": 20.843,
+          "end": 21.023
+        },
+        {
+          "text": "object,",
+          "start": 21.183,
+          "end": 21.563
+        }
+      ]
+    },
+    {
+      "start": 22.023,
+      "end": 26.343,
+      "text": "cioè oggetti finti che simulano parti del sistema non ancora collaudate.",
+      "words": [
+        {
+          "text": "cioè",
+          "start": 22.023,
+          "end": 22.163
+        },
+        {
+          "text": "oggetti",
+          "start": 22.463,
+          "end": 22.783
+        },
+        {
+          "text": "finti",
+          "start": 22.843,
+          "end": 23.223
+        },
+        {
+          "text": "che",
+          "start": 23.563,
+          "end": 23.663
+        },
+        {
+          "text": "simulano",
+          "start": 23.723,
+          "end": 24.163
+        },
+        {
+          "text": "parti",
+          "start": 24.223,
+          "end": 24.503
+        },
+        {
+          "text": "del",
+          "start": 24.543,
+          "end": 24.663
+        },
+        {
+          "text": "sistema",
+          "start": 24.723,
+          "end": 25.103
+        },
+        {
+          "text": "non",
+          "start": 25.203,
+          "end": 25.383
+        },
+        {
+          "text": "ancora",
+          "start": 25.423,
+          "end": 25.723
+        },
+        {
+          "text": "collaudate.",
+          "start": 25.783,
+          "end": 26.343
+        }
+      ]
+    },
+    {
+      "start": 27.124,
+      "end": 29.604,
+      "text": "Nella fase Action si invoca l'unità da testare.",
+      "words": [
+        {
+          "text": "Nella",
+          "start": 27.124,
+          "end": 27.304
+        },
+        {
+          "text": "fase",
+          "start": 27.344,
+          "end": 27.524
+        },
+        {
+          "text": "Action",
+          "start": 27.604,
+          "end": 27.904
+        },
+        {
+          "text": "si",
+          "start": 28.204,
+          "end": 28.264
+        },
+        {
+          "text": "invoca",
+          "start": 28.324,
+          "end": 28.664
+        },
+        {
+          "text": "l'unità",
+          "start": 28.724,
+          "end": 29.024
+        },
+        {
+          "text": "da",
+          "start": 29.084,
+          "end": 29.144
+        },
+        {
+          "text": "testare.",
+          "start": 29.184,
+          "end": 29.604
+        }
+      ]
+    },
+    {
+      "start": 30.224,
+      "end": 33.024,
+      "text": "Nella fase Assert si dichiara il risultato atteso:",
+      "words": [
+        {
+          "text": "Nella",
+          "start": 30.224,
+          "end": 30.404
+        },
+        {
+          "text": "fase",
+          "start": 30.444,
+          "end": 30.664
+        },
+        {
+          "text": "Assert",
+          "start": 30.784,
+          "end": 31.244
+        },
+        {
+          "text": "si",
+          "start": 31.604,
+          "end": 31.684
+        },
+        {
+          "text": "dichiara",
+          "start": 31.724,
+          "end": 32.044
+        },
+        {
+          "text": "il",
+          "start": 32.104,
+          "end": 32.164
+        },
+        {
+          "text": "risultato",
+          "start": 32.224,
+          "end": 32.624
+        },
+        {
+          "text": "atteso:",
+          "start": 32.664,
+          "end": 33.024
+        }
+      ]
+    },
+    {
+      "start": 33.764,
+      "end": 38.485,
+      "text": "per esempio, con capitale zero nell'interest calculator, l'interesse deve essere zero.",
+      "words": [
+        {
+          "text": "per",
+          "start": 33.764,
+          "end": 33.864
+        },
+        {
+          "text": "esempio,",
+          "start": 33.884,
+          "end": 34.245
+        },
+        {
+          "text": "con",
+          "start": 34.545,
+          "end": 34.685
+        },
+        {
+          "text": "capitale",
+          "start": 34.745,
+          "end": 35.165
+        },
+        {
+          "text": "zero",
+          "start": 35.245,
+          "end": 35.585
+        },
+        {
+          "text": "nell'interest",
+          "start": 35.665,
+          "end": 36.165
+        },
+        {
+          "text": "calculator,",
+          "start": 36.205,
+          "end": 36.805
+        },
+        {
+          "text": "l'interesse",
+          "start": 37.185,
+          "end": 37.725
+        },
+        {
+          "text": "deve",
+          "start": 37.785,
+          "end": 37.905
+        },
+        {
+          "text": "essere",
+          "start": 37.945,
+          "end": 38.185
+        },
+        {
+          "text": "zero.",
+          "start": 38.265,
+          "end": 38.485
+        }
+      ]
+    },
+    {
+      "start": 39.425,
+      "end": 43.166,
+      "text": "Ricordate però che anche il codice dei test può contenere bug:",
+      "words": [
+        {
+          "text": "Ricordate",
+          "start": 39.425,
+          "end": 39.965
+        },
+        {
+          "text": "però",
+          "start": 40.005,
+          "end": 40.185
+        },
+        {
+          "text": "che",
+          "start": 40.585,
+          "end": 40.705
+        },
+        {
+          "text": "anche",
+          "start": 40.805,
+          "end": 41.045
+        },
+        {
+          "text": "il",
+          "start": 41.105,
+          "end": 41.165
+        },
+        {
+          "text": "codice",
+          "start": 41.265,
+          "end": 41.645
+        },
+        {
+          "text": "dei",
+          "start": 41.685,
+          "end": 41.826
+        },
+        {
+          "text": "test",
+          "start": 41.886,
+          "end": 42.166
+        },
+        {
+          "text": "può",
+          "start": 42.286,
+          "end": 42.366
+        },
+        {
+          "text": "contenere",
+          "start": 42.446,
+          "end": 42.886
+        },
+        {
+          "text": "bug:",
+          "start": 42.926,
+          "end": 43.166
+        }
+      ]
+    },
+    {
+      "start": 43.886,
+      "end": 48.566,
+      "text": "vanno scritti nel modo più semplice possibile e revisionati insieme al codice collaudato.",
+      "words": [
+        {
+          "text": "vanno",
+          "start": 43.886,
+          "end": 44.066
+        },
+        {
+          "text": "scritti",
+          "start": 44.106,
+          "end": 44.406
+        },
+        {
+          "text": "nel",
+          "start": 44.466,
+          "end": 44.586
+        },
+        {
+          "text": "modo",
+          "start": 44.606,
+          "end": 44.786
+        },
+        {
+          "text": "più",
+          "start": 44.846,
+          "end": 44.966
+        },
+        {
+          "text": "semplice",
+          "start": 45.086,
+          "end": 45.546
+        },
+        {
+          "text": "possibile",
+          "start": 45.586,
+          "end": 46.106
+        },
+        {
+          "text": "e",
+          "start": 46.366,
+          "end": 46.406
+        },
+        {
+          "text": "revisionati",
+          "start": 46.486,
+          "end": 47.146
+        },
+        {
+          "text": "insieme",
+          "start": 47.186,
+          "end": 47.526
+        },
+        {
+          "text": "al",
+          "start": 47.566,
+          "end": 47.626
+        },
+        {
+          "text": "codice",
+          "start": 47.686,
+          "end": 48.006
+        },
+        {
+          "text": "collaudato.",
+          "start": 48.046,
+          "end": 48.566
+        }
+      ]
+    },
+    {
+      "start": 49.727,
+      "end": 52.327,
+      "text": "Non tutti i test hanno lo stesso costo di automazione,",
+      "words": [
+        {
+          "text": "Non",
+          "start": 49.727,
+          "end": 49.907
+        },
+        {
+          "text": "tutti",
+          "start": 49.987,
+          "end": 50.267
+        },
+        {
+          "text": "i",
+          "start": 50.307,
+          "end": 50.347
+        },
+        {
+          "text": "test",
+          "start": 50.387,
+          "end": 50.647
+        },
+        {
+          "text": "hanno",
+          "start": 50.687,
+          "end": 50.847
+        },
+        {
+          "text": "lo",
+          "start": 50.887,
+          "end": 50.947
+        },
+        {
+          "text": "stesso",
+          "start": 50.987,
+          "end": 51.247
+        },
+        {
+          "text": "costo",
+          "start": 51.287,
+          "end": 51.567
+        },
+        {
+          "text": "di",
+          "start": 51.607,
+          "end": 51.647
+        },
+        {
+          "text": "automazione,",
+          "start": 51.707,
+          "end": 52.327
+        }
+      ]
+    },
+    {
+      "start": 52.647,
+      "end": 54.187,
+      "text": "come mostra la piramide dei test.",
+      "words": [
+        {
+          "text": "come",
+          "start": 52.647,
+          "end": 52.807
+        },
+        {
+          "text": "mostra",
+          "start": 52.847,
+          "end": 53.127
+        },
+        {
+          "text": "la",
+          "start": 53.227,
+          "end": 53.287
+        },
+        {
+          "text": "piramide",
+          "start": 53.327,
+          "end": 53.747
+        },
+        {
+          "text": "dei",
+          "start": 53.787,
+          "end": 53.887
+        },
+        {
+          "text": "test.",
+          "start": 53.927,
+          "end": 54.187
+        }
+      ]
+    },
+    {
+      "start": 55.047,
+      "end": 58.488,
+      "text": "Alla base stanno gli unit test, circa il settanta per cento:",
+      "words": [
+        {
+          "text": "Alla",
+          "start": 55.047,
+          "end": 55.227
+        },
+        {
+          "text": "base",
+          "start": 55.267,
+          "end": 55.507
+        },
+        {
+          "text": "stanno",
+          "start": 55.607,
+          "end": 55.867
+        },
+        {
+          "text": "gli",
+          "start": 55.887,
+          "end": 56.027
+        },
+        {
+          "text": "unit",
+          "start": 56.247,
+          "end": 56.467
+        },
+        {
+          "text": "test,",
+          "start": 56.587,
+          "end": 56.867
+        },
+        {
+          "text": "circa",
+          "start": 57.148,
+          "end": 57.388
+        },
+        {
+          "text": "il",
+          "start": 57.428,
+          "end": 57.488
+        },
+        {
+          "text": "settanta",
+          "start": 57.528,
+          "end": 57.948
+        },
+        {
+          "text": "per",
+          "start": 57.968,
+          "end": 58.088
+        },
+        {
+          "text": "cento:",
+          "start": 58.148,
+          "end": 58.488
+        }
+      ]
+    },
+    {
+      "start": 58.968,
+      "end": 60.948,
+      "text": "facili da automatizzare ed economici.",
+      "words": [
+        {
+          "text": "facili",
+          "start": 58.968,
+          "end": 59.348
+        },
+        {
+          "text": "da",
+          "start": 59.388,
+          "end": 59.448
+        },
+        {
+          "text": "automatizzare",
+          "start": 59.508,
+          "end": 60.188
+        },
+        {
+          "text": "ed",
+          "start": 60.328,
+          "end": 60.408
+        },
+        {
+          "text": "economici.",
+          "start": 60.448,
+          "end": 60.948
+        }
+      ]
+    },
+    {
+      "start": 61.648,
+      "end": 64.669,
+      "text": "Al centro i feature test, circa il venti per cento:",
+      "words": [
+        {
+          "text": "Al",
+          "start": 61.648,
+          "end": 61.748
+        },
+        {
+          "text": "centro",
+          "start": 61.788,
+          "end": 62.108
+        },
+        {
+          "text": "i",
+          "start": 62.368,
+          "end": 62.408
+        },
+        {
+          "text": "feature",
+          "start": 62.508,
+          "end": 62.848
+        },
+        {
+          "text": "test,",
+          "start": 62.888,
+          "end": 63.128
+        },
+        {
+          "text": "circa",
+          "start": 63.528,
+          "end": 63.748
+        },
+        {
+          "text": "il",
+          "start": 63.788,
+          "end": 63.868
+        },
+        {
+          "text": "venti",
+          "start": 63.928,
+          "end": 64.168
+        },
+        {
+          "text": "per",
+          "start": 64.208,
+          "end": 64.308
+        },
+        {
+          "text": "cento:",
+          "start": 64.368,
+          "end": 64.669
+        }
+      ]
+    },
+    {
+      "start": 65.529,
+      "end": 71.389,
+      "text": "automatizzarli via interfaccia grafica è costoso e fragile, quindi conviene passare dalle API con più",
+      "words": [
+        {
+          "text": "automatizzarli",
+          "start": 65.529,
+          "end": 66.249
+        },
+        {
+          "text": "via",
+          "start": 66.289,
+          "end": 66.429
+        },
+        {
+          "text": "interfaccia",
+          "start": 66.469,
+          "end": 66.929
+        },
+        {
+          "text": "grafica",
+          "start": 66.969,
+          "end": 67.309
+        },
+        {
+          "text": "è",
+          "start": 67.349,
+          "end": 67.38900000000001
+        },
+        {
+          "text": "costoso",
+          "start": 67.449,
+          "end": 67.949
+        },
+        {
+          "text": "e",
+          "start": 68.069,
+          "end": 68.10900000000001
+        },
+        {
+          "text": "fragile,",
+          "start": 68.189,
+          "end": 68.649
+        },
+        {
+          "text": "quindi",
+          "start": 68.989,
+          "end": 69.169
+        },
+        {
+          "text": "conviene",
+          "start": 69.369,
+          "end": 69.669
+        },
+        {
+          "text": "passare",
+          "start": 69.709,
+          "end": 70.049
+        },
+        {
+          "text": "dalle",
+          "start": 70.089,
+          "end": 70.269
+        },
+        {
+          "text": "API",
+          "start": 70.349,
+          "end": 70.869
+        },
+        {
+          "text": "con",
+          "start": 71.109,
+          "end": 71.249
+        },
+        {
+          "text": "più",
+          "start": 71.289,
+          "end": 71.389
+        }
+      ]
+    },
+    {
+      "start": 71.449,
+      "end": 72.009,
+      "text": "asserzioni.",
+      "words": [
+        {
+          "text": "asserzioni.",
+          "start": 71.449,
+          "end": 72.009
+        }
+      ]
+    },
+    {
+      "start": 72.81,
+      "end": 76.17,
+      "text": "In cima stanno i system test, circa il dieci per cento,",
+      "words": [
+        {
+          "text": "In",
+          "start": 72.81,
+          "end": 72.89
+        },
+        {
+          "text": "cima",
+          "start": 72.97,
+          "end": 73.23
+        },
+        {
+          "text": "stanno",
+          "start": 73.45,
+          "end": 73.73
+        },
+        {
+          "text": "i",
+          "start": 73.79,
+          "end": 73.83000000000001
+        },
+        {
+          "text": "system",
+          "start": 73.93,
+          "end": 74.27
+        },
+        {
+          "text": "test,",
+          "start": 74.35,
+          "end": 74.61
+        },
+        {
+          "text": "circa",
+          "start": 74.97,
+          "end": 75.21
+        },
+        {
+          "text": "il",
+          "start": 75.25,
+          "end": 75.33
+        },
+        {
+          "text": "dieci",
+          "start": 75.39,
+          "end": 75.65
+        },
+        {
+          "text": "per",
+          "start": 75.69,
+          "end": 75.79
+        },
+        {
+          "text": "cento,",
+          "start": 75.85,
+          "end": 76.17
+        }
+      ]
+    },
+    {
+      "start": 76.57,
+      "end": 80.711,
+      "text": "dove strumenti di record e replay ripetono in automatico le sequenze utente.",
+      "words": [
+        {
+          "text": "dove",
+          "start": 76.57,
+          "end": 76.71
+        },
+        {
+          "text": "strumenti",
+          "start": 76.77,
+          "end": 77.17
+        },
+        {
+          "text": "di",
+          "start": 77.21,
+          "end": 77.29
+        },
+        {
+          "text": "record",
+          "start": 77.41,
+          "end": 77.77
+        },
+        {
+          "text": "e",
+          "start": 77.81,
+          "end": 77.85000000000001
+        },
+        {
+          "text": "replay",
+          "start": 77.89,
+          "end": 78.25
+        },
+        {
+          "text": "ripetono",
+          "start": 78.61,
+          "end": 78.99
+        },
+        {
+          "text": "in",
+          "start": 79.05,
+          "end": 79.13
+        },
+        {
+          "text": "automatico",
+          "start": 79.17,
+          "end": 79.731
+        },
+        {
+          "text": "le",
+          "start": 79.791,
+          "end": 79.851
+        },
+        {
+          "text": "sequenze",
+          "start": 79.871,
+          "end": 80.271
+        },
+        {
+          "text": "utente.",
+          "start": 80.311,
+          "end": 80.711
+        }
+      ]
+    }
+  ]
+}

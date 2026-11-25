@@ -1,0 +1,870 @@
+{
+  "duration": 69.03,
+  "segments": [
+    {
+      "start": 0.02,
+      "end": 4.641,
+      "text": "Chiudiamo il secondo capitolo fissando i sei punti chiave da padroneggiare per l'esame.",
+      "words": [
+        {
+          "text": "Chiudiamo",
+          "start": 0.02,
+          "end": 0.46
+        },
+        {
+          "text": "il",
+          "start": 0.52,
+          "end": 0.6
+        },
+        {
+          "text": "secondo",
+          "start": 0.66,
+          "end": 1.04
+        },
+        {
+          "text": "capitolo",
+          "start": 1.08,
+          "end": 1.56
+        },
+        {
+          "text": "fissando",
+          "start": 1.72,
+          "end": 2.201
+        },
+        {
+          "text": "i",
+          "start": 2.261,
+          "end": 2.301
+        },
+        {
+          "text": "sei",
+          "start": 2.401,
+          "end": 2.581
+        },
+        {
+          "text": "punti",
+          "start": 2.661,
+          "end": 2.921
+        },
+        {
+          "text": "chiave",
+          "start": 2.961,
+          "end": 3.281
+        },
+        {
+          "text": "da",
+          "start": 3.341,
+          "end": 3.401
+        },
+        {
+          "text": "padroneggiare",
+          "start": 3.441,
+          "end": 4.061
+        },
+        {
+          "text": "per",
+          "start": 4.101,
+          "end": 4.221
+        },
+        {
+          "text": "l'esame.",
+          "start": 4.261,
+          "end": 4.641
+        }
+      ]
+    },
+    {
+      "start": 5.502,
+      "end": 10.883,
+      "text": "Primo: lo sviluppo plan-driven genera un overhead dominante sui prodotti piccoli e medi;",
+      "words": [
+        {
+          "text": "Primo:",
+          "start": 5.502,
+          "end": 5.762
+        },
+        {
+          "text": "lo",
+          "start": 6.442,
+          "end": 6.522
+        },
+        {
+          "text": "sviluppo",
+          "start": 6.562,
+          "end": 6.962
+        },
+        {
+          "text": "plan-driven",
+          "start": 7.042,
+          "end": 7.622
+        },
+        {
+          "text": "genera",
+          "start": 7.842,
+          "end": 8.142
+        },
+        {
+          "text": "un",
+          "start": 8.202,
+          "end": 8.282
+        },
+        {
+          "text": "overhead",
+          "start": 8.362,
+          "end": 8.743
+        },
+        {
+          "text": "dominante",
+          "start": 8.843,
+          "end": 9.363
+        },
+        {
+          "text": "sui",
+          "start": 9.443,
+          "end": 9.563
+        },
+        {
+          "text": "prodotti",
+          "start": 9.583,
+          "end": 9.983
+        },
+        {
+          "text": "piccoli",
+          "start": 10.083,
+          "end": 10.483
+        },
+        {
+          "text": "e",
+          "start": 10.543,
+          "end": 10.583
+        },
+        {
+          "text": "medi;",
+          "start": 10.623,
+          "end": 10.883
+        }
+      ]
+    },
+    {
+      "start": 11.383,
+      "end": 15.865,
+      "text": "l'Agile punta a consegnare presto, rispondere ai cambiamenti e ridurre l'overhead.",
+      "words": [
+        {
+          "text": "l'Agile",
+          "start": 11.383,
+          "end": 11.863
+        },
+        {
+          "text": "punta",
+          "start": 12.023,
+          "end": 12.284
+        },
+        {
+          "text": "a",
+          "start": 12.324,
+          "end": 12.364
+        },
+        {
+          "text": "consegnare",
+          "start": 12.404,
+          "end": 12.924
+        },
+        {
+          "text": "presto,",
+          "start": 12.964,
+          "end": 13.344
+        },
+        {
+          "text": "rispondere",
+          "start": 13.604,
+          "end": 14.044
+        },
+        {
+          "text": "ai",
+          "start": 14.064,
+          "end": 14.124
+        },
+        {
+          "text": "cambiamenti",
+          "start": 14.144,
+          "end": 14.724
+        },
+        {
+          "text": "e",
+          "start": 14.904,
+          "end": 14.944
+        },
+        {
+          "text": "ridurre",
+          "start": 15.044,
+          "end": 15.384
+        },
+        {
+          "text": "l'overhead.",
+          "start": 15.424,
+          "end": 15.865
+        }
+      ]
+    },
+    {
+      "start": 16.785,
+      "end": 21.106,
+      "text": "Secondo: il Manifesto Agile dichiara quattro valori e dodici principi,",
+      "words": [
+        {
+          "text": "Secondo:",
+          "start": 16.785,
+          "end": 17.205
+        },
+        {
+          "text": "il",
+          "start": 17.665,
+          "end": 17.765
+        },
+        {
+          "text": "Manifesto",
+          "start": 17.805,
+          "end": 18.265
+        },
+        {
+          "text": "Agile",
+          "start": 18.305,
+          "end": 18.725
+        },
+        {
+          "text": "dichiara",
+          "start": 18.885,
+          "end": 19.226
+        },
+        {
+          "text": "quattro",
+          "start": 19.366,
+          "end": 19.706
+        },
+        {
+          "text": "valori",
+          "start": 19.746,
+          "end": 20.086
+        },
+        {
+          "text": "e",
+          "start": 20.146,
+          "end": 20.186
+        },
+        {
+          "text": "dodici",
+          "start": 20.266,
+          "end": 20.586
+        },
+        {
+          "text": "principi,",
+          "start": 20.626,
+          "end": 21.106
+        }
+      ]
+    },
+    {
+      "start": 21.486,
+      "end": 24.567,
+      "text": "con il software funzionante come misura principale del progresso.",
+      "words": [
+        {
+          "text": "con",
+          "start": 21.486,
+          "end": 21.606
+        },
+        {
+          "text": "il",
+          "start": 21.626,
+          "end": 21.706
+        },
+        {
+          "text": "software",
+          "start": 21.746,
+          "end": 22.086
+        },
+        {
+          "text": "funzionante",
+          "start": 22.106,
+          "end": 22.667
+        },
+        {
+          "text": "come",
+          "start": 22.727,
+          "end": 22.907
+        },
+        {
+          "text": "misura",
+          "start": 22.987,
+          "end": 23.307
+        },
+        {
+          "text": "principale",
+          "start": 23.347,
+          "end": 23.907
+        },
+        {
+          "text": "del",
+          "start": 23.947,
+          "end": 24.047
+        },
+        {
+          "text": "progresso.",
+          "start": 24.087,
+          "end": 24.567
+        }
+      ]
+    },
+    {
+      "start": 25.367,
+      "end": 29.589,
+      "text": "Terzo: nello sviluppo incrementale si scelgono feature, si raffinano,",
+      "words": [
+        {
+          "text": "Terzo:",
+          "start": 25.367,
+          "end": 25.747
+        },
+        {
+          "text": "nello",
+          "start": 26.268,
+          "end": 26.468
+        },
+        {
+          "text": "sviluppo",
+          "start": 26.488,
+          "end": 26.828
+        },
+        {
+          "text": "incrementale",
+          "start": 26.868,
+          "end": 27.508
+        },
+        {
+          "text": "si",
+          "start": 27.688,
+          "end": 27.768
+        },
+        {
+          "text": "scelgono",
+          "start": 27.828,
+          "end": 28.228
+        },
+        {
+          "text": "feature,",
+          "start": 28.288,
+          "end": 28.688
+        },
+        {
+          "text": "si",
+          "start": 28.908,
+          "end": 28.988
+        },
+        {
+          "text": "raffinano,",
+          "start": 29.068,
+          "end": 29.589
+        }
+      ]
+    },
+    {
+      "start": 29.789,
+      "end": 33.43,
+      "text": "si implementano, si integrano e si consegna un incremento alla volta.",
+      "words": [
+        {
+          "text": "si",
+          "start": 29.789,
+          "end": 29.849
+        },
+        {
+          "text": "implementano,",
+          "start": 29.909,
+          "end": 30.549
+        },
+        {
+          "text": "si",
+          "start": 30.649,
+          "end": 30.749
+        },
+        {
+          "text": "integrano",
+          "start": 30.829,
+          "end": 31.309
+        },
+        {
+          "text": "e",
+          "start": 31.469,
+          "end": 31.509
+        },
+        {
+          "text": "si",
+          "start": 31.589,
+          "end": 31.669
+        },
+        {
+          "text": "consegna",
+          "start": 31.709,
+          "end": 32.169
+        },
+        {
+          "text": "un",
+          "start": 32.349,
+          "end": 32.429
+        },
+        {
+          "text": "incremento",
+          "start": 32.469,
+          "end": 32.93
+        },
+        {
+          "text": "alla",
+          "start": 32.97,
+          "end": 33.11
+        },
+        {
+          "text": "volta.",
+          "start": 33.13,
+          "end": 33.43
+        }
+      ]
+    },
+    {
+      "start": 34.43,
+      "end": 40.292,
+      "text": "Quarto: Extreme Programming riunisce dieci pratiche chiave, tra cui test-driven development,",
+      "words": [
+        {
+          "text": "Quarto:",
+          "start": 34.43,
+          "end": 34.81
+        },
+        {
+          "text": "Extreme",
+          "start": 35.31,
+          "end": 35.73
+        },
+        {
+          "text": "Programming",
+          "start": 35.75,
+          "end": 36.351
+        },
+        {
+          "text": "riunisce",
+          "start": 36.531,
+          "end": 36.911
+        },
+        {
+          "text": "dieci",
+          "start": 36.991,
+          "end": 37.331
+        },
+        {
+          "text": "pratiche",
+          "start": 37.391,
+          "end": 37.751
+        },
+        {
+          "text": "chiave,",
+          "start": 37.791,
+          "end": 38.111
+        },
+        {
+          "text": "tra",
+          "start": 38.471,
+          "end": 38.571
+        },
+        {
+          "text": "cui",
+          "start": 38.631,
+          "end": 38.791
+        },
+        {
+          "text": "test-driven",
+          "start": 39.051,
+          "end": 39.651
+        },
+        {
+          "text": "development,",
+          "start": 39.691,
+          "end": 40.292
+        }
+      ]
+    },
+    {
+      "start": 40.532,
+      "end": 42.652,
+      "text": "continuous integration e refactoring.",
+      "words": [
+        {
+          "text": "continuous",
+          "start": 40.532,
+          "end": 41.052
+        },
+        {
+          "text": "integration",
+          "start": 41.092,
+          "end": 41.692
+        },
+        {
+          "text": "e",
+          "start": 41.932,
+          "end": 41.972
+        },
+        {
+          "text": "refactoring.",
+          "start": 42.072,
+          "end": 42.652
+        }
+      ]
+    },
+    {
+      "start": 43.533,
+      "end": 47.554,
+      "text": "Quinto: Scrum organizza il lavoro con team di quattro otto persone,",
+      "words": [
+        {
+          "text": "Quinto:",
+          "start": 43.533,
+          "end": 43.893
+        },
+        {
+          "text": "Scrum",
+          "start": 44.373,
+          "end": 44.713
+        },
+        {
+          "text": "organizza",
+          "start": 44.933,
+          "end": 45.353
+        },
+        {
+          "text": "il",
+          "start": 45.393,
+          "end": 45.433
+        },
+        {
+          "text": "lavoro",
+          "start": 45.473,
+          "end": 45.773
+        },
+        {
+          "text": "con",
+          "start": 45.833,
+          "end": 45.993
+        },
+        {
+          "text": "team",
+          "start": 46.053,
+          "end": 46.213
+        },
+        {
+          "text": "di",
+          "start": 46.273,
+          "end": 46.333
+        },
+        {
+          "text": "quattro",
+          "start": 46.413,
+          "end": 46.774
+        },
+        {
+          "text": "otto",
+          "start": 46.834,
+          "end": 47.034
+        },
+        {
+          "text": "persone,",
+          "start": 47.074,
+          "end": 47.554
+        }
+      ]
+    },
+    {
+      "start": 47.954,
+      "end": 54.116,
+      "text": "Product Owner, ScrumMaster, product backlog, sprint di due quattro settimane e scrum quotidiano.",
+      "words": [
+        {
+          "text": "Product",
+          "start": 47.954,
+          "end": 48.314
+        },
+        {
+          "text": "Owner,",
+          "start": 48.394,
+          "end": 48.674
+        },
+        {
+          "text": "ScrumMaster,",
+          "start": 48.894,
+          "end": 49.574
+        },
+        {
+          "text": "product",
+          "start": 49.894,
+          "end": 50.235
+        },
+        {
+          "text": "backlog,",
+          "start": 50.315,
+          "end": 50.735
+        },
+        {
+          "text": "sprint",
+          "start": 51.235,
+          "end": 51.575
+        },
+        {
+          "text": "di",
+          "start": 51.675,
+          "end": 51.755
+        },
+        {
+          "text": "due",
+          "start": 51.835,
+          "end": 52.035
+        },
+        {
+          "text": "quattro",
+          "start": 52.095,
+          "end": 52.375
+        },
+        {
+          "text": "settimane",
+          "start": 52.415,
+          "end": 52.915
+        },
+        {
+          "text": "e",
+          "start": 53.195,
+          "end": 53.235
+        },
+        {
+          "text": "scrum",
+          "start": 53.295,
+          "end": 53.556
+        },
+        {
+          "text": "quotidiano.",
+          "start": 53.616,
+          "end": 54.116
+        }
+      ]
+    },
+    {
+      "start": 55.016,
+      "end": 58.617,
+      "text": "Sesto: ogni sprint è timeboxed, non si allunga mai,",
+      "words": [
+        {
+          "text": "Sesto:",
+          "start": 55.016,
+          "end": 55.356
+        },
+        {
+          "text": "ogni",
+          "start": 55.856,
+          "end": 56.056
+        },
+        {
+          "text": "sprint",
+          "start": 56.116,
+          "end": 56.436
+        },
+        {
+          "text": "è",
+          "start": 56.636,
+          "end": 56.676
+        },
+        {
+          "text": "timeboxed,",
+          "start": 56.816,
+          "end": 57.397
+        },
+        {
+          "text": "non",
+          "start": 57.817,
+          "end": 57.937
+        },
+        {
+          "text": "si",
+          "start": 57.977,
+          "end": 58.037
+        },
+        {
+          "text": "allunga",
+          "start": 58.077,
+          "end": 58.377
+        },
+        {
+          "text": "mai,",
+          "start": 58.417,
+          "end": 58.617
+        }
+      ]
+    },
+    {
+      "start": 59.077,
+      "end": 62.158,
+      "text": "e richiede sempre test automation e continuous integration.",
+      "words": [
+        {
+          "text": "e",
+          "start": 59.077,
+          "end": 59.117
+        },
+        {
+          "text": "richiede",
+          "start": 59.177,
+          "end": 59.497
+        },
+        {
+          "text": "sempre",
+          "start": 59.597,
+          "end": 59.937
+        },
+        {
+          "text": "test",
+          "start": 59.997,
+          "end": 60.197
+        },
+        {
+          "text": "automation",
+          "start": 60.237,
+          "end": 60.778
+        },
+        {
+          "text": "e",
+          "start": 60.938,
+          "end": 60.978
+        },
+        {
+          "text": "continuous",
+          "start": 61.038,
+          "end": 61.578
+        },
+        {
+          "text": "integration.",
+          "start": 61.618,
+          "end": 62.158
+        }
+      ]
+    },
+    {
+      "start": 62.918,
+      "end": 65.779,
+      "text": "Prima di passare al capitolo sulle feature e user stories,",
+      "words": [
+        {
+          "text": "Prima",
+          "start": 62.918,
+          "end": 63.118
+        },
+        {
+          "text": "di",
+          "start": 63.158,
+          "end": 63.218
+        },
+        {
+          "text": "passare",
+          "start": 63.258,
+          "end": 63.578
+        },
+        {
+          "text": "al",
+          "start": 63.598,
+          "end": 63.678
+        },
+        {
+          "text": "capitolo",
+          "start": 63.698,
+          "end": 64.119
+        },
+        {
+          "text": "sulle",
+          "start": 64.199,
+          "end": 64.399
+        },
+        {
+          "text": "feature",
+          "start": 64.459,
+          "end": 64.859
+        },
+        {
+          "text": "e",
+          "start": 64.979,
+          "end": 65.019
+        },
+        {
+          "text": "user",
+          "start": 65.139,
+          "end": 65.339
+        },
+        {
+          "text": "stories,",
+          "start": 65.379,
+          "end": 65.779
+        }
+      ]
+    },
+    {
+      "start": 66.019,
+      "end": 68.78,
+      "text": "provate a rispondere alle sette domande di verifica sulla destra.",
+      "words": [
+        {
+          "text": "provate",
+          "start": 66.019,
+          "end": 66.359
+        },
+        {
+          "text": "a",
+          "start": 66.379,
+          "end": 66.41900000000001
+        },
+        {
+          "text": "rispondere",
+          "start": 66.439,
+          "end": 66.879
+        },
+        {
+          "text": "alle",
+          "start": 66.899,
+          "end": 67.039
+        },
+        {
+          "text": "sette",
+          "start": 67.119,
+          "end": 67.38
+        },
+        {
+          "text": "domande",
+          "start": 67.4,
+          "end": 67.7
+        },
+        {
+          "text": "di",
+          "start": 67.74,
+          "end": 67.8
+        },
+        {
+          "text": "verifica",
+          "start": 67.82,
+          "end": 68.22
+        },
+        {
+          "text": "sulla",
+          "start": 68.28,
+          "end": 68.46
+        },
+        {
+          "text": "destra.",
+          "start": 68.48,
+          "end": 68.78
+        }
+      ]
+    }
+  ]
+}

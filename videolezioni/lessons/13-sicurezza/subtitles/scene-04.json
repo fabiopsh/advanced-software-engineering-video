@@ -1,0 +1,1078 @@
+{
+  "duration": 83.995,
+  "segments": [
+    {
+      "start": 0.06,
+      "end": 4.921,
+      "text": "L'autenticazione verifica che gli utenti siano davvero chi dichiarano di essere,",
+      "words": [
+        {
+          "text": "L'autenticazione",
+          "start": 0.06,
+          "end": 1.06
+        },
+        {
+          "text": "verifica",
+          "start": 1.48,
+          "end": 1.96
+        },
+        {
+          "text": "che",
+          "start": 2.02,
+          "end": 2.1
+        },
+        {
+          "text": "gli",
+          "start": 2.12,
+          "end": 2.22
+        },
+        {
+          "text": "utenti",
+          "start": 2.26,
+          "end": 2.7
+        },
+        {
+          "text": "siano",
+          "start": 2.8,
+          "end": 3.1
+        },
+        {
+          "text": "davvero",
+          "start": 3.2,
+          "end": 3.66
+        },
+        {
+          "text": "chi",
+          "start": 3.721,
+          "end": 3.801
+        },
+        {
+          "text": "dichiarano",
+          "start": 3.841,
+          "end": 4.321
+        },
+        {
+          "text": "di",
+          "start": 4.361,
+          "end": 4.441
+        },
+        {
+          "text": "essere,",
+          "start": 4.541,
+          "end": 4.921
+        }
+      ]
+    },
+    {
+      "start": 5.221,
+      "end": 7.101,
+      "text": "attraverso tre approcci principali.",
+      "words": [
+        {
+          "text": "attraverso",
+          "start": 5.221,
+          "end": 5.661
+        },
+        {
+          "text": "tre",
+          "start": 5.801,
+          "end": 5.961
+        },
+        {
+          "text": "approcci",
+          "start": 6.041,
+          "end": 6.461
+        },
+        {
+          "text": "principali.",
+          "start": 6.501,
+          "end": 7.101
+        }
+      ]
+    },
+    {
+      "start": 7.821,
+      "end": 11.442,
+      "text": "L'approccio knowledge-based si basa su un segreto noto all'utente,",
+      "words": [
+        {
+          "text": "L'approccio",
+          "start": 7.821,
+          "end": 8.281
+        },
+        {
+          "text": "knowledge-based",
+          "start": 8.501,
+          "end": 9.341
+        },
+        {
+          "text": "si",
+          "start": 9.481,
+          "end": 9.561
+        },
+        {
+          "text": "basa",
+          "start": 9.601,
+          "end": 9.821
+        },
+        {
+          "text": "su",
+          "start": 9.881,
+          "end": 9.941
+        },
+        {
+          "text": "un",
+          "start": 9.981,
+          "end": 10.041
+        },
+        {
+          "text": "segreto",
+          "start": 10.081,
+          "end": 10.481
+        },
+        {
+          "text": "noto",
+          "start": 10.581,
+          "end": 10.821
+        },
+        {
+          "text": "all'utente,",
+          "start": 10.861,
+          "end": 11.442
+        }
+      ]
+    },
+    {
+      "start": 11.542,
+      "end": 12.722,
+      "text": "tipicamente la password.",
+      "words": [
+        {
+          "text": "tipicamente",
+          "start": 11.542,
+          "end": 12.062
+        },
+        {
+          "text": "la",
+          "start": 12.202,
+          "end": 12.262
+        },
+        {
+          "text": "password.",
+          "start": 12.302,
+          "end": 12.722
+        }
+      ]
+    },
+    {
+      "start": 13.262,
+      "end": 19.683,
+      "text": "L'approccio possession-based richiede un oggetto fisico, come un token dedicato o un codice temporaneo inviato",
+      "words": [
+        {
+          "text": "L'approccio",
+          "start": 13.262,
+          "end": 13.682
+        },
+        {
+          "text": "possession-based",
+          "start": 13.862,
+          "end": 14.942
+        },
+        {
+          "text": "richiede",
+          "start": 15.042,
+          "end": 15.362
+        },
+        {
+          "text": "un",
+          "start": 15.422,
+          "end": 15.502
+        },
+        {
+          "text": "oggetto",
+          "start": 15.542,
+          "end": 15.882
+        },
+        {
+          "text": "fisico,",
+          "start": 15.942,
+          "end": 16.362
+        },
+        {
+          "text": "come",
+          "start": 16.442,
+          "end": 16.622
+        },
+        {
+          "text": "un",
+          "start": 16.742,
+          "end": 16.822
+        },
+        {
+          "text": "token",
+          "start": 16.902,
+          "end": 17.202
+        },
+        {
+          "text": "dedicato",
+          "start": 17.242,
+          "end": 17.762
+        },
+        {
+          "text": "o",
+          "start": 18.082,
+          "end": 18.122
+        },
+        {
+          "text": "un",
+          "start": 18.142,
+          "end": 18.202
+        },
+        {
+          "text": "codice",
+          "start": 18.262,
+          "end": 18.623
+        },
+        {
+          "text": "temporaneo",
+          "start": 18.683,
+          "end": 19.303
+        },
+        {
+          "text": "inviato",
+          "start": 19.343,
+          "end": 19.683
+        }
+      ]
+    },
+    {
+      "start": 19.703,
+      "end": 20.203,
+      "text": "al telefono.",
+      "words": [
+        {
+          "text": "al",
+          "start": 19.703,
+          "end": 19.763
+        },
+        {
+          "text": "telefono.",
+          "start": 19.783,
+          "end": 20.203
+        }
+      ]
+    },
+    {
+      "start": 20.803,
+      "end": 28.124,
+      "text": "L'approccio attribute-based sfrutta invece caratteristiche biometriche uniche, come impronta digitale o riconoscimento facciale.",
+      "words": [
+        {
+          "text": "L'approccio",
+          "start": 20.803,
+          "end": 21.223
+        },
+        {
+          "text": "attribute-based",
+          "start": 21.423,
+          "end": 22.483
+        },
+        {
+          "text": "sfrutta",
+          "start": 22.703,
+          "end": 23.003
+        },
+        {
+          "text": "invece",
+          "start": 23.023,
+          "end": 23.263
+        },
+        {
+          "text": "caratteristiche",
+          "start": 23.323,
+          "end": 24.063
+        },
+        {
+          "text": "biometriche",
+          "start": 24.123,
+          "end": 24.703
+        },
+        {
+          "text": "uniche,",
+          "start": 24.803,
+          "end": 25.123
+        },
+        {
+          "text": "come",
+          "start": 25.443,
+          "end": 25.623
+        },
+        {
+          "text": "impronta",
+          "start": 25.744,
+          "end": 26.164
+        },
+        {
+          "text": "digitale",
+          "start": 26.204,
+          "end": 26.724
+        },
+        {
+          "text": "o",
+          "start": 26.844,
+          "end": 26.884
+        },
+        {
+          "text": "riconoscimento",
+          "start": 27.004,
+          "end": 27.644
+        },
+        {
+          "text": "facciale.",
+          "start": 27.684,
+          "end": 28.124
+        }
+      ]
+    },
+    {
+      "start": 28.824,
+      "end": 31.864,
+      "text": "Combinarli realizza l'autenticazione a più fattori.",
+      "words": [
+        {
+          "text": "Combinarli",
+          "start": 28.824,
+          "end": 29.564
+        },
+        {
+          "text": "realizza",
+          "start": 29.744,
+          "end": 30.164
+        },
+        {
+          "text": "l'autenticazione",
+          "start": 30.244,
+          "end": 31.064
+        },
+        {
+          "text": "a",
+          "start": 31.124,
+          "end": 31.164
+        },
+        {
+          "text": "più",
+          "start": 31.224,
+          "end": 31.344
+        },
+        {
+          "text": "fattori.",
+          "start": 31.424,
+          "end": 31.864
+        }
+      ]
+    },
+    {
+      "start": 32.824,
+      "end": 36.465,
+      "text": "Le password restano diffuse ma presentano quattro debolezze note:",
+      "words": [
+        {
+          "text": "Le",
+          "start": 32.824,
+          "end": 32.904
+        },
+        {
+          "text": "password",
+          "start": 32.944,
+          "end": 33.325
+        },
+        {
+          "text": "restano",
+          "start": 33.565,
+          "end": 33.905
+        },
+        {
+          "text": "diffuse",
+          "start": 33.945,
+          "end": 34.425
+        },
+        {
+          "text": "ma",
+          "start": 34.725,
+          "end": 34.785
+        },
+        {
+          "text": "presentano",
+          "start": 34.885,
+          "end": 35.325
+        },
+        {
+          "text": "quattro",
+          "start": 35.385,
+          "end": 35.745
+        },
+        {
+          "text": "debolezze",
+          "start": 35.785,
+          "end": 36.185
+        },
+        {
+          "text": "note:",
+          "start": 36.225,
+          "end": 36.465
+        }
+      ]
+    },
+    {
+      "start": 36.985,
+      "end": 41.626,
+      "text": "gli utenti scelgono stringhe semplici, cadono nel phishing tramite link falsi,",
+      "words": [
+        {
+          "text": "gli",
+          "start": 36.985,
+          "end": 37.105
+        },
+        {
+          "text": "utenti",
+          "start": 37.125,
+          "end": 37.465
+        },
+        {
+          "text": "scelgono",
+          "start": 37.545,
+          "end": 37.925
+        },
+        {
+          "text": "stringhe",
+          "start": 37.985,
+          "end": 38.305
+        },
+        {
+          "text": "semplici,",
+          "start": 38.365,
+          "end": 38.865
+        },
+        {
+          "text": "cadono",
+          "start": 39.325,
+          "end": 39.705
+        },
+        {
+          "text": "nel",
+          "start": 39.765,
+          "end": 39.905
+        },
+        {
+          "text": "phishing",
+          "start": 39.985,
+          "end": 40.466
+        },
+        {
+          "text": "tramite",
+          "start": 40.586,
+          "end": 40.926
+        },
+        {
+          "text": "link",
+          "start": 41.006,
+          "end": 41.166
+        },
+        {
+          "text": "falsi,",
+          "start": 41.226,
+          "end": 41.626
+        }
+      ]
+    },
+    {
+      "start": 42.146,
+      "end": 47.506,
+      "text": "riutilizzano la stessa password su più servizi e possono subire abusi sul meccanismo di recupero.",
+      "words": [
+        {
+          "text": "riutilizzano",
+          "start": 42.146,
+          "end": 42.866
+        },
+        {
+          "text": "la",
+          "start": 42.906,
+          "end": 42.986
+        },
+        {
+          "text": "stessa",
+          "start": 43.066,
+          "end": 43.426
+        },
+        {
+          "text": "password",
+          "start": 43.486,
+          "end": 43.926
+        },
+        {
+          "text": "su",
+          "start": 44.006,
+          "end": 44.066
+        },
+        {
+          "text": "più",
+          "start": 44.146,
+          "end": 44.226
+        },
+        {
+          "text": "servizi",
+          "start": 44.306,
+          "end": 44.766
+        },
+        {
+          "text": "e",
+          "start": 45.086,
+          "end": 45.126
+        },
+        {
+          "text": "possono",
+          "start": 45.186,
+          "end": 45.446
+        },
+        {
+          "text": "subire",
+          "start": 45.486,
+          "end": 45.786
+        },
+        {
+          "text": "abusi",
+          "start": 45.846,
+          "end": 46.246
+        },
+        {
+          "text": "sul",
+          "start": 46.366,
+          "end": 46.486
+        },
+        {
+          "text": "meccanismo",
+          "start": 46.526,
+          "end": 46.966
+        },
+        {
+          "text": "di",
+          "start": 47.006,
+          "end": 47.066
+        },
+        {
+          "text": "recupero.",
+          "start": 47.106,
+          "end": 47.506
+        }
+      ]
+    },
+    {
+      "start": 48.287,
+      "end": 52.887,
+      "text": "Se il prodotto tratta dati riservati è quindi indispensabile l'autenticazione a due fasi;",
+      "words": [
+        {
+          "text": "Se",
+          "start": 48.287,
+          "end": 48.347
+        },
+        {
+          "text": "il",
+          "start": 48.387,
+          "end": 48.427
+        },
+        {
+          "text": "prodotto",
+          "start": 48.447,
+          "end": 48.767
+        },
+        {
+          "text": "tratta",
+          "start": 48.847,
+          "end": 49.127
+        },
+        {
+          "text": "dati",
+          "start": 49.187,
+          "end": 49.407
+        },
+        {
+          "text": "riservati",
+          "start": 49.467,
+          "end": 49.947
+        },
+        {
+          "text": "è",
+          "start": 50.067,
+          "end": 50.107
+        },
+        {
+          "text": "quindi",
+          "start": 50.147,
+          "end": 50.367
+        },
+        {
+          "text": "indispensabile",
+          "start": 50.507,
+          "end": 51.407
+        },
+        {
+          "text": "l'autenticazione",
+          "start": 51.447,
+          "end": 52.227
+        },
+        {
+          "text": "a",
+          "start": 52.287,
+          "end": 52.327
+        },
+        {
+          "text": "due",
+          "start": 52.387,
+          "end": 52.527
+        },
+        {
+          "text": "fasi;",
+          "start": 52.567,
+          "end": 52.887
+        }
+      ]
+    },
+    {
+      "start": 53.327,
+      "end": 57.848,
+      "text": "sui dispositivi mobili si usano spesso token locali o certificati digitali individuali.",
+      "words": [
+        {
+          "text": "sui",
+          "start": 53.327,
+          "end": 53.447
+        },
+        {
+          "text": "dispositivi",
+          "start": 53.487,
+          "end": 53.967
+        },
+        {
+          "text": "mobili",
+          "start": 54.027,
+          "end": 54.347
+        },
+        {
+          "text": "si",
+          "start": 54.387,
+          "end": 54.447
+        },
+        {
+          "text": "usano",
+          "start": 54.487,
+          "end": 54.687
+        },
+        {
+          "text": "spesso",
+          "start": 54.727,
+          "end": 55.028
+        },
+        {
+          "text": "token",
+          "start": 55.148,
+          "end": 55.428
+        },
+        {
+          "text": "locali",
+          "start": 55.448,
+          "end": 55.888
+        },
+        {
+          "text": "o",
+          "start": 55.968,
+          "end": 56.008
+        },
+        {
+          "text": "certificati",
+          "start": 56.048,
+          "end": 56.648
+        },
+        {
+          "text": "digitali",
+          "start": 56.748,
+          "end": 57.208
+        },
+        {
+          "text": "individuali.",
+          "start": 57.268,
+          "end": 57.848
+        }
+      ]
+    },
+    {
+      "start": 58.788,
+      "end": 63.689,
+      "text": "Per evitare di gestire in casa database di credenziali si ricorre spesso all'identità federata con",
+      "words": [
+        {
+          "text": "Per",
+          "start": 58.788,
+          "end": 58.888
+        },
+        {
+          "text": "evitare",
+          "start": 58.908,
+          "end": 59.208
+        },
+        {
+          "text": "di",
+          "start": 59.248,
+          "end": 59.308
+        },
+        {
+          "text": "gestire",
+          "start": 59.348,
+          "end": 59.628
+        },
+        {
+          "text": "in",
+          "start": 59.668,
+          "end": 59.728
+        },
+        {
+          "text": "casa",
+          "start": 59.748,
+          "end": 59.968
+        },
+        {
+          "text": "database",
+          "start": 60.068,
+          "end": 60.528
+        },
+        {
+          "text": "di",
+          "start": 60.528,
+          "end": 60.608
+        },
+        {
+          "text": "credenziali",
+          "start": 60.648,
+          "end": 61.248
+        },
+        {
+          "text": "si",
+          "start": 61.408,
+          "end": 61.468
+        },
+        {
+          "text": "ricorre",
+          "start": 61.508,
+          "end": 61.788
+        },
+        {
+          "text": "spesso",
+          "start": 61.828,
+          "end": 62.208
+        },
+        {
+          "text": "all'identità",
+          "start": 62.349,
+          "end": 62.909
+        },
+        {
+          "text": "federata",
+          "start": 63.029,
+          "end": 63.509
+        },
+        {
+          "text": "con",
+          "start": 63.549,
+          "end": 63.689
+        }
+      ]
+    },
+    {
+      "start": 63.709,
+      "end": 64.869,
+      "text": "protocollo OAuth.",
+      "words": [
+        {
+          "text": "protocollo",
+          "start": 63.709,
+          "end": 64.209
+        },
+        {
+          "text": "OAuth.",
+          "start": 64.429,
+          "end": 64.869
+        }
+      ]
+    },
+    {
+      "start": 65.589,
+      "end": 70.95,
+      "text": "L'utente chiede accesso al servizio, viene reindirizzato a un autenticatore di fiducia come Google,",
+      "words": [
+        {
+          "text": "L'utente",
+          "start": 65.589,
+          "end": 65.929
+        },
+        {
+          "text": "chiede",
+          "start": 66.029,
+          "end": 66.269
+        },
+        {
+          "text": "accesso",
+          "start": 66.329,
+          "end": 66.709
+        },
+        {
+          "text": "al",
+          "start": 66.749,
+          "end": 66.809
+        },
+        {
+          "text": "servizio,",
+          "start": 66.849,
+          "end": 67.309
+        },
+        {
+          "text": "viene",
+          "start": 67.729,
+          "end": 67.949
+        },
+        {
+          "text": "reindirizzato",
+          "start": 68.089,
+          "end": 68.929
+        },
+        {
+          "text": "a",
+          "start": 69.049,
+          "end": 69.08900000000001
+        },
+        {
+          "text": "un",
+          "start": 69.169,
+          "end": 69.229
+        },
+        {
+          "text": "autenticatore",
+          "start": 69.289,
+          "end": 69.87
+        },
+        {
+          "text": "di",
+          "start": 69.89,
+          "end": 69.95
+        },
+        {
+          "text": "fiducia",
+          "start": 69.99,
+          "end": 70.35
+        },
+        {
+          "text": "come",
+          "start": 70.41,
+          "end": 70.57
+        },
+        {
+          "text": "Google,",
+          "start": 70.61,
+          "end": 70.95
+        }
+      ]
+    },
+    {
+      "start": 71.39,
+      "end": 76.89,
+      "text": "inserisce lì le credenziali e l'autenticatore restituisce al servizio solo un token di conferma.",
+      "words": [
+        {
+          "text": "inserisce",
+          "start": 71.39,
+          "end": 71.97
+        },
+        {
+          "text": "lì",
+          "start": 72.07,
+          "end": 72.15
+        },
+        {
+          "text": "le",
+          "start": 72.21,
+          "end": 72.29
+        },
+        {
+          "text": "credenziali",
+          "start": 72.33,
+          "end": 72.99
+        },
+        {
+          "text": "e",
+          "start": 73.41,
+          "end": 73.45
+        },
+        {
+          "text": "l'autenticatore",
+          "start": 73.53,
+          "end": 74.27
+        },
+        {
+          "text": "restituisce",
+          "start": 74.35,
+          "end": 74.83
+        },
+        {
+          "text": "al",
+          "start": 74.87,
+          "end": 74.93
+        },
+        {
+          "text": "servizio",
+          "start": 74.97,
+          "end": 75.37
+        },
+        {
+          "text": "solo",
+          "start": 75.47,
+          "end": 75.71
+        },
+        {
+          "text": "un",
+          "start": 75.85,
+          "end": 75.95
+        },
+        {
+          "text": "token",
+          "start": 76.03,
+          "end": 76.29
+        },
+        {
+          "text": "di",
+          "start": 76.31,
+          "end": 76.37
+        },
+        {
+          "text": "conferma.",
+          "start": 76.41,
+          "end": 76.89
+        }
+      ]
+    },
+    {
+      "start": 77.731,
+      "end": 80.271,
+      "text": "Il vantaggio è che il servizio non vede mai la password,",
+      "words": [
+        {
+          "text": "Il",
+          "start": 77.731,
+          "end": 77.811
+        },
+        {
+          "text": "vantaggio",
+          "start": 77.871,
+          "end": 78.411
+        },
+        {
+          "text": "è",
+          "start": 78.531,
+          "end": 78.57100000000001
+        },
+        {
+          "text": "che",
+          "start": 78.631,
+          "end": 78.691
+        },
+        {
+          "text": "il",
+          "start": 78.731,
+          "end": 78.771
+        },
+        {
+          "text": "servizio",
+          "start": 78.791,
+          "end": 79.151
+        },
+        {
+          "text": "non",
+          "start": 79.191,
+          "end": 79.291
+        },
+        {
+          "text": "vede",
+          "start": 79.311,
+          "end": 79.471
+        },
+        {
+          "text": "mai",
+          "start": 79.531,
+          "end": 79.671
+        },
+        {
+          "text": "la",
+          "start": 79.711,
+          "end": 79.771
+        },
+        {
+          "text": "password,",
+          "start": 79.811,
+          "end": 80.271
+        }
+      ]
+    },
+    {
+      "start": 80.691,
+      "end": 83.771,
+      "text": "pur dovendo condividere informazioni utente con un provider esterno.",
+      "words": [
+        {
+          "text": "pur",
+          "start": 80.691,
+          "end": 80.831
+        },
+        {
+          "text": "dovendo",
+          "start": 80.871,
+          "end": 81.151
+        },
+        {
+          "text": "condividere",
+          "start": 81.231,
+          "end": 81.771
+        },
+        {
+          "text": "informazioni",
+          "start": 81.811,
+          "end": 82.311
+        },
+        {
+          "text": "utente",
+          "start": 82.371,
+          "end": 82.691
+        },
+        {
+          "text": "con",
+          "start": 82.731,
+          "end": 82.851
+        },
+        {
+          "text": "un",
+          "start": 82.871,
+          "end": 82.931
+        },
+        {
+          "text": "provider",
+          "start": 82.951,
+          "end": 83.311
+        },
+        {
+          "text": "esterno.",
+          "start": 83.351,
+          "end": 83.771
+        }
+      ]
+    }
+  ]
+}

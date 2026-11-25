@@ -1,0 +1,1123 @@
+{
+  "duration": 82.016,
+  "segments": [
+    {
+      "start": 0.02,
+      "end": 2.86,
+      "text": "Esaminiamo le ultime tre decisioni architetturali.",
+      "words": [
+        {
+          "text": "Esaminiamo",
+          "start": 0.02,
+          "end": 0.48
+        },
+        {
+          "text": "le",
+          "start": 0.62,
+          "end": 0.7
+        },
+        {
+          "text": "ultime",
+          "start": 0.78,
+          "end": 1.16
+        },
+        {
+          "text": "tre",
+          "start": 1.24,
+          "end": 1.36
+        },
+        {
+          "text": "decisioni",
+          "start": 1.46,
+          "end": 1.98
+        },
+        {
+          "text": "architetturali.",
+          "start": 2.08,
+          "end": 2.86
+        }
+      ]
+    },
+    {
+      "start": 3.64,
+      "end": 7.48,
+      "text": "La scalabilità è la capacità di adattarsi automaticamente al carico.",
+      "words": [
+        {
+          "text": "La",
+          "start": 3.64,
+          "end": 3.72
+        },
+        {
+          "text": "scalabilità",
+          "start": 3.76,
+          "end": 4.32
+        },
+        {
+          "text": "è",
+          "start": 4.72,
+          "end": 4.76
+        },
+        {
+          "text": "la",
+          "start": 4.78,
+          "end": 4.84
+        },
+        {
+          "text": "capacità",
+          "start": 4.88,
+          "end": 5.28
+        },
+        {
+          "text": "di",
+          "start": 5.34,
+          "end": 5.4
+        },
+        {
+          "text": "adattarsi",
+          "start": 5.46,
+          "end": 5.98
+        },
+        {
+          "text": "automaticamente",
+          "start": 6.2,
+          "end": 6.94
+        },
+        {
+          "text": "al",
+          "start": 6.98,
+          "end": 7.06
+        },
+        {
+          "text": "carico.",
+          "start": 7.12,
+          "end": 7.48
+        }
+      ]
+    },
+    {
+      "start": 8.221,
+      "end": 11.941,
+      "text": "Con lo scaling up si potenzia il server, ma esiste un limite fisico;",
+      "words": [
+        {
+          "text": "Con",
+          "start": 8.221,
+          "end": 8.321
+        },
+        {
+          "text": "lo",
+          "start": 8.361,
+          "end": 8.421
+        },
+        {
+          "text": "scaling",
+          "start": 8.461,
+          "end": 8.821
+        },
+        {
+          "text": "up",
+          "start": 8.901,
+          "end": 9.061
+        },
+        {
+          "text": "si",
+          "start": 9.241,
+          "end": 9.321
+        },
+        {
+          "text": "potenzia",
+          "start": 9.381,
+          "end": 9.801
+        },
+        {
+          "text": "il",
+          "start": 9.841,
+          "end": 9.901
+        },
+        {
+          "text": "server,",
+          "start": 9.961,
+          "end": 10.361
+        },
+        {
+          "text": "ma",
+          "start": 10.681,
+          "end": 10.741
+        },
+        {
+          "text": "esiste",
+          "start": 10.841,
+          "end": 11.121
+        },
+        {
+          "text": "un",
+          "start": 11.181,
+          "end": 11.241
+        },
+        {
+          "text": "limite",
+          "start": 11.261,
+          "end": 11.521
+        },
+        {
+          "text": "fisico;",
+          "start": 11.561,
+          "end": 11.941
+        }
+      ]
+    },
+    {
+      "start": 12.641,
+      "end": 18.281,
+      "text": "nel cloud prevale lo scaling out, cioè aggiungere server virtuali con un load balancer.",
+      "words": [
+        {
+          "text": "nel",
+          "start": 12.641,
+          "end": 12.781
+        },
+        {
+          "text": "cloud",
+          "start": 12.821,
+          "end": 13.181
+        },
+        {
+          "text": "prevale",
+          "start": 13.341,
+          "end": 13.641
+        },
+        {
+          "text": "lo",
+          "start": 13.681,
+          "end": 13.741
+        },
+        {
+          "text": "scaling",
+          "start": 13.801,
+          "end": 14.181
+        },
+        {
+          "text": "out,",
+          "start": 14.281,
+          "end": 14.501
+        },
+        {
+          "text": "cioè",
+          "start": 14.961,
+          "end": 15.161
+        },
+        {
+          "text": "aggiungere",
+          "start": 15.521,
+          "end": 16.001
+        },
+        {
+          "text": "server",
+          "start": 16.081,
+          "end": 16.381
+        },
+        {
+          "text": "virtuali",
+          "start": 16.441,
+          "end": 16.961
+        },
+        {
+          "text": "con",
+          "start": 17.221,
+          "end": 17.361
+        },
+        {
+          "text": "un",
+          "start": 17.401,
+          "end": 17.481
+        },
+        {
+          "text": "load",
+          "start": 17.521,
+          "end": 17.701
+        },
+        {
+          "text": "balancer.",
+          "start": 17.761,
+          "end": 18.281
+        }
+      ]
+    },
+    {
+      "start": 19.181,
+      "end": 23.101,
+      "text": "Se ogni istanza regge cento richieste al secondo e ne arrivano quattrocentocinquanta,",
+      "words": [
+        {
+          "text": "Se",
+          "start": 19.181,
+          "end": 19.241
+        },
+        {
+          "text": "ogni",
+          "start": 19.301,
+          "end": 19.441
+        },
+        {
+          "text": "istanza",
+          "start": 19.481,
+          "end": 19.861
+        },
+        {
+          "text": "regge",
+          "start": 19.901,
+          "end": 20.121
+        },
+        {
+          "text": "cento",
+          "start": 20.201,
+          "end": 20.521
+        },
+        {
+          "text": "richieste",
+          "start": 20.541,
+          "end": 20.861
+        },
+        {
+          "text": "al",
+          "start": 20.881,
+          "end": 20.961
+        },
+        {
+          "text": "secondo",
+          "start": 20.981,
+          "end": 21.441
+        },
+        {
+          "text": "e",
+          "start": 21.501,
+          "end": 21.541
+        },
+        {
+          "text": "ne",
+          "start": 21.581,
+          "end": 21.621
+        },
+        {
+          "text": "arrivano",
+          "start": 21.641,
+          "end": 21.941
+        },
+        {
+          "text": "quattrocentocinquanta,",
+          "start": 22.001,
+          "end": 23.101
+        }
+      ]
+    },
+    {
+      "start": 23.421,
+      "end": 27.122,
+      "text": "si avviano cinque istanze; se il carico scende a centocinquanta,",
+      "words": [
+        {
+          "text": "si",
+          "start": 23.421,
+          "end": 23.481
+        },
+        {
+          "text": "avviano",
+          "start": 23.521,
+          "end": 23.841
+        },
+        {
+          "text": "cinque",
+          "start": 23.941,
+          "end": 24.302
+        },
+        {
+          "text": "istanze;",
+          "start": 24.362,
+          "end": 24.842
+        },
+        {
+          "text": "se",
+          "start": 25.362,
+          "end": 25.422
+        },
+        {
+          "text": "il",
+          "start": 25.462,
+          "end": 25.522
+        },
+        {
+          "text": "carico",
+          "start": 25.562,
+          "end": 25.822
+        },
+        {
+          "text": "scende",
+          "start": 25.902,
+          "end": 26.242
+        },
+        {
+          "text": "a",
+          "start": 26.302,
+          "end": 26.342
+        },
+        {
+          "text": "centocinquanta,",
+          "start": 26.362,
+          "end": 27.122
+        }
+      ]
+    },
+    {
+      "start": 27.282,
+      "end": 29.702,
+      "text": "ne bastano due e si paga solo ciò che serve.",
+      "words": [
+        {
+          "text": "ne",
+          "start": 27.282,
+          "end": 27.362
+        },
+        {
+          "text": "bastano",
+          "start": 27.402,
+          "end": 27.722
+        },
+        {
+          "text": "due",
+          "start": 27.782,
+          "end": 27.982
+        },
+        {
+          "text": "e",
+          "start": 28.382,
+          "end": 28.422
+        },
+        {
+          "text": "si",
+          "start": 28.482,
+          "end": 28.542
+        },
+        {
+          "text": "paga",
+          "start": 28.582,
+          "end": 28.782
+        },
+        {
+          "text": "solo",
+          "start": 28.862,
+          "end": 29.062
+        },
+        {
+          "text": "ciò",
+          "start": 29.102,
+          "end": 29.202
+        },
+        {
+          "text": "che",
+          "start": 29.242,
+          "end": 29.322
+        },
+        {
+          "text": "serve.",
+          "start": 29.382,
+          "end": 29.702
+        }
+      ]
+    },
+    {
+      "start": 30.822,
+      "end": 35.182,
+      "text": "La resilienza garantisce i servizi critici in caso di guasto o uso malevolo.",
+      "words": [
+        {
+          "text": "La",
+          "start": 30.822,
+          "end": 30.882
+        },
+        {
+          "text": "resilienza",
+          "start": 30.922,
+          "end": 31.502
+        },
+        {
+          "text": "garantisce",
+          "start": 31.742,
+          "end": 32.182
+        },
+        {
+          "text": "i",
+          "start": 32.242,
+          "end": 32.282
+        },
+        {
+          "text": "servizi",
+          "start": 32.302,
+          "end": 32.702
+        },
+        {
+          "text": "critici",
+          "start": 32.742,
+          "end": 33.162
+        },
+        {
+          "text": "in",
+          "start": 33.242,
+          "end": 33.322
+        },
+        {
+          "text": "caso",
+          "start": 33.362,
+          "end": 33.602
+        },
+        {
+          "text": "di",
+          "start": 33.642,
+          "end": 33.722
+        },
+        {
+          "text": "guasto",
+          "start": 33.782,
+          "end": 34.242
+        },
+        {
+          "text": "o",
+          "start": 34.402,
+          "end": 34.442
+        },
+        {
+          "text": "uso",
+          "start": 34.542,
+          "end": 34.722
+        },
+        {
+          "text": "malevolo.",
+          "start": 34.762,
+          "end": 35.182
+        }
+      ]
+    },
+    {
+      "start": 35.962,
+      "end": 40.743,
+      "text": "Nell'hot standby un system monitor controlla un sistema attivo nella sede A e uno in",
+      "words": [
+        {
+          "text": "Nell'hot",
+          "start": 35.962,
+          "end": 36.262
+        },
+        {
+          "text": "standby",
+          "start": 36.302,
+          "end": 36.782
+        },
+        {
+          "text": "un",
+          "start": 37.082,
+          "end": 37.182
+        },
+        {
+          "text": "system",
+          "start": 37.222,
+          "end": 37.502
+        },
+        {
+          "text": "monitor",
+          "start": 37.522,
+          "end": 37.902
+        },
+        {
+          "text": "controlla",
+          "start": 37.962,
+          "end": 38.402
+        },
+        {
+          "text": "un",
+          "start": 38.442,
+          "end": 38.502
+        },
+        {
+          "text": "sistema",
+          "start": 38.562,
+          "end": 38.882
+        },
+        {
+          "text": "attivo",
+          "start": 38.942,
+          "end": 39.282
+        },
+        {
+          "text": "nella",
+          "start": 39.322,
+          "end": 39.502
+        },
+        {
+          "text": "sede",
+          "start": 39.562,
+          "end": 39.762
+        },
+        {
+          "text": "A",
+          "start": 39.842,
+          "end": 39.882
+        },
+        {
+          "text": "e",
+          "start": 40.343,
+          "end": 40.383
+        },
+        {
+          "text": "uno",
+          "start": 40.483,
+          "end": 40.623
+        },
+        {
+          "text": "in",
+          "start": 40.663,
+          "end": 40.743
+        }
+      ]
+    },
+    {
+      "start": 40.783,
+      "end": 41.703,
+      "text": "attesa nella sede B,",
+      "words": [
+        {
+          "text": "attesa",
+          "start": 40.783,
+          "end": 41.123
+        },
+        {
+          "text": "nella",
+          "start": 41.183,
+          "end": 41.363
+        },
+        {
+          "text": "sede",
+          "start": 41.403,
+          "end": 41.603
+        },
+        {
+          "text": "B,",
+          "start": 41.663,
+          "end": 41.703
+        }
+      ]
+    },
+    {
+      "start": 42.303,
+      "end": 44.143,
+      "text": "con replica continua dei database.",
+      "words": [
+        {
+          "text": "con",
+          "start": 42.303,
+          "end": 42.443
+        },
+        {
+          "text": "replica",
+          "start": 42.483,
+          "end": 42.823
+        },
+        {
+          "text": "continua",
+          "start": 42.883,
+          "end": 43.423
+        },
+        {
+          "text": "dei",
+          "start": 43.463,
+          "end": 43.583
+        },
+        {
+          "text": "database.",
+          "start": 43.603,
+          "end": 44.143
+        }
+      ]
+    },
+    {
+      "start": 45.063,
+      "end": 49.523,
+      "text": "Il cool standby costa meno, ma ripristina da backup con interruzione del servizio.",
+      "words": [
+        {
+          "text": "Il",
+          "start": 45.063,
+          "end": 45.163
+        },
+        {
+          "text": "cool",
+          "start": 45.243,
+          "end": 45.423
+        },
+        {
+          "text": "standby",
+          "start": 45.463,
+          "end": 45.903
+        },
+        {
+          "text": "costa",
+          "start": 46.003,
+          "end": 46.283
+        },
+        {
+          "text": "meno,",
+          "start": 46.343,
+          "end": 46.583
+        },
+        {
+          "text": "ma",
+          "start": 46.923,
+          "end": 47.003
+        },
+        {
+          "text": "ripristina",
+          "start": 47.083,
+          "end": 47.563
+        },
+        {
+          "text": "da",
+          "start": 47.603,
+          "end": 47.663
+        },
+        {
+          "text": "backup",
+          "start": 47.703,
+          "end": 48.043
+        },
+        {
+          "text": "con",
+          "start": 48.203,
+          "end": 48.323
+        },
+        {
+          "text": "interruzione",
+          "start": 48.383,
+          "end": 48.903
+        },
+        {
+          "text": "del",
+          "start": 48.923,
+          "end": 49.023
+        },
+        {
+          "text": "servizio.",
+          "start": 49.063,
+          "end": 49.523
+        }
+      ]
+    },
+    {
+      "start": 50.643,
+      "end": 53.703,
+      "text": "Quanto alla struttura, l'approccio monolitico serve per un prototipo,",
+      "words": [
+        {
+          "text": "Quanto",
+          "start": 50.643,
+          "end": 50.823
+        },
+        {
+          "text": "alla",
+          "start": 50.843,
+          "end": 50.963
+        },
+        {
+          "text": "struttura,",
+          "start": 51.003,
+          "end": 51.423
+        },
+        {
+          "text": "l'approccio",
+          "start": 51.663,
+          "end": 52.023
+        },
+        {
+          "text": "monolitico",
+          "start": 52.083,
+          "end": 52.583
+        },
+        {
+          "text": "serve",
+          "start": 52.663,
+          "end": 52.903
+        },
+        {
+          "text": "per",
+          "start": 52.943,
+          "end": 53.063
+        },
+        {
+          "text": "un",
+          "start": 53.083,
+          "end": 53.143
+        },
+        {
+          "text": "prototipo,",
+          "start": 53.183,
+          "end": 53.703
+        }
+      ]
+    },
+    {
+      "start": 54.103,
+      "end": 58.364,
+      "text": "mentre i servizi stateless a grana fine, cioè i microservizi senza stato interno,",
+      "words": [
+        {
+          "text": "mentre",
+          "start": 54.103,
+          "end": 54.343
+        },
+        {
+          "text": "i",
+          "start": 54.383,
+          "end": 54.423
+        },
+        {
+          "text": "servizi",
+          "start": 54.463,
+          "end": 54.823
+        },
+        {
+          "text": "stateless",
+          "start": 54.903,
+          "end": 55.403
+        },
+        {
+          "text": "a",
+          "start": 55.463,
+          "end": 55.503
+        },
+        {
+          "text": "grana",
+          "start": 55.523,
+          "end": 55.763
+        },
+        {
+          "text": "fine,",
+          "start": 55.803,
+          "end": 56.103
+        },
+        {
+          "text": "cioè",
+          "start": 56.263,
+          "end": 56.424
+        },
+        {
+          "text": "i",
+          "start": 56.524,
+          "end": 56.564
+        },
+        {
+          "text": "microservizi",
+          "start": 56.604,
+          "end": 57.304
+        },
+        {
+          "text": "senza",
+          "start": 57.364,
+          "end": 57.604
+        },
+        {
+          "text": "stato",
+          "start": 57.644,
+          "end": 57.864
+        },
+        {
+          "text": "interno,",
+          "start": 57.904,
+          "end": 58.364
+        }
+      ]
+    },
+    {
+      "start": 58.744,
+      "end": 61.224,
+      "text": "si replicano e migrano facilmente in container.",
+      "words": [
+        {
+          "text": "si",
+          "start": 58.744,
+          "end": 58.824
+        },
+        {
+          "text": "replicano",
+          "start": 58.884,
+          "end": 59.344
+        },
+        {
+          "text": "e",
+          "start": 59.504,
+          "end": 59.544
+        },
+        {
+          "text": "migrano",
+          "start": 59.604,
+          "end": 59.984
+        },
+        {
+          "text": "facilmente",
+          "start": 60.044,
+          "end": 60.564
+        },
+        {
+          "text": "in",
+          "start": 60.604,
+          "end": 60.664
+        },
+        {
+          "text": "container.",
+          "start": 60.704,
+          "end": 61.224
+        }
+      ]
+    },
+    {
+      "start": 62.104,
+      "end": 65.564,
+      "text": "Infine, la scelta della piattaforma cloud bilancia questioni tecniche,",
+      "words": [
+        {
+          "text": "Infine,",
+          "start": 62.104,
+          "end": 62.444
+        },
+        {
+          "text": "la",
+          "start": 62.624,
+          "end": 62.684
+        },
+        {
+          "text": "scelta",
+          "start": 62.724,
+          "end": 63.004
+        },
+        {
+          "text": "della",
+          "start": 63.044,
+          "end": 63.184
+        },
+        {
+          "text": "piattaforma",
+          "start": 63.204,
+          "end": 63.624
+        },
+        {
+          "text": "cloud",
+          "start": 63.664,
+          "end": 63.944
+        },
+        {
+          "text": "bilancia",
+          "start": 64.324,
+          "end": 64.704
+        },
+        {
+          "text": "questioni",
+          "start": 64.724,
+          "end": 65.064
+        },
+        {
+          "text": "tecniche,",
+          "start": 65.124,
+          "end": 65.564
+        }
+      ]
+    },
+    {
+      "start": 65.924,
+      "end": 72.164,
+      "text": "cioè carico, resilienza, servizi supportati e privacy sui luoghi di conservazione nell'Unione Europea,",
+      "words": [
+        {
+          "text": "cioè",
+          "start": 65.924,
+          "end": 66.084
+        },
+        {
+          "text": "carico,",
+          "start": 66.244,
+          "end": 66.664
+        },
+        {
+          "text": "resilienza,",
+          "start": 66.864,
+          "end": 67.484
+        },
+        {
+          "text": "servizi",
+          "start": 67.684,
+          "end": 68.024
+        },
+        {
+          "text": "supportati",
+          "start": 68.084,
+          "end": 68.664
+        },
+        {
+          "text": "e",
+          "start": 69.044,
+          "end": 69.084
+        },
+        {
+          "text": "privacy",
+          "start": 69.204,
+          "end": 69.764
+        },
+        {
+          "text": "sui",
+          "start": 69.904,
+          "end": 70.064
+        },
+        {
+          "text": "luoghi",
+          "start": 70.104,
+          "end": 70.344
+        },
+        {
+          "text": "di",
+          "start": 70.384,
+          "end": 70.444
+        },
+        {
+          "text": "conservazione",
+          "start": 70.484,
+          "end": 71.164
+        },
+        {
+          "text": "nell'Unione",
+          "start": 71.304,
+          "end": 71.744
+        },
+        {
+          "text": "Europea,",
+          "start": 71.764,
+          "end": 72.164
+        }
+      ]
+    },
+    {
+      "start": 72.865,
+      "end": 77.585,
+      "text": "con questioni di business: costi, esperienza del team, preferenze dei clienti,",
+      "words": [
+        {
+          "text": "con",
+          "start": 72.865,
+          "end": 72.985
+        },
+        {
+          "text": "questioni",
+          "start": 73.005,
+          "end": 73.325
+        },
+        {
+          "text": "di",
+          "start": 73.365,
+          "end": 73.425
+        },
+        {
+          "text": "business:",
+          "start": 73.445,
+          "end": 73.845
+        },
+        {
+          "text": "costi,",
+          "start": 74.265,
+          "end": 74.625
+        },
+        {
+          "text": "esperienza",
+          "start": 75.005,
+          "end": 75.445
+        },
+        {
+          "text": "del",
+          "start": 75.485,
+          "end": 75.605
+        },
+        {
+          "text": "team,",
+          "start": 75.665,
+          "end": 75.905
+        },
+        {
+          "text": "preferenze",
+          "start": 76.385,
+          "end": 76.885
+        },
+        {
+          "text": "dei",
+          "start": 76.925,
+          "end": 77.045
+        },
+        {
+          "text": "clienti,",
+          "start": 77.085,
+          "end": 77.585
+        }
+      ]
+    },
+    {
+      "start": 78.005,
+      "end": 81.725,
+      "text": "garanzie SLA e un exit plan contro il vendor lock-in.",
+      "words": [
+        {
+          "text": "garanzie",
+          "start": 78.005,
+          "end": 78.445
+        },
+        {
+          "text": "SLA",
+          "start": 78.725,
+          "end": 79.125
+        },
+        {
+          "text": "e",
+          "start": 79.605,
+          "end": 79.64500000000001
+        },
+        {
+          "text": "un",
+          "start": 79.705,
+          "end": 79.805
+        },
+        {
+          "text": "exit",
+          "start": 79.845,
+          "end": 80.105
+        },
+        {
+          "text": "plan",
+          "start": 80.165,
+          "end": 80.385
+        },
+        {
+          "text": "contro",
+          "start": 80.525,
+          "end": 80.825
+        },
+        {
+          "text": "il",
+          "start": 80.885,
+          "end": 80.945
+        },
+        {
+          "text": "vendor",
+          "start": 81.005,
+          "end": 81.305
+        },
+        {
+          "text": "lock-in.",
+          "start": 81.365,
+          "end": 81.725
+        }
+      ]
+    }
+  ]
+}

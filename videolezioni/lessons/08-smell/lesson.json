@@ -1,0 +1,659 @@
+{
+  "lesson_id": "08-smell",
+  "chapter": 8,
+  "part": "Parte III · Cloud e microservizi",
+  "title": "Smell architetturali e refactoring",
+  "voice_config": {
+    "provider": "gemini",
+    "model": "gemini-3.8-flash-tts",
+    "voice_name": "Ludo",
+    "style": "chiaro, didattico, calmo e preciso, stile lezione universitaria di ingegneria del software"
+  },
+  "scenes": [
+    {
+      "id": "scene-01",
+      "section": "8.1 · Il problema e i quattro principi",
+      "title": "Architectural smell e principi di design dei microservizi",
+      "tts_text": "Benvenuti all'ottavo capitolo di Advanced Software Engineering. Oggi ci chiediamo se un'applicazione a microservizi rispetti davvero i principi per cui è stata progettata e come correggerla quando li viola. [pause:0.5] Ricordiamo che i microservizi sono servizi stateless di piccole dimensioni, eseguiti ciascuno in un proprio container, costruiti attorno a capacità di business con comunicazione leggera, gestione decentralizzata dei dati e approccio DevOps. [pause:0.5] Introduciamo la nozione di architectural smell: una decisione architetturale di uso comune che produce un impatto negativo sulle qualità del sistema lungo il suo ciclo di vita. [pause:0.5] Da una multivocal review su quarantuno riferimenti tra letteratura accademica e industriale emerge una struttura precisa: ogni smell viola un principio di design ed è risolto da uno o più refactoring. [pause:0.6] I principi di riferimento sono quattro: independent deployability, per distribuire ogni servizio separatamente; horizontal scalability, per aggiungere o togliere repliche di un singolo servizio; isolation of failures, per contenere i guasti; e decentralisation, dai dati fino alla governance.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">8.1 · Il problema &amp; i principi di design</div>\n  <h2 class=\"slide-title\">Architectural smell e i 4 principi dei microservizi</h2>\n  <div id=\"s1\" class=\"box box-def cue-hidden\">\n    <div class=\"box-label\">Definizione · Architectural smell (Multivocal review, 41 fonti)</div>\n    <p>Una <strong>decisione architetturale di uso comune</strong> con impatto negativo sulle qualità del sistema nel ciclo di vita. Struttura da letteratura bianca e grigia: <strong>Principio &larr; Smell &rarr; Refactoring</strong> (su servizi <em>stateless</em>, in container, <em>DevOps</em>).</p>\n  </div>\n  <div id=\"s2\" class=\"grid-2 cue-hidden\">\n    <div id=\"p1\" class=\"box box-primary\">\n      <div class=\"box-label\">1 · Independent deployability</div>\n      <p>I microservizi dell'applicazione devono poter essere <strong>distribuiti in modo indipendente</strong>.</p>\n    </div>\n    <div id=\"p2\" class=\"box box-primary\">\n      <div class=\"box-label\">2 · Horizontal scalability</div>\n      <p>Deve essere possibile <strong>aggiungere o togliere repliche</strong> di un singolo microservizio sotto carico.</p>\n    </div>\n    <div id=\"p3\" class=\"box box-idea\">\n      <div class=\"box-label\">3 · Isolation of failures</div>\n      <p>I guasti di un servizio devono restare <strong>isolati</strong>, senza propagarsi al resto del sistema.</p>\n    </div>\n    <div id=\"p4\" class=\"box box-idea\">\n      <div class=\"box-label\">4 · Decentralisation</div>\n      <p>La decentralizzazione riguarda <strong>tutti gli aspetti</strong>, dalla gestione dei dati alla governance.</p>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 4.08,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "Oggi ci chiediamo se"
+        },
+        {
+          "at": 4.08,
+          "action": "highlight",
+          "target": "#s1",
+          "duration": 36.5,
+          "anchor": "Oggi ci chiediamo se"
+        },
+        {
+          "at": 49.22,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "I principi di riferimento"
+        },
+        {
+          "at": 51.26,
+          "action": "highlight",
+          "target": "#p1",
+          "duration": 4.26,
+          "anchor": "independent deployability, per distribuire"
+        },
+        {
+          "at": 55.64,
+          "action": "highlight",
+          "target": "#p2",
+          "duration": 4.86,
+          "anchor": "horizontal scalability, per aggiungere"
+        },
+        {
+          "at": 60.62,
+          "action": "highlight",
+          "target": "#p3",
+          "duration": 2.65,
+          "anchor": "isolation of failures, per contenere"
+        },
+        {
+          "at": 63.39,
+          "action": "highlight",
+          "target": "#p4",
+          "duration": 7.5,
+          "anchor": "decentralisation, dai dati fino"
+        }
+      ],
+      "audio_file": "audio/scene-01.wav",
+      "subtitle_file": "subtitles/scene-01.json",
+      "duration_sec": 66.79
+    },
+    {
+      "id": "scene-02",
+      "section": "8.2 · Tassonomia completa",
+      "title": "La mappa Principio – Smell – Refactoring",
+      "tts_text": "Vediamo ora la tassonomia completa ricavata dalla rassegna dei quarantuno riferimenti, organizzata in sette smell architetturali raggruppati per principio violato. [pause:0.5] Per l'independent deployability abbiamo multiple services in one container, citato sedici volte. Per l'horizontal scalability troviamo no API gateway, con sedici citazioni, ed endpoint-based service interaction, con diciotto citazioni. [pause:0.5] Per l'isolation of failures spicca wobbly service interaction, lo smell più citato con ventotto occorrenze. Infine, per la decentralisation abbiamo shared persistence con diciannove citazioni, single-layer teams con nove ed ESB misuse con sei. [pause:0.6] Accanto a ogni smell la tabella mostra i relativi refactoring e la percentuale di citazione, che somma al cento per cento per ciascuno smell. [pause:0.5] Notate un dettaglio importante: il refactoring add message broker compare due volte, perché risolve sia endpoint-based service interaction al quattordici per cento, sia wobbly service interaction al sedici per cento. Nei prossimi minuti analizziamo ciascuno smell nel dettaglio.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">8.2 · Tassonomia completa (41 riferimenti)</div>\n  <h2 class=\"slide-title\">Principi violati, 7 smell architetturali e 13 refactoring</h2>\n  <table id=\"s1\" class=\"acad-table cue-hidden\">\n    <thead>\n      <tr><th>Principio</th><th>Smell</th><th>Cit.</th><th>Refactoring (% per smell)</th></tr>\n    </thead>\n    <tbody>\n      <tr id=\"t1\"><td><strong>Independent deployability</strong></td><td>Multiple services in one container</td><td>16</td><td>Package each service in a separate container</td></tr>\n      <tr id=\"t2\"><td><strong>Horizontal scalability</strong></td><td>No API gateway</td><td>16</td><td>Add API gateway</td></tr>\n      <tr id=\"t3\"><td><strong>Horizontal scalability</strong></td><td>Endpoint-based service interaction</td><td>18</td><td>Add service discovery (55%), add message router (31%), add message broker (14%)</td></tr>\n      <tr id=\"t4\"><td><strong>Isolation of failures</strong></td><td>Wobbly service interaction</td><td>28</td><td>Add circuit breaker (42%), use timeouts (22%), add bulkhead (20%), add message broker (16%)</td></tr>\n      <tr id=\"t5\"><td><strong>Decentralisation</strong></td><td>Shared persistence</td><td>19</td><td>Split database (50%), add data manager (41%), merge services (9%)</td></tr>\n      <tr id=\"t6\"><td><strong>Decentralisation</strong></td><td>Single-layer teams</td><td>9</td><td>Split teams by service</td></tr>\n      <tr id=\"t7\"><td><strong>Decentralisation</strong></td><td>ESB misuse</td><td>6</td><td>Rightsize ESB</td></tr>\n    </tbody>\n  </table>\n  <div id=\"s2\" class=\"box box-idea cue-hidden\">\n    <div class=\"box-label\">Lettura dei dati e refactoring trasversale</div>\n    <p>Le percentuali di ciascuno smell sommano al <strong>100%</strong>. Nota: <strong>add message broker</strong> risolve due smell diversi (<em>endpoint-based</em> al 14% e <em>wobbly</em> al 16%).</p>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 0.82,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "tassonomia completa ricavata"
+        },
+        {
+          "at": 0.82,
+          "action": "highlight",
+          "target": "#s1",
+          "duration": 6.5,
+          "anchor": "tassonomia completa ricavata"
+        },
+        {
+          "at": 10.76,
+          "action": "highlight",
+          "target": "#t1",
+          "duration": 5.5,
+          "anchor": "Per l'independent deployability abbiamo"
+        },
+        {
+          "at": 17.44,
+          "action": "highlight",
+          "target": "#t2",
+          "duration": 4.2,
+          "anchor": "Per l'horizontal scalability troviamo"
+        },
+        {
+          "at": 22.96,
+          "action": "highlight",
+          "target": "#t3",
+          "duration": 3.71,
+          "anchor": "ed endpoint-based service interaction"
+        },
+        {
+          "at": 27.4,
+          "action": "highlight",
+          "target": "#t4",
+          "duration": 6.5,
+          "anchor": "Per l'isolation of failures"
+        },
+        {
+          "at": 34.41,
+          "action": "highlight",
+          "target": "#t5",
+          "duration": 4.5,
+          "anchor": "Infine, per la decentralisation"
+        },
+        {
+          "at": 39.85,
+          "action": "highlight",
+          "target": "#t6",
+          "duration": 1.76,
+          "anchor": "single-layer teams con nove"
+        },
+        {
+          "at": 42.21,
+          "action": "highlight",
+          "target": "#t7",
+          "duration": 1.6,
+          "anchor": "ed ESB misuse con sei"
+        },
+        {
+          "at": 45.21,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Accanto a ogni smell"
+        },
+        {
+          "at": 45.21,
+          "action": "highlight",
+          "target": "#s2",
+          "duration": 24,
+          "anchor": "Accanto a ogni smell"
+        }
+      ],
+      "audio_file": "audio/scene-02.wav",
+      "subtitle_file": "subtitles/scene-02.json",
+      "duration_sec": 70.54
+    },
+    {
+      "id": "scene-03",
+      "section": "8.3 · Deployabilità e scalabilità",
+      "title": "Container condivisi, No API gateway ed Endpoint-based interaction",
+      "tts_text": "Cominciamo dai primi tre smell. Il primo è multiple services in one container. Se esse uno ed esse due condividono lo stesso container, aggiornare esse uno costringe a fermare e riavviare anche esse due, e sotto carico non si può replicare solo esse uno. Il refactoring è impacchettare ogni servizio in un container separato. [pause:0.5] Il secondo smell è no API gateway: i client chiamano direttamente i servizi e devono conoscerne ogni indirizzo. Spostare, replicare o dividere un servizio obbliga a cambiare i client. Aggiungendo un API gateway offriamo un unico punto di ingresso, utile anche per autenticazione e throttling, cioè limitare le richieste per evitare sovraccarichi. [pause:0.6] Il terzo smell è endpoint-based service interaction: un servizio invoca un'istanza specifica di un altro servizio, impedendo di aggiungere repliche. [pause:0.5] Come mostra il diagramma, ci sono tre refactoring. Con add service discovery, cinquantacinque per cento, le istanze si registrano e il chiamante interroga il registro, ottenendo archi etichettati d. Con add message router, trentuno per cento, un load balancer inoltra alle repliche. Con add message broker, quattordici per cento, il messaggio passa da una coda asincrona.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">8.3 · Deployabilità &amp; Scalabilità orizzontale</div>\n  <h2 class=\"slide-title\">I primi tre smell: container, gateway e indirizzamento diretto</h2>\n  <div id=\"s1\" class=\"grid-3 cue-hidden\">\n    <div id=\"sm-1\" class=\"box box-warn\">\n      <div class=\"box-label\">Multiple services in 1 container (16)</div>\n      <p>Aggiornare \\(s_1\\) ferma \\(s_2\\); impossibile scalare solo \\(s_1\\). <strong>Fix</strong>: <em>package each service in a separate container</em>.</p>\n    </div>\n    <div id=\"sm-2\" class=\"box box-warn\">\n      <div class=\"box-label\">No API gateway (16)</div>\n      <p>I client conoscono ogni indirizzo. <strong>Fix</strong>: <em>add API gateway</em> (unico punto noto, auth e <em>throttling</em> anti-sovraccarico).</p>\n    </div>\n    <div id=\"sm-3\" class=\"box box-warn\">\n      <div class=\"box-label\">Endpoint-based interaction (18)</div>\n      <p>Un servizio invoca un'<strong>istanza specifica</strong> di un altro: blocca l'aggiunta di repliche senza toccare il chiamante.</p>\n    </div>\n  </div>\n  <div id=\"s2\" class=\"svg-panel cue-hidden\">\n    <svg viewBox=\"0 0 640 148\" class=\"diagram-svg\" aria-label=\"Endpoint-based interaction e i tre refactoring\">\n      <defs>\n        <marker id=\"arr-eb\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\">\n          <path d=\"M0 1 L9 5 L0 9 z\" fill=\"var(--ink-soft)\"/>\n        </marker>\n        <marker id=\"arr-eb-g\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\">\n          <path d=\"M0 1 L9 5 L0 9 z\" fill=\"var(--green)\"/>\n        </marker>\n      </defs>\n      <g id=\"svg-eb-smell\">\n        <text x=\"75\" y=\"22\" text-anchor=\"middle\" class=\"svg-math\" fill=\"var(--red)\">Smell</text>\n        <circle cx=\"30\" cy=\"76\" r=\"16\" fill=\"var(--red-soft, rgba(220,38,38,0.12))\" stroke=\"var(--red)\" stroke-width=\"1.8\"/>\n        <text x=\"30\" y=\"81\" text-anchor=\"middle\" class=\"svg-math\">x</text>\n        <line x1=\"48\" y1=\"76\" x2=\"100\" y2=\"76\" stroke=\"var(--red)\" stroke-width=\"1.8\" marker-end=\"url(#arr-eb)\"/>\n        <circle cx=\"120\" cy=\"76\" r=\"16\" fill=\"var(--red-soft, rgba(220,38,38,0.12))\" stroke=\"var(--red)\" stroke-width=\"1.8\"/>\n        <text x=\"120\" y=\"81\" text-anchor=\"middle\" class=\"svg-math\">y</text>\n        <text x=\"75\" y=\"122\" text-anchor=\"middle\" class=\"svg-caption\">x invoca istanza fissa y</text>\n      </g>\n      <line x1=\"156\" y1=\"16\" x2=\"156\" y2=\"134\" stroke=\"var(--muted)\" stroke-width=\"1\" stroke-dasharray=\"4 4\" opacity=\"0.55\"/>\n      <g id=\"svg-eb-sd\">\n        <text x=\"236\" y=\"22\" text-anchor=\"middle\" class=\"svg-math\" fill=\"var(--green)\">Service discovery (55%)</text>\n        <circle cx=\"186\" cy=\"76\" r=\"16\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.6\"/>\n        <text x=\"186\" y=\"81\" text-anchor=\"middle\" class=\"svg-math\">x</text>\n        <line x1=\"204\" y1=\"76\" x2=\"266\" y2=\"76\" stroke=\"var(--green)\" stroke-width=\"1.8\" stroke-dasharray=\"5 3\" marker-end=\"url(#arr-eb-g)\"/>\n        <text x=\"235\" y=\"68\" text-anchor=\"middle\" class=\"svg-math\" fill=\"var(--green)\">d</text>\n        <circle cx=\"286\" cy=\"76\" r=\"16\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.6\"/>\n        <text x=\"286\" y=\"81\" text-anchor=\"middle\" class=\"svg-math\">y</text>\n        <text x=\"236\" y=\"122\" text-anchor=\"middle\" class=\"svg-caption\">registro dinamico (arco d)</text>\n      </g>\n      <g id=\"svg-eb-mr\">\n        <text x=\"398\" y=\"22\" text-anchor=\"middle\" class=\"svg-math\" fill=\"var(--green)\">Message router (31%)</text>\n        <circle cx=\"338\" cy=\"76\" r=\"15\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.6\"/>\n        <text x=\"338\" y=\"81\" text-anchor=\"middle\" class=\"svg-math\">x</text>\n        <line x1=\"355\" y1=\"76\" x2=\"378\" y2=\"76\" stroke=\"var(--green)\" stroke-width=\"1.8\" marker-end=\"url(#arr-eb-g)\"/>\n        <rect x=\"382\" y=\"61\" width=\"32\" height=\"30\" rx=\"4\" fill=\"var(--green-soft, rgba(21,128,61,0.12))\" stroke=\"var(--green)\" stroke-width=\"1.6\"/>\n        <text x=\"398\" y=\"80\" text-anchor=\"middle\" class=\"svg-tick\">mR</text>\n        <line x1=\"416\" y1=\"76\" x2=\"439\" y2=\"76\" stroke=\"var(--green)\" stroke-width=\"1.8\" marker-end=\"url(#arr-eb-g)\"/>\n        <circle cx=\"458\" cy=\"76\" r=\"15\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.6\"/>\n        <text x=\"458\" y=\"81\" text-anchor=\"middle\" class=\"svg-math\">y</text>\n        <text x=\"398\" y=\"122\" text-anchor=\"middle\" class=\"svg-caption\">load balancer verso repliche</text>\n      </g>\n      <g id=\"svg-eb-mb\">\n        <text x=\"558\" y=\"22\" text-anchor=\"middle\" class=\"svg-math\" fill=\"var(--green)\">Message broker (14%)</text>\n        <circle cx=\"500\" cy=\"76\" r=\"15\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.6\"/>\n        <text x=\"500\" y=\"81\" text-anchor=\"middle\" class=\"svg-math\">x</text>\n        <line x1=\"517\" y1=\"76\" x2=\"538\" y2=\"76\" stroke=\"var(--green)\" stroke-width=\"1.8\" marker-end=\"url(#arr-eb-g)\"/>\n        <rect x=\"542\" y=\"61\" width=\"32\" height=\"30\" rx=\"4\" fill=\"var(--green-soft, rgba(21,128,61,0.12))\" stroke=\"var(--green)\" stroke-width=\"1.6\"/>\n        <text x=\"558\" y=\"80\" text-anchor=\"middle\" class=\"svg-tick\">mB</text>\n        <line x1=\"599\" y1=\"76\" x2=\"578\" y2=\"76\" stroke=\"var(--green)\" stroke-width=\"1.8\" marker-end=\"url(#arr-eb-g)\"/>\n        <circle cx=\"616\" cy=\"76\" r=\"15\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.6\"/>\n        <text x=\"616\" y=\"81\" text-anchor=\"middle\" class=\"svg-math\">y</text>\n        <text x=\"558\" y=\"122\" text-anchor=\"middle\" class=\"svg-caption\">coda asincrona, repliche ignote</text>\n      </g>\n    </svg>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 2.26,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "Il primo è multiple"
+        },
+        {
+          "at": 2.26,
+          "action": "highlight",
+          "target": "#sm-1",
+          "duration": 17.5,
+          "anchor": "Il primo è multiple"
+        },
+        {
+          "at": 22.36,
+          "action": "highlight",
+          "target": "#sm-2",
+          "duration": 20.5,
+          "anchor": "Il secondo smell è no"
+        },
+        {
+          "at": 44.47,
+          "action": "highlight",
+          "target": "#sm-3",
+          "duration": 8,
+          "anchor": "Il terzo smell è"
+        },
+        {
+          "at": 53.65,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Come mostra il diagramma"
+        },
+        {
+          "at": 53.65,
+          "action": "highlight",
+          "target": "#svg-eb-smell",
+          "duration": 2.8,
+          "anchor": "Come mostra il diagramma"
+        },
+        {
+          "at": 56.57,
+          "action": "highlight",
+          "target": "#svg-eb-sd",
+          "duration": 8.6,
+          "anchor": "Con add service discovery"
+        },
+        {
+          "at": 65.29,
+          "action": "highlight",
+          "target": "#svg-eb-mr",
+          "duration": 5.16,
+          "anchor": "Con add message router"
+        },
+        {
+          "at": 70.57,
+          "action": "highlight",
+          "target": "#svg-eb-mb",
+          "duration": 6.5,
+          "anchor": "Con add message broker"
+        }
+      ],
+      "audio_file": "audio/scene-03.wav",
+      "subtitle_file": "subtitles/scene-03.json",
+      "duration_sec": 76.17
+    },
+    {
+      "id": "scene-04",
+      "section": "8.4 · Isolamento dei guasti",
+      "title": "Wobbly service interaction e i quattro refactoring",
+      "tts_text": "Passiamo al principio di isolamento dei guasti e allo smell più frequente in assoluto, wobbly service interaction, con ventotto citazioni. [pause:0.5] Per definizione, l'interazione di emme uno con emme due è wobbly quando un guasto di emme due può provocare un guasto di emme uno. Quando emme uno aspetta la risposta di un servizio lento o guasto, le richieste si accumulano, thread e connessioni si esauriscono ed emme uno smette di rispondere, propagando il blocco a catena. [pause:0.6] Nel modello, l'arco da ics a ipsilon mostra c e t barrati perché mancano le protezioni. [pause:0.5] I refactoring possibili sono quattro. Il più diffuso è add circuit breaker, quarantadue per cento: dopo più guasti consecutivi, emme uno interrompe le chiamate verso emme due e fallisce subito. [pause:0.5] Seguono use timeouts, ventidue per cento, per smettere di aspettare oltre una soglia massima; add bulkhead, venti per cento, che crea compartimenti stagni di risorse per isolare le chiamate verso servizi diversi; e infine add message broker, sedici per cento, che rende la comunicazione asincrona.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">8.4 · Isolation of failures</div>\n  <h2 class=\"slide-title\">Wobbly service interaction (28 citazioni)</h2>\n  <div id=\"s1\" class=\"grid-2 cue-hidden\">\n    <div id=\"wb-def\" class=\"box box-def\">\n      <div class=\"box-label\">Definizione &amp; propagazione a catena</div>\n      <p>L'interazione di \\(m_1\\) con \\(m_2\\) è <strong>wobbly</strong> quando un guasto di \\(m_2\\) può provocare un guasto di \\(m_1\\).</p>\n      <p>Se \\(m_2\\) è lento o fermo, le richieste si accumulano, <em>thread</em> e connessioni di \\(m_1\\) si esauriscono e il guasto si propaga a chi chiama \\(m_1\\).</p>\n    </div>\n    <div id=\"wb-ref\" class=\"box box-primary\">\n      <div class=\"box-label\">Quattro refactoring</div>\n      <ul class=\"clean-list\">\n        <li id=\"wr-cb\"><strong>Add circuit breaker (42%)</strong>: dopo guasti ripetuti \\(m_1\\) fallisce subito senza chiamare \\(m_2\\).</li>\n        <li id=\"wr-to\"><strong>Use timeouts (22%)</strong>: attesa massima finita prima di segnalare errore.</li>\n        <li id=\"wr-bh\"><strong>Add bulkhead (20%)</strong>: compartimento stagno di risorse separato per ogni servizio chiamato.</li>\n        <li id=\"wr-mb\"><strong>Add message broker (16%)</strong>: invio asincrono senza attesa di \\(m_2\\).</li>\n      </ul>\n    </div>\n  </div>\n  <div id=\"s2\" class=\"svg-panel cue-hidden\">\n    <svg viewBox=\"0 0 640 135\" class=\"diagram-svg\" aria-label=\"Wobbly service interaction e refactoring\">\n      <defs>\n        <marker id=\"arr-wb\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\">\n          <path d=\"M0 1 L9 5 L0 9 z\" fill=\"var(--ink-soft)\"/>\n        </marker>\n        <marker id=\"arr-wb-g\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\">\n          <path d=\"M0 1 L9 5 L0 9 z\" fill=\"var(--green)\"/>\n        </marker>\n      </defs>\n      <g id=\"svg-wb-smell\">\n        <text x=\"75\" y=\"20\" text-anchor=\"middle\" class=\"svg-math\" fill=\"var(--red)\">Smell (wobbly)</text>\n        <circle cx=\"30\" cy=\"70\" r=\"16\" fill=\"var(--red-soft, rgba(220,38,38,0.22))\" stroke=\"var(--red)\" stroke-width=\"1.8\"/>\n        <text x=\"30\" y=\"75\" text-anchor=\"middle\" class=\"svg-math\">x</text>\n        <line x1=\"48\" y1=\"70\" x2=\"100\" y2=\"70\" stroke=\"var(--red)\" stroke-width=\"1.8\" marker-end=\"url(#arr-wb)\"/>\n        <text x=\"74\" y=\"60\" text-anchor=\"middle\" class=\"svg-math\" fill=\"var(--red)\" text-decoration=\"line-through\">c  t</text>\n        <circle cx=\"120\" cy=\"70\" r=\"16\" fill=\"var(--red-soft, rgba(220,38,38,0.22))\" stroke=\"var(--red)\" stroke-width=\"1.8\"/>\n        <text x=\"120\" y=\"75\" text-anchor=\"middle\" class=\"svg-math\">y</text>\n        <text x=\"75\" y=\"114\" text-anchor=\"middle\" class=\"svg-caption\">guasto propagato (senza c, t)</text>\n      </g>\n      <line x1=\"156\" y1=\"14\" x2=\"156\" y2=\"122\" stroke=\"var(--muted)\" stroke-width=\"1\" stroke-dasharray=\"4 4\" opacity=\"0.55\"/>\n      <g id=\"svg-wb-cb\">\n        <text x=\"236\" y=\"20\" text-anchor=\"middle\" class=\"svg-math\" fill=\"var(--green)\">Circuit breaker (42%)</text>\n        <circle cx=\"186\" cy=\"70\" r=\"15\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.6\"/>\n        <text x=\"186\" y=\"75\" text-anchor=\"middle\" class=\"svg-math\">x</text>\n        <line x1=\"203\" y1=\"70\" x2=\"267\" y2=\"70\" stroke=\"var(--green)\" stroke-width=\"1.8\" stroke-dasharray=\"5 3\" marker-end=\"url(#arr-wb-g)\"/>\n        <text x=\"235\" y=\"61\" text-anchor=\"middle\" class=\"svg-math\" fill=\"var(--green)\">c</text>\n        <circle cx=\"286\" cy=\"70\" r=\"15\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.6\"/>\n        <text x=\"286\" y=\"75\" text-anchor=\"middle\" class=\"svg-math\">y</text>\n        <text x=\"236\" y=\"114\" text-anchor=\"middle\" class=\"svg-caption\">fallimento rapido (arco c)</text>\n      </g>\n      <g id=\"svg-wb-to\">\n        <text x=\"398\" y=\"20\" text-anchor=\"middle\" class=\"svg-math\" fill=\"var(--green)\">Use timeout (22%)</text>\n        <circle cx=\"348\" cy=\"70\" r=\"15\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.6\"/>\n        <text x=\"348\" y=\"75\" text-anchor=\"middle\" class=\"svg-math\">x</text>\n        <line x1=\"365\" y1=\"70\" x2=\"429\" y2=\"70\" stroke=\"var(--green)\" stroke-width=\"1.8\" stroke-dasharray=\"5 3\" marker-end=\"url(#arr-wb-g)\"/>\n        <text x=\"397\" y=\"61\" text-anchor=\"middle\" class=\"svg-math\" fill=\"var(--green)\">t</text>\n        <circle cx=\"448\" cy=\"70\" r=\"15\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.6\"/>\n        <text x=\"448\" y=\"75\" text-anchor=\"middle\" class=\"svg-math\">y</text>\n        <text x=\"398\" y=\"114\" text-anchor=\"middle\" class=\"svg-caption\">tempo massimo (arco t)</text>\n      </g>\n      <g id=\"svg-wb-mb\">\n        <text x=\"558\" y=\"20\" text-anchor=\"middle\" class=\"svg-math\" fill=\"var(--green)\">Message broker (16%)</text>\n        <circle cx=\"500\" cy=\"70\" r=\"15\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.6\"/>\n        <text x=\"500\" y=\"75\" text-anchor=\"middle\" class=\"svg-math\">x</text>\n        <line x1=\"517\" y1=\"70\" x2=\"538\" y2=\"70\" stroke=\"var(--green)\" stroke-width=\"1.8\" marker-end=\"url(#arr-wb-g)\"/>\n        <rect x=\"542\" y=\"55\" width=\"32\" height=\"30\" rx=\"4\" fill=\"var(--green-soft, rgba(21,128,61,0.12))\" stroke=\"var(--green)\" stroke-width=\"1.6\"/>\n        <text x=\"558\" y=\"74\" text-anchor=\"middle\" class=\"svg-tick\">mB</text>\n        <line x1=\"599\" y1=\"70\" x2=\"578\" y2=\"70\" stroke=\"var(--green)\" stroke-width=\"1.8\" marker-end=\"url(#arr-wb-g)\"/>\n        <circle cx=\"616\" cy=\"70\" r=\"15\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.6\"/>\n        <text x=\"616\" y=\"75\" text-anchor=\"middle\" class=\"svg-math\">y</text>\n        <text x=\"558\" y=\"114\" text-anchor=\"middle\" class=\"svg-caption\">asincrono (+ Bulkhead 20%)</text>\n      </g>\n    </svg>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 0.58,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "principio di isolamento dei"
+        },
+        {
+          "at": 0.58,
+          "action": "highlight",
+          "target": "#s1",
+          "duration": 6.2,
+          "anchor": "principio di isolamento dei"
+        },
+        {
+          "at": 8.18,
+          "action": "highlight",
+          "target": "#wb-def",
+          "duration": 17.56,
+          "anchor": "Per definizione, l'interazione di"
+        },
+        {
+          "at": 25.86,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Nel modello, l'arco da"
+        },
+        {
+          "at": 25.86,
+          "action": "highlight",
+          "target": "#svg-wb-smell",
+          "duration": 6.5,
+          "anchor": "Nel modello, l'arco da"
+        },
+        {
+          "at": 34.29,
+          "action": "highlight",
+          "target": "#wr-cb",
+          "duration": 8.4,
+          "anchor": "Il più diffuso è"
+        },
+        {
+          "at": 42.81,
+          "action": "highlight",
+          "target": "#wr-to",
+          "duration": 5.36,
+          "anchor": "Seguono use timeouts, ventidue"
+        },
+        {
+          "at": 48.29,
+          "action": "highlight",
+          "target": "#wr-bh",
+          "duration": 6.48,
+          "anchor": "add bulkhead, venti per"
+        },
+        {
+          "at": 54.89,
+          "action": "highlight",
+          "target": "#wr-mb",
+          "duration": 7.5,
+          "anchor": "e infine add message"
+        }
+      ],
+      "audio_file": "audio/scene-04.wav",
+      "subtitle_file": "subtitles/scene-04.json",
+      "duration_sec": 59.74
+    },
+    {
+      "id": "scene-05",
+      "section": "8.5 · Decentralizzazione",
+      "title": "Shared persistence, Single-layer teams ed ESB misuse",
+      "tts_text": "Analizziamo ora i tre smell che violano il principio di decentralisation. [pause:0.5] Il primo è shared persistence, diciannove citazioni: più servizi accedono allo stesso database. Pensiamo ai servizi Ordini e Fatturazione che condividono la tabella clienti: se Ordini rinomina una colonna, Fatturazione smette di funzionare, i deploy devono essere coordinati e i picchi di carico si propagano. [pause:0.5] Come mostra il diagramma, si risolve in tre modi: split database al cinquanta per cento, con un database per servizio e dati eventualmente coerenti; add data manager al quarantuno per cento, introducendo un servizio dedicato ai dati con poche modifiche ma più comunicazione; oppure merge services al nove per cento, fondendo i due servizi. [pause:0.6] Il secondo smell è single-layer teams, nove citazioni: team separati per interfaccia, logica e database impediscono lo sviluppo autonomo delle feature; il refactoring è split teams by service, creando team DevOps completi per servizio. [pause:0.5] Infine, ESB misuse, sei citazioni: quando l'enterprise service bus contiene logica di business diventa un collo di bottiglia centrale; il refactoring rightsize ESB lo riporta al solo instradamento dei messaggi.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">8.5 · Decentralisation</div>\n  <h2 class=\"slide-title\">Dati condivisi, team a strati ed ESB centralizzato</h2>\n  <div id=\"s1\" class=\"split-visual cue-hidden\">\n    <div class=\"svg-panel\">\n      <svg viewBox=\"0 0 380 198\" class=\"diagram-svg\" aria-label=\"Shared persistence e i tre refactoring\">\n        <defs>\n          <marker id=\"arr-sp\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\">\n            <path d=\"M0 1 L9 5 L0 9 z\" fill=\"var(--ink-soft)\"/>\n          </marker>\n        </defs>\n        <g id=\"svg-sp-smell\">\n          <text x=\"88\" y=\"16\" text-anchor=\"middle\" class=\"svg-math\" fill=\"var(--red)\">Shared persistence</text>\n          <circle cx=\"34\" cy=\"42\" r=\"13\" fill=\"var(--orange-soft, rgba(217,119,6,0.14))\" stroke=\"var(--orange)\" stroke-width=\"1.6\"/>\n          <text x=\"34\" y=\"46\" text-anchor=\"middle\" class=\"svg-tick\">s1</text>\n          <circle cx=\"34\" cy=\"78\" r=\"13\" fill=\"var(--orange-soft, rgba(217,119,6,0.14))\" stroke=\"var(--orange)\" stroke-width=\"1.6\"/>\n          <text x=\"34\" y=\"82\" text-anchor=\"middle\" class=\"svg-tick\">s2</text>\n          <rect x=\"114\" y=\"45\" width=\"34\" height=\"30\" rx=\"5\" fill=\"var(--red-soft, rgba(220,38,38,0.12))\" stroke=\"var(--red)\" stroke-width=\"1.6\"/>\n          <text x=\"131\" y=\"64\" text-anchor=\"middle\" class=\"svg-tick\">db</text>\n          <line x1=\"49\" y1=\"45\" x2=\"110\" y2=\"57\" stroke=\"var(--orange)\" stroke-width=\"1.6\" marker-end=\"url(#arr-sp)\"/>\n          <line x1=\"49\" y1=\"75\" x2=\"110\" y2=\"64\" stroke=\"var(--orange)\" stroke-width=\"1.6\" marker-end=\"url(#arr-sp)\"/>\n        </g>\n        <g id=\"svg-sp-split\">\n          <text x=\"284\" y=\"16\" text-anchor=\"middle\" class=\"svg-math\" fill=\"var(--green)\">Split database (50%)</text>\n          <circle cx=\"226\" cy=\"42\" r=\"13\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.6\"/>\n          <text x=\"226\" y=\"46\" text-anchor=\"middle\" class=\"svg-tick\">s1</text>\n          <rect x=\"308\" y=\"29\" width=\"36\" height=\"26\" rx=\"5\" fill=\"var(--green-soft, rgba(21,128,61,0.12))\" stroke=\"var(--green)\" stroke-width=\"1.6\"/>\n          <text x=\"326\" y=\"46\" text-anchor=\"middle\" class=\"svg-tick\">db'</text>\n          <line x1=\"241\" y1=\"42\" x2=\"304\" y2=\"42\" stroke=\"var(--green)\" stroke-width=\"1.6\" marker-end=\"url(#arr-sp)\"/>\n          <circle cx=\"226\" cy=\"78\" r=\"13\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.6\"/>\n          <text x=\"226\" y=\"82\" text-anchor=\"middle\" class=\"svg-tick\">s2</text>\n          <rect x=\"308\" y=\"65\" width=\"36\" height=\"26\" rx=\"5\" fill=\"var(--green-soft, rgba(21,128,61,0.12))\" stroke=\"var(--green)\" stroke-width=\"1.6\"/>\n          <text x=\"326\" y=\"82\" text-anchor=\"middle\" class=\"svg-tick\">db''</text>\n          <line x1=\"241\" y1=\"78\" x2=\"304\" y2=\"78\" stroke=\"var(--green)\" stroke-width=\"1.6\" marker-end=\"url(#arr-sp)\"/>\n        </g>\n        <line x1=\"14\" y1=\"104\" x2=\"366\" y2=\"104\" stroke=\"var(--muted)\" stroke-width=\"1\" stroke-dasharray=\"4 4\" opacity=\"0.45\"/>\n        <g id=\"svg-sp-dm\">\n          <text x=\"96\" y=\"122\" text-anchor=\"middle\" class=\"svg-math\" fill=\"var(--green)\">Add data manager (41%)</text>\n          <circle cx=\"28\" cy=\"144\" r=\"12\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.6\"/>\n          <text x=\"28\" y=\"148\" text-anchor=\"middle\" class=\"svg-tick\">s1</text>\n          <circle cx=\"28\" cy=\"178\" r=\"12\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.6\"/>\n          <text x=\"28\" y=\"182\" text-anchor=\"middle\" class=\"svg-tick\">s2</text>\n          <circle cx=\"94\" cy=\"161\" r=\"14\" fill=\"var(--green-soft, rgba(21,128,61,0.12))\" stroke=\"var(--green)\" stroke-width=\"1.6\"/>\n          <text x=\"94\" y=\"165\" text-anchor=\"middle\" class=\"svg-tick\">dm</text>\n          <rect x=\"144\" y=\"146\" width=\"32\" height=\"30\" rx=\"5\" fill=\"none\" stroke=\"var(--green)\" stroke-width=\"1.6\"/>\n          <text x=\"160\" y=\"165\" text-anchor=\"middle\" class=\"svg-tick\">db</text>\n          <line x1=\"42\" y1=\"147\" x2=\"78\" y2=\"158\" stroke=\"var(--ink-soft)\" stroke-width=\"1.4\" marker-end=\"url(#arr-sp)\"/>\n          <line x1=\"42\" y1=\"175\" x2=\"78\" y2=\"164\" stroke=\"var(--ink-soft)\" stroke-width=\"1.4\" marker-end=\"url(#arr-sp)\"/>\n          <line x1=\"110\" y1=\"161\" x2=\"140\" y2=\"161\" stroke=\"var(--green)\" stroke-width=\"1.6\" marker-end=\"url(#arr-sp)\"/>\n        </g>\n        <g id=\"svg-sp-merge\">\n          <text x=\"286\" y=\"122\" text-anchor=\"middle\" class=\"svg-math\" fill=\"var(--green)\">Merge services (9%)</text>\n          <circle cx=\"244\" cy=\"161\" r=\"19\" fill=\"var(--green-soft, rgba(21,128,61,0.12))\" stroke=\"var(--green)\" stroke-width=\"1.6\"/>\n          <text x=\"244\" y=\"165\" text-anchor=\"middle\" class=\"svg-tick\">s1+2</text>\n          <rect x=\"310\" y=\"146\" width=\"34\" height=\"30\" rx=\"5\" fill=\"none\" stroke=\"var(--green)\" stroke-width=\"1.6\"/>\n          <text x=\"327\" y=\"165\" text-anchor=\"middle\" class=\"svg-tick\">db</text>\n          <line x1=\"265\" y1=\"161\" x2=\"306\" y2=\"161\" stroke=\"var(--green)\" stroke-width=\"1.6\" marker-end=\"url(#arr-sp)\"/>\n        </g>\n      </svg>\n    </div>\n    <div class=\"formula-col\">\n      <div id=\"sp-box\" class=\"box box-warn\">\n        <div class=\"box-label\">Shared persistence (19) — Es. Ordini &amp; Fatturazione</div>\n        <p>Stessa tabella <code>clienti</code>: rinomina di colonna rompe Fatturazione, deploy vincolati, contesa di carico.</p>\n        <p><strong>Split DB (50%)</strong>: dati eventualmente coerenti. <strong>Data manager (41%)</strong>: modifiche minime ma extra hop. <strong>Merge (9%)</strong>.</p>\n      </div>\n    </div>\n  </div>\n  <div id=\"s2\" class=\"grid-2 cue-hidden\">\n    <div id=\"dec-team\" class=\"box box-def\">\n      <div class=\"box-label\">Single-layer teams (9)</div>\n      <p>Team per strato (UI, logica, DB): ogni feature richiede tutti i team. <strong>Fix</strong>: <em>split teams by service</em> (team <em>DevOps</em> autonomi end-to-end).</p>\n    </div>\n    <div id=\"dec-esb\" class=\"box box-primary\">\n      <div class=\"box-label\">ESB misuse (6)</div>\n      <p>L'<em>Enterprise Service Bus</em> include logica di business diventando un centro unico. <strong>Fix</strong>: <em>rightsize ESB</em> (solo instradamento).</p>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 0.86,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "tre smell che violano"
+        },
+        {
+          "at": 4.7,
+          "action": "highlight",
+          "target": "#sp-box",
+          "duration": 18,
+          "anchor": "Il primo è shared"
+        },
+        {
+          "at": 26.68,
+          "action": "highlight",
+          "target": "#svg-sp-split",
+          "duration": 5.9,
+          "anchor": "split database al cinquanta"
+        },
+        {
+          "at": 32.7,
+          "action": "highlight",
+          "target": "#svg-sp-dm",
+          "duration": 6.94,
+          "anchor": "add data manager al"
+        },
+        {
+          "at": 39.76,
+          "action": "highlight",
+          "target": "#svg-sp-merge",
+          "duration": 4.32,
+          "anchor": "oppure merge services al"
+        },
+        {
+          "at": 44.2,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Il secondo smell è"
+        },
+        {
+          "at": 44.2,
+          "action": "highlight",
+          "target": "#dec-team",
+          "duration": 14.9,
+          "anchor": "Il secondo smell è"
+        },
+        {
+          "at": 59.22,
+          "action": "highlight",
+          "target": "#dec-esb",
+          "duration": 14.5,
+          "anchor": "Infine, ESB misuse, sei"
+        }
+      ],
+      "audio_file": "audio/scene-05.wav",
+      "subtitle_file": "subtitles/scene-05.json",
+      "duration_sec": 72.73
+    },
+    {
+      "id": "scene-06",
+      "section": "8.6 · MicroFreshener",
+      "title": "Modello a grafo, notazione e valutazione empirica",
+      "tts_text": "Come possiamo individuare e correggere questi smell in modo sistematico? Entra in gioco MicroFreshener, uno strumento libero pensato per modificare le specifiche di un'applicazione a microservizi, rilevare automaticamente gli smell e applicarne i refactoring. [pause:0.5] MicroFreshener adotta una excerpted taxonomy focalizzata su quattro smell: no API gateway, endpoint-based service interaction, wobbly service interaction e shared persistence. [pause:0.5] L'applicazione è modellata come un grafo. I nodi rappresentano servizi, data store, message broker indicati con emme B e message router indicati con emme R. Gli archi rappresentano le invocazioni e possono portare tre etichette: d per dynamic discovery, c per circuit breaker e t per timeout; una lettera barrata segnala che il meccanismo manca. [pause:0.6] Lo strumento è stato validato con ottimi risultati. In un caso di studio industriale ha scoperto quattro smell no API gateway e uno shared persistence, risolti con due gateway e un data manager. In un esperimento controllato, chi usava MicroFreshener ha individuato il cento per cento degli smell contro il quarantanove per cento, risolvendoli tutti nell'ottantatré per cento dei casi contro appena l'uno per cento.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">8.6 · MicroFreshener: modello &amp; valutazione</div>\n  <h2 class=\"slide-title\">Notazione a grafo, tassonomia ridotta e risultati sperimentali</h2>\n  <div id=\"s1\" class=\"svg-panel cue-hidden\">\n    <svg viewBox=\"0 0 640 132\" class=\"diagram-svg\" aria-label=\"Notazione grafica di MicroFreshener\">\n      <defs>\n        <marker id=\"arr-mf\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\">\n          <path d=\"M0 1 L9 5 L0 9 z\" fill=\"var(--ink-soft)\"/>\n        </marker>\n      </defs>\n      <g id=\"svg-mf-nodes\">\n        <circle cx=\"42\" cy=\"36\" r=\"16\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.6\"/>\n        <text x=\"68\" y=\"40\" class=\"svg-math\">service</text>\n        <path d=\"M168 23 a18 6 0 0 1 36 0 v24 a18 6 0 0 1 -36 0 z M168 23 a18 6 0 0 0 36 0\" fill=\"var(--orange-soft, rgba(217,119,6,0.12))\" stroke=\"var(--orange)\" stroke-width=\"1.6\"/>\n        <text x=\"214\" y=\"40\" class=\"svg-math\">data store</text>\n        <rect x=\"330\" y=\"21\" width=\"30\" height=\"28\" rx=\"4\" fill=\"var(--green-soft, rgba(21,128,61,0.12))\" stroke=\"var(--green)\" stroke-width=\"1.6\"/>\n        <text x=\"345\" y=\"40\" text-anchor=\"middle\" class=\"svg-tick\">mB</text>\n        <text x=\"368\" y=\"40\" class=\"svg-math\">message broker</text>\n        <rect x=\"492\" y=\"21\" width=\"30\" height=\"28\" rx=\"4\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.6\"/>\n        <text x=\"507\" y=\"40\" text-anchor=\"middle\" class=\"svg-tick\">mR</text>\n        <text x=\"530\" y=\"40\" class=\"svg-math\">message router</text>\n      </g>\n      <g id=\"svg-mf-edges\">\n        <line x1=\"26\" y1=\"96\" x2=\"82\" y2=\"96\" stroke=\"var(--ink-soft)\" stroke-width=\"1.8\" marker-end=\"url(#arr-mf)\"/>\n        <text x=\"54\" y=\"88\" text-anchor=\"middle\" class=\"svg-math\">d</text>\n        <text x=\"92\" y=\"100\" class=\"svg-math\">dynamic discovery</text>\n        <line x1=\"236\" y1=\"96\" x2=\"292\" y2=\"96\" stroke=\"var(--ink-soft)\" stroke-width=\"1.8\" marker-end=\"url(#arr-mf)\"/>\n        <text x=\"264\" y=\"88\" text-anchor=\"middle\" class=\"svg-math\">c</text>\n        <text x=\"302\" y=\"100\" class=\"svg-math\">circuit breaker</text>\n        <line x1=\"420\" y1=\"96\" x2=\"476\" y2=\"96\" stroke=\"var(--ink-soft)\" stroke-width=\"1.8\" marker-end=\"url(#arr-mf)\"/>\n        <text x=\"448\" y=\"88\" text-anchor=\"middle\" class=\"svg-math\">t</text>\n        <text x=\"486\" y=\"100\" class=\"svg-math\">timeout</text>\n        <text x=\"320\" y=\"124\" text-anchor=\"middle\" class=\"svg-caption\">Lettera barrata sull'arco = meccanismo assente</text>\n      </g>\n    </svg>\n  </div>\n  <div id=\"s2\" class=\"box box-primary cue-hidden\">\n    <div class=\"box-label\">Excerpted taxonomy supportata (4 smell)</div>\n    <p><strong>No API gateway</strong> · <strong>Endpoint-based service interaction</strong> · <strong>Wobbly service interaction</strong> · <strong>Shared persistence</strong> (modifica specifiche, detection e refactoring automatici).</p>\n  </div>\n  <div id=\"s3\" class=\"metrics-row cue-hidden\">\n    <div id=\"met-ind\" class=\"metric\">\n      <div class=\"metric-val\">4 + 1 &rarr; 2 + 1</div>\n      <div class=\"metric-lbl\">Caso industriale: 4 No GW + 1 Shared DB risolti con 2 GW + 1 Data Manager</div>\n    </div>\n    <div id=\"met-det\" class=\"metric\">\n      <div class=\"metric-val\">100% vs 49%</div>\n      <div class=\"metric-lbl\">Smell individuati nell'esperimento controllato (con vs senza strumento)</div>\n    </div>\n    <div id=\"met-fix\" class=\"metric\">\n      <div class=\"metric-val\">83% vs 1%</div>\n      <div class=\"metric-lbl\">Partecipanti che hanno risolto tutti gli smell (con vs senza strumento)</div>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 1.89,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "correggere questi smell in"
+        },
+        {
+          "at": 1.89,
+          "action": "highlight",
+          "target": "#s2",
+          "duration": 9.8,
+          "anchor": "correggere questi smell in"
+        },
+        {
+          "at": 15.37,
+          "action": "highlight",
+          "target": "#s2",
+          "duration": 10.5,
+          "anchor": "MicroFreshener adotta una excerpted"
+        },
+        {
+          "at": 26.85,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "L'applicazione è modellata come"
+        },
+        {
+          "at": 29.27,
+          "action": "highlight",
+          "target": "#svg-mf-nodes",
+          "duration": 7.52,
+          "anchor": "I nodi rappresentano servizi"
+        },
+        {
+          "at": 36.91,
+          "action": "highlight",
+          "target": "#svg-mf-edges",
+          "duration": 12,
+          "anchor": "Gli archi rappresentano le"
+        },
+        {
+          "at": 49.2,
+          "action": "show",
+          "target": "#s3",
+          "anchor": "Lo strumento è stato"
+        },
+        {
+          "at": 52.18,
+          "action": "highlight",
+          "target": "#met-ind",
+          "duration": 8.5,
+          "anchor": "In un caso di"
+        },
+        {
+          "at": 61.06,
+          "action": "highlight",
+          "target": "#met-det",
+          "duration": 6.74,
+          "anchor": "In un esperimento controllato"
+        },
+        {
+          "at": 67.92,
+          "action": "highlight",
+          "target": "#met-fix",
+          "duration": 6.5,
+          "anchor": "risolvendoli tutti nell'ottantatré per"
+        }
+      ],
+      "audio_file": "audio/scene-06.wav",
+      "subtitle_file": "subtitles/scene-06.json",
+      "duration_sec": 72.25
+    },
+    {
+      "id": "scene-07",
+      "section": "8.7 · Livello architetturale e Kubernetes",
+      "title": "Modello vs implementazione, viste per team e orchestrazione",
+      "tts_text": "Un aspetto concettuale fondamentale è che MicroFreshener supporta anche l'opzione let it be, cioè accettare consapevolmente uno smell, e soprattutto opera a livello architetturale, non implementativo. [pause:0.5] Applicare un refactoring nel grafo non modifica il codice sorgente dell'applicazione: proprio come nei design pattern, spetta all'application manager realizzare la modifica concreta. [pause:0.5] Guardiamo l'esempio del timeout: aggiungendo il refactoring sul grafo, l'arco da esse uno a esse due guadagna l'etichetta t, ma nel codice occorre aggiungere la gestione del timeout dentro esse uno; per il circuit breaker, invece, si può modificare esse uno oppure introdurre un componente dedicato. [pause:0.6] Per gestire sistemi grandi con molti team, MicroFreshener offre le viste per team: ogni gruppo vede e modifica solo i propri servizi, chiarendo chi debba implementare una modifica tra esse uno ed esse due. [pause:0.5] Inoltre, l'orchestratore dei container cambia davvero il comportamento dell'app. Importando un manifest Kubernetes, MicroFreshener può produrre il manifest aggiornato: un ingress node realizza un API gateway, un sidecar container introduce un circuit breaker e le networking policies attuano i bulkhead.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">8.7 · Cosa fa (e non fa) MicroFreshener</div>\n  <h2 class=\"slide-title\">Livello architetturale &ne; implementativo, Team views e Kubernetes</h2>\n  <div id=\"s1\" class=\"split-visual cue-hidden\">\n    <div class=\"svg-panel\">\n      <svg viewBox=\"0 0 380 156\" class=\"diagram-svg\" aria-label=\"Livello modello vs livello implementativo\">\n        <defs>\n          <marker id=\"arr-mod\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\">\n            <path d=\"M0 1 L9 5 L0 9 z\" fill=\"var(--ink-soft)\"/>\n          </marker>\n        </defs>\n        <g id=\"svg-mod-top\">\n          <text x=\"190\" y=\"16\" text-anchor=\"middle\" class=\"svg-caption\">Livello architetturale (modello a grafo)</text>\n          <circle cx=\"26\" cy=\"58\" r=\"14\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.6\"/>\n          <text x=\"26\" y=\"62\" text-anchor=\"middle\" class=\"svg-tick\">s1</text>\n          <line x1=\"42\" y1=\"58\" x2=\"126\" y2=\"58\" stroke=\"var(--red)\" stroke-width=\"1.8\" marker-end=\"url(#arr-mod)\"/>\n          <text x=\"84\" y=\"49\" text-anchor=\"middle\" class=\"svg-math\">d  <tspan text-decoration=\"line-through\">c  t</tspan></text>\n          <circle cx=\"144\" cy=\"58\" r=\"14\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.6\"/>\n          <text x=\"144\" y=\"62\" text-anchor=\"middle\" class=\"svg-tick\">s2</text>\n          <line x1=\"168\" y1=\"58\" x2=\"198\" y2=\"58\" stroke=\"var(--ink-soft)\" stroke-width=\"2.2\" marker-end=\"url(#arr-mod)\"/>\n          <circle cx=\"222\" cy=\"58\" r=\"14\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.6\"/>\n          <text x=\"222\" y=\"62\" text-anchor=\"middle\" class=\"svg-tick\">s1</text>\n          <line x1=\"238\" y1=\"58\" x2=\"322\" y2=\"58\" stroke=\"var(--green)\" stroke-width=\"1.8\" marker-end=\"url(#arr-mod)\"/>\n          <text x=\"280\" y=\"49\" text-anchor=\"middle\" class=\"svg-math\">d  <tspan text-decoration=\"line-through\">c</tspan>  <tspan fill=\"var(--green)\" font-weight=\"bold\">t</tspan></text>\n          <circle cx=\"340\" cy=\"58\" r=\"14\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.6\"/>\n          <text x=\"340\" y=\"62\" text-anchor=\"middle\" class=\"svg-tick\">s2</text>\n        </g>\n        <line x1=\"14\" y1=\"96\" x2=\"366\" y2=\"96\" stroke=\"var(--muted)\" stroke-width=\"1.2\" stroke-dasharray=\"5 4\"/>\n        <g id=\"svg-mod-bot\">\n          <text x=\"190\" y=\"122\" text-anchor=\"middle\" class=\"svg-math\">Livello implementativo: aggiungere timeout nel codice di s1</text>\n          <text x=\"190\" y=\"141\" text-anchor=\"middle\" class=\"svg-caption\">(per circuit breaker: modificare s1 oppure aggiungere componente)</text>\n        </g>\n      </svg>\n    </div>\n    <div class=\"formula-col\">\n      <div id=\"arch-box\" class=\"box box-idea\">\n        <div class=\"box-label\">Modello &ne; Codice (e opzione &laquo;let it be&raquo;)</div>\n        <p>Supporta il refactoring <strong>&laquo;let it be&raquo;</strong> (accettare lo smell). Modificare il grafo non altera il codice: l'implementazione resta all'<strong>application manager</strong>, come nei design pattern.</p>\n      </div>\n    </div>\n  </div>\n  <div id=\"s2\" class=\"grid-2 cue-hidden\">\n    <div id=\"team-view\" class=\"box box-def\">\n      <div class=\"box-label\">Team-based views</div>\n      <p>Raggruppano i servizi per team (\\(t_1, t_2\\)): ogni team vede e modifica solo la sua parte, chiarendo chi implementa una modifica tra \\(s_1\\) e \\(s_2\\).</p>\n    </div>\n    <div id=\"k8s-map\" class=\"box box-theorem\">\n      <div class=\"box-label\">Orchestrazione dei container (Kubernetes)</div>\n      <p>MicroFreshener importa e aggiorna il manifest K8s cambiando il comportamento reale: <strong>Ingress node</strong> &rarr; API gateway · <strong>Sidecar container</strong> &rarr; Circuit breaker · <strong>Networking policies</strong> &rarr; Bulkhead.</p>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 0,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "Un aspetto concettuale fondamentale"
+        },
+        {
+          "at": 0,
+          "action": "highlight",
+          "target": "#arch-box",
+          "duration": 21,
+          "anchor": "Un aspetto concettuale fondamentale"
+        },
+        {
+          "at": 24.16,
+          "action": "highlight",
+          "target": "#svg-mod-top",
+          "duration": 7.54,
+          "anchor": "Guardiamo l'esempio del timeout"
+        },
+        {
+          "at": 31.82,
+          "action": "highlight",
+          "target": "#svg-mod-bot",
+          "duration": 9.62,
+          "anchor": "ma nel codice occorre"
+        },
+        {
+          "at": 41.56,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Per gestire sistemi grandi"
+        },
+        {
+          "at": 41.56,
+          "action": "highlight",
+          "target": "#team-view",
+          "duration": 12.6,
+          "anchor": "Per gestire sistemi grandi"
+        },
+        {
+          "at": 54.28,
+          "action": "highlight",
+          "target": "#k8s-map",
+          "duration": 16,
+          "anchor": "Inoltre, l'orchestratore dei container"
+        }
+      ],
+      "audio_file": "audio/scene-07.wav",
+      "subtitle_file": "subtitles/scene-07.json",
+      "duration_sec": 72.59
+    },
+    {
+      "id": "scene-08",
+      "section": "8.8 · Toolchain μTOSCA",
+      "title": "Dalla scoperta al deploy: la toolchain completa",
+      "tts_text": "MicroFreshener non lavora isolato, ma è il cuore della toolchain micro TOSCA, sviluppata all'Università di Pisa dal gruppo di ricerca su cloud e microservizi. [pause:0.5] Il flusso parte dall'applicazione in esecuzione e dai suoi file di configurazione. MicroMiner combina l'analisi statica del manifest Kubernetes con il mining dinamico dell'applicazione in esecuzione, mentre MicroTOM esegue l'analisi statica del manifest Kubernetes insieme al grafo di osservabilità di Kiali. [pause:0.5] Entrambi generano una specifica architetturale iniziale che viene passata a MicroFreshener, il quale individua gli smell e applica i refactoring scelti. [pause:0.5] La specifica rifattorizzata passa poi a TosKeriser, che la completa automaticamente scoprendo e includendo gli ambienti di esecuzione basati su Docker necessari a ogni servizio. [pause:0.6] Infine TosKose distribuisce in modo automatico l'intera applicazione sugli orchestratori di container esistenti, come Docker e Kubernetes. I riferimenti chiave sono gli articoli di Soldani, Neri, Brogi e collaboratori del duemilaventi e duemilaventuno.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">8.8 · Una toolchain per i microservizi</div>\n  <h2 class=\"slide-title\">La toolchain \\(\\mu\\)TOSCA: mining, refactoring e deploy</h2>\n  <div id=\"s1\" class=\"svg-panel cue-hidden\">\n    <svg viewBox=\"0 0 640 140\" class=\"diagram-svg\" aria-label=\"Toolchain microTOSCA\">\n      <defs>\n        <marker id=\"arr-tc\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\">\n          <path d=\"M0 1 L9 5 L0 9 z\" fill=\"var(--ink-soft)\"/>\n        </marker>\n      </defs>\n      <g id=\"svg-tc-mine\">\n        <rect x=\"12\" y=\"52\" width=\"46\" height=\"30\" rx=\"5\" fill=\"none\" stroke=\"var(--ink-soft)\" stroke-width=\"1.5\"/>\n        <text x=\"35\" y=\"71\" text-anchor=\"middle\" class=\"svg-tick\">App</text>\n        <line x1=\"58\" y1=\"59\" x2=\"84\" y2=\"38\" stroke=\"var(--ink-soft)\" stroke-width=\"1.5\" marker-end=\"url(#arr-tc)\"/>\n        <line x1=\"58\" y1=\"75\" x2=\"84\" y2=\"96\" stroke=\"var(--ink-soft)\" stroke-width=\"1.5\" marker-end=\"url(#arr-tc)\"/>\n        <rect x=\"88\" y=\"18\" width=\"86\" height=\"34\" rx=\"6\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.6\"/>\n        <text x=\"131\" y=\"39\" text-anchor=\"middle\" class=\"svg-math\">MicroMiner</text>\n        <rect x=\"88\" y=\"82\" width=\"86\" height=\"34\" rx=\"6\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.6\"/>\n        <text x=\"131\" y=\"103\" text-anchor=\"middle\" class=\"svg-math\">MicroTOM</text>\n        <line x1=\"174\" y1=\"36\" x2=\"202\" y2=\"58\" stroke=\"var(--ink-soft)\" stroke-width=\"1.5\" marker-end=\"url(#arr-tc)\"/>\n        <line x1=\"174\" y1=\"98\" x2=\"202\" y2=\"76\" stroke=\"var(--ink-soft)\" stroke-width=\"1.5\" marker-end=\"url(#arr-tc)\"/>\n      </g>\n      <rect x=\"206\" y=\"54\" width=\"18\" height=\"26\" rx=\"2\" fill=\"none\" stroke=\"var(--muted)\" stroke-width=\"1.4\"/>\n      <line x1=\"224\" y1=\"67\" x2=\"244\" y2=\"67\" stroke=\"var(--ink-soft)\" stroke-width=\"1.5\" marker-end=\"url(#arr-tc)\"/>\n      <g id=\"svg-tc-mf\">\n        <rect x=\"248\" y=\"47\" width=\"104\" height=\"40\" rx=\"6\" fill=\"var(--green-soft, rgba(21,128,61,0.14))\" stroke=\"var(--green)\" stroke-width=\"1.8\"/>\n        <text x=\"300\" y=\"71\" text-anchor=\"middle\" class=\"svg-math\">MicroFreshener</text>\n      </g>\n      <line x1=\"352\" y1=\"67\" x2=\"370\" y2=\"67\" stroke=\"var(--ink-soft)\" stroke-width=\"1.5\" marker-end=\"url(#arr-tc)\"/>\n      <rect x=\"374\" y=\"54\" width=\"18\" height=\"26\" rx=\"2\" fill=\"none\" stroke=\"var(--muted)\" stroke-width=\"1.4\"/>\n      <line x1=\"392\" y1=\"67\" x2=\"410\" y2=\"67\" stroke=\"var(--ink-soft)\" stroke-width=\"1.5\" marker-end=\"url(#arr-tc)\"/>\n      <g id=\"svg-tc-tk\">\n        <rect x=\"414\" y=\"47\" width=\"82\" height=\"40\" rx=\"6\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.6\"/>\n        <text x=\"455\" y=\"71\" text-anchor=\"middle\" class=\"svg-math\">TosKeriser</text>\n      </g>\n      <line x1=\"496\" y1=\"67\" x2=\"516\" y2=\"67\" stroke=\"var(--ink-soft)\" stroke-width=\"1.5\" marker-end=\"url(#arr-tc)\"/>\n      <g id=\"svg-tc-tx\">\n        <rect x=\"520\" y=\"47\" width=\"72\" height=\"40\" rx=\"6\" fill=\"var(--orange-soft, rgba(217,119,6,0.12))\" stroke=\"var(--orange)\" stroke-width=\"1.6\"/>\n        <text x=\"556\" y=\"71\" text-anchor=\"middle\" class=\"svg-math\">TosKose</text>\n        <text x=\"556\" y=\"114\" text-anchor=\"middle\" class=\"svg-caption\">Docker, K8s</text>\n        <line x1=\"556\" y1=\"87\" x2=\"556\" y2=\"102\" stroke=\"var(--ink-soft)\" stroke-width=\"1.5\" marker-end=\"url(#arr-tc)\"/>\n      </g>\n      <text x=\"320\" y=\"132\" text-anchor=\"middle\" class=\"svg-caption\">Riquadri piccoli = specifiche passate tra gli strumenti (github.com/di-unipi-socc)</text>\n    </svg>\n  </div>\n  <table id=\"s2\" class=\"acad-table cue-hidden\">\n    <thead>\n      <tr><th>Strumento</th><th>Ruolo nella toolchain (Soldani et al. 2021; Neri et al. 2020)</th></tr>\n    </thead>\n    <tbody>\n      <tr id=\"tc-1\"><td><strong>MicroMiner</strong></td><td>Analisi statica del manifest Kubernetes + <em>mining</em> dinamico dell'app in esecuzione</td></tr>\n      <tr id=\"tc-2\"><td><strong>MicroTOM</strong></td><td>Analisi statica del manifest Kubernetes e del grafo di Kiali</td></tr>\n      <tr id=\"tc-3\"><td><strong>MicroFreshener</strong></td><td>Individua gli smell architetturali e applica i refactoring sulla specifica</td></tr>\n      <tr id=\"tc-4\"><td><strong>TosKeriser</strong></td><td>Completa automaticamente la specifica scoprendo gli ambienti di esecuzione Docker</td></tr>\n      <tr id=\"tc-5\"><td><strong>TosKose</strong></td><td>Distribuzione automatica sopra orchestratori esistenti (Docker, Kubernetes)</td></tr>\n    </tbody>\n  </table>\n</div>\n",
+      "cues": [
+        {
+          "at": 2.2,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "è il cuore della"
+        },
+        {
+          "at": 2.2,
+          "action": "highlight",
+          "target": "#s1",
+          "duration": 11.5,
+          "anchor": "è il cuore della"
+        },
+        {
+          "at": 9.12,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Il flusso parte dall'applicazione"
+        },
+        {
+          "at": 13.88,
+          "action": "highlight",
+          "target": "#tc-1",
+          "duration": 6.42,
+          "anchor": "MicroMiner combina l'analisi statica"
+        },
+        {
+          "at": 20.42,
+          "action": "highlight",
+          "target": "#tc-2",
+          "duration": 6.46,
+          "anchor": "mentre MicroTOM esegue l'analisi"
+        },
+        {
+          "at": 27,
+          "action": "highlight",
+          "target": "#tc-3",
+          "duration": 8.38,
+          "anchor": "Entrambi generano una specifica"
+        },
+        {
+          "at": 35.5,
+          "action": "highlight",
+          "target": "#tc-4",
+          "duration": 10.5,
+          "anchor": "La specifica rifattorizzata passa"
+        },
+        {
+          "at": 46.7,
+          "action": "highlight",
+          "target": "#tc-5",
+          "duration": 15.5,
+          "anchor": "Infine TosKose distribuisce in"
+        }
+      ],
+      "audio_file": "audio/scene-08.wav",
+      "subtitle_file": "subtitles/scene-08.json",
+      "duration_sec": 61.17
+    },
+    {
+      "id": "scene-09",
+      "section": "8.9 · Riepilogo e autoverifica",
+      "title": "Punti chiave del capitolo e domande d'esame",
+      "tts_text": "Chiudiamo l'ottavo capitolo riassumendo i concetti fondamentali da ricordare per l'esame. [pause:0.5] Primo: un architectural smell è una decisione di uso comune che degrada le qualità del sistema; ogni smell viola uno dei quattro principi: independent deployability, horizontal scalability, isolation of failures o decentralisation. [pause:0.5] Secondo: per deployabilità e scalabilità correggiamo più servizi nello stesso container separandoli, assenza di gateway aggiungendone uno, e chiamate dirette con discovery, router o broker. [pause:0.5] Terzo: isoliamo le interazioni wobbly con circuit breaker, timeout, bulkhead o broker; per la decentralizzazione risolviamo shared persistence con split, data manager o merge, oltre a team per servizio e rightsize ESB. [pause:0.5] Quarto: MicroFreshener modella il sistema come grafo con nodi e archi etichettati d, c, t, individuando e rifattorizzando gli smell a livello architetturale. [pause:0.5] Quinto: l'implementazione spetta all'application manager o ai manifest Kubernetes dentro la toolchain con MicroMiner, MicroTOM, TosKeriser e TosKose. [pause:0.6] Mettetevi alla prova rispondendo alle otto domande di verifica sulla destra.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">8.9 · Riepilogo &amp; Autoverifica</div>\n  <h2 class=\"slide-title\">Punti chiave e domande di verifica</h2>\n  <div class=\"grid-2\">\n    <div class=\"box box-algo\">\n      <div class=\"box-label\">Punti chiave da fissare</div>\n      <ul class=\"clean-list\">\n        <li id=\"s1\" class=\"cue-hidden\"><strong>Architectural smell &amp; 4 principi</strong>: decisioni diffuse dannose vs <em>deployability</em>, <em>scalability</em>, <em>isolation</em>, <em>decentralisation</em>.</li>\n        <li id=\"s2\" class=\"cue-hidden\"><strong>Deploy &amp; Scale</strong>: container separati; <em>API gateway</em>; <em>discovery</em>, <em>router</em> o <em>broker</em> per endpoint diretti.</li>\n        <li id=\"s3\" class=\"cue-hidden\"><strong>Guasti &amp; Dati/Governance</strong>: <em>wobbly</em> &rarr; circuit breaker, timeout, bulkhead, broker; <em>shared DB</em> &rarr; split, data manager, merge; team per servizio; <em>rightsize ESB</em>.</li>\n        <li id=\"s4\" class=\"cue-hidden\"><strong>MicroFreshener</strong>: grafo (servizi, data store, mB, mR; archi d, c, t) per rilevare e rifattorizzare gli smell.</li>\n        <li id=\"s5\" class=\"cue-hidden\"><strong>Architettura &ne; Codice &amp; Toolchain</strong>: implementazione all'app manager o manifest K8s; pipeline <em>MicroMiner/TOM &rarr; MicroFreshener &rarr; TosKeriser &rarr; TosKose</em>.</li>\n      </ul>\n    </div>\n    <div id=\"s6\" class=\"box box-theorem cue-hidden\">\n      <div class=\"box-label\">Domande di verifica</div>\n      <ol class=\"verify-list\">\n        <li>Che cos'è un architectural smell? Che cosa dice la tassonomia presentata?</li>\n        <li>Quali sono i quattro principi di design dei microservizi?</li>\n        <li>Che cos'è lo smell <em>endpoint-based service interaction</em> e quali refactoring ha?</li>\n        <li>Quando un'interazione è wobbly? Come si risolve?</li>\n        <li>Perché la shared persistence è uno smell? Confronta split database, add data manager e merge services.</li>\n        <li>Quali elementi usa MicroFreshener per modellare un'applicazione e cosa indicano d, c, t?</li>\n        <li>Perché &laquo;livello architetturale &ne; livello implementativo&raquo;? Fai un esempio.</li>\n        <li>Quali strumenti compongono la toolchain e cosa fa ciascuno?</li>\n      </ol>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 1.32,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "riassumendo i concetti fondamentali"
+        },
+        {
+          "at": 5.46,
+          "action": "highlight",
+          "target": "#s1",
+          "duration": 14,
+          "anchor": "Primo: un architectural smell"
+        },
+        {
+          "at": 21.06,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Secondo: per deployabilità e"
+        },
+        {
+          "at": 21.06,
+          "action": "highlight",
+          "target": "#s2",
+          "duration": 11.5,
+          "anchor": "Secondo: per deployabilità e"
+        },
+        {
+          "at": 34.2,
+          "action": "show",
+          "target": "#s3",
+          "anchor": "Terzo: isoliamo le interazioni"
+        },
+        {
+          "at": 34.2,
+          "action": "highlight",
+          "target": "#s3",
+          "duration": 15,
+          "anchor": "Terzo: isoliamo le interazioni"
+        },
+        {
+          "at": 50.59,
+          "action": "show",
+          "target": "#s4",
+          "anchor": "Quarto: MicroFreshener modella il"
+        },
+        {
+          "at": 50.59,
+          "action": "highlight",
+          "target": "#s4",
+          "duration": 9.5,
+          "anchor": "Quarto: MicroFreshener modella il"
+        },
+        {
+          "at": 62.05,
+          "action": "show",
+          "target": "#s5",
+          "anchor": "Quinto: l'implementazione spetta all'application"
+        },
+        {
+          "at": 62.05,
+          "action": "highlight",
+          "target": "#s5",
+          "duration": 10.5,
+          "anchor": "Quinto: l'implementazione spetta all'application"
+        },
+        {
+          "at": 72.21,
+          "action": "show",
+          "target": "#s6",
+          "anchor": "Mettetevi alla prova rispondendo"
+        }
+      ],
+      "audio_file": "audio/scene-09.wav",
+      "subtitle_file": "subtitles/scene-09.json",
+      "duration_sec": 76.16
+    }
+  ]
+}

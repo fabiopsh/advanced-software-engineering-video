@@ -1,0 +1,792 @@
+{
+  "duration": 67.39,
+  "segments": [
+    {
+      "start": 0.02,
+      "end": 2.901,
+      "text": "Chiudiamo fissando i sei punti chiave per l'esame.",
+      "words": [
+        {
+          "text": "Chiudiamo",
+          "start": 0.02,
+          "end": 0.52
+        },
+        {
+          "text": "fissando",
+          "start": 0.72,
+          "end": 1.16
+        },
+        {
+          "text": "i",
+          "start": 1.22,
+          "end": 1.26
+        },
+        {
+          "text": "sei",
+          "start": 1.36,
+          "end": 1.52
+        },
+        {
+          "text": "punti",
+          "start": 1.62,
+          "end": 1.921
+        },
+        {
+          "text": "chiave",
+          "start": 1.961,
+          "end": 2.261
+        },
+        {
+          "text": "per",
+          "start": 2.381,
+          "end": 2.481
+        },
+        {
+          "text": "l'esame.",
+          "start": 2.521,
+          "end": 2.901
+        }
+      ]
+    },
+    {
+      "start": 3.641,
+      "end": 7.502,
+      "text": "Primo: la container orchestration risponde a guasti dei container,",
+      "words": [
+        {
+          "text": "Primo:",
+          "start": 3.641,
+          "end": 3.901
+        },
+        {
+          "text": "la",
+          "start": 4.281,
+          "end": 4.361
+        },
+        {
+          "text": "container",
+          "start": 4.461,
+          "end": 5.021
+        },
+        {
+          "text": "orchestration",
+          "start": 5.102,
+          "end": 5.722
+        },
+        {
+          "text": "risponde",
+          "start": 5.882,
+          "end": 6.262
+        },
+        {
+          "text": "a",
+          "start": 6.302,
+          "end": 6.342
+        },
+        {
+          "text": "guasti",
+          "start": 6.422,
+          "end": 6.762
+        },
+        {
+          "text": "dei",
+          "start": 6.822,
+          "end": 6.922
+        },
+        {
+          "text": "container,",
+          "start": 6.962,
+          "end": 7.502
+        }
+      ]
+    },
+    {
+      "start": 7.762,
+      "end": 11.403,
+      "text": "guasti dei nodi, rete distribuita e scheduling su un cluster.",
+      "words": [
+        {
+          "text": "guasti",
+          "start": 7.762,
+          "end": 8.082
+        },
+        {
+          "text": "dei",
+          "start": 8.142,
+          "end": 8.262
+        },
+        {
+          "text": "nodi,",
+          "start": 8.302,
+          "end": 8.603
+        },
+        {
+          "text": "rete",
+          "start": 9.063,
+          "end": 9.283
+        },
+        {
+          "text": "distribuita",
+          "start": 9.323,
+          "end": 9.923
+        },
+        {
+          "text": "e",
+          "start": 10.183,
+          "end": 10.223
+        },
+        {
+          "text": "scheduling",
+          "start": 10.323,
+          "end": 10.783
+        },
+        {
+          "text": "su",
+          "start": 10.823,
+          "end": 10.923
+        },
+        {
+          "text": "un",
+          "start": 10.943,
+          "end": 10.983
+        },
+        {
+          "text": "cluster.",
+          "start": 11.023,
+          "end": 11.403
+        }
+      ]
+    },
+    {
+      "start": 12.144,
+      "end": 14.784,
+      "text": "Secondo: i quattro principi guida sono",
+      "words": [
+        {
+          "text": "Secondo:",
+          "start": 12.144,
+          "end": 12.524
+        },
+        {
+          "text": "i",
+          "start": 13.264,
+          "end": 13.304
+        },
+        {
+          "text": "quattro",
+          "start": 13.344,
+          "end": 13.624
+        },
+        {
+          "text": "principi",
+          "start": 13.664,
+          "end": 14.064
+        },
+        {
+          "text": "guida",
+          "start": 14.124,
+          "end": 14.364
+        },
+        {
+          "text": "sono",
+          "start": 14.524,
+          "end": 14.784
+        }
+      ]
+    },
+    {
+      "start": 15.385,
+      "end": 18.866,
+      "text": "declarativeness con self-healing tra specification e status,",
+      "words": [
+        {
+          "text": "declarativeness",
+          "start": 15.385,
+          "end": 16.205
+        },
+        {
+          "text": "con",
+          "start": 16.465,
+          "end": 16.605
+        },
+        {
+          "text": "self-healing",
+          "start": 16.725,
+          "end": 17.345
+        },
+        {
+          "text": "tra",
+          "start": 17.445,
+          "end": 17.565
+        },
+        {
+          "text": "specification",
+          "start": 17.665,
+          "end": 18.305
+        },
+        {
+          "text": "e",
+          "start": 18.405,
+          "end": 18.445
+        },
+        {
+          "text": "status,",
+          "start": 18.486,
+          "end": 18.866
+        }
+      ]
+    },
+    {
+      "start": 19.526,
+      "end": 21.586,
+      "text": "distribution tramite interfaccia unica,",
+      "words": [
+        {
+          "text": "distribution",
+          "start": 19.526,
+          "end": 20.126
+        },
+        {
+          "text": "tramite",
+          "start": 20.426,
+          "end": 20.766
+        },
+        {
+          "text": "interfaccia",
+          "start": 20.806,
+          "end": 21.246
+        },
+        {
+          "text": "unica,",
+          "start": 21.326,
+          "end": 21.586
+        }
+      ]
+    },
+    {
+      "start": 22.147,
+      "end": 26.128,
+      "text": "decoupling a singola responsabilità e immutable infrastructure.",
+      "words": [
+        {
+          "text": "decoupling",
+          "start": 22.147,
+          "end": 22.687
+        },
+        {
+          "text": "a",
+          "start": 23.007,
+          "end": 23.047
+        },
+        {
+          "text": "singola",
+          "start": 23.207,
+          "end": 23.567
+        },
+        {
+          "text": "responsabilità",
+          "start": 23.627,
+          "end": 24.307
+        },
+        {
+          "text": "e",
+          "start": 24.707,
+          "end": 24.747
+        },
+        {
+          "text": "immutable",
+          "start": 24.927,
+          "end": 25.448
+        },
+        {
+          "text": "infrastructure.",
+          "start": 25.508,
+          "end": 26.128
+        }
+      ]
+    },
+    {
+      "start": 26.808,
+      "end": 32.27,
+      "text": "Terzo: ogni oggetto si dichiara in manifest YAML o JSON con apiVersion,",
+      "words": [
+        {
+          "text": "Terzo:",
+          "start": 26.808,
+          "end": 27.148
+        },
+        {
+          "text": "ogni",
+          "start": 27.808,
+          "end": 28.008
+        },
+        {
+          "text": "oggetto",
+          "start": 28.048,
+          "end": 28.529
+        },
+        {
+          "text": "si",
+          "start": 28.689,
+          "end": 28.769
+        },
+        {
+          "text": "dichiara",
+          "start": 28.809,
+          "end": 29.149
+        },
+        {
+          "text": "in",
+          "start": 29.209,
+          "end": 29.269
+        },
+        {
+          "text": "manifest",
+          "start": 29.329,
+          "end": 29.769
+        },
+        {
+          "text": "YAML",
+          "start": 29.869,
+          "end": 30.229
+        },
+        {
+          "text": "o",
+          "start": 30.369,
+          "end": 30.409
+        },
+        {
+          "text": "JSON",
+          "start": 30.529,
+          "end": 30.909
+        },
+        {
+          "text": "con",
+          "start": 31.109,
+          "end": 31.289
+        },
+        {
+          "text": "apiVersion,",
+          "start": 31.489,
+          "end": 32.27
+        }
+      ]
+    },
+    {
+      "start": 32.67,
+      "end": 34.53,
+      "text": "kind, metadata e spec.",
+      "words": [
+        {
+          "text": "kind,",
+          "start": 32.67,
+          "end": 33.03
+        },
+        {
+          "text": "metadata",
+          "start": 33.41,
+          "end": 33.93
+        },
+        {
+          "text": "e",
+          "start": 34.21,
+          "end": 34.25
+        },
+        {
+          "text": "spec.",
+          "start": 34.31,
+          "end": 34.53
+        }
+      ]
+    },
+    {
+      "start": 35.03,
+      "end": 43.273,
+      "text": "Quarto: Pod, Deployment, Service basato su label e Ingress compongono la pila dal container al",
+      "words": [
+        {
+          "text": "Quarto:",
+          "start": 35.03,
+          "end": 36.311
+        },
+        {
+          "text": "Pod,",
+          "start": 36.971,
+          "end": 37.211
+        },
+        {
+          "text": "Deployment,",
+          "start": 37.671,
+          "end": 38.211
+        },
+        {
+          "text": "Service",
+          "start": 38.671,
+          "end": 39.052
+        },
+        {
+          "text": "basato",
+          "start": 39.092,
+          "end": 39.372
+        },
+        {
+          "text": "su",
+          "start": 39.432,
+          "end": 39.492
+        },
+        {
+          "text": "label",
+          "start": 39.572,
+          "end": 39.892
+        },
+        {
+          "text": "e",
+          "start": 40.132,
+          "end": 40.172
+        },
+        {
+          "text": "Ingress",
+          "start": 40.352,
+          "end": 40.732
+        },
+        {
+          "text": "compongono",
+          "start": 41.052,
+          "end": 41.572
+        },
+        {
+          "text": "la",
+          "start": 41.632,
+          "end": 41.692
+        },
+        {
+          "text": "pila",
+          "start": 41.772,
+          "end": 42.052
+        },
+        {
+          "text": "dal",
+          "start": 42.232,
+          "end": 42.373
+        },
+        {
+          "text": "container",
+          "start": 42.433,
+          "end": 42.973
+        },
+        {
+          "text": "al",
+          "start": 43.173,
+          "end": 43.273
+        }
+      ]
+    },
+    {
+      "start": 43.313,
+      "end": 44.093,
+      "text": "traffico esterno.",
+      "words": [
+        {
+          "text": "traffico",
+          "start": 43.313,
+          "end": 43.653
+        },
+        {
+          "text": "esterno.",
+          "start": 43.693,
+          "end": 44.093
+        }
+      ]
+    },
+    {
+      "start": 44.933,
+      "end": 49.715,
+      "text": "Quinto: nel control plane tutto passa dall'API server verso etcd,",
+      "words": [
+        {
+          "text": "Quinto:",
+          "start": 44.933,
+          "end": 45.253
+        },
+        {
+          "text": "nel",
+          "start": 45.874,
+          "end": 45.994
+        },
+        {
+          "text": "control",
+          "start": 46.034,
+          "end": 46.374
+        },
+        {
+          "text": "plane",
+          "start": 46.394,
+          "end": 46.714
+        },
+        {
+          "text": "tutto",
+          "start": 46.994,
+          "end": 47.314
+        },
+        {
+          "text": "passa",
+          "start": 47.374,
+          "end": 47.654
+        },
+        {
+          "text": "dall'API",
+          "start": 47.714,
+          "end": 48.234
+        },
+        {
+          "text": "server",
+          "start": 48.314,
+          "end": 48.694
+        },
+        {
+          "text": "verso",
+          "start": 48.814,
+          "end": 49.115
+        },
+        {
+          "text": "etcd,",
+          "start": 49.335,
+          "end": 49.715
+        }
+      ]
+    },
+    {
+      "start": 50.275,
+      "end": 54.996,
+      "text": "scheduler e controller-manager, mentre kubelet e kube-proxy operano sui worker.",
+      "words": [
+        {
+          "text": "scheduler",
+          "start": 50.275,
+          "end": 50.755
+        },
+        {
+          "text": "e",
+          "start": 50.915,
+          "end": 50.955
+        },
+        {
+          "text": "controller-manager,",
+          "start": 51.015,
+          "end": 51.895
+        },
+        {
+          "text": "mentre",
+          "start": 52.215,
+          "end": 52.456
+        },
+        {
+          "text": "kubelet",
+          "start": 52.556,
+          "end": 52.976
+        },
+        {
+          "text": "e",
+          "start": 53.136,
+          "end": 53.176
+        },
+        {
+          "text": "kube-proxy",
+          "start": 53.236,
+          "end": 53.836
+        },
+        {
+          "text": "operano",
+          "start": 54.056,
+          "end": 54.396
+        },
+        {
+          "text": "sui",
+          "start": 54.456,
+          "end": 54.596
+        },
+        {
+          "text": "worker.",
+          "start": 54.656,
+          "end": 54.996
+        }
+      ]
+    },
+    {
+      "start": 55.857,
+      "end": 61.398,
+      "text": "Sesto: per workload leggeri o monoliti Kubernetes non conviene rispetto a Docker Swarm.",
+      "words": [
+        {
+          "text": "Sesto:",
+          "start": 55.857,
+          "end": 56.137
+        },
+        {
+          "text": "per",
+          "start": 56.697,
+          "end": 56.817
+        },
+        {
+          "text": "workload",
+          "start": 56.897,
+          "end": 57.277
+        },
+        {
+          "text": "leggeri",
+          "start": 57.377,
+          "end": 57.897
+        },
+        {
+          "text": "o",
+          "start": 58.097,
+          "end": 58.137
+        },
+        {
+          "text": "monoliti",
+          "start": 58.257,
+          "end": 58.737
+        },
+        {
+          "text": "Kubernetes",
+          "start": 59.037,
+          "end": 59.578
+        },
+        {
+          "text": "non",
+          "start": 59.738,
+          "end": 59.878
+        },
+        {
+          "text": "conviene",
+          "start": 59.918,
+          "end": 60.338
+        },
+        {
+          "text": "rispetto",
+          "start": 60.398,
+          "end": 60.718
+        },
+        {
+          "text": "a",
+          "start": 60.758,
+          "end": 60.798
+        },
+        {
+          "text": "Docker",
+          "start": 60.838,
+          "end": 61.038
+        },
+        {
+          "text": "Swarm.",
+          "start": 61.118,
+          "end": 61.398
+        }
+      ]
+    },
+    {
+      "start": 62.018,
+      "end": 66.3,
+      "text": "Mettete in pausa il player e verificate la vostra preparazione rispondendo ad alta voce alle",
+      "words": [
+        {
+          "text": "Mettete",
+          "start": 62.018,
+          "end": 62.298
+        },
+        {
+          "text": "in",
+          "start": 62.338,
+          "end": 62.378
+        },
+        {
+          "text": "pausa",
+          "start": 62.418,
+          "end": 62.619
+        },
+        {
+          "text": "il",
+          "start": 62.659,
+          "end": 62.719
+        },
+        {
+          "text": "player",
+          "start": 62.759,
+          "end": 63.099
+        },
+        {
+          "text": "e",
+          "start": 63.279,
+          "end": 63.319
+        },
+        {
+          "text": "verificate",
+          "start": 63.379,
+          "end": 63.919
+        },
+        {
+          "text": "la",
+          "start": 63.939,
+          "end": 63.999
+        },
+        {
+          "text": "vostra",
+          "start": 64.019,
+          "end": 64.259
+        },
+        {
+          "text": "preparazione",
+          "start": 64.299,
+          "end": 64.859
+        },
+        {
+          "text": "rispondendo",
+          "start": 64.919,
+          "end": 65.399
+        },
+        {
+          "text": "ad",
+          "start": 65.439,
+          "end": 65.499
+        },
+        {
+          "text": "alta",
+          "start": 65.539,
+          "end": 65.739
+        },
+        {
+          "text": "voce",
+          "start": 65.779,
+          "end": 66.04
+        },
+        {
+          "text": "alle",
+          "start": 66.14,
+          "end": 66.3
+        }
+      ]
+    },
+    {
+      "start": 66.34,
+      "end": 67.14,
+      "text": "domande sulla destra.",
+      "words": [
+        {
+          "text": "domande",
+          "start": 66.34,
+          "end": 66.62
+        },
+        {
+          "text": "sulla",
+          "start": 66.66,
+          "end": 66.82
+        },
+        {
+          "text": "destra.",
+          "start": 66.84,
+          "end": 67.14
+        }
+      ]
+    }
+  ]
+}

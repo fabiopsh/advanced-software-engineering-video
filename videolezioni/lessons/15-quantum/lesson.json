@@ -1,0 +1,898 @@
+{
+  "lesson_id": "15-quantum",
+  "chapter": 15,
+  "part": "Parte IV · Dal monolite alla produzione",
+  "title": "Quantum Software Engineering",
+  "voice_config": {
+    "provider": "gemini",
+    "model": "gemini-3.8-flash-tts",
+    "voice_name": "Ludo",
+    "style": "chiaro, didattico, calmo e preciso, stile lezione universitaria di ingegneria del software"
+  },
+  "scenes": [
+    {
+      "id": "scene-01",
+      "section": "15.1 · Perché il quantum computing",
+      "title": "La classe BQP, accelerazioni quantistiche e applicazioni",
+      "tts_text": "Benvenuti al quindicesimo capitolo, dedicato alla Quantum Software Engineering. Partiamo da una domanda semplice: perché i computer quantistici interessano l'ingegneria del software? [pause:0.5] Perché risolvono certi problemi in modo esponenzialmente più veloce dei computer classici. Formalmente definiamo la classe B Q P, Bounded-error Quantum Polynomial time: comprende tutti i problemi di decisione risolti da un computer quantistico in tempo polinomiale, con probabilità di errore al più di un terzo su ogni istanza. [pause:0.5] Nel diagramma di complessità, B Q P contiene tutti i problemi in P e parte di quelli in N P, esce da N P, ma non include i problemi N P completi. [pause:0.6] Vediamo due accelerazioni celebri. Con l'algoritmo di Shor, la fattorizzazione di un intero N passa da un tempo classico quasi esponenziale a un tempo polinomiale nel logaritmo di N, minacciando la cifratura asimmetrica. Con l'algoritmo di Grover, la ricerca in n dati non ordinati scende da O grande di n a O grande di radice di n: su un milione di elementi bastano circa mille passi. [pause:0.5] Le applicazioni più promettenti ricadono in tre aree: simulazione, ottimizzazione e machine learning, con impatti su chimica, scoperta di farmaci, logistica, meteo, finanza ed energia.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">15.1 · Perché il quantum computing</div>\n  <h2 class=\"slide-title\">La classe BQP, accelerazioni note e ambiti applicativi</h2>\n  <div id=\"s1\" class=\"split-visual cue-hidden\">\n    <div id=\"svg-classes\" class=\"svg-panel\">\n      <svg viewBox=\"0 0 360 190\" class=\"diagram-svg\" aria-label=\"Classi di complessità P, NP, BQP e PSPACE\">\n        <g id=\"svg-pspace\">\n          <rect x=\"16\" y=\"10\" width=\"328\" height=\"170\" rx=\"10\" fill=\"none\" stroke=\"var(--ink-soft)\" stroke-width=\"1.5\"/>\n          <text x=\"180\" y=\"27\" text-anchor=\"middle\" class=\"svg-caption\">PSPACE</text>\n        </g>\n        <g id=\"svg-np\">\n          <rect x=\"42\" y=\"34\" width=\"212\" height=\"134\" rx=\"14\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.5\"/>\n          <text x=\"148\" y=\"51\" text-anchor=\"middle\" class=\"svg-caption\">NP</text>\n        </g>\n        <g id=\"svg-npc\">\n          <ellipse cx=\"148\" cy=\"74\" rx=\"66\" ry=\"17\" fill=\"rgba(192,57,43,0.14)\" stroke=\"var(--red)\" stroke-width=\"1.4\"/>\n          <text x=\"148\" y=\"78\" text-anchor=\"middle\" class=\"svg-tick\">NP-complete</text>\n        </g>\n        <g id=\"svg-p\">\n          <ellipse cx=\"148\" cy=\"132\" rx=\"54\" ry=\"16\" fill=\"rgba(21,128,61,0.16)\" stroke=\"var(--green)\" stroke-width=\"1.5\"/>\n          <text x=\"148\" y=\"136\" text-anchor=\"middle\" class=\"svg-math-sm\">P</text>\n        </g>\n        <g id=\"svg-bqp\">\n          <ellipse cx=\"202\" cy=\"132\" rx=\"128\" ry=\"31\" fill=\"none\" stroke=\"var(--red)\" stroke-width=\"2\" stroke-dasharray=\"6 4\"/>\n          <text x=\"308\" y=\"104\" text-anchor=\"middle\" class=\"svg-math-sm\" fill=\"var(--red)\">BQP</text>\n        </g>\n      </svg>\n    </div>\n    <div class=\"formula-col\">\n      <div id=\"b-bqp\" class=\"box box-def\">\n        <div class=\"box-label\">Definizione · Classe BQP</div>\n        <p><strong>Bounded-error Quantum Polynomial time</strong>: problemi di decisione risolti in tempo polinomiale su computer quantistico con errore \\(\\le 1/3\\).</p>\n      </div>\n      <div id=\"b-app\" class=\"box box-idea\">\n        <div class=\"box-label\">Tre famiglie ad alto impatto</div>\n        <p><strong>Simulazione</strong>, <strong>Ottimizzazione</strong> e <strong>Machine Learning</strong> \\(\\rightarrow\\) crittografia, chimica/farmaci, materiali, logistica, meteo, finanza, energia.</p>\n      </div>\n    </div>\n  </div>\n  <table id=\"s2\" class=\"acad-table cue-hidden\">\n    <thead>\n      <tr><th>Problema</th><th>Algoritmo</th><th>Complessità quantistica</th><th>Complessità classica</th></tr>\n    </thead>\n    <tbody>\n      <tr id=\"tr-shor\"><td><strong>Fattorizzazione</strong> (intero \\(N\\))</td><td>Shor</td><td>Polinomiale in \\(\\log N\\) <em>(minaccia cifratura asimmetrica)</em></td><td>\\(\\Theta\\!\\left(\\exp\\!\\left((\\frac{32}{9}n)^{1/3}(\\log n)^{2/3}\\right)\\right)\\)</td></tr>\n      <tr id=\"tr-grover\"><td><strong>Ricerca</strong> (\\(n\\) dati non ordinati)</td><td>Grover</td><td>\\(O(\\sqrt{n})\\) <em>(es. \\(10^6 \\rightarrow 1\\,000\\) passi)</em></td><td>\\(O(n)\\)</td></tr>\n    </tbody>\n  </table>\n</div>\n",
+      "cues": [
+        {
+          "at": 4.1,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "perché i computer quantistici"
+        },
+        {
+          "at": 6.6,
+          "action": "highlight",
+          "target": "#b-bqp",
+          "duration": 18,
+          "anchor": "perché i computer quantistici"
+        },
+        {
+          "at": 29.32,
+          "action": "highlight",
+          "target": "#svg-bqp",
+          "duration": 9.5,
+          "anchor": "Nel diagramma di complessità"
+        },
+        {
+          "at": 38.69,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Vediamo due accelerazioni celebri"
+        },
+        {
+          "at": 40.95,
+          "action": "highlight",
+          "target": "#tr-shor",
+          "duration": 9.94,
+          "anchor": "Con l'algoritmo di Shor"
+        },
+        {
+          "at": 51.01,
+          "action": "highlight",
+          "target": "#tr-grover",
+          "duration": 9.8,
+          "anchor": "Con l'algoritmo di Grover"
+        },
+        {
+          "at": 60.93,
+          "action": "highlight",
+          "target": "#b-app",
+          "duration": 11.5,
+          "anchor": "Le applicazioni più promettenti"
+        }
+      ],
+      "audio_file": "audio/scene-01.wav",
+      "subtitle_file": "subtitles/scene-01.json",
+      "duration_sec": 72.52
+    },
+    {
+      "id": "scene-02",
+      "section": "15.2 · Qubit, misura ed entanglement",
+      "title": "Sovrapposizione, sfera di Bloch, collasso ed entanglement",
+      "tts_text": "Un computer quantistico sfrutta due proprietà della meccanica quantistica: la sovrapposizione e l'entanglement. [pause:0.5] Concettualmente, un qubit può trovarsi nello stato zero, nello stato uno oppure in una sovrapposizione lineare di entrambi, rappresentabile geometricamente sulla sfera di Bloch tra il polo nord zero e il polo sud uno. [pause:0.5] Matematicamente scriviamo ket psi uguale alfa per stato zero più beta per stato uno, dove zero e uno sono i ket di base, cioè i vettori uno-zero e zero-uno, e alfa e beta sono ampiezze complesse. [pause:0.5] Le probabilità di osservare i due esiti sommano a uno: modulo di alfa al quadrato più modulo di beta al quadrato uguale uno. Per esempio, sessanta per cento su zero e quaranta per cento su uno corrisponde ad alfa circa zero virgola settecentosettantacinque e beta circa zero virgola seicentotrentadue. [pause:0.6] Quando però misuriamo il qubit, lo stato collassa istantaneamente su un unico valore, zero oppure uno. [pause:0.6] Con più qubit entra in gioco l'entanglement: gli stati diventano correlati a qualsiasi distanza. Se due qubit sono al cinquanta per cento blu-rosso e cinquanta per cento rosso-blu, presi da soli sono imprevedibili, ma misurando blu sul primo il secondo è immediatamente determinato come rosso.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">15.2 · Qubit, misura ed entanglement</div>\n  <h2 class=\"slide-title\">Dai bit ai qubit: sfera di Bloch, collasso ed entanglement</h2>\n  <div id=\"s1\" class=\"split-visual cue-hidden\">\n    <div id=\"svg-bloch\" class=\"svg-panel\">\n      <svg viewBox=\"0 0 360 198\" class=\"diagram-svg\" aria-label=\"Sfera di Bloch e collasso alla misura\">\n        <defs>\n          <marker id=\"arr-b\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\">\n            <path d=\"M0 1 L9 5 L0 9 z\" fill=\"var(--blue)\"/>\n          </marker>\n          <marker id=\"arr-m\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\">\n            <path d=\"M0 1 L9 5 L0 9 z\" fill=\"var(--ink-soft)\"/>\n          </marker>\n        </defs>\n        <circle cx=\"106\" cy=\"100\" r=\"70\" fill=\"var(--blue-soft)\" fill-opacity=\"0.35\" stroke=\"var(--ink-soft)\" stroke-width=\"1.4\"/>\n        <ellipse cx=\"106\" cy=\"100\" rx=\"70\" ry=\"19\" fill=\"none\" stroke=\"var(--muted)\" stroke-width=\"1.2\" stroke-dasharray=\"4 3\"/>\n        <line x1=\"106\" y1=\"22\" x2=\"106\" y2=\"178\" class=\"svg-axis\"/>\n        <line x1=\"32\" y1=\"100\" x2=\"180\" y2=\"100\" class=\"svg-axis\"/>\n        <g id=\"svg-ket0\">\n          <circle cx=\"106\" cy=\"30\" r=\"3.5\" fill=\"var(--blue)\"/>\n          <text x=\"106\" y=\"17\" text-anchor=\"middle\" class=\"svg-math-sm\">|0⟩ (ground)</text>\n        </g>\n        <g id=\"svg-ket1\">\n          <circle cx=\"106\" cy=\"170\" r=\"3.5\" fill=\"var(--red)\"/>\n          <text x=\"106\" y=\"191\" text-anchor=\"middle\" class=\"svg-math-sm\">|1⟩ (excited)</text>\n        </g>\n        <g id=\"svg-bloch-vec\">\n          <line x1=\"106\" y1=\"100\" x2=\"154\" y2=\"56\" stroke=\"var(--blue)\" stroke-width=\"2.4\" marker-end=\"url(#arr-b)\"/>\n          <text x=\"159\" y=\"49\" class=\"svg-math-sm\" fill=\"var(--blue)\">|Ψ⟩</text>\n          <text x=\"106\" y=\"116\" text-anchor=\"middle\" class=\"svg-caption\">Sfera di Bloch</text>\n        </g>\n        <g id=\"svg-collapse\">\n          <line x1=\"188\" y1=\"100\" x2=\"240\" y2=\"100\" stroke=\"var(--ink-soft)\" stroke-width=\"1.8\" marker-end=\"url(#arr-m)\"/>\n          <text x=\"214\" y=\"91\" text-anchor=\"middle\" class=\"svg-tick\">misura</text>\n          <circle cx=\"268\" cy=\"68\" r=\"16\" fill=\"var(--blue)\"/>\n          <text x=\"268\" y=\"73\" text-anchor=\"middle\" fill=\"#fff\" font-size=\"13\" font-weight=\"600\">0</text>\n          <text x=\"292\" y=\"72\" class=\"svg-tick\">prob. 0,6</text>\n          <circle cx=\"268\" cy=\"132\" r=\"16\" fill=\"var(--red)\"/>\n          <text x=\"268\" y=\"137\" text-anchor=\"middle\" fill=\"#fff\" font-size=\"13\" font-weight=\"600\">1</text>\n          <text x=\"292\" y=\"136\" class=\"svg-tick\">prob. 0,4</text>\n        </g>\n      </svg>\n    </div>\n    <div class=\"formula-col\">\n      <div id=\"b-qubit\" class=\"math-card math-card-accent\">\n        <div class=\"step-tag-inline\">Stato di un qubit</div>\n        \\[ \\lvert \\Psi \\rangle = \\htmlId{f-ket0}{\\alpha \\lvert 0 \\rangle} + \\htmlId{f-ket1}{\\beta \\lvert 1 \\rangle}, \\quad \\htmlId{f-norm}{\\abs{\\alpha}^2 + \\abs{\\beta}^2 = 1} \\]\n        <p class=\"math-note\">Ket \\(\\lvert 0 \\rangle=(1,0)\\), \\(\\lvert 1 \\rangle=(0,1)\\); ampiezze \\(\\alpha,\\beta \\in \\mathbb{C}\\). Es. \\(60\\%/40\\% \\Rightarrow \\alpha=\\sqrt{0{,}6}\\approx 0{,}775,\\ \\beta\\approx 0{,}632\\).</p>\n      </div>\n      <div id=\"b-meas\" class=\"box box-def\">\n        <div class=\"box-label\">Misura e collasso</div>\n        <p>Osservare un qubit in sovrapposizione lo fa <strong>collassare</strong> su \\(\\lvert 0 \\rangle\\) (con prob. \\(\\abs{\\alpha}^2\\)) oppure su \\(\\lvert 1 \\rangle\\) (con prob. \\(\\abs{\\beta}^2\\)).</p>\n      </div>\n    </div>\n  </div>\n  <div id=\"s2\" class=\"box box-primary cue-hidden\">\n    <div class=\"box-label\">Entanglement — Correlazione non locale tra qubit</div>\n    <p>Due qubit <em>entangled</em> possono trovarsi al <strong>50%</strong> in stato <em>blu-rosso</em> e al <strong>50%</strong> in stato <em>rosso-blu</em>: ciascuno preso da solo è casuale, ma misurando il primo (es. blu) il secondo assume istantaneamente lo stato correlato (rosso), a qualunque distanza.</p>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 1.97,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "sfrutta due proprietà della meccanica"
+        },
+        {
+          "at": 7.51,
+          "action": "highlight",
+          "target": "#svg-bloch-vec",
+          "duration": 10,
+          "anchor": "Concettualmente, un qubit può trovarsi"
+        },
+        {
+          "at": 19.82,
+          "action": "highlight",
+          "target": "#b-qubit",
+          "duration": 12.52,
+          "anchor": "Matematicamente scriviamo ket psi"
+        },
+        {
+          "at": 32.46,
+          "action": "highlight",
+          "target": "#f-norm",
+          "duration": 14.5,
+          "anchor": "Le probabilità di osservare"
+        },
+        {
+          "at": 49.8,
+          "action": "highlight",
+          "target": "#b-meas",
+          "duration": 1.98,
+          "anchor": "Quando però misuriamo il qubit"
+        },
+        {
+          "at": 51.9,
+          "action": "highlight",
+          "target": "#svg-collapse",
+          "duration": 4.2,
+          "anchor": "collassa istantaneamente su un unico"
+        },
+        {
+          "at": 56.42,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Con più qubit entra in gioco"
+        },
+        {
+          "at": 56.42,
+          "action": "highlight",
+          "target": "#s2",
+          "duration": 19.5,
+          "anchor": "Con più qubit entra in gioco"
+        }
+      ],
+      "audio_file": "audio/scene-02.wav",
+      "subtitle_file": "subtitles/scene-02.json",
+      "duration_sec": 74.17
+    },
+    {
+      "id": "scene-03",
+      "section": "15.3 · Hardware, topologie e accesso cloud",
+      "title": "Architettura di un computer quantistico, topologie e cloud",
+      "tts_text": "Come è fatto fisicamente un computer quantistico a superconduttori? Si articola in cinque parti. [pause:0.5] In fondo al sistema sta il quantum processor con i qubit, raffreddato a temperature bassissime dai piani del dilution refrigerator e protetto dall'involucro esterno, detto enclosure. [pause:0.5] Un'interfaccia di misura legge lo stato dei qubit, mentre un normale computer funge da classical controller: invia le istruzioni via electronic writing e riceve gli esiti via electronic reading, eseguendo kit come Qiskit e Cirq. Dai due qubit di fine anni Novanta si è arrivati oggi a processori da oltre mille qubit, come i millecentoventuno qubit di I B M. [pause:0.6] Per eseguire operazioni a due qubit, i qubit coinvolti devono essere collegati fisicamente secondo la topologia del chip: a linea con al più due vicini, a scala oppure a griglia fino a quattro vicini. [pause:0.6] Poiché queste macchine sono grandi, costose e criogeniche, non si acquistano: vi si accede via cloud attraverso piattaforme come I B M Quantum, Google Quantum A I, Amazon Braket, Azure Quantum, Xanadu, D-Wave o Rigetti, che espongono numero di qubit, stato online, lunghezza della coda, processore e piano.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">15.3 · Hardware, topologie e cloud</div>\n  <h2 class=\"slide-title\">Le cinque parti hardware, topologie fisiche e accesso cloud</h2>\n  <div id=\"s1\" class=\"split-visual cue-hidden\">\n    <div id=\"svg-hw\" class=\"svg-panel\">\n      <svg viewBox=\"0 0 380 190\" class=\"diagram-svg\" aria-label=\"Architettura hardware di un computer quantistico\">\n        <defs>\n          <marker id=\"arr-w\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\">\n            <path d=\"M0 1 L9 5 L0 9 z\" fill=\"var(--blue)\"/>\n          </marker>\n          <marker id=\"arr-r\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\">\n            <path d=\"M0 1 L9 5 L0 9 z\" fill=\"var(--green)\"/>\n          </marker>\n        </defs>\n        <g id=\"svg-enclosure\">\n          <rect x=\"12\" y=\"10\" width=\"118\" height=\"162\" rx=\"8\" fill=\"var(--bg-surface)\" stroke=\"var(--ink-soft)\" stroke-width=\"1.5\"/>\n          <text x=\"71\" y=\"184\" text-anchor=\"middle\" class=\"svg-caption\">Enclosure</text>\n        </g>\n        <g id=\"svg-fridge\">\n          <line x1=\"24\" y1=\"34\" x2=\"118\" y2=\"34\" stroke=\"var(--orange)\" stroke-width=\"2.2\"/>\n          <line x1=\"24\" y1=\"56\" x2=\"118\" y2=\"56\" stroke=\"var(--orange)\" stroke-width=\"2.2\"/>\n          <line x1=\"24\" y1=\"78\" x2=\"118\" y2=\"78\" stroke=\"var(--orange)\" stroke-width=\"2.2\"/>\n          <line x1=\"24\" y1=\"100\" x2=\"118\" y2=\"100\" stroke=\"var(--orange)\" stroke-width=\"2.2\"/>\n          <line x1=\"34\" y1=\"34\" x2=\"34\" y2=\"126\" stroke=\"var(--orange)\" stroke-width=\"1.2\"/>\n          <line x1=\"108\" y1=\"34\" x2=\"108\" y2=\"126\" stroke=\"var(--orange)\" stroke-width=\"1.2\"/>\n          <text x=\"71\" y=\"25\" text-anchor=\"middle\" class=\"svg-tick\">Dilution refrigerator</text>\n        </g>\n        <g id=\"svg-qpu\">\n          <rect x=\"24\" y=\"126\" width=\"94\" height=\"34\" rx=\"5\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.5\"/>\n          <text x=\"71\" y=\"141\" text-anchor=\"middle\" class=\"svg-tick\">Quantum</text>\n          <text x=\"71\" y=\"153\" text-anchor=\"middle\" class=\"svg-tick\">processor</text>\n        </g>\n        <g id=\"svg-meas-if\">\n          <line x1=\"118\" y1=\"143\" x2=\"156\" y2=\"143\" class=\"svg-edge\"/>\n          <rect x=\"156\" y=\"126\" width=\"84\" height=\"34\" rx=\"5\" fill=\"var(--bg-surface)\" stroke=\"var(--ink-soft)\" stroke-width=\"1.4\"/>\n          <text x=\"198\" y=\"141\" text-anchor=\"middle\" class=\"svg-tick\">Measurement</text>\n          <text x=\"198\" y=\"153\" text-anchor=\"middle\" class=\"svg-tick\">interface</text>\n        </g>\n        <g id=\"svg-ctrl\">\n          <rect x=\"258\" y=\"36\" width=\"110\" height=\"58\" rx=\"8\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.6\"/>\n          <text x=\"313\" y=\"60\" text-anchor=\"middle\" class=\"svg-math-sm\">Classical</text>\n          <text x=\"313\" y=\"75\" text-anchor=\"middle\" class=\"svg-math-sm\">controller</text>\n          <text x=\"313\" y=\"88\" text-anchor=\"middle\" class=\"svg-caption\">Qiskit, Cirq</text>\n          <line x1=\"258\" y1=\"56\" x2=\"134\" y2=\"56\" stroke=\"var(--blue)\" stroke-width=\"2\" marker-end=\"url(#arr-w)\"/>\n          <text x=\"196\" y=\"49\" text-anchor=\"middle\" class=\"svg-tick\">electronic writing</text>\n          <polyline points=\"240,143 313,143 313,98\" fill=\"none\" stroke=\"var(--green)\" stroke-width=\"2\" marker-end=\"url(#arr-r)\"/>\n          <text x=\"282\" y=\"158\" text-anchor=\"middle\" class=\"svg-tick\">electronic reading</text>\n        </g>\n      </svg>\n    </div>\n    <div class=\"formula-col\">\n      <div id=\"b-hw\" class=\"box box-def\">\n        <div class=\"box-label\">5 componenti (da 2 a 1.121 qubit IBM)</div>\n        <p><strong>Quantum processor</strong> + <strong>Dilution refrigerator</strong> + <strong>Enclosure</strong> + <strong>Measurement interface</strong> + <strong>Classical controller</strong> (Qiskit, Cirq).</p>\n      </div>\n      <div id=\"b-cloud\" class=\"box box-primary\">\n        <div class=\"box-label\">Accesso tramite Cloud Computing</div>\n        <p>IBM Quantum, Google Quantum AI, Amazon Braket, Azure Quantum, Xanadu, D-Wave, Rigetti, AQT, OQC, Quantum Inspire. Espongono: <em>qubit, stato, coda, processore, piano</em>.</p>\n      </div>\n    </div>\n  </div>\n  <div id=\"s2\" class=\"box box-idea cue-hidden\">\n    <div class=\"box-label\">Topologie fisiche di interconnessione</div>\n    <p>Un gate a due qubit richiede collegamento fisico diretto. Tre schemi tipici: <strong>Linea</strong> (max 2 vicini per qubit), <strong>Scala</strong> (due righe accoppiate) e <strong>Griglia</strong> (fino a 4 vicini per qubit).</p>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 1.56,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "un computer quantistico a superconduttori"
+        },
+        {
+          "at": 6.46,
+          "action": "highlight",
+          "target": "#svg-qpu",
+          "duration": 3.26,
+          "anchor": "In fondo al sistema sta"
+        },
+        {
+          "at": 9.84,
+          "action": "highlight",
+          "target": "#svg-fridge",
+          "duration": 5.5,
+          "anchor": "raffreddato a temperature bassissime"
+        },
+        {
+          "at": 17.92,
+          "action": "highlight",
+          "target": "#svg-meas-if",
+          "duration": 2.5,
+          "anchor": "Un'interfaccia di misura legge"
+        },
+        {
+          "at": 20.54,
+          "action": "highlight",
+          "target": "#svg-ctrl",
+          "duration": 10.5,
+          "anchor": "mentre un normale computer funge"
+        },
+        {
+          "at": 31.62,
+          "action": "highlight",
+          "target": "#b-hw",
+          "duration": 7.78,
+          "anchor": "Dai due qubit di fine"
+        },
+        {
+          "at": 39.52,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Per eseguire operazioni a due"
+        },
+        {
+          "at": 39.52,
+          "action": "highlight",
+          "target": "#s2",
+          "duration": 12.16,
+          "anchor": "Per eseguire operazioni a due"
+        },
+        {
+          "at": 51.8,
+          "action": "highlight",
+          "target": "#b-cloud",
+          "duration": 22,
+          "anchor": "Poiché queste macchine sono grandi"
+        }
+      ],
+      "audio_file": "audio/scene-03.wav",
+      "subtitle_file": "subtitles/scene-03.json",
+      "duration_sec": 71.87
+    },
+    {
+      "id": "scene-04",
+      "section": "15.4 · Tecnologie dei qubit",
+      "title": "Cinque metriche fisiche e sei tecnologie a confronto",
+      "tts_text": "Non esiste un solo modo di costruire un qubit: ogni tecnologia hardware comporta compromessi precisi, sintetizzati da cinque caratteristiche chiave. [pause:0.5] Il qubit lifetime misura il tempo di coerenza, cioè quanto a lungo il qubit conserva il proprio stato. La gate fidelity è la fedeltà delle operazioni a due qubit, mentre il gate operation time indica la velocità di esecuzione. Completano il quadro la connettività tra qubit e la scalabilità del numero di qubit. [pause:0.6] I qubit a superconduttori, usati da I B M e Google, sono molto veloci e scalabili, ma hanno vita breve dell'ordine di cinquanta cento microsecondi e richiedono raffreddamento criogenico. [pause:0.5] Le trappole ioniche, come IonQ, raggiungono oltre mille secondi di coerenza, fedeltà al novantanove virgola nove per cento e connettività tutti con tutti, al prezzo di operazioni più lente. [pause:0.5] La fotonica opera senza requisiti di temperatura in un nanosecondo, ma è nascente. Gli atomi neutri offrono lunga coerenza ma sono ancora acerbi; i qubit in silicio sfruttano l'industria dei semiconduttori con tempi da uno a dieci secondi; infine i qubit topologici di Microsoft promettono stabilità e fedeltà altissime, ma la loro esistenza fisica è ancora da confermare.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">15.4 · Le tecnologie dei qubit</div>\n  <h2 class=\"slide-title\">Cinque parametri chiave e confronto tra sei tecnologie</h2>\n  <div id=\"s1\" class=\"pill-strip cue-hidden\">\n    <span class=\"strip-label\">5 criteri di scelta:</span>\n    <span id=\"p-life\" class=\"pill pill-accent\">Qubit lifetime</span>\n    <span id=\"p-fid\" class=\"pill pill-accent\">Gate fidelity (2 qubit)</span>\n    <span id=\"p-time\" class=\"pill\">Gate operation time</span>\n    <span id=\"p-conn\" class=\"pill\">Connectivity</span>\n    <span id=\"p-scal\" class=\"pill\">Scalability</span>\n  </div>\n  <table id=\"s2\" class=\"acad-table cue-hidden\">\n    <thead>\n      <tr><th>Tecnologia</th><th>Esempi</th><th>Lifetime / Fidelity / Gate time</th><th>Connessioni · Pro (+) e Contro (−)</th></tr>\n    </thead>\n    <tbody>\n      <tr id=\"tq-sc\"><td><strong>Superconducting</strong></td><td>IBM, Google, Rigetti, Intel</td><td>50–100 μs · 99,4% · 10–50 ns</td><td>Vicini · <strong>+</strong> veloci, semiconduttori, scalabili; <strong>−</strong> vita breve, freddo</td></tr>\n      <tr id=\"tq-ion\"><td><strong>Ion trap</strong></td><td>IonQ, AQT, Honeywell</td><td>&gt;1.000 s · 99,9% · 3–50 μs</td><td>Tutti con tutti · <strong>+</strong> alta fedeltà, stabili; <strong>−</strong> operazioni lente</td></tr>\n      <tr id=\"tq-ph\"><td><strong>Photonics</strong></td><td>PsiQuantum, Xanadu</td><td>150 μs · 98,0% · 1 ns</td><td>Non nota · <strong>+</strong> scalabile, no freddo; <strong>−</strong> nascente, connettività TBC</td></tr>\n      <tr id=\"tq-na\"><td><strong>Neutral atoms</strong></td><td>Atom Comp., PASQAL, QuEra</td><td>~Ion trap · 95% · TBC</td><td>TBC · <strong>+</strong> lunga coerenza; <strong>−</strong> freddo, tecnologia nascente</td></tr>\n      <tr id=\"tq-si\"><td><strong>Silicon</strong></td><td>Intel, Silicon QC</td><td>1–10 s · 99% · 1–10 ns</td><td>Vicini · <strong>+</strong> stabili, semiconduttori; <strong>−</strong> freddo, nascente</td></tr>\n      <tr id=\"tq-top\"><td><strong>Topological</strong></td><td>Microsoft (in sviluppo)</td><td>Molto alta (stima) · N/A</td><td>N/A · <strong>+</strong> vita e fedeltà stimate alte; <strong>−</strong> esistenza da confermare</td></tr>\n    </tbody>\n  </table>\n</div>\n",
+      "cues": [
+        {
+          "at": 3.17,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "ogni tecnologia hardware comporta"
+        },
+        {
+          "at": 8.66,
+          "action": "highlight",
+          "target": "#p-life",
+          "duration": 5.5,
+          "anchor": "Il qubit lifetime misura"
+        },
+        {
+          "at": 14.94,
+          "action": "highlight",
+          "target": "#p-fid",
+          "duration": 3.82,
+          "anchor": "La gate fidelity è la fedeltà"
+        },
+        {
+          "at": 18.88,
+          "action": "highlight",
+          "target": "#p-time",
+          "duration": 3.72,
+          "anchor": "il gate operation time"
+        },
+        {
+          "at": 22.72,
+          "action": "highlight",
+          "target": "#p-conn",
+          "duration": 4.5,
+          "anchor": "Completano il quadro la connettività"
+        },
+        {
+          "at": 28.02,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "I qubit a superconduttori"
+        },
+        {
+          "at": 28.02,
+          "action": "highlight",
+          "target": "#tq-sc",
+          "duration": 10.94,
+          "anchor": "I qubit a superconduttori"
+        },
+        {
+          "at": 39.08,
+          "action": "highlight",
+          "target": "#tq-ion",
+          "duration": 11.5,
+          "anchor": "Le trappole ioniche"
+        },
+        {
+          "at": 51.16,
+          "action": "highlight",
+          "target": "#tq-ph",
+          "duration": 4.96,
+          "anchor": "La fotonica opera senza"
+        },
+        {
+          "at": 56.24,
+          "action": "highlight",
+          "target": "#tq-na",
+          "duration": 3.78,
+          "anchor": "Gli atomi neutri offrono"
+        },
+        {
+          "at": 60.14,
+          "action": "highlight",
+          "target": "#tq-si",
+          "duration": 5.5,
+          "anchor": "i qubit in silicio sfruttano"
+        },
+        {
+          "at": 65.84,
+          "action": "highlight",
+          "target": "#tq-top",
+          "duration": 9.5,
+          "anchor": "infine i qubit topologici"
+        }
+      ],
+      "audio_file": "audio/scene-04.wav",
+      "subtitle_file": "subtitles/scene-04.json",
+      "duration_sec": 73.73
+    },
+    {
+      "id": "scene-05",
+      "section": "15.5 · Circuiti quantistici, shot ed era NISQ",
+      "title": "Programmazione con porte H e CNOT, shot ed era NISQ",
+      "tts_text": "Un computer quantistico si programma costruendo circuiti quantistici: sequenze di porte elementari sui qubit, seguite dalle misure. [pause:0.5] In questo esempio OpenQASM due punto zero, dichiariamo due qubit inizialmente in zero-zero e due bit classici. La porta Hadamard H sul primo qubit lo mette in sovrapposizione, portando lo stato a metà zero-zero e metà zero-uno. [pause:0.5] Subito dopo, la porta C NOT con controllo sul primo qubit e bersaglio sul secondo inverte il secondo qubit quando il primo vale uno: i due qubit diventano entangled, metà zero-zero e metà uno-uno. Le due misure finali copiano i risultati nei bit classici, restituendo sempre zero-zero oppure uno-uno. [pause:0.6] Perché servono molti shot? Perché la fisica vieta di osservare lo stato quantistico senza farlo collassare. Ogni esecuzione ripetuta con lo stesso input si chiama shot: le frequenze osservate approssimano la distribuzione reale. Con soli dieci shot su un qubit sessanta-quaranta possiamo ottenere settanta-trenta; più shot riducono l'errore, ma costano tempo e denaro. [pause:0.6] Infine, le macchine attuali appartengono all'era NISQ, Noisy Intermediate-Scale Quantum: sono sensibili al rumore e hanno pochi qubit, quindi eseguono solo circuiti piccoli e corti.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">15.5 · Circuiti quantistici, shot ed era NISQ</div>\n  <h2 class=\"slide-title\">Porte H e CNOT in OpenQASM, natura probabilistica e limiti NISQ</h2>\n  <div id=\"s1\" class=\"split-visual cue-hidden\">\n    <div id=\"svg-circuit\" class=\"svg-panel\">\n      <svg viewBox=\"0 0 410 186\" class=\"diagram-svg\" aria-label=\"Circuito quantistico H + CNOT e distribuzione risultante\">\n        <defs>\n          <marker id=\"arr-c\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"5\" markerHeight=\"5\" orient=\"auto\">\n            <path d=\"M0 1 L9 5 L0 9 z\" fill=\"var(--ink-soft)\"/>\n          </marker>\n        </defs>\n        <text x=\"28\" y=\"34\" text-anchor=\"end\" class=\"svg-math-sm\">q1₀</text>\n        <text x=\"28\" y=\"76\" text-anchor=\"end\" class=\"svg-math-sm\">q2₀</text>\n        <text x=\"28\" y=\"114\" text-anchor=\"end\" class=\"svg-tick\">q1c₀</text>\n        <text x=\"28\" y=\"138\" text-anchor=\"end\" class=\"svg-tick\">q2c₀</text>\n        <line x1=\"34\" y1=\"30\" x2=\"252\" y2=\"30\" class=\"svg-edge\"/>\n        <line x1=\"34\" y1=\"72\" x2=\"252\" y2=\"72\" class=\"svg-edge\"/>\n        <line x1=\"34\" y1=\"110\" x2=\"252\" y2=\"110\" stroke=\"var(--muted)\" stroke-width=\"1\"/>\n        <line x1=\"34\" y1=\"113\" x2=\"252\" y2=\"113\" stroke=\"var(--muted)\" stroke-width=\"1\"/>\n        <line x1=\"34\" y1=\"134\" x2=\"252\" y2=\"134\" stroke=\"var(--muted)\" stroke-width=\"1\"/>\n        <line x1=\"34\" y1=\"137\" x2=\"252\" y2=\"137\" stroke=\"var(--muted)\" stroke-width=\"1\"/>\n        <g id=\"svg-gate-h\">\n          <rect x=\"60\" y=\"16\" width=\"28\" height=\"28\" rx=\"4\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.6\"/>\n          <text x=\"74\" y=\"35\" text-anchor=\"middle\" class=\"svg-math-sm\">H</text>\n        </g>\n        <g id=\"svg-gate-cx\">\n          <circle cx=\"124\" cy=\"30\" r=\"4\" fill=\"var(--ink)\"/>\n          <line x1=\"124\" y1=\"30\" x2=\"124\" y2=\"83\" stroke=\"var(--ink)\" stroke-width=\"1.6\"/>\n          <circle cx=\"124\" cy=\"72\" r=\"11\" fill=\"var(--bg-paper)\" stroke=\"var(--ink)\" stroke-width=\"1.6\"/>\n          <line x1=\"113\" y1=\"72\" x2=\"135\" y2=\"72\" stroke=\"var(--ink)\" stroke-width=\"1.4\"/>\n        </g>\n        <g id=\"svg-gate-m\">\n          <rect x=\"166\" y=\"17\" width=\"24\" height=\"24\" rx=\"3\" fill=\"var(--bg-surface)\" stroke=\"var(--ink-soft)\" stroke-width=\"1.4\"/>\n          <text x=\"178\" y=\"33\" text-anchor=\"middle\" class=\"svg-tick\">M</text>\n          <line x1=\"178\" y1=\"41\" x2=\"178\" y2=\"106\" stroke=\"var(--ink-soft)\" stroke-width=\"1.4\" marker-end=\"url(#arr-c)\"/>\n          <rect x=\"208\" y=\"59\" width=\"24\" height=\"24\" rx=\"3\" fill=\"var(--bg-surface)\" stroke=\"var(--ink-soft)\" stroke-width=\"1.4\"/>\n          <text x=\"220\" y=\"75\" text-anchor=\"middle\" class=\"svg-tick\">M</text>\n          <line x1=\"220\" y1=\"83\" x2=\"220\" y2=\"130\" stroke=\"var(--ink-soft)\" stroke-width=\"1.4\" marker-end=\"url(#arr-c)\"/>\n        </g>\n        <text x=\"44\" y=\"166\" text-anchor=\"middle\" class=\"svg-tick\">00</text>\n        <text x=\"98\" y=\"166\" text-anchor=\"middle\" class=\"svg-tick\">50% 00,01</text>\n        <text x=\"152\" y=\"166\" text-anchor=\"middle\" class=\"svg-tick\">50% 00,11</text>\n        <text x=\"216\" y=\"166\" text-anchor=\"middle\" class=\"svg-tick\">00 o 11</text>\n        <g id=\"svg-bars\">\n          <line x1=\"278\" y1=\"138\" x2=\"396\" y2=\"138\" class=\"svg-axis\"/>\n          <line x1=\"278\" y1=\"24\" x2=\"278\" y2=\"138\" class=\"svg-axis\"/>\n          <rect x=\"288\" y=\"54\" width=\"18\" height=\"84\" fill=\"var(--blue)\" opacity=\"0.8\"/>\n          <rect x=\"316\" y=\"136\" width=\"18\" height=\"2\" fill=\"var(--muted)\"/>\n          <rect x=\"344\" y=\"136\" width=\"18\" height=\"2\" fill=\"var(--muted)\"/>\n          <rect x=\"372\" y=\"54\" width=\"18\" height=\"84\" fill=\"var(--blue)\" opacity=\"0.8\"/>\n          <text x=\"297\" y=\"152\" text-anchor=\"middle\" class=\"svg-tick\">00</text>\n          <text x=\"325\" y=\"152\" text-anchor=\"middle\" class=\"svg-tick\">01</text>\n          <text x=\"353\" y=\"152\" text-anchor=\"middle\" class=\"svg-tick\">10</text>\n          <text x=\"381\" y=\"152\" text-anchor=\"middle\" class=\"svg-tick\">11</text>\n          <text x=\"337\" y=\"169\" text-anchor=\"middle\" class=\"svg-caption\">Prob. pre-misura (50% / 50%)</text>\n        </g>\n      </svg>\n    </div>\n    <div class=\"formula-col\">\n      <div id=\"b-qasm\" class=\"box box-algo\">\n        <div class=\"box-label\">OpenQASM 2.0 · Bell state</div>\n        <p><code>qreg q1[1]; qreg q2[1]; creg q1c[1]; creg q2c[1];</code></p>\n        <p><code>h q1[0]; cx q1[0],q2[0]; measure q1-&gt;q1c; measure q2-&gt;q2c;</code></p>\n        <p><strong>H</strong> crea sovrapposizione su <code>q1</code>; <strong>CNOT</strong> (<code>cx</code>) correla <code>q2</code> a <code>q1</code> \\(\\rightarrow\\) esito sempre <code>00</code> oppure <code>11</code>.</p>\n      </div>\n    </div>\n  </div>\n  <div id=\"s2\" class=\"grid-2 cue-hidden\">\n    <div id=\"b-shots\" class=\"box box-idea\">\n      <div class=\"box-label\">Uscita probabilistica e ruolo degli shot</div>\n      <p>La misura fa collassare lo stato: si ripete lo stesso circuito \\(N\\) volte (<strong>shot</strong>) per approssimare le probabilità. Es. 10 shot su qubit 60%–40% possono dare 70%–30%. Più shot \\(\\Rightarrow\\) stima fedele, ma più tempo e costo.</p>\n    </div>\n    <div id=\"b-nisq\" class=\"box box-warn\">\n      <div class=\"box-label\">L'era NISQ (Noisy Intermediate-Scale Quantum)</div>\n      <p>I dispositivi attuali sono molto sensibili al <strong>rumore</strong> esterno e hanno pochi qubit: programmi troppo lunghi degradano, quindi oggi si eseguono solo circuiti piccoli.</p>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 1.44,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "si programma costruendo circuiti"
+        },
+        {
+          "at": 8.32,
+          "action": "highlight",
+          "target": "#b-qasm",
+          "duration": 5.5,
+          "anchor": "In questo esempio OpenQASM"
+        },
+        {
+          "at": 15.86,
+          "action": "highlight",
+          "target": "#svg-gate-h",
+          "duration": 6.5,
+          "anchor": "La porta Hadamard H sul primo"
+        },
+        {
+          "at": 24.06,
+          "action": "highlight",
+          "target": "#svg-gate-cx",
+          "duration": 10.5,
+          "anchor": "Subito dopo, la porta C NOT"
+        },
+        {
+          "at": 36.92,
+          "action": "highlight",
+          "target": "#svg-gate-m",
+          "duration": 2.76,
+          "anchor": "Le due misure finali copiano"
+        },
+        {
+          "at": 39.8,
+          "action": "highlight",
+          "target": "#svg-bars",
+          "duration": 3.04,
+          "anchor": "restituendo sempre zero-zero oppure"
+        },
+        {
+          "at": 42.96,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Perché servono molti shot?"
+        },
+        {
+          "at": 42.96,
+          "action": "highlight",
+          "target": "#b-shots",
+          "duration": 22,
+          "anchor": "Perché servono molti shot?"
+        },
+        {
+          "at": 65.18,
+          "action": "highlight",
+          "target": "#b-nisq",
+          "duration": 15,
+          "anchor": "Infine, le macchine attuali appartengono"
+        }
+      ],
+      "audio_file": "audio/scene-05.wav",
+      "subtitle_file": "subtitles/scene-05.json",
+      "duration_sec": 76.14
+    },
+    {
+      "id": "scene-06",
+      "section": "15.6 · Quantum Software Engineering",
+      "title": "Definizione di QSE, Talavera Manifesto e obiettivi",
+      "tts_text": "Per trasformare il calcolo quantistico in ingegneria affidabile nasce la Quantum Software Engineering. [pause:0.5] Oggi l'hardware soffre di errori elevati, pochi qubit e costi alti, mentre lo sviluppo software è ancora legato a porte di basso livello, scarsa interoperabilità e mancanza di strumenti per il ciclo di vita come container, orchestratori, integrazione continua e monitoraggio. [pause:0.5] Zhao nel duemilaventi definisce la Q S E come l'uso di solidi principi di ingegneria per sviluppare, esercire e manutenere software quantistico affidabile, efficiente ed economico. [pause:0.6] Il Talavera Manifesto di Piattini e colleghi fissa nove principi fondamentali: indipendenza da linguaggi e tecnologie, coesistenza tra calcolo classico e quantistico, gestione dei progetti, evoluzione del software, obiettivo zero difetti, garanzia di qualità, riuso, sicurezza e privacy by design, e infine governance. [pause:0.6] In concreto, la Q S E punta a transpiler migliori per la topologia della macchina, modelli riusabili detti Q module template, verifica di equivalenza tra programmi P e Q, codice ibrido x uguale f di y combinato con q di z, e sfruttamento efficace di macchine eterogenee e rumorose.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">15.6 · Quantum Software Engineering (QSE)</div>\n  <h2 class=\"slide-title\">Limiti attuali, definizione di Zhao, Talavera Manifesto e obiettivi</h2>\n  <div id=\"s1\" class=\"grid-2 cue-hidden\">\n    <div id=\"b-lim\" class=\"box box-warn\">\n      <div class=\"box-label\">Limiti attuali (Hardware &amp; Software)</div>\n      <p><strong>Hardware</strong>: affidabilità (errori alti), scalabilità (pochi qubit), costo.<br/><strong>Software</strong>: porte di basso livello, poca interoperabilità, scarso supporto al ciclo di vita (mancano container, orchestratori, CI/CD, monitoraggio).</p>\n    </div>\n    <div id=\"b-zhao\" class=\"box box-def\">\n      <div class=\"box-label\">Definizione QSE (Zhao, 2020)</div>\n      <p>Applicare solidi principi di ingegneria a <strong>sviluppo, esercizio e manutenzione</strong> del software quantistico (e documentazione) per renderlo affidabile, efficiente ed economico.</p>\n    </div>\n  </div>\n  <div id=\"s2\" class=\"box box-primary cue-hidden\">\n    <div class=\"box-label\">Talavera Manifesto (Piattini et al., 2020) — 9 principi</div>\n    <div class=\"props-grid\">\n      <div id=\"tm-1\" class=\"prop-item\"><span class=\"prop-dot\"></span><span><strong>1–3:</strong> Indipendenza da linguaggi/HW · Coesistenza classico-quantum · Gestione progetti</span></div>\n      <div id=\"tm-2\" class=\"prop-item\"><span class=\"prop-dot\"></span><span><strong>4–6:</strong> Evoluzione del software · Obiettivo zero difetti · Qualità del software</span></div>\n      <div id=\"tm-3\" class=\"prop-item\"><span class=\"prop-dot\"></span><span><strong>7–8:</strong> Riuso del software quantistico · Sicurezza e privacy <em>by design</em></span></div>\n      <div id=\"tm-4\" class=\"prop-item\"><span class=\"prop-dot\"></span><span><strong>9:</strong> Governance e gestione complessiva del software quantistico</span></div>\n    </div>\n  </div>\n  <div id=\"s3\" class=\"pill-strip cue-hidden\">\n    <span class=\"strip-label\">Obiettivi QSE:</span>\n    <span id=\"ob-1\" class=\"pill\">Transpiler per topologia</span>\n    <span id=\"ob-2\" class=\"pill\">Riuso (Q module template)</span>\n    <span id=\"ob-3\" class=\"pill\">Verifica equivalenza \\(P \\equiv Q\\)</span>\n    <span id=\"ob-4\" class=\"pill\">Ibrido \\(x = f(y) \\oplus q(z)\\)</span>\n    <span id=\"ob-5\" class=\"pill pill-accent\">QPU eterogenee &amp; rumorose</span>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 3.17,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "nasce la Quantum Software Engineering"
+        },
+        {
+          "at": 5.89,
+          "action": "highlight",
+          "target": "#b-lim",
+          "duration": 14.5,
+          "anchor": "Oggi l'hardware soffre di errori"
+        },
+        {
+          "at": 21.01,
+          "action": "highlight",
+          "target": "#b-zhao",
+          "duration": 10.88,
+          "anchor": "Zhao nel duemilaventi definisce"
+        },
+        {
+          "at": 32.01,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Il Talavera Manifesto di Piattini"
+        },
+        {
+          "at": 32.01,
+          "action": "highlight",
+          "target": "#s2",
+          "duration": 19.5,
+          "anchor": "Il Talavera Manifesto di Piattini"
+        },
+        {
+          "at": 55.61,
+          "action": "show",
+          "target": "#s3",
+          "anchor": "In concreto, la Q S E"
+        },
+        {
+          "at": 57.13,
+          "action": "highlight",
+          "target": "#ob-1",
+          "duration": 3.62,
+          "anchor": "punta a transpiler migliori"
+        },
+        {
+          "at": 60.87,
+          "action": "highlight",
+          "target": "#ob-2",
+          "duration": 3.32,
+          "anchor": "modelli riusabili detti Q module"
+        },
+        {
+          "at": 64.31,
+          "action": "highlight",
+          "target": "#ob-3",
+          "duration": 3.1,
+          "anchor": "verifica di equivalenza tra programmi"
+        },
+        {
+          "at": 67.53,
+          "action": "highlight",
+          "target": "#ob-4",
+          "duration": 4.8,
+          "anchor": "codice ibrido x uguale f"
+        },
+        {
+          "at": 72.63,
+          "action": "highlight",
+          "target": "#ob-5",
+          "duration": 5.5,
+          "anchor": "sfruttamento efficace di macchine eterogenee"
+        }
+      ],
+      "audio_file": "audio/scene-06.wav",
+      "subtitle_file": "subtitles/scene-06.json",
+      "duration_sec": 75.86
+    },
+    {
+      "id": "scene-07",
+      "section": "15.7 · Esecuzione distribuita: Shot-wise e Cut&Shoot",
+      "title": "Shot-wise distribution, Quantum Broker e Cut&Shoot",
+      "tts_text": "Vediamo le prime due tecniche di Q S E per sfruttare macchine eterogenee e rumorose. [pause:0.5] Con la shot-wise distribution dividiamo gli shot di un circuito tra più Q P U e poi fondiamo le distribuzioni parziali. Per esempio, tremila shot su tre macchine danno la media pesata delle frequenze, riducendo l'impatto di una macchina rumorosa. Oltre a politiche uniform, random e time-aware, le politiche noise-aware usano una calibrazione preventiva con simulatori esatti per scegliere gli shot minimizzando la distanza di Hellinger o l'errore quadratico medio integrato M I S E. Su sette Q P U di I B M e IonQ, l'errore massimo e la deviazione standard scendono, migliorano robustezza, bilanciamento del carico, resilienza ai guasti e attese in coda, pur diluendo la Q P U migliore e dipendendo dalla calibrazione. [pause:0.6] Il Quantum Broker automatizza questa distribuzione rispetto a vincoli di qualità del servizio come tempo, fedeltà e costo: un Profiler raccoglie le metriche delle macchine, un Reasoner decide lo split e un Executor invia gli shot e fonde i risultati. [pause:0.6] E se il circuito richiede più qubit di quelli disponibili? Cut and Shoot combina circuit cutting e shot-wise distribution: prima taglia il circuito in frammenti, poi divide gli shot tra le Q P U con variante shot multiplier o shot divider, fonde per frammento e infine ricuce classicamente con Pennylane, a costo esponenziale nel numero di tagli. Un'ulteriore estensione è il multiprogramming, che esegue insieme più circuiti piccoli sulla stessa Q P U.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">15.7 · Esecuzione distribuita multi-QPU</div>\n  <h2 class=\"slide-title\">Shot-wise distribution, Quantum Broker e Cut&amp;Shoot</h2>\n  <div id=\"s1\" class=\"grid-2 cue-hidden\">\n    <div id=\"b-sw\" class=\"box box-primary\">\n      <div class=\"box-label\">Shot-wise distribution (Split &amp; Merge)</div>\n      <p>Divide gli \\(s\\) shot su più QPU e fonde le distribuzioni (es. 3.000 shot su 3 QPU: \\((210+190+240)/3000 = 21{,}3\\%\\)).<br/><strong>Politiche:</strong> <em>uniform, random, time-aware, noise-aware</em> (calibrazione \\(\\rightarrow\\) <strong>Hellinger</strong>, <strong>MISE</strong>). Su 7 QPU: calo di errore max e varianza, bilanciamento, resilienza, meno coda (sfide: diluizione QPU migliore, calibrazione).</p>\n    </div>\n    <div id=\"b-broker\" class=\"box box-def\">\n      <div class=\"box-label\">Quantum Broker (QoS-aware)</div>\n      <p>Riceve circuito e vincoli/obiettivo QoS (es. <code>min(fidelity) &gt;= 0.85</code>, <code>sum(cost) &lt;= 750</code>, obiettivo <code>-sum(cost)</code>):</p>\n      <ul class=\"clean-list\">\n        <li><strong>Profiler</strong>: raccoglie profili e metriche dalle QPU.</li>\n        <li><strong>Reasoner</strong>: calcola lo split ottimale rispetto ai vincoli.</li>\n        <li><strong>Executor</strong>: invia gli shot e fonde i risultati.</li>\n      </ul>\n    </div>\n  </div>\n  <div id=\"s2\" class=\"box box-algo cue-hidden\">\n    <div class=\"box-label\">Cut&amp;Shoot — Circuit cutting + Shot-wise (circuiti più grandi delle QPU) + Multiprogramming</div>\n    <div class=\"flow-chain\">\n      <div id=\"cs-1\" class=\"flow-node\"><strong>1. Cut</strong><span>Taglia circuito in frammenti</span></div>\n      <div class=\"flow-arrow\">→</div>\n      <div id=\"cs-2\" class=\"flow-node flow-node-accent\"><strong>2. Split</strong><span>Shot multiplier vs divider</span></div>\n      <div class=\"flow-arrow\">→</div>\n      <div id=\"cs-3\" class=\"flow-node\"><strong>3. Merge</strong><span>Fondi shot per frammento</span></div>\n      <div class=\"flow-arrow\">→</div>\n      <div id=\"cs-4\" class=\"flow-node\"><strong>4. Sew</strong><span>Ricuci (Pennylane; costo exp)</span></div>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 0,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "Vediamo le prime due tecniche"
+        },
+        {
+          "at": 5.64,
+          "action": "highlight",
+          "target": "#b-sw",
+          "duration": 36,
+          "anchor": "Con la shot-wise distribution dividiamo"
+        },
+        {
+          "at": 52.27,
+          "action": "highlight",
+          "target": "#b-broker",
+          "duration": 18,
+          "anchor": "Il Quantum Broker automatizza questa"
+        },
+        {
+          "at": 68.01,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "E se il circuito richiede"
+        },
+        {
+          "at": 75.78,
+          "action": "highlight",
+          "target": "#cs-1",
+          "duration": 2.1,
+          "anchor": "prima taglia il circuito in"
+        },
+        {
+          "at": 78,
+          "action": "highlight",
+          "target": "#cs-2",
+          "duration": 5.06,
+          "anchor": "poi divide gli shot tra"
+        },
+        {
+          "at": 83.18,
+          "action": "highlight",
+          "target": "#cs-3",
+          "duration": 1.14,
+          "anchor": "fonde per frammento"
+        },
+        {
+          "at": 84.44,
+          "action": "highlight",
+          "target": "#cs-4",
+          "duration": 15,
+          "anchor": "e infine ricuce classicamente con"
+        }
+      ],
+      "audio_file": "audio/scene-07.wav",
+      "subtitle_file": "subtitles/scene-07.json",
+      "duration_sec": 96.05
+    },
+    {
+      "id": "scene-08",
+      "section": "15.8 · Quando smettere: TVD e StableShots",
+      "title": "Trappola costo-fedeltà, TVD, algoritmo StableShots e audit",
+      "tts_text": "La terza tecnica risponde a una domanda cruciale: quanti shot servono? [pause:0.5] Un budget fisso crea una trappola costo-fedeltà: pochi shot causano sottocampionamento, troppi sprecano denaro e coda, perché il fabbisogno varia con famiglia del circuito, rumore, numero di qubit e sparsità dell'uscita. Anche i limiti teorici di concentrazione esplodono: per quattordici qubit, Weissman chiede oltre due milioni di shot e Hoeffding quasi centottanta miliardi, contro ventimila empirici. [pause:0.5] Serve quindi un criterio online basato sulla Total Variation Distance, T V D: la T V D tra P e Q è un mezzo della somma su x del valore assoluto di P di x meno Q di x, compresa tra zero e uno. Nell'esempio delle due monete truccate, ci fermiamo al nono lancio quando la T V D scende sotto zero virgola uno per due volte consecutive. [pause:0.6] Su questa idea nasce StableShots, politica online a scatola nera e indipendente dall'S D K: esegue batch di dimensione b, aggiorna la distribuzione cumulativa e controlla che la T V D rispetto a l batch precedenti resti al più epsilon per k controlli consecutivi, oppure al raggiungimento del massimo B. [pause:0.6] Validato in holdout su centottanta tracce QSimBench da quattro a quattordici qubit, StableShots raggiunge il cento per cento di successi con settemilaseicentocinquanta shot in mediana, risparmiando oltre diecimila shot rispetto al budget fisso da diciottomila, riduce l'overhead di coda con I B M Runtime Sessions e Amazon Braket Reservations, e registra ogni arresto in una hash chain verificabile a quattro eventi.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">15.8 · Quando smettere: TVD &amp; StableShots</div>\n  <h2 class=\"slide-title\">Trappola costo-fedeltà, TVD, algoritmo StableShots e verificabilità</h2>\n  <div id=\"s1\" class=\"grid-2 cue-hidden\">\n    <div id=\"b-trap\" class=\"box box-warn\">\n      <div class=\"box-label\">Trappola costo-fedeltà &amp; limiti teorici</div>\n      <p>Budget fisso = <strong>sottocampionamento</strong> (basso) o <strong>spreco</strong> (alto): gli shot dipendono da circuito, rumore, #qubit e sparsità. Su 14 qubit: Weissman = <strong>2,27M</strong>, Hoeffding = <strong>179,8B</strong> vs ~20k empirici.</p>\n    </div>\n    <div id=\"b-tvd\" class=\"math-card math-card-accent\">\n      <div class=\"step-tag-inline\">Total Variation Distance (TVD)</div>\n      \\[ \\operatorname{TVD}(P, Q) = \\frac{1}{2}\\sum_x \\abs{P(x) - Q(x)} \\in [0, 1] \\]\n      <p class=\"math-note\">Es. 2 monete truccate (<code>00,01,10,11</code>): stop al lancio 9 con TVD 0,071 e 0,097 \\(\\le 0{,}1\\); stima \\((2,4,1,2)/9\\).</p>\n    </div>\n  </div>\n  <div id=\"s2\" class=\"grid-2 cue-hidden\">\n    <div id=\"b-algo\" class=\"box box-algo\">\n      <div class=\"box-label\">Algoritmo StableShots (online, black-box, SDK-agnostic)</div>\n      \\[ \\htmlId{f-st}{d_t = \\operatorname{TVD}\\!\\left(\\hat{P}_{N_t b},\\, \\hat{P}_{N_{t-l} b}\\right) \\le \\eps} \\quad \\text{per } k \\text{ controlli (o } N = B\\text{)} \\]\n      <p><strong>Ciclo:</strong> batch da \\(b\\) \\(\\rightarrow\\) aggiorna \\(\\hat{P}\\) \\(\\rightarrow\\) confronta con \\(l\\) batch fa.<br/><strong>Parametri:</strong> \\(b\\) (batch size), \\(l\\) (look-back), \\(\\eps\\) (soglia TVD), \\(k\\) (patience).</p>\n    </div>\n    <div id=\"b-val\" class=\"box box-primary\">\n      <div class=\"box-label\">Validazione QSimBench, Cloud &amp; Hash Chain</div>\n      <p><strong>Holdout</strong> (180 tracce, 4–14 qubit, 5 backend IBM, TVD \\(\\le 0{,}05\\)): <strong>100%</strong> successi in <strong>7.650 shot</strong> mediani (2.750 a 4q, 11.500 a 8q) vs Fixed-18k (83,3%), 10k (66,7%), 5k (54,1%).<br/><strong>Cloud &amp; Audit:</strong> <em>IBM Sessions</em>, <em>Braket Reservations</em>; <em>hash chain</em> (<code>run_started</code>, <code>batch_accepted</code>, <code>stability_check</code>, <code>stop_decision</code>).</p>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 1.06,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "risponde a una domanda cruciale"
+        },
+        {
+          "at": 5.4,
+          "action": "highlight",
+          "target": "#b-trap",
+          "duration": 21,
+          "anchor": "Un budget fisso crea una"
+        },
+        {
+          "at": 31.91,
+          "action": "highlight",
+          "target": "#b-tvd",
+          "duration": 18,
+          "anchor": "Serve quindi un criterio online"
+        },
+        {
+          "at": 54.05,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Su questa idea nasce StableShots"
+        },
+        {
+          "at": 54.05,
+          "action": "highlight",
+          "target": "#b-algo",
+          "duration": 10.06,
+          "anchor": "Su questa idea nasce StableShots"
+        },
+        {
+          "at": 64.23,
+          "action": "highlight",
+          "target": "#f-st",
+          "duration": 9.5,
+          "anchor": "controlla che la T V D"
+        },
+        {
+          "at": 73.85,
+          "action": "highlight",
+          "target": "#b-val",
+          "duration": 30,
+          "anchor": "Validato in holdout su centottanta"
+        }
+      ],
+      "audio_file": "audio/scene-08.wav",
+      "subtitle_file": "subtitles/scene-08.json",
+      "duration_sec": 99.06
+    },
+    {
+      "id": "scene-09",
+      "section": "15.9 · Topologie QPU, risultati Shot-wise e limiti",
+      "title": "Dettagli su BQP, vettore qubit, topologie QPU e risultati Shot-wise",
+      "tts_text": "Approfondiamo alcuni dettagli su qubit, topologie e risultati shot-wise. [pause:0.5] La classe B Q P copre problemi di decisione sì o no, con applicazioni attese in cinque settori: sanità, finanza, telecomunicazioni, trasporti ed energia. Poiché i ket zero e uno sono i vettori uno-zero e zero-uno, il qubit sessanta-quaranta equivale al vettore zero virgola settecentosettantacinque, zero virgola seicentotrentadue. [pause:0.6] I qubit interagiscono secondo la topologia fisica: lineare con al più due vicini, a griglia fino a quattro vicini, oppure heavy-hex nei chip moderni. Nei portali cloud ogni macchina espone numero di qubit, stato online, coda in pausa o riservata, lunghezza coda, processore e piano aperto o a pagamento. [pause:0.6] Nei test shot-wise su tre politiche di split per tre di merge, cioè nove combinazioni, Hellinger minimizza la distanza al quadrato tra distribuzioni. Il risultato chiave è che la tecnica non supera la migliore Q P U singola e ha errore medio paragonabile, ma abbatte errore massimo e deviazione standard, dipendendo però dalla frequenza delle calibrazioni. [pause:0.5] Quattro le estensioni future: mitigazione errori per shot, nuove politiche split e merge, calibrazioni per scenari specifici ed esecuzioni incrementali.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">15.9 · Topologie QPU, risultati Shot-wise e limiti</div>\n  <h2 class=\"slide-title\">BQP sì/no, vettore qubit, topologie QPU, cloud e risultati Shot-wise</h2>\n  <div id=\"s1\" class=\"split-visual cue-hidden\">\n    <div id=\"svg-topos\" class=\"svg-panel\">\n      <svg viewBox=\"0 0 390 176\" class=\"diagram-svg\" aria-label=\"Tre topologie QPU: Linear, Grid e Heavy-Hex\">\n        <g id=\"svg-topo-lin\">\n          <line x1=\"22\" y1=\"78\" x2=\"102\" y2=\"78\" stroke=\"var(--blue)\" stroke-width=\"2\"/>\n          <circle cx=\"22\" cy=\"78\" r=\"5\" fill=\"var(--blue)\"/>\n          <circle cx=\"42\" cy=\"78\" r=\"5\" fill=\"var(--blue)\"/>\n          <circle cx=\"62\" cy=\"78\" r=\"5\" fill=\"var(--blue)\"/>\n          <circle cx=\"82\" cy=\"78\" r=\"5\" fill=\"var(--blue)\"/>\n          <circle cx=\"102\" cy=\"78\" r=\"5\" fill=\"var(--blue)\"/>\n          <text x=\"62\" y=\"148\" text-anchor=\"middle\" class=\"svg-math-sm\">Linear</text>\n          <text x=\"62\" y=\"162\" text-anchor=\"middle\" class=\"svg-tick\">max 2 vicini</text>\n        </g>\n        <g id=\"svg-topo-grid\">\n          <line x1=\"151\" y1=\"44\" x2=\"219\" y2=\"44\" stroke=\"var(--green)\" stroke-width=\"1.8\"/>\n          <line x1=\"151\" y1=\"78\" x2=\"219\" y2=\"78\" stroke=\"var(--green)\" stroke-width=\"1.8\"/>\n          <line x1=\"151\" y1=\"112\" x2=\"219\" y2=\"112\" stroke=\"var(--green)\" stroke-width=\"1.8\"/>\n          <line x1=\"151\" y1=\"44\" x2=\"151\" y2=\"112\" stroke=\"var(--green)\" stroke-width=\"1.8\"/>\n          <line x1=\"185\" y1=\"44\" x2=\"185\" y2=\"112\" stroke=\"var(--green)\" stroke-width=\"1.8\"/>\n          <line x1=\"219\" y1=\"44\" x2=\"219\" y2=\"112\" stroke=\"var(--green)\" stroke-width=\"1.8\"/>\n          <circle cx=\"151\" cy=\"44\" r=\"4.5\" fill=\"var(--green)\"/><circle cx=\"185\" cy=\"44\" r=\"4.5\" fill=\"var(--green)\"/><circle cx=\"219\" cy=\"44\" r=\"4.5\" fill=\"var(--green)\"/>\n          <circle cx=\"151\" cy=\"78\" r=\"4.5\" fill=\"var(--green)\"/><circle cx=\"185\" cy=\"78\" r=\"4.5\" fill=\"var(--green)\"/><circle cx=\"219\" cy=\"78\" r=\"4.5\" fill=\"var(--green)\"/>\n          <circle cx=\"151\" cy=\"112\" r=\"4.5\" fill=\"var(--green)\"/><circle cx=\"185\" cy=\"112\" r=\"4.5\" fill=\"var(--green)\"/><circle cx=\"219\" cy=\"112\" r=\"4.5\" fill=\"var(--green)\"/>\n          <text x=\"185\" y=\"148\" text-anchor=\"middle\" class=\"svg-math-sm\">Grid</text>\n          <text x=\"185\" y=\"162\" text-anchor=\"middle\" class=\"svg-tick\">fino a 4 vicini</text>\n        </g>\n        <g id=\"svg-topo-hhex\">\n          <polygon points=\"316,36 352,57 352,99 316,120 280,99 280,57\" fill=\"none\" stroke=\"var(--orange)\" stroke-width=\"1.8\"/>\n          <line x1=\"316\" y1=\"20\" x2=\"316\" y2=\"36\" stroke=\"var(--orange)\" stroke-width=\"1.8\"/>\n          <line x1=\"316\" y1=\"120\" x2=\"316\" y2=\"134\" stroke=\"var(--orange)\" stroke-width=\"1.8\"/>\n          <circle cx=\"316\" cy=\"36\" r=\"4.5\" fill=\"var(--orange)\"/>\n          <circle cx=\"352\" cy=\"57\" r=\"4.5\" fill=\"var(--orange)\"/>\n          <circle cx=\"352\" cy=\"99\" r=\"4.5\" fill=\"var(--orange)\"/>\n          <circle cx=\"316\" cy=\"120\" r=\"4.5\" fill=\"var(--orange)\"/>\n          <circle cx=\"280\" cy=\"99\" r=\"4.5\" fill=\"var(--orange)\"/>\n          <circle cx=\"280\" cy=\"57\" r=\"4.5\" fill=\"var(--orange)\"/>\n          <circle cx=\"334\" cy=\"46.5\" r=\"3.6\" fill=\"var(--bg-paper)\" stroke=\"var(--orange)\" stroke-width=\"1.8\"/>\n          <circle cx=\"352\" cy=\"78\" r=\"3.6\" fill=\"var(--bg-paper)\" stroke=\"var(--orange)\" stroke-width=\"1.8\"/>\n          <circle cx=\"334\" cy=\"109.5\" r=\"3.6\" fill=\"var(--bg-paper)\" stroke=\"var(--orange)\" stroke-width=\"1.8\"/>\n          <circle cx=\"298\" cy=\"109.5\" r=\"3.6\" fill=\"var(--bg-paper)\" stroke=\"var(--orange)\" stroke-width=\"1.8\"/>\n          <circle cx=\"280\" cy=\"78\" r=\"3.6\" fill=\"var(--bg-paper)\" stroke=\"var(--orange)\" stroke-width=\"1.8\"/>\n          <circle cx=\"298\" cy=\"46.5\" r=\"3.6\" fill=\"var(--bg-paper)\" stroke=\"var(--orange)\" stroke-width=\"1.8\"/>\n          <circle cx=\"316\" cy=\"20\" r=\"3.6\" fill=\"var(--orange)\"/>\n          <circle cx=\"316\" cy=\"134\" r=\"3.6\" fill=\"var(--orange)\"/>\n          <text x=\"316\" y=\"148\" text-anchor=\"middle\" class=\"svg-math-sm\">Heavy-Hex</text>\n          <text x=\"316\" y=\"162\" text-anchor=\"middle\" class=\"svg-tick\">grado 2–3 (IBM)</text>\n        </g>\n      </svg>\n    </div>\n    <div class=\"formula-col\">\n      <div id=\"b-bqp-vec\" class=\"box box-def\">\n        <div class=\"box-label\">BQP sì/no, 5 settori &amp; vettore qubit</div>\n        <p><strong>BQP</strong>: problemi di decisione <strong>sì/no</strong>. <strong>5 settori</strong>: <em>sanità, finanza, telecomunicazioni, trasporti, energia</em>. Base \\((1,0),(0,1)\\) \\(\\Rightarrow\\) qubit 60%/40% = vettore \\((0{,}775;\\, 0{,}632)\\).</p>\n      </div>\n      <div id=\"b-cloud-attr\" class=\"box box-primary\">\n        <div class=\"box-label\">Attributi esposti dalle QPU su Cloud</div>\n        <p><strong>#qubit</strong>, <strong>stato</strong> (<em>online / coda in pausa / riservata</em>), <strong>lunghezza coda</strong>, <strong>tipo di processore</strong> e <strong>piano</strong> (<em>aperto / a pagamento</em>).</p>\n      </div>\n    </div>\n  </div>\n  <div id=\"s2\" class=\"grid-2 cue-hidden\">\n    <div id=\"b-sw-res\" class=\"box box-idea\">\n      <div class=\"box-label\">Risultati Shot-wise (\\(3 \\times 3 = 9\\) combinazioni)</div>\n      <p><strong>Hellinger</strong> minimizza la distanza al quadrato tra distribuzioni. Su 2–7 QPU: <strong>non supera la migliore QPU singola</strong> (la può diluire), errore medio paragonabile, ma abbatte <strong>errore max</strong> e <strong>deviazione standard</strong>. Dipende dalla <strong>frequenza</strong> delle calibrazioni.</p>\n    </div>\n    <div id=\"b-sw-ext\" class=\"box box-algo\">\n      <div class=\"box-label\">4 estensioni future della Shot-wise</div>\n      <ol class=\"clean-list\">\n        <li>Mitigazione degli errori a livello di shot;</li>\n        <li>Altre politiche di split/merge (<em>Cut&amp;Shoot</em>);</li>\n        <li>Calibrazioni adatte a scenari specifici;</li>\n        <li>Esecuzioni incrementali per ridurre gli shot (<em>StableShots</em>).</li>\n      </ol>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 0.92,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "dettagli su qubit, topologie"
+        },
+        {
+          "at": 5.18,
+          "action": "highlight",
+          "target": "#b-bqp-vec",
+          "duration": 21,
+          "anchor": "La classe B Q P"
+        },
+        {
+          "at": 33.58,
+          "action": "highlight",
+          "target": "#svg-topo-lin",
+          "duration": 2.04,
+          "anchor": "lineare con al più due"
+        },
+        {
+          "at": 35.74,
+          "action": "highlight",
+          "target": "#svg-topo-grid",
+          "duration": 1.9,
+          "anchor": "a griglia fino a quattro"
+        },
+        {
+          "at": 37.76,
+          "action": "highlight",
+          "target": "#svg-topo-hhex",
+          "duration": 2.94,
+          "anchor": "oppure heavy-hex nei chip moderni"
+        },
+        {
+          "at": 40.82,
+          "action": "highlight",
+          "target": "#b-cloud-attr",
+          "duration": 11.04,
+          "anchor": "Nei portali cloud ogni macchina"
+        },
+        {
+          "at": 51.98,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Nei test shot-wise su tre"
+        },
+        {
+          "at": 51.98,
+          "action": "highlight",
+          "target": "#b-sw-res",
+          "duration": 19,
+          "anchor": "Nei test shot-wise su tre"
+        },
+        {
+          "at": 74.08,
+          "action": "highlight",
+          "target": "#b-sw-ext",
+          "duration": 12,
+          "anchor": "Quattro le estensioni future"
+        }
+      ],
+      "audio_file": "audio/scene-09.wav",
+      "subtitle_file": "subtitles/scene-09.json",
+      "duration_sec": 83.89
+    },
+    {
+      "id": "scene-10",
+      "section": "15.10 · Cut&Shoot in dettaglio e Multiprogramming",
+      "title": "Varianti Shot Multiplier/Divider, esperimenti 1–8 QPU e Multiprogramming",
+      "tts_text": "Vediamo ora nel dettaglio Cut and Shoot e il multiprogramming. [pause:0.5] Partiamo dalla premessa del circuit cutting: tagliare un circuito grande in frammenti e ricucirli con Pennylane non solo ha un costo esponenziale nel numero di tagli, ma richiede anche più shot per stimare correttamente il risultato. [pause:0.5] Quando combiniamo taglio e distribuzione, lo split uniforme offre due varianti precise: lo shot multiplier replica tutti gli shot del frammento su ciascuna Q P U, moltiplicando quindi il totale per il numero di macchine; lo shot divider invece divide gli shot del frammento tra le Q P U, lasciando invariato il totale. [pause:0.6] L'efficacia è stata valutata da una a otto Q P U confrontando quattro configurazioni: nessuna tecnica, solo circuit cutting, solo shot-wise e Cut and Shoot. Cut and Shoot ottiene i tassi d'errore più bassi con un overhead shot-wise trascurabile, permette di eseguire circuiti più grandi dell'hardware disponibile, aumenta la resilienza ai guasti e riduce i tempi di attesa. [pause:0.6] Guardiamo infine il multiprogramming combinato con la shot-wise distribution. Per non sprecare qubit inutilizzati, uno scheduler raccoglie circuiti di più sviluppatori, li divide shot-wise, li accoda e li compone insieme sui rispettivi qubit delle Q P U, per poi separare e riaggregare i risultati per ogni sviluppatore.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">15.10 · Cut&amp;Shoot in dettaglio &amp; Multiprogramming</div>\n  <h2 class=\"slide-title\">Varianti di Cut&amp;Shoot, esperimenti su 1–8 QPU e Multiprogramming</h2>\n  <div id=\"s1\" class=\"grid-2 cue-hidden\">\n    <div id=\"b-cut-var\" class=\"box box-def\">\n      <div class=\"box-label\">Circuit Cutting &amp; varianti Split (Pennylane)</div>\n      <p>Oltre al costo esponenziale nei tagli, il <em>circuit cutting</em> <strong>richiede più shot</strong>.<br/><strong>Shot multiplier</strong>: ogni QPU esegue <strong>tutti</strong> gli shot del frammento (totale \\(\\times\\) #QPU).<br/><strong>Shot divider</strong>: gli shot del frammento sono <strong>divisi</strong> tra le QPU (totale invariato).</p>\n    </div>\n    <div id=\"b-cut-exp\" class=\"box box-primary\">\n      <div class=\"box-label\">4 configurazioni (1–8 QPU) &amp; vantaggi Cut&amp;Shoot</div>\n      <p><strong>Confronto</strong>: (1) nessuna tecnica, (2) solo cutting, (3) solo shot-wise, (4) <strong>Cut&amp;Shoot</strong>.<br/><strong>Vantaggi</strong>: tassi d'errore più bassi, overhead shot-wise trascurabile, circuiti più grandi delle QPU, <strong>resilienza ai guasti</strong> e <strong>meno attesa</strong>.</p>\n    </div>\n  </div>\n  <div id=\"s2\" class=\"split-visual cue-hidden\">\n    <div id=\"svg-multi\" class=\"svg-panel\">\n      <svg viewBox=\"0 0 430 166\" class=\"diagram-svg\" aria-label=\"Multiprogramming combinato con Shot-wise distribution\">\n        <defs>\n          <marker id=\"arr-mp\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"5\" markerHeight=\"5\" orient=\"auto\">\n            <path d=\"M0 1 L9 5 L0 9 z\" fill=\"var(--ink-soft)\"/>\n          </marker>\n        </defs>\n        <g id=\"svg-devs\">\n          <rect x=\"10\" y=\"22\" width=\"68\" height=\"44\" rx=\"6\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.5\"/>\n          <text x=\"44\" y=\"41\" text-anchor=\"middle\" class=\"svg-math-sm\">Dev A</text>\n          <text x=\"44\" y=\"56\" text-anchor=\"middle\" class=\"svg-tick\">circuito 1</text>\n          <rect x=\"10\" y=\"96\" width=\"68\" height=\"44\" rx=\"6\" fill=\"rgba(21,128,61,0.14)\" stroke=\"var(--green)\" stroke-width=\"1.5\"/>\n          <text x=\"44\" y=\"115\" text-anchor=\"middle\" class=\"svg-math-sm\">Dev B</text>\n          <text x=\"44\" y=\"130\" text-anchor=\"middle\" class=\"svg-tick\">circuito 2</text>\n          <line x1=\"78\" y1=\"44\" x2=\"114\" y2=\"74\" stroke=\"var(--ink-soft)\" stroke-width=\"1.5\" marker-end=\"url(#arr-mp)\"/>\n          <line x1=\"78\" y1=\"118\" x2=\"114\" y2=\"88\" stroke=\"var(--ink-soft)\" stroke-width=\"1.5\" marker-end=\"url(#arr-mp)\"/>\n        </g>\n        <g id=\"svg-sched\">\n          <rect x=\"118\" y=\"38\" width=\"90\" height=\"86\" rx=\"8\" fill=\"var(--bg-surface)\" stroke=\"var(--ink-soft)\" stroke-width=\"1.5\"/>\n          <text x=\"163\" y=\"67\" text-anchor=\"middle\" class=\"svg-math-sm\">Scheduler</text>\n          <text x=\"163\" y=\"84\" text-anchor=\"middle\" class=\"svg-tick\">split shot-wise</text>\n          <text x=\"163\" y=\"99\" text-anchor=\"middle\" class=\"svg-tick\">+ composizione</text>\n          <line x1=\"208\" y1=\"62\" x2=\"240\" y2=\"46\" stroke=\"var(--ink-soft)\" stroke-width=\"1.5\" marker-end=\"url(#arr-mp)\"/>\n          <line x1=\"208\" y1=\"100\" x2=\"240\" y2=\"118\" stroke=\"var(--ink-soft)\" stroke-width=\"1.5\" marker-end=\"url(#arr-mp)\"/>\n        </g>\n        <g id=\"svg-qpus-mp\">\n          <rect x=\"244\" y=\"18\" width=\"82\" height=\"56\" rx=\"6\" fill=\"var(--bg-paper)\" stroke=\"var(--ink-soft)\" stroke-width=\"1.4\"/>\n          <text x=\"285\" y=\"33\" text-anchor=\"middle\" class=\"svg-tick\">QPU 1</text>\n          <rect x=\"251\" y=\"39\" width=\"32\" height=\"27\" rx=\"4\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.2\"/>\n          <text x=\"267\" y=\"56\" text-anchor=\"middle\" class=\"svg-tick\">A</text>\n          <rect x=\"287\" y=\"39\" width=\"32\" height=\"27\" rx=\"4\" fill=\"rgba(21,128,61,0.14)\" stroke=\"var(--green)\" stroke-width=\"1.2\"/>\n          <text x=\"303\" y=\"56\" text-anchor=\"middle\" class=\"svg-tick\">B</text>\n          <rect x=\"244\" y=\"90\" width=\"82\" height=\"56\" rx=\"6\" fill=\"var(--bg-paper)\" stroke=\"var(--ink-soft)\" stroke-width=\"1.4\"/>\n          <text x=\"285\" y=\"105\" text-anchor=\"middle\" class=\"svg-tick\">QPU 2</text>\n          <rect x=\"251\" y=\"111\" width=\"32\" height=\"27\" rx=\"4\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.2\"/>\n          <text x=\"267\" y=\"128\" text-anchor=\"middle\" class=\"svg-tick\">A</text>\n          <rect x=\"287\" y=\"111\" width=\"32\" height=\"27\" rx=\"4\" fill=\"rgba(21,128,61,0.14)\" stroke=\"var(--green)\" stroke-width=\"1.2\"/>\n          <text x=\"303\" y=\"128\" text-anchor=\"middle\" class=\"svg-tick\">B</text>\n          <line x1=\"326\" y1=\"46\" x2=\"352\" y2=\"74\" stroke=\"var(--ink-soft)\" stroke-width=\"1.5\" marker-end=\"url(#arr-mp)\"/>\n          <line x1=\"326\" y1=\"118\" x2=\"352\" y2=\"88\" stroke=\"var(--ink-soft)\" stroke-width=\"1.5\" marker-end=\"url(#arr-mp)\"/>\n        </g>\n        <g id=\"svg-reagg\">\n          <rect x=\"356\" y=\"38\" width=\"64\" height=\"86\" rx=\"8\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.5\"/>\n          <text x=\"388\" y=\"68\" text-anchor=\"middle\" class=\"svg-tick\">Separa</text>\n          <text x=\"388\" y=\"83\" text-anchor=\"middle\" class=\"svg-tick\">&amp; riaggrega</text>\n          <text x=\"388\" y=\"99\" text-anchor=\"middle\" class=\"svg-tick\">(per dev)</text>\n        </g>\n      </svg>\n    </div>\n    <div class=\"formula-col\">\n      <div id=\"b-multi\" class=\"box box-idea\">\n        <div class=\"box-label\">Multiprogramming + Shot-wise</div>\n        <p>Esegue sulla <strong>stessa QPU</strong> più circuiti piccoli insieme, ciascuno sui propri qubit, per non sprecare qubit liberi. Uno <strong>scheduler</strong> raccoglie circuiti di più sviluppatori, li divide shot-wise, li compone sulle QPU e <strong>separa/riaggrega</strong> i risultati per ciascuno. (Estensioni: cutting <em>olistico</em>).</p>\n      </div>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 1.66,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "dettaglio Cut and Shoot"
+        },
+        {
+          "at": 4.94,
+          "action": "highlight",
+          "target": "#b-cut-var",
+          "duration": 32.64,
+          "anchor": "Partiamo dalla premessa del circuit"
+        },
+        {
+          "at": 37.7,
+          "action": "highlight",
+          "target": "#b-cut-exp",
+          "duration": 22.76,
+          "anchor": "L'efficacia è stata valutata da"
+        },
+        {
+          "at": 60.58,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Guardiamo infine il multiprogramming combinato"
+        },
+        {
+          "at": 60.58,
+          "action": "highlight",
+          "target": "#b-multi",
+          "duration": 6.5,
+          "anchor": "Guardiamo infine il multiprogramming combinato"
+        },
+        {
+          "at": 67.3,
+          "action": "highlight",
+          "target": "#svg-devs",
+          "duration": 2.62,
+          "anchor": "uno scheduler raccoglie circuiti di"
+        },
+        {
+          "at": 70.04,
+          "action": "highlight",
+          "target": "#svg-sched",
+          "duration": 2.98,
+          "anchor": "li divide shot-wise, li accoda"
+        },
+        {
+          "at": 73.14,
+          "action": "highlight",
+          "target": "#svg-qpus-mp",
+          "duration": 2.18,
+          "anchor": "sui rispettivi qubit delle"
+        },
+        {
+          "at": 75.44,
+          "action": "highlight",
+          "target": "#svg-reagg",
+          "duration": 5,
+          "anchor": "separare e riaggregare i risultati"
+        }
+      ],
+      "audio_file": "audio/scene-10.wav",
+      "subtitle_file": "subtitles/scene-10.json",
+      "duration_sec": 78.63
+    },
+    {
+      "id": "scene-11",
+      "section": "15.11 · Calcolo TVD passo-passo, validazione, Cloud e Hash Chain",
+      "title": "Calcolo TVD sulle monete, protocollo holdout, Cloud e Hash Chain",
+      "tts_text": "Completiamo il capitolo con calcolo T V D, validazione e cloud. [pause:0.5] Sulle due monete truccate confrontiamo il terzo lancio, uno uno zero uno diviso tre, con il quarto, uno due zero uno diviso quattro, cioè zero virgola venticinque, zero virgola cinque, zero e zero virgola venticinque. Le differenze assolute sono zero virgola zero ottantatré, zero virgola centosessantasette, zero e zero virgola zero ottantatré: somma zero virgola trecentotrentatré, la cui metà dà T V D zero virgola centosessantasette. Con b uguale uno, l uguale uno, epsilon zero virgola uno e k uguale due, emerge il segnale di rendimenti decrescenti. [pause:0.6] Con T V D obiettivo zero virgola zero cinque e fallimento zero virgola zero cinque, dove esplodono Weissman e Hoeffding, il test holdout usa sei famiglie di circuiti su quattro backend più un quinto mai visto, per tremilaseicento valutazioni e cento ripetizioni. Attenzione: da dodici a quattordici qubit si toccano i ventimila shot, poiché cinquemila sono troppi per quattro qubit e troppo pochi per otto. [pause:0.6] Su cloud, I B M Sessions dà priorità ai job iterativi e Braket Reservations offre accesso esclusivo in finestra prenotata. Ogni arresto entra in una hash chain di record concatenati con l'impronta del precedente, salvando run started, batch accepted, stability check e stop decision; circuit mirroring e suite di benchmark Q S E guidano le estensioni.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">15.11 · Calcolo TVD passo-passo, validazione, Cloud &amp; Hash Chain</div>\n  <h2 class=\"slide-title\">TVD sulle monete, holdout QSimBench, Cloud anti-coda e Hash Chain</h2>\n  <div id=\"s1\" class=\"grid-2 cue-hidden\">\n    <div id=\"b-tvd-step\" class=\"math-card math-card-accent\">\n      <div class=\"step-tag-inline\">Calcolo TVD passo-passo (n=3 vs n=4)</div>\n      \\[ P_3 = (1,1,0,1)/3 \\approx (0{,}333;\\, 0{,}333;\\, 0;\\, 0{,}333), \\quad P_4 = (1,2,0,1)/4 = (0{,}25;\\, 0{,}5;\\, 0;\\, 0{,}25) \\]\n      \\[ \\abs{P_4 - P_3} = (0{,}083;\\, 0{,}167;\\, 0;\\, 0{,}083) \\Rightarrow \\Sigma = 0{,}333 \\Rightarrow \\htmlId{f-tvd-half}{\\operatorname{TVD} = \\frac{1}{2}(0{,}333) = 0{,}167} \\]\n      <p class=\"math-note\">Segnale di <strong>rendimenti decrescenti</strong>; qui \\(b=1,\\, l=1,\\, \\eps=0{,}1,\\, k=2\\) (stop a \\(n=9\\)).</p>\n    </div>\n    <div id=\"b-holdout\" class=\"box box-warn\">\n      <div class=\"box-label\">Validazione Holdout &amp; Attenzione su #qubit</div>\n      <p><strong>Target</strong>: TVD \\(\\le 0{,}05\\), fallimento <strong>0,05</strong> (limite su cui Weissman/Hoeffding esplodono).<br/><strong>Holdout</strong>: <strong>6 famiglie</strong> (4–14q), configurazione su <strong>4 backend</strong> + test sul <strong>5° mai visto</strong>; <strong>3.600 valutazioni</strong>, <strong>100 ripetizioni</strong>.<br/><strong>Attenzione</strong>: a <strong>12–14 qubit</strong> tocca i <strong>20.000 shot</strong> — <em>\"5.000 sono troppi per 4 qubit e troppo pochi per 8\"</em>.</p>\n    </div>\n  </div>\n  <div id=\"s2\" class=\"grid-2 cue-hidden\">\n    <div id=\"b-cloud-qse\" class=\"box box-primary\">\n      <div class=\"box-label\">Cloud anti-coda &amp; Prospettive QSE</div>\n      <p><strong>IBM Runtime Sessions</strong>: priorità ai job iterativi della stessa sessione.<br/><strong>Amazon Braket Reservations</strong>: accesso esclusivo in finestra prenotata (niente coda globale).<br/><strong>Prospettive</strong>: <em>circuit mirroring</em> (scelta QPU migliore) e suite di benchmark QSE a livello di esecuzione.</p>\n    </div>\n    <div id=\"b-hash\" class=\"box box-algo\">\n      <div class=\"box-label\">Verificabilità: Hash Chain a 4 payload</div>\n      <p>Catena di record dove ciascuno contiene l'<strong>impronta crittografica del precedente</strong> (rieseguibile e verificabile):</p>\n      <ul class=\"clean-list\">\n        <li><code>run_started</code> (config, contesto) · <code>batch_accepted</code> (impronte batch/conteggi)</li>\n        <li><code>stability_check</code> (TVD, serie, esiti) · <code>stop_decision</code> (motivo e prove)</li>\n      </ul>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 1.2,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "con calcolo T V D"
+        },
+        {
+          "at": 5.34,
+          "action": "highlight",
+          "target": "#b-tvd-step",
+          "duration": 23,
+          "anchor": "Sulle due monete truccate confrontiamo"
+        },
+        {
+          "at": 32.93,
+          "action": "highlight",
+          "target": "#f-tvd-half",
+          "duration": 11,
+          "anchor": "la cui metà dà T"
+        },
+        {
+          "at": 47.59,
+          "action": "highlight",
+          "target": "#b-holdout",
+          "duration": 27,
+          "anchor": "Con T V D obiettivo zero"
+        },
+        {
+          "at": 75.66,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Su cloud, I B M"
+        },
+        {
+          "at": 75.66,
+          "action": "highlight",
+          "target": "#b-cloud-qse",
+          "duration": 8.94,
+          "anchor": "Su cloud, I B M"
+        },
+        {
+          "at": 84.72,
+          "action": "highlight",
+          "target": "#b-hash",
+          "duration": 11.36,
+          "anchor": "Ogni arresto entra in una"
+        },
+        {
+          "at": 96.2,
+          "action": "highlight",
+          "target": "#b-cloud-qse",
+          "duration": 6,
+          "anchor": "circuit mirroring e suite di"
+        }
+      ],
+      "audio_file": "audio/scene-11.wav",
+      "subtitle_file": "subtitles/scene-11.json",
+      "duration_sec": 100.73
+    },
+    {
+      "id": "scene-12",
+      "section": "15.12 · Riepilogo e autoverifica",
+      "title": "Punti chiave del capitolo e domande d'esame",
+      "tts_text": "Chiudiamo questo quindicesimo e ultimo capitolo fissando i sei punti essenziali da ricordare per l'esame. [pause:0.5] Primo: i computer quantistici risolvono alcuni problemi esponenzialmente più in fretta, nella classe B Q P, come la fattorizzazione di Shor e la ricerca di Grover. [pause:0.5] Secondo: il qubit vive in sovrapposizione secondo ket psi uguale alfa per stato zero più beta per stato uno, collassa alla misura e può essere entangled a qualunque distanza. [pause:0.5] Terzo: l'hardware integra processore criogenico, interfaccia di misura e controller classico; si accede via cloud, scegliendo tra tecnologie e topologie diverse. [pause:0.5] Quarto: si programma a circuiti quantistici con porte e misure; poiché l'uscita è probabilistica e le macchine NISQ sono rumorose, servono molti shot. [pause:0.5] Quinto: la Quantum Software Engineering applica principi di ingegneria secondo la definizione di Zhao e i nove punti del Talavera Manifesto. [pause:0.5] Sesto: shot-wise distribution, Quantum Broker, Cut and Shoot e StableShots migliorano affidabilità, scalabilità e costi grazie a split, taglio dei circuiti e arresto adattivo verificabile basato sulla T V D. [pause:0.6] Per completare il ripasso, provate a rispondere alle dodici domande di verifica sulla destra.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">15.12 · Riepilogo &amp; Autoverifica</div>\n  <h2 class=\"slide-title\">Punti chiave del capitolo e domande d'esame</h2>\n  <div class=\"grid-2\">\n    <div class=\"box box-algo\">\n      <div class=\"box-label\">Punti chiave da fissare</div>\n      <ul class=\"clean-list\">\n        <li id=\"s1\" class=\"cue-hidden\"><strong>BQP &amp; Speedup</strong>: problemi polinomiali quantistici con errore \\(\\le 1/3\\); Shor e Grover.</li>\n        <li id=\"s2\" class=\"cue-hidden\"><strong>Qubit &amp; Entanglement</strong>: \\(\\lvert \\Psi \\rangle = \\alpha\\lvert 0 \\rangle + \\beta\\lvert 1 \\rangle\\), collasso alla misura, correlazione non locale.</li>\n        <li id=\"s3\" class=\"cue-hidden\"><strong>Hardware &amp; Cloud</strong>: processore nel refrigeratore, controller classico; 6 tecnologie e 3 topologie.</li>\n        <li id=\"s4\" class=\"cue-hidden\"><strong>Circuiti, shot &amp; NISQ</strong>: porte H/CNOT, uscita probabilistica a shot, dispositivi piccoli e rumorosi.</li>\n        <li id=\"s5\" class=\"cue-hidden\"><strong>QSE</strong>: definizione di Zhao (2020) e <em>Talavera Manifesto</em> in 9 principi.</li>\n        <li id=\"s6\" class=\"cue-hidden\"><strong>Tecniche QSE</strong>: Shot-wise &amp; Quantum Broker, Cut&amp;Shoot, StableShots (TVD \\(\\le \\eps\\) per \\(k\\) volte; 100% in 7.650 shot mediani, hash chain).</li>\n      </ul>\n    </div>\n    <div id=\"s7\" class=\"box box-theorem cue-hidden\">\n      <div class=\"box-label\">Domande di verifica</div>\n      <ol class=\"verify-list\">\n        <li>Cos'è la classe BQP? Fare due esempi di accelerazione quantistica.</li>\n        <li>Cos'è un qubit (concetto e formula)? Cosa sono ket e ampiezze?</li>\n        <li>Cosa succede misurando un qubit? Cos'è l'entanglement?</li>\n        <li>Parti di un computer quantistico e accesso via cloud?</li>\n        <li>Caratteristiche delle tecnologie dei qubit e cosa è una topologia?</li>\n        <li>Spiegare il circuito H + CNOT: perché produce <code>00</code> o <code>11</code>?</li>\n        <li>Perché servono molti shot e cosa significa NISQ?</li>\n        <li>Limiti di hardware e software quantistico; cos'è la QSE?</li>\n        <li>Shot-wise distribution: funzionamento, politiche e risultati?</li>\n        <li>Circuit cutting e combinazione in Cut&amp;Shoot?</li>\n        <li>Perché un budget fisso è una trappola e perché i bound non bastano?</li>\n        <li>Definire TVD su un esempio; come decide StableShots (\\(b, l, \\eps, k\\))?</li>\n      </ol>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 6.34,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "Primo: i computer quantistici"
+        },
+        {
+          "at": 6.34,
+          "action": "highlight",
+          "target": "#s1",
+          "duration": 9.52,
+          "anchor": "Primo: i computer quantistici"
+        },
+        {
+          "at": 15.98,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Secondo: il qubit vive"
+        },
+        {
+          "at": 15.98,
+          "action": "highlight",
+          "target": "#s2",
+          "duration": 11.5,
+          "anchor": "Secondo: il qubit vive"
+        },
+        {
+          "at": 27.82,
+          "action": "show",
+          "target": "#s3",
+          "anchor": "Terzo: l'hardware integra processore"
+        },
+        {
+          "at": 27.82,
+          "action": "highlight",
+          "target": "#s3",
+          "duration": 10.43,
+          "anchor": "Terzo: l'hardware integra processore"
+        },
+        {
+          "at": 38.37,
+          "action": "show",
+          "target": "#s4",
+          "anchor": "Quarto: si programma a"
+        },
+        {
+          "at": 38.37,
+          "action": "highlight",
+          "target": "#s4",
+          "duration": 8.78,
+          "anchor": "Quarto: si programma a"
+        },
+        {
+          "at": 47.27,
+          "action": "show",
+          "target": "#s5",
+          "anchor": "Quinto: la Quantum Software"
+        },
+        {
+          "at": 47.27,
+          "action": "highlight",
+          "target": "#s5",
+          "duration": 8.38,
+          "anchor": "Quinto: la Quantum Software"
+        },
+        {
+          "at": 55.77,
+          "action": "show",
+          "target": "#s6",
+          "anchor": "Sesto: shot-wise distribution"
+        },
+        {
+          "at": 55.77,
+          "action": "highlight",
+          "target": "#s6",
+          "duration": 15,
+          "anchor": "Sesto: shot-wise distribution"
+        },
+        {
+          "at": 69.53,
+          "action": "show",
+          "target": "#s7",
+          "anchor": "Per completare il ripasso, provate"
+        }
+      ],
+      "audio_file": "audio/scene-12.wav",
+      "subtitle_file": "subtitles/scene-12.json",
+      "duration_sec": 73.94
+    }
+  ]
+}

@@ -11,6 +11,21 @@
       "id": "parte-1",
       "label": "Parte I",
       "title": "Prodotti software e sviluppo agile"
+    },
+    {
+      "id": "parte-2",
+      "label": "Parte II",
+      "title": "Architettura del software"
+    },
+    {
+      "id": "parte-3",
+      "label": "Parte III",
+      "title": "Cloud e microservizi"
+    },
+    {
+      "id": "parte-4",
+      "label": "Parte IV",
+      "title": "Dal monolite alla produzione"
     }
   ],
   "lessons": [
@@ -24,6 +39,160 @@
       "status": "ready",
       "scenes_count": 6,
       "estimated_minutes": 7
+    },
+    {
+      "id": "02-agile",
+      "chapter": 2,
+      "part": "parte-1",
+      "icon": "roadmap",
+      "title": "Sviluppo agile",
+      "summary": "Manifesto Agile, consegna incrementale, Extreme Programming (XP), framework Scrum (ruoli, backlog, sprint, review, retrospettiva) e Kanban.",
+      "status": "ready",
+      "scenes_count": 9,
+      "estimated_minutes": 11
+    },
+    {
+      "id": "03-feature",
+      "chapter": 3,
+      "part": "parte-1",
+      "icon": "tree",
+      "title": "Feature, scenari e storie",
+      "summary": "Persona, scenari d'uso, user stories, design delle feature, criteri di qualità e relazione tra storie, scenari e product backlog.",
+      "status": "ready",
+      "scenes_count": 7,
+      "estimated_minutes": 8
+    },
+    {
+      "id": "04-architettura",
+      "chapter": 4,
+      "part": "parte-2",
+      "icon": "layers",
+      "title": "Architettura del software",
+      "summary": "Attributi di qualità, architettura a strati, pattern di distribuzione (client-server, MVC, SOA, event-driven) e scelte tecnologiche.",
+      "status": "ready",
+      "scenes_count": 9,
+      "estimated_minutes": 11
+    },
+    {
+      "id": "05-container",
+      "chapter": 5,
+      "part": "parte-3",
+      "icon": "matrix",
+      "title": "Cloud computing, container e Docker",
+      "summary": "Virtualizzazione vs containerizzazione, architettura di Docker (immagini, layer, Dockerfile, volumi, reti, Compose) e isolamento dei processi.",
+      "status": "ready",
+      "scenes_count": 7,
+      "estimated_minutes": 7
+    },
+    {
+      "id": "06-cloud",
+      "chapter": 6,
+      "part": "parte-3",
+      "icon": "bars",
+      "title": "Software basato sul cloud",
+      "summary": "Modelli IaaS, PaaS, SaaS e FaaS, scalabilità elastica, multi-tenancy, cloud-native design, statelessness e gestione dello stato sul cloud.",
+      "status": "ready",
+      "scenes_count": 10,
+      "estimated_minutes": 13
+    },
+    {
+      "id": "07-microservizi",
+      "chapter": 7,
+      "part": "parte-3",
+      "icon": "graph",
+      "title": "Architettura a microservizi",
+      "summary": "Principi dei microservizi, comunicazione sincrona e asincrona, API Gateway, service discovery, database per servizio, teorema CAP e resilienza.",
+      "status": "ready",
+      "scenes_count": 10,
+      "estimated_minutes": 13
+    },
+    {
+      "id": "08-smell",
+      "chapter": 8,
+      "part": "parte-3",
+      "icon": "code",
+      "title": "Smell architetturali e refactoring",
+      "summary": "Tassonomia degli architectural smells nei microservizi (shared persistence, cyclic dependency, hardcoded endpoints, API versioning) e relativi refactoring.",
+      "status": "ready",
+      "scenes_count": 9,
+      "estimated_minutes": 10
+    },
+    {
+      "id": "09-monolite",
+      "chapter": 9,
+      "part": "parte-4",
+      "icon": "tree",
+      "title": "Scomporre il monolite",
+      "summary": "Strategie di migrazione dal monolite ai microservizi, Strangler Fig pattern, identificazione dei confini di dominio e decomposizione del database.",
+      "status": "ready",
+      "scenes_count": 9,
+      "estimated_minutes": 11
+    },
+    {
+      "id": "10-kubernetes",
+      "chapter": 10,
+      "part": "parte-4",
+      "icon": "layers",
+      "title": "Kubernetes",
+      "summary": "Architettura control plane e worker node, Pod, ReplicaSet, Deployment, Service, Ingress, ConfigMap/Secret, volumi e autoscaling.",
+      "status": "ready",
+      "scenes_count": 10,
+      "estimated_minutes": 11
+    },
+    {
+      "id": "11-testing",
+      "chapter": 11,
+      "part": "parte-4",
+      "icon": "bars",
+      "title": "Testing",
+      "summary": "Piramide dei test, unit e integration testing, TDD, test funzionali, automazione, mock/stub, regression testing e security/load testing.",
+      "status": "ready",
+      "scenes_count": 9,
+      "estimated_minutes": 11
+    },
+    {
+      "id": "12-devops",
+      "chapter": 12,
+      "part": "parte-4",
+      "icon": "flow",
+      "title": "DevOps e code management",
+      "summary": "Cultura DevOps, Continuous Integration e Continuous Delivery/Deployment (CI/CD), Infrastructure as Code, Git workflow, monitoraggio e APM.",
+      "status": "ready",
+      "scenes_count": 11,
+      "estimated_minutes": 13
+    },
+    {
+      "id": "13-sicurezza",
+      "chapter": 13,
+      "part": "parte-4",
+      "icon": "matrix",
+      "title": "Sicurezza e privacy",
+      "summary": "Minacce web (injection, XSS, CSRF, DoS/DDoS), autenticazione, autorizzazione (ACL/RBAC), crittografia, TLS/certificati, KMS e privacy by design.",
+      "status": "ready",
+      "scenes_count": 10,
+      "estimated_minutes": 13
+    },
+    {
+      "id": "14-sicurezza-microservizi",
+      "chapter": 14,
+      "part": "parte-4",
+      "icon": "graph",
+      "title": "Sicurezza dei microservizi",
+      "summary": "Superficie d'attacco distribuita, Zero Trust, mTLS, autenticazione edge vs inter-servizio, OAuth 2.0, JWT, API Gateway security e gestione segreti.",
+      "status": "ready",
+      "scenes_count": 9,
+      "estimated_minutes": 11
+    },
+    {
+      "id": "15-quantum",
+      "chapter": 15,
+      "part": "parte-4",
+      "icon": "formula",
+      "title": "Quantum Software Engineering",
+      "summary": "Qubit, sovrapposizione, entanglement, porte e circuiti quantistici, era NISQ, ciclo di vita QSE e tecniche di ottimizzazione come StableShots.",
+      "status": "ready",
+      "scenes_count": 12,
+      "estimated_minutes": 16
     }
   ]
 }

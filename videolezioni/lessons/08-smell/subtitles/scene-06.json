@@ -1,0 +1,999 @@
+{
+  "duration": 72.247,
+  "segments": [
+    {
+      "start": 0.752,
+      "end": 4.192,
+      "text": "Come possiamo individuare e correggere questi smell in modo sistematico?",
+      "words": [
+        {
+          "text": "Come",
+          "start": 0.752,
+          "end": 0.932
+        },
+        {
+          "text": "possiamo",
+          "start": 0.972,
+          "end": 1.292
+        },
+        {
+          "text": "individuare",
+          "start": 1.352,
+          "end": 1.872
+        },
+        {
+          "text": "e",
+          "start": 1.912,
+          "end": 1.952
+        },
+        {
+          "text": "correggere",
+          "start": 2.012,
+          "end": 2.492
+        },
+        {
+          "text": "questi",
+          "start": 2.532,
+          "end": 2.772
+        },
+        {
+          "text": "smell",
+          "start": 2.832,
+          "end": 3.112
+        },
+        {
+          "text": "in",
+          "start": 3.272,
+          "end": 3.332
+        },
+        {
+          "text": "modo",
+          "start": 3.372,
+          "end": 3.532
+        },
+        {
+          "text": "sistematico?",
+          "start": 3.592,
+          "end": 4.192
+        }
+      ]
+    },
+    {
+      "start": 4.852,
+      "end": 10.073,
+      "text": "Entra in gioco MicroFreshener, uno strumento libero pensato per modificare le specifiche di un'applicazione a",
+      "words": [
+        {
+          "text": "Entra",
+          "start": 4.852,
+          "end": 5.032
+        },
+        {
+          "text": "in",
+          "start": 5.072,
+          "end": 5.112
+        },
+        {
+          "text": "gioco",
+          "start": 5.152,
+          "end": 5.372
+        },
+        {
+          "text": "MicroFreshener,",
+          "start": 5.612,
+          "end": 6.392
+        },
+        {
+          "text": "uno",
+          "start": 6.752,
+          "end": 6.872
+        },
+        {
+          "text": "strumento",
+          "start": 6.892,
+          "end": 7.233
+        },
+        {
+          "text": "libero",
+          "start": 7.273,
+          "end": 7.513
+        },
+        {
+          "text": "pensato",
+          "start": 7.573,
+          "end": 7.913
+        },
+        {
+          "text": "per",
+          "start": 7.953,
+          "end": 8.073
+        },
+        {
+          "text": "modificare",
+          "start": 8.133,
+          "end": 8.633
+        },
+        {
+          "text": "le",
+          "start": 8.693,
+          "end": 8.753
+        },
+        {
+          "text": "specifiche",
+          "start": 8.793,
+          "end": 9.313
+        },
+        {
+          "text": "di",
+          "start": 9.333,
+          "end": 9.393
+        },
+        {
+          "text": "un'applicazione",
+          "start": 9.413,
+          "end": 10.013
+        },
+        {
+          "text": "a",
+          "start": 10.033,
+          "end": 10.073
+        }
+      ]
+    },
+    {
+      "start": 10.113,
+      "end": 14.293,
+      "text": "microservizi, rilevare automaticamente gli smell e applicarne i refactoring.",
+      "words": [
+        {
+          "text": "microservizi,",
+          "start": 10.113,
+          "end": 10.773
+        },
+        {
+          "text": "rilevare",
+          "start": 11.233,
+          "end": 11.593
+        },
+        {
+          "text": "automaticamente",
+          "start": 11.633,
+          "end": 12.273
+        },
+        {
+          "text": "gli",
+          "start": 12.293,
+          "end": 12.413
+        },
+        {
+          "text": "smell",
+          "start": 12.453,
+          "end": 12.713
+        },
+        {
+          "text": "e",
+          "start": 13.113,
+          "end": 13.153
+        },
+        {
+          "text": "applicarne",
+          "start": 13.213,
+          "end": 13.693
+        },
+        {
+          "text": "i",
+          "start": 13.713,
+          "end": 13.753
+        },
+        {
+          "text": "refactoring.",
+          "start": 13.773,
+          "end": 14.293
+        }
+      ]
+    },
+    {
+      "start": 15.493,
+      "end": 19.813,
+      "text": "MicroFreshener adotta una excerpted taxonomy focalizzata su quattro smell:",
+      "words": [
+        {
+          "text": "MicroFreshener",
+          "start": 15.493,
+          "end": 16.133
+        },
+        {
+          "text": "adotta",
+          "start": 16.453,
+          "end": 16.733
+        },
+        {
+          "text": "una",
+          "start": 16.773,
+          "end": 16.913
+        },
+        {
+          "text": "excerpted",
+          "start": 17.013,
+          "end": 17.533
+        },
+        {
+          "text": "taxonomy",
+          "start": 17.573,
+          "end": 18.093
+        },
+        {
+          "text": "focalizzata",
+          "start": 18.433,
+          "end": 18.973
+        },
+        {
+          "text": "su",
+          "start": 19.033,
+          "end": 19.093
+        },
+        {
+          "text": "quattro",
+          "start": 19.193,
+          "end": 19.493
+        },
+        {
+          "text": "smell:",
+          "start": 19.533,
+          "end": 19.813
+        }
+      ]
+    },
+    {
+      "start": 20.313,
+      "end": 26.294,
+      "text": "no API gateway, endpoint-based service interaction, wobbly service interaction e shared persistence.",
+      "words": [
+        {
+          "text": "no",
+          "start": 20.313,
+          "end": 20.413
+        },
+        {
+          "text": "API",
+          "start": 20.553,
+          "end": 20.873
+        },
+        {
+          "text": "gateway,",
+          "start": 20.913,
+          "end": 21.273
+        },
+        {
+          "text": "endpoint-based",
+          "start": 21.714,
+          "end": 22.434
+        },
+        {
+          "text": "service",
+          "start": 22.514,
+          "end": 22.814
+        },
+        {
+          "text": "interaction,",
+          "start": 22.834,
+          "end": 23.314
+        },
+        {
+          "text": "wobbly",
+          "start": 23.854,
+          "end": 24.134
+        },
+        {
+          "text": "service",
+          "start": 24.174,
+          "end": 24.454
+        },
+        {
+          "text": "interaction",
+          "start": 24.474,
+          "end": 24.954
+        },
+        {
+          "text": "e",
+          "start": 25.274,
+          "end": 25.314
+        },
+        {
+          "text": "shared",
+          "start": 25.414,
+          "end": 25.674
+        },
+        {
+          "text": "persistence.",
+          "start": 25.714,
+          "end": 26.294
+        }
+      ]
+    },
+    {
+      "start": 26.974,
+      "end": 28.814,
+      "text": "L'applicazione è modellata come un grafo.",
+      "words": [
+        {
+          "text": "L'applicazione",
+          "start": 26.974,
+          "end": 27.534
+        },
+        {
+          "text": "è",
+          "start": 27.674,
+          "end": 27.714
+        },
+        {
+          "text": "modellata",
+          "start": 27.754,
+          "end": 28.154
+        },
+        {
+          "text": "come",
+          "start": 28.194,
+          "end": 28.334
+        },
+        {
+          "text": "un",
+          "start": 28.374,
+          "end": 28.454
+        },
+        {
+          "text": "grafo.",
+          "start": 28.494,
+          "end": 28.814
+        }
+      ]
+    },
+    {
+      "start": 29.394,
+      "end": 35.054,
+      "text": "I nodi rappresentano servizi, data store, message broker indicati con emme B e message router",
+      "words": [
+        {
+          "text": "I",
+          "start": 29.394,
+          "end": 29.434
+        },
+        {
+          "text": "nodi",
+          "start": 29.474,
+          "end": 29.674
+        },
+        {
+          "text": "rappresentano",
+          "start": 29.734,
+          "end": 30.234
+        },
+        {
+          "text": "servizi,",
+          "start": 30.294,
+          "end": 30.754
+        },
+        {
+          "text": "data",
+          "start": 31.174,
+          "end": 31.394
+        },
+        {
+          "text": "store,",
+          "start": 31.454,
+          "end": 31.734
+        },
+        {
+          "text": "message",
+          "start": 32.014,
+          "end": 32.374
+        },
+        {
+          "text": "broker",
+          "start": 32.394,
+          "end": 32.694
+        },
+        {
+          "text": "indicati",
+          "start": 32.874,
+          "end": 33.234
+        },
+        {
+          "text": "con",
+          "start": 33.274,
+          "end": 33.394
+        },
+        {
+          "text": "emme",
+          "start": 33.474,
+          "end": 33.634
+        },
+        {
+          "text": "B",
+          "start": 33.694,
+          "end": 33.734
+        },
+        {
+          "text": "e",
+          "start": 34.254,
+          "end": 34.294
+        },
+        {
+          "text": "message",
+          "start": 34.394,
+          "end": 34.754
+        },
+        {
+          "text": "router",
+          "start": 34.774,
+          "end": 35.054
+        }
+      ]
+    },
+    {
+      "start": 35.134,
+      "end": 36.195,
+      "text": "indicati con emme R.",
+      "words": [
+        {
+          "text": "indicati",
+          "start": 35.134,
+          "end": 35.514
+        },
+        {
+          "text": "con",
+          "start": 35.554,
+          "end": 35.674
+        },
+        {
+          "text": "emme",
+          "start": 35.774,
+          "end": 36.055
+        },
+        {
+          "text": "R.",
+          "start": 36.155,
+          "end": 36.195
+        }
+      ]
+    },
+    {
+      "start": 37.035,
+      "end": 40.455,
+      "text": "Gli archi rappresentano le invocazioni e possono portare tre etichette:",
+      "words": [
+        {
+          "text": "Gli",
+          "start": 37.035,
+          "end": 37.135
+        },
+        {
+          "text": "archi",
+          "start": 37.195,
+          "end": 37.415
+        },
+        {
+          "text": "rappresentano",
+          "start": 37.555,
+          "end": 38.075
+        },
+        {
+          "text": "le",
+          "start": 38.135,
+          "end": 38.195
+        },
+        {
+          "text": "invocazioni",
+          "start": 38.255,
+          "end": 38.895
+        },
+        {
+          "text": "e",
+          "start": 39.035,
+          "end": 39.075
+        },
+        {
+          "text": "possono",
+          "start": 39.115,
+          "end": 39.395
+        },
+        {
+          "text": "portare",
+          "start": 39.415,
+          "end": 39.735
+        },
+        {
+          "text": "tre",
+          "start": 39.815,
+          "end": 39.935
+        },
+        {
+          "text": "etichette:",
+          "start": 39.995,
+          "end": 40.455
+        }
+      ]
+    },
+    {
+      "start": 40.915,
+      "end": 44.895,
+      "text": "d per dynamic discovery, c per circuit breaker e t per timeout;",
+      "words": [
+        {
+          "text": "d",
+          "start": 40.915,
+          "end": 40.955
+        },
+        {
+          "text": "per",
+          "start": 41.095,
+          "end": 41.215
+        },
+        {
+          "text": "dynamic",
+          "start": 41.295,
+          "end": 41.675
+        },
+        {
+          "text": "discovery,",
+          "start": 41.715,
+          "end": 42.115
+        },
+        {
+          "text": "c",
+          "start": 42.575,
+          "end": 42.615
+        },
+        {
+          "text": "per",
+          "start": 42.815,
+          "end": 42.935
+        },
+        {
+          "text": "circuit",
+          "start": 42.995,
+          "end": 43.315
+        },
+        {
+          "text": "breaker",
+          "start": 43.355,
+          "end": 43.675
+        },
+        {
+          "text": "e",
+          "start": 44.035,
+          "end": 44.075
+        },
+        {
+          "text": "t",
+          "start": 44.195,
+          "end": 44.235
+        },
+        {
+          "text": "per",
+          "start": 44.355,
+          "end": 44.475
+        },
+        {
+          "text": "timeout;",
+          "start": 44.515,
+          "end": 44.895
+        }
+      ]
+    },
+    {
+      "start": 45.975,
+      "end": 48.655,
+      "text": "una lettera barrata segnala che il meccanismo manca.",
+      "words": [
+        {
+          "text": "una",
+          "start": 45.975,
+          "end": 46.115
+        },
+        {
+          "text": "lettera",
+          "start": 46.155,
+          "end": 46.475
+        },
+        {
+          "text": "barrata",
+          "start": 46.535,
+          "end": 46.995
+        },
+        {
+          "text": "segnala",
+          "start": 47.195,
+          "end": 47.535
+        },
+        {
+          "text": "che",
+          "start": 47.575,
+          "end": 47.655
+        },
+        {
+          "text": "il",
+          "start": 47.675,
+          "end": 47.735
+        },
+        {
+          "text": "meccanismo",
+          "start": 47.775,
+          "end": 48.275
+        },
+        {
+          "text": "manca.",
+          "start": 48.335,
+          "end": 48.655
+        }
+      ]
+    },
+    {
+      "start": 49.315,
+      "end": 51.796,
+      "text": "Lo strumento è stato validato con ottimi risultati.",
+      "words": [
+        {
+          "text": "Lo",
+          "start": 49.315,
+          "end": 49.375
+        },
+        {
+          "text": "strumento",
+          "start": 49.415,
+          "end": 49.855
+        },
+        {
+          "text": "è",
+          "start": 49.935,
+          "end": 49.975
+        },
+        {
+          "text": "stato",
+          "start": 50.015,
+          "end": 50.215
+        },
+        {
+          "text": "validato",
+          "start": 50.255,
+          "end": 50.696
+        },
+        {
+          "text": "con",
+          "start": 50.756,
+          "end": 50.876
+        },
+        {
+          "text": "ottimi",
+          "start": 50.936,
+          "end": 51.216
+        },
+        {
+          "text": "risultati.",
+          "start": 51.256,
+          "end": 51.796
+        }
+      ]
+    },
+    {
+      "start": 52.296,
+      "end": 56.776,
+      "text": "In un caso di studio industriale ha scoperto quattro smell no API gateway e uno",
+      "words": [
+        {
+          "text": "In",
+          "start": 52.296,
+          "end": 52.376
+        },
+        {
+          "text": "un",
+          "start": 52.396,
+          "end": 52.476
+        },
+        {
+          "text": "caso",
+          "start": 52.496,
+          "end": 52.716
+        },
+        {
+          "text": "di",
+          "start": 52.756,
+          "end": 52.816
+        },
+        {
+          "text": "studio",
+          "start": 52.856,
+          "end": 53.116
+        },
+        {
+          "text": "industriale",
+          "start": 53.136,
+          "end": 53.716
+        },
+        {
+          "text": "ha",
+          "start": 53.776,
+          "end": 53.816
+        },
+        {
+          "text": "scoperto",
+          "start": 53.876,
+          "end": 54.256
+        },
+        {
+          "text": "quattro",
+          "start": 54.376,
+          "end": 54.756
+        },
+        {
+          "text": "smell",
+          "start": 54.816,
+          "end": 55.116
+        },
+        {
+          "text": "no",
+          "start": 55.376,
+          "end": 55.476
+        },
+        {
+          "text": "API",
+          "start": 55.616,
+          "end": 55.896
+        },
+        {
+          "text": "gateway",
+          "start": 55.936,
+          "end": 56.356
+        },
+        {
+          "text": "e",
+          "start": 56.476,
+          "end": 56.516
+        },
+        {
+          "text": "uno",
+          "start": 56.616,
+          "end": 56.776
+        }
+      ]
+    },
+    {
+      "start": 56.876,
+      "end": 60.376,
+      "text": "shared persistence, risolti con due gateway e un data manager.",
+      "words": [
+        {
+          "text": "shared",
+          "start": 56.876,
+          "end": 57.116
+        },
+        {
+          "text": "persistence,",
+          "start": 57.156,
+          "end": 57.776
+        },
+        {
+          "text": "risolti",
+          "start": 58.216,
+          "end": 58.576
+        },
+        {
+          "text": "con",
+          "start": 58.636,
+          "end": 58.776
+        },
+        {
+          "text": "due",
+          "start": 58.856,
+          "end": 58.996
+        },
+        {
+          "text": "gateway",
+          "start": 59.036,
+          "end": 59.416
+        },
+        {
+          "text": "e",
+          "start": 59.536,
+          "end": 59.576
+        },
+        {
+          "text": "un",
+          "start": 59.636,
+          "end": 59.716
+        },
+        {
+          "text": "data",
+          "start": 59.756,
+          "end": 59.936
+        },
+        {
+          "text": "manager.",
+          "start": 59.976,
+          "end": 60.376
+        }
+      ]
+    },
+    {
+      "start": 61.176,
+      "end": 65.917,
+      "text": "In un esperimento controllato, chi usava MicroFreshener ha individuato il cento per cento degli smell",
+      "words": [
+        {
+          "text": "In",
+          "start": 61.176,
+          "end": 61.256
+        },
+        {
+          "text": "un",
+          "start": 61.276,
+          "end": 61.336
+        },
+        {
+          "text": "esperimento",
+          "start": 61.356,
+          "end": 61.816
+        },
+        {
+          "text": "controllato,",
+          "start": 61.856,
+          "end": 62.396
+        },
+        {
+          "text": "chi",
+          "start": 62.516,
+          "end": 62.596
+        },
+        {
+          "text": "usava",
+          "start": 62.656,
+          "end": 62.956
+        },
+        {
+          "text": "MicroFreshener",
+          "start": 63.036,
+          "end": 63.796
+        },
+        {
+          "text": "ha",
+          "start": 63.876,
+          "end": 63.936
+        },
+        {
+          "text": "individuato",
+          "start": 63.996,
+          "end": 64.476
+        },
+        {
+          "text": "il",
+          "start": 64.536,
+          "end": 64.596
+        },
+        {
+          "text": "cento",
+          "start": 64.676,
+          "end": 64.956
+        },
+        {
+          "text": "per",
+          "start": 64.996,
+          "end": 65.117
+        },
+        {
+          "text": "cento",
+          "start": 65.137,
+          "end": 65.377
+        },
+        {
+          "text": "degli",
+          "start": 65.397,
+          "end": 65.617
+        },
+        {
+          "text": "smell",
+          "start": 65.657,
+          "end": 65.917
+        }
+      ]
+    },
+    {
+      "start": 66.097,
+      "end": 71.477,
+      "text": "contro il quarantanove per cento, risolvendoli tutti nell'ottantatré per cento dei casi contro appena l'uno",
+      "words": [
+        {
+          "text": "contro",
+          "start": 66.097,
+          "end": 66.357
+        },
+        {
+          "text": "il",
+          "start": 66.377,
+          "end": 66.457
+        },
+        {
+          "text": "quarantanove",
+          "start": 66.477,
+          "end": 67.057
+        },
+        {
+          "text": "per",
+          "start": 67.117,
+          "end": 67.217
+        },
+        {
+          "text": "cento,",
+          "start": 67.277,
+          "end": 67.597
+        },
+        {
+          "text": "risolvendoli",
+          "start": 68.037,
+          "end": 68.597
+        },
+        {
+          "text": "tutti",
+          "start": 68.677,
+          "end": 68.957
+        },
+        {
+          "text": "nell'ottantatré",
+          "start": 69.017,
+          "end": 69.677
+        },
+        {
+          "text": "per",
+          "start": 69.737,
+          "end": 69.857
+        },
+        {
+          "text": "cento",
+          "start": 69.897,
+          "end": 70.097
+        },
+        {
+          "text": "dei",
+          "start": 70.137,
+          "end": 70.217
+        },
+        {
+          "text": "casi",
+          "start": 70.237,
+          "end": 70.517
+        },
+        {
+          "text": "contro",
+          "start": 70.617,
+          "end": 70.877
+        },
+        {
+          "text": "appena",
+          "start": 70.917,
+          "end": 71.177
+        },
+        {
+          "text": "l'uno",
+          "start": 71.237,
+          "end": 71.477
+        }
+      ]
+    },
+    {
+      "start": 71.517,
+      "end": 71.997,
+      "text": "per cento.",
+      "words": [
+        {
+          "text": "per",
+          "start": 71.517,
+          "end": 71.637
+        },
+        {
+          "text": "cento.",
+          "start": 71.697,
+          "end": 71.997
+        }
+      ]
+    }
+  ]
+}

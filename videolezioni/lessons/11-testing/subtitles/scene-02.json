@@ -1,0 +1,1173 @@
+{
+  "duration": 85.608,
+  "segments": [
+    {
+      "start": 0.02,
+      "end": 5.76,
+      "text": "Passiamo al functional testing, che segue tre regole: eseguire tutto il codice almeno una volta,",
+      "words": [
+        {
+          "text": "Passiamo",
+          "start": 0.02,
+          "end": 0.36
+        },
+        {
+          "text": "al",
+          "start": 0.42,
+          "end": 0.52
+        },
+        {
+          "text": "functional",
+          "start": 0.64,
+          "end": 1.2
+        },
+        {
+          "text": "testing,",
+          "start": 1.3,
+          "end": 1.84
+        },
+        {
+          "text": "che",
+          "start": 2.1,
+          "end": 2.18
+        },
+        {
+          "text": "segue",
+          "start": 2.26,
+          "end": 2.48
+        },
+        {
+          "text": "tre",
+          "start": 2.6,
+          "end": 2.78
+        },
+        {
+          "text": "regole:",
+          "start": 2.92,
+          "end": 3.28
+        },
+        {
+          "text": "eseguire",
+          "start": 3.64,
+          "end": 4.06
+        },
+        {
+          "text": "tutto",
+          "start": 4.22,
+          "end": 4.48
+        },
+        {
+          "text": "il",
+          "start": 4.52,
+          "end": 4.58
+        },
+        {
+          "text": "codice",
+          "start": 4.62,
+          "end": 4.98
+        },
+        {
+          "text": "almeno",
+          "start": 5.02,
+          "end": 5.26
+        },
+        {
+          "text": "una",
+          "start": 5.3,
+          "end": 5.4
+        },
+        {
+          "text": "volta,",
+          "start": 5.42,
+          "end": 5.76
+        }
+      ]
+    },
+    {
+      "start": 6.1,
+      "end": 10.461,
+      "text": "iniziare a testare dal giorno in cui si scrive codice e usare test automatici.",
+      "words": [
+        {
+          "text": "iniziare",
+          "start": 6.1,
+          "end": 6.54
+        },
+        {
+          "text": "a",
+          "start": 6.58,
+          "end": 6.62
+        },
+        {
+          "text": "testare",
+          "start": 6.68,
+          "end": 7.06
+        },
+        {
+          "text": "dal",
+          "start": 7.1,
+          "end": 7.24
+        },
+        {
+          "text": "giorno",
+          "start": 7.32,
+          "end": 7.62
+        },
+        {
+          "text": "in",
+          "start": 7.66,
+          "end": 7.72
+        },
+        {
+          "text": "cui",
+          "start": 7.74,
+          "end": 7.881
+        },
+        {
+          "text": "si",
+          "start": 7.901,
+          "end": 7.981
+        },
+        {
+          "text": "scrive",
+          "start": 8.021,
+          "end": 8.301
+        },
+        {
+          "text": "codice",
+          "start": 8.341,
+          "end": 8.741
+        },
+        {
+          "text": "e",
+          "start": 9.081,
+          "end": 9.121
+        },
+        {
+          "text": "usare",
+          "start": 9.221,
+          "end": 9.481
+        },
+        {
+          "text": "test",
+          "start": 9.521,
+          "end": 9.761
+        },
+        {
+          "text": "automatici.",
+          "start": 9.841,
+          "end": 10.461
+        }
+      ]
+    },
+    {
+      "start": 11.081,
+      "end": 13.081,
+      "text": "Il processo è ciclico in quattro fasi:",
+      "words": [
+        {
+          "text": "Il",
+          "start": 11.081,
+          "end": 11.161
+        },
+        {
+          "text": "processo",
+          "start": 11.201,
+          "end": 11.601
+        },
+        {
+          "text": "è",
+          "start": 11.641,
+          "end": 11.681
+        },
+        {
+          "text": "ciclico",
+          "start": 11.741,
+          "end": 12.181
+        },
+        {
+          "text": "in",
+          "start": 12.261,
+          "end": 12.341
+        },
+        {
+          "text": "quattro",
+          "start": 12.401,
+          "end": 12.701
+        },
+        {
+          "text": "fasi:",
+          "start": 12.741,
+          "end": 13.081
+        }
+      ]
+    },
+    {
+      "start": 13.641,
+      "end": 18.261,
+      "text": "unit, feature, system e release testing, e si ripete a ogni versione.",
+      "words": [
+        {
+          "text": "unit,",
+          "start": 13.641,
+          "end": 13.941
+        },
+        {
+          "text": "feature,",
+          "start": 14.241,
+          "end": 14.641
+        },
+        {
+          "text": "system",
+          "start": 14.921,
+          "end": 15.281
+        },
+        {
+          "text": "e",
+          "start": 15.521,
+          "end": 15.561
+        },
+        {
+          "text": "release",
+          "start": 15.661,
+          "end": 15.961
+        },
+        {
+          "text": "testing,",
+          "start": 16.001,
+          "end": 16.421
+        },
+        {
+          "text": "e",
+          "start": 16.721,
+          "end": 16.761
+        },
+        {
+          "text": "si",
+          "start": 16.881,
+          "end": 16.941
+        },
+        {
+          "text": "ripete",
+          "start": 17.001,
+          "end": 17.301
+        },
+        {
+          "text": "a",
+          "start": 17.461,
+          "end": 17.501
+        },
+        {
+          "text": "ogni",
+          "start": 17.581,
+          "end": 17.741
+        },
+        {
+          "text": "versione.",
+          "start": 17.781,
+          "end": 18.261
+        }
+      ]
+    },
+    {
+      "start": 19.281,
+      "end": 23.722,
+      "text": "Nello unit testing si collauda una singola funzione o metodo in isolamento.",
+      "words": [
+        {
+          "text": "Nello",
+          "start": 19.281,
+          "end": 19.441
+        },
+        {
+          "text": "unit",
+          "start": 19.541,
+          "end": 19.721
+        },
+        {
+          "text": "testing",
+          "start": 19.781,
+          "end": 20.201
+        },
+        {
+          "text": "si",
+          "start": 20.461,
+          "end": 20.541
+        },
+        {
+          "text": "collauda",
+          "start": 20.601,
+          "end": 21.041
+        },
+        {
+          "text": "una",
+          "start": 21.141,
+          "end": 21.261
+        },
+        {
+          "text": "singola",
+          "start": 21.381,
+          "end": 21.741
+        },
+        {
+          "text": "funzione",
+          "start": 21.801,
+          "end": 22.281
+        },
+        {
+          "text": "o",
+          "start": 22.341,
+          "end": 22.381
+        },
+        {
+          "text": "metodo",
+          "start": 22.421,
+          "end": 22.761
+        },
+        {
+          "text": "in",
+          "start": 22.921,
+          "end": 23.021
+        },
+        {
+          "text": "isolamento.",
+          "start": 23.081,
+          "end": 23.722
+        }
+      ]
+    },
+    {
+      "start": 24.302,
+      "end": 29.162,
+      "text": "Il suo principio dice che, se un'unità funziona su un insieme di input con caratteristiche",
+      "words": [
+        {
+          "text": "Il",
+          "start": 24.302,
+          "end": 24.362
+        },
+        {
+          "text": "suo",
+          "start": 24.402,
+          "end": 24.522
+        },
+        {
+          "text": "principio",
+          "start": 24.542,
+          "end": 25.082
+        },
+        {
+          "text": "dice",
+          "start": 25.302,
+          "end": 25.542
+        },
+        {
+          "text": "che,",
+          "start": 25.602,
+          "end": 25.722
+        },
+        {
+          "text": "se",
+          "start": 25.962,
+          "end": 26.042
+        },
+        {
+          "text": "un'unità",
+          "start": 26.122,
+          "end": 26.502
+        },
+        {
+          "text": "funziona",
+          "start": 26.582,
+          "end": 27.062
+        },
+        {
+          "text": "su",
+          "start": 27.142,
+          "end": 27.202
+        },
+        {
+          "text": "un",
+          "start": 27.262,
+          "end": 27.322
+        },
+        {
+          "text": "insieme",
+          "start": 27.362,
+          "end": 27.762
+        },
+        {
+          "text": "di",
+          "start": 27.802,
+          "end": 27.862
+        },
+        {
+          "text": "input",
+          "start": 27.922,
+          "end": 28.222
+        },
+        {
+          "text": "con",
+          "start": 28.322,
+          "end": 28.442
+        },
+        {
+          "text": "caratteristiche",
+          "start": 28.502,
+          "end": 29.162
+        }
+      ]
+    },
+    {
+      "start": 29.222,
+      "end": 33.142,
+      "text": "comuni, funzionerà sull'insieme più grande con le stesse caratteristiche.",
+      "words": [
+        {
+          "text": "comuni,",
+          "start": 29.222,
+          "end": 29.602
+        },
+        {
+          "text": "funzionerà",
+          "start": 29.902,
+          "end": 30.382
+        },
+        {
+          "text": "sull'insieme",
+          "start": 30.482,
+          "end": 30.982
+        },
+        {
+          "text": "più",
+          "start": 31.062,
+          "end": 31.162
+        },
+        {
+          "text": "grande",
+          "start": 31.222,
+          "end": 31.622
+        },
+        {
+          "text": "con",
+          "start": 31.742,
+          "end": 31.882
+        },
+        {
+          "text": "le",
+          "start": 31.922,
+          "end": 32.002
+        },
+        {
+          "text": "stesse",
+          "start": 32.062,
+          "end": 32.382
+        },
+        {
+          "text": "caratteristiche.",
+          "start": 32.422,
+          "end": 33.142
+        }
+      ]
+    },
+    {
+      "start": 33.742,
+      "end": 36.382,
+      "text": "Da qui nasce il metodo delle equivalence partition:",
+      "words": [
+        {
+          "text": "Da",
+          "start": 33.742,
+          "end": 33.802
+        },
+        {
+          "text": "qui",
+          "start": 33.862,
+          "end": 33.982
+        },
+        {
+          "text": "nasce",
+          "start": 34.242,
+          "end": 34.542
+        },
+        {
+          "text": "il",
+          "start": 34.622,
+          "end": 34.682
+        },
+        {
+          "text": "metodo",
+          "start": 34.742,
+          "end": 35.062
+        },
+        {
+          "text": "delle",
+          "start": 35.122,
+          "end": 35.322
+        },
+        {
+          "text": "equivalence",
+          "start": 35.362,
+          "end": 35.822
+        },
+        {
+          "text": "partition:",
+          "start": 35.842,
+          "end": 36.382
+        }
+      ]
+    },
+    {
+      "start": 37.022,
+      "end": 40.063,
+      "text": "si dividono gli input in partizioni trattate allo stesso modo,",
+      "words": [
+        {
+          "text": "si",
+          "start": 37.022,
+          "end": 37.082
+        },
+        {
+          "text": "dividono",
+          "start": 37.122,
+          "end": 37.442
+        },
+        {
+          "text": "gli",
+          "start": 37.462,
+          "end": 37.582
+        },
+        {
+          "text": "input",
+          "start": 37.622,
+          "end": 37.962
+        },
+        {
+          "text": "in",
+          "start": 38.122,
+          "end": 38.202
+        },
+        {
+          "text": "partizioni",
+          "start": 38.282,
+          "end": 38.802
+        },
+        {
+          "text": "trattate",
+          "start": 38.842,
+          "end": 39.223
+        },
+        {
+          "text": "allo",
+          "start": 39.263,
+          "end": 39.403
+        },
+        {
+          "text": "stesso",
+          "start": 39.443,
+          "end": 39.743
+        },
+        {
+          "text": "modo,",
+          "start": 39.803,
+          "end": 40.063
+        }
+      ]
+    },
+    {
+      "start": 40.343,
+      "end": 45.703,
+      "text": "scegliendo valori interni e soprattutto valori sui confini, dove i programmatori sbagliano più spesso.",
+      "words": [
+        {
+          "text": "scegliendo",
+          "start": 40.343,
+          "end": 40.763
+        },
+        {
+          "text": "valori",
+          "start": 40.803,
+          "end": 41.043
+        },
+        {
+          "text": "interni",
+          "start": 41.123,
+          "end": 41.583
+        },
+        {
+          "text": "e",
+          "start": 41.703,
+          "end": 41.743
+        },
+        {
+          "text": "soprattutto",
+          "start": 41.903,
+          "end": 42.383
+        },
+        {
+          "text": "valori",
+          "start": 42.423,
+          "end": 42.683
+        },
+        {
+          "text": "sui",
+          "start": 42.763,
+          "end": 42.923
+        },
+        {
+          "text": "confini,",
+          "start": 43.003,
+          "end": 43.603
+        },
+        {
+          "text": "dove",
+          "start": 43.943,
+          "end": 44.083
+        },
+        {
+          "text": "i",
+          "start": 44.123,
+          "end": 44.163
+        },
+        {
+          "text": "programmatori",
+          "start": 44.183,
+          "end": 44.743
+        },
+        {
+          "text": "sbagliano",
+          "start": 44.803,
+          "end": 45.143
+        },
+        {
+          "text": "più",
+          "start": 45.183,
+          "end": 45.263
+        },
+        {
+          "text": "spesso.",
+          "start": 45.323,
+          "end": 45.703
+        }
+      ]
+    },
+    {
+      "start": 46.343,
+      "end": 49.063,
+      "text": "Se una funzione accetta gli interi da uno a novantanove,",
+      "words": [
+        {
+          "text": "Se",
+          "start": 46.343,
+          "end": 46.423
+        },
+        {
+          "text": "una",
+          "start": 46.463,
+          "end": 46.563
+        },
+        {
+          "text": "funzione",
+          "start": 46.603,
+          "end": 46.983
+        },
+        {
+          "text": "accetta",
+          "start": 47.063,
+          "end": 47.383
+        },
+        {
+          "text": "gli",
+          "start": 47.383,
+          "end": 47.503
+        },
+        {
+          "text": "interi",
+          "start": 47.543,
+          "end": 47.903
+        },
+        {
+          "text": "da",
+          "start": 47.963,
+          "end": 48.023
+        },
+        {
+          "text": "uno",
+          "start": 48.143,
+          "end": 48.303
+        },
+        {
+          "text": "a",
+          "start": 48.343,
+          "end": 48.383
+        },
+        {
+          "text": "novantanove,",
+          "start": 48.383,
+          "end": 49.063
+        }
+      ]
+    },
+    {
+      "start": 49.383,
+      "end": 53.443,
+      "text": "proviamo meno cinque, quarantacinque e centocinquanta nelle tre partizioni,",
+      "words": [
+        {
+          "text": "proviamo",
+          "start": 49.383,
+          "end": 49.743
+        },
+        {
+          "text": "meno",
+          "start": 49.903,
+          "end": 50.043
+        },
+        {
+          "text": "cinque,",
+          "start": 50.103,
+          "end": 50.463
+        },
+        {
+          "text": "quarantacinque",
+          "start": 50.663,
+          "end": 51.383
+        },
+        {
+          "text": "e",
+          "start": 51.543,
+          "end": 51.583
+        },
+        {
+          "text": "centocinquanta",
+          "start": 51.663,
+          "end": 52.403
+        },
+        {
+          "text": "nelle",
+          "start": 52.463,
+          "end": 52.643
+        },
+        {
+          "text": "tre",
+          "start": 52.683,
+          "end": 52.783
+        },
+        {
+          "text": "partizioni,",
+          "start": 52.863,
+          "end": 53.443
+        }
+      ]
+    },
+    {
+      "start": 53.723,
+      "end": 57.024,
+      "text": "più i confini zero, uno, novantanove e cento:",
+      "words": [
+        {
+          "text": "più",
+          "start": 53.723,
+          "end": 53.863
+        },
+        {
+          "text": "i",
+          "start": 53.943,
+          "end": 53.983
+        },
+        {
+          "text": "confini",
+          "start": 54.023,
+          "end": 54.423
+        },
+        {
+          "text": "zero,",
+          "start": 54.543,
+          "end": 54.864
+        },
+        {
+          "text": "uno,",
+          "start": 55.284,
+          "end": 55.464
+        },
+        {
+          "text": "novantanove",
+          "start": 55.744,
+          "end": 56.324
+        },
+        {
+          "text": "e",
+          "start": 56.504,
+          "end": 56.544
+        },
+        {
+          "text": "cento:",
+          "start": 56.644,
+          "end": 57.024
+        }
+      ]
+    },
+    {
+      "start": 57.584,
+      "end": 62.424,
+      "text": "un errore come x minore di novantanove al posto di x minore o uguale a",
+      "words": [
+        {
+          "text": "un",
+          "start": 57.584,
+          "end": 57.664
+        },
+        {
+          "text": "errore",
+          "start": 57.704,
+          "end": 58.004
+        },
+        {
+          "text": "come",
+          "start": 58.064,
+          "end": 58.264
+        },
+        {
+          "text": "x",
+          "start": 58.684,
+          "end": 58.724
+        },
+        {
+          "text": "minore",
+          "start": 58.984,
+          "end": 59.264
+        },
+        {
+          "text": "di",
+          "start": 59.304,
+          "end": 59.364
+        },
+        {
+          "text": "novantanove",
+          "start": 59.404,
+          "end": 60.004
+        },
+        {
+          "text": "al",
+          "start": 60.224,
+          "end": 60.324
+        },
+        {
+          "text": "posto",
+          "start": 60.384,
+          "end": 60.644
+        },
+        {
+          "text": "di",
+          "start": 60.664,
+          "end": 60.744
+        },
+        {
+          "text": "x",
+          "start": 61.044,
+          "end": 61.084
+        },
+        {
+          "text": "minore",
+          "start": 61.304,
+          "end": 61.624
+        },
+        {
+          "text": "o",
+          "start": 61.784,
+          "end": 61.824
+        },
+        {
+          "text": "uguale",
+          "start": 61.904,
+          "end": 62.324
+        },
+        {
+          "text": "a",
+          "start": 62.384,
+          "end": 62.424
+        }
+      ]
+    },
+    {
+      "start": 62.424,
+      "end": 65.004,
+      "text": "novantanove emerge solo provando novantanove.",
+      "words": [
+        {
+          "text": "novantanove",
+          "start": 62.424,
+          "end": 63.024
+        },
+        {
+          "text": "emerge",
+          "start": 63.364,
+          "end": 63.644
+        },
+        {
+          "text": "solo",
+          "start": 63.804,
+          "end": 64.044
+        },
+        {
+          "text": "provando",
+          "start": 64.084,
+          "end": 64.424
+        },
+        {
+          "text": "novantanove.",
+          "start": 64.444,
+          "end": 65.004
+        }
+      ]
+    },
+    {
+      "start": 65.804,
+      "end": 69.604,
+      "text": "Per scegliere buoni casi di test valgono otto linee guida pratiche:",
+      "words": [
+        {
+          "text": "Per",
+          "start": 65.804,
+          "end": 65.924
+        },
+        {
+          "text": "scegliere",
+          "start": 65.944,
+          "end": 66.284
+        },
+        {
+          "text": "buoni",
+          "start": 66.444,
+          "end": 66.724
+        },
+        {
+          "text": "casi",
+          "start": 66.764,
+          "end": 66.984
+        },
+        {
+          "text": "di",
+          "start": 67.044,
+          "end": 67.104
+        },
+        {
+          "text": "test",
+          "start": 67.144,
+          "end": 67.464
+        },
+        {
+          "text": "valgono",
+          "start": 67.784,
+          "end": 68.124
+        },
+        {
+          "text": "otto",
+          "start": 68.304,
+          "end": 68.564
+        },
+        {
+          "text": "linee",
+          "start": 68.624,
+          "end": 68.844
+        },
+        {
+          "text": "guida",
+          "start": 68.904,
+          "end": 69.124
+        },
+        {
+          "text": "pratiche:",
+          "start": 69.164,
+          "end": 69.604
+        }
+      ]
+    },
+    {
+      "start": 70.144,
+      "end": 74.965,
+      "text": "testare i bordi, forzare errori, riempire i buffer, ripetere sequenze,",
+      "words": [
+        {
+          "text": "testare",
+          "start": 70.144,
+          "end": 70.465
+        },
+        {
+          "text": "i",
+          "start": 70.505,
+          "end": 70.545
+        },
+        {
+          "text": "bordi,",
+          "start": 70.565,
+          "end": 70.865
+        },
+        {
+          "text": "forzare",
+          "start": 71.165,
+          "end": 71.625
+        },
+        {
+          "text": "errori,",
+          "start": 71.685,
+          "end": 72.065
+        },
+        {
+          "text": "riempire",
+          "start": 72.445,
+          "end": 72.985
+        },
+        {
+          "text": "i",
+          "start": 73.045,
+          "end": 73.08500000000001
+        },
+        {
+          "text": "buffer,",
+          "start": 73.125,
+          "end": 73.525
+        },
+        {
+          "text": "ripetere",
+          "start": 73.905,
+          "end": 74.365
+        },
+        {
+          "text": "sequenze,",
+          "start": 74.425,
+          "end": 74.965
+        }
+      ]
+    },
+    {
+      "start": 75.265,
+      "end": 80.685,
+      "text": "provocare overflow e underflow, non dimenticare zero, null e sequenze vuote,",
+      "words": [
+        {
+          "text": "provocare",
+          "start": 75.265,
+          "end": 75.745
+        },
+        {
+          "text": "overflow",
+          "start": 75.905,
+          "end": 76.365
+        },
+        {
+          "text": "e",
+          "start": 76.505,
+          "end": 76.545
+        },
+        {
+          "text": "underflow,",
+          "start": 76.645,
+          "end": 77.145
+        },
+        {
+          "text": "non",
+          "start": 77.565,
+          "end": 77.725
+        },
+        {
+          "text": "dimenticare",
+          "start": 77.765,
+          "end": 78.365
+        },
+        {
+          "text": "zero,",
+          "start": 78.605,
+          "end": 78.905
+        },
+        {
+          "text": "null",
+          "start": 79.245,
+          "end": 79.505
+        },
+        {
+          "text": "e",
+          "start": 79.745,
+          "end": 79.78500000000001
+        },
+        {
+          "text": "sequenze",
+          "start": 79.905,
+          "end": 80.305
+        },
+        {
+          "text": "vuote,",
+          "start": 80.365,
+          "end": 80.685
+        }
+      ]
+    },
+    {
+      "start": 81.105,
+      "end": 85.225,
+      "text": "controllare i conteggi delle liste e provare sequenze di un solo elemento.",
+      "words": [
+        {
+          "text": "controllare",
+          "start": 81.105,
+          "end": 81.765
+        },
+        {
+          "text": "i",
+          "start": 81.805,
+          "end": 81.84500000000001
+        },
+        {
+          "text": "conteggi",
+          "start": 81.865,
+          "end": 82.305
+        },
+        {
+          "text": "delle",
+          "start": 82.345,
+          "end": 82.525
+        },
+        {
+          "text": "liste",
+          "start": 82.565,
+          "end": 82.885
+        },
+        {
+          "text": "e",
+          "start": 83.165,
+          "end": 83.20500000000001
+        },
+        {
+          "text": "provare",
+          "start": 83.325,
+          "end": 83.665
+        },
+        {
+          "text": "sequenze",
+          "start": 83.725,
+          "end": 84.165
+        },
+        {
+          "text": "di",
+          "start": 84.225,
+          "end": 84.305
+        },
+        {
+          "text": "un",
+          "start": 84.365,
+          "end": 84.465
+        },
+        {
+          "text": "solo",
+          "start": 84.545,
+          "end": 84.745
+        },
+        {
+          "text": "elemento.",
+          "start": 84.785,
+          "end": 85.225
+        }
+      ]
+    }
+  ]
+}

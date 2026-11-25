@@ -1,0 +1,1386 @@
+{
+  "duration": 96.05,
+  "segments": [
+    {
+      "start": 0.08,
+      "end": 4.901,
+      "text": "Vediamo le prime due tecniche di Q S E per sfruttare macchine eterogenee e rumorose.",
+      "words": [
+        {
+          "text": "Vediamo",
+          "start": 0.08,
+          "end": 0.5
+        },
+        {
+          "text": "le",
+          "start": 0.58,
+          "end": 0.66
+        },
+        {
+          "text": "prime",
+          "start": 0.7,
+          "end": 0.9
+        },
+        {
+          "text": "due",
+          "start": 0.94,
+          "end": 1.06
+        },
+        {
+          "text": "tecniche",
+          "start": 1.1,
+          "end": 1.54
+        },
+        {
+          "text": "di",
+          "start": 1.58,
+          "end": 1.64
+        },
+        {
+          "text": "Q",
+          "start": 1.72,
+          "end": 1.76
+        },
+        {
+          "text": "S",
+          "start": 2.1,
+          "end": 2.14
+        },
+        {
+          "text": "E",
+          "start": 2.2,
+          "end": 2.24
+        },
+        {
+          "text": "per",
+          "start": 2.561,
+          "end": 2.681
+        },
+        {
+          "text": "sfruttare",
+          "start": 2.741,
+          "end": 3.221
+        },
+        {
+          "text": "macchine",
+          "start": 3.281,
+          "end": 3.621
+        },
+        {
+          "text": "eterogenee",
+          "start": 3.681,
+          "end": 4.281
+        },
+        {
+          "text": "e",
+          "start": 4.341,
+          "end": 4.381
+        },
+        {
+          "text": "rumorose.",
+          "start": 4.421,
+          "end": 4.901
+        }
+      ]
+    },
+    {
+      "start": 5.761,
+      "end": 10.522,
+      "text": "Con la shot-wise distribution dividiamo gli shot di un circuito tra più Q P U",
+      "words": [
+        {
+          "text": "Con",
+          "start": 5.761,
+          "end": 5.901
+        },
+        {
+          "text": "la",
+          "start": 5.961,
+          "end": 6.041
+        },
+        {
+          "text": "shot-wise",
+          "start": 6.181,
+          "end": 6.761
+        },
+        {
+          "text": "distribution",
+          "start": 6.781,
+          "end": 7.502
+        },
+        {
+          "text": "dividiamo",
+          "start": 7.722,
+          "end": 8.182
+        },
+        {
+          "text": "gli",
+          "start": 8.222,
+          "end": 8.342
+        },
+        {
+          "text": "shot",
+          "start": 8.422,
+          "end": 8.682
+        },
+        {
+          "text": "di",
+          "start": 8.762,
+          "end": 8.822
+        },
+        {
+          "text": "un",
+          "start": 8.882,
+          "end": 8.942
+        },
+        {
+          "text": "circuito",
+          "start": 8.982,
+          "end": 9.522
+        },
+        {
+          "text": "tra",
+          "start": 9.602,
+          "end": 9.722
+        },
+        {
+          "text": "più",
+          "start": 9.842,
+          "end": 10.022
+        },
+        {
+          "text": "Q",
+          "start": 10.122,
+          "end": 10.162
+        },
+        {
+          "text": "P",
+          "start": 10.302,
+          "end": 10.342
+        },
+        {
+          "text": "U",
+          "start": 10.482,
+          "end": 10.522
+        }
+      ]
+    },
+    {
+      "start": 10.942,
+      "end": 12.923,
+      "text": "e poi fondiamo le distribuzioni parziali.",
+      "words": [
+        {
+          "text": "e",
+          "start": 10.942,
+          "end": 10.982
+        },
+        {
+          "text": "poi",
+          "start": 11.022,
+          "end": 11.162
+        },
+        {
+          "text": "fondiamo",
+          "start": 11.202,
+          "end": 11.702
+        },
+        {
+          "text": "le",
+          "start": 11.762,
+          "end": 11.822
+        },
+        {
+          "text": "distribuzioni",
+          "start": 11.863,
+          "end": 12.423
+        },
+        {
+          "text": "parziali.",
+          "start": 12.463,
+          "end": 12.923
+        }
+      ]
+    },
+    {
+      "start": 13.443,
+      "end": 17.944,
+      "text": "Per esempio, tremila shot su tre macchine danno la media pesata delle frequenze,",
+      "words": [
+        {
+          "text": "Per",
+          "start": 13.443,
+          "end": 13.543
+        },
+        {
+          "text": "esempio,",
+          "start": 13.563,
+          "end": 13.903
+        },
+        {
+          "text": "tremila",
+          "start": 14.283,
+          "end": 14.643
+        },
+        {
+          "text": "shot",
+          "start": 14.723,
+          "end": 15.003
+        },
+        {
+          "text": "su",
+          "start": 15.143,
+          "end": 15.203
+        },
+        {
+          "text": "tre",
+          "start": 15.283,
+          "end": 15.383
+        },
+        {
+          "text": "macchine",
+          "start": 15.423,
+          "end": 15.823
+        },
+        {
+          "text": "danno",
+          "start": 16.163,
+          "end": 16.363
+        },
+        {
+          "text": "la",
+          "start": 16.423,
+          "end": 16.483
+        },
+        {
+          "text": "media",
+          "start": 16.523,
+          "end": 16.764
+        },
+        {
+          "text": "pesata",
+          "start": 16.824,
+          "end": 17.184
+        },
+        {
+          "text": "delle",
+          "start": 17.224,
+          "end": 17.404
+        },
+        {
+          "text": "frequenze,",
+          "start": 17.424,
+          "end": 17.944
+        }
+      ]
+    },
+    {
+      "start": 18.204,
+      "end": 20.204,
+      "text": "riducendo l'impatto di una macchina rumorosa.",
+      "words": [
+        {
+          "text": "riducendo",
+          "start": 18.204,
+          "end": 18.664
+        },
+        {
+          "text": "l'impatto",
+          "start": 18.684,
+          "end": 19.184
+        },
+        {
+          "text": "di",
+          "start": 19.224,
+          "end": 19.264
+        },
+        {
+          "text": "una",
+          "start": 19.304,
+          "end": 19.404
+        },
+        {
+          "text": "macchina",
+          "start": 19.444,
+          "end": 19.744
+        },
+        {
+          "text": "rumorosa.",
+          "start": 19.784,
+          "end": 20.204
+        }
+      ]
+    },
+    {
+      "start": 21.244,
+      "end": 28.146,
+      "text": "Oltre a politiche uniform, random e time-aware, le politiche noise-aware usano una calibrazione preventiva con",
+      "words": [
+        {
+          "text": "Oltre",
+          "start": 21.244,
+          "end": 21.464
+        },
+        {
+          "text": "a",
+          "start": 21.525,
+          "end": 21.565
+        },
+        {
+          "text": "politiche",
+          "start": 21.585,
+          "end": 21.985
+        },
+        {
+          "text": "uniform,",
+          "start": 22.145,
+          "end": 22.625
+        },
+        {
+          "text": "random",
+          "start": 22.825,
+          "end": 23.245
+        },
+        {
+          "text": "e",
+          "start": 23.365,
+          "end": 23.405
+        },
+        {
+          "text": "time-aware,",
+          "start": 23.485,
+          "end": 24.125
+        },
+        {
+          "text": "le",
+          "start": 24.385,
+          "end": 24.465
+        },
+        {
+          "text": "politiche",
+          "start": 24.485,
+          "end": 24.925
+        },
+        {
+          "text": "noise-aware",
+          "start": 25.065,
+          "end": 25.825
+        },
+        {
+          "text": "usano",
+          "start": 26.225,
+          "end": 26.486
+        },
+        {
+          "text": "una",
+          "start": 26.506,
+          "end": 26.626
+        },
+        {
+          "text": "calibrazione",
+          "start": 26.686,
+          "end": 27.326
+        },
+        {
+          "text": "preventiva",
+          "start": 27.346,
+          "end": 27.946
+        },
+        {
+          "text": "con",
+          "start": 28.006,
+          "end": 28.146
+        }
+      ]
+    },
+    {
+      "start": 28.206,
+      "end": 34.347,
+      "text": "simulatori esatti per scegliere gli shot minimizzando la distanza di Hellinger o l'errore quadratico medio",
+      "words": [
+        {
+          "text": "simulatori",
+          "start": 28.206,
+          "end": 28.746
+        },
+        {
+          "text": "esatti",
+          "start": 28.806,
+          "end": 29.266
+        },
+        {
+          "text": "per",
+          "start": 29.406,
+          "end": 29.546
+        },
+        {
+          "text": "scegliere",
+          "start": 29.606,
+          "end": 30.006
+        },
+        {
+          "text": "gli",
+          "start": 30.046,
+          "end": 30.166
+        },
+        {
+          "text": "shot",
+          "start": 30.246,
+          "end": 30.526
+        },
+        {
+          "text": "minimizzando",
+          "start": 30.746,
+          "end": 31.367
+        },
+        {
+          "text": "la",
+          "start": 31.407,
+          "end": 31.467
+        },
+        {
+          "text": "distanza",
+          "start": 31.507,
+          "end": 31.927
+        },
+        {
+          "text": "di",
+          "start": 31.967,
+          "end": 32.027
+        },
+        {
+          "text": "Hellinger",
+          "start": 32.067,
+          "end": 32.547
+        },
+        {
+          "text": "o",
+          "start": 32.947,
+          "end": 32.987
+        },
+        {
+          "text": "l'errore",
+          "start": 33.147,
+          "end": 33.527
+        },
+        {
+          "text": "quadratico",
+          "start": 33.587,
+          "end": 34.087
+        },
+        {
+          "text": "medio",
+          "start": 34.127,
+          "end": 34.347
+        }
+      ]
+    },
+    {
+      "start": 34.387,
+      "end": 35.887,
+      "text": "integrato M I S E.",
+      "words": [
+        {
+          "text": "integrato",
+          "start": 34.387,
+          "end": 34.867
+        },
+        {
+          "text": "M",
+          "start": 35.307,
+          "end": 35.347
+        },
+        {
+          "text": "I",
+          "start": 35.487,
+          "end": 35.527
+        },
+        {
+          "text": "S",
+          "start": 35.767,
+          "end": 35.807
+        },
+        {
+          "text": "E.",
+          "start": 35.847,
+          "end": 35.887
+        }
+      ]
+    },
+    {
+      "start": 36.868,
+      "end": 39.208,
+      "text": "Su sette Q P U di I B M e IonQ,",
+      "words": [
+        {
+          "text": "Su",
+          "start": 36.868,
+          "end": 36.948
+        },
+        {
+          "text": "sette",
+          "start": 37.068,
+          "end": 37.388
+        },
+        {
+          "text": "Q",
+          "start": 37.448,
+          "end": 37.488
+        },
+        {
+          "text": "P",
+          "start": 37.608,
+          "end": 37.648
+        },
+        {
+          "text": "U",
+          "start": 37.788,
+          "end": 37.828
+        },
+        {
+          "text": "di",
+          "start": 37.968,
+          "end": 38.048
+        },
+        {
+          "text": "I",
+          "start": 38.108,
+          "end": 38.148
+        },
+        {
+          "text": "B",
+          "start": 38.188,
+          "end": 38.228
+        },
+        {
+          "text": "M",
+          "start": 38.548,
+          "end": 38.588
+        },
+        {
+          "text": "e",
+          "start": 38.788,
+          "end": 38.828
+        },
+        {
+          "text": "IonQ,",
+          "start": 38.948,
+          "end": 39.208
+        }
+      ]
+    },
+    {
+      "start": 39.788,
+      "end": 43.789,
+      "text": "l'errore massimo e la deviazione standard scendono, migliorano robustezza,",
+      "words": [
+        {
+          "text": "l'errore",
+          "start": 39.788,
+          "end": 40.128
+        },
+        {
+          "text": "massimo",
+          "start": 40.168,
+          "end": 40.588
+        },
+        {
+          "text": "e",
+          "start": 40.708,
+          "end": 40.748
+        },
+        {
+          "text": "la",
+          "start": 40.769,
+          "end": 40.829
+        },
+        {
+          "text": "deviazione",
+          "start": 40.869,
+          "end": 41.309
+        },
+        {
+          "text": "standard",
+          "start": 41.369,
+          "end": 41.709
+        },
+        {
+          "text": "scendono,",
+          "start": 41.829,
+          "end": 42.249
+        },
+        {
+          "text": "migliorano",
+          "start": 42.729,
+          "end": 43.169
+        },
+        {
+          "text": "robustezza,",
+          "start": 43.209,
+          "end": 43.789
+        }
+      ]
+    },
+    {
+      "start": 44.089,
+      "end": 47.61,
+      "text": "bilanciamento del carico, resilienza ai guasti e attese in coda,",
+      "words": [
+        {
+          "text": "bilanciamento",
+          "start": 44.089,
+          "end": 44.629
+        },
+        {
+          "text": "del",
+          "start": 44.649,
+          "end": 44.789
+        },
+        {
+          "text": "carico,",
+          "start": 44.829,
+          "end": 45.189
+        },
+        {
+          "text": "resilienza",
+          "start": 45.61,
+          "end": 46.11
+        },
+        {
+          "text": "ai",
+          "start": 46.17,
+          "end": 46.23
+        },
+        {
+          "text": "guasti",
+          "start": 46.27,
+          "end": 46.67
+        },
+        {
+          "text": "e",
+          "start": 46.81,
+          "end": 46.85
+        },
+        {
+          "text": "attese",
+          "start": 46.89,
+          "end": 47.21
+        },
+        {
+          "text": "in",
+          "start": 47.25,
+          "end": 47.31
+        },
+        {
+          "text": "coda,",
+          "start": 47.37,
+          "end": 47.61
+        }
+      ]
+    },
+    {
+      "start": 47.99,
+      "end": 51.511,
+      "text": "pur diluendo la Q P U migliore e dipendendo dalla calibrazione.",
+      "words": [
+        {
+          "text": "pur",
+          "start": 47.99,
+          "end": 48.17
+        },
+        {
+          "text": "diluendo",
+          "start": 48.25,
+          "end": 48.77
+        },
+        {
+          "text": "la",
+          "start": 48.83,
+          "end": 48.89
+        },
+        {
+          "text": "Q",
+          "start": 48.95,
+          "end": 48.99
+        },
+        {
+          "text": "P",
+          "start": 49.11,
+          "end": 49.15
+        },
+        {
+          "text": "U",
+          "start": 49.27,
+          "end": 49.31
+        },
+        {
+          "text": "migliore",
+          "start": 49.35,
+          "end": 49.81
+        },
+        {
+          "text": "e",
+          "start": 50.13,
+          "end": 50.17
+        },
+        {
+          "text": "dipendendo",
+          "start": 50.23,
+          "end": 50.691
+        },
+        {
+          "text": "dalla",
+          "start": 50.731,
+          "end": 50.891
+        },
+        {
+          "text": "calibrazione.",
+          "start": 50.911,
+          "end": 51.511
+        }
+      ]
+    },
+    {
+      "start": 52.391,
+      "end": 58.132,
+      "text": "Il Quantum Broker automatizza questa distribuzione rispetto a vincoli di qualità del servizio come tempo,",
+      "words": [
+        {
+          "text": "Il",
+          "start": 52.391,
+          "end": 52.471
+        },
+        {
+          "text": "Quantum",
+          "start": 52.551,
+          "end": 52.931
+        },
+        {
+          "text": "Broker",
+          "start": 52.971,
+          "end": 53.331
+        },
+        {
+          "text": "automatizza",
+          "start": 53.531,
+          "end": 54.271
+        },
+        {
+          "text": "questa",
+          "start": 54.331,
+          "end": 54.551
+        },
+        {
+          "text": "distribuzione",
+          "start": 54.591,
+          "end": 55.292
+        },
+        {
+          "text": "rispetto",
+          "start": 55.532,
+          "end": 55.872
+        },
+        {
+          "text": "a",
+          "start": 55.892,
+          "end": 55.932
+        },
+        {
+          "text": "vincoli",
+          "start": 55.972,
+          "end": 56.332
+        },
+        {
+          "text": "di",
+          "start": 56.372,
+          "end": 56.432
+        },
+        {
+          "text": "qualità",
+          "start": 56.472,
+          "end": 56.732
+        },
+        {
+          "text": "del",
+          "start": 56.792,
+          "end": 56.912
+        },
+        {
+          "text": "servizio",
+          "start": 56.952,
+          "end": 57.452
+        },
+        {
+          "text": "come",
+          "start": 57.512,
+          "end": 57.652
+        },
+        {
+          "text": "tempo,",
+          "start": 57.772,
+          "end": 58.132
+        }
+      ]
+    },
+    {
+      "start": 58.272,
+      "end": 62.133,
+      "text": "fedeltà e costo: un Profiler raccoglie le metriche delle macchine,",
+      "words": [
+        {
+          "text": "fedeltà",
+          "start": 58.272,
+          "end": 58.692
+        },
+        {
+          "text": "e",
+          "start": 58.912,
+          "end": 58.952
+        },
+        {
+          "text": "costo:",
+          "start": 58.992,
+          "end": 59.332
+        },
+        {
+          "text": "un",
+          "start": 59.952,
+          "end": 60.032
+        },
+        {
+          "text": "Profiler",
+          "start": 60.053,
+          "end": 60.553
+        },
+        {
+          "text": "raccoglie",
+          "start": 60.693,
+          "end": 61.013
+        },
+        {
+          "text": "le",
+          "start": 61.073,
+          "end": 61.133
+        },
+        {
+          "text": "metriche",
+          "start": 61.193,
+          "end": 61.533
+        },
+        {
+          "text": "delle",
+          "start": 61.573,
+          "end": 61.733
+        },
+        {
+          "text": "macchine,",
+          "start": 61.753,
+          "end": 62.133
+        }
+      ]
+    },
+    {
+      "start": 62.513,
+      "end": 67.074,
+      "text": "un Reasoner decide lo split e un Executor invia gli shot e fonde i risultati.",
+      "words": [
+        {
+          "text": "un",
+          "start": 62.513,
+          "end": 62.633
+        },
+        {
+          "text": "Reasoner",
+          "start": 62.693,
+          "end": 63.073
+        },
+        {
+          "text": "decide",
+          "start": 63.153,
+          "end": 63.433
+        },
+        {
+          "text": "lo",
+          "start": 63.473,
+          "end": 63.533
+        },
+        {
+          "text": "split",
+          "start": 63.573,
+          "end": 63.893
+        },
+        {
+          "text": "e",
+          "start": 64.213,
+          "end": 64.253
+        },
+        {
+          "text": "un",
+          "start": 64.293,
+          "end": 64.373
+        },
+        {
+          "text": "Executor",
+          "start": 64.413,
+          "end": 64.974
+        },
+        {
+          "text": "invia",
+          "start": 65.114,
+          "end": 65.454
+        },
+        {
+          "text": "gli",
+          "start": 65.494,
+          "end": 65.614
+        },
+        {
+          "text": "shot",
+          "start": 65.674,
+          "end": 65.974
+        },
+        {
+          "text": "e",
+          "start": 66.154,
+          "end": 66.194
+        },
+        {
+          "text": "fonde",
+          "start": 66.234,
+          "end": 66.494
+        },
+        {
+          "text": "i",
+          "start": 66.534,
+          "end": 66.57400000000001
+        },
+        {
+          "text": "risultati.",
+          "start": 66.574,
+          "end": 67.074
+        }
+      ]
+    },
+    {
+      "start": 68.134,
+      "end": 70.635,
+      "text": "E se il circuito richiede più qubit di quelli disponibili?",
+      "words": [
+        {
+          "text": "E",
+          "start": 68.134,
+          "end": 68.174
+        },
+        {
+          "text": "se",
+          "start": 68.214,
+          "end": 68.274
+        },
+        {
+          "text": "il",
+          "start": 68.314,
+          "end": 68.374
+        },
+        {
+          "text": "circuito",
+          "start": 68.394,
+          "end": 68.774
+        },
+        {
+          "text": "richiede",
+          "start": 68.814,
+          "end": 69.134
+        },
+        {
+          "text": "più",
+          "start": 69.234,
+          "end": 69.354
+        },
+        {
+          "text": "qubit",
+          "start": 69.414,
+          "end": 69.755
+        },
+        {
+          "text": "di",
+          "start": 69.835,
+          "end": 69.895
+        },
+        {
+          "text": "quelli",
+          "start": 69.915,
+          "end": 70.095
+        },
+        {
+          "text": "disponibili?",
+          "start": 70.135,
+          "end": 70.635
+        }
+      ]
+    },
+    {
+      "start": 71.495,
+      "end": 75.276,
+      "text": "Cut and Shoot combina circuit cutting e shot-wise distribution:",
+      "words": [
+        {
+          "text": "Cut",
+          "start": 71.495,
+          "end": 71.695
+        },
+        {
+          "text": "and",
+          "start": 71.735,
+          "end": 71.855
+        },
+        {
+          "text": "Shoot",
+          "start": 71.895,
+          "end": 72.175
+        },
+        {
+          "text": "combina",
+          "start": 72.455,
+          "end": 72.875
+        },
+        {
+          "text": "circuit",
+          "start": 72.975,
+          "end": 73.315
+        },
+        {
+          "text": "cutting",
+          "start": 73.375,
+          "end": 73.795
+        },
+        {
+          "text": "e",
+          "start": 73.935,
+          "end": 73.97500000000001
+        },
+        {
+          "text": "shot-wise",
+          "start": 74.075,
+          "end": 74.636
+        },
+        {
+          "text": "distribution:",
+          "start": 74.656,
+          "end": 75.276
+        }
+      ]
+    },
+    {
+      "start": 75.896,
+      "end": 79.917,
+      "text": "prima taglia il circuito in frammenti, poi divide gli shot tra le Q P U",
+      "words": [
+        {
+          "text": "prima",
+          "start": 75.896,
+          "end": 76.156
+        },
+        {
+          "text": "taglia",
+          "start": 76.336,
+          "end": 76.576
+        },
+        {
+          "text": "il",
+          "start": 76.616,
+          "end": 76.676
+        },
+        {
+          "text": "circuito",
+          "start": 76.716,
+          "end": 77.136
+        },
+        {
+          "text": "in",
+          "start": 77.196,
+          "end": 77.236
+        },
+        {
+          "text": "frammenti,",
+          "start": 77.276,
+          "end": 77.776
+        },
+        {
+          "text": "poi",
+          "start": 78.116,
+          "end": 78.296
+        },
+        {
+          "text": "divide",
+          "start": 78.356,
+          "end": 78.656
+        },
+        {
+          "text": "gli",
+          "start": 78.676,
+          "end": 78.796
+        },
+        {
+          "text": "shot",
+          "start": 78.856,
+          "end": 79.136
+        },
+        {
+          "text": "tra",
+          "start": 79.256,
+          "end": 79.357
+        },
+        {
+          "text": "le",
+          "start": 79.437,
+          "end": 79.497
+        },
+        {
+          "text": "Q",
+          "start": 79.537,
+          "end": 79.57700000000001
+        },
+        {
+          "text": "P",
+          "start": 79.697,
+          "end": 79.73700000000001
+        },
+        {
+          "text": "U",
+          "start": 79.877,
+          "end": 79.917
+        }
+      ]
+    },
+    {
+      "start": 80.057,
+      "end": 82.537,
+      "text": "con variante shot multiplier o shot divider,",
+      "words": [
+        {
+          "text": "con",
+          "start": 80.057,
+          "end": 80.197
+        },
+        {
+          "text": "variante",
+          "start": 80.217,
+          "end": 80.677
+        },
+        {
+          "text": "shot",
+          "start": 80.777,
+          "end": 80.997
+        },
+        {
+          "text": "multiplier",
+          "start": 81.077,
+          "end": 81.677
+        },
+        {
+          "text": "o",
+          "start": 81.777,
+          "end": 81.81700000000001
+        },
+        {
+          "text": "shot",
+          "start": 81.897,
+          "end": 82.077
+        },
+        {
+          "text": "divider,",
+          "start": 82.097,
+          "end": 82.537
+        }
+      ]
+    },
+    {
+      "start": 83.297,
+      "end": 86.918,
+      "text": "fonde per frammento e infine ricuce classicamente con Pennylane,",
+      "words": [
+        {
+          "text": "fonde",
+          "start": 83.297,
+          "end": 83.617
+        },
+        {
+          "text": "per",
+          "start": 83.657,
+          "end": 83.757
+        },
+        {
+          "text": "frammento",
+          "start": 83.817,
+          "end": 84.338
+        },
+        {
+          "text": "e",
+          "start": 84.558,
+          "end": 84.59800000000001
+        },
+        {
+          "text": "infine",
+          "start": 84.618,
+          "end": 84.898
+        },
+        {
+          "text": "ricuce",
+          "start": 84.978,
+          "end": 85.378
+        },
+        {
+          "text": "classicamente",
+          "start": 85.438,
+          "end": 86.098
+        },
+        {
+          "text": "con",
+          "start": 86.158,
+          "end": 86.298
+        },
+        {
+          "text": "Pennylane,",
+          "start": 86.358,
+          "end": 86.918
+        }
+      ]
+    },
+    {
+      "start": 87.198,
+      "end": 89.099,
+      "text": "a costo esponenziale nel numero di tagli.",
+      "words": [
+        {
+          "text": "a",
+          "start": 87.198,
+          "end": 87.238
+        },
+        {
+          "text": "costo",
+          "start": 87.298,
+          "end": 87.518
+        },
+        {
+          "text": "esponenziale",
+          "start": 87.578,
+          "end": 88.278
+        },
+        {
+          "text": "nel",
+          "start": 88.318,
+          "end": 88.418
+        },
+        {
+          "text": "numero",
+          "start": 88.458,
+          "end": 88.658
+        },
+        {
+          "text": "di",
+          "start": 88.698,
+          "end": 88.758
+        },
+        {
+          "text": "tagli.",
+          "start": 88.798,
+          "end": 89.099
+        }
+      ]
+    },
+    {
+      "start": 90.179,
+      "end": 95.64,
+      "text": "Un'ulteriore estensione è il multiprogramming, che esegue insieme più circuiti piccoli sulla stessa Q P",
+      "words": [
+        {
+          "text": "Un'ulteriore",
+          "start": 90.179,
+          "end": 90.779
+        },
+        {
+          "text": "estensione",
+          "start": 90.839,
+          "end": 91.459
+        },
+        {
+          "text": "è",
+          "start": 91.579,
+          "end": 91.619
+        },
+        {
+          "text": "il",
+          "start": 91.699,
+          "end": 91.779
+        },
+        {
+          "text": "multiprogramming,",
+          "start": 91.859,
+          "end": 92.759
+        },
+        {
+          "text": "che",
+          "start": 93.079,
+          "end": 93.139
+        },
+        {
+          "text": "esegue",
+          "start": 93.199,
+          "end": 93.419
+        },
+        {
+          "text": "insieme",
+          "start": 93.459,
+          "end": 93.8
+        },
+        {
+          "text": "più",
+          "start": 93.9,
+          "end": 94.02
+        },
+        {
+          "text": "circuiti",
+          "start": 94.08,
+          "end": 94.52
+        },
+        {
+          "text": "piccoli",
+          "start": 94.56,
+          "end": 94.92
+        },
+        {
+          "text": "sulla",
+          "start": 94.96,
+          "end": 95.14
+        },
+        {
+          "text": "stessa",
+          "start": 95.18,
+          "end": 95.46
+        },
+        {
+          "text": "Q",
+          "start": 95.5,
+          "end": 95.54
+        },
+        {
+          "text": "P",
+          "start": 95.6,
+          "end": 95.64
+        }
+      ]
+    },
+    {
+      "start": 95.76,
+      "end": 95.80000000000001,
+      "text": "U.",
+      "words": [
+        {
+          "text": "U.",
+          "start": 95.76,
+          "end": 95.80000000000001
+        }
+      ]
+    }
+  ]
+}

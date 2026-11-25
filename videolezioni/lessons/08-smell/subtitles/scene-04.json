@@ -1,0 +1,952 @@
+{
+  "duration": 59.739,
+  "segments": [
+    {
+      "start": 0.141,
+      "end": 4.382,
+      "text": "Passiamo al principio di isolamento dei guasti e allo smell più frequente in assoluto,",
+      "words": [
+        {
+          "text": "Passiamo",
+          "start": 0.141,
+          "end": 0.441
+        },
+        {
+          "text": "al",
+          "start": 0.541,
+          "end": 0.641
+        },
+        {
+          "text": "principio",
+          "start": 0.701,
+          "end": 1.201
+        },
+        {
+          "text": "di",
+          "start": 1.241,
+          "end": 1.301
+        },
+        {
+          "text": "isolamento",
+          "start": 1.381,
+          "end": 1.841
+        },
+        {
+          "text": "dei",
+          "start": 1.881,
+          "end": 2.001
+        },
+        {
+          "text": "guasti",
+          "start": 2.042,
+          "end": 2.422
+        },
+        {
+          "text": "e",
+          "start": 2.522,
+          "end": 2.562
+        },
+        {
+          "text": "allo",
+          "start": 2.602,
+          "end": 2.742
+        },
+        {
+          "text": "smell",
+          "start": 2.782,
+          "end": 3.002
+        },
+        {
+          "text": "più",
+          "start": 3.082,
+          "end": 3.222
+        },
+        {
+          "text": "frequente",
+          "start": 3.302,
+          "end": 3.762
+        },
+        {
+          "text": "in",
+          "start": 3.802,
+          "end": 3.862
+        },
+        {
+          "text": "assoluto,",
+          "start": 3.902,
+          "end": 4.382
+        }
+      ]
+    },
+    {
+      "start": 4.802,
+      "end": 7.642,
+      "text": "wobbly service interaction, con ventotto citazioni.",
+      "words": [
+        {
+          "text": "wobbly",
+          "start": 4.802,
+          "end": 5.122
+        },
+        {
+          "text": "service",
+          "start": 5.202,
+          "end": 5.522
+        },
+        {
+          "text": "interaction,",
+          "start": 5.562,
+          "end": 6.102
+        },
+        {
+          "text": "con",
+          "start": 6.402,
+          "end": 6.522
+        },
+        {
+          "text": "ventotto",
+          "start": 6.602,
+          "end": 7.042
+        },
+        {
+          "text": "citazioni.",
+          "start": 7.102,
+          "end": 7.642
+        }
+      ]
+    },
+    {
+      "start": 8.302,
+      "end": 12.463,
+      "text": "Per definizione, l'interazione di emme uno con emme due è wobbly quando un guasto di",
+      "words": [
+        {
+          "text": "Per",
+          "start": 8.302,
+          "end": 8.422
+        },
+        {
+          "text": "definizione,",
+          "start": 8.462,
+          "end": 9.023
+        },
+        {
+          "text": "l'interazione",
+          "start": 9.123,
+          "end": 9.703
+        },
+        {
+          "text": "di",
+          "start": 9.743,
+          "end": 9.803
+        },
+        {
+          "text": "emme",
+          "start": 9.843,
+          "end": 10.003
+        },
+        {
+          "text": "uno",
+          "start": 10.123,
+          "end": 10.263
+        },
+        {
+          "text": "con",
+          "start": 10.303,
+          "end": 10.403
+        },
+        {
+          "text": "emme",
+          "start": 10.443,
+          "end": 10.583
+        },
+        {
+          "text": "due",
+          "start": 10.643,
+          "end": 10.823
+        },
+        {
+          "text": "è",
+          "start": 10.983,
+          "end": 11.023
+        },
+        {
+          "text": "wobbly",
+          "start": 11.203,
+          "end": 11.563
+        },
+        {
+          "text": "quando",
+          "start": 11.643,
+          "end": 11.883
+        },
+        {
+          "text": "un",
+          "start": 11.923,
+          "end": 11.983
+        },
+        {
+          "text": "guasto",
+          "start": 12.043,
+          "end": 12.383
+        },
+        {
+          "text": "di",
+          "start": 12.403,
+          "end": 12.463
+        }
+      ]
+    },
+    {
+      "start": 12.503,
+      "end": 14.723,
+      "text": "emme due può provocare un guasto di emme uno.",
+      "words": [
+        {
+          "text": "emme",
+          "start": 12.503,
+          "end": 12.643
+        },
+        {
+          "text": "due",
+          "start": 12.683,
+          "end": 12.843
+        },
+        {
+          "text": "può",
+          "start": 12.903,
+          "end": 12.983
+        },
+        {
+          "text": "provocare",
+          "start": 13.083,
+          "end": 13.643
+        },
+        {
+          "text": "un",
+          "start": 13.683,
+          "end": 13.763
+        },
+        {
+          "text": "guasto",
+          "start": 13.803,
+          "end": 14.183
+        },
+        {
+          "text": "di",
+          "start": 14.223,
+          "end": 14.263
+        },
+        {
+          "text": "emme",
+          "start": 14.323,
+          "end": 14.483
+        },
+        {
+          "text": "uno.",
+          "start": 14.583,
+          "end": 14.723
+        }
+      ]
+    },
+    {
+      "start": 15.423,
+      "end": 18.584,
+      "text": "Quando emme uno aspetta la risposta di un servizio lento o guasto,",
+      "words": [
+        {
+          "text": "Quando",
+          "start": 15.423,
+          "end": 15.624
+        },
+        {
+          "text": "emme",
+          "start": 15.664,
+          "end": 15.804
+        },
+        {
+          "text": "uno",
+          "start": 15.904,
+          "end": 16.044
+        },
+        {
+          "text": "aspetta",
+          "start": 16.104,
+          "end": 16.424
+        },
+        {
+          "text": "la",
+          "start": 16.504,
+          "end": 16.564
+        },
+        {
+          "text": "risposta",
+          "start": 16.584,
+          "end": 16.964
+        },
+        {
+          "text": "di",
+          "start": 17.004,
+          "end": 17.044
+        },
+        {
+          "text": "un",
+          "start": 17.064,
+          "end": 17.124
+        },
+        {
+          "text": "servizio",
+          "start": 17.164,
+          "end": 17.584
+        },
+        {
+          "text": "lento",
+          "start": 17.684,
+          "end": 18.024
+        },
+        {
+          "text": "o",
+          "start": 18.084,
+          "end": 18.124
+        },
+        {
+          "text": "guasto,",
+          "start": 18.184,
+          "end": 18.584
+        }
+      ]
+    },
+    {
+      "start": 18.904,
+      "end": 23.645,
+      "text": "le richieste si accumulano, thread e connessioni si esauriscono ed emme uno smette di rispondere,",
+      "words": [
+        {
+          "text": "le",
+          "start": 18.904,
+          "end": 18.964
+        },
+        {
+          "text": "richieste",
+          "start": 19.004,
+          "end": 19.364
+        },
+        {
+          "text": "si",
+          "start": 19.424,
+          "end": 19.484
+        },
+        {
+          "text": "accumulano,",
+          "start": 19.524,
+          "end": 20.044
+        },
+        {
+          "text": "thread",
+          "start": 20.244,
+          "end": 20.504
+        },
+        {
+          "text": "e",
+          "start": 20.524,
+          "end": 20.564
+        },
+        {
+          "text": "connessioni",
+          "start": 20.624,
+          "end": 21.084
+        },
+        {
+          "text": "si",
+          "start": 21.124,
+          "end": 21.184
+        },
+        {
+          "text": "esauriscono",
+          "start": 21.244,
+          "end": 21.804
+        },
+        {
+          "text": "ed",
+          "start": 22.024,
+          "end": 22.104
+        },
+        {
+          "text": "emme",
+          "start": 22.144,
+          "end": 22.284
+        },
+        {
+          "text": "uno",
+          "start": 22.385,
+          "end": 22.525
+        },
+        {
+          "text": "smette",
+          "start": 22.625,
+          "end": 23.005
+        },
+        {
+          "text": "di",
+          "start": 23.045,
+          "end": 23.105
+        },
+        {
+          "text": "rispondere,",
+          "start": 23.145,
+          "end": 23.645
+        }
+      ]
+    },
+    {
+      "start": 23.945,
+      "end": 25.385,
+      "text": "propagando il blocco a catena.",
+      "words": [
+        {
+          "text": "propagando",
+          "start": 23.945,
+          "end": 24.545
+        },
+        {
+          "text": "il",
+          "start": 24.585,
+          "end": 24.665
+        },
+        {
+          "text": "blocco",
+          "start": 24.685,
+          "end": 24.945
+        },
+        {
+          "text": "a",
+          "start": 24.985,
+          "end": 25.025
+        },
+        {
+          "text": "catena.",
+          "start": 25.045,
+          "end": 25.385
+        }
+      ]
+    },
+    {
+      "start": 25.985,
+      "end": 30.766,
+      "text": "Nel modello, l'arco da ics a ipsilon mostra c e t barrati perché mancano le",
+      "words": [
+        {
+          "text": "Nel",
+          "start": 25.985,
+          "end": 26.105
+        },
+        {
+          "text": "modello,",
+          "start": 26.145,
+          "end": 26.485
+        },
+        {
+          "text": "l'arco",
+          "start": 26.645,
+          "end": 26.905
+        },
+        {
+          "text": "da",
+          "start": 26.945,
+          "end": 27.025
+        },
+        {
+          "text": "ics",
+          "start": 27.105,
+          "end": 27.305
+        },
+        {
+          "text": "a",
+          "start": 27.465,
+          "end": 27.505
+        },
+        {
+          "text": "ipsilon",
+          "start": 27.605,
+          "end": 28.025
+        },
+        {
+          "text": "mostra",
+          "start": 28.165,
+          "end": 28.445
+        },
+        {
+          "text": "c",
+          "start": 28.605,
+          "end": 28.645
+        },
+        {
+          "text": "e",
+          "start": 28.905,
+          "end": 28.945
+        },
+        {
+          "text": "t",
+          "start": 29.025,
+          "end": 29.065
+        },
+        {
+          "text": "barrati",
+          "start": 29.246,
+          "end": 29.706
+        },
+        {
+          "text": "perché",
+          "start": 29.966,
+          "end": 30.166
+        },
+        {
+          "text": "mancano",
+          "start": 30.266,
+          "end": 30.646
+        },
+        {
+          "text": "le",
+          "start": 30.706,
+          "end": 30.766
+        }
+      ]
+    },
+    {
+      "start": 30.786,
+      "end": 31.346,
+      "text": "protezioni.",
+      "words": [
+        {
+          "text": "protezioni.",
+          "start": 30.786,
+          "end": 31.346
+        }
+      ]
+    },
+    {
+      "start": 32.026,
+      "end": 33.546,
+      "text": "I refactoring possibili sono quattro.",
+      "words": [
+        {
+          "text": "I",
+          "start": 32.026,
+          "end": 32.066
+        },
+        {
+          "text": "refactoring",
+          "start": 32.106,
+          "end": 32.586
+        },
+        {
+          "text": "possibili",
+          "start": 32.586,
+          "end": 33.006
+        },
+        {
+          "text": "sono",
+          "start": 33.046,
+          "end": 33.186
+        },
+        {
+          "text": "quattro.",
+          "start": 33.226,
+          "end": 33.546
+        }
+      ]
+    },
+    {
+      "start": 34.406,
+      "end": 37.307,
+      "text": "Il più diffuso è add circuit breaker, quarantadue per cento:",
+      "words": [
+        {
+          "text": "Il",
+          "start": 34.406,
+          "end": 34.486
+        },
+        {
+          "text": "più",
+          "start": 34.506,
+          "end": 34.586
+        },
+        {
+          "text": "diffuso",
+          "start": 34.646,
+          "end": 35.026
+        },
+        {
+          "text": "è",
+          "start": 35.126,
+          "end": 35.166
+        },
+        {
+          "text": "add",
+          "start": 35.366,
+          "end": 35.506
+        },
+        {
+          "text": "circuit",
+          "start": 35.606,
+          "end": 35.906
+        },
+        {
+          "text": "breaker,",
+          "start": 35.926,
+          "end": 36.207
+        },
+        {
+          "text": "quarantadue",
+          "start": 36.407,
+          "end": 36.827
+        },
+        {
+          "text": "per",
+          "start": 36.867,
+          "end": 36.967
+        },
+        {
+          "text": "cento:",
+          "start": 37.007,
+          "end": 37.307
+        }
+      ]
+    },
+    {
+      "start": 37.667,
+      "end": 42.427,
+      "text": "dopo più guasti consecutivi, emme uno interrompe le chiamate verso emme due e fallisce subito.",
+      "words": [
+        {
+          "text": "dopo",
+          "start": 37.667,
+          "end": 37.847
+        },
+        {
+          "text": "più",
+          "start": 37.927,
+          "end": 38.047
+        },
+        {
+          "text": "guasti",
+          "start": 38.127,
+          "end": 38.447
+        },
+        {
+          "text": "consecutivi,",
+          "start": 38.487,
+          "end": 39.067
+        },
+        {
+          "text": "emme",
+          "start": 39.247,
+          "end": 39.427
+        },
+        {
+          "text": "uno",
+          "start": 39.567,
+          "end": 39.707
+        },
+        {
+          "text": "interrompe",
+          "start": 39.747,
+          "end": 40.247
+        },
+        {
+          "text": "le",
+          "start": 40.287,
+          "end": 40.347
+        },
+        {
+          "text": "chiamate",
+          "start": 40.387,
+          "end": 40.747
+        },
+        {
+          "text": "verso",
+          "start": 40.787,
+          "end": 41.027
+        },
+        {
+          "text": "emme",
+          "start": 41.067,
+          "end": 41.227
+        },
+        {
+          "text": "due",
+          "start": 41.267,
+          "end": 41.447
+        },
+        {
+          "text": "e",
+          "start": 41.587,
+          "end": 41.627
+        },
+        {
+          "text": "fallisce",
+          "start": 41.687,
+          "end": 42.047
+        },
+        {
+          "text": "subito.",
+          "start": 42.107,
+          "end": 42.427
+        }
+      ]
+    },
+    {
+      "start": 42.927,
+      "end": 47.847,
+      "text": "Seguono use timeouts, ventidue per cento, per smettere di aspettare oltre una soglia massima;",
+      "words": [
+        {
+          "text": "Seguono",
+          "start": 42.927,
+          "end": 43.227
+        },
+        {
+          "text": "use",
+          "start": 43.527,
+          "end": 43.707
+        },
+        {
+          "text": "timeouts,",
+          "start": 43.727,
+          "end": 44.287
+        },
+        {
+          "text": "ventidue",
+          "start": 44.487,
+          "end": 44.827
+        },
+        {
+          "text": "per",
+          "start": 44.867,
+          "end": 44.967
+        },
+        {
+          "text": "cento,",
+          "start": 45.027,
+          "end": 45.327
+        },
+        {
+          "text": "per",
+          "start": 45.407,
+          "end": 45.507
+        },
+        {
+          "text": "smettere",
+          "start": 45.587,
+          "end": 46.007
+        },
+        {
+          "text": "di",
+          "start": 46.047,
+          "end": 46.107
+        },
+        {
+          "text": "aspettare",
+          "start": 46.147,
+          "end": 46.607
+        },
+        {
+          "text": "oltre",
+          "start": 46.767,
+          "end": 47.027
+        },
+        {
+          "text": "una",
+          "start": 47.067,
+          "end": 47.167
+        },
+        {
+          "text": "soglia",
+          "start": 47.187,
+          "end": 47.427
+        },
+        {
+          "text": "massima;",
+          "start": 47.467,
+          "end": 47.847
+        }
+      ]
+    },
+    {
+      "start": 48.407,
+      "end": 53.468,
+      "text": "add bulkhead, venti per cento, che crea compartimenti stagni di risorse per isolare le chiamate",
+      "words": [
+        {
+          "text": "add",
+          "start": 48.407,
+          "end": 48.547
+        },
+        {
+          "text": "bulkhead,",
+          "start": 48.647,
+          "end": 49.107
+        },
+        {
+          "text": "venti",
+          "start": 49.527,
+          "end": 49.728
+        },
+        {
+          "text": "per",
+          "start": 49.768,
+          "end": 49.868
+        },
+        {
+          "text": "cento,",
+          "start": 49.928,
+          "end": 50.248
+        },
+        {
+          "text": "che",
+          "start": 50.508,
+          "end": 50.588
+        },
+        {
+          "text": "crea",
+          "start": 50.648,
+          "end": 50.828
+        },
+        {
+          "text": "compartimenti",
+          "start": 50.868,
+          "end": 51.488
+        },
+        {
+          "text": "stagni",
+          "start": 51.548,
+          "end": 51.868
+        },
+        {
+          "text": "di",
+          "start": 51.908,
+          "end": 51.968
+        },
+        {
+          "text": "risorse",
+          "start": 52.008,
+          "end": 52.428
+        },
+        {
+          "text": "per",
+          "start": 52.488,
+          "end": 52.608
+        },
+        {
+          "text": "isolare",
+          "start": 52.648,
+          "end": 52.988
+        },
+        {
+          "text": "le",
+          "start": 53.028,
+          "end": 53.088
+        },
+        {
+          "text": "chiamate",
+          "start": 53.128,
+          "end": 53.468
+        }
+      ]
+    },
+    {
+      "start": 53.508,
+      "end": 57.669,
+      "text": "verso servizi diversi; e infine add message broker, sedici per cento,",
+      "words": [
+        {
+          "text": "verso",
+          "start": 53.508,
+          "end": 53.748
+        },
+        {
+          "text": "servizi",
+          "start": 53.808,
+          "end": 54.168
+        },
+        {
+          "text": "diversi;",
+          "start": 54.208,
+          "end": 54.628
+        },
+        {
+          "text": "e",
+          "start": 55.008,
+          "end": 55.048
+        },
+        {
+          "text": "infine",
+          "start": 55.088,
+          "end": 55.388
+        },
+        {
+          "text": "add",
+          "start": 55.588,
+          "end": 55.708
+        },
+        {
+          "text": "message",
+          "start": 55.828,
+          "end": 56.168
+        },
+        {
+          "text": "broker,",
+          "start": 56.188,
+          "end": 56.509
+        },
+        {
+          "text": "sedici",
+          "start": 56.869,
+          "end": 57.149
+        },
+        {
+          "text": "per",
+          "start": 57.189,
+          "end": 57.289
+        },
+        {
+          "text": "cento,",
+          "start": 57.349,
+          "end": 57.669
+        }
+      ]
+    },
+    {
+      "start": 57.889,
+      "end": 59.489,
+      "text": "che rende la comunicazione asincrona.",
+      "words": [
+        {
+          "text": "che",
+          "start": 57.889,
+          "end": 57.969
+        },
+        {
+          "text": "rende",
+          "start": 58.029,
+          "end": 58.189
+        },
+        {
+          "text": "la",
+          "start": 58.229,
+          "end": 58.289
+        },
+        {
+          "text": "comunicazione",
+          "start": 58.309,
+          "end": 58.909
+        },
+        {
+          "text": "asincrona.",
+          "start": 58.969,
+          "end": 59.489
+        }
+      ]
+    }
+  ]
+}

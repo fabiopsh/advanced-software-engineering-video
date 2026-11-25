@@ -1,0 +1,1055 @@
+{
+  "duration": 83.888,
+  "segments": [
+    {
+      "start": 0.08,
+      "end": 4.46,
+      "text": "Approfondiamo alcuni dettagli su qubit, topologie e risultati shot-wise.",
+      "words": [
+        {
+          "text": "Approfondiamo",
+          "start": 0.08,
+          "end": 0.68
+        },
+        {
+          "text": "alcuni",
+          "start": 0.72,
+          "end": 0.98
+        },
+        {
+          "text": "dettagli",
+          "start": 1.04,
+          "end": 1.6
+        },
+        {
+          "text": "su",
+          "start": 1.68,
+          "end": 1.76
+        },
+        {
+          "text": "qubit,",
+          "start": 1.86,
+          "end": 2.22
+        },
+        {
+          "text": "topologie",
+          "start": 2.42,
+          "end": 3.02
+        },
+        {
+          "text": "e",
+          "start": 3.2,
+          "end": 3.24
+        },
+        {
+          "text": "risultati",
+          "start": 3.3,
+          "end": 3.8
+        },
+        {
+          "text": "shot-wise.",
+          "start": 3.86,
+          "end": 4.46
+        }
+      ]
+    },
+    {
+      "start": 5.3,
+      "end": 8.881,
+      "text": "La classe B Q P copre problemi di decisione sì o no,",
+      "words": [
+        {
+          "text": "La",
+          "start": 5.3,
+          "end": 5.38
+        },
+        {
+          "text": "classe",
+          "start": 5.42,
+          "end": 5.78
+        },
+        {
+          "text": "B",
+          "start": 5.92,
+          "end": 5.96
+        },
+        {
+          "text": "Q",
+          "start": 6.08,
+          "end": 6.12
+        },
+        {
+          "text": "P",
+          "start": 6.24,
+          "end": 6.28
+        },
+        {
+          "text": "copre",
+          "start": 6.72,
+          "end": 6.98
+        },
+        {
+          "text": "problemi",
+          "start": 7.02,
+          "end": 7.38
+        },
+        {
+          "text": "di",
+          "start": 7.42,
+          "end": 7.5
+        },
+        {
+          "text": "decisione",
+          "start": 7.54,
+          "end": 8.041
+        },
+        {
+          "text": "sì",
+          "start": 8.221,
+          "end": 8.321
+        },
+        {
+          "text": "o",
+          "start": 8.661,
+          "end": 8.701
+        },
+        {
+          "text": "no,",
+          "start": 8.801,
+          "end": 8.881
+        }
+      ]
+    },
+    {
+      "start": 9.381,
+      "end": 14.601,
+      "text": "con applicazioni attese in cinque settori: sanità, finanza, telecomunicazioni,",
+      "words": [
+        {
+          "text": "con",
+          "start": 9.381,
+          "end": 9.481
+        },
+        {
+          "text": "applicazioni",
+          "start": 9.521,
+          "end": 10.061
+        },
+        {
+          "text": "attese",
+          "start": 10.121,
+          "end": 10.481
+        },
+        {
+          "text": "in",
+          "start": 10.521,
+          "end": 10.581
+        },
+        {
+          "text": "cinque",
+          "start": 10.641,
+          "end": 10.921
+        },
+        {
+          "text": "settori:",
+          "start": 10.981,
+          "end": 11.401
+        },
+        {
+          "text": "sanità,",
+          "start": 11.921,
+          "end": 12.281
+        },
+        {
+          "text": "finanza,",
+          "start": 12.761,
+          "end": 13.281
+        },
+        {
+          "text": "telecomunicazioni,",
+          "start": 13.641,
+          "end": 14.601
+        }
+      ]
+    },
+    {
+      "start": 14.901,
+      "end": 16.221,
+      "text": "trasporti ed energia.",
+      "words": [
+        {
+          "text": "trasporti",
+          "start": 14.901,
+          "end": 15.481
+        },
+        {
+          "text": "ed",
+          "start": 15.661,
+          "end": 15.741
+        },
+        {
+          "text": "energia.",
+          "start": 15.801,
+          "end": 16.221
+        }
+      ]
+    },
+    {
+      "start": 17.221,
+      "end": 21.341,
+      "text": "Poiché i ket zero e uno sono i vettori uno-zero e zero-uno,",
+      "words": [
+        {
+          "text": "Poiché",
+          "start": 17.221,
+          "end": 17.501
+        },
+        {
+          "text": "i",
+          "start": 17.721,
+          "end": 17.761
+        },
+        {
+          "text": "ket",
+          "start": 17.841,
+          "end": 18.101
+        },
+        {
+          "text": "zero",
+          "start": 18.321,
+          "end": 18.561
+        },
+        {
+          "text": "e",
+          "start": 18.621,
+          "end": 18.661
+        },
+        {
+          "text": "uno",
+          "start": 18.761,
+          "end": 18.941
+        },
+        {
+          "text": "sono",
+          "start": 19.221,
+          "end": 19.401
+        },
+        {
+          "text": "i",
+          "start": 19.401,
+          "end": 19.441
+        },
+        {
+          "text": "vettori",
+          "start": 19.461,
+          "end": 19.841
+        },
+        {
+          "text": "uno-zero",
+          "start": 20.101,
+          "end": 20.681
+        },
+        {
+          "text": "e",
+          "start": 20.741,
+          "end": 20.781
+        },
+        {
+          "text": "zero-uno,",
+          "start": 20.881,
+          "end": 21.341
+        }
+      ]
+    },
+    {
+      "start": 21.841,
+      "end": 27.442,
+      "text": "il qubit sessanta-quaranta equivale al vettore zero virgola settecentosettantacinque,",
+      "words": [
+        {
+          "text": "il",
+          "start": 21.841,
+          "end": 21.901
+        },
+        {
+          "text": "qubit",
+          "start": 21.961,
+          "end": 22.281
+        },
+        {
+          "text": "sessanta-quaranta",
+          "start": 22.481,
+          "end": 23.441
+        },
+        {
+          "text": "equivale",
+          "start": 23.901,
+          "end": 24.262
+        },
+        {
+          "text": "al",
+          "start": 24.282,
+          "end": 24.362
+        },
+        {
+          "text": "vettore",
+          "start": 24.402,
+          "end": 24.822
+        },
+        {
+          "text": "zero",
+          "start": 25.162,
+          "end": 25.402
+        },
+        {
+          "text": "virgola",
+          "start": 25.462,
+          "end": 25.902
+        },
+        {
+          "text": "settecentosettantacinque,",
+          "start": 26.042,
+          "end": 27.442
+        }
+      ]
+    },
+    {
+      "start": 27.882,
+      "end": 29.542,
+      "text": "zero virgola seicentotrentadue.",
+      "words": [
+        {
+          "text": "zero",
+          "start": 27.882,
+          "end": 28.102
+        },
+        {
+          "text": "virgola",
+          "start": 28.162,
+          "end": 28.562
+        },
+        {
+          "text": "seicentotrentadue.",
+          "start": 28.582,
+          "end": 29.542
+        }
+      ]
+    },
+    {
+      "start": 30.582,
+      "end": 35.382,
+      "text": "I qubit interagiscono secondo la topologia fisica: lineare con al più due vicini,",
+      "words": [
+        {
+          "text": "I",
+          "start": 30.582,
+          "end": 30.622
+        },
+        {
+          "text": "qubit",
+          "start": 30.662,
+          "end": 30.962
+        },
+        {
+          "text": "interagiscono",
+          "start": 31.142,
+          "end": 31.802
+        },
+        {
+          "text": "secondo",
+          "start": 31.842,
+          "end": 32.162
+        },
+        {
+          "text": "la",
+          "start": 32.202,
+          "end": 32.262
+        },
+        {
+          "text": "topologia",
+          "start": 32.302,
+          "end": 32.762
+        },
+        {
+          "text": "fisica:",
+          "start": 32.822,
+          "end": 33.182
+        },
+        {
+          "text": "lineare",
+          "start": 33.702,
+          "end": 34.222
+        },
+        {
+          "text": "con",
+          "start": 34.302,
+          "end": 34.442
+        },
+        {
+          "text": "al",
+          "start": 34.482,
+          "end": 34.582
+        },
+        {
+          "text": "più",
+          "start": 34.622,
+          "end": 34.722
+        },
+        {
+          "text": "due",
+          "start": 34.802,
+          "end": 34.942
+        },
+        {
+          "text": "vicini,",
+          "start": 35.002,
+          "end": 35.382
+        }
+      ]
+    },
+    {
+      "start": 35.862,
+      "end": 40.142,
+      "text": "a griglia fino a quattro vicini, oppure heavy-hex nei chip moderni.",
+      "words": [
+        {
+          "text": "a",
+          "start": 35.862,
+          "end": 35.902
+        },
+        {
+          "text": "griglia",
+          "start": 35.982,
+          "end": 36.402
+        },
+        {
+          "text": "fino",
+          "start": 36.522,
+          "end": 36.682
+        },
+        {
+          "text": "a",
+          "start": 36.722,
+          "end": 36.762
+        },
+        {
+          "text": "quattro",
+          "start": 36.802,
+          "end": 37.062
+        },
+        {
+          "text": "vicini,",
+          "start": 37.122,
+          "end": 37.502
+        },
+        {
+          "text": "oppure",
+          "start": 37.882,
+          "end": 38.222
+        },
+        {
+          "text": "heavy-hex",
+          "start": 38.342,
+          "end": 38.782
+        },
+        {
+          "text": "nei",
+          "start": 39.242,
+          "end": 39.382
+        },
+        {
+          "text": "chip",
+          "start": 39.442,
+          "end": 39.622
+        },
+        {
+          "text": "moderni.",
+          "start": 39.742,
+          "end": 40.142
+        }
+      ]
+    },
+    {
+      "start": 40.943,
+      "end": 43.763,
+      "text": "Nei portali cloud ogni macchina espone numero di qubit,",
+      "words": [
+        {
+          "text": "Nei",
+          "start": 40.943,
+          "end": 41.063
+        },
+        {
+          "text": "portali",
+          "start": 41.103,
+          "end": 41.403
+        },
+        {
+          "text": "cloud",
+          "start": 41.443,
+          "end": 41.743
+        },
+        {
+          "text": "ogni",
+          "start": 41.963,
+          "end": 42.143
+        },
+        {
+          "text": "macchina",
+          "start": 42.203,
+          "end": 42.523
+        },
+        {
+          "text": "espone",
+          "start": 42.583,
+          "end": 42.883
+        },
+        {
+          "text": "numero",
+          "start": 43.003,
+          "end": 43.263
+        },
+        {
+          "text": "di",
+          "start": 43.303,
+          "end": 43.363
+        },
+        {
+          "text": "qubit,",
+          "start": 43.403,
+          "end": 43.763
+        }
+      ]
+    },
+    {
+      "start": 44.123,
+      "end": 48.063,
+      "text": "stato online, coda in pausa o riservata, lunghezza coda,",
+      "words": [
+        {
+          "text": "stato",
+          "start": 44.123,
+          "end": 44.403
+        },
+        {
+          "text": "online,",
+          "start": 44.443,
+          "end": 44.983
+        },
+        {
+          "text": "coda",
+          "start": 45.363,
+          "end": 45.603
+        },
+        {
+          "text": "in",
+          "start": 45.663,
+          "end": 45.723
+        },
+        {
+          "text": "pausa",
+          "start": 45.783,
+          "end": 46.103
+        },
+        {
+          "text": "o",
+          "start": 46.143,
+          "end": 46.183
+        },
+        {
+          "text": "riservata,",
+          "start": 46.243,
+          "end": 46.823
+        },
+        {
+          "text": "lunghezza",
+          "start": 47.303,
+          "end": 47.743
+        },
+        {
+          "text": "coda,",
+          "start": 47.783,
+          "end": 48.063
+        }
+      ]
+    },
+    {
+      "start": 48.403,
+      "end": 50.903,
+      "text": "processore e piano aperto o a pagamento.",
+      "words": [
+        {
+          "text": "processore",
+          "start": 48.403,
+          "end": 49.063
+        },
+        {
+          "text": "e",
+          "start": 49.363,
+          "end": 49.403
+        },
+        {
+          "text": "piano",
+          "start": 49.443,
+          "end": 49.763
+        },
+        {
+          "text": "aperto",
+          "start": 49.903,
+          "end": 50.263
+        },
+        {
+          "text": "o",
+          "start": 50.303,
+          "end": 50.343
+        },
+        {
+          "text": "a",
+          "start": 50.383,
+          "end": 50.423
+        },
+        {
+          "text": "pagamento.",
+          "start": 50.443,
+          "end": 50.903
+        }
+      ]
+    },
+    {
+      "start": 52.103,
+      "end": 55.783,
+      "text": "Nei test shot-wise su tre politiche di split per tre di merge,",
+      "words": [
+        {
+          "text": "Nei",
+          "start": 52.103,
+          "end": 52.263
+        },
+        {
+          "text": "test",
+          "start": 52.323,
+          "end": 52.543
+        },
+        {
+          "text": "shot-wise",
+          "start": 52.683,
+          "end": 53.343
+        },
+        {
+          "text": "su",
+          "start": 53.463,
+          "end": 53.523
+        },
+        {
+          "text": "tre",
+          "start": 53.643,
+          "end": 53.763
+        },
+        {
+          "text": "politiche",
+          "start": 53.823,
+          "end": 54.183
+        },
+        {
+          "text": "di",
+          "start": 54.223,
+          "end": 54.283
+        },
+        {
+          "text": "split",
+          "start": 54.343,
+          "end": 54.663
+        },
+        {
+          "text": "per",
+          "start": 54.883,
+          "end": 55.023
+        },
+        {
+          "text": "tre",
+          "start": 55.123,
+          "end": 55.243
+        },
+        {
+          "text": "di",
+          "start": 55.303,
+          "end": 55.363
+        },
+        {
+          "text": "merge,",
+          "start": 55.423,
+          "end": 55.783
+        }
+      ]
+    },
+    {
+      "start": 56.023,
+      "end": 61.224,
+      "text": "cioè nove combinazioni, Hellinger minimizza la distanza al quadrato tra distribuzioni.",
+      "words": [
+        {
+          "text": "cioè",
+          "start": 56.023,
+          "end": 56.183
+        },
+        {
+          "text": "nove",
+          "start": 56.363,
+          "end": 56.583
+        },
+        {
+          "text": "combinazioni,",
+          "start": 56.643,
+          "end": 57.344
+        },
+        {
+          "text": "Hellinger",
+          "start": 57.944,
+          "end": 58.424
+        },
+        {
+          "text": "minimizza",
+          "start": 58.664,
+          "end": 59.144
+        },
+        {
+          "text": "la",
+          "start": 59.184,
+          "end": 59.244
+        },
+        {
+          "text": "distanza",
+          "start": 59.284,
+          "end": 59.724
+        },
+        {
+          "text": "al",
+          "start": 59.764,
+          "end": 59.824
+        },
+        {
+          "text": "quadrato",
+          "start": 59.864,
+          "end": 60.264
+        },
+        {
+          "text": "tra",
+          "start": 60.324,
+          "end": 60.424
+        },
+        {
+          "text": "distribuzioni.",
+          "start": 60.504,
+          "end": 61.224
+        }
+      ]
+    },
+    {
+      "start": 61.784,
+      "end": 65.624,
+      "text": "Il risultato chiave è che la tecnica non supera la migliore Q P U singola",
+      "words": [
+        {
+          "text": "Il",
+          "start": 61.784,
+          "end": 61.844
+        },
+        {
+          "text": "risultato",
+          "start": 61.884,
+          "end": 62.264
+        },
+        {
+          "text": "chiave",
+          "start": 62.304,
+          "end": 62.564
+        },
+        {
+          "text": "è",
+          "start": 62.944,
+          "end": 62.984
+        },
+        {
+          "text": "che",
+          "start": 63.004,
+          "end": 63.084
+        },
+        {
+          "text": "la",
+          "start": 63.124,
+          "end": 63.184
+        },
+        {
+          "text": "tecnica",
+          "start": 63.224,
+          "end": 63.604
+        },
+        {
+          "text": "non",
+          "start": 63.704,
+          "end": 63.864
+        },
+        {
+          "text": "supera",
+          "start": 63.944,
+          "end": 64.264
+        },
+        {
+          "text": "la",
+          "start": 64.324,
+          "end": 64.384
+        },
+        {
+          "text": "migliore",
+          "start": 64.424,
+          "end": 64.764
+        },
+        {
+          "text": "Q",
+          "start": 64.824,
+          "end": 64.864
+        },
+        {
+          "text": "P",
+          "start": 64.964,
+          "end": 65.004
+        },
+        {
+          "text": "U",
+          "start": 65.124,
+          "end": 65.164
+        },
+        {
+          "text": "singola",
+          "start": 65.264,
+          "end": 65.624
+        }
+      ]
+    },
+    {
+      "start": 66.024,
+      "end": 70.624,
+      "text": "e ha errore medio paragonabile, ma abbatte errore massimo e deviazione standard,",
+      "words": [
+        {
+          "text": "e",
+          "start": 66.024,
+          "end": 66.06400000000001
+        },
+        {
+          "text": "ha",
+          "start": 66.084,
+          "end": 66.144
+        },
+        {
+          "text": "errore",
+          "start": 66.224,
+          "end": 66.524
+        },
+        {
+          "text": "medio",
+          "start": 66.564,
+          "end": 66.784
+        },
+        {
+          "text": "paragonabile,",
+          "start": 66.824,
+          "end": 67.424
+        },
+        {
+          "text": "ma",
+          "start": 67.744,
+          "end": 67.804
+        },
+        {
+          "text": "abbatte",
+          "start": 67.984,
+          "end": 68.404
+        },
+        {
+          "text": "errore",
+          "start": 68.464,
+          "end": 68.744
+        },
+        {
+          "text": "massimo",
+          "start": 68.804,
+          "end": 69.284
+        },
+        {
+          "text": "e",
+          "start": 69.484,
+          "end": 69.524
+        },
+        {
+          "text": "deviazione",
+          "start": 69.584,
+          "end": 70.084
+        },
+        {
+          "text": "standard,",
+          "start": 70.144,
+          "end": 70.624
+        }
+      ]
+    },
+    {
+      "start": 71.064,
+      "end": 73.405,
+      "text": "dipendendo però dalla frequenza delle calibrazioni.",
+      "words": [
+        {
+          "text": "dipendendo",
+          "start": 71.064,
+          "end": 71.464
+        },
+        {
+          "text": "però",
+          "start": 71.504,
+          "end": 71.644
+        },
+        {
+          "text": "dalla",
+          "start": 71.964,
+          "end": 72.124
+        },
+        {
+          "text": "frequenza",
+          "start": 72.164,
+          "end": 72.564
+        },
+        {
+          "text": "delle",
+          "start": 72.604,
+          "end": 72.764
+        },
+        {
+          "text": "calibrazioni.",
+          "start": 72.784,
+          "end": 73.405
+        }
+      ]
+    },
+    {
+      "start": 74.205,
+      "end": 75.525,
+      "text": "Quattro le estensioni future:",
+      "words": [
+        {
+          "text": "Quattro",
+          "start": 74.205,
+          "end": 74.505
+        },
+        {
+          "text": "le",
+          "start": 74.645,
+          "end": 74.705
+        },
+        {
+          "text": "estensioni",
+          "start": 74.745,
+          "end": 75.165
+        },
+        {
+          "text": "future:",
+          "start": 75.205,
+          "end": 75.525
+        }
+      ]
+    },
+    {
+      "start": 76.085,
+      "end": 77.445,
+      "text": "mitigazione errori per shot,",
+      "words": [
+        {
+          "text": "mitigazione",
+          "start": 76.085,
+          "end": 76.665
+        },
+        {
+          "text": "errori",
+          "start": 76.705,
+          "end": 76.965
+        },
+        {
+          "text": "per",
+          "start": 77.005,
+          "end": 77.125
+        },
+        {
+          "text": "shot,",
+          "start": 77.165,
+          "end": 77.445
+        }
+      ]
+    },
+    {
+      "start": 78.105,
+      "end": 83.605,
+      "text": "nuove politiche split e merge, calibrazioni per scenari specifici ed esecuzioni incrementali.",
+      "words": [
+        {
+          "text": "nuove",
+          "start": 78.105,
+          "end": 78.365
+        },
+        {
+          "text": "politiche",
+          "start": 78.405,
+          "end": 78.825
+        },
+        {
+          "text": "split",
+          "start": 78.925,
+          "end": 79.225
+        },
+        {
+          "text": "e",
+          "start": 79.285,
+          "end": 79.325
+        },
+        {
+          "text": "merge,",
+          "start": 79.365,
+          "end": 79.665
+        },
+        {
+          "text": "calibrazioni",
+          "start": 80.185,
+          "end": 80.845
+        },
+        {
+          "text": "per",
+          "start": 80.905,
+          "end": 81.025
+        },
+        {
+          "text": "scenari",
+          "start": 81.065,
+          "end": 81.385
+        },
+        {
+          "text": "specifici",
+          "start": 81.445,
+          "end": 81.945
+        },
+        {
+          "text": "ed",
+          "start": 82.225,
+          "end": 82.305
+        },
+        {
+          "text": "esecuzioni",
+          "start": 82.345,
+          "end": 82.925
+        },
+        {
+          "text": "incrementali.",
+          "start": 82.985,
+          "end": 83.605
+        }
+      ]
+    }
+  ]
+}

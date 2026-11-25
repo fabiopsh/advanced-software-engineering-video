@@ -10,16 +10,16 @@ Web app statica di **videolezioni interattive sincronizzate alla voce** per il c
 
 ---
 
-## Programma del corso
+## Programma del corso (15 capitoli · 137 scene · ~2h 48m)
 
 Basato sugli appunti in [`sources/appunti/`](sources/appunti/README.md) (15 capitoli in 4 parti, derivati dalle slide ufficiali del corso e dal testo di Ian Sommerville, *Engineering Software Products*):
 
-| Parte | Capitoli | Stato |
-|---|---|---|
-| **Parte I · Prodotti software e sviluppo agile** | 01 Dal progetto al prodotto · 02 Sviluppo agile · 03 Feature, scenari e storie | Cap. 01 pilota pronto |
-| **Parte II · Architettura del software** | 04 Architettura del software | In programma |
-| **Parte III · Cloud e microservizi** | 05 Container e Docker · 06 Software sul cloud · 07 Microservizi · 08 Smell e refactoring | In programma |
-| **Parte IV · Dal monolite alla produzione** | 09 Scomporre il monolite · 10 Kubernetes · 11 Testing · 12 DevOps · 13 Sicurezza e privacy · 14 Sicurezza microservizi · 15 Quantum SE | In programma |
+| Parte | Capitoli | Scene | Stato |
+|---|---|---:|---|
+| **Parte I · Prodotti software e sviluppo agile** | 01 Dal progetto al prodotto · 02 Sviluppo agile · 03 Feature, scenari e storie | 22 | Pronto |
+| **Parte II · Architettura del software** | 04 Architettura del software | 9 | Pronto |
+| **Parte III · Cloud e microservizi** | 05 Container e Docker · 06 Software sul cloud · 07 Microservizi · 08 Smell e refactoring | 36 | Pronto |
+| **Parte IV · Dal monolite alla produzione** | 09 Scomporre il monolite · 10 Kubernetes · 11 Testing · 12 DevOps · 13 Sicurezza e privacy · 14 Sicurezza microservizi · 15 Quantum SE | 70 | Pronto |
 
 ---
 

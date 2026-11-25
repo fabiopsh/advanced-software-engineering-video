@@ -1,0 +1,1071 @@
+{
+  "duration": 71.788,
+  "segments": [
+    {
+      "start": 0.173,
+      "end": 4.993,
+      "text": "Gli scenari sono ampi; le user stories li traducono in narrazioni più fini secondo il",
+      "words": [
+        {
+          "text": "Gli",
+          "start": 0.173,
+          "end": 0.333
+        },
+        {
+          "text": "scenari",
+          "start": 0.353,
+          "end": 0.673
+        },
+        {
+          "text": "sono",
+          "start": 0.713,
+          "end": 0.853
+        },
+        {
+          "text": "ampi;",
+          "start": 0.953,
+          "end": 1.213
+        },
+        {
+          "text": "le",
+          "start": 1.613,
+          "end": 1.693
+        },
+        {
+          "text": "user",
+          "start": 1.833,
+          "end": 2.033
+        },
+        {
+          "text": "stories",
+          "start": 2.093,
+          "end": 2.473
+        },
+        {
+          "text": "li",
+          "start": 2.593,
+          "end": 2.653
+        },
+        {
+          "text": "traducono",
+          "start": 2.713,
+          "end": 3.133
+        },
+        {
+          "text": "in",
+          "start": 3.193,
+          "end": 3.253
+        },
+        {
+          "text": "narrazioni",
+          "start": 3.313,
+          "end": 3.813
+        },
+        {
+          "text": "più",
+          "start": 3.893,
+          "end": 3.993
+        },
+        {
+          "text": "fini",
+          "start": 4.133,
+          "end": 4.433
+        },
+        {
+          "text": "secondo",
+          "start": 4.653,
+          "end": 4.933
+        },
+        {
+          "text": "il",
+          "start": 4.953,
+          "end": 4.993
+        }
+      ]
+    },
+    {
+      "start": 5.033,
+      "end": 6.834,
+      "text": "modello: As a ruolo,",
+      "words": [
+        {
+          "text": "modello:",
+          "start": 5.033,
+          "end": 5.373
+        },
+        {
+          "text": "As",
+          "start": 5.793,
+          "end": 5.934
+        },
+        {
+          "text": "a",
+          "start": 6.054,
+          "end": 6.094
+        },
+        {
+          "text": "ruolo,",
+          "start": 6.354,
+          "end": 6.834
+        }
+      ]
+    },
+    {
+      "start": 7.434,
+      "end": 10.774,
+      "text": "I want to fare qualcosa, So that motivo o valore.",
+      "words": [
+        {
+          "text": "I",
+          "start": 7.434,
+          "end": 7.474
+        },
+        {
+          "text": "want",
+          "start": 7.514,
+          "end": 7.734
+        },
+        {
+          "text": "to",
+          "start": 7.774,
+          "end": 7.874
+        },
+        {
+          "text": "fare",
+          "start": 8.054,
+          "end": 8.234
+        },
+        {
+          "text": "qualcosa,",
+          "start": 8.254,
+          "end": 8.754
+        },
+        {
+          "text": "So",
+          "start": 9.174,
+          "end": 9.254
+        },
+        {
+          "text": "that",
+          "start": 9.294,
+          "end": 9.574
+        },
+        {
+          "text": "motivo",
+          "start": 9.774,
+          "end": 10.194
+        },
+        {
+          "text": "o",
+          "start": 10.334,
+          "end": 10.374
+        },
+        {
+          "text": "valore.",
+          "start": 10.434,
+          "end": 10.774
+        }
+      ]
+    },
+    {
+      "start": 11.434,
+      "end": 15.254,
+      "text": "Realizzano tre principi del manifesto agile: consegnare presto valore,",
+      "words": [
+        {
+          "text": "Realizzano",
+          "start": 11.434,
+          "end": 11.934
+        },
+        {
+          "text": "tre",
+          "start": 11.994,
+          "end": 12.114
+        },
+        {
+          "text": "principi",
+          "start": 12.194,
+          "end": 12.674
+        },
+        {
+          "text": "del",
+          "start": 12.714,
+          "end": 12.834
+        },
+        {
+          "text": "manifesto",
+          "start": 12.854,
+          "end": 13.274
+        },
+        {
+          "text": "agile:",
+          "start": 13.394,
+          "end": 13.694
+        },
+        {
+          "text": "consegnare",
+          "start": 14.034,
+          "end": 14.534
+        },
+        {
+          "text": "presto",
+          "start": 14.574,
+          "end": 14.834
+        },
+        {
+          "text": "valore,",
+          "start": 14.874,
+          "end": 15.254
+        }
+      ]
+    },
+    {
+      "start": 15.394,
+      "end": 17.994,
+      "text": "consegnare frequentemente e cercare la semplicità.",
+      "words": [
+        {
+          "text": "consegnare",
+          "start": 15.394,
+          "end": 15.974
+        },
+        {
+          "text": "frequentemente",
+          "start": 16.014,
+          "end": 16.774
+        },
+        {
+          "text": "e",
+          "start": 16.954,
+          "end": 16.994
+        },
+        {
+          "text": "cercare",
+          "start": 17.034,
+          "end": 17.374
+        },
+        {
+          "text": "la",
+          "start": 17.414,
+          "end": 17.454
+        },
+        {
+          "text": "semplicità.",
+          "start": 17.494,
+          "end": 17.994
+        }
+      ]
+    },
+    {
+      "start": 18.714,
+      "end": 22.975,
+      "text": "Qui cambia la prospettiva: gli sviluppatori vedono l'applicazione come uno stack tecnico,",
+      "words": [
+        {
+          "text": "Qui",
+          "start": 18.714,
+          "end": 18.814
+        },
+        {
+          "text": "cambia",
+          "start": 18.894,
+          "end": 19.134
+        },
+        {
+          "text": "la",
+          "start": 19.174,
+          "end": 19.214
+        },
+        {
+          "text": "prospettiva:",
+          "start": 19.234,
+          "end": 19.814
+        },
+        {
+          "text": "gli",
+          "start": 20.154,
+          "end": 20.294
+        },
+        {
+          "text": "sviluppatori",
+          "start": 20.334,
+          "end": 20.915
+        },
+        {
+          "text": "vedono",
+          "start": 20.975,
+          "end": 21.215
+        },
+        {
+          "text": "l'applicazione",
+          "start": 21.255,
+          "end": 21.835
+        },
+        {
+          "text": "come",
+          "start": 21.895,
+          "end": 22.055
+        },
+        {
+          "text": "uno",
+          "start": 22.095,
+          "end": 22.195
+        },
+        {
+          "text": "stack",
+          "start": 22.235,
+          "end": 22.435
+        },
+        {
+          "text": "tecnico,",
+          "start": 22.515,
+          "end": 22.975
+        }
+      ]
+    },
+    {
+      "start": 23.315,
+      "end": 26.715,
+      "text": "mentre l'utente la vede come fette di funzionalità utilizzabili.",
+      "words": [
+        {
+          "text": "mentre",
+          "start": 23.315,
+          "end": 23.595
+        },
+        {
+          "text": "l'utente",
+          "start": 23.635,
+          "end": 24.135
+        },
+        {
+          "text": "la",
+          "start": 24.175,
+          "end": 24.235
+        },
+        {
+          "text": "vede",
+          "start": 24.255,
+          "end": 24.435
+        },
+        {
+          "text": "come",
+          "start": 24.475,
+          "end": 24.635
+        },
+        {
+          "text": "fette",
+          "start": 24.835,
+          "end": 25.175
+        },
+        {
+          "text": "di",
+          "start": 25.215,
+          "end": 25.295
+        },
+        {
+          "text": "funzionalità",
+          "start": 25.355,
+          "end": 25.955
+        },
+        {
+          "text": "utilizzabili.",
+          "start": 26.035,
+          "end": 26.715
+        }
+      ]
+    },
+    {
+      "start": 27.275,
+      "end": 30.115,
+      "text": "Una buona storia richiede uno o due giorni di lavoro;",
+      "words": [
+        {
+          "text": "Una",
+          "start": 27.275,
+          "end": 27.395
+        },
+        {
+          "text": "buona",
+          "start": 27.455,
+          "end": 27.675
+        },
+        {
+          "text": "storia",
+          "start": 27.755,
+          "end": 28.135
+        },
+        {
+          "text": "richiede",
+          "start": 28.275,
+          "end": 28.635
+        },
+        {
+          "text": "uno",
+          "start": 28.835,
+          "end": 29.055
+        },
+        {
+          "text": "o",
+          "start": 29.175,
+          "end": 29.215
+        },
+        {
+          "text": "due",
+          "start": 29.255,
+          "end": 29.395
+        },
+        {
+          "text": "giorni",
+          "start": 29.435,
+          "end": 29.675
+        },
+        {
+          "text": "di",
+          "start": 29.715,
+          "end": 29.775
+        },
+        {
+          "text": "lavoro;",
+          "start": 29.815,
+          "end": 30.115
+        }
+      ]
+    },
+    {
+      "start": 30.615,
+      "end": 35.776,
+      "text": "le storie troppo grandi, chiamate epics, si spezzano e alimentano il product backlog di Scrum,",
+      "words": [
+        {
+          "text": "le",
+          "start": 30.615,
+          "end": 30.675
+        },
+        {
+          "text": "storie",
+          "start": 30.695,
+          "end": 30.955
+        },
+        {
+          "text": "troppo",
+          "start": 30.995,
+          "end": 31.215
+        },
+        {
+          "text": "grandi,",
+          "start": 31.255,
+          "end": 31.655
+        },
+        {
+          "text": "chiamate",
+          "start": 31.755,
+          "end": 32.095
+        },
+        {
+          "text": "epics,",
+          "start": 32.275,
+          "end": 32.635
+        },
+        {
+          "text": "si",
+          "start": 33.115,
+          "end": 33.195
+        },
+        {
+          "text": "spezzano",
+          "start": 33.235,
+          "end": 33.695
+        },
+        {
+          "text": "e",
+          "start": 33.815,
+          "end": 33.855
+        },
+        {
+          "text": "alimentano",
+          "start": 33.895,
+          "end": 34.335
+        },
+        {
+          "text": "il",
+          "start": 34.375,
+          "end": 34.435
+        },
+        {
+          "text": "product",
+          "start": 34.495,
+          "end": 34.815
+        },
+        {
+          "text": "backlog",
+          "start": 34.895,
+          "end": 35.276
+        },
+        {
+          "text": "di",
+          "start": 35.356,
+          "end": 35.396
+        },
+        {
+          "text": "Scrum,",
+          "start": 35.456,
+          "end": 35.776
+        }
+      ]
+    },
+    {
+      "start": 36.136,
+      "end": 40.276,
+      "text": "dove vengono ordinate per priorità e sforzo nel requirements triage.",
+      "words": [
+        {
+          "text": "dove",
+          "start": 36.136,
+          "end": 36.276
+        },
+        {
+          "text": "vengono",
+          "start": 36.316,
+          "end": 36.596
+        },
+        {
+          "text": "ordinate",
+          "start": 36.656,
+          "end": 37.116
+        },
+        {
+          "text": "per",
+          "start": 37.156,
+          "end": 37.276
+        },
+        {
+          "text": "priorità",
+          "start": 37.356,
+          "end": 37.796
+        },
+        {
+          "text": "e",
+          "start": 38.016,
+          "end": 38.056
+        },
+        {
+          "text": "sforzo",
+          "start": 38.116,
+          "end": 38.596
+        },
+        {
+          "text": "nel",
+          "start": 38.876,
+          "end": 39.036
+        },
+        {
+          "text": "requirements",
+          "start": 39.156,
+          "end": 39.816
+        },
+        {
+          "text": "triage.",
+          "start": 39.836,
+          "end": 40.276
+        }
+      ]
+    },
+    {
+      "start": 40.876,
+      "end": 45.676,
+      "text": "Per esempio, l'epic del Tic Tac Toe per giocare contro il computer richiede ben più",
+      "words": [
+        {
+          "text": "Per",
+          "start": 40.876,
+          "end": 40.976
+        },
+        {
+          "text": "esempio,",
+          "start": 41.016,
+          "end": 41.416
+        },
+        {
+          "text": "l'epic",
+          "start": 41.656,
+          "end": 41.996
+        },
+        {
+          "text": "del",
+          "start": 42.076,
+          "end": 42.216
+        },
+        {
+          "text": "Tic",
+          "start": 42.356,
+          "end": 42.516
+        },
+        {
+          "text": "Tac",
+          "start": 42.576,
+          "end": 42.716
+        },
+        {
+          "text": "Toe",
+          "start": 42.796,
+          "end": 43.016
+        },
+        {
+          "text": "per",
+          "start": 43.156,
+          "end": 43.276
+        },
+        {
+          "text": "giocare",
+          "start": 43.336,
+          "end": 43.676
+        },
+        {
+          "text": "contro",
+          "start": 43.796,
+          "end": 44.116
+        },
+        {
+          "text": "il",
+          "start": 44.156,
+          "end": 44.196
+        },
+        {
+          "text": "computer",
+          "start": 44.216,
+          "end": 44.756
+        },
+        {
+          "text": "richiede",
+          "start": 44.896,
+          "end": 45.216
+        },
+        {
+          "text": "ben",
+          "start": 45.356,
+          "end": 45.496
+        },
+        {
+          "text": "più",
+          "start": 45.576,
+          "end": 45.676
+        }
+      ]
+    },
+    {
+      "start": 45.716,
+      "end": 46.276,
+      "text": "di due giorni.",
+      "words": [
+        {
+          "text": "di",
+          "start": 45.716,
+          "end": 45.776
+        },
+        {
+          "text": "due",
+          "start": 45.836,
+          "end": 45.936
+        },
+        {
+          "text": "giorni.",
+          "start": 45.976,
+          "end": 46.276
+        }
+      ]
+    },
+    {
+      "start": 46.716,
+      "end": 50.797,
+      "text": "La dividiamo in tre fette: prima il computer fa una mossa valida qualsiasi,",
+      "words": [
+        {
+          "text": "La",
+          "start": 46.716,
+          "end": 46.796
+        },
+        {
+          "text": "dividiamo",
+          "start": 46.836,
+          "end": 47.236
+        },
+        {
+          "text": "in",
+          "start": 47.296,
+          "end": 47.356
+        },
+        {
+          "text": "tre",
+          "start": 47.416,
+          "end": 47.516
+        },
+        {
+          "text": "fette:",
+          "start": 47.596,
+          "end": 47.896
+        },
+        {
+          "text": "prima",
+          "start": 48.236,
+          "end": 48.496
+        },
+        {
+          "text": "il",
+          "start": 48.756,
+          "end": 48.836
+        },
+        {
+          "text": "computer",
+          "start": 48.876,
+          "end": 49.276
+        },
+        {
+          "text": "fa",
+          "start": 49.336,
+          "end": 49.416
+        },
+        {
+          "text": "una",
+          "start": 49.496,
+          "end": 49.596
+        },
+        {
+          "text": "mossa",
+          "start": 49.616,
+          "end": 49.876
+        },
+        {
+          "text": "valida",
+          "start": 49.937,
+          "end": 50.237
+        },
+        {
+          "text": "qualsiasi,",
+          "start": 50.277,
+          "end": 50.797
+        }
+      ]
+    },
+    {
+      "start": 51.037,
+      "end": 55.277,
+      "text": "già giocabile; poi blocca la vittoria avversaria; infine vince quando può.",
+      "words": [
+        {
+          "text": "già",
+          "start": 51.037,
+          "end": 51.117
+        },
+        {
+          "text": "giocabile;",
+          "start": 51.177,
+          "end": 51.617
+        },
+        {
+          "text": "poi",
+          "start": 52.177,
+          "end": 52.417
+        },
+        {
+          "text": "blocca",
+          "start": 52.517,
+          "end": 52.777
+        },
+        {
+          "text": "la",
+          "start": 52.817,
+          "end": 52.877
+        },
+        {
+          "text": "vittoria",
+          "start": 52.897,
+          "end": 53.217
+        },
+        {
+          "text": "avversaria;",
+          "start": 53.257,
+          "end": 53.817
+        },
+        {
+          "text": "infine",
+          "start": 54.097,
+          "end": 54.477
+        },
+        {
+          "text": "vince",
+          "start": 54.557,
+          "end": 54.837
+        },
+        {
+          "text": "quando",
+          "start": 54.897,
+          "end": 55.117
+        },
+        {
+          "text": "può.",
+          "start": 55.177,
+          "end": 55.277
+        }
+      ]
+    },
+    {
+      "start": 55.957,
+      "end": 60.057,
+      "text": "Anche quando tutte le storie sono pronte, gli scenari restano utili per lettura naturale,",
+      "words": [
+        {
+          "text": "Anche",
+          "start": 55.957,
+          "end": 56.117
+        },
+        {
+          "text": "quando",
+          "start": 56.157,
+          "end": 56.357
+        },
+        {
+          "text": "tutte",
+          "start": 56.437,
+          "end": 56.657
+        },
+        {
+          "text": "le",
+          "start": 56.697,
+          "end": 56.757
+        },
+        {
+          "text": "storie",
+          "start": 56.797,
+          "end": 57.037
+        },
+        {
+          "text": "sono",
+          "start": 57.077,
+          "end": 57.237
+        },
+        {
+          "text": "pronte,",
+          "start": 57.277,
+          "end": 57.657
+        },
+        {
+          "text": "gli",
+          "start": 57.777,
+          "end": 57.917
+        },
+        {
+          "text": "scenari",
+          "start": 57.957,
+          "end": 58.337
+        },
+        {
+          "text": "restano",
+          "start": 58.417,
+          "end": 58.697
+        },
+        {
+          "text": "utili",
+          "start": 58.757,
+          "end": 59.017
+        },
+        {
+          "text": "per",
+          "start": 59.057,
+          "end": 59.177
+        },
+        {
+          "text": "lettura",
+          "start": 59.217,
+          "end": 59.537
+        },
+        {
+          "text": "naturale,",
+          "start": 59.597,
+          "end": 60.057
+        }
+      ]
+    },
+    {
+      "start": 60.417,
+      "end": 64.898,
+      "text": "comprensione e contesto, pur potendo passare dalle personas direttamente alle storie.",
+      "words": [
+        {
+          "text": "comprensione",
+          "start": 60.417,
+          "end": 61.117
+        },
+        {
+          "text": "e",
+          "start": 61.137,
+          "end": 61.177
+        },
+        {
+          "text": "contesto,",
+          "start": 61.197,
+          "end": 61.837
+        },
+        {
+          "text": "pur",
+          "start": 61.997,
+          "end": 62.137
+        },
+        {
+          "text": "potendo",
+          "start": 62.217,
+          "end": 62.517
+        },
+        {
+          "text": "passare",
+          "start": 62.557,
+          "end": 62.937
+        },
+        {
+          "text": "dalle",
+          "start": 62.977,
+          "end": 63.137
+        },
+        {
+          "text": "personas",
+          "start": 63.157,
+          "end": 63.617
+        },
+        {
+          "text": "direttamente",
+          "start": 63.777,
+          "end": 64.357
+        },
+        {
+          "text": "alle",
+          "start": 64.377,
+          "end": 64.517
+        },
+        {
+          "text": "storie.",
+          "start": 64.557,
+          "end": 64.898
+        }
+      ]
+    },
+    {
+      "start": 65.718,
+      "end": 69.238,
+      "text": "Nella tabella vediamo il caso di Pierfrancesco, nove anni di Pisa,",
+      "words": [
+        {
+          "text": "Nella",
+          "start": 65.718,
+          "end": 65.878
+        },
+        {
+          "text": "tabella",
+          "start": 65.918,
+          "end": 66.238
+        },
+        {
+          "text": "vediamo",
+          "start": 66.358,
+          "end": 66.638
+        },
+        {
+          "text": "il",
+          "start": 66.678,
+          "end": 66.738
+        },
+        {
+          "text": "caso",
+          "start": 66.778,
+          "end": 66.978
+        },
+        {
+          "text": "di",
+          "start": 67.018,
+          "end": 67.098
+        },
+        {
+          "text": "Pierfrancesco,",
+          "start": 67.178,
+          "end": 67.918
+        },
+        {
+          "text": "nove",
+          "start": 68.198,
+          "end": 68.398
+        },
+        {
+          "text": "anni",
+          "start": 68.478,
+          "end": 68.698
+        },
+        {
+          "text": "di",
+          "start": 68.878,
+          "end": 68.958
+        },
+        {
+          "text": "Pisa,",
+          "start": 68.998,
+          "end": 69.238
+        }
+      ]
+    },
+    {
+      "start": 69.678,
+      "end": 71.538,
+      "text": "con tutte le storie per la griglia tre per tre.",
+      "words": [
+        {
+          "text": "con",
+          "start": 69.678,
+          "end": 69.818
+        },
+        {
+          "text": "tutte",
+          "start": 69.878,
+          "end": 70.138
+        },
+        {
+          "text": "le",
+          "start": 70.178,
+          "end": 70.238
+        },
+        {
+          "text": "storie",
+          "start": 70.278,
+          "end": 70.598
+        },
+        {
+          "text": "per",
+          "start": 70.618,
+          "end": 70.698
+        },
+        {
+          "text": "la",
+          "start": 70.738,
+          "end": 70.798
+        },
+        {
+          "text": "griglia",
+          "start": 70.838,
+          "end": 71.098
+        },
+        {
+          "text": "tre",
+          "start": 71.158,
+          "end": 71.238
+        },
+        {
+          "text": "per",
+          "start": 71.298,
+          "end": 71.398
+        },
+        {
+          "text": "tre.",
+          "start": 71.438,
+          "end": 71.538
+        }
+      ]
+    }
+  ]
+}

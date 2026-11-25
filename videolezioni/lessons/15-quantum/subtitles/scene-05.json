@@ -1,0 +1,1043 @@
+{
+  "duration": 76.137,
+  "segments": [
+    {
+      "start": 0.04,
+      "end": 6.4,
+      "text": "Un computer quantistico si programma costruendo circuiti quantistici: sequenze di porte elementari sui qubit,",
+      "words": [
+        {
+          "text": "Un",
+          "start": 0.04,
+          "end": 0.12
+        },
+        {
+          "text": "computer",
+          "start": 0.16,
+          "end": 0.58
+        },
+        {
+          "text": "quantistico",
+          "start": 0.64,
+          "end": 1.34
+        },
+        {
+          "text": "si",
+          "start": 1.56,
+          "end": 1.64
+        },
+        {
+          "text": "programma",
+          "start": 1.68,
+          "end": 2.06
+        },
+        {
+          "text": "costruendo",
+          "start": 2.12,
+          "end": 2.7
+        },
+        {
+          "text": "circuiti",
+          "start": 2.78,
+          "end": 3.22
+        },
+        {
+          "text": "quantistici:",
+          "start": 3.26,
+          "end": 3.96
+        },
+        {
+          "text": "sequenze",
+          "start": 4.48,
+          "end": 4.86
+        },
+        {
+          "text": "di",
+          "start": 4.9,
+          "end": 4.96
+        },
+        {
+          "text": "porte",
+          "start": 5.0,
+          "end": 5.22
+        },
+        {
+          "text": "elementari",
+          "start": 5.26,
+          "end": 5.78
+        },
+        {
+          "text": "sui",
+          "start": 5.82,
+          "end": 5.96
+        },
+        {
+          "text": "qubit,",
+          "start": 6.0,
+          "end": 6.4
+        }
+      ]
+    },
+    {
+      "start": 6.64,
+      "end": 7.54,
+      "text": "seguite dalle misure.",
+      "words": [
+        {
+          "text": "seguite",
+          "start": 6.64,
+          "end": 6.96
+        },
+        {
+          "text": "dalle",
+          "start": 7.02,
+          "end": 7.18
+        },
+        {
+          "text": "misure.",
+          "start": 7.2,
+          "end": 7.54
+        }
+      ]
+    },
+    {
+      "start": 8.441,
+      "end": 14.421,
+      "text": "In questo esempio OpenQASM due punto zero, dichiariamo due qubit inizialmente in zero-zero e due",
+      "words": [
+        {
+          "text": "In",
+          "start": 8.441,
+          "end": 8.501
+        },
+        {
+          "text": "questo",
+          "start": 8.521,
+          "end": 8.701
+        },
+        {
+          "text": "esempio",
+          "start": 8.721,
+          "end": 9.041
+        },
+        {
+          "text": "OpenQASM",
+          "start": 9.201,
+          "end": 9.881
+        },
+        {
+          "text": "due",
+          "start": 9.961,
+          "end": 10.081
+        },
+        {
+          "text": "punto",
+          "start": 10.121,
+          "end": 10.361
+        },
+        {
+          "text": "zero,",
+          "start": 10.461,
+          "end": 10.721
+        },
+        {
+          "text": "dichiariamo",
+          "start": 11.101,
+          "end": 11.601
+        },
+        {
+          "text": "due",
+          "start": 11.721,
+          "end": 11.921
+        },
+        {
+          "text": "qubit",
+          "start": 11.981,
+          "end": 12.321
+        },
+        {
+          "text": "inizialmente",
+          "start": 12.381,
+          "end": 12.961
+        },
+        {
+          "text": "in",
+          "start": 13.021,
+          "end": 13.081
+        },
+        {
+          "text": "zero-zero",
+          "start": 13.141,
+          "end": 13.701
+        },
+        {
+          "text": "e",
+          "start": 14.101,
+          "end": 14.141
+        },
+        {
+          "text": "due",
+          "start": 14.241,
+          "end": 14.421
+        }
+      ]
+    },
+    {
+      "start": 14.461,
+      "end": 15.161,
+      "text": "bit classici.",
+      "words": [
+        {
+          "text": "bit",
+          "start": 14.461,
+          "end": 14.601
+        },
+        {
+          "text": "classici.",
+          "start": 14.661,
+          "end": 15.161
+        }
+      ]
+    },
+    {
+      "start": 15.981,
+      "end": 20.181,
+      "text": "La porta Hadamard H sul primo qubit lo mette in sovrapposizione,",
+      "words": [
+        {
+          "text": "La",
+          "start": 15.981,
+          "end": 16.061
+        },
+        {
+          "text": "porta",
+          "start": 16.101,
+          "end": 16.321
+        },
+        {
+          "text": "Hadamard",
+          "start": 16.461,
+          "end": 16.941
+        },
+        {
+          "text": "H",
+          "start": 17.421,
+          "end": 17.461
+        },
+        {
+          "text": "sul",
+          "start": 17.681,
+          "end": 17.821
+        },
+        {
+          "text": "primo",
+          "start": 17.861,
+          "end": 18.061
+        },
+        {
+          "text": "qubit",
+          "start": 18.101,
+          "end": 18.441
+        },
+        {
+          "text": "lo",
+          "start": 18.941,
+          "end": 19.001
+        },
+        {
+          "text": "mette",
+          "start": 19.041,
+          "end": 19.221
+        },
+        {
+          "text": "in",
+          "start": 19.261,
+          "end": 19.321
+        },
+        {
+          "text": "sovrapposizione,",
+          "start": 19.361,
+          "end": 20.181
+        }
+      ]
+    },
+    {
+      "start": 20.581,
+      "end": 23.382,
+      "text": "portando lo stato a metà zero-zero e metà zero-uno.",
+      "words": [
+        {
+          "text": "portando",
+          "start": 20.581,
+          "end": 20.921
+        },
+        {
+          "text": "lo",
+          "start": 20.961,
+          "end": 21.021
+        },
+        {
+          "text": "stato",
+          "start": 21.041,
+          "end": 21.261
+        },
+        {
+          "text": "a",
+          "start": 21.301,
+          "end": 21.341
+        },
+        {
+          "text": "metà",
+          "start": 21.361,
+          "end": 21.541
+        },
+        {
+          "text": "zero-zero",
+          "start": 21.781,
+          "end": 22.361
+        },
+        {
+          "text": "e",
+          "start": 22.561,
+          "end": 22.601
+        },
+        {
+          "text": "metà",
+          "start": 22.641,
+          "end": 22.822
+        },
+        {
+          "text": "zero-uno.",
+          "start": 22.962,
+          "end": 23.382
+        }
+      ]
+    },
+    {
+      "start": 24.182,
+      "end": 28.562,
+      "text": "Subito dopo, la porta C NOT con controllo sul primo qubit e bersaglio sul secondo",
+      "words": [
+        {
+          "text": "Subito",
+          "start": 24.182,
+          "end": 24.462
+        },
+        {
+          "text": "dopo,",
+          "start": 24.502,
+          "end": 24.722
+        },
+        {
+          "text": "la",
+          "start": 24.962,
+          "end": 25.042
+        },
+        {
+          "text": "porta",
+          "start": 25.082,
+          "end": 25.302
+        },
+        {
+          "text": "C",
+          "start": 25.422,
+          "end": 25.462
+        },
+        {
+          "text": "NOT",
+          "start": 25.582,
+          "end": 25.822
+        },
+        {
+          "text": "con",
+          "start": 25.982,
+          "end": 26.122
+        },
+        {
+          "text": "controllo",
+          "start": 26.162,
+          "end": 26.562
+        },
+        {
+          "text": "sul",
+          "start": 26.582,
+          "end": 26.722
+        },
+        {
+          "text": "primo",
+          "start": 26.742,
+          "end": 26.942
+        },
+        {
+          "text": "qubit",
+          "start": 26.982,
+          "end": 27.342
+        },
+        {
+          "text": "e",
+          "start": 27.402,
+          "end": 27.442
+        },
+        {
+          "text": "bersaglio",
+          "start": 27.482,
+          "end": 27.922
+        },
+        {
+          "text": "sul",
+          "start": 27.962,
+          "end": 28.102
+        },
+        {
+          "text": "secondo",
+          "start": 28.142,
+          "end": 28.562
+        }
+      ]
+    },
+    {
+      "start": 28.942,
+      "end": 31.382,
+      "text": "inverte il secondo qubit quando il primo vale uno:",
+      "words": [
+        {
+          "text": "inverte",
+          "start": 28.942,
+          "end": 29.382
+        },
+        {
+          "text": "il",
+          "start": 29.422,
+          "end": 29.482
+        },
+        {
+          "text": "secondo",
+          "start": 29.522,
+          "end": 29.822
+        },
+        {
+          "text": "qubit",
+          "start": 29.862,
+          "end": 30.162
+        },
+        {
+          "text": "quando",
+          "start": 30.282,
+          "end": 30.582
+        },
+        {
+          "text": "il",
+          "start": 30.602,
+          "end": 30.662
+        },
+        {
+          "text": "primo",
+          "start": 30.722,
+          "end": 30.942
+        },
+        {
+          "text": "vale",
+          "start": 30.982,
+          "end": 31.162
+        },
+        {
+          "text": "uno:",
+          "start": 31.242,
+          "end": 31.382
+        }
+      ]
+    },
+    {
+      "start": 32.142,
+      "end": 36.182,
+      "text": "i due qubit diventano entangled, metà zero-zero e metà uno-uno.",
+      "words": [
+        {
+          "text": "i",
+          "start": 32.142,
+          "end": 32.182
+        },
+        {
+          "text": "due",
+          "start": 32.202,
+          "end": 32.322
+        },
+        {
+          "text": "qubit",
+          "start": 32.382,
+          "end": 32.642
+        },
+        {
+          "text": "diventano",
+          "start": 32.722,
+          "end": 33.102
+        },
+        {
+          "text": "entangled,",
+          "start": 33.222,
+          "end": 33.882
+        },
+        {
+          "text": "metà",
+          "start": 34.222,
+          "end": 34.422
+        },
+        {
+          "text": "zero-zero",
+          "start": 34.562,
+          "end": 35.102
+        },
+        {
+          "text": "e",
+          "start": 35.322,
+          "end": 35.362
+        },
+        {
+          "text": "metà",
+          "start": 35.402,
+          "end": 35.602
+        },
+        {
+          "text": "uno-uno.",
+          "start": 35.782,
+          "end": 36.182
+        }
+      ]
+    },
+    {
+      "start": 37.042,
+      "end": 39.683,
+      "text": "Le due misure finali copiano i risultati nei bit classici,",
+      "words": [
+        {
+          "text": "Le",
+          "start": 37.042,
+          "end": 37.122
+        },
+        {
+          "text": "due",
+          "start": 37.162,
+          "end": 37.262
+        },
+        {
+          "text": "misure",
+          "start": 37.302,
+          "end": 37.542
+        },
+        {
+          "text": "finali",
+          "start": 37.582,
+          "end": 37.902
+        },
+        {
+          "text": "copiano",
+          "start": 37.982,
+          "end": 38.263
+        },
+        {
+          "text": "i",
+          "start": 38.303,
+          "end": 38.343
+        },
+        {
+          "text": "risultati",
+          "start": 38.363,
+          "end": 38.763
+        },
+        {
+          "text": "nei",
+          "start": 38.803,
+          "end": 38.923
+        },
+        {
+          "text": "bit",
+          "start": 38.963,
+          "end": 39.103
+        },
+        {
+          "text": "classici,",
+          "start": 39.163,
+          "end": 39.683
+        }
+      ]
+    },
+    {
+      "start": 39.923,
+      "end": 42.183,
+      "text": "restituendo sempre zero-zero oppure uno-uno.",
+      "words": [
+        {
+          "text": "restituendo",
+          "start": 39.923,
+          "end": 40.363
+        },
+        {
+          "text": "sempre",
+          "start": 40.423,
+          "end": 40.723
+        },
+        {
+          "text": "zero-zero",
+          "start": 40.843,
+          "end": 41.323
+        },
+        {
+          "text": "oppure",
+          "start": 41.483,
+          "end": 41.763
+        },
+        {
+          "text": "uno-uno.",
+          "start": 41.823,
+          "end": 42.183
+        }
+      ]
+    },
+    {
+      "start": 43.083,
+      "end": 44.643,
+      "text": "Perché servono molti shot?",
+      "words": [
+        {
+          "text": "Perché",
+          "start": 43.083,
+          "end": 43.323
+        },
+        {
+          "text": "servono",
+          "start": 43.403,
+          "end": 43.743
+        },
+        {
+          "text": "molti",
+          "start": 43.863,
+          "end": 44.223
+        },
+        {
+          "text": "shot?",
+          "start": 44.323,
+          "end": 44.643
+        }
+      ]
+    },
+    {
+      "start": 45.163,
+      "end": 49.163,
+      "text": "Perché la fisica vieta di osservare lo stato quantistico senza farlo collassare.",
+      "words": [
+        {
+          "text": "Perché",
+          "start": 45.163,
+          "end": 45.383
+        },
+        {
+          "text": "la",
+          "start": 45.423,
+          "end": 45.463
+        },
+        {
+          "text": "fisica",
+          "start": 45.523,
+          "end": 45.883
+        },
+        {
+          "text": "vieta",
+          "start": 45.983,
+          "end": 46.283
+        },
+        {
+          "text": "di",
+          "start": 46.323,
+          "end": 46.363
+        },
+        {
+          "text": "osservare",
+          "start": 46.423,
+          "end": 46.863
+        },
+        {
+          "text": "lo",
+          "start": 46.923,
+          "end": 46.983
+        },
+        {
+          "text": "stato",
+          "start": 47.023,
+          "end": 47.243
+        },
+        {
+          "text": "quantistico",
+          "start": 47.283,
+          "end": 47.883
+        },
+        {
+          "text": "senza",
+          "start": 48.003,
+          "end": 48.263
+        },
+        {
+          "text": "farlo",
+          "start": 48.323,
+          "end": 48.523
+        },
+        {
+          "text": "collassare.",
+          "start": 48.563,
+          "end": 49.163
+        }
+      ]
+    },
+    {
+      "start": 50.063,
+      "end": 53.043,
+      "text": "Ogni esecuzione ripetuta con lo stesso input si chiama shot:",
+      "words": [
+        {
+          "text": "Ogni",
+          "start": 50.063,
+          "end": 50.243
+        },
+        {
+          "text": "esecuzione",
+          "start": 50.283,
+          "end": 50.743
+        },
+        {
+          "text": "ripetuta",
+          "start": 50.803,
+          "end": 51.243
+        },
+        {
+          "text": "con",
+          "start": 51.303,
+          "end": 51.403
+        },
+        {
+          "text": "lo",
+          "start": 51.443,
+          "end": 51.503
+        },
+        {
+          "text": "stesso",
+          "start": 51.543,
+          "end": 51.763
+        },
+        {
+          "text": "input",
+          "start": 51.843,
+          "end": 52.143
+        },
+        {
+          "text": "si",
+          "start": 52.243,
+          "end": 52.303
+        },
+        {
+          "text": "chiama",
+          "start": 52.343,
+          "end": 52.543
+        },
+        {
+          "text": "shot:",
+          "start": 52.743,
+          "end": 53.043
+        }
+      ]
+    },
+    {
+      "start": 53.824,
+      "end": 56.304,
+      "text": "le frequenze osservate approssimano la distribuzione reale.",
+      "words": [
+        {
+          "text": "le",
+          "start": 53.824,
+          "end": 53.884
+        },
+        {
+          "text": "frequenze",
+          "start": 53.904,
+          "end": 54.244
+        },
+        {
+          "text": "osservate",
+          "start": 54.284,
+          "end": 54.684
+        },
+        {
+          "text": "approssimano",
+          "start": 54.704,
+          "end": 55.224
+        },
+        {
+          "text": "la",
+          "start": 55.264,
+          "end": 55.324
+        },
+        {
+          "text": "distribuzione",
+          "start": 55.364,
+          "end": 55.924
+        },
+        {
+          "text": "reale.",
+          "start": 55.964,
+          "end": 56.304
+        }
+      ]
+    },
+    {
+      "start": 57.004,
+      "end": 61.384,
+      "text": "Con soli dieci shot su un qubit sessanta-quaranta possiamo ottenere settanta-trenta;",
+      "words": [
+        {
+          "text": "Con",
+          "start": 57.004,
+          "end": 57.124
+        },
+        {
+          "text": "soli",
+          "start": 57.144,
+          "end": 57.344
+        },
+        {
+          "text": "dieci",
+          "start": 57.444,
+          "end": 57.744
+        },
+        {
+          "text": "shot",
+          "start": 57.824,
+          "end": 58.104
+        },
+        {
+          "text": "su",
+          "start": 58.204,
+          "end": 58.264
+        },
+        {
+          "text": "un",
+          "start": 58.304,
+          "end": 58.384
+        },
+        {
+          "text": "qubit",
+          "start": 58.424,
+          "end": 58.764
+        },
+        {
+          "text": "sessanta-quaranta",
+          "start": 58.884,
+          "end": 59.724
+        },
+        {
+          "text": "possiamo",
+          "start": 59.784,
+          "end": 60.064
+        },
+        {
+          "text": "ottenere",
+          "start": 60.084,
+          "end": 60.424
+        },
+        {
+          "text": "settanta-trenta;",
+          "start": 60.524,
+          "end": 61.384
+        }
+      ]
+    },
+    {
+      "start": 61.824,
+      "end": 64.384,
+      "text": "più shot riducono l'errore, ma costano tempo e denaro.",
+      "words": [
+        {
+          "text": "più",
+          "start": 61.824,
+          "end": 61.924
+        },
+        {
+          "text": "shot",
+          "start": 62.004,
+          "end": 62.264
+        },
+        {
+          "text": "riducono",
+          "start": 62.384,
+          "end": 62.724
+        },
+        {
+          "text": "l'errore,",
+          "start": 62.764,
+          "end": 63.124
+        },
+        {
+          "text": "ma",
+          "start": 63.364,
+          "end": 63.424
+        },
+        {
+          "text": "costano",
+          "start": 63.484,
+          "end": 63.764
+        },
+        {
+          "text": "tempo",
+          "start": 63.804,
+          "end": 64.004
+        },
+        {
+          "text": "e",
+          "start": 64.024,
+          "end": 64.06400000000001
+        },
+        {
+          "text": "denaro.",
+          "start": 64.084,
+          "end": 64.384
+        }
+      ]
+    },
+    {
+      "start": 65.304,
+      "end": 69.885,
+      "text": "Infine, le macchine attuali appartengono all'era NISQ, Noisy Intermediate-Scale Quantum:",
+      "words": [
+        {
+          "text": "Infine,",
+          "start": 65.304,
+          "end": 65.624
+        },
+        {
+          "text": "le",
+          "start": 65.784,
+          "end": 65.844
+        },
+        {
+          "text": "macchine",
+          "start": 65.884,
+          "end": 66.124
+        },
+        {
+          "text": "attuali",
+          "start": 66.164,
+          "end": 66.504
+        },
+        {
+          "text": "appartengono",
+          "start": 66.524,
+          "end": 67.004
+        },
+        {
+          "text": "all'era",
+          "start": 67.024,
+          "end": 67.284
+        },
+        {
+          "text": "NISQ,",
+          "start": 67.424,
+          "end": 67.724
+        },
+        {
+          "text": "Noisy",
+          "start": 68.184,
+          "end": 68.525
+        },
+        {
+          "text": "Intermediate-Scale",
+          "start": 68.565,
+          "end": 69.465
+        },
+        {
+          "text": "Quantum:",
+          "start": 69.505,
+          "end": 69.885
+        }
+      ]
+    },
+    {
+      "start": 70.365,
+      "end": 75.045,
+      "text": "sono sensibili al rumore e hanno pochi qubit, quindi eseguono solo circuiti piccoli e corti.",
+      "words": [
+        {
+          "text": "sono",
+          "start": 70.365,
+          "end": 70.525
+        },
+        {
+          "text": "sensibili",
+          "start": 70.585,
+          "end": 71.025
+        },
+        {
+          "text": "al",
+          "start": 71.065,
+          "end": 71.125
+        },
+        {
+          "text": "rumore",
+          "start": 71.165,
+          "end": 71.485
+        },
+        {
+          "text": "e",
+          "start": 71.605,
+          "end": 71.64500000000001
+        },
+        {
+          "text": "hanno",
+          "start": 71.665,
+          "end": 71.845
+        },
+        {
+          "text": "pochi",
+          "start": 71.865,
+          "end": 72.065
+        },
+        {
+          "text": "qubit,",
+          "start": 72.125,
+          "end": 72.425
+        },
+        {
+          "text": "quindi",
+          "start": 72.785,
+          "end": 72.945
+        },
+        {
+          "text": "eseguono",
+          "start": 72.985,
+          "end": 73.305
+        },
+        {
+          "text": "solo",
+          "start": 73.405,
+          "end": 73.605
+        },
+        {
+          "text": "circuiti",
+          "start": 73.665,
+          "end": 74.105
+        },
+        {
+          "text": "piccoli",
+          "start": 74.185,
+          "end": 74.565
+        },
+        {
+          "text": "e",
+          "start": 74.625,
+          "end": 74.665
+        },
+        {
+          "text": "corti.",
+          "start": 74.705,
+          "end": 75.045
+        }
+      ]
+    }
+  ]
+}

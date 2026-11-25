@@ -1,0 +1,844 @@
+{
+  "lesson_id": "10-kubernetes",
+  "chapter": 10,
+  "part": "Parte IV · Dal monolite alla produzione",
+  "title": "Kubernetes",
+  "voice_config": {
+    "provider": "gemini",
+    "model": "gemini-3.8-flash-tts",
+    "voice_name": "Ludo",
+    "style": "chiaro, didattico, calmo e preciso, stile lezione universitaria di ingegneria del software"
+  },
+  "scenes": [
+    {
+      "id": "scene-01",
+      "section": "10.1 · Perché l'orchestrazione",
+      "title": "Dai container isolati al desired state management",
+      "tts_text": "Nel capitolo precedente abbiamo visto che i container garantiscono isolamento leggero, portabilità tra sviluppo e produzione e un uso efficiente di CPU e memoria. [pause:0.5] Quando però l'applicazione arriva in produzione restano quattro domande aperte. Che cosa accade se un container muore o se si guasta l'intera macchina? Come comunicano i container in rete, e su quale macchina di un cluster conviene eseguirli? [pause:0.6] A queste domande risponde la container orchestration, e Kubernetes, abbreviato K otto s, è la piattaforma più diffusa. Kubernetes gestisce l'intero ciclo di vita dei container su un cluster, cioè un insieme di macchine gestite come un'unica risorsa. [pause:0.6] L'idea centrale è il desired state management. Non si invia una sequenza di comandi, ma si dichiara in un file YAML lo stato desiderato: quali Pod eseguire, con quali immagini e quante repliche. [pause:0.5] Nell'esempio di App uno, chiediamo tre copie del Pod uno e due copie del Pod due distribuite su tre worker. Se un worker si guasta e una copia sparisce, Kubernetes rileva la differenza e avvia automaticamente la replica mancante sui nodi rimasti.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">10.1 · Perché un orchestratore di container</div>\n  <h2 class=\"slide-title\">Dalle domande in produzione al Desired State Management</h2>\n  <div id=\"s1\" class=\"grid-2 cue-hidden\">\n    <div id=\"b-why\" class=\"box box-def\">\n      <div class=\"box-label\">Container in produzione: 4 domande</div>\n      <ul class=\"clean-list\">\n        <li id=\"q-1\"><strong>Container che muore</strong>: chi lo riavvia subito?</li>\n        <li id=\"q-2\"><strong>Macchina guasta</strong>: dove spostare i workload?</li>\n        <li id=\"q-3\"><strong>Rete distribuita</strong>: come far parlare i container?</li>\n        <li id=\"q-4\"><strong>Placement</strong>: su quale nodo del <em>cluster</em> eseguirli?</li>\n      </ul>\n    </div>\n    <div id=\"b-dsm\" class=\"box box-primary\">\n      <div class=\"box-label\">Kubernetes (K8s) &amp; Desired State</div>\n      <p><strong>Cluster</strong>: più macchine gestite come un'unica risorsa. Con file <strong>YAML</strong> si dichiara <em>quali Pod</em> e <em>quante repliche</em> si vogliono, non i comandi passo-passo.</p>\n      <p id=\"ex-w\" style=\"margin-top:6px;\"><strong>Esempio (<code>App1.yaml</code>)</strong>: 3 copie Pod 1 + 2 copie Pod 2 su 3 worker. Se un worker cade, il <em>kubelet</em> e il control plane ricreano le copie mancanti sui worker rimasti.</p>\n    </div>\n  </div>\n  <div id=\"s2\" class=\"metrics-row cue-hidden\">\n    <div id=\"m-heal\" class=\"metric metric-accent\">\n      <div class=\"metric-val\">Self-healing</div>\n      <div class=\"metric-lbl\">Riavvia e ripiana i container guasti</div>\n    </div>\n    <div id=\"m-net\" class=\"metric\">\n      <div class=\"metric-val\">Networking</div>\n      <div class=\"metric-lbl\">Comunicazione stabile tra nodi</div>\n    </div>\n    <div id=\"m-sched\" class=\"metric\">\n      <div class=\"metric-val\">Scheduling</div>\n      <div class=\"metric-lbl\">Sceglie il worker migliore del cluster</div>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 3.62,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "isolamento leggero, portabilità tra sviluppo"
+        },
+        {
+          "at": 3.62,
+          "action": "highlight",
+          "target": "#s1",
+          "anchor": "isolamento leggero, portabilità tra sviluppo",
+          "duration": 6.43
+        },
+        {
+          "at": 10.34,
+          "action": "highlight",
+          "target": "#b-why",
+          "anchor": "Quando però l'applicazione arriva",
+          "duration": 5.15
+        },
+        {
+          "at": 15.68,
+          "action": "highlight",
+          "target": "#q-1",
+          "anchor": "se un container muore",
+          "duration": 1.36
+        },
+        {
+          "at": 17.16,
+          "action": "highlight",
+          "target": "#q-2",
+          "anchor": "se si guasta l'intera macchina",
+          "duration": 1.86
+        },
+        {
+          "at": 19.14,
+          "action": "highlight",
+          "target": "#q-3",
+          "anchor": "Come comunicano i container",
+          "duration": 2.44
+        },
+        {
+          "at": 21.7,
+          "action": "highlight",
+          "target": "#q-4",
+          "anchor": "su quale macchina di un cluster",
+          "duration": 3.42
+        },
+        {
+          "at": 25.24,
+          "action": "highlight",
+          "target": "#b-dsm",
+          "anchor": "A queste domande risponde la container",
+          "duration": 25.15
+        },
+        {
+          "at": 41.59,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "L'idea centrale è il desired"
+        },
+        {
+          "at": 50.51,
+          "action": "highlight",
+          "target": "#m-net",
+          "anchor": "quali Pod eseguire",
+          "duration": 4.03
+        },
+        {
+          "at": 54.67,
+          "action": "highlight",
+          "target": "#ex-w",
+          "anchor": "Nell'esempio di App uno",
+          "duration": 9.7
+        },
+        {
+          "at": 64.49,
+          "action": "highlight",
+          "target": "#m-heal",
+          "anchor": "rileva la differenza e avvia",
+          "duration": 4.75
+        }
+      ],
+      "audio_file": "audio/scene-01.wav",
+      "subtitle_file": "subtitles/scene-01.json",
+      "duration_sec": 70.25
+    },
+    {
+      "id": "scene-02",
+      "section": "10.2 · Principi di design",
+      "title": "Declarativeness, Distribution, Decoupling e Immutability",
+      "tts_text": "Kubernetes si fonda su quattro principi di design. [pause:0.5] Il primo è la declarativeness. Si descrive lo stato desiderato nella specification di ciascun oggetto. Kubernetes interroga di continuo gli oggetti tramite polling per confrontarne lo status corrente con la specification: se qualcosa diverge o non risponde, interviene da solo, rendendo il sistema self-healing. [pause:0.6] Il secondo principio è la distribution. Chi distribuisce l'applicazione consegna i workload a un'unica interfaccia unificata, senza mai dover dialogare direttamente con i singoli nodi del cluster. [pause:0.6] Il terzo principio è il decoupling: ogni container segue il criterio del single concern, cioè una sola responsabilità, favorendo microservizi che si scalano e si aggiornano in modo indipendente. [pause:0.6] Infine, l'immutable infrastructure: non si entra mai in un container per aggiornarlo sul posto. Si costruisce una nuova immagine, la si distribuisce e si termina la vecchia. Tra sviluppo, test e produzione si usa la stessa immagine variando solo configurazioni esterne, e i container restano effimeri, rendendo immediato il rollback a una versione precedente.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">10.2 · Principi di design</div>\n  <h2 class=\"slide-title\">I quattro pilastri architetturali di Kubernetes</h2>\n  <div id=\"s1\" class=\"split-visual cue-hidden\">\n    <div id=\"svg-dist\" class=\"svg-panel\">\n      <svg viewBox=\"0 0 360 190\" class=\"diagram-svg\" aria-label=\"Distribution: interfaccia unificata\">\n        <defs>\n          <marker id=\"karr\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\">\n            <path d=\"M0 1 L9 5 L0 9 z\" fill=\"var(--ink-soft)\"/>\n          </marker>\n        </defs>\n        <g id=\"svg-wload\">\n          <text x=\"180\" y=\"16\" text-anchor=\"middle\" class=\"svg-caption\">Workload individuali</text>\n          <rect x=\"44\" y=\"24\" width=\"76\" height=\"28\" rx=\"5\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.5\"/>\n          <text x=\"82\" y=\"42\" text-anchor=\"middle\" class=\"svg-tick\">Container</text>\n          <rect x=\"142\" y=\"24\" width=\"76\" height=\"28\" rx=\"5\" fill=\"var(--green-soft, rgba(21,128,61,0.12))\" stroke=\"var(--green)\" stroke-width=\"1.5\"/>\n          <text x=\"180\" y=\"42\" text-anchor=\"middle\" class=\"svg-tick\">Container</text>\n          <rect x=\"240\" y=\"24\" width=\"76\" height=\"28\" rx=\"5\" fill=\"var(--orange-soft, rgba(217,119,6,0.12))\" stroke=\"var(--orange)\" stroke-width=\"1.5\"/>\n          <text x=\"278\" y=\"42\" text-anchor=\"middle\" class=\"svg-tick\">Container</text>\n        </g>\n        <line x1=\"82\" y1=\"54\" x2=\"82\" y2=\"78\" stroke=\"var(--ink-soft)\" stroke-width=\"1.5\" marker-end=\"url(#karr)\"/>\n        <line x1=\"180\" y1=\"54\" x2=\"180\" y2=\"78\" stroke=\"var(--ink-soft)\" stroke-width=\"1.5\" marker-end=\"url(#karr)\"/>\n        <line x1=\"278\" y1=\"54\" x2=\"278\" y2=\"78\" stroke=\"var(--ink-soft)\" stroke-width=\"1.5\" marker-end=\"url(#karr)\"/>\n        <g id=\"svg-iface\">\n          <rect x=\"24\" y=\"82\" width=\"312\" height=\"34\" rx=\"6\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.8\"/>\n          <text x=\"180\" y=\"103\" text-anchor=\"middle\" class=\"svg-math\">Kubernetes · Interfaccia unificata</text>\n        </g>\n        <line x1=\"60\" y1=\"118\" x2=\"60\" y2=\"142\" stroke=\"var(--ink-soft)\" stroke-width=\"1.5\" marker-end=\"url(#karr)\"/>\n        <line x1=\"140\" y1=\"118\" x2=\"140\" y2=\"142\" stroke=\"var(--ink-soft)\" stroke-width=\"1.5\" marker-end=\"url(#karr)\"/>\n        <line x1=\"220\" y1=\"118\" x2=\"220\" y2=\"142\" stroke=\"var(--ink-soft)\" stroke-width=\"1.5\" marker-end=\"url(#karr)\"/>\n        <line x1=\"300\" y1=\"118\" x2=\"300\" y2=\"142\" stroke=\"var(--ink-soft)\" stroke-width=\"1.5\" marker-end=\"url(#karr)\"/>\n        <g id=\"svg-nodes\">\n          <rect x=\"26\" y=\"146\" width=\"68\" height=\"28\" rx=\"5\" fill=\"none\" stroke=\"var(--muted)\" stroke-width=\"1.4\"/>\n          <text x=\"60\" y=\"164\" text-anchor=\"middle\" class=\"svg-tick\">Node 1</text>\n          <rect x=\"106\" y=\"146\" width=\"68\" height=\"28\" rx=\"5\" fill=\"none\" stroke=\"var(--muted)\" stroke-width=\"1.4\"/>\n          <text x=\"140\" y=\"164\" text-anchor=\"middle\" class=\"svg-tick\">Node 2</text>\n          <rect x=\"186\" y=\"146\" width=\"68\" height=\"28\" rx=\"5\" fill=\"none\" stroke=\"var(--muted)\" stroke-width=\"1.4\"/>\n          <text x=\"220\" y=\"164\" text-anchor=\"middle\" class=\"svg-tick\">Node 3</text>\n          <rect x=\"266\" y=\"146\" width=\"68\" height=\"28\" rx=\"5\" fill=\"none\" stroke=\"var(--muted)\" stroke-width=\"1.4\"/>\n          <text x=\"300\" y=\"164\" text-anchor=\"middle\" class=\"svg-tick\">Node 4</text>\n        </g>\n      </svg>\n    </div>\n    <div class=\"formula-col\">\n      <div id=\"p-decl\" class=\"box box-def\">\n        <div class=\"box-label\">1 · Declarativeness (Self-healing)</div>\n        <p><strong>Specification</strong> (stato desiderato) vs <strong>Status</strong> (stato reale): K8s fa <em>polling</em> continuo e corregge automaticamente ogni deviazione.</p>\n      </div>\n      <div id=\"p-dist\" class=\"box box-primary\">\n        <div class=\"box-label\">2 · Distribution &amp; 3 · Decoupling</div>\n        <p>Un'unica interfaccia nasconde i nodi del cluster. Ogni container ha una sola responsabilità (<em>single concern</em>) e scala in modo indipendente.</p>\n      </div>\n    </div>\n  </div>\n  <div id=\"s2\" class=\"box box-idea cue-hidden\">\n    <div class=\"box-label\">4 · Immutable Infrastructure</div>\n    <ul class=\"clean-list\">\n      <li id=\"im-1\"><strong>Mai modifiche sul posto</strong>: per aggiornare si costruisce una nuova immagine e si termina il vecchio container.</li>\n      <li id=\"im-2\"><strong>Stessa immagine ovunque</strong> (dev, test, prod): variano solo file di configurazione montati esternamente.</li>\n      <li id=\"im-3\"><strong>Container effimeri &amp; rollback</strong>: sostituibili in ogni istante; per tornare indietro basta puntare all'immagine precedente.</li>\n    </ul>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 0.92,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "fonda su quattro principi di design"
+        },
+        {
+          "at": 0.92,
+          "action": "highlight",
+          "target": "#s1",
+          "anchor": "fonda su quattro principi di design",
+          "duration": 2.11
+        },
+        {
+          "at": 3.44,
+          "action": "highlight",
+          "target": "#p-decl",
+          "anchor": "Il primo è la declarativeness",
+          "duration": 17.88
+        },
+        {
+          "at": 22.81,
+          "action": "highlight",
+          "target": "#svg-iface",
+          "anchor": "Il secondo principio è la distribution",
+          "duration": 6.39
+        },
+        {
+          "at": 30.71,
+          "action": "highlight",
+          "target": "#svg-nodes",
+          "anchor": "senza mai dover dialogare direttamente",
+          "duration": 4.2
+        },
+        {
+          "at": 35.03,
+          "action": "highlight",
+          "target": "#p-dist",
+          "anchor": "Il terzo principio è il decoupling",
+          "duration": 13.52
+        },
+        {
+          "at": 47.73,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Infine, l'immutable infrastructure"
+        },
+        {
+          "at": 50.16,
+          "action": "highlight",
+          "target": "#im-1",
+          "anchor": "non si entra mai in un container",
+          "duration": 8.12
+        },
+        {
+          "at": 58.4,
+          "action": "highlight",
+          "target": "#im-2",
+          "anchor": "Tra sviluppo, test e produzione",
+          "duration": 5.52
+        },
+        {
+          "at": 64.04,
+          "action": "highlight",
+          "target": "#im-3",
+          "anchor": "e i container restano effimeri",
+          "duration": 5.15
+        }
+      ],
+      "audio_file": "audio/scene-02.wav",
+      "subtitle_file": "subtitles/scene-02.json",
+      "duration_sec": 68.77
+    },
+    {
+      "id": "scene-03",
+      "section": "10.3 · Manifest e Pod",
+      "title": "Anatomia di un manifest e struttura del Pod",
+      "tts_text": "Tutti gli oggetti di Kubernetes si descrivono in file chiamati manifest, scritti in formato YAML o JSON. [pause:0.5] L'unità fondamentale che Kubernetes esegue non è il singolo container, ma il Pod. Un Pod raggruppa uno o più container strettamente collegati che condividono uno strato di rete, cioè un unico indirizzo IP assegnato al Pod, e i volumi del filesystem. [pause:0.6] In questo modo i container dentro lo stesso Pod collaborano come se fossero sulla stessa macchina locale, mentre rimangono isolati rispetto agli altri Pod del cluster. [pause:0.6] Ogni manifest che definisce un Pod o qualsiasi altro oggetto è composto da quattro sezioni obbligatorie. apiVersion indica gruppo API e versione dell'oggetto; kind specifica il tipo di risorsa, ad esempio Pod o Service; metadata contiene i dati che identificano l'oggetto, come il nome e le etichette; infine spec descrive lo stato desiderato, cioè immagini, porte e configurazioni.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">10.3 · Gli oggetti di Kubernetes</div>\n  <h2 class=\"slide-title\">Il Pod come unità di esecuzione e le 4 parti del Manifest</h2>\n  <div id=\"s1\" class=\"split-visual cue-hidden\">\n    <div id=\"svg-pod\" class=\"svg-panel\">\n      <svg viewBox=\"0 0 360 175\" class=\"diagram-svg\" aria-label=\"Struttura interna di un Pod\">\n        <rect x=\"24\" y=\"14\" width=\"312\" height=\"148\" rx=\"8\" fill=\"var(--bg-paper, #f8fafc)\" stroke=\"var(--ink-soft)\" stroke-width=\"1.8\"/>\n        <text x=\"38\" y=\"34\" class=\"svg-math\">Pod</text>\n        <g id=\"svg-pod-ip\">\n          <rect x=\"226\" y=\"20\" width=\"98\" height=\"22\" rx=\"4\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.2\"/>\n          <text x=\"275\" y=\"35\" text-anchor=\"middle\" class=\"svg-tick\">IP address condiviso</text>\n        </g>\n        <g id=\"svg-pod-cont\">\n          <rect x=\"44\" y=\"54\" width=\"122\" height=\"46\" rx=\"6\" fill=\"var(--orange-soft, rgba(217,119,6,0.12))\" stroke=\"var(--orange)\" stroke-width=\"1.6\"/>\n          <text x=\"105\" y=\"81\" text-anchor=\"middle\" class=\"svg-math\">Container 1</text>\n          <rect x=\"194\" y=\"54\" width=\"122\" height=\"46\" rx=\"6\" fill=\"var(--green-soft, rgba(21,128,61,0.12))\" stroke=\"var(--green)\" stroke-width=\"1.6\"/>\n          <text x=\"255\" y=\"81\" text-anchor=\"middle\" class=\"svg-math\">Container 2</text>\n        </g>\n        <g id=\"svg-pod-vol\">\n          <rect x=\"44\" y=\"114\" width=\"272\" height=\"32\" rx=\"6\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.5\"/>\n          <text x=\"180\" y=\"134\" text-anchor=\"middle\" class=\"svg-tick\">Volume del filesystem condiviso</text>\n        </g>\n      </svg>\n    </div>\n    <div class=\"formula-col\">\n      <div id=\"b-pod\" class=\"box box-def\">\n        <div class=\"box-label\">Definizione · Pod</div>\n        <ul class=\"clean-list\">\n          <li><strong>1 o più container</strong> strettamente accoppiati.</li>\n          <li><strong>Rete condivisa</strong>: un unico IP per l'intero Pod.</li>\n          <li><strong>Volumi condivisi</strong>: accesso comune ai file locali.</li>\n        </ul>\n      </div>\n    </div>\n  </div>\n  <table id=\"s2\" class=\"acad-table cue-hidden\">\n    <thead>\n      <tr><th>Sezione Manifest (YAML / JSON)</th><th>Domanda a cui risponde</th></tr>\n    </thead>\n    <tbody>\n      <tr id=\"mf-1\"><td><code>apiVersion</code></td><td>Qual è il gruppo API dell'oggetto e quale versione usa?</td></tr>\n      <tr id=\"mf-2\"><td><code>kind</code></td><td>Che risorsa si sta creando (es. <code>Pod</code>, <code>Deployment</code>, <code>Service</code>)?</td></tr>\n      <tr id=\"mf-3\"><td><code>metadata</code></td><td>Quali dati identificano univocamente l'oggetto (nome, <em>label</em>)?</td></tr>\n      <tr id=\"mf-4\"><td><code>spec</code></td><td>Qual è lo stato desiderato (immagini, porte, repliche)?</td></tr>\n    </tbody>\n  </table>\n</div>\n",
+      "cues": [
+        {
+          "at": 1.8,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "descrivono in file chiamati manifest"
+        },
+        {
+          "at": 1.8,
+          "action": "highlight",
+          "target": "#s1",
+          "anchor": "descrivono in file chiamati manifest",
+          "duration": 4.79
+        },
+        {
+          "at": 7.76,
+          "action": "highlight",
+          "target": "#b-pod",
+          "anchor": "L'unità fondamentale che Kubernetes",
+          "duration": 12.09
+        },
+        {
+          "at": 19.96,
+          "action": "highlight",
+          "target": "#svg-pod-ip",
+          "anchor": "unico indirizzo IP assegnato",
+          "duration": 2.3
+        },
+        {
+          "at": 22.52,
+          "action": "highlight",
+          "target": "#svg-pod-vol",
+          "anchor": "e i volumi del filesystem",
+          "duration": 2
+        },
+        {
+          "at": 24.64,
+          "action": "highlight",
+          "target": "#svg-pod-cont",
+          "anchor": "In questo modo i container",
+          "duration": 15.48
+        },
+        {
+          "at": 34.32,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Ogni manifest che definisce"
+        },
+        {
+          "at": 40.24,
+          "action": "highlight",
+          "target": "#mf-1",
+          "anchor": "apiVersion indica gruppo API",
+          "duration": 2.7
+        },
+        {
+          "at": 44.28,
+          "action": "highlight",
+          "target": "#mf-2",
+          "anchor": "kind specifica il tipo",
+          "duration": 4.34
+        },
+        {
+          "at": 48.98,
+          "action": "highlight",
+          "target": "#mf-3",
+          "anchor": "metadata contiene i dati",
+          "duration": 4.98
+        },
+        {
+          "at": 54.08,
+          "action": "highlight",
+          "target": "#mf-4",
+          "anchor": "infine spec descrive lo stato",
+          "duration": 4.34
+        }
+      ],
+      "audio_file": "audio/scene-03.wav",
+      "subtitle_file": "subtitles/scene-03.json",
+      "duration_sec": 60.14
+    },
+    {
+      "id": "scene-04",
+      "section": "10.4 · Deployment e repliche",
+      "title": "Template, ReplicaSet e aggiornamento dichiarativo",
+      "tts_text": "In produzione raramente si crea un singolo Pod isolato. Si usa invece un Deployment, che combina un template di Pod con un replica count, cioè il numero enne di copie identiche da mantenere attive, coordinate internamente tramite un ReplicaSet. [pause:0.6] Se un Deployment chiede dieci repliche e tre Pod si guastano per un crash o per la caduta di un nodo, Kubernetes se ne accorge e pianifica subito tre nuovi Pod su altre macchine del cluster. [pause:0.6] Guardiamo il manifest reale per servire un modello di machine learning via REST. Nella sezione spec troviamo quattro elementi chiave. [pause:0.4] replicas imposta il numero desiderato a dieci. selector, con matchLabels app uguale ml-model, indica quali Pod appartengono al Deployment. template definisce la ricetta di ogni Pod, aggiungendo nei metadati proprio l'etichetta app uguale ml-model. Infine containers specifica l'immagine ml-serving uno punto zero in ascolto sulla porta ottanta.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">10.4 · Deployment &amp; ReplicaSet</div>\n  <h2 class=\"slide-title\">Scalare e mantenere \\(n\\) repliche con un Deployment</h2>\n  <div id=\"s1\" class=\"box box-def cue-hidden\">\n    <div class=\"box-label\">Definizione · Deployment</div>\n    <p>Un <strong>Deployment</strong> gestisce (tramite <em>ReplicaSet</em>) una collezione di Pod identici definiti da un <strong>template</strong> e da un <strong>replica count</strong> \\(\\htmlId{f-rep}{n}\\). Se \\(n = 10\\) e 3 Pod cadono, K8s ne avvia subito 3 sostitutivi su altri worker.</p>\n  </div>\n  <div id=\"s2\" class=\"grid-2 cue-hidden\">\n    <div id=\"dp-yaml\" class=\"box box-primary\">\n      <div class=\"box-label\">Manifest · ml-model-serving</div>\n      <pre style=\"font-size:0.76rem;line-height:1.35;margin:0;white-space:pre-wrap;font-family:var(--font-mono,monospace);\">apiVersion: apps/v1\nkind: Deployment\nmetadata:\n  name: ml-model-serving\nspec:\n  replicas: 10\n  selector:\n    matchLabels: { app: ml-model }\n  template:\n    metadata:\n      labels: { app: ml-model }\n    spec:\n      containers:\n      - name: ml-rest-server\n        image: ml-serving:1.0\n        ports: [{ containerPort: 80 }]</pre>\n    </div>\n    <div class=\"box box-algo\">\n      <div class=\"box-label\">I 4 campi della spec</div>\n      <ol class=\"algo-list\">\n        <li id=\"dp-1\"><strong><code>replicas</code></strong>: quante copie eseguire (10).</li>\n        <li id=\"dp-2\"><strong><code>selector</code></strong>: seleziona i Pod con label <code>app: ml-model</code>.</li>\n        <li id=\"dp-3\"><strong><code>template</code></strong>: definisce il Pod e gli assegna la label corrispondente.</li>\n        <li id=\"dp-4\"><strong><code>containers</code></strong>: immagine <code>ml-serving:1.0</code> su porta 80.</li>\n      </ol>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 1.45,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "raramente si crea un singolo Pod"
+        },
+        {
+          "at": 1.45,
+          "action": "highlight",
+          "target": "#s1",
+          "anchor": "raramente si crea un singolo Pod",
+          "duration": 8.16
+        },
+        {
+          "at": 9.73,
+          "action": "highlight",
+          "target": "#f-rep",
+          "anchor": "numero enne di copie identiche",
+          "duration": 5.76
+        },
+        {
+          "at": 16.01,
+          "action": "highlight",
+          "target": "#s1",
+          "anchor": "Se un Deployment chiede dieci",
+          "duration": 15.64
+        },
+        {
+          "at": 27.35,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Guardiamo il manifest reale"
+        },
+        {
+          "at": 31.77,
+          "action": "highlight",
+          "target": "#dp-yaml",
+          "anchor": "Nella sezione spec troviamo",
+          "duration": 3.06
+        },
+        {
+          "at": 34.95,
+          "action": "highlight",
+          "target": "#dp-1",
+          "anchor": "replicas imposta il numero",
+          "duration": 2.7
+        },
+        {
+          "at": 38.19,
+          "action": "highlight",
+          "target": "#dp-2",
+          "anchor": "selector, con matchLabels",
+          "duration": 4.75
+        },
+        {
+          "at": 46.07,
+          "action": "highlight",
+          "target": "#dp-3",
+          "anchor": "template definisce la ricetta",
+          "duration": 5.97
+        },
+        {
+          "at": 54.23,
+          "action": "highlight",
+          "target": "#dp-4",
+          "anchor": "Infine containers specifica",
+          "duration": 5.16
+        }
+      ],
+      "audio_file": "audio/scene-04.wav",
+      "subtitle_file": "subtitles/scene-04.json",
+      "duration_sec": 61.42
+    },
+    {
+      "id": "scene-05",
+      "section": "10.5 · Service e traffico interno",
+      "title": "Endpoint stabili su Pod effimeri tramite label",
+      "tts_text": "Ogni Pod ha un proprio indirizzo IP, ma i Pod di un Deployment nascono e muoiono di continuo durante guasti, scaling o aggiornamenti. [pause:0.5] Come fa quindi un client a contattarli in modo affidabile? Con un oggetto Service. Un Service offre un endpoint di rete stabile e distribuisce il traffico verso tutti i Pod attivi che corrispondono a determinate label. [pause:0.6] Osservate il diagramma: il secondo Pod si è guastato ed è stato escluso dal bilanciamento; il Deployment avvia subito un Pod sostitutivo con la stessa label app uguale ml-model, e il Service inizia a instradargli le richieste senza che il client si accorga di nulla. [pause:0.6] Nel manifest, il tipo ClusterIP espone il Service soltanto all'interno del cluster sulla porta TCP ottanta. Quando serve esporre porte direttamente sui nodi o tramite un bilanciatore del cloud provider, Kubernetes prevede anche i tipi NodePort e LoadBalancer.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">10.5 · Service</div>\n  <h2 class=\"slide-title\">Endpoint stabili indipendenti dal ciclo di vita dei Pod</h2>\n  <div id=\"s1\" class=\"svg-panel cue-hidden\">\n    <svg viewBox=\"0 0 640 185\" class=\"diagram-svg\" aria-label=\"Service davanti a un Deployment\">\n      <defs>\n        <marker id=\"sarr\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\">\n          <path d=\"M0 1 L9 5 L0 9 z\" fill=\"var(--ink-soft)\"/>\n        </marker>\n      </defs>\n      <text x=\"320\" y=\"16\" text-anchor=\"middle\" class=\"svg-caption\">Traffico client</text>\n      <line x1=\"320\" y1=\"20\" x2=\"320\" y2=\"36\" stroke=\"var(--ink-soft)\" stroke-width=\"1.6\" marker-end=\"url(#sarr)\"/>\n      <g id=\"svg-svc\">\n        <rect x=\"210\" y=\"40\" width=\"220\" height=\"32\" rx=\"6\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.8\"/>\n        <text x=\"320\" y=\"60\" text-anchor=\"middle\" class=\"svg-math\">Service · selector: app=ml-model</text>\n      </g>\n      <rect x=\"20\" y=\"92\" width=\"600\" height=\"84\" rx=\"8\" fill=\"none\" stroke=\"var(--muted)\" stroke-width=\"1.4\" stroke-dasharray=\"6 4\"/>\n      <text x=\"32\" y=\"108\" class=\"svg-caption\">Deployment</text>\n      <g id=\"svg-pods-ok\">\n        <rect x=\"40\" y=\"114\" width=\"118\" height=\"44\" rx=\"5\" fill=\"var(--green-soft, rgba(21,128,61,0.12))\" stroke=\"var(--green)\" stroke-width=\"1.5\"/>\n        <text x=\"99\" y=\"133\" text-anchor=\"middle\" class=\"svg-tick\">Pod 1 · attivo</text>\n        <text x=\"99\" y=\"149\" text-anchor=\"middle\" class=\"svg-caption\">app: ml-model</text>\n        <line x1=\"270\" y1=\"72\" x2=\"108\" y2=\"112\" stroke=\"var(--green)\" stroke-width=\"1.6\" marker-end=\"url(#sarr)\"/>\n        <rect x=\"334\" y=\"114\" width=\"118\" height=\"44\" rx=\"5\" fill=\"var(--green-soft, rgba(21,128,61,0.12))\" stroke=\"var(--green)\" stroke-width=\"1.5\"/>\n        <text x=\"393\" y=\"133\" text-anchor=\"middle\" class=\"svg-tick\">Pod 3 · attivo</text>\n        <text x=\"393\" y=\"149\" text-anchor=\"middle\" class=\"svg-caption\">app: ml-model</text>\n        <line x1=\"340\" y1=\"72\" x2=\"393\" y2=\"112\" stroke=\"var(--green)\" stroke-width=\"1.6\" marker-end=\"url(#sarr)\"/>\n      </g>\n      <g id=\"svg-pod-fail\" opacity=\"0.55\">\n        <rect x=\"187\" y=\"114\" width=\"118\" height=\"44\" rx=\"5\" fill=\"var(--red-soft, rgba(220,38,38,0.1))\" stroke=\"var(--red)\" stroke-width=\"1.4\" stroke-dasharray=\"4 3\"/>\n        <text x=\"246\" y=\"133\" text-anchor=\"middle\" class=\"svg-tick\">Pod 2 · guasto</text>\n        <text x=\"246\" y=\"149\" text-anchor=\"middle\" class=\"svg-caption\">escluso dal traffico</text>\n      </g>\n      <g id=\"svg-pod-new\">\n        <rect x=\"481\" y=\"114\" width=\"118\" height=\"44\" rx=\"5\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.6\"/>\n        <text x=\"540\" y=\"133\" text-anchor=\"middle\" class=\"svg-tick\">Pod 4 · nuovo</text>\n        <text x=\"540\" y=\"149\" text-anchor=\"middle\" class=\"svg-caption\">app: ml-model</text>\n        <line x1=\"380\" y1=\"72\" x2=\"532\" y2=\"112\" stroke=\"var(--blue)\" stroke-width=\"1.6\" marker-end=\"url(#sarr)\"/>\n      </g>\n    </svg>\n  </div>\n  <div id=\"s2\" class=\"grid-3 cue-hidden\">\n    <div id=\"sv-cip\" class=\"box box-primary\">\n      <div class=\"box-label\">ClusterIP (default)</div>\n      <p>Espone il Service su un IP stabile <strong>interno al cluster</strong> (es. TCP porta 80 con <code>selector: app=ml-model</code>).</p>\n    </div>\n    <div id=\"sv-np\" class=\"box box-def\">\n      <div class=\"box-label\">NodePort</div>\n      <p>Apre una porta statica su ogni worker node per instradare richieste verso il Service.</p>\n    </div>\n    <div id=\"sv-lb\" class=\"box box-idea\">\n      <div class=\"box-label\">LoadBalancer</div>\n      <p>Richiede un bilanciatore esterno al cloud provider per esporre direttamente il Service.</p>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 0.94,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "proprio indirizzo IP, ma"
+        },
+        {
+          "at": 0.94,
+          "action": "highlight",
+          "target": "#s1",
+          "anchor": "proprio indirizzo IP, ma",
+          "duration": 12.76
+        },
+        {
+          "at": 13.82,
+          "action": "highlight",
+          "target": "#svg-svc",
+          "anchor": "Un Service offre un endpoint",
+          "duration": 9.36
+        },
+        {
+          "at": 23.3,
+          "action": "highlight",
+          "target": "#svg-pod-fail",
+          "anchor": "il secondo Pod si è guastato",
+          "duration": 4.58
+        },
+        {
+          "at": 28,
+          "action": "highlight",
+          "target": "#svg-pod-new",
+          "anchor": "avvia subito un Pod sostitutivo",
+          "duration": 11.06
+        },
+        {
+          "at": 38.26,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Nel manifest, il tipo ClusterIP"
+        },
+        {
+          "at": 39.18,
+          "action": "highlight",
+          "target": "#sv-cip",
+          "anchor": "tipo ClusterIP espone il Service",
+          "duration": 11.28
+        },
+        {
+          "at": 50.74,
+          "action": "highlight",
+          "target": "#sv-np",
+          "anchor": "prevede anche i tipi NodePort",
+          "duration": 0.9
+        },
+        {
+          "at": 51.76,
+          "action": "highlight",
+          "target": "#sv-lb",
+          "anchor": "NodePort e LoadBalancer",
+          "duration": 1.2
+        }
+      ],
+      "audio_file": "audio/scene-05.wav",
+      "subtitle_file": "subtitles/scene-05.json",
+      "duration_sec": 54.26
+    },
+    {
+      "id": "scene-06",
+      "section": "10.6 · Ingress e altri oggetti",
+      "title": "Esporre i servizi all'esterno, configurazioni, volumi e autoscaling",
+      "tts_text": "Un Service ClusterIP funziona solo dentro il cluster. Per esporre l'applicazione al traffico esterno si usa l'oggetto Ingress, che svolge in Kubernetes il ruolo di API gateway. [pause:0.5] Attraverso un Ingress controller come nginx, configurato con apposite annotations nel manifest, e mediante regole sui percorsi HTTP, per esempio barra app verso il backend user-interface-svc sulla porta ottanta, l'Ingress instrada le richieste esterne solo verso i Service scelti, mantenendo protetti e isolati i servizi interni. [pause:0.6] Oltre a Pod, Deployment, Service e Ingress, Kubernetes offre altri oggetti essenziali in produzione. [pause:0.4] ConfigMap e Secret separano parametri di configurazione e dati sensibili dall'immagine del container, preservando l'immutabilità tra gli ambienti. I Volume offrono archiviazione persistente o condivisa oltre la durata del singolo container. L'HorizontalPodAutoscaler adatta automaticamente il numero di repliche al carico misurato, mentre Job, Namespace e StatefulSet gestiscono rispettivamente attività batch, isolamento logico e workload con stato.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">10.6 · Ingress &amp; Altri Oggetti</div>\n  <h2 class=\"slide-title\">Traffico esterno con Ingress e strumenti per la produzione</h2>\n  <div id=\"s1\" class=\"box box-primary cue-hidden\">\n    <div class=\"box-label\">Ingress — API Gateway del cluster</div>\n    <p>Espone al <strong>traffico esterno</strong> solo i Service autorizzati tramite un <em>Ingress controller</em> (es. <code>nginx</code> configurato via <code>annotations</code>). Esempio: richieste HTTP su <code>/app</code> instradate al backend <code>user-interface-svc:80</code>, mentre gli altri Service restano privati nel cluster.</p>\n  </div>\n  <div id=\"s2\" class=\"grid-3 cue-hidden\">\n    <div id=\"obj-cfg\" class=\"box box-def\">\n      <div class=\"box-label\">ConfigMap &amp; Secret</div>\n      <p>Esternalizzano parametri e credenziali (password, chiavi, token) per tenere <strong>immutabile</strong> l'immagine tra dev, test e prod.</p>\n    </div>\n    <div id=\"obj-vol\" class=\"box box-def\">\n      <div class=\"box-label\">Volume</div>\n      <p>Storage condiviso tra container del Pod o <strong>persistente</strong> oltre il ciclo di vita effimero dei container.</p>\n    </div>\n    <div id=\"obj-hpa\" class=\"box box-idea\">\n      <div class=\"box-label\">Autoscaling &amp; Altri</div>\n      <p><code>HorizontalPodAutoscaler</code> scala le repliche sul carico; <code>Job</code> (batch), <code>Namespace</code> (isolamento), <code>StatefulSet</code> (stato).</p>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 4.55,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "esporre l'applicazione al traffico esterno"
+        },
+        {
+          "at": 4.55,
+          "action": "highlight",
+          "target": "#s1",
+          "anchor": "esporre l'applicazione al traffico esterno",
+          "duration": 7.28
+        },
+        {
+          "at": 11.95,
+          "action": "highlight",
+          "target": "#s1",
+          "anchor": "Attraverso un Ingress controller come",
+          "duration": 25.34
+        },
+        {
+          "at": 32.69,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Oltre a Pod, Deployment, Service"
+        },
+        {
+          "at": 38.93,
+          "action": "highlight",
+          "target": "#obj-cfg",
+          "anchor": "ConfigMap e Secret separano parametri",
+          "duration": 7.2
+        },
+        {
+          "at": 47.59,
+          "action": "highlight",
+          "target": "#obj-vol",
+          "anchor": "I Volume offrono archiviazione persistente",
+          "duration": 5.15
+        },
+        {
+          "at": 52.93,
+          "action": "highlight",
+          "target": "#obj-hpa",
+          "anchor": "HorizontalPodAutoscaler adatta automaticamente",
+          "duration": 10.06
+        }
+      ],
+      "audio_file": "audio/scene-06.wav",
+      "subtitle_file": "subtitles/scene-06.json",
+      "duration_sec": 65.96
+    },
+    {
+      "id": "scene-07",
+      "section": "10.7 · Architettura del cluster",
+      "title": "Control Plane, Worker Nodes e il ruolo centrale dell'API server",
+      "tts_text": "Vediamo ora quali componenti realizzano concretamente il cluster, diviso tra master node e worker node. [pause:0.5] Nel master node vive il control plane. L'API server è l'unica interfaccia del cluster: riceve i manifest dall'utente, li valida e gestisce ogni lettura o scrittura verso etcd, il key-value store distribuito che custodisce tutta la configurazione, gli status e le assegnazioni. [pause:0.6] Lo scheduler chiede all'API server quali Pod non sono ancora assegnati a un nodo, sceglie la macchina migliore e comunica la decisione all'API server, che la salva in etcd. Il controller-manager osserva continuamente lo stato reale e invia comandi correttivi per mantenere la declarativeness. [pause:0.6] Sui worker node girano i workload: il kubelet si registra al cluster, chiede all'API server quali Pod eseguire e li avvia, mentre kube-proxy gestisce la rete tra container su nodi diversi. La regola d'oro è che tutto passa dall'API server: nessun componente parla direttamente con un altro o con etcd.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">10.7 · Il Control Plane e i Worker Nodes</div>\n  <h2 class=\"slide-title\">Architettura del cluster: tutto passa dall'API server</h2>\n  <div id=\"s1\" class=\"svg-panel cue-hidden\">\n    <svg viewBox=\"0 0 640 205\" class=\"diagram-svg\" aria-label=\"Architettura cluster Kubernetes\">\n      <defs>\n        <marker id=\"aarr\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"5\" markerHeight=\"5\" orient=\"auto-start-reverse\">\n          <path d=\"M0 1 L9 5 L0 9 z\" fill=\"var(--ink-soft)\"/>\n        </marker>\n      </defs>\n      <g id=\"svg-master\">\n        <rect x=\"16\" y=\"10\" width=\"608\" height=\"96\" rx=\"8\" fill=\"var(--bg-paper, #f8fafc)\" stroke=\"var(--blue)\" stroke-width=\"1.6\"/>\n        <text x=\"28\" y=\"27\" class=\"svg-math\">Control Plane (Master node)</text>\n        <g id=\"svg-cm\">\n          <rect x=\"36\" y=\"34\" width=\"146\" height=\"26\" rx=\"5\" fill=\"var(--orange-soft, rgba(217,119,6,0.12))\" stroke=\"var(--orange)\" stroke-width=\"1.4\"/>\n          <text x=\"109\" y=\"51\" text-anchor=\"middle\" class=\"svg-tick\">controller-manager</text>\n        </g>\n        <g id=\"svg-sched\">\n          <rect x=\"36\" y=\"68\" width=\"146\" height=\"26\" rx=\"5\" fill=\"var(--orange-soft, rgba(217,119,6,0.12))\" stroke=\"var(--orange)\" stroke-width=\"1.4\"/>\n          <text x=\"109\" y=\"85\" text-anchor=\"middle\" class=\"svg-tick\">scheduler</text>\n        </g>\n        <g id=\"svg-api\">\n          <rect x=\"252\" y=\"42\" width=\"136\" height=\"44\" rx=\"6\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.8\"/>\n          <text x=\"320\" y=\"68\" text-anchor=\"middle\" class=\"svg-math\">API server</text>\n        </g>\n        <g id=\"svg-etcd\">\n          <rect x=\"466\" y=\"42\" width=\"136\" height=\"44\" rx=\"6\" fill=\"var(--green-soft, rgba(21,128,61,0.12))\" stroke=\"var(--green)\" stroke-width=\"1.6\"/>\n          <text x=\"534\" y=\"62\" text-anchor=\"middle\" class=\"svg-math\">etcd</text>\n          <text x=\"534\" y=\"77\" text-anchor=\"middle\" class=\"svg-caption\">key-value store</text>\n        </g>\n        <line x1=\"186\" y1=\"47\" x2=\"248\" y2=\"57\" stroke=\"var(--ink-soft)\" stroke-width=\"1.4\" marker-start=\"url(#aarr)\" marker-end=\"url(#aarr)\"/>\n        <line x1=\"186\" y1=\"81\" x2=\"248\" y2=\"71\" stroke=\"var(--ink-soft)\" stroke-width=\"1.4\" marker-start=\"url(#aarr)\" marker-end=\"url(#aarr)\"/>\n        <line x1=\"392\" y1=\"64\" x2=\"462\" y2=\"64\" stroke=\"var(--ink-soft)\" stroke-width=\"1.4\" marker-start=\"url(#aarr)\" marker-end=\"url(#aarr)\"/>\n        <text x=\"320\" y=\"27\" text-anchor=\"middle\" class=\"svg-caption\">Utente (manifest YAML) →</text>\n      </g>\n      <g id=\"svg-workers\">\n        <rect x=\"16\" y=\"128\" width=\"190\" height=\"68\" rx=\"7\" fill=\"none\" stroke=\"var(--muted)\" stroke-width=\"1.5\"/>\n        <text x=\"111\" y=\"143\" text-anchor=\"middle\" class=\"svg-caption\">Worker node 1</text>\n        <rect x=\"26\" y=\"148\" width=\"78\" height=\"20\" rx=\"4\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.2\"/>\n        <text x=\"65\" y=\"162\" text-anchor=\"middle\" class=\"svg-tick\">kubelet</text>\n        <rect x=\"114\" y=\"148\" width=\"82\" height=\"20\" rx=\"4\" fill=\"none\" stroke=\"var(--muted)\" stroke-width=\"1.2\"/>\n        <text x=\"155\" y=\"162\" text-anchor=\"middle\" class=\"svg-tick\">kube-proxy</text>\n        <text x=\"111\" y=\"187\" text-anchor=\"middle\" class=\"svg-caption\">[Pod]  [Pod]</text>\n\n        <rect x=\"225\" y=\"128\" width=\"190\" height=\"68\" rx=\"7\" fill=\"none\" stroke=\"var(--muted)\" stroke-width=\"1.5\"/>\n        <text x=\"320\" y=\"143\" text-anchor=\"middle\" class=\"svg-caption\">Worker node 2</text>\n        <rect x=\"235\" y=\"148\" width=\"78\" height=\"20\" rx=\"4\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.2\"/>\n        <text x=\"274\" y=\"162\" text-anchor=\"middle\" class=\"svg-tick\">kubelet</text>\n        <rect x=\"323\" y=\"148\" width=\"82\" height=\"20\" rx=\"4\" fill=\"none\" stroke=\"var(--muted)\" stroke-width=\"1.2\"/>\n        <text x=\"364\" y=\"162\" text-anchor=\"middle\" class=\"svg-tick\">kube-proxy</text>\n        <text x=\"320\" y=\"187\" text-anchor=\"middle\" class=\"svg-caption\">[Pod]  [Pod]</text>\n\n        <rect x=\"434\" y=\"128\" width=\"190\" height=\"68\" rx=\"7\" fill=\"none\" stroke=\"var(--muted)\" stroke-width=\"1.5\"/>\n        <text x=\"529\" y=\"143\" text-anchor=\"middle\" class=\"svg-caption\">Worker node 3</text>\n        <rect x=\"444\" y=\"148\" width=\"78\" height=\"20\" rx=\"4\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.2\"/>\n        <text x=\"483\" y=\"162\" text-anchor=\"middle\" class=\"svg-tick\">kubelet</text>\n        <rect x=\"532\" y=\"148\" width=\"82\" height=\"20\" rx=\"4\" fill=\"none\" stroke=\"var(--muted)\" stroke-width=\"1.2\"/>\n        <text x=\"573\" y=\"162\" text-anchor=\"middle\" class=\"svg-tick\">kube-proxy</text>\n        <text x=\"529\" y=\"187\" text-anchor=\"middle\" class=\"svg-caption\">[Pod]  [Pod]</text>\n\n        <line x1=\"65\" y1=\"146\" x2=\"290\" y2=\"88\" stroke=\"var(--ink-soft)\" stroke-width=\"1.2\" marker-start=\"url(#aarr)\" marker-end=\"url(#aarr)\"/>\n        <line x1=\"274\" y1=\"146\" x2=\"320\" y2=\"88\" stroke=\"var(--ink-soft)\" stroke-width=\"1.2\" marker-start=\"url(#aarr)\" marker-end=\"url(#aarr)\"/>\n        <line x1=\"483\" y1=\"146\" x2=\"350\" y2=\"88\" stroke=\"var(--ink-soft)\" stroke-width=\"1.2\" marker-start=\"url(#aarr)\" marker-end=\"url(#aarr)\"/>\n      </g>\n    </svg>\n  </div>\n  <div id=\"s2\" class=\"box box-idea cue-hidden\">\n    <div class=\"box-label\">Regola d'oro · Comunicazione mediata dall'API server</div>\n    <p>Utente, <code>scheduler</code>, <code>controller-manager</code> e <code>kubelet</code> leggono e aggiornano lo stato <strong>solo tramite l'API server</strong>; solo l'API server accede a <code>etcd</code>. Lo scheduler assegna i Pod in 4 passi: legge da API/etcd i Pod non assegnati, sceglie il worker e registra l'assegnazione via API server.</p>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 1.68,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "realizzano concretamente il cluster"
+        },
+        {
+          "at": 1.68,
+          "action": "highlight",
+          "target": "#s1",
+          "anchor": "realizzano concretamente il cluster",
+          "duration": 4.79
+        },
+        {
+          "at": 7.76,
+          "action": "highlight",
+          "target": "#svg-master",
+          "anchor": "Nel master node vive",
+          "duration": 2.62
+        },
+        {
+          "at": 10.5,
+          "action": "highlight",
+          "target": "#svg-api",
+          "anchor": "L'API server è l'unica interfaccia",
+          "duration": 7.06
+        },
+        {
+          "at": 17.68,
+          "action": "highlight",
+          "target": "#svg-etcd",
+          "anchor": "scrittura verso etcd, il key-value",
+          "duration": 7.39
+        },
+        {
+          "at": 26.28,
+          "action": "highlight",
+          "target": "#svg-sched",
+          "anchor": "Lo scheduler chiede all'API server",
+          "duration": 10.72
+        },
+        {
+          "at": 37.12,
+          "action": "highlight",
+          "target": "#svg-cm",
+          "anchor": "Il controller-manager osserva continuamente",
+          "duration": 6.57
+        },
+        {
+          "at": 43.88,
+          "action": "highlight",
+          "target": "#svg-workers",
+          "anchor": "Sui worker node girano i workload",
+          "duration": 12.25
+        },
+        {
+          "at": 56.25,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "La regola d'oro è che tutto"
+        },
+        {
+          "at": 56.25,
+          "action": "highlight",
+          "target": "#s2",
+          "anchor": "La regola d'oro è che tutto",
+          "duration": 7.6
+        }
+      ],
+      "audio_file": "audio/scene-07.wav",
+      "subtitle_file": "subtitles/scene-07.json",
+      "duration_sec": 63.09
+    },
+    {
+      "id": "scene-08",
+      "section": "10.8 · Considerazioni finali",
+      "title": "Quando evitare Kubernetes e il confronto con Docker Swarm",
+      "tts_text": "Kubernetes è potente, ma introduce complessità operativa e costi di gestione che non convengono in ogni progetto. [pause:0.5] Cinque segnali indicano che probabilmente non serve: il workload gira comodamente su una sola macchina; le esigenze di calcolo sono leggere; non occorre alta disponibilità e un breve fermo è tollerabile; i servizi cambiano raramente; oppure si gestisce un monolite che non si intende scomporre in microservizi. [pause:0.6] Quando invece serve orchestrazione ma si privilegiano velocità e semplicità, un'alternativa diretta è Docker Swarm, l'orchestratore nativo integrato in Docker. [pause:0.5] Docker Swarm è molto più semplice da installare e offre una curva di apprendimento più dolce, risultando ideale per team piccoli e sviluppo rapido. Kubernetes vince invece per auto-scaling nativo, maggiore tolleranza ai guasti, una comunità vastissima e il supporto della Cloud Native Computing Foundation, diventando la scelta d'elezione per cluster medio-grandi e applicazioni distribuite complesse.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">10.8 · Considerazioni finali</div>\n  <h2 class=\"slide-title\">Quando Kubernetes non serve e confronto con Docker Swarm</h2>\n  <div id=\"s1\" class=\"box box-warn cue-hidden\">\n    <div class=\"box-label\">Quando Kubernetes NON conviene (5 casi)</div>\n    <ul class=\"clean-list\">\n      <li id=\"nw-1\">Il workload può girare su <strong>una sola macchina</strong> oppure ha esigenze di calcolo <strong>leggere</strong>.</li>\n      <li id=\"nw-2\">Non serve <strong>alta disponibilità</strong> e un fermo temporaneo del sistema è tollerabile.</li>\n      <li id=\"nw-3\">Si prevedono <strong>poche modifiche</strong> ai servizi, oppure si ha un <strong>monolite</strong> da non scomporre.</li>\n    </ul>\n  </div>\n  <table id=\"s2\" class=\"acad-table cue-hidden\">\n    <thead>\n      <tr><th>Docker Swarm</th><th>Kubernetes (K8s)</th></tr>\n    </thead>\n    <tbody>\n      <tr id=\"cmp-1\"><td>Più semplice da installare e configurare</td><td>Offre <strong>auto-scaling</strong> nativo e controllo fine</td></tr>\n      <tr id=\"cmp-2\"><td>Curva di apprendimento più dolce</td><td>Più <strong>tollerante ai guasti</strong> e completo</td></tr>\n      <tr id=\"cmp-3\"><td>Ideale per semplicità e sviluppo veloce</td><td>Comunità enorme, sostenuto dalla <strong>CNCF</strong> (cluster medio-grandi)</td></tr>\n    </tbody>\n  </table>\n</div>\n",
+      "cues": [
+        {
+          "at": 2.19,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "introduce complessità operativa"
+        },
+        {
+          "at": 2.19,
+          "action": "highlight",
+          "target": "#s1",
+          "anchor": "introduce complessità operativa",
+          "duration": 8.47
+        },
+        {
+          "at": 10.87,
+          "action": "highlight",
+          "target": "#nw-1",
+          "anchor": "il workload gira comodamente",
+          "duration": 5.14
+        },
+        {
+          "at": 16.13,
+          "action": "highlight",
+          "target": "#nw-2",
+          "anchor": "non occorre alta disponibilità",
+          "duration": 3.66
+        },
+        {
+          "at": 19.91,
+          "action": "highlight",
+          "target": "#nw-3",
+          "anchor": "i servizi cambiano raramente",
+          "duration": 15.65
+        },
+        {
+          "at": 31.02,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "un'alternativa diretta è Docker Swarm"
+        },
+        {
+          "at": 35.8,
+          "action": "highlight",
+          "target": "#cmp-1",
+          "anchor": "Docker Swarm è molto più semplice",
+          "duration": 8.5
+        },
+        {
+          "at": 44.42,
+          "action": "highlight",
+          "target": "#cmp-2",
+          "anchor": "vince invece per auto-scaling",
+          "duration": 5.56
+        },
+        {
+          "at": 50.14,
+          "action": "highlight",
+          "target": "#cmp-3",
+          "anchor": "supporto della Cloud Native",
+          "duration": 6.79
+        }
+      ],
+      "audio_file": "audio/scene-08.wav",
+      "subtitle_file": "subtitles/scene-08.json",
+      "duration_sec": 58.41
+    },
+    {
+      "id": "scene-09",
+      "section": "10.9 · Casi concreti: guasto worker, Ingress privato e replicazione etcd",
+      "title": "Vantaggi dei container, guasto worker, Ingress privato ed etcd",
+      "tts_text": "Fissiamo quattro dettagli concreti fondamentali per l'esame. [pause:0.5] Prima di tutto, i tre vantaggi dei container richiamati in apertura: garantiscono un isolamento leggero dell'ambiente applicativo, assicurano portabilità dallo sviluppo alla produzione eseguendo la stessa immagine su qualunque macchina, e aumentano l'utilizzo di CPU e RAM per ogni macchina fisica ospitando più workload insieme. [pause:0.6] Vediamo poi la traccia esatta del guasto di un worker node in App uno punto yaml. [pause:0.4] Pod uno contiene due container ed è richiesto in tre copie; Pod due contiene un solo container ed è richiesto in due copie. Se cade un worker node, le repliche ospitate spariscono e restano, per esempio, solo due copie del Pod uno invece delle tre desiderate. Kubernetes rileva lo scostamento dal desired state e ricrea la replica mancante su un nodo sano. [pause:0.6] Guardiamo ora il diagramma dell'Ingress: due Service comunicano internamente dentro il cluster, ma l'Ingress espone verso l'esterno soltanto il Service di frontiera, lasciando l'altro completamente privato. [pause:0.6] Infine, nel master node lo stato risiede in etcd: un key-value store replicato su più macchine per garantire alta disponibilità, che memorizza esplicitamente nodi del cluster, specifiche del desired state, status, configurazione e assegnazioni.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">10.9 · Casi concreti: guasto worker, Ingress privato e replicazione etcd</div>\n  <h2 class=\"slide-title\">Vantaggi dei container, guasto di un worker, Ingress ed etcd</h2>\n  <div id=\"s1\" class=\"grid-2 cue-hidden\">\n    <div id=\"b-cont\" class=\"box box-def\">\n      <div class=\"box-label\">3 vantaggi dei container (richiamo)</div>\n      <ul class=\"clean-list\">\n        <li id=\"v-iso\"><strong>Isolamento leggero</strong> dell'ambiente dell'applicazione.</li>\n        <li id=\"v-port\"><strong>Portabilità</strong>: stessa immagine dallo sviluppo alla produzione.</li>\n        <li id=\"v-hw\"><strong>Maggiore utilizzo HW</strong>: più workload su una macchina fisica (<strong>CPU e RAM</strong>).</li>\n      </ul>\n    </div>\n    <div id=\"b-fail\" class=\"box box-warn\">\n      <div class=\"box-label\">Guasto worker · Traccia esatta (<code>App1.yaml</code>)</div>\n      <ul class=\"clean-list\">\n        <li id=\"f-spec\"><strong>Richiesta</strong>: <code>Pod 1</code> (<strong>2</strong> container, <strong>3</strong> copie) e <code>Pod 2</code> (<strong>1</strong> container, <strong>2</strong> copie) su 3 worker.</li>\n        <li id=\"f-drop\"><strong>Caduta worker</strong>: restano solo <strong>2</strong> copie di <code>Pod 1</code> invece di <strong>3</strong> → K8s rileva lo scostamento dal <em>desired state</em> e ricrea la replica su un nodo sano.</li>\n      </ul>\n    </div>\n  </div>\n  <div id=\"s2\" class=\"split-visual cue-hidden\">\n    <div id=\"svg-ing\" class=\"svg-panel\">\n      <svg viewBox=\"0 0 360 188\" class=\"diagram-svg\" aria-label=\"Ingress espone solo un Service e lascia privato il secondo\">\n        <defs>\n          <marker id=\"iarr\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"5\" markerHeight=\"5\" orient=\"auto-start-reverse\">\n            <path d=\"M0 1 L9 5 L0 9 z\" fill=\"var(--ink-soft)\"/>\n          </marker>\n        </defs>\n        <text x=\"272\" y=\"13\" text-anchor=\"middle\" class=\"svg-caption\">Traffico esterno</text>\n        <line x1=\"272\" y1=\"16\" x2=\"272\" y2=\"32\" stroke=\"var(--blue)\" stroke-width=\"1.6\" marker-end=\"url(#iarr)\"/>\n        <rect x=\"10\" y=\"24\" width=\"340\" height=\"156\" rx=\"7\" fill=\"none\" stroke=\"var(--muted)\" stroke-width=\"1.3\"/>\n        <text x=\"20\" y=\"38\" class=\"svg-caption\">Cluster Kubernetes</text>\n        <g id=\"svg-in-box\">\n          <rect x=\"212\" y=\"34\" width=\"120\" height=\"25\" rx=\"5\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.6\"/>\n          <text x=\"272\" y=\"51\" text-anchor=\"middle\" class=\"svg-math-sm\">Ingress</text>\n        </g>\n        <line x1=\"272\" y1=\"59\" x2=\"272\" y2=\"77\" stroke=\"var(--blue)\" stroke-width=\"1.6\" marker-end=\"url(#iarr)\"/>\n        <g id=\"svg-svc-link\">\n          <rect x=\"20\" y=\"80\" width=\"132\" height=\"27\" rx=\"5\" fill=\"var(--orange-soft, rgba(217,119,6,0.12))\" stroke=\"var(--orange)\" stroke-width=\"1.5\"/>\n          <text x=\"86\" y=\"97\" text-anchor=\"middle\" class=\"svg-tick\">Service privato</text>\n          <line x1=\"154\" y1=\"93\" x2=\"202\" y2=\"93\" stroke=\"var(--green)\" stroke-width=\"1.5\" marker-start=\"url(#iarr)\" marker-end=\"url(#iarr)\"/>\n          <text x=\"178\" y=\"87\" text-anchor=\"middle\" class=\"svg-caption\">interno</text>\n          <rect x=\"204\" y=\"80\" width=\"136\" height=\"27\" rx=\"5\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.6\"/>\n          <text x=\"272\" y=\"97\" text-anchor=\"middle\" class=\"svg-tick\">Service frontiera</text>\n        </g>\n        <g id=\"svg-deps\">\n          <rect x=\"20\" y=\"122\" width=\"132\" height=\"50\" rx=\"5\" fill=\"none\" stroke=\"var(--muted)\" stroke-width=\"1.2\" stroke-dasharray=\"4 3\"/>\n          <line x1=\"86\" y1=\"107\" x2=\"54\" y2=\"128\" stroke=\"var(--ink-soft)\" stroke-width=\"1.2\" marker-end=\"url(#iarr)\"/>\n          <line x1=\"86\" y1=\"107\" x2=\"118\" y2=\"128\" stroke=\"var(--ink-soft)\" stroke-width=\"1.2\" marker-end=\"url(#iarr)\"/>\n          <rect x=\"28\" y=\"130\" width=\"52\" height=\"21\" rx=\"4\" fill=\"var(--orange-soft, rgba(217,119,6,0.12))\" stroke=\"var(--orange)\" stroke-width=\"1.2\"/>\n          <text x=\"54\" y=\"144\" text-anchor=\"middle\" class=\"svg-tick\">Pod</text>\n          <rect x=\"92\" y=\"130\" width=\"52\" height=\"21\" rx=\"4\" fill=\"var(--orange-soft, rgba(217,119,6,0.12))\" stroke=\"var(--orange)\" stroke-width=\"1.2\"/>\n          <text x=\"118\" y=\"144\" text-anchor=\"middle\" class=\"svg-tick\">Pod</text>\n          <text x=\"86\" y=\"165\" text-anchor=\"middle\" class=\"svg-caption\">Deployment (privato)</text>\n          <rect x=\"204\" y=\"122\" width=\"136\" height=\"50\" rx=\"5\" fill=\"none\" stroke=\"var(--muted)\" stroke-width=\"1.2\" stroke-dasharray=\"4 3\"/>\n          <line x1=\"272\" y1=\"107\" x2=\"239\" y2=\"128\" stroke=\"var(--ink-soft)\" stroke-width=\"1.2\" marker-end=\"url(#iarr)\"/>\n          <line x1=\"272\" y1=\"107\" x2=\"305\" y2=\"128\" stroke=\"var(--ink-soft)\" stroke-width=\"1.2\" marker-end=\"url(#iarr)\"/>\n          <rect x=\"212\" y=\"130\" width=\"54\" height=\"21\" rx=\"4\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.2\"/>\n          <text x=\"239\" y=\"144\" text-anchor=\"middle\" class=\"svg-tick\">Pod</text>\n          <rect x=\"278\" y=\"130\" width=\"54\" height=\"21\" rx=\"4\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.2\"/>\n          <text x=\"305\" y=\"144\" text-anchor=\"middle\" class=\"svg-tick\">Pod</text>\n          <text x=\"272\" y=\"165\" text-anchor=\"middle\" class=\"svg-caption\">Deployment (esposto)</text>\n        </g>\n      </svg>\n    </div>\n    <div class=\"formula-col\">\n      <div id=\"b-ing\" class=\"box box-primary\">\n        <div class=\"box-label\">Ingress &amp; Service privato interno</div>\n        <p>I due Service comunicano <strong>internamente</strong> nel cluster; l'<code>Ingress</code> espone all'esterno <strong>solo</strong> il Service di frontiera lasciando l'altro privato.</p>\n      </div>\n      <div id=\"b-etcd\" class=\"box box-theorem\">\n        <div class=\"box-label\">etcd nel Master node (alta disponibilità)</div>\n        <p><strong>Replicato su più macchine</strong>; memorizza <strong>nodi del cluster</strong>, <strong>specifiche</strong> (<em>desired state</em>), <strong>status</strong>, <strong>configurazione</strong> e <strong>assegnazioni</strong>.</p>\n      </div>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 0.48,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "quattro dettagli concreti fondamentali"
+        },
+        {
+          "at": 0.48,
+          "action": "highlight",
+          "target": "#s1",
+          "anchor": "quattro dettagli concreti fondamentali",
+          "duration": 2
+        },
+        {
+          "at": 4.92,
+          "action": "highlight",
+          "target": "#b-cont",
+          "anchor": "i tre vantaggi dei container",
+          "duration": 3.22
+        },
+        {
+          "at": 8.26,
+          "action": "highlight",
+          "target": "#v-iso",
+          "anchor": "garantiscono un isolamento leggero",
+          "duration": 3
+        },
+        {
+          "at": 11.44,
+          "action": "highlight",
+          "target": "#v-port",
+          "anchor": "assicurano portabilità dallo sviluppo",
+          "duration": 5.5
+        },
+        {
+          "at": 17.92,
+          "action": "highlight",
+          "target": "#v-hw",
+          "anchor": "aumentano l'utilizzo di CPU",
+          "duration": 6
+        },
+        {
+          "at": 25.33,
+          "action": "highlight",
+          "target": "#b-fail",
+          "anchor": "traccia esatta del guasto",
+          "duration": 3.5
+        },
+        {
+          "at": 30.39,
+          "action": "highlight",
+          "target": "#f-spec",
+          "anchor": "Pod uno contiene due container",
+          "duration": 8.32
+        },
+        {
+          "at": 38.83,
+          "action": "highlight",
+          "target": "#f-drop",
+          "anchor": "Se cade un worker node",
+          "duration": 14.32
+        },
+        {
+          "at": 50.07,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "ricrea la replica mancante"
+        },
+        {
+          "at": 53.27,
+          "action": "highlight",
+          "target": "#svg-ing",
+          "anchor": "Guardiamo ora il diagramma dell'Ingress",
+          "duration": 2.08
+        },
+        {
+          "at": 55.47,
+          "action": "highlight",
+          "target": "#svg-svc-link",
+          "anchor": "due Service comunicano internamente",
+          "duration": 3.2
+        },
+        {
+          "at": 59.54,
+          "action": "highlight",
+          "target": "#b-ing",
+          "anchor": "espone verso l'esterno soltanto",
+          "duration": 5.2
+        },
+        {
+          "at": 66.26,
+          "action": "highlight",
+          "target": "#b-etcd",
+          "anchor": "nel master node lo stato",
+          "duration": 12.5
+        }
+      ],
+      "audio_file": "audio/scene-09.wav",
+      "subtitle_file": "subtitles/scene-09.json",
+      "duration_sec": 82.15
+    },
+    {
+      "id": "scene-10",
+      "section": "10.10 · Riepilogo e autoverifica",
+      "title": "Punti chiave del capitolo e domande d'esame",
+      "tts_text": "Chiudiamo fissando i sei punti chiave per l'esame. [pause:0.4] Primo: la container orchestration risponde a guasti dei container, guasti dei nodi, rete distribuita e scheduling su un cluster. [pause:0.5] Secondo: i quattro principi guida sono declarativeness con self-healing tra specification e status, distribution tramite interfaccia unica, decoupling a singola responsabilità e immutable infrastructure. [pause:0.5] Terzo: ogni oggetto si dichiara in manifest YAML o JSON con apiVersion, kind, metadata e spec. [pause:0.5] Quarto: Pod, Deployment, Service basato su label e Ingress compongono la pila dal container al traffico esterno. [pause:0.5] Quinto: nel control plane tutto passa dall'API server verso etcd, scheduler e controller-manager, mentre kubelet e kube-proxy operano sui worker. [pause:0.5] Sesto: per workload leggeri o monoliti Kubernetes non conviene rispetto a Docker Swarm. [pause:0.6] Mettete in pausa il player e verificate la vostra preparazione rispondendo ad alta voce alle domande sulla destra.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">10.10 · Riepilogo &amp; Autoverifica</div>\n  <h2 class=\"slide-title\">Punti chiave e domande di verifica</h2>\n  <div class=\"grid-2\">\n    <div class=\"box box-algo\">\n      <div class=\"box-label\">Punti chiave da fissare</div>\n      <ul class=\"clean-list\">\n        <li id=\"s1\" class=\"cue-hidden\"><strong>Orchestration (K8s)</strong>: gestisce guasti, rete e scheduling dei container in un cluster.</li>\n        <li id=\"s2\" class=\"cue-hidden\"><strong>4 principi</strong>: declarativeness (<em>spec</em> vs <em>status</em>), distribution, decoupling, immutable infrastructure.</li>\n        <li id=\"s3\" class=\"cue-hidden\"><strong>Manifest</strong>: <code>apiVersion</code>, <code>kind</code>, <code>metadata</code>, <code>spec</code> in YAML o JSON.</li>\n        <li id=\"s4\" class=\"cue-hidden\"><strong>Oggetti base</strong>: Pod (rete/volumi), Deployment (repliche), Service (label interne), Ingress (esterno).</li>\n        <li id=\"s5\" class=\"cue-hidden\"><strong>Architettura</strong>: Master (API server, etcd, scheduler, controller-manager) + Worker (kubelet, kube-proxy).</li>\n        <li id=\"s6\" class=\"cue-hidden\"><strong>Scelta tecnica</strong>: inutile su singolo nodo o monolite; Docker Swarm più semplice, K8s più completo.</li>\n      </ul>\n    </div>\n    <div id=\"s7\" class=\"box box-theorem cue-hidden\">\n      <div class=\"box-label\">Domande di verifica</div>\n      <ol class=\"verify-list\">\n        <li>Quali domande lasciano aperte i container e come risponde K8s?</li>\n        <li>Cosa significa <em>declarativeness</em> (<code>spec</code> vs <code>status</code>) e perché l'<em>immutability</em> facilita il rollback?</li>\n        <li>Quali sono le 4 parti di un manifest?</li>\n        <li>Cos'è un Pod e che relazione ha con Deployment (es. 10 repliche, 3 guaste)?</li>\n        <li>Differenza tra Service (<code>ClusterIP</code>) e Ingress? Come sceglie i Pod un Service?</li>\n        <li>Ruolo dei componenti del Master node (scheduler incluso) e di <code>kubelet</code> / <code>kube-proxy</code>.</li>\n        <li>Quando evitare Kubernetes e differenze rispetto a Docker Swarm?</li>\n      </ol>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 3.52,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "Primo: la container orchestration"
+        },
+        {
+          "at": 3.52,
+          "action": "highlight",
+          "target": "#s1",
+          "anchor": "Primo: la container orchestration",
+          "duration": 8.1
+        },
+        {
+          "at": 12.02,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Secondo: i quattro principi guida"
+        },
+        {
+          "at": 12.02,
+          "action": "highlight",
+          "target": "#s2",
+          "anchor": "Secondo: i quattro principi guida",
+          "duration": 10.15
+        },
+        {
+          "at": 26.69,
+          "action": "show",
+          "target": "#s3",
+          "anchor": "Terzo: ogni oggetto si dichiara"
+        },
+        {
+          "at": 26.69,
+          "action": "highlight",
+          "target": "#s3",
+          "anchor": "Terzo: ogni oggetto si dichiara",
+          "duration": 6.88
+        },
+        {
+          "at": 34.91,
+          "action": "show",
+          "target": "#s4",
+          "anchor": "Quarto: Pod, Deployment, Service basato"
+        },
+        {
+          "at": 34.91,
+          "action": "highlight",
+          "target": "#s4",
+          "anchor": "Quarto: Pod, Deployment, Service basato",
+          "duration": 7.29
+        },
+        {
+          "at": 44.81,
+          "action": "show",
+          "target": "#s5",
+          "anchor": "Quinto: nel control plane tutto"
+        },
+        {
+          "at": 44.81,
+          "action": "highlight",
+          "target": "#s5",
+          "anchor": "Quinto: nel control plane tutto",
+          "duration": 8.51
+        },
+        {
+          "at": 55.74,
+          "action": "show",
+          "target": "#s6",
+          "anchor": "Sesto: per workload leggeri"
+        },
+        {
+          "at": 55.74,
+          "action": "highlight",
+          "target": "#s6",
+          "anchor": "Sesto: per workload leggeri",
+          "duration": 13.05
+        },
+        {
+          "at": 61.9,
+          "action": "show",
+          "target": "#s7",
+          "anchor": "Mettete in pausa il player"
+        }
+      ],
+      "audio_file": "audio/scene-10.wav",
+      "subtitle_file": "subtitles/scene-10.json",
+      "duration_sec": 67.39
+    }
+  ]
+}

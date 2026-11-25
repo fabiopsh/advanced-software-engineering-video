@@ -1,0 +1,1098 @@
+{
+  "duration": 79.33,
+  "segments": [
+    {
+      "start": 0.08,
+      "end": 4.301,
+      "text": "Prima del riepilogo finale, fissiamo sei dettagli critici su codice,",
+      "words": [
+        {
+          "text": "Prima",
+          "start": 0.08,
+          "end": 0.34
+        },
+        {
+          "text": "del",
+          "start": 0.4,
+          "end": 0.52
+        },
+        {
+          "text": "riepilogo",
+          "start": 0.62,
+          "end": 1.14
+        },
+        {
+          "text": "finale,",
+          "start": 1.2,
+          "end": 1.58
+        },
+        {
+          "text": "fissiamo",
+          "start": 1.8,
+          "end": 2.241
+        },
+        {
+          "text": "sei",
+          "start": 2.401,
+          "end": 2.581
+        },
+        {
+          "text": "dettagli",
+          "start": 2.641,
+          "end": 3.081
+        },
+        {
+          "text": "critici",
+          "start": 3.141,
+          "end": 3.581
+        },
+        {
+          "text": "su",
+          "start": 3.701,
+          "end": 3.781
+        },
+        {
+          "text": "codice,",
+          "start": 3.881,
+          "end": 4.301
+        }
+      ]
+    },
+    {
+      "start": 4.581,
+      "end": 7.002,
+      "text": "database, transazioni e reporting.",
+      "words": [
+        {
+          "text": "database,",
+          "start": 4.581,
+          "end": 5.141
+        },
+        {
+          "text": "transazioni",
+          "start": 5.301,
+          "end": 6.042
+        },
+        {
+          "text": "e",
+          "start": 6.382,
+          "end": 6.422
+        },
+        {
+          "text": "reporting.",
+          "start": 6.502,
+          "end": 7.002
+        }
+      ]
+    },
+    {
+      "start": 8.002,
+      "end": 13.383,
+      "text": "Primo: nei grafi di Structure cento uno ogni nodo è un package e ogni arco",
+      "words": [
+        {
+          "text": "Primo:",
+          "start": 8.002,
+          "end": 8.242
+        },
+        {
+          "text": "nei",
+          "start": 8.742,
+          "end": 8.882
+        },
+        {
+          "text": "grafi",
+          "start": 8.922,
+          "end": 9.222
+        },
+        {
+          "text": "di",
+          "start": 9.262,
+          "end": 9.322
+        },
+        {
+          "text": "Structure",
+          "start": 9.382,
+          "end": 9.842
+        },
+        {
+          "text": "cento",
+          "start": 9.882,
+          "end": 10.163
+        },
+        {
+          "text": "uno",
+          "start": 10.263,
+          "end": 10.443
+        },
+        {
+          "text": "ogni",
+          "start": 10.743,
+          "end": 10.983
+        },
+        {
+          "text": "nodo",
+          "start": 11.043,
+          "end": 11.363
+        },
+        {
+          "text": "è",
+          "start": 11.563,
+          "end": 11.603
+        },
+        {
+          "text": "un",
+          "start": 11.663,
+          "end": 11.723
+        },
+        {
+          "text": "package",
+          "start": 11.803,
+          "end": 12.243
+        },
+        {
+          "text": "e",
+          "start": 12.703,
+          "end": 12.743
+        },
+        {
+          "text": "ogni",
+          "start": 12.803,
+          "end": 13.003
+        },
+        {
+          "text": "arco",
+          "start": 13.103,
+          "end": 13.383
+        }
+      ]
+    },
+    {
+      "start": 13.603,
+      "end": 18.225,
+      "text": "indica una dipendenza, riportando il numero di riferimenti da un package all'altro.",
+      "words": [
+        {
+          "text": "indica",
+          "start": 13.603,
+          "end": 13.924
+        },
+        {
+          "text": "una",
+          "start": 13.984,
+          "end": 14.084
+        },
+        {
+          "text": "dipendenza,",
+          "start": 14.124,
+          "end": 14.724
+        },
+        {
+          "text": "riportando",
+          "start": 15.224,
+          "end": 15.664
+        },
+        {
+          "text": "il",
+          "start": 15.704,
+          "end": 15.764
+        },
+        {
+          "text": "numero",
+          "start": 15.844,
+          "end": 16.104
+        },
+        {
+          "text": "di",
+          "start": 16.144,
+          "end": 16.204
+        },
+        {
+          "text": "riferimenti",
+          "start": 16.244,
+          "end": 16.824
+        },
+        {
+          "text": "da",
+          "start": 16.964,
+          "end": 17.024
+        },
+        {
+          "text": "un",
+          "start": 17.084,
+          "end": 17.144
+        },
+        {
+          "text": "package",
+          "start": 17.224,
+          "end": 17.624
+        },
+        {
+          "text": "all'altro.",
+          "start": 17.704,
+          "end": 18.225
+        }
+      ]
+    },
+    {
+      "start": 19.225,
+      "end": 22.566,
+      "text": "Secondo: quando si spezza una foreign key via API,",
+      "words": [
+        {
+          "text": "Secondo:",
+          "start": 19.225,
+          "end": 19.605
+        },
+        {
+          "text": "quando",
+          "start": 20.125,
+          "end": 20.345
+        },
+        {
+          "text": "si",
+          "start": 20.425,
+          "end": 20.485
+        },
+        {
+          "text": "spezza",
+          "start": 20.585,
+          "end": 20.985
+        },
+        {
+          "text": "una",
+          "start": 21.045,
+          "end": 21.165
+        },
+        {
+          "text": "foreign",
+          "start": 21.245,
+          "end": 21.525
+        },
+        {
+          "text": "key",
+          "start": 21.565,
+          "end": 21.665
+        },
+        {
+          "text": "via",
+          "start": 21.765,
+          "end": 21.946
+        },
+        {
+          "text": "API,",
+          "start": 22.086,
+          "end": 22.566
+        }
+      ]
+    },
+    {
+      "start": 22.966,
+      "end": 28.187,
+      "text": "i vincoli si gestiscono nei servizi con controlli di coerenza tra servizi oppure con azioni",
+      "words": [
+        {
+          "text": "i",
+          "start": 22.966,
+          "end": 23.006
+        },
+        {
+          "text": "vincoli",
+          "start": 23.046,
+          "end": 23.386
+        },
+        {
+          "text": "si",
+          "start": 23.426,
+          "end": 23.506
+        },
+        {
+          "text": "gestiscono",
+          "start": 23.546,
+          "end": 24.066
+        },
+        {
+          "text": "nei",
+          "start": 24.146,
+          "end": 24.286
+        },
+        {
+          "text": "servizi",
+          "start": 24.326,
+          "end": 24.846
+        },
+        {
+          "text": "con",
+          "start": 25.166,
+          "end": 25.326
+        },
+        {
+          "text": "controlli",
+          "start": 25.366,
+          "end": 25.827
+        },
+        {
+          "text": "di",
+          "start": 25.867,
+          "end": 25.927
+        },
+        {
+          "text": "coerenza",
+          "start": 25.967,
+          "end": 26.367
+        },
+        {
+          "text": "tra",
+          "start": 26.427,
+          "end": 26.527
+        },
+        {
+          "text": "servizi",
+          "start": 26.607,
+          "end": 27.107
+        },
+        {
+          "text": "oppure",
+          "start": 27.447,
+          "end": 27.707
+        },
+        {
+          "text": "con",
+          "start": 27.747,
+          "end": 27.847
+        },
+        {
+          "text": "azioni",
+          "start": 27.867,
+          "end": 28.187
+        }
+      ]
+    },
+    {
+      "start": 28.247,
+      "end": 29.868,
+      "text": "di ripulitura dei dati collegati.",
+      "words": [
+        {
+          "text": "di",
+          "start": 28.247,
+          "end": 28.327
+        },
+        {
+          "text": "ripulitura",
+          "start": 28.407,
+          "end": 28.987
+        },
+        {
+          "text": "dei",
+          "start": 29.027,
+          "end": 29.127
+        },
+        {
+          "text": "dati",
+          "start": 29.167,
+          "end": 29.347
+        },
+        {
+          "text": "collegati.",
+          "start": 29.387,
+          "end": 29.868
+        }
+      ]
+    },
+    {
+      "start": 30.668,
+      "end": 36.089,
+      "text": "Terzo: trattare i dati statici condivisi come file di configurazione è la scelta preferita,",
+      "words": [
+        {
+          "text": "Terzo:",
+          "start": 30.668,
+          "end": 31.008
+        },
+        {
+          "text": "trattare",
+          "start": 31.588,
+          "end": 32.028
+        },
+        {
+          "text": "i",
+          "start": 32.088,
+          "end": 32.128
+        },
+        {
+          "text": "dati",
+          "start": 32.148,
+          "end": 32.368
+        },
+        {
+          "text": "statici",
+          "start": 32.448,
+          "end": 32.908
+        },
+        {
+          "text": "condivisi",
+          "start": 32.968,
+          "end": 33.488
+        },
+        {
+          "text": "come",
+          "start": 33.548,
+          "end": 33.708
+        },
+        {
+          "text": "file",
+          "start": 33.769,
+          "end": 34.029
+        },
+        {
+          "text": "di",
+          "start": 34.049,
+          "end": 34.109
+        },
+        {
+          "text": "configurazione",
+          "start": 34.149,
+          "end": 34.949
+        },
+        {
+          "text": "è",
+          "start": 35.089,
+          "end": 35.129
+        },
+        {
+          "text": "la",
+          "start": 35.189,
+          "end": 35.249
+        },
+        {
+          "text": "scelta",
+          "start": 35.289,
+          "end": 35.589
+        },
+        {
+          "text": "preferita,",
+          "start": 35.609,
+          "end": 36.089
+        }
+      ]
+    },
+    {
+      "start": 36.509,
+      "end": 41.731,
+      "text": "ma i problemi di coerenza restano comunque; semplicemente aggiornare un file di configurazione è più",
+      "words": [
+        {
+          "text": "ma",
+          "start": 36.509,
+          "end": 36.549
+        },
+        {
+          "text": "i",
+          "start": 36.629,
+          "end": 36.669
+        },
+        {
+          "text": "problemi",
+          "start": 36.689,
+          "end": 36.989
+        },
+        {
+          "text": "di",
+          "start": 37.029,
+          "end": 37.089
+        },
+        {
+          "text": "coerenza",
+          "start": 37.129,
+          "end": 37.509
+        },
+        {
+          "text": "restano",
+          "start": 37.569,
+          "end": 37.85
+        },
+        {
+          "text": "comunque;",
+          "start": 37.89,
+          "end": 38.29
+        },
+        {
+          "text": "semplicemente",
+          "start": 38.73,
+          "end": 39.29
+        },
+        {
+          "text": "aggiornare",
+          "start": 39.67,
+          "end": 40.19
+        },
+        {
+          "text": "un",
+          "start": 40.25,
+          "end": 40.31
+        },
+        {
+          "text": "file",
+          "start": 40.35,
+          "end": 40.57
+        },
+        {
+          "text": "di",
+          "start": 40.59,
+          "end": 40.63
+        },
+        {
+          "text": "configurazione",
+          "start": 40.67,
+          "end": 41.45
+        },
+        {
+          "text": "è",
+          "start": 41.53,
+          "end": 41.57
+        },
+        {
+          "text": "più",
+          "start": 41.61,
+          "end": 41.731
+        }
+      ]
+    },
+    {
+      "start": 41.771,
+      "end": 43.931,
+      "text": "pratico che aggiornare una tabella del database.",
+      "words": [
+        {
+          "text": "pratico",
+          "start": 41.771,
+          "end": 42.191
+        },
+        {
+          "text": "che",
+          "start": 42.271,
+          "end": 42.371
+        },
+        {
+          "text": "aggiornare",
+          "start": 42.411,
+          "end": 42.851
+        },
+        {
+          "text": "una",
+          "start": 42.871,
+          "end": 42.971
+        },
+        {
+          "text": "tabella",
+          "start": 43.011,
+          "end": 43.311
+        },
+        {
+          "text": "del",
+          "start": 43.331,
+          "end": 43.451
+        },
+        {
+          "text": "database.",
+          "start": 43.471,
+          "end": 43.931
+        }
+      ]
+    },
+    {
+      "start": 44.951,
+      "end": 50.153,
+      "text": "Quarto: nel Two-Phase Commit, oltre al manager guasto o al partecipante muto,",
+      "words": [
+        {
+          "text": "Quarto:",
+          "start": 44.951,
+          "end": 45.331
+        },
+        {
+          "text": "nel",
+          "start": 45.932,
+          "end": 46.132
+        },
+        {
+          "text": "Two-Phase",
+          "start": 46.272,
+          "end": 46.732
+        },
+        {
+          "text": "Commit,",
+          "start": 46.752,
+          "end": 47.192
+        },
+        {
+          "text": "oltre",
+          "start": 47.672,
+          "end": 47.932
+        },
+        {
+          "text": "al",
+          "start": 47.972,
+          "end": 48.052
+        },
+        {
+          "text": "manager",
+          "start": 48.092,
+          "end": 48.432
+        },
+        {
+          "text": "guasto",
+          "start": 48.492,
+          "end": 48.952
+        },
+        {
+          "text": "o",
+          "start": 49.092,
+          "end": 49.132
+        },
+        {
+          "text": "al",
+          "start": 49.172,
+          "end": 49.252
+        },
+        {
+          "text": "partecipante",
+          "start": 49.292,
+          "end": 49.853
+        },
+        {
+          "text": "muto,",
+          "start": 49.893,
+          "end": 50.153
+        }
+      ]
+    },
+    {
+      "start": 50.513,
+      "end": 51.953,
+      "text": "c'è una terza vulnerabilità:",
+      "words": [
+        {
+          "text": "c'è",
+          "start": 50.513,
+          "end": 50.633
+        },
+        {
+          "text": "una",
+          "start": 50.673,
+          "end": 50.793
+        },
+        {
+          "text": "terza",
+          "start": 50.893,
+          "end": 51.253
+        },
+        {
+          "text": "vulnerabilità:",
+          "start": 51.293,
+          "end": 51.953
+        }
+      ]
+    },
+    {
+      "start": 52.653,
+      "end": 55.854,
+      "text": "cosa succede se un commit fallisce dopo la fase di voto,",
+      "words": [
+        {
+          "text": "cosa",
+          "start": 52.653,
+          "end": 52.853
+        },
+        {
+          "text": "succede",
+          "start": 52.893,
+          "end": 53.333
+        },
+        {
+          "text": "se",
+          "start": 53.413,
+          "end": 53.493
+        },
+        {
+          "text": "un",
+          "start": 53.533,
+          "end": 53.594
+        },
+        {
+          "text": "commit",
+          "start": 53.654,
+          "end": 53.954
+        },
+        {
+          "text": "fallisce",
+          "start": 54.094,
+          "end": 54.654
+        },
+        {
+          "text": "dopo",
+          "start": 54.874,
+          "end": 55.114
+        },
+        {
+          "text": "la",
+          "start": 55.154,
+          "end": 55.214
+        },
+        {
+          "text": "fase",
+          "start": 55.254,
+          "end": 55.454
+        },
+        {
+          "text": "di",
+          "start": 55.494,
+          "end": 55.554
+        },
+        {
+          "text": "voto,",
+          "start": 55.594,
+          "end": 55.854
+        }
+      ]
+    },
+    {
+      "start": 56.114,
+      "end": 57.254,
+      "text": "a risorse ormai bloccate?",
+      "words": [
+        {
+          "text": "a",
+          "start": 56.114,
+          "end": 56.154
+        },
+        {
+          "text": "risorse",
+          "start": 56.174,
+          "end": 56.534
+        },
+        {
+          "text": "ormai",
+          "start": 56.594,
+          "end": 56.794
+        },
+        {
+          "text": "bloccate?",
+          "start": 56.834,
+          "end": 57.254
+        }
+      ]
+    },
+    {
+      "start": 58.335,
+      "end": 64.236,
+      "text": "Quinto: nel reporting tramite chiamate API spesso manca un endpoint per ottenere tutti i clienti;",
+      "words": [
+        {
+          "text": "Quinto:",
+          "start": 58.335,
+          "end": 58.655
+        },
+        {
+          "text": "nel",
+          "start": 59.255,
+          "end": 59.415
+        },
+        {
+          "text": "reporting",
+          "start": 59.515,
+          "end": 60.015
+        },
+        {
+          "text": "tramite",
+          "start": 60.095,
+          "end": 60.415
+        },
+        {
+          "text": "chiamate",
+          "start": 60.455,
+          "end": 60.775
+        },
+        {
+          "text": "API",
+          "start": 60.835,
+          "end": 61.235
+        },
+        {
+          "text": "spesso",
+          "start": 61.576,
+          "end": 61.856
+        },
+        {
+          "text": "manca",
+          "start": 61.896,
+          "end": 62.116
+        },
+        {
+          "text": "un",
+          "start": 62.176,
+          "end": 62.236
+        },
+        {
+          "text": "endpoint",
+          "start": 62.276,
+          "end": 62.736
+        },
+        {
+          "text": "per",
+          "start": 62.816,
+          "end": 62.916
+        },
+        {
+          "text": "ottenere",
+          "start": 62.956,
+          "end": 63.316
+        },
+        {
+          "text": "tutti",
+          "start": 63.396,
+          "end": 63.656
+        },
+        {
+          "text": "i",
+          "start": 63.716,
+          "end": 63.756
+        },
+        {
+          "text": "clienti;",
+          "start": 63.756,
+          "end": 64.236
+        }
+      ]
+    },
+    {
+      "start": 64.656,
+      "end": 68.417,
+      "text": "recuperarli uno per uno è inefficiente e sovraccarica il servizio interrogato.",
+      "words": [
+        {
+          "text": "recuperarli",
+          "start": 64.656,
+          "end": 65.196
+        },
+        {
+          "text": "uno",
+          "start": 65.296,
+          "end": 65.456
+        },
+        {
+          "text": "per",
+          "start": 65.496,
+          "end": 65.597
+        },
+        {
+          "text": "uno",
+          "start": 65.657,
+          "end": 65.817
+        },
+        {
+          "text": "è",
+          "start": 65.857,
+          "end": 65.897
+        },
+        {
+          "text": "inefficiente",
+          "start": 65.937,
+          "end": 66.557
+        },
+        {
+          "text": "e",
+          "start": 66.817,
+          "end": 66.857
+        },
+        {
+          "text": "sovraccarica",
+          "start": 66.897,
+          "end": 67.377
+        },
+        {
+          "text": "il",
+          "start": 67.417,
+          "end": 67.477
+        },
+        {
+          "text": "servizio",
+          "start": 67.517,
+          "end": 67.857
+        },
+        {
+          "text": "interrogato.",
+          "start": 67.897,
+          "end": 68.417
+        }
+      ]
+    },
+    {
+      "start": 69.337,
+      "end": 73.038,
+      "text": "Sesto: per l'event data pump vale una regola organizzativa chiave.",
+      "words": [
+        {
+          "text": "Sesto:",
+          "start": 69.337,
+          "end": 69.658
+        },
+        {
+          "text": "per",
+          "start": 70.078,
+          "end": 70.238
+        },
+        {
+          "text": "l'event",
+          "start": 70.338,
+          "end": 70.678
+        },
+        {
+          "text": "data",
+          "start": 70.778,
+          "end": 70.958
+        },
+        {
+          "text": "pump",
+          "start": 70.998,
+          "end": 71.238
+        },
+        {
+          "text": "vale",
+          "start": 71.498,
+          "end": 71.678
+        },
+        {
+          "text": "una",
+          "start": 71.718,
+          "end": 71.818
+        },
+        {
+          "text": "regola",
+          "start": 71.858,
+          "end": 72.098
+        },
+        {
+          "text": "organizzativa",
+          "start": 72.138,
+          "end": 72.718
+        },
+        {
+          "text": "chiave.",
+          "start": 72.778,
+          "end": 73.038
+        }
+      ]
+    },
+    {
+      "start": 73.659,
+      "end": 77.119,
+      "text": "Leggendo solo eventi pubblici, non deve essere gestito dal team del servizio,",
+      "words": [
+        {
+          "text": "Leggendo",
+          "start": 73.659,
+          "end": 74.019
+        },
+        {
+          "text": "solo",
+          "start": 74.119,
+          "end": 74.279
+        },
+        {
+          "text": "eventi",
+          "start": 74.319,
+          "end": 74.579
+        },
+        {
+          "text": "pubblici,",
+          "start": 74.639,
+          "end": 75.019
+        },
+        {
+          "text": "non",
+          "start": 75.199,
+          "end": 75.319
+        },
+        {
+          "text": "deve",
+          "start": 75.339,
+          "end": 75.479
+        },
+        {
+          "text": "essere",
+          "start": 75.519,
+          "end": 75.759
+        },
+        {
+          "text": "gestito",
+          "start": 75.799,
+          "end": 76.159
+        },
+        {
+          "text": "dal",
+          "start": 76.199,
+          "end": 76.319
+        },
+        {
+          "text": "team",
+          "start": 76.359,
+          "end": 76.479
+        },
+        {
+          "text": "del",
+          "start": 76.519,
+          "end": 76.619
+        },
+        {
+          "text": "servizio,",
+          "start": 76.659,
+          "end": 77.119
+        }
+      ]
+    },
+    {
+      "start": 77.399,
+      "end": 79.08,
+      "text": "ma da un team separato e dedicato.",
+      "words": [
+        {
+          "text": "ma",
+          "start": 77.399,
+          "end": 77.46
+        },
+        {
+          "text": "da",
+          "start": 77.5,
+          "end": 77.56
+        },
+        {
+          "text": "un",
+          "start": 77.6,
+          "end": 77.68
+        },
+        {
+          "text": "team",
+          "start": 77.7,
+          "end": 77.84
+        },
+        {
+          "text": "separato",
+          "start": 77.96,
+          "end": 78.44
+        },
+        {
+          "text": "e",
+          "start": 78.56,
+          "end": 78.60000000000001
+        },
+        {
+          "text": "dedicato.",
+          "start": 78.64,
+          "end": 79.08
+        }
+      ]
+    }
+  ]
+}

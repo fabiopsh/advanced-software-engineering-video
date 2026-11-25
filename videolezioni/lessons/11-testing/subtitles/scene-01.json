@@ -1,0 +1,1051 @@
+{
+  "duration": 72.52,
+  "segments": [
+    {
+      "start": 0.06,
+      "end": 3.62,
+      "text": "Benvenuti al capitolo undici, dedicato al testing del software.",
+      "words": [
+        {
+          "text": "Benvenuti",
+          "start": 0.06,
+          "end": 0.56
+        },
+        {
+          "text": "al",
+          "start": 0.6,
+          "end": 0.68
+        },
+        {
+          "text": "capitolo",
+          "start": 0.72,
+          "end": 1.1
+        },
+        {
+          "text": "undici,",
+          "start": 1.2,
+          "end": 1.56
+        },
+        {
+          "text": "dedicato",
+          "start": 1.78,
+          "end": 2.24
+        },
+        {
+          "text": "al",
+          "start": 2.3,
+          "end": 2.4
+        },
+        {
+          "text": "testing",
+          "start": 2.48,
+          "end": 2.9
+        },
+        {
+          "text": "del",
+          "start": 2.96,
+          "end": 3.08
+        },
+        {
+          "text": "software.",
+          "start": 3.16,
+          "end": 3.62
+        }
+      ]
+    },
+    {
+      "start": 4.301,
+      "end": 6.681,
+      "text": "Che cosa significa collaudare un programma?",
+      "words": [
+        {
+          "text": "Che",
+          "start": 4.301,
+          "end": 4.381
+        },
+        {
+          "text": "cosa",
+          "start": 4.461,
+          "end": 4.661
+        },
+        {
+          "text": "significa",
+          "start": 4.701,
+          "end": 5.281
+        },
+        {
+          "text": "collaudare",
+          "start": 5.421,
+          "end": 6.021
+        },
+        {
+          "text": "un",
+          "start": 6.081,
+          "end": 6.141
+        },
+        {
+          "text": "programma?",
+          "start": 6.181,
+          "end": 6.681
+        }
+      ]
+    },
+    {
+      "start": 7.221,
+      "end": 12.382,
+      "text": "Il testing consiste in due passi: eseguire il programma con dati che simulano gli input",
+      "words": [
+        {
+          "text": "Il",
+          "start": 7.221,
+          "end": 7.321
+        },
+        {
+          "text": "testing",
+          "start": 7.361,
+          "end": 7.741
+        },
+        {
+          "text": "consiste",
+          "start": 7.841,
+          "end": 8.281
+        },
+        {
+          "text": "in",
+          "start": 8.341,
+          "end": 8.401
+        },
+        {
+          "text": "due",
+          "start": 8.461,
+          "end": 8.621
+        },
+        {
+          "text": "passi:",
+          "start": 8.661,
+          "end": 9.021
+        },
+        {
+          "text": "eseguire",
+          "start": 9.541,
+          "end": 10.041
+        },
+        {
+          "text": "il",
+          "start": 10.081,
+          "end": 10.141
+        },
+        {
+          "text": "programma",
+          "start": 10.161,
+          "end": 10.621
+        },
+        {
+          "text": "con",
+          "start": 10.681,
+          "end": 10.821
+        },
+        {
+          "text": "dati",
+          "start": 10.881,
+          "end": 11.162
+        },
+        {
+          "text": "che",
+          "start": 11.222,
+          "end": 11.302
+        },
+        {
+          "text": "simulano",
+          "start": 11.462,
+          "end": 11.882
+        },
+        {
+          "text": "gli",
+          "start": 11.922,
+          "end": 12.042
+        },
+        {
+          "text": "input",
+          "start": 12.082,
+          "end": 12.382
+        }
+      ]
+    },
+    {
+      "start": 12.462,
+      "end": 15.462,
+      "text": "degli utenti e osservare il comportamento prodotto.",
+      "words": [
+        {
+          "text": "degli",
+          "start": 12.462,
+          "end": 12.642
+        },
+        {
+          "text": "utenti",
+          "start": 12.662,
+          "end": 13.062
+        },
+        {
+          "text": "e",
+          "start": 13.482,
+          "end": 13.522
+        },
+        {
+          "text": "osservare",
+          "start": 13.682,
+          "end": 14.222
+        },
+        {
+          "text": "il",
+          "start": 14.262,
+          "end": 14.322
+        },
+        {
+          "text": "comportamento",
+          "start": 14.362,
+          "end": 15.002
+        },
+        {
+          "text": "prodotto.",
+          "start": 15.022,
+          "end": 15.462
+        }
+      ]
+    },
+    {
+      "start": 16.142,
+      "end": 19.683,
+      "text": "Se corrisponde a quello atteso, il test riesce; altrimenti fallisce.",
+      "words": [
+        {
+          "text": "Se",
+          "start": 16.142,
+          "end": 16.242
+        },
+        {
+          "text": "corrisponde",
+          "start": 16.302,
+          "end": 16.842
+        },
+        {
+          "text": "a",
+          "start": 16.882,
+          "end": 16.922
+        },
+        {
+          "text": "quello",
+          "start": 16.942,
+          "end": 17.142
+        },
+        {
+          "text": "atteso,",
+          "start": 17.162,
+          "end": 17.542
+        },
+        {
+          "text": "il",
+          "start": 17.722,
+          "end": 17.802
+        },
+        {
+          "text": "test",
+          "start": 17.862,
+          "end": 18.062
+        },
+        {
+          "text": "riesce;",
+          "start": 18.122,
+          "end": 18.543
+        },
+        {
+          "text": "altrimenti",
+          "start": 18.783,
+          "end": 19.223
+        },
+        {
+          "text": "fallisce.",
+          "start": 19.263,
+          "end": 19.683
+        }
+      ]
+    },
+    {
+      "start": 20.523,
+      "end": 22.343,
+      "text": "Distinguiamo quattro tipi di testing.",
+      "words": [
+        {
+          "text": "Distinguiamo",
+          "start": 20.523,
+          "end": 21.043
+        },
+        {
+          "text": "quattro",
+          "start": 21.163,
+          "end": 21.523
+        },
+        {
+          "text": "tipi",
+          "start": 21.563,
+          "end": 21.763
+        },
+        {
+          "text": "di",
+          "start": 21.803,
+          "end": 21.863
+        },
+        {
+          "text": "testing.",
+          "start": 21.903,
+          "end": 22.343
+        }
+      ]
+    },
+    {
+      "start": 22.883,
+      "end": 27.664,
+      "text": "Il functional testing collauda la funzionalità complessiva del sistema per scoprire i bug.",
+      "words": [
+        {
+          "text": "Il",
+          "start": 22.883,
+          "end": 22.963
+        },
+        {
+          "text": "functional",
+          "start": 23.023,
+          "end": 23.443
+        },
+        {
+          "text": "testing",
+          "start": 23.483,
+          "end": 23.883
+        },
+        {
+          "text": "collauda",
+          "start": 24.163,
+          "end": 24.563
+        },
+        {
+          "text": "la",
+          "start": 24.623,
+          "end": 24.683
+        },
+        {
+          "text": "funzionalità",
+          "start": 24.723,
+          "end": 25.263
+        },
+        {
+          "text": "complessiva",
+          "start": 25.343,
+          "end": 25.904
+        },
+        {
+          "text": "del",
+          "start": 25.924,
+          "end": 26.044
+        },
+        {
+          "text": "sistema",
+          "start": 26.104,
+          "end": 26.544
+        },
+        {
+          "text": "per",
+          "start": 26.684,
+          "end": 26.784
+        },
+        {
+          "text": "scoprire",
+          "start": 26.844,
+          "end": 27.244
+        },
+        {
+          "text": "i",
+          "start": 27.304,
+          "end": 27.344
+        },
+        {
+          "text": "bug.",
+          "start": 27.404,
+          "end": 27.664
+        }
+      ]
+    },
+    {
+      "start": 28.364,
+      "end": 32.925,
+      "text": "Lo user testing verifica che il prodotto sia utile e usabile per gli utenti finali:",
+      "words": [
+        {
+          "text": "Lo",
+          "start": 28.364,
+          "end": 28.444
+        },
+        {
+          "text": "user",
+          "start": 28.624,
+          "end": 28.844
+        },
+        {
+          "text": "testing",
+          "start": 28.904,
+          "end": 29.324
+        },
+        {
+          "text": "verifica",
+          "start": 29.624,
+          "end": 30.024
+        },
+        {
+          "text": "che",
+          "start": 30.064,
+          "end": 30.144
+        },
+        {
+          "text": "il",
+          "start": 30.184,
+          "end": 30.244
+        },
+        {
+          "text": "prodotto",
+          "start": 30.264,
+          "end": 30.644
+        },
+        {
+          "text": "sia",
+          "start": 30.704,
+          "end": 30.844
+        },
+        {
+          "text": "utile",
+          "start": 31.004,
+          "end": 31.304
+        },
+        {
+          "text": "e",
+          "start": 31.444,
+          "end": 31.484
+        },
+        {
+          "text": "usabile",
+          "start": 31.544,
+          "end": 32.004
+        },
+        {
+          "text": "per",
+          "start": 32.024,
+          "end": 32.124
+        },
+        {
+          "text": "gli",
+          "start": 32.144,
+          "end": 32.224
+        },
+        {
+          "text": "utenti",
+          "start": 32.244,
+          "end": 32.544
+        },
+        {
+          "text": "finali:",
+          "start": 32.584,
+          "end": 32.925
+        }
+      ]
+    },
+    {
+      "start": 33.405,
+      "end": 37.605,
+      "text": "comprende l'alpha testing, in cui si chiede agli utenti se vogliono davvero certe feature,",
+      "words": [
+        {
+          "text": "comprende",
+          "start": 33.405,
+          "end": 33.825
+        },
+        {
+          "text": "l'alpha",
+          "start": 33.945,
+          "end": 34.205
+        },
+        {
+          "text": "testing,",
+          "start": 34.265,
+          "end": 34.665
+        },
+        {
+          "text": "in",
+          "start": 34.905,
+          "end": 34.985
+        },
+        {
+          "text": "cui",
+          "start": 35.025,
+          "end": 35.145
+        },
+        {
+          "text": "si",
+          "start": 35.185,
+          "end": 35.245
+        },
+        {
+          "text": "chiede",
+          "start": 35.285,
+          "end": 35.465
+        },
+        {
+          "text": "agli",
+          "start": 35.505,
+          "end": 35.625
+        },
+        {
+          "text": "utenti",
+          "start": 35.645,
+          "end": 35.965
+        },
+        {
+          "text": "se",
+          "start": 36.025,
+          "end": 36.105
+        },
+        {
+          "text": "vogliono",
+          "start": 36.165,
+          "end": 36.465
+        },
+        {
+          "text": "davvero",
+          "start": 36.525,
+          "end": 36.945
+        },
+        {
+          "text": "certe",
+          "start": 36.985,
+          "end": 37.225
+        },
+        {
+          "text": "feature,",
+          "start": 37.265,
+          "end": 37.605
+        }
+      ]
+    },
+    {
+      "start": 38.005,
+      "end": 42.886,
+      "text": "e il beta testing, in cui una versione preliminare viene distribuita per valutare usabilità e",
+      "words": [
+        {
+          "text": "e",
+          "start": 38.005,
+          "end": 38.045
+        },
+        {
+          "text": "il",
+          "start": 38.105,
+          "end": 38.165
+        },
+        {
+          "text": "beta",
+          "start": 38.225,
+          "end": 38.445
+        },
+        {
+          "text": "testing,",
+          "start": 38.485,
+          "end": 38.885
+        },
+        {
+          "text": "in",
+          "start": 39.185,
+          "end": 39.265
+        },
+        {
+          "text": "cui",
+          "start": 39.305,
+          "end": 39.445
+        },
+        {
+          "text": "una",
+          "start": 39.505,
+          "end": 39.605
+        },
+        {
+          "text": "versione",
+          "start": 39.645,
+          "end": 39.986
+        },
+        {
+          "text": "preliminare",
+          "start": 40.026,
+          "end": 40.546
+        },
+        {
+          "text": "viene",
+          "start": 40.586,
+          "end": 40.766
+        },
+        {
+          "text": "distribuita",
+          "start": 40.826,
+          "end": 41.366
+        },
+        {
+          "text": "per",
+          "start": 41.406,
+          "end": 41.526
+        },
+        {
+          "text": "valutare",
+          "start": 41.566,
+          "end": 41.966
+        },
+        {
+          "text": "usabilità",
+          "start": 42.126,
+          "end": 42.606
+        },
+        {
+          "text": "e",
+          "start": 42.846,
+          "end": 42.886
+        }
+      ]
+    },
+    {
+      "start": 42.986,
+      "end": 43.786,
+      "text": "interoperabilità.",
+      "words": [
+        {
+          "text": "interoperabilità.",
+          "start": 42.986,
+          "end": 43.786
+        }
+      ]
+    },
+    {
+      "start": 44.626,
+      "end": 47.767,
+      "text": "Il performance e load testing verifica velocità di risposta,",
+      "words": [
+        {
+          "text": "Il",
+          "start": 44.626,
+          "end": 44.706
+        },
+        {
+          "text": "performance",
+          "start": 44.746,
+          "end": 45.326
+        },
+        {
+          "text": "e",
+          "start": 45.346,
+          "end": 45.386
+        },
+        {
+          "text": "load",
+          "start": 45.446,
+          "end": 45.606
+        },
+        {
+          "text": "testing",
+          "start": 45.666,
+          "end": 46.086
+        },
+        {
+          "text": "verifica",
+          "start": 46.306,
+          "end": 46.666
+        },
+        {
+          "text": "velocità",
+          "start": 46.806,
+          "end": 47.166
+        },
+        {
+          "text": "di",
+          "start": 47.207,
+          "end": 47.267
+        },
+        {
+          "text": "risposta,",
+          "start": 47.307,
+          "end": 47.767
+        }
+      ]
+    },
+    {
+      "start": 48.027,
+      "end": 50.067,
+      "text": "tenuta sotto carichi diversi e scalabilità.",
+      "words": [
+        {
+          "text": "tenuta",
+          "start": 48.027,
+          "end": 48.347
+        },
+        {
+          "text": "sotto",
+          "start": 48.387,
+          "end": 48.587
+        },
+        {
+          "text": "carichi",
+          "start": 48.647,
+          "end": 48.907
+        },
+        {
+          "text": "diversi",
+          "start": 48.927,
+          "end": 49.347
+        },
+        {
+          "text": "e",
+          "start": 49.467,
+          "end": 49.507
+        },
+        {
+          "text": "scalabilità.",
+          "start": 49.547,
+          "end": 50.067
+        }
+      ]
+    },
+    {
+      "start": 50.607,
+      "end": 55.068,
+      "text": "Infine, il security testing cerca vulnerabilità sfruttabili da un attaccante.",
+      "words": [
+        {
+          "text": "Infine,",
+          "start": 50.607,
+          "end": 50.967
+        },
+        {
+          "text": "il",
+          "start": 51.087,
+          "end": 51.167
+        },
+        {
+          "text": "security",
+          "start": 51.247,
+          "end": 51.727
+        },
+        {
+          "text": "testing",
+          "start": 51.767,
+          "end": 52.167
+        },
+        {
+          "text": "cerca",
+          "start": 52.527,
+          "end": 52.787
+        },
+        {
+          "text": "vulnerabilità",
+          "start": 52.927,
+          "end": 53.527
+        },
+        {
+          "text": "sfruttabili",
+          "start": 53.607,
+          "end": 54.227
+        },
+        {
+          "text": "da",
+          "start": 54.267,
+          "end": 54.327
+        },
+        {
+          "text": "un",
+          "start": 54.407,
+          "end": 54.468
+        },
+        {
+          "text": "attaccante.",
+          "start": 54.508,
+          "end": 55.068
+        }
+      ]
+    },
+    {
+      "start": 55.828,
+      "end": 61.148,
+      "text": "Attenzione a un principio fondamentale enunciato da Dijkstra: il testing può mostrare la presenza di",
+      "words": [
+        {
+          "text": "Attenzione",
+          "start": 55.828,
+          "end": 56.288
+        },
+        {
+          "text": "a",
+          "start": 56.308,
+          "end": 56.348
+        },
+        {
+          "text": "un",
+          "start": 56.368,
+          "end": 56.428
+        },
+        {
+          "text": "principio",
+          "start": 56.448,
+          "end": 56.888
+        },
+        {
+          "text": "fondamentale",
+          "start": 56.928,
+          "end": 57.668
+        },
+        {
+          "text": "enunciato",
+          "start": 57.708,
+          "end": 58.088
+        },
+        {
+          "text": "da",
+          "start": 58.128,
+          "end": 58.188
+        },
+        {
+          "text": "Dijkstra:",
+          "start": 58.248,
+          "end": 58.668
+        },
+        {
+          "text": "il",
+          "start": 59.128,
+          "end": 59.208
+        },
+        {
+          "text": "testing",
+          "start": 59.268,
+          "end": 59.648
+        },
+        {
+          "text": "può",
+          "start": 59.728,
+          "end": 59.828
+        },
+        {
+          "text": "mostrare",
+          "start": 59.928,
+          "end": 60.348
+        },
+        {
+          "text": "la",
+          "start": 60.388,
+          "end": 60.448
+        },
+        {
+          "text": "presenza",
+          "start": 60.508,
+          "end": 61.028
+        },
+        {
+          "text": "di",
+          "start": 61.068,
+          "end": 61.148
+        }
+      ]
+    },
+    {
+      "start": 61.188,
+      "end": 62.709,
+      "text": "bug, mai la loro assenza.",
+      "words": [
+        {
+          "text": "bug,",
+          "start": 61.188,
+          "end": 61.408
+        },
+        {
+          "text": "mai",
+          "start": 61.749,
+          "end": 61.949
+        },
+        {
+          "text": "la",
+          "start": 61.989,
+          "end": 62.049
+        },
+        {
+          "text": "loro",
+          "start": 62.089,
+          "end": 62.249
+        },
+        {
+          "text": "assenza.",
+          "start": 62.289,
+          "end": 62.709
+        }
+      ]
+    },
+    {
+      "start": 63.269,
+      "end": 67.529,
+      "text": "Poiché gli input possibili sono enormi, i test ne provano solo alcuni e un bug",
+      "words": [
+        {
+          "text": "Poiché",
+          "start": 63.269,
+          "end": 63.509
+        },
+        {
+          "text": "gli",
+          "start": 63.589,
+          "end": 63.709
+        },
+        {
+          "text": "input",
+          "start": 63.749,
+          "end": 64.009
+        },
+        {
+          "text": "possibili",
+          "start": 64.069,
+          "end": 64.569
+        },
+        {
+          "text": "sono",
+          "start": 64.629,
+          "end": 64.789
+        },
+        {
+          "text": "enormi,",
+          "start": 64.849,
+          "end": 65.229
+        },
+        {
+          "text": "i",
+          "start": 65.549,
+          "end": 65.58900000000001
+        },
+        {
+          "text": "test",
+          "start": 65.609,
+          "end": 65.829
+        },
+        {
+          "text": "ne",
+          "start": 65.929,
+          "end": 65.989
+        },
+        {
+          "text": "provano",
+          "start": 66.009,
+          "end": 66.289
+        },
+        {
+          "text": "solo",
+          "start": 66.349,
+          "end": 66.489
+        },
+        {
+          "text": "alcuni",
+          "start": 66.529,
+          "end": 66.869
+        },
+        {
+          "text": "e",
+          "start": 67.149,
+          "end": 67.18900000000001
+        },
+        {
+          "text": "un",
+          "start": 67.229,
+          "end": 67.289
+        },
+        {
+          "text": "bug",
+          "start": 67.329,
+          "end": 67.529
+        }
+      ]
+    },
+    {
+      "start": 67.609,
+      "end": 72.27,
+      "text": "può restare nascosto; solo la verifica formale dimostra la correttezza su tutti i casi.",
+      "words": [
+        {
+          "text": "può",
+          "start": 67.609,
+          "end": 67.689
+        },
+        {
+          "text": "restare",
+          "start": 67.749,
+          "end": 68.009
+        },
+        {
+          "text": "nascosto;",
+          "start": 68.069,
+          "end": 68.509
+        },
+        {
+          "text": "solo",
+          "start": 69.01,
+          "end": 69.23
+        },
+        {
+          "text": "la",
+          "start": 69.27,
+          "end": 69.33
+        },
+        {
+          "text": "verifica",
+          "start": 69.35,
+          "end": 69.73
+        },
+        {
+          "text": "formale",
+          "start": 69.77,
+          "end": 70.23
+        },
+        {
+          "text": "dimostra",
+          "start": 70.33,
+          "end": 70.69
+        },
+        {
+          "text": "la",
+          "start": 70.75,
+          "end": 70.81
+        },
+        {
+          "text": "correttezza",
+          "start": 70.83,
+          "end": 71.39
+        },
+        {
+          "text": "su",
+          "start": 71.45,
+          "end": 71.51
+        },
+        {
+          "text": "tutti",
+          "start": 71.61,
+          "end": 71.85
+        },
+        {
+          "text": "i",
+          "start": 71.91,
+          "end": 71.95
+        },
+        {
+          "text": "casi.",
+          "start": 71.97,
+          "end": 72.27
+        }
+      ]
+    }
+  ]
+}

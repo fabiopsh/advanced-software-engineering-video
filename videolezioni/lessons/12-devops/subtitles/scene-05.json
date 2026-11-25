@@ -1,0 +1,947 @@
+{
+  "duration": 63.882,
+  "segments": [
+    {
+      "start": 0.06,
+      "end": 6.28,
+      "text": "La continuous integration costruisce un sistema eseguibile, ma l'ambiente di produzione reale ha filesystem,",
+      "words": [
+        {
+          "text": "La",
+          "start": 0.06,
+          "end": 0.12
+        },
+        {
+          "text": "continuous",
+          "start": 0.18,
+          "end": 0.66
+        },
+        {
+          "text": "integration",
+          "start": 0.7,
+          "end": 1.32
+        },
+        {
+          "text": "costruisce",
+          "start": 1.46,
+          "end": 1.92
+        },
+        {
+          "text": "un",
+          "start": 1.98,
+          "end": 2.04
+        },
+        {
+          "text": "sistema",
+          "start": 2.06,
+          "end": 2.38
+        },
+        {
+          "text": "eseguibile,",
+          "start": 2.42,
+          "end": 2.94
+        },
+        {
+          "text": "ma",
+          "start": 3.4,
+          "end": 3.46
+        },
+        {
+          "text": "l'ambiente",
+          "start": 3.56,
+          "end": 3.94
+        },
+        {
+          "text": "di",
+          "start": 3.98,
+          "end": 4.04
+        },
+        {
+          "text": "produzione",
+          "start": 4.06,
+          "end": 4.54
+        },
+        {
+          "text": "reale",
+          "start": 4.6,
+          "end": 4.96
+        },
+        {
+          "text": "ha",
+          "start": 5.32,
+          "end": 5.4
+        },
+        {
+          "text": "filesystem,",
+          "start": 5.52,
+          "end": 6.28
+        }
+      ]
+    },
+    {
+      "start": 6.54,
+      "end": 10.141,
+      "text": "permessi e servizi diversi, capaci di far emergere nuovi bug.",
+      "words": [
+        {
+          "text": "permessi",
+          "start": 6.54,
+          "end": 7.101
+        },
+        {
+          "text": "e",
+          "start": 7.181,
+          "end": 7.221
+        },
+        {
+          "text": "servizi",
+          "start": 7.261,
+          "end": 7.641
+        },
+        {
+          "text": "diversi,",
+          "start": 7.681,
+          "end": 8.101
+        },
+        {
+          "text": "capaci",
+          "start": 8.521,
+          "end": 8.901
+        },
+        {
+          "text": "di",
+          "start": 8.941,
+          "end": 8.981
+        },
+        {
+          "text": "far",
+          "start": 9.041,
+          "end": 9.161
+        },
+        {
+          "text": "emergere",
+          "start": 9.201,
+          "end": 9.561
+        },
+        {
+          "text": "nuovi",
+          "start": 9.641,
+          "end": 9.861
+        },
+        {
+          "text": "bug.",
+          "start": 9.921,
+          "end": 10.141
+        }
+      ]
+    },
+    {
+      "start": 10.921,
+      "end": 12.661,
+      "text": "Ecco perché serve la continuous delivery:",
+      "words": [
+        {
+          "text": "Ecco",
+          "start": 10.921,
+          "end": 11.081
+        },
+        {
+          "text": "perché",
+          "start": 11.121,
+          "end": 11.321
+        },
+        {
+          "text": "serve",
+          "start": 11.361,
+          "end": 11.581
+        },
+        {
+          "text": "la",
+          "start": 11.621,
+          "end": 11.681
+        },
+        {
+          "text": "continuous",
+          "start": 11.721,
+          "end": 12.201
+        },
+        {
+          "text": "delivery:",
+          "start": 12.261,
+          "end": 12.661
+        }
+      ]
+    },
+    {
+      "start": 13.441,
+      "end": 17.201,
+      "text": "si configura un ambiente di test staged che replica la produzione,",
+      "words": [
+        {
+          "text": "si",
+          "start": 13.441,
+          "end": 13.501
+        },
+        {
+          "text": "configura",
+          "start": 13.561,
+          "end": 14.001
+        },
+        {
+          "text": "un",
+          "start": 14.061,
+          "end": 14.121
+        },
+        {
+          "text": "ambiente",
+          "start": 14.141,
+          "end": 14.481
+        },
+        {
+          "text": "di",
+          "start": 14.521,
+          "end": 14.581
+        },
+        {
+          "text": "test",
+          "start": 14.641,
+          "end": 14.881
+        },
+        {
+          "text": "staged",
+          "start": 15.001,
+          "end": 15.401
+        },
+        {
+          "text": "che",
+          "start": 15.841,
+          "end": 15.941
+        },
+        {
+          "text": "replica",
+          "start": 16.081,
+          "end": 16.421
+        },
+        {
+          "text": "la",
+          "start": 16.481,
+          "end": 16.521
+        },
+        {
+          "text": "produzione,",
+          "start": 16.561,
+          "end": 17.201
+        }
+      ]
+    },
+    {
+      "start": 17.441,
+      "end": 22.242,
+      "text": "spesso tramite container, e si eseguono gli acceptance test funzionali e di carico.",
+      "words": [
+        {
+          "text": "spesso",
+          "start": 17.441,
+          "end": 17.721
+        },
+        {
+          "text": "tramite",
+          "start": 17.781,
+          "end": 18.081
+        },
+        {
+          "text": "container,",
+          "start": 18.141,
+          "end": 18.661
+        },
+        {
+          "text": "e",
+          "start": 19.141,
+          "end": 19.181
+        },
+        {
+          "text": "si",
+          "start": 19.281,
+          "end": 19.341
+        },
+        {
+          "text": "eseguono",
+          "start": 19.401,
+          "end": 19.761
+        },
+        {
+          "text": "gli",
+          "start": 19.781,
+          "end": 19.881
+        },
+        {
+          "text": "acceptance",
+          "start": 19.921,
+          "end": 20.502
+        },
+        {
+          "text": "test",
+          "start": 20.542,
+          "end": 20.742
+        },
+        {
+          "text": "funzionali",
+          "start": 20.862,
+          "end": 21.522
+        },
+        {
+          "text": "e",
+          "start": 21.722,
+          "end": 21.762
+        },
+        {
+          "text": "di",
+          "start": 21.782,
+          "end": 21.842
+        },
+        {
+          "text": "carico.",
+          "start": 21.882,
+          "end": 22.242
+        }
+      ]
+    },
+    {
+      "start": 23.122,
+      "end": 25.822,
+      "text": "Se tutti i test passano, scatta la continuous deployment:",
+      "words": [
+        {
+          "text": "Se",
+          "start": 23.122,
+          "end": 23.182
+        },
+        {
+          "text": "tutti",
+          "start": 23.262,
+          "end": 23.442
+        },
+        {
+          "text": "i",
+          "start": 23.482,
+          "end": 23.522
+        },
+        {
+          "text": "test",
+          "start": 23.542,
+          "end": 23.722
+        },
+        {
+          "text": "passano,",
+          "start": 23.782,
+          "end": 24.202
+        },
+        {
+          "text": "scatta",
+          "start": 24.522,
+          "end": 24.762
+        },
+        {
+          "text": "la",
+          "start": 24.802,
+          "end": 24.862
+        },
+        {
+          "text": "continuous",
+          "start": 24.882,
+          "end": 25.282
+        },
+        {
+          "text": "deployment:",
+          "start": 25.302,
+          "end": 25.822
+        }
+      ]
+    },
+    {
+      "start": 26.422,
+      "end": 28.742,
+      "text": "il software viene installato sui server di produzione,",
+      "words": [
+        {
+          "text": "il",
+          "start": 26.422,
+          "end": 26.502
+        },
+        {
+          "text": "software",
+          "start": 26.542,
+          "end": 26.882
+        },
+        {
+          "text": "viene",
+          "start": 26.882,
+          "end": 27.022
+        },
+        {
+          "text": "installato",
+          "start": 27.062,
+          "end": 27.522
+        },
+        {
+          "text": "sui",
+          "start": 27.582,
+          "end": 27.702
+        },
+        {
+          "text": "server",
+          "start": 27.742,
+          "end": 28.022
+        },
+        {
+          "text": "di",
+          "start": 28.062,
+          "end": 28.122
+        },
+        {
+          "text": "produzione,",
+          "start": 28.142,
+          "end": 28.742
+        }
+      ]
+    },
+    {
+      "start": 29.362,
+      "end": 34.103,
+      "text": "si smette di accettare nuove richieste lasciando completare le transazioni in corso alla vecchia versione,",
+      "words": [
+        {
+          "text": "si",
+          "start": 29.362,
+          "end": 29.442
+        },
+        {
+          "text": "smette",
+          "start": 29.502,
+          "end": 29.802
+        },
+        {
+          "text": "di",
+          "start": 29.842,
+          "end": 29.902
+        },
+        {
+          "text": "accettare",
+          "start": 29.942,
+          "end": 30.322
+        },
+        {
+          "text": "nuove",
+          "start": 30.382,
+          "end": 30.582
+        },
+        {
+          "text": "richieste",
+          "start": 30.622,
+          "end": 31.102
+        },
+        {
+          "text": "lasciando",
+          "start": 31.362,
+          "end": 31.682
+        },
+        {
+          "text": "completare",
+          "start": 31.722,
+          "end": 32.142
+        },
+        {
+          "text": "le",
+          "start": 32.202,
+          "end": 32.262
+        },
+        {
+          "text": "transazioni",
+          "start": 32.302,
+          "end": 32.802
+        },
+        {
+          "text": "in",
+          "start": 32.862,
+          "end": 32.902
+        },
+        {
+          "text": "corso",
+          "start": 32.962,
+          "end": 33.242
+        },
+        {
+          "text": "alla",
+          "start": 33.282,
+          "end": 33.402
+        },
+        {
+          "text": "vecchia",
+          "start": 33.402,
+          "end": 33.622
+        },
+        {
+          "text": "versione,",
+          "start": 33.643,
+          "end": 34.103
+        }
+      ]
+    },
+    {
+      "start": 34.603,
+      "end": 35.643,
+      "text": "e poi si passa alla nuova.",
+      "words": [
+        {
+          "text": "e",
+          "start": 34.603,
+          "end": 34.643
+        },
+        {
+          "text": "poi",
+          "start": 34.703,
+          "end": 34.843
+        },
+        {
+          "text": "si",
+          "start": 34.883,
+          "end": 34.943
+        },
+        {
+          "text": "passa",
+          "start": 34.983,
+          "end": 35.183
+        },
+        {
+          "text": "alla",
+          "start": 35.223,
+          "end": 35.363
+        },
+        {
+          "text": "nuova.",
+          "start": 35.403,
+          "end": 35.643
+        }
+      ]
+    },
+    {
+      "start": 36.503,
+      "end": 39.343,
+      "text": "Nei sistemi cloud questo azzera i costi manuali di rilascio,",
+      "words": [
+        {
+          "text": "Nei",
+          "start": 36.503,
+          "end": 36.623
+        },
+        {
+          "text": "sistemi",
+          "start": 36.663,
+          "end": 36.943
+        },
+        {
+          "text": "cloud",
+          "start": 37.003,
+          "end": 37.283
+        },
+        {
+          "text": "questo",
+          "start": 37.363,
+          "end": 37.583
+        },
+        {
+          "text": "azzera",
+          "start": 37.743,
+          "end": 38.123
+        },
+        {
+          "text": "i",
+          "start": 38.143,
+          "end": 38.183
+        },
+        {
+          "text": "costi",
+          "start": 38.183,
+          "end": 38.423
+        },
+        {
+          "text": "manuali",
+          "start": 38.463,
+          "end": 38.783
+        },
+        {
+          "text": "di",
+          "start": 38.803,
+          "end": 38.863
+        },
+        {
+          "text": "rilascio,",
+          "start": 38.903,
+          "end": 39.343
+        }
+      ]
+    },
+    {
+      "start": 39.743,
+      "end": 43.943,
+      "text": "velocizza la diagnosi e il feedback dei clienti, e abilita l'A B testing:",
+      "words": [
+        {
+          "text": "velocizza",
+          "start": 39.743,
+          "end": 40.203
+        },
+        {
+          "text": "la",
+          "start": 40.243,
+          "end": 40.303
+        },
+        {
+          "text": "diagnosi",
+          "start": 40.343,
+          "end": 40.883
+        },
+        {
+          "text": "e",
+          "start": 40.943,
+          "end": 40.983
+        },
+        {
+          "text": "il",
+          "start": 41.023,
+          "end": 41.083
+        },
+        {
+          "text": "feedback",
+          "start": 41.163,
+          "end": 41.503
+        },
+        {
+          "text": "dei",
+          "start": 41.563,
+          "end": 41.683
+        },
+        {
+          "text": "clienti,",
+          "start": 41.703,
+          "end": 42.243
+        },
+        {
+          "text": "e",
+          "start": 42.663,
+          "end": 42.703
+        },
+        {
+          "text": "abilita",
+          "start": 42.763,
+          "end": 43.123
+        },
+        {
+          "text": "l'A",
+          "start": 43.223,
+          "end": 43.303
+        },
+        {
+          "text": "B",
+          "start": 43.383,
+          "end": 43.423
+        },
+        {
+          "text": "testing:",
+          "start": 43.543,
+          "end": 43.943
+        }
+      ]
+    },
+    {
+      "start": 44.523,
+      "end": 48.644,
+      "text": "il load balancer dirotta una frazione di utenti sulla nuova versione per misurarne l'uso reale.",
+      "words": [
+        {
+          "text": "il",
+          "start": 44.523,
+          "end": 44.603
+        },
+        {
+          "text": "load",
+          "start": 44.623,
+          "end": 44.783
+        },
+        {
+          "text": "balancer",
+          "start": 44.823,
+          "end": 45.263
+        },
+        {
+          "text": "dirotta",
+          "start": 45.303,
+          "end": 45.643
+        },
+        {
+          "text": "una",
+          "start": 45.663,
+          "end": 45.763
+        },
+        {
+          "text": "frazione",
+          "start": 45.803,
+          "end": 46.123
+        },
+        {
+          "text": "di",
+          "start": 46.143,
+          "end": 46.203
+        },
+        {
+          "text": "utenti",
+          "start": 46.243,
+          "end": 46.523
+        },
+        {
+          "text": "sulla",
+          "start": 46.583,
+          "end": 46.743
+        },
+        {
+          "text": "nuova",
+          "start": 46.763,
+          "end": 46.943
+        },
+        {
+          "text": "versione",
+          "start": 46.983,
+          "end": 47.404
+        },
+        {
+          "text": "per",
+          "start": 47.484,
+          "end": 47.564
+        },
+        {
+          "text": "misurarne",
+          "start": 47.624,
+          "end": 48.044
+        },
+        {
+          "text": "l'uso",
+          "start": 48.104,
+          "end": 48.304
+        },
+        {
+          "text": "reale.",
+          "start": 48.344,
+          "end": 48.644
+        }
+      ]
+    },
+    {
+      "start": 49.484,
+      "end": 55.364,
+      "text": "Tuttavia non sempre conviene distribuire ogni singola modifica: per proteggere feature incomplete dai concorrenti,",
+      "words": [
+        {
+          "text": "Tuttavia",
+          "start": 49.484,
+          "end": 49.824
+        },
+        {
+          "text": "non",
+          "start": 50.064,
+          "end": 50.184
+        },
+        {
+          "text": "sempre",
+          "start": 50.244,
+          "end": 50.504
+        },
+        {
+          "text": "conviene",
+          "start": 50.544,
+          "end": 51.004
+        },
+        {
+          "text": "distribuire",
+          "start": 51.064,
+          "end": 51.564
+        },
+        {
+          "text": "ogni",
+          "start": 51.624,
+          "end": 51.804
+        },
+        {
+          "text": "singola",
+          "start": 51.884,
+          "end": 52.184
+        },
+        {
+          "text": "modifica:",
+          "start": 52.224,
+          "end": 52.644
+        },
+        {
+          "text": "per",
+          "start": 53.104,
+          "end": 53.224
+        },
+        {
+          "text": "proteggere",
+          "start": 53.284,
+          "end": 53.744
+        },
+        {
+          "text": "feature",
+          "start": 53.804,
+          "end": 54.084
+        },
+        {
+          "text": "incomplete",
+          "start": 54.104,
+          "end": 54.544
+        },
+        {
+          "text": "dai",
+          "start": 54.584,
+          "end": 54.684
+        },
+        {
+          "text": "concorrenti,",
+          "start": 54.704,
+          "end": 55.364
+        }
+      ]
+    },
+    {
+      "start": 55.784,
+      "end": 58.644,
+      "text": "non irritare gli utenti con cambi continui di interfaccia,",
+      "words": [
+        {
+          "text": "non",
+          "start": 55.784,
+          "end": 55.924
+        },
+        {
+          "text": "irritare",
+          "start": 55.964,
+          "end": 56.344
+        },
+        {
+          "text": "gli",
+          "start": 56.364,
+          "end": 56.464
+        },
+        {
+          "text": "utenti",
+          "start": 56.504,
+          "end": 56.884
+        },
+        {
+          "text": "con",
+          "start": 56.944,
+          "end": 57.064
+        },
+        {
+          "text": "cambi",
+          "start": 57.124,
+          "end": 57.364
+        },
+        {
+          "text": "continui",
+          "start": 57.404,
+          "end": 57.864
+        },
+        {
+          "text": "di",
+          "start": 57.904,
+          "end": 57.964
+        },
+        {
+          "text": "interfaccia,",
+          "start": 58.024,
+          "end": 58.644
+        }
+      ]
+    },
+    {
+      "start": 59.144,
+      "end": 61.525,
+      "text": "o sincronizzare i rilasci con cicli di business noti,",
+      "words": [
+        {
+          "text": "o",
+          "start": 59.144,
+          "end": 59.184
+        },
+        {
+          "text": "sincronizzare",
+          "start": 59.244,
+          "end": 59.844
+        },
+        {
+          "text": "i",
+          "start": 59.884,
+          "end": 59.924
+        },
+        {
+          "text": "rilasci",
+          "start": 59.944,
+          "end": 60.324
+        },
+        {
+          "text": "con",
+          "start": 60.364,
+          "end": 60.484
+        },
+        {
+          "text": "cicli",
+          "start": 60.524,
+          "end": 60.785
+        },
+        {
+          "text": "di",
+          "start": 60.825,
+          "end": 60.885
+        },
+        {
+          "text": "business",
+          "start": 60.925,
+          "end": 61.225
+        },
+        {
+          "text": "noti,",
+          "start": 61.285,
+          "end": 61.525
+        }
+      ]
+    },
+    {
+      "start": 61.905,
+      "end": 63.345,
+      "text": "come l'inizio dell'anno accademico.",
+      "words": [
+        {
+          "text": "come",
+          "start": 61.905,
+          "end": 62.065
+        },
+        {
+          "text": "l'inizio",
+          "start": 62.125,
+          "end": 62.505
+        },
+        {
+          "text": "dell'anno",
+          "start": 62.525,
+          "end": 62.825
+        },
+        {
+          "text": "accademico.",
+          "start": 62.845,
+          "end": 63.345
+        }
+      ]
+    }
+  ]
+}

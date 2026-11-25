@@ -1,0 +1,937 @@
+{
+  "duration": 76.522,
+  "segments": [
+    {
+      "start": 0.02,
+      "end": 6.42,
+      "text": "Benvenuti al nono capitolo di Advanced Software Engineering, dedicato a come scomporre un monolite in",
+      "words": [
+        {
+          "text": "Benvenuti",
+          "start": 0.02,
+          "end": 0.52
+        },
+        {
+          "text": "al",
+          "start": 0.7,
+          "end": 0.8
+        },
+        {
+          "text": "nono",
+          "start": 0.92,
+          "end": 1.18
+        },
+        {
+          "text": "capitolo",
+          "start": 1.24,
+          "end": 1.7
+        },
+        {
+          "text": "di",
+          "start": 1.78,
+          "end": 1.84
+        },
+        {
+          "text": "Advanced",
+          "start": 1.9,
+          "end": 2.44
+        },
+        {
+          "text": "Software",
+          "start": 2.56,
+          "end": 2.98
+        },
+        {
+          "text": "Engineering,",
+          "start": 3.0,
+          "end": 3.54
+        },
+        {
+          "text": "dedicato",
+          "start": 3.96,
+          "end": 4.38
+        },
+        {
+          "text": "a",
+          "start": 4.4,
+          "end": 4.44
+        },
+        {
+          "text": "come",
+          "start": 4.52,
+          "end": 4.74
+        },
+        {
+          "text": "scomporre",
+          "start": 4.84,
+          "end": 5.46
+        },
+        {
+          "text": "un",
+          "start": 5.52,
+          "end": 5.58
+        },
+        {
+          "text": "monolite",
+          "start": 5.62,
+          "end": 6.1
+        },
+        {
+          "text": "in",
+          "start": 6.32,
+          "end": 6.42
+        }
+      ]
+    },
+    {
+      "start": 6.48,
+      "end": 7.22,
+      "text": "microservizi.",
+      "words": [
+        {
+          "text": "microservizi.",
+          "start": 6.48,
+          "end": 7.22
+        }
+      ]
+    },
+    {
+      "start": 8.061,
+      "end": 10.581,
+      "text": "Richiamiamo perché si adottano i microservizi:",
+      "words": [
+        {
+          "text": "Richiamiamo",
+          "start": 8.061,
+          "end": 8.501
+        },
+        {
+          "text": "perché",
+          "start": 8.701,
+          "end": 9.061
+        },
+        {
+          "text": "si",
+          "start": 9.301,
+          "end": 9.361
+        },
+        {
+          "text": "adottano",
+          "start": 9.401,
+          "end": 9.781
+        },
+        {
+          "text": "i",
+          "start": 9.801,
+          "end": 9.841
+        },
+        {
+          "text": "microservizi:",
+          "start": 9.861,
+          "end": 10.581
+        }
+      ]
+    },
+    {
+      "start": 11.281,
+      "end": 19.001,
+      "text": "servizi stateless piccoli, nel proprio container, costruiti attorno a capacità di business con gestione decentralizzata",
+      "words": [
+        {
+          "text": "servizi",
+          "start": 11.281,
+          "end": 11.701
+        },
+        {
+          "text": "stateless",
+          "start": 11.881,
+          "end": 12.421
+        },
+        {
+          "text": "piccoli,",
+          "start": 12.741,
+          "end": 13.141
+        },
+        {
+          "text": "nel",
+          "start": 13.461,
+          "end": 13.601
+        },
+        {
+          "text": "proprio",
+          "start": 13.641,
+          "end": 13.901
+        },
+        {
+          "text": "container,",
+          "start": 13.921,
+          "end": 14.421
+        },
+        {
+          "text": "costruiti",
+          "start": 14.881,
+          "end": 15.321
+        },
+        {
+          "text": "attorno",
+          "start": 15.361,
+          "end": 15.721
+        },
+        {
+          "text": "a",
+          "start": 15.761,
+          "end": 15.801
+        },
+        {
+          "text": "capacità",
+          "start": 15.821,
+          "end": 16.221
+        },
+        {
+          "text": "di",
+          "start": 16.301,
+          "end": 16.381
+        },
+        {
+          "text": "business",
+          "start": 16.421,
+          "end": 16.861
+        },
+        {
+          "text": "con",
+          "start": 17.221,
+          "end": 17.381
+        },
+        {
+          "text": "gestione",
+          "start": 17.481,
+          "end": 17.981
+        },
+        {
+          "text": "decentralizzata",
+          "start": 18.121,
+          "end": 19.001
+        }
+      ]
+    },
+    {
+      "start": 19.041,
+      "end": 25.842,
+      "text": "dei dati, distribuibili in modo indipendente, scalabili orizzontalmente e resilienti ai guasti,",
+      "words": [
+        {
+          "text": "dei",
+          "start": 19.041,
+          "end": 19.141
+        },
+        {
+          "text": "dati,",
+          "start": 19.181,
+          "end": 19.481
+        },
+        {
+          "text": "distribuibili",
+          "start": 20.061,
+          "end": 20.821
+        },
+        {
+          "text": "in",
+          "start": 20.861,
+          "end": 20.921
+        },
+        {
+          "text": "modo",
+          "start": 20.961,
+          "end": 21.141
+        },
+        {
+          "text": "indipendente,",
+          "start": 21.181,
+          "end": 21.861
+        },
+        {
+          "text": "scalabili",
+          "start": 22.341,
+          "end": 22.801
+        },
+        {
+          "text": "orizzontalmente",
+          "start": 22.961,
+          "end": 23.922
+        },
+        {
+          "text": "e",
+          "start": 24.362,
+          "end": 24.402
+        },
+        {
+          "text": "resilienti",
+          "start": 24.502,
+          "end": 25.122
+        },
+        {
+          "text": "ai",
+          "start": 25.242,
+          "end": 25.362
+        },
+        {
+          "text": "guasti,",
+          "start": 25.402,
+          "end": 25.842
+        }
+      ]
+    },
+    {
+      "start": 26.122,
+      "end": 27.082,
+      "text": "in approccio DevOps.",
+      "words": [
+        {
+          "text": "in",
+          "start": 26.122,
+          "end": 26.202
+        },
+        {
+          "text": "approccio",
+          "start": 26.222,
+          "end": 26.622
+        },
+        {
+          "text": "DevOps.",
+          "start": 26.702,
+          "end": 27.082
+        }
+      ]
+    },
+    {
+      "start": 27.962,
+      "end": 33.342,
+      "text": "I due obiettivi chiave sono ridurre il lead time tra decisione di modifica e rilascio",
+      "words": [
+        {
+          "text": "I",
+          "start": 27.962,
+          "end": 28.002
+        },
+        {
+          "text": "due",
+          "start": 28.082,
+          "end": 28.242
+        },
+        {
+          "text": "obiettivi",
+          "start": 28.262,
+          "end": 28.722
+        },
+        {
+          "text": "chiave",
+          "start": 28.802,
+          "end": 29.162
+        },
+        {
+          "text": "sono",
+          "start": 29.322,
+          "end": 29.542
+        },
+        {
+          "text": "ridurre",
+          "start": 29.622,
+          "end": 30.042
+        },
+        {
+          "text": "il",
+          "start": 30.202,
+          "end": 30.282
+        },
+        {
+          "text": "lead",
+          "start": 30.362,
+          "end": 30.562
+        },
+        {
+          "text": "time",
+          "start": 30.682,
+          "end": 31.102
+        },
+        {
+          "text": "tra",
+          "start": 31.402,
+          "end": 31.502
+        },
+        {
+          "text": "decisione",
+          "start": 31.642,
+          "end": 32.082
+        },
+        {
+          "text": "di",
+          "start": 32.122,
+          "end": 32.182
+        },
+        {
+          "text": "modifica",
+          "start": 32.222,
+          "end": 32.682
+        },
+        {
+          "text": "e",
+          "start": 32.882,
+          "end": 32.922
+        },
+        {
+          "text": "rilascio",
+          "start": 32.982,
+          "end": 33.342
+        }
+      ]
+    },
+    {
+      "start": 33.362,
+      "end": 35.962,
+      "text": "agli utenti, e scalare in modo efficace.",
+      "words": [
+        {
+          "text": "agli",
+          "start": 33.362,
+          "end": 33.502
+        },
+        {
+          "text": "utenti,",
+          "start": 33.542,
+          "end": 33.902
+        },
+        {
+          "text": "e",
+          "start": 34.502,
+          "end": 34.542
+        },
+        {
+          "text": "scalare",
+          "start": 34.602,
+          "end": 35.062
+        },
+        {
+          "text": "in",
+          "start": 35.182,
+          "end": 35.262
+        },
+        {
+          "text": "modo",
+          "start": 35.302,
+          "end": 35.462
+        },
+        {
+          "text": "efficace.",
+          "start": 35.502,
+          "end": 35.962
+        }
+      ]
+    },
+    {
+      "start": 36.942,
+      "end": 42.123,
+      "text": "Un monolite invece cresce nel tempo per l'aggiunta continua di funzionalità e righe di codice.",
+      "words": [
+        {
+          "text": "Un",
+          "start": 36.942,
+          "end": 37.042
+        },
+        {
+          "text": "monolite",
+          "start": 37.082,
+          "end": 37.522
+        },
+        {
+          "text": "invece",
+          "start": 37.742,
+          "end": 38.022
+        },
+        {
+          "text": "cresce",
+          "start": 38.102,
+          "end": 38.482
+        },
+        {
+          "text": "nel",
+          "start": 38.542,
+          "end": 38.663
+        },
+        {
+          "text": "tempo",
+          "start": 38.743,
+          "end": 39.083
+        },
+        {
+          "text": "per",
+          "start": 39.243,
+          "end": 39.363
+        },
+        {
+          "text": "l'aggiunta",
+          "start": 39.403,
+          "end": 39.823
+        },
+        {
+          "text": "continua",
+          "start": 39.903,
+          "end": 40.403
+        },
+        {
+          "text": "di",
+          "start": 40.443,
+          "end": 40.503
+        },
+        {
+          "text": "funzionalità",
+          "start": 40.543,
+          "end": 41.083
+        },
+        {
+          "text": "e",
+          "start": 41.363,
+          "end": 41.403
+        },
+        {
+          "text": "righe",
+          "start": 41.483,
+          "end": 41.643
+        },
+        {
+          "text": "di",
+          "start": 41.663,
+          "end": 41.703
+        },
+        {
+          "text": "codice.",
+          "start": 41.743,
+          "end": 42.123
+        }
+      ]
+    },
+    {
+      "start": 42.723,
+      "end": 49.763,
+      "text": "Crescendo perde due proprietà essenziali: la cohesion, perché codice senza relazione finisce nello stesso blocco,",
+      "words": [
+        {
+          "text": "Crescendo",
+          "start": 42.723,
+          "end": 43.223
+        },
+        {
+          "text": "perde",
+          "start": 43.403,
+          "end": 43.683
+        },
+        {
+          "text": "due",
+          "start": 43.783,
+          "end": 43.983
+        },
+        {
+          "text": "proprietà",
+          "start": 44.023,
+          "end": 44.423
+        },
+        {
+          "text": "essenziali:",
+          "start": 44.483,
+          "end": 45.043
+        },
+        {
+          "text": "la",
+          "start": 45.543,
+          "end": 45.623
+        },
+        {
+          "text": "cohesion,",
+          "start": 45.683,
+          "end": 46.163
+        },
+        {
+          "text": "perché",
+          "start": 46.603,
+          "end": 46.823
+        },
+        {
+          "text": "codice",
+          "start": 46.883,
+          "end": 47.263
+        },
+        {
+          "text": "senza",
+          "start": 47.343,
+          "end": 47.603
+        },
+        {
+          "text": "relazione",
+          "start": 47.643,
+          "end": 48.183
+        },
+        {
+          "text": "finisce",
+          "start": 48.343,
+          "end": 48.743
+        },
+        {
+          "text": "nello",
+          "start": 48.823,
+          "end": 49.063
+        },
+        {
+          "text": "stesso",
+          "start": 49.103,
+          "end": 49.383
+        },
+        {
+          "text": "blocco,",
+          "start": 49.443,
+          "end": 49.763
+        }
+      ]
+    },
+    {
+      "start": 50.283,
+      "end": 55.724,
+      "text": "e il loose coupling, perché una piccola modifica impatta il resto e costringe a ridistribuire",
+      "words": [
+        {
+          "text": "e",
+          "start": 50.283,
+          "end": 50.323
+        },
+        {
+          "text": "il",
+          "start": 50.363,
+          "end": 50.423
+        },
+        {
+          "text": "loose",
+          "start": 50.463,
+          "end": 50.663
+        },
+        {
+          "text": "coupling,",
+          "start": 50.683,
+          "end": 51.103
+        },
+        {
+          "text": "perché",
+          "start": 51.483,
+          "end": 51.723
+        },
+        {
+          "text": "una",
+          "start": 51.783,
+          "end": 51.883
+        },
+        {
+          "text": "piccola",
+          "start": 51.943,
+          "end": 52.283
+        },
+        {
+          "text": "modifica",
+          "start": 52.323,
+          "end": 52.723
+        },
+        {
+          "text": "impatta",
+          "start": 52.903,
+          "end": 53.363
+        },
+        {
+          "text": "il",
+          "start": 53.423,
+          "end": 53.503
+        },
+        {
+          "text": "resto",
+          "start": 53.563,
+          "end": 53.903
+        },
+        {
+          "text": "e",
+          "start": 54.344,
+          "end": 54.384
+        },
+        {
+          "text": "costringe",
+          "start": 54.424,
+          "end": 54.864
+        },
+        {
+          "text": "a",
+          "start": 54.924,
+          "end": 54.964
+        },
+        {
+          "text": "ridistribuire",
+          "start": 55.024,
+          "end": 55.724
+        }
+      ]
+    },
+    {
+      "start": 55.784,
+      "end": 56.644,
+      "text": "l'intero monolite.",
+      "words": [
+        {
+          "text": "l'intero",
+          "start": 55.784,
+          "end": 56.184
+        },
+        {
+          "text": "monolite.",
+          "start": 56.224,
+          "end": 56.644
+        }
+      ]
+    },
+    {
+      "start": 58.044,
+      "end": 60.304,
+      "text": "Attenzione però alla regola pratica fondamentale:",
+      "words": [
+        {
+          "text": "Attenzione",
+          "start": 58.044,
+          "end": 58.464
+        },
+        {
+          "text": "però",
+          "start": 58.484,
+          "end": 58.644
+        },
+        {
+          "text": "alla",
+          "start": 58.844,
+          "end": 59.004
+        },
+        {
+          "text": "regola",
+          "start": 59.044,
+          "end": 59.304
+        },
+        {
+          "text": "pratica",
+          "start": 59.344,
+          "end": 59.644
+        },
+        {
+          "text": "fondamentale:",
+          "start": 59.684,
+          "end": 60.304
+        }
+      ]
+    },
+    {
+      "start": 60.904,
+      "end": 64.484,
+      "text": "il monolite si scompone quando diventa un problema, non prima.",
+      "words": [
+        {
+          "text": "il",
+          "start": 60.904,
+          "end": 60.984
+        },
+        {
+          "text": "monolite",
+          "start": 61.044,
+          "end": 61.484
+        },
+        {
+          "text": "si",
+          "start": 61.644,
+          "end": 61.724
+        },
+        {
+          "text": "scompone",
+          "start": 61.784,
+          "end": 62.284
+        },
+        {
+          "text": "quando",
+          "start": 62.364,
+          "end": 62.604
+        },
+        {
+          "text": "diventa",
+          "start": 62.684,
+          "end": 63.084
+        },
+        {
+          "text": "un",
+          "start": 63.144,
+          "end": 63.204
+        },
+        {
+          "text": "problema,",
+          "start": 63.224,
+          "end": 63.664
+        },
+        {
+          "text": "non",
+          "start": 64.084,
+          "end": 64.224
+        },
+        {
+          "text": "prima.",
+          "start": 64.264,
+          "end": 64.484
+        }
+      ]
+    },
+    {
+      "start": 65.224,
+      "end": 70.725,
+      "text": "Farlo crescere finché non richiede divisione è normale, purché si intervenga prima che dividere costi",
+      "words": [
+        {
+          "text": "Farlo",
+          "start": 65.224,
+          "end": 65.464
+        },
+        {
+          "text": "crescere",
+          "start": 65.524,
+          "end": 65.964
+        },
+        {
+          "text": "finché",
+          "start": 66.024,
+          "end": 66.284
+        },
+        {
+          "text": "non",
+          "start": 66.384,
+          "end": 66.504
+        },
+        {
+          "text": "richiede",
+          "start": 66.564,
+          "end": 66.944
+        },
+        {
+          "text": "divisione",
+          "start": 66.984,
+          "end": 67.504
+        },
+        {
+          "text": "è",
+          "start": 67.644,
+          "end": 67.68400000000001
+        },
+        {
+          "text": "normale,",
+          "start": 67.744,
+          "end": 68.164
+        },
+        {
+          "text": "purché",
+          "start": 68.484,
+          "end": 68.704
+        },
+        {
+          "text": "si",
+          "start": 68.764,
+          "end": 68.824
+        },
+        {
+          "text": "intervenga",
+          "start": 68.884,
+          "end": 69.304
+        },
+        {
+          "text": "prima",
+          "start": 69.404,
+          "end": 69.705
+        },
+        {
+          "text": "che",
+          "start": 69.865,
+          "end": 69.945
+        },
+        {
+          "text": "dividere",
+          "start": 69.985,
+          "end": 70.345
+        },
+        {
+          "text": "costi",
+          "start": 70.425,
+          "end": 70.725
+        }
+      ]
+    },
+    {
+      "start": 70.765,
+      "end": 76.025,
+      "text": "troppo, migrando gradualmente un servizio alla volta come nello Strangler Fig pattern.",
+      "words": [
+        {
+          "text": "troppo,",
+          "start": 70.765,
+          "end": 71.105
+        },
+        {
+          "text": "migrando",
+          "start": 71.645,
+          "end": 72.045
+        },
+        {
+          "text": "gradualmente",
+          "start": 72.105,
+          "end": 72.805
+        },
+        {
+          "text": "un",
+          "start": 72.965,
+          "end": 73.045
+        },
+        {
+          "text": "servizio",
+          "start": 73.085,
+          "end": 73.465
+        },
+        {
+          "text": "alla",
+          "start": 73.505,
+          "end": 73.645
+        },
+        {
+          "text": "volta",
+          "start": 73.685,
+          "end": 73.965
+        },
+        {
+          "text": "come",
+          "start": 74.265,
+          "end": 74.425
+        },
+        {
+          "text": "nello",
+          "start": 74.485,
+          "end": 74.705
+        },
+        {
+          "text": "Strangler",
+          "start": 74.805,
+          "end": 75.285
+        },
+        {
+          "text": "Fig",
+          "start": 75.365,
+          "end": 75.545
+        },
+        {
+          "text": "pattern.",
+          "start": 75.625,
+          "end": 76.025
+        }
+      ]
+    }
+  ]
+}

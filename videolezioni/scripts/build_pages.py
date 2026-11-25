@@ -384,9 +384,9 @@ def draw_chapter_visual(chapter: int, width: int = 380, height: int = 350) -> An
         d.ellipse([cx - r, cy - r, cx + r, cy + r], fill=PURPLE_S, outline=PURPLE, width=6)
         d.ellipse([cx - r, cy - 58, cx + r, cy + 58], outline=PURPLE, width=4)
         _draw_arrow(d, (cx, cy), (cx + 115, cy - 115), AMBER, width=8, head=22)
-        d.text((cx - 24, cy - r - 48), "|0⟩", font=f_lbl, fill=INK)
-        d.text((cx - 24, cy + r + 14), "|1⟩", font=f_lbl, fill=INK)
-        d.text((cx + 122, cy - 142), "|ψ⟩", font=f_lbl, fill=AMBER)
+        d.text((cx - 24, cy - r - 48), "|0>", font=f_lbl, fill=INK)
+        d.text((cx - 24, cy + r + 14), "|1>", font=f_lbl, fill=INK)
+        d.text((cx + 122, cy - 142), "|ψ>", font=f_lbl, fill=AMBER)
 
     return canvas.resize((width, height), Image.LANCZOS)
 

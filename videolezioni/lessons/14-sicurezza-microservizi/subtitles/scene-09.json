@@ -1,0 +1,902 @@
+{
+  "duration": 78.14,
+  "segments": [
+    {
+      "start": 0.08,
+      "end": 3.6,
+      "text": "Fissiamo i sei punti chiave della sicurezza nei microservizi.",
+      "words": [
+        {
+          "text": "Fissiamo",
+          "start": 0.08,
+          "end": 0.48
+        },
+        {
+          "text": "i",
+          "start": 0.64,
+          "end": 0.68
+        },
+        {
+          "text": "sei",
+          "start": 0.86,
+          "end": 1.06
+        },
+        {
+          "text": "punti",
+          "start": 1.16,
+          "end": 1.44
+        },
+        {
+          "text": "chiave",
+          "start": 1.5,
+          "end": 1.86
+        },
+        {
+          "text": "della",
+          "start": 1.98,
+          "end": 2.16
+        },
+        {
+          "text": "sicurezza",
+          "start": 2.24,
+          "end": 2.72
+        },
+        {
+          "text": "nei",
+          "start": 2.78,
+          "end": 2.88
+        },
+        {
+          "text": "microservizi.",
+          "start": 2.9,
+          "end": 3.6
+        }
+      ]
+    },
+    {
+      "start": 4.461,
+      "end": 8.441,
+      "text": "Primo: le sette sfide coprono superficie d'attacco più ampia,",
+      "words": [
+        {
+          "text": "Primo:",
+          "start": 4.461,
+          "end": 4.721
+        },
+        {
+          "text": "le",
+          "start": 5.401,
+          "end": 5.461
+        },
+        {
+          "text": "sette",
+          "start": 5.501,
+          "end": 5.721
+        },
+        {
+          "text": "sfide",
+          "start": 5.761,
+          "end": 6.021
+        },
+        {
+          "text": "coprono",
+          "start": 6.181,
+          "end": 6.561
+        },
+        {
+          "text": "superficie",
+          "start": 6.861,
+          "end": 7.361
+        },
+        {
+          "text": "d'attacco",
+          "start": 7.381,
+          "end": 7.761
+        },
+        {
+          "text": "più",
+          "start": 7.861,
+          "end": 7.981
+        },
+        {
+          "text": "ampia,",
+          "start": 8.121,
+          "end": 8.441
+        }
+      ]
+    },
+    {
+      "start": 8.821,
+      "end": 12.182,
+      "text": "controlli distribuiti da trust-the-network a zero trust,",
+      "words": [
+        {
+          "text": "controlli",
+          "start": 8.821,
+          "end": 9.321
+        },
+        {
+          "text": "distribuiti",
+          "start": 9.401,
+          "end": 10.041
+        },
+        {
+          "text": "da",
+          "start": 10.081,
+          "end": 10.161
+        },
+        {
+          "text": "trust-the-network",
+          "start": 10.321,
+          "end": 11.261
+        },
+        {
+          "text": "a",
+          "start": 11.461,
+          "end": 11.501
+        },
+        {
+          "text": "zero",
+          "start": 11.642,
+          "end": 11.822
+        },
+        {
+          "text": "trust,",
+          "start": 11.862,
+          "end": 12.182
+        }
+      ]
+    },
+    {
+      "start": 12.802,
+      "end": 21.983,
+      "text": "fiducia automatizzata con certificati, tracing distribuito, container immutabili, contesto utente con JWT e responsabilità divise",
+      "words": [
+        {
+          "text": "fiducia",
+          "start": 12.802,
+          "end": 13.162
+        },
+        {
+          "text": "automatizzata",
+          "start": 13.302,
+          "end": 14.082
+        },
+        {
+          "text": "con",
+          "start": 14.142,
+          "end": 14.242
+        },
+        {
+          "text": "certificati,",
+          "start": 14.282,
+          "end": 14.962
+        },
+        {
+          "text": "tracing",
+          "start": 15.382,
+          "end": 15.842
+        },
+        {
+          "text": "distribuito,",
+          "start": 15.902,
+          "end": 16.562
+        },
+        {
+          "text": "container",
+          "start": 16.922,
+          "end": 17.442
+        },
+        {
+          "text": "immutabili,",
+          "start": 17.482,
+          "end": 18.122
+        },
+        {
+          "text": "contesto",
+          "start": 18.442,
+          "end": 18.862
+        },
+        {
+          "text": "utente",
+          "start": 18.922,
+          "end": 19.322
+        },
+        {
+          "text": "con",
+          "start": 19.402,
+          "end": 19.523
+        },
+        {
+          "text": "JWT",
+          "start": 19.603,
+          "end": 20.123
+        },
+        {
+          "text": "e",
+          "start": 20.643,
+          "end": 20.683
+        },
+        {
+          "text": "responsabilità",
+          "start": 20.863,
+          "end": 21.643
+        },
+        {
+          "text": "divise",
+          "start": 21.723,
+          "end": 21.983
+        }
+      ]
+    },
+    {
+      "start": 22.023,
+      "end": 22.383,
+      "text": "tra team.",
+      "words": [
+        {
+          "text": "tra",
+          "start": 22.023,
+          "end": 22.123
+        },
+        {
+          "text": "team.",
+          "start": 22.183,
+          "end": 22.383
+        }
+      ]
+    },
+    {
+      "start": 23.363,
+      "end": 30.624,
+      "text": "Secondo: una multivocal review su cinquantotto riferimenti mappa dieci smell e dieci refactoring su tre",
+      "words": [
+        {
+          "text": "Secondo:",
+          "start": 23.363,
+          "end": 23.703
+        },
+        {
+          "text": "una",
+          "start": 24.243,
+          "end": 24.403
+        },
+        {
+          "text": "multivocal",
+          "start": 24.643,
+          "end": 25.263
+        },
+        {
+          "text": "review",
+          "start": 25.343,
+          "end": 25.603
+        },
+        {
+          "text": "su",
+          "start": 25.743,
+          "end": 25.823
+        },
+        {
+          "text": "cinquantotto",
+          "start": 25.963,
+          "end": 26.583
+        },
+        {
+          "text": "riferimenti",
+          "start": 26.623,
+          "end": 27.223
+        },
+        {
+          "text": "mappa",
+          "start": 27.424,
+          "end": 27.724
+        },
+        {
+          "text": "dieci",
+          "start": 28.024,
+          "end": 28.344
+        },
+        {
+          "text": "smell",
+          "start": 28.404,
+          "end": 28.744
+        },
+        {
+          "text": "e",
+          "start": 29.024,
+          "end": 29.064
+        },
+        {
+          "text": "dieci",
+          "start": 29.204,
+          "end": 29.504
+        },
+        {
+          "text": "refactoring",
+          "start": 29.544,
+          "end": 30.124
+        },
+        {
+          "text": "su",
+          "start": 30.224,
+          "end": 30.304
+        },
+        {
+          "text": "tre",
+          "start": 30.464,
+          "end": 30.624
+        }
+      ]
+    },
+    {
+      "start": 30.744,
+      "end": 36.265,
+      "text": "proprietà ISO IEC venticinquemiladieci: confidentiality, integrity e authenticity.",
+      "words": [
+        {
+          "text": "proprietà",
+          "start": 30.744,
+          "end": 31.164
+        },
+        {
+          "text": "ISO",
+          "start": 31.444,
+          "end": 31.664
+        },
+        {
+          "text": "IEC",
+          "start": 31.684,
+          "end": 32.044
+        },
+        {
+          "text": "venticinquemiladieci:",
+          "start": 32.264,
+          "end": 33.304
+        },
+        {
+          "text": "confidentiality,",
+          "start": 33.704,
+          "end": 34.584
+        },
+        {
+          "text": "integrity",
+          "start": 34.824,
+          "end": 35.405
+        },
+        {
+          "text": "e",
+          "start": 35.565,
+          "end": 35.605
+        },
+        {
+          "text": "authenticity.",
+          "start": 35.665,
+          "end": 36.265
+        }
+      ]
+    },
+    {
+      "start": 37.165,
+      "end": 42.425,
+      "text": "Terzo: il controllo accessi si protegge con OAuth due punto zero contro il confused deputy,",
+      "words": [
+        {
+          "text": "Terzo:",
+          "start": 37.165,
+          "end": 37.465
+        },
+        {
+          "text": "il",
+          "start": 37.965,
+          "end": 38.065
+        },
+        {
+          "text": "controllo",
+          "start": 38.105,
+          "end": 38.445
+        },
+        {
+          "text": "accessi",
+          "start": 38.465,
+          "end": 38.805
+        },
+        {
+          "text": "si",
+          "start": 38.865,
+          "end": 38.925
+        },
+        {
+          "text": "protegge",
+          "start": 38.965,
+          "end": 39.345
+        },
+        {
+          "text": "con",
+          "start": 39.425,
+          "end": 39.565
+        },
+        {
+          "text": "OAuth",
+          "start": 39.765,
+          "end": 40.185
+        },
+        {
+          "text": "due",
+          "start": 40.325,
+          "end": 40.445
+        },
+        {
+          "text": "punto",
+          "start": 40.505,
+          "end": 40.725
+        },
+        {
+          "text": "zero",
+          "start": 40.825,
+          "end": 41.065
+        },
+        {
+          "text": "contro",
+          "start": 41.125,
+          "end": 41.385
+        },
+        {
+          "text": "il",
+          "start": 41.425,
+          "end": 41.485
+        },
+        {
+          "text": "confused",
+          "start": 41.525,
+          "end": 42.045
+        },
+        {
+          "text": "deputy,",
+          "start": 42.065,
+          "end": 42.425
+        }
+      ]
+    },
+    {
+      "start": 42.885,
+      "end": 45.986,
+      "text": "API gateway al margine e principio del privilegio minimo.",
+      "words": [
+        {
+          "text": "API",
+          "start": 42.885,
+          "end": 43.066
+        },
+        {
+          "text": "gateway",
+          "start": 43.306,
+          "end": 43.626
+        },
+        {
+          "text": "al",
+          "start": 43.666,
+          "end": 43.746
+        },
+        {
+          "text": "margine",
+          "start": 43.806,
+          "end": 44.246
+        },
+        {
+          "text": "e",
+          "start": 44.386,
+          "end": 44.426
+        },
+        {
+          "text": "principio",
+          "start": 44.546,
+          "end": 45.046
+        },
+        {
+          "text": "del",
+          "start": 45.066,
+          "end": 45.186
+        },
+        {
+          "text": "privilegio",
+          "start": 45.246,
+          "end": 45.686
+        },
+        {
+          "text": "minimo.",
+          "start": 45.706,
+          "end": 45.986
+        }
+      ]
+    },
+    {
+      "start": 46.726,
+      "end": 51.467,
+      "text": "Quarto: niente crittografia fatta in casa né segreti nelle variabili d'ambiente;",
+      "words": [
+        {
+          "text": "Quarto:",
+          "start": 46.726,
+          "end": 47.066
+        },
+        {
+          "text": "niente",
+          "start": 47.666,
+          "end": 48.046
+        },
+        {
+          "text": "crittografia",
+          "start": 48.086,
+          "end": 48.646
+        },
+        {
+          "text": "fatta",
+          "start": 48.686,
+          "end": 48.906
+        },
+        {
+          "text": "in",
+          "start": 48.946,
+          "end": 49.006
+        },
+        {
+          "text": "casa",
+          "start": 49.046,
+          "end": 49.326
+        },
+        {
+          "text": "né",
+          "start": 49.626,
+          "end": 49.726
+        },
+        {
+          "text": "segreti",
+          "start": 49.866,
+          "end": 50.286
+        },
+        {
+          "text": "nelle",
+          "start": 50.346,
+          "end": 50.506
+        },
+        {
+          "text": "variabili",
+          "start": 50.546,
+          "end": 50.947
+        },
+        {
+          "text": "d'ambiente;",
+          "start": 50.967,
+          "end": 51.467
+        }
+      ]
+    },
+    {
+      "start": 51.967,
+      "end": 55.127,
+      "text": "dati sensibili e segreti vanno sempre cifrati a riposo.",
+      "words": [
+        {
+          "text": "dati",
+          "start": 51.967,
+          "end": 52.167
+        },
+        {
+          "text": "sensibili",
+          "start": 52.207,
+          "end": 52.667
+        },
+        {
+          "text": "e",
+          "start": 52.707,
+          "end": 52.747
+        },
+        {
+          "text": "segreti",
+          "start": 52.807,
+          "end": 53.167
+        },
+        {
+          "text": "vanno",
+          "start": 53.227,
+          "end": 53.447
+        },
+        {
+          "text": "sempre",
+          "start": 53.767,
+          "end": 54.167
+        },
+        {
+          "text": "cifrati",
+          "start": 54.307,
+          "end": 54.687
+        },
+        {
+          "text": "a",
+          "start": 54.727,
+          "end": 54.767
+        },
+        {
+          "text": "riposo.",
+          "start": 54.787,
+          "end": 55.127
+        }
+      ]
+    },
+    {
+      "start": 56.087,
+      "end": 64.448,
+      "text": "Quinto: mutual TLS, OpenID Connect, single sign-on e autorizzazione decentralizzata con JWT proteggono il traffico",
+      "words": [
+        {
+          "text": "Quinto:",
+          "start": 56.087,
+          "end": 56.387
+        },
+        {
+          "text": "mutual",
+          "start": 56.927,
+          "end": 57.307
+        },
+        {
+          "text": "TLS,",
+          "start": 57.347,
+          "end": 57.827
+        },
+        {
+          "text": "OpenID",
+          "start": 58.187,
+          "end": 58.507
+        },
+        {
+          "text": "Connect,",
+          "start": 58.627,
+          "end": 59.028
+        },
+        {
+          "text": "single",
+          "start": 59.408,
+          "end": 59.728
+        },
+        {
+          "text": "sign-on",
+          "start": 59.768,
+          "end": 60.168
+        },
+        {
+          "text": "e",
+          "start": 60.388,
+          "end": 60.428
+        },
+        {
+          "text": "autorizzazione",
+          "start": 60.588,
+          "end": 61.248
+        },
+        {
+          "text": "decentralizzata",
+          "start": 61.328,
+          "end": 62.168
+        },
+        {
+          "text": "con",
+          "start": 62.228,
+          "end": 62.368
+        },
+        {
+          "text": "JWT",
+          "start": 62.428,
+          "end": 62.928
+        },
+        {
+          "text": "proteggono",
+          "start": 63.408,
+          "end": 63.868
+        },
+        {
+          "text": "il",
+          "start": 63.928,
+          "end": 63.988
+        },
+        {
+          "text": "traffico",
+          "start": 64.068,
+          "end": 64.448
+        }
+      ]
+    },
+    {
+      "start": 64.508,
+      "end": 66.168,
+      "text": "interno e l'identità utente.",
+      "words": [
+        {
+          "text": "interno",
+          "start": 64.508,
+          "end": 64.908
+        },
+        {
+          "text": "e",
+          "start": 65.088,
+          "end": 65.128
+        },
+        {
+          "text": "l'identità",
+          "start": 65.208,
+          "end": 65.708
+        },
+        {
+          "text": "utente.",
+          "start": 65.808,
+          "end": 66.168
+        }
+      ]
+    },
+    {
+      "start": 67.009,
+      "end": 70.029,
+      "text": "Sesto: gli smell si eliminano con il ciclo Detect,",
+      "words": [
+        {
+          "text": "Sesto:",
+          "start": 67.009,
+          "end": 67.329
+        },
+        {
+          "text": "gli",
+          "start": 67.749,
+          "end": 67.869
+        },
+        {
+          "text": "smell",
+          "start": 67.929,
+          "end": 68.189
+        },
+        {
+          "text": "si",
+          "start": 68.349,
+          "end": 68.409
+        },
+        {
+          "text": "eliminano",
+          "start": 68.449,
+          "end": 68.849
+        },
+        {
+          "text": "con",
+          "start": 68.909,
+          "end": 69.029
+        },
+        {
+          "text": "il",
+          "start": 69.069,
+          "end": 69.129
+        },
+        {
+          "text": "ciclo",
+          "start": 69.189,
+          "end": 69.469
+        },
+        {
+          "text": "Detect,",
+          "start": 69.649,
+          "end": 70.029
+        }
+      ]
+    },
+    {
+      "start": 70.409,
+      "end": 74.089,
+      "text": "Triage su quattro dimensioni e Refactor con strumenti di supporto.",
+      "words": [
+        {
+          "text": "Triage",
+          "start": 70.409,
+          "end": 70.889
+        },
+        {
+          "text": "su",
+          "start": 70.989,
+          "end": 71.049
+        },
+        {
+          "text": "quattro",
+          "start": 71.129,
+          "end": 71.369
+        },
+        {
+          "text": "dimensioni",
+          "start": 71.409,
+          "end": 71.949
+        },
+        {
+          "text": "e",
+          "start": 72.149,
+          "end": 72.18900000000001
+        },
+        {
+          "text": "Refactor",
+          "start": 72.369,
+          "end": 72.869
+        },
+        {
+          "text": "con",
+          "start": 72.929,
+          "end": 73.069
+        },
+        {
+          "text": "strumenti",
+          "start": 73.109,
+          "end": 73.509
+        },
+        {
+          "text": "di",
+          "start": 73.549,
+          "end": 73.58900000000001
+        },
+        {
+          "text": "supporto.",
+          "start": 73.649,
+          "end": 74.089
+        }
+      ]
+    },
+    {
+      "start": 74.73,
+      "end": 77.89,
+      "text": "Mettete alla prova la preparazione rispondendo alle domande sulla destra.",
+      "words": [
+        {
+          "text": "Mettete",
+          "start": 74.73,
+          "end": 75.03
+        },
+        {
+          "text": "alla",
+          "start": 75.07,
+          "end": 75.19
+        },
+        {
+          "text": "prova",
+          "start": 75.21,
+          "end": 75.43
+        },
+        {
+          "text": "la",
+          "start": 75.49,
+          "end": 75.53
+        },
+        {
+          "text": "preparazione",
+          "start": 75.55,
+          "end": 76.21
+        },
+        {
+          "text": "rispondendo",
+          "start": 76.37,
+          "end": 76.85
+        },
+        {
+          "text": "alle",
+          "start": 76.87,
+          "end": 77.01
+        },
+        {
+          "text": "domande",
+          "start": 77.03,
+          "end": 77.31
+        },
+        {
+          "text": "sulla",
+          "start": 77.35,
+          "end": 77.53
+        },
+        {
+          "text": "destra.",
+          "start": 77.57,
+          "end": 77.89
+        }
+      ]
+    }
+  ]
+}

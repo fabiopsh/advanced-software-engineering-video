@@ -1,0 +1,1071 @@
+{
+  "duration": 80.62,
+  "segments": [
+    {
+      "start": 0.04,
+      "end": 3.08,
+      "text": "Approfondiamo il modello Software as a Service.",
+      "words": [
+        {
+          "text": "Approfondiamo",
+          "start": 0.04,
+          "end": 0.72
+        },
+        {
+          "text": "il",
+          "start": 0.94,
+          "end": 1.02
+        },
+        {
+          "text": "modello",
+          "start": 1.06,
+          "end": 1.44
+        },
+        {
+          "text": "Software",
+          "start": 1.7,
+          "end": 2.26
+        },
+        {
+          "text": "as",
+          "start": 2.4,
+          "end": 2.52
+        },
+        {
+          "text": "a",
+          "start": 2.56,
+          "end": 2.6
+        },
+        {
+          "text": "Service.",
+          "start": 2.66,
+          "end": 3.08
+        }
+      ]
+    },
+    {
+      "start": 3.94,
+      "end": 7.541,
+      "text": "In origine i prodotti venivano installati sui computer dei clienti,",
+      "words": [
+        {
+          "text": "In",
+          "start": 3.94,
+          "end": 4.02
+        },
+        {
+          "text": "origine",
+          "start": 4.061,
+          "end": 4.461
+        },
+        {
+          "text": "i",
+          "start": 4.621,
+          "end": 4.6610000000000005
+        },
+        {
+          "text": "prodotti",
+          "start": 4.701,
+          "end": 5.081
+        },
+        {
+          "text": "venivano",
+          "start": 5.141,
+          "end": 5.501
+        },
+        {
+          "text": "installati",
+          "start": 5.581,
+          "end": 6.201
+        },
+        {
+          "text": "sui",
+          "start": 6.261,
+          "end": 6.401
+        },
+        {
+          "text": "computer",
+          "start": 6.461,
+          "end": 6.901
+        },
+        {
+          "text": "dei",
+          "start": 6.941,
+          "end": 7.061
+        },
+        {
+          "text": "clienti,",
+          "start": 7.081,
+          "end": 7.541
+        }
+      ]
+    },
+    {
+      "start": 7.821,
+      "end": 15.022,
+      "text": "generando tre problemi: configurazione locale complessa, gestione degli aggiornamenti a carico dell'utente e necessità per",
+      "words": [
+        {
+          "text": "generando",
+          "start": 7.821,
+          "end": 8.241
+        },
+        {
+          "text": "tre",
+          "start": 8.361,
+          "end": 8.481
+        },
+        {
+          "text": "problemi:",
+          "start": 8.521,
+          "end": 8.921
+        },
+        {
+          "text": "configurazione",
+          "start": 9.481,
+          "end": 10.161
+        },
+        {
+          "text": "locale",
+          "start": 10.201,
+          "end": 10.521
+        },
+        {
+          "text": "complessa,",
+          "start": 10.561,
+          "end": 11.061
+        },
+        {
+          "text": "gestione",
+          "start": 11.521,
+          "end": 11.941
+        },
+        {
+          "text": "degli",
+          "start": 11.981,
+          "end": 12.122
+        },
+        {
+          "text": "aggiornamenti",
+          "start": 12.142,
+          "end": 12.702
+        },
+        {
+          "text": "a",
+          "start": 12.762,
+          "end": 12.802
+        },
+        {
+          "text": "carico",
+          "start": 12.862,
+          "end": 13.162
+        },
+        {
+          "text": "dell'utente",
+          "start": 13.202,
+          "end": 13.722
+        },
+        {
+          "text": "e",
+          "start": 14.222,
+          "end": 14.262
+        },
+        {
+          "text": "necessità",
+          "start": 14.362,
+          "end": 14.842
+        },
+        {
+          "text": "per",
+          "start": 14.922,
+          "end": 15.022
+        }
+      ]
+    },
+    {
+      "start": 15.062,
+      "end": 17.162,
+      "text": "l'azienda di mantenere più versioni diverse.",
+      "words": [
+        {
+          "text": "l'azienda",
+          "start": 15.062,
+          "end": 15.442
+        },
+        {
+          "text": "di",
+          "start": 15.482,
+          "end": 15.542
+        },
+        {
+          "text": "mantenere",
+          "start": 15.582,
+          "end": 16.002
+        },
+        {
+          "text": "più",
+          "start": 16.122,
+          "end": 16.242
+        },
+        {
+          "text": "versioni",
+          "start": 16.342,
+          "end": 16.722
+        },
+        {
+          "text": "diverse.",
+          "start": 16.762,
+          "end": 17.162
+        }
+      ]
+    },
+    {
+      "start": 17.882,
+      "end": 22.563,
+      "text": "Con il SaaS il cliente non installa nulla, paga un abbonamento e accede da remoto.",
+      "words": [
+        {
+          "text": "Con",
+          "start": 17.882,
+          "end": 17.982
+        },
+        {
+          "text": "il",
+          "start": 18.022,
+          "end": 18.102
+        },
+        {
+          "text": "SaaS",
+          "start": 18.182,
+          "end": 18.442
+        },
+        {
+          "text": "il",
+          "start": 18.702,
+          "end": 18.782
+        },
+        {
+          "text": "cliente",
+          "start": 18.842,
+          "end": 19.282
+        },
+        {
+          "text": "non",
+          "start": 19.442,
+          "end": 19.562
+        },
+        {
+          "text": "installa",
+          "start": 19.622,
+          "end": 19.962
+        },
+        {
+          "text": "nulla,",
+          "start": 20.022,
+          "end": 20.263
+        },
+        {
+          "text": "paga",
+          "start": 20.643,
+          "end": 20.903
+        },
+        {
+          "text": "un",
+          "start": 20.943,
+          "end": 21.023
+        },
+        {
+          "text": "abbonamento",
+          "start": 21.043,
+          "end": 21.543
+        },
+        {
+          "text": "e",
+          "start": 21.683,
+          "end": 21.723
+        },
+        {
+          "text": "accede",
+          "start": 21.743,
+          "end": 22.063
+        },
+        {
+          "text": "da",
+          "start": 22.123,
+          "end": 22.203
+        },
+        {
+          "text": "remoto.",
+          "start": 22.223,
+          "end": 22.563
+        }
+      ]
+    },
+    {
+      "start": 23.243,
+      "end": 25.763,
+      "text": "Per chi offre il prodotto ci sono sei grandi vantaggi.",
+      "words": [
+        {
+          "text": "Per",
+          "start": 23.243,
+          "end": 23.363
+        },
+        {
+          "text": "chi",
+          "start": 23.383,
+          "end": 23.483
+        },
+        {
+          "text": "offre",
+          "start": 23.563,
+          "end": 23.763
+        },
+        {
+          "text": "il",
+          "start": 23.803,
+          "end": 23.863
+        },
+        {
+          "text": "prodotto",
+          "start": 23.883,
+          "end": 24.263
+        },
+        {
+          "text": "ci",
+          "start": 24.383,
+          "end": 24.463
+        },
+        {
+          "text": "sono",
+          "start": 24.523,
+          "end": 24.683
+        },
+        {
+          "text": "sei",
+          "start": 24.783,
+          "end": 24.983
+        },
+        {
+          "text": "grandi",
+          "start": 25.043,
+          "end": 25.283
+        },
+        {
+          "text": "vantaggi.",
+          "start": 25.343,
+          "end": 25.763
+        }
+      ]
+    },
+    {
+      "start": 26.403,
+      "end": 30.344,
+      "text": "Primo, cash flow regolare tramite abbonamenti o pagamento a consumo.",
+      "words": [
+        {
+          "text": "Primo,",
+          "start": 26.403,
+          "end": 26.643
+        },
+        {
+          "text": "cash",
+          "start": 27.043,
+          "end": 27.263
+        },
+        {
+          "text": "flow",
+          "start": 27.323,
+          "end": 27.523
+        },
+        {
+          "text": "regolare",
+          "start": 27.623,
+          "end": 28.063
+        },
+        {
+          "text": "tramite",
+          "start": 28.183,
+          "end": 28.544
+        },
+        {
+          "text": "abbonamenti",
+          "start": 28.604,
+          "end": 29.144
+        },
+        {
+          "text": "o",
+          "start": 29.284,
+          "end": 29.324
+        },
+        {
+          "text": "pagamento",
+          "start": 29.404,
+          "end": 29.824
+        },
+        {
+          "text": "a",
+          "start": 29.864,
+          "end": 29.904
+        },
+        {
+          "text": "consumo.",
+          "start": 29.944,
+          "end": 30.344
+        }
+      ]
+    },
+    {
+      "start": 31.064,
+      "end": 36.705,
+      "text": "Secondo, update management centralizzato: tutti ricevono gli aggiornamenti insieme su un'unica versione.",
+      "words": [
+        {
+          "text": "Secondo,",
+          "start": 31.064,
+          "end": 31.404
+        },
+        {
+          "text": "update",
+          "start": 31.764,
+          "end": 32.144
+        },
+        {
+          "text": "management",
+          "start": 32.184,
+          "end": 32.664
+        },
+        {
+          "text": "centralizzato:",
+          "start": 32.744,
+          "end": 33.404
+        },
+        {
+          "text": "tutti",
+          "start": 33.864,
+          "end": 34.124
+        },
+        {
+          "text": "ricevono",
+          "start": 34.184,
+          "end": 34.584
+        },
+        {
+          "text": "gli",
+          "start": 34.584,
+          "end": 34.684
+        },
+        {
+          "text": "aggiornamenti",
+          "start": 34.704,
+          "end": 35.244
+        },
+        {
+          "text": "insieme",
+          "start": 35.304,
+          "end": 35.664
+        },
+        {
+          "text": "su",
+          "start": 35.784,
+          "end": 35.864
+        },
+        {
+          "text": "un'unica",
+          "start": 35.904,
+          "end": 36.244
+        },
+        {
+          "text": "versione.",
+          "start": 36.284,
+          "end": 36.705
+        }
+      ]
+    },
+    {
+      "start": 37.445,
+      "end": 40.585,
+      "text": "Terzo, continuous deployment immediato dopo il collaudo.",
+      "words": [
+        {
+          "text": "Terzo,",
+          "start": 37.445,
+          "end": 37.765
+        },
+        {
+          "text": "continuous",
+          "start": 38.165,
+          "end": 38.685
+        },
+        {
+          "text": "deployment",
+          "start": 38.725,
+          "end": 39.245
+        },
+        {
+          "text": "immediato",
+          "start": 39.325,
+          "end": 39.785
+        },
+        {
+          "text": "dopo",
+          "start": 39.865,
+          "end": 40.025
+        },
+        {
+          "text": "il",
+          "start": 40.065,
+          "end": 40.125
+        },
+        {
+          "text": "collaudo.",
+          "start": 40.145,
+          "end": 40.585
+        }
+      ]
+    },
+    {
+      "start": 41.285,
+      "end": 45.986,
+      "text": "Quarto, payment flexibility per attrarre anche piccole aziende senza grandi costi iniziali.",
+      "words": [
+        {
+          "text": "Quarto,",
+          "start": 41.285,
+          "end": 41.625
+        },
+        {
+          "text": "payment",
+          "start": 41.885,
+          "end": 42.225
+        },
+        {
+          "text": "flexibility",
+          "start": 42.285,
+          "end": 42.905
+        },
+        {
+          "text": "per",
+          "start": 42.965,
+          "end": 43.085
+        },
+        {
+          "text": "attrarre",
+          "start": 43.105,
+          "end": 43.485
+        },
+        {
+          "text": "anche",
+          "start": 43.565,
+          "end": 43.765
+        },
+        {
+          "text": "piccole",
+          "start": 43.845,
+          "end": 44.185
+        },
+        {
+          "text": "aziende",
+          "start": 44.225,
+          "end": 44.606
+        },
+        {
+          "text": "senza",
+          "start": 44.686,
+          "end": 44.946
+        },
+        {
+          "text": "grandi",
+          "start": 44.986,
+          "end": 45.226
+        },
+        {
+          "text": "costi",
+          "start": 45.266,
+          "end": 45.486
+        },
+        {
+          "text": "iniziali.",
+          "start": 45.546,
+          "end": 45.986
+        }
+      ]
+    },
+    {
+      "start": 46.686,
+      "end": 51.346,
+      "text": "Quinto, formule try before you buy per raccogliere presto il riscontro degli utenti,",
+      "words": [
+        {
+          "text": "Quinto,",
+          "start": 46.686,
+          "end": 46.966
+        },
+        {
+          "text": "formule",
+          "start": 47.246,
+          "end": 47.646
+        },
+        {
+          "text": "try",
+          "start": 47.826,
+          "end": 48.126
+        },
+        {
+          "text": "before",
+          "start": 48.166,
+          "end": 48.486
+        },
+        {
+          "text": "you",
+          "start": 48.506,
+          "end": 48.586
+        },
+        {
+          "text": "buy",
+          "start": 48.626,
+          "end": 48.866
+        },
+        {
+          "text": "per",
+          "start": 49.246,
+          "end": 49.346
+        },
+        {
+          "text": "raccogliere",
+          "start": 49.386,
+          "end": 49.766
+        },
+        {
+          "text": "presto",
+          "start": 49.846,
+          "end": 50.186
+        },
+        {
+          "text": "il",
+          "start": 50.246,
+          "end": 50.306
+        },
+        {
+          "text": "riscontro",
+          "start": 50.366,
+          "end": 50.766
+        },
+        {
+          "text": "degli",
+          "start": 50.806,
+          "end": 50.966
+        },
+        {
+          "text": "utenti,",
+          "start": 50.986,
+          "end": 51.346
+        }
+      ]
+    },
+    {
+      "start": 51.746,
+      "end": 54.747,
+      "text": "e sesto, data collection diretta sull'uso del prodotto.",
+      "words": [
+        {
+          "text": "e",
+          "start": 51.746,
+          "end": 51.786
+        },
+        {
+          "text": "sesto,",
+          "start": 51.986,
+          "end": 52.306
+        },
+        {
+          "text": "data",
+          "start": 52.567,
+          "end": 52.807
+        },
+        {
+          "text": "collection",
+          "start": 52.867,
+          "end": 53.327
+        },
+        {
+          "text": "diretta",
+          "start": 53.367,
+          "end": 53.747
+        },
+        {
+          "text": "sull'uso",
+          "start": 53.867,
+          "end": 54.207
+        },
+        {
+          "text": "del",
+          "start": 54.227,
+          "end": 54.347
+        },
+        {
+          "text": "prodotto.",
+          "start": 54.367,
+          "end": 54.747
+        }
+      ]
+    },
+    {
+      "start": 55.647,
+      "end": 58.507,
+      "text": "Dal lato cliente i vantaggi sono chiari: accesso da mobile,",
+      "words": [
+        {
+          "text": "Dal",
+          "start": 55.647,
+          "end": 55.747
+        },
+        {
+          "text": "lato",
+          "start": 55.767,
+          "end": 55.947
+        },
+        {
+          "text": "cliente",
+          "start": 55.967,
+          "end": 56.327
+        },
+        {
+          "text": "i",
+          "start": 56.367,
+          "end": 56.407
+        },
+        {
+          "text": "vantaggi",
+          "start": 56.407,
+          "end": 56.747
+        },
+        {
+          "text": "sono",
+          "start": 56.807,
+          "end": 56.947
+        },
+        {
+          "text": "chiari:",
+          "start": 56.967,
+          "end": 57.227
+        },
+        {
+          "text": "accesso",
+          "start": 57.567,
+          "end": 57.907
+        },
+        {
+          "text": "da",
+          "start": 57.967,
+          "end": 58.027
+        },
+        {
+          "text": "mobile,",
+          "start": 58.067,
+          "end": 58.507
+        }
+      ]
+    },
+    {
+      "start": 58.747,
+      "end": 63.828,
+      "text": "laptop e desktop, nessun costo iniziale per hardware o licenze e aggiornamenti immediati.",
+      "words": [
+        {
+          "text": "laptop",
+          "start": 58.747,
+          "end": 59.127
+        },
+        {
+          "text": "e",
+          "start": 59.267,
+          "end": 59.307
+        },
+        {
+          "text": "desktop,",
+          "start": 59.367,
+          "end": 59.767
+        },
+        {
+          "text": "nessun",
+          "start": 60.147,
+          "end": 60.447
+        },
+        {
+          "text": "costo",
+          "start": 60.487,
+          "end": 60.748
+        },
+        {
+          "text": "iniziale",
+          "start": 60.788,
+          "end": 61.268
+        },
+        {
+          "text": "per",
+          "start": 61.308,
+          "end": 61.428
+        },
+        {
+          "text": "hardware",
+          "start": 61.468,
+          "end": 61.868
+        },
+        {
+          "text": "o",
+          "start": 61.868,
+          "end": 61.908
+        },
+        {
+          "text": "licenze",
+          "start": 61.928,
+          "end": 62.348
+        },
+        {
+          "text": "e",
+          "start": 62.688,
+          "end": 62.728
+        },
+        {
+          "text": "aggiornamenti",
+          "start": 62.788,
+          "end": 63.328
+        },
+        {
+          "text": "immediati.",
+          "start": 63.368,
+          "end": 63.828
+        }
+      ]
+    },
+    {
+      "start": 64.468,
+      "end": 69.109,
+      "text": "Tuttavia restano sei svantaggi critici: conformità alle norme europee sulla privacy,",
+      "words": [
+        {
+          "text": "Tuttavia",
+          "start": 64.468,
+          "end": 64.828
+        },
+        {
+          "text": "restano",
+          "start": 65.108,
+          "end": 65.388
+        },
+        {
+          "text": "sei",
+          "start": 65.508,
+          "end": 65.688
+        },
+        {
+          "text": "svantaggi",
+          "start": 65.748,
+          "end": 66.228
+        },
+        {
+          "text": "critici:",
+          "start": 66.248,
+          "end": 66.648
+        },
+        {
+          "text": "conformità",
+          "start": 67.128,
+          "end": 67.588
+        },
+        {
+          "text": "alle",
+          "start": 67.668,
+          "end": 67.808
+        },
+        {
+          "text": "norme",
+          "start": 67.868,
+          "end": 68.108
+        },
+        {
+          "text": "europee",
+          "start": 68.148,
+          "end": 68.488
+        },
+        {
+          "text": "sulla",
+          "start": 68.528,
+          "end": 68.689
+        },
+        {
+          "text": "privacy,",
+          "start": 68.709,
+          "end": 69.109
+        }
+      ]
+    },
+    {
+      "start": 69.569,
+      "end": 73.789,
+      "text": "timori di sicurezza nel cedere i dati, vincoli di rete nei grandi trasferimenti,",
+      "words": [
+        {
+          "text": "timori",
+          "start": 69.569,
+          "end": 69.849
+        },
+        {
+          "text": "di",
+          "start": 69.909,
+          "end": 69.989
+        },
+        {
+          "text": "sicurezza",
+          "start": 70.049,
+          "end": 70.549
+        },
+        {
+          "text": "nel",
+          "start": 70.589,
+          "end": 70.709
+        },
+        {
+          "text": "cedere",
+          "start": 70.749,
+          "end": 71.029
+        },
+        {
+          "text": "i",
+          "start": 71.069,
+          "end": 71.10900000000001
+        },
+        {
+          "text": "dati,",
+          "start": 71.109,
+          "end": 71.369
+        },
+        {
+          "text": "vincoli",
+          "start": 71.889,
+          "end": 72.289
+        },
+        {
+          "text": "di",
+          "start": 72.349,
+          "end": 72.409
+        },
+        {
+          "text": "rete",
+          "start": 72.449,
+          "end": 72.669
+        },
+        {
+          "text": "nei",
+          "start": 72.729,
+          "end": 72.849
+        },
+        {
+          "text": "grandi",
+          "start": 72.869,
+          "end": 73.129
+        },
+        {
+          "text": "trasferimenti,",
+          "start": 73.189,
+          "end": 73.789
+        }
+      ]
+    },
+    {
+      "start": 74.289,
+      "end": 79.97,
+      "text": "scambio dati difficile senza API adatte, perdita di controllo sugli aggiornamenti e rischio di service",
+      "words": [
+        {
+          "text": "scambio",
+          "start": 74.289,
+          "end": 74.629
+        },
+        {
+          "text": "dati",
+          "start": 74.689,
+          "end": 74.889
+        },
+        {
+          "text": "difficile",
+          "start": 74.929,
+          "end": 75.449
+        },
+        {
+          "text": "senza",
+          "start": 75.509,
+          "end": 75.749
+        },
+        {
+          "text": "API",
+          "start": 75.809,
+          "end": 75.949
+        },
+        {
+          "text": "adatte,",
+          "start": 76.029,
+          "end": 76.389
+        },
+        {
+          "text": "perdita",
+          "start": 76.79,
+          "end": 77.17
+        },
+        {
+          "text": "di",
+          "start": 77.21,
+          "end": 77.27
+        },
+        {
+          "text": "controllo",
+          "start": 77.31,
+          "end": 77.73
+        },
+        {
+          "text": "sugli",
+          "start": 77.77,
+          "end": 77.93
+        },
+        {
+          "text": "aggiornamenti",
+          "start": 77.95,
+          "end": 78.51
+        },
+        {
+          "text": "e",
+          "start": 78.81,
+          "end": 78.85000000000001
+        },
+        {
+          "text": "rischio",
+          "start": 78.99,
+          "end": 79.33
+        },
+        {
+          "text": "di",
+          "start": 79.39,
+          "end": 79.45
+        },
+        {
+          "text": "service",
+          "start": 79.57,
+          "end": 79.97
+        }
+      ]
+    },
+    {
+      "start": 80.01,
+      "end": 80.37,
+      "text": "lock-in.",
+      "words": [
+        {
+          "text": "lock-in.",
+          "start": 80.01,
+          "end": 80.37
+        }
+      ]
+    }
+  ]
+}

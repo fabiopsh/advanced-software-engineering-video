@@ -1,0 +1,1095 @@
+{
+  "duration": 82.15,
+  "segments": [
+    {
+      "start": 0.04,
+      "end": 3.281,
+      "text": "Fissiamo quattro dettagli concreti fondamentali per l'esame.",
+      "words": [
+        {
+          "text": "Fissiamo",
+          "start": 0.04,
+          "end": 0.44
+        },
+        {
+          "text": "quattro",
+          "start": 0.6,
+          "end": 0.92
+        },
+        {
+          "text": "dettagli",
+          "start": 0.96,
+          "end": 1.34
+        },
+        {
+          "text": "concreti",
+          "start": 1.38,
+          "end": 1.84
+        },
+        {
+          "text": "fondamentali",
+          "start": 2.04,
+          "end": 2.741
+        },
+        {
+          "text": "per",
+          "start": 2.781,
+          "end": 2.881
+        },
+        {
+          "text": "l'esame.",
+          "start": 2.921,
+          "end": 3.281
+        }
+      ]
+    },
+    {
+      "start": 4.121,
+      "end": 7.702,
+      "text": "Prima di tutto, i tre vantaggi dei container richiamati in apertura:",
+      "words": [
+        {
+          "text": "Prima",
+          "start": 4.121,
+          "end": 4.301
+        },
+        {
+          "text": "di",
+          "start": 4.341,
+          "end": 4.401
+        },
+        {
+          "text": "tutto,",
+          "start": 4.441,
+          "end": 4.741
+        },
+        {
+          "text": "i",
+          "start": 5.041,
+          "end": 5.081
+        },
+        {
+          "text": "tre",
+          "start": 5.181,
+          "end": 5.321
+        },
+        {
+          "text": "vantaggi",
+          "start": 5.421,
+          "end": 5.841
+        },
+        {
+          "text": "dei",
+          "start": 5.901,
+          "end": 6.021
+        },
+        {
+          "text": "container",
+          "start": 6.061,
+          "end": 6.562
+        },
+        {
+          "text": "richiamati",
+          "start": 6.762,
+          "end": 7.162
+        },
+        {
+          "text": "in",
+          "start": 7.182,
+          "end": 7.242
+        },
+        {
+          "text": "apertura:",
+          "start": 7.262,
+          "end": 7.702
+        }
+      ]
+    },
+    {
+      "start": 8.382,
+      "end": 10.963,
+      "text": "garantiscono un isolamento leggero dell'ambiente applicativo,",
+      "words": [
+        {
+          "text": "garantiscono",
+          "start": 8.382,
+          "end": 8.922
+        },
+        {
+          "text": "un",
+          "start": 8.962,
+          "end": 9.022
+        },
+        {
+          "text": "isolamento",
+          "start": 9.042,
+          "end": 9.482
+        },
+        {
+          "text": "leggero",
+          "start": 9.502,
+          "end": 9.902
+        },
+        {
+          "text": "dell'ambiente",
+          "start": 9.942,
+          "end": 10.383
+        },
+        {
+          "text": "applicativo,",
+          "start": 10.403,
+          "end": 10.963
+        }
+      ]
+    },
+    {
+      "start": 11.563,
+      "end": 17.304,
+      "text": "assicurano portabilità dallo sviluppo alla produzione eseguendo la stessa immagine su qualunque macchina,",
+      "words": [
+        {
+          "text": "assicurano",
+          "start": 11.563,
+          "end": 12.063
+        },
+        {
+          "text": "portabilità",
+          "start": 12.123,
+          "end": 12.663
+        },
+        {
+          "text": "dallo",
+          "start": 12.823,
+          "end": 13.043
+        },
+        {
+          "text": "sviluppo",
+          "start": 13.103,
+          "end": 13.563
+        },
+        {
+          "text": "alla",
+          "start": 13.703,
+          "end": 13.863
+        },
+        {
+          "text": "produzione",
+          "start": 13.903,
+          "end": 14.524
+        },
+        {
+          "text": "eseguendo",
+          "start": 14.824,
+          "end": 15.224
+        },
+        {
+          "text": "la",
+          "start": 15.304,
+          "end": 15.384
+        },
+        {
+          "text": "stessa",
+          "start": 15.444,
+          "end": 15.744
+        },
+        {
+          "text": "immagine",
+          "start": 15.784,
+          "end": 16.224
+        },
+        {
+          "text": "su",
+          "start": 16.284,
+          "end": 16.364
+        },
+        {
+          "text": "qualunque",
+          "start": 16.444,
+          "end": 16.844
+        },
+        {
+          "text": "macchina,",
+          "start": 16.904,
+          "end": 17.304
+        }
+      ]
+    },
+    {
+      "start": 17.944,
+      "end": 23.666,
+      "text": "e aumentano l'utilizzo di CPU e RAM per ogni macchina fisica ospitando più workload insieme.",
+      "words": [
+        {
+          "text": "e",
+          "start": 17.944,
+          "end": 17.984
+        },
+        {
+          "text": "aumentano",
+          "start": 18.044,
+          "end": 18.565
+        },
+        {
+          "text": "l'utilizzo",
+          "start": 18.705,
+          "end": 19.145
+        },
+        {
+          "text": "di",
+          "start": 19.185,
+          "end": 19.245
+        },
+        {
+          "text": "CPU",
+          "start": 19.325,
+          "end": 19.725
+        },
+        {
+          "text": "e",
+          "start": 19.905,
+          "end": 19.945
+        },
+        {
+          "text": "RAM",
+          "start": 20.065,
+          "end": 20.265
+        },
+        {
+          "text": "per",
+          "start": 20.505,
+          "end": 20.665
+        },
+        {
+          "text": "ogni",
+          "start": 20.725,
+          "end": 20.905
+        },
+        {
+          "text": "macchina",
+          "start": 20.965,
+          "end": 21.285
+        },
+        {
+          "text": "fisica",
+          "start": 21.325,
+          "end": 21.685
+        },
+        {
+          "text": "ospitando",
+          "start": 21.965,
+          "end": 22.425
+        },
+        {
+          "text": "più",
+          "start": 22.545,
+          "end": 22.666
+        },
+        {
+          "text": "workload",
+          "start": 22.766,
+          "end": 23.186
+        },
+        {
+          "text": "insieme.",
+          "start": 23.246,
+          "end": 23.666
+        }
+      ]
+    },
+    {
+      "start": 24.726,
+      "end": 29.147,
+      "text": "Vediamo poi la traccia esatta del guasto di un worker node in App uno punto",
+      "words": [
+        {
+          "text": "Vediamo",
+          "start": 24.726,
+          "end": 25.006
+        },
+        {
+          "text": "poi",
+          "start": 25.066,
+          "end": 25.206
+        },
+        {
+          "text": "la",
+          "start": 25.326,
+          "end": 25.406
+        },
+        {
+          "text": "traccia",
+          "start": 25.446,
+          "end": 25.726
+        },
+        {
+          "text": "esatta",
+          "start": 25.766,
+          "end": 26.066
+        },
+        {
+          "text": "del",
+          "start": 26.146,
+          "end": 26.266
+        },
+        {
+          "text": "guasto",
+          "start": 26.306,
+          "end": 26.706
+        },
+        {
+          "text": "di",
+          "start": 26.767,
+          "end": 26.827
+        },
+        {
+          "text": "un",
+          "start": 26.867,
+          "end": 26.947
+        },
+        {
+          "text": "worker",
+          "start": 26.987,
+          "end": 27.287
+        },
+        {
+          "text": "node",
+          "start": 27.367,
+          "end": 27.627
+        },
+        {
+          "text": "in",
+          "start": 27.887,
+          "end": 27.987
+        },
+        {
+          "text": "App",
+          "start": 28.307,
+          "end": 28.467
+        },
+        {
+          "text": "uno",
+          "start": 28.687,
+          "end": 28.847
+        },
+        {
+          "text": "punto",
+          "start": 28.907,
+          "end": 29.147
+        }
+      ]
+    },
+    {
+      "start": 29.227,
+      "end": 29.547,
+      "text": "yaml.",
+      "words": [
+        {
+          "text": "yaml.",
+          "start": 29.227,
+          "end": 29.547
+        }
+      ]
+    },
+    {
+      "start": 30.507,
+      "end": 33.848,
+      "text": "Pod uno contiene due container ed è richiesto in tre copie;",
+      "words": [
+        {
+          "text": "Pod",
+          "start": 30.507,
+          "end": 30.667
+        },
+        {
+          "text": "uno",
+          "start": 30.727,
+          "end": 30.888
+        },
+        {
+          "text": "contiene",
+          "start": 31.108,
+          "end": 31.488
+        },
+        {
+          "text": "due",
+          "start": 31.628,
+          "end": 31.788
+        },
+        {
+          "text": "container",
+          "start": 31.828,
+          "end": 32.328
+        },
+        {
+          "text": "ed",
+          "start": 32.628,
+          "end": 32.708
+        },
+        {
+          "text": "è",
+          "start": 32.748,
+          "end": 32.788
+        },
+        {
+          "text": "richiesto",
+          "start": 32.808,
+          "end": 33.168
+        },
+        {
+          "text": "in",
+          "start": 33.208,
+          "end": 33.268
+        },
+        {
+          "text": "tre",
+          "start": 33.328,
+          "end": 33.448
+        },
+        {
+          "text": "copie;",
+          "start": 33.528,
+          "end": 33.848
+        }
+      ]
+    },
+    {
+      "start": 34.548,
+      "end": 38.169,
+      "text": "Pod due contiene un solo container ed è richiesto in due copie.",
+      "words": [
+        {
+          "text": "Pod",
+          "start": 34.548,
+          "end": 34.708
+        },
+        {
+          "text": "due",
+          "start": 34.768,
+          "end": 34.969
+        },
+        {
+          "text": "contiene",
+          "start": 35.149,
+          "end": 35.529
+        },
+        {
+          "text": "un",
+          "start": 35.709,
+          "end": 35.809
+        },
+        {
+          "text": "solo",
+          "start": 35.909,
+          "end": 36.109
+        },
+        {
+          "text": "container",
+          "start": 36.149,
+          "end": 36.669
+        },
+        {
+          "text": "ed",
+          "start": 36.969,
+          "end": 37.049
+        },
+        {
+          "text": "è",
+          "start": 37.069,
+          "end": 37.109
+        },
+        {
+          "text": "richiesto",
+          "start": 37.129,
+          "end": 37.509
+        },
+        {
+          "text": "in",
+          "start": 37.549,
+          "end": 37.609
+        },
+        {
+          "text": "due",
+          "start": 37.669,
+          "end": 37.829
+        },
+        {
+          "text": "copie.",
+          "start": 37.869,
+          "end": 38.169
+        }
+      ]
+    },
+    {
+      "start": 38.949,
+      "end": 42.59,
+      "text": "Se cade un worker node, le repliche ospitate spariscono e restano,",
+      "words": [
+        {
+          "text": "Se",
+          "start": 38.949,
+          "end": 39.009
+        },
+        {
+          "text": "cade",
+          "start": 39.09,
+          "end": 39.27
+        },
+        {
+          "text": "un",
+          "start": 39.31,
+          "end": 39.35
+        },
+        {
+          "text": "worker",
+          "start": 39.39,
+          "end": 39.69
+        },
+        {
+          "text": "node,",
+          "start": 39.75,
+          "end": 39.99
+        },
+        {
+          "text": "le",
+          "start": 40.33,
+          "end": 40.39
+        },
+        {
+          "text": "repliche",
+          "start": 40.43,
+          "end": 40.73
+        },
+        {
+          "text": "ospitate",
+          "start": 40.79,
+          "end": 41.21
+        },
+        {
+          "text": "spariscono",
+          "start": 41.27,
+          "end": 41.83
+        },
+        {
+          "text": "e",
+          "start": 42.13,
+          "end": 42.17
+        },
+        {
+          "text": "restano,",
+          "start": 42.25,
+          "end": 42.59
+        }
+      ]
+    },
+    {
+      "start": 42.65,
+      "end": 46.131,
+      "text": "per esempio, solo due copie del Pod uno invece delle tre desiderate.",
+      "words": [
+        {
+          "text": "per",
+          "start": 42.65,
+          "end": 42.75
+        },
+        {
+          "text": "esempio,",
+          "start": 42.77,
+          "end": 43.13
+        },
+        {
+          "text": "solo",
+          "start": 43.191,
+          "end": 43.371
+        },
+        {
+          "text": "due",
+          "start": 43.511,
+          "end": 43.711
+        },
+        {
+          "text": "copie",
+          "start": 43.751,
+          "end": 44.031
+        },
+        {
+          "text": "del",
+          "start": 44.051,
+          "end": 44.171
+        },
+        {
+          "text": "Pod",
+          "start": 44.211,
+          "end": 44.371
+        },
+        {
+          "text": "uno",
+          "start": 44.431,
+          "end": 44.611
+        },
+        {
+          "text": "invece",
+          "start": 44.771,
+          "end": 45.151
+        },
+        {
+          "text": "delle",
+          "start": 45.191,
+          "end": 45.371
+        },
+        {
+          "text": "tre",
+          "start": 45.411,
+          "end": 45.511
+        },
+        {
+          "text": "desiderate.",
+          "start": 45.571,
+          "end": 46.131
+        }
+      ]
+    },
+    {
+      "start": 46.971,
+      "end": 51.913,
+      "text": "Kubernetes rileva lo scostamento dal desired state e ricrea la replica mancante su un nodo",
+      "words": [
+        {
+          "text": "Kubernetes",
+          "start": 46.971,
+          "end": 47.512
+        },
+        {
+          "text": "rileva",
+          "start": 47.732,
+          "end": 48.012
+        },
+        {
+          "text": "lo",
+          "start": 48.052,
+          "end": 48.112
+        },
+        {
+          "text": "scostamento",
+          "start": 48.132,
+          "end": 48.692
+        },
+        {
+          "text": "dal",
+          "start": 48.772,
+          "end": 48.872
+        },
+        {
+          "text": "desired",
+          "start": 48.912,
+          "end": 49.292
+        },
+        {
+          "text": "state",
+          "start": 49.372,
+          "end": 49.772
+        },
+        {
+          "text": "e",
+          "start": 50.112,
+          "end": 50.152
+        },
+        {
+          "text": "ricrea",
+          "start": 50.192,
+          "end": 50.512
+        },
+        {
+          "text": "la",
+          "start": 50.592,
+          "end": 50.652
+        },
+        {
+          "text": "replica",
+          "start": 50.692,
+          "end": 50.992
+        },
+        {
+          "text": "mancante",
+          "start": 51.032,
+          "end": 51.493
+        },
+        {
+          "text": "su",
+          "start": 51.533,
+          "end": 51.593
+        },
+        {
+          "text": "un",
+          "start": 51.653,
+          "end": 51.713
+        },
+        {
+          "text": "nodo",
+          "start": 51.753,
+          "end": 51.913
+        }
+      ]
+    },
+    {
+      "start": 51.973,
+      "end": 52.233,
+      "text": "sano.",
+      "words": [
+        {
+          "text": "sano.",
+          "start": 51.973,
+          "end": 52.233
+        }
+      ]
+    },
+    {
+      "start": 53.393,
+      "end": 55.013,
+      "text": "Guardiamo ora il diagramma dell'Ingress:",
+      "words": [
+        {
+          "text": "Guardiamo",
+          "start": 53.393,
+          "end": 53.713
+        },
+        {
+          "text": "ora",
+          "start": 53.753,
+          "end": 53.853
+        },
+        {
+          "text": "il",
+          "start": 53.913,
+          "end": 53.973
+        },
+        {
+          "text": "diagramma",
+          "start": 53.993,
+          "end": 54.373
+        },
+        {
+          "text": "dell'Ingress:",
+          "start": 54.413,
+          "end": 55.013
+        }
+      ]
+    },
+    {
+      "start": 55.594,
+      "end": 62.075,
+      "text": "due Service comunicano internamente dentro il cluster, ma l'Ingress espone verso l'esterno soltanto il Service",
+      "words": [
+        {
+          "text": "due",
+          "start": 55.594,
+          "end": 55.714
+        },
+        {
+          "text": "Service",
+          "start": 55.774,
+          "end": 56.194
+        },
+        {
+          "text": "comunicano",
+          "start": 56.374,
+          "end": 56.854
+        },
+        {
+          "text": "internamente",
+          "start": 56.894,
+          "end": 57.474
+        },
+        {
+          "text": "dentro",
+          "start": 57.574,
+          "end": 57.854
+        },
+        {
+          "text": "il",
+          "start": 57.894,
+          "end": 57.954
+        },
+        {
+          "text": "cluster,",
+          "start": 57.974,
+          "end": 58.394
+        },
+        {
+          "text": "ma",
+          "start": 58.874,
+          "end": 58.934
+        },
+        {
+          "text": "l'Ingress",
+          "start": 59.014,
+          "end": 59.434
+        },
+        {
+          "text": "espone",
+          "start": 59.655,
+          "end": 59.995
+        },
+        {
+          "text": "verso",
+          "start": 60.095,
+          "end": 60.375
+        },
+        {
+          "text": "l'esterno",
+          "start": 60.395,
+          "end": 60.855
+        },
+        {
+          "text": "soltanto",
+          "start": 61.015,
+          "end": 61.575
+        },
+        {
+          "text": "il",
+          "start": 61.615,
+          "end": 61.675
+        },
+        {
+          "text": "Service",
+          "start": 61.715,
+          "end": 62.075
+        }
+      ]
+    },
+    {
+      "start": 62.075,
+      "end": 64.556,
+      "text": "di frontiera, lasciando l'altro completamente privato.",
+      "words": [
+        {
+          "text": "di",
+          "start": 62.075,
+          "end": 62.115
+        },
+        {
+          "text": "frontiera,",
+          "start": 62.155,
+          "end": 62.635
+        },
+        {
+          "text": "lasciando",
+          "start": 62.975,
+          "end": 63.255
+        },
+        {
+          "text": "l'altro",
+          "start": 63.275,
+          "end": 63.555
+        },
+        {
+          "text": "completamente",
+          "start": 63.595,
+          "end": 64.176
+        },
+        {
+          "text": "privato.",
+          "start": 64.196,
+          "end": 64.556
+        }
+      ]
+    },
+    {
+      "start": 65.696,
+      "end": 68.757,
+      "text": "Infine, nel master node lo stato risiede in etcd:",
+      "words": [
+        {
+          "text": "Infine,",
+          "start": 65.696,
+          "end": 66.076
+        },
+        {
+          "text": "nel",
+          "start": 66.376,
+          "end": 66.516
+        },
+        {
+          "text": "master",
+          "start": 66.576,
+          "end": 66.856
+        },
+        {
+          "text": "node",
+          "start": 66.916,
+          "end": 67.156
+        },
+        {
+          "text": "lo",
+          "start": 67.556,
+          "end": 67.636
+        },
+        {
+          "text": "stato",
+          "start": 67.676,
+          "end": 67.937
+        },
+        {
+          "text": "risiede",
+          "start": 67.977,
+          "end": 68.317
+        },
+        {
+          "text": "in",
+          "start": 68.377,
+          "end": 68.457
+        },
+        {
+          "text": "etcd:",
+          "start": 68.517,
+          "end": 68.757
+        }
+      ]
+    },
+    {
+      "start": 69.357,
+      "end": 73.398,
+      "text": "un key-value store replicato su più macchine per garantire alta disponibilità,",
+      "words": [
+        {
+          "text": "un",
+          "start": 69.357,
+          "end": 69.457
+        },
+        {
+          "text": "key-value",
+          "start": 69.537,
+          "end": 70.017
+        },
+        {
+          "text": "store",
+          "start": 70.037,
+          "end": 70.357
+        },
+        {
+          "text": "replicato",
+          "start": 70.537,
+          "end": 70.977
+        },
+        {
+          "text": "su",
+          "start": 71.037,
+          "end": 71.097
+        },
+        {
+          "text": "più",
+          "start": 71.197,
+          "end": 71.297
+        },
+        {
+          "text": "macchine",
+          "start": 71.397,
+          "end": 71.797
+        },
+        {
+          "text": "per",
+          "start": 71.917,
+          "end": 72.018
+        },
+        {
+          "text": "garantire",
+          "start": 72.058,
+          "end": 72.458
+        },
+        {
+          "text": "alta",
+          "start": 72.538,
+          "end": 72.738
+        },
+        {
+          "text": "disponibilità,",
+          "start": 72.778,
+          "end": 73.398
+        }
+      ]
+    },
+    {
+      "start": 74.038,
+      "end": 78.839,
+      "text": "che memorizza esplicitamente nodi del cluster, specifiche del desired state,",
+      "words": [
+        {
+          "text": "che",
+          "start": 74.038,
+          "end": 74.118
+        },
+        {
+          "text": "memorizza",
+          "start": 74.158,
+          "end": 74.598
+        },
+        {
+          "text": "esplicitamente",
+          "start": 74.758,
+          "end": 75.598
+        },
+        {
+          "text": "nodi",
+          "start": 75.938,
+          "end": 76.159
+        },
+        {
+          "text": "del",
+          "start": 76.199,
+          "end": 76.319
+        },
+        {
+          "text": "cluster,",
+          "start": 76.359,
+          "end": 76.799
+        },
+        {
+          "text": "specifiche",
+          "start": 77.179,
+          "end": 77.759
+        },
+        {
+          "text": "del",
+          "start": 77.859,
+          "end": 77.979
+        },
+        {
+          "text": "desired",
+          "start": 77.999,
+          "end": 78.379
+        },
+        {
+          "text": "state,",
+          "start": 78.459,
+          "end": 78.839
+        }
+      ]
+    },
+    {
+      "start": 79.319,
+      "end": 81.9,
+      "text": "status, configurazione e assegnazioni.",
+      "words": [
+        {
+          "text": "status,",
+          "start": 79.319,
+          "end": 79.759
+        },
+        {
+          "text": "configurazione",
+          "start": 80.119,
+          "end": 80.98
+        },
+        {
+          "text": "e",
+          "start": 81.18,
+          "end": 81.22000000000001
+        },
+        {
+          "text": "assegnazioni.",
+          "start": 81.26,
+          "end": 81.9
+        }
+      ]
+    }
+  ]
+}

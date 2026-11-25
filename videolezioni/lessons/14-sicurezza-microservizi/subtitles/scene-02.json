@@ -1,0 +1,1059 @@
+{
+  "duration": 77.82,
+  "segments": [
+    {
+      "start": 0.04,
+      "end": 3.14,
+      "text": "Vediamo le altre quattro sfide della sicurezza nei microservizi.",
+      "words": [
+        {
+          "text": "Vediamo",
+          "start": 0.04,
+          "end": 0.42
+        },
+        {
+          "text": "le",
+          "start": 0.48,
+          "end": 0.56
+        },
+        {
+          "text": "altre",
+          "start": 0.6,
+          "end": 0.82
+        },
+        {
+          "text": "quattro",
+          "start": 0.88,
+          "end": 1.16
+        },
+        {
+          "text": "sfide",
+          "start": 1.2,
+          "end": 1.52
+        },
+        {
+          "text": "della",
+          "start": 1.58,
+          "end": 1.74
+        },
+        {
+          "text": "sicurezza",
+          "start": 1.8,
+          "end": 2.24
+        },
+        {
+          "text": "nei",
+          "start": 2.28,
+          "end": 2.38
+        },
+        {
+          "text": "microservizi.",
+          "start": 2.42,
+          "end": 3.14
+        }
+      ]
+    },
+    {
+      "start": 4.001,
+      "end": 7.341,
+      "text": "Quarta sfida: tracciare richieste che attraversano più servizi.",
+      "words": [
+        {
+          "text": "Quarta",
+          "start": 4.001,
+          "end": 4.281
+        },
+        {
+          "text": "sfida:",
+          "start": 4.321,
+          "end": 4.601
+        },
+        {
+          "text": "tracciare",
+          "start": 5.021,
+          "end": 5.441
+        },
+        {
+          "text": "richieste",
+          "start": 5.481,
+          "end": 5.901
+        },
+        {
+          "text": "che",
+          "start": 5.961,
+          "end": 6.041
+        },
+        {
+          "text": "attraversano",
+          "start": 6.081,
+          "end": 6.621
+        },
+        {
+          "text": "più",
+          "start": 6.681,
+          "end": 6.761
+        },
+        {
+          "text": "servizi.",
+          "start": 6.841,
+          "end": 7.341
+        }
+      ]
+    },
+    {
+      "start": 8.061,
+      "end": 11.641,
+      "text": "Distinguiamo tre elementi: un log registra un singolo evento;",
+      "words": [
+        {
+          "text": "Distinguiamo",
+          "start": 8.061,
+          "end": 8.521
+        },
+        {
+          "text": "tre",
+          "start": 8.601,
+          "end": 8.701
+        },
+        {
+          "text": "elementi:",
+          "start": 8.761,
+          "end": 9.221
+        },
+        {
+          "text": "un",
+          "start": 9.821,
+          "end": 9.901
+        },
+        {
+          "text": "log",
+          "start": 9.961,
+          "end": 10.201
+        },
+        {
+          "text": "registra",
+          "start": 10.401,
+          "end": 10.761
+        },
+        {
+          "text": "un",
+          "start": 10.801,
+          "end": 10.881
+        },
+        {
+          "text": "singolo",
+          "start": 10.921,
+          "end": 11.221
+        },
+        {
+          "text": "evento;",
+          "start": 11.261,
+          "end": 11.641
+        }
+      ]
+    },
+    {
+      "start": 12.182,
+      "end": 15.522,
+      "text": "le metriche aggregano i log per mostrare lo stato del sistema,",
+      "words": [
+        {
+          "text": "le",
+          "start": 12.182,
+          "end": 12.262
+        },
+        {
+          "text": "metriche",
+          "start": 12.302,
+          "end": 12.682
+        },
+        {
+          "text": "aggregano",
+          "start": 12.842,
+          "end": 13.322
+        },
+        {
+          "text": "i",
+          "start": 13.362,
+          "end": 13.402
+        },
+        {
+          "text": "log",
+          "start": 13.442,
+          "end": 13.662
+        },
+        {
+          "text": "per",
+          "start": 13.882,
+          "end": 14.002
+        },
+        {
+          "text": "mostrare",
+          "start": 14.042,
+          "end": 14.422
+        },
+        {
+          "text": "lo",
+          "start": 14.482,
+          "end": 14.542
+        },
+        {
+          "text": "stato",
+          "start": 14.602,
+          "end": 14.882
+        },
+        {
+          "text": "del",
+          "start": 14.942,
+          "end": 15.062
+        },
+        {
+          "text": "sistema,",
+          "start": 15.102,
+          "end": 15.522
+        }
+      ]
+    },
+    {
+      "start": 15.922,
+      "end": 19.242,
+      "text": "per esempio gli accessi non validi all'ora, facendo scattare allarmi;",
+      "words": [
+        {
+          "text": "per",
+          "start": 15.922,
+          "end": 16.042
+        },
+        {
+          "text": "esempio",
+          "start": 16.042,
+          "end": 16.342
+        },
+        {
+          "text": "gli",
+          "start": 16.402,
+          "end": 16.522
+        },
+        {
+          "text": "accessi",
+          "start": 16.562,
+          "end": 16.942
+        },
+        {
+          "text": "non",
+          "start": 16.982,
+          "end": 17.102
+        },
+        {
+          "text": "validi",
+          "start": 17.142,
+          "end": 17.462
+        },
+        {
+          "text": "all'ora,",
+          "start": 17.502,
+          "end": 17.842
+        },
+        {
+          "text": "facendo",
+          "start": 18.122,
+          "end": 18.402
+        },
+        {
+          "text": "scattare",
+          "start": 18.462,
+          "end": 18.802
+        },
+        {
+          "text": "allarmi;",
+          "start": 18.842,
+          "end": 19.242
+        }
+      ]
+    },
+    {
+      "start": 19.943,
+      "end": 22.963,
+      "text": "le trace seguono una richiesta dall'ingresso all'uscita.",
+      "words": [
+        {
+          "text": "le",
+          "start": 19.943,
+          "end": 20.003
+        },
+        {
+          "text": "trace",
+          "start": 20.063,
+          "end": 20.463
+        },
+        {
+          "text": "seguono",
+          "start": 20.683,
+          "end": 21.003
+        },
+        {
+          "text": "una",
+          "start": 21.163,
+          "end": 21.283
+        },
+        {
+          "text": "richiesta",
+          "start": 21.323,
+          "end": 21.763
+        },
+        {
+          "text": "dall'ingresso",
+          "start": 21.883,
+          "end": 22.423
+        },
+        {
+          "text": "all'uscita.",
+          "start": 22.463,
+          "end": 22.963
+        }
+      ]
+    },
+    {
+      "start": 23.563,
+      "end": 26.503,
+      "text": "Strumenti chiave sono Prometheus e Grafana per il monitoraggio,",
+      "words": [
+        {
+          "text": "Strumenti",
+          "start": 23.563,
+          "end": 23.923
+        },
+        {
+          "text": "chiave",
+          "start": 23.963,
+          "end": 24.263
+        },
+        {
+          "text": "sono",
+          "start": 24.323,
+          "end": 24.503
+        },
+        {
+          "text": "Prometheus",
+          "start": 24.543,
+          "end": 25.083
+        },
+        {
+          "text": "e",
+          "start": 25.123,
+          "end": 25.163
+        },
+        {
+          "text": "Grafana",
+          "start": 25.183,
+          "end": 25.623
+        },
+        {
+          "text": "per",
+          "start": 25.703,
+          "end": 25.803
+        },
+        {
+          "text": "il",
+          "start": 25.823,
+          "end": 25.883
+        },
+        {
+          "text": "monitoraggio,",
+          "start": 25.923,
+          "end": 26.503
+        }
+      ]
+    },
+    {
+      "start": 26.923,
+      "end": 29.204,
+      "text": "Jaeger e Zipkin per il distributed tracing.",
+      "words": [
+        {
+          "text": "Jaeger",
+          "start": 26.923,
+          "end": 27.243
+        },
+        {
+          "text": "e",
+          "start": 27.284,
+          "end": 27.324
+        },
+        {
+          "text": "Zipkin",
+          "start": 27.384,
+          "end": 27.744
+        },
+        {
+          "text": "per",
+          "start": 27.924,
+          "end": 28.044
+        },
+        {
+          "text": "il",
+          "start": 28.064,
+          "end": 28.124
+        },
+        {
+          "text": "distributed",
+          "start": 28.164,
+          "end": 28.704
+        },
+        {
+          "text": "tracing.",
+          "start": 28.744,
+          "end": 29.204
+        }
+      ]
+    },
+    {
+      "start": 30.124,
+      "end": 34.704,
+      "text": "Quinta sfida: i container sono server immutabili che non cambiano stato dopo l'avvio.",
+      "words": [
+        {
+          "text": "Quinta",
+          "start": 30.124,
+          "end": 30.384
+        },
+        {
+          "text": "sfida:",
+          "start": 30.424,
+          "end": 30.704
+        },
+        {
+          "text": "i",
+          "start": 31.184,
+          "end": 31.224
+        },
+        {
+          "text": "container",
+          "start": 31.264,
+          "end": 31.744
+        },
+        {
+          "text": "sono",
+          "start": 31.804,
+          "end": 31.964
+        },
+        {
+          "text": "server",
+          "start": 32.044,
+          "end": 32.344
+        },
+        {
+          "text": "immutabili",
+          "start": 32.364,
+          "end": 32.984
+        },
+        {
+          "text": "che",
+          "start": 33.044,
+          "end": 33.124
+        },
+        {
+          "text": "non",
+          "start": 33.224,
+          "end": 33.364
+        },
+        {
+          "text": "cambiano",
+          "start": 33.424,
+          "end": 33.764
+        },
+        {
+          "text": "stato",
+          "start": 33.824,
+          "end": 34.084
+        },
+        {
+          "text": "dopo",
+          "start": 34.164,
+          "end": 34.344
+        },
+        {
+          "text": "l'avvio.",
+          "start": 34.384,
+          "end": 34.704
+        }
+      ]
+    },
+    {
+      "start": 35.325,
+      "end": 40.405,
+      "text": "Occorre mantenere liste dinamiche di client ammessi e politiche d'accesso scaricate in push o pull",
+      "words": [
+        {
+          "text": "Occorre",
+          "start": 35.325,
+          "end": 35.605
+        },
+        {
+          "text": "mantenere",
+          "start": 35.665,
+          "end": 36.065
+        },
+        {
+          "text": "liste",
+          "start": 36.145,
+          "end": 36.405
+        },
+        {
+          "text": "dinamiche",
+          "start": 36.445,
+          "end": 36.885
+        },
+        {
+          "text": "di",
+          "start": 36.925,
+          "end": 36.985
+        },
+        {
+          "text": "client",
+          "start": 37.045,
+          "end": 37.445
+        },
+        {
+          "text": "ammessi",
+          "start": 37.485,
+          "end": 37.905
+        },
+        {
+          "text": "e",
+          "start": 37.985,
+          "end": 38.025
+        },
+        {
+          "text": "politiche",
+          "start": 38.045,
+          "end": 38.465
+        },
+        {
+          "text": "d'accesso",
+          "start": 38.505,
+          "end": 38.925
+        },
+        {
+          "text": "scaricate",
+          "start": 38.985,
+          "end": 39.405
+        },
+        {
+          "text": "in",
+          "start": 39.465,
+          "end": 39.525
+        },
+        {
+          "text": "push",
+          "start": 39.605,
+          "end": 39.885
+        },
+        {
+          "text": "o",
+          "start": 40.025,
+          "end": 40.065
+        },
+        {
+          "text": "pull",
+          "start": 40.165,
+          "end": 40.405
+        }
+      ]
+    },
+    {
+      "start": 40.705,
+      "end": 46.206,
+      "text": "da un endpoint amministrativo, oltre a iniettare e ruotare le credenziali nel filesystem del container",
+      "words": [
+        {
+          "text": "da",
+          "start": 40.705,
+          "end": 40.765
+        },
+        {
+          "text": "un",
+          "start": 40.825,
+          "end": 40.905
+        },
+        {
+          "text": "endpoint",
+          "start": 40.965,
+          "end": 41.385
+        },
+        {
+          "text": "amministrativo,",
+          "start": 41.425,
+          "end": 42.105
+        },
+        {
+          "text": "oltre",
+          "start": 42.565,
+          "end": 42.785
+        },
+        {
+          "text": "a",
+          "start": 42.825,
+          "end": 42.866
+        },
+        {
+          "text": "iniettare",
+          "start": 42.926,
+          "end": 43.446
+        },
+        {
+          "text": "e",
+          "start": 43.506,
+          "end": 43.546
+        },
+        {
+          "text": "ruotare",
+          "start": 43.626,
+          "end": 43.966
+        },
+        {
+          "text": "le",
+          "start": 44.026,
+          "end": 44.086
+        },
+        {
+          "text": "credenziali",
+          "start": 44.106,
+          "end": 44.766
+        },
+        {
+          "text": "nel",
+          "start": 44.826,
+          "end": 44.946
+        },
+        {
+          "text": "filesystem",
+          "start": 44.966,
+          "end": 45.546
+        },
+        {
+          "text": "del",
+          "start": 45.626,
+          "end": 45.746
+        },
+        {
+          "text": "container",
+          "start": 45.786,
+          "end": 46.206
+        }
+      ]
+    },
+    {
+      "start": 46.246,
+      "end": 46.626,
+      "text": "all'avvio.",
+      "words": [
+        {
+          "text": "all'avvio.",
+          "start": 46.246,
+          "end": 46.626
+        }
+      ]
+    },
+    {
+      "start": 47.506,
+      "end": 53.467,
+      "text": "Sesta sfida: condividere esplicitamente il contesto utente, cioè chi è l'utente e quali attributi possiede,",
+      "words": [
+        {
+          "text": "Sesta",
+          "start": 47.506,
+          "end": 47.786
+        },
+        {
+          "text": "sfida:",
+          "start": 47.846,
+          "end": 48.166
+        },
+        {
+          "text": "condividere",
+          "start": 48.606,
+          "end": 49.086
+        },
+        {
+          "text": "esplicitamente",
+          "start": 49.166,
+          "end": 49.866
+        },
+        {
+          "text": "il",
+          "start": 49.886,
+          "end": 49.946
+        },
+        {
+          "text": "contesto",
+          "start": 49.986,
+          "end": 50.366
+        },
+        {
+          "text": "utente,",
+          "start": 50.426,
+          "end": 50.787
+        },
+        {
+          "text": "cioè",
+          "start": 51.047,
+          "end": 51.187
+        },
+        {
+          "text": "chi",
+          "start": 51.307,
+          "end": 51.407
+        },
+        {
+          "text": "è",
+          "start": 51.467,
+          "end": 51.507
+        },
+        {
+          "text": "l'utente",
+          "start": 51.527,
+          "end": 51.967
+        },
+        {
+          "text": "e",
+          "start": 52.147,
+          "end": 52.187
+        },
+        {
+          "text": "quali",
+          "start": 52.267,
+          "end": 52.527
+        },
+        {
+          "text": "attributi",
+          "start": 52.587,
+          "end": 52.967
+        },
+        {
+          "text": "possiede,",
+          "start": 53.007,
+          "end": 53.467
+        }
+      ]
+    },
+    {
+      "start": 53.867,
+      "end": 60.448,
+      "text": "costruendo fiducia tra chiamante e ricevente tramite JSON Web Token firmati crittograficamente contro ogni alterazione.",
+      "words": [
+        {
+          "text": "costruendo",
+          "start": 53.867,
+          "end": 54.267
+        },
+        {
+          "text": "fiducia",
+          "start": 54.347,
+          "end": 54.707
+        },
+        {
+          "text": "tra",
+          "start": 54.747,
+          "end": 54.847
+        },
+        {
+          "text": "chiamante",
+          "start": 54.907,
+          "end": 55.347
+        },
+        {
+          "text": "e",
+          "start": 55.407,
+          "end": 55.447
+        },
+        {
+          "text": "ricevente",
+          "start": 55.487,
+          "end": 55.987
+        },
+        {
+          "text": "tramite",
+          "start": 56.107,
+          "end": 56.427
+        },
+        {
+          "text": "JSON",
+          "start": 56.527,
+          "end": 56.847
+        },
+        {
+          "text": "Web",
+          "start": 56.907,
+          "end": 57.027
+        },
+        {
+          "text": "Token",
+          "start": 57.107,
+          "end": 57.407
+        },
+        {
+          "text": "firmati",
+          "start": 57.667,
+          "end": 58.007
+        },
+        {
+          "text": "crittograficamente",
+          "start": 58.107,
+          "end": 59.028
+        },
+        {
+          "text": "contro",
+          "start": 59.148,
+          "end": 59.408
+        },
+        {
+          "text": "ogni",
+          "start": 59.588,
+          "end": 59.768
+        },
+        {
+          "text": "alterazione.",
+          "start": 59.828,
+          "end": 60.448
+        }
+      ]
+    },
+    {
+      "start": 61.308,
+      "end": 66.989,
+      "text": "Settima sfida: in architetture poliglotte le responsabilità sono divise tra squad con pratiche e strumenti",
+      "words": [
+        {
+          "text": "Settima",
+          "start": 61.308,
+          "end": 61.628
+        },
+        {
+          "text": "sfida:",
+          "start": 61.668,
+          "end": 61.968
+        },
+        {
+          "text": "in",
+          "start": 62.508,
+          "end": 62.588
+        },
+        {
+          "text": "architetture",
+          "start": 62.628,
+          "end": 63.188
+        },
+        {
+          "text": "poliglotte",
+          "start": 63.248,
+          "end": 63.828
+        },
+        {
+          "text": "le",
+          "start": 63.948,
+          "end": 64.008
+        },
+        {
+          "text": "responsabilità",
+          "start": 64.048,
+          "end": 64.708
+        },
+        {
+          "text": "sono",
+          "start": 64.788,
+          "end": 64.968
+        },
+        {
+          "text": "divise",
+          "start": 65.028,
+          "end": 65.328
+        },
+        {
+          "text": "tra",
+          "start": 65.368,
+          "end": 65.468
+        },
+        {
+          "text": "squad",
+          "start": 65.548,
+          "end": 65.868
+        },
+        {
+          "text": "con",
+          "start": 66.008,
+          "end": 66.128
+        },
+        {
+          "text": "pratiche",
+          "start": 66.188,
+          "end": 66.529
+        },
+        {
+          "text": "e",
+          "start": 66.569,
+          "end": 66.60900000000001
+        },
+        {
+          "text": "strumenti",
+          "start": 66.609,
+          "end": 66.989
+        }
+      ]
+    },
+    {
+      "start": 67.049,
+      "end": 72.749,
+      "text": "di security testing statico e dinamico diversi; molte organizzazioni adottano un approccio ibrido con un",
+      "words": [
+        {
+          "text": "di",
+          "start": 67.049,
+          "end": 67.08900000000001
+        },
+        {
+          "text": "security",
+          "start": 67.149,
+          "end": 67.609
+        },
+        {
+          "text": "testing",
+          "start": 67.669,
+          "end": 68.029
+        },
+        {
+          "text": "statico",
+          "start": 68.109,
+          "end": 68.469
+        },
+        {
+          "text": "e",
+          "start": 68.509,
+          "end": 68.549
+        },
+        {
+          "text": "dinamico",
+          "start": 68.569,
+          "end": 68.969
+        },
+        {
+          "text": "diversi;",
+          "start": 69.029,
+          "end": 69.449
+        },
+        {
+          "text": "molte",
+          "start": 69.949,
+          "end": 70.189
+        },
+        {
+          "text": "organizzazioni",
+          "start": 70.209,
+          "end": 70.889
+        },
+        {
+          "text": "adottano",
+          "start": 71.049,
+          "end": 71.409
+        },
+        {
+          "text": "un",
+          "start": 71.449,
+          "end": 71.509
+        },
+        {
+          "text": "approccio",
+          "start": 71.529,
+          "end": 71.849
+        },
+        {
+          "text": "ibrido",
+          "start": 71.949,
+          "end": 72.249
+        },
+        {
+          "text": "con",
+          "start": 72.529,
+          "end": 72.649
+        },
+        {
+          "text": "un",
+          "start": 72.669,
+          "end": 72.749
+        }
+      ]
+    },
+    {
+      "start": 72.789,
+      "end": 77.57,
+      "text": "team centrale ed esperti nelle singole squad, come sintetizzato da Siriwardena e Dias.",
+      "words": [
+        {
+          "text": "team",
+          "start": 72.789,
+          "end": 72.929
+        },
+        {
+          "text": "centrale",
+          "start": 72.969,
+          "end": 73.449
+        },
+        {
+          "text": "ed",
+          "start": 73.589,
+          "end": 73.669
+        },
+        {
+          "text": "esperti",
+          "start": 73.709,
+          "end": 74.05
+        },
+        {
+          "text": "nelle",
+          "start": 74.11,
+          "end": 74.29
+        },
+        {
+          "text": "singole",
+          "start": 74.35,
+          "end": 74.65
+        },
+        {
+          "text": "squad,",
+          "start": 74.69,
+          "end": 74.97
+        },
+        {
+          "text": "come",
+          "start": 75.27,
+          "end": 75.43
+        },
+        {
+          "text": "sintetizzato",
+          "start": 75.49,
+          "end": 76.15
+        },
+        {
+          "text": "da",
+          "start": 76.19,
+          "end": 76.27
+        },
+        {
+          "text": "Siriwardena",
+          "start": 76.41,
+          "end": 77.03
+        },
+        {
+          "text": "e",
+          "start": 77.19,
+          "end": 77.23
+        },
+        {
+          "text": "Dias.",
+          "start": 77.27,
+          "end": 77.57
+        }
+      ]
+    }
+  ]
+}
