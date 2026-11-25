@@ -365,6 +365,7 @@ def call_gemini_chunk(
     text: str,
     model: str,
     voice: str,
+    style: str,
     api_key: str,
     budget_state: dict[str, Any],
     run_spent_eur: list[float],
@@ -394,8 +395,9 @@ def call_gemini_chunk(
     min_valid_dur = max(1.2, words / 5.0)
 
     url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
-    payload = {
-        "contents": [{"role": "user", "parts": [{"text": text}]}],
+    prompt_text = f"[{style.strip('[] ')}] {text}" if style.strip() else text
+    payload: dict[str, Any] = {
+        "contents": [{"role": "user", "parts": [{"text": prompt_text}]}],
         "generationConfig": {
             "responseModalities": ["AUDIO"],
             "maxOutputTokens": max_output_tokens,
@@ -462,6 +464,7 @@ def generate_gemini_scene_chunked(
     chunks_dir: Path,
     model: str,
     voice: str,
+    style: str,
     api_key: str,
     budget_state: dict[str, Any],
     run_spent_eur: list[float],
@@ -481,7 +484,7 @@ def generate_gemini_scene_chunked(
     for idx, item in enumerate(chunk_items, start=1):
         ch_text = item["text"]
         pause_after = item["pause_after"]
-        h = hashlib.sha1(f"{model}|{voice}|{ch_text}".encode("utf-8")).hexdigest()[:10]
+        h = hashlib.sha1(f"{model}|{voice}|{style}|{ch_text}".encode("utf-8")).hexdigest()[:10]
         cache_wav = chunks_dir / f"{scene_id}-c{idx:02d}-{h}.wav"
 
         if cache_wav.exists() and cache_wav.stat().st_size > 44 and not force_chunks:
@@ -491,7 +494,7 @@ def generate_gemini_scene_chunked(
             print(f"      chunk {idx}/{len(chunk_items)} ({len(ch_text.split())}w): da cache ({dur:.1f}s)")
         else:
             pcm, dur = call_gemini_chunk(
-                ch_text, model, voice, api_key, budget_state, run_spent_eur, max_run_eur, global_cap_eur
+                ch_text, model, voice, style, api_key, budget_state, run_spent_eur, max_run_eur, global_cap_eur
             )
             with wave.open(str(cache_wav), "wb") as wf:
                 wf.setnchannels(1)
@@ -525,6 +528,7 @@ async def process_lesson(
     voice: str,
     rate: str,
     gemini_model: str,
+    style: str,
     force: bool,
     dry_run: bool,
     max_run_eur: float,
@@ -561,7 +565,7 @@ async def process_lesson(
             for idx, item in enumerate(items, start=1):
                 ch_text = item["text"]
                 total_pause_sec += item["pause_after"]
-                h = hashlib.sha1(f"{gemini_model}|{voice}|{ch_text}".encode("utf-8")).hexdigest()[:10]
+                h = hashlib.sha1(f"{gemini_model}|{voice}|{style}|{ch_text}".encode("utf-8")).hexdigest()[:10]
                 cache_wav = chunks_dir / f"{sid}-c{idx:02d}-{h}.wav"
                 if cache_wav.exists() and cache_wav.stat().st_size > 44 and not force:
                     cached_chunks += 1
@@ -624,7 +628,7 @@ async def process_lesson(
         elif provider == "gemini":
             print(f"  [{idx:02d}/{len(scenes)}] {sid} ({len(text_clean.split())} parole)...")
             dur, spans = generate_gemini_scene_chunked(
-                sid, scene["tts_text"], audio_path, chunks_dir, gemini_model, voice, api_key,
+                sid, scene["tts_text"], audio_path, chunks_dir, gemini_model, voice, style, api_key,
                 budget_state, run_spent_eur, max_run_eur, global_cap_eur, force, max_chunk_words
             )
             sub_data = build_subtitles_from_chunks(spans, dur)
@@ -684,6 +688,7 @@ def main() -> None:
         default_provider = "gemini"
     default_model = str(tts_cfg.get("model") or "gemini-3.8-flash-tts").strip()
     default_gemini_voice = str(tts_cfg.get("voice_name") or "Kore").strip()
+    default_style = str(tts_cfg.get("style") or "").strip()
     default_edge_voice = str(tts_cfg.get("edge_voice") or "it-IT-ElsaNeural").strip()
     default_budget = float(tts_cfg.get("budget_eur") or 4.80)
 
@@ -695,6 +700,7 @@ def main() -> None:
                         help=f"Nome voce (default da course.config.json: gemini={default_gemini_voice}, edge={default_edge_voice})")
     parser.add_argument("--rate", default="+0%", help="Velocità parlato edge-tts")
     parser.add_argument("--gemini-model", default=default_model, help=f"Modello Gemini TTS (default: {default_model})")
+    parser.add_argument("--style", default=default_style, help="Istruzioni di stile/tono per Gemini TTS")
     parser.add_argument("--max-chunk-words", type=int, default=52, help="Parole massime per chunk Gemini (anti-allucinazione)")
     parser.add_argument("--max-run-eur", type=float, default=0.50, help="Tetto massimo di spesa per singola run in EUR")
     parser.add_argument("--global-cap-eur", type=float, default=default_budget, help=f"Tetto massimo cumulativo globale in EUR (default: {default_budget})")
@@ -714,7 +720,7 @@ def main() -> None:
 
     asyncio.run(
         process_lesson(
-            args.lesson, args.provider, voice, args.rate, args.gemini_model,
+            args.lesson, args.provider, voice, args.rate, args.gemini_model, args.style,
             args.force, args.dry_run, args.max_run_eur, args.global_cap_eur, args.max_chunk_words,
             only_scene=args.scene,
         )

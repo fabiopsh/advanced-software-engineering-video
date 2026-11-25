@@ -1,0 +1,935 @@
+{
+  "duration": 67.718,
+  "segments": [
+    {
+      "start": 1.083,
+      "end": 5.183,
+      "text": "Chiudiamo questo primo capitolo fissando i cinque punti essenziali da ricordare per l'esame.",
+      "words": [
+        {
+          "text": "Chiudiamo",
+          "start": 1.083,
+          "end": 1.403
+        },
+        {
+          "text": "questo",
+          "start": 1.443,
+          "end": 1.683
+        },
+        {
+          "text": "primo",
+          "start": 1.723,
+          "end": 1.903
+        },
+        {
+          "text": "capitolo",
+          "start": 1.963,
+          "end": 2.343
+        },
+        {
+          "text": "fissando",
+          "start": 2.383,
+          "end": 2.743
+        },
+        {
+          "text": "i",
+          "start": 2.803,
+          "end": 2.843
+        },
+        {
+          "text": "cinque",
+          "start": 2.903,
+          "end": 3.183
+        },
+        {
+          "text": "punti",
+          "start": 3.223,
+          "end": 3.443
+        },
+        {
+          "text": "essenziali",
+          "start": 3.483,
+          "end": 4.023
+        },
+        {
+          "text": "da",
+          "start": 4.083,
+          "end": 4.123
+        },
+        {
+          "text": "ricordare",
+          "start": 4.183,
+          "end": 4.663
+        },
+        {
+          "text": "per",
+          "start": 4.683,
+          "end": 4.783
+        },
+        {
+          "text": "l'esame.",
+          "start": 4.823,
+          "end": 5.183
+        }
+      ]
+    },
+    {
+      "start": 6.043,
+      "end": 11.024,
+      "text": "Primo: nello sviluppo su progetto è il cliente a decidere funzionalità e requisiti;",
+      "words": [
+        {
+          "text": "Primo:",
+          "start": 6.043,
+          "end": 6.283
+        },
+        {
+          "text": "nello",
+          "start": 6.803,
+          "end": 7.003
+        },
+        {
+          "text": "sviluppo",
+          "start": 7.023,
+          "end": 7.383
+        },
+        {
+          "text": "su",
+          "start": 7.423,
+          "end": 7.483
+        },
+        {
+          "text": "progetto",
+          "start": 7.543,
+          "end": 8.023
+        },
+        {
+          "text": "è",
+          "start": 8.264,
+          "end": 8.304
+        },
+        {
+          "text": "il",
+          "start": 8.364,
+          "end": 8.444
+        },
+        {
+          "text": "cliente",
+          "start": 8.524,
+          "end": 9.004
+        },
+        {
+          "text": "a",
+          "start": 9.044,
+          "end": 9.084
+        },
+        {
+          "text": "decidere",
+          "start": 9.104,
+          "end": 9.524
+        },
+        {
+          "text": "funzionalità",
+          "start": 9.584,
+          "end": 10.204
+        },
+        {
+          "text": "e",
+          "start": 10.384,
+          "end": 10.424
+        },
+        {
+          "text": "requisiti;",
+          "start": 10.524,
+          "end": 11.024
+        }
+      ]
+    },
+    {
+      "start": 11.464,
+      "end": 16.804,
+      "text": "nello sviluppo su prodotto decide lo sviluppatore, e arrivare presto sul mercato impone metodi agili.",
+      "words": [
+        {
+          "text": "nello",
+          "start": 11.464,
+          "end": 11.644
+        },
+        {
+          "text": "sviluppo",
+          "start": 11.684,
+          "end": 12.004
+        },
+        {
+          "text": "su",
+          "start": 12.044,
+          "end": 12.104
+        },
+        {
+          "text": "prodotto",
+          "start": 12.164,
+          "end": 12.604
+        },
+        {
+          "text": "decide",
+          "start": 12.764,
+          "end": 13.084
+        },
+        {
+          "text": "lo",
+          "start": 13.124,
+          "end": 13.184
+        },
+        {
+          "text": "sviluppatore,",
+          "start": 13.204,
+          "end": 13.804
+        },
+        {
+          "text": "e",
+          "start": 14.284,
+          "end": 14.324
+        },
+        {
+          "text": "arrivare",
+          "start": 14.344,
+          "end": 14.664
+        },
+        {
+          "text": "presto",
+          "start": 14.704,
+          "end": 15.004
+        },
+        {
+          "text": "sul",
+          "start": 15.044,
+          "end": 15.164
+        },
+        {
+          "text": "mercato",
+          "start": 15.204,
+          "end": 15.604
+        },
+        {
+          "text": "impone",
+          "start": 15.784,
+          "end": 16.124
+        },
+        {
+          "text": "metodi",
+          "start": 16.164,
+          "end": 16.444
+        },
+        {
+          "text": "agili.",
+          "start": 16.524,
+          "end": 16.804
+        }
+      ]
+    },
+    {
+      "start": 17.684,
+      "end": 22.045,
+      "text": "Secondo: i prodotti software adottano tre modelli di esecuzione — stand-alone,",
+      "words": [
+        {
+          "text": "Secondo:",
+          "start": 17.684,
+          "end": 18.064
+        },
+        {
+          "text": "i",
+          "start": 18.644,
+          "end": 18.684
+        },
+        {
+          "text": "prodotti",
+          "start": 18.724,
+          "end": 19.064
+        },
+        {
+          "text": "software",
+          "start": 19.124,
+          "end": 19.544
+        },
+        {
+          "text": "adottano",
+          "start": 19.584,
+          "end": 19.944
+        },
+        {
+          "text": "tre",
+          "start": 20.024,
+          "end": 20.124
+        },
+        {
+          "text": "modelli",
+          "start": 20.184,
+          "end": 20.464
+        },
+        {
+          "text": "di",
+          "start": 20.504,
+          "end": 20.544
+        },
+        {
+          "text": "esecuzione",
+          "start": 20.584,
+          "end": 21.184
+        },
+        {
+          "text": "—",
+          "start": 21.184,
+          "end": 21.334
+        },
+        {
+          "text": "stand-alone,",
+          "start": 21.545,
+          "end": 22.045
+        }
+      ]
+    },
+    {
+      "start": 22.345,
+      "end": 27.925,
+      "text": "hybrid e Software as a Service — spostando progressivamente logica e dati dal client ai",
+      "words": [
+        {
+          "text": "hybrid",
+          "start": 22.345,
+          "end": 22.745
+        },
+        {
+          "text": "e",
+          "start": 22.965,
+          "end": 23.005
+        },
+        {
+          "text": "Software",
+          "start": 23.085,
+          "end": 23.445
+        },
+        {
+          "text": "as",
+          "start": 23.445,
+          "end": 23.505
+        },
+        {
+          "text": "a",
+          "start": 23.545,
+          "end": 23.585
+        },
+        {
+          "text": "Service",
+          "start": 23.625,
+          "end": 24.045
+        },
+        {
+          "text": "—",
+          "start": 24.045,
+          "end": 24.195
+        },
+        {
+          "text": "spostando",
+          "start": 24.465,
+          "end": 24.925
+        },
+        {
+          "text": "progressivamente",
+          "start": 24.985,
+          "end": 25.805
+        },
+        {
+          "text": "logica",
+          "start": 25.925,
+          "end": 26.365
+        },
+        {
+          "text": "e",
+          "start": 26.485,
+          "end": 26.525
+        },
+        {
+          "text": "dati",
+          "start": 26.565,
+          "end": 26.885
+        },
+        {
+          "text": "dal",
+          "start": 27.025,
+          "end": 27.165
+        },
+        {
+          "text": "client",
+          "start": 27.225,
+          "end": 27.645
+        },
+        {
+          "text": "ai",
+          "start": 27.825,
+          "end": 27.925
+        }
+      ]
+    },
+    {
+      "start": 27.985,
+      "end": 28.965,
+      "text": "server del produttore.",
+      "words": [
+        {
+          "text": "server",
+          "start": 27.985,
+          "end": 28.265
+        },
+        {
+          "text": "del",
+          "start": 28.305,
+          "end": 28.405
+        },
+        {
+          "text": "produttore.",
+          "start": 28.445,
+          "end": 28.965
+        }
+      ]
+    },
+    {
+      "start": 29.825,
+      "end": 35.726,
+      "text": "Terzo: la product vision risponde a Who, What e Why usando le sei clausole del",
+      "words": [
+        {
+          "text": "Terzo:",
+          "start": 29.825,
+          "end": 30.185
+        },
+        {
+          "text": "la",
+          "start": 30.605,
+          "end": 30.685
+        },
+        {
+          "text": "product",
+          "start": 30.745,
+          "end": 31.085
+        },
+        {
+          "text": "vision",
+          "start": 31.125,
+          "end": 31.445
+        },
+        {
+          "text": "risponde",
+          "start": 31.605,
+          "end": 32.045
+        },
+        {
+          "text": "a",
+          "start": 32.125,
+          "end": 32.165
+        },
+        {
+          "text": "Who,",
+          "start": 32.285,
+          "end": 32.405
+        },
+        {
+          "text": "What",
+          "start": 32.925,
+          "end": 33.205
+        },
+        {
+          "text": "e",
+          "start": 33.505,
+          "end": 33.545
+        },
+        {
+          "text": "Why",
+          "start": 33.665,
+          "end": 33.905
+        },
+        {
+          "text": "usando",
+          "start": 34.385,
+          "end": 34.686
+        },
+        {
+          "text": "le",
+          "start": 34.726,
+          "end": 34.806
+        },
+        {
+          "text": "sei",
+          "start": 34.906,
+          "end": 35.066
+        },
+        {
+          "text": "clausole",
+          "start": 35.126,
+          "end": 35.586
+        },
+        {
+          "text": "del",
+          "start": 35.626,
+          "end": 35.726
+        }
+      ]
+    },
+    {
+      "start": 35.746,
+      "end": 39.826,
+      "text": "modello di Moore, e nasce da domain, product o customer experience,",
+      "words": [
+        {
+          "text": "modello",
+          "start": 35.746,
+          "end": 36.026
+        },
+        {
+          "text": "di",
+          "start": 36.046,
+          "end": 36.106
+        },
+        {
+          "text": "Moore,",
+          "start": 36.146,
+          "end": 36.406
+        },
+        {
+          "text": "e",
+          "start": 36.786,
+          "end": 36.826
+        },
+        {
+          "text": "nasce",
+          "start": 36.866,
+          "end": 37.126
+        },
+        {
+          "text": "da",
+          "start": 37.166,
+          "end": 37.226
+        },
+        {
+          "text": "domain,",
+          "start": 37.306,
+          "end": 37.666
+        },
+        {
+          "text": "product",
+          "start": 37.986,
+          "end": 38.446
+        },
+        {
+          "text": "o",
+          "start": 38.746,
+          "end": 38.786
+        },
+        {
+          "text": "customer",
+          "start": 38.846,
+          "end": 39.226
+        },
+        {
+          "text": "experience,",
+          "start": 39.246,
+          "end": 39.826
+        }
+      ]
+    },
+    {
+      "start": 40.126,
+      "end": 41.586,
+      "text": "oppure dalla prototipazione.",
+      "words": [
+        {
+          "text": "oppure",
+          "start": 40.126,
+          "end": 40.486
+        },
+        {
+          "text": "dalla",
+          "start": 40.606,
+          "end": 40.786
+        },
+        {
+          "text": "prototipazione.",
+          "start": 40.826,
+          "end": 41.586
+        }
+      ]
+    },
+    {
+      "start": 42.446,
+      "end": 47.907,
+      "text": "Quarto: il product manager allinea azienda e clienti attraverso sei interazioni tecniche chiave,",
+      "words": [
+        {
+          "text": "Quarto:",
+          "start": 42.446,
+          "end": 42.826
+        },
+        {
+          "text": "il",
+          "start": 43.286,
+          "end": 43.386
+        },
+        {
+          "text": "product",
+          "start": 43.426,
+          "end": 43.746
+        },
+        {
+          "text": "manager",
+          "start": 43.806,
+          "end": 44.186
+        },
+        {
+          "text": "allinea",
+          "start": 44.226,
+          "end": 44.586
+        },
+        {
+          "text": "azienda",
+          "start": 44.646,
+          "end": 45.106
+        },
+        {
+          "text": "e",
+          "start": 45.166,
+          "end": 45.206
+        },
+        {
+          "text": "clienti",
+          "start": 45.226,
+          "end": 45.726
+        },
+        {
+          "text": "attraverso",
+          "start": 45.866,
+          "end": 46.326
+        },
+        {
+          "text": "sei",
+          "start": 46.446,
+          "end": 46.586
+        },
+        {
+          "text": "interazioni",
+          "start": 46.626,
+          "end": 47.126
+        },
+        {
+          "text": "tecniche",
+          "start": 47.166,
+          "end": 47.546
+        },
+        {
+          "text": "chiave,",
+          "start": 47.606,
+          "end": 47.907
+        }
+      ]
+    },
+    {
+      "start": 48.227,
+      "end": 51.427,
+      "text": "dalla roadmap al backlog, dai test allo UI design.",
+      "words": [
+        {
+          "text": "dalla",
+          "start": 48.227,
+          "end": 48.407
+        },
+        {
+          "text": "roadmap",
+          "start": 48.467,
+          "end": 48.807
+        },
+        {
+          "text": "al",
+          "start": 49.027,
+          "end": 49.127
+        },
+        {
+          "text": "backlog,",
+          "start": 49.187,
+          "end": 49.587
+        },
+        {
+          "text": "dai",
+          "start": 49.887,
+          "end": 50.027
+        },
+        {
+          "text": "test",
+          "start": 50.067,
+          "end": 50.327
+        },
+        {
+          "text": "allo",
+          "start": 50.587,
+          "end": 50.747
+        },
+        {
+          "text": "UI",
+          "start": 50.887,
+          "end": 51.047
+        },
+        {
+          "text": "design.",
+          "start": 51.087,
+          "end": 51.427
+        }
+      ]
+    },
+    {
+      "start": 52.047,
+      "end": 55.547,
+      "text": "Quinto: un primo prototipo ridotto va costruito in fretta,",
+      "words": [
+        {
+          "text": "Quinto:",
+          "start": 52.047,
+          "end": 52.407
+        },
+        {
+          "text": "un",
+          "start": 52.727,
+          "end": 52.827
+        },
+        {
+          "text": "primo",
+          "start": 52.927,
+          "end": 53.187
+        },
+        {
+          "text": "prototipo",
+          "start": 53.267,
+          "end": 53.747
+        },
+        {
+          "text": "ridotto",
+          "start": 53.787,
+          "end": 54.247
+        },
+        {
+          "text": "va",
+          "start": 54.447,
+          "end": 54.507
+        },
+        {
+          "text": "costruito",
+          "start": 54.587,
+          "end": 55.007
+        },
+        {
+          "text": "in",
+          "start": 55.067,
+          "end": 55.127
+        },
+        {
+          "text": "fretta,",
+          "start": 55.167,
+          "end": 55.547
+        }
+      ]
+    },
+    {
+      "start": 55.847,
+      "end": 60.607,
+      "text": "in circa sei settimane, per validare il design e convincere clienti e finanziatori.",
+      "words": [
+        {
+          "text": "in",
+          "start": 55.847,
+          "end": 55.927
+        },
+        {
+          "text": "circa",
+          "start": 55.967,
+          "end": 56.267
+        },
+        {
+          "text": "sei",
+          "start": 56.467,
+          "end": 56.607
+        },
+        {
+          "text": "settimane,",
+          "start": 56.667,
+          "end": 57.167
+        },
+        {
+          "text": "per",
+          "start": 57.567,
+          "end": 57.687
+        },
+        {
+          "text": "validare",
+          "start": 57.747,
+          "end": 58.087
+        },
+        {
+          "text": "il",
+          "start": 58.127,
+          "end": 58.187
+        },
+        {
+          "text": "design",
+          "start": 58.227,
+          "end": 58.647
+        },
+        {
+          "text": "e",
+          "start": 58.807,
+          "end": 58.847
+        },
+        {
+          "text": "convincere",
+          "start": 58.887,
+          "end": 59.407
+        },
+        {
+          "text": "clienti",
+          "start": 59.467,
+          "end": 59.907
+        },
+        {
+          "text": "e",
+          "start": 59.927,
+          "end": 59.967
+        },
+        {
+          "text": "finanziatori.",
+          "start": 59.987,
+          "end": 60.607
+        }
+      ]
+    },
+    {
+      "start": 61.208,
+      "end": 63.528,
+      "text": "Prima di passare al capitolo due sullo sviluppo agile,",
+      "words": [
+        {
+          "text": "Prima",
+          "start": 61.208,
+          "end": 61.408
+        },
+        {
+          "text": "di",
+          "start": 61.448,
+          "end": 61.508
+        },
+        {
+          "text": "passare",
+          "start": 61.548,
+          "end": 61.828
+        },
+        {
+          "text": "al",
+          "start": 61.848,
+          "end": 61.928
+        },
+        {
+          "text": "capitolo",
+          "start": 61.948,
+          "end": 62.268
+        },
+        {
+          "text": "due",
+          "start": 62.328,
+          "end": 62.488
+        },
+        {
+          "text": "sullo",
+          "start": 62.608,
+          "end": 62.768
+        },
+        {
+          "text": "sviluppo",
+          "start": 62.788,
+          "end": 63.108
+        },
+        {
+          "text": "agile,",
+          "start": 63.228,
+          "end": 63.528
+        }
+      ]
+    },
+    {
+      "start": 63.848,
+      "end": 67.468,
+      "text": "provate a rispondere ad alta voce alle sei domande di verifica sulla destra.",
+      "words": [
+        {
+          "text": "provate",
+          "start": 63.848,
+          "end": 64.128
+        },
+        {
+          "text": "a",
+          "start": 64.168,
+          "end": 64.20800000000001
+        },
+        {
+          "text": "rispondere",
+          "start": 64.248,
+          "end": 64.688
+        },
+        {
+          "text": "ad",
+          "start": 64.728,
+          "end": 64.808
+        },
+        {
+          "text": "alta",
+          "start": 64.848,
+          "end": 65.068
+        },
+        {
+          "text": "voce",
+          "start": 65.128,
+          "end": 65.408
+        },
+        {
+          "text": "alle",
+          "start": 65.568,
+          "end": 65.748
+        },
+        {
+          "text": "sei",
+          "start": 65.828,
+          "end": 65.988
+        },
+        {
+          "text": "domande",
+          "start": 66.028,
+          "end": 66.388
+        },
+        {
+          "text": "di",
+          "start": 66.428,
+          "end": 66.468
+        },
+        {
+          "text": "verifica",
+          "start": 66.508,
+          "end": 66.888
+        },
+        {
+          "text": "sulla",
+          "start": 66.928,
+          "end": 67.108
+        },
+        {
+          "text": "destra.",
+          "start": 67.148,
+          "end": 67.468
+        }
+      ]
+    }
+  ]
+}

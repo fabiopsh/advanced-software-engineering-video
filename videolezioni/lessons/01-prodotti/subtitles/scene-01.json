@@ -1,0 +1,971 @@
+{
+  "duration": 65.87,
+  "segments": [
+    {
+      "start": 0.08,
+      "end": 3.6,
+      "text": "Benvenuti al primo capitolo di Advanced Software Engineering.",
+      "words": [
+        {
+          "text": "Benvenuti",
+          "start": 0.08,
+          "end": 0.58
+        },
+        {
+          "text": "al",
+          "start": 0.68,
+          "end": 0.78
+        },
+        {
+          "text": "primo",
+          "start": 0.84,
+          "end": 1.06
+        },
+        {
+          "text": "capitolo",
+          "start": 1.12,
+          "end": 1.54
+        },
+        {
+          "text": "di",
+          "start": 1.6,
+          "end": 1.68
+        },
+        {
+          "text": "Advanced",
+          "start": 1.78,
+          "end": 2.3
+        },
+        {
+          "text": "Software",
+          "start": 2.44,
+          "end": 2.92
+        },
+        {
+          "text": "Engineering.",
+          "start": 2.98,
+          "end": 3.6
+        }
+      ]
+    },
+    {
+      "start": 4.22,
+      "end": 9.281,
+      "text": "Oggi vediamo perché l'industria del software si è spostata dai progetti su commessa ai prodotti",
+      "words": [
+        {
+          "text": "Oggi",
+          "start": 4.22,
+          "end": 4.4
+        },
+        {
+          "text": "vediamo",
+          "start": 4.44,
+          "end": 4.72
+        },
+        {
+          "text": "perché",
+          "start": 4.84,
+          "end": 5.18
+        },
+        {
+          "text": "l'industria",
+          "start": 5.26,
+          "end": 5.84
+        },
+        {
+          "text": "del",
+          "start": 5.86,
+          "end": 5.98
+        },
+        {
+          "text": "software",
+          "start": 6.08,
+          "end": 6.54
+        },
+        {
+          "text": "si",
+          "start": 6.621,
+          "end": 6.681
+        },
+        {
+          "text": "è",
+          "start": 6.721,
+          "end": 6.761
+        },
+        {
+          "text": "spostata",
+          "start": 6.801,
+          "end": 7.261
+        },
+        {
+          "text": "dai",
+          "start": 7.301,
+          "end": 7.441
+        },
+        {
+          "text": "progetti",
+          "start": 7.501,
+          "end": 7.921
+        },
+        {
+          "text": "su",
+          "start": 7.981,
+          "end": 8.041
+        },
+        {
+          "text": "commessa",
+          "start": 8.121,
+          "end": 8.581
+        },
+        {
+          "text": "ai",
+          "start": 8.781,
+          "end": 8.881
+        },
+        {
+          "text": "prodotti",
+          "start": 8.941,
+          "end": 9.281
+        }
+      ]
+    },
+    {
+      "start": 9.341,
+      "end": 9.781,
+      "text": "software.",
+      "words": [
+        {
+          "text": "software.",
+          "start": 9.341,
+          "end": 9.781
+        }
+      ]
+    },
+    {
+      "start": 10.681,
+      "end": 13.481,
+      "text": "Nel Novecento ogni azienda ordinava un sistema su misura,",
+      "words": [
+        {
+          "text": "Nel",
+          "start": 10.681,
+          "end": 10.781
+        },
+        {
+          "text": "Novecento",
+          "start": 10.821,
+          "end": 11.321
+        },
+        {
+          "text": "ogni",
+          "start": 11.441,
+          "end": 11.581
+        },
+        {
+          "text": "azienda",
+          "start": 11.641,
+          "end": 11.981
+        },
+        {
+          "text": "ordinava",
+          "start": 12.041,
+          "end": 12.441
+        },
+        {
+          "text": "un",
+          "start": 12.481,
+          "end": 12.561
+        },
+        {
+          "text": "sistema",
+          "start": 12.601,
+          "end": 12.941
+        },
+        {
+          "text": "su",
+          "start": 12.981,
+          "end": 13.061
+        },
+        {
+          "text": "misura,",
+          "start": 13.141,
+          "end": 13.481
+        }
+      ]
+    },
+    {
+      "start": 13.701,
+      "end": 16.441,
+      "text": "ad esempio il proprio CRM personalizzato.",
+      "words": [
+        {
+          "text": "ad",
+          "start": 13.701,
+          "end": 13.781
+        },
+        {
+          "text": "esempio",
+          "start": 13.801,
+          "end": 14.161
+        },
+        {
+          "text": "il",
+          "start": 14.481,
+          "end": 14.561
+        },
+        {
+          "text": "proprio",
+          "start": 14.601,
+          "end": 14.901
+        },
+        {
+          "text": "CRM",
+          "start": 14.981,
+          "end": 15.561
+        },
+        {
+          "text": "personalizzato.",
+          "start": 15.661,
+          "end": 16.441
+        }
+      ]
+    },
+    {
+      "start": 17.101,
+      "end": 20.582,
+      "text": "Oggi quasi nessuna azienda ha bisogno di software costruito da zero:",
+      "words": [
+        {
+          "text": "Oggi",
+          "start": 17.101,
+          "end": 17.301
+        },
+        {
+          "text": "quasi",
+          "start": 17.381,
+          "end": 17.641
+        },
+        {
+          "text": "nessuna",
+          "start": 17.741,
+          "end": 18.121
+        },
+        {
+          "text": "azienda",
+          "start": 18.161,
+          "end": 18.541
+        },
+        {
+          "text": "ha",
+          "start": 18.581,
+          "end": 18.621
+        },
+        {
+          "text": "bisogno",
+          "start": 18.661,
+          "end": 19.021
+        },
+        {
+          "text": "di",
+          "start": 19.061,
+          "end": 19.101
+        },
+        {
+          "text": "software",
+          "start": 19.181,
+          "end": 19.561
+        },
+        {
+          "text": "costruito",
+          "start": 19.581,
+          "end": 20.042
+        },
+        {
+          "text": "da",
+          "start": 20.122,
+          "end": 20.182
+        },
+        {
+          "text": "zero:",
+          "start": 20.302,
+          "end": 20.582
+        }
+      ]
+    },
+    {
+      "start": 21.002,
+      "end": 23.782,
+      "text": "preferisce un prodotto già pronto, condiviso da molti clienti.",
+      "words": [
+        {
+          "text": "preferisce",
+          "start": 21.002,
+          "end": 21.422
+        },
+        {
+          "text": "un",
+          "start": 21.462,
+          "end": 21.502
+        },
+        {
+          "text": "prodotto",
+          "start": 21.522,
+          "end": 21.862
+        },
+        {
+          "text": "già",
+          "start": 21.942,
+          "end": 22.022
+        },
+        {
+          "text": "pronto,",
+          "start": 22.062,
+          "end": 22.402
+        },
+        {
+          "text": "condiviso",
+          "start": 22.502,
+          "end": 22.962
+        },
+        {
+          "text": "da",
+          "start": 23.002,
+          "end": 23.062
+        },
+        {
+          "text": "molti",
+          "start": 23.102,
+          "end": 23.302
+        },
+        {
+          "text": "clienti.",
+          "start": 23.342,
+          "end": 23.782
+        }
+      ]
+    },
+    {
+      "start": 24.502,
+      "end": 30.282,
+      "text": "Nel project-based software engineering è il cliente a descrivere il problema e decidere le funzionalità.",
+      "words": [
+        {
+          "text": "Nel",
+          "start": 24.502,
+          "end": 24.662
+        },
+        {
+          "text": "project-based",
+          "start": 24.742,
+          "end": 25.542
+        },
+        {
+          "text": "software",
+          "start": 25.622,
+          "end": 26.022
+        },
+        {
+          "text": "engineering",
+          "start": 26.042,
+          "end": 26.642
+        },
+        {
+          "text": "è",
+          "start": 27.042,
+          "end": 27.082
+        },
+        {
+          "text": "il",
+          "start": 27.122,
+          "end": 27.182
+        },
+        {
+          "text": "cliente",
+          "start": 27.242,
+          "end": 27.742
+        },
+        {
+          "text": "a",
+          "start": 27.862,
+          "end": 27.902
+        },
+        {
+          "text": "descrivere",
+          "start": 27.942,
+          "end": 28.382
+        },
+        {
+          "text": "il",
+          "start": 28.422,
+          "end": 28.482
+        },
+        {
+          "text": "problema",
+          "start": 28.502,
+          "end": 28.922
+        },
+        {
+          "text": "e",
+          "start": 29.062,
+          "end": 29.102
+        },
+        {
+          "text": "decidere",
+          "start": 29.162,
+          "end": 29.582
+        },
+        {
+          "text": "le",
+          "start": 29.622,
+          "end": 29.682
+        },
+        {
+          "text": "funzionalità.",
+          "start": 29.702,
+          "end": 30.282
+        }
+      ]
+    },
+    {
+      "start": 30.922,
+      "end": 36.023,
+      "text": "Cliente e sviluppatore definiscono insieme i requisiti, e lo sviluppatore realizza il software che risolve",
+      "words": [
+        {
+          "text": "Cliente",
+          "start": 30.922,
+          "end": 31.282
+        },
+        {
+          "text": "e",
+          "start": 31.302,
+          "end": 31.342
+        },
+        {
+          "text": "sviluppatore",
+          "start": 31.322,
+          "end": 31.882
+        },
+        {
+          "text": "definiscono",
+          "start": 31.962,
+          "end": 32.462
+        },
+        {
+          "text": "insieme",
+          "start": 32.502,
+          "end": 32.822
+        },
+        {
+          "text": "i",
+          "start": 32.882,
+          "end": 32.922
+        },
+        {
+          "text": "requisiti,",
+          "start": 32.922,
+          "end": 33.423
+        },
+        {
+          "text": "e",
+          "start": 33.803,
+          "end": 33.843
+        },
+        {
+          "text": "lo",
+          "start": 33.883,
+          "end": 33.943
+        },
+        {
+          "text": "sviluppatore",
+          "start": 33.983,
+          "end": 34.543
+        },
+        {
+          "text": "realizza",
+          "start": 34.663,
+          "end": 35.043
+        },
+        {
+          "text": "il",
+          "start": 35.083,
+          "end": 35.143
+        },
+        {
+          "text": "software",
+          "start": 35.183,
+          "end": 35.563
+        },
+        {
+          "text": "che",
+          "start": 35.583,
+          "end": 35.663
+        },
+        {
+          "text": "risolve",
+          "start": 35.703,
+          "end": 36.023
+        }
+      ]
+    },
+    {
+      "start": 36.043,
+      "end": 36.483,
+      "text": "il problema.",
+      "words": [
+        {
+          "text": "il",
+          "start": 36.043,
+          "end": 36.103
+        },
+        {
+          "text": "problema.",
+          "start": 36.123,
+          "end": 36.483
+        }
+      ]
+    },
+    {
+      "start": 37.123,
+      "end": 41.363,
+      "text": "Se l'attività del cliente cambia, cambiano i requisiti e quindi cambia anche il software.",
+      "words": [
+        {
+          "text": "Se",
+          "start": 37.123,
+          "end": 37.203
+        },
+        {
+          "text": "l'attività",
+          "start": 37.263,
+          "end": 37.643
+        },
+        {
+          "text": "del",
+          "start": 37.703,
+          "end": 37.823
+        },
+        {
+          "text": "cliente",
+          "start": 37.863,
+          "end": 38.203
+        },
+        {
+          "text": "cambia,",
+          "start": 38.263,
+          "end": 38.643
+        },
+        {
+          "text": "cambiano",
+          "start": 38.963,
+          "end": 39.343
+        },
+        {
+          "text": "i",
+          "start": 39.403,
+          "end": 39.443
+        },
+        {
+          "text": "requisiti",
+          "start": 39.443,
+          "end": 39.903
+        },
+        {
+          "text": "e",
+          "start": 40.003,
+          "end": 40.043
+        },
+        {
+          "text": "quindi",
+          "start": 40.083,
+          "end": 40.283
+        },
+        {
+          "text": "cambia",
+          "start": 40.343,
+          "end": 40.623
+        },
+        {
+          "text": "anche",
+          "start": 40.683,
+          "end": 40.843
+        },
+        {
+          "text": "il",
+          "start": 40.883,
+          "end": 40.943
+        },
+        {
+          "text": "software.",
+          "start": 40.983,
+          "end": 41.363
+        }
+      ]
+    },
+    {
+      "start": 41.983,
+      "end": 45.303,
+      "text": "Nel product-based software engineering il paradigma si ribalta:",
+      "words": [
+        {
+          "text": "Nel",
+          "start": 41.983,
+          "end": 42.143
+        },
+        {
+          "text": "product-based",
+          "start": 42.203,
+          "end": 43.043
+        },
+        {
+          "text": "software",
+          "start": 43.123,
+          "end": 43.503
+        },
+        {
+          "text": "engineering",
+          "start": 43.523,
+          "end": 44.023
+        },
+        {
+          "text": "il",
+          "start": 44.143,
+          "end": 44.223
+        },
+        {
+          "text": "paradigma",
+          "start": 44.263,
+          "end": 44.683
+        },
+        {
+          "text": "si",
+          "start": 44.763,
+          "end": 44.823
+        },
+        {
+          "text": "ribalta:",
+          "start": 44.883,
+          "end": 45.303
+        }
+      ]
+    },
+    {
+      "start": 45.923,
+      "end": 49.244,
+      "text": "è lo sviluppatore a decidere le feature e l'evoluzione del prodotto,",
+      "words": [
+        {
+          "text": "è",
+          "start": 45.923,
+          "end": 45.963
+        },
+        {
+          "text": "lo",
+          "start": 46.003,
+          "end": 46.083
+        },
+        {
+          "text": "sviluppatore",
+          "start": 46.123,
+          "end": 46.844
+        },
+        {
+          "text": "a",
+          "start": 46.944,
+          "end": 46.984
+        },
+        {
+          "text": "decidere",
+          "start": 47.024,
+          "end": 47.424
+        },
+        {
+          "text": "le",
+          "start": 47.484,
+          "end": 47.544
+        },
+        {
+          "text": "feature",
+          "start": 47.604,
+          "end": 47.964
+        },
+        {
+          "text": "e",
+          "start": 48.044,
+          "end": 48.084
+        },
+        {
+          "text": "l'evoluzione",
+          "start": 48.104,
+          "end": 48.644
+        },
+        {
+          "text": "del",
+          "start": 48.664,
+          "end": 48.784
+        },
+        {
+          "text": "prodotto,",
+          "start": 48.804,
+          "end": 49.244
+        }
+      ]
+    },
+    {
+      "start": 49.584,
+      "end": 51.484,
+      "text": "mentre i clienti scelgono se acquistarlo.",
+      "words": [
+        {
+          "text": "mentre",
+          "start": 49.584,
+          "end": 49.844
+        },
+        {
+          "text": "i",
+          "start": 49.884,
+          "end": 49.924
+        },
+        {
+          "text": "clienti",
+          "start": 49.924,
+          "end": 50.344
+        },
+        {
+          "text": "scelgono",
+          "start": 50.404,
+          "end": 50.784
+        },
+        {
+          "text": "se",
+          "start": 50.844,
+          "end": 50.904
+        },
+        {
+          "text": "acquistarlo.",
+          "start": 50.964,
+          "end": 51.484
+        }
+      ]
+    },
+    {
+      "start": 52.344,
+      "end": 53.704,
+      "text": "Questo ha una conseguenza critica:",
+      "words": [
+        {
+          "text": "Questo",
+          "start": 52.344,
+          "end": 52.564
+        },
+        {
+          "text": "ha",
+          "start": 52.644,
+          "end": 52.704
+        },
+        {
+          "text": "una",
+          "start": 52.744,
+          "end": 52.844
+        },
+        {
+          "text": "conseguenza",
+          "start": 52.884,
+          "end": 53.344
+        },
+        {
+          "text": "critica:",
+          "start": 53.364,
+          "end": 53.704
+        }
+      ]
+    },
+    {
+      "start": 54.264,
+      "end": 57.904,
+      "text": "un cliente che ha già investito in un prodotto difficilmente lo sostituisce.",
+      "words": [
+        {
+          "text": "un",
+          "start": 54.264,
+          "end": 54.344
+        },
+        {
+          "text": "cliente",
+          "start": 54.384,
+          "end": 54.684
+        },
+        {
+          "text": "che",
+          "start": 54.724,
+          "end": 54.804
+        },
+        {
+          "text": "ha",
+          "start": 54.824,
+          "end": 54.884
+        },
+        {
+          "text": "già",
+          "start": 54.984,
+          "end": 55.064
+        },
+        {
+          "text": "investito",
+          "start": 55.144,
+          "end": 55.584
+        },
+        {
+          "text": "in",
+          "start": 55.644,
+          "end": 55.684
+        },
+        {
+          "text": "un",
+          "start": 55.724,
+          "end": 55.784
+        },
+        {
+          "text": "prodotto",
+          "start": 55.804,
+          "end": 56.244
+        },
+        {
+          "text": "difficilmente",
+          "start": 56.404,
+          "end": 57.144
+        },
+        {
+          "text": "lo",
+          "start": 57.184,
+          "end": 57.244
+        },
+        {
+          "text": "sostituisce.",
+          "start": 57.284,
+          "end": 57.904
+        }
+      ]
+    },
+    {
+      "start": 58.584,
+      "end": 63.205,
+      "text": "Arrivare presto sul mercato diventa quindi decisivo, ed è per questo che servono metodi di",
+      "words": [
+        {
+          "text": "Arrivare",
+          "start": 58.584,
+          "end": 58.924
+        },
+        {
+          "text": "presto",
+          "start": 59.004,
+          "end": 59.304
+        },
+        {
+          "text": "sul",
+          "start": 59.345,
+          "end": 59.485
+        },
+        {
+          "text": "mercato",
+          "start": 59.505,
+          "end": 59.885
+        },
+        {
+          "text": "diventa",
+          "start": 59.985,
+          "end": 60.305
+        },
+        {
+          "text": "quindi",
+          "start": 60.345,
+          "end": 60.565
+        },
+        {
+          "text": "decisivo,",
+          "start": 60.645,
+          "end": 61.145
+        },
+        {
+          "text": "ed",
+          "start": 61.485,
+          "end": 61.565
+        },
+        {
+          "text": "è",
+          "start": 61.605,
+          "end": 61.645
+        },
+        {
+          "text": "per",
+          "start": 61.705,
+          "end": 61.845
+        },
+        {
+          "text": "questo",
+          "start": 61.905,
+          "end": 62.225
+        },
+        {
+          "text": "che",
+          "start": 62.265,
+          "end": 62.325
+        },
+        {
+          "text": "servono",
+          "start": 62.385,
+          "end": 62.725
+        },
+        {
+          "text": "metodi",
+          "start": 62.785,
+          "end": 63.105
+        },
+        {
+          "text": "di",
+          "start": 63.145,
+          "end": 63.205
+        }
+      ]
+    },
+    {
+      "start": 63.285,
+      "end": 65.405,
+      "text": "sviluppo rapidi, cioè i metodi agili.",
+      "words": [
+        {
+          "text": "sviluppo",
+          "start": 63.285,
+          "end": 63.665
+        },
+        {
+          "text": "rapidi,",
+          "start": 63.725,
+          "end": 64.065
+        },
+        {
+          "text": "cioè",
+          "start": 64.265,
+          "end": 64.425
+        },
+        {
+          "text": "i",
+          "start": 64.605,
+          "end": 64.64500000000001
+        },
+        {
+          "text": "metodi",
+          "start": 64.685,
+          "end": 64.985
+        },
+        {
+          "text": "agili.",
+          "start": 65.105,
+          "end": 65.405
+        }
+      ]
+    }
+  ]
+}

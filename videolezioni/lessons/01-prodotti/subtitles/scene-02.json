@@ -1,0 +1,934 @@
+{
+  "duration": 65.83,
+  "segments": [
+    {
+      "start": 0.355,
+      "end": 2.415,
+      "text": "Come gira concretamente un prodotto software?",
+      "words": [
+        {
+          "text": "Come",
+          "start": 0.355,
+          "end": 0.495
+        },
+        {
+          "text": "gira",
+          "start": 0.555,
+          "end": 0.755
+        },
+        {
+          "text": "concretamente",
+          "start": 0.835,
+          "end": 1.515
+        },
+        {
+          "text": "un",
+          "start": 1.535,
+          "end": 1.595
+        },
+        {
+          "text": "prodotto",
+          "start": 1.615,
+          "end": 1.955
+        },
+        {
+          "text": "software?",
+          "start": 2.015,
+          "end": 2.415
+        }
+      ]
+    },
+    {
+      "start": 2.935,
+      "end": 7.616,
+      "text": "Esistono tre modelli di esecuzione, che si distinguono per come ripartiscono codice e dati tra",
+      "words": [
+        {
+          "text": "Esistono",
+          "start": 2.935,
+          "end": 3.315
+        },
+        {
+          "text": "tre",
+          "start": 3.395,
+          "end": 3.515
+        },
+        {
+          "text": "modelli",
+          "start": 3.575,
+          "end": 3.875
+        },
+        {
+          "text": "di",
+          "start": 3.915,
+          "end": 3.975
+        },
+        {
+          "text": "esecuzione,",
+          "start": 4.035,
+          "end": 4.615
+        },
+        {
+          "text": "che",
+          "start": 4.775,
+          "end": 4.855
+        },
+        {
+          "text": "si",
+          "start": 4.895,
+          "end": 4.955
+        },
+        {
+          "text": "distinguono",
+          "start": 4.995,
+          "end": 5.435
+        },
+        {
+          "text": "per",
+          "start": 5.495,
+          "end": 5.595
+        },
+        {
+          "text": "come",
+          "start": 5.635,
+          "end": 5.795
+        },
+        {
+          "text": "ripartiscono",
+          "start": 5.875,
+          "end": 6.575
+        },
+        {
+          "text": "codice",
+          "start": 6.656,
+          "end": 7.016
+        },
+        {
+          "text": "e",
+          "start": 7.076,
+          "end": 7.116
+        },
+        {
+          "text": "dati",
+          "start": 7.176,
+          "end": 7.476
+        },
+        {
+          "text": "tra",
+          "start": 7.536,
+          "end": 7.616
+        }
+      ]
+    },
+    {
+      "start": 7.676,
+      "end": 10.036,
+      "text": "il computer dell'utente e i server del produttore.",
+      "words": [
+        {
+          "text": "il",
+          "start": 7.676,
+          "end": 7.736
+        },
+        {
+          "text": "computer",
+          "start": 7.756,
+          "end": 8.196
+        },
+        {
+          "text": "dell'utente",
+          "start": 8.236,
+          "end": 8.776
+        },
+        {
+          "text": "e",
+          "start": 8.896,
+          "end": 8.936
+        },
+        {
+          "text": "i",
+          "start": 8.976,
+          "end": 9.016
+        },
+        {
+          "text": "server",
+          "start": 9.056,
+          "end": 9.356
+        },
+        {
+          "text": "del",
+          "start": 9.396,
+          "end": 9.496
+        },
+        {
+          "text": "produttore.",
+          "start": 9.536,
+          "end": 10.036
+        }
+      ]
+    },
+    {
+      "start": 10.776,
+      "end": 14.816,
+      "text": "Nel modello stand-alone, tutto vive sulla macchina dell'utente: interfaccia grafica,",
+      "words": [
+        {
+          "text": "Nel",
+          "start": 10.776,
+          "end": 10.876
+        },
+        {
+          "text": "modello",
+          "start": 10.916,
+          "end": 11.196
+        },
+        {
+          "text": "stand-alone,",
+          "start": 11.236,
+          "end": 11.776
+        },
+        {
+          "text": "tutto",
+          "start": 11.976,
+          "end": 12.216
+        },
+        {
+          "text": "vive",
+          "start": 12.256,
+          "end": 12.436
+        },
+        {
+          "text": "sulla",
+          "start": 12.496,
+          "end": 12.676
+        },
+        {
+          "text": "macchina",
+          "start": 12.696,
+          "end": 12.996
+        },
+        {
+          "text": "dell'utente:",
+          "start": 13.036,
+          "end": 13.556
+        },
+        {
+          "text": "interfaccia",
+          "start": 13.936,
+          "end": 14.376
+        },
+        {
+          "text": "grafica,",
+          "start": 14.416,
+          "end": 14.816
+        }
+      ]
+    },
+    {
+      "start": 14.996,
+      "end": 16.976,
+      "text": "funzionalità del prodotto e dati locali.",
+      "words": [
+        {
+          "text": "funzionalità",
+          "start": 14.996,
+          "end": 15.576
+        },
+        {
+          "text": "del",
+          "start": 15.616,
+          "end": 15.736
+        },
+        {
+          "text": "prodotto",
+          "start": 15.756,
+          "end": 16.176
+        },
+        {
+          "text": "e",
+          "start": 16.316,
+          "end": 16.356
+        },
+        {
+          "text": "dati",
+          "start": 16.396,
+          "end": 16.596
+        },
+        {
+          "text": "locali.",
+          "start": 16.636,
+          "end": 16.976
+        }
+      ]
+    },
+    {
+      "start": 17.516,
+      "end": 22.877,
+      "text": "I server del produttore hanno un flusso unidirezionale e si limitano a inviare aggiornamenti periodici.",
+      "words": [
+        {
+          "text": "I",
+          "start": 17.516,
+          "end": 17.556
+        },
+        {
+          "text": "server",
+          "start": 17.616,
+          "end": 17.916
+        },
+        {
+          "text": "del",
+          "start": 17.976,
+          "end": 18.096
+        },
+        {
+          "text": "produttore",
+          "start": 18.116,
+          "end": 18.616
+        },
+        {
+          "text": "hanno",
+          "start": 18.676,
+          "end": 18.836
+        },
+        {
+          "text": "un",
+          "start": 18.876,
+          "end": 18.936
+        },
+        {
+          "text": "flusso",
+          "start": 18.956,
+          "end": 19.256
+        },
+        {
+          "text": "unidirezionale",
+          "start": 19.356,
+          "end": 20.177
+        },
+        {
+          "text": "e",
+          "start": 20.577,
+          "end": 20.617
+        },
+        {
+          "text": "si",
+          "start": 20.697,
+          "end": 20.797
+        },
+        {
+          "text": "limitano",
+          "start": 20.857,
+          "end": 21.237
+        },
+        {
+          "text": "a",
+          "start": 21.277,
+          "end": 21.317
+        },
+        {
+          "text": "inviare",
+          "start": 21.357,
+          "end": 21.777
+        },
+        {
+          "text": "aggiornamenti",
+          "start": 21.797,
+          "end": 22.317
+        },
+        {
+          "text": "periodici.",
+          "start": 22.357,
+          "end": 22.877
+        }
+      ]
+    },
+    {
+      "start": 23.597,
+      "end": 25.977,
+      "text": "Nel modello hybrid le responsabilità si dividono.",
+      "words": [
+        {
+          "text": "Nel",
+          "start": 23.597,
+          "end": 23.717
+        },
+        {
+          "text": "modello",
+          "start": 23.757,
+          "end": 24.037
+        },
+        {
+          "text": "hybrid",
+          "start": 24.137,
+          "end": 24.537
+        },
+        {
+          "text": "le",
+          "start": 24.697,
+          "end": 24.757
+        },
+        {
+          "text": "responsabilità",
+          "start": 24.797,
+          "end": 25.417
+        },
+        {
+          "text": "si",
+          "start": 25.477,
+          "end": 25.557
+        },
+        {
+          "text": "dividono.",
+          "start": 25.597,
+          "end": 25.977
+        }
+      ]
+    },
+    {
+      "start": 26.617,
+      "end": 30.677,
+      "text": "Sul dispositivo dell'utente restano interfaccia, funzionalità parziali e dati;",
+      "words": [
+        {
+          "text": "Sul",
+          "start": 26.617,
+          "end": 26.737
+        },
+        {
+          "text": "dispositivo",
+          "start": 26.757,
+          "end": 27.257
+        },
+        {
+          "text": "dell'utente",
+          "start": 27.297,
+          "end": 27.757
+        },
+        {
+          "text": "restano",
+          "start": 27.837,
+          "end": 28.117
+        },
+        {
+          "text": "interfaccia,",
+          "start": 28.177,
+          "end": 28.777
+        },
+        {
+          "text": "funzionalità",
+          "start": 28.957,
+          "end": 29.537
+        },
+        {
+          "text": "parziali",
+          "start": 29.597,
+          "end": 30.117
+        },
+        {
+          "text": "e",
+          "start": 30.277,
+          "end": 30.317
+        },
+        {
+          "text": "dati;",
+          "start": 30.397,
+          "end": 30.677
+        }
+      ]
+    },
+    {
+      "start": 31.257,
+      "end": 36.198,
+      "text": "sui server del produttore risiedono invece funzionalità aggiuntive, backup dei dati e aggiornamenti,",
+      "words": [
+        {
+          "text": "sui",
+          "start": 31.257,
+          "end": 31.397
+        },
+        {
+          "text": "server",
+          "start": 31.437,
+          "end": 31.737
+        },
+        {
+          "text": "del",
+          "start": 31.777,
+          "end": 31.897
+        },
+        {
+          "text": "produttore",
+          "start": 31.937,
+          "end": 32.417
+        },
+        {
+          "text": "risiedono",
+          "start": 32.497,
+          "end": 32.837
+        },
+        {
+          "text": "invece",
+          "start": 32.857,
+          "end": 33.138
+        },
+        {
+          "text": "funzionalità",
+          "start": 33.198,
+          "end": 33.738
+        },
+        {
+          "text": "aggiuntive,",
+          "start": 33.778,
+          "end": 34.318
+        },
+        {
+          "text": "backup",
+          "start": 34.618,
+          "end": 34.898
+        },
+        {
+          "text": "dei",
+          "start": 34.938,
+          "end": 35.078
+        },
+        {
+          "text": "dati",
+          "start": 35.118,
+          "end": 35.378
+        },
+        {
+          "text": "e",
+          "start": 35.518,
+          "end": 35.558
+        },
+        {
+          "text": "aggiornamenti,",
+          "start": 35.598,
+          "end": 36.198
+        }
+      ]
+    },
+    {
+      "start": 36.598,
+      "end": 38.558,
+      "text": "con uno scambio continuo bidirezionale.",
+      "words": [
+        {
+          "text": "con",
+          "start": 36.598,
+          "end": 36.698
+        },
+        {
+          "text": "uno",
+          "start": 36.738,
+          "end": 36.838
+        },
+        {
+          "text": "scambio",
+          "start": 36.878,
+          "end": 37.158
+        },
+        {
+          "text": "continuo",
+          "start": 37.218,
+          "end": 37.718
+        },
+        {
+          "text": "bidirezionale.",
+          "start": 37.798,
+          "end": 38.558
+        }
+      ]
+    },
+    {
+      "start": 39.018,
+      "end": 41.198,
+      "text": "È il caso tipico di moltissime app per smartphone.",
+      "words": [
+        {
+          "text": "È",
+          "start": 39.018,
+          "end": 39.058
+        },
+        {
+          "text": "il",
+          "start": 39.078,
+          "end": 39.138
+        },
+        {
+          "text": "caso",
+          "start": 39.158,
+          "end": 39.338
+        },
+        {
+          "text": "tipico",
+          "start": 39.398,
+          "end": 39.698
+        },
+        {
+          "text": "di",
+          "start": 39.738,
+          "end": 39.798
+        },
+        {
+          "text": "moltissime",
+          "start": 39.858,
+          "end": 40.338
+        },
+        {
+          "text": "app",
+          "start": 40.398,
+          "end": 40.498
+        },
+        {
+          "text": "per",
+          "start": 40.598,
+          "end": 40.678
+        },
+        {
+          "text": "smartphone.",
+          "start": 40.718,
+          "end": 41.198
+        }
+      ]
+    },
+    {
+      "start": 42.098,
+      "end": 44.738,
+      "text": "Infine, nel Software as a Service, o SaaS,",
+      "words": [
+        {
+          "text": "Infine,",
+          "start": 42.098,
+          "end": 42.518
+        },
+        {
+          "text": "nel",
+          "start": 42.718,
+          "end": 42.878
+        },
+        {
+          "text": "Software",
+          "start": 42.978,
+          "end": 43.378
+        },
+        {
+          "text": "as",
+          "start": 43.378,
+          "end": 43.478
+        },
+        {
+          "text": "a",
+          "start": 43.498,
+          "end": 43.538
+        },
+        {
+          "text": "Service,",
+          "start": 43.598,
+          "end": 44.058
+        },
+        {
+          "text": "o",
+          "start": 44.198,
+          "end": 44.238
+        },
+        {
+          "text": "SaaS,",
+          "start": 44.398,
+          "end": 44.738
+        }
+      ]
+    },
+    {
+      "start": 45.318,
+      "end": 49.239,
+      "text": "l'utente possiede soltanto l'interfaccia, tramite browser o app leggera.",
+      "words": [
+        {
+          "text": "l'utente",
+          "start": 45.318,
+          "end": 45.698
+        },
+        {
+          "text": "possiede",
+          "start": 45.738,
+          "end": 46.098
+        },
+        {
+          "text": "soltanto",
+          "start": 46.179,
+          "end": 46.699
+        },
+        {
+          "text": "l'interfaccia,",
+          "start": 46.719,
+          "end": 47.359
+        },
+        {
+          "text": "tramite",
+          "start": 47.739,
+          "end": 48.079
+        },
+        {
+          "text": "browser",
+          "start": 48.119,
+          "end": 48.539
+        },
+        {
+          "text": "o",
+          "start": 48.599,
+          "end": 48.639
+        },
+        {
+          "text": "app",
+          "start": 48.699,
+          "end": 48.799
+        },
+        {
+          "text": "leggera.",
+          "start": 48.859,
+          "end": 49.239
+        }
+      ]
+    },
+    {
+      "start": 49.839,
+      "end": 53.859,
+      "text": "Tutte le funzionalità applicative e tutti i dati stanno sui server del produttore,",
+      "words": [
+        {
+          "text": "Tutte",
+          "start": 49.839,
+          "end": 50.079
+        },
+        {
+          "text": "le",
+          "start": 50.099,
+          "end": 50.159
+        },
+        {
+          "text": "funzionalità",
+          "start": 50.179,
+          "end": 50.719
+        },
+        {
+          "text": "applicative",
+          "start": 50.799,
+          "end": 51.419
+        },
+        {
+          "text": "e",
+          "start": 51.479,
+          "end": 51.519
+        },
+        {
+          "text": "tutti",
+          "start": 51.619,
+          "end": 51.839
+        },
+        {
+          "text": "i",
+          "start": 51.879,
+          "end": 51.919
+        },
+        {
+          "text": "dati",
+          "start": 51.919,
+          "end": 52.199
+        },
+        {
+          "text": "stanno",
+          "start": 52.339,
+          "end": 52.579
+        },
+        {
+          "text": "sui",
+          "start": 52.639,
+          "end": 52.759
+        },
+        {
+          "text": "server",
+          "start": 52.799,
+          "end": 53.099
+        },
+        {
+          "text": "del",
+          "start": 53.159,
+          "end": 53.259
+        },
+        {
+          "text": "produttore,",
+          "start": 53.299,
+          "end": 53.859
+        }
+      ]
+    },
+    {
+      "start": 54.179,
+      "end": 56.079,
+      "text": "come avviene in piattaforme come Salesforce.",
+      "words": [
+        {
+          "text": "come",
+          "start": 54.179,
+          "end": 54.319
+        },
+        {
+          "text": "avviene",
+          "start": 54.339,
+          "end": 54.579
+        },
+        {
+          "text": "in",
+          "start": 54.619,
+          "end": 54.679
+        },
+        {
+          "text": "piattaforme",
+          "start": 54.699,
+          "end": 55.239
+        },
+        {
+          "text": "come",
+          "start": 55.279,
+          "end": 55.419
+        },
+        {
+          "text": "Salesforce.",
+          "start": 55.499,
+          "end": 56.079
+        }
+      ]
+    },
+    {
+      "start": 56.859,
+      "end": 62.72,
+      "text": "Osservate il trend chiave: passando da stand-alone a SaaS il baricentro si sposta progressivamente verso",
+      "words": [
+        {
+          "text": "Osservate",
+          "start": 56.859,
+          "end": 57.319
+        },
+        {
+          "text": "il",
+          "start": 57.359,
+          "end": 57.419
+        },
+        {
+          "text": "trend",
+          "start": 57.459,
+          "end": 57.659
+        },
+        {
+          "text": "chiave:",
+          "start": 57.719,
+          "end": 58.019
+        },
+        {
+          "text": "passando",
+          "start": 58.539,
+          "end": 58.899
+        },
+        {
+          "text": "da",
+          "start": 58.939,
+          "end": 59.019
+        },
+        {
+          "text": "stand-alone",
+          "start": 59.079,
+          "end": 59.62
+        },
+        {
+          "text": "a",
+          "start": 59.62,
+          "end": 59.66
+        },
+        {
+          "text": "SaaS",
+          "start": 59.74,
+          "end": 60.04
+        },
+        {
+          "text": "il",
+          "start": 60.52,
+          "end": 60.6
+        },
+        {
+          "text": "baricentro",
+          "start": 60.64,
+          "end": 61.14
+        },
+        {
+          "text": "si",
+          "start": 61.18,
+          "end": 61.24
+        },
+        {
+          "text": "sposta",
+          "start": 61.3,
+          "end": 61.6
+        },
+        {
+          "text": "progressivamente",
+          "start": 61.68,
+          "end": 62.44
+        },
+        {
+          "text": "verso",
+          "start": 62.48,
+          "end": 62.72
+        }
+      ]
+    },
+    {
+      "start": 62.74,
+      "end": 65.58,
+      "text": "il cloud, tema che approfondiremo nei capitoli dedicati.",
+      "words": [
+        {
+          "text": "il",
+          "start": 62.74,
+          "end": 62.8
+        },
+        {
+          "text": "cloud,",
+          "start": 62.84,
+          "end": 63.18
+        },
+        {
+          "text": "tema",
+          "start": 63.6,
+          "end": 63.8
+        },
+        {
+          "text": "che",
+          "start": 63.84,
+          "end": 63.92
+        },
+        {
+          "text": "approfondiremo",
+          "start": 63.96,
+          "end": 64.58
+        },
+        {
+          "text": "nei",
+          "start": 64.62,
+          "end": 64.74
+        },
+        {
+          "text": "capitoli",
+          "start": 64.76,
+          "end": 65.12
+        },
+        {
+          "text": "dedicati.",
+          "start": 65.16,
+          "end": 65.58
+        }
+      ]
+    }
+  ]
+}

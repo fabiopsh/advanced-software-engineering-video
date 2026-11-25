@@ -244,7 +244,7 @@ def _draw_axes(d: Any, ox: int, oy: int, w: int, h: int, ink: Any) -> None:
 
 
 def draw_chapter_visual(chapter: int, width: int = 380, height: int = 350) -> Any:
-    """Render a crisp 2x-supersampled topic-specific ML visual diagram for chapter 0..19."""
+    """Render a crisp 2x-supersampled topic-specific ASE software-engineering diagram for chapter 0..15."""
     S = 2
     W, H = width * S, height * S
     canvas = Image.new("RGBA", (W, H), hex_to_rgba("#FAFAF7", 255))
@@ -276,314 +276,117 @@ def draw_chapter_visual(chapter: int, width: int = 380, height: int = 350) -> An
     f_sm = load_font(22, bold=False)
 
     if chapter == 0:
-        # 6-Part Course Roadmap
-        pts = [(110, 520), (210, 390), (340, 440), (455, 290), (575, 330), (660, 175)]
+        # 4-Part ASE Roadmap
+        pts = [(120, 500), (285, 360), (470, 390), (630, 195)]
         d.line(pts, fill=BLUE, width=7)
-        cols = [BLUE, GREEN, AMBER, RED, PURPLE, BLUE]
+        cols = [BLUE, GREEN, AMBER, RED]
         for i, (px, py) in enumerate(pts):
-            d.ellipse([px - 34, py - 34, px + 34, py + 34], fill=WHITE, outline=cols[i], width=6)
+            d.ellipse([px - 36, py - 36, px + 36, py + 36], fill=WHITE, outline=cols[i], width=6)
             lbl = f"P{i + 1}"
             bb = d.textbbox((0, 0), lbl, font=f_lbl)
             d.text((px - (bb[2] - bb[0]) // 2, py - (bb[3] - bb[1]) // 2 - bb[1]), lbl, font=f_lbl, fill=cols[i])
-        d.text((76, 84), "Mappa del percorso", font=f_lbl, fill=INK)
+        d.text((76, 84), "Percorso ASE", font=f_lbl, fill=INK)
 
     elif chapter == 1:
-        # Gradient & elliptical contour lines
-        cx, cy = 410, 355
-        for rx, ry in [(260, 175), (195, 130), (130, 86), (65, 43)]:
-            d.ellipse([cx - rx, cy - ry, cx + rx, cy + ry], outline=BLUE, width=4)
-        d.ellipse([cx - 10, cy - 10, cx + 10, cy + 10], fill=GREEN)
-        # Gradient arrow pointing outward orthogonal to contour
-        p1 = (cx - 155, cy - 102)
-        p2 = (cx - 255, cy - 200)
-        _draw_arrow(d, p1, p2, RED, width=7, head=22)
-        d.ellipse([p1[0] - 10, p1[1] - 10, p1[0] + 10, p1[1] + 10], fill=INK)
-        d.text((p2[0] - 20, p2[1] - 48), "∇f(x)", font=f_lbl, fill=RED)
-        d.text((cx + 22, cy - 14), "min", font=f_sm, fill=GREEN)
+        # Software Products: Stand-alone -> Hybrid -> SaaS shift
+        cols_spec = [
+            (72, "Stand-alone", "UI + Logic\n+ Data", "Updates", BLUE, BLUE_S, False),
+            (286, "Hybrid", "UI + Partial\n+ Data", "Backup + API", AMBER, AMBER_S, True),
+            (500, "SaaS", "Browser\n/ App", "Logic + Data\n(Cloud)", GREEN, GREEN_S, True),
+        ]
+        _draw_dashed_line(d, (55, 360), (705, 360), MUTED, width=3)
+        for x0, head, top_t, bot_t, col, bg, bidir in cols_spec:
+            d.text((x0 + 18, 96), head, font=f_sm, fill=col)
+            d.rounded_rectangle([x0, 145, x0 + 188, 295], radius=18, fill=bg, outline=col, width=5)
+            d.multiline_text((x0 + 22, 185), top_t, font=f_sm, fill=INK, spacing=6)
+            d.rounded_rectangle([x0, 415, x0 + 188, 555], radius=18, fill=WHITE, outline=col, width=5)
+            d.multiline_text((x0 + 22, 455), bot_t, font=f_sm, fill=SOFT, spacing=6)
+            mx = x0 + 94
+            _draw_arrow(d, (mx, 405), (mx, 305), col, width=5, head=14)
+            if bidir:
+                _draw_arrow(d, (mx, 315), (mx, 405), col, width=5, head=14)
 
-    elif chapter == 2:
-        # ML Pipeline: X -> h(x) -> y with loss feedback
-        boxes = [(70, 260, 225, 410, "X", MUTED, WHITE), (295, 240, 465, 430, "h(x)", BLUE, BLUE_S), (535, 260, 690, 410, "y", GREEN, GREEN_S)]
+    elif chapter in (2, 3):
+        # Agile Sprint loop & Backlog -> Stories -> Release
+        boxes = [(65, 250, 230, 415, "Backlog", AMBER, AMBER_S), (295, 235, 470, 430, "Sprint", BLUE, BLUE_S), (535, 250, 695, 415, "Release", GREEN, GREEN_S)]
         for x0, y0, x1, y1, txt, col, bg in boxes:
             d.rounded_rectangle([x0, y0, x1, y1], radius=24, fill=bg, outline=col, width=6)
-            bb = d.textbbox((0, 0), txt, font=load_font(42, bold=True))
-            d.text(((x0 + x1 - (bb[2] - bb[0])) // 2, (y0 + y1 - (bb[3] - bb[1])) // 2 - bb[1]), txt, font=load_font(42, bold=True), fill=INK)
-        _draw_arrow(d, (232, 335), (288, 335), INK, width=6, head=18)
-        _draw_arrow(d, (472, 335), (528, 335), INK, width=6, head=18)
-        # Loss feedback arc
-        d.line([(612, 420), (612, 520), (380, 520)], fill=AMBER, width=6)
-        _draw_arrow(d, (380, 520), (380, 438), AMBER, width=6, head=18)
-        d.text((435, 536), "Loss L(y, d)", font=f_sm, fill=AMBER)
-
-    elif chapter == 3:
-        # Hypothesis Space H, Version Space VS, target h*
-        d.ellipse([75, 110, 685, 575], fill=BLUE_S, outline=BLUE, width=5)
-        d.ellipse([240, 215, 610, 485], fill=AMBER_S, outline=AMBER, width=5)
-        d.ellipse([435, 315, 463, 343], fill=RED, outline=WHITE, width=3)
-        d.text((135, 160), "Spazio ipotesi H", font=f_lbl, fill=BLUE)
-        d.text((285, 245), "Version Space", font=f_sm, fill=AMBER)
-        d.text((476, 312), "h*", font=f_lbl, fill=RED)
+            bb = d.textbbox((0, 0), txt, font=f_lbl)
+            d.text(((x0 + x1 - (bb[2] - bb[0])) // 2, (y0 + y1 - (bb[3] - bb[1])) // 2 - bb[1]), txt, font=f_lbl, fill=INK)
+        _draw_arrow(d, (236, 332), (288, 332), INK, width=6, head=18)
+        _draw_arrow(d, (476, 332), (528, 332), INK, width=6, head=18)
+        d.line([(615, 425), (615, 535), (382, 535)], fill=BLUE, width=6)
+        _draw_arrow(d, (382, 535), (382, 438), BLUE, width=6, head=18)
+        d.text((425, 550), "Feedback continuo", font=f_sm, fill=BLUE)
 
     elif chapter == 4:
-        # Linear Regression with vertical residuals
-        _draw_axes(d, 90, 585, 590, 490, SOFT)
-        pts = [(145, 485), (225, 415), (305, 435), (390, 325), (470, 345), (555, 225), (625, 250)]
-        # Line y = 525 - 0.56*(x - 110)
-        p_a = (115, 522)
-        p_b = (660, 216)
-        for px, py in pts:
-            ly = 522 - (522 - 216) * (px - 115) / (660 - 115)
-            d.line([(px, py), (px, ly)], fill=GREEN, width=5)
-        d.line([p_a, p_b], fill=RED, width=7)
-        for px, py in pts:
-            d.ellipse([px - 11, py - 11, px + 11, py + 11], fill=BLUE, outline=WHITE, width=3)
-        d.text((465, 145), "y = wᵀx + b", font=f_lbl, fill=RED)
+        # Layered Software Architecture
+        layers = [(130, "Presentation / UI", BLUE, BLUE_S), (275, "Application Logic", AMBER, AMBER_S), (420, "Data & Infrastructure", GREEN, GREEN_S)]
+        for y0, lbl, col, bg in layers:
+            d.rounded_rectangle([120, y0, 640, y0 + 102], radius=20, fill=bg, outline=col, width=6)
+            bb = d.textbbox((0, 0), lbl, font=f_lbl)
+            d.text(((760 - (bb[2] - bb[0])) // 2, y0 + 34), lbl, font=f_lbl, fill=INK)
+        _draw_arrow(d, (380, 232), (380, 272), INK, width=5, head=14)
+        _draw_arrow(d, (380, 377), (380, 417), INK, width=5, head=14)
 
-    elif chapter == 5:
-        # Under/Optimal vs Overfitting polynomial
-        _draw_axes(d, 90, 585, 590, 490, SOFT)
-        # Smooth true curve (green)
-        g_pts = [(120 + i * 18, 370 - int(110 * math.sin(i * 0.14))) for i in range(31)]
-        d.line(g_pts, fill=GREEN, width=7)
-        # Wiggly overfit curve (red)
-        r_pts = [(120 + i * 18, 370 - int(110 * math.sin(i * 0.14) + 58 * math.sin(i * 1.15))) for i in range(31)]
-        d.line(r_pts, fill=RED, width=5)
-        for i in range(2, 30, 4):
-            px, py = r_pts[i]
-            d.ellipse([px - 10, py - 10, px + 10, py + 10], fill=BLUE, outline=WHITE, width=3)
-        d.text((455, 110), "Overfitting", font=f_sm, fill=RED)
-        d.text((130, 120), "Modello ottimo", font=f_sm, fill=GREEN)
-
-    elif chapter == 6:
-        # k-NN query point & neighborhood circle
-        qx, qy = 380, 345
-        d.ellipse([qx - 155, qy - 155, qx + 155, qy + 155], fill=BLUE_S, outline=BLUE, width=5)
-        reds = [(315, 290), (425, 265), (345, 425), (210, 210), (175, 420)]
-        blues = [(455, 375), (335, 345), (565, 225), (585, 460), (480, 535)]
-        for px, py in reds:
-            d.ellipse([px - 14, py - 14, px + 14, py + 14], fill=RED, outline=WHITE, width=3)
-        for px, py in blues:
-            d.ellipse([px - 14, py - 14, px + 14, py + 14], fill=BLUE, outline=WHITE, width=3)
-        # Query star/dot
-        d.ellipse([qx - 15, qy - 15, qx + 15, qy + 15], fill=INK, outline=AMBER, width=5)
-        d.text((qx + 18, qy - 46), "x_q (k=5)", font=f_lbl, fill=INK)
-
-    elif chapter == 7:
-        # Structural Risk Minimization (VC complexity U-curve)
-        _draw_axes(d, 90, 585, 590, 490, SOFT)
-        emp = [(120 + i * 18, int(200 + 330 * (1 - math.exp(-i * 0.14)))) for i in range(31)]
-        pen = [(120 + i * 18, int(555 - 320 * (i / 30.0) ** 2.2)) for i in range(31)]
-        tot = [(120 + i * 18, int(195 + 220 * (1 - math.exp(-i * 0.18)) - 220 * (i / 30.0) ** 2.4 + 45)) for i in range(31)]
-        # Recompute clean U-shape for total risk
-        tot = [(120 + i * 18, int(230 + 230 * (1 - ((i - 14) / 14.5) ** 2) * (-0.55) + 125)) for i in range(31)]
-        d.line(emp, fill=BLUE, width=6)
-        d.line(pen, fill=RED, width=6)
-        d.line(tot, fill=AMBER, width=8)
-        mx, my = tot[14]
-        d.ellipse([mx - 14, my - 14, mx + 14, my + 14], fill=GREEN, outline=WHITE, width=4)
-        d.text((485, 480), "R_emp", font=f_sm, fill=BLUE)
-        d.text((495, 185), "VC bound", font=f_sm, fill=RED)
-        d.text((mx - 42, my - 56), "h* ottimo", font=f_sm, fill=GREEN)
-
-    elif chapter == 8:
-        # Bias-Variance 2 targets
-        for idx, (cx, label, pts) in enumerate([
-            (215, "Basso Bias · Bassa Var", [(206, 330), (222, 342), (212, 352), (226, 326), (204, 346)]),
-            (545, "Alto Bias · Alta Var", [(595, 255), (625, 290), (575, 305), (635, 240), (605, 275)]),
+    elif chapter in (5, 6, 10):
+        # Containers / Cloud / Kubernetes Pods
+        d.rounded_rectangle([90, 120, 670, 560], radius=26, fill=BLUE_S, outline=BLUE, width=6)
+        d.text((130, 148), "Cluster / Cloud Runtime", font=f_lbl, fill=BLUE)
+        for idx, (x0, col, bg, lbl) in enumerate([
+            (130, GREEN, GREEN_S, "Pod A"),
+            (315, AMBER, AMBER_S, "Pod B"),
+            (500, PURPLE, PURPLE_S, "Pod C"),
         ]):
-            cy = 340
-            for r, col in [(138, BLUE_S), (92, WHITE), (46, RED_S)]:
-                d.ellipse([cx - r, cy - r, cx + r, cy + r], fill=col, outline=SOFT, width=3)
-            d.ellipse([cx - 10, cy - 10, cx + 10, cy + 10], fill=RED)
-            for px, py in pts:
-                d.ellipse([px - 9, py - 9, px + 9, py + 9], fill=BLUE, outline=WHITE, width=2)
-            bb = d.textbbox((0, 0), label, font=f_sm)
-            d.text((cx - (bb[2] - bb[0]) // 2, 512), label, font=f_sm, fill=INK)
-
-    elif chapter == 9:
-        # ROC curve + AUC fill
-        _draw_axes(d, 100, 575, 560, 470, SOFT)
-        _draw_dashed_line(d, (100, 575), (620, 135), MUTED, width=4)
-        roc = [(100, 575)]
-        for i in range(1, 31):
-            t = i / 30.0
-            px = int(100 + t * 520)
-            py = int(575 - (1 - (1 - t) ** 4.2) * 440)
-            roc.append((px, py))
-        poly = roc + [(620, 575)]
-        d.polygon(poly, fill=RED_S)
-        d.line(roc, fill=RED, width=8)
-        d.text((310, 385), "AUC", font=load_font(44, bold=True), fill=RED)
-        d.text((130, 100), "TPR", font=f_sm, fill=SOFT)
-        d.text((575, 592), "FPR", font=f_sm, fill=SOFT)
-
-    elif chapter == 10:
-        # Single Perceptron / Artificial Neuron
-        inputs = [(115, 200), (115, 345), (115, 490)]
-        cx, cy = 395, 345
-        for idx, (ix, iy) in enumerate(inputs):
-            d.line([(ix + 26, iy), (cx - 64, cy)], fill=BLUE, width=5)
-            d.ellipse([ix - 26, iy - 26, ix + 26, iy + 26], fill=WHITE, outline=INK, width=5)
-            d.text((ix - 12, iy - 14), f"x{idx + 1}", font=f_sm, fill=INK)
-        d.ellipse([cx - 64, cy - 64, cx + 64, cy + 64], fill=BLUE_S, outline=BLUE, width=6)
-        d.text((cx - 18, cy - 22), "Σ", font=load_font(44, bold=True), fill=BLUE)
-        _draw_arrow(d, (cx + 68, cy), (645, cy), AMBER, width=7, head=20)
-        d.text((535, cy - 52), "f(net)", font=f_lbl, fill=AMBER)
-
-    elif chapter == 11:
-        # MLP + Backprop feedback arrow
-        layers = [
-            [(145, 210), (145, 340), (145, 470)],
-            [(380, 155), (380, 275), (380, 395), (380, 515)],
-            [(615, 265), (615, 415)],
-        ]
-        for l_idx in range(len(layers) - 1):
-            for p1 in layers[l_idx]:
-                for p2 in layers[l_idx + 1]:
-                    d.line([p1, p2], fill=hex_to_rgba("#1D4ED8", 110), width=4)
-        for l_idx, pts in enumerate(layers):
-            col = SOFT if l_idx == 0 else (BLUE if l_idx == 1 else AMBER)
-            bg = WHITE if l_idx == 0 else (BLUE_S if l_idx == 1 else AMBER_S)
-            for px, py in pts:
-                d.ellipse([px - 24, py - 24, px + 24, py + 24], fill=bg, outline=col, width=5)
-        _draw_arrow(d, (595, 585), (175, 585), RED, width=7, head=20)
-        d.text((285, 600), "Backpropagation δ", font=f_sm, fill=RED)
-
-    elif chapter == 12:
-        # Gradient descent trajectory into loss valley
-        curve = [(90 + i * 20, int(190 + 310 * math.exp(-((i - 16) / 8.5) ** 2) + 45 * math.sin(i * 0.38))) for i in range(30)]
-        d.line(curve, fill=INK, width=6)
-        hops = [curve[4], curve[7], curve[10], curve[13], curve[16]]
-        d.line(hops, fill=RED, width=6)
-        for i, (px, py) in enumerate(hops):
-            col = GREEN if i == len(hops) - 1 else RED
-            d.ellipse([px - 12, py - 12, px + 12, py + 12], fill=col, outline=WHITE, width=3)
-        d.text((hops[-1][0] - 42, hops[-1][1] + 24), "w* min", font=f_lbl, fill=GREEN)
-
-    elif chapter == 13:
-        # SVM Maximum-Margin Hyperplane + Support Vectors
-        d.line([(135, 560), (625, 145)], fill=BLUE, width=8)
-        _draw_dashed_line(d, (80, 480), (545, 85), MUTED, width=4)
-        _draw_dashed_line(d, (190, 640), (680, 225), MUTED, width=4)
-        blues = [(175, 225), (265, 195), (225, 315), (345, 255)]
-        reds = [(515, 425), (465, 515), (595, 465), (415, 445)]
-        svs = [(225, 315), (345, 255), (415, 445)]
-        for px, py in blues:
-            d.ellipse([px - 14, py - 14, px + 14, py + 14], fill=BLUE, outline=WHITE, width=3)
-        for px, py in reds:
-            d.ellipse([px - 14, py - 14, px + 14, py + 14], fill=RED, outline=WHITE, width=3)
-        for sx, sy in svs:
-            d.ellipse([sx - 26, sy - 26, sx + 26, sy + 26], outline=AMBER, width=5)
-        d.text((310, 92), "Margine max", font=f_sm, fill=BLUE)
-
-    elif chapter == 14:
-        # CNN 2D grid + 3x3 kernel -> feature map
-        cell = 52
-        ox, oy = 85, 175
-        for r in range(6):
-            for c in range(6):
-                fill = BLUE_S if (1 <= r <= 3 and 1 <= c <= 3) else WHITE
-                col = BLUE if (1 <= r <= 3 and 1 <= c <= 3) else MUTED
-                d.rectangle([ox + c * cell, oy + r * cell, ox + (c + 1) * cell, oy + (r + 1) * cell], fill=fill, outline=col, width=3)
-        d.rectangle([ox + cell, oy + cell, ox + 4 * cell, oy + 4 * cell], outline=BLUE, width=7)
-        # Projection lines
-        fx, fy = 515, 250
-        d.line([(ox + 4 * cell, oy + cell), (fx, fy)], fill=AMBER, width=4)
-        d.line([(ox + 4 * cell, oy + 4 * cell), (fx, fy + 64)], fill=AMBER, width=4)
-        for r in range(3):
-            for c in range(3):
-                fill = AMBER_S if (r == 0 and c == 0) else WHITE
-                col = AMBER if (r == 0 and c == 0) else SOFT
-                d.rectangle([fx + c * 58, fy + r * 58, fx + (c + 1) * 58, fy + (r + 1) * 58], fill=fill, outline=col, width=4)
-        d.text((135, 515), "Kernel 3×3", font=f_sm, fill=BLUE)
-        d.text((510, 455), "Feature map", font=f_sm, fill=AMBER)
-
-    elif chapter == 15:
-        # Deep Residual Block with Skip Connection
-        bx0, bx1 = 235, 515
-        for y0, lbl, bg, col in [(155, "Layer Conv / Linear", BLUE_S, BLUE), (315, "ReLU + Norm", GREEN_S, GREEN), (475, "Layer Conv / Linear", BLUE_S, BLUE)]:
-            d.rounded_rectangle([bx0, y0, bx1, y0 + 95], radius=18, fill=bg, outline=col, width=5)
+            d.rounded_rectangle([x0, 235, x0 + 140, 415], radius=18, fill=bg, outline=col, width=5)
             bb = d.textbbox((0, 0), lbl, font=f_sm)
-            d.text(((bx0 + bx1 - (bb[2] - bb[0])) // 2, y0 + 30), lbl, font=f_sm, fill=INK)
-        _draw_arrow(d, (375, 250), (375, 312), INK, width=5, head=14)
-        _draw_arrow(d, (375, 410), (375, 472), INK, width=5, head=14)
-        # Skip connection arc on the right
-        d.line([(375, 110), (375, 152)], fill=INK, width=5)
-        d.line([(375, 118), (615, 118), (615, 610)], fill=AMBER, width=7)
-        _draw_arrow(d, (615, 610), (415, 610), AMBER, width=7, head=18)
-        d.ellipse([348, 583, 402, 637], fill=AMBER_S, outline=AMBER, width=5)
-        d.text((366, 592), "+", font=f_lbl, fill=AMBER)
-        d.text((530, 82), "Skip + x", font=f_sm, fill=AMBER)
+            d.text((x0 + (140 - (bb[2] - bb[0])) // 2, 310), lbl, font=f_sm, fill=INK)
+        d.rounded_rectangle([130, 455, 640, 528], radius=14, fill=WHITE, outline=SOFT, width=4)
+        d.text((240, 476), "Container Engine & Network", font=f_sm, fill=SOFT)
 
-    elif chapter == 16:
-        # Reservoir Computing (sparse recurrent cloud -> linear readout)
-        d.ellipse([95, 165, 465, 520], fill=BLUE_S, outline=BLUE, width=5)
-        nodes = [(190, 270), (295, 230), (380, 315), (210, 410), (330, 435), (275, 330)]
-        edges = [(0, 1), (1, 2), (2, 4), (4, 3), (3, 0), (0, 5), (5, 2), (5, 4), (1, 5)]
-        for a, b in edges:
-            d.line([nodes[a], nodes[b]], fill=hex_to_rgba("#1D4ED8", 130), width=4)
-        for nx, ny in nodes:
-            d.ellipse([nx - 16, ny - 16, nx + 16, ny + 16], fill=WHITE, outline=BLUE, width=5)
-        # Readout node
-        rx, ry = 625, 345
-        for nx, ny in [nodes[1], nodes[2], nodes[4]]:
-            d.line([(nx + 16, ny), (rx - 36, ry)], fill=AMBER, width=5)
-        d.ellipse([rx - 36, ry - 36, rx + 36, ry + 36], fill=AMBER_S, outline=AMBER, width=6)
-        d.text((175, 545), "Reservoir fisso", font=f_sm, fill=BLUE)
-        d.text((535, 402), "Readout", font=f_sm, fill=AMBER)
-
-    elif chapter == 17:
-        # K-means 3 clusters + centroids
-        clusters = [
-            (210, 235, BLUE, BLUE_S, [(155, 200), (245, 185), (175, 285), (265, 265), (200, 235)]),
-            (535, 235, RED, RED_S, [(485, 195), (575, 190), (505, 290), (595, 265), (545, 235)]),
-            (375, 475, GREEN, GREEN_S, [(315, 445), (425, 435), (345, 535), (435, 515), (380, 480)]),
-        ]
-        for cx, cy, col, soft, pts in clusters:
-            d.ellipse([cx - 108, cy - 95, cx + 108, cy + 95], fill=soft, outline=col, width=4)
-            for px, py in pts:
-                d.ellipse([px - 10, py - 10, px + 10, py + 10], fill=col, outline=WHITE, width=2)
-            # Centroid
-            d.ellipse([cx - 17, cy - 17, cx + 17, cy + 17], fill=WHITE, outline=INK, width=5)
-            d.ellipse([cx - 6, cy - 6, cx + 6, cy + 6], fill=col)
-
-    elif chapter == 18:
-        # Unrolled RNN cells h_{t-1} -> h_t -> h_{t+1}
-        xs = [155, 380, 605]
-        cy = 345
-        for i, cx in enumerate(xs):
-            d.rounded_rectangle([cx - 64, cy - 58, cx + 64, cy + 58], radius=20, fill=BLUE_S, outline=BLUE, width=6)
-            lbl = ["h(t-1)", "h(t)", "h(t+1)"][i]
+    elif chapter in (7, 8, 9):
+        # Microservices Mesh / Splitting Monolith
+        nodes = [(380, 175, "API GW", BLUE, BLUE_S), (185, 365, "Svc A", GREEN, GREEN_S), (380, 365, "Svc B", AMBER, AMBER_S), (575, 365, "Svc C", PURPLE, PURPLE_S)]
+        for nx, ny, _, col, _ in nodes[1:]:
+            d.line([(380, 225), (nx, ny - 48)], fill=SOFT, width=5)
+        for nx, ny, lbl, col, bg in nodes:
+            d.rounded_rectangle([nx - 72, ny - 48, nx + 72, ny + 48], radius=20, fill=bg, outline=col, width=6)
             bb = d.textbbox((0, 0), lbl, font=f_sm)
-            d.text((cx - (bb[2] - bb[0]) // 2, cy - 14), lbl, font=f_sm, fill=INK)
-            _draw_arrow(d, (cx, 530), (cx, cy + 64), SOFT, width=5, head=14)
-            _draw_arrow(d, (cx, cy - 64), (cx, 170), GREEN, width=5, head=14)
-            d.text((cx - 16, 545), f"x{i + 1}", font=f_sm, fill=SOFT)
-            d.text((cx - 16, 130), f"y{i + 1}", font=f_sm, fill=GREEN)
-            if i < 2:
-                _draw_arrow(d, (cx + 68, cy), (xs[i + 1] - 68, cy), AMBER, width=7, head=18)
+            d.text((nx - (bb[2] - bb[0]) // 2, ny - 14), lbl, font=f_sm, fill=INK)
+            if ny > 250:
+                d.ellipse([nx - 34, ny + 86, nx + 34, ny + 132], fill=WHITE, outline=col, width=4)
+                d.line([(nx, ny + 48), (nx, ny + 86)], fill=col, width=4)
+                d.text((nx - 16, ny + 96), "DB", font=f_sm, fill=col)
+
+    elif chapter in (11, 12):
+        # Testing & DevOps CI/CD Pipeline
+        stages = [(75, "Build", BLUE, BLUE_S), (245, "Test", GREEN, GREEN_S), (415, "Deploy", AMBER, AMBER_S), (585, "Monitor", PURPLE, PURPLE_S)]
+        for i, (x0, lbl, col, bg) in enumerate(stages):
+            d.rounded_rectangle([x0, 270, x0 + 130, 410], radius=20, fill=bg, outline=col, width=6)
+            bb = d.textbbox((0, 0), lbl, font=f_sm)
+            d.text((x0 + (130 - (bb[2] - bb[0])) // 2, 326), lbl, font=f_sm, fill=INK)
+            if i < len(stages) - 1:
+                _draw_arrow(d, (x0 + 136, 340), (stages[i + 1][0] - 6, 340), INK, width=5, head=14)
+        d.text((235, 165), "CI / CD & Testing", font=f_lbl, fill=INK)
+
+    elif chapter in (13, 14):
+        # Security & Zero-Trust Shield
+        shield = [(380, 125), (565, 200), (535, 435), (380, 565), (225, 435), (195, 200)]
+        d.polygon(shield, fill=RED_S, outline=RED)
+        d.line(shield + [shield[0]], fill=RED, width=7)
+        d.rounded_rectangle([318, 305, 442, 415], radius=16, fill=WHITE, outline=INK, width=6)
+        d.arc([340, 245, 420, 345], start=180, end=0, fill=INK, width=7)
+        d.text((235, 585), "TLS · AuthN · AuthZ", font=f_sm, fill=RED)
 
     else:
-        # Chapter 19: Graph Neural Networks & Message Passing
-        nodes = [(380, 340), (205, 195), (565, 200), (165, 445), (595, 455), (375, 555)]
-        edges = [(0, 1), (0, 2), (0, 3), (0, 4), (0, 5), (1, 3), (2, 4), (3, 5), (4, 5)]
-        for a, b in edges:
-            col = AMBER if a == 0 else MUTED
-            w = 6 if a == 0 else 4
-            d.line([nodes[a], nodes[b]], fill=col, width=w)
-            if a == 0:
-                # Message arrow toward target node 0
-                x1, y1 = nodes[b]
-                x2, y2 = nodes[0]
-                mx, my = x1 + (x2 - x1) * 0.68, y1 + (y2 - y1) * 0.68
-                _draw_arrow(d, (x1 + (x2 - x1) * 0.25, y1 + (y2 - y1) * 0.25), (mx, my), AMBER, width=6, head=16)
-        for i, (nx, ny) in enumerate(nodes):
-            if i == 0:
-                d.ellipse([nx - 38, ny - 38, nx + 38, ny + 38], fill=PURPLE_S, outline=PURPLE, width=7)
-                d.text((nx - 10, ny - 16), "v", font=f_lbl, fill=PURPLE)
-            else:
-                d.ellipse([nx - 24, ny - 24, nx + 24, ny + 24], fill=WHITE, outline=BLUE, width=5)
-        d.text((175, 84), "Message Passing", font=f_lbl, fill=PURPLE)
+        # Chapter 15: Quantum Software Engineering (Qubit Bloch sphere)
+        cx, cy, r = 380, 345, 175
+        d.ellipse([cx - r, cy - r, cx + r, cy + r], fill=PURPLE_S, outline=PURPLE, width=6)
+        d.ellipse([cx - r, cy - 58, cx + r, cy + 58], outline=PURPLE, width=4)
+        _draw_arrow(d, (cx, cy), (cx + 115, cy - 115), AMBER, width=8, head=22)
+        d.text((cx - 24, cy - r - 48), "|0⟩", font=f_lbl, fill=INK)
+        d.text((cx - 24, cy + r + 14), "|1⟩", font=f_lbl, fill=INK)
+        d.text((cx + 122, cy - 142), "|ψ⟩", font=f_lbl, fill=AMBER)
 
     return canvas.resize((width, height), Image.LANCZOS)
 
@@ -826,14 +629,15 @@ def generate_og_card(
             draw.text((left, foot_y + 6), course_title, font=load_font(19, bold=True), fill=hex_to_rgba("#141413", 255))
             draw.text((left, foot_y + 31), credit_line, font=f_sub, fill=hex_to_rgba("#73736D", 255))
     else:
-        draw.text((left, foot_y + 16), "Videolezioni sincronizzate con formule KaTeX e grafici vettoriali", font=f_foot, fill=hex_to_rgba("#73736D", 255))
+        draw.text((left, foot_y + 16), "Diagrammi vettoriali, schemi e voce guidata", font=f_foot, fill=hex_to_rgba("#73736D", 255))
 
-    fbbox = draw.textbbox((0, 0), footer_right, font=f_foot)
+    f_foot_r = load_font(16, bold=False) if len(footer_right) > 36 else f_foot
+    fbbox = draw.textbbox((0, 0), footer_right, font=f_foot_r)
     fw = fbbox[2] - fbbox[0]
     draw.text(
-        (right_edge - fw, foot_y + 16),
+        (right_edge - fw, foot_y + (31 if not is_home else 17)),
         footer_right,
-        font=f_foot,
+        font=f_foot_r,
         fill=hex_to_rgba("#73736D", 255),
     )
 
@@ -933,7 +737,7 @@ def write_404_page(out_dir: Path, base_url: str, ready_ids: list[str], course_ti
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Pagina non trovata — {html.escape(course_title)}</title>
   <meta name="theme-color" content="#F6F6F3" />
-  <link rel="icon" type="image/png" sizes="64x64" href="{base_path}assets/favicon-lia.png" />
+  <link rel="icon" type="image/png" sizes="64x64" href="{base_path}assets/favicon-fabio.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="{base_path}assets/apple-touch-icon.png" />
   <script>
     (function () {{
@@ -1201,7 +1005,7 @@ def build_site(
         description=course_subtitle,
         chips=[
             f"{format_hours(total_mins)} di lezioni",
-            f"{len(ready_lessons)} capitoli",
+            f"{len(ready_lessons)} {'capitolo' if len(ready_lessons) == 1 else 'capitoli'}",
         ],
         footer_right=display_host,
         accent_a="#1D4ED8",
@@ -1291,7 +1095,7 @@ def build_site(
             description=summary,
             chips=[
                 f"~{dur_min} min",
-                "Voce + KaTeX",
+                "Voce + Schemi",
             ],
             footer_right=display_host,
             accent_a=accent_a,
@@ -1326,6 +1130,7 @@ def build_site(
         chap_html = (
             chap_html.replace('href="css/styles.css"', 'href="../css/styles.css"')
             .replace('href="css/themes.css"', 'href="../css/themes.css"')
+            .replace('href="assets/favicon-fabio.png"', 'href="../assets/favicon-fabio.png"')
             .replace('href="assets/favicon-lia.png"', 'href="../assets/favicon-lia.png"')
             .replace('href="assets/apple-touch-icon.png"', 'href="../assets/apple-touch-icon.png"')
             .replace('href="index.html"', 'href="../"')

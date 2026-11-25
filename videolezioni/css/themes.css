@@ -1194,6 +1194,11 @@ td.cue-highlight {
   z-index: 2;
 }
 
+.live-sync-enabled .metrics-row.spotlight-active {
+  box-shadow: none;
+  transform: none;
+}
+
 .live-sync-enabled .spotlight-dim {
   opacity: 0.56 !important;
   transition: opacity 340ms ease, box-shadow 300ms ease, transform 300ms ease;

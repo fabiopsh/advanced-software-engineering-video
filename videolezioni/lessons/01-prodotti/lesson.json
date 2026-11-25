@@ -1,0 +1,464 @@
+{
+  "lesson_id": "01-prodotti",
+  "chapter": 1,
+  "part": "Parte I · Prodotti software e sviluppo agile",
+  "title": "Dal progetto al prodotto",
+  "voice_config": {
+    "provider": "gemini",
+    "model": "gemini-3.8-flash-tts",
+    "voice_name": "Ludo",
+    "style": "chiaro, didattico, calmo e preciso, stile lezione universitaria di ingegneria del software"
+  },
+  "scenes": [
+    {
+      "id": "scene-01",
+      "section": "1.1 · Progetti e prodotti",
+      "title": "Da project-based a product-based software engineering",
+      "tts_text": "Benvenuti al primo capitolo di Advanced Software Engineering. Oggi vediamo perché l'industria del software si è spostata dai progetti su commessa ai prodotti software. [pause:0.5] Nel Novecento ogni azienda ordinava un sistema su misura, ad esempio il proprio CRM personalizzato. Oggi quasi nessuna azienda ha bisogno di software costruito da zero: preferisce un prodotto già pronto, condiviso da molti clienti. [pause:0.6] Nel project-based software engineering è il cliente a descrivere il problema e decidere le funzionalità. Cliente e sviluppatore definiscono insieme i requisiti, e lo sviluppatore realizza il software che risolve il problema. Se l'attività del cliente cambia, cambiano i requisiti e quindi cambia anche il software. [pause:0.6] Nel product-based software engineering il paradigma si ribalta: è lo sviluppatore a decidere le feature e l'evoluzione del prodotto, mentre i clienti scelgono se acquistarlo. [pause:0.5] Questo ha una conseguenza critica: un cliente che ha già investito in un prodotto difficilmente lo sostituisce. Arrivare presto sul mercato diventa quindi decisivo, ed è per questo che servono metodi di sviluppo rapidi, cioè i metodi agili.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">1.1 · Progetti e prodotti</div>\n  <h2 class=\"slide-title\">Da Project-based a Product-based Software Engineering</h2>\n  <div id=\"s1\" class=\"split-visual cue-hidden\">\n    <div id=\"svg-cycle\" class=\"svg-panel\">\n      <svg viewBox=\"0 0 360 205\" class=\"diagram-svg\" aria-label=\"Ciclo project-based\">\n        <defs>\n          <marker id=\"arr1\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\">\n            <path d=\"M0 1 L9 5 L0 9 z\" fill=\"var(--ink-soft)\"/>\n          </marker>\n        </defs>\n        <g id=\"svg-prob\">\n          <text x=\"180\" y=\"17\" text-anchor=\"middle\" class=\"svg-caption\">cliente</text>\n          <ellipse cx=\"180\" cy=\"42\" rx=\"58\" ry=\"19\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.8\"/>\n          <text x=\"180\" y=\"46\" text-anchor=\"middle\" class=\"svg-math\">Problem</text>\n        </g>\n        <g id=\"svg-req\">\n          <ellipse cx=\"82\" cy=\"150\" rx=\"64\" ry=\"19\" fill=\"var(--orange-soft, rgba(217,119,6,0.12))\" stroke=\"var(--orange)\" stroke-width=\"1.8\"/>\n          <text x=\"82\" y=\"154\" text-anchor=\"middle\" class=\"svg-math\">Requirements</text>\n          <text x=\"82\" y=\"186\" text-anchor=\"middle\" class=\"svg-caption\">cliente e sviluppatore</text>\n        </g>\n        <g id=\"svg-sw\">\n          <ellipse cx=\"278\" cy=\"150\" rx=\"58\" ry=\"19\" fill=\"var(--green-soft, rgba(21,128,61,0.12))\" stroke=\"var(--green)\" stroke-width=\"1.8\"/>\n          <text x=\"278\" y=\"154\" text-anchor=\"middle\" class=\"svg-math\">Software</text>\n          <text x=\"278\" y=\"186\" text-anchor=\"middle\" class=\"svg-caption\">sviluppatore</text>\n        </g>\n        <line x1=\"146\" y1=\"59\" x2=\"100\" y2=\"128\" stroke=\"var(--ink-soft)\" stroke-width=\"1.6\" marker-end=\"url(#arr1)\"/>\n        <text x=\"96\" y=\"93\" text-anchor=\"end\" class=\"svg-tick\">generates</text>\n        <line x1=\"149\" y1=\"150\" x2=\"216\" y2=\"150\" stroke=\"var(--ink-soft)\" stroke-width=\"1.6\" marker-end=\"url(#arr1)\"/>\n        <text x=\"182\" y=\"141\" text-anchor=\"middle\" class=\"svg-tick\">implemented-by</text>\n        <line x1=\"258\" y1=\"129\" x2=\"214\" y2=\"59\" stroke=\"var(--ink-soft)\" stroke-width=\"1.6\" marker-end=\"url(#arr1)\"/>\n        <text x=\"255\" y=\"93\" text-anchor=\"start\" class=\"svg-tick\">helps-with</text>\n      </svg>\n    </div>\n    <div class=\"formula-col\">\n      <div id=\"b-proj\" class=\"box box-def\">\n        <div class=\"box-label\">Project-based SE</div>\n        <p>Software su misura (es. CRM): il <strong>cliente</strong> decide le funzionalità. Se il business cambia, cambiano i requisiti e quindi il software.</p>\n      </div>\n      <div id=\"b-prod\" class=\"box box-primary\">\n        <div class=\"box-label\">Product-based SE</div>\n        <p>Prodotto pronto condiviso da molti clienti: lo <strong>sviluppatore</strong> decide <em>feature</em> ed evoluzione; i clienti scelgono se acquistarlo.</p>\n      </div>\n    </div>\n  </div>\n  <table id=\"s2\" class=\"acad-table cue-hidden\">\n    <thead>\n      <tr><th>Dimensione</th><th>Project-based</th><th>Product-based</th></tr>\n    </thead>\n    <tbody>\n      <tr id=\"tr1-1\"><td><strong>Chi decide</strong></td><td>Il cliente</td><td>Lo sviluppatore</td></tr>\n      <tr id=\"tr1-2\"><td><strong>Motivo del cambiamento</strong></td><td>Cambia l'attività del cliente</td><td>Evoluzione decisa dal produttore</td></tr>\n      <tr id=\"tr1-3\"><td><strong>Requisiti &amp; ritmo</strong></td><td>Più documentazione formale</td><td>Meno doc, <strong>time-to-market</strong> critico (metodi agili)</td></tr>\n    </tbody>\n  </table>\n</div>\n",
+      "cues": [
+        {
+          "at": 4.1,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "Oggi vediamo perché"
+        },
+        {
+          "at": 4.15,
+          "action": "highlight",
+          "target": "#b-proj",
+          "duration": 4.5,
+          "anchor": "Oggi vediamo perché"
+        },
+        {
+          "at": 8.82,
+          "action": "highlight",
+          "target": "#b-prod",
+          "duration": 1.6,
+          "anchor": "prodotti software"
+        },
+        {
+          "at": 10.56,
+          "action": "highlight",
+          "target": "#b-proj",
+          "duration": 6.2,
+          "anchor": "Nel Novecento ogni azienda"
+        },
+        {
+          "at": 16.98,
+          "action": "highlight",
+          "target": "#b-prod",
+          "duration": 7.0,
+          "anchor": "Oggi quasi nessuna azienda"
+        },
+        {
+          "at": 24.38,
+          "action": "highlight",
+          "target": "#svg-prob",
+          "duration": 6.1,
+          "anchor": "Nel project-based software engineering"
+        },
+        {
+          "at": 30.8,
+          "action": "highlight",
+          "target": "#svg-req",
+          "duration": 2.9,
+          "anchor": "Cliente e sviluppatore definiscono"
+        },
+        {
+          "at": 33.86,
+          "action": "highlight",
+          "target": "#svg-sw",
+          "duration": 2.9,
+          "anchor": "lo sviluppatore realizza il software"
+        },
+        {
+          "at": 37.0,
+          "action": "highlight",
+          "target": "#b-proj",
+          "duration": 4.6,
+          "anchor": "Se l'attività del cliente cambia"
+        },
+        {
+          "at": 41.86,
+          "action": "highlight",
+          "target": "#b-prod",
+          "duration": 9.8,
+          "anchor": "Nel product-based software engineering"
+        },
+        {
+          "at": 52.22,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Questo ha una conseguenza critica"
+        },
+        {
+          "at": 52.3,
+          "action": "highlight",
+          "target": "#s2",
+          "duration": 6.0,
+          "anchor": "Questo ha una conseguenza critica"
+        },
+        {
+          "at": 58.46,
+          "action": "highlight",
+          "target": "#tr1-3",
+          "duration": 7.4,
+          "anchor": "Arrivare presto sul mercato"
+        }
+      ],
+      "audio_file": "audio/scene-01.wav",
+      "subtitle_file": "subtitles/scene-01.json",
+      "duration_sec": 65.87
+    },
+    {
+      "id": "scene-02",
+      "section": "1.2 · Modelli di esecuzione",
+      "title": "Stand-alone, Hybrid e Software as a Service",
+      "tts_text": "Come gira concretamente un prodotto software? Esistono tre modelli di esecuzione, che si distinguono per come ripartiscono codice e dati tra il computer dell'utente e i server del produttore. [pause:0.6] Nel modello stand-alone, tutto vive sulla macchina dell'utente: interfaccia grafica, funzionalità del prodotto e dati locali. I server del produttore hanno un flusso unidirezionale e si limitano a inviare aggiornamenti periodici. [pause:0.6] Nel modello hybrid le responsabilità si dividono. Sul dispositivo dell'utente restano interfaccia, funzionalità parziali e dati; sui server del produttore risiedono invece funzionalità aggiuntive, backup dei dati e aggiornamenti, con uno scambio continuo bidirezionale. È il caso tipico di moltissime app per smartphone. [pause:0.6] Infine, nel Software as a Service, o SaaS, l'utente possiede soltanto l'interfaccia, tramite browser o app leggera. Tutte le funzionalità applicative e tutti i dati stanno sui server del produttore, come avviene in piattaforme come Salesforce. [pause:0.5] Osservate il trend chiave: passando da stand-alone a SaaS il baricentro si sposta progressivamente verso il cloud, tema che approfondiremo nei capitoli dedicati.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">1.2 · Modelli di esecuzione</div>\n  <h2 class=\"slide-title\">Dove vivono interfaccia, funzionalità e dati</h2>\n  <div id=\"s1\" class=\"svg-panel cue-hidden\">\n    <svg viewBox=\"0 0 640 205\" class=\"diagram-svg\" aria-label=\"Tre modelli di esecuzione software\">\n      <defs>\n        <marker id=\"arr-up\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\">\n          <path d=\"M0 1 L9 5 L0 9 z\" fill=\"var(--blue)\"/>\n        </marker>\n        <marker id=\"arr-bi\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n          <path d=\"M0 1 L9 5 L0 9 z\" fill=\"var(--green)\"/>\n        </marker>\n      </defs>\n      <text x=\"12\" y=\"64\" class=\"svg-caption\">Computer</text>\n      <text x=\"12\" y=\"78\" class=\"svg-caption\">utente</text>\n      <text x=\"12\" y=\"158\" class=\"svg-caption\">Server</text>\n      <text x=\"12\" y=\"172\" class=\"svg-caption\">produttore</text>\n      <line x1=\"84\" y1=\"112\" x2=\"626\" y2=\"112\" stroke=\"var(--muted)\" stroke-width=\"1\" stroke-dasharray=\"5 4\" opacity=\"0.6\"/>\n      <g id=\"svg-standalone\">\n        <text x=\"170\" y=\"20\" text-anchor=\"middle\" class=\"svg-math\">Stand-alone</text>\n        <rect x=\"94\" y=\"32\" width=\"152\" height=\"66\" rx=\"8\" fill=\"var(--blue-soft)\" stroke=\"var(--blue)\" stroke-width=\"1.6\"/>\n        <text x=\"170\" y=\"52\" text-anchor=\"middle\" class=\"svg-tick\">User interface</text>\n        <text x=\"170\" y=\"69\" text-anchor=\"middle\" class=\"svg-tick\">Product functionality</text>\n        <text x=\"170\" y=\"86\" text-anchor=\"middle\" class=\"svg-tick\">User data</text>\n        <line x1=\"170\" y1=\"138\" x2=\"170\" y2=\"102\" stroke=\"var(--blue)\" stroke-width=\"2\" marker-end=\"url(#arr-up)\"/>\n        <rect x=\"94\" y=\"142\" width=\"152\" height=\"46\" rx=\"8\" fill=\"none\" stroke=\"var(--muted)\" stroke-width=\"1.5\"/>\n        <text x=\"170\" y=\"169\" text-anchor=\"middle\" class=\"svg-tick\">Product updates</text>\n      </g>\n      <g id=\"svg-hybrid\">\n        <text x=\"355\" y=\"20\" text-anchor=\"middle\" class=\"svg-math\">Hybrid</text>\n        <rect x=\"279\" y=\"32\" width=\"152\" height=\"66\" rx=\"8\" fill=\"var(--orange-soft, rgba(217,119,6,0.12))\" stroke=\"var(--orange)\" stroke-width=\"1.6\"/>\n        <text x=\"355\" y=\"52\" text-anchor=\"middle\" class=\"svg-tick\">User interface</text>\n        <text x=\"355\" y=\"69\" text-anchor=\"middle\" class=\"svg-tick\">Partial functionality</text>\n        <text x=\"355\" y=\"86\" text-anchor=\"middle\" class=\"svg-tick\">User data</text>\n        <line x1=\"355\" y1=\"134\" x2=\"355\" y2=\"104\" stroke=\"var(--green)\" stroke-width=\"2\" marker-start=\"url(#arr-bi)\" marker-end=\"url(#arr-bi)\"/>\n        <rect x=\"279\" y=\"142\" width=\"152\" height=\"56\" rx=\"8\" fill=\"var(--orange-soft, rgba(217,119,6,0.08))\" stroke=\"var(--orange)\" stroke-width=\"1.4\"/>\n        <text x=\"355\" y=\"159\" text-anchor=\"middle\" class=\"svg-tick\">Additional functionality</text>\n        <text x=\"355\" y=\"174\" text-anchor=\"middle\" class=\"svg-tick\">User data backups</text>\n        <text x=\"355\" y=\"189\" text-anchor=\"middle\" class=\"svg-tick\">Product updates</text>\n      </g>\n      <g id=\"svg-saas\">\n        <text x=\"540\" y=\"20\" text-anchor=\"middle\" class=\"svg-math\">Software as a Service</text>\n        <rect x=\"464\" y=\"38\" width=\"152\" height=\"54\" rx=\"8\" fill=\"none\" stroke=\"var(--green)\" stroke-width=\"1.6\"/>\n        <text x=\"540\" y=\"61\" text-anchor=\"middle\" class=\"svg-tick\">User interface</text>\n        <text x=\"540\" y=\"78\" text-anchor=\"middle\" class=\"svg-caption\">(browser o app)</text>\n        <line x1=\"540\" y1=\"134\" x2=\"540\" y2=\"98\" stroke=\"var(--green)\" stroke-width=\"2\" marker-start=\"url(#arr-bi)\" marker-end=\"url(#arr-bi)\"/>\n        <rect x=\"464\" y=\"142\" width=\"152\" height=\"52\" rx=\"8\" fill=\"var(--green-soft, rgba(21,128,61,0.12))\" stroke=\"var(--green)\" stroke-width=\"1.6\"/>\n        <text x=\"540\" y=\"164\" text-anchor=\"middle\" class=\"svg-tick\">Product functionality</text>\n        <text x=\"540\" y=\"181\" text-anchor=\"middle\" class=\"svg-tick\">User data</text>\n      </g>\n    </svg>\n  </div>\n  <div id=\"s2\" class=\"grid-3 cue-hidden\">\n    <div id=\"m-stand\" class=\"box box-def\">\n      <div class=\"box-label\">Stand-alone</div>\n      <p>Tutto sul client locale. I server inviano solo <strong>aggiornamenti</strong> (flusso unidirezionale).</p>\n    </div>\n    <div id=\"m-hyb\" class=\"box box-primary\">\n      <div class=\"box-label\">Hybrid</div>\n      <p>Funzioni divise tra client e server, con backup e sync continui (es. <em>app mobile</em>).</p>\n    </div>\n    <div id=\"m-saas\" class=\"box box-idea\">\n      <div class=\"box-label\">SaaS</div>\n      <p>Sul client solo browser o app; logica e dati sui server del produttore (es. <em>Salesforce</em>).</p>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 2.81,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "Esistono tre modelli di esecuzione"
+        },
+        {
+          "at": 10.66,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Nel modello stand-alone"
+        },
+        {
+          "at": 10.66,
+          "action": "highlight",
+          "target": "#m-stand",
+          "duration": 12,
+          "anchor": "Nel modello stand-alone"
+        },
+        {
+          "at": 23.48,
+          "action": "highlight",
+          "target": "#m-hyb",
+          "duration": 16,
+          "anchor": "Nel modello hybrid"
+        },
+        {
+          "at": 41.98,
+          "action": "highlight",
+          "target": "#m-saas",
+          "duration": 18,
+          "anchor": "Infine, nel Software as a Service"
+        }
+      ],
+      "audio_file": "audio/scene-02.wav",
+      "subtitle_file": "subtitles/scene-02.json",
+      "duration_sec": 65.83
+    },
+    {
+      "id": "scene-03",
+      "section": "1.3 · La Product Vision",
+      "title": "Il modello di Geoffrey Moore e l'esempio LinkedIn",
+      "tts_text": "Lo sviluppo di qualsiasi prodotto parte da un punto preciso: la product vision. Prima di scrivere una riga di codice, la vision deve rispondere a tre domande fondamentali. [pause:0.5] Who: chi sono i clienti a cui ci rivolgiamo? What: che cosa dobbiamo sviluppare? E Why: perché i clienti dovrebbero acquistarlo? [pause:0.6] Per formularla in modo rigoroso si usa il template classico proposto da Geoffrey Moore nel millenovecentonovantotto, in Crossing the Chasm, strutturato in sei clausole fisse. [pause:0.5] FOR individua il cliente target, WHO descrive il bisogno o l'opportunità, THE nomina il prodotto e la sua categoria, THAT chiarisce il beneficio principale, UNLIKE identifica la principale alternativa concorrente, e OUR PRODUCT dichiara l'elemento chiave di differenziazione. [pause:0.6] Vediamolo subito applicato a LinkedIn. FOR professionisti globali e persone in cerca di lavoro, WHO hanno bisogno di costruire una rete professionale e avanzare di carriera. THE piattaforma LinkedIn è un social network professionale e talent marketplace, THAT connette persone, mentor, aziende e competenze. UNLIKE i social casuali come Facebook o Instagram e le bacheche statiche come Indeed, OUR PRODUCT integra identità, networking continuo e dati sul mercato del lavoro in tempo reale in un unico ecosistema.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">1.3 · La Product Vision</div>\n  <h2 class=\"slide-title\">Le tre domande chiave e il template di Geoffrey Moore (1998)</h2>\n  <div id=\"s1\" class=\"metrics-row cue-hidden\">\n    <div id=\"q-who\" class=\"metric\">\n      <div class=\"metric-val\">WHO</div>\n      <div class=\"metric-label\">Chi sono i clienti target?</div>\n    </div>\n    <div id=\"q-what\" class=\"metric\">\n      <div class=\"metric-val\">WHAT</div>\n      <div class=\"metric-label\">Che prodotto sviluppare?</div>\n    </div>\n    <div id=\"q-why\" class=\"metric\">\n      <div class=\"metric-val\">WHY</div>\n      <div class=\"metric-label\">Perché dovrebbero acquistarlo?</div>\n    </div>\n  </div>\n  <table id=\"s2\" class=\"acad-table cue-hidden\">\n    <thead>\n      <tr><th>Clausola</th><th>Template di Moore (<em>Crossing the Chasm</em>)</th><th>Esempio · LinkedIn</th></tr>\n    </thead>\n    <tbody>\n      <tr id=\"mv-1\"><td><strong>FOR</strong></td><td>cliente target</td><td>Global professionals and job seekers</td></tr>\n      <tr id=\"mv-2\"><td><strong>WHO</strong></td><td>bisogno o opportunità</td><td>Need professional network, career &amp; opportunities</td></tr>\n      <tr id=\"mv-3\"><td><strong>THE</strong></td><td>nome prodotto <em>is a</em> categoria</td><td>LinkedIn platform — professional network &amp; talent marketplace</td></tr>\n      <tr id=\"mv-4\"><td><strong>THAT</strong></td><td>beneficio principale</td><td>Connects individuals with peers, mentors, companies, skills</td></tr>\n      <tr id=\"mv-5\"><td><strong>UNLIKE</strong></td><td>alternativa concorrente</td><td>Casual social (Facebook, Instagram) or static job boards (Indeed)</td></tr>\n      <tr id=\"mv-6\"><td><strong>OUR PRODUCT</strong></td><td>differenziazione essenziale</td><td>Integrates identity, continuous networking &amp; real-time market insights</td></tr>\n    </tbody>\n  </table>\n</div>\n",
+      "cues": [
+        {
+          "at": 0.1,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "sviluppo di qualsiasi prodotto"
+        },
+        {
+          "at": 9.84,
+          "action": "highlight",
+          "target": "#q-who",
+          "duration": 2.56,
+          "anchor": "Who: chi sono i clienti"
+        },
+        {
+          "at": 12.52,
+          "action": "highlight",
+          "target": "#q-what",
+          "duration": 2.32,
+          "anchor": "What: che cosa dobbiamo sviluppare"
+        },
+        {
+          "at": 14.96,
+          "action": "highlight",
+          "target": "#q-why",
+          "duration": 4,
+          "anchor": "Why: perché i clienti"
+        },
+        {
+          "at": 18.18,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Per formularla in modo rigoroso"
+        },
+        {
+          "at": 27.58,
+          "action": "highlight",
+          "target": "#mv-1",
+          "duration": 2.3,
+          "anchor": "FOR individua il cliente target"
+        },
+        {
+          "at": 30,
+          "action": "highlight",
+          "target": "#mv-2",
+          "duration": 3.02,
+          "anchor": "WHO descrive il bisogno"
+        },
+        {
+          "at": 33.14,
+          "action": "highlight",
+          "target": "#mv-3",
+          "duration": 2.79,
+          "anchor": "THE nomina il prodotto"
+        },
+        {
+          "at": 36.05,
+          "action": "highlight",
+          "target": "#mv-4",
+          "duration": 2.56,
+          "anchor": "THAT chiarisce il beneficio"
+        },
+        {
+          "at": 38.73,
+          "action": "highlight",
+          "target": "#mv-5",
+          "duration": 3.7,
+          "anchor": "UNLIKE identifica la principale alternativa"
+        },
+        {
+          "at": 42.55,
+          "action": "highlight",
+          "target": "#mv-6",
+          "duration": 5.5,
+          "anchor": "OUR PRODUCT dichiara"
+        }
+      ],
+      "audio_file": "audio/scene-03.wav",
+      "subtitle_file": "subtitles/scene-03.json",
+      "duration_sec": 78.54
+    },
+    {
+      "id": "scene-04",
+      "section": "1.4 · Origini della Vision e Prototipi",
+      "title": "Da dove nasce una vision e il ruolo del prototipo",
+      "tts_text": "Ma da dove nasce concretamente una product vision? In ingegneria del software identifichiamo quattro origini principali. [pause:0.5] Prima origine: la domain experience. Gli sviluppatori lavorano in un settore specifico, come marketing o vendite, sperimentano i limiti del software attuale e vedono l'opportunità di crearne uno migliore. [pause:0.5] Seconda: la product experience. Gli utenti di un software esistente, per esempio un elaboratore di testi, immaginano un modo più semplice per offrire le stesse funzioni, magari sfruttando tecnologie nuove come le interfacce vocali. [pause:0.5] Terza: la customer experience. Il team dialoga a lungo con potenziali clienti per comprenderne problemi reali, vincoli d'acquisto come l'interoperabilità e attributi critici. [pause:0.5] Quarta origine: prototyping and playing around. Si parte da un'idea ancora grezza e si costruisce un prototipo sperimentale per esplorare varianti e capirla meglio. [pause:0.6] Qui entra in gioco il prototipo, cioè una versione ridotta del prodotto. Ha due scopi essenziali: dimostrare concretamente il software a potenziali clienti e finanziatori, e aiutare a rivedere il design evitando fraintendimenti. L'obiettivo pratico è ottenere presto un primo prototipo ridotto, in circa sei settimane.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">1.4 · Origini della Vision &amp; Prototipazione</div>\n  <h2 class=\"slide-title\">Quattro origini della Vision e valore del prototipo</h2>\n  <div id=\"s1\" class=\"grid-2 cue-hidden\">\n    <div id=\"o-dom\" class=\"box box-def\">\n      <div class=\"box-label\">1 · Domain experience</div>\n      <p>Conoscenza diretta di un settore (es. marketing, vendite): frustrazione verso i limiti degli strumenti attuali.</p>\n    </div>\n    <div id=\"o-prod\" class=\"box box-def\">\n      <div class=\"box-label\">2 · Product experience</div>\n      <p>Utenti di software esistenti immaginano versioni più semplici o sfruttano nuove tecnologie (es. interfacce vocali).</p>\n    </div>\n    <div id=\"o-cust\" class=\"box box-primary\">\n      <div class=\"box-label\">3 · Customer experience</div>\n      <p>Dialogo approfondito con clienti potenziali su problemi, vincoli (es. interoperabilità) e attributi critici.</p>\n    </div>\n    <div id=\"o-proto\" class=\"box box-primary\">\n      <div class=\"box-label\">4 · Prototyping &amp; playing around</div>\n      <p>Costruire un prototipo sperimentale come piattaforma per chiarire l'idea e provare varianti.</p>\n    </div>\n  </div>\n  <div id=\"s2\" class=\"box box-idea cue-hidden\">\n    <div class=\"box-label\">Prototipo — versione ridotta del prodotto (~6 settimane)</div>\n    <ul class=\"clean-list\">\n      <li id=\"pr-1\"><strong>Dimostrazione concreta</strong>: essenziale per mostrare l'idea a potenziali clienti e finanziatori.</li>\n      <li id=\"pr-2\"><strong>Revisione del design</strong>: porta alla luce ambiguità presto, prima di investire nello sviluppo completo.</li>\n    </ul>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 0.66,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "da dove nasce concretamente"
+        },
+        {
+          "at": 7.38,
+          "action": "highlight",
+          "target": "#o-dom",
+          "duration": 10,
+          "anchor": "Prima origine: la domain experience"
+        },
+        {
+          "at": 18.52,
+          "action": "highlight",
+          "target": "#o-prod",
+          "duration": 11,
+          "anchor": "Seconda: la product experience"
+        },
+        {
+          "at": 31.36,
+          "action": "highlight",
+          "target": "#o-cust",
+          "duration": 10,
+          "anchor": "Terza: la customer experience"
+        },
+        {
+          "at": 42.88,
+          "action": "highlight",
+          "target": "#o-proto",
+          "duration": 9,
+          "anchor": "Quarta origine: prototyping"
+        },
+        {
+          "at": 53.36,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Qui entra in gioco il prototipo"
+        },
+        {
+          "at": 59.48,
+          "action": "highlight",
+          "target": "#pr-1",
+          "duration": 4.56,
+          "anchor": "dimostrare concretamente il software"
+        },
+        {
+          "at": 64.16,
+          "action": "highlight",
+          "target": "#pr-2",
+          "duration": 9,
+          "anchor": "aiutare a rivedere il design"
+        }
+      ],
+      "audio_file": "audio/scene-04.wav",
+      "subtitle_file": "subtitles/scene-04.json",
+      "duration_sec": 72.47
+    },
+    {
+      "id": "scene-05",
+      "section": "1.5 · Software Product Management",
+      "title": "Responsabilità e interazioni tecniche del Product Manager",
+      "tts_text": "Una volta definita la vision, chi guida l'evoluzione quotidiana del prodotto? Il product manager, o PM. Il suo compito centrale è fare in modo che il team implementi feature capaci di portare valore reale ai clienti. [pause:0.5] Per riuscirci il PM segue tre principi: persegue insieme gli obiettivi dell'azienda e quelli dei clienti, comunica regolarmente con gli utenti e monitora i vincoli rilevanti per chi usa il software. [pause:0.6] Sul piano operativo, il product manager mantiene sei interazioni tecniche chiave con il team di sviluppo. [pause:0.4] Gestisce la product roadmap, per fissare obiettivi, tappe e criteri di successo. Collabora su user stories e scenari per individuare le feature del prodotto. Cura il product backlog, cioè l'elenco ordinato delle attività da completare. [pause:0.5] Partecipa all'acceptance testing per verificare che ogni release raggiunga gli obiettivi fissati, e al customer testing per raccogliere riscontri reali su usabilità e adeguatezza delle feature. Infine segue lo UI design, assicurandosi che l'interfaccia rimanga semplice e naturale da usare.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">1.5 · Software Product Management</div>\n  <h2 class=\"slide-title\">Il Product Manager: ponte tra business, clienti e team</h2>\n  <div id=\"s1\" class=\"box box-primary cue-hidden\">\n    <div class=\"box-label\">Missione del Product Manager (PM)</div>\n    <p>Garantire che il team realizzi <strong>feature di valore reale</strong>: bilancia obiettivi di azienda <em>e</em> clienti, comunica regolarmente con i clienti e monitora i loro vincoli.</p>\n  </div>\n  <table id=\"s2\" class=\"acad-table cue-hidden\">\n    <thead>\n      <tr><th>Interazione tecnica col team</th><th>Obiettivo</th></tr>\n    </thead>\n    <tbody>\n      <tr id=\"pm-1\"><td><strong>Product roadmap</strong></td><td>Fissare obiettivi, tappe (<em>milestone</em>) e criteri di successo</td></tr>\n      <tr id=\"pm-2\"><td><strong>User stories e scenari</strong></td><td>Individuare le feature del prodotto (Cap. 3)</td></tr>\n      <tr id=\"pm-3\"><td><strong>Product backlog</strong></td><td>Elenco delle attività da completare per lo sviluppo (Cap. 2)</td></tr>\n      <tr id=\"pm-4\"><td><strong>Acceptance testing</strong></td><td>Verificare che una release raggiunga gli obiettivi fissati</td></tr>\n      <tr id=\"pm-5\"><td><strong>Customer testing</strong></td><td>Raccogliere feedback su usabilità e adeguatezza delle feature</td></tr>\n      <tr id=\"pm-6\"><td><strong>UI design</strong></td><td>Controllare che l'interfaccia sia semplice e naturale</td></tr>\n    </tbody>\n  </table>\n</div>\n",
+      "cues": [
+        {
+          "at": 1.5,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "chi guida l'evoluzione quotidiana"
+        },
+        {
+          "at": 6.66,
+          "action": "highlight",
+          "target": "#s1",
+          "duration": 18,
+          "anchor": "Il suo compito centrale"
+        },
+        {
+          "at": 26.28,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Sul piano operativo"
+        },
+        {
+          "at": 31.88,
+          "action": "highlight",
+          "target": "#pm-1",
+          "duration": 5.02,
+          "anchor": "Gestisce la product roadmap"
+        },
+        {
+          "at": 37.02,
+          "action": "highlight",
+          "target": "#pm-2",
+          "duration": 4.68,
+          "anchor": "Collabora su user stories"
+        },
+        {
+          "at": 41.82,
+          "action": "highlight",
+          "target": "#pm-3",
+          "duration": 4.84,
+          "anchor": "Cura il product backlog"
+        },
+        {
+          "at": 46.78,
+          "action": "highlight",
+          "target": "#pm-4",
+          "duration": 5.7,
+          "anchor": "Partecipa all'acceptance testing"
+        },
+        {
+          "at": 52.6,
+          "action": "highlight",
+          "target": "#pm-5",
+          "duration": 6,
+          "anchor": "al customer testing"
+        },
+        {
+          "at": 58.74,
+          "action": "highlight",
+          "target": "#pm-6",
+          "duration": 7,
+          "anchor": "Infine segue lo UI design"
+        }
+      ],
+      "audio_file": "audio/scene-05.wav",
+      "subtitle_file": "subtitles/scene-05.json",
+      "duration_sec": 64.6
+    },
+    {
+      "id": "scene-06",
+      "section": "1.6 · Riepilogo e autoverifica",
+      "title": "Punti chiave del capitolo e domande d'esame",
+      "tts_text": "Chiudiamo questo primo capitolo fissando i cinque punti essenziali da ricordare per l'esame. [pause:0.5] Primo: nello sviluppo su progetto è il cliente a decidere funzionalità e requisiti; nello sviluppo su prodotto decide lo sviluppatore, e arrivare presto sul mercato impone metodi agili. [pause:0.5] Secondo: i prodotti software adottano tre modelli di esecuzione — stand-alone, hybrid e Software as a Service — spostando progressivamente logica e dati dal client ai server del produttore. [pause:0.5] Terzo: la product vision risponde a Who, What e Why usando le sei clausole del modello di Moore, e nasce da domain, product o customer experience, oppure dalla prototipazione. [pause:0.5] Quarto: il product manager allinea azienda e clienti attraverso sei interazioni tecniche chiave, dalla roadmap al backlog, dai test allo UI design. [pause:0.5] Quinto: un primo prototipo ridotto va costruito in fretta, in circa sei settimane, per validare il design e convincere clienti e finanziatori. [pause:0.6] Prima di passare al capitolo due sullo sviluppo agile, provate a rispondere ad alta voce alle sei domande di verifica sulla destra.",
+      "slide_html": "\n<div class=\"slide-card\">\n  <div class=\"slide-kicker\">1.6 · Riepilogo &amp; Autoverifica</div>\n  <h2 class=\"slide-title\">Punti chiave e domande di verifica</h2>\n  <div class=\"grid-2\">\n    <div class=\"box box-algo\">\n      <div class=\"box-label\">Punti chiave da fissare</div>\n      <ul class=\"clean-list\">\n        <li id=\"s1\" class=\"cue-hidden\"><strong>Progetto vs Prodotto</strong>: nel prodotto decide lo sviluppatore; il <em>time-to-market</em> richiede metodi agili.</li>\n        <li id=\"s2\" class=\"cue-hidden\"><strong>3 modelli di esecuzione</strong>: Stand-alone, Hybrid, Software as a Service (SaaS).</li>\n        <li id=\"s3\" class=\"cue-hidden\"><strong>Product vision</strong>: <em>Who / What / Why</em>, template FOR–WHO–THE–THAT–UNLIKE–OUR PRODUCT, 4 origini.</li>\n        <li id=\"s4\" class=\"cue-hidden\"><strong>Product Manager</strong>: allinea azienda e clienti tramite roadmap, stories, backlog, test e UI design.</li>\n        <li id=\"s5\" class=\"cue-hidden\"><strong>Prototipo rapido</strong>: versione ridotta in ~6 settimane per dimostrazioni e revisione del design.</li>\n      </ul>\n    </div>\n    <div id=\"s6\" class=\"box box-theorem cue-hidden\">\n      <div class=\"box-label\">Domande di verifica</div>\n      <ol class=\"verify-list\">\n        <li>Differenza tra project-based e product-based software engineering?</li>\n        <li>Perché un prodotto richiede tecniche di sviluppo rapide?</li>\n        <li>Confronta i tre modelli di esecuzione: cosa sta sul client e cosa sui server?</li>\n        <li>Quali sono le tre domande della product vision e il modello di Moore?</li>\n        <li>Quali sono le quattro origini di una product vision?</li>\n        <li>Che cosa fa un product manager e quali sono le sue interazioni tecniche?</li>\n      </ol>\n    </div>\n  </div>\n</div>\n",
+      "cues": [
+        {
+          "at": 5.92,
+          "action": "show",
+          "target": "#s1",
+          "anchor": "Primo: nello sviluppo su progetto"
+        },
+        {
+          "at": 6,
+          "action": "highlight",
+          "target": "#s1",
+          "duration": 11.39
+        },
+        {
+          "at": 17.56,
+          "action": "show",
+          "target": "#s2",
+          "anchor": "Secondo: i prodotti software"
+        },
+        {
+          "at": 17.64,
+          "action": "highlight",
+          "target": "#s2",
+          "duration": 11.89
+        },
+        {
+          "at": 29.7,
+          "action": "show",
+          "target": "#s3",
+          "anchor": "Terzo: la product vision"
+        },
+        {
+          "at": 29.78,
+          "action": "highlight",
+          "target": "#s3",
+          "duration": 12.38
+        },
+        {
+          "at": 42.33,
+          "action": "show",
+          "target": "#s4",
+          "anchor": "Quarto: il product manager"
+        },
+        {
+          "at": 42.41,
+          "action": "highlight",
+          "target": "#s4",
+          "duration": 9.35
+        },
+        {
+          "at": 51.93,
+          "action": "show",
+          "target": "#s5",
+          "anchor": "Quinto: un primo prototipo ridotto"
+        },
+        {
+          "at": 52.01,
+          "action": "highlight",
+          "target": "#s5",
+          "duration": 15.39
+        },
+        {
+          "at": 61.09,
+          "action": "show",
+          "target": "#s6",
+          "anchor": "Prima di passare al capitolo due"
+        }
+      ],
+      "audio_file": "audio/scene-06.wav",
+      "subtitle_file": "subtitles/scene-06.json",
+      "duration_sec": 67.72
+    }
+  ]
+}

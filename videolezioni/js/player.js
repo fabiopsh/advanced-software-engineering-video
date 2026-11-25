@@ -142,6 +142,7 @@ const state = {
   cleanPointerHoveringUi: false,
   nextLesson: null,
   isLastChapter: false,
+  readyCount: 0,
   nextBannerDismissed: false,
   globalSearch: null,
   courseConfig: null,
@@ -311,8 +312,14 @@ function configureChapterNextBanner() {
     if (dom.chapterNextCta) dom.chapterNextCta.textContent = "Capitolo successivo";
     if (dom.chapterNextLink) dom.chapterNextLink.href = buildLessonSceneUrl(state.nextLesson.id, 0, ASSET_ROOT, IS_CLEAN_PAGE);
   } else if (state.isLastChapter) {
-    if (dom.chapterNextKicker) dom.chapterNextKicker.textContent = "Percorso completato ✓";
-    if (dom.chapterNextTitle) dom.chapterNextTitle.textContent = "Hai completato tutti i 20 capitoli!";
+    const chapNum = String(state.lesson.chapter).padStart(2, "0");
+    if (state.readyCount <= 1) {
+      if (dom.chapterNextKicker) dom.chapterNextKicker.textContent = `Capitolo ${chapNum} completato ✓`;
+      if (dom.chapterNextTitle) dom.chapterNextTitle.textContent = state.lesson.title;
+    } else {
+      if (dom.chapterNextKicker) dom.chapterNextKicker.textContent = "Percorso completato ✓";
+      if (dom.chapterNextTitle) dom.chapterNextTitle.textContent = `Hai completato tutti i ${state.readyCount} capitoli!`;
+    }
     if (dom.chapterNextCta) dom.chapterNextCta.textContent = "Torna al catalogo";
     if (dom.chapterNextLink) dom.chapterNextLink.href = CATALOG_HREF;
   }
@@ -1219,6 +1226,7 @@ async function initPlayer() {
     if (mRes.ok) {
       const mData = await mRes.json();
       const ready = (mData.lessons || []).filter((l) => l.status === "ready");
+      state.readyCount = ready.length;
       const curIdx = ready.findIndex((l) => l.id === LESSON_ID);
       if (curIdx >= 0 && curIdx + 1 < ready.length) {
         state.nextLesson = ready[curIdx + 1];

@@ -124,6 +124,7 @@ def call_gemini_batch_wav(
     batch_cache_wav: Path,
     model: str,
     voice: str,
+    style: str,
     api_key: str,
     budget_state: dict[str, Any],
     run_spent_eur: list[float],
@@ -156,8 +157,9 @@ def call_gemini_batch_wav(
     # Cap stretto ma sicuro: ~2.1 parole/sec * 1.30 margine + 150 tok, mai oltre 8192
     max_output_tokens = min(8192, int((words / 2.10) * AUDIO_TOKENS_PER_SEC * 1.30) + 150)
     url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
-    payload = {
-        "contents": [{"role": "user", "parts": [{"text": batch_text}]}],
+    prompt_text = f"[{style.strip('[] ')}] {batch_text}" if style.strip() else batch_text
+    payload: dict[str, Any] = {
+        "contents": [{"role": "user", "parts": [{"text": prompt_text}]}],
         "generationConfig": {
             "responseModalities": ["AUDIO"],
             "maxOutputTokens": max_output_tokens,
@@ -313,6 +315,7 @@ def run_batch_pipeline(
     max_batch_words: int,
     model: str,
     voice: str,
+    style: str,
     dry_run: bool,
     force: bool,
     max_run_eur: float,
@@ -354,7 +357,7 @@ def run_batch_pipeline(
             b_text = "\n\n".join(clean_tts_text(s["tts_text"]) for s in b_scenes)
             w = len(b_text.split())
             tot_w += w
-            h = hashlib.sha1(f"{model}|{voice}|{b_text}".encode("utf-8")).hexdigest()[:10]
+            h = hashlib.sha1(f"{model}|{voice}|{style}|{b_text}".encode("utf-8")).hexdigest()[:10]
             cache_wav = batches_dir / f"batch-{ids[0]}-{ids[-1]}-{h}.wav"
             cached = cache_wav.exists() and cache_wav.stat().st_size > 44 and not force
             est_sec = w / 2.25
@@ -390,11 +393,11 @@ def run_batch_pipeline(
             scene_meta.append({"scene": sc, "start_w": start_i, "end_w": end_i, "pauses": p_map})
 
         batch_text = "\n\n".join(clean_tts_text(sc["tts_text"]) for sc in b_scenes)
-        h = hashlib.sha1(f"{model}|{voice}|{batch_text}".encode("utf-8")).hexdigest()[:10]
+        h = hashlib.sha1(f"{model}|{voice}|{style}|{batch_text}".encode("utf-8")).hexdigest()[:10]
         cache_wav = batches_dir / f"batch-{ids[0]}-{ids[-1]}-{h}.wav"
 
         wav_path, sr = call_gemini_batch_wav(
-            batch_text, cache_wav, model, voice, api_key,
+            batch_text, cache_wav, model, voice, style, api_key,
             budget_state, run_spent_eur, max_run_eur, global_cap_eur, force
         )
 
@@ -497,6 +500,7 @@ def main() -> None:
     tts_cfg = load_course_tts_config()
     default_model = str(tts_cfg.get("model") or "gemini-3.8-flash-tts").strip()
     default_voice = str(tts_cfg.get("voice_name") or "Kore").strip()
+    default_style = str(tts_cfg.get("style") or "").strip()
     default_budget = float(tts_cfg.get("budget_eur") or 4.80)
 
     parser = argparse.ArgumentParser(description="Batch-and-Splice Gemini TTS + MMS_FA (risparmia 15x RPD).")
@@ -506,6 +510,7 @@ def main() -> None:
     parser.add_argument("--max-batch-words", type=int, default=390, help="Parole massime per singola chiamata API (default 390 = ~2-3 scene)")
     parser.add_argument("--model", default=default_model, help=f"Modello Gemini TTS (default da course.config.json: {default_model})")
     parser.add_argument("--voice", default=default_voice, help=f"Nome voce Gemini TTS (default da course.config.json: {default_voice})")
+    parser.add_argument("--style", default=default_style, help="Istruzioni di stile/tono per Gemini TTS (default da course.config.json)")
     parser.add_argument("--max-run-eur", type=float, default=0.50)
     parser.add_argument("--global-cap-eur", type=float, default=default_budget)
     parser.add_argument("--dry-run", action="store_true")
@@ -515,7 +520,7 @@ def main() -> None:
     s_filter = [s.strip() for s in args.scenes.split(",") if s.strip()] if args.scenes else None
     run_batch_pipeline(
         args.lesson, s_filter, args.all_missing, args.max_batch_words,
-        args.model, args.voice, args.dry_run, args.force, args.max_run_eur, args.global_cap_eur
+        args.model, args.voice, args.style, args.dry_run, args.force, args.max_run_eur, args.global_cap_eur
     )
 
 

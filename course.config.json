@@ -1,49 +1,54 @@
 {
-  "slug": "my-course",
-  "title": "Il Mio Corso",
+  "slug": "advanced-software-engineering",
+  "title": "Advanced Software Engineering",
   "subtitle": "Videolezioni Interattive",
-  "eyebrow": ["Università / Istituzione", "Codice Corso", "Anno Accademico"],
+  "eyebrow": [
+    "Università di Pisa",
+    "Laurea Magistrale in Informatica",
+    "A.A. 2026/2027"
+  ],
   "language": "it",
   "default_theme": "studio",
   "tutor_avatar": {
     "enabled": true,
-    "name": "Lia",
-    "spritesheet": "assets/lia-spritesheet.png",
-    "description": ""
+    "name": "Fabio",
+    "spritesheet": "assets/fabio-spritesheet.png",
+    "description": "16-bit pixel-art bust portrait of Fabio (buzzcut dark hair, short trimmed beard, small hoop earrings, dark knit sweater) matching Lia style"
   },
   "author": {
-    "name": "Il Tuo Nome",
+    "name": "Fabio Piscitelli",
     "label_prefix": "Appunti di",
-    "github_username": "",
-    "avatar": ""
+    "github_username": "fabiopsh",
+    "avatar": "assets/fabio-author.jpg"
   },
   "professor": {
-    "name": "",
-    "role": "Docente del corso",
-    "url": "",
+    "name": "Prof. Antonio Brogi & Prof. Alessandro Bocci",
+    "role": "Docenti del corso · Dipartimento di Informatica UNIPI",
+    "url": "https://elearning.di.unipi.it/course/view.php?id=1178",
     "avatar": ""
   },
   "github": {
-    "repo": "",
-    "pages_url": "",
+    "repo": "fabiopsh/advanced-software-engineering-video",
+    "pages_url": "https://fabiopsh.github.io/advanced-software-engineering-video/",
     "show_star_button": true,
     "enable_issue_reporter": true
   },
   "search": {
     "suggested_queries": [
-      "teorema",
-      "algoritmo",
-      "esempio",
-      "formula",
-      "definizione"
+      "product vision",
+      "microservizi",
+      "Kubernetes",
+      "DevOps",
+      "agile",
+      "container"
     ]
   },
   "tts": {
     "provider": "gemini",
     "model": "gemini-3.8-flash-tts",
-    "voice_name": "Kore",
-    "edge_voice": "it-IT-ElsaNeural",
-    "style": "chiaro, didattico, calmo e preciso, stile lezione universitaria divulgativa",
+    "voice_name": "Ludo",
+    "edge_voice": "it-IT-DiegoNeural",
+    "style": "calm, clear, warm, articulate Italian university lecture tone, steady educational pacing",
     "budget_eur": 5.0
   },
   "math_macros": {}

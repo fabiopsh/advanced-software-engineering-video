@@ -1,29 +1,29 @@
 {
   "course": {
-    "title": "Il Mio Corso",
-    "code": "DEMO",
-    "university": "Lectio Framework",
+    "title": "Advanced Software Engineering",
+    "code": "ASE",
+    "university": "Università di Pisa",
     "academic_year": "2026/27",
-    "professor": ""
+    "professor": "Prof. Antonio Brogi & Prof. Alessandro Bocci"
   },
   "parts": [
     {
-      "id": "parte-0",
-      "label": "Starter Demo",
-      "title": "Esempio funzionante (sostituiscimi con i tuoi capitoli)"
+      "id": "parte-1",
+      "label": "Parte I",
+      "title": "Prodotti software e sviluppo agile"
     }
   ],
   "lessons": [
     {
-      "id": "00-demo",
-      "chapter": 0,
-      "part": "parte-0",
-      "icon": "roadmap",
-      "title": "Benvenuto in Lectio Framework",
-      "summary": "Scena dimostrativa con sincronizzazione voce-formule KaTeX, highlight granulari, Lia e ricerca Ctrl+K.",
+      "id": "01-prodotti",
+      "chapter": 1,
+      "part": "parte-1",
+      "icon": "flow",
+      "title": "Dal progetto al prodotto",
+      "summary": "Sviluppo su progetto contro sviluppo su prodotto, modelli di esecuzione, product vision di Moore, ruolo del product manager e prototipazione rapida.",
       "status": "ready",
-      "scenes_count": 2,
-      "duration_min": 1
+      "scenes_count": 6,
+      "estimated_minutes": 7
     }
   ]
 }

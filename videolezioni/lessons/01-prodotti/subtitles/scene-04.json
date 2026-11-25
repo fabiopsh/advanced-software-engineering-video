@@ -1,0 +1,1005 @@
+{
+  "duration": 72.474,
+  "segments": [
+    {
+      "start": 0.634,
+      "end": 2.995,
+      "text": "Ma da dove nasce concretamente una product vision?",
+      "words": [
+        {
+          "text": "Ma",
+          "start": 0.634,
+          "end": 0.715
+        },
+        {
+          "text": "da",
+          "start": 0.775,
+          "end": 0.835
+        },
+        {
+          "text": "dove",
+          "start": 0.895,
+          "end": 1.035
+        },
+        {
+          "text": "nasce",
+          "start": 1.095,
+          "end": 1.395
+        },
+        {
+          "text": "concretamente",
+          "start": 1.455,
+          "end": 2.055
+        },
+        {
+          "text": "una",
+          "start": 2.115,
+          "end": 2.235
+        },
+        {
+          "text": "product",
+          "start": 2.275,
+          "end": 2.615
+        },
+        {
+          "text": "vision?",
+          "start": 2.695,
+          "end": 2.995
+        }
+      ]
+    },
+    {
+      "start": 3.675,
+      "end": 6.955,
+      "text": "In ingegneria del software identifichiamo quattro origini principali.",
+      "words": [
+        {
+          "text": "In",
+          "start": 3.675,
+          "end": 3.775
+        },
+        {
+          "text": "ingegneria",
+          "start": 3.815,
+          "end": 4.315
+        },
+        {
+          "text": "del",
+          "start": 4.355,
+          "end": 4.455
+        },
+        {
+          "text": "software",
+          "start": 4.515,
+          "end": 4.935
+        },
+        {
+          "text": "identifichiamo",
+          "start": 4.995,
+          "end": 5.575
+        },
+        {
+          "text": "quattro",
+          "start": 5.675,
+          "end": 6.015
+        },
+        {
+          "text": "origini",
+          "start": 6.035,
+          "end": 6.355
+        },
+        {
+          "text": "principali.",
+          "start": 6.375,
+          "end": 6.955
+        }
+      ]
+    },
+    {
+      "start": 7.495,
+      "end": 9.496,
+      "text": "Prima origine: la domain experience.",
+      "words": [
+        {
+          "text": "Prima",
+          "start": 7.495,
+          "end": 7.715
+        },
+        {
+          "text": "origine:",
+          "start": 7.755,
+          "end": 8.115
+        },
+        {
+          "text": "la",
+          "start": 8.336,
+          "end": 8.396
+        },
+        {
+          "text": "domain",
+          "start": 8.476,
+          "end": 8.816
+        },
+        {
+          "text": "experience.",
+          "start": 8.856,
+          "end": 9.496
+        }
+      ]
+    },
+    {
+      "start": 10.076,
+      "end": 13.516,
+      "text": "Gli sviluppatori lavorano in un settore specifico, come marketing o vendite,",
+      "words": [
+        {
+          "text": "Gli",
+          "start": 10.076,
+          "end": 10.196
+        },
+        {
+          "text": "sviluppatori",
+          "start": 10.236,
+          "end": 10.736
+        },
+        {
+          "text": "lavorano",
+          "start": 10.856,
+          "end": 11.156
+        },
+        {
+          "text": "in",
+          "start": 11.216,
+          "end": 11.276
+        },
+        {
+          "text": "un",
+          "start": 11.296,
+          "end": 11.356
+        },
+        {
+          "text": "settore",
+          "start": 11.396,
+          "end": 11.676
+        },
+        {
+          "text": "specifico,",
+          "start": 11.716,
+          "end": 12.216
+        },
+        {
+          "text": "come",
+          "start": 12.356,
+          "end": 12.516
+        },
+        {
+          "text": "marketing",
+          "start": 12.576,
+          "end": 13.076
+        },
+        {
+          "text": "o",
+          "start": 13.096,
+          "end": 13.136
+        },
+        {
+          "text": "vendite,",
+          "start": 13.156,
+          "end": 13.516
+        }
+      ]
+    },
+    {
+      "start": 13.836,
+      "end": 17.897,
+      "text": "sperimentano i limiti del software attuale e vedono l'opportunità di crearne uno migliore.",
+      "words": [
+        {
+          "text": "sperimentano",
+          "start": 13.836,
+          "end": 14.376
+        },
+        {
+          "text": "i",
+          "start": 14.436,
+          "end": 14.476
+        },
+        {
+          "text": "limiti",
+          "start": 14.496,
+          "end": 14.756
+        },
+        {
+          "text": "del",
+          "start": 14.796,
+          "end": 14.916
+        },
+        {
+          "text": "software",
+          "start": 14.976,
+          "end": 15.296
+        },
+        {
+          "text": "attuale",
+          "start": 15.316,
+          "end": 15.716
+        },
+        {
+          "text": "e",
+          "start": 15.877,
+          "end": 15.917
+        },
+        {
+          "text": "vedono",
+          "start": 15.977,
+          "end": 16.237
+        },
+        {
+          "text": "l'opportunità",
+          "start": 16.277,
+          "end": 16.837
+        },
+        {
+          "text": "di",
+          "start": 16.897,
+          "end": 16.957
+        },
+        {
+          "text": "crearne",
+          "start": 16.997,
+          "end": 17.337
+        },
+        {
+          "text": "uno",
+          "start": 17.397,
+          "end": 17.497
+        },
+        {
+          "text": "migliore.",
+          "start": 17.517,
+          "end": 17.897
+        }
+      ]
+    },
+    {
+      "start": 18.637,
+      "end": 20.397,
+      "text": "Seconda: la product experience.",
+      "words": [
+        {
+          "text": "Seconda:",
+          "start": 18.637,
+          "end": 19.017
+        },
+        {
+          "text": "la",
+          "start": 19.217,
+          "end": 19.297
+        },
+        {
+          "text": "product",
+          "start": 19.357,
+          "end": 19.717
+        },
+        {
+          "text": "experience.",
+          "start": 19.757,
+          "end": 20.397
+        }
+      ]
+    },
+    {
+      "start": 20.897,
+      "end": 24.078,
+      "text": "Gli utenti di un software esistente, per esempio un elaboratore di testi,",
+      "words": [
+        {
+          "text": "Gli",
+          "start": 20.897,
+          "end": 20.997
+        },
+        {
+          "text": "utenti",
+          "start": 21.037,
+          "end": 21.297
+        },
+        {
+          "text": "di",
+          "start": 21.317,
+          "end": 21.377
+        },
+        {
+          "text": "un",
+          "start": 21.397,
+          "end": 21.457
+        },
+        {
+          "text": "software",
+          "start": 21.497,
+          "end": 21.817
+        },
+        {
+          "text": "esistente,",
+          "start": 21.877,
+          "end": 22.417
+        },
+        {
+          "text": "per",
+          "start": 22.557,
+          "end": 22.657
+        },
+        {
+          "text": "esempio",
+          "start": 22.657,
+          "end": 22.957
+        },
+        {
+          "text": "un",
+          "start": 22.997,
+          "end": 23.077
+        },
+        {
+          "text": "elaboratore",
+          "start": 23.097,
+          "end": 23.598
+        },
+        {
+          "text": "di",
+          "start": 23.638,
+          "end": 23.698
+        },
+        {
+          "text": "testi,",
+          "start": 23.738,
+          "end": 24.078
+        }
+      ]
+    },
+    {
+      "start": 24.338,
+      "end": 27.398,
+      "text": "immaginano un modo più semplice per offrire le stesse funzioni,",
+      "words": [
+        {
+          "text": "immaginano",
+          "start": 24.338,
+          "end": 24.858
+        },
+        {
+          "text": "un",
+          "start": 24.918,
+          "end": 24.958
+        },
+        {
+          "text": "modo",
+          "start": 24.998,
+          "end": 25.158
+        },
+        {
+          "text": "più",
+          "start": 25.238,
+          "end": 25.378
+        },
+        {
+          "text": "semplice",
+          "start": 25.518,
+          "end": 25.998
+        },
+        {
+          "text": "per",
+          "start": 26.058,
+          "end": 26.158
+        },
+        {
+          "text": "offrire",
+          "start": 26.178,
+          "end": 26.498
+        },
+        {
+          "text": "le",
+          "start": 26.558,
+          "end": 26.618
+        },
+        {
+          "text": "stesse",
+          "start": 26.638,
+          "end": 26.898
+        },
+        {
+          "text": "funzioni,",
+          "start": 26.938,
+          "end": 27.398
+        }
+      ]
+    },
+    {
+      "start": 27.798,
+      "end": 30.818,
+      "text": "magari sfruttando tecnologie nuove come le interfacce vocali.",
+      "words": [
+        {
+          "text": "magari",
+          "start": 27.798,
+          "end": 28.058
+        },
+        {
+          "text": "sfruttando",
+          "start": 28.118,
+          "end": 28.538
+        },
+        {
+          "text": "tecnologie",
+          "start": 28.618,
+          "end": 29.138
+        },
+        {
+          "text": "nuove",
+          "start": 29.178,
+          "end": 29.438
+        },
+        {
+          "text": "come",
+          "start": 29.618,
+          "end": 29.798
+        },
+        {
+          "text": "le",
+          "start": 29.918,
+          "end": 29.978
+        },
+        {
+          "text": "interfacce",
+          "start": 30.018,
+          "end": 30.438
+        },
+        {
+          "text": "vocali.",
+          "start": 30.478,
+          "end": 30.818
+        }
+      ]
+    },
+    {
+      "start": 31.479,
+      "end": 33.239,
+      "text": "Terza: la customer experience.",
+      "words": [
+        {
+          "text": "Terza:",
+          "start": 31.479,
+          "end": 31.799
+        },
+        {
+          "text": "la",
+          "start": 32.039,
+          "end": 32.099
+        },
+        {
+          "text": "customer",
+          "start": 32.199,
+          "end": 32.579
+        },
+        {
+          "text": "experience.",
+          "start": 32.619,
+          "end": 33.239
+        }
+      ]
+    },
+    {
+      "start": 34.099,
+      "end": 38.219,
+      "text": "Il team dialoga a lungo con potenziali clienti per comprenderne problemi reali,",
+      "words": [
+        {
+          "text": "Il",
+          "start": 34.099,
+          "end": 34.179
+        },
+        {
+          "text": "team",
+          "start": 34.219,
+          "end": 34.399
+        },
+        {
+          "text": "dialoga",
+          "start": 34.479,
+          "end": 34.859
+        },
+        {
+          "text": "a",
+          "start": 34.899,
+          "end": 34.939
+        },
+        {
+          "text": "lungo",
+          "start": 35.039,
+          "end": 35.319
+        },
+        {
+          "text": "con",
+          "start": 35.399,
+          "end": 35.519
+        },
+        {
+          "text": "potenziali",
+          "start": 35.579,
+          "end": 36.099
+        },
+        {
+          "text": "clienti",
+          "start": 36.139,
+          "end": 36.599
+        },
+        {
+          "text": "per",
+          "start": 36.659,
+          "end": 36.759
+        },
+        {
+          "text": "comprenderne",
+          "start": 36.799,
+          "end": 37.339
+        },
+        {
+          "text": "problemi",
+          "start": 37.419,
+          "end": 37.759
+        },
+        {
+          "text": "reali,",
+          "start": 37.839,
+          "end": 38.219
+        }
+      ]
+    },
+    {
+      "start": 38.62,
+      "end": 42.2,
+      "text": "vincoli d'acquisto come l'interoperabilità e attributi critici.",
+      "words": [
+        {
+          "text": "vincoli",
+          "start": 38.62,
+          "end": 39.0
+        },
+        {
+          "text": "d'acquisto",
+          "start": 39.02,
+          "end": 39.54
+        },
+        {
+          "text": "come",
+          "start": 39.6,
+          "end": 39.78
+        },
+        {
+          "text": "l'interoperabilità",
+          "start": 39.86,
+          "end": 40.86
+        },
+        {
+          "text": "e",
+          "start": 41.26,
+          "end": 41.3
+        },
+        {
+          "text": "attributi",
+          "start": 41.36,
+          "end": 41.74
+        },
+        {
+          "text": "critici.",
+          "start": 41.8,
+          "end": 42.2
+        }
+      ]
+    },
+    {
+      "start": 43.0,
+      "end": 45.72,
+      "text": "Quarta origine: prototyping and playing around.",
+      "words": [
+        {
+          "text": "Quarta",
+          "start": 43.0,
+          "end": 43.34
+        },
+        {
+          "text": "origine:",
+          "start": 43.4,
+          "end": 43.76
+        },
+        {
+          "text": "prototyping",
+          "start": 44.06,
+          "end": 44.74
+        },
+        {
+          "text": "and",
+          "start": 44.86,
+          "end": 44.98
+        },
+        {
+          "text": "playing",
+          "start": 45.04,
+          "end": 45.34
+        },
+        {
+          "text": "around.",
+          "start": 45.38,
+          "end": 45.72
+        }
+      ]
+    },
+    {
+      "start": 46.481,
+      "end": 51.761,
+      "text": "Si parte da un'idea ancora grezza e si costruisce un prototipo sperimentale per esplorare varianti",
+      "words": [
+        {
+          "text": "Si",
+          "start": 46.481,
+          "end": 46.561
+        },
+        {
+          "text": "parte",
+          "start": 46.601,
+          "end": 46.881
+        },
+        {
+          "text": "da",
+          "start": 46.921,
+          "end": 46.961
+        },
+        {
+          "text": "un'idea",
+          "start": 47.021,
+          "end": 47.361
+        },
+        {
+          "text": "ancora",
+          "start": 47.421,
+          "end": 47.781
+        },
+        {
+          "text": "grezza",
+          "start": 47.841,
+          "end": 48.261
+        },
+        {
+          "text": "e",
+          "start": 48.441,
+          "end": 48.481
+        },
+        {
+          "text": "si",
+          "start": 48.521,
+          "end": 48.601
+        },
+        {
+          "text": "costruisce",
+          "start": 48.641,
+          "end": 49.161
+        },
+        {
+          "text": "un",
+          "start": 49.201,
+          "end": 49.281
+        },
+        {
+          "text": "prototipo",
+          "start": 49.341,
+          "end": 49.781
+        },
+        {
+          "text": "sperimentale",
+          "start": 49.841,
+          "end": 50.501
+        },
+        {
+          "text": "per",
+          "start": 50.561,
+          "end": 50.681
+        },
+        {
+          "text": "esplorare",
+          "start": 50.721,
+          "end": 51.221
+        },
+        {
+          "text": "varianti",
+          "start": 51.281,
+          "end": 51.761
+        }
+      ]
+    },
+    {
+      "start": 51.901,
+      "end": 52.621,
+      "text": "e capirla meglio.",
+      "words": [
+        {
+          "text": "e",
+          "start": 51.901,
+          "end": 51.941
+        },
+        {
+          "text": "capirla",
+          "start": 51.961,
+          "end": 52.281
+        },
+        {
+          "text": "meglio.",
+          "start": 52.321,
+          "end": 52.621
+        }
+      ]
+    },
+    {
+      "start": 53.481,
+      "end": 57.302,
+      "text": "Qui entra in gioco il prototipo, cioè una versione ridotta del prodotto.",
+      "words": [
+        {
+          "text": "Qui",
+          "start": 53.481,
+          "end": 53.601
+        },
+        {
+          "text": "entra",
+          "start": 53.782,
+          "end": 53.982
+        },
+        {
+          "text": "in",
+          "start": 54.022,
+          "end": 54.082
+        },
+        {
+          "text": "gioco",
+          "start": 54.122,
+          "end": 54.342
+        },
+        {
+          "text": "il",
+          "start": 54.382,
+          "end": 54.442
+        },
+        {
+          "text": "prototipo,",
+          "start": 54.502,
+          "end": 55.042
+        },
+        {
+          "text": "cioè",
+          "start": 55.362,
+          "end": 55.522
+        },
+        {
+          "text": "una",
+          "start": 55.662,
+          "end": 55.782
+        },
+        {
+          "text": "versione",
+          "start": 55.822,
+          "end": 56.202
+        },
+        {
+          "text": "ridotta",
+          "start": 56.302,
+          "end": 56.662
+        },
+        {
+          "text": "del",
+          "start": 56.702,
+          "end": 56.822
+        },
+        {
+          "text": "prodotto.",
+          "start": 56.882,
+          "end": 57.302
+        }
+      ]
+    },
+    {
+      "start": 57.862,
+      "end": 63.583,
+      "text": "Ha due scopi essenziali: dimostrare concretamente il software a potenziali clienti e finanziatori,",
+      "words": [
+        {
+          "text": "Ha",
+          "start": 57.862,
+          "end": 57.922
+        },
+        {
+          "text": "due",
+          "start": 58.082,
+          "end": 58.262
+        },
+        {
+          "text": "scopi",
+          "start": 58.302,
+          "end": 58.542
+        },
+        {
+          "text": "essenziali:",
+          "start": 58.622,
+          "end": 59.202
+        },
+        {
+          "text": "dimostrare",
+          "start": 59.602,
+          "end": 60.142
+        },
+        {
+          "text": "concretamente",
+          "start": 60.202,
+          "end": 60.902
+        },
+        {
+          "text": "il",
+          "start": 60.942,
+          "end": 61.022
+        },
+        {
+          "text": "software",
+          "start": 61.082,
+          "end": 61.503
+        },
+        {
+          "text": "a",
+          "start": 61.603,
+          "end": 61.643
+        },
+        {
+          "text": "potenziali",
+          "start": 61.683,
+          "end": 62.183
+        },
+        {
+          "text": "clienti",
+          "start": 62.223,
+          "end": 62.683
+        },
+        {
+          "text": "e",
+          "start": 62.803,
+          "end": 62.843
+        },
+        {
+          "text": "finanziatori,",
+          "start": 62.903,
+          "end": 63.583
+        }
+      ]
+    },
+    {
+      "start": 64.163,
+      "end": 67.163,
+      "text": "e aiutare a rivedere il design evitando fraintendimenti.",
+      "words": [
+        {
+          "text": "e",
+          "start": 64.163,
+          "end": 64.203
+        },
+        {
+          "text": "aiutare",
+          "start": 64.283,
+          "end": 64.643
+        },
+        {
+          "text": "a",
+          "start": 64.683,
+          "end": 64.72300000000001
+        },
+        {
+          "text": "rivedere",
+          "start": 64.763,
+          "end": 65.123
+        },
+        {
+          "text": "il",
+          "start": 65.143,
+          "end": 65.223
+        },
+        {
+          "text": "design",
+          "start": 65.243,
+          "end": 65.683
+        },
+        {
+          "text": "evitando",
+          "start": 66.003,
+          "end": 66.383
+        },
+        {
+          "text": "fraintendimenti.",
+          "start": 66.403,
+          "end": 67.163
+        }
+      ]
+    },
+    {
+      "start": 67.723,
+      "end": 70.964,
+      "text": "L'obiettivo pratico è ottenere presto un primo prototipo ridotto,",
+      "words": [
+        {
+          "text": "L'obiettivo",
+          "start": 67.723,
+          "end": 68.123
+        },
+        {
+          "text": "pratico",
+          "start": 68.163,
+          "end": 68.523
+        },
+        {
+          "text": "è",
+          "start": 68.643,
+          "end": 68.683
+        },
+        {
+          "text": "ottenere",
+          "start": 68.703,
+          "end": 69.084
+        },
+        {
+          "text": "presto",
+          "start": 69.124,
+          "end": 69.464
+        },
+        {
+          "text": "un",
+          "start": 69.544,
+          "end": 69.604
+        },
+        {
+          "text": "primo",
+          "start": 69.684,
+          "end": 70.004
+        },
+        {
+          "text": "prototipo",
+          "start": 70.064,
+          "end": 70.504
+        },
+        {
+          "text": "ridotto,",
+          "start": 70.564,
+          "end": 70.964
+        }
+      ]
+    },
+    {
+      "start": 71.224,
+      "end": 72.224,
+      "text": "in circa sei settimane.",
+      "words": [
+        {
+          "text": "in",
+          "start": 71.224,
+          "end": 71.284
+        },
+        {
+          "text": "circa",
+          "start": 71.324,
+          "end": 71.564
+        },
+        {
+          "text": "sei",
+          "start": 71.624,
+          "end": 71.744
+        },
+        {
+          "text": "settimane.",
+          "start": 71.784,
+          "end": 72.224
+        }
+      ]
+    }
+  ]
+}
