@@ -377,13 +377,6 @@
           "anchor": "In ambiente Unix, per esempio"
         },
         {
-          "at": 19.7,
-          "action": "highlight",
-          "target": "#s3",
-          "duration": 10.5,
-          "anchor": "ogni risorsa mostra una stringa"
-        },
-        {
           "at": 32.72,
           "action": "highlight",
           "target": "#ux-ev",
@@ -549,13 +542,6 @@
           "action": "show",
           "target": "#s2",
           "anchor": "La cifratura può operare"
-        },
-        {
-          "at": 62.49,
-          "action": "highlight",
-          "target": "#s2",
-          "duration": 5.76,
-          "anchor": "a quattro livelli: application"
         },
         {
           "at": 68.65,

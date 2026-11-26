@@ -302,13 +302,6 @@
           "anchor": "Le aziende medio-grandi raramente"
         },
         {
-          "at": 0,
-          "action": "highlight",
-          "target": "#s1",
-          "duration": 11.5,
-          "anchor": "Le aziende medio-grandi raramente"
-        },
-        {
           "at": 12.68,
           "action": "show",
           "target": "#s2",

@@ -962,7 +962,8 @@ body.player-body {
   color: var(--ink);
 }
 
-.metric-lbl {
+.metric-lbl,
+.metric-label {
   font-size: 0.78rem;
   color: var(--ink-soft);
   margin-top: 3px;

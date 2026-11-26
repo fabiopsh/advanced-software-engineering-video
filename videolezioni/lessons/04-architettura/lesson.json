@@ -24,13 +24,6 @@
           "anchor": "Per costruire un buon prodotto"
         },
         {
-          "at": 4.14,
-          "action": "highlight",
-          "target": "#s1",
-          "duration": 6.4,
-          "anchor": "Per costruire un buon prodotto"
-        },
-        {
           "at": 11.8,
           "action": "highlight",
           "target": "#b-ieee",
@@ -495,13 +488,6 @@
           "at": 1.76,
           "action": "show",
           "target": "#s1",
-          "anchor": "le scelte tecnologiche"
-        },
-        {
-          "at": 1.76,
-          "action": "highlight",
-          "target": "#s1",
-          "duration": 7.9,
           "anchor": "le scelte tecnologiche"
         },
         {

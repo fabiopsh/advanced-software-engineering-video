@@ -24,13 +24,6 @@
           "anchor": "isolamento leggero, portabilità tra sviluppo"
         },
         {
-          "at": 3.62,
-          "action": "highlight",
-          "target": "#s1",
-          "anchor": "isolamento leggero, portabilità tra sviluppo",
-          "duration": 6.43
-        },
-        {
           "at": 10.34,
           "action": "highlight",
           "target": "#b-why",
@@ -70,7 +63,7 @@
           "action": "highlight",
           "target": "#b-dsm",
           "anchor": "A queste domande risponde la container",
-          "duration": 25.15
+          "duration": 29.2
         },
         {
           "at": 41.59,
@@ -79,25 +72,18 @@
           "anchor": "L'idea centrale è il desired"
         },
         {
-          "at": 50.51,
-          "action": "highlight",
-          "target": "#m-net",
-          "anchor": "quali Pod eseguire",
-          "duration": 4.03
-        },
-        {
           "at": 54.67,
           "action": "highlight",
           "target": "#ex-w",
           "anchor": "Nell'esempio di App uno",
-          "duration": 9.7
+          "duration": 9.1
         },
         {
-          "at": 64.49,
+          "at": 63.91,
           "action": "highlight",
           "target": "#m-heal",
           "anchor": "rileva la differenza e avvia",
-          "duration": 4.75
+          "duration": 5.0
         }
       ],
       "audio_file": "audio/scene-01.wav",
@@ -116,13 +102,6 @@
           "action": "show",
           "target": "#s1",
           "anchor": "fonda su quattro principi di design"
-        },
-        {
-          "at": 0.92,
-          "action": "highlight",
-          "target": "#s1",
-          "anchor": "fonda su quattro principi di design",
-          "duration": 2.11
         },
         {
           "at": 3.44,
@@ -196,13 +175,6 @@
           "action": "show",
           "target": "#s1",
           "anchor": "descrivono in file chiamati manifest"
-        },
-        {
-          "at": 1.8,
-          "action": "highlight",
-          "target": "#s1",
-          "anchor": "descrivono in file chiamati manifest",
-          "duration": 4.79
         },
         {
           "at": 7.76,
@@ -648,13 +620,6 @@
           "action": "show",
           "target": "#s1",
           "anchor": "quattro dettagli concreti fondamentali"
-        },
-        {
-          "at": 0.48,
-          "action": "highlight",
-          "target": "#s1",
-          "anchor": "quattro dettagli concreti fondamentali",
-          "duration": 2
         },
         {
           "at": 4.92,

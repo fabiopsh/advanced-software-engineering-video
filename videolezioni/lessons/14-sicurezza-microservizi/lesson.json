@@ -163,13 +163,6 @@
           "anchor": "Una multivocal review su"
         },
         {
-          "at": 3.56,
-          "action": "highlight",
-          "target": "#s1",
-          "duration": 14,
-          "anchor": "Una multivocal review su"
-        },
-        {
           "at": 22.04,
           "action": "highlight",
           "target": "#p-conf",
@@ -483,13 +476,6 @@
           "at": 4.1,
           "action": "show",
           "target": "#s1",
-          "anchor": "Il capitolo propone un"
-        },
-        {
-          "at": 4.2,
-          "action": "highlight",
-          "target": "#s1",
-          "duration": 8.9,
           "anchor": "Il capitolo propone un"
         },
         {

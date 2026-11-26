@@ -369,13 +369,6 @@
           "anchor": "Gestire a mano decine"
         },
         {
-          "at": 0.04,
-          "action": "highlight",
-          "target": "#s1",
-          "duration": 7.1,
-          "anchor": "Gestire a mano decine"
-        },
-        {
           "at": 9.82,
           "action": "highlight",
           "target": "#b-iac-def",
